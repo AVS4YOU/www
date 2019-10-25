@@ -10,6 +10,7 @@ const StyledText = styled.p`
     text-transform: ${props => props.textTransform};
     ${props => props.display ? "display:" + props.display : ''};
     margin:0;
+    ${props => props.lineHeight ? "line-height:" + props.lineHeight : ''};
 `;
 
 const Text = props => {
@@ -25,7 +26,8 @@ Text.propTypes = {
     color: PropTypes.string,
     fontWeight: PropTypes.number,
     textTransform: PropTypes.string,
-    display: PropTypes.string
+    display: PropTypes.string,
+    lineHeight: PropTypes.string
 };
 
 Text.defaultProps = {
@@ -33,6 +35,7 @@ Text.defaultProps = {
     color: "#333333",
     fontWeight: 500,
     textTransform: "none",
+    lineHeight: "normal"
 };
 
 

@@ -13,13 +13,18 @@ const StyledMenuItem = styled.div`
     visibility: ${props => props.visibly ? "visible" : "hidden" };
     transition: .2s linear;
     position: absolute;
+    &:hover>h4 {
+        color: #fda050;
+        text-decoration: underline;
+    }
+    cursor: pointer;
 `;
 
 const MenuItem = props => {
     return(
         <StyledMenuItem {...props}> 
-            {props.headerText != undefined ? <Text fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
-            {props.descriptionText != undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+            {props.headerText !== undefined ? <Text as="h4" lineHeight="3vh" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+            {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
         </StyledMenuItem>
     )
 }

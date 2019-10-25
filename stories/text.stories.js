@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Text from '../src/components/text';
-import { withKnobs, number, color, select } from '@storybook/addon-knobs/react';
+import { withKnobs, number, color, select, text } from '@storybook/addon-knobs/react';
 import Section from '../.storybook/decorators/section';
 
 const fontWeights = [300,400,500,600,700,800];
@@ -21,6 +21,7 @@ storiesOf('Components|Text', module)
                 textTransform={select('TextTransform', textTransforms, 'none')}
                 display={select('Display', displays)}
                 as={select('As', tagsList)}
+                lineHeight={text('lineHeight', 'normal')}
             >
                 Avs4you — Ultimate multimedia editing family
             </Text>

@@ -12,7 +12,7 @@ storiesOf('Components|MenuItem', module)
 
         return(
             <Section>
-                <MenuItem text="test" visibly={boolean('visibly', true)}>
+                <MenuItem descriptionText="Easily edit and create videos" headerText="AVS Video Editor" visibly={boolean('visibly', true)}>
 
                 </MenuItem>
             </Section>
