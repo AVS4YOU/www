@@ -15,5 +15,5 @@ storiesOf('Components|DropdownElement', module)
 
                 </DropdownElement>
             </Section>
-        );
+        ); 
     });
