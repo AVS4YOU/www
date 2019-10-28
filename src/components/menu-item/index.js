@@ -4,37 +4,40 @@ import Text from '../text';
 import PropTypes from "prop-types";
 
 const StyledMenuItem = styled.div`
-    background-color: #fff;
-    padding: 24px;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 12px #00000029;
-    width: auto;
-    opacity: ${props => props.visibly ? 1 : 0 };
-    visibility: ${props => props.visibly ? "visible" : "hidden" };
-    transition: .2s linear;
-    position: absolute;
-    &:hover>h4 {
-        color: #fda050;
-        text-decoration: underline;
-    }
+    ${props => props.backgroundColor ? "background-color:" + props.backgroundColor : "background-color: transparent;"}
+    padding: 0 24px;
     cursor: pointer;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    height:100%;
+
+    &:hover{
+        background-color: #F59541;
+    }
+
+    &:hover>div {
+        opacity: 1;
+        visibility: visible;
+    }
 `;
 
 const MenuItem = props => {
     return(
         <StyledMenuItem {...props}> 
-            {props.headerText !== undefined ? <Text as="h4" lineHeight="3vh" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
-            {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+            <Text color="#ffffff" fontWeight={600} textTransform="uppercase">{props.menuItemText}</Text>
+            {props.children}
         </StyledMenuItem>
     )
 }
 
 MenuItem.propTypes = {
-    visibly: PropTypes.bool  
+    menuItemText: PropTypes.string,
+    backgroundColor: PropTypes.string  
 }
 
 MenuItem.defaultProps = {
-    visibly: false
+    backgroundColor: "transparent"
 }
 
 export default MenuItem;
