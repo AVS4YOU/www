@@ -20,7 +20,7 @@ const StyledDropdownElement = styled.div`
 const DropdownElement = props => {
     return(
         <StyledDropdownElement {...props}> 
-            {props.headerText !== undefined ? <Text as="h4" lineHeight="3vh" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+            {props.headerText !== undefined ? <Text as="h4" lineHeight="3.5vh;" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
             {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
         </StyledDropdownElement>
     )
