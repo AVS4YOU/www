@@ -8,7 +8,6 @@ const StyledDropdownElement = styled.div`
     box-sizing: border-box;
     padding: 0 24px;
     width: auto;
-    cursor: pointer;
     margin-bottom: 20px;
 
     &:hover>h4 {

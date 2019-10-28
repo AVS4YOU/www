@@ -8,7 +8,7 @@ import { withKnobs, color} from '@storybook/addon-knobs/react';
 
 const StyledContainer = styled.div`
     padding: 16px;
-    height:50px;
+    height:60px;
 `;
 
 storiesOf('Components|menu-item', module)
