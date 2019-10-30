@@ -20,9 +20,9 @@ const StyledMenuDropdown = styled.div`
 `;
 
 var MenuDropdown = props => {
-    return(
+    return( 
         <StyledMenuDropdown>
-            {props.children}
+            {props.children} 
         </StyledMenuDropdown>
     )
 }

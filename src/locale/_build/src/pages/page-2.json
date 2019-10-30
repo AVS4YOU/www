@@ -1,0 +1,35 @@
+{
+  "Hi from the second page": {
+    "origin": [
+      [
+        "src/pages/page-2.js",
+        8
+      ]
+    ]
+  },
+  "welcome-page-2": {
+    "defaults": "Welcome to page 2",
+    "origin": [
+      [
+        "src/pages/page-2.js",
+        11
+      ]
+    ]
+  },
+  "/": {
+    "origin": [
+      [
+        "src/pages/page-2.js",
+        13
+      ]
+    ]
+  },
+  "Go back to the homepage": {
+    "origin": [
+      [
+        "src/pages/page-2.js",
+        14
+      ]
+    ]
+  }
+}

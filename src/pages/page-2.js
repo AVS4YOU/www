@@ -1,16 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Link from 'gatsby-link'
+import { Trans, withI18n } from '@lingui/react'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+const SecondPage = ({i18n}) => (
+  <div>
+    <h1>
+      <Trans>Hi from the second page</Trans>
+    </h1>
+    
+    <Trans id="welcome-page-2" render="p" />
+    
+    <Link to={i18n.t`/`}>
+      <Trans>Go back to the homepage</Trans>
+    </Link>
+  </div>
 )
 
-export default SecondPage
+export default withI18n()(SecondPage)
