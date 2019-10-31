@@ -3,44 +3,44 @@ import Link from 'gatsby-link'
 import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuDropdown from '../menu-dropdown'
-
-const Lang = ({ lang, onClick, selected }) => (
-  <a style={{ color: 'yellow', marginRight: '10px', textDecoration: selected ? 'underline' : 'none', cursor: 'pointer' }} onClick={onClick}>
-    {lang}
-  </a>
-)
+import MenuWrapper from '../menu-wrapper'
+import { Trans, withI18n } from '@lingui/react'
 
 const Header = (props) => (
-  <div
-  style={{
-    background: 'rebeccapurple',
-    marginBottom: '1.45rem'
-  }} 
-  >
-    {console.log(props)}
-    <div
-      style={{ 
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem' 
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Lang lang='en' onClick={(e) => props.onLangClick('en')} selected={props.lang == 'en'} />
-        <Lang lang='ro' onClick={(e) => props.onLangClick('ro')} selected={props.lang == 'ro'} />
-      </h1>
-      <div style={{ height: 60}}>
-      <MenuItem menuItemText="Video software" backgroundColor='#32393e'>
-          <MenuDropdown>
-              <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-              <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-              <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-          </MenuDropdown>
-      </MenuItem>
-      </div>
-      
-    </div>
-  </div>
+
+  <MenuWrapper lang={props.lang} onLangClick={props.onLangClick} style={{ height: 60}}>
+    <MenuItem menuItemText={<Trans>Video software</Trans>}>
+        <MenuDropdown>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+        </MenuDropdown>
+    </MenuItem>
+    
+    <MenuItem menuItemText={<Trans>Audio software</Trans>}>
+        <MenuDropdown>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+        </MenuDropdown>
+    </MenuItem>
+    <MenuItem menuItemText={<Trans>Free software</Trans>}>
+        <MenuDropdown>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+        </MenuDropdown>
+    </MenuItem>
+    <MenuItem menuItemText={<Trans>Download</Trans>} isDropdown={false} />
+    <MenuItem menuItemText={<Trans>Buy now</Trans>} isDropdown={false} />
+    <MenuItem menuItemText={<Trans>Help center</Trans>}>
+        <MenuDropdown>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+            <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+        </MenuDropdown>
+    </MenuItem>
+  </MenuWrapper>
 )
 
-export default Header
+export default Header;

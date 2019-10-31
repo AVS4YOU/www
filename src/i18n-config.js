@@ -1,7 +1,7 @@
-const languages = [ 'en', 'ro' ]
+const languages = [ 'en', 'ru' ]
 const catalogs = {
   en: { messages: require('./locale/en/messages.json') },
-  ro: { messages: require('./locale/ro/messages.json') }
+  ru: { messages: require('./locale/ru/messages.json') }
 }
 
 const defaultLanguage = 'en'

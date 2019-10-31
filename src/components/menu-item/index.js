@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import Text from '../text';
 import PropTypes from "prop-types";
+import { Trans, withI18n } from '@lingui/react';
 
 const DropdownArrowStyle = css`
     &:after{
@@ -22,21 +23,26 @@ const DropdownArrowStyle = css`
 `;
 
 const StyledMenuItem = styled.div`
-    ${props => props.backgroundColor ? "background-color:" + props.backgroundColor : "background-color: transparent;"}
+    background-color: rgba(253,160,78,0);
     padding: 0 24px;
     cursor: pointer;
     display: inline-flex;
     position: relative;
     align-items: center;
     height:100%;
+    transition: .2s linear;
 
     &:hover{
-        background-color: #F59541;
+        background-color: rgba(253,160,78,.986);
 
         &:after{
             transform: rotate(45deg);
             top: 28px;
         }
+    }
+
+    &>div{
+        min-width: 100%;
     }
 
     &:hover>div {
@@ -48,23 +54,34 @@ const StyledMenuItem = styled.div`
 `;
 
 const MenuItem = props => {
-    return(
-        <StyledMenuItem {...props}> 
-            <Text color="#ffffff" fontSize={14} fontWeight={600} textTransform="uppercase">{props.menuItemText}</Text>
-            {props.children}
-        </StyledMenuItem>
-    )
+
+    if(props.isLangSelector ) {
+        return(
+            <StyledMenuItem {...props}> 
+                <Text color="#ffffff" fontSize={14} fontWeight={600} textTransform="uppercase">
+                    <Trans>CurrentLanguage</Trans>   
+                </Text>
+                {props.children}
+            </StyledMenuItem>
+        )
+    } else {
+        return(
+            <StyledMenuItem {...props}> 
+                <Text color="#ffffff" fontSize={14} fontWeight={600} textTransform="uppercase">{props.menuItemText}</Text>
+                {props.children}
+            </StyledMenuItem>
+        )
+    }   
 }
 
 MenuItem.propTypes = {
-    menuItemText: PropTypes.string,
-    backgroundColor: PropTypes.string,
-    isDropdown: PropTypes.bool
+    isDropdown: PropTypes.bool,
+    isLangSelector: PropTypes.bool
 }
 
 MenuItem.defaultProps = {
-    backgroundColor: "transparent",
-    isDropdown: true
+    isDropdown: true,
+    isLangSelector: false
 }
 
 export default MenuItem;

@@ -14,6 +14,10 @@ const StyledMenuDropdown = styled.div`
     left: 0;
     top: 100%;
 
+    &>div{
+        min-width:100%;
+    }
+
     &>div:first-child {
         margin-top:20px;
     }

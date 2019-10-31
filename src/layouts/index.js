@@ -9,7 +9,7 @@ import './index.css'
 
 const TemplateWrapper = ({ children, lang, onLangChange }) => (
   <div>
-    <Helmet title='Gatsby Default Starter' meta={[ { name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' } ]} />
+    <Helmet title='AVS4You site' meta={[ { name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' } ]} />
     <Header lang={lang} onLangClick={onLangChange} />
     <div
       style={{
