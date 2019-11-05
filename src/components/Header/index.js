@@ -1,15 +1,13 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuDropdown from '../menu-dropdown'
 import MenuWrapper from '../menu-wrapper'
-import { Trans, withI18n } from '@lingui/react'
 
 const Header = (props) => (
 
   <MenuWrapper lang={props.lang} onLangClick={props.onLangClick} style={{ height: 60}}>
-    <MenuItem menuItemText={<Trans>Video software</Trans>}>
+    <MenuItem menuItemText={props.t("Video software")}>
         <MenuDropdown>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
@@ -17,23 +15,23 @@ const Header = (props) => (
         </MenuDropdown>
     </MenuItem>
     
-    <MenuItem menuItemText={<Trans>Audio software</Trans>}>
+    <MenuItem menuItemText={props.t("Audio software")}>
         <MenuDropdown>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
         </MenuDropdown>
     </MenuItem>
-    <MenuItem menuItemText={<Trans>Free software</Trans>}>
+    <MenuItem menuItemText={props.t("Free software")}>
         <MenuDropdown>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
         </MenuDropdown>
     </MenuItem>
-    <MenuItem menuItemText={<Trans>Download</Trans>} isDropdown={false} />
-    <MenuItem menuItemText={<Trans>Buy now</Trans>} isDropdown={false} />
-    <MenuItem menuItemText={<Trans>Help center</Trans>}>
+    <MenuItem menuItemText={props.t("Download")} isDropdown={false} />
+    <MenuItem menuItemText={props.t("Buy now")} isDropdown={false} />
+    <MenuItem menuItemText={props.t("Help center")}>
         <MenuDropdown>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>

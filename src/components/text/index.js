@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from "prop-types";
-import { Trans, withI18n } from '@lingui/react';
 
 const StyledText = styled.p`
     font-family: 'Open Sans',sans-serif,Arial;
@@ -17,9 +16,7 @@ const StyledText = styled.p`
 const Text = props => {
     return(
         <StyledText {...props}>
-            <Trans>
-                {props.children}
-            </Trans>
+            {props.children}
         </StyledText>
     )
 };

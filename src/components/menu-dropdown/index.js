@@ -14,7 +14,7 @@ const StyledMenuDropdown = styled.div`
     left: 0;
     top: 100%;
 
-    &>div{
+    &>a{
         min-width:100%;
     }
 
@@ -30,7 +30,6 @@ var MenuDropdown = props => {
         </StyledMenuDropdown>
     )
 }
-
 
 MenuDropdown.propTypes = {
     visibly: PropTypes.bool  

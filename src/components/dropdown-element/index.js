@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from '../text';
 import PropTypes from "prop-types";
+import { Link } from 'gatsby';
 
 const StyledDropdownElement = styled.div`
     background-color: #fff;
@@ -9,25 +10,32 @@ const StyledDropdownElement = styled.div`
     padding: 0 24px;
     width: auto;
     margin-bottom: 20px;
+    display:block;
+    text-decoration: none;
 
-    &:hover>h4 {
-        color: #fda050;
+    &:hover h4 {
+        color: #fda050; 
         text-decoration: underline;
+    }
+
+    &>a{
+        text-decoration: none;
     }
 `;
 
 const DropdownElement = props => {
     return(
         <StyledDropdownElement {...props}> 
-            {props.headerText !== undefined ? <Text as="h4" lineHeight="3.5vh;" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
-            {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+            <Link to={props.path}>
+                {props.headerText !== undefined ? <Text as="h4" lineHeight="3.5vh;" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+            </Link>
         </StyledDropdownElement>
     )
 }
 
 DropdownElement.propTypes = {
-    headerText: PropTypes.string,
-    descriptionText: PropTypes.string  
+
 }
 
 export default DropdownElement;

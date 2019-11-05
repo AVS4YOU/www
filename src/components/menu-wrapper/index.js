@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from "prop-types";
 import Logo from '../../images/common/logo.svg'
-import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuDropdown from '../menu-dropdown'
-import { Trans, withI18n } from '@lingui/react'
+import DropdownElement from '../dropdown-element'
+import { useTranslation } from "react-i18next";
 
 const StyledMenuWrapper = styled.div`
     width: 100%;
@@ -40,29 +39,24 @@ const LogoWrapper = styled.a`
     }
 `;
 
-const Lang = ({ lang, onClick, selected }) => (
-    <a style={{ color: '#cecece', marginRight: '10px', textDecoration: selected ? 'underline' : 'none', cursor: 'pointer' }} onClick={onClick}>
-        {lang}
-    </a>
-)
+const MenuWrapper = (props, pageContext)  => {
 
-const MenuWrapper = props => {
-
+    const { t } = useTranslation();
     return(
         <StyledMenuWrapper>
             <StyledMenuGrid>
                 <div>
                     <LogoWrapper href="/">
-                        <img src={Logo} />
+                        <img src={Logo} alt="avs4you logo"/>
                     </LogoWrapper>
                 </div>
                 <MenuItemsWrapper>
                     {props.children}
                 </MenuItemsWrapper>
-                <MenuItem isLangSelector={true}>
+                <MenuItem menuItemText={t("CurrentLanguage")}>
                     <MenuDropdown>
-                        <Lang lang='en' onClick={(e) => props.onLangClick('en')} selected={props.lang == 'en'} />
-                        <Lang lang='ru' onClick={(e) => props.onLangClick('ru')} selected={props.lang == 'ru'} />               
+                        <DropdownElement path="/" headerText="English" />
+                        <DropdownElement path="/ru" headerText="Русский" />        
                     </MenuDropdown>
                 </MenuItem>
             </StyledMenuGrid>

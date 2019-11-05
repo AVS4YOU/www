@@ -2,7 +2,6 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import Text from '../text';
 import PropTypes from "prop-types";
-import { Trans, withI18n } from '@lingui/react';
 
 const DropdownArrowStyle = css`
     &:after{
@@ -59,7 +58,7 @@ const MenuItem = props => {
         return(
             <StyledMenuItem {...props}> 
                 <Text color="#ffffff" fontSize={14} fontWeight={600} textTransform="uppercase">
-                    <Trans>CurrentLanguage</Trans>   
+                    CurrentLanguage
                 </Text>
                 {props.children}
             </StyledMenuItem>

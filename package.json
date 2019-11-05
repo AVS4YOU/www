@@ -1,47 +1,36 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby starter with i18n/l10n support using js-lingui.",
+  "name": "gatsby-starter-i18next-ssr",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "description": "Gatsby boilerplate to support server-side i18n page generation with i18next, react-18next and i18next",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "extract": "cross-env BABEL_ENV=extract lingui extract --clean"
+    "build": "gatsby build"
   },
   "dependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
-    "@babel/preset-react": "^7.0.0-beta.42",
-    "@lingui/babel-preset-react": "^2.0.5",
-    "@lingui/react": "^2.0.5",
     "babel-plugin-styled-components": "^1.10.6",
-    "cross-env": "^5.1.4",
-    "gatsby": "^1.9.241",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^2.0.8",
-    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-i18n": "^1.1.5",
     "gatsby-plugin-styled-components": "^3.1.11",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.4.0"
+    "i18next": "^15.0.6",
+    "prop-types": "^15.7.2",
+    "react-i18next": "^10.4.1",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
+    "gatsby": "^2.0.115",
+    "react": "next",
+    "react-dom": "next"
   },
-  "lingui": {
-    "fallbackLocale": "en",
-    "sourceLocale": "en",
-    "localeDir": "src/locale",
-    "format": "minimal"
-  }
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guibulator/gatsby-starter-i18next-ssr.git"
+  },
+  "keywords": [
+    "Gatsby",
+    "React",
+    "i18n"
+  ],
+  "author": "Mathieu Guilbault",
+  "license": "Unlicense"
 }

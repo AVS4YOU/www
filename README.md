@@ -1,43 +1,22 @@
-# gatsby-starter-i18n-linguijs
-Gatsby starter with i18n/l10n support using [js-lingui](https://github.com/lingui/js-lingui).  
-This will generate pages for each locale avoiding duplicate code.  
+# Gatsby Starter i18n SSR
 
-[Demo](https://gatsby-starter-i18n-lingui.netlify.com/)
+### Requirements
 
-## Install
+- [Node.js](http://nodejs.org)
+- [Gatsby](https://www.gatsbyjs.org/docs/)
 
-Make sure that you have Gatsby and js-lingui installed globally:
-```sh
-npm install --global gatsby-cli js-lingui
-```
+### Features
 
-Extract translations:
-```sh
-npm run extract
-```
+- Basic configuration and folder structure for internalization support
+- Server-Side i18n page generation, you end-up with one page per locale.
+- Based off of a gist provided by https://github.com/acewf and adapted to make it work with the latest and greatest.
 
-Run gatsby:
-```sh
-npm run develop
-```
+### How to proceed
 
-## Config
+1.  Run: `npm i` to install the dependencies
+1.  Run: `npm run dev` to run Gatsby
+1.  You should see shortly some text that says `The development server is listening at: http://localhost:8000`.
 
-Add new locale (ex: russian):
-```sh
-lingui add-locale ru
-```
+### How to build
 
-Wire up catalogs in `src/i18n-config` 
-
-Refer to [js-lingui docs](https://lingui.github.io/js-lingui/ref/lingui-react.html) for further information on using the library
-
-You could have ___translated paths___; for that you will need a mapping of default paths to localized paths. Update `gatsby-node` and locale files to use those mappings.  
-
-
-## Thanks
-
-These threads/repositories served as inspiration:  
-https://github.com/gatsbyjs/gatsby/issues/3853#issuecomment-365216769  
-https://github.com/lingui/js-lingui/issues/158#issuecomment-371096693  
-https://github.com/morloy/ledgy.com  
+1.  Run: `npm run build` to build website into `/public` folder with one page per locale automatically generated.
