@@ -60,6 +60,8 @@ const MenuItem = props => {
                 <Text color="#ffffff" fontSize={14} fontWeight={600} textTransform="uppercase">
                     CurrentLanguage
                 </Text>
+
+                
                 {props.children}
             </StyledMenuItem>
         )

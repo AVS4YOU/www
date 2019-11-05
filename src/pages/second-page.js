@@ -11,7 +11,7 @@ const SecondPage = ({  pageContext: { locale, originalPath }, t }) => {
     <Layout>
       <h1>{t("ThisIsSecondPage")}</h1>
       <Link to={`/${locale === "en" ? "" : locale}/`}>{t("goBackHome")}</Link>
-      <br />
+      <br /> 
 
       <Child />
     </Layout>
