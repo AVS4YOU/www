@@ -17,6 +17,7 @@
     "i18next": "^15.0.6",
     "prop-types": "^15.7.2",
     "react-i18next": "^10.4.1",
+    "react-responsive": "^8.0.1",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {

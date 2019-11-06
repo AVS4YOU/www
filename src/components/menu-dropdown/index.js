@@ -1,6 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import PropTypes from "prop-types";
+
+const mobileStyles = css`
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+    display: block;
+    z-index: 5;
+    height: 100vh;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 130px;
+    cursor: default;
+    transition: .5s linear;
+    box-shadow: none;
+    z-index: 20;
+    overflow: auto;
+    min-height: 400px;
+    left: auto;
+`;
 
 const StyledMenuDropdown = styled.div`
     background-color: #fff;
@@ -21,12 +41,22 @@ const StyledMenuDropdown = styled.div`
     &>div:first-child {
         margin-top:20px;
     }
+
+    @media (max-width: 1050px) {
+        ${mobileStyles}
+        right: ${props => props.submenuOpen ? "0" : "-105%"};
+        
+        &>div:first-child {
+            margin-top:0;
+        }
+    }
 `;
 
 var MenuDropdown = props => {
+
     return( 
-        <StyledMenuDropdown>
-            {props.children} 
+        <StyledMenuDropdown {...props}>
+            {props.children}
         </StyledMenuDropdown>
     )
 }

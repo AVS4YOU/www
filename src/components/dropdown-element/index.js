@@ -20,6 +20,12 @@ const StyledDropdownElement = styled.div`
     &>a{
         text-decoration: none;
     }
+
+    @media (max-width: 1050px) {
+        width: max-content;
+        margin: auto;
+        margin-bottom: 15px;
+    }
 `;
  
 const DropdownElement = props => {
