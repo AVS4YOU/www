@@ -94,10 +94,10 @@ class MenuWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = {open: false};
-        this.burgerButtonClick = this.burgerButtonClick.bind(this);
+        this.toggleMenu = this.toggleMenu.bind(this);
     }
 
-    burgerButtonClick() {
+    toggleMenu() {
         this.setState({
             open: !this.state.open
         });
@@ -112,12 +112,12 @@ class MenuWrapper extends React.Component {
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
                     </div>
-                    {this.props.isMobile ? <div></div> : ""}
+                    {this.props.isMobile && <div></div>}
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
                         {this.props.isMobile &&
                             <>
-                                <CloseMobileMenu onClick={this.burgerButtonClick}>×</CloseMobileMenu>
+                                <CloseMobileMenu onClick={this.toggleMenu}>×</CloseMobileMenu>
                                 <LogoWrapperMobile href="/">
                                     <img src={LogoBlack} alt="avs4you logo"></img>
                                 </LogoWrapperMobile>
@@ -131,7 +131,7 @@ class MenuWrapper extends React.Component {
                                 <DropdownElement path="/ru" headerText="Русский" />        
                             </MenuItem>
                         :
-                            <BurgerButton func={this.burgerButtonClick}></BurgerButton>
+                            <BurgerButton func={this.toggleMenu}></BurgerButton>
                     }
 
                 </StyledMenuGrid>

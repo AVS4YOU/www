@@ -33,7 +33,7 @@ const DropdownElement = props => {
         <StyledDropdownElement {...props}> 
             <Link to={props.path}>
                 {props.headerText !== undefined ? <Text as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
-                {props.descriptionText !== undefined ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+                {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
             </Link>
         </StyledDropdownElement>
     )

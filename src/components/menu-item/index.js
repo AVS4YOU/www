@@ -69,7 +69,7 @@ const BackSubmenuButton = styled.div`
     transition: none;
     opacity: 0;
 
-    ${props => props.openSubmenu ? BackSubmenuButtonShow : ""}
+    ${props => props.submenuOpen && BackSubmenuButtonShow}
 
     &:after{
         display: block;
@@ -114,7 +114,7 @@ const StyledMenuItem = styled.div`
         visibility: visible;
     }
 
-    ${props => props.isDropdown ? DropdownArrowStyle : ""}
+    ${props => props.isDropdown && DropdownArrowStyle}
 
     @media (max-width: 1400px) {
         ${MediaWidthStyle}
@@ -131,7 +131,7 @@ class MenuItem extends React.Component {
         super(props);
         this.state = {submenuOpen: false, width: 0};
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        this.openSubmenu = this.openSubmenu.bind(this);
+        this.toggleSubmenu = this.toggleSubmenu.bind(this);
     }
 
     componentDidMount() {
@@ -147,8 +147,10 @@ class MenuItem extends React.Component {
         this.setState({ width: window.innerWidth });
     }
 
-    openSubmenu(){
-        this.setState({submenuOpen: !this.state.submenuOpen})
+    toggleSubmenu(){
+        this.setState({
+            submenuOpen: !this.state.submenuOpen
+        });
     }
 
     render(){
@@ -157,7 +159,7 @@ class MenuItem extends React.Component {
         const isMobile = this.state.width < 1050;
 
         return(
-            <StyledMenuItem onClick={isMobile ? this.openSubmenu : undefined } {...this.props}> 
+            <StyledMenuItem onClick={isMobile ? this.toggleSubmenu : undefined } {...this.props}> 
                 <Text 
                     color={isMobile ? "#333333": "#ffffff"} 
                     fontSize={isMobile ? 16 : 14} 
@@ -173,13 +175,10 @@ class MenuItem extends React.Component {
                 {this.props.isDropdown 
                     ? 
                         <MenuDropdown submenuOpen={this.state.submenuOpen}>
-                            {isMobile 
-                                ? 
-                                    <BackSubmenuButton openSubmenu={this.state.submenuOpen} onClick={this.openSubmenu}>
-                                        <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
-                                    </BackSubmenuButton> 
-                                :
-                                    ""
+                            {isMobile && 
+                                <BackSubmenuButton submenuOpen={this.state.submenuOpen} onClick={this.toggleSubmenu}>
+                                    <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
+                                </BackSubmenuButton> 
                             }
                             {this.props.children}
                         </MenuDropdown> 
