@@ -7,8 +7,8 @@ import MenuDropdown from '../menu-dropdown'
 const MediaWidthStyle = css`
     padding: 0 18px;
 
-    &:after{
-        right:5px;
+    .arrowStyle:after{
+        margin-left:5px;
     }
 
     .textStyles{
@@ -28,33 +28,26 @@ const MediaMobileStyle = css`
     transition: .2s linear;
     margin: auto;
     margin-bottom: 16px;
+    
+    .arrowStyle:after{
+        border-top: 1px solid #333333;
+        border-left: 1px solid #333333;
+        transform: rotate(135deg);
+        margin-top:0;
+    }
 
     &:hover{
         background-color: transparent;
+
+        .arrowStyle:after{
+            transform: rotate(135deg);
+        }
     }
 
     .textStyles{
         color:#333333;
         font-weight: 600;
         font-size: 16px;
-    }
-`;
-
-const DropdownArrowStyle = css`
-    &:after{
-        display: block;
-        content: '';
-        width: 4px;
-        height: 4px;
-        border-top: 1px solid
-        #fff;
-        border-left: 1px solid
-        #fff;
-        transition: .2s linear;
-        transform: rotate(-135deg);
-        position: absolute;
-        right: 10px;
-        top: 25px;
     }
 `;
 
@@ -111,12 +104,17 @@ const StyledMenuItem = styled.div`
     height:100%;
     transition: .2s linear;
 
+    .arrowStyle:after{
+        margin-top:-4px;
+        margin-left: 8px;
+    }
+
     &:hover{
         background-color: rgba(253,160,78,.986);
 
-        &:after{
+        .arrowStyle:after{
             transform: rotate(45deg);
-            top: 28px;
+            margin-top:0;
         }
     }
 
@@ -128,8 +126,6 @@ const StyledMenuItem = styled.div`
         opacity: 1;
         visibility: visible;
     }
-
-    ${props => props.isDropdown && DropdownArrowStyle}
 
     @media (max-width: 1400px) {
         ${MediaWidthStyle}
@@ -159,7 +155,9 @@ class MenuItem extends React.Component {
     render(){
         return(
             <StyledMenuItem onClick={this.toggleSubmenu} {...this.props}> 
-                <Text className="textStyles"
+                <Text className={this.props.isDropdown ? "arrowStyle textStyles" : "textStyles"} 
+                    arrow={this.props.isDropdown ? true : false}
+                    arrowDeg={this.props.isDropdown && 225}
                     color="#ffffff"
                     fontSize={16} 
                     fontWeight={600} 

@@ -4,21 +4,20 @@ import PropTypes from "prop-types";
 
 const arrowStyle = css`
 
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
     &:after{
-        display: block;
         content: '';
         width: 4px;
         height: 4px;
         border-top: 1px solid ${props => props.arrowColor};
         border-left: 1px solid  ${props => props.arrowColor};
-        -webkit-transition: .2s linear;
         transition: .2s linear;
-        -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        transform: rotate(135deg);
-        position: absolute;
-        right: 7px;
-        top: 28px;
+        transform: rotate(${props => props.arrowDeg}deg);
+        display: inline-block;
+        margin-left: 5px;
     }
 `;
 
@@ -50,7 +49,8 @@ Text.propTypes = {
     display: PropTypes.string,
     lineHeight: PropTypes.string,
     arrow: PropTypes.bool,
-    arrowColor: PropTypes.string
+    arrowColor: PropTypes.string,
+    arrowDeg: PropTypes.number
 };
 
 Text.defaultProps = {
@@ -60,7 +60,8 @@ Text.defaultProps = {
     textTransform: "none",
     lineHeight: "normal",
     arrow: false,
-    arrowColor: "#ffffff"
+    arrowColor: "#ffffff",
+    arrowDeg: 135
 };
 
 
