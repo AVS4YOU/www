@@ -38,9 +38,9 @@ const StyledBurgerButton = styled.div`
 `;
 
 
-const BurgerButton = (props) => {
+const BurgerButton = props => {
     return (
-        <StyledBurgerButton onClick={props.func}>
+        <StyledBurgerButton {...props} onClick={props.func}>
             <span></span>
         </StyledBurgerButton>
     )

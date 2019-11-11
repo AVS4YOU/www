@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React from 'react';
 import PropTypes from "prop-types"
 import Header from "./header"
-import { useTranslation } from "react-i18next";
+import "./layout.css"
 
-const Layout = ({ children, location }) => {
-  const { t } = useTranslation();
-  return (
+const Layout = ({ children }) => {
+
+  return ( 
     <>
-      <Header t={t} />
+      <Header/>
       <div>
         <main>{children}</main>
         <footer>

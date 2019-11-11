@@ -39,10 +39,9 @@ storiesOf('Components|Menu Item', module)
         return(
             <StorybookWrapper hovered={boolean("hovered" , true)}>
                 <MenuItem menuItemText={text("menuItemName", "Free software")}>
-                    <MenuDropdown>
-                        <DropdownElement path="/" headerText={text("headerText", "AVS Video Editor")} descriptionText={text("descriptionText", "Easily edit and create videos")}/>
-                    </MenuDropdown>
+                    <DropdownElement path="/" headerText={text("headerText", "AVS Video Editor")} descriptionText={text("descriptionText", "Easily edit and create videos")}/>
                 </MenuItem>
+                <MenuItem menuItemText={text("menuItemName2", "Video software")}></MenuItem>
             </StorybookWrapper>
         ); 
     });

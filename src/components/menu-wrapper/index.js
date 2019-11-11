@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../images/common/logo.svg'
 import LogoBlack from '../../images/common/logo-black.svg'
-import MenuItem from '../menu-item'
-import DropdownElement from '../dropdown-element'
 import BurgerButton from '../burger-button'
+import LanguageSelector from '../language-selector'
 
 const StyledMenuWrapper = styled.div`
     width: 100%;
@@ -35,6 +34,20 @@ const StyledMenuGrid = styled.div`
     padding: 0 18px;
     box-sizing: border-box;
     height:100%;
+
+    .mobileBlock{
+        display:none;
+    }
+
+    @media (max-width: 1050px){
+        .mobileBlock{
+            display:block;
+        }
+
+        .desktopBlock{
+            display:none;
+        }
+    }
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -101,6 +114,8 @@ class MenuWrapper extends React.Component {
         this.setState({
             open: !this.state.open
         });
+
+        console.log(this.state.open)
     }
     render(){
 
@@ -112,27 +127,18 @@ class MenuWrapper extends React.Component {
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
                     </div>
-                    {this.props.isMobile && <div></div>}
+                    <div className="mobileBlock"></div>
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
-                        {this.props.isMobile &&
-                            <>
-                                <CloseMobileMenu onClick={this.toggleMenu}>×</CloseMobileMenu>
-                                <LogoWrapperMobile href="/">
-                                    <img src={LogoBlack} alt="avs4you logo"></img>
-                                </LogoWrapperMobile>
-                            </>
-                        }
+              
+                        <CloseMobileMenu className="mobileBlock" onClick={this.toggleMenu}>×</CloseMobileMenu>
+                        <LogoWrapperMobile className="mobileBlock" href="/">
+                            <img src={LogoBlack} alt="avs4you logo"></img>
+                        </LogoWrapperMobile>
+                        <LanguageSelector className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     </MenuItemsWrapper>
-                    {!this.props.isMobile
-                        ?
-                            <MenuItem menuItemText={this.props.t("CurrentLanguage")}>
-                                <DropdownElement path="/" headerText="English" />
-                                <DropdownElement path="/ru" headerText="Русский" />        
-                            </MenuItem>
-                        :
-                            <BurgerButton func={this.toggleMenu}></BurgerButton>
-                    }
+                    <LanguageSelector className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
+                    <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
 
                 </StyledMenuGrid>
             </StyledMenuWrapper>

@@ -10,6 +10,11 @@ const MediaWidthStyle = css`
     &:after{
         right:5px;
     }
+
+    .textStyles{
+        font-weight: 500;
+        font-size: 14px;
+    }
 `;
 
 const MediaMobileStyle = css`
@@ -26,6 +31,12 @@ const MediaMobileStyle = css`
 
     &:hover{
         background-color: transparent;
+    }
+
+    .textStyles{
+        color:#333333;
+        font-weight: 600;
+        font-size: 16px;
     }
 `;
 
@@ -61,13 +72,17 @@ const BackSubmenuButton = styled.div`
     z-index: 30;
     padding: 5px 15px;
     cursor: pointer;
-    display: block;
+    display: none;
     text-transform: uppercase;
     -moz-transition: none;
     -webkit-transition: none;
     -o-transition: color 0 ease-in;
     transition: none;
     opacity: 0;
+
+    @media (max-width: 1050px) {
+        display: block;
+    }
 
     ${props => props.submenuOpen && BackSubmenuButtonShow}
 
@@ -129,22 +144,10 @@ class MenuItem extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {submenuOpen: false, width: 0};
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.toggleSubmenu = this.toggleSubmenu.bind(this);
-    }
-
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-    
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-
-    updateWindowDimensions() {
-        this.setState({ width: window.innerWidth });
+        this.state = {
+            submenuOpen: false
+        }
     }
 
     toggleSubmenu(){
@@ -154,20 +157,12 @@ class MenuItem extends React.Component {
     }
 
     render(){
-
-        const isSmallScreen = this.state.width < 1400;
-        const isMobile = this.state.width < 1050;
-
         return(
-            <StyledMenuItem onClick={isMobile ? this.toggleSubmenu : undefined } {...this.props}> 
-                <Text 
-                    color={isMobile ? "#333333": "#ffffff"} 
-                    fontSize={isMobile ? 16 : 14} 
-                    fontWeight={isSmallScreen 
-                        ? isMobile 
-                            ? 600
-                            : 500 
-                        : 600} 
+            <StyledMenuItem onClick={this.toggleSubmenu} {...this.props}> 
+                <Text className="textStyles"
+                    color="#ffffff"
+                    fontSize={16} 
+                    fontWeight={600} 
                     textTransform="uppercase">
 
                     {this.props.menuItemText}
@@ -175,12 +170,10 @@ class MenuItem extends React.Component {
                 {this.props.isDropdown 
                     ? 
                         <MenuDropdown submenuOpen={this.state.submenuOpen}>
-                            {isMobile && 
-                                <BackSubmenuButton submenuOpen={this.state.submenuOpen} onClick={this.toggleSubmenu}>
-                                    <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
-                                </BackSubmenuButton> 
-                            }
                             {this.props.children}
+                            <BackSubmenuButton submenuOpen={this.state.submenuOpen} onClick={this.toggleSubmenu}>
+                                <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
+                            </BackSubmenuButton> 
                         </MenuDropdown> 
                     : 
                         this.props.children}
