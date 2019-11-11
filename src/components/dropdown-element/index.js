@@ -25,6 +25,10 @@ const StyledDropdownElement = styled.div`
         width: max-content;
         margin: auto;
         margin-bottom: 15px;
+
+        .selected{
+            color: #FDA050;
+        }
     }
 `;
  
@@ -32,7 +36,7 @@ const DropdownElement = props => {
     return(
         <StyledDropdownElement {...props}> 
             <Link to={props.path}>
-                {props.headerText !== undefined ? <Text as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                 {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
             </Link>
         </StyledDropdownElement>

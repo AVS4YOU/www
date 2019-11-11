@@ -4,6 +4,11 @@ import MenuItem from '../menu-item';
 import DropdownElement from '../dropdown-element';
 import MenuDropdown from "../menu-dropdown";
 import Text from '../text';
+import LangIconWhite from '../../images/common/languages/language-icon-white.svg';
+import LangIconBlack from '../../images/common/languages/language-icon-black.svg';
+import RuIcon from '../../images/common/languages/russian.svg';
+import EnIcon from '../../images/common/languages/english.svg';
+import Selected from '../../images/common/languages/selected.svg'
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
@@ -50,16 +55,80 @@ const StyledLanguageSelector = styled.div`
         display:none;
     }
 
+    .langDropdown{
+
+        margin-bottom: 11px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+
+        &:first-child {
+            margin-top:12px;
+        }
+
+        &:before{
+            content: '';
+            height: 16px;
+            width:16px;
+            margin-right: 8px;
+        }
+
+        &.en:before {
+            background-image: url(${EnIcon});
+        }
+
+        &.ru:before{
+            background-image: url(${RuIcon});
+        }
+    }
+
+    .languageSelector:before{
+        content: '';
+        background-image: url(${LangIconWhite});
+        height: 16px;
+        width:16px;
+        margin-right: 8px;
+    }
+
     @media (max-width: 1050px){
         .mobileBlock{
             display:block;
+        }
+
+        .langDropdown{
+            &:before{
+                content: none;
+            }
+
+            &.selected{
+
+                position:relative;
+
+                &:before{
+                    content: '';
+                    background-image: url(${Selected});
+                    background-repeat:no-repeat;
+                    height: 16px;
+                    width:16px;
+                    position:absolute;
+                    left: 0px;
+                    background-position: 50%;
+                }
+            }
+        }
+
+        .languageSelector{
+            grid-template-columns: auto 1fr auto;
+
+            &:before{
+                background-image: url(${LangIconBlack});
+            }
         }
 
         .desktopBlock{
             display:none;
         }
     }
-
 `;
 
 const LanguageSelectorWrapperMobile = styled.div`
@@ -74,7 +143,6 @@ const LanguageSelectorWrapperMobile = styled.div`
     background-color: #fff;
     margin: auto;
 `;
-
 
 class LanguageSelector extends React.Component {
 
@@ -93,24 +161,28 @@ class LanguageSelector extends React.Component {
     render(){
         return(
             <StyledLanguageSelector {...this.props}>
-
                 <div className="mobileBlock">
                     <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
-                        <Text arrow arrowColor="#333" fontSize={16} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
+                        <Text className="languageSelector" arrow arrowColor="#333" fontSize={16} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
                     </LanguageSelectorWrapperMobile>  
 
                     <MenuDropdown submenuOpen={this.state.open}>
                         <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
                             <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
                         </BackSubmenuButton> 
-                        <DropdownElement path="/" headerText="English" />
-                        <DropdownElement path="/ru" headerText="Русский" />     
+                        
+                        {this.props.pageContext.availableLocales.map((item) =>
+                            this.props.pageContext.locale !== item.value 
+                                ? <DropdownElement className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                                : <DropdownElement className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                        )}
                     </MenuDropdown> 
                 </div>
                 
-                <MenuItem className="desktopBlock" menuItemText={this.props.menuItemText}>
-                    <DropdownElement path="/" headerText="English" />
-                    <DropdownElement path="/ru" headerText="Русский" />        
+                <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
+                    {this.props.pageContext.availableLocales.map((item) =>
+                        this.props.pageContext.locale !== item.value && <DropdownElement className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                    )}
                 </MenuItem>
             </StyledLanguageSelector>
         )

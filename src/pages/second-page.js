@@ -4,13 +4,13 @@ import { Link } from "gatsby";
 import Child from "../components/childComponent";
 import Layout from "../components/layout"
 
-const SecondPage = ({  pageContext: { locale, originalPath }, t }) => {
+const SecondPage = ({ pageContext, t }) => {
 
   return (
     // Можно прокинуть pageContent в Layout !!!!!!!!!
-    <Layout>
+    <Layout pageContext={pageContext}>
       <h1>{t("ThisIsSecondPage")}</h1>
-      <Link to={`/${locale === "en" ? "" : locale}/`}>{t("goBackHome")}</Link>
+      <Link to={`/${pageContext.locale === "en" ? "" : pageContext.locale}/`}>{t("goBackHome")}</Link>
       <br /> 
 
       <Child />

@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 const Page = ({ pageContext, t }) => {
   // Можно прокинуть pageContent в Layout !!!!!!!!!
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <h1>{t("hello")}</h1>
       <Link to={`/${pageContext.locale === "en" ? "" : pageContext.locale}/second-page`}>{t("goSecondPage")}</Link>
       <br /><br /><br />

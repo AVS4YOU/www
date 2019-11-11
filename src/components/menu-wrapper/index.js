@@ -114,8 +114,6 @@ class MenuWrapper extends React.Component {
         this.setState({
             open: !this.state.open
         });
-
-        console.log(this.state.open)
     }
     render(){
 
@@ -135,9 +133,9 @@ class MenuWrapper extends React.Component {
                         <LogoWrapperMobile className="mobileBlock" href="/">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
-                        <LanguageSelector className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
+                        <LanguageSelector pageContext={this.props.pageContext} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     </MenuItemsWrapper>
-                    <LanguageSelector className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
+                    <LanguageSelector pageContext={this.props.pageContext} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
                     <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
 
                 </StyledMenuGrid>
