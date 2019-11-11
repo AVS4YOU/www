@@ -159,7 +159,7 @@ class MenuItem extends React.Component {
                     arrow={this.props.isDropdown ? true : false}
                     arrowDeg={this.props.isDropdown && 225}
                     color="#ffffff"
-                    fontSize={16} 
+                    fontSize={14} 
                     fontWeight={600} 
                     textTransform="uppercase">
 

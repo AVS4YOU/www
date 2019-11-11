@@ -163,7 +163,7 @@ class LanguageSelector extends React.Component {
             <StyledLanguageSelector {...this.props}>
                 <div className="mobileBlock">
                     <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
-                        <Text className="languageSelector" arrow arrowColor="#333" fontSize={16} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
+                        <Text className="languageSelector" arrow arrowColor="#333" fontSize={14} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
                     </LanguageSelectorWrapperMobile>  
 
                     <MenuDropdown submenuOpen={this.state.open}>
