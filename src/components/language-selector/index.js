@@ -173,15 +173,15 @@ class LanguageSelector extends React.Component {
                         
                         {this.props.pageContext.availableLocales.map((item) =>
                             this.props.pageContext.locale !== item.value 
-                                ? <DropdownElement className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
-                                : <DropdownElement className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                                ? <DropdownElement key={item.value} className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                                : <DropdownElement key={item.value} className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                         )}
                     </MenuDropdown> 
                 </div>
                 
                 <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
                     {this.props.pageContext.availableLocales.map((item) =>
-                        this.props.pageContext.locale !== item.value && <DropdownElement className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                        this.props.pageContext.locale !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                     )}
                 </MenuItem>
             </StyledLanguageSelector>

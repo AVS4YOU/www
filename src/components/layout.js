@@ -6,23 +6,23 @@
  */
 
 import React from 'react';
-import PropTypes from "prop-types"
-import Header from "./header"
-import "./layout.css"
+import PropTypes from "prop-types";
+import Header from "./header";
+import "./layout.css";
+import Footer from "./footer";
+import { useTranslation } from "react-i18next";
 
 const Layout = ({ children, pageContext }) => {
+
+  const {t} = useTranslation();
 
   return ( 
     <>
       <Header pageContext={pageContext}/>
       <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer pageContext={pageContext} t={t}/>
     </>
   )
 }

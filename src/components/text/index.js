@@ -50,7 +50,6 @@ Text.propTypes = {
     lineHeight: PropTypes.string,
     arrow: PropTypes.bool,
     arrowColor: PropTypes.string,
-    arrowDeg: PropTypes.number
 };
 
 Text.defaultProps = {
