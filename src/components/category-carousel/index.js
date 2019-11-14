@@ -102,31 +102,6 @@ const RowContent = styled.div`
         display: inline-flex;
         align-items: center;
     }
-
-    .free{
-        background-color: #FDA050;
-        margin-left: 15px;
-        padding: 4px 20px;
-        font-size: 13px;
-        position: relative;
-        top: 0px;
-        color: #fff;
-        padding-right: 30px;
-
-        &:after{
-            content: '';
-            background-color: transparent;
-            border: 15px solid transparent;
-            border-right: 15px solid #fff;
-            display: block;
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-        }
-    }
 `;
 
 const ContentWrapper = styled.div`
@@ -145,7 +120,7 @@ function renderContent (props) {
                         <div>
                             <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
                                 AVS Video Converter
-                                <Text as="span" className="free">Free</Text>
+                                <Text as="span" className="flagBackground">Free</Text>
                             </Text>
                             <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
                             <Text  className="ListItem" color="#555555" fontWeight={500}>Smart conversion presets</Text>
@@ -253,7 +228,7 @@ function renderContent (props) {
                         <div>
                             <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
                                 AVS Photo Editor
-                                <Text as="span" className="free">Free</Text>
+                                <Text as="span" className="flagBackground">Free</Text>
                             </Text>
                             <Text className="ListItem" color="#555555" fontWeight={500}>Open and edit all key image formats</Text>
                             <Text className="ListItem" color="#555555" fontWeight={500}>Play with colors, shades and tints</Text>
@@ -278,7 +253,7 @@ function renderContent (props) {
                         <div>
                             <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
                                 AVS Image Converter
-                                <Text as="span" className="free">Free</Text>
+                                <Text as="span" className="flagBackground">Free</Text>
                             </Text>
                             <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key image formats</Text>
                             <Text className="ListItem" color="#555555" fontWeight={500}>Automatically resize your photos to popular formats</Text>
