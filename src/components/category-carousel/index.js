@@ -131,7 +131,7 @@ const RowContent = styled.div`
 
 const ContentWrapper = styled.div`
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 `;
 
 function renderContent (props) {

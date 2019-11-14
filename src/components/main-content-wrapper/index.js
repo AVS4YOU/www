@@ -4,10 +4,12 @@ import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import CategorySelector from '../category-selector';
 import CategoryCarousel from '../category-carousel'
+import CarouselIndicators from '../carousel-indicators'
 import { CSSTransition } from 'react-transition-group';
 
 const StyledMainContentWrapper = styled.div`
     display:block;
+    padding-bottom: 100px;
 
     .alert-enter {
         opacity: 0;
@@ -60,7 +62,7 @@ class MainContentWrapper extends React.Component{
             <StyledMainContentWrapper>
                 <PageContentWrapper>
                     <Text fontSize={46} fontWeight={600} className="bodyHeader">Turn your ideas into exciting content</Text>
-                    <CategorySelector currentCategory={this.state.currentCategory} selectCategory={this.selectCategory}></CategorySelector>
+                    <CategorySelector currentCategory={this.state.currentCategory} selectCategory={this.selectCategory}/>
                     <CSSTransition 
                         in={this.state.animate}
                         timeout={300}
@@ -70,6 +72,7 @@ class MainContentWrapper extends React.Component{
                     >
                         <CategoryCarousel currentCategory={this.state.currentCategoryCarousel}/>
                     </CSSTransition>
+                    <CarouselIndicators currentCategory={this.state.currentCategory} selectCategory={this.selectCategory} />
                 </PageContentWrapper>
             </StyledMainContentWrapper>  
         )

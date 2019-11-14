@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import Text from '../text';
-import PropTypes from "prop-types";
 import videoIcon from '../../images/main-page/icons/video_icon_grey.svg'
 import videoIconWhite from '../../images/main-page/icons/video_icon_for_slider.svg'
 import audioIcon from '../../images/main-page/icons/audio_icon_grey.svg'
@@ -124,13 +123,5 @@ const CategorySelector = (props) => {
         </StyledCategorySelector>
     )
 }
-
-CategorySelector.propTypes = {
-
-};
-
-CategorySelector.defaultProps = {
-
-};
 
 export default CategorySelector
