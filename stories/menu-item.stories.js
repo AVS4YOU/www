@@ -37,7 +37,7 @@ storiesOf('Components|Menu Item', module)
     .add('base', () => {
 
         return(
-            <StorybookWrapper hovered={boolean("hovered" , true)}>
+            <StorybookWrapper hovered={boolean("hovered" , false)}>
                 <MenuItem menuItemText={text("menuItemName", "Free software")}>
                     <DropdownElement path="/" headerText={text("headerText", "AVS Video Editor")} descriptionText={text("descriptionText", "Easily edit and create videos")}/>
                 </MenuItem>

@@ -1,21 +1,73 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import { Link } from "gatsby";
-import Child from "../components/childComponent";
 import Layout from "../components/layout"
+import styled from 'styled-components';
+import Text from '../components/text';
+import PageContentWrapper from '../components/page-content-wrapper';
+import BackgroundHeaderImage from '../images/main-page/header-image.png';
+import Button from '../components/button'
+import MainContentWrapper from '../components/main-content-wrapper'
+
+const MainPageWrapper = styled.div`
+
+  .avs4you{
+    text-transform: uppercase;
+    color: #F59541;
+    font-weight: 600;
+  }
+
+  .headerText{
+    padding-bottom:25px;
+  }
+
+  .bodyHeader{
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:80px;
+  }
+
+  .headerContentWrapper{
+    padding-top: 260px;
+    padding-bottom: 320px;
+    max-width: 750px;
+  }
+
+  .headerBackground{
+    background-image: url(${BackgroundHeaderImage});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+
+  .headerButtonsWrapper{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    grid-gap: 30px;
+    padding-top: 60px;
+  }
+`;
 
 const Page = ({ pageContext, t }) => {
-  // Можно прокинуть pageContent в Layout !!!!!!!!!
   return (
     <Layout pageContext={pageContext} t={t}>
-      <h1>{t("hello")}</h1>
-      <Link to={`/${pageContext.locale === "en" ? "" : pageContext.locale}/second-page`}>{t("goSecondPage")}</Link>
-      <br /><br /><br />
-      
-      <Link to={`/` + pageContext.originalPath}>{t("English")}</Link>
-      <br />
-      <Link to={`/ru` + pageContext.originalPath}>{t("Русский")}</Link>
-      <Child />
+      <MainPageWrapper>
+        <div className="headerBackground">
+          <PageContentWrapper>
+            <div className="headerContentWrapper" >
+              <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{t("avs4you")}</b> — {t("Ultimate multimedia editing family")}</Text>
+              <Text color="#ffffff" as="h5" fontSize={24}>Produce spectacular video, audio and photo content and even more, without any limitations</Text>
+              <div className="headerButtonsWrapper">
+                <Button href="/" textTransform="uppercase">download now</Button>
+                <Button href="/" textTransform="uppercase" background={false}>learn more</Button>
+                <div></div>
+              </div>
+            </div> 
+          </PageContentWrapper>
+        </div>
+        
+        <MainContentWrapper></MainContentWrapper>
+      </MainPageWrapper>
     </Layout>
   );
 };
