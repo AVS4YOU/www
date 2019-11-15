@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import ReviewCarouselItem from '../review-carousel-item';
 
 import AvatarChenWang from '../../images/common/review-carousel/сhen_wang.png';

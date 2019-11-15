@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import Button from '../button';
@@ -70,7 +70,7 @@ const SomethingElseScreen = () => {
                 <Text color="#3D3D3D" fontSize={40} fontWeight={600} className="bodyHeader">Looking for something else?</Text>
                 <div className="productsContainer">
                     <StyledProductBox>
-                        <img src={MediaPlayerImg}/>
+                        <img src={MediaPlayerImg} alt="Media Player"/>
                         <div className="textWrapper">
                             <Text as="span" className="flagBackground se">Free</Text>
                             <Text className="header" color="#474747">AVS Media Player</Text>
@@ -79,7 +79,7 @@ const SomethingElseScreen = () => {
                         </div>
                     </StyledProductBox>
                     <StyledProductBox>
-                        <img src={DocumentConverterImg}/>
+                        <img src={DocumentConverterImg} alt="Document Converter"/>
                         <div className="textWrapper">
                             <Text as="span" className="flagBackground se">Free</Text>
                             <Text className="header" color="#474747">AVS Document Converter</Text>
@@ -88,7 +88,7 @@ const SomethingElseScreen = () => {
                         </div>
                     </StyledProductBox>
                     <StyledProductBox>
-                        <img src={DiscCreatorImg}/>
+                        <img src={DiscCreatorImg} alt="Disc Creator"/>
                         <div className="textWrapper">
                             <Text as="span" className="flagBackground se">Free</Text>
                             <Text className="header" color="#474747">AVS Disc Creator</Text>
@@ -97,7 +97,7 @@ const SomethingElseScreen = () => {
                         </div>
                     </StyledProductBox>
                     <StyledProductBox>
-                        <img src={RegistryCleanerImg}/>
+                        <img src={RegistryCleanerImg} alt="Registry Cleaner"/>
                         <div className="textWrapper">
                             <Text as="span" className="flagBackground se">Free</Text>
                             <Text className="header" color="#474747">AVS Registry Cleaner</Text>
