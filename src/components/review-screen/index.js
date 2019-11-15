@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import ReviewsSlider from '../reviews-slider';
 import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
@@ -64,14 +64,14 @@ const ReviewsScreen = () => {
                 </div>
                 <div className="container">
                     <div className="imgWrapper">
-                        <img src={Star}/>
-                        <img src={Star}/>
-                        <img src={Star}/>
-                        <img src={Star}/>
-                        <img src={Star}/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
                     </div>
                     <Text className="text" fontSize={20} fontWeight={600}>Over <b className="orange">20,000,000</b> of satisfied clients!</Text>
-                    <img className="revPeople" src={RevPeople}/>
+                    <img className="revPeople" src={RevPeople} alt="People"/>
                     <Text className="text" color="#505B63" fontSize={18}>659133 Reviews</Text>
                 </div>
             </StyledScreen>

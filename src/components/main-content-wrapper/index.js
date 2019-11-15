@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import CategorySelector from '../category-selector';

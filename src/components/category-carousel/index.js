@@ -139,6 +139,10 @@ function renderContent (props) {
                     </ContentRowItem>
                 </>
             )
+        default: 
+            return (
+                <div></div>
+            )
     }
 }
 

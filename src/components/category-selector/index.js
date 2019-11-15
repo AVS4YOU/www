@@ -111,13 +111,13 @@ const StyledCategorySelector = styled.div`
 const CategorySelector = (props) => {
     return(
         <StyledCategorySelector  {...props}>
-            <StyledButton selected={props.currentCategory == "video"} onClick={() => props.selectCategory('video')}>
+            <StyledButton selected={props.currentCategory === "video"} onClick={() => props.selectCategory('video')}>
                 <Text className="textButtonStyles video" display="inline-block" color="#000000">Video</Text>
             </StyledButton>
-            <StyledButton selected={props.currentCategory == "audio"} onClick={() => props.selectCategory('audio')}>
+            <StyledButton selected={props.currentCategory === "audio"} onClick={() => props.selectCategory('audio')}>
                 <Text className="textButtonStyles audio" display="inline-block" color="#000000">Audio</Text>
             </StyledButton>
-            <StyledButton selected={props.currentCategory == "image"} onClick={() => props.selectCategory('image')}>
+            <StyledButton selected={props.currentCategory === "image"} onClick={() => props.selectCategory('image')}>
                 <Text className="textButtonStyles image" display="inline-block" color="#000000">Image</Text>
             </StyledButton>
         </StyledCategorySelector>
