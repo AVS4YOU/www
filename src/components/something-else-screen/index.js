@@ -68,7 +68,7 @@ const SomethingElseScreen = () => {
         <StyledWrapper>
             <PageContentWrapper>
                 <Text color="#3D3D3D" fontSize={40} fontWeight={600} className="bodyHeader">Looking for something else?</Text>
-                <div class="productsContainer">
+                <div className="productsContainer">
                     <StyledProductBox>
                         <img src={MediaPlayerImg}/>
                         <div className="textWrapper">

@@ -1,13 +1,14 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Layout from "../components/layout"
+import Layout from "../components/layout";
 import styled from 'styled-components';
 import Text from '../components/text';
 import PageContentWrapper from '../components/page-content-wrapper';
 import BackgroundHeaderImage from '../images/main-page/header-image.png';
-import Button from '../components/button'
-import MainContentWrapper from '../components/main-content-wrapper'
-import SomethingElseScreen from '../components/something-else-screen'
+import Button from '../components/button';
+import MainContentWrapper from '../components/main-content-wrapper';
+import SomethingElseScreen from '../components/something-else-screen';
+import ReviewScreen from '../components/review-screen'
 
 const MainPageWrapper = styled.div`
 
@@ -94,6 +95,7 @@ const Page = ({ pageContext, t }) => {
         
         <MainContentWrapper />
         <SomethingElseScreen />
+        <ReviewScreen />
       </MainPageWrapper>
     </Layout>
   );

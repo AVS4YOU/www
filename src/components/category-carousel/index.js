@@ -35,7 +35,7 @@ const RowContent = styled.div`
     }
 
     .rowImage{
-        max-width: 724px;
+        max-width: 722px;
         position: relative;
         z-index: 2;
     }

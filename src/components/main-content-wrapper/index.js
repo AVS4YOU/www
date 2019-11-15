@@ -4,7 +4,6 @@ import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import CategorySelector from '../category-selector';
 import CategoryCarousel from '../category-carousel'
-import CarouselIndicators from '../carousel-indicators'
 import { CSSTransition } from 'react-transition-group';
 
 const StyledMainContentWrapper = styled.div`
@@ -72,7 +71,6 @@ class MainContentWrapper extends React.Component{
                     >
                         <CategoryCarousel currentCategory={this.state.currentCategoryCarousel}/>
                     </CSSTransition>
-                    <CarouselIndicators currentCategory={this.state.currentCategory} selectCategory={this.selectCategory} />
                 </PageContentWrapper>
             </StyledMainContentWrapper>  
         )

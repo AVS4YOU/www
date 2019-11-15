@@ -18,7 +18,7 @@ const StyledButton = styled.div`
     background-color:#9A9997;
     ${props => props.selected && "background-color:#1473E6;"}   
 `;
-
+// If not used can be removed
 const CarouselIndicators = (props) => {
     return(
         <StyledWrapper>
