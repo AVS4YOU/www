@@ -36,6 +36,7 @@ const Button = (props) => {
             <Text className="buttonText" textTransform={props.textTransform} fontSize={props.fontSize ? props.fontSize : 18} color={props.color}>
                 {props.children}
             </Text>
+            {props.secondaryText && <Text color={props.color} fontSize={12} align="center">{props.secondaryText}</Text>}
         </StyledButton>
     )
 }

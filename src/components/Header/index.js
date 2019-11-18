@@ -12,9 +12,9 @@ const Header = (props) => {
 
         <MenuWrapper pageContext={props.pageContext} t={t} lang={props.lang} onLangClick={props.onLangClick} style={{ height: 60}}>
             <MenuItem menuItemText={t("Video software")}>
-                <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-                <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-                <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+                <DropdownElement path="/avs-video-editor" headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+                <DropdownElement path="/avs-video-editor" headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
+                <DropdownElement path="/avs-video-editor" headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
             </MenuItem>
             <MenuItem menuItemText={t("Audio software")}>
                 <DropdownElement headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>

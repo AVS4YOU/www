@@ -31,6 +31,7 @@ const StyledText = styled.p`
     margin:0;
     ${props => props.lineHeight ? "line-height:" + props.lineHeight : ''};
     ${props => props.arrow && arrowStyle};
+    ${props => props.align && "text-align: " + props.align};
 `;
 
 const Text = props => {

@@ -67,6 +67,7 @@ const RowContent = styled.div`
         display: flex;
         align-items: center;
         margin: auto;
+        max-width: 500px;
     }
 
     .ListItem{
@@ -104,8 +105,8 @@ const TextContent = (props) =>
                 </Text>
                 {props.children}
                 <div className="buttonsWrapper">
-                    <Button fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>
-                    <Button href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>
+                    {props.blueButtonLink && <Button fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>}
+                    {props.smallButtonLink && <Button href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>}
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@ const ContentRowItem = (props) => {
 
     if (props.imgLeft){
         return(
-            <RowContent>
+            <RowContent id={props.id}>
                 <div className="bgBlue">
                     <img className="rowImage" src={props.image} alt={props.headerText}></img>
                 </div>
@@ -125,7 +126,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent>
+            <RowContent id={props.id}>
                 {TextContent(props)}
                 <div className="bgOrange">
                     <img className="rowImage" src={props.image} alt={props.headerText}></img>

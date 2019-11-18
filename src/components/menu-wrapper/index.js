@@ -4,6 +4,7 @@ import Logo from '../../images/common/logo.svg'
 import LogoBlack from '../../images/common/logo-black.svg'
 import BurgerButton from '../burger-button'
 import LanguageSelector from '../language-selector'
+import { Link } from 'gatsby';
 
 const StyledMenuWrapper = styled.div`
     width: 100%;
@@ -78,7 +79,7 @@ const MenuItemsWrapper = styled.div`
     }
 `;
 
-const LogoWrapper = styled.a`
+const LogoWrapper = styled.div`
     display: flex;
     height: 100%;
 
@@ -120,11 +121,11 @@ class MenuWrapper extends React.Component {
         return(
             <StyledMenuWrapper>
                 <StyledMenuGrid>
-                    <div>
+                    <Link to="/">
                         <LogoWrapper href="/">
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
-                    </div>
+                    </Link>
                     <div className="mobileBlock"></div>
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
@@ -137,7 +138,6 @@ class MenuWrapper extends React.Component {
                     </MenuItemsWrapper>
                     <LanguageSelector pageContext={this.props.pageContext} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
                     <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
-
                 </StyledMenuGrid>
             </StyledMenuWrapper>
         )
