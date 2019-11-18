@@ -7,7 +7,8 @@ import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import Button from '../components/button';
 import ContentRowItem from '../components/content-row-item';
-import ReviewScreen from '../components/review-screen'
+import ReviewScreen from '../components/review-screen';
+import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
 import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
@@ -72,6 +73,10 @@ const PayPagesWrapper = styled.div`
     margin-top: 100px;
   }
 
+  .carouselHeader{
+      padding-top: 100px;
+  }
+
   .scrollToButton{
     padding: 20px;
     padding-top: 85px;
@@ -103,6 +108,12 @@ const PayPagesWrapper = styled.div`
       background-image: url(${Download});
     }
   }
+`;
+
+const ScreenshotsWrapper = styled.div`
+  padding: 100px 0;
+  max-width: 900px;
+  margin:auto;
 `;
 
 const SecondPage = ({ pageContext, t }) => {
@@ -198,6 +209,8 @@ const SecondPage = ({ pageContext, t }) => {
         <div id="reviews" className="backgroundWrapper">
           <ReviewScreen />
         </div>
+        <Text className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
+        <ScreenshotsCarousel></ScreenshotsCarousel>
       </PayPagesWrapper>
     </Layout>
   );
