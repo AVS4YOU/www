@@ -24,6 +24,8 @@ import screen3 from '../images/video-editor/slider5.png';
 import screen4 from '../images/video-editor/slider2.png';
 import screen5 from '../images/video-editor/slider6.png';
 
+import AttentionIcon from '../images/common/icons/red_ring.svg';
+
 const PayPagesWrapper = styled.div`
   .headerBackground{
     background-image: url(${BackgroundHeaderImage});
@@ -108,12 +110,60 @@ const PayPagesWrapper = styled.div`
       background-image: url(${Download});
     }
   }
-`;
+  .downloadInfoWrapper{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 15px;
+    margin: auto;
+    max-width: 600px;
+  }
 
-const ScreenshotsWrapper = styled.div`
-  padding: 100px 0;
-  max-width: 900px;
-  margin:auto;
+  .licenseText{
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+    a{
+      color: #1296E6;
+    }
+  }
+
+  .technicalSpecificationWrapper{
+    background-color: #FAF7F2;
+    padding: 100px 0;
+  }
+
+  .requirementsHeader{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D1D1D1;
+    max-width: 404px;
+    margin-bottom: 10px;
+  }
+
+  .specificationGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .pcComponents{
+    padding-right: 10px;
+  }
+
+  .systemWrapper{
+    padding-bottom: 10px;
+  }
+
+  .attentionBlock{
+    background: url(${AttentionIcon}) no-repeat;
+    background-color: #ffffff;
+    background-position: 20px 15px;
+    padding: 16px;
+    padding-left: 55px;
+    margin-top: 30px;
+  }
 `;
 
 const SecondPage = ({ pageContext, t }) => {
@@ -137,15 +187,15 @@ const SecondPage = ({ pageContext, t }) => {
           <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
             <Text color="#666666" align="center">Overview</Text>
           </Link>
-          <Link to="reviews" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton reviews">
+          <Link to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
             <Text color="#666666" align="center">Reviews</Text>
           </Link>
-          <div className="scrollToButton screentour">
+          <Link to="screenshotsCarousel" spy={true} smooth={true} offset={-100} duration={700} className="scrollToButton screentour">
             <Text color="#666666" align="center">Screentour</Text>
-          </div>
-          <div className="scrollToButton download">
+          </Link>
+          <Link to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
             <Text color="#666666" align="center">Download</Text>
-          </div>
+          </Link>
         </div>
 
         <PageContentWrapper>
@@ -210,7 +260,100 @@ const SecondPage = ({ pageContext, t }) => {
           <ReviewScreen />
         </div>
         <Text className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
-        <ScreenshotsCarousel></ScreenshotsCarousel>
+        <ScreenshotsCarousel id="screenshotsCarousel"></ScreenshotsCarousel>
+        <PageContentWrapper>
+          <div className="downloadInfoWrapper">
+            <Text color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
+            <Text color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+
+            <Text color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
+            <Text color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+
+            <Text color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
+            <Text color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
+          </div>
+          <div id="downloadButton" className="buttonWrapper">
+            <Button href="/" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
+          </div>
+          <div className="licenseText">
+            <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="#">our End User License Agreement</a></Text>
+          </div>
+        </PageContentWrapper>
+        <div className="technicalSpecificationWrapper">
+          <PageContentWrapper>
+              <Text color="#000000" fontSize={32} align="center" fontWeight={600}>Technical specification</Text>
+              <div className="specificationGrid">
+                <div>
+                  <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>MINIMUM SYSTEM REQUIREMENTS</Text>
+
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Duo compatible at 3 GHz or higher</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher </Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows compatible sound card</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Display:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">CD recorder:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DVD recorder:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">for importing from DVD and creating Video DVD</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video capture device:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">required for capturing</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Windows Media Player:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">11 or higher for WMV video playback</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DirectX:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Microsoft DirectX 9.0c or later</Text>
+                  </div>
+                </div>
+                <div>
+                  <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>RECOMMENDED SYSTEM REQUIREMENTS</Text>
+
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Operating system:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible video card</Text>
+                  </div>
+                  <div className="systemWrapper">
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible sound card</Text>
+                  </div>
+                </div>
+              </div>
+              <Text color="#000000" fontSize={16} fontWeight="500">*Administrative permissions for program installation and Internet connection for activation</Text>
+              <div className="attentionBlock">
+                <Text fontSize={16} fontWeight={500}>Please note that AVS4YOU® programs do not allow you to copy protected material. You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner.</Text>
+              </div>
+          </PageContentWrapper>
+        </div>
       </PayPagesWrapper>
     </Layout>
   );

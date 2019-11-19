@@ -9,7 +9,7 @@ import bgOrange from '../../images/main-page/back_picture_orange.svg'
 const RowContent = styled.div`
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 100px;
+    padding-top: 180px;
 
     &:first-child{
         padding-top: 0;

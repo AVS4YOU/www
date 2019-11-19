@@ -163,7 +163,7 @@ export default class ScreenshotsCarousel extends Component {
 
   render() {
     return (
-      <StyledCarouselWrapper>
+      <StyledCarouselWrapper id={this.props.id}>
 
         <StyledPopupCarousel CarouselIsShow={this.state.CarouselIsShow}>
             <Slider
