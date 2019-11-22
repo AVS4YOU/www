@@ -12,6 +12,7 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
 import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
+import HeaderImageMobile from '../images/video-editor/slider1.png';
 
 import Overview from '../images/common/icons/overview.svg';
 import Reviews from '../images/common/icons/reviews.svg';
@@ -59,6 +60,10 @@ const PayPagesWrapper = styled.div`
     display:block;
     margin:auto;
     max-width: 100%;
+
+    &.mobile{
+      display:none;
+    }
   }
 
   .scrollLinksWrapper{
@@ -164,6 +169,99 @@ const PayPagesWrapper = styled.div`
     padding-left: 55px;
     margin-top: 30px;
   }
+
+  @media (max-width: 1024px) {
+    .scrollLinksWrapper{
+      display:none;
+    }
+
+    .headerText{
+      font-size: 48px;
+      padding-bottom: 25px;
+    }
+
+    .headerDescription{
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .headerContentWrapper{
+      max-width: 540px;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    .headerContentWrapper{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .headerImage{
+      display:none;
+
+      &.mobile{
+        display: block;
+        box-sizing: border-box;
+        border-radius: 15px;
+        margin: auto;
+        padding: 10px;
+      }
+    }
+
+    .buttonWrapper{
+      padding-top: 50px;
+    }
+
+    .headerText{
+      font-size: 34px;
+    }
+
+    .carouselHeader{
+      font-size: 24px;
+      padding-top: 50px;
+    }
+
+    .licenseText{
+      padding-bottom: 50px;
+    }
+
+    .downloadInfoParam{
+      font-size: 14px;
+    }
+
+    .downloadInfoText{
+      font-size: 14px;
+    }
+
+    .headerSpecification{
+      font-size: 24px;
+    }
+
+    .specificationGrid{
+      grid-template-columns: 1fr;
+    }
+
+    .requirementsHeader{
+      font-size: 16px;
+    }
+
+    .systemWrapper span{
+      font-size: 14px;
+    }
+
+    .attentionBlock{
+      display:none;
+    }
+
+    .systemInfo{
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .technicalSpecificationWrapper{
+      padding: 50px 0;
+    }
+  }
 `;
 
 const SecondPage = ({ pageContext, t }) => {
@@ -175,13 +273,14 @@ const SecondPage = ({ pageContext, t }) => {
           <PageContentWrapper>
             <div className="headerContentWrapper" >
               <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{t("AVS Video Editor")}</Text>
-              <Text color="#ffffff" align="center" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
+              <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
               <div className="buttonWrapper">
                 <Button href="/" color="#fff" padding="12px 37px" textTransform="uppercase" backgroundColor="orange" secondaryText="Windows 10/8/7/Vista/XP">download now</Button>
               </div>
             </div> 
           </PageContentWrapper>
           <img className="headerImage" src={HeaderImage}/>
+          <img className="headerImage mobile" src={HeaderImageMobile}/>
         </div>
         <div className="scrollLinksWrapper">
           <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -190,7 +289,7 @@ const SecondPage = ({ pageContext, t }) => {
           <Link to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
             <Text color="#666666" align="center">Reviews</Text>
           </Link>
-          <Link to="screenshotsCarousel" spy={true} smooth={true} offset={-100} duration={700} className="scrollToButton screentour">
+          <Link to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
             <Text color="#666666" align="center">Screentour</Text>
           </Link>
           <Link to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
@@ -259,18 +358,18 @@ const SecondPage = ({ pageContext, t }) => {
         <div id="reviews" className="backgroundWrapper">
           <ReviewScreen />
         </div>
-        <Text className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
-        <ScreenshotsCarousel id="screenshotsCarousel"></ScreenshotsCarousel>
+        <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
+        <ScreenshotsCarousel></ScreenshotsCarousel>
         <PageContentWrapper>
           <div className="downloadInfoWrapper">
-            <Text color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
-            <Text color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+            <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
+            <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
 
-            <Text color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
-            <Text color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+            <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
+            <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
 
-            <Text color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
-            <Text color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
+            <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
+            <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
           </div>
           <div id="downloadButton" className="buttonWrapper">
             <Button href="/" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
@@ -281,7 +380,7 @@ const SecondPage = ({ pageContext, t }) => {
         </PageContentWrapper>
         <div className="technicalSpecificationWrapper">
           <PageContentWrapper>
-              <Text color="#000000" fontSize={32} align="center" fontWeight={600}>Technical specification</Text>
+              <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>Technical specification</Text>
               <div className="specificationGrid">
                 <div>
                   <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>MINIMUM SYSTEM REQUIREMENTS</Text>
@@ -348,7 +447,7 @@ const SecondPage = ({ pageContext, t }) => {
                   </div>
                 </div>
               </div>
-              <Text color="#000000" fontSize={16} fontWeight="500">*Administrative permissions for program installation and Internet connection for activation</Text>
+              <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*Administrative permissions for program installation and Internet connection for activation</Text>
               <div className="attentionBlock">
                 <Text fontSize={16} fontWeight={500}>Please note that AVS4YOU® programs do not allow you to copy protected material. You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner.</Text>
               </div>

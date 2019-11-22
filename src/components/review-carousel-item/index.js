@@ -50,6 +50,29 @@ const StyledItem = styled.div`
     .reviewText{
         line-height: 1.7;
     }
+
+    @media (max-width: 750px) {
+        &.rewWrapper{
+            display: block !important;
+        }
+
+        .quote{
+            max-width: 150px;
+            margin: auto;
+            padding-bottom: 15px;
+        }
+
+        .reviewHeader{
+            font-size: 24px;
+            color: #FDA050;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .reviewText{
+            text-align: center;
+        }
+    }
 `;
 
 const ReviewCarouselItem = (props) => {

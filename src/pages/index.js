@@ -47,6 +47,66 @@ const MainPageWrapper = styled.div`
     align-items: center;
     grid-gap: 30px;
     padding-top: 60px;
+
+    &.mobile{
+      display:none;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .headerBackground {
+      background-position: 0 0;
+    }
+
+    .headerButtonsWrapper{
+      display:none;
+
+      &.mobile{
+        display: table;
+        margin: auto;
+      }
+    }
+
+    .headerContentWrapper{
+      max-width: 520px;
+      margin: auto;
+      padding-top: 60px;
+      padding-bottom: 170px;
+    }
+
+    .headerText{
+      font-size: 34px;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .headerDescription{
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .bodyHeader{
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    .bodyHeader{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .bodyHeader{
+      font-size: 22px;
+    }
+
+    .HeaderListItem.mobile{
+      font-size: 20px;
+    }
   }
 `;
 
@@ -58,11 +118,14 @@ const Page = ({ pageContext, t }) => {
           <PageContentWrapper>
             <div className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{t("avs4you")}</b> — {t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" as="h5" fontSize={24}>Produce spectacular video, audio and photo content and even more, without any limitations</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>Produce spectacular video, audio and photo content and even more, without any limitations</Text>
               <div className="headerButtonsWrapper">
                 <Button href="/" textTransform="uppercase">download now</Button>
                 <Button href="/" textTransform="uppercase" background={false}>learn more</Button>
                 <div></div>
+              </div>
+              <div className="headerButtonsWrapper mobile">
+                <Button backgroundColor="orange" padding="13px 24px" fontSize={14} href="/" textTransform="uppercase">GET $5 COUPON CODE</Button>
               </div>
             </div> 
           </PageContentWrapper>

@@ -26,6 +26,13 @@ const StyledCarouselWrapper = styled.div`
   .slick-list{
     padding-bottom: 20px;
   }
+
+  @media (max-width: 750px) {
+    .slick-list{
+      padding-bottom: 10;
+    }
+  }
+
 `;
 
 export default class ReviewSlider extends Component {

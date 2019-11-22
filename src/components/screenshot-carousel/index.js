@@ -5,8 +5,15 @@ import styled from 'styled-components';
 import Slide1 from '../../images/video-editor/slider1.png';
 import Slide2 from '../../images/video-editor/slider2.png';
 
+import Slide1Big from '../../images/video-editor/slider1-2x.png';
+import Slide2Big from '../../images/video-editor/slider2-2x.png';
+
 import LeftArrow from '../../images/common/icons/arrow-left.svg';
 import RightArrow from '../../images/common/icons/arrow-right.svg';
+
+import CloseButton from '../../images/common/icons/slider_close.svg';
+import LArrowPopup from '../../images/common/icons/slider_arrow_left.svg';
+import RArrowPopup from '../../images/common/icons/slider_arrow_right.svg';
 
 const StyledCarouselWrapper = styled.div`
     .slick-dots li button:before{
@@ -79,16 +86,48 @@ const StyledCarouselWrapper = styled.div`
         display:block !important;
         margin:auto;
 
-    &.visible{
-        cursor: pointer;
-        box-shadow: 0px 3px 6px #ffffff;
-        transition: 0.15s linear;
-    
-        &:hover{ 
-            box-shadow: 0px 3px 6px #00000029;
+        &.visible{
+            cursor: pointer;
+            box-shadow: 0px 3px 6px #ffffff;
+            transition: 0.15s linear;
+        
+            &:hover{ 
+                box-shadow: 0px 3px 6px #00000029;
+            }
         }
     }
-}
+    @media (max-width: 1024px) {
+        padding: 24px;
+        box-sizing: border-box;
+        padding-top:0;
+
+        .carouselImage.visible{
+            box-shadow: 0px 3px 6px #00000029;
+            width: 96% !important;
+        }
+    }
+
+    @media (max-width: 750px) {
+        padding: 0px;
+
+        .carouselImage.visible{
+            width: 90% !important;
+            box-shadow: 0px 6px 30px #0000004D;
+
+            &:hover{
+                box-shadow: 0px 6px 30px #0000004D;
+            }
+        }
+
+        .slick-list{
+            padding-bottom: 40px;
+            padding-top: 30px;
+        }
+
+        .visibleSlider{
+            margin-top:20px;
+        }
+    }
 `;
 
 const StyledPopupCarousel = styled.div`
@@ -98,7 +137,7 @@ const StyledPopupCarousel = styled.div`
     top: 0;
     z-index: 5;
     display: ${props => props.CarouselIsShow ? "block" : "none"};
-    background-color: #cecece;
+    background-color: rgba(51, 51, 51, 0.9);
 
     .popupCarousel{
         margin: auto;
@@ -114,25 +153,52 @@ const StyledPopupCarousel = styled.div`
 
         .slick-prev{
             left: 30px;
+            background-image: url(${LArrowPopup});
         }
         .slick-next{
             right: 30px;
+            background-image: url(${RArrowPopup});
+        }
+
+        .slick-prev, .slick-next{
+            opacity: 0.7;
+            width: 40px;
+            height: 41px;        
+            background-color: transparent;
+            transition: none;
+
+            &:hover{
+                opacity: 1;
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+
+        .slick-next:focus{
+            background-image: url(${RArrowPopup}); 
+            background-color: transparent;
+        }
+
+        .slick-prev:focus{
+            background-image: url(${LArrowPopup}); 
+            background-color: transparent;
         }
     }
 
     .closeCarousel{
-        width: 50px;
-        height: 60px;
-        color: #ffffff;
+        background-image: url(${CloseButton});
+        width: 40px;
+        height: 40px;
         position: absolute;
         top: 30px;
-        font-size: 60px;
+        font-size: 36px;
         right: 30px;
         text-align: center;
         cursor: pointer;
+        opacity: 0.7;
 
         &:hover{
-            color: #333333;
+            opacity: 1;
         }
     }
 `;
@@ -145,13 +211,15 @@ export default class ScreenshotsCarousel extends Component {
         this.state = {
           nav1: null,
           nav2: null,
-          CarouselIsShow: false
+          CarouselIsShow: false,
+          width: 0
         };
-        this.toggleCarousel = this.toggleCarousel.bind(this)
+        this.toggleCarousel = this.toggleCarousel.bind(this);
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
     toggleCarousel(){
-        this.setState({CarouselIsShow: !this.state.CarouselIsShow})
+        this.state.width > 1050 && this.setState({CarouselIsShow: !this.state.CarouselIsShow})
     }
 
     componentDidMount() {
@@ -159,9 +227,29 @@ export default class ScreenshotsCarousel extends Component {
           nav1: this.slider1,
           nav2: this.slider2
         });
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ 
+            width: window.innerWidth, 
+        });
+
+        this.state.width < 1050 && 
+            this.setState({ 
+                CarouselIsShow: false, 
+            });
     }
 
   render() {
+
+    const isMobile = this.state.width < 1050;
+
     return (
       <StyledCarouselWrapper id={this.props.id}>
 
@@ -173,15 +261,15 @@ export default class ScreenshotsCarousel extends Component {
                 fade={true}
                 slidesToShow={1}
             >
-                <img className="carouselImage" src={Slide1} alt="slide 1"/>
-                <img className="carouselImage" src={Slide2} alt="slide 2"/>
+                <img className="carouselImage" src={Slide1Big} alt="slide 1"/>
+                <img className="carouselImage" src={Slide2Big} alt="slide 2"/>
             </Slider>
-            <div onClick={this.toggleCarousel} className="closeCarousel">×</div>
+            <div onClick={this.toggleCarousel} className="closeCarousel"></div>
         </StyledPopupCarousel>
 
         <Slider 
             fade={true}
-            arrows={true}
+            arrows={isMobile ? false : true}
             dots={true}
             asNavFor={this.state.nav1}
             ref={slider => (this.slider2 = slider)}

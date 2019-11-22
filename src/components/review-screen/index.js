@@ -53,6 +53,29 @@ const StyledScreen = styled.div`
             margin: auto;
         }
     }
+    @media (max-width: 1500px) {
+        grid-template-columns: 60% auto;
+    }
+
+    @media (max-width: 1024px) {
+        display: block;
+        max-width: 600px;
+        margin: auto;
+
+        .container{
+            padding-top: 90px;
+        }
+    }
+
+    @media (max-width: 750px) {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .container{
+            padding-top: 60px;
+        }
+    }
 `;
 
 const ReviewsScreen = () => {

@@ -81,6 +81,14 @@ const StyledButton = styled.div`
         }
     }
 
+    @media (max-width: 1024px) {
+        &:hover{
+            .textButtonStyles{
+                text-decoration: none;
+            }
+        }
+    }
+
     ${props => props.selected && SelectedStyles}
     
 `;
@@ -105,6 +113,39 @@ const StyledCategorySelector = styled.div`
     .buttonWrapper{
         display: inline-flex;
         align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+        width: 710px;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+        height: 35px;
+
+        .textButtonStyles{
+            font-size: 15px;
+
+            &:before{
+                height: 21px;
+                width: 21px;
+                background-size: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        height: 28px;
+        padding: 1px;
+
+        .textButtonStyles{
+            padding-left: 21px;
+
+            &:before{
+                height: 19px;
+                width: 14px;               
+            }
+        }
     }
 `;
 

@@ -17,6 +17,11 @@ import ImageConverterImage from '../../images/main-page/slider_image_converter.p
 const ContentWrapper = styled.div`
     margin-top: 150px;
     margin-bottom: 100px;
+
+    @media (max-width: 1024px) {
+        margin-top: 0;
+        margin-bottom:0;
+    }
 `;
 
 function renderContent (props) {
