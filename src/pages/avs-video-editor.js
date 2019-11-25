@@ -267,7 +267,7 @@ const PayPagesWrapper = styled.div`
 const SecondPage = ({ pageContext, t }) => {
 
   return (
-    <Layout pageContext={pageContext} t={t}>
+    <Layout availableLocales={pageContext.availableLocales} locate={pageContext.locale} t={t}>
       <PayPagesWrapper>
         <div className="headerBackground">
           <PageContentWrapper>

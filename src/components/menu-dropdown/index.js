@@ -33,13 +33,12 @@ const StyledMenuDropdown = styled.div`
     position: absolute;
     left: 0;
     top: 100%;
+    padding-top: 20px;
+
+    ${props => props.col && "display: grid; grid-template-columns: auto auto"};
 
     &>a{
         min-width:100%;
-    }
-
-    &>div:first-child {
-        margin-top:20px;
     }
 
     @media (max-width: 1050px) {

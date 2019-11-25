@@ -171,12 +171,14 @@ const StyledProductBox = styled.div`
     }
 `;
 
-class SomethingElseScreen extends React.Component {
+class SomethingElseScreen extends React.PureComponent {
 
     constructor(props) {
         super(props);
+
         this.state = {
-          width: 0
+            isTablet: false,
+            isMobile: false
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
@@ -191,22 +193,20 @@ class SomethingElseScreen extends React.Component {
     }
 
     updateWindowDimensions() {
-        this.setState({ 
-            width: window.innerWidth, 
-        });
+
+        this.setState({
+            isTablet: window.innerWidth < 1050,
+            isMobile: window.innerWidth < 750
+        })
     }
 
     render() {
-
-        const isTablet = this.state.width < 1050;
-        const isMobile = this.state.width < 750;
-
         return(
             <StyledWrapper>
                 <PageContentWrapper>
 
-                {!isTablet 
-                ?   <>
+                {!this.state.isTablet ?
+                   <>
                         <Text color="#3D3D3D" fontSize={40} fontWeight={600} className="bodyHeader">Looking for something else?</Text>
                         <div className="productsContainer">
                         <StyledProductBox>
@@ -252,7 +252,7 @@ class SomethingElseScreen extends React.Component {
                         <Slider 
                             arrows={true}
                             infinite={true}
-                            slidesToShow={isMobile ? 1 : 2}
+                            slidesToShow={this.state.isMobile ? 1 : 2}
                             slidesToScroll={1}
                             swipeToSlide={false}
                             focusOnSelect={false}

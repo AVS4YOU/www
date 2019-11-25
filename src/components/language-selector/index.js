@@ -57,14 +57,10 @@ const StyledLanguageSelector = styled.div`
 
     .langDropdown{
 
-        margin-bottom: 11px;
+        margin-bottom: 20px;
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-
-        &:first-child {
-            margin-top:12px;
-        }
 
         &:before{
             content: '';
@@ -144,7 +140,7 @@ const LanguageSelectorWrapperMobile = styled.div`
     margin: auto;
 `;
 
-class LanguageSelector extends React.Component {
+class LanguageSelector extends React.PureComponent {
 
     constructor(props) {
         super(props);
@@ -170,18 +166,16 @@ class LanguageSelector extends React.Component {
                         <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
                             <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
                         </BackSubmenuButton> 
-                        
-                        {this.props.pageContext.availableLocales.map((item) =>
-                            this.props.pageContext.locale !== item.value 
+                        {this.props.availableLocales.map((item) =>
+                            this.props.locate !== item.value 
                                 ? <DropdownElement key={item.value} className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                                 : <DropdownElement key={item.value} className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                         )}
                     </MenuDropdown> 
                 </div>
-                
                 <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
-                    {this.props.pageContext.availableLocales.map((item) =>
-                        this.props.pageContext.locale !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                    {this.props.availableLocales.map((item) =>
+                        this.props.locate !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                     )}
                 </MenuItem>
             </StyledLanguageSelector>

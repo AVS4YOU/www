@@ -247,7 +247,6 @@ export default class ScreenshotsCarousel extends Component {
     }
 
   render() {
-
     const isMobile = this.state.width < 1050;
 
     return (

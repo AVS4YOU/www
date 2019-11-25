@@ -26,7 +26,7 @@ const StyledMainContentWrapper = styled.div`
     }
 `;
 
-class MainContentWrapper extends React.Component{
+class MainContentWrapper extends React.PureComponent{
 
     constructor(props){
         super(props)

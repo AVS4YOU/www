@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import MenuDropdown from '../menu-dropdown'
 
 const MediaWidthStyle = css`
-    padding: 0 18px;
+    padding: 0 15px;
 
     .arrowStyle:after{
         margin-left:5px;
@@ -136,7 +136,7 @@ const StyledMenuItem = styled.div`
     }
 `;
 
-class MenuItem extends React.Component {
+class MenuItem extends React.PureComponent  {
 
     constructor(props) {
         super(props);
@@ -167,7 +167,7 @@ class MenuItem extends React.Component {
                 </Text>
                 {this.props.isDropdown 
                     ? 
-                        <MenuDropdown submenuOpen={this.state.submenuOpen}>
+                        <MenuDropdown col={this.props.col} submenuOpen={this.state.submenuOpen}>
                             {this.props.children}
                             <BackSubmenuButton submenuOpen={this.state.submenuOpen} onClick={this.toggleSubmenu}>
                                 <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>

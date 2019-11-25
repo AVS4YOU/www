@@ -11,7 +11,6 @@ import Header from "./header";
 import styled from 'styled-components';
 import "./layout.css";
 import Footer from "./footer";
-import { useTranslation } from "react-i18next";
 
 const StyledLayout = styled.div`
   .flagBackground{
@@ -40,19 +39,42 @@ const StyledLayout = styled.div`
   }
 `;
 
-const Layout = ({ children, pageContext }) => {
+class Layout extends React.PureComponent {
 
-  const {t} = useTranslation();
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: 0
+    }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
 
-  return ( 
-    <>
-      <Header pageContext={pageContext}/>
-      <StyledLayout>
-        <main>{children}</main>
-      </StyledLayout>
-      <Footer pageContext={pageContext} t={t}/>
-    </>
-  )
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ 
+        width: window.innerWidth
+    });
+  }
+
+  render(){
+    return ( 
+      <>
+        <Header availableLocales={this.props.availableLocales} locate={this.props.locate} t={this.props.t}/>
+        <StyledLayout>
+          <main>{this.props.children}</main>
+        </StyledLayout>
+        <Footer locate={this.props.locate} t={this.props.t}/>
+      </>
+    )
+  }
 }
 
 Layout.propTypes = {

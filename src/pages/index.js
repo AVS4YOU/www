@@ -112,7 +112,7 @@ const MainPageWrapper = styled.div`
 
 const Page = ({ pageContext, t }) => {
   return (
-    <Layout pageContext={pageContext} t={t}>
+    <Layout availableLocales={pageContext.availableLocales} locate={pageContext.locale} t={t}>
       <MainPageWrapper>
         <div className="headerBackground">
           <PageContentWrapper>

@@ -84,54 +84,54 @@ class Footer extends React.Component{
             <StyledFooter className="footerStyles">
                 <FooterGridContainer>
                     <FooterItem >
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/" : this.props.pageContext.locale}/`}>
+                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
                         </Link>
                     </FooterItem>
                     <FooterItem >
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/" : this.props.pageContext.locale}/`}>
+                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
                         </Link>
                     </FooterItem>
                     <FooterItem >
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/" : this.props.pageContext.locale}/`}>
+                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
                         </Link>
                     </FooterItem>
                     <FooterItem >
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/second-page" : this.props.pageContext.locale}/second-page`}>
+                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/" : this.props.pageContext.locale}/`}>
+                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.pageContext.locale === "en" ? "/" : this.props.pageContext.locale}/`}>
+                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
                         </Link>
                     </FooterItem>
                     <div className="footer-links-box last">
-                        <Link className="footerLogoLink" to={`/${this.props.pageContext.locale === "en" ? "/" : '/' + this.props.pageContext.locale}`}>
+                        <Link className="footerLogoLink" to={`/${this.props.locale === "en" ? "/" : '/' + this.props.locale}`}>
                             <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                         </Link>
                         <div>

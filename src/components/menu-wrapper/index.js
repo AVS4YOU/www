@@ -10,6 +10,14 @@ const StyledMenuWrapper = styled.div`
     width: 100%;
     height:60px;
     background-color: #32393e;
+
+    &.offAnimate{
+        transition: none;
+
+        div{
+            transition: none;
+        }
+    }
 `;
 
 const CloseMobileMenu = styled.div`
@@ -103,23 +111,73 @@ const LogoWrapperMobile = styled.a`
     }
 `;
 
-class MenuWrapper extends React.Component {
+class MenuWrapper extends React.PureComponent {
 
     constructor(props) {
         super(props);
-        this.state = {open: false};
+        this.nowIsTablet = false;
+        this.state = {
+            open: false,
+            isTablet: false,
+            offAnimate: false
+        };
         this.toggleMenu = this.toggleMenu.bind(this);
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+
+        this.setState({
+            isTablet: window.innerWidth < 1050,
+        })
+    }
+
+    componentDidUpdate(){
+        
+        if(this.nowIsTablet !== this.state.isTablet){
+
+            this.nowIsTablet = this.state.isTablet;
+            this.setState({
+                open: false,
+                offAnimate: true
+            });
+
+            document.body.style.overflow = 'unset';
+
+            setTimeout(
+                function() {
+                    this.setState({offAnimate: false});
+                }
+                .bind(this),
+                300
+            ); 
+        }
     }
 
     toggleMenu() {
+
+        if(!this.state.open){
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
         this.setState({
             open: !this.state.open
         });
     }
     render(){
-
         return(
-            <StyledMenuWrapper>
+            <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
                 <StyledMenuGrid>
                     <Link to="/">
                         <LogoWrapper href="/">
@@ -134,9 +192,9 @@ class MenuWrapper extends React.Component {
                         <LogoWrapperMobile className="mobileBlock" href="/">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
-                        <LanguageSelector pageContext={this.props.pageContext} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
+                        <LanguageSelector availableLocales={this.props.availableLocales} locate={this.props.locate} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     </MenuItemsWrapper>
-                    <LanguageSelector pageContext={this.props.pageContext} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
+                    <LanguageSelector availableLocales={this.props.availableLocales} locate={this.props.locate} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
                     <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
                 </StyledMenuGrid>
             </StyledMenuWrapper>
