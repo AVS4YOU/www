@@ -118,14 +118,14 @@ const Page = ({ pageContext, t }) => {
           <PageContentWrapper>
             <div className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{t("avs4you")}</b> — {t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>Produce spectacular video, audio and photo content and even more, without any limitations</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
               <div className="headerButtonsWrapper">
-                <Button href="/" textTransform="uppercase">download now</Button>
-                <Button href="/" textTransform="uppercase" background={false}>learn more</Button>
+                <Button href="/" textTransform="uppercase">{t("download now")}</Button>
+                <Button href="/" textTransform="uppercase" background={false}>{t("learn more")}</Button>
                 <div></div>
               </div>
               <div className="headerButtonsWrapper mobile">
-                <Button backgroundColor="orange" padding="13px 24px" fontSize={14} href="/" textTransform="uppercase">GET $5 COUPON CODE</Button>
+                <Button backgroundColor="orange" padding="13px 24px" fontSize={14} href="/" textTransform="uppercase">{t("GET $5 COUPON CODE")}</Button>
               </div>
             </div> 
           </PageContentWrapper>
