@@ -44,14 +44,25 @@ class Layout extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      width: 0
+      isTablet: false,
+      isMobile: false
     }
+
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+      this.updateWindowDimensions();
+
+      if(this.state.isMobile == true) {
+        this.props.getDevice("Mobile");
+      } else if (this.state.isTablet == true) {
+        this.props.getDevice("Tablet");
+      } else {
+        this.props.getDevice("Desktop");
+      }
+      
+      window.addEventListener('resize', this.updateWindowDimensions);
   }
 
   componentWillUnmount() {
@@ -59,9 +70,21 @@ class Layout extends React.PureComponent {
   }
 
   updateWindowDimensions() {
-    this.setState({ 
-        width: window.innerWidth
-    });
+      this.setState({
+          isTablet: window.innerWidth < 1050,
+          isMobile: window.innerWidth < 750
+      })
+  }
+
+  componentDidUpdate(){
+
+    if(this.state.isMobile == true) {
+      this.props.getDevice("Mobile");
+    } else if (this.state.isTablet == true) {
+      this.props.getDevice("Tablet");
+    } else {
+      this.props.getDevice("Desktop");
+    }
   }
 
   render(){

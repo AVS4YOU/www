@@ -8,7 +8,8 @@ import BackgroundHeaderImage from '../images/main-page/header-image.png';
 import Button from '../components/button';
 import MainContentWrapper from '../components/main-content-wrapper';
 import SomethingElseScreen from '../components/something-else-screen';
-import ReviewScreen from '../components/review-screen'
+import ReviewScreen from '../components/review-screen';
+import GetCouponMobile from '../components/get-coupon-mobile';
 
 const MainPageWrapper = styled.div`
 
@@ -47,24 +48,11 @@ const MainPageWrapper = styled.div`
     align-items: center;
     grid-gap: 30px;
     padding-top: 60px;
-
-    &.mobile{
-      display:none;
-    }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;
-    }
-
-    .headerButtonsWrapper{
-      display:none;
-
-      &.mobile{
-        display: table;
-        margin: auto;
-      }
     }
 
     .headerContentWrapper{
@@ -110,23 +98,41 @@ const MainPageWrapper = styled.div`
   }
 `;
 
-const Page = ({ pageContext, t }) => {
+class Page extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      device: "",
+    };
+
+    this.getDevice = this.getDevice.bind(this);
+  }
+
+  getDevice(device){
+    this.setState({ device: device });
+  }
+
+  render(){
   return (
-    <Layout availableLocales={pageContext.availableLocales} locate={pageContext.locale} t={t}>
+    <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
           <PageContentWrapper>
             <div className="headerContentWrapper" >
-              <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{t("avs4you")}</b> — {t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
-              <div className="headerButtonsWrapper">
-                <Button href="/" textTransform="uppercase">{t("download now")}</Button>
-                <Button href="/" textTransform="uppercase" background={false}>{t("learn more")}</Button>
-                <div></div>
-              </div>
-              <div className="headerButtonsWrapper mobile">
-                <Button backgroundColor="orange" padding="13px 24px" fontSize={14} href="/" textTransform="uppercase">{t("GET $5 COUPON CODE")}</Button>
-              </div>
+              <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
+
+              {this.state.device == "Desktop" 
+              ? 
+                <div className="headerButtonsWrapper">
+                  <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
+                  <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
+                  <div></div>
+                </div>
+              :
+                <GetCouponMobile t={this.props.t}/>
+              }
             </div> 
           </PageContentWrapper>
         </div>
@@ -137,5 +143,6 @@ const Page = ({ pageContext, t }) => {
       </MainPageWrapper>
     </Layout>
   );
+  }
 };
 export default withI18next({ ns: "common" })(Page);
