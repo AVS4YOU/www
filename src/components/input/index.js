@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Text from '../text';
+import PropTypes from 'prop-types';
 
 import AlertIcon from '../../images/common/icons/alert.svg';
 
@@ -116,9 +117,8 @@ class Input extends React.Component {
         this.onFocus = this.onFocus.bind(this);
         this.onBlur = this.onBlur.bind(this);
     }
-
-    emailRegex = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
-    classes = "";
+    inputErrorText = "";
+    emailRegex = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
 
     onFocus(){
         this.setState({
@@ -137,20 +137,46 @@ class Input extends React.Component {
             email: this.state.email
         }
 
-        if((data.email === "" || data.email === null || data.email === undefined) && !isButton){
-            this.setState({
-                isFocus: false
-            })
-        } else {
+        var isEmpty = data.email === "" || data.email === null || data.email === undefined;
 
-            if(!data.email.match(this.emailRegex)){
+        if(isButton){
+
+            if(isEmpty){
                 this.setState({
-                    error: true
+                    error: true,
+                    isFocus: false
                 })
+
+                this.props.checkValid(false);
+                this.inputErrorText = this.props.valueEmptyText;
+            } else if(this.props.regexp !== "" && !data.email.match(this.props.regexp)){
+                this.setState({
+                    error: true   
+                })
+
+                this.props.checkValid(false);
+                this.inputErrorText = this.props.valueIncorrectText;
             } else {
+                this.props.checkValid(true);
                 this.setState({
                     error: false
                 })
+            }
+
+        } else {
+            if(isEmpty){
+                this.setState({
+                    isFocus: false,
+                    error: false
+                })
+            } else if(this.props.regexp !== ""){
+                if(!data.email.match(this.props.regexp)){
+                    this.setState({
+                        error: true   
+                    })
+
+                    this.inputErrorText = this.props.valueIncorrectText;
+                }
             }
         }
     }
@@ -175,19 +201,25 @@ class Input extends React.Component {
                         ? "focus error" : "error" 
                         : this.state.isFocus && "focus"}>
                 <input
-                    name="email"
+                    name={this.props.inputName}
                     value={this.state.email}
                     onFocus={this.onFocus} 
                     onBlur={this.onBlur} 
                     onChange={this.handleUserInput}
                     className="main-input" />
-                <Text className="label-input">Enter your email</Text>
-                <div className="errorBlock">
-                    <Text fontSize={13} fontWeight={500}>Email is incorrect</Text>
-                </div>
+                <Text className="label-input">{this.props.inputLabel}</Text>
+                {this.props.valueEmptyText && 
+                    <div className="errorBlock">
+                        <Text fontSize={13} fontWeight={500}>{this.inputErrorText}</Text>
+                    </div>
+                }  
             </StyledInputWrapper>
         )
     }
 }
+
+Input.defaultProps = {
+    regexp: ""
+};
 
 export default Input;

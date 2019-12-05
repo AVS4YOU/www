@@ -14,6 +14,7 @@ const StyledGetCouponWrapper = styled.div`
     .getCouponButton{
         display: block;
         text-align: center;
+        outline: none;
     }
 
     .agreeData{
@@ -68,12 +69,19 @@ class GetCouponMobile extends React.PureComponent {
         super(props);
         this.state={
             isShown: false,
-            getCouponToggle: false
+            getCouponToggle: false,
+            checked: false,
+            validForm: false
         }
         
         this.toShowForm = this.toShowForm.bind(this);
         this.getCoupon = this.getCoupon.bind(this);
+        this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
+        this.checkValid = this.checkValid.bind(this);
+        this._handleKeyDown = this._handleKeyDown.bind(this);
     };
+
+    emailRegexp = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
 
     toShowForm(){
         this.setState({
@@ -81,25 +89,74 @@ class GetCouponMobile extends React.PureComponent {
         })
     };
 
+    checkValid(valid){
+        this.setState({
+            validForm: valid
+        }) 
+
+        if(!valid){
+            console.log("form invalid!")
+        } else if(!this.state.checked){
+            console.log("Checkbox not checked")
+        } else {
+            console.log("form valid")
+        }
+    }
+
+    _handleKeyDown = (e) => {
+        console.log("enter")
+        if (e.key === 'Enter') {
+          this.getCoupon();
+        }
+      }
+
     getCoupon(){
         this.setState({
             getCouponToggle: !this.state.getCouponToggle
         })
     };
 
+    handleCheckboxChange(){
+        this.setState({
+            checked: !this.state.checked
+        })
+    }
+
     render(){
         return(
             <StyledGetCouponWrapper>
                 
-                {this.state.isShown && <Input getCouponToggle={this.state.getCouponToggle}/>}
-                <Button className="getCouponButton" onClick={this.state.isShown ? this.getCoupon : this.toShowForm} backgroundColor="orange" padding="13px 24px" fontSize={14} textTransform="uppercase">
+                {this.state.isShown && <Input 
+                    tabIndex="0"
+                    checkValid={this.checkValid} 
+                    getCouponToggle={this.state.getCouponToggle}
+                    inputName="email"
+                    inputLabel="Enter your email"
+                    valueIncorrectText="Email is incorrect"
+                    valueEmptyText="Email is empty"
+                    regexp={this.emailRegexp}
+                    onKeyDown={this._handleKeyDown}
+                    />}
+                <Button 
+                    tabIndex="1"
+                    className="getCouponButton" 
+                    onClick={this.state.isShown ? this.getCoupon : this.toShowForm}
+                    backgroundColor="orange" 
+                    padding="13px 24px"
+                    fontSize={14} 
+                    textTransform="uppercase"
+                    >
                     {this.state.isShown 
                         ? this.props.t("get coupon") 
                         : this.props.t("get $5 coupon code")}
                 </Button>
                 {this.state.isShown &&
                     <div className="agreeData">
-                        <input type="checkbox" />
+                        <input 
+                            type="checkbox"
+                            checked={this.state.checked}
+                            onChange={this.handleCheckboxChange}
+                         />
                         <Text 
                             fontSize={12}
                             fontWeight={300}
