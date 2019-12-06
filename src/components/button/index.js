@@ -23,6 +23,7 @@ const StyledButton = styled.a`
     
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
 
     .buttonText{
         text-decoration: underline;

@@ -19,6 +19,10 @@ const MainPageWrapper = styled.div`
     font-weight: 600;
   }
 
+  .getCouponMobile{
+    display: none;
+  }
+
   .headerText{
     padding-bottom:25px;
   }
@@ -53,6 +57,14 @@ const MainPageWrapper = styled.div`
   @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;
+    }
+
+    .headerButtonsWrapper{
+      display:none;
+    }
+
+    .getCouponMobile{
+      display: table;
     }
 
     .headerContentWrapper{
@@ -123,17 +135,14 @@ class Page extends React.PureComponent {
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
               <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
 
-              {this.state.device == "Desktop" 
-              ? 
-                <div className="headerButtonsWrapper">
-                  <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
-                  <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
-                  <div></div>
-                </div>
-              :
-                <GetCouponMobile t={this.props.t}/>
-              }
-            </div> 
+              <div className="headerButtonsWrapper">
+                <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
+                <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
+                <div></div>
+              </div>
+
+              <GetCouponMobile className="getCouponMobile" t={this.props.t}/>
+            </div>
           </PageContentWrapper>
         </div>
         

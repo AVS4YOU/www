@@ -142,7 +142,7 @@ class GetCouponMobile extends React.PureComponent {
 
     render(){
         return(
-            <StyledGetCouponWrapper>
+            <StyledGetCouponWrapper className={this.props.className}>
                 
                 {this.state.isShown && <Input 
                     tabIndex="0"

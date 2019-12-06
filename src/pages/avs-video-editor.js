@@ -35,12 +35,10 @@ class SecondPage extends React.PureComponent {
 
   getDevice(device){
     this.setState({ device: device });
-    console.log(this.state.device)
   }
 
 render(){
 
-  console.log(this.state.device)
     return (
       <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
