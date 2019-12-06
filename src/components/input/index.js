@@ -173,6 +173,7 @@ class Input extends React.Component {
                         ? "focus error" : "error" 
                         : this.state.isFocus && "focus"}>
                 <input
+                    onKeyPress={this.props.onKeyPress}
                     name={this.props.inputName}
                     value={this.state.email}
                     onFocus={this.onFocus} 

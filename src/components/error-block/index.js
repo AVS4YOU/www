@@ -6,7 +6,7 @@ import AlertIcon from '../../images/common/icons/alert.svg';
 const StyledErrorBlock = styled.div`
     display:none;
     position:absolute;
-    top: 54px;
+    bottom: -57px;
     padding: 15px;
     background-color:#ffffff;
     background-image: url(${AlertIcon});

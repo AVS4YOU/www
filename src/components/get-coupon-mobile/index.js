@@ -28,6 +28,7 @@ const StyledGetCouponWrapper = styled.div`
         &.error{
             .errorBlock{
                 display: block;
+                bottom: -60px;
             }
         }
 
@@ -87,7 +88,7 @@ class GetCouponMobile extends React.PureComponent {
         this.getCoupon = this.getCoupon.bind(this);
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
         this.checkValid = this.checkValid.bind(this);
-        this._handleKeyDown = this._handleKeyDown.bind(this);
+        this.keyPressed = this.keyPressed.bind(this);
     };
 
     emailRegexp = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
@@ -120,12 +121,11 @@ class GetCouponMobile extends React.PureComponent {
         }
     }
 
-    _handleKeyDown = (e) => {
-        console.log("enter")
-        if (e.key === 'Enter') {
-          this.getCoupon();
+    keyPressed(event) {
+        if (event.key === "Enter") {
+            this.getCoupon()
         }
-      }
+    }
 
     getCoupon(){
         this.setState({
@@ -146,6 +146,7 @@ class GetCouponMobile extends React.PureComponent {
                 
                 {this.state.isShown && <Input 
                     tabIndex="0"
+                    onKeyPress={this.keyPressed}
                     checkValid={this.checkValid} 
                     getCouponToggle={this.state.getCouponToggle}
                     inputName="email"
