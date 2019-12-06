@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Text from '../text';
-import PropTypes from 'prop-types';
-
-import AlertIcon from '../../images/common/icons/alert.svg';
-
+import ErrorBlock from '../error-block';
 
 const StyledInputWrapper = styled.div`
     max-width: 700px;
@@ -74,31 +71,6 @@ const StyledInputWrapper = styled.div`
 
         .errorBlock{
             display:block;
-            position:absolute;
-            top: 54px;
-            padding: 15px;
-            background-color:#ffffff;
-            background-image: url(${AlertIcon});
-            background-repeat: no-repeat;
-            background-position: 12px 12px;
-            width: auto;
-            max-width: 200px;
-            margin: auto;
-            left: 0;
-            border-radius: 5px;
-            padding-left: 37px;
-            box-sizing: border-box;
-    
-            &:before{
-                content: '';
-                display: block;
-                position: absolute;
-                top: -19px;
-                left: 10px;
-                z-index: 1;
-                border: 10px solid transparent;
-                border-bottom: 10px solid #fff;
-            }
         } 
     }
 `;
@@ -209,10 +181,10 @@ class Input extends React.Component {
                     className="main-input" />
                 <Text className="label-input">{this.props.inputLabel}</Text>
                 {this.props.valueEmptyText && 
-                    <div className="errorBlock">
-                        <Text fontSize={13} fontWeight={500}>{this.inputErrorText}</Text>
-                    </div>
-                }  
+                    <ErrorBlock className="errorBlock">
+                        {this.inputErrorText}
+                    </ErrorBlock>
+                }
             </StyledInputWrapper>
         )
     }

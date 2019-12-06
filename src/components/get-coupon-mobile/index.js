@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from '../button';
 import Input from '../input';
 import Text from '../text';
+import ErrorBlock from '../error-block';
 
 const StyledGetCouponWrapper = styled.div`
     display: table;
@@ -22,6 +23,13 @@ const StyledGetCouponWrapper = styled.div`
         grid-template-columns: auto 1fr;
         grid-gap: 5px;
         margin-top: 10px;
+        position:relative;
+
+        &.error{
+            .errorBlock{
+                display: block;
+            }
+        }
 
         input{
             cursor: pointer;
@@ -71,7 +79,8 @@ class GetCouponMobile extends React.PureComponent {
             isShown: false,
             getCouponToggle: false,
             checked: false,
-            validForm: false
+            validForm: false,
+            checkBoxError: false
         }
         
         this.toShowForm = this.toShowForm.bind(this);
@@ -91,15 +100,23 @@ class GetCouponMobile extends React.PureComponent {
 
     checkValid(valid){
         this.setState({
-            validForm: valid
+            validForm: valid,
         }) 
 
-        if(!valid){
-            console.log("form invalid!")
-        } else if(!this.state.checked){
-            console.log("Checkbox not checked")
+        if(!this.state.checked){
+            this.setState({
+                checkBoxError: true
+            })
         } else {
-            console.log("form valid")
+            this.setState({
+                checkBoxError: false
+            })
+        }
+
+        if(valid && this.state.checked){
+            console.log("form valid!")
+        } else {
+            console.log("form invalid")
         }
     }
 
@@ -118,7 +135,8 @@ class GetCouponMobile extends React.PureComponent {
 
     handleCheckboxChange(){
         this.setState({
-            checked: !this.state.checked
+            checked: !this.state.checked,
+            checkBoxError: false
         })
     }
 
@@ -151,7 +169,7 @@ class GetCouponMobile extends React.PureComponent {
                         : this.props.t("get $5 coupon code")}
                 </Button>
                 {this.state.isShown &&
-                    <div className="agreeData">
+                    <div className={this.state.checkBoxError ? "agreeData error" : "agreeData"}>
                         <input 
                             type="checkbox"
                             checked={this.state.checked}
@@ -163,6 +181,9 @@ class GetCouponMobile extends React.PureComponent {
                             color="#ffffff" >
                             {this.props.t("I agree that my personal data may be collected, used and processed in accordance with the privacy policy")}
                         </Text>
+                        <ErrorBlock className="errorBlock">
+                            {this.props.t("Confirm agreement")}
+                        </ErrorBlock>
                     </div>
                 }
             </StyledGetCouponWrapper>
