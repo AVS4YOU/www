@@ -84,7 +84,6 @@ class GetCouponMobile extends React.PureComponent {
             infoIsShown: false
         }
         
-        this.toShowForm = this.toShowForm.bind(this);
         this.getCoupon = this.getCoupon.bind(this);
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
         this.checkValid = this.checkValid.bind(this);
@@ -95,8 +94,7 @@ class GetCouponMobile extends React.PureComponent {
 
     emailRegexp = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
 
-
-    toShowForm(){
+    toShowForm = () => {
         this.setState({
             isShown: !this.state.isShown
         })

@@ -3,8 +3,7 @@ import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuWrapper from '../menu-wrapper'
 
-
-const Header = ({availableLocales, className, locate, t}) => {
+const Header = ({availableLocales, locate, t}) => {
 
     return (
 

@@ -113,7 +113,7 @@ const StyledWrapper = styled.div`
     }
 
     .CarouselWrapper{
-        padding:5px;
+        padding: 1px 25px;
     }
 
     .slick-initialized .slick-slide.slick-current{
@@ -130,10 +130,6 @@ const StyledWrapper = styled.div`
         }
     }
 
-    @media (max-width: 1024px){
-        padding-bottom: 0;
-    }
-
     .slick-initialized .slick-slide>div{
         padding: 0 10px;
     }
@@ -144,10 +140,26 @@ const StyledWrapper = styled.div`
         .slick-slide {
           height: auto;
     
-          > div {
+          >div {
             height: 100%;
           }
     
+        }
+    }
+    
+    @media (max-width: 1024px){
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 750px) {
+        .slick-initialized .slick-slide>div{
+            background-color: #fff;
+        }
+    }
+
+    @media (max-width: 380px){
+        .CarouselWrapper{
+            padding: 1px 10px;
         }
     }
 `;
