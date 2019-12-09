@@ -4,6 +4,7 @@ import Button from '../button';
 import Input from '../input';
 import Text from '../text';
 import ErrorBlock from '../error-block';
+import InfoPopup from '../info-popup';
 
 const StyledGetCouponWrapper = styled.div`
     display: table;
@@ -35,7 +36,6 @@ const StyledGetCouponWrapper = styled.div`
         input{
             cursor: pointer;
             position:relative;
-            cursor: pointer;
             width: 0;
             height: 0;
             margin-right: 12px;
@@ -54,7 +54,6 @@ const StyledGetCouponWrapper = styled.div`
                     top: 1px;
                 }
             }
-
 
             &:before{
                 content: '';
@@ -81,7 +80,8 @@ class GetCouponMobile extends React.PureComponent {
             getCouponToggle: false,
             checked: false,
             validForm: false,
-            checkBoxError: false
+            checkBoxError: false,
+            infoIsShown: false
         }
         
         this.toShowForm = this.toShowForm.bind(this);
@@ -89,15 +89,35 @@ class GetCouponMobile extends React.PureComponent {
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
         this.checkValid = this.checkValid.bind(this);
         this.keyPressed = this.keyPressed.bind(this);
+        this.getCouponRequest = this.getCouponRequest.bind(this);
+        this.closePopupFunction = this.closePopupFunction.bind(this);
     };
 
     emailRegexp = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
+
 
     toShowForm(){
         this.setState({
             isShown: !this.state.isShown
         })
     };
+
+    closePopupFunction(){
+        this.setState({
+            infoIsShown: false
+        })
+    }
+
+    getCouponRequest = async () => {
+
+        const response = await fetch('http://192.168.3.164:8086/WeatherForecast')
+        const myJson = await response.json();
+        console.log(myJson);
+
+        this.setState({
+            infoIsShown: true
+        })
+    }
 
     checkValid(valid){
         this.setState({
@@ -115,7 +135,7 @@ class GetCouponMobile extends React.PureComponent {
         }
 
         if(valid && this.state.checked){
-            console.log("form valid!")
+            this.getCouponRequest();
         } else {
             console.log("form invalid")
         }
@@ -185,6 +205,7 @@ class GetCouponMobile extends React.PureComponent {
                         <ErrorBlock className="errorBlock">
                             {this.props.t("Confirm agreement")}
                         </ErrorBlock>
+                        {this.state.infoIsShown && <InfoPopup closePopupFunction={this.closePopupFunction}></InfoPopup>}
                     </div>
                 }
             </StyledGetCouponWrapper>
