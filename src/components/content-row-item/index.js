@@ -89,6 +89,12 @@ const RowContent = styled.div`
             left:0;
             top: 10px;
         }
+
+        &.LinkItem{
+            &:before{
+                content: none;
+            }
+        }
     }
 
     .HeaderListItem{

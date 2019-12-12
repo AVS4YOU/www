@@ -82,6 +82,7 @@ render(){
               <Text className="ListItem" color="#555555" fontWeight={500}>Open, modify and save video using popular codeсs H.264, H.265 (reading only), MPEG-4, etc.</Text>
               <Text className="ListItem" color="#555555" fontWeight={500}>Speed up HD video editing due to the integrated video cache technology</Text>
               <Text className="ListItem" color="#555555" fontWeight={500}>Use new automatic presets for powerful computers</Text>
+              <Text as="a" href="#" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
             </ContentRowItem>
 
             <ContentRowItem 
