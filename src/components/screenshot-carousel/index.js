@@ -2,12 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 
-import Slide1 from '../../images/video-editor/slider1.png';
-import Slide2 from '../../images/video-editor/slider2.png';
-
-import Slide1Big from '../../images/video-editor/slider1-2x.png';
-import Slide2Big from '../../images/video-editor/slider2-2x.png';
-
 import LeftArrow from '../../images/common/icons/arrow-left.svg';
 import RightArrow from '../../images/common/icons/arrow-right.svg';
 
@@ -149,6 +143,15 @@ const StyledPopupCarousel = styled.div`
             max-width: 1200px;
             padding: 100px;
             box-sizing: border-box;
+            height: 90vh;
+            max-height: 850px;
+            padding: 0;  
+            width: auto !important;         
+        }
+
+        .slick-track{
+            align-items: center;
+            display: flex;
         }
 
         .slick-prev{
@@ -248,6 +251,19 @@ export default class ScreenshotsCarousel extends Component {
 
   render() {
     const isMobile = this.state.width < 1050;
+    const slides =  this.props.slides;
+    const slidesPopup = this.props.slidesPopup;
+    const altText = this.props.altText;
+
+    const carouselImages = slides.length > 0 && 
+        slides.map((slide, i) => {
+            return(<img onClick={this.toggleCarousel} key={"CarouselItem_"+i} className="carouselImage visible" src={slide} alt={altText[i]}/>)
+        });
+
+    const PopupCarouselImages = slidesPopup.length > 0 && 
+        slidesPopup.map((slide, i) => {
+            return(<img key={"popupCarouselItem_"+i} className="carouselImage" src={slide} alt={altText[i]}/>)
+        });
 
     return (
       <StyledCarouselWrapper id={this.props.id}>
@@ -260,8 +276,7 @@ export default class ScreenshotsCarousel extends Component {
                 fade={true}
                 slidesToShow={1}
             >
-                <img className="carouselImage" src={Slide1Big} alt="slide 1"/>
-                <img className="carouselImage" src={Slide2Big} alt="slide 2"/>
+                {PopupCarouselImages}
             </Slider>
             <div onClick={this.toggleCarousel} className="closeCarousel"></div>
         </StyledPopupCarousel>
@@ -277,8 +292,7 @@ export default class ScreenshotsCarousel extends Component {
             focusOnSelect={false}
             className="visibleSlider"
         >
-          <img onClick={this.toggleCarousel} className="carouselImage visible" src={Slide1} alt="slide 1"/>
-          <img onClick={this.toggleCarousel} className="carouselImage visible" src={Slide2} alt="slide 2"/>
+            {carouselImages}
         </Slider>
       </StyledCarouselWrapper>
     );

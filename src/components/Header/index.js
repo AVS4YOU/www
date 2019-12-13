@@ -10,7 +10,7 @@ const Header = ({availableLocales, locate, t}) => {
         <MenuWrapper availableLocales={availableLocales} locate={locate} t={t} style={{ height: 60}}>
             <MenuItem menuItemText={t("Video software")}>
                 <DropdownElement path="/avs-video-editor" headerText="AVS Video Editor" descriptionText="Easily edit and create videos"/>
-                <DropdownElement path="/avs-video-editor" headerText="AVS Video Converter" descriptionText="Convert all key video formats"/>
+                <DropdownElement path="/avs-free-video-converter" headerText="AVS Video Converter" descriptionText="Convert all key video formats"/>
                 <DropdownElement path="/avs-video-editor" headerText="AVS Video Remaker" descriptionText="Edit videos without reconversion"/>
             </MenuItem>
             <MenuItem menuItemText={t("Audio software")}>

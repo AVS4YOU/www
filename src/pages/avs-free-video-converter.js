@@ -11,21 +11,28 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
-import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
-import HeaderImageMobile from '../images/video-editor/slider1.png';
+import HeaderImage from '../images/avs-free-video-converter/en_avs_video_converter.png';
+import HeaderImageMobile from '../images/avs-free-video-converter/en_avs_video_converter-mobile.png';
 
-import slideCarousel1 from '../images/video-editor/slider1.png';
-import slideCarousel2 from '../images/video-editor/slider2.png';
+import screen1 from '../images/avs-free-video-converter/vc_convert_all_key2.png';
+import screen2 from '../images/avs-free-video-converter/vc_convert_video_easily2.png';
+import screen3 from '../images/avs-free-video-converter/vc_convert_a_large_number.png';
+import screen4 from '../images/avs-free-video-converter/vc_edit_your_videos.png';
+import screen5 from '../images/avs-free-video-converter/vc_сonvert_and_share.png';
 
-import slidePopupCarousel1 from '../images/video-editor/slider1-2x.png';
-import slidePopupCarousel2 from '../images/video-editor/slider2-2x.png';
+import slideCarousel1 from '../images/avs-free-video-converter/slider1.png';
+import slideCarousel2 from '../images/avs-free-video-converter/slider2.png';
+import slideCarousel3 from '../images/avs-free-video-converter/slider3.png';
+import slideCarousel4 from '../images/avs-free-video-converter/slider4.png';
+import slideCarousel5 from '../images/avs-free-video-converter/slider5.png';
+import slideCarousel6 from '../images/avs-free-video-converter/slider6.png';
 
-import screen1 from '../images/video-editor/slider3.png';
-import screen2 from '../images/video-editor/slider4.png';
-import screen3 from '../images/video-editor/slider5.png';
-import screen4 from '../images/video-editor/slider2.png';
-import screen5 from '../images/video-editor/slider6.png';
-
+import slidePopupCarousel1 from '../images/avs-free-video-converter/slider_popup1.png';
+import slidePopupCarousel2 from '../images/avs-free-video-converter/slider_popup2.png';
+import slidePopupCarousel3 from '../images/avs-free-video-converter/slider_popup3.png';
+import slidePopupCarousel4 from '../images/avs-free-video-converter/slider_popup4.png';
+import slidePopupCarousel5 from '../images/avs-free-video-converter/slider_popup5.png';
+import slidePopupCarousel6 from '../images/avs-free-video-converter/slider_popup6.png';
 
 class SecondPage extends React.PureComponent {
 
@@ -50,8 +57,8 @@ render(){
           <div className="headerBackground">
             <PageContentWrapper>
               <div className="headerContentWrapper" >
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
+                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
                 <div className="buttonWrapper">
                   <Button href="/" color="#fff" padding="12px 37px" textTransform="uppercase" backgroundColor="orange" secondaryText="Windows 10/8/7/Vista/XP">download now</Button>
                 </div>
@@ -138,10 +145,11 @@ render(){
             <ReviewScreen />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
-          <ScreenshotsCarousel
-            slides={[slideCarousel1, slideCarousel2]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2]}
-            altText={["slideCarousel1", "slideCarousel2"]}
+          <ScreenshotsCarousel 
+            slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, slideCarousel5, slideCarousel6]}
+            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
+            
           />
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
