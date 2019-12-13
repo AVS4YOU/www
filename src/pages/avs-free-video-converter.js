@@ -87,64 +87,61 @@ render(){
                 id="overview"
                 imgLeft={true}
                 image={screen1}
-                headerText="Work with all key formats and HD videos"    
+                headerText="Сonvert all key video formats"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Open, modify and save video using popular codeсs H.264, H.265 (reading only), MPEG-4, etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Speed up HD video editing due to the integrated video cache technology</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use new automatic presets for powerful computers</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc.</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback</Text>
               <Text as="a" href="#" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 image={screen2}
-                headerText="Record your video"   
+                headerText="Convert video easily and fast"   
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Transfer video from DV/HDV cameras, webcams or VHS cameras</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Record media files from your PC screen</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Give a new life to old VHS tapes</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Convert videos in one click with improved settings for powerful computers</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Use hardware Intel® Media decoder with Intel® Quick Sync Video technology for H.264/AVC и VC-1 codecs. It speeds up preview and conversion processes significantly (only for Intel CPU with integrated Intel Graphics)</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Use software Intel® Media decoder for H.264/AVC and VC-1 codecs. This option is helpful for the users of AMD and old Intel processors</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={true}
               image={screen3}
-              headerText="Make your video look professional"    
+              headerText="Convert a large number of files at once"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Ccut out a particular scene or remove shaky and unnecessary parts</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Split videos regardless of both the video size and formats</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Join as many video files as you want</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Fix up any white balancing issues and color mismatches with color tuning</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Fix a shaky footage with video stabilization</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use chroma key effect to change your background</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}><span>Command Line Mode</span>Automate routine work using ready conversion templates without clicking the program buttons manually</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}><span>Batch Mode</span>Save your time spent on video conversion by using a batch mode which allows you to convert a large number of video files at once with easy-to-use configurations</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 image={screen4}
-                headerText="Make vivid slideshows"   
+                headerText="Edit your videos before conversion*"   
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Import images, add your voice or favourite audio tracks</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Insert captions, visual effects and transitions</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Create personal and corporate slideshows easily</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Split your videos into parts, by chapters, size and cut unnecessary scenes</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Change the aspect ratio of your video</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Use basic video editing effects to make your videos more breathtaking</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Convert video files with subtitles</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Export audio and images from your video</Text>
+              <Text className="ListItem footnote" color="#555555" fontWeight={500}>*This feature is available in a full version</Text>
             </ContentRowItem>
 
             <ContentRowItem
                 imgLeft={true}
                 image={screen5}
-                headerText="Share your video"    
+                headerText="Convert and share videos on Web"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Save the newly-made video in the desired format on your computer</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Adjust video for your iOS and Android devices</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Create video for YouTube, Video and other video hosting websites</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Publish your creative work in social networks</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}><span>Save video to any format or modern gadgets</span>Apple iPhone XS/XR/X/8/7, Apple iPad Pro, 2018, 2017, iPad Air 2 etc.; Samsung Galaxy S9/S8/S7, Galaxy Note 9/8/5, Galaxy Tab S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia XZ3/XZ2/XZ1, XZ2/XZ1 Compact</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}><span>Create DVD/Blu-ray discs</span>Convert from/to Blu-ray or DVD formats. Cut, apply effects, add colorful DVD/Blu-ray menus. Split your movie into chapters and burn DVD/Blu-ray discs</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}><span>Convert videos for popular social platforms</span>Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox</Text>
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Editor 9.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Converter 12</Text>
           <ScreenshotsCarousel 
             slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, slideCarousel5, slideCarousel6]}
             slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}

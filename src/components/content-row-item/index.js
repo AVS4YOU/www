@@ -27,10 +27,16 @@ const RowContent = styled.div`
         max-width: 722px;
         position: relative;
         z-index: 2;
+        display:block;
+
     }
 
     .bgOrange{
         position:relative;
+
+        .rowImage{
+            margin-right: auto;
+        }
 
         &:before{
             content: '';
@@ -48,6 +54,10 @@ const RowContent = styled.div`
 
     .bgBlue{
         position:relative;
+
+        .rowImage{
+            margin-left: auto;
+        }
 
         &:before{
             content: '';
@@ -79,6 +89,12 @@ const RowContent = styled.div`
         padding-bottom: 10px;
         position:relative;
 
+        &>span{
+            display:block;
+            font-weight:bold;
+            font-size:19px;
+        }
+
         &:before{
             content: '';
             width: 5px;
@@ -91,6 +107,15 @@ const RowContent = styled.div`
         }
 
         &.LinkItem{
+            &:before{
+                content: none;
+            }
+        }
+
+        &.footnote{
+            font-size:14px;
+            font-weight:500;
+
             &:before{
                 content: none;
             }
@@ -143,6 +168,10 @@ const RowContent = styled.div`
         .bgOrange, .bgBlue{
             align-items: center;
             display: flex;
+
+            .rowImage{
+                margin:auto;
+            }
 
             &:before{
                 content: none;
