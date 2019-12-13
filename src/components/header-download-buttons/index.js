@@ -6,15 +6,27 @@ import Text from '../text';
 import ErrorBlock from '../error-block';
 import InfoPopup from '../info-popup';
 
-const StyledGetCouponWrapper = styled.div`
+const StyledHeaderDownloadButtons = styled.div`
     display: table;
     width: 100%;
     margin: auto;
     padding-top: 60px;
     align-items: center;
 
+    .mobileFormWrapper{
+        display:none;
+    }
+
+    .headerButtonsWrapper{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        grid-gap: 30px;
+        padding-top: 60px;
+    }
+
     .getCouponButton{
-        display: block;
+        display: none;
         text-align: center;
         outline: none;
     }
@@ -69,9 +81,20 @@ const StyledGetCouponWrapper = styled.div`
             }
         }
     }
+
+    @media (max-width: 1050px) {
+
+        .headerButtonsWrapper{
+            display:none;
+        }
+
+        .getCouponButton, .mobileFormWrapper{
+            display:block;
+        }
+    }
 `;
 
-class GetCouponMobile extends React.PureComponent {
+class HeaderDownloadButtons extends React.PureComponent {
 
     constructor(props){
         super(props);
@@ -160,55 +183,64 @@ class GetCouponMobile extends React.PureComponent {
 
     render(){
         return(
-            <StyledGetCouponWrapper className={this.props.className}>
+            <StyledHeaderDownloadButtons className={this.props.className}>
+
+                <div className="headerButtonsWrapper">
+                    <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
+                    <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
+                    <div></div>
+                </div>
+
+                <div className="mobileFormWrapper">
                 
-                {this.state.isShown && <Input 
-                    tabIndex="0"
-                    onKeyPress={this.keyPressed}
-                    checkValid={this.checkValid} 
-                    getCouponToggle={this.state.getCouponToggle}
-                    inputName="email"
-                    inputLabel="Enter your email"
-                    valueIncorrectText="Email is incorrect"
-                    valueEmptyText="Email is empty"
-                    regexp={this.emailRegexp}
-                    onKeyDown={this._handleKeyDown}
-                    />}
-                <Button 
-                    tabIndex="1"
-                    className="getCouponButton" 
-                    onClick={this.state.isShown ? this.getCoupon : this.toShowForm}
-                    backgroundColor="orange" 
-                    padding="13px 24px"
-                    fontSize={14} 
-                    textTransform="uppercase"
-                    >
-                    {this.state.isShown 
-                        ? this.props.t("get coupon") 
-                        : this.props.t("get $5 coupon code")}
-                </Button>
-                {this.state.isShown &&
-                    <div className={this.state.checkBoxError ? "agreeData error" : "agreeData"}>
-                        <input 
-                            type="checkbox"
-                            checked={this.state.checked}
-                            onChange={this.handleCheckboxChange}
-                         />
-                        <Text 
-                            fontSize={12}
-                            fontWeight={300}
-                            color="#ffffff" >
-                            {this.props.t("I agree that my personal data may be collected, used and processed in accordance with the privacy policy")}
-                        </Text>
-                        <ErrorBlock className="errorBlock">
-                            {this.props.t("Confirm agreement")}
-                        </ErrorBlock>
-                        {this.state.infoIsShown && <InfoPopup closePopupFunction={this.closePopupFunction}></InfoPopup>}
-                    </div>
-                }
-            </StyledGetCouponWrapper>
+                    {this.state.isShown && <Input 
+                        tabIndex="0"
+                        onKeyPress={this.keyPressed}
+                        checkValid={this.checkValid} 
+                        getCouponToggle={this.state.getCouponToggle}
+                        inputName="email"
+                        inputLabel="Enter your email"
+                        valueIncorrectText="Email is incorrect"
+                        valueEmptyText="Email is empty"
+                        regexp={this.emailRegexp}
+                        onKeyDown={this._handleKeyDown}
+                        />}
+                    <Button 
+                        tabIndex="1"
+                        className="getCouponButton" 
+                        onClick={this.state.isShown ? this.getCoupon : this.toShowForm}
+                        backgroundColor="orange" 
+                        padding="13px 24px"
+                        fontSize={14} 
+                        textTransform="uppercase"
+                        >
+                        {this.state.isShown 
+                            ? this.props.t("get coupon") 
+                            : this.props.t("get $5 coupon code")}
+                    </Button>
+                    {this.state.isShown &&
+                        <div className={this.state.checkBoxError ? "agreeData error" : "agreeData"}>
+                            <input 
+                                type="checkbox"
+                                checked={this.state.checked}
+                                onChange={this.handleCheckboxChange}
+                            />
+                            <Text 
+                                fontSize={12}
+                                fontWeight={300}
+                                color="#ffffff" >
+                                {this.props.t("I agree that my personal data may be collected, used and processed in accordance with the privacy policy")}
+                            </Text>
+                            <ErrorBlock className="errorBlock">
+                                {this.props.t("Confirm agreement")}
+                            </ErrorBlock>
+                            {this.state.infoIsShown && <InfoPopup closePopupFunction={this.closePopupFunction}></InfoPopup>}
+                        </div>
+                    }
+                </div>
+            </StyledHeaderDownloadButtons>
         )
     }
 }
 
-export default GetCouponMobile;
+export default HeaderDownloadButtons;

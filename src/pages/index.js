@@ -5,11 +5,10 @@ import styled from 'styled-components';
 import Text from '../components/text';
 import PageContentWrapper from '../components/page-content-wrapper';
 import BackgroundHeaderImage from '../images/main-page/header-image.png';
-import Button from '../components/button';
 import MainContentWrapper from '../components/main-content-wrapper';
 import SomethingElseScreen from '../components/something-else-screen';
 import ReviewScreen from '../components/review-screen';
-import GetCouponMobile from '../components/get-coupon-mobile';
+import HeaderDownloadButtons from '../components/header-download-buttons';
 
 const MainPageWrapper = styled.div`
 
@@ -17,10 +16,6 @@ const MainPageWrapper = styled.div`
     text-transform: uppercase;
     color: #F59541;
     font-weight: 600;
-  }
-
-  .getCouponMobile{
-    display: none;
   }
 
   .headerText{
@@ -46,25 +41,9 @@ const MainPageWrapper = styled.div`
     background-position: 100% 0;
   }
 
-  .headerButtonsWrapper{
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-    grid-gap: 30px;
-    padding-top: 60px;
-  }
-
   @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;
-    }
-
-    .headerButtonsWrapper{
-      display:none;
-    }
-
-    .getCouponMobile{
-      display: table;
     }
 
     .headerContentWrapper{
@@ -135,13 +114,7 @@ class Page extends React.PureComponent {
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
               <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
 
-              <div className="headerButtonsWrapper">
-                <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
-                <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
-                <div></div>
-              </div>
-
-              <GetCouponMobile className="getCouponMobile" t={this.props.t}/>
+              <HeaderDownloadButtons t={this.props.t}/>
             </div>
           </PageContentWrapper>
         </div>
