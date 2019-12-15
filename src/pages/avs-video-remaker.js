@@ -12,30 +12,18 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
-import HeaderImage from '../images/avs-free-video-converter/en_avs_video_converter.png';
-import HeaderImageMobile from '../images/avs-free-video-converter/en_avs_video_converter-mobile.png';
+import HeaderImage from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
+import HeaderImageMobile from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
 
-import screen1 from '../images/avs-free-video-converter/vc_convert_all_key2.png';
-import screen2 from '../images/avs-free-video-converter/vc_convert_video_easily2.png';
-import screen3 from '../images/avs-free-video-converter/vc_convert_a_large_number.png';
-import screen4 from '../images/avs-free-video-converter/vc_edit_your_videos.png';
-import screen5 from '../images/avs-free-video-converter/vc_сonvert_and_share.png';
+import screen1 from '../images/avs-video-remaker/vr_edit_video_files-min.png';
+import screen2 from '../images/avs-video-remaker/vr_record_video-min.png';
+import screen3 from '../images/avs-video-remaker/vr_disc_menu-min.png';
 
-import slideCarousel1 from '../images/avs-free-video-converter/slider1.png';
-import slideCarousel2 from '../images/avs-free-video-converter/slider2.png';
-import slideCarousel3 from '../images/avs-free-video-converter/slider3.png';
-import slideCarousel4 from '../images/avs-free-video-converter/slider4.png';
-import slideCarousel5 from '../images/avs-free-video-converter/slider5.png';
-import slideCarousel6 from '../images/avs-free-video-converter/slider6.png';
+import screen4 from '../images/avs-video-remaker/slider1-min.png';
+import screen5 from '../images/avs-video-remaker/slider2-min.png';
 
-import slidePopupCarousel1 from '../images/avs-free-video-converter/slider_popup1.png';
-import slidePopupCarousel2 from '../images/avs-free-video-converter/slider_popup2.png';
-import slidePopupCarousel3 from '../images/avs-free-video-converter/slider_popup3.png';
-import slidePopupCarousel4 from '../images/avs-free-video-converter/slider_popup4.png';
-import slidePopupCarousel5 from '../images/avs-free-video-converter/slider_popup5.png';
-import slidePopupCarousel6 from '../images/avs-free-video-converter/slider_popup6.png';
 
-class avsFreeVideoConverter extends React.PureComponent {
+class avsVideoRemaker extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -58,8 +46,8 @@ render(){
           <div className="headerBackground">
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
+                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video ReMaker")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Mighty production software for capturing and editing videos, and creating DVD and Blu-ray content</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="/"
@@ -93,64 +81,42 @@ render(){
                 id="overview"
                 imgLeft={true}
                 image={screen1}
-                headerText="Сonvert all key video formats"    
+                headerText="Edit video files without reconversion"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback</Text>
-              <Text as="a" href="#" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Cut, delete unwanted parts, change scene sequence in all popular video formats</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Save videos without changing the original format</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Edit AVCHD, MOD, MTS/M2TS, TOD, etc. video files recorded with camcorders and video cameras</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 image={screen2}
-                headerText="Convert video easily and fast"   
+                headerText="Capture video"   
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Convert videos in one click with improved settings for powerful computers</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use hardware Intel® Media decoder with Intel® Quick Sync Video technology for H.264/AVC и VC-1 codecs. It speeds up preview and conversion processes significantly (only for Intel CPU with integrated Intel Graphics)</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use software Intel® Media decoder for H.264/AVC and VC-1 codecs. This option is helpful for the users of AMD and old Intel processors</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Capture video from Web cameras and DV cameras</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Use Screen Capture function to create How-to videos or tutorials</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={true}
               image={screen3}
-              headerText="Convert a large number of files at once"    
+              headerText="Create DVD and Blu-ray Menus"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}><span>Command Line Mode</span>Automate routine work using ready conversion templates without clicking the program buttons manually</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}><span>Batch Mode</span>Save your time spent on video conversion by using a batch mode which allows you to convert a large number of video files at once with easy-to-use configurations</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Split video into chapters, select between a number of menu templates</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Choose auto sets and let our program split the file independently</Text>
+              <Text className="ListItem" color="#555555" fontWeight={500}>Burn video files on to DVD- or Blu-ray discs</Text>
             </ContentRowItem>
 
-            <ContentRowItem 
-                imgLeft={false}
-                image={screen4}
-                headerText="Edit your videos before conversion*"   
-            >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Split your videos into parts, by chapters, size and cut unnecessary scenes</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Change the aspect ratio of your video</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use basic video editing effects to make your videos more breathtaking</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Convert video files with subtitles</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Export audio and images from your video</Text>
-              <Text className="ListItem footnote" color="#555555" fontWeight={500}>*This feature is available in a full version</Text>
-            </ContentRowItem>
-
-            <ContentRowItem
-                imgLeft={true}
-                image={screen5}
-                headerText="Convert and share videos on Web"    
-            >
-              <Text className="ListItem" color="#555555" fontWeight={500}><span>Save video to any format or modern gadgets</span>Apple iPhone XS/XR/X/8/7, Apple iPad Pro, 2018, 2017, iPad Air 2 etc.; Samsung Galaxy S9/S8/S7, Galaxy Note 9/8/5, Galaxy Tab S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia XZ3/XZ2/XZ1, XZ2/XZ1 Compact</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}><span>Create DVD/Blu-ray discs</span>Convert from/to Blu-ray or DVD formats. Cut, apply effects, add colorful DVD/Blu-ray menus. Split your movie into chapters and burn DVD/Blu-ray discs</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}><span>Convert videos for popular social platforms</span>Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox</Text>
-            </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Converter 12</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Remaker 6.3</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, slideCarousel5, slideCarousel6]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}
+            slides={[screen1, screen2, screen3, screen4, screen5]}
+            slidesPopup={[screen1, screen2, screen3, screen4, screen5]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />
@@ -255,4 +221,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(avsFreeVideoConverter);
+export default withI18next({ ns: "common" })(avsVideoRemaker);
