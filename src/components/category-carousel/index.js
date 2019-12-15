@@ -36,7 +36,8 @@ function renderContent (props) {
                     headerText="AVS Video Converter"
                     free={true}
                     blueButtonLink="/"
-                    smallButtonLink="/"      
+                    smallButtonLink="/" 
+                    scrollTo="headerCoupon"
                 >
                     <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
                     <Text  className="ListItem" color="#555555" fontWeight={500}>Smart conversion presets</Text>
@@ -49,7 +50,8 @@ function renderContent (props) {
                     headerText="AVS Video Editor"
                     free={false}
                     blueButtonLink="/"
-                    smallButtonLink="/"      
+                    smallButtonLink="/"  
+                    scrollTo="headerCoupon"    
                 >
                     <Text className="ListItem" color="#555555" fontWeight={500}>Edit all key video formats</Text>
                     <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join video files</Text>
@@ -65,7 +67,8 @@ function renderContent (props) {
                     headerText="AVS Video ReMaker"
                     free={false}
                     blueButtonLink="/"
-                    smallButtonLink="/"      
+                    smallButtonLink="/"   
+                    scrollTo="headerCoupon"   
                 >
                     <Text className="ListItem" color="#555555" fontWeight={500}>Edit video files without reconversion</Text>
                     <Text className="ListItem" color="#555555" fontWeight={500}>Support of all key video formats</Text>
@@ -85,7 +88,8 @@ function renderContent (props) {
                     headerText="AVS Audio Editor"
                     free={false}
                     blueButtonLink="/"
-                    smallButtonLink="/"      
+                    smallButtonLink="/"  
+                    scrollTo="headerCoupon"    
                 >
                     <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data</Text>
                     <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
@@ -100,7 +104,8 @@ function renderContent (props) {
                     headerText="AVS Audio Converter"
                     free={false}
                     blueButtonLink="/"
-                    smallButtonLink="/"      
+                    smallButtonLink="/"   
+                    scrollTo="headerCoupon"   
                 >
                     <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
                     <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
@@ -119,7 +124,8 @@ function renderContent (props) {
                         headerText="AVS Photo Editor"
                         free={true}
                         blueButtonLink="/"
-                        smallButtonLink="/"      
+                        smallButtonLink="/"   
+                        scrollTo="headerCoupon"   
                     >
                         <Text className="ListItem" color="#555555" fontWeight={500}>Open and edit all key image formats</Text>
                         <Text className="ListItem" color="#555555" fontWeight={500}>Play with colors, shades and tints</Text>
@@ -135,6 +141,7 @@ function renderContent (props) {
                         free={true}
                         blueButtonLink="/"
                         smallButtonLink="/"      
+                        scrollTo="headerCoupon"
                     >
                         <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key image formats</Text>
                         <Text className="ListItem" color="#555555" fontWeight={500}>Automatically resize your photos to popular formats</Text>

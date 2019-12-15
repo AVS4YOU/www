@@ -9,6 +9,7 @@ import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
+import HeaderDownloadButtons from '../components/header-download-buttons';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
 import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
@@ -49,12 +50,17 @@ render(){
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
           <div className="headerBackground">
             <PageContentWrapper>
-              <div className="headerContentWrapper" >
+              <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
-                <div className="buttonWrapper">
-                  <Button href="/" color="#fff" padding="12px 37px" textTransform="uppercase" backgroundColor="orange" secondaryText="Windows 10/8/7/Vista/XP">download now</Button>
-                </div>
+                <HeaderDownloadButtons 
+                  t={this.props.t}
+                  mainHref="/"
+                  secondaryText="Windows 10/8/7/Vista/XP"
+                  backgroundColor="orange"
+                  mainPadding="12px 37px"
+                  margin="auto"
+                />
               </div> 
             </PageContentWrapper>
             <img className="headerImage" src={HeaderImage}/>
@@ -155,7 +161,10 @@ render(){
               <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
             </div>
             <div id="downloadButton" className="buttonWrapper">
-              <Button href="/" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
+              <Button className="desktopButton" href="/" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
+              <Link className="scrollLink" to="headerContentWrapper" spy={true} smooth={true} offset={0} duration={500}>
+                  <Button as="div" className="mainButton" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">GET $5 COUPON CODE</Button>
+              </Link>
             </div>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="#">our End User License Agreement</a></Text>

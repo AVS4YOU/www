@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '../text';
+import { Link } from "react-scroll";
 import Button from '../button';
 import PropTypes from "prop-types";
 import bgBlue from '../../images/main-page/back_picture_blue.svg'
@@ -13,6 +14,10 @@ const RowContent = styled.div`
 
     &:first-child{
         padding-top: 0;
+    }
+
+    .scrollLink{
+        display:none;
     }
     
     .buttonsWrapper {
@@ -141,7 +146,7 @@ const RowContent = styled.div`
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1050px) {
         grid-gap: 25px;
 
         &.imgLeft{
@@ -183,9 +188,18 @@ const RowContent = styled.div`
             margin: auto;
             padding-top: 35px;
 
+            .scrollLink{
+                display:block;
+
+                .mainButton{
+                    display:block;
+                }
+            }
+
             .mainButton{
-                display: block;
+                display: none;
                 margin: auto;
+                text-align:center;
             }
 
             .secondaryButton{
@@ -272,6 +286,10 @@ const TextContent = (props) =>
                 {props.blueButtonLink && 
                 
                 <div className="buttonsWrapper">
+                    {props.scrollTo && <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
+                            <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
+                        </Link>
+                    }
                     {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>}
                     {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>}
                 </div>
@@ -290,6 +308,10 @@ const TextContentMobile = (props) =>
             </div>
             {props.blueButtonLink && 
                 <div className="buttonsWrapper">
+                    {props.scrollTo && <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
+                            <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
+                        </Link>
+                    }
                     {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>}
                     {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>}
                 </div>

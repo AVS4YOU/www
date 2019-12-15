@@ -18,11 +18,15 @@ const StyledHeaderDownloadButtons = styled.div`
     }
 
     .headerButtonsWrapper{
-        display: grid;
-        grid-template-columns: auto auto 1fr;
+        display: table;
         align-items: center;
         grid-gap: 30px;
         padding-top: 60px;
+        ${props => props.margin && "margin:" + props.margin};
+
+        .secondaryButton{
+            margin-left:30px;
+        }
     }
 
     .getCouponButton{
@@ -183,12 +187,20 @@ class HeaderDownloadButtons extends React.PureComponent {
 
     render(){
         return(
-            <StyledHeaderDownloadButtons className={this.props.className}>
+            <StyledHeaderDownloadButtons {...this.props} className={this.props.className}>
 
                 <div className="headerButtonsWrapper">
-                    <Button href="/" textTransform="uppercase">{this.props.t("download now")}</Button>
-                    <Button href="/" textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>
-                    <div></div>
+                    <Button className="mainButton" 
+                        href={this.props.mainHref} 
+                        color="#fff" 
+                        padding={this.props.mainPadding && this.props.mainPadding} 
+                        textTransform="uppercase" 
+                        backgroundColor={this.props.backgroundColor && this.props.backgroundColor}
+                        secondaryText={this.props.secondaryText && this.props.secondaryText} 
+                        textTransform="uppercase">
+                            {this.props.t("download now")}
+                    </Button>
+                    {this.props.secondaryHref && <Button className="secondaryButton" href={this.props.secondaryHref} textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>}
                 </div>
 
                 <div className="mobileFormWrapper">
