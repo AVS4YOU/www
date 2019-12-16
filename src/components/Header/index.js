@@ -14,7 +14,7 @@ const Header = ({availableLocales, locate, t}) => {
                 <DropdownElement path="/avs-video-remaker" headerText="AVS Video Remaker" descriptionText="Edit videos without reconversion"/>
             </MenuItem>
             <MenuItem menuItemText={t("Audio software")}>
-                <DropdownElement headerText="AVS Audio Editor" descriptionText="Easily edit and create audio"/>
+                <DropdownElement path="/avs-audio-editor" headerText="AVS Audio Editor" descriptionText="Easily edit and create audio"/>
                 <DropdownElement headerText="AVS Audio Converter" descriptionText="Convert all popular audio formats"/>
             </MenuItem>
             <MenuItem col={2} menuItemText={t("Free software")}>
