@@ -166,12 +166,13 @@ class Input extends React.Component {
     }
 
     render(){
+        const inputClass = this.state.error ? 
+            this.state.isFocus 
+                ? "focus error" : "error" 
+                : this.state.isFocus && "focus"
         return(
             <StyledInputWrapper 
-                className={this.state.error ? 
-                    this.state.isFocus 
-                        ? "focus error" : "error" 
-                        : this.state.isFocus && "focus"}>
+                className={this.props.className + " " + inputClass}>
                 <input
                     onKeyPress={this.props.onKeyPress}
                     name={this.props.inputName}

@@ -1,10 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import Button from '../button';
 import Input from '../input';
 import Text from '../text';
 import ErrorBlock from '../error-block';
 import InfoPopup from '../info-popup';
+import UAParser from 'ua-parser-js';
+
+const mobileStyles = css`
+    .headerButtonsWrapper{
+        display:none;
+    }
+
+    .getCouponButton, .mobileFormWrapper{
+        display:block;
+    }
+`;
 
 const StyledHeaderDownloadButtons = styled.div`
     display: table;
@@ -86,14 +97,17 @@ const StyledHeaderDownloadButtons = styled.div`
         }
     }
 
+    ${props => props.touchDevice && mobileStyles}
+
+    .mobileInput{
+        max-width: inherit;
+    }
+
     @media (max-width: 1050px) {
+        ${props => props.touchDevice && mobileStyles}
 
         .headerButtonsWrapper{
-            display:none;
-        }
-
-        .getCouponButton, .mobileFormWrapper{
-            display:block;
+            margin: auto;
         }
     }
 `;
@@ -108,7 +122,8 @@ class HeaderDownloadButtons extends React.PureComponent {
             checked: false,
             validForm: false,
             checkBoxError: false,
-            infoIsShown: false
+            infoIsShown: false,
+            touchDevice: false
         }
         
         this.getCoupon = this.getCoupon.bind(this);
@@ -130,6 +145,16 @@ class HeaderDownloadButtons extends React.PureComponent {
     closePopupFunction(){
         this.setState({
             infoIsShown: false
+        })
+    }
+
+    componentDidMount(){
+        var parser = new UAParser();
+        var result = parser.getResult();
+        console.log(result.device.type === "mobile" || result.device.type === "tablet")
+
+        this.setState({
+            touchDevice: result.device.type === "mobile" || result.device.type === "tablet"
         })
     }
 
@@ -187,7 +212,7 @@ class HeaderDownloadButtons extends React.PureComponent {
 
     render(){
         return(
-            <StyledHeaderDownloadButtons {...this.props} className={this.props.className}>
+            <StyledHeaderDownloadButtons {...this.props} touchDevice={this.state.touchDevice} className={this.props.className}>
 
                 <div className="headerButtonsWrapper">
                     <Button className="mainButton" 
@@ -216,6 +241,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                         valueEmptyText="Email is empty"
                         regexp={this.emailRegexp}
                         onKeyDown={this._handleKeyDown}
+                        className="mobileInput"
                         />}
                     <Button 
                         tabIndex="1"
