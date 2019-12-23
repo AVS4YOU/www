@@ -200,7 +200,6 @@ class HeaderDownloadButtons extends React.PureComponent {
     componentDidMount(){
         var parser = new UAParser();
         var result = parser.getResult();
-        console.log(result.device.type === "mobile" || result.device.type === "tablet")
 
         this.setState({
             touchDevice: result.device.type === "mobile" || result.device.type === "tablet"

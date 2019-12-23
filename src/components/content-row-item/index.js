@@ -1,11 +1,46 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import styled, {css} from 'styled-components';
 import Text from '../text';
 import { Link } from "react-scroll";
 import Button from '../button';
 import PropTypes from "prop-types";
-import bgBlue from '../../images/main-page/back_picture_blue.svg'
-import bgOrange from '../../images/main-page/back_picture_orange.svg'
+import bgBlue from '../../images/main-page/back_picture_blue.svg';
+import bgOrange from '../../images/main-page/back_picture_orange.svg';
+import UAParser from 'ua-parser-js';
+
+const desktopStyles = css`
+    .buttonsWrapper{
+        .scrollLink{
+            display:none;
+
+            .mainButton{
+                display:none;
+            }
+        }
+
+        .mainButton{
+            display: block;
+        }
+    }
+`;
+
+const mobileStyles = css`
+    .buttonsWrapper{
+        .scrollLink{
+            display:block;
+
+            .mainButton{
+                display:block;
+            }
+        }
+
+        .mainButton{
+            display: none;
+            margin: auto;
+            text-align:center;
+        }
+    }
+`;
 
 const RowContent = styled.div`
     display:grid;
@@ -137,6 +172,8 @@ const RowContent = styled.div`
         }
     }
 
+    ${props => props.touchDevice ? mobileStyles : desktopStyles}
+
     @media (max-width: 1500px) {
         grid-gap: 65px;
         padding-top: 120px;
@@ -209,6 +246,8 @@ const RowContent = styled.div`
                 text-align: center;
             }
         }
+
+        ${props => props.touchDevice ? mobileStyles : desktopStyles}
     }
 
     @media (max-width: 750px) {
@@ -322,9 +361,17 @@ const TextContentMobile = (props) =>
 
 const ContentRowItem = (props) => {
 
+    const [touchDevice, setTouchDevice] = useState(false);
+
+    useEffect(() => {
+        var parser = new UAParser();
+        var result = parser.getResult();
+        setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
+    });
+
     if (props.imgLeft){
         return(
-            <RowContent className="imgLeft" id={props.id}>
+            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
                     <img className="rowImage" src={props.image} alt={props.headerText}></img>
@@ -335,7 +382,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent className="imgRight" id={props.id}>
+            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice}>
                 {TextContent(props)}
                 {HeaderMobile(props)}
                 <div className="bgOrange">

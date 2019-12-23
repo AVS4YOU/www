@@ -10,6 +10,7 @@ import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
+import DownloadScrollButton from '../components/download-scroll-button';
 
 import BackgroundHeaderImage from "../images/video-editor/background_main.png";
 import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
@@ -160,12 +161,7 @@ render(){
               <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
               <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
             </div>
-            <div id="downloadButton" className="buttonWrapper">
-              <Button className="desktopButton" href="/" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
-              <Link className="scrollLink" to="headerContentWrapper" spy={true} smooth={true} offset={0} duration={500}>
-                  <Button as="div" className="mainButton" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">GET $5 COUPON CODE</Button>
-              </Link>
-            </div>
+            <DownloadScrollButton className="buttonWrapper" href="/" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="#">our End User License Agreement</a></Text>
             </div>
