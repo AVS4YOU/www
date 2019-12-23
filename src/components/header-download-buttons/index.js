@@ -17,6 +17,22 @@ const mobileStyles = css`
     }
 `;
 
+const desktopStyles = css`
+    .getCouponButton{
+        display: none;
+        text-align: center;
+        outline: none;
+    }
+
+    .mobileFormWrapper{
+        display:none;
+    }
+
+    .headerButtonsWrapper{
+        display:table;
+    }
+`;
+
 const StyledHeaderDownloadButtons = styled.div`
     display: table;
     width: 100%;
@@ -97,17 +113,50 @@ const StyledHeaderDownloadButtons = styled.div`
         }
     }
 
-    ${props => props.touchDevice && mobileStyles}
+    ${props => props.touchDevice ? mobileStyles : desktopStyles}
 
     .mobileInput{
         max-width: inherit;
     }
 
     @media (max-width: 1050px) {
-        ${props => props.touchDevice && mobileStyles}
+
+        .headerButtonsWrapper{
+            display:none;
+        }
+
+        .getCouponButton, .mobileFormWrapper{
+            display:block;
+        }
+
+        ${props => props.touchDevice ? mobileStyles : desktopStyles}
 
         .headerButtonsWrapper{
             margin: auto;
+
+            .mainButton{
+                padding: 14px 22px;
+            }
+
+            .buttonText{
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .headerButtonsWrapper{
+            .mainButton{
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .secondaryButton{
+                display: block;
+                margin: auto;
+                text-align: center;
+            }
         }
     }
 `;

@@ -79,6 +79,11 @@ const MainPageWrapper = styled.div`
   }
 
   @media (max-width: 450px) {
+
+    .headerContentWrapper{
+      padding-bottom: 100px;
+    }
+
     .bodyHeader{
       font-size: 22px;
     }
