@@ -128,6 +128,8 @@ const RowContent = styled.div`
         padding-left: 20px;
         padding-bottom: 10px;
         position:relative;
+        color:#555555;
+        font-weight: 500;
 
         &>span{
             display:block;

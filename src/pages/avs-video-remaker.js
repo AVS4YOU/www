@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
-import Button from '../components/button';
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -59,8 +58,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" src={HeaderImage}/>
-            <img className="headerImage mobile" src={HeaderImageMobile}/>
+            <img className="headerImage" alt="header-image" src={HeaderImage}/>
+            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -84,9 +83,9 @@ render(){
                 image={screen1}
                 headerText="Edit video files without reconversion"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Cut, delete unwanted parts, change scene sequence in all popular video formats</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Save videos without changing the original format</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Edit AVCHD, MOD, MTS/M2TS, TOD, etc. video files recorded with camcorders and video cameras</Text>
+              <Text className="ListItem">Cut, delete unwanted parts, change scene sequence in all popular video formats</Text>
+              <Text className="ListItem">Save videos without changing the original format</Text>
+              <Text className="ListItem">Edit AVCHD, MOD, MTS/M2TS, TOD, etc. video files recorded with camcorders and video cameras</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -94,10 +93,10 @@ render(){
                 image={screen2}
                 headerText="Capture video"   
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Capture video from Web cameras and DV cameras</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use Screen Capture function to create How-to videos or tutorials</Text>
+              <Text className="ListItem">Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs</Text>
+              <Text className="ListItem">Capture video from Web cameras and DV cameras</Text>
+              <Text className="ListItem">Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects</Text>
+              <Text className="ListItem">Use Screen Capture function to create How-to videos or tutorials</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -105,16 +104,16 @@ render(){
               image={screen3}
               headerText="Create DVD and Blu-ray Menus"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Split video into chapters, select between a number of menu templates</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Choose auto sets and let our program split the file independently</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Burn video files on to DVD- or Blu-ray discs</Text>
+              <Text className="ListItem">Split video into chapters, select between a number of menu templates</Text>
+              <Text className="ListItem">Choose auto sets and let our program split the file independently</Text>
+              <Text className="ListItem">Burn video files on to DVD- or Blu-ray discs</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Video Remaker 6.3</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.3</Text>
           <ScreenshotsCarousel 
             slides={[screen1, screen2, screen3, screen4, screen5]}
             slidesPopup={[screen1, screen2, screen3, screen4, screen5]}

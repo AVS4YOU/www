@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
-import Button from '../components/button';
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -69,8 +68,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" src={HeaderImage}/>
-            <img className="headerImage mobile" src={HeaderImageMobile}/>
+            <img className="headerImage" alt="header-image" src={HeaderImage}/>
+            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -94,10 +93,10 @@ render(){
                 image={screen1}
                 headerText="Edit all key audio formats"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Cut, join, trim, delete parts, split audio files</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Mix audio and blend several audio tracks together</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Select between 20 built-in effects and filters including delay, flanger, chorus, reverb, reverse, echo and more</Text>
+              <Text className="ListItem">Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc.</Text>
+              <Text className="ListItem">Cut, join, trim, delete parts, split audio files</Text>
+              <Text className="ListItem">Mix audio and blend several audio tracks together</Text>
+              <Text className="ListItem">Select between 20 built-in effects and filters including delay, flanger, chorus, reverb, reverse, echo and more</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -105,8 +104,8 @@ render(){
                 image={screen2}
                 headerText="Record audio from any inputs"   
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Extract and edit audio from your video files</Text>
+              <Text className="ListItem">Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card</Text>
+              <Text className="ListItem">Extract and edit audio from your video files</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -114,9 +113,9 @@ render(){
               image={screen3}
               headerText="Master your sound for the higher quality"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Change sound bitrate to any desired level</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Use an equalizer to adjust volume in a desired way</Text>
+              <Text className="ListItem">Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
+              <Text className="ListItem">Change sound bitrate to any desired level</Text>
+              <Text className="ListItem">Use an equalizer to adjust volume in a desired way</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -124,15 +123,15 @@ render(){
               image={screen4}
               headerText="Extend your experience with additional features"    
             >
-              <Text className="ListItem" color="#555555" fontWeight={500}>Turn written text into a natural sounding voice with Text-to-speech function</Text>
-              <Text className="ListItem" color="#555555" fontWeight={500}>Create ringtones for iPhones and other smartphones</Text>
+              <Text className="ListItem">Turn written text into a natural sounding voice with Text-to-speech function</Text>
+              <Text className="ListItem">Create ringtones for iPhones and other smartphones</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2" fontWeight={600} color="#000000" fontSize={32} align="center">AVS Audio Editor 8.5</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 8.5</Text>
           <ScreenshotsCarousel 
             slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, screen3, screen4 ]}
             slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}

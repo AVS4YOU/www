@@ -62,6 +62,10 @@ const StyledPageWrapper = styled.div`
 
   .carouselHeader{
       padding-top: 100px;
+      font-weight:600;
+      color:#000000;
+      font-size:32px;
+      text-align:center;
   }
 
   .scrollToButton{
