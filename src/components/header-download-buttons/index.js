@@ -113,7 +113,9 @@ const StyledHeaderDownloadButtons = styled.div`
         }
     }
 
-    ${props => props.touchDevice ? mobileStyles : desktopStyles}
+    ${props => props.touchDevice !== null 
+        ? props.touchDevice ? mobileStyles : desktopStyles
+        : ""}
 
     .mobileInput{
         max-width: inherit;
@@ -129,7 +131,9 @@ const StyledHeaderDownloadButtons = styled.div`
             display:block;
         }
 
-        ${props => props.touchDevice ? mobileStyles : desktopStyles}
+        ${props => props.touchDevice !== null 
+            ? props.touchDevice ? mobileStyles : desktopStyles
+            : ""}
 
         .headerButtonsWrapper{
             margin: auto;
@@ -140,22 +144,6 @@ const StyledHeaderDownloadButtons = styled.div`
 
             .buttonText{
                 font-size: 16px;
-            }
-        }
-    }
-
-    @media (max-width: 550px) {
-        .headerButtonsWrapper{
-            .mainButton{
-                display: block;
-                margin: auto;
-                margin-bottom: 20px;
-            }
-
-            .secondaryButton{
-                display: block;
-                margin: auto;
-                text-align: center;
             }
         }
     }
@@ -172,7 +160,7 @@ class HeaderDownloadButtons extends React.PureComponent {
             validForm: false,
             checkBoxError: false,
             infoIsShown: false,
-            touchDevice: false
+            touchDevice: null
         }
         
         this.getCoupon = this.getCoupon.bind(this);
