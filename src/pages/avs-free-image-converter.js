@@ -12,21 +12,22 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 
 import BackgroundHeaderImage from "../images/avs-free-media-player/background_main.png";
-import HeaderImage from '../images/avs-free-media-player/en_avs_media_player.png';
-import HeaderImageMobile from '../images/avs-free-media-player/en_avs_media_player.png';
 
-import screen1 from '../images/avs-free-media-player/slide2.png';
-import screen2 from '../images/avs-free-media-player/slide3.png';
-import screen3 from '../images/avs-free-media-player/slide4.png';
-import screen4 from '../images/avs-free-media-player/slide5.png';
+import HeaderImage from '../images/avs-free-image-converter/en_avs_image_converter.png';
+import HeaderImageMobile from '../images/avs-free-image-converter/en_avs_image_converter.png';
 
-import slideCarousel1 from '../images/avs-free-media-player/slide1.png';
+import screen1 from '../images/avs-free-image-converter/slide2.png';
+import screen2 from '../images/avs-free-image-converter/slide3.png';
+import screen3 from '../images/avs-free-image-converter/slide4.png';
+import screen4 from '../images/avs-free-image-converter/slide5.png';
+import screen5 from '../images/avs-free-image-converter/ic_batch_mode.png';
 
-import slidePopupCarousel1 from '../images/avs-free-media-player/vp_formats2x.png';
-import slidePopupCarousel2 from '../images/avs-free-media-player/vp_audio_formats2x.png';
-import slidePopupCarousel3 from '../images/avs-free-media-player/vp_slideshow2x.png';
-import slidePopupCarousel4 from '../images/avs-free-media-player/vp_surround2x.png';
+import slideCarousel1 from '../images/avs-free-image-converter/slide1.png';
 
+import slidePopupCarousel1 from '../images/avs-free-image-converter/ic_header_center2x.png';
+import slidePopupCarousel2 from '../images/avs-free-image-converter/ic_resize2x.png';
+import slidePopupCarousel3 from '../images/avs-free-image-converter/ic_apply_effects2x.png';
+import slidePopupCarousel4 from '../images/avs-free-image-converter/ic_watermark2x.png';
 
 class avsAudioEditor extends React.PureComponent {
 
@@ -51,8 +52,8 @@ render(){
           <div className="headerBackground">
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Media Player")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Watch video, play audio and view your pictures with Free AVS Media Player.</Text>
+                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Image Converter")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Share your photos, stories and adventures with Free AVS Image Converter.</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="/"
@@ -86,45 +87,56 @@ render(){
                 id="overview"
                 imgLeft={true}
                 image={screen1}
-                headerText="Watch video"    
+                headerText="Convert from and to popular formats"    
             >
-              <Text className="ListItem">Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc.</Text>
-              <Text className="ListItem">Watch videos with subtitles.</Text>
-              <Text className="ListItem">Take snapshots if necessary.</Text>
+              <Text className="ListItem">Convert images to all key formats JPEG, JPG, PNG,  BMP, TIFF, TGA, GIF, animated GIF/PNG, APNG, ITHMB (iPhone/iPod Thumbnail Files).</Text>
+              <Text className="ListItem">Convert RAW images (CR2, CRW, RAF, DNG, MEF, NEF, ARW, etc.) created by digital cameras fast and easily.</Text>
+              <Text className="ListItem">Convert your images to PDF format, merge multiple JPEG files to PDF.</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 image={screen2}
-                headerText="Play audio"   
+                headerText="Easily resize images using presets"   
             >
-              <Text className="ListItem">Add audio tracks of any format such as WAV, MP3, ALAC, FLAC, M4A, OGG, AAC, AMR, etc.</Text>
-              <Text className="ListItem">Create personal playlists to any taste and style.</Text>
+              <Text className="ListItem">Automatically tailor your photos to popular printing formats.</Text>
+              <Text className="ListItem">Create avatars and thumbnails.</Text>
+              <Text className="ListItem">Prepare your images for future slideshows to be uploaded to popular websites.</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={true}
               image={screen3}
-              headerText="View pictures"    
+              headerText="Apply effects"    
             >
-              <Text className="ListItem">Select images in PNG, JPEG, GIF, etc. and view them as a slideshow.</Text>
-              <Text className="ListItem">Make use of repeat or shuffle modes.</Text>
+              <Text className="ListItem">Adjust contrast and brightness automatically.</Text>
+              <Text className="ListItem">Apply retro look with the aging effect</Text>
+              <Text className="ListItem">Make your pictures look like analog photography.</Text>
+              <Text className="ListItem">Use the black-and-white effect and more.</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={false}
               image={screen4}
-              headerText="Enjoy sound-around effect"    
+              headerText="Watermark your pictures"    
             >
-              <Text className="ListItem">Free AVS Media Player supports of 3.1, 5.1 and 7.1 speaker configurations.</Text>
-              <Text className="ListItem">Switch on the Surround Effect and get the feeling as if you are in a movie theater.</Text>
+              <Text className="ListItem">Select a logo or write a phrase and apply it to all converted pictures as a personal watermark.</Text>
+            </ContentRowItem>
+
+            <ContentRowItem 
+              imgLeft={true}
+              image={screen5}
+              headerText="Use Command Line Mode"    
+            >
+              <Text className="ListItem">Run routine tasks efficiently: resize and convert multiple images between various formats.</Text>
+              <Text className="ListItem">Make pictures watermarked using customized presets.</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Media Player</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
           <ScreenshotsCarousel 
             slides={[slideCarousel1, screen1, screen2, screen3, screen4 ]}
             slidesPopup={[slideCarousel1, slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4]}
