@@ -46,7 +46,7 @@ const DownloadScrollButton = (props) => {
     });
 
     return(
-        <ButtonWrapper touchDevice={touchDevice} className={props.className}>
+        <ButtonWrapper id="downloadButton" touchDevice={touchDevice} className={props.className}>
             <Button className="desktopButton" href={props.href} color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
 
             <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
