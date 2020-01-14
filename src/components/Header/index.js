@@ -23,7 +23,7 @@ const Header = ({availableLocales, locate, t}) => {
                 <DropdownElement path="/avs-free-image-converter" headerText="AVS Image Converter" descriptionText="Convert and compress images"/>
                 <DropdownElement path="/avs-free-document-converter" headerText="AVS Document Converter" descriptionText="Convert all kinds of documents"/>
                 <DropdownElement path="/avs-free-disc-creator" headerText="AVS Disc Creator" descriptionText="Write DVD/CD/Blu-ray discs"/>
-                <DropdownElement headerText="AVS Registry Cleaner" descriptionText="Clean and fix registry errors"/>
+                <DropdownElement path="/avs-free-registry-cleaner" headerText="AVS Registry Cleaner" descriptionText="Clean and fix registry errors"/>
             </MenuItem>
             <MenuItem menuItemText={t("Download")} isDropdown={false} />
             <MenuItem menuItemText={t("Buy now")} isDropdown={false} />
