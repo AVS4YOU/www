@@ -8,7 +8,8 @@ import LangIconWhite from '../../images/common/languages/language-icon-white.svg
 import LangIconBlack from '../../images/common/languages/language-icon-black.svg';
 import RuIcon from '../../images/common/languages/russian.svg';
 import EnIcon from '../../images/common/languages/english.svg';
-import Selected from '../../images/common/languages/selected.svg'
+import Selected from '../../images/common/languages/selected.svg';
+import { PageContext } from '../../context/page-context';
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
@@ -156,29 +157,61 @@ class LanguageSelector extends React.PureComponent {
 
     render(){
         return(
-            <StyledLanguageSelector {...this.props}>
-                <div className="mobileBlock">
-                    <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
-                        <Text className="languageSelector" arrow arrowColor="#333" fontSize={14} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
-                    </LanguageSelectorWrapperMobile>  
+            <PageContext.Consumer>  
+            {(pageContext) => (
+                <StyledLanguageSelector {...this.props}>
+                    <div className="mobileBlock">
+                        <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
+                            <Text className="languageSelector" arrow arrowColor="#333" fontSize={14} fontWeight={600} textTransform="uppercase">{this.props.menuItemText}</Text>
+                        </LanguageSelectorWrapperMobile>  
 
-                    <MenuDropdown submenuOpen={this.state.open}>
-                        <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
-                            <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
-                        </BackSubmenuButton> 
+                        <MenuDropdown submenuOpen={this.state.open}>
+                            <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
+                                <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
+                            </BackSubmenuButton> 
+                            {this.props.availableLocales.map((item) =>
+                                this.props.locale !== item.value 
+                                    ? <DropdownElement 
+                                        key={item.value} 
+                                        className={"langDropdown"} 
+                                        path={pageContext
+                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
+                                            : item.value === "en" ? "/" : "/" + item.value}  
+                                        headerText={item.text} 
+                                        langChange={item.value === "en"}
+                                    />
+
+                                    : <DropdownElement 
+                                        key={item.value} 
+                                        className={"langDropdown selected"} 
+                                        headerTextClass="selected" 
+                                        path={pageContext
+                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
+                                            : item.value === "en" ? "/" : "/" + item.value} 
+                                        langChange={item.value === "en"}
+                                        headerText={item.text} />
+                            )}
+                        </MenuDropdown> 
+                    </div>
+                    <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
                         {this.props.availableLocales.map((item) =>
-                            this.props.locale !== item.value 
-                                ? <DropdownElement key={item.value} className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
-                                : <DropdownElement key={item.value} className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                            this.props.locale !== item.value && 
+                                    <DropdownElement 
+                                        key={item.value} 
+                                        className={"langDropdown " + item.value} 
+                                        path={pageContext
+                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
+                                            : item.value === "en" ? "/" : "/" + item.value}
+                                        langChange={item.value === "en"}
+                                        headerText={item.text} 
+                                    />
+                                    
                         )}
-                    </MenuDropdown> 
-                </div>
-                <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
-                    {this.props.availableLocales.map((item) =>
-                        this.props.locale !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
-                    )}
-                </MenuItem>
-            </StyledLanguageSelector>
+                        
+                    </MenuItem>
+                </StyledLanguageSelector>
+            )}  
+            </PageContext.Consumer> 
         )
     }
 }
