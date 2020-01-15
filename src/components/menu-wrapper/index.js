@@ -192,9 +192,9 @@ class MenuWrapper extends React.PureComponent {
                         <LogoWrapperMobile className="mobileBlock" href="/">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
-                        <LanguageSelector availableLocales={this.props.availableLocales} locate={this.props.locate} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
+                        <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     </MenuItemsWrapper>
-                    <LanguageSelector availableLocales={this.props.availableLocales} locate={this.props.locate} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
+                    <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />        
                     <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
                 </StyledMenuGrid>
             </StyledMenuWrapper>

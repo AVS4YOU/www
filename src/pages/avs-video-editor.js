@@ -28,7 +28,7 @@ import screen4 from '../images/video-editor/slider2.png';
 import screen5 from '../images/video-editor/slider6.png';
 
 
-class SecondPage extends React.PureComponent {
+class avsVideoEditor extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -46,7 +46,7 @@ class SecondPage extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
+      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
           <div className="headerBackground">
             <PageContentWrapper>
@@ -245,4 +245,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(SecondPage);
+export default withI18next({ ns: "common" })(avsVideoEditor);

@@ -96,7 +96,7 @@ class FooterItem extends React.Component{
       
         return(
             <StyledFooterItem footerItemOpen={this.state.footerItemOpen} {...this.props}>
-                <Text onClick={this.toggleFooterItem} className="footerHeader" fontSize={14} fontWeight={600} textTransform="uppercase" color="#fff">AVS4you software</Text>
+                <Text onClick={this.toggleFooterItem} className="footerHeader" fontSize={14} fontWeight={600} textTransform="uppercase" color="#fff">{this.props.header}</Text>
                 <FooterLinksWrapper componentIsRendered={this.state.componentIsRendered} footerItemOpen={this.state.footerItemOpen} height={this.state.height} ref={this.myRef}>
                     {this.props.children}
                 </FooterLinksWrapper> 

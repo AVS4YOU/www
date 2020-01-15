@@ -25,7 +25,7 @@ import slidePopupCarousel1 from '../images/avs-free-photo-editor/pe_edit_and_imp
 import slidePopupCarousel2 from '../images/avs-free-photo-editor/pe_formats2x.png';
 import slidePopupCarousel3 from '../images/avs-free-photo-editor/pe_apply_an_aray_effect2x.png';
 
-class avsAudioEditor extends React.PureComponent {
+class avsFreePhotoEditor extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -43,7 +43,7 @@ class avsAudioEditor extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
+      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
           <div className="headerBackground">
             <PageContentWrapper>
@@ -218,4 +218,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(avsAudioEditor);
+export default withI18next({ ns: "common" })(avsFreePhotoEditor);

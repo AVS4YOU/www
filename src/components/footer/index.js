@@ -6,8 +6,7 @@ import twitter from '../../images/common/social/twitter.svg';
 import youtube from '../../images/common/social/youtube.svg';
 import pinterest from '../../images/common/social/pinterest.svg';
 import Text from '../text';
-import { Link } from "gatsby";
-import Links from '../link'
+import Link from '../link'
 import FooterItem from '../footer-item';
 
 const FooterGridContainer = styled.div`
@@ -75,6 +74,8 @@ const StyledFooter = styled.footer`
         text-align: left;
         text-decoration:none;
         padding-bottom: 12px;
+        font-size: 14px;
+        color:#ffffff;
     }
 
 `;
@@ -84,55 +85,61 @@ class Footer extends React.Component{
         return(
             <StyledFooter className="footerStyles">
                 <FooterGridContainer>
-                    <FooterItem >
-                        <Links to={"/video-editor"}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
-                        </Links>
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
+                    <FooterItem header="Windows Software">
+                        <Link to="/video-editor">
+                            <Text className="footer-link-text">{this.props.t("Video software")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Audio Software")}</Text>
                         </Link>
-                    </FooterItem>
-                    <FooterItem >
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
-                        </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
-                        </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Free Software")}</Text>
                         </Link>
                     </FooterItem>
-                    <FooterItem >
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
+                    <FooterItem header="Partnership">
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Affiliates")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Resellers")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Education")}</Text>
                         </Link>
                     </FooterItem>
-                    <FooterItem >
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
+                    <FooterItem header="Help Center">
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Support form")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Guides")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
                         </Link>
-                        <Link to={`/${this.props.locale === "en" ? "/" : this.props.locale}/`}>
-                            <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Free Software")}</Text>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
+                        </Link>
+                    </FooterItem>
+                    <FooterItem header="Company">
+                        <Link to="/about-us">
+                            <Text className="footer-link-text">{this.props.t("About AVS4YOU")}</Text>
+                        </Link>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Contact us")}</Text>
+                        </Link>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Privacy")}</Text>
+                        </Link>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("EULA")}</Text>
+                        </Link>
+                        <Link to="/second-page">
+                            <Text className="footer-link-text">{this.props.t("Blog")}</Text>
                         </Link>
                     </FooterItem>
                     <div className="footer-links-box last">
-                        <Link className="footerLogoLink" to={`/${this.props.locale === "en" ? "/" : '/' + this.props.locale}`}>
+                        <Link className="footerLogoLink" to="/second-page">
                             <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                         </Link>
                         <div>

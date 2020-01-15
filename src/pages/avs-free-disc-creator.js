@@ -25,7 +25,7 @@ import slidePopupCarousel2 from '../images/avs-free-disc-creator/dc_burn_audio2x
 import slidePopupCarousel3 from '../images/avs-free-disc-creator/dc_burn_iso2x.png';
 import slidePopupCarousel4 from '../images/avs-free-disc-creator/dc_bootable_disc2x.png';
 
-class avsAudioEditor extends React.PureComponent {
+class avsFreeDiscCreator extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -43,7 +43,7 @@ class avsAudioEditor extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
+      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
           <div className="headerBackground">
             <PageContentWrapper>
@@ -227,4 +227,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(avsAudioEditor);
+export default withI18next({ ns: "common" })(avsFreeDiscCreator);

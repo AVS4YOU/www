@@ -92,11 +92,11 @@ class Layout extends React.PureComponent {
   render(){
     return ( 
       <PageContext.Provider value={this.props.pageContext}>
-        <Header availableLocales={this.props.availableLocales} locate={this.props.locate} t={this.props.t}/>
+        <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
         <StyledLayout>
           <main>{this.props.children}</main>
         </StyledLayout>
-        <Footer locate={this.props.locate} t={this.props.t}/>
+        <Footer t={this.props.t}/>
       </PageContext.Provider>
     )
   }

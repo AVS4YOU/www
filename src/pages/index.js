@@ -94,7 +94,7 @@ const MainPageWrapper = styled.div`
   }
 `;
 
-class Page extends React.PureComponent {
+class mainPage extends React.PureComponent {
 
   constructor(props) {
     super(props);
@@ -111,7 +111,7 @@ class Page extends React.PureComponent {
 
   render(){
   return (
-    <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
+    <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
           <PageContentWrapper>
@@ -136,4 +136,4 @@ class Page extends React.PureComponent {
   );
   }
 };
-export default withI18next({ ns: "common" })(Page);
+export default withI18next({ ns: "common" })(mainPage);

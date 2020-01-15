@@ -167,7 +167,7 @@ class LanguageSelector extends React.PureComponent {
                             <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
                         </BackSubmenuButton> 
                         {this.props.availableLocales.map((item) =>
-                            this.props.locate !== item.value 
+                            this.props.locale !== item.value 
                                 ? <DropdownElement key={item.value} className={"langDropdown"} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                                 : <DropdownElement key={item.value} className={"langDropdown selected"} headerTextClass="selected" path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                         )}
@@ -175,7 +175,7 @@ class LanguageSelector extends React.PureComponent {
                 </div>
                 <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
                     {this.props.availableLocales.map((item) =>
-                        this.props.locate !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
+                        this.props.locale !== item.value && <DropdownElement key={item.value} className={"langDropdown " + item.value} path={item.value === "en" ? "/" : "/" + item.value} headerText={item.text} />
                     )}
                 </MenuItem>
             </StyledLanguageSelector>

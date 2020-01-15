@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import Text from '../text';
 import { Link } from "gatsby";
-import {PageContext} from '../../context/page-context'
+import { PageContext } from '../../context/page-context';
 
 function AvsLink(props){
     return(
         <PageContext.Consumer>  
             {(pageContext) => (
-                <Link to={pageContext
+                <Link className={props.className} to={pageContext
                     ? pageContext.locale == "en" ? props.to : pageContext.locale + props.to
                     : props.to} 
                 >   

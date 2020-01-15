@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '../text';
-import { Link } from 'gatsby';
+import Link from '../link';
 
 const StyledDropdownElement = styled.div`
     background-color: #fff;
