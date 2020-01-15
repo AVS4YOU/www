@@ -7,6 +7,7 @@ import youtube from '../../images/common/social/youtube.svg';
 import pinterest from '../../images/common/social/pinterest.svg';
 import Text from '../text';
 import { Link } from "gatsby";
+import Links from '../link'
 import FooterItem from '../footer-item';
 
 const FooterGridContainer = styled.div`
@@ -84,9 +85,9 @@ class Footer extends React.Component{
             <StyledFooter className="footerStyles">
                 <FooterGridContainer>
                     <FooterItem >
-                        <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
+                        <Links to={"/video-editor"}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Video software")}</Text>
-                        </Link>
+                        </Links>
                         <Link to={`/${this.props.locale === "en" ? "/second-page" : this.props.locale}/second-page`}>
                             <Text className="footer-link-text" fontSize={14} color="#ffffff">{this.props.t("Audio Software")}</Text>
                         </Link>

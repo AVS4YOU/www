@@ -11,6 +11,7 @@ import Header from "./header";
 import styled from 'styled-components';
 import "./layout.css";
 import Footer from "./footer";
+import {PageContext} from '../context/page-context'
 
 const StyledLayout = styled.div`
   .flagBackground{
@@ -38,6 +39,7 @@ const StyledLayout = styled.div`
     }
   }
 `;
+
 
 class Layout extends React.PureComponent {
 
@@ -89,13 +91,13 @@ class Layout extends React.PureComponent {
 
   render(){
     return ( 
-      <>
+      <PageContext.Provider value={this.props.pageContext}>
         <Header availableLocales={this.props.availableLocales} locate={this.props.locate} t={this.props.t}/>
         <StyledLayout>
           <main>{this.props.children}</main>
         </StyledLayout>
         <Footer locate={this.props.locate} t={this.props.t}/>
-      </>
+      </PageContext.Provider>
     )
   }
 }

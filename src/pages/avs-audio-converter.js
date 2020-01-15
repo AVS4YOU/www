@@ -46,7 +46,7 @@ class avsAudioEditor extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
+      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} availableLocales={this.props.pageContext.availableLocales} locate={this.props.pageContext.locale} t={this.props.t}>
         <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
           <div className="headerBackground">
             <PageContentWrapper>
