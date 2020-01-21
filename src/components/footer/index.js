@@ -27,7 +27,7 @@ const FooterGridContainer = styled.div`
 const StyledFooter = styled.footer`
 
     clear: both;
-    background: #363f45 ;
+    background: #32393E;
     color: #dbdbdb;
     font-size: 11px;
     height:auto;

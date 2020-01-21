@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import Header from "./header";
 import styled from 'styled-components';
 import "./layout.css";
+import "../styles/common.less"
 import Footer from "./footer";
 import {PageContext} from '../context/page-context'
 
@@ -56,12 +57,15 @@ class Layout extends React.PureComponent {
   componentDidMount() {
       this.updateWindowDimensions();
 
-      if(this.state.isMobile == true) {
-        this.props.getDevice("Mobile");
-      } else if (this.state.isTablet == true) {
-        this.props.getDevice("Tablet");
-      } else {
-        this.props.getDevice("Desktop");
+      if(this.props.getDevice){
+
+        if(this.state.isMobile == true) {
+          this.props.getDevice("Mobile");
+        } else if (this.state.isTablet == true) {
+          this.props.getDevice("Tablet");
+        } else {
+          this.props.getDevice("Desktop");
+        }
       }
       
       window.addEventListener('resize', this.updateWindowDimensions);
@@ -80,12 +84,15 @@ class Layout extends React.PureComponent {
 
   componentDidUpdate(){
 
-    if(this.state.isMobile == true) {
-      this.props.getDevice("Mobile");
-    } else if (this.state.isTablet == true) {
-      this.props.getDevice("Tablet");
-    } else {
-      this.props.getDevice("Desktop");
+    if(this.props.getDevice){
+
+      if(this.state.isMobile == true) {
+        this.props.getDevice("Mobile");
+      } else if (this.state.isTablet == true) {
+        this.props.getDevice("Tablet");
+      } else {
+        this.props.getDevice("Desktop");
+      }
     }
   }
 
@@ -93,7 +100,7 @@ class Layout extends React.PureComponent {
     return ( 
       <PageContext.Provider value={this.props.pageContext}>
         <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
-        <StyledLayout>
+        <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
         <Footer t={this.props.t}/>

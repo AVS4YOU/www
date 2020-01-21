@@ -12,9 +12,11 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby-i18n": "^1.1.5",
+    "gatsby-plugin-less": "^3.0.18",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-styled-components": "^3.1.11",
     "i18next": "^15.0.6",
+    "less": "^3.10.3",
     "prop-types": "^15.7.2",
     "react-i18next": "^10.4.1",
     "react-responsive": "^8.0.1",
