@@ -123,7 +123,7 @@ render(){
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-              What makes AVS4YOU unique?
+              Contact AVS4YOU
             </Text>
             <div className="contact-body__wrapper">
 
