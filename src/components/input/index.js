@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Text from '../text';
 import ErrorBlock from '../error-block';
-import Select from 'react-styled-select'
-
 
 const StyledInputWrapper = styled.div`
     max-width: 701px;
@@ -81,70 +79,48 @@ const StyledInput = styled.input``;
 
 class Input extends React.Component {
 
-    constructor(props){
+    /* constructor(props) {
         super(props);
 
         this.inputErrorText = "";
         this.inputClass = "";
-    }
+    } */
 
-    onFocus = () => {
-        this.props.focusInput();
-    }
+    render() {
 
-    getInputState = (incorrect = false, empty = false) => {
+        /* if (this.props.showErrors) {
+            let inputState = this.setInputState(this.props.incorrect, this.props.empty);
 
-        let inputState = {
-            isFocus: !empty,
-            error: empty || incorrect
-        }
-
-        this.inputErrorText = empty ? this.props.valueEmptyText : this.props.valueIncorrectText
-
-        return inputState;
-    }
-
-    onBlur = () => {
-        this.props.verifyInput();
-    }
-
-    handleUserInput = (e) => {
-        this.props.setInputData(this.props.inputName, e.target.value);
-    }
-
-    render(){
-
-        if (this.props.showErrors){
-            let inputState = this.getInputState(this.props.incorrect, this.props.empty);
-
-            if(!this.props.required){
+            if (!this.props.required) {
                 inputState.error = false;
             }
 
-            this.inputClass = inputState.error ? 
-            inputState.isFocus 
-                ? "focus error" : "error" 
+            this.inputClass = inputState.error ?
+                inputState.isFocus
+                    ? "focus error" : "error"
                 : inputState.isFocus && "focus";
-        }
+        } */
 
-        const {className, as: tag, inputLabel, valueEmptyText, onKeyPress} = this.props;
-        
-        return(
-            <StyledInputWrapper 
-                className={[className, this.inputClass]}>
+        const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required } = this.props;
 
-                    <StyledInput
-                        as={tag}
-                        onKeyPress={onKeyPress}
-                        onFocus={this.onFocus} 
-                        onBlur={this.onBlur} 
-                        onChange={this.handleUserInput}
-                        className="main-input"
-                    /> 
-                <Text className="label-input">{inputLabel}</Text>
-                {valueEmptyText && 
+        return (
+            <StyledInputWrapper
+                className={errorText ? [className, "error"] : className}>
+
+                <StyledInput
+                    as={tag}
+                    name={inputName}
+                    value={value}
+                    onKeyPress={onKeyPress}
+                    onFocus={onFocus}
+                    onBlur={onBlur}
+                    onChange={onChange}
+                    className="main-input"
+                />
+                <Text className="label-input">{`${inputLabel}${required && '*'}`}</Text>
+                {errorText &&
                     <ErrorBlock className="errorBlock">
-                        {this.inputErrorText}
+                        {errorText}
                     </ErrorBlock>
                 }
             </StyledInputWrapper>

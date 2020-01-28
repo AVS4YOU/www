@@ -53,34 +53,31 @@ const StyledForm = styled.div`
     }
 `;
 
+/**
+* Enum for employee activation status.
+* @readonly
+*/
+const ErrorStatus = Object.freeze({
+    NoError: 0,
+    Empty: 1,
+    Incorrect: 2
+});
+
 class Form extends React.Component {
     constructor(props){
         super(props);
 
         this.state={
-            name: "",
-            nameEmpty: true,
-            nameShowErrors: false,
+            name: { value: "", status: ErrorStatus.NoError },
 
-            email: "",
-            emailEmpty: true,
-            emailIncorrect: false,
-            emailShowErrors: false,
+            email: { value: "", status: ErrorStatus.NoError },
 
-            comment: "",
-            commentEmpty: true,
-            commentShowErrors: false
+            comment: { value: "", status: ErrorStatus.NoError }
         };
 
         this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
 
     }
-
-    keyPressed = (event) => {
-        if (event.key === "Enter") {
-            this.request();
-        }
-    };
 
     request = () => {
         if(this.verifyData()){
@@ -93,58 +90,92 @@ class Form extends React.Component {
         }
     };
 
-    verifyInput = (inputName, emptyState, showErrorsState = "", incorrectState = "", regexp = "") => {
-
-        let verifyData = {
-            empty: this.state[inputName] == "",
-            incorrect: regexp && !this.state[inputName].match(regexp),
-        }
-
-        this.setState({
-            [emptyState]: verifyData.empty,
-            [showErrorsState]: true
-        });
-
-        if(incorrectState) {
-
-            this.setState({
-                [incorrectState]: verifyData.incorrect
-            });
-        }
-
-        return(verifyData);
+    isEmpty = (value) => {
+        return !value || !value.length;
     }
 
-    focusInput = (emptyState, showErrorsState, incorrectState = "") => {
-        this.setState({
-            [emptyState]: false,
-            [showErrorsState]: true
-        })
+    isEmailInvalid = (value) => {
+        return !value.match(this.regexpEmail)
+    }
 
-        if(incorrectState) {
-            this.setState({
-                [incorrectState]: false
-            });
+    validate = (inputName, value) => {
+        switch(inputName) {
+            case "name":
+                return this.isEmpty(value) ? ErrorStatus.Empty :  ErrorStatus.NoError;
+            case "email":
+                if(this.isEmpty(value)) 
+                    return ErrorStatus.Empty;
+                else if(this.isEmailInvalid(value)) 
+                    return ErrorStatus.Incorrect;
+                else 
+                    return ErrorStatus.NoError;
+            default: 
+                return ErrorStatus.NoError;
         }
     }
 
     verifyData = () => {
 
-        let emailErrors = this.verifyInput("email", "emailEmpty", "emailShowErrors", "emailIncorrect", this.regexpEmail);
-        let nameErrors = this.verifyInput("name", "nameEmpty", "nameShowErrors");
+        const nameStatus = this.validate("name", this.state.name.value);
+        this.setError("name", nameStatus);
+        const emailStatus = this.validate("email", this.state.email.value);
+        this.setError("email", emailStatus);
+        
         //this.verifyInput("comment", "commentEmpty", "commentShowErrors");
 
-        let formValid = !emailErrors.empty && 
-                        !emailErrors.incorrect && 
-                        !nameErrors.empty;
+        let formValid = nameStatus === ErrorStatus.NoError && 
+                        emailStatus === ErrorStatus.NoError;
 
         return formValid;
     }
 
     setInputData = (inputName, value) => {
-        this.setState({
-            [inputName]: value
-        });
+        const field = this.state[inputName];
+
+        if(!field) throw "Unknown name";
+
+        this.setState(
+            {
+                [inputName]: {...field, value}
+            }
+        );
+    }
+
+    onChangeInput = (e) => {
+        this.setInputData(e.target.name, e.target.value);
+    }
+
+    onBlurInput = (e) => {
+        const status = this.validate(e.target.name, e.target.value);
+        this.setError(e.target.name, status);
+    }
+
+    setError = (inputName, newStatus) => {
+        const field = this.state[inputName];
+
+        if(!field) throw "Unknown name";
+
+        if(field.status !== newStatus) {
+            this.setState(
+                {
+                    [inputName]: {...field, status: newStatus}
+                }
+            )
+        }
+    }
+    
+    onFocusInput = (e) => {
+        this.setError(e.target.name, ErrorStatus.NoError);
+    };
+    
+    onKeyPress = (event) => {
+        if (event.key === "Enter") {
+            this.request();
+        }
+    };
+
+    onClick = () => {
+        this.request();
     }
 
     /*getCouponRequest = async (data) => {
@@ -156,7 +187,25 @@ class Form extends React.Component {
         alert("request send");
     }*/
 
+    getErrorText = (inputName) => {
+        const field = this.state[inputName];
+
+        switch(field.status) {
+            case ErrorStatus.Empty:
+                return  `${inputName} is empty`;
+            case ErrorStatus.Incorrect:
+                return `${inputName} is incorrect`;
+                default: 
+                    return null;
+        }
+    }
+
     render(){
+
+        const nameErrorText = this.getErrorText("name");
+        const emailErrorText = this.getErrorText("email");
+        const commentErrorText = this.getErrorText("comment");
+
         return(       
             <StyledForm>
                 <Text as="h2" className="formHeader">
@@ -165,59 +214,61 @@ class Form extends React.Component {
                 <div className="inputsWrapper">
                     <Input  
                         tabIndex="0"
-                        onKeyPress={this.keyPressed}
-                        setInputData={this.setInputData}
+
                         inputName="name"
-                        inputLabel="Name*"
-                        valueIncorrectText="Name is incorrect"
-                        valueEmptyText="Name is empty"
-                        onKeyDown={this._handleKeyDown}
+                        inputLabel="Name"
+
+                        value={this.state.name.value}
+                        errorText={nameErrorText}
+                        onKeyPress={this.onKeyPress}
+                        onChange={this.onChangeInput}
+                        onBlur={this.onBlurInput}
+                        onFocus={this.onFocusInput}
+
                         className="formInput"
                         required={true}
-                        verifyInput={this.verifyInput.bind(this, "name", "nameEmpty", "nameShowErrors")}
-                        focusInput={this.focusInput.bind(this, "nameEmpty", "nameShowErrors")}
-                        empty={this.state.nameEmpty}
-                        showErrors={this.state.nameShowErrors}
+                        
                     />
                      <Input 
                         tabIndex="1"
-                        onKeyPress={this.keyPressed}
-                        setInputData={this.setInputData}
+                        
                         inputName="email"
-                        inputLabel="Email address*"
-                        valueIncorrectText="Email is incorrect"
-                        valueEmptyText="Email is empty"
-                        regexp={this.regexpEmail}
-                        onKeyDown={this._handleKeyDown}
+                        inputLabel="Email address"
+
+                        value={this.state.email.value}
+                        errorText={emailErrorText}
+                        onKeyPress={this.onKeyPress}
+                        onChange={this.onChangeInput}
+                        onBlur={this.onBlurInput}
+                        onFocus={this.onFocusInput}
+                        
                         className="formInput"
                         required={true}
-                        verifyInput={this.verifyInput.bind(this, "email", "emailEmpty", "emailShowErrors", "emailIncorrect", this.regexpEmail)}
-                        focusInput={this.focusInput.bind(this, "emailEmpty", "emailShowErrors", "emailIncorrect")}
-                        empty={this.state.emailEmpty}
-                        incorrect={this.state.emailIncorrect}
-                        showErrors={this.state.emailShowErrors}
+                        
                     />
 
                 </div>
                 <Input 
                     as="textarea"
                     tabIndex="2"
-                    onKeyPress={this.keyPressed}
-                    setInputData={this.setInputData}
+                    
                     inputName="comment"
                     inputLabel="Give us a brief description of your specific needs"
-                    onKeyDown={this._handleKeyDown}
+
+                    value={this.state.comment.value}
+                    errorText={commentErrorText}
+                    onKeyPress={this.onKeyPress}
+                    onChange={this.onChangeInput}
+                    onBlur={this.onBlurInput}
+                    onFocus={this.onFocusInput}
+
                     className="formInput textArea"
-                    verifyInput={this.verifyInput.bind(this, "comment", "commentEmpty", "commentShowErrors")}
-                    focusInput={this.focusInput.bind(this, "commentEmpty", "commentShowErrors")}
-                    empty={this.state.commentEmpty}
-                    showErrors={this.state.commentShowErrors}
                 />
 
                 <Button 
                     tabIndex="1"
                     className="getCouponButton" 
-                    onClick={this.request}
+                    onClick={this.onClick}
                     backgroundColor="blue" 
                     padding="13px 24px"
                     fontSize={14} 
