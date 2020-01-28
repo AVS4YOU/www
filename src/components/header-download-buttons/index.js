@@ -171,8 +171,6 @@ class HeaderDownloadButtons extends React.PureComponent {
         this.closePopupFunction = this.closePopupFunction.bind(this);
     };
 
-    emailRegexp = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
-
     toShowForm = () => {
         this.setState({
             isShown: !this.state.isShown
@@ -275,7 +273,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                         inputLabel="Enter your email"
                         valueIncorrectText="Email is incorrect"
                         valueEmptyText="Email is empty"
-                        regexp={this.emailRegexp}
+                        regexp="email"
                         onKeyDown={this._handleKeyDown}
                         className="mobileInput"
                         />}

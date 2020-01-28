@@ -6,11 +6,7 @@ import Layout from "../components/layout";
 import "../styles/about-us.less";
 
 
-class avsAudioConverter extends React.PureComponent {
-
-  constructor(props) {
-    super(props);
-  }
+class aboutUs extends React.PureComponent {
 
 render(){
 
@@ -127,41 +123,41 @@ render(){
             </Text>
             <div className="contact-body__wrapper">
 
-              <div className="contact-body__box">
-                <Text as="h4" className="contact-body__headline">
+              <div className="common-info-block">
+                <Text as="h4" className="common-info-block__headline">
                   Affiliate Sales
                 </Text>
-                <Text className="contact-body__text">
+                <Text className="common-info-block__text">
                   No need to pay for each program. 
                   You get a set of audio and video tools at the price of one application
                 </Text>
               </div>
 
-              <div className="contact-body__box">
-                <Text as="h4" className="contact-body__headline">
+              <div className="common-info-block">
+                <Text as="h4" className="common-info-block__headline">
                   Volume Sales
                 </Text>
-                <Text className="contact-body__text">
+                <Text className="common-info-block__text">
                   To purchase a large number of licenses at a special price, 
                   contact our sales department at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>
                 </Text>
               </div>
 
-              <div className="contact-body__box">
-                <Text as="h4" className="contact-body__headline">
+              <div className="common-info-block">
+                <Text as="h4" className="common-info-block__headline">
                   Education
                 </Text>
-                <Text className="contact-body__text">
+                <Text className="common-info-block__text">
                   To get a quote for schools and universities, 
                   please email us at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> or visit Education page
                 </Text>
               </div>
 
-              <div className="contact-body__box">
-                <Text as="h4" className="contact-body__headline">
+              <div className="common-info-block">
+                <Text as="h4" className="common-info-block__headline">
                   Customer Support
                 </Text>
-                <Text className="contact-body__text">
+                <Text className="common-info-block__text">
                   For assistance with purchasing and using our products, 
                   please visit our Support Center
                 </Text>
@@ -173,4 +169,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(avsAudioConverter);
+export default withI18next({ ns: "common" })(aboutUs);

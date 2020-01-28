@@ -1,43 +1,8 @@
 .about-us-page{
 
-    .common__heading{
-        font-size: 44px;
-        color:#333333;
-        text-align: center;
-        font-weight: 600;
-    }
-
-    a{
-        color:#1E72D2;
-    }
-
 
     .header{
         background-image: url(../images/about-us/header.png);
-
-        .header__background-gradient{
-            background: radial-gradient(closest-side at 21% 52%, #000000CC 0%, #131313AB 162%, #54545400 362%) 0% 0% no-repeat padding-box; 
-        }
-
-        .header__heading{
-            font-size: 65px;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .header__subtitle{
-            font-size: 22px;
-            max-width: 625px;
-            color: #fff;
-            font-weight: 300;
-            padding-top: 30px;
-            line-height: 1.8;
-        }
-
-        .header__body{
-            padding-top: 170px;
-            padding-bottom: 250px;
-        }
     }
 
     .body-company{
@@ -226,23 +191,7 @@
             padding-top: 80px;
         }
 
-        .contact-body__box{
-            max-width:285px;
-            padding:10px;
-            padding-top:100px;
-            position:relative;
-            box-sizing: border-box;
-            width: 24%;
-
-            &:before{
-                content: '';
-                width:75px;
-                height:75px;
-                position: absolute;
-                left:10px;
-                top: 0;
-                background-size: contain;
-            }
+        .common-info-block{
             
             &:nth-child(1):before{
                 background-image: url(../images/about-us/affiliates.svg);
@@ -261,18 +210,6 @@
             }
 
         }
-
-        .contact-body__headline{
-            color:#000000;
-            font-size: 24px;
-            padding-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .contact-body__text{
-            font-size: 18px;
-            color:#555555;
-        }
     }
 }
 
@@ -287,13 +224,11 @@
             padding: 65px 15px;
         }
 
-        .contact-body{ 
-            .contact-body__box{
-                max-width: none;
-                width:45%;
-                margin-bottom: 30px;
-                max-width: 450px;
-            }
+        .common-info-block{
+            max-width: none;
+            width:45%;
+            margin-bottom: 30px;
+            max-width: 450px;
         }
 
         .map-body{
@@ -353,9 +288,8 @@
             padding: 45px 15px;
         }
 
-        .common__heading{
-            font-size: 24px;
-            font-weight: bold;
+        .common-info-block{
+            width:100%;
         }
 
         .header .header__background-gradient{
@@ -364,23 +298,6 @@
 
         .header{
             background-position: -224px;
-
-            .header__body{
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            .header__heading{
-                font-size: 40px;
-                text-align: center;
-            }
-
-            .header__subtitle{
-                font-size: 16px;
-                max-width: 500px;
-                margin: auto;
-                text-align: center;
-            }
         }
 
         .body-company{ 
@@ -463,32 +380,6 @@
             .contact-body__wrapper{
                 display:block;
                 padding-top:40px;
-            }
-
-            .contact-body__box{
-                max-width: 500px;
-                width: 100%;
-                margin: auto;
-                margin-bottom: 30px;
-
-                &:before{
-                    left:0;
-                    right:0;
-                    margin:auto;
-                }
-            }
-
-            .contact-body__headline,
-            .contact-body__text{
-                text-align: center;
-            }
-
-            .contact-body__headline{
-                font-size: 18px;
-            }
-
-            .contact-body__text{
-                font-size: 14px;
             }
         }
     }

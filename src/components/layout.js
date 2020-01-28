@@ -15,6 +15,14 @@ import Footer from "./footer";
 import {PageContext} from '../context/page-context'
 
 const StyledLayout = styled.div`
+
+  .common__heading{
+    font-size: 44px;
+    color:#333333;
+    text-align: center;
+    font-weight: 600;
+  }
+
   .flagBackground{
     background-color: #FDA050;
     margin-left: 15px;

@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Text from '../text';
 import ErrorBlock from '../error-block';
+import Select from 'react-styled-select'
+
 
 const StyledInputWrapper = styled.div`
-    max-width: 700px;
+    max-width: 701px;
     display: block;
     margin: auto;
     position: relative;
@@ -75,114 +77,72 @@ const StyledInputWrapper = styled.div`
     }
 `;
 
+const StyledInput = styled.input``;
+
 class Input extends React.Component {
 
     constructor(props){
         super(props);
 
-        this.state = {
-            isFocus: false,
-            email: '',
-            error: false
-        }
-
-        this.onFocus = this.onFocus.bind(this);
-        this.onBlur = this.onBlur.bind(this);
-    }
-    inputErrorText = "";
-    emailRegex = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i');
-
-    onFocus(){
-        this.setState({
-            isFocus: true,
-            error: false
-        })
+        this.inputErrorText = "";
+        this.inputClass = "";
     }
 
-    onBlur(){
-        this.validateData(false)
+    onFocus = () => {
+        this.props.focusInput();
     }
 
-    validateData(isButton){
+    getInputState = (incorrect = false, empty = false) => {
 
-        const data = {
-            email: this.state.email
+        let inputState = {
+            isFocus: !empty,
+            error: empty || incorrect
         }
 
-        var isEmpty = data.email === "" || data.email === null || data.email === undefined;
+        this.inputErrorText = empty ? this.props.valueEmptyText : this.props.valueIncorrectText
 
-        if(isButton){
-
-            if(isEmpty){
-                this.setState({
-                    error: true,
-                    isFocus: false
-                })
-
-                this.props.checkValid(false);
-                this.inputErrorText = this.props.valueEmptyText;
-            } else if(this.props.regexp !== "" && !data.email.match(this.props.regexp)){
-                this.setState({
-                    error: true   
-                })
-
-                this.props.checkValid(false);
-                this.inputErrorText = this.props.valueIncorrectText;
-            } else {
-                this.props.checkValid(true);
-                this.setState({
-                    error: false
-                })
-            }
-
-        } else {
-            if(isEmpty){
-                this.setState({
-                    isFocus: false,
-                    error: false
-                })
-            } else if(this.props.regexp !== ""){
-                if(!data.email.match(this.props.regexp)){
-                    this.setState({
-                        error: true   
-                    })
-
-                    this.inputErrorText = this.props.valueIncorrectText;
-                }
-            }
-        }
+        return inputState;
     }
 
-    componentDidUpdate(prevProps){
-        if(prevProps.getCouponToggle !== this.props.getCouponToggle){
-            this.validateData(true);
-        }
+    onBlur = () => {
+        this.props.verifyInput();
     }
 
     handleUserInput = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-        this.setState({[name]: value});
+        this.props.setInputData(this.props.inputName, e.target.value);
     }
 
     render(){
-        const inputClass = this.state.error ? 
-            this.state.isFocus 
+
+        if (this.props.showErrors){
+            let inputState = this.getInputState(this.props.incorrect, this.props.empty);
+
+            if(!this.props.required){
+                inputState.error = false;
+            }
+
+            this.inputClass = inputState.error ? 
+            inputState.isFocus 
                 ? "focus error" : "error" 
-                : this.state.isFocus && "focus"
+                : inputState.isFocus && "focus";
+        }
+
+        const {className, as: tag, inputLabel, valueEmptyText, onKeyPress} = this.props;
+        
         return(
             <StyledInputWrapper 
-                className={this.props.className + " " + inputClass}>
-                <input
-                    onKeyPress={this.props.onKeyPress}
-                    name={this.props.inputName}
-                    value={this.state.email}
-                    onFocus={this.onFocus} 
-                    onBlur={this.onBlur} 
-                    onChange={this.handleUserInput}
-                    className="main-input" />
-                <Text className="label-input">{this.props.inputLabel}</Text>
-                {this.props.valueEmptyText && 
+                className={[className, this.inputClass]}>
+
+                    <StyledInput
+                        as={tag}
+                        onKeyPress={onKeyPress}
+                        onFocus={this.onFocus} 
+                        onBlur={this.onBlur} 
+                        onChange={this.handleUserInput}
+                        className="main-input"
+                    /> 
+                <Text className="label-input">{inputLabel}</Text>
+                {valueEmptyText && 
                     <ErrorBlock className="errorBlock">
                         {this.inputErrorText}
                     </ErrorBlock>
