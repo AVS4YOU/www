@@ -77,14 +77,7 @@ const StyledInputWrapper = styled.div`
 
 const StyledInput = styled.input``;
 
-class Input extends React.Component {
-
-    /* constructor(props) {
-        super(props);
-
-        this.inputErrorText = "";
-        this.inputClass = "";
-    } */
+class Input extends React.PureComponent {
 
     render() {
 
@@ -101,11 +94,11 @@ class Input extends React.Component {
                 : inputState.isFocus && "focus";
         } */
 
-        const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required } = this.props;
+        const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required, inputClassName } = this.props;
 
         return (
             <StyledInputWrapper
-                className={errorText ? [className, "error"] : className}>
+                className={[className, inputClassName]}>
 
                 <StyledInput
                     as={tag}

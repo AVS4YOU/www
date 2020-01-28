@@ -68,23 +68,27 @@ class Form extends React.Component {
         super(props);
 
         this.state={
-            name: { value: "", status: ErrorStatus.NoError },
+            name: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
-            email: { value: "", status: ErrorStatus.NoError },
+            email: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
-            comment: { value: "", status: ErrorStatus.NoError }
+            comment: { value: "", status: ErrorStatus.NoError, inputClassName: "" }
         };
 
-        this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
+        this.nameErrorText = "";
+        this.emailErrorText = "";
+        this.commentErrorText = "";
 
+        this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
+        
     }
 
     request = () => {
         if(this.verifyData()){
             console.log("form valid: ")
-            console.log("name: " + this.state.name)
-            console.log("email: " + this.state.email)
-            console.log("comment: " + this.state.comment)
+            console.log("name: " + this.state.name.value)
+            console.log("email: " + this.state.email.value)
+            console.log("comment: " + this.state.comment.value)
         } else {
             console.log("form invalid")
         }
@@ -118,15 +122,48 @@ class Form extends React.Component {
 
         const nameStatus = this.validate("name", this.state.name.value);
         this.setError("name", nameStatus);
+        this.updateInputClassName("name", nameStatus);
+        this.updateErrorText("name", nameStatus);
+        
         const emailStatus = this.validate("email", this.state.email.value);
         this.setError("email", emailStatus);
-        
-        //this.verifyInput("comment", "commentEmpty", "commentShowErrors");
+        this.updateInputClassName("email", emailStatus);
+        this.updateErrorText("email", emailStatus);
 
         let formValid = nameStatus === ErrorStatus.NoError && 
                         emailStatus === ErrorStatus.NoError;
 
         return formValid;
+    }
+
+    updateInputClassName = (inputName, status) => {
+        if(status === ErrorStatus.Empty) {
+            this.setFocusInput(inputName, "error");
+
+        } else if (status === ErrorStatus.Incorrect) {
+            this.setFocusInput(inputName, "focus error");
+
+        } else if (this.state[inputName].value){
+            this.setFocusInput(inputName, "focus");
+
+        } else {
+            this.setFocusInput(inputName, "");
+
+        }
+    }
+
+    updateErrorText = (inputName, status) => {
+        
+        switch(status) {
+            case ErrorStatus.Empty:
+                this.setErrorText(inputName, "is empty");
+                break
+            case ErrorStatus.Incorrect:
+                this.setErrorText(inputName, "is incorrect");
+                break
+            default: 
+                break
+        }
     }
 
     setInputData = (inputName, value) => {
@@ -136,18 +173,9 @@ class Form extends React.Component {
 
         this.setState(
             {
-                [inputName]: {...field, value}
+                [inputName]: {...field, value: value}
             }
         );
-    }
-
-    onChangeInput = (e) => {
-        this.setInputData(e.target.name, e.target.value);
-    }
-
-    onBlurInput = (e) => {
-        const status = this.validate(e.target.name, e.target.value);
-        this.setError(e.target.name, status);
     }
 
     setError = (inputName, newStatus) => {
@@ -163,9 +191,47 @@ class Form extends React.Component {
             )
         }
     }
+
+    setFocusInput = (inputName, className) => {
+        const field = this.state[inputName];
+
+        if(!field) throw "Unknown name";
+
+        this.setState({
+            [inputName]: {...field, inputClassName: className}
+        })
+    }
+
+    setErrorText = (inputName, error) => {
+        switch (inputName){
+            case "name":
+                this.nameErrorText = `name ${error}`;
+                break
+            case "email":
+                this.emailErrorText = `email ${error}`
+                break
+            case "comment":
+                this.commentErrorText = `comment ${error}`
+                break
+            default:
+                break
+        }
+    }
+
+    onChangeInput = (e) => {
+        this.setInputData(e.target.name, e.target.value);
+    }
+
+    onBlurInput = (e) => {
+        const status = this.validate(e.target.name, e.target.value);
+        this.setError(e.target.name, status);
+        this.updateInputClassName(e.target.name, status);
+        this.updateErrorText(e.target.name, status);
+    }
     
     onFocusInput = (e) => {
         this.setError(e.target.name, ErrorStatus.NoError);
+        this.setFocusInput(e.target.name, "focus")
     };
     
     onKeyPress = (event) => {
@@ -187,24 +253,7 @@ class Form extends React.Component {
         alert("request send");
     }*/
 
-    getErrorText = (inputName) => {
-        const field = this.state[inputName];
-
-        switch(field.status) {
-            case ErrorStatus.Empty:
-                return  `${inputName} is empty`;
-            case ErrorStatus.Incorrect:
-                return `${inputName} is incorrect`;
-                default: 
-                    return null;
-        }
-    }
-
     render(){
-
-        const nameErrorText = this.getErrorText("name");
-        const emailErrorText = this.getErrorText("email");
-        const commentErrorText = this.getErrorText("comment");
 
         return(       
             <StyledForm>
@@ -219,7 +268,8 @@ class Form extends React.Component {
                         inputLabel="Name"
 
                         value={this.state.name.value}
-                        errorText={nameErrorText}
+                        inputClassName={this.state.name.inputClassName}
+                        errorText={this.nameErrorText}
                         onKeyPress={this.onKeyPress}
                         onChange={this.onChangeInput}
                         onBlur={this.onBlurInput}
@@ -236,7 +286,8 @@ class Form extends React.Component {
                         inputLabel="Email address"
 
                         value={this.state.email.value}
-                        errorText={emailErrorText}
+                        inputClassName={this.state.email.inputClassName}
+                        errorText={this.emailErrorText}
                         onKeyPress={this.onKeyPress}
                         onChange={this.onChangeInput}
                         onBlur={this.onBlurInput}
@@ -256,7 +307,8 @@ class Form extends React.Component {
                     inputLabel="Give us a brief description of your specific needs"
 
                     value={this.state.comment.value}
-                    errorText={commentErrorText}
+                    inputClassName={this.state.comment.inputClassName}
+                    errorText={this.commentErrorText}
                     onKeyPress={this.onKeyPress}
                     onChange={this.onChangeInput}
                     onBlur={this.onBlurInput}
