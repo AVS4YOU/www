@@ -77,7 +77,7 @@ const StyledItem = styled.div`
 
 const ReviewCarouselItem = (props) => {
     return(
-        <StyledItem className="rewWrapper" {...props}>
+        <StyledItem id={props.id} className="rewWrapper" {...props}>
             <div className="quote">
                 <div className="avatar"></div>
                 <Text className="name" color="#888F95" fontSize={16}>{props.name}</Text>

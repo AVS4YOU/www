@@ -78,12 +78,14 @@ const StyledScreen = styled.div`
     }
 `;
 
-const ReviewsScreen = () => {
+const ReviewsScreen = (props) => {
     return(
         <PageContentWrapper>
             <StyledScreen>
                 <div>
-                    <ReviewsSlider />
+                    <ReviewsSlider 
+                        reviewsData={props.reviewsData}
+                    />
                 </div>
                 <div className="container">
                     <div className="imgWrapper">

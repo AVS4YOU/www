@@ -35,7 +35,23 @@ const StyledCarouselWrapper = styled.div`
 
 `;
 
+
 export default class ReviewSlider extends Component {
+
+  constructor(props){
+    super(props);
+  }
+
+  reviews = (reviewsData) => reviewsData.map((item, index) => 
+    <ReviewCarouselItem
+      id={item.name}
+      name={item.name}
+      avatar={item.avatar}
+      revHeader={item.revHeader}
+      revText={item.revText}
+    />
+  );
+
   render() {
     const settings = {
       dots: true,
@@ -48,26 +64,34 @@ export default class ReviewSlider extends Component {
     return (
       <StyledCarouselWrapper>
         <Slider {...settings}>
-          <ReviewCarouselItem 
-            name="Chen Wang" 
-            avatar={AvatarChenWang} 
-            revHeader="Our customers say" 
-            revText="For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results." 
-          />
-          <ReviewCarouselItem 
-            name="Andy Stephens" 
-            avatar={AvatarAndyStephens} 
-            revHeader="Our customers say" 
-            revText="The product is super easy to download and use. Anyone can do this in just minutes. The company is always supportive. I highly recommend." 
-          />
-          <ReviewCarouselItem 
-            name="William Holmes" 
-            avatar={AvatarWilliamHolmes} 
-            revHeader="Our customers say" 
-            revText="I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional." 
-          />
+          {this.props.reviewsData && this.reviews(this.props.reviewsData)}
         </Slider>
       </StyledCarouselWrapper>
     );
   }
 }
+
+ReviewSlider.defaultProps = {
+  regexp: "",
+  reviewsData: 
+    [
+      {
+        name: "Chen Wang",
+        avatar: AvatarChenWang,
+        revHeader: "Our customers say",
+        revText: "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results."
+      },
+      {
+        name: "Andy Stephens",
+        avatar: AvatarAndyStephens,
+        revHeader: "Our customers say",
+        revText: "The product is super easy to download and use. Anyone can do this in just minutes. The company is always supportive. I highly recommend." 
+      },
+      {
+        name: "William Holmes",
+        avatar: AvatarWilliamHolmes,
+        revHeader: "Our customers say",
+        revText: "I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional." 
+      }
+    ],
+};

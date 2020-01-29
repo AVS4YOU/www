@@ -32,6 +32,10 @@ import slidePopupCarousel4 from '../images/avs-audio-editor/slider4@2x-min.png';
 import slidePopupCarousel5 from '../images/avs-audio-editor/slider5@2x-min.png';
 import slidePopupCarousel6 from '../images/avs-audio-editor/slider6@2x-min.png';
 
+import AvatarDavid from '../images/avs-audio-editor/david.png';
+import AvatarFrank from '../images/avs-audio-editor/frank.png';
+import AvatarJohn from '../images/avs-audio-editor/john.png';
+
 
 class avsAudioEditor extends React.PureComponent {
 
@@ -129,7 +133,30 @@ render(){
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "David Lehrman",
+                    avatar: AvatarDavid,
+                    revHeader: "Our customers say",
+                    revText: "I use Audio Editor to boost the overall mix volume of my work so it matches studio mastered recordings. I love this program. This Suite is the best money I ever spent."
+                  },
+                  {
+                    name: "Frank Lindt",
+                    avatar: AvatarFrank,
+                    revHeader: "Our customers say",
+                    revText: "I trust AVS Tools and AVS Team ! I love and respect these tools ! Very easy to handle this software ! No need too much practical experiences ! Creative mind and common sense. that is enough to finish new audio/video ventures !"
+                  },
+                  {
+                    name: "John Piquette",
+                    avatar: AvatarJohn,
+                    revHeader: "Our customers say",
+                    revText: "I have dealt with and used AVS programs for more then three years. They have an incredible assortment of programs. The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat."
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 8.5</Text>
           <ScreenshotsCarousel 

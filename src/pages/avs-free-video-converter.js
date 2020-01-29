@@ -11,7 +11,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 
-import BackgroundHeaderImage from "../images/video-editor/background_main.png";
+import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
 import HeaderImage from '../images/avs-free-video-converter/en_avs_video_converter.png';
 import HeaderImageMobile from '../images/avs-free-video-converter/en_avs_video_converter-mobile.png';
 
@@ -34,6 +34,10 @@ import slidePopupCarousel3 from '../images/avs-free-video-converter/slider_popup
 import slidePopupCarousel4 from '../images/avs-free-video-converter/slider_popup4.png';
 import slidePopupCarousel5 from '../images/avs-free-video-converter/slider_popup5.png';
 import slidePopupCarousel6 from '../images/avs-free-video-converter/slider_popup6.png';
+
+import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
+import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
+import AvatarLawrence from '../images/avs-free-video-converter/lawrence_thompson.png';
 
 class avsFreeVideoConverter extends React.PureComponent {
 
@@ -145,7 +149,30 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Gayle Hibbert",
+                    avatar: AvatarGayle,
+                    revHeader: "Our customers say",
+                    revText: "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results. Would certainly recommend to anyone who wants good video software at a reasonable price."
+                  },
+                  {
+                    name: "Terrance Jenkins",
+                    avatar: AvatarTerrance,
+                    revHeader: "Our customers say",
+                    revText: "The product is super easy to download and use. Anyone can do this in just minutes. The company is always supportive. I highly recommend"
+                  },
+                  {
+                    name: "Lawrence Thompson",
+                    avatar: AvatarLawrence,
+                    revHeader: "Our customers say",
+                    revText: "I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional"
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12</Text>
           <ScreenshotsCarousel 

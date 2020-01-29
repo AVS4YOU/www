@@ -26,6 +26,9 @@ import slidePopupCarousel2 from '../images/avs-audio-converter/slider2@2x-min.pn
 import slidePopupCarousel3 from '../images/avs-audio-converter/slider3@2x-min.png';
 import slidePopupCarousel4 from '../images/avs-audio-converter/slider4@2x-min.png';
 
+import AvatarJohn from '../images/avs-audio-converter/john.png';
+import AvatarJacky from '../images/avs-audio-converter/jacky.png';
+
 class avsAudioConverter extends React.PureComponent {
 
   constructor(props) {
@@ -112,7 +115,24 @@ render(){
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "John Woffod",
+                    avatar: AvatarJohn,
+                    revHeader: "Our customers say",
+                    revText: "For the Holidays I had the need to convert audio files for my wife and kids .. After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented... so far have run many dozens of M4A to WMA and MP3 conversions."
+                  },
+                  {
+                    name: "Jacky Lui",
+                    avatar: AvatarJacky,
+                    revHeader: "Our customers say",
+                    revText: "The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software."
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 9.1</Text>
           <ScreenshotsCarousel 

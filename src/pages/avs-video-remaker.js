@@ -11,7 +11,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 
-import BackgroundHeaderImage from "../images/video-editor/background_main.png";
+import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
 import HeaderImage from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
 import HeaderImageMobile from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
 
@@ -21,6 +21,10 @@ import screen3 from '../images/avs-video-remaker/vr_disc_menu-min.png';
 
 import screen4 from '../images/avs-video-remaker/slider1-min.png';
 import screen5 from '../images/avs-video-remaker/slider2-min.png';
+
+import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
+import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
+import AvatarArthur from '../images/avs-video-remaker/arthur_rees.png';
 
 
 class avsVideoRemaker extends React.PureComponent {
@@ -111,7 +115,30 @@ render(){
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Robin Kidderminster",
+                    avatar: AvatarRobin,
+                    revHeader: "Our customers say",
+                    revText: "Been using your video software for years. What makes it so good? It WORKS. It's easy to use, works well and unlike many other similar software it is quick, accurate and reliable. No brained - the BEST."
+                  },
+                  {
+                    name: "Michael Bryant",
+                    avatar: AvatarMichael,
+                    revHeader: "Our customers say",
+                    revText: "As a supporter of your programs, I must say that I have never been disappointed in your software or your customer service team. Your software does exactly what I need it to do..."
+                  },
+                  {
+                    name: "Arthur Rees",
+                    avatar: AvatarArthur,
+                    revHeader: "Our customers say",
+                    revText: "Good applications, prompt service and reasonable pricing. Great products, intuitive to learn and help files are concise."
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.3</Text>
           <ScreenshotsCarousel 

@@ -11,21 +11,25 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 
-import BackgroundHeaderImage from "../images/video-editor/background_main.png";
-import HeaderImage from '../images/video-editor/en_avs_video_editor_main.png';
-import HeaderImageMobile from '../images/video-editor/slider1.png';
+import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
+import HeaderImage from '../images/avs-video-editor/en_avs_video_editor_main.png';
+import HeaderImageMobile from '../images/avs-video-editor/slider1.png';
 
-import slideCarousel1 from '../images/video-editor/slider1.png';
-import slideCarousel2 from '../images/video-editor/slider2.png';
+import slideCarousel1 from '../images/avs-video-editor/slider1.png';
+import slideCarousel2 from '../images/avs-video-editor/slider2.png';
 
-import slidePopupCarousel1 from '../images/video-editor/slider1-2x.png';
-import slidePopupCarousel2 from '../images/video-editor/slider2-2x.png';
+import slidePopupCarousel1 from '../images/avs-video-editor/slider1-2x.png';
+import slidePopupCarousel2 from '../images/avs-video-editor/slider2-2x.png';
 
-import screen1 from '../images/video-editor/slider3.png';
-import screen2 from '../images/video-editor/slider4.png';
-import screen3 from '../images/video-editor/slider5.png';
-import screen4 from '../images/video-editor/slider2.png';
-import screen5 from '../images/video-editor/slider6.png';
+import screen1 from '../images/avs-video-editor/slider3.png';
+import screen2 from '../images/avs-video-editor/slider4.png';
+import screen3 from '../images/avs-video-editor/slider5.png';
+import screen4 from '../images/avs-video-editor/slider2.png';
+import screen5 from '../images/avs-video-editor/slider6.png';
+
+import AvatarJames from '../images/avs-video-editor/james_k.png';
+import AvatarLinda from '../images/avs-video-editor/linda_k.png';
+import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
 
 class avsVideoEditor extends React.PureComponent {
@@ -141,7 +145,30 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "James K.",
+                    avatar: AvatarJames,
+                    revHeader: "Our customers say",
+                    revText: "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results."
+                  },
+                  {
+                    name: "Linda K.",
+                    avatar: AvatarLinda,
+                    revHeader: "Our customers say",
+                    revText: "I love all the programs. I use the registry cleaner weekly and the video converter almost daily. You can not get a better deal for just the registry cleaner alone. The audio and video converter programs are easy to work."
+                  },
+                  {
+                    name: "Marc N.",
+                    avatar: AvatarMarc,
+                    revHeader: "Our customers say",
+                    revText: "I've used several AVS products for years and they have never fallen short on what I needed them to do."
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
           <ScreenshotsCarousel
