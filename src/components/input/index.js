@@ -4,7 +4,7 @@ import Text from '../text';
 import ErrorBlock from '../error-block';
 
 const StyledInputWrapper = styled.div`
-    max-width: 701px;
+    max-width: 720px;
     display: block;
     margin: auto;
     position: relative;
@@ -81,19 +81,6 @@ class Input extends React.PureComponent {
 
     render() {
 
-        /* if (this.props.showErrors) {
-            let inputState = this.setInputState(this.props.incorrect, this.props.empty);
-
-            if (!this.props.required) {
-                inputState.error = false;
-            }
-
-            this.inputClass = inputState.error ?
-                inputState.isFocus
-                    ? "focus error" : "error"
-                : inputState.isFocus && "focus";
-        } */
-
         const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required, inputClassName } = this.props;
 
         return (
@@ -110,7 +97,7 @@ class Input extends React.PureComponent {
                     onChange={onChange}
                     className="main-input"
                 />
-                <Text className="label-input">{`${inputLabel}${required && '*'}`}</Text>
+                <Text className="label-input">{`${inputLabel}${required ? '*' : ''}`}</Text>
                 {errorText &&
                     <ErrorBlock className="errorBlock">
                         {errorText}

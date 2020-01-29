@@ -78,7 +78,7 @@ render(){
             </div>
           </div>
           <div className="body-reseller__button-wrapper">
-            <Button href="https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners.pdf" className="body-reseller__button">
+            <Button href="https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners.pdf" className="body-reseller__button" textClassName="body-reseller__button-text">
               Download reseller prose list
             </Button>
           </div>
@@ -88,8 +88,9 @@ render(){
           <Text as="h2" className="common__heading">
             Why AVS4YOU Reseller Program
           </Text>
-          <div>
+          <div className="reseller-from-wrapper">
             <Form></Form>
+            <Text className="contact-us-text">If you have any questions about AVS4YOU Affiliate program, please contact us at <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>

@@ -8,11 +8,11 @@ const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
     padding: 40px;
     background-color: #ffffff;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
     margin: auto;
     margin-top: 30px;
-    display: table;
+    display: block;
 
     .formHeader{
         color:#161922;
@@ -23,7 +23,7 @@ const StyledForm = styled.div`
 
     .inputsWrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 
@@ -51,6 +51,25 @@ const StyledForm = styled.div`
             content: none;
         }
     }
+
+    @media (max-width: 700px) {
+        .inputsWrapper{
+            grid-template-columns: 1fr;
+            grid-gap:0;
+        }
+
+        .formHeader{
+            font-size:18px;
+        }
+    }
+
+    @media (max-width: 460px) {
+        padding: 20px;
+
+        .formHeader{
+            text-align:center;
+        }
+    }
 `;
 
 /**
@@ -72,12 +91,15 @@ class Form extends React.Component {
 
             email: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
-            comment: { value: "", status: ErrorStatus.NoError, inputClassName: "" }
+            comment: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
+
+            subscriptions: {value: "", status: ErrorStatus.NoError, inputClassName: ""}
         };
 
         this.nameErrorText = "";
         this.emailErrorText = "";
         this.commentErrorText = "";
+        this.subscriptionsErrorText = "";
 
         this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
         
@@ -89,6 +111,7 @@ class Form extends React.Component {
             console.log("name: " + this.state.name.value)
             console.log("email: " + this.state.email.value)
             console.log("comment: " + this.state.comment.value)
+            console.log("subscriptions: " + this.state.comment.value)
         } else {
             console.log("form invalid")
         }
@@ -213,6 +236,9 @@ class Form extends React.Component {
             case "comment":
                 this.commentErrorText = `comment ${error}`
                 break
+            case "subscriptions":
+                this.subscriptionsErrorText = `comment ${error}`
+                break
             default:
                 break
         }
@@ -294,8 +320,24 @@ class Form extends React.Component {
                         onFocus={this.onFocusInput}
                         
                         className="formInput"
-                        required={true}
-                        
+                        required={true}   
+                    />
+
+                    <Input  
+                        tabIndex="0"
+
+                        inputName="subscriptions"
+                        inputLabel="Number of subscriptions"
+
+                        value={this.state.subscriptions.value}
+                        inputClassName={this.state.subscriptions.inputClassName}
+                        errorText={this.subscriptionsErrorText}
+                        onKeyPress={this.onKeyPress}
+                        onChange={this.onChangeInput}
+                        onBlur={this.onBlurInput}
+                        onFocus={this.onFocusInput}
+
+                        className="formInput"
                     />
 
                 </div>

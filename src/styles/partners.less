@@ -7,6 +7,11 @@
         padding: 120px 30px;
     }
 
+    .reseller-from-wrapper{
+        max-width: 800px;
+        margin: auto;
+    }
+
     .body-reseller{
         max-width: 1120px;
         width: 100%;
@@ -51,7 +56,7 @@
             }
         }
 
-        .body-reseller__button{
+        .body-reseller__button-text{
             font-size: 18px;
             text-transform: uppercase;
         }
@@ -69,6 +74,94 @@
             display: block;
             margin: auto;
             margin-bottom: 20px;
+        }
+    }
+
+    .contact-us-text{
+        font-size: 16px;
+        padding-top:40px;
+
+    }
+}
+
+@media (max-width: 850px) {
+    .partners{ 
+        .screen-wrapper{
+            padding: 70px 30px;
+        }
+        .body-reseller{ 
+            .body-reseller__wrapper{
+                padding-bottom: 50px;
+            }
+
+            .body-reseller__button{
+                padding: 15px 20px;
+            }
+
+            .body-reseller__button-text{
+                font-size: 14px;
+            }
+
+            .common-info-block{
+                width: 45%;
+                margin: 10px;
+                margin-bottom: 30px;
+                max-width: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .partners{ 
+
+        .contact-us-text{
+            padding-left:15px;
+            padding-right:15px;
+            font-size:14px;
+            text-align: center;
+        }
+
+        .header__body{
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+
+        .header {
+            background-position: -100px 0;
+
+            .header__background-gradient{
+                background: radial-gradient(closest-side at 26% 18%, #000000CC 0%, #131313AB 147%, #54545400 362%) 0% 0% no-repeat padding-box;
+            }
+        }
+
+        .form{ 
+            &> img{
+                max-width: 60px;
+                margin-bottom: 10px;
+            }
+            .common__heading{
+                padding: 0 15px;
+            }
+        }
+        
+        .screen-wrapper{
+            padding: 50px 15px;
+
+            &.form{
+                padding: 30px 0 50px;
+            }
+        }
+        .body-reseller{ 
+            .body-reseller__wrapper{
+                padding-top: 30px;
+            }
+
+            .common-info-block{
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }
