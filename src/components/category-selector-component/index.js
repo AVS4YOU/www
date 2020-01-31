@@ -9,9 +9,10 @@ const SelectedStyles = css`
 const StyledButton = styled.div`
     border-radius:60px;
     cursor: pointer;
-    display: block;
+    display: table-cell;
     text-align: center;
     line-height: 47px;
+    padding: 0 50px;
     
     ${props => props.selected ? "color: #ffffff" : "color:#000000"};
     ${props => props.selected && "background-color:#FE9235;"}
@@ -30,49 +31,30 @@ const StyledButton = styled.div`
     
 `;
 
-const valOfColumns = props => props.buttonNames.map(() => ("1fr "));
-
 const StyledCategorySelector = styled.div`
     background-color: #EEEEEE;
-    display: grid;
-    grid-template-columns: ${valOfColumns};
-    width:${props => props.widthButtonsWrapper}px;
+    display: table;
+    width: auto;
     margin: auto;
     padding:3px;
     border-radius:60px;
 
     .buttonWrapper{
-        display: inline-flex;
+        display: table-cell;
         align-items: center;
-    }
-
-    @media (max-width: 1024px) {
-        width: 710px;
-    }
-
-    @media (max-width: 750px) {
-        width: 100%;
-        height: 35px;
-        font-size: 15px;
-
-    }
-
-    @media (max-width: 450px) {
-        height: 28px;
-        padding: 1px;
     }
 `;
 
 const CategorySelectorComponent = (props) => {
 
     const renderButtons = props.buttonNames.map((item, index) => (
-        <StyledButton key={index + "-CategorySelectorButton"} id={index} selected={index == props.currentContentIndex} onClick={props.onClick}>
+        <StyledButton className="top-button" key={index + "-CategorySelectorButton"} id={index} selected={index == props.currentContentIndex} onClick={props.onClick}>
             {item}
         </StyledButton>
     ));
 
     return(
-        <StyledCategorySelector className={props.className} {...props}>
+        <StyledCategorySelector className="top-selector-buttons-wrapper" {...props}>
             {renderButtons}
         </StyledCategorySelector>
     )

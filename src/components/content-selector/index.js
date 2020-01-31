@@ -4,6 +4,9 @@ import Button from '../button';
 import { CSSTransition } from 'react-transition-group';
 import CategorySelectorComponent from '../category-selector-component';
 
+import LeftArrow from '../../images/common/icons/arrow-left.svg';
+import RightArrow from '../../images/common/icons/arrow-right.svg';
+
 const StyledContentSelector = styled.div`
     position:relative;
 
@@ -24,15 +27,33 @@ const StyledContentSelector = styled.div`
 
     .previous-button,
     .next-button{
+        content:"";
+        display:block;
+        width:45px;
+        height: 65px;
         position: absolute;
         top: 200px;
         margin: auto;
         left:0;
+        background-color:#EEEEEE;
+        cursor:pointer;
+        background-repeat:no-repeat;
+    }
+
+    .previous-button{
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-image: url(${LeftArrow});   
+        background-position: 35% 50%;  
     }
 
     .next-button{
         right:0;
         left:auto;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-image: url(${RightArrow}); 
+        background-position: 65% 50%;
     }
 `;
 
@@ -109,13 +130,8 @@ class ContentSelector extends React.Component {
                     </div>
                 </CSSTransition>
                 </div>
-                <Button className="previous-button" onClick={this.onClickPrev.bind(this)} >
-                    prev content
-                </Button>
-
-                <Button className="next-button" onClick={this.onClickNext.bind(this)} >
-                    next content
-                </Button>
+                <div className="previous-button" onClick={this.onClickPrev.bind(this)}></div>
+                <div className="next-button" onClick={this.onClickNext.bind(this)}></div>
             </StyledContentSelector>
         )
     }
