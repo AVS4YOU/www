@@ -34,7 +34,7 @@ const StyledButton = styled.a`
 const Button = (props) => {
     return(
         <StyledButton className={props.className} href={props.href} {...props}>
-            <Text className={"buttonText " + props.textClassName} textTransform={props.textTransform} fontSize={props.fontSize ? props.fontSize : 18} color={props.color}>
+            <Text className={"buttonText " + props.textClassName && props.textClassName} textTransform={props.textTransform} fontSize={props.fontSize ? props.fontSize : 18} color={props.color}>
                 {props.children}
             </Text>
             {props.secondaryText && <Text color={props.color} fontSize={12} align="center">{props.secondaryText}</Text>}
@@ -47,7 +47,9 @@ Button.propTypes = {
     color: PropTypes.string,
     padding: PropTypes.string,
     backgroundColor: PropTypes.string,
-    background: PropTypes.bool
+    background: PropTypes.bool,
+    href: PropTypes.string,
+    textClassName: PropTypes.string
 };
 
 Button.defaultProps = {

@@ -57,7 +57,7 @@ render(){
             </Text>
             <div className="unique-body__wrapper">
               <div className="unique-body__box">
-                <Text as="h3" className="unique-body__number">
+                <Text as="h3" className="round-and-number">
                   01
                 </Text>
                 <Text className="unique-body__sub-header">
@@ -70,7 +70,7 @@ render(){
               </div>
 
               <div className="unique-body__box">
-                <Text as="h3" className="unique-body__number">
+                <Text as="h3" className="round-and-number">
                   02
                 </Text>
                 <Text className="unique-body__sub-header">
@@ -83,7 +83,7 @@ render(){
               </div>
 
               <div className="unique-body__box">
-                <Text as="h3" className="unique-body__number">
+                <Text as="h3" className="round-and-number">
                   03
                 </Text>
                 <Text className="unique-body__sub-header">
