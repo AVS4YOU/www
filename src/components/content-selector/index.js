@@ -130,8 +130,8 @@ class ContentSelector extends React.Component {
                     </div>
                 </CSSTransition>
                 </div>
-                <div className="previous-button" onClick={this.onClickPrev.bind(this)}></div>
-                <div className="next-button" onClick={this.onClickNext.bind(this)}></div>
+                {!this.props.disableArrows && <div className="previous-button" onClick={this.onClickPrev.bind(this)}></div>}
+                {!this.props.disableArrows && <div className="next-button" onClick={this.onClickNext.bind(this)}></div>}
             </StyledContentSelector>
         )
     }

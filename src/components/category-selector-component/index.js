@@ -48,7 +48,7 @@ const StyledCategorySelector = styled.div`
 const CategorySelectorComponent = (props) => {
 
     const renderButtons = props.buttonNames.map((item, index) => (
-        <StyledButton className="top-button" key={index + "-CategorySelectorButton"} id={index} selected={index == props.currentContentIndex} onClick={props.onClick}>
+        <StyledButton className={[index == props.currentContentIndex && "selected", "top-button"]} key={index + "-CategorySelectorButton"} id={index} selected={index == props.currentContentIndex} onClick={props.onClick}>
             {item}
         </StyledButton>
     ));
