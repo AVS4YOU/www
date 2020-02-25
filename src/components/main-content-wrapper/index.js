@@ -43,17 +43,25 @@ const StyledMainContentWrapper = styled.div`
     }
 
     .top-selector-buttons-wrapper{
-        width: 720px;
+        max-width: 720px;
+        width: 100%;
+        box-sizing: border-box;
         
         .top-button{
             position:relative;
+            padding: 0 24px;
 
-            &:before{
+            .selectorText{
+                display: inline-block;
+                padding-left: 25px;
+            }
+
+            .selectorText:before{
                 display:block;
                 content: '';
                 height:29px;
                 width:29px;
-                left: 22%;
+                left: 29%;
                 background-position: 0;
                 background-repeat: no-repeat;
                 position: absolute;  
@@ -62,25 +70,61 @@ const StyledMainContentWrapper = styled.div`
                 margin: auto;   
             }
 
-            &:nth-child(1):before{
+            &:nth-child(1) .selectorText:before{
                 background-image: url(${videoIcon});
             }
-            &:nth-child(2):before{
+            &:nth-child(2) .selectorText:before{
                 background-image: url(${audioIcon});  
             }
-            &:nth-child(3):before{
+            &:nth-child(3) .selectorText:before{
                 background-image: url(${imageIcon});  
             }
 
             &.selected{
-                &:nth-child(1):before{
+                &:nth-child(1) .selectorText:before{
                     background-image: url(${videoIconWhite});
                 }
-                &:nth-child(2):before{
+                &:nth-child(2) .selectorText:before{
                     background-image: url(${audioIconWhite});  
                 }
-                &:nth-child(3):before{
+                &:nth-child(3) .selectorText:before{
                     background-image: url(${imageIconWhite});  
+                }
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        .top-selector-buttons-wrapper{
+            
+            .top-button{
+                line-height: 35px;
+    
+                .selectorText{
+                    font-size: 14px;
+                    padding-left:0;
+                    line-height: 35px;
+                }
+
+                .selectorText:before{
+                    height: 21px;
+                    width: 21px;
+                    background-size: contain;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: sub;
+                    padding-right: 10px;
+                    left: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .top-selector-buttons-wrapper{
+            .top-button {
+                .selectorText:before {
+                    display:none;
                 }
             }
         }

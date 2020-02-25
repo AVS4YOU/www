@@ -14,11 +14,17 @@ const StyledButton = styled.div`
     line-height: 47px;
     padding: 0 50px;
     
-    ${props => props.selected ? "color: #ffffff" : "color:#000000"};
+    
     ${props => props.selected && "background-color:#FE9235;"}
 
-    &:hover{
-        text-decoration: underline;
+    &:hover .selectorText{
+        text-decoration: underline;   
+    }
+
+    .selectorText{
+        line-height: 47px; 
+        pointer-events: none;
+        ${props => props.selected ? "color: #ffffff" : "color:#000000"};
     }
 
     @media (max-width: 1024px) {
@@ -49,7 +55,7 @@ const CategorySelectorComponent = (props) => {
 
     const renderButtons = props.buttonNames.map((item, index) => (
         <StyledButton className={[index == props.currentContentIndex && "selected", "top-button"]} key={index + "-CategorySelectorButton"} id={index} selected={index == props.currentContentIndex} onClick={props.onClick}>
-            {item}
+            <Text className="selectorText">{item}</Text>
         </StyledButton>
     ));
 
