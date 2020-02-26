@@ -28,7 +28,7 @@ const Header = ({availableLocales, locale, t}) => {
             <MenuItem menuItemText={t("Download")} isDropdown={false} />
             <MenuItem menuItemText={t("Buy now")} isDropdown={false} />
             <MenuItem menuItemText={t("Help center")}>
-                <DropdownElement path="/" headerText="Support form"/>
+                <DropdownElement path="/support" headerText="Support form"/>
                 <DropdownElement path="/" headerText="Guides"/>
                 <DropdownElement path="/" headerText="Knowledge center"/>
                 <DropdownElement path="/" headerText="FAQ"/>

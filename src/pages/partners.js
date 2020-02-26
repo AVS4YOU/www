@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import "../styles/partners.less";
 import Button from "../components/button";
 import mailIcon from "../images/partners/email.svg";
-import Form from '../components/form';
+import Form from '../components/form-partners';
 
 class partners extends React.PureComponent {
 
