@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components';
 import Text from '../text';
 import PropTypes from "prop-types";
 import MenuDropdown from '../menu-dropdown'
+import Link from '../link';
 
 const MediaWidthStyle = css`
     padding: 0 15px;
@@ -104,6 +105,10 @@ const StyledMenuItem = styled.div`
     height:100%;
     transition: .2s linear;
 
+    .menuItemLink{
+        text-decoration:none;
+    }
+
     .arrowStyle:after{
         margin-top:-4px;
         margin-left: 8px;
@@ -155,16 +160,32 @@ class MenuItem extends React.PureComponent  {
     render(){
         return(
             <StyledMenuItem onClick={this.toggleSubmenu} {...this.props}> 
-                <Text className={this.props.isDropdown ? "arrowStyle textStyles" : "textStyles"} 
-                    arrow={this.props.isDropdown ? true : false}
-                    arrowDeg={this.props.isDropdown && 225}
-                    color="#ffffff"
-                    fontSize={14} 
-                    fontWeight={600} 
-                    textTransform="uppercase">
+            {this.props.path 
+                ?
+                    <Link className="menuItemLink" to={this.props.path} langChange={this.props.langChange}>
+                        <Text className={this.props.isDropdown ? "arrowStyle textStyles" : "textStyles"} 
+                            arrow={this.props.isDropdown ? true : false}
+                            arrowDeg={this.props.isDropdown && 225}
+                            color="#ffffff"
+                            fontSize={14} 
+                            fontWeight={600} 
+                            textTransform="uppercase">
 
-                    {this.props.menuItemText}
-                </Text>
+                            {this.props.menuItemText}
+                        </Text>
+                    </Link>
+                :
+                    <Text className={this.props.isDropdown ? "arrowStyle textStyles" : "textStyles"} 
+                        arrow={this.props.isDropdown ? true : false}
+                        arrowDeg={this.props.isDropdown && 225}
+                        color="#ffffff"
+                        fontSize={14} 
+                        fontWeight={600} 
+                        textTransform="uppercase">
+
+                        {this.props.menuItemText}
+                    </Text>
+                }
                 {this.props.isDropdown 
                     ? 
                         <MenuDropdown col={this.props.col} submenuOpen={this.state.submenuOpen}>
