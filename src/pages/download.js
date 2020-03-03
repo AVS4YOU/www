@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import "../styles/download.less";
 import Button from "../components/button";
 import PanelCollapse from "../components/panel-collapse";
+import AdaptiveCarousel from "../components/adaptive-carousel"
 
 class Download extends React.PureComponent {
 
@@ -25,7 +26,7 @@ render(){
         <div className="screen-wrapper products-wrap">
           <div className="product-icon video"></div>
           <Text className="common__heading" as="h3">Video Software</Text>
-          <div className="product-wrapper">
+          <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image video-remaker">
                 <div className="achievement">
@@ -79,13 +80,13 @@ render(){
                 Download
               </Button>
             </div>
-          </div>
+          </AdaptiveCarousel>
         </div>
 
         <div className="screen-wrapper background-color products-wrap">
           <div className="product-icon audio"></div>
           <Text className="common__heading" as="h3">Audio Software</Text>
-          <div className="product-wrapper">
+          <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image audio-editor"></div>
               <Text className="product-name" as="h5">AVS Audio Editor</Text>
@@ -114,14 +115,14 @@ render(){
                 Download
               </Button>
             </div>
-          </div>
+          </AdaptiveCarousel>
         </div>
 
 
         <div className="screen-wrapper products-wrap">
           <div className="product-icon free"></div>
           <Text className="common__heading" as="h3">Free Software</Text>
-          <div className="product-wrapper">
+          <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image registry-cleaner"></div>
               <Text className="product-name" as="h5">AVS Registry Cleaner</Text>
@@ -205,7 +206,7 @@ render(){
                 Download
               </Button>
             </div>
-          </div>
+          </AdaptiveCarousel>
         </div>
 
         <div className="screen-wrapper background-color">

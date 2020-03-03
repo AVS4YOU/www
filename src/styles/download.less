@@ -237,10 +237,33 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
     .download{ 
         .header{
-            background-position: 50%;
+            background-position: calc(100% + 250px);
+        }
+
+        .panelName{
+            font-size: 20px;
+
+            &:before{
+                width: 20px;
+                height: 20px;
+                right: -40px;
+            }
+        }
+
+        .panelNameWrapper{
+            padding: 20px 65px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .download{
+        .product-box{
+            display:block !important;
+            margin:auto;
         }
     }
 }
@@ -264,6 +287,22 @@
                 padding-bottom: 170px;
             }
         }
+        .questions-wrapper{
+            padding:0;
+
+            .panelContent {
+                .collapseContent{
+                    padding: 35px 40px;
+                }
+            }
+        }
+
+        .screen-wrapper{
+            padding: 80px 30px;
+            &.products-wrap{
+                padding: 80px 30px;
+            }
+        }
     }
 }
 
@@ -275,11 +314,19 @@
             }
         }
 
-        .contact-us-text{
-            padding-left:15px;
-            padding-right:15px;
-            font-size:14px;
-            text-align: center;
+        .product-box{
+            min-width: 0;
+            max-width: none;
+            padding: 45px 35px;
+            padding-top: 45px;
+            box-sizing: border-box;
+        }
+
+        .screen-wrapper{
+            padding: 50px 15px;
+            &.products-wrap{
+                padding: 50px 0;
+            }
         }
 
         .header__body{
@@ -287,30 +334,18 @@
             padding-bottom: 200px;
         }
 
-        .form{ 
-            &> img{
-                max-width: 60px;
-                margin-bottom: 10px;
-            }
-            .common__heading{
-                padding: 0 15px;
+        .panelName{
+            font-size: 16px;
+
+            &:before{
+                width: 14px;
+                height: 14px;
+                right: -22px;
             }
         }
-        
-        .screen-wrapper{
-            padding: 50px 15px;
 
-            &.form{
-                padding: 30px 0 50px;
-            }
-        }
-        .body-reasons{ 
-
-            .common-info-block{
-                width: 100%;
-                padding-left: 0;
-                padding-right: 0;
-            }
+        .panelNameWrapper{
+            padding: 12px 35px;
         }
     }
 }
