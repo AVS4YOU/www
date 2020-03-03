@@ -19,22 +19,11 @@ const StyledPanelCollapse = styled.div`
     }
     
     .panelName{
-        font-size: 24px;
-        text-align: center;
-        color:#555555;
-        font-weight: bold;
-        position:relative;
-        user-select: none;
         color:${props => props.isOpen ? "#000000" : "#555555"};
 
         &:before{
             content: "";
             position: absolute;
-            width: 32px;
-            height: 32px;
-            top: 0px;
-            bottom:0;
-            right: -45px;
             margin:auto;
             background-image: url(${CloseIcon});
             background-size:contain;
@@ -44,17 +33,6 @@ const StyledPanelCollapse = styled.div`
             ${props => props.isInitialized 
                 ? props.isOpen ? "transform: rotate(0deg)" : "transform: rotate(45deg)"
                 : ""};
-        }
-    }
-
-    .panelNameWrapper{
-        padding: 30px 80px;
-        box-shadow: 3px 3px 24px #9A9A9A29;
-        cursor:pointer;
-        transition: ease-out 0.5s;
-
-        &:hover{
-            box-shadow: 3px 3px 24px #00000029;
         }
     }
 
