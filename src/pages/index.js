@@ -28,6 +28,20 @@ const MainPageWrapper = styled.div`
     padding-bottom:80px;
   }
 
+  .headerDownloadButtons{
+    margin-top: 50px;
+  }
+
+  .mobileFormWrapper{
+    display: table;
+    margin-left: 0;
+  }
+
+  .getCouponButton{
+    display: block;
+    text-align: center;
+  }
+
   .headerContentWrapper{
     padding-top: 260px;
     padding-bottom: 320px;
@@ -44,6 +58,10 @@ const MainPageWrapper = styled.div`
   @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;
+    }
+
+    .mobileFormWrapper{
+      margin: auto;
     }
 
     .headerContentWrapper{
@@ -123,6 +141,7 @@ class mainPage extends React.PureComponent {
                 t={this.props.t}
                 mainHref="/"
                 secondaryHref="/"
+                className="headerDownloadButtons"
               />
             </div>
           </PageContentWrapper>

@@ -7,6 +7,8 @@ import "../styles/download.less";
 import Button from "../components/button";
 import PanelCollapse from "../components/panel-collapse";
 import AdaptiveCarousel from "../components/adaptive-carousel"
+import HeaderDownloadButtons from "../components/header-download-buttons";
+import DownloadScrollButton from "../components/download-scroll-button";
 
 class Download extends React.PureComponent {
 
@@ -14,12 +16,19 @@ render(){
 
     return (
       <Layout className="download" pageContext={this.props.pageContext} t={this.props.t}>
-        <div className="header">
+        <div id="headerContentWrapper" className="header">
             <div className="header__background-gradient">
                 <div className="header__body">
                     <Text as="h1" className="header__heading">Download</Text>
                     <Text as="h3" className="header__subtitle">Get all AVS4YOU® software in 1 installation package</Text>
-                    <Button className="header__button" textClassName="header__button-text" href="/">Download now</Button>
+                    <HeaderDownloadButtons 
+                      t={this.props.t}
+                      mainHref="/"
+                      backgroundColor="blue"
+                      mainPadding="18px 50px"
+                      margin="auto"
+                      className="headerDownloadButtons"
+                    />
                 </div>
             </div>
         </div>
@@ -40,9 +49,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -58,9 +65,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -76,9 +81,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -96,9 +99,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -111,9 +112,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -132,9 +131,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -146,9 +143,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -160,9 +155,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -174,9 +167,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -188,9 +179,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -202,9 +191,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <Button className="product-button" href="/">
-                Download
-              </Button>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>

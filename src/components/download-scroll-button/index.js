@@ -5,28 +5,13 @@ import Text from '../text';
 import { Link } from "react-scroll";
 import UAParser from 'ua-parser-js';
 
-const desktopStyles = css`
-    .desktopButton{
-        display:block;
-    }
 
-    .scrollLink{
-        display:none;
-    }
-`;
-
-const mobileStyles = css`
-    .desktopButton{
-        display:none;
-    }
-
-    .scrollLink{
-        display:block;
-    }
-`;
 
 const ButtonWrapper = styled.div`
-    ${props => props.touchDevice ? mobileStyles : desktopStyles}
+
+    .mainButton, .desktopButton{
+        padding: 16px 40px;
+    }
 
     @media (max-width: 550px) {
         .mainButton, .desktopButton{
@@ -45,15 +30,27 @@ const DownloadScrollButton = (props) => {
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
     });
 
+
     return(
         <ButtonWrapper id="downloadButton" touchDevice={touchDevice} className={props.className}>
-            <Button className="desktopButton" href={props.href} color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">download now</Button>
 
-            <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
-                <Button as="div" className="mainButton" color="#fff" padding="16px 40px" textTransform="uppercase" backgroundColor="blue">GET $5 COUPON CODE</Button>
-            </Link>
+            {touchDevice 
+
+            ?
+                <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
+                    <Button as="div" className="mainButton" color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textGetCoupon}</Button>
+                </Link>
+            :
+                <Button className="desktopButton" href={props.href} color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textDownload}</Button>
+            }   
         </ButtonWrapper>
     )
 }
+
+DownloadScrollButton.defaultProps = {
+    textDownload: "download now",
+    textGetCoupon: "Get $5 coupon code",
+    textTransform: "uppercase"
+};
 
 export default DownloadScrollButton;

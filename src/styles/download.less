@@ -34,6 +34,11 @@
         }
     }
 
+    .headerDownloadButtons{
+        display: table;
+        margin-left: 0;
+    }
+
     .product-icon{
         width:64px;
         height:64px;
@@ -75,6 +80,11 @@
         min-width: 250px;
         max-width: 300px;
         padding: 40px; 
+        outline: none;
+
+        .mainButton, .desktopButton{
+            padding: 10px 40px;
+        }
         
         .achievement{
             display: block;
@@ -170,7 +180,10 @@
         }
 
         .product-button{
-            padding: 10px 55px;
+
+            p{
+                text-transform: unset;
+            }
         }
     }
 
@@ -297,6 +310,11 @@
 
 @media (max-width: 620px) {
     .download{ 
+
+        .headerDownloadButtons{
+            margin: auto;
+        }
+
         .header{
             .header__button{
                 margin:auto;
@@ -347,6 +365,12 @@
             padding: 45px 35px;
             padding-top: 45px;
             box-sizing: border-box;
+
+            .mainButton, .desktopButton{
+                padding: 10px 24px;
+                display: table;
+                margin: auto;
+            }
         }
 
         .screen-wrapper{
