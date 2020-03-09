@@ -1,39 +1,32 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import PropTypes from "prop-types";
+import React from 'react';
+import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
 
-const ImageGQ = (props) => {
-    const data = useStaticQuery(
-        graphql`
-        query {
-            file(relativePath: {eq: "header-image.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 1950) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
+const ImageGQ = ({src, className}) => (
+    <StaticQuery
+    query={graphql`
+      query {
+        allImageSharp {
+          edges {
+            node {
+              fluid(maxWidth: 1920) {
+                ...GatsbyImageSharpFluid
+                originalName
+              }
             }
-        }`
-    )
-
-    return(
-      <Img 
-        className={props.className}
-        fluid={data.file.childImageSharp.fluid}
-        objectFit="cover"
-        objectPosition="50% 50%"
-        alt="test" />
-    )
-}
-
-ImageGQ.propTypes = {
-    maxWidth: PropTypes.number,
-    relativePath: PropTypes.string,
-};
-
-ImageGQ.defaultProps = {
-
-};
-
+          }
+        }
+      }
+    `}
+    render={data => {
+      const image = data.allImageSharp.edges.find(
+        edge => edge.node.fluid.originalName === src
+      )
+      if (!image) {
+        return null
+      }
+      return <Img className={className} fluid={image.node.fluid} />
+    }}
+  />
+)
 export default ImageGQ;

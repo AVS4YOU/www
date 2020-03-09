@@ -147,7 +147,7 @@ class mainPage extends React.PureComponent {
     <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQ className="headerBackgroundImage" relativePath="header-image.png" maxWidth={1920}/>
+        <ImageGQ className="headerBackgroundImage" src="header-image.png" maxWidth={1920}/>
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>

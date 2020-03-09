@@ -5,6 +5,7 @@ import PageContentWrapper from '../page-content-wrapper';
 import { CSSTransition } from 'react-transition-group';
 import ContentRowItem from '../content-row-item';
 import ContentSelector from '../content-selector';
+import ImageGQ from '../image-gq';
 
 import VideoConverterImage from '../../images/main-page/slider_video_converter.png';
 import VideoEditorImage from '../../images/main-page/slider_video_editor.png';
@@ -156,7 +157,7 @@ class MainContentWrapper extends React.PureComponent{
                         <ContentWrapper>
                             <ContentRowItem 
                                 imgLeft={false}
-                                image={VideoConverterImage}
+                                src="slider_video_converter.png"
                                 headerText="AVS Video Converter"
                                 free={true}
                                 blueButtonLink="/"
@@ -170,7 +171,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                image={VideoEditorImage}
+                                src="slider_video_editor.png"
                                 headerText="AVS Video Editor"
                                 free={false}
                                 blueButtonLink="/"
@@ -187,7 +188,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={false}
-                                image={VideoRemakerImage}
+                                src="slider_video_remaker.png"
                                 headerText="AVS Video ReMaker"
                                 free={false}
                                 blueButtonLink="/"
@@ -207,7 +208,7 @@ class MainContentWrapper extends React.PureComponent{
                         <ContentWrapper>
                             <ContentRowItem 
                                 imgLeft={false}
-                                image={AudioEditorImage}
+                                src="slider_audio_editor.png"
                                 headerText="AVS Audio Editor"
                                 free={false}
                                 blueButtonLink="/"
@@ -223,7 +224,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                image={AudioConverterImage}
+                                src="slider_audio_converter.png"
                                 headerText="AVS Audio Converter"
                                 free={false}
                                 blueButtonLink="/"
@@ -241,7 +242,7 @@ class MainContentWrapper extends React.PureComponent{
                         <ContentWrapper>
                             <ContentRowItem 
                             imgLeft={false}
-                            image={PhotoEditorImage}
+                            src="slider_avs_photo_editor.png"
                             headerText="AVS Photo Editor"
                             free={true}
                             blueButtonLink="/"
@@ -257,7 +258,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                image={ImageConverterImage}
+                                src="slider_image_converter.png"
                                 headerText="AVS Image Converter"
                                 free={true}
                                 blueButtonLink="/"
