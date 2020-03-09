@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
 import styled from 'styled-components';
@@ -9,6 +11,8 @@ import MainContentWrapper from '../components/main-content-wrapper';
 import SomethingElseScreen from '../components/something-else-screen';
 import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
+import ImageGQ from '../components/image-gq';
+
 
 const MainPageWrapper = styled.div`
 
@@ -49,10 +53,20 @@ const MainPageWrapper = styled.div`
   }
 
   .headerBackground{
-    background-image: url(${BackgroundHeaderImage});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+    position:relative;
+  }
+
+  .headerBackgroundImage{
+    position:absolute !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+    z-index: -1;
   }
 
   @media (max-width: 1050px) {
@@ -123,6 +137,7 @@ class mainPage extends React.PureComponent {
     this.getDevice = this.getDevice.bind(this);
   }
 
+
   getDevice(device){
     this.setState({ device: device });
   }
@@ -132,6 +147,7 @@ class mainPage extends React.PureComponent {
     <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
+        <ImageGQ className="headerBackgroundImage" relativePath="header-image.png" maxWidth={1920}/>
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
