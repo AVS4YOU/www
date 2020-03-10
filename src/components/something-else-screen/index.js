@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components';
 import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import Button from '../button';
+import ImageGQL from '../image-gql';
 import Slider from "react-slick";
 import { Link } from "react-scroll";
 import LeftArrow from '../../images/common/icons/arrow-left.svg';
@@ -256,13 +257,12 @@ class SomethingElseScreen extends React.PureComponent {
         return(
             <StyledWrapper touchDevice={this.state.touchDevice}>
                 <PageContentWrapper>
-
                 {!this.state.isTablet ?
                    <>
                         <Text color="#3D3D3D" fontSize={40} fontWeight={600} className="bodyHeader">Looking for something else?</Text>
                         <div className="productsContainer">
                         <StyledProductBox>
-                            <img src={MediaPlayerImg} alt="Media Player"/>
+                            <ImageGQL imageName="avs_media_player.png" alt="Media Player"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Media Player</Text>
@@ -274,7 +274,7 @@ class SomethingElseScreen extends React.PureComponent {
                             </div>
                         </StyledProductBox>
                         <StyledProductBox>
-                            <img src={DocumentConverterImg} alt="Document Converter"/>
+                            <ImageGQL imageName="avs-document-converter.png" alt="Document Converter"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Document Converter</Text>
@@ -286,7 +286,7 @@ class SomethingElseScreen extends React.PureComponent {
                             </div>
                         </StyledProductBox>
                         <StyledProductBox>
-                            <img src={DiscCreatorImg} alt="Disc Creator"/>
+                            <ImageGQL imageName="avs_registry_cleaner.png" alt="Disc Creator"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Disc Creator</Text>
@@ -298,7 +298,7 @@ class SomethingElseScreen extends React.PureComponent {
                             </div>
                         </StyledProductBox>
                         <StyledProductBox>
-                            <img src={RegistryCleanerImg} alt="Registry Cleaner"/>
+                            <ImageGQL imageName="avs_disc_creator.png" alt="Registry Cleaner"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Registry Cleaner</Text>
@@ -323,7 +323,7 @@ class SomethingElseScreen extends React.PureComponent {
                             className="visibleSlider"
                         >
                             <StyledProductBox>
-                                <img src={MediaPlayerImg} alt="Media Player"/>
+                                <ImageGQL imageName="avs_media_player.png" alt="Media Player"/>
                                 <div className="textWrapper">
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Media Player</Text>
@@ -335,7 +335,7 @@ class SomethingElseScreen extends React.PureComponent {
                                 </div>
                             </StyledProductBox>
                             <StyledProductBox>
-                                <img src={DocumentConverterImg} alt="Document Converter"/>
+                                <ImageGQL imageName="avs-document-converter.png" alt="Document Converter"/>
                                 <div className="textWrapper">
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Document Converter</Text>
@@ -347,7 +347,7 @@ class SomethingElseScreen extends React.PureComponent {
                                 </div>
                             </StyledProductBox>
                             <StyledProductBox>
-                                <img src={DiscCreatorImg} alt="Disc Creator"/>
+                                <ImageGQL imageName="avs_registry_cleaner.png" alt="Disc Creator"/>
                                 <div className="textWrapper">
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Disc Creator</Text>
@@ -359,7 +359,7 @@ class SomethingElseScreen extends React.PureComponent {
                                 </div>
                             </StyledProductBox>
                             <StyledProductBox>
-                                <img src={RegistryCleanerImg} alt="Registry Cleaner"/>
+                                <ImageGQL imageName="avs_disc_creator.png" alt="Registry Cleaner"/>
                                 <div className="textWrapper">
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Registry Cleaner</Text>

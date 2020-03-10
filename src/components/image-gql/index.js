@@ -2,14 +2,14 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
 
-const ImageGQ = ({src, className}) => (
+const ImageGQL = ({imageName, className}) => (
     <StaticQuery
     query={graphql`
       query {
         allImageSharp {
           edges {
             node {
-              fluid(maxWidth: 1920) {
+              fluid(maxWidth: 1920, quality: 90) {
                 ...GatsbyImageSharpFluid
                 originalName
               }
@@ -20,7 +20,7 @@ const ImageGQ = ({src, className}) => (
     `}
     render={data => {
       const image = data.allImageSharp.edges.find(
-        edge => edge.node.fluid.originalName === src
+        edge => edge.node.fluid.originalName === imageName
       )
       if (!image) {
         return null
@@ -29,4 +29,4 @@ const ImageGQ = ({src, className}) => (
     }}
   />
 )
-export default ImageGQ;
+export default ImageGQL;

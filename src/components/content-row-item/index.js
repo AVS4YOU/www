@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 import Text from '../text';
 import { Link } from "react-scroll";
 import Button from '../button';
-import ImageGQ from '../image-gq';
+import ImageGQ from '../image-gql';
 import PropTypes from "prop-types";
 import bgBlue from '../../images/main-page/back_picture_blue.svg';
 import bgOrange from '../../images/main-page/back_picture_orange.svg';
@@ -377,7 +377,7 @@ const ContentRowItem = (props) => {
             <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
-                    <ImageGQ className="rowImage" src={props.src} alt={props.headerText}></ImageGQ>
+                    <ImageGQ className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQ>
                 </div>
                 {TextContent(props)}
                 {TextContentMobile(props)}
@@ -389,7 +389,7 @@ const ContentRowItem = (props) => {
                 {TextContent(props)}
                 {HeaderMobile(props)}
                 <div className="bgOrange">
-                    <ImageGQ className="rowImage" src={props.src} alt={props.headerText}></ImageGQ>
+                    <ImageGQ className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQ>
                 </div>
                 {TextContentMobile(props)}
             </RowContent>

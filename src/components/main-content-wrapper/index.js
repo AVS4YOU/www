@@ -5,17 +5,6 @@ import PageContentWrapper from '../page-content-wrapper';
 import { CSSTransition } from 'react-transition-group';
 import ContentRowItem from '../content-row-item';
 import ContentSelector from '../content-selector';
-import ImageGQ from '../image-gq';
-
-import VideoConverterImage from '../../images/main-page/slider_video_converter.png';
-import VideoEditorImage from '../../images/main-page/slider_video_editor.png';
-import VideoRemakerImage from '../../images/main-page/slider_video_remaker.png';
-
-import AudioConverterImage from '../../images/main-page/slider_audio_converter.png';
-import AudioEditorImage from '../../images/main-page/slider_audio_editor.png';
-
-import PhotoEditorImage from '../../images/main-page/slider_avs_photo_editor.png';
-import ImageConverterImage from '../../images/main-page/slider_image_converter.png';
 
 import videoIcon from '../../images/main-page/icons/video_icon_grey.svg'
 import videoIconWhite from '../../images/main-page/icons/video_icon_for_slider.svg'
@@ -157,7 +146,7 @@ class MainContentWrapper extends React.PureComponent{
                         <ContentWrapper>
                             <ContentRowItem 
                                 imgLeft={false}
-                                src="slider_video_converter.png"
+                                imageName="slider_video_converter.png"
                                 headerText="AVS Video Converter"
                                 free={true}
                                 blueButtonLink="/"
@@ -171,7 +160,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                src="slider_video_editor.png"
+                                imageName="slider_video_editor.png"
                                 headerText="AVS Video Editor"
                                 free={false}
                                 blueButtonLink="/"
@@ -188,7 +177,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={false}
-                                src="slider_video_remaker.png"
+                                imageName="slider_video_remaker.png"
                                 headerText="AVS Video ReMaker"
                                 free={false}
                                 blueButtonLink="/"
@@ -208,7 +197,7 @@ class MainContentWrapper extends React.PureComponent{
                         <ContentWrapper>
                             <ContentRowItem 
                                 imgLeft={false}
-                                src="slider_audio_editor.png"
+                                imageName="slider_audio_editor.png"
                                 headerText="AVS Audio Editor"
                                 free={false}
                                 blueButtonLink="/"
@@ -224,7 +213,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                src="slider_audio_converter.png"
+                                imageName="slider_audio_converter.png"
                                 headerText="AVS Audio Converter"
                                 free={false}
                                 blueButtonLink="/"
@@ -241,13 +230,13 @@ class MainContentWrapper extends React.PureComponent{
 
                         <ContentWrapper>
                             <ContentRowItem 
-                            imgLeft={false}
-                            src="slider_avs_photo_editor.png"
-                            headerText="AVS Photo Editor"
-                            free={true}
-                            blueButtonLink="/"
-                            smallButtonLink="/"   
-                            scrollTo="headerCoupon"   
+                                imgLeft={false}
+                                imageName="slider_avs_photo_editor.png"
+                                headerText="AVS Photo Editor"
+                                free={true}
+                                blueButtonLink="/"
+                                smallButtonLink="/"   
+                                scrollTo="headerCoupon"   
                             >
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Open and edit all key image formats</Text>
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Play with colors, shades and tints</Text>
@@ -258,7 +247,7 @@ class MainContentWrapper extends React.PureComponent{
 
                             <ContentRowItem 
                                 imgLeft={true}
-                                src="slider_image_converter.png"
+                                imageName="slider_image_converter.png"
                                 headerText="AVS Image Converter"
                                 free={true}
                                 blueButtonLink="/"

@@ -11,7 +11,7 @@ import MainContentWrapper from '../components/main-content-wrapper';
 import SomethingElseScreen from '../components/something-else-screen';
 import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
-import ImageGQ from '../components/image-gq';
+import ImageGQL from '../components/image-gql';
 
 
 const MainPageWrapper = styled.div`
@@ -147,7 +147,7 @@ class mainPage extends React.PureComponent {
     <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQ className="headerBackgroundImage" src="header-image.png" maxWidth={1920}/>
+        <ImageGQL className="headerBackgroundImage" imageName="header-image.png"/>
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>

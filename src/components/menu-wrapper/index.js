@@ -10,6 +10,8 @@ const StyledMenuWrapper = styled.div`
     width: 100%;
     height:60px;
     background-color: #32393e;
+    position:relative;
+    z-index: 10;
 
     &.offAnimate{
         transition: none;
