@@ -10,8 +10,8 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
+import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
 import HeaderImage from '../images/avs-video-editor/en_avs_video_editor_main.png';
 import HeaderImageMobile from '../images/avs-video-editor/slider1.png';
 
@@ -51,8 +51,9 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
+        <ProductPagesWrapper>
           <div className="headerBackground">
+            <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>

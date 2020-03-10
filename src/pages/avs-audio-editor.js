@@ -10,8 +10,8 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
+import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-audio-editor/background_main-min.png";
 import HeaderImage from '../images/avs-audio-editor/en_avs_audio_editor-min.png';
 import HeaderImageMobile from '../images/avs-audio-editor/en_avs_audio_editor-min.png';
 
@@ -56,13 +56,14 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
+        <ProductPagesWrapper>
           <div className="headerBackground">
+            <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Create outstanding tracks for any purpose with our easy audio editing app for Windows</Text>
-                <HeaderDownloadButtons 
+                <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="/"
                   secondaryText="Windows 10/8/7/Vista/XP"

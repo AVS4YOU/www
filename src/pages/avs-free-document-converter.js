@@ -10,8 +10,8 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
+import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-free-disc-creator/background_main.png";
 import HeaderImage from '../images/avs-free-document-converter/en_avs_doc_convert.png';
 import HeaderImageMobile from '../images/avs-free-document-converter/en_avs_doc_convert.png';
 
@@ -47,8 +47,9 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper backgroundImage={BackgroundHeaderImage}>
+        <ProductPagesWrapper>
           <div className="headerBackground">
+            <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Document Converter")}</Text>

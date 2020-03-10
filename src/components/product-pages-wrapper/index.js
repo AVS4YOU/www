@@ -9,10 +9,17 @@ import AttentionIcon from '../../images/common/icons/red_ring.svg';
 
 const StyledPageWrapper = styled.div`
   .headerBackground{
-    background-image: url(${props => props.backgroundImage});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 0;
+    position:relative;
+  }
+
+  .headerBackgroundImage{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    top: 0;
   }
 
   .headerContentWrapper{
@@ -248,10 +255,10 @@ const StyledPageWrapper = styled.div`
   }
 `;
 
-const ProductPagesWrapper = ({ backgroundImage, children }) => {
+const ProductPagesWrapper = ({children }) => {
     return (
-        <StyledPageWrapper backgroundImage={backgroundImage}>
-            {children}
+        <StyledPageWrapper>
+              {children}
         </StyledPageWrapper>
     )
 }
