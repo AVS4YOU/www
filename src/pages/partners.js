@@ -5,6 +5,7 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import "../styles/partners.less";
 import Button from "../components/button";
+import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
 
@@ -15,6 +16,7 @@ render(){
     return (
       <Layout className="partners" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
+          <ImageGQL className="headerBackgroundImage" imageName="partners-header.png" style={{position: "absolute"}}/>
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">Reseller Program</Text>

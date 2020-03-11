@@ -4,7 +4,7 @@ import Link from '../components/link';
 import Text from '../components/text';
 import Layout from "../components/layout";
 import "../styles/support.less";
-import Button from "../components/button";
+import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-support';
 
@@ -15,6 +15,7 @@ render(){
     return (
       <Layout className="support" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
+          <ImageGQL className="headerBackgroundImage" imageName="support-header.png" style={{position: "absolute"}}/>
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">Support</Text>

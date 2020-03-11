@@ -1,7 +1,9 @@
 .support{
-    .header{
-        background-image: url(../images/support/support-header.png);
-        background-position: 92%;
+
+    .headerBackgroundImage{
+        img{
+            object-position: right center !important;
+        }
     }
 
     .common__heading{
@@ -164,6 +166,12 @@
 
 @media (max-width: 850px) {
     .support{ 
+
+        .headerBackgroundImage{
+            img{
+                object-position: center center !important;
+            }
+        }
         .header{
             background-position: calc(100% + 452px);
         }

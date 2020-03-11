@@ -2,9 +2,9 @@ import React from "react";
 import withI18next from "../components/withI18next";
 import { Link } from "react-scroll";
 import Text from '../components/text';
+import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
-
 
 class aboutUs extends React.PureComponent {
 
@@ -13,6 +13,7 @@ render(){
     return (
       <Layout className="about-us-page" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
+          <ImageGQL className="headerBackgroundImage" imageName="about-us-header.png" style={{position: "absolute"}}/>
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">About AVS4YOU</Text>

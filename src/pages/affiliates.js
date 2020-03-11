@@ -4,6 +4,7 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import "../styles/affiliates.less";
 import Button from "../components/button";
+import ImageGQL from "../components/image-gql";
 import ReviewScreen from '../components/review-screen';
 import ContentSelector from '../components/content-selector';
 
@@ -14,6 +15,7 @@ render(){
     return (
       <Layout className="affiliates" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
+            <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.png" style={{position: "absolute"}}/>
             <div className="header__body">
                 <Text as="h1" className="header__heading">Affiliate Program</Text>
                 <Text as="h3" className="header__subtitle">Generate maximum sales with AVS4YOU top tools</Text>

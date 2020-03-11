@@ -5,6 +5,7 @@ import Link from '../components/link';
 import Layout from "../components/layout";
 import "../styles/download.less";
 import Button from "../components/button";
+import ImageGQL from "../components/image-gql";
 import PanelCollapse from "../components/panel-collapse";
 import AdaptiveCarousel from "../components/adaptive-carousel"
 import HeaderDownloadButtons from "../components/header-download-buttons";
@@ -17,6 +18,7 @@ render(){
     return (
       <Layout className="download" pageContext={this.props.pageContext} t={this.props.t}>
         <div id="headerContentWrapper" className="header">
+            <ImageGQL className="headerBackgroundImage" imageName="download-header.png" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
                     <Text as="h1" className="header__heading">Download</Text>
