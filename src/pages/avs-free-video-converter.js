@@ -12,30 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
-import HeaderImage from '../images/avs-free-video-converter/en_avs_video_converter.png';
-import HeaderImageMobile from '../images/avs-free-video-converter/en_avs_video_converter-mobile.png';
-
-import screen1 from '../images/avs-free-video-converter/vc_convert_all_key2.png';
-import screen2 from '../images/avs-free-video-converter/vc_convert_video_easily2.png';
-import screen3 from '../images/avs-free-video-converter/vc_convert_a_large_number.png';
-import screen4 from '../images/avs-free-video-converter/vc_edit_your_videos.png';
-import screen5 from '../images/avs-free-video-converter/vc_сonvert_and_share.png';
-
-import slideCarousel1 from '../images/avs-free-video-converter/slider1.png';
-import slideCarousel2 from '../images/avs-free-video-converter/slider2.png';
-import slideCarousel3 from '../images/avs-free-video-converter/slider3.png';
-import slideCarousel4 from '../images/avs-free-video-converter/slider4.png';
-import slideCarousel5 from '../images/avs-free-video-converter/slider5.png';
-import slideCarousel6 from '../images/avs-free-video-converter/slider6.png';
-
-import slidePopupCarousel1 from '../images/avs-free-video-converter/slider_popup1.png';
-import slidePopupCarousel2 from '../images/avs-free-video-converter/slider_popup2.png';
-import slidePopupCarousel3 from '../images/avs-free-video-converter/slider_popup3.png';
-import slidePopupCarousel4 from '../images/avs-free-video-converter/slider_popup4.png';
-import slidePopupCarousel5 from '../images/avs-free-video-converter/slider_popup5.png';
-import slidePopupCarousel6 from '../images/avs-free-video-converter/slider_popup6.png';
-
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
 import AvatarLawrence from '../images/avs-free-video-converter/lawrence_thompson.png';
@@ -76,8 +52,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="video_converter_en_avs_video_converter.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="video_converter_header_en_mobile.png" style={{maxWidth: "366px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -98,7 +74,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="video_converter_convert_all_key2.png"
                 headerText="Сonvert all key video formats"    
             >
               <Text className="ListItem">Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.</Text>
@@ -109,7 +85,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="video_converter_convert_video_easily2.png"
                 headerText="Convert video easily and fast"   
             >
               <Text className="ListItem">Convert videos in one click with improved settings for powerful computers</Text>
@@ -120,7 +96,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="video_converter_convert_a_large_number.png"
               headerText="Convert a large number of files at once"    
             >
               <Text className="ListItem"><span>Command Line Mode</span>Automate routine work using ready conversion templates without clicking the program buttons manually</Text>
@@ -129,7 +105,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen4}
+                imageName="video_converter_edit_your_videos.png"
                 headerText="Edit your videos before conversion*"   
             >
               <Text className="ListItem">Split your videos into parts, by chapters, size and cut unnecessary scenes</Text>
@@ -142,8 +118,8 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                image={screen5}
-                headerText="Convert and share videos on Web"    
+                imageName="video_converter_slider_popup3.png"
+                headerText="Convert and share videos on Web"
             >
               <Text className="ListItem"><span>Save video to any format or modern gadgets</span>Apple iPhone XS/XR/X/8/7, Apple iPad Pro, 2018, 2017, iPad Air 2 etc.; Samsung Galaxy S9/S8/S7, Galaxy Note 9/8/5, Galaxy Tab S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia XZ3/XZ2/XZ1, XZ2/XZ1 Compact</Text>
               <Text className="ListItem"><span>Create DVD/Blu-ray discs</span>Convert from/to Blu-ray or DVD formats. Cut, apply effects, add colorful DVD/Blu-ray menus. Split your movie into chapters and burn DVD/Blu-ray discs</Text>
@@ -178,8 +154,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, slideCarousel5, slideCarousel6]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}
+            imageNames={["video_converter_slider1.png", "video_converter_slider2.png", "video_converter_slider3.png", "video_converter_slider4.png", "video_converter_slider5.png", "video_converter_slider6.png"]}
+            imageNamesPopup={["video_converter_slider_popup1.png", "video_converter_slider_popup2.png", "video_converter_slider_popup3.png", "video_converter_slider_popup4.png", "video_converter_slider_popup5.png", "video_converter_slider_popup6.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />

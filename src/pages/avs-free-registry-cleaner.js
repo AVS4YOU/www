@@ -12,14 +12,11 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-registry-cleaner/en_avs_registry_cleaner2x.png';
-import HeaderImageMobile from '../images/avs-free-registry-cleaner/en_avs_registry_cleaner2x.png';
+import screen1 from '../images/avs-free-registry-cleaner/registry_cleaner_slide2.png';
+import screen2 from '../images/avs-free-registry-cleaner/registry_cleaner_slide3.png';
+import screen3 from '../images/avs-free-registry-cleaner/registry_cleaner_slide4.png';
 
-import screen1 from '../images/avs-free-registry-cleaner/rc_clean_and_fix2x.png';
-import screen2 from '../images/avs-free-registry-cleaner/rc_secure_your_pc2x.png';
-import screen3 from '../images/avs-free-registry-cleaner/rc_clean_and_fix2x.png';
-
-import slideCarousel1 from '../images/avs-free-registry-cleaner/slider1.png';
+import slideCarousel1 from '../images/avs-free-registry-cleaner/registry_cleaner_slide1.png';
 
 class avsFreeRegistryCleaner extends React.PureComponent {
 
@@ -57,8 +54,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="registry_cleaner_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="registry_cleaner_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -79,7 +76,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="registry_cleaner_slide2.png"
                 headerText="Clean and fix windows registry"    
             >
               <Text className="ListItem">Scan different registry categories like uninstalled entries, shared DLL's, COM/ActiveX and file extensions.</Text>
@@ -88,7 +85,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="registry_cleaner_slide3.png"
                 headerText="Secure your PC"   
             >
               <Text className="ListItem">Backup the files for maximum safety.</Text>
@@ -98,7 +95,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="registry_cleaner_slide4.png"
               headerText="Strong program compatibility"    
             >
               <Text className="ListItem">AVS Registry Cleaner is compatible with office-, graphics-, anti-virus- and other software installed on your PC.</Text>
@@ -111,8 +108,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Registry Cleaner</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3 ]}
-            slidesPopup={[slideCarousel1, screen1, screen2, screen3]}
+            imageNames={["registry_cleaner_slide1.png", "registry_cleaner_slide2.png", "registry_cleaner_slide3.png", "registry_cleaner_slide4.png" ]}
+            imageNamesPopup={["registry_cleaner_slide1.png", "registry_cleaner_slide2.png", "registry_cleaner_slide3.png", "registry_cleaner_slide4.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

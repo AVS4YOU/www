@@ -12,20 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-audio-converter/en_avs_audio_converter-min.png';
-import HeaderImageMobile from '../images/avs-audio-converter/en_avs_audio_converter-min.png';
-
-import screen1 from '../images/avs-audio-converter/slider2-min.png';
-import screen2 from '../images/avs-audio-converter/slider3-min.png';
-import screen3 from '../images/avs-audio-converter/ac_bath-min.png';
-
-import slideCarousel1 from '../images/avs-audio-converter/slider1-min.png';
-
-import slidePopupCarousel1 from '../images/avs-audio-converter/slider1@2x-min.png';
-import slidePopupCarousel2 from '../images/avs-audio-converter/slider2@2x-min.png';
-import slidePopupCarousel3 from '../images/avs-audio-converter/slider3@2x-min.png';
-import slidePopupCarousel4 from '../images/avs-audio-converter/slider4@2x-min.png';
-
 import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
 
@@ -65,8 +51,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -87,7 +73,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="audio_converter_slider2.png"
                 headerText="Convert and edit all key audio formats"    
             >
               <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc;</Text>
@@ -97,7 +83,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="audio_converter_slider3.png"
                 headerText="Create audio files for any purpose."   
             >
               <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks;</Text>
@@ -107,7 +93,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="audio_converter_bath.png"
               headerText="Convert audio files in bulk"    
             >
               <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once;</Text>
@@ -137,8 +123,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 9.1</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3 ]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4]}
+            imageNames={["audio_converter_slider1.png", "audio_converter_slider2.png", "audio_converter_slider3.png", "audio_converter_bath.png" ]}
+            imageNamesPopup={["audio_converter_slider1@2x.png", "audio_converter_slider2@2x.png", "audio_converter_slider3@2x.png", "audio_converter_slider4@2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

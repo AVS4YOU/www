@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
+import ImageGQL from '../image-gql';
 
 import LeftArrow from '../../images/common/icons/arrow-left.svg';
 import RightArrow from '../../images/common/icons/arrow-right.svg';
@@ -251,18 +252,18 @@ export default class ScreenshotsCarousel extends Component {
 
   render() {
     const isMobile = this.state.width < 1050;
-    const slides =  this.props.slides;
-    const slidesPopup = this.props.slidesPopup;
+    const imageNames =  this.props.imageNames;
+    const imageNamesPopup = this.props.imageNamesPopup;
     const altText = this.props.altText;
 
-    const carouselImages = slides.length > 0 && 
-        slides.map((slide, i) => {
-            return(<img onClick={this.toggleCarousel} key={"CarouselItem_"+i} className="carouselImage visible" src={slide} alt={altText[i]}/>)
+    const carouselImages = imageNames.length > 0 && 
+        imageNames.map((imageName, i) => {
+            return(<div key={"CarouselItem_"+i} onClick={this.toggleCarousel}><ImageGQL className="carouselImage visible" imageName={imageName} alt={altText[i]}/></div>)
         });
 
-    const PopupCarouselImages = slidesPopup.length > 0 && 
-        slidesPopup.map((slide, i) => {
-            return(<img key={"popupCarouselItem_"+i} className="carouselImage" src={slide} alt={altText[i]}/>)
+    const PopupCarouselImages = imageNamesPopup.length > 0 && 
+        imageNamesPopup.map((imageName, i) => {
+            return(<div key={"popupCarouselItem_"+i}><ImageGQL className="carouselImage" imageName={imageName} alt={altText[i]}/></div>)
         });
 
     return (

@@ -216,6 +216,7 @@ const RowContent = styled.div`
 
             .rowImage{
                 margin:auto;
+                width:100%;
             }
 
             &:before{

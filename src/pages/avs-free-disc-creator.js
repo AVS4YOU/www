@@ -12,18 +12,18 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-disc-creator/en_avs_disc_creator.png';
-import HeaderImageMobile from '../images/avs-free-disc-creator/en_avs_disc_creator.png';
+import HeaderImage from '../images/avs-free-disc-creator/disc_creator_header.png';
+import HeaderImageMobile from '../images/avs-free-disc-creator/disc_creator_header.png';
 
-import screen1 from '../images/avs-free-disc-creator/slide1.png';
-import screen2 from '../images/avs-free-disc-creator/slide2.png';
-import screen3 from '../images/avs-free-disc-creator/slide3.png';
-import screen4 from '../images/avs-free-disc-creator/slide4.png';
+import screen1 from '../images/avs-free-disc-creator/disc_creator_slide1.png';
+import screen2 from '../images/avs-free-disc-creator/disc_creator_slide2.png';
+import screen3 from '../images/avs-free-disc-creator/disc_creator_slide3.png';
+import screen4 from '../images/avs-free-disc-creator/disc_creator_slide4.png';
 
-import slidePopupCarousel1 from '../images/avs-free-disc-creator/dc_burn_video_disc2x.png';
-import slidePopupCarousel2 from '../images/avs-free-disc-creator/dc_burn_audio2x.png';
-import slidePopupCarousel3 from '../images/avs-free-disc-creator/dc_burn_iso2x.png';
-import slidePopupCarousel4 from '../images/avs-free-disc-creator/dc_bootable_disc2x.png';
+import slidePopupCarousel1 from '../images/avs-free-disc-creator/disc_creator_slide1_2x.png';
+import slidePopupCarousel2 from '../images/avs-free-disc-creator/disc_creator_slide2_2x.png';
+import slidePopupCarousel3 from '../images/avs-free-disc-creator/disc_creator_slide3_2x.png';
+import slidePopupCarousel4 from '../images/avs-free-disc-creator/disc_creator_slide4_2x.png';
 
 class avsFreeDiscCreator extends React.PureComponent {
 
@@ -61,8 +61,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="disc_creator_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="disc_creator_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -83,7 +83,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="disc_creator_slide1.png"
                 headerText="Burn video discs"    
             >
               <Text className="ListItem">Burn video files available on HDD directly jn a DVD disk: DVD+/-R, DVD+/-RW, DVD-RAM, Double/Dual Layer DVD, etc.</Text>
@@ -94,7 +94,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="disc_creator_slide2.png"
                 headerText="Burn audio and data discs"   
             >
               <Text className="ListItem">Write your audio onto CD (CD-R, CD-RW) discs.</Text>
@@ -104,7 +104,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="disc_creator_slide3.png"
               headerText="Make ISO image"    
             >
               <Text className="ListItem">Create an image of your personal video and save it on PC.</Text>
@@ -114,7 +114,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              image={screen4}
+              imageName="disc_creator_slide4.png"
               headerText="Create boot discs"    
             >
               <Text className="ListItem">Create boot CD/DVD discs and make a copy of your software to load and run an operating system or utility programs in case of emergency.</Text>
@@ -127,8 +127,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Disc Creator</Text>
           <ScreenshotsCarousel 
-            slides={[screen1, screen2, screen3, screen4 ]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4]}
+            imageNames={["disc_creator_slide1.png", "disc_creator_slide2.png", "disc_creator_slide3.png", "disc_creator_slide4.png" ]}
+            imageNamesPopup={["disc_creator_slide1_2x.png", "disc_creator_slide2_2x.png", "disc_creator_slide3_2x.png", "disc_creator_slide4_2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

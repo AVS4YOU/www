@@ -12,22 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-document-converter/en_avs_doc_convert.png';
-import HeaderImageMobile from '../images/avs-free-document-converter/en_avs_doc_convert.png';
-
-import screen1 from '../images/avs-free-document-converter/dc_convert_various.png';
-import screen2 from '../images/avs-free-document-converter/dc_protect.png';
-import screen3 from '../images/avs-free-document-converter/slider2.png';
-import screen4 from '../images/avs-free-document-converter/slider4.png';
-
-import slideCarousel1 from '../images/avs-free-document-converter/slider1.png';
-
-import slidePopupCarousel1 from '../images/avs-free-document-converter/dc_header_center.png';
-import slidePopupCarousel2 from '../images/avs-free-document-converter/dc_convert_various2x.png';
-import slidePopupCarousel3 from '../images/avs-free-document-converter/dc_protect2x.png';
-import slidePopupCarousel4 from '../images/avs-free-document-converter/dc_zip_your_files2x.png';
-import slidePopupCarousel5 from '../images/avs-free-document-converter/dc_batch_mode2x.png';
-
 class avsFreeDocumentConverter extends React.PureComponent {
 
   constructor(props) {
@@ -64,8 +48,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="document_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="document_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -86,7 +70,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="document_converter_slider2.png"
                 headerText="Convert various document formats"    
             >
               <Text className="ListItem">Convert your files between DOC, PDF, DOCX, ODT, RTF, TXT, HTML, and others. See a list of supported text formats.</Text>
@@ -96,7 +80,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="document_converter_slider3.png"
                 headerText="Protect your documents"   
             >
               <Text className="ListItem">Create passwords to protect your PDF documents.</Text>
@@ -106,7 +90,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="document_converter_slider4.png"
               headerText="Zip your files"    
             >
               <Text className="ListItem">Compress  bulky files to ZIP format before or after the data conversion.</Text>
@@ -115,7 +99,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              image={screen4}
+              imageName="document_converter_slider5.png"
               headerText="Use Command Line Mode"    
             >
               <Text className="ListItem">Convert  documents in bulk.</Text>
@@ -129,9 +113,9 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Document Converter</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3, screen4 ]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5]}
-            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
+            imageNames={["document_converter_slider1.png", "document_converter_slider2.png", "document_converter_slider3.png", "document_converter_slider4.png", "document_converter_slider5.png" ]}
+            imageNamesPopup={["document_converter_slider1_2x.png", "document_converter_slider2_2x.png", "document_converter_slider3_2x.png", "document_converter_slider4_2x.png", "document_converter_slider5_2x.png"]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
             
           />
           <PageContentWrapper>

@@ -12,20 +12,11 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-video-editor/en_avs_video_editor_main.png';
-import HeaderImageMobile from '../images/avs-video-editor/slider1.png';
+import slideCarousel1 from '../images/avs-video-editor/video-editor-slider1.png';
+import slideCarousel2 from '../images/avs-video-editor/video-editor-slider2.png';
 
-import slideCarousel1 from '../images/avs-video-editor/slider1.png';
-import slideCarousel2 from '../images/avs-video-editor/slider2.png';
-
-import slidePopupCarousel1 from '../images/avs-video-editor/slider1-2x.png';
-import slidePopupCarousel2 from '../images/avs-video-editor/slider2-2x.png';
-
-import screen1 from '../images/avs-video-editor/slider3.png';
-import screen2 from '../images/avs-video-editor/slider4.png';
-import screen3 from '../images/avs-video-editor/slider5.png';
-import screen4 from '../images/avs-video-editor/slider2.png';
-import screen5 from '../images/avs-video-editor/slider6.png';
+import slidePopupCarousel1 from '../images/avs-video-editor/video-editor-slider1-2x.png';
+import slidePopupCarousel2 from '../images/avs-video-editor/video-editor-slider2-2x.png';
 
 import AvatarJames from '../images/avs-video-editor/james_k.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -68,8 +59,9 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            
+            <ImageGQL className="headerImage" imageName="en_avs_video_editor_main.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="video-editor-slider1.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -90,7 +82,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="video-editor-slider3.png"
                 headerText="Work with all key formats and HD videos"    
             >
               <Text className="ListItem">Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.</Text>
@@ -103,7 +95,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="video-editor-slider4.png"
                 headerText="Record your video"   
             >
               <Text className="ListItem">Transfer video from DV/HDV cameras, webcams or VHS cameras</Text>
@@ -113,7 +105,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="video-editor-slider5.png"
               headerText="Make your video look professional"    
             >
               <Text className="ListItem">Ccut out a particular scene or remove shaky and unnecessary parts</Text>
@@ -126,7 +118,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen4}
+                imageName="video-editor-slider2.png"
                 headerText="Make vivid slideshows"   
             >
               <Text className="ListItem">Import images, add your voice or favourite audio tracks</Text>
@@ -136,7 +128,7 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                image={screen5}
+                imageName="video-editor-slider6.png"
                 headerText="Share your video"    
             >
               <Text className="ListItem">Save the newly-made video in the desired format on your computer</Text>
@@ -173,8 +165,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
           <ScreenshotsCarousel
-            slides={[slideCarousel1, slideCarousel2]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2]}
+            imageNames={["video-editor-slider1.png", "video-editor-slider2.png"]}
+            imageNamesPopup={["video-editor-slider1-2x.png", "video-editor-slider2-2x.png"]}
             altText={["slideCarousel1", "slideCarousel2"]}
           />
           <PageContentWrapper>

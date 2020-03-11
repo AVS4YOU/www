@@ -12,17 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-video-editor/background_main.png";
-import HeaderImage from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
-import HeaderImageMobile from '../images/avs-video-remaker/en_avs_video_remaker-min.png';
-
-import screen1 from '../images/avs-video-remaker/vr_edit_video_files-min.png';
-import screen2 from '../images/avs-video-remaker/vr_record_video-min.png';
-import screen3 from '../images/avs-video-remaker/vr_disc_menu-min.png';
-
-import screen4 from '../images/avs-video-remaker/slider1-min.png';
-import screen5 from '../images/avs-video-remaker/slider2-min.png';
-
 import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
 import AvatarArthur from '../images/avs-video-remaker/arthur_rees.png';
@@ -64,8 +53,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -86,7 +75,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="video_remaker_edit_video_files-min.png"
                 headerText="Edit video files without reconversion"    
             >
               <Text className="ListItem">Cut, delete unwanted parts, change scene sequence in all popular video formats</Text>
@@ -96,7 +85,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="video_remaker_record_video-min.png"
                 headerText="Capture video"   
             >
               <Text className="ListItem">Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs</Text>
@@ -107,7 +96,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="video_remaker_disc_menu-min.png"
               headerText="Create DVD and Blu-ray Menus"    
             >
               <Text className="ListItem">Split video into chapters, select between a number of menu templates</Text>
@@ -144,8 +133,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.3</Text>
           <ScreenshotsCarousel 
-            slides={[screen1, screen2, screen3, screen4, screen5]}
-            slidesPopup={[screen1, screen2, screen3, screen4, screen5]}
+            imageNames={["video_remaker_edit_video_files-min.png", "video_remaker_record_video-min.png", "video_remaker_disc_menu-min.png", "video_remaker_slider1-min.png", "video_remaker_slider2-min.png"]}
+            imageNamesPopup={["video_remaker_edit_video_files-min.png", "video_remaker_record_video-min.png", "video_remaker_disc_menu-min.png", "video_remaker_slider1-min.png", "video_remaker_slider2-min.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />

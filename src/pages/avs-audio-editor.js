@@ -12,25 +12,25 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-audio-editor/en_avs_audio_editor-min.png';
-import HeaderImageMobile from '../images/avs-audio-editor/en_avs_audio_editor-min.png';
+import HeaderImage from '../images/avs-audio-editor/audio_editor_en_header.png';
+import HeaderImageMobile from '../images/avs-audio-editor/audio_editor_en_header.png';
 
-import screen1 from '../images/avs-audio-editor/ae_edit_all_key-min.png';
-import screen2 from '../images/avs-audio-editor/ae_record_audio-min.png';
-import screen3 from '../images/avs-audio-editor/slider5-min.png';
-import screen4 from '../images/avs-audio-editor/slider6-min.png';
+import screen1 from '../images/avs-audio-editor/audio_editor_edit_all_key.png';
+import screen2 from '../images/avs-audio-editor/audio_editor_record_audio.png';
+import screen3 from '../images/avs-audio-editor/audio_editor_slider5.png';
+import screen4 from '../images/avs-audio-editor/audio_editor_slider6.png';
 
-import slideCarousel1 from '../images/avs-audio-editor/slider1-min.png';
-import slideCarousel2 from '../images/avs-audio-editor/slider2-min.png';
-import slideCarousel3 from '../images/avs-audio-editor/slider3-min.png';
-import slideCarousel4 from '../images/avs-audio-editor/slider4-min.png';
+import slideCarousel1 from '../images/avs-audio-editor/audio_editor_slider1.png';
+import slideCarousel2 from '../images/avs-audio-editor/audio_editor_slider2.png';
+import slideCarousel3 from '../images/avs-audio-editor/audio_editor_slider3.png';
+import slideCarousel4 from '../images/avs-audio-editor/audio_editor_slider4.png';
 
-import slidePopupCarousel1 from '../images/avs-audio-editor/slider1@2x-min.png';
-import slidePopupCarousel2 from '../images/avs-audio-editor/slider2@2x-min.png';
-import slidePopupCarousel3 from '../images/avs-audio-editor/slider3@2x-min.png';
-import slidePopupCarousel4 from '../images/avs-audio-editor/slider4@2x-min.png';
-import slidePopupCarousel5 from '../images/avs-audio-editor/slider5@2x-min.png';
-import slidePopupCarousel6 from '../images/avs-audio-editor/slider6@2x-min.png';
+import slidePopupCarousel1 from '../images/avs-audio-editor/audio_editor_slider1@2x.png';
+import slidePopupCarousel2 from '../images/avs-audio-editor/audio_editor_slider2@2x.png';
+import slidePopupCarousel3 from '../images/avs-audio-editor/audio_editor_slider3@2x.png';
+import slidePopupCarousel4 from '../images/avs-audio-editor/audio_editor_slider4@2x.png';
+import slidePopupCarousel5 from '../images/avs-audio-editor/audio_editor_slider5@2x.png';
+import slidePopupCarousel6 from '../images/avs-audio-editor/audio_editor_slider6@2x.png';
 
 import AvatarDavid from '../images/avs-audio-editor/david.png';
 import AvatarFrank from '../images/avs-audio-editor/frank.png';
@@ -73,8 +73,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="audio_editor_en_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="audio_editor_en_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -95,7 +95,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="audio_editor_edit_all_key.png"
                 headerText="Edit all key audio formats"    
             >
               <Text className="ListItem">Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc.</Text>
@@ -106,7 +106,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="audio_editor_record_audio.png"
                 headerText="Record audio from any inputs"   
             >
               <Text className="ListItem">Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card</Text>
@@ -115,7 +115,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="audio_editor_slider5.png"
               headerText="Master your sound for the higher quality"    
             >
               <Text className="ListItem">Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
@@ -125,7 +125,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              image={screen4}
+              imageName="audio_editor_slider6.png"
               headerText="Extend your experience with additional features"    
             >
               <Text className="ListItem">Turn written text into a natural sounding voice with Text-to-speech function</Text>
@@ -161,8 +161,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 8.5</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, slideCarousel2, slideCarousel3, slideCarousel4, screen3, screen4 ]}
-            slidesPopup={[slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4, slidePopupCarousel5, slidePopupCarousel6]}
+            imageNames={["audio_editor_slider1.png", "audio_editor_slider2.png", "audio_editor_slider3.png", "audio_editor_slider4.png", "audio_editor_slider5.png", "audio_editor_slider6.png" ]}
+            imageNamesPopup={["audio_editor_slider1@2x.png", "audio_editor_slider2@2x.png", "audio_editor_slider3@2x.png", "audio_editor_slider4@2x.png", "audio_editor_slider5@2x.png", "audio_editor_slider6@2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />

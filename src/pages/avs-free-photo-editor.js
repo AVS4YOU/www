@@ -12,18 +12,18 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-photo-editor/en_avs_photo_editor.png';
-import HeaderImageMobile from '../images/avs-free-photo-editor/en_avs_photo_editor.png';
+import HeaderImage from '../images/avs-free-photo-editor/photo_editor_header.png';
+import HeaderImageMobile from '../images/avs-free-photo-editor/photo_editor_header.png';
 
-import screen1 from '../images/avs-free-photo-editor/slide2.png';
-import screen2 from '../images/avs-free-photo-editor/slide3.png';
-import screen3 from '../images/avs-free-photo-editor/slide4.png';
+import screen1 from '../images/avs-free-photo-editor/photo_editor_slide2.png';
+import screen2 from '../images/avs-free-photo-editor/photo_editor_slide3.png';
+import screen3 from '../images/avs-free-photo-editor/photo_editor_slide4.png';
 
-import slideCarousel1 from '../images/avs-free-photo-editor/slide1.png';
+import slideCarousel1 from '../images/avs-free-photo-editor/photo_editor_slide1.png';
 
-import slidePopupCarousel1 from '../images/avs-free-photo-editor/pe_edit_and_improve2x.png';
-import slidePopupCarousel2 from '../images/avs-free-photo-editor/pe_formats2x.png';
-import slidePopupCarousel3 from '../images/avs-free-photo-editor/pe_apply_an_aray_effect2x.png';
+import slidePopupCarousel1 from '../images/avs-free-photo-editor/photo_editor_slide2_2x.png';
+import slidePopupCarousel2 from '../images/avs-free-photo-editor/photo_editor_slide3_2x.png';
+import slidePopupCarousel3 from '../images/avs-free-photo-editor/photo_editor_slide4_2x.png';
 
 class avsFreePhotoEditor extends React.PureComponent {
 
@@ -61,8 +61,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="photo_editor_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="photo_editor_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -83,7 +83,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="photo_editor_slide2.png"
                 headerText="Edit and improve photos like a pro"    
             >
               <Text className="ListItem">Rotate, crop pictures without quality loss.</Text>
@@ -94,7 +94,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="photo_editor_slide3.png"
                 headerText="Apply an array of effects"   
             >
               <Text className="ListItem">Apply pre-made templates to make your pictures look like old, faded photographs.</Text>
@@ -104,7 +104,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="photo_editor_slide4.png"
               headerText="Work with various formats"    
             >
               <Text className="ListItem">Edit photos to all key formats JPEG, JPG, BMP, PNG, GIF, etc. <a href="https://onlinehelp.avs4you.com/avs-photo-editor/working/addingpreviewing/supportedformats.aspx" target="_blank">See a full list of supported image formats</a>.</Text>
@@ -118,8 +118,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Photo Editor</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3 ]}
-            slidesPopup={[slideCarousel1, slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3]}
+            imageNames={["photo_editor_slide1.png", "photo_editor_slide2.png", "photo_editor_slide3.png", "photo_editor_slide4.png" ]}
+            imageNamesPopup={["photo_editor_slide1.png", "photo_editor_slide2_2x.png", "photo_editor_slide3_2x.png", "photo_editor_slide4_2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

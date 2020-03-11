@@ -12,21 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-media-player/en_avs_media_player.png';
-import HeaderImageMobile from '../images/avs-free-media-player/en_avs_media_player.png';
-
-import screen1 from '../images/avs-free-media-player/slide2.png';
-import screen2 from '../images/avs-free-media-player/slide3.png';
-import screen3 from '../images/avs-free-media-player/slide4.png';
-import screen4 from '../images/avs-free-media-player/slide5.png';
-
-import slideCarousel1 from '../images/avs-free-media-player/slide1.png';
-
-import slidePopupCarousel1 from '../images/avs-free-media-player/vp_formats2x.png';
-import slidePopupCarousel2 from '../images/avs-free-media-player/vp_audio_formats2x.png';
-import slidePopupCarousel3 from '../images/avs-free-media-player/vp_slideshow2x.png';
-import slidePopupCarousel4 from '../images/avs-free-media-player/vp_surround2x.png';
-
 
 class avsFreeMediaPlayer extends React.PureComponent {
 
@@ -64,8 +49,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="media_player_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="media_player_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -86,7 +71,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="media_player_slide2.png"
                 headerText="Watch video"    
             >
               <Text className="ListItem">Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc.</Text>
@@ -96,7 +81,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="media_player_slide3.png"
                 headerText="Play audio"   
             >
               <Text className="ListItem">Add audio tracks of any format such as WAV, MP3, ALAC, FLAC, M4A, OGG, AAC, AMR, etc.</Text>
@@ -105,7 +90,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="media_player_slide4.png"
               headerText="View pictures"    
             >
               <Text className="ListItem">Select images in PNG, JPEG, GIF, etc. and view them as a slideshow.</Text>
@@ -114,7 +99,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              image={screen4}
+              imageName="media_player_slide5.png"
               headerText="Enjoy sound-around effect"    
             >
               <Text className="ListItem">Free AVS Media Player supports of 3.1, 5.1 and 7.1 speaker configurations.</Text>
@@ -127,8 +112,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Media Player</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3, screen4 ]}
-            slidesPopup={[slideCarousel1, slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4]}
+            imageNames={["media_player_slide1.png", "media_player_slide2.png", "media_player_slide3.png", "media_player_slide4.png", "media_player_slide5.png" ]}
+            imageNamesPopup={["media_player_slide1.png", "media_player_formats2x.png", "media_player_audio_formats2x.png", "media_player_slideshow2x.png", "media_player_surround2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
             
           />

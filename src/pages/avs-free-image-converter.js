@@ -12,23 +12,21 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import BackgroundHeaderImage from "../images/avs-free-media-player/background_main.png";
+import HeaderImage from '../images/avs-free-image-converter/image_converter_header.png';
+import HeaderImageMobile from '../images/avs-free-image-converter/image_converter_header.png';
 
-import HeaderImage from '../images/avs-free-image-converter/en_avs_image_converter.png';
-import HeaderImageMobile from '../images/avs-free-image-converter/en_avs_image_converter.png';
+import screen1 from '../images/avs-free-image-converter/image_converter_slide2.png';
+import screen2 from '../images/avs-free-image-converter/image_converter_slide3.png';
+import screen3 from '../images/avs-free-image-converter/image_converter_slide4.png';
+import screen4 from '../images/avs-free-image-converter/image_converter_slide5.png';
+import screen5 from '../images/avs-free-image-converter/image_converter_batch_mode.png';
 
-import screen1 from '../images/avs-free-image-converter/slide2.png';
-import screen2 from '../images/avs-free-image-converter/slide3.png';
-import screen3 from '../images/avs-free-image-converter/slide4.png';
-import screen4 from '../images/avs-free-image-converter/slide5.png';
-import screen5 from '../images/avs-free-image-converter/ic_batch_mode.png';
+import slideCarousel1 from '../images/avs-free-image-converter/image_converter_slide1.png';
 
-import slideCarousel1 from '../images/avs-free-image-converter/slide1.png';
-
-import slidePopupCarousel1 from '../images/avs-free-image-converter/ic_header_center2x.png';
-import slidePopupCarousel2 from '../images/avs-free-image-converter/ic_resize2x.png';
-import slidePopupCarousel3 from '../images/avs-free-image-converter/ic_apply_effects2x.png';
-import slidePopupCarousel4 from '../images/avs-free-image-converter/ic_watermark2x.png';
+import slidePopupCarousel1 from '../images/avs-free-image-converter/image_converter_header_center2x.png';
+import slidePopupCarousel2 from '../images/avs-free-image-converter/image_converter_resize2x.png';
+import slidePopupCarousel3 from '../images/avs-free-image-converter/image_converter_apply_effects2x.png';
+import slidePopupCarousel4 from '../images/avs-free-image-converter/image_converter_watermark2x.png';
 
 class avsFreeImageConverter extends React.PureComponent {
 
@@ -66,8 +64,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <img className="headerImage" alt="header-image" src={HeaderImage}/>
-            <img className="headerImage mobile" alt="header-image-mobile" src={HeaderImageMobile}/>
+            <ImageGQL className="headerImage" imageName="image_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="image_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
@@ -88,7 +86,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                image={screen1}
+                imageName="image_converter_slide2.png"
                 headerText="Convert from and to popular formats"    
             >
               <Text className="ListItem">Convert images to all key formats JPEG, JPG, PNG,  BMP, TIFF, TGA, GIF, animated GIF/PNG, APNG, ITHMB (iPhone/iPod Thumbnail Files).</Text>
@@ -98,7 +96,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                image={screen2}
+                imageName="image_converter_slide3.png"
                 headerText="Easily resize images using presets"   
             >
               <Text className="ListItem">Automatically tailor your photos to popular printing formats.</Text>
@@ -108,7 +106,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen3}
+              imageName="image_converter_slide4.png"
               headerText="Apply effects"    
             >
               <Text className="ListItem">Adjust contrast and brightness automatically.</Text>
@@ -119,7 +117,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              image={screen4}
+              imageName="image_converter_slide5.png"
               headerText="Watermark your pictures"    
             >
               <Text className="ListItem">Select a logo or write a phrase and apply it to all converted pictures as a personal watermark.</Text>
@@ -127,7 +125,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              image={screen5}
+              imageName="image_converter_batch_mode.png"
               headerText="Use Command Line Mode"    
             >
               <Text className="ListItem">Run routine tasks efficiently: resize and convert multiple images between various formats.</Text>
@@ -140,8 +138,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
           <ScreenshotsCarousel 
-            slides={[slideCarousel1, screen1, screen2, screen3, screen4 ]}
-            slidesPopup={[slideCarousel1, slidePopupCarousel1, slidePopupCarousel2, slidePopupCarousel3, slidePopupCarousel4]}
+            imageNames={["image_converter_slide1.png", "image_converter_slide2.png", "image_converter_slide3.png", "image_converter_slide4.png", "image_converter_slide5.png" ]}
+            imageNamesPopup={["image_converter_slide1.png", "image_converter_header_center2x.png", "image_converter_header_center2x.png", "image_converter_apply_effects2x.png", "image_converter_watermark2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
             
           />
