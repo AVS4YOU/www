@@ -1,0 +1,439 @@
+.education{
+
+    .header{
+        .header__subtitle{
+            padding-bottom: 80px;
+        }
+    }
+
+    .headerBackgroundImage{
+        img{
+            object-position: right center !important;
+        }
+    }
+
+    .content-selector-wrapper{
+        padding-top:50px;
+
+        .education__content-wrapper{
+            padding-top: 120px;
+
+            .imgRight:first-child,
+            .imgLeft:first-child
+            {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .content-button-wrapper{
+        display: table;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    .form.education{
+        background-color: transparent;
+    }
+
+    .education-solution{
+        background-color:#FFF9F1;
+    }
+
+    .scrollToForm{
+        display:table;
+        background-color: #1373E2;
+        padding: 20px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &>p{
+            color:#ffffff;
+        }
+    }
+
+    .common__heading{
+        max-width: 1048px;
+        margin: auto;
+        line-height: normal;
+    }
+
+    .screen-wrapper{
+        padding: 120px 30px;
+    }
+
+    .education-from-wrapper{
+        max-width: 800px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .body-education{
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+
+        .body-education__wrapper{
+            padding-top: 80px;
+
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .gridItem{
+                padding: 30px;
+                padding-top:0;
+
+                &:nth-child(1){
+                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_camera.svg);
+                    }
+                }
+                &:nth-child(2){ 
+                    border: 0.5px solid rgba(0, 0, 0, 0.2);
+                    border-top:none;
+
+                    .itemContent{
+                        background-image: url(../images/education/education_discounts.svg);
+                    }
+                }
+                &:nth-child(3){ 
+                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_person.svg);
+                    }
+                }
+                &:nth-child(4) {
+                    .itemContent{
+                        background-image: url(../images/education/education_key.svg);
+                    }
+                }
+                &:nth-child(5){
+                    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+                    border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_monitor.svg);
+                    }
+                }
+                &:nth-child(6){
+                    .itemContent{
+                        background-image: url(../images/education/education_lesson.svg);
+                    }
+                }
+            }
+
+            .itemContent{
+                max-width: 220px;
+                padding-top: 100px;
+                margin: auto;
+                background-position: 0 23px;
+                background-repeat: no-repeat;
+                background-size: 60px 60px;
+            }
+        }
+
+        .common-info-block{
+            width: 30%;
+            margin: 34px;
+            margin-bottom: 30px;
+            max-width: 340px;
+            padding: 40px;
+            padding-top: 120px;
+            background-color: #F9F9F9;
+            border-radius: 10px;
+
+            .common-info-block__link{
+                
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                margin-bottom: 3px;
+
+                .common-info-block__text{
+                    color: #1E72D2;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+
+            .common-info-block__headline,
+            .common-info-block__text {
+                text-align: center;
+            }
+
+            &:before{
+                width: 64px;
+                height: 64px;
+                left: 0;
+                right: 0;
+                top: 40px;
+                margin: auto;
+            }
+
+            &:nth-child(1):before{
+                background-image: url(../images/support/support.svg);
+            }
+
+            &:nth-child(2):before{
+                background-image: url(../images/support/faq.svg);
+            }
+
+            &:nth-child(3):before{
+                background-image: url(../images/support/knowledge.svg);
+            }
+
+            &:nth-child(4):before{
+                background-image: url(../images/support/download.svg);
+            }
+
+            &:nth-child(5):before{
+                background-image: url(../images/support/license.svg);
+            }
+        }
+
+        .body-education__button-text{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .body-education__button-wrapper{
+            display: table;
+            margin: auto;
+        }
+    }
+
+    .form{
+        background-color: #FFF9F1;
+
+        &>img{
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact-us-text{
+        font-size: 16px;
+        padding-top:40px;
+
+    }
+
+    .contact-body{
+        background-color:#ffffff;
+
+        .contact-body__max-width{
+            max-width: 1540px;
+            margin:auto;
+        }
+
+        .contact-body__wrapper{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 80px;
+        }
+
+        .common-info-block{
+            
+            &:nth-child(1):before{
+                background-image: url(../images/about-us/affiliates.svg);
+            }
+
+            &:nth-child(2):before{
+                background-image: url(../images/about-us/sales.svg);
+            }
+
+            &:nth-child(3):before{
+                background-image: url(../images/about-us/education.svg);
+            }
+
+            &:nth-child(4):before{
+                background-image: url(../images/about-us/support.svg);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .education{ 
+
+        .choose-solution__content-wrapper{
+            .top-button{
+                padding: 0 25px;
+
+                &>p{
+                    font-size: 14px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .headerBackgroundImage{
+            img{
+                object-position: center center !important;
+            }
+        }
+        .header{
+            background-position: calc(100% + 452px);
+        }
+
+        .screen-wrapper{
+            padding: 70px 15px;
+        }
+
+        .body-education{ 
+
+            .body-education__button{
+                padding: 15px 20px;
+            }
+
+            .body-education__button-text{
+                font-size: 14px;
+            }
+
+            .common-info-block{
+                width: 45%;
+                margin: 10px;
+                margin-bottom: 30px;
+                max-width: none;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .education{ 
+        .scrollToForm{
+            margin: auto;
+            padding: 15px 30px;
+        }
+
+       .header{ 
+           .header__body{
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+        }
+
+        .content-selector-wrapper{ 
+            .education__content-wrapper{
+                padding-top: 50px;
+            }
+        }
+
+        .body-education.screen-wrapper{
+            padding: 70px 0px;
+
+            .body-education__wrapper {
+                padding-top: 30px;
+
+                .grid{
+                    grid-template-columns: 1fr;
+                }
+                .gridItem{
+                    padding: 30px;
+                    padding-top:0;
+    
+                    &:nth-child(n){
+                        border: none;
+                        border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+                    }
+
+                    &:last-child{
+                        border: none;
+                    }
+                }
+
+                .itemContent{
+                    max-width: 345px;
+                    background-position: 50% 23px;
+
+                    p:nth-child(n){
+
+                    }
+
+                    &>p{
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .education{ 
+
+        .contact-us-text{
+            padding-left:15px;
+            padding-right:15px;
+            font-size:14px;
+            text-align: center;
+        }
+
+        .header__body{
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+
+        .header {
+            background-position: calc(100% + 452px);
+
+            .header__background-gradient{
+                background: radial-gradient(closest-side at 52% 52%, #000000CC 0%, #131313AB 173%, #54545400 362%) 0% 0% no-repeat padding-box;
+            }
+        }
+
+        .form{ 
+            &> img{
+                max-width: 60px;
+                margin-bottom: 10px;
+            }
+            .common__heading{
+                padding: 0 15px;
+            }
+        }
+        
+        .screen-wrapper{
+            padding: 50px 15px;
+
+            &.form{
+                padding: 30px 0 50px;
+            }
+        }
+        .body-education{ 
+            .body-education__wrapper{
+                padding-top: 30px;
+            }
+
+            .common-info-block{
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .choose-solution__content-wrapper{
+             .top-button{
+                padding: 5px 15px;
+                max-width: 125px;
+
+                &>p{
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+             }
+        }
+    }
+}
