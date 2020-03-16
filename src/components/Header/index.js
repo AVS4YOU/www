@@ -26,7 +26,7 @@ const Header = ({availableLocales, locale, t}) => {
                 <DropdownElement path="/avs-free-registry-cleaner" headerText="AVS Registry Cleaner" descriptionText="Clean and fix registry errors"/>
             </MenuItem>
             <MenuItem path="/download" menuItemText={t("Download")} isDropdown={false} />
-            <MenuItem menuItemText={t("Buy now")} isDropdown={false} />
+            <MenuItem path="/register" menuItemText={t("Buy now")} isDropdown={false} />
             <MenuItem menuItemText={t("Help center")}>
                 <DropdownElement path="/support" headerText="Support form"/>
                 <DropdownElement path="/" headerText="Guides"/>
