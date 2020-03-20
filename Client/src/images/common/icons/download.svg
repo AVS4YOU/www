@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="download" transform="translate(0 0)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="42" height="42" fill="none"/>
+    <g id="Ellipse_5" data-name="Ellipse 5" fill="none" stroke="#666" stroke-width="2">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="20" fill="none"/>
+    </g>
+    <path id="Union_1" data-name="Union 1" d="M0,8.325H5.873V0H16.492V8.325h6.034L11.263,19.32Z" transform="translate(9.816 13.271)" fill="none" stroke="#666" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

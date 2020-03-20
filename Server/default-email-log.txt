@@ -1,0 +1,2 @@
+2020-03-18 11:33:40	error: cannot send email. "Mailbox unavailable. The server response was: 4.1.2 <sdfsddf@dfg.dfg>: Recipient address rejected: Domain not found"
+2020-03-18 17:51:11	error: Could not find a part of the path 'E:\gitLab\AVS4YOU\sites\www.avs4you.com\advanced\mobile.avs4you.com-emailpatterns\default\en\'.

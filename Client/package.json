@@ -1,0 +1,59 @@
+{
+  "name": "gatsby-starter-i18next-ssr",
+  "version": "1.0.0",
+  "description": "Gatsby boilerplate to support server-side i18n page generation with i18next, react-18next and i18next",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby-i18n": "^1.1.5",
+    "gatsby-image": "^2.2.42",
+    "gatsby-plugin-less": "^3.0.18",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-styled-components": "^3.1.11",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-sharp": "^2.3.16",
+    "i18next": "^15.0.6",
+    "less": "^3.10.3",
+    "prop-types": "^15.7.2",
+    "react-i18next": "^10.4.1",
+    "react-responsive": "^8.0.1",
+    "react-scroll": "^1.7.14",
+    "react-slick": "^0.25.2",
+    "react-transition-group": "^4.3.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.4.1",
+    "ua-parser-js": "^0.7.20"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-knobs": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addon-options": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
+    "babel-loader": "^8.0.6",
+    "gatsby": "^2.0.115",
+    "react": "next",
+    "react-dom": "next"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guibulator/gatsby-starter-i18next-ssr.git"
+  },
+  "keywords": [
+    "Gatsby",
+    "React",
+    "i18n"
+  ],
+  "author": "Mathieu Guilbault",
+  "license": "Unlicense"
+}

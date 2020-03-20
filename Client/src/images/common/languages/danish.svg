@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_768" data-name="Ellipse 768" cx="8" cy="8" r="8" transform="translate(-0.145 -0.145)"/>
+    </clipPath>
+  </defs>
+  <g id="danish" transform="translate(23 12.426)">
+    <g id="Group_4074" data-name="Group 4074" transform="translate(-22.855 -12.281)" clip-path="url(#clip-path)">
+      <rect id="_x33__1_" width="22.862" height="17.716" transform="translate(-3.573 -1)" fill="#c60c30"/>
+    </g>
+    <g id="Group_4075" data-name="Group 4075" transform="translate(-22.855 -12.281)" clip-path="url(#clip-path)">
+      <rect id="_x32__1_" width="2.25" height="15.716" transform="translate(4.123)" fill="#fff"/>
+    </g>
+    <g id="Group_4076" data-name="Group 4076" transform="translate(-7.144 -12.281) rotate(90)" clip-path="url(#clip-path)">
+      <rect id="_x31__2_" width="2.25" height="20.862" transform="translate(6.733 -2.578)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
