@@ -19,6 +19,7 @@ const StyledErrorBlock = styled.div`
     border-radius: 5px;
     padding-left: 37px;
     box-sizing: border-box;
+    z-index: 1;
 
     &:before{
         content: '';

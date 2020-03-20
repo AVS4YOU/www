@@ -54,7 +54,7 @@ const StyledFooterItem = styled.div`
                 border-left: 2px solid #fff;
                 float: right;
                 transition: 0.3s linear;
-                transform: ${props => props.footerItemOpen ? "rotate(45deg)" : "rotate(225deg)"};
+                transform: ${props => props.footerItemOpen ? "rotate(225deg)" : "rotate(45deg)"};
             }      
         }
     }
