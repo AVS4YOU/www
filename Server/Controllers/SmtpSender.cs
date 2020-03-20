@@ -38,7 +38,7 @@ namespace avs4youAPI.Controllers
         {
             try
             {
-                var template = File.ReadAllText(EmailPatternsBaseDir + couponEmail.MailPatternName);
+                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + couponEmail.MailPatternName));
                 var data = new Dictionary<string, string>();
                 var validUntil = DateTime.Today.AddMonths(1).ToString("MM/dd/yyyy");
 

@@ -48,7 +48,7 @@ class FormGetCoupon extends React.Component {
 
             this.getCouponRequest({
                 UserEmail: this.state.email.value,
-                MailPatternName: "en-default-test.html",
+                MailPatternName: "en-get-coupon.html",
                 MailType: "getCoupon"
             });
 
