@@ -187,19 +187,138 @@
 
 @media (max-width: 1100px) {
     .register{ 
-      
+        .slick-slide{
+            .imgLeft{
+                padding-top:0;
+            }
+        }
+
+        .sale-text > h1{
+            font-size: 34px;
+        }
+
+        .limited-offer{
+            padding: 7px 16px;
+        }
+
+        .buy-block-wrapper{
+            grid-gap: 25px;
+        }
+
+        .why-choose-wrapper{ 
+            display: flex;
+            flex-wrap: wrap;
+
+            .why-choose-item{
+                width: 45%;
+                max-width: 200px;
+                margin-bottom: 50px;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+        }
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 750px) {
     .register{ 
+        .featuresItem{
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
 
-      
+        .screen-wrapper{
+            padding: 10px;
+            padding-top: 35px;
+        }
+
+        .sale-text > h1{
+            font-size: 28px;
+            text-align: center;
+
+            span{
+                display:block;
+            }
+        }
+
+        .get-tools-text{
+            font-size: 20px;
+        }
+
+        .featuresWrapper .featuresItem {
+            .image{
+                max-width: 44px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .buy-block-wrapper{
+            grid-template-columns: 1fr;
+
+            .current-price-text{
+                font-size: 48px;
+            }
+    
+            .subscription-time-text{
+                font-size: 28px;
+            }
+    
+            .prev-price-text,
+            .limited-offer-text,
+            .sub-now-text,
+            .access-sub-text{
+                font-size: 14px;
+            }
+        }
+
+        .availableCarts{
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .why-choose-wrapper {
+            margin-bottom: 55px;
+
+            .text{
+                font-size: 16px;
+            }
+
+            .icon{
+                max-width: 80px;
+            }
+        }
+
+        .trademark-wrapper .trademark-text{
+            font-size: 16px;
+        }
     }
 }
 
 @media (max-width: 460px) {
     .register{ 
-      
+        .why-choose-wrapper {
+            margin-top: 56px;
+            margin-bottom: 35px;
+
+            .why-choose-item{
+                max-width:none;
+                width: 100%;
+            }
+
+            .text{
+                font-size: 16px;
+            }
+
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: 1fr;
+
+            .icon{
+                max-width: 60px;
+            }
+        }
     }
 }
