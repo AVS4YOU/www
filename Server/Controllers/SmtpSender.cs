@@ -22,6 +22,9 @@ namespace avs4youAPI.Controllers
         private string Password;
         private string EmailPatternsBaseDir;
 
+        private string SalesEmail;
+        private string SupportEmail;
+
         public SmtpSender()
         {
 
@@ -32,20 +35,97 @@ namespace avs4youAPI.Controllers
             Password = WebConfigurationManager.AppSettings["SmtpPassword"] ?? String.Empty;
             EmailPatternsBaseDir = WebConfigurationManager.AppSettings["EmailPatternsBaseDir"] ?? String.Empty;
 
+            SalesEmail = WebConfigurationManager.AppSettings["SalesEmail"] ?? String.Empty;
+            SupportEmail = WebConfigurationManager.AppSettings["SupportEmail"] ?? String.Empty;
+
         }
 
-        public bool SendCouponEmail(Email couponEmail)
+        public bool SendCouponEmail(Email emailData)
         {
             try
             {
-                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + couponEmail.MailPatternName));
+                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + emailData.MailPatternName));
                 var data = new Dictionary<string, string>();
                 var validUntil = DateTime.Today.AddMonths(1).ToString("MM/dd/yyyy");
 
                 data.Add("validUntil", validUntil);
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(couponEmail.UserEmail, emailBody);
+                return SendEmail(emailData.UserEmail, emailBody);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public bool SendResellerEmail(Email emailData)
+        {
+            try
+            {
+                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + emailData.MailPatternName));
+                var data = new Dictionary<string, string>();
+
+                data.Add("UserEmail", emailData.UserEmail);
+                data.Add("UserName", emailData.UserName);
+                data.Add("NumOfSubs", emailData.NumOfSubs.ToString());
+                data.Add("Comment", emailData.Comment);
+
+                var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
+
+                return SendEmail(SalesEmail, emailBody);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public bool SendEducationEmail(Email emailData)
+        {
+            try
+            {
+                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + emailData.MailPatternName));
+                var data = new Dictionary<string, string>();
+
+                data.Add("UserEmail", emailData.UserEmail);
+                data.Add("UserName", emailData.UserName);
+                data.Add("NumOfSubs", emailData.NumOfSubs.ToString());
+                data.Add("Comment", emailData.Comment);
+                data.Add("Occupation", emailData.Occupation);
+                data.Add("Institution", emailData.Institution);
+
+                var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
+
+                return SendEmail(SalesEmail, emailBody);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public bool SendSupportEmail(Email emailData)
+        {
+            try
+            {
+                var template = File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(EmailPatternsBaseDir + "/" + emailData.MailPatternName));
+                var data = new Dictionary<string, string>();
+
+                data.Add("UserEmail", emailData.UserEmail);
+                data.Add("UserName", emailData.UserName);
+                data.Add("NumOfSubs", emailData.NumOfSubs.ToString());
+                data.Add("Comment", emailData.Comment);
+
+                var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
+
+                return SendEmail(SalesEmail, emailBody);
 
             }
             catch (Exception ex)
@@ -78,7 +158,7 @@ namespace avs4youAPI.Controllers
 
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);
-                SmtpServer.Send(mail);
+                //SmtpServer.Send(mail);
 
                 return true;
 

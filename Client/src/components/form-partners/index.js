@@ -107,11 +107,16 @@ class FormPartners extends React.Component {
 
     request = () => {
         if(this.verifyData()){
-            console.log("form valid: ")
-            console.log("name: " + this.state.name.value)
-            console.log("email: " + this.state.email.value)
-            console.log("comment: " + this.state.comment.value)
-            console.log("subscriptions: " + this.state.comment.value)
+
+            this.sendForm({
+                UserEmail: this.state.email.value,
+                UserName: this.state.name.value,
+                Comment: this.state.comment.value,
+                numOfSubs: this.state.subscriptions.value,
+                MailPatternName: "ru-reseller.html",
+                MailType: "reseller"
+            });
+
         } else {
             console.log("form invalid")
         }
@@ -270,14 +275,31 @@ class FormPartners extends React.Component {
         this.request();
     }
 
-    /*getCouponRequest = async (data) => {
+    sendForm = async (data) => {
 
-        const response = await fetch('http://192.168.3.164:8086/WeatherForecast')
-        const myJson = await response.json();
-        console.log(myJson);
-        console.log(data);
-        alert("request send");
-    }*/
+        let url = "http://192.168.0.102:8088/api/email";
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(data),
+            });
+
+            let responseTest = await response.text();
+
+            if (responseTest.indexOf("Error") > -1) {
+                console.log(responseTest)
+            } else {
+                console.log("Email sended")
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     render(){
 

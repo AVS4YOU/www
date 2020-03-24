@@ -219,7 +219,7 @@ class FormGetCoupon extends React.Component {
 
     getCouponRequest = async (data) => {
 
-        let url = "http://192.168.3.164:8088/api/email";
+        let url = "http://192.168.0.102:8088/api/email";
 
         try {
             const response = await fetch(url, {

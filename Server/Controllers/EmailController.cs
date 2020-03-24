@@ -26,7 +26,25 @@ namespace avs4youAPI.Controllers
                     }
                     break;
 
-                case "anotherType":
+                case "reseller":
+                    if (Sender.SendResellerEmail(emailData))
+                    {
+                        return emailData.UserEmail;
+                    }
+                    break;
+
+                case "education":
+                    if (Sender.SendEducationEmail(emailData))
+                    {
+                        return emailData.UserEmail;
+                    }
+                    break;
+
+                case "support":
+                    if (Sender.SendSupportEmail(emailData))
+                    {
+                        return emailData.UserEmail;
+                    }
                     break;
 
                 default:

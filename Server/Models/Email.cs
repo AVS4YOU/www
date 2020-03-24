@@ -8,8 +8,11 @@ namespace avs4youAPI.Models
     public class Email
     {
         public String UserEmail { get; set; }
-        public String Name { get; set; }
-        public int numOfSubs { get; set; }
+        public String UserName { get; set; }
+        public int NumOfSubs { get; set; }
+        public string Comment { get; set; }
+        public string Occupation { get; set; }
+        public string Institution { get; set; }
         public String Description { get; set; }
         public String MailPatternName { get; set; }
         public String MailType { get; set; }
