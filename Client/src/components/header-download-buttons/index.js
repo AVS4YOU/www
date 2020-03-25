@@ -69,9 +69,10 @@ class HeaderDownloadButtons extends React.PureComponent {
     constructor(props){
         super(props);
         this.state={
-            isShown: false,
-            infoIsShown: false,
-            touchDevice: null
+            formIsShown: false,
+            InfoPopupHidden: false,
+            touchDevice: null,
+            formSended: false
         }
         
         this.closePopupFunction = this.closePopupFunction.bind(this);
@@ -79,13 +80,19 @@ class HeaderDownloadButtons extends React.PureComponent {
 
     toShowForm = () => {
         this.setState({
-            isShown: !this.state.isShown
+            formIsShown: !this.state.formIsShown
         })
     };
 
-    closePopupFunction(){
+    toShowInfoPopup = () => {
         this.setState({
-            infoIsShown: false
+            formSended: true
+        })
+    }
+
+    closePopupFunction = () => {
+        this.setState({
+            InfoPopupHidden: true
         })
     }
 
@@ -101,28 +108,30 @@ class HeaderDownloadButtons extends React.PureComponent {
     render(){
         return(
             <StyledHeaderDownloadButtons {...this.props} touchDevice={this.state.touchDevice} className={this.props.className}>
-                {this.state.touchDevice 
-                
-                    ? 
+                {this.state.touchDevice ? 
 
-                    <div className="mobileFormWrapper">
-                        {!this.state.isShown &&
-                            <Button 
-                                tabIndex="1"
-                                className="getCouponButton" 
-                                onClick={this.toShowForm}
-                                backgroundColor="orange" 
-                                padding="13px 24px"
-                                fontSize={14} 
-                                textTransform="uppercase"
-                                >
-                                {this.props.t("get $5 coupon code")}
-                            </Button>
-                        }
-                        {this.state.isShown &&
-                            <FormGetCoupon/>
-                        }
-                    </div>
+                    this.state.formSended 
+                        ? 
+                            <InfoPopup closePopupFunction={this.closePopupFunction} InfoPopupHidden={this.state.InfoPopupHidden}/>
+                        :
+                            <div className="mobileFormWrapper">
+                                {this.state.formIsShown ?    
+                                    <FormGetCoupon toShowInfoPopup={this.toShowInfoPopup}/>
+                                :
+
+                                    <Button 
+                                        tabIndex="1"
+                                        className="getCouponButton" 
+                                        onClick={this.toShowForm}
+                                        backgroundColor="orange" 
+                                        padding="13px 24px"
+                                        fontSize={14} 
+                                        textTransform="uppercase"
+                                        >
+                                        {this.props.t("get $5 coupon code")}
+                                    </Button>   
+                                }
+                            </div>
                         
                     :
        

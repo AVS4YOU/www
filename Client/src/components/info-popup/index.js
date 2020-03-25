@@ -6,6 +6,8 @@ import Text from '../text';
 
 const StyledPopupWrapper = styled.div`
 
+    ${props => props.InfoPopupHidden && "display:none;"}
+
     .background{
         position: fixed;
         height: 100%;
@@ -58,7 +60,7 @@ const StyledPopupWrapper = styled.div`
 
 const InfoPopup = (props) =>{
     return(
-        <StyledPopupWrapper >
+        <StyledPopupWrapper {...props}>
             <div onClick={props.closePopupFunction} className="background"></div>
             <div onClick={undefined} className="infoPopup">
                 <div onClick={props.closePopupFunction} className="closeButton"></div>

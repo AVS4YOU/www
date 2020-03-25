@@ -34,7 +34,8 @@ class FormGetCoupon extends React.Component {
         this.state = {
             email: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             checkbox: { value: false, status: ErrorStatus.NoError },
-            checkBoxClassName: ""
+            checkBoxClassName: "",
+            formSended: false,
         };
         this.emailErrorText = "";
         this.checkboxErrorText = "you need agree with policy";
@@ -46,7 +47,7 @@ class FormGetCoupon extends React.Component {
     request = () => {
         if (this.verifyData()) {
 
-            this.getCouponRequest({
+            this.sendForm({
                 UserEmail: this.state.email.value,
                 MailPatternName: "en-get-coupon.html",
                 MailType: "getCoupon"
@@ -217,7 +218,7 @@ class FormGetCoupon extends React.Component {
         this.request();
     };
 
-    getCouponRequest = async (data) => {
+    sendForm = async (data) => {
 
         let url = "http://192.168.0.102:8088/api/email";
 
@@ -235,6 +236,7 @@ class FormGetCoupon extends React.Component {
             if (responseTest.indexOf("Error") > -1) {
                 console.log(responseTest)
             } else {
+                this.props.toShowInfoPopup();
                 console.log("Email sended")
             }
 
