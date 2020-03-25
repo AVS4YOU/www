@@ -7,6 +7,10 @@ import UAParser from 'ua-parser-js';
 
 const StyledHeaderDownloadButtons = styled.div`
 
+    display:none;
+
+    ${props => props.touchDevice !== null && "display:block;"}
+
     .headerButtonsWrapper{
         display: table;
         align-items: center;
