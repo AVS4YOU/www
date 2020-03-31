@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using avs4youAPI.Models;
@@ -16,6 +17,22 @@ namespace avs4youAPI.Controllers
         public string Post([FromBody]Email emailData)
         {
             SmtpSender Sender = new SmtpSender();
+            RecaptchaController recaptchaController = new RecaptchaController();
+
+            var ip = string.Empty;
+
+            try
+            {
+                ip = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
+            } catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            if(!recaptchaController.ValidateRecaptcha(emailData.RecaptchaValue, ip))
+            {
+                return "Error recaptcha";
+            }
 
             switch (emailData.MailType)
             {

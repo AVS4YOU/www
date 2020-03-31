@@ -5,6 +5,7 @@ import Input from '../input';
 import Button from '../button';
 import CloseIcon from '../../images/common/icons/close-popup.svg';
 import InfoPopupForm from '../info-popup-form';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
@@ -20,6 +21,10 @@ const StyledForm = styled.div`
         max-width:500px;
         margin-bottom: 24px;
         margin-top: 10px;
+    }
+
+    .recaptchaWrapper{
+        margin-bottom: 24px
     }
 
     .agreeTermsWrapper{
@@ -201,6 +206,7 @@ class FormSupport extends React.Component {
             email: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             comment: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
+            recaptchaValue: "",
 
             file: {},
             fileInputsId: ["file0"],
@@ -208,6 +214,8 @@ class FormSupport extends React.Component {
 
             formSended: false
         };
+
+        this.recaptchaRef = React.createRef();
 
         this.fileInputs = this.state.fileInputsId.map((id) => <input id={id} name={id} type="file" onChange={this.onChangeFileUpload} />);
 
@@ -228,6 +236,7 @@ class FormSupport extends React.Component {
                 UserName: this.state.name.value,
                 Comment: this.state.comment.value,
                 numOfSubs: this.state.subscriptions.value,
+                RecaptchaValue: this.state.recaptchaValue,
                 MailPatternName: "ru-support.html",
                 MailType: "support"
             });
@@ -274,7 +283,7 @@ class FormSupport extends React.Component {
         this.updateErrorText("email", emailStatus);
 
         let formValid = nameStatus === ErrorStatus.NoError &&
-            emailStatus === ErrorStatus.NoError;
+            emailStatus === ErrorStatus.NoError && this.state.recaptchaValue.length > 0;
 
         return formValid;
     }
@@ -366,6 +375,12 @@ class FormSupport extends React.Component {
 
     onChangeInput = (e) => {
         this.setInputData(e.target.name, e.target.value);
+    }
+
+    OnChangeRecaptcha = () => {
+        this.setState({
+            recaptchaValue: this.recaptchaRef.current.getValue()
+        })
     }
 
     onChangeFileUpload = (e) => {
@@ -564,9 +579,15 @@ class FormSupport extends React.Component {
                             <Text className="smallText">
                                 Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg).
                                 Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.
-                    </Text>
+                            </Text>
                         </div>
-
+                        <div className="recaptchaWrapper">
+                            <ReCAPTCHA
+                                ref={this.recaptchaRef}
+                                onChange={this.OnChangeRecaptcha}
+                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            />
+                        </div>
                         <Button
                             tabIndex="1"
                             className="getCouponButton"

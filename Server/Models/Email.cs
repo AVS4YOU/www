@@ -16,5 +16,6 @@ namespace avs4youAPI.Models
         public String Description { get; set; }
         public String MailPatternName { get; set; }
         public String MailType { get; set; }
+        public String RecaptchaValue { get; set; }
     }
 }

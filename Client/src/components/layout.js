@@ -12,9 +12,12 @@ import styled from 'styled-components';
 import "./layout.css";
 import "../styles/common.less"
 import Footer from "./footer";
-import {PageContext} from '../context/page-context'
+import {PageContext} from '../context/page-context';
+import { Helmet } from "react-helmet";
 
 const StyledLayout = styled.div`
+
+  min-width: 300px;
 
   .flagBackground{
     background-color: #FDA050;
@@ -100,6 +103,9 @@ class Layout extends React.PureComponent {
   render(){
     return ( 
       <PageContext.Provider value={this.props.pageContext}>
+        <Helmet>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>
+        </Helmet>
         <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>

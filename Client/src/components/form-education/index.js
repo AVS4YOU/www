@@ -5,6 +5,7 @@ import Input from '../input';
 import Button from '../button';
 import CloseIcon from '../../images/common/icons/close-popup.svg';
 import InfoPopupForm from '../info-popup-form';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
@@ -25,6 +26,10 @@ const StyledForm = styled.div`
     .agreeTermsWrapper{
         max-width:190px;
         margin-top: 16px;
+    }
+
+    .recaptchaWrapper{
+        margin-bottom: 24px
     }
 
     .smallText{
@@ -208,6 +213,7 @@ class FormEducation extends React.Component {
             occupation: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             institution: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
+            recaptchaValue: "",
 
             file: {},
             fileInputsId: ["file0"],
@@ -216,6 +222,7 @@ class FormEducation extends React.Component {
             formSended: false
         };
 
+        this.recaptchaRef = React.createRef();
         this.fileInputs = this.state.fileInputsId.map((id) => <input id={id} name={id} type="file" onChange={this.onChangeFileUpload} />);
 
         this.nameErrorText = "";
@@ -237,6 +244,7 @@ class FormEducation extends React.Component {
                 UserName: this.state.name.value,
                 Comment: this.state.comment.value,
                 Occupation: this.state.occupation.value,
+                RecaptchaValue: this.state.recaptchaValue,
                 Institution: this.state.institution.value,
                 numOfSubs: this.state.subscriptions.value,
                 MailPatternName: "ru-education.html",
@@ -285,7 +293,8 @@ class FormEducation extends React.Component {
         this.updateErrorText("email", emailStatus);
 
         let formValid = nameStatus === ErrorStatus.NoError &&
-            emailStatus === ErrorStatus.NoError;
+            emailStatus === ErrorStatus.NoError &&
+            this.state.recaptchaValue.length > 0;
 
         return formValid;
     }
@@ -378,6 +387,12 @@ class FormEducation extends React.Component {
         this.setInputData(e.target.name, e.target.value);
     }
 
+    OnChangeRecaptcha = () => {
+        this.setState({
+            recaptchaValue: this.recaptchaRef.current.getValue()
+        })
+    }
+
     onChangeFileUpload = (e) => {
 
         const field = this.state.file;
@@ -435,7 +450,6 @@ class FormEducation extends React.Component {
     };
 
     onClick = () => {
-        debugger
         this.request();
     };
 
@@ -614,6 +628,14 @@ class FormEducation extends React.Component {
                             </Text>
                         </div>
 
+                        <div className="recaptchaWrapper">
+                            <ReCAPTCHA
+                                ref={this.recaptchaRef}
+                                onChange={this.OnChangeRecaptcha}
+                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            />
+                        </div>
+
                         <Button
                             tabIndex="1"
                             className="getCouponButton"
@@ -628,7 +650,7 @@ class FormEducation extends React.Component {
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
                                 By clicking this button, you agree to our <a href="/" target="_blank">Terms of Service</a>.
-                    </Text>
+                            </Text>
                         </div>
                     </div>
                 }

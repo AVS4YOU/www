@@ -4,6 +4,7 @@ import Text from '../text';
 import Input from '../input';
 import Button from '../button';
 import InfoPopupForm from '../info-popup-form';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
@@ -20,6 +21,10 @@ const StyledForm = styled.div`
         font-size:24px;
         padding-bottom: 25px;
         font-weight:600;
+    }
+
+    .recaptchaWrapper{
+        margin-bottom: 24px
     }
 
     .inputsWrapper{
@@ -96,8 +101,11 @@ class FormPartners extends React.Component {
 
             subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
-            formSended: false
+            formSended: false,
+            recaptchaValue: "",
         };
+
+        this.recaptchaRef = React.createRef();
 
         this.nameErrorText = "";
         this.emailErrorText = "";
@@ -116,6 +124,7 @@ class FormPartners extends React.Component {
                 UserName: this.state.name.value,
                 Comment: this.state.comment.value,
                 numOfSubs: this.state.subscriptions.value,
+                RecaptchaValue: this.state.recaptchaValue,
                 MailPatternName: "ru-reseller.html",
                 MailType: "reseller"
             });
@@ -162,7 +171,8 @@ class FormPartners extends React.Component {
         this.updateErrorText("email", emailStatus);
 
         let formValid = nameStatus === ErrorStatus.NoError &&
-            emailStatus === ErrorStatus.NoError;
+            emailStatus === ErrorStatus.NoError &&
+            this.state.recaptchaValue.length > 0;
 
         return formValid;
     }
@@ -254,6 +264,12 @@ class FormPartners extends React.Component {
 
     onChangeInput = (e) => {
         this.setInputData(e.target.name, e.target.value);
+    }
+
+    OnChangeRecaptcha = () => {
+        this.setState({
+            recaptchaValue: this.recaptchaRef.current.getValue()
+        })
     }
 
     onBlurInput = (e) => {
@@ -392,6 +408,14 @@ class FormPartners extends React.Component {
                             className="formInput textArea"
                         />
 
+                        <div className="recaptchaWrapper">
+                            <ReCAPTCHA
+                                ref={this.recaptchaRef}
+                                onChange={this.OnChangeRecaptcha}
+                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            />
+                        </div>
+
                         <Button
                             tabIndex="1"
                             className="getCouponButton"
@@ -402,7 +426,7 @@ class FormPartners extends React.Component {
                             textTransform="uppercase"
                         >
                             Send your request
-                </Button>
+                        </Button>
                     </div>
 
                 }

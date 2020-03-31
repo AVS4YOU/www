@@ -5,6 +5,7 @@ import Input from '../input';
 import Button from '../button';
 import InputCheckbox from '../input-checkbox';
 import InfoPopup from '../info-popup';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const StyledForm = styled.div`
 
@@ -14,6 +15,14 @@ const StyledForm = styled.div`
         grid-gap: 5px;
         margin-top: 10px;
         position: relative;
+    }
+
+    .recaptchaWrapper{
+        margin-top: 18px;
+    }
+
+    @media (max-width: 360px) {
+
     }
 `;
 
@@ -36,9 +45,11 @@ class FormGetCoupon extends React.Component {
             checkbox: { value: false, status: ErrorStatus.NoError },
             checkBoxClassName: "",
             formSended: false,
+            recaptchaValue: "",
         };
         this.emailErrorText = "";
         this.checkboxErrorText = "you need agree with policy";
+        this.recaptchaRef = React.createRef();
 
         this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
 
@@ -50,7 +61,8 @@ class FormGetCoupon extends React.Component {
             this.sendForm({
                 UserEmail: this.state.email.value,
                 MailPatternName: "en-get-coupon.html",
-                MailType: "getCoupon"
+                MailType: "getCoupon",
+                RecaptchaValue: this.state.recaptchaValue,
             });
 
         } else {
@@ -92,7 +104,9 @@ class FormGetCoupon extends React.Component {
         const checkBoxStatus = this.validate("checkbox", this.state.checkbox.value);
         this.updateCheckboxClassName(checkBoxStatus === ErrorStatus.NoError ? "" : "error");
 
-        let formValid = emailStatus === ErrorStatus.NoError && checkBoxStatus === ErrorStatus.NoError;
+        let formValid = emailStatus === ErrorStatus.NoError &&
+        checkBoxStatus === ErrorStatus.NoError &&
+        this.state.recaptchaValue.length > 0;
 
         return formValid;
     }
@@ -181,6 +195,12 @@ class FormGetCoupon extends React.Component {
 
     onChangeInput = (e) => {
         this.setInputData(e.target.name, e.target.value);
+    }
+
+    OnChangeRecaptcha = () => {
+        this.setState({
+            recaptchaValue: this.recaptchaRef.current.getValue()
+        })
     }
 
     onChangeCheckbox = (e) => {
@@ -281,6 +301,15 @@ class FormGetCoupon extends React.Component {
                 >
                     Get coupon
                 </Button>
+
+                <div className="recaptchaWrapper">
+                    <ReCAPTCHA
+                        ref={this.recaptchaRef}
+                        onChange={this.OnChangeRecaptcha}
+                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    />
+                </div>
+
                 <div className="checkBoxWrapper">
                     <InputCheckbox
                         tabIndex="2"

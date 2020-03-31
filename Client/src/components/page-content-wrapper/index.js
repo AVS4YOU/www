@@ -22,7 +22,10 @@ const StyledWrapper = styled.div`
         .scrollLink{
             display:block;
         }
+    }
 
+    @media (max-width: 350px) {
+        padding: 0 10px;
     }
 `;
 
