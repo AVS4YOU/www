@@ -4,6 +4,7 @@ import Button from '../button';
 import FormGetCoupon from '../form-get-coupon';
 import InfoPopup from '../info-popup';
 import UAParser from 'ua-parser-js';
+import Cookies from 'universal-cookie';
 
 const StyledHeaderDownloadButtons = styled.div`
 
@@ -72,14 +73,16 @@ class HeaderDownloadButtons extends React.PureComponent {
 
     constructor(props){
         super(props);
+        this.cookies = new Cookies();
+
         this.state={
             formIsShown: false,
             InfoPopupHidden: false,
             touchDevice: null,
-            formSended: false
+            formSended: this.cookies.get("formSended") ? true : false,  
         }
         
-        this.closePopupFunction = this.closePopupFunction.bind(this);
+        this.closePopupFunction = this.closePopupFunction.bind(this); 
     };
 
     toShowForm = () => {
@@ -115,8 +118,16 @@ class HeaderDownloadButtons extends React.PureComponent {
                 {this.state.touchDevice ? 
 
                     this.state.formSended 
-                        ? 
-                            <InfoPopup closePopupFunction={this.closePopupFunction} InfoPopupHidden={this.state.InfoPopupHidden}/>
+                        ?
+                        this.cookies.get("formSended") 
+                            ? 
+                                <div></div>
+                            :
+                            <div>
+                                <InfoPopup closePopupFunction={this.closePopupFunction} InfoPopupHidden={this.state.InfoPopupHidden}/>
+                                {this.cookies.set("formSended", "true")}
+                            </div>
+                                
                         :
                             <div className="mobileFormWrapper">
                                 {this.state.formIsShown ?    

@@ -196,6 +196,8 @@ const StyledPageWrapper = styled.div`
         border-radius: 15px;
         margin: auto;
         padding: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
 

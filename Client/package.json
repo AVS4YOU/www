@@ -29,7 +29,8 @@
     "react-transition-group": "^4.3.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.4.1",
-    "ua-parser-js": "^0.7.20"
+    "ua-parser-js": "^0.7.20",
+    "universal-cookie": "^4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
