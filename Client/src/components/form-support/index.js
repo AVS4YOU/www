@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Text from '../text';
 import Input from '../input';
 import Button from '../button';
-import CloseIcon from '../../images/common/icons/close-popup.svg'
+import CloseIcon from '../../images/common/icons/close-popup.svg';
+import InfoPopupForm from '../info-popup-form';
 
 const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
@@ -192,21 +193,23 @@ const ErrorStatus = Object.freeze({
 });
 
 class FormSupport extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        this.state={
+        this.state = {
             name: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             email: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             comment: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
-            subscriptions: {value: "", status: ErrorStatus.NoError, inputClassName: ""},
+            subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
             file: {},
             fileInputsId: ["file0"],
-            showAddFile: true
+            showAddFile: true,
+
+            formSended: false
         };
 
-        this.fileInputs = this.state.fileInputsId.map((id) => <input id={id} name={id} type="file" onChange={this.onChangeFileUpload}/>);
+        this.fileInputs = this.state.fileInputsId.map((id) => <input id={id} name={id} type="file" onChange={this.onChangeFileUpload} />);
 
         this.nameErrorText = "";
         this.emailErrorText = "";
@@ -214,12 +217,12 @@ class FormSupport extends React.Component {
         this.subscriptionsErrorText = "";
 
         this.regexpEmail = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$', 'i')
-        
+
     }
 
     request = () => {
-        if(this.verifyData()){
-            
+        if (this.verifyData()) {
+
             this.sendForm({
                 UserEmail: this.state.email.value,
                 UserName: this.state.name.value,
@@ -243,17 +246,17 @@ class FormSupport extends React.Component {
     }
 
     validate = (inputName, value) => {
-        switch(inputName) {
+        switch (inputName) {
             case "name":
-                return this.isEmpty(value) ? ErrorStatus.Empty :  ErrorStatus.NoError;
+                return this.isEmpty(value) ? ErrorStatus.Empty : ErrorStatus.NoError;
             case "email":
-                if(this.isEmpty(value)) 
+                if (this.isEmpty(value))
                     return ErrorStatus.Empty;
-                else if(this.isEmailInvalid(value)) 
+                else if (this.isEmailInvalid(value))
                     return ErrorStatus.Incorrect;
-                else 
+                else
                     return ErrorStatus.NoError;
-            default: 
+            default:
                 return ErrorStatus.NoError;
         }
     }
@@ -264,26 +267,26 @@ class FormSupport extends React.Component {
         this.setError("name", nameStatus);
         this.updateInputClassName("name", nameStatus);
         this.updateErrorText("name", nameStatus);
-        
+
         const emailStatus = this.validate("email", this.state.email.value);
         this.setError("email", emailStatus);
         this.updateInputClassName("email", emailStatus);
         this.updateErrorText("email", emailStatus);
 
-        let formValid = nameStatus === ErrorStatus.NoError && 
-                        emailStatus === ErrorStatus.NoError;
+        let formValid = nameStatus === ErrorStatus.NoError &&
+            emailStatus === ErrorStatus.NoError;
 
         return formValid;
     }
 
     updateInputClassName = (inputName, status) => {
-        if(status === ErrorStatus.Empty) {
+        if (status === ErrorStatus.Empty) {
             this.setFocusInput(inputName, "error");
 
         } else if (status === ErrorStatus.Incorrect) {
             this.setFocusInput(inputName, "focus error");
 
-        } else if (this.state[inputName].value){
+        } else if (this.state[inputName].value) {
             this.setFocusInput(inputName, "focus");
 
         } else {
@@ -293,15 +296,15 @@ class FormSupport extends React.Component {
     }
 
     updateErrorText = (inputName, status) => {
-        
-        switch(status) {
+
+        switch (status) {
             case ErrorStatus.Empty:
                 this.setErrorText(inputName, "is empty");
                 break
             case ErrorStatus.Incorrect:
                 this.setErrorText(inputName, "is incorrect");
                 break
-            default: 
+            default:
                 break
         }
     }
@@ -309,11 +312,11 @@ class FormSupport extends React.Component {
     setInputData = (inputName, value) => {
         const field = this.state[inputName];
 
-        if(!field) throw "Unknown name";
+        if (!field) throw "Unknown name";
 
         this.setState(
             {
-                [inputName]: {...field, value: value}
+                [inputName]: { ...field, value: value }
             }
         );
     }
@@ -321,12 +324,12 @@ class FormSupport extends React.Component {
     setError = (inputName, newStatus) => {
         const field = this.state[inputName];
 
-        if(!field) throw "Unknown name";
+        if (!field) throw "Unknown name";
 
-        if(field.status !== newStatus) {
+        if (field.status !== newStatus) {
             this.setState(
                 {
-                    [inputName]: {...field, status: newStatus}
+                    [inputName]: { ...field, status: newStatus }
                 }
             )
         }
@@ -335,15 +338,15 @@ class FormSupport extends React.Component {
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
-        if(!field) throw "Unknown name";
+        if (!field) throw "Unknown name";
 
         this.setState({
-            [inputName]: {...field, inputClassName: className}
+            [inputName]: { ...field, inputClassName: className }
         })
     }
 
     setErrorText = (inputName, error) => {
-        switch (inputName){
+        switch (inputName) {
             case "name":
                 this.nameErrorText = `name ${error}`;
                 break
@@ -372,7 +375,7 @@ class FormSupport extends React.Component {
         const file = e.target.files[0];
 
         this.setState({
-            file: {...field, [inputId]: file}
+            file: { ...field, [inputId]: file }
         })
     }
 
@@ -382,12 +385,12 @@ class FormSupport extends React.Component {
         this.updateInputClassName(e.target.name, status);
         this.updateErrorText(e.target.name, status);
     }
-    
+
     onFocusInput = (e) => {
         this.setError(e.target.name, ErrorStatus.NoError);
         this.setFocusInput(e.target.name, "focus")
     };
-    
+
     onKeyPress = (event) => {
         if (event.key === "Enter") {
             this.request();
@@ -395,20 +398,20 @@ class FormSupport extends React.Component {
     };
 
     onClickRemove = (e) => {
-        
+
         const field = this.state.file;
         const inputId = e.target.id.split("-")[0];
-        const deletedFileName =  this.state.file[inputId].name;
+        const deletedFileName = this.state.file[inputId].name;
 
         this.setState({
-            file: {...field, [inputId]: {deleted: true, name: deletedFileName}}
+            file: { ...field, [inputId]: { deleted: true, name: deletedFileName } }
         });
     }
 
     onClickAddFile = () => {
         const field = this.state.fileInputsId;
 
-        if(field.length < 10) {
+        if (field.length < 10) {
             field.push("file" + field.length);
 
             this.setState({
@@ -427,7 +430,7 @@ class FormSupport extends React.Component {
 
     sendForm = async (data) => {
 
-        let url = "http://192.168.0.102:8088/api/email";
+        let url = "http://localhost:8088/api/email";
 
         try {
             const response = await fetch(url, {
@@ -443,6 +446,9 @@ class FormSupport extends React.Component {
             if (responseTest.indexOf("Error") > -1) {
                 console.log(responseTest)
             } else {
+                this.setState({
+                    formSended: true
+                })
                 console.log("Email sended")
             }
 
@@ -451,126 +457,135 @@ class FormSupport extends React.Component {
         }
     }
 
-    render(){
-        return(       
+    render() {
+        return (
             <StyledForm>
-                <Text as="h2" className="formHeader">
-                    Write a message
-                </Text>
-                <div className="inputsWrapper">
-                    <Input  
-                        tabIndex="0"
+                {this.state.formSended
+                    ?
+                        <InfoPopupForm/>
+                    :
 
-                        inputName="name"
-                        inputLabel="Name"
+                    <div>
+                        <Text as="h2" className="formHeader">
+                            Write a message
+                        </Text>
+                        <div className="inputsWrapper">
+                            <Input
+                                tabIndex="0"
 
-                        value={this.state.name.value}
-                        inputClassName={this.state.name.inputClassName}
-                        errorText={this.nameErrorText}
-                        onKeyPress={this.onKeyPress}
-                        onChange={this.onChangeInput}
-                        onBlur={this.onBlurInput}
-                        onFocus={this.onFocusInput}
+                                inputName="name"
+                                inputLabel="Name"
 
-                        className="formInput"
-                        required={true}
-                        
-                    />
-                     <Input 
-                        tabIndex="1"
-                        
-                        inputName="email"
-                        inputLabel="Email address"
+                                value={this.state.name.value}
+                                inputClassName={this.state.name.inputClassName}
+                                errorText={this.nameErrorText}
+                                onKeyPress={this.onKeyPress}
+                                onChange={this.onChangeInput}
+                                onBlur={this.onBlurInput}
+                                onFocus={this.onFocusInput}
 
-                        value={this.state.email.value}
-                        inputClassName={this.state.email.inputClassName}
-                        errorText={this.emailErrorText}
-                        onKeyPress={this.onKeyPress}
-                        onChange={this.onChangeInput}
-                        onBlur={this.onBlurInput}
-                        onFocus={this.onFocusInput}
-                        
-                        className="formInput"
-                        required={true}   
-                    />
+                                className="formInput"
+                                required={true}
 
-                    <Input  
-                        tabIndex="0"
+                            />
+                            <Input
+                                tabIndex="1"
 
-                        inputName="subscriptions"
-                        inputLabel="Number of subscriptions"
+                                inputName="email"
+                                inputLabel="Email address"
 
-                        value={this.state.subscriptions.value}
-                        inputClassName={this.state.subscriptions.inputClassName}
-                        errorText={this.subscriptionsErrorText}
-                        onKeyPress={this.onKeyPress}
-                        onChange={this.onChangeInput}
-                        onBlur={this.onBlurInput}
-                        onFocus={this.onFocusInput}
+                                value={this.state.email.value}
+                                inputClassName={this.state.email.inputClassName}
+                                errorText={this.emailErrorText}
+                                onKeyPress={this.onKeyPress}
+                                onChange={this.onChangeInput}
+                                onBlur={this.onBlurInput}
+                                onFocus={this.onFocusInput}
 
-                        className="formInput"
-                    />
+                                className="formInput"
+                                required={true}
+                            />
 
-                </div>
-                <Input 
-                    as="textarea"
-                    tabIndex="2"
-                    
-                    inputName="comment"
-                    inputLabel="Give us a brief description of your specific needs"
+                            <Input
+                                tabIndex="0"
 
-                    value={this.state.comment.value}
-                    inputClassName={this.state.comment.inputClassName}
-                    errorText={this.commentErrorText}
-                    onKeyPress={this.onKeyPress}
-                    onChange={this.onChangeInput}
-                    onBlur={this.onBlurInput}
-                    onFocus={this.onFocusInput}
+                                inputName="subscriptions"
+                                inputLabel="Number of subscriptions"
 
-                    className="formInput textArea"
-                />
-                
-                    {this.state.fileInputsId.map((id) => 
-                        <div key={"attachFileWrapper" + id} 
-                        className={[
-                            "attachFileWrapper ", 
-                            this.state.file[id] ? " hasFile " : " noFile ", 
-                            this.state.file[id] && this.state.file[id].deleted ? " deleted" : ""
-                        ]}>
+                                value={this.state.subscriptions.value}
+                                inputClassName={this.state.subscriptions.inputClassName}
+                                errorText={this.subscriptionsErrorText}
+                                onKeyPress={this.onKeyPress}
+                                onChange={this.onChangeInput}
+                                onBlur={this.onBlurInput}
+                                onFocus={this.onFocusInput}
 
-                            <input id={id} name={id} type="file" onChange={this.onChangeFileUpload}/>
-                            <label htmlFor={id}>
-                                <div className="chooseFileButton">Choose file</div>
-                                <Text className="fileName">{this.state.file[id] ? this.state.file[id].name : "No file selected"}</Text>
-                            </label>
-                            <div id={id + "-remove"} onClick={this.onClickRemove} className="removeFile"></div>
+                                className="formInput"
+                            />
+
                         </div>
-                    )}
-                
-                <Text className={["addFileButton", this.state.showAddFile ? "" : "disable"]} onClick={this.onClickAddFile}>Add file</Text>
-                <div className="filesFormatWrapper">
-                    <Text className="smallText">
-                        Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg). 
-                        Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.
-                    </Text>
-                </div>
+                        <Input
+                            as="textarea"
+                            tabIndex="2"
 
-                <Button 
-                    tabIndex="1"
-                    className="getCouponButton" 
-                    onClick={this.onClick}
-                    backgroundColor="blue" 
-                    padding="13px 24px"
-                    fontSize={14} 
-                    textTransform="uppercase"
-                    >
-                    Send your request
-                </Button>
-                <div className="agreeTermsWrapper">
-                    <Text className="smallText">
-                        By clicking this button, you agree to our <a href="/" target="_blank">Terms of Service</a>.
+                            inputName="comment"
+                            inputLabel="Give us a brief description of your specific needs"
+
+                            value={this.state.comment.value}
+                            inputClassName={this.state.comment.inputClassName}
+                            errorText={this.commentErrorText}
+                            onKeyPress={this.onKeyPress}
+                            onChange={this.onChangeInput}
+                            onBlur={this.onBlurInput}
+                            onFocus={this.onFocusInput}
+
+                            className="formInput textArea"
+                        />
+
+                        {this.state.fileInputsId.map((id) =>
+                            <div key={"attachFileWrapper" + id}
+                                className={[
+                                    "attachFileWrapper ",
+                                    this.state.file[id] ? " hasFile " : " noFile ",
+                                    this.state.file[id] && this.state.file[id].deleted ? " deleted" : ""
+                                ]}>
+
+                                <input id={id} name={id} type="file" onChange={this.onChangeFileUpload} />
+                                <label htmlFor={id}>
+                                    <div className="chooseFileButton">Choose file</div>
+                                    <Text className="fileName">{this.state.file[id] ? this.state.file[id].name : "No file selected"}</Text>
+                                </label>
+                                <div id={id + "-remove"} onClick={this.onClickRemove} className="removeFile"></div>
+                            </div>
+                        )}
+
+                        <Text className={["addFileButton", this.state.showAddFile ? "" : "disable"]} onClick={this.onClickAddFile}>Add file</Text>
+                        <div className="filesFormatWrapper">
+                            <Text className="smallText">
+                                Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg).
+                                Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.
                     </Text>
-                </div>
+                        </div>
+
+                        <Button
+                            tabIndex="1"
+                            className="getCouponButton"
+                            onClick={this.onClick}
+                            backgroundColor="blue"
+                            padding="13px 24px"
+                            fontSize={14}
+                            textTransform="uppercase"
+                        >
+                            Send your request
+                        </Button>
+                        <div className="agreeTermsWrapper">
+                            <Text className="smallText">
+                                By clicking this button, you agree to our <a href="/" target="_blank">Terms of Service</a>.
+                            </Text>
+                        </div>
+                    </div>
+                }
+
             </StyledForm>
         )
     }
