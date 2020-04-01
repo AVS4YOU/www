@@ -31,6 +31,7 @@ const StyledPageWrapper = styled.div`
 
   .headerText{
     padding-bottom: 35px;
+    line-height:normal;
   }
 
   .topButton{

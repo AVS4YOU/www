@@ -40,6 +40,9 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
+                <Text as="span" className="flagBackground header">Free
+                  <div></div>
+                </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
                 <HeaderDownloadButtons 

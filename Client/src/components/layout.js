@@ -18,31 +18,6 @@ import { Helmet } from "react-helmet";
 const StyledLayout = styled.div`
 
   min-width: 300px;
-
-  .flagBackground{
-    background-color: #FDA050;
-    margin-left: 15px;
-    padding: 4px 20px;
-    font-size: 13px;
-    position: relative;
-    top: 0px;
-    color: #fff;
-    padding-right: 30px;
-
-    &:after{
-        content: '';
-        background-color: transparent;
-        border: 13px solid transparent;
-        border-right: 13px solid #fff;
-        display: block;
-        width: 0;
-        height: 0;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-    }
-  }
 `;
 
 
