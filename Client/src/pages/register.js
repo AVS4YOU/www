@@ -2,18 +2,47 @@ import React from "react";
 import Slider from "react-slick";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import Link from '../components/link';
 import Layout from "../components/layout";
 import ContentRowItem from '../components/content-row-item';
 import "../styles/register.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
+import Cookies from 'universal-cookie';
+import { Helmet } from "react-helmet";
+import { withPrefix } from "gatsby";
 
+const defaultHrefUnlim = "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1";
+const defaultHrefOneYear = "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1";
+
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
+
+const regExp = /=regnow:(.*):/;
 class Register extends React.PureComponent {
+
+constructor(){
+  super();
+  this.cookies = new Cookies();
+
+  this.affiliateID = "";
+  this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+  if(this.siteTrasingCookie){
+    this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+  }
+
+  this.state = {
+    hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : defaultHrefUnlim,
+    hrefOneYear: this.cookies.get("Site_Tracing") ? shareItHrefOneYear + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : defaultHrefOneYear,
+  }
+}
 
 render(){
     return (
       <Layout className="register" pageContext={this.props.pageContext} t={this.props.t}>
+        <Helmet>
+          <script src={withPrefix('avangate-affiliates.js')} type="text/javascript" />
+        </Helmet>
         <div className="screen-wrapper">
           <div className="limited-offer">
             <Text as="p">In November only!</Text>
@@ -49,7 +78,7 @@ render(){
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
-                href="/"
+                href={this.state.hrefOneYear}
                 className="buy-block-button"
               >
                 Buy now
@@ -64,9 +93,9 @@ render(){
               <Text className="limited-offer-text">Time limited offer</Text>
               <Text className="limited-offer-text">prices valid up to November 30, 2019</Text>
               <Button
+                href={this.state.hrefUnlim}
                 backgroundColor="orange"
                 color="#ffffff"
-                href="/"
                 className="buy-block-button"
               >
                 Buy now
