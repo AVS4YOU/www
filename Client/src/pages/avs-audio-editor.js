@@ -12,30 +12,9 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-audio-editor/audio_editor_en_header.png';
-import HeaderImageMobile from '../images/avs-audio-editor/audio_editor_en_header.png';
-
-import screen1 from '../images/avs-audio-editor/audio_editor_edit_all_key.png';
-import screen2 from '../images/avs-audio-editor/audio_editor_record_audio.png';
-import screen3 from '../images/avs-audio-editor/audio_editor_slider5.png';
-import screen4 from '../images/avs-audio-editor/audio_editor_slider6.png';
-
-import slideCarousel1 from '../images/avs-audio-editor/audio_editor_slider1.png';
-import slideCarousel2 from '../images/avs-audio-editor/audio_editor_slider2.png';
-import slideCarousel3 from '../images/avs-audio-editor/audio_editor_slider3.png';
-import slideCarousel4 from '../images/avs-audio-editor/audio_editor_slider4.png';
-
-import slidePopupCarousel1 from '../images/avs-audio-editor/audio_editor_slider1@2x.png';
-import slidePopupCarousel2 from '../images/avs-audio-editor/audio_editor_slider2@2x.png';
-import slidePopupCarousel3 from '../images/avs-audio-editor/audio_editor_slider3@2x.png';
-import slidePopupCarousel4 from '../images/avs-audio-editor/audio_editor_slider4@2x.png';
-import slidePopupCarousel5 from '../images/avs-audio-editor/audio_editor_slider5@2x.png';
-import slidePopupCarousel6 from '../images/avs-audio-editor/audio_editor_slider6@2x.png';
-
 import AvatarDavid from '../images/avs-audio-editor/david.png';
 import AvatarFrank from '../images/avs-audio-editor/frank.png';
 import AvatarJohn from '../images/avs-audio-editor/john.png';
-
 
 class avsAudioEditor extends React.PureComponent {
 
@@ -58,7 +37,7 @@ render(){
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper>
           <div className="headerBackground">
-            <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.png" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Editor")}</Text>

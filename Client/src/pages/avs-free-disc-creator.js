@@ -12,19 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-disc-creator/disc_creator_header.png';
-import HeaderImageMobile from '../images/avs-free-disc-creator/disc_creator_header.png';
-
-import screen1 from '../images/avs-free-disc-creator/disc_creator_slide1.png';
-import screen2 from '../images/avs-free-disc-creator/disc_creator_slide2.png';
-import screen3 from '../images/avs-free-disc-creator/disc_creator_slide3.png';
-import screen4 from '../images/avs-free-disc-creator/disc_creator_slide4.png';
-
-import slidePopupCarousel1 from '../images/avs-free-disc-creator/disc_creator_slide1_2x.png';
-import slidePopupCarousel2 from '../images/avs-free-disc-creator/disc_creator_slide2_2x.png';
-import slidePopupCarousel3 from '../images/avs-free-disc-creator/disc_creator_slide3_2x.png';
-import slidePopupCarousel4 from '../images/avs-free-disc-creator/disc_creator_slide4_2x.png';
-
 class avsFreeDiscCreator extends React.PureComponent {
 
   constructor(props) {
@@ -44,7 +31,7 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper imageName="aquamarine_background_main.png">
+        <ProductPagesWrapper imageName="aquamarine_background_main.jpg">
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
@@ -99,7 +86,7 @@ render(){
             >
               <Text className="ListItem">Write your audio onto CD (CD-R, CD-RW) discs.</Text>
               <Text className="ListItem">Create audio discs in MP3 and WMA audio formats.</Text>
-              <Text className="ListItem">Burn data discs with files of any type: documents(.txt, .html, .doc, .odt, etc.), audio files (.mp3, .wma, .wav, etc.), video files (.avi, .mov, .mpeg, etc.), image files (.png, .jpg, .gif, etc.)</Text>
+              <Text className="ListItem">Burn data discs with files of any type: documents(.txt, .html, .doc, .odt, etc.), audio files (.mp3, .wma, .wav, etc.), video files (.avi, .mov, .mpeg, etc.), image files (.png, .png, .gif, etc.)</Text>
             </ContentRowItem>
 
             <ContentRowItem 

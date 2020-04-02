@@ -16,7 +16,6 @@ import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
 import AvatarArthur from '../images/avs-video-remaker/arthur_rees.png';
 
-
 class avsVideoRemaker extends React.PureComponent {
 
   constructor(props) {
@@ -38,7 +37,7 @@ render(){
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper>
           <div className="headerBackground">
-          <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
+          <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video ReMaker")}</Text>

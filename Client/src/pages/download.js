@@ -18,7 +18,7 @@ render(){
     return (
       <Layout className="download" pageContext={this.props.pageContext} t={this.props.t}>
         <div id="headerContentWrapper" className="header">
-            <ImageGQL className="headerBackgroundImage" imageName="download-header.png" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
                     <Text as="h1" className="header__heading">Download</Text>

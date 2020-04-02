@@ -12,12 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import screen1 from '../images/avs-free-registry-cleaner/registry_cleaner_slide2.png';
-import screen2 from '../images/avs-free-registry-cleaner/registry_cleaner_slide3.png';
-import screen3 from '../images/avs-free-registry-cleaner/registry_cleaner_slide4.png';
-
-import slideCarousel1 from '../images/avs-free-registry-cleaner/registry_cleaner_slide1.png';
-
 class avsFreeRegistryCleaner extends React.PureComponent {
 
   constructor(props) {
@@ -39,7 +33,7 @@ render(){
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper>
           <div className="headerBackground">
-          <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.png" style={{position: "absolute"}}/>
+          <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Registry Cleaner")}</Text>

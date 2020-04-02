@@ -32,7 +32,7 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper imageName="purple_background_main.png">
+        <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>

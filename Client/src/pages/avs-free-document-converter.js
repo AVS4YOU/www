@@ -33,7 +33,7 @@ render(){
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper>
           <div className="headerBackground">
-            <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.png" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Document Converter")}</Text>

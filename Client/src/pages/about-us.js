@@ -13,7 +13,7 @@ render(){
     return (
       <Layout className="about-us-page" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
-          <ImageGQL className="headerBackgroundImage" imageName="about-us-header.png" style={{position: "absolute"}}/>
+          <ImageGQL className="headerBackgroundImage" imageName="about-us-header.jpg" style={{position: "absolute"}}/>
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">About AVS4YOU</Text>

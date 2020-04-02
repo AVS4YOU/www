@@ -12,12 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import slideCarousel1 from '../images/avs-video-editor/video-editor-slider1.png';
-import slideCarousel2 from '../images/avs-video-editor/video-editor-slider2.png';
-
-import slidePopupCarousel1 from '../images/avs-video-editor/video-editor-slider1-2x.png';
-import slidePopupCarousel2 from '../images/avs-video-editor/video-editor-slider2-2x.png';
-
 import AvatarJames from '../images/avs-video-editor/james_k.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
@@ -44,7 +38,7 @@ render(){
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
         <ProductPagesWrapper>
           <div className="headerBackground">
-            <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
@@ -61,7 +55,7 @@ render(){
             </PageContentWrapper>
             
             <ImageGQL className="headerImage" imageName="en_avs_video_editor_main.png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="video-editor-slider1.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage mobile" imageName="en_avs_video_editor_main.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">

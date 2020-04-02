@@ -1,18 +1,14 @@
 import React from "react";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
 import styled from 'styled-components';
 import Text from '../components/text';
 import PageContentWrapper from '../components/page-content-wrapper';
-import BackgroundHeaderImage from '../images/main-page/header-image.png';
 import MainContentWrapper from '../components/main-content-wrapper';
 import SomethingElseScreen from '../components/something-else-screen';
 import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import ImageGQL from '../components/image-gql';
-
 
 const MainPageWrapper = styled.div`
 
@@ -147,7 +143,7 @@ class mainPage extends React.PureComponent {
     <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
       <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="header-image.png"/>
+        <ImageGQL className="headerBackgroundImage" imageName="main-page-header-image.jpg"/>
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>

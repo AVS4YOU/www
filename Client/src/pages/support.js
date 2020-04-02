@@ -15,7 +15,7 @@ render(){
     return (
       <Layout className="support" pageContext={this.props.pageContext} t={this.props.t}>
         <div className="header">
-          <ImageGQL className="headerBackgroundImage" imageName="support-header.png" style={{position: "absolute"}}/>
+          <ImageGQL className="headerBackgroundImage" imageName="support-header.jpg" style={{position: "absolute"}}/>
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">Support</Text>

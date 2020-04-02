@@ -12,22 +12,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 
-import HeaderImage from '../images/avs-free-image-converter/image_converter_header.png';
-import HeaderImageMobile from '../images/avs-free-image-converter/image_converter_header.png';
-
-import screen1 from '../images/avs-free-image-converter/image_converter_slide2.png';
-import screen2 from '../images/avs-free-image-converter/image_converter_slide3.png';
-import screen3 from '../images/avs-free-image-converter/image_converter_slide4.png';
-import screen4 from '../images/avs-free-image-converter/image_converter_slide5.png';
-import screen5 from '../images/avs-free-image-converter/image_converter_batch_mode.png';
-
-import slideCarousel1 from '../images/avs-free-image-converter/image_converter_slide1.png';
-
-import slidePopupCarousel1 from '../images/avs-free-image-converter/image_converter_header_center2x.png';
-import slidePopupCarousel2 from '../images/avs-free-image-converter/image_converter_resize2x.png';
-import slidePopupCarousel3 from '../images/avs-free-image-converter/image_converter_apply_effects2x.png';
-import slidePopupCarousel4 from '../images/avs-free-image-converter/image_converter_watermark2x.png';
-
 class avsFreeImageConverter extends React.PureComponent {
 
   constructor(props) {
@@ -47,7 +31,7 @@ render(){
 
     return (
       <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
-        <ProductPagesWrapper imageName="purple_background_main.png">
+        <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
