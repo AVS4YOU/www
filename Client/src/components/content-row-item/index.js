@@ -45,8 +45,12 @@ const mobileStyles = css`
 
 const RowContent = styled.div`
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 722px;
     padding-top: 180px;
+
+    &.imgLeft{
+        grid-template-columns: 722px 1fr;
+    }
 
     &:first-child{
         padding-top: 0;
@@ -183,6 +187,14 @@ const RowContent = styled.div`
 
         .rowImage{
             max-width: 100%;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr;
+
+        &.imgLeft{
+            grid-template-columns: 1fr 1fr;
         }
     }
 

@@ -81,6 +81,12 @@ const StyledCarouselWrapper = styled.div`
         display:block !important;
         margin:auto;
 
+        &.popup{
+            img{
+                object-fit: contain !important;
+            }
+        }
+
         &.visible{
             cursor: pointer;
             box-shadow: 0px 3px 6px #ffffff;
@@ -141,7 +147,7 @@ const StyledPopupCarousel = styled.div`
         align-items: center;
 
         .carouselImage{
-            max-width: 1200px;
+            max-width: 1116px;
             padding: 100px;
             box-sizing: border-box;
             height: 90vh;
@@ -263,7 +269,7 @@ export default class ScreenshotsCarousel extends Component {
 
     const PopupCarouselImages = imageNamesPopup.length > 0 && 
         imageNamesPopup.map((imageName, i) => {
-            return(<div key={"popupCarouselItem_"+i}><ImageGQL className="carouselImage" imageName={imageName} alt={altText[i]}/></div>)
+            return(<div key={"popupCarouselItem_"+i}><ImageGQL className="carouselImage popup" imageName={imageName} alt={altText[i]}/></div>)
         });
 
     return (

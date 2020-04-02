@@ -159,9 +159,9 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
           <ScreenshotsCarousel
-            imageNames={["video-editor-slider1.png", "video-editor-slider2.png"]}
-            imageNamesPopup={["video-editor-slider1-2x.png", "video-editor-slider2-2x.png"]}
-            altText={["slideCarousel1", "slideCarousel2"]}
+            imageNames={["video-editor-slider1.png", "video-editor-slider2.png", "video-editor-slider2-replace.png"]}
+            imageNamesPopup={["video-editor-slider1.png", "video-editor-slider2.png", "video-editor-slider2-replace.png"]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
           />
           <PageContentWrapper>
             <div className="downloadInfoWrapper">

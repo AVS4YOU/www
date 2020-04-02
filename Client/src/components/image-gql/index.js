@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
 
-const ImageGQL = ({imageName, className, style, onClick, key}) => (
+const ImageGQL = ({imageName, className, style, onClick, key, objectFit}) => (
     <StaticQuery
     query={graphql`
       query {
@@ -10,7 +10,7 @@ const ImageGQL = ({imageName, className, style, onClick, key}) => (
           edges {
             node {
               fluid(maxWidth: 1920, quality: 90) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_noBase64
                 originalName
               }
             }
@@ -25,12 +25,14 @@ const ImageGQL = ({imageName, className, style, onClick, key}) => (
       if (!image) {
         return null
       }
+      console.log(objectFit)
       return (
         <Img 
           className={className} 
           fluid={image.node.fluid} 
           style={style}
           onClick={onClick}
+          objectFit={objectFit}
         />
       )
     }}
