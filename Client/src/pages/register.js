@@ -41,7 +41,8 @@ render(){
     return (
       <Layout className="register" pageContext={this.props.pageContext} t={this.props.t}>
         <Helmet>
-          <script src={withPrefix('avangate-affiliates.js')} type="text/javascript" />
+          <script src={withPrefix('avangate-affiliates-load.js')} type="text/javascript" />
+          <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 
         </Helmet>
         <div className="screen-wrapper">
           <div className="limited-offer">
