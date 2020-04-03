@@ -151,8 +151,8 @@ class mainPage extends React.PureComponent {
 
               <HeaderDownloadButtons 
                 t={this.props.t}
-                mainHref="/"
-                secondaryHref="/"
+                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
+                scrollTo="mainBodyHeader"
                 className="headerDownloadButtons"
               />
             </div>

@@ -19,7 +19,7 @@ render(){
             <div className="header__body">
                 <Text as="h1" className="header__heading">Affiliate Program</Text>
                 <Text as="h3" className="header__subtitle">Generate maximum sales with AVS4YOU top tools</Text>
-                <Button className="header__button" textClassName="header__button-text" href="#">Sign up now</Button>
+                <Button className="header__button" textClassName="header__button-text" href="https://www.avangate.com/affiliates/sign-up.php?merchant=onlmetec&template=affiliate-signup-october-2011&clean=1&lang=en">Sign up now</Button>
             </div>
         </div>
         <div className="body-reasons screen-wrapper">
@@ -113,7 +113,7 @@ render(){
                     Avangate and MyCommerce in case you already have an account in one of these systems.
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-blue">
                       Sign up
                     </Button>
                     <Button textClassName="choose-program__button-text" className="choose-program__button-transparent">
@@ -135,7 +135,7 @@ render(){
                     Avangate and MyCommerce in case you already have an account in one of these systems.
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://www.shareit.com/affiliateintro.html" textClassName="choose-program__button-text" className="choose-program__button-blue">
                       Sign up
                     </Button>
                     <Button textClassName="choose-program__button-text" className="choose-program__button-transparent">

@@ -10,11 +10,6 @@ import LeftArrow from '../../images/common/icons/arrow-left.svg';
 import RightArrow from '../../images/common/icons/arrow-right.svg';
 import UAParser from 'ua-parser-js';
 
-import MediaPlayerImg from '../../images/main-page/avs_media_player.png';
-import DocumentConverterImg from '../../images/main-page/avs-document-converter.png';
-import RegistryCleanerImg from '../../images/main-page/avs_registry_cleaner.png';
-import DiscCreatorImg from '../../images/main-page/avs_disc_creator.png';
-
 const mobileStyles = css`
     .scrollLink{
         display:block;
@@ -267,7 +262,7 @@ class SomethingElseScreen extends React.PureComponent {
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Media Player</Text>
                                 <Text className="bodyText" color="#474747" fontSize={14}>Open all popular video and audio formats and play media files for free (MP4, MPEG, AVI, WMV, MKV, FLV etc.) on your computer.</Text>
-                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" textTransform="uppercase">download now</Button>
                                 <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                     <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
@@ -279,31 +274,31 @@ class SomethingElseScreen extends React.PureComponent {
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Document Converter</Text>
                                 <Text className="bodyText" color="#474747" fontSize={14}>Convert your document files between DOC, PDF, DOCX, TXT, HTML, etc. Work with e-Pub, Mobi, DjVu or FB2.</Text>
-                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe" textTransform="uppercase">download now</Button>
                                 <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                     <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
                             </div>
                         </StyledProductBox>
                         <StyledProductBox>
-                            <ImageGQL imageName="avs_registry_cleaner.png" alt="Disc Creator"/>
+                            <ImageGQL imageName="avs_disc_creator.png" alt="Disc Creator"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Disc Creator</Text>
                                 <Text className="bodyText" color="#474747" fontSize={14}>Make backup copies of your home Blu-ray, CD/DVD discs, restore a DVD-Video disc, create ISO files.</Text>
-                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe" textTransform="uppercase">download now</Button>
                                 <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                     <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
                             </div>
                         </StyledProductBox>
                         <StyledProductBox>
-                            <ImageGQL imageName="avs_disc_creator.png" alt="Registry Cleaner"/>
+                            <ImageGQL imageName="avs_registry_cleaner.png" alt="Registry Cleaner"/>
                             <div className="textWrapper">
                                 <Text as="span" className="flagBackground se">Free</Text>
                                 <Text className="header" color="#474747">AVS Registry Cleaner</Text>
                                 <Text className="bodyText" color="#474747" fontSize={14}>Scan, clean and repair the Windows registry of your PC</Text>
-                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe" textTransform="uppercase">download now</Button>
                                 <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                     <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
@@ -328,7 +323,7 @@ class SomethingElseScreen extends React.PureComponent {
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Media Player</Text>
                                     <Text className="bodyText" color="#474747" fontSize={14}>Open all popular video and audio formats and play media files for free (MP4, MPEG, AVI, WMV, MKV, FLV etc.) on your computer.</Text>
-                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" textTransform="uppercase">download now</Button>
                                     <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                         <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                     </Link>
@@ -340,7 +335,7 @@ class SomethingElseScreen extends React.PureComponent {
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Document Converter</Text>
                                     <Text className="bodyText" color="#474747" fontSize={14}>Convert your document files between DOC, PDF, DOCX, TXT, HTML, etc. Work with e-Pub, Mobi, DjVu or FB2.</Text>
-                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe" textTransform="uppercase">download now</Button>
                                     <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                         <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                     </Link>
@@ -352,7 +347,7 @@ class SomethingElseScreen extends React.PureComponent {
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Disc Creator</Text>
                                     <Text className="bodyText" color="#474747" fontSize={14}>Make backup copies of your home Blu-ray, CD/DVD discs, restore a DVD-Video disc, create ISO files.</Text>
-                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe" textTransform="uppercase">download now</Button>
                                     <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                         <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                     </Link>
@@ -364,7 +359,7 @@ class SomethingElseScreen extends React.PureComponent {
                                     <Text as="span" className="flagBackground se">Free</Text>
                                     <Text className="header" color="#474747">AVS Registry Cleaner</Text>
                                     <Text className="bodyText" color="#474747" fontSize={14}>Scan, clean and repair the Windows registry of your PC</Text>
-                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="/" textTransform="uppercase">download now</Button>
+                                    <Button className="absoluteButton" fontSize={12} padding="9px 28px" href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe" textTransform="uppercase">download now</Button>
                                     <Link className="scrollLink" to={this.props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                         <Button as="div" className="absoluteButton" fontSize={12} padding="9px 28px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                     </Link>

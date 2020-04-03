@@ -25,7 +25,6 @@ const ImageGQL = ({imageName, className, style, onClick, key, objectFit}) => (
       if (!image) {
         return null
       }
-      console.log(objectFit)
       return (
         <Img 
           className={className} 

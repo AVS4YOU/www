@@ -86,14 +86,14 @@ class Footer extends React.Component{
             <StyledFooter className="footerStyles">
                 <FooterGridContainer>
                     <FooterItem header="Windows Software">
-                        <Link to="/video-editor">
-                            <Text className="footer-link-text">{this.props.t("Video software")}</Text>
+                        <Link to="/avs-video-editor">
+                            <Text className="footer-link-text">{this.props.t("Video Editor")}</Text>
                         </Link>
-                        <Link to="/second-page">
-                            <Text className="footer-link-text">{this.props.t("Audio Software")}</Text>
+                        <Link to="/avs-free-video-converter">
+                            <Text className="footer-link-text">{this.props.t("Video Converter")}</Text>
                         </Link>
-                        <Link to="/second-page">
-                            <Text className="footer-link-text">{this.props.t("Free Software")}</Text>
+                        <Link to="/avs-audio-editor">
+                            <Text className="footer-link-text">{this.props.t("Audio Editor")}</Text>
                         </Link>
                     </FooterItem>
                     <FooterItem header="Partnership">
@@ -111,35 +111,35 @@ class Footer extends React.Component{
                         <Link to="/support">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
                         </Link>
-                        <Link to="/second-page">
+                        <a href="https://www.avs4you.com/guides/index.aspx">
                             <Text className="footer-link-text">{this.props.t("Guides")}</Text>
-                        </Link>
-                        <Link to="/second-page">
+                        </a>
+                        <a href="https://onlinehelp.avs4you.com/index.aspx">
                             <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
-                        </Link>
-                        <Link to="/second-page">
+                        </a>
+                        <a href="https://support.avs4you.com/faq.aspx">
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
-                        </Link>
+                        </a>
                     </FooterItem>
                     <FooterItem header="Company">
                         <Link to="/about-us">
                             <Text className="footer-link-text">{this.props.t("About AVS4YOU")}</Text>
                         </Link>
-                        <Link to="/second-page">
+                        <a href="https://www.avs4you.com/contact.aspx">
                             <Text className="footer-link-text">{this.props.t("Contact us")}</Text>
-                        </Link>
-                        <Link to="/second-page">
+                        </a>
+                        <a href="https://www.avs4you.com/privacy.aspx">
                             <Text className="footer-link-text">{this.props.t("Privacy")}</Text>
-                        </Link>
-                        <Link to="/second-page">
+                        </a>
+                        <a href="https://www.avs4you.com/license-agreement.aspx">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
-                        </Link>
-                        <Link to="/second-page">
+                        </a>
+                        <a href="https://www.avs4you.com/blog/">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
-                        </Link>
+                        </a>
                     </FooterItem>
                     <div className="footer-links-box last">
-                        <Link className="footerLogoLink" to="/second-page">
+                        <Link className="footerLogoLink" to="/">
                             <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                         </Link>
                         <div>
@@ -160,7 +160,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <div className="rights"><a href="/">© Online Media Technologies Ltd., UK</a> 2019 'All rights reserved'.</div>
+                <div className="rights"><a href="/">© Online Media Technologies Ltd., UK</a> 2020 'All rights reserved'.</div>
             </StyledFooter>
         )
     }

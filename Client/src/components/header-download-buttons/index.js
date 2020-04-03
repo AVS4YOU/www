@@ -5,6 +5,8 @@ import FormGetCoupon from '../form-get-coupon';
 import InfoPopup from '../info-popup';
 import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
+import { Link } from "react-scroll";
+import Text from '../text';
 
 const StyledHeaderDownloadButtons = styled.div`
 
@@ -21,6 +23,13 @@ const StyledHeaderDownloadButtons = styled.div`
 
         .secondaryButton{
             margin-left:30px;
+            display:inline-block;
+            cursor:pointer;
+            color: #fff;
+
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 
@@ -162,6 +171,11 @@ class HeaderDownloadButtons extends React.PureComponent {
                                 {this.props.t("download now")}
                         </Button>
                         {this.props.secondaryHref && <Button className="secondaryButton" href={this.props.secondaryHref} textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>}
+                        {this.props.scrollTo && 
+                            <Link to={this.props.scrollTo} spy={true} smooth={true} offset={20} duration={500} className="secondaryButton">
+                                <Text textTransform="uppercase" color="#ffffff">{this.props.t("learn more")}</Text>
+                            </Link>
+                        }
                     </div>
                 }     
             </StyledHeaderDownloadButtons>

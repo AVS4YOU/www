@@ -149,8 +149,8 @@ render(){
                 imageName="slider_video_editor.png"
                 headerText="AVS Video Editor"
                 free={false}
-                blueButtonLink="/"
-                smallButtonLink="/"  
+                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                smallButtonLink="/avs-video-editor"  
                 scrollTo="headerCoupon"    
               >
                 <Text className="ListItem" color="#555555" fontWeight={500}>Edit all key video formats</Text>
@@ -166,8 +166,8 @@ render(){
                 imageName="slider_video_converter.png"
                 headerText="AVS Video Converter"
                 free={false}
-                blueButtonLink="/"
-                smallButtonLink="/" 
+                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                smallButtonLink="/avs-free-video-converter" 
                 scrollTo="headerCoupon"
               >
                 <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
@@ -180,8 +180,8 @@ render(){
                 imageName="slider_video_remaker.png"
                 headerText="AVS Video ReMaker"
                 free={false}
-                blueButtonLink="/"
-                smallButtonLink="/"   
+                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                smallButtonLink="/avs-video-remaker"   
                 scrollTo="headerCoupon"   
               >
                 <Text className="ListItem" color="#555555" fontWeight={500}>Edit video files without reconversion</Text>
@@ -197,8 +197,8 @@ render(){
                 imageName="slider_audio_converter.png"
                 headerText="AVS Audio Converter"
                 free={false}
-                blueButtonLink="/"
-                smallButtonLink="/"   
+                blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                smallButtonLink="/avs-audio-converter"   
                 scrollTo="headerCoupon"   
               >
                 <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
@@ -213,8 +213,8 @@ render(){
                 imageName="slider_audio_editor.png"
                 headerText="AVS Audio Editor"
                 free={false}
-                blueButtonLink="/"
-                smallButtonLink="/"  
+                blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                smallButtonLink="/avs-audio-editor"  
                 scrollTo="headerCoupon"    
               >
                 <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data</Text>

@@ -45,7 +45,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="/"
+                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -174,9 +174,9 @@ render(){
               <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
               <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="/" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="#">our End User License Agreement</a></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="https://www.avs4you.com/license-agreement.aspx">our End User License Agreement</a></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">

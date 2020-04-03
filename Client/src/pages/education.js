@@ -136,7 +136,7 @@ render(){
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
-                    href="/"
+                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
                     textTransform="uppercase"
                   >
                       Download education price list

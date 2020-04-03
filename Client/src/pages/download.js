@@ -25,7 +25,7 @@ render(){
                     <Text as="h3" className="header__subtitle">Get all AVS4YOU® software in 1 installation package</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}
-                      mainHref="/"
+                      mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
                       backgroundColor="blue"
                       mainPadding="18px 50px"
                       margin="auto"
@@ -51,7 +51,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -67,7 +67,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -83,7 +83,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -101,7 +101,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -114,7 +114,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -133,7 +133,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -145,7 +145,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -157,7 +157,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -169,7 +169,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -181,7 +181,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -193,7 +193,7 @@ render(){
                 <Text as="p">File Size: 155.58 MB</Text>
                 <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="/" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
