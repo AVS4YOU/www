@@ -63,6 +63,7 @@ const StyledFooter = styled.footer`
         text-align: center;
         padding: 20px;
         color: #8e999f;
+        font-size: 14px;
 
         &>a{
             color: #8e999f;
@@ -76,6 +77,10 @@ const StyledFooter = styled.footer`
         padding-bottom: 12px;
         font-size: 14px;
         color:#ffffff;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
 `;
@@ -160,7 +165,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <div className="rights"><a href="/">© Online Media Technologies Ltd., UK</a> 2020 'All rights reserved'.</div>
+                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> 2020 'All rights reserved'.</Text>
             </StyledFooter>
         )
     }

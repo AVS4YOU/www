@@ -76,7 +76,12 @@ main {
     }
 
     a{
+        text-decoration:none;
         color:#1E72D2;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     .mobileFormWrapper{
@@ -85,7 +90,7 @@ main {
         margin-top: 40px;
     }
 
-    .getCouponButton{
+    .getCouponButton.mobile{
         display: block;
         text-align: center;
     }

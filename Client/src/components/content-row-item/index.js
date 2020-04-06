@@ -11,6 +11,13 @@ import UAParser from 'ua-parser-js';
 
 const desktopStyles = css`
     .buttonsWrapper{
+        .secondaryButton{
+            color:#333333;
+
+            &:hover{
+                text-decoration:underline;
+            }
+        }
         .scrollLink{
             display:none;
 
@@ -154,9 +161,16 @@ const RowContent = styled.div`
         }
 
         &.LinkItem{
+            text-decoration:none;
+
             &:before{
                 content: none;
             }
+
+            &:hover{
+                text-decoration:underline;
+            }
+
         }
 
         &.footnote{
@@ -259,7 +273,7 @@ const RowContent = styled.div`
                 display: block;
                 margin-top: 20px;
                 width: 100%;
-                text-align: center;
+                text-align: center;       
             }
         }
 
@@ -345,8 +359,8 @@ const TextContent = (props) =>
                             <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                         </Link>
                     }
-                    {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>}
-                    {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>}
+                    {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>Download now</Button>}
+                    {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
                 </div>
                 }
             </div>

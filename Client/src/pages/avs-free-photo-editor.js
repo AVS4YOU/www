@@ -36,6 +36,9 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
+                <Text as="span" className="flagBackground header">Free
+                  <div></div>
+                </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Photo Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Make your photos look stylish with Free AVS Photo Editor.</Text>
                 <HeaderDownloadButtons 

@@ -87,8 +87,10 @@ const StyledPageWrapper = styled.div`
     box-shadow: 0px 3px 6px #ffffff;
     transition: 0.15s linear;
 
+
     &:hover{
       box-shadow: 0px 3px 6px #00000029;
+      text-decoration:none;
     }
 
     &.overview{
@@ -122,6 +124,11 @@ const StyledPageWrapper = styled.div`
 
     a{
       color: #1296E6;
+      text-decoration:none;
+
+      &:hover{
+        text-decoration:underline;
+      }
     }
   }
 

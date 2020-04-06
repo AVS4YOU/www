@@ -29,6 +29,10 @@ const StyledButton = styled.a`
     cursor: pointer;
     text-decoration: none;
 
+    &:hover{
+        text-decoration:none;
+    }
+
     .buttonText{
         text-decoration: underline;
     }

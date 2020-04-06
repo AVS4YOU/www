@@ -292,7 +292,7 @@ class FormGetCoupon extends React.Component {
 
                 <Button
                     tabIndex="1"
-                    className="getCouponButton"
+                    className="getCouponButton mobile"
                     onClick={this.onClick}
                     backgroundColor="orange"
                     padding="13px 24px"
