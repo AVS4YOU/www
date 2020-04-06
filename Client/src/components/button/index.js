@@ -4,7 +4,7 @@ import Text from '../text';
 import PropTypes from "prop-types";
 
 const backgroundColor = {
-    blue: "#1E72D2",
+    blue: "#1373E2",
     orange: "#FE9235"
 }
 
@@ -13,6 +13,10 @@ const backgroundStylesButton = css`
     ${props => props.padding && "padding:" + props.padding};
     border-radius: 5px;
     text-decoration: none;
+
+    &:hover{
+        background-color: ${props => props.backgroundColor === "blue" ? "#428fe8" : "#f7a966"}
+    }
 
     .buttonText{
         text-decoration: none;
