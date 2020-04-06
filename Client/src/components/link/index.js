@@ -1,6 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-import Text from '../text';
 import { Link } from "gatsby";
 import { PageContext } from '../../context/page-context';
 

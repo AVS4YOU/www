@@ -29,9 +29,9 @@ const Header = ({availableLocales, locale, t}) => {
             <MenuItem path="/register" menuItemText={t("Buy now")} isDropdown={false} />
             <MenuItem menuItemText={t("Help center")}>
                 <DropdownElement path="/support" headerText="Support form"/>
-                <DropdownElement path="/" headerText="Guides"/>
-                <DropdownElement path="/" headerText="Knowledge center"/>
-                <DropdownElement path="/" headerText="FAQ"/>
+                <DropdownElement href="https://www.avs4you.com/guides/index.aspx" headerText="Guides"/>
+                <DropdownElement href="https://onlinehelp.avs4you.com/index.aspx" headerText="Knowledge center"/>
+                <DropdownElement href="https://support.avs4you.com/faq.aspx" headerText="FAQ"/>
             </MenuItem>
         </MenuWrapper>
     )

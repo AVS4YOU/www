@@ -35,10 +35,24 @@ const StyledDropdownElement = styled.div`
 const DropdownElement = props => {
     return(
         <StyledDropdownElement {...props}> 
-            <Link to={props.path} langChange={props.langChange}>
-                {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
-                {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
-            </Link>
+            {props.path 
+            
+            ?
+                <Link to={props.path} langChange={props.langChange}>
+                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                    {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+                </Link>
+
+            :
+
+            props.href &&
+
+                <a href={props.href} langChange={props.langChange}>
+                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                    {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
+                </a>
+            }
+            
         </StyledDropdownElement>
     )
 }
