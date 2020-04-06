@@ -1,6 +1,7 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import Link from '../components/link';
+import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
 import "../styles/support.less";
@@ -32,67 +33,67 @@ render(){
               <Text as="h4" className="common-info-block__headline">
                 AVS4YOU Support 
               </Text>
-              <Link className="common-info-block__link" to="/">
+              <ScrollLink className="common-info-block__link" to="support-form-wrapper" spy={true} smooth={true} offset={-70} duration={500}>
                 <Text className="common-info-block__text">Support form</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </ScrollLink>
+              <a className="common-info-block__link" href="https://support.avs4you.com/FirstTime.aspx">
                 <Text className="common-info-block__text">Read this first</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="https://support.avs4you.com/refund.aspx">
                 <Text className="common-info-block__text">Refund policy</Text>
-              </Link>
+              </a>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
                 FAQ 
               </Text>
-              <Link className="common-info-block__link" to="/">
+              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#general">
                 <Text className="common-info-block__text">General Questions</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#license">
                 <Text className="common-info-block__text">License Retrieval Questions</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#support">
                 <Text className="common-info-block__text">Online Support System Questions</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#subscription">
                 <Text className="common-info-block__text">Subscription Questions</Text>
-              </Link>
+              </a>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
                 Knowledge Center
               </Text>
-              <Link className="common-info-block__link" to="/">
+              <a className="common-info-block__link" href="http://videoguides.avs4you.com/index.aspx">
                 <Text className="common-info-block__text">Video how-to</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="http://www.avs4you.com/Guides/index.aspx">
                 <Text className="common-info-block__text">User Guides</Text>
-              </Link>
-              <Link className="common-info-block__link" to="/">
+              </a>
+              <a className="common-info-block__link" href="http://onlinehelp.avs4you.com/index.aspx">
                 <Text className="common-info-block__text">Online Help</Text>
-              </Link>
+              </a>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
                 Download now
               </Text>
-              <Link className="common-info-block__link" to="/">
+              <Link className="common-info-block__link" to="/avs-free-image-converter">
                 <Text className="common-info-block__text">AVS Video Converter</Text>
               </Link>
-              <Link className="common-info-block__link" to="/">
+              <Link className="common-info-block__link" to="/avs-video-editor">
                 <Text className="common-info-block__text">AVS Video Editor</Text>
               </Link>
-              <Link className="common-info-block__link" to="/">
+              <Link className="common-info-block__link" to="/avs-video-remaker">
                 <Text className="common-info-block__text">AVS Video Remaker</Text>
               </Link>
-              <Link className="common-info-block__link" to="/">
+              <Link className="common-info-block__link" to="/avs-audio-editor">
                 <Text className="common-info-block__text">AVS Audio Editor</Text>
               </Link>
-              <Link className="common-info-block__link" to="/">
+              <Link className="common-info-block__link" to="/avs-audio-converter">
                 <Text className="common-info-block__text">AVS Audio Converter</Text>
               </Link>
               <Link className="common-info-block__link" to="/">
@@ -115,7 +116,7 @@ render(){
           <Text as="h2" className="common__heading">
             If you have not found the necessary information, please send a request
           </Text>
-          <div className="reseller-from-wrapper">
+          <div id="support-form-wrapper" className="reseller-from-wrapper">
             <Form></Form>
             <Text className="contact-us-text">If you have any questions about AVS4YOU Affiliate program, please contact us at <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
