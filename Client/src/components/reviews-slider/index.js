@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import styled from 'styled-components';
 import ReviewCarouselItem from '../review-carousel-item';
 
-import AvatarChenWang from '../../images/common/review-carousel/сhen_wang.png';
+import AvatarChenWang from '../../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../../images/common/review-carousel/quote_1.png';
 
