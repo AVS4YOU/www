@@ -47,7 +47,7 @@ const DropdownElement = props => {
 
             props.href &&
 
-                <a href={props.href} langChange={props.langChange}>
+                <a href={props.href}>
                     {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                     {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
                 </a>

@@ -16,7 +16,6 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 
 const StyledLayout = styled.div`
-
   min-width: 300px;
 `;
 
@@ -80,6 +79,15 @@ class Layout extends React.PureComponent {
       <PageContext.Provider value={this.props.pageContext}>
         <Helmet>
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>
+          <script>
+            {`
+              (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); 
+              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
+              j.async = true;
+              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
+              f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMB2TZX');
+            `}
+          </script>
         </Helmet>
         <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
         <StyledLayout className={this.props.className}>
