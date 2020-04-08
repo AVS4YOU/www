@@ -19,6 +19,19 @@ const StyledLayout = styled.div`
   min-width: 300px;
 `;
 
+const languageCodes = [
+  "en-US",
+  "de-DE",
+  "fr-FR",
+  "es-ES",
+  "it-IT",
+  "ja-JP",
+  "nl-NL",
+  "pl-PL",
+  "da-DK",
+  "pt-BR",
+  "ru-RU"
+];
 
 class Layout extends React.PureComponent {
 
@@ -29,6 +42,7 @@ class Layout extends React.PureComponent {
       isMobile: false
     }
 
+    this.pageName = this.props.pageContext.originalPath.length > 1 ? this.props.pageContext.originalPath.replace(/\//g, '') + ".aspx" : "index.aspx";
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
@@ -82,6 +96,16 @@ class Layout extends React.PureComponent {
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>  
           {this.props.metaDescription && <meta name="description" content={this.props.metaDescription} />}
           {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
+          {this.props.pageContext.originalPath}
+
+          <link rel="canonical" href={"https://www.avs4you.com/" + this.pageName}></link>
+          {languageCodes.map((languageCode)=> {
+            let language = languageCode.split("-")[0];
+            language = language === "en" ? "" : language + "/";
+            return(
+              <link rel="alternate" href={"https://www.avs4you.com/" + language + this.pageName} hreflang={languageCode}></link>
+            )
+          })}
 
           <script>
             {`
