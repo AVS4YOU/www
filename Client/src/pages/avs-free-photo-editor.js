@@ -30,7 +30,14 @@ class avsFreePhotoEditor extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS Free Photo Editor is a free photo editing software."
+        metaDescription="Edit JPEG, JPG, PNG, GIF, BMP, TIFF for free with AVS Free Photo Editor. Rotate & crop image files, remove red eye effect, adjust colour and tints, add effects."
+        metaKeywords="photo editor,free photo editor,picture editor, photo editing software, edit photos, picture editing"
+      >
         <ProductPagesWrapper>
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.jpg" style={{position: "absolute"}}/>

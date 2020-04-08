@@ -14,7 +14,14 @@ class partners extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="partners" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="partners" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS4YOU partnership Program for resellers"
+        metaDescription="AVS4YOU Reseller program: Safe and cost-effective"
+        metaKeywords=""
+      >
         <div className="header">
           <ImageGQL className="headerBackgroundImage" imageName="partners-header.jpg" style={{position: "absolute"}}/>
           <div className="header__background-gradient">

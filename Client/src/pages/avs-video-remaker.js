@@ -34,7 +34,14 @@ class avsVideoRemaker extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS Video ReMaker - cut out the scenes without reconverting video files!"
+        metaDescription="AVS Video ReMaker. Cut out the scenes and remove commercials without reconverting video files!"
+        metaKeywords="video remaker, convert video, video formats, remake video, no recompression, delete scenes, remove commercials"
+      >
         <ProductPagesWrapper>
           <div className="headerBackground">
           <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.jpg" style={{position: "absolute"}}/>

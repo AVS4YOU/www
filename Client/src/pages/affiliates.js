@@ -13,7 +13,14 @@ class Affiliates extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="affiliates" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="affiliates" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="Earn money with the affiliate program AVS4YOU"
+        metaDescription="AVS4YOU affiliate program: earn money with Links"
+        metaKeywords=""
+      >
         <div className="header">
             <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">

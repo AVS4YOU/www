@@ -16,7 +16,14 @@ class Download extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="download" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="download" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS4YOU Download multimedia software for free!"
+        metaDescription="AVS4YOU Download: safely download programs"
+        metaKeywords=""
+      >
         <div id="headerContentWrapper" className="header">
             <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">

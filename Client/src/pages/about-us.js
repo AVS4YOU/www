@@ -11,7 +11,14 @@ class aboutUs extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="about-us-page" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="about-us-page" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title=""
+        metaDescription=""
+        metaKeywords=""
+      >
         <div className="header">
           <ImageGQL className="headerBackgroundImage" imageName="about-us-header.jpg" style={{position: "absolute"}}/>
           <div className="header__background-gradient">

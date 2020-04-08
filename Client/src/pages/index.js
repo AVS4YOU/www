@@ -140,7 +140,13 @@ class mainPage extends React.PureComponent {
 
   render(){
   return (
-    <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+    <Layout getDevice={this.getDevice} 
+            pageContext={this.props.pageContext} 
+            t={this.props.t}
+            title="AVS4YOU best software for processing video, audio, image"
+            metaDescription="AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files."
+            metaKeywords="avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter"
+    >
       <MainPageWrapper>
         <div className="headerBackground">
         <ImageGQL className="headerBackgroundImage" imageName="main-page-header-image.jpg"/>

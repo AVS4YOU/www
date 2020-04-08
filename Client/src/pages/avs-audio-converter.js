@@ -33,7 +33,14 @@ class avsAudioConverter extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS Audio Converter is a lossless tool to convert MP3 WAV WMA M4A FLAC AMR"
+        metaDescription="Convert audio to any popular format (MP3  WAV WMA M4A FLAC)/ create and edit audio books/ split and merge audio tracks."
+        metaKeywords="avs audio converter, avs song converter, avs  music converter, music converter, convert music, convert music mp3, audio converter, audio converter mp3, convert audio,song converter, mp3 song converter, mp3 converter, wav converter, wav mp3 converter, video to audio converter, mp4 to mp3 converter, mp4 to mp3, wma converter, mp4 wma converter, wma mp3, convert m4a, m4a to mp3, flac converter, flac to mp3 converter, amr converter"
+      >
         <ProductPagesWrapper>
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>

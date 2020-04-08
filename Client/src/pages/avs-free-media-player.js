@@ -31,7 +31,14 @@ class avsFreeMediaPlayer extends React.PureComponent {
   render() {
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS Free Media Player is the best media player for Windows."
+        metaDescription="Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported."
+        metaKeywords="Free media player, avs4you video player,Video player software, media player, audio player, video player"
+      >
         <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />

@@ -30,7 +30,14 @@ class avsFreeImageConverter extends React.PureComponent {
   render() {
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF"
+        metaDescription="Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter. Resize photos,rotate, adjust color and contrast, apply photo effects."
+        metaKeywords="Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize"
+      >
         <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />

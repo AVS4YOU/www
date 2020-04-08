@@ -30,7 +30,14 @@ class avsFreeRegistryCleaner extends React.PureComponent {
 render(){
 
     return (
-      <Layout getDevice={this.getDevice} pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        getDevice={this.getDevice} 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="Repair Windows registry with AVS Free Registry Cleaner."
+        metaDescription="Scan your pc registry automatically, repair registry errors effectively. Improve your computer performance easily with AVS Free Registry Cleaner."
+        metaKeywords="Registry Cleaner, free registry cleaner,best registry cleaner, AVS Registry Cleaner, optimize your computer, computer performance"
+      >
         <ProductPagesWrapper>
           <div className="headerBackground">
           <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.jpg" style={{position: "absolute"}}/>

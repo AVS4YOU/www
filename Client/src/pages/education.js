@@ -16,7 +16,14 @@ class education extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="education" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="education" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="AVS4YOU special Offer for educational institutions"
+        metaDescription="AVS4YOU: educational Software"
+        metaKeywords=""
+      >
         <div id="headerContentWrapper" className="header">
             <ImageGQL className="headerBackgroundImage" imageName="education_header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">

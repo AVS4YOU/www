@@ -39,7 +39,14 @@ constructor(){
 
 render(){
     return (
-      <Layout className="register" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+       className="register" 
+       pageContext={this.props.pageContext} 
+       t={this.props.t}
+       title="AVS4YOU Get professionals multimedia tools"
+       metaDescription="AVS4YOU: Professional Multimedia Tools"
+       metaKeywords=""
+      >
         <Helmet>
           <script src={withPrefix('avangate-affiliates-load.js')} type="text/javascript" />
           <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 

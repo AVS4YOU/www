@@ -14,7 +14,14 @@ class support extends React.PureComponent {
 render(){
 
     return (
-      <Layout className="support" pageContext={this.props.pageContext} t={this.props.t}>
+      <Layout 
+        className="support" 
+        pageContext={this.props.pageContext} 
+        t={this.props.t}
+        title="Welcome to AVS4YOU Support"
+        metaDescription=""
+        metaKeywords=""
+      >
         <div className="header">
           <ImageGQL className="headerBackgroundImage" imageName="support-header.jpg" style={{position: "absolute"}}/>
           <div className="header__background-gradient">

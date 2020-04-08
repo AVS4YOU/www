@@ -78,7 +78,11 @@ class Layout extends React.PureComponent {
     return ( 
       <PageContext.Provider value={this.props.pageContext}>
         <Helmet>
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>
+          <title>{this.props.title}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>  
+          {this.props.metaDescription && <meta name="description" content={this.props.metaDescription} />}
+          {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
+
           <script>
             {`
               (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); 
@@ -101,6 +105,12 @@ class Layout extends React.PureComponent {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  title: "",
+  metaDescription: "",
+  metaKeywords: "",
 }
 
 export default Layout
