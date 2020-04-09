@@ -6,10 +6,11 @@ import MenuDropdown from '../menu-dropdown'
 import Link from '../link';
 
 const MediaWidthStyle = css`
-    padding: 0 15px;
+    padding: 0 10px;
 
     .arrowStyle:after{
         margin-left:5px;
+        right: 20px;
     }
 
     .textStyles{
@@ -102,16 +103,23 @@ const StyledMenuItem = styled.div`
     display: inline-flex;
     position: relative;
     align-items: center;
-    height:100%;
+    height:60px;
     transition: .2s linear;
 
     .menuItemLink{
         text-decoration:none;
     }
 
+    .arrowStyle{
+        padding-right: 20px;
+    }
+
     .arrowStyle:after{
-        margin-top:-4px;
-        margin-left: 8px;
+        position: absolute;
+        right: 31px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     &:hover{
@@ -119,7 +127,6 @@ const StyledMenuItem = styled.div`
 
         .arrowStyle:after{
             transform: rotate(45deg);
-            margin-top:0;
         }
     }
 

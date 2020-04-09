@@ -51,12 +51,11 @@ const mobileStyles = css`
 `;
 
 const RowContent = styled.div`
-    display:grid;
-    grid-template-columns: 1fr 722px;
-    padding-top: 180px;
+   padding-top: 180px;
+    display:table;
+    width:100%;
 
     &.imgLeft{
-        grid-template-columns: 722px 1fr;
     }
 
     &:first-child{
@@ -84,7 +83,10 @@ const RowContent = styled.div`
     }
 
     .bgOrange{
-        position:relative;
+        position: relative;
+        display: table-cell;
+        width: 60%;
+        vertical-align: middle
 
         .rowImage{
             margin-right: auto;
@@ -105,7 +107,10 @@ const RowContent = styled.div`
     } 
 
     .bgBlue{
-        position:relative;
+        position: relative;
+        display: table-cell;
+        width: 60%;
+        vertical-align: middle
 
         .rowImage{
             margin-left: auto;
@@ -126,8 +131,8 @@ const RowContent = styled.div`
     }
 
     .flexWrapper{
-        display: flex;
-        align-items: center;
+        display: table-cell;
+        vertical-align: middle;
         margin: auto;
         max-width: 500px;
 

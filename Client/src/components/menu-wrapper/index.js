@@ -37,14 +37,30 @@ const CloseMobileMenu = styled.div`
 `;
 
 const StyledMenuGrid = styled.div`
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 1fr auto;
     grid-template-columns: auto 1fr auto;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     max-width: 1300px;
     margin: auto;
     padding: 0 18px;
     box-sizing: border-box;
     height:100%;
+
+    &>*:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    &>*:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    &>*:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
 
     .mobileBlock{
         display:none;
@@ -65,7 +81,7 @@ const MenuItemsWrapper = styled.div`
     width: auto;
     height: 100%;
     margin: auto;
-    display: block;
+    display: table;
 
     @media (max-width: 1050px) {
         padding: 0;
@@ -90,11 +106,15 @@ const MenuItemsWrapper = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-    display: flex;
-    height: 100%;
+    width: 69px;
+    height: 60px;
+    display: table;
 
     &>img{
-        margin:0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 `;
 
@@ -186,7 +206,7 @@ class MenuWrapper extends React.PureComponent {
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
                     </Link>
-                    <div className="mobileBlock"></div>
+                    {this.state.isTablet && <div className="mobileBlock"></div>}
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
               
