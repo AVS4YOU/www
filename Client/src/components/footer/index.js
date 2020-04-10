@@ -10,9 +10,8 @@ import Link from '../link'
 import FooterItem from '../footer-item';
 
 const FooterGridContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: table;
+    width: 100%;
     max-width: 1210px;
     margin: auto;
     padding: 0px 15px;
@@ -27,6 +26,8 @@ const FooterGridContainer = styled.div`
 const StyledFooter = styled.footer`
 
     clear: both;
+    width: 100%;
+    display: block;
     background: #32393E;
     color: #dbdbdb;
     font-size: 11px;

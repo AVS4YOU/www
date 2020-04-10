@@ -12,16 +12,23 @@ import RevPeople from '../../images/main-page/icons/reviews-people.png'
 const StyledScreen = styled.div`
     padding-top: 100px;
     padding-bottom: 100px;
-    display: grid;
-    grid-template-columns: 43% auto;
+    display: flex;
     align-items: center;
 
     div{
         outline: none;
     }
 
+    .carouselWrapper{
+        width: 40%;
+        display: inline-block;
+    }
+
     .container{
-        padding: 15px;   
+        width: 59%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0px 15px; 
     }
 
     .orange{
@@ -82,7 +89,7 @@ const ReviewsScreen = (props) => {
     return(
         <PageContentWrapper>
             <StyledScreen>
-                <div>
+                <div className="carouselWrapper">
                     <ReviewsSlider 
                         reviewsData={props.reviewsData}
                     />

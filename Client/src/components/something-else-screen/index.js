@@ -44,11 +44,10 @@ const StyledWrapper = styled.div`
     padding-bottom: 100px;
 
     .productsContainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
-        max-width: 1200px;
+        display: table;
+        max-width: 1250px;
         margin: auto;
+        border-spacing: 20px 0px;
     }
 
     .textWrapper{
@@ -194,6 +193,9 @@ const StyledWrapper = styled.div`
 
 const StyledProductBox = styled.div`
     background-color:#ffffff;
+    display: table-cell;
+    width: 25%;
+    max-width: 285px;
     box-shadow: 0px -1px 24px #ffffff;
     transition: linear 0.2s;
     position:relative;

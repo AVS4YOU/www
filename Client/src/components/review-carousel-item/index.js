@@ -5,9 +5,7 @@ import Quote from '../../images/common/review-carousel/quote.svg'
 
 const StyledItem = styled.div`
     &.rewWrapper{
-        display: grid !important;
-        grid-template-columns: 150px 1fr;
-        grid-gap: 35px;
+        display: table !important;
     }
 
     .avatar{
@@ -22,7 +20,10 @@ const StyledItem = styled.div`
     }
 
     .quote{
-        position:relative;
+        position: relative;
+        display: table-cell;
+        width: 160px;
+        vertical-align: middle;
 
         &:before{
             content: '';
@@ -36,6 +37,12 @@ const StyledItem = styled.div`
             z-index:1;
             position:absolute;
         }
+    }
+
+    .rewTextWrapper{
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 46px;
     }
 
     .name{
@@ -82,7 +89,7 @@ const ReviewCarouselItem = (props) => {
                 <div className="avatar"></div>
                 <Text className="name" color="#888F95" fontSize={16}>{props.name}</Text>
             </div>
-            <div>
+            <div className="rewTextWrapper">
                 <Text fontWeight={600} fontSize={30} color="#000000" className="reviewHeader">{props.revHeader}</Text>
                 <Text className="reviewText" color="#505B63">{props.revText}</Text>
             </div>

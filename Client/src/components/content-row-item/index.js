@@ -11,8 +11,14 @@ import UAParser from 'ua-parser-js';
 
 const desktopStyles = css`
     .buttonsWrapper{
+        display: table;
+        align-items: center;
+        padding-top: 60px;
+
         .secondaryButton{
             color:#333333;
+            display: table-cell;
+            padding: 0 25px;
 
             &:hover{
                 text-decoration:underline;
@@ -27,7 +33,7 @@ const desktopStyles = css`
         }
 
         .mainButton{
-            display: block;
+            display: table-cell;
         }
     }
 `;
@@ -64,14 +70,6 @@ const RowContent = styled.div`
 
     .scrollLink{
         display:none;
-    }
-    
-    .buttonsWrapper {
-        display: grid;
-        grid-template-columns: auto auto 1fr;
-        align-items: center;
-        grid-gap: 30px;
-        padding-top: 60px;
     }
 
     .rowImage{
@@ -360,10 +358,6 @@ const TextContent = (props) =>
                 {props.blueButtonLink && 
                 
                 <div className="buttonsWrapper">
-                    {props.scrollTo && <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
-                            <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
-                        </Link>
-                    }
                     {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>Download now</Button>}
                     {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
                 </div>

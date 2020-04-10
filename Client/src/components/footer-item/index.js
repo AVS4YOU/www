@@ -31,6 +31,10 @@ const FooterLinksWrapper = styled.div`
 
 const StyledFooterItem = styled.div`
 
+    width: 20%;
+    display: table-cell;
+    vertical-align:top;
+
     .footerHeader{
         text-align: left;
         margin-top: 40px;
