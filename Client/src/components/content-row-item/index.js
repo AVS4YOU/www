@@ -77,7 +77,44 @@ const RowContent = styled.div`
         position: relative;
         z-index: 2;
         display:block;
+        overflow: unset !important;
 
+    }
+
+    &.imgRight{
+        .rowImage{
+            margin-left: auto;
+
+            &:before{
+                content: '';
+                background-image: url(${bgOrange});
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 206px;
+                height:206px;
+                left: -36px;
+                top: -36px;
+                position:absolute;
+            }
+        }
+    }
+
+    &.imgLeft{
+        .rowImage{
+            margin-right: auto;
+
+            &:before{
+                content: '';
+                background-image: url(${bgBlue});
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 206px;
+                height:206px;
+                right:-36px;
+                top: -36px;
+                position:absolute;
+            }
+        }
     }
 
     .bgOrange{
@@ -87,20 +124,7 @@ const RowContent = styled.div`
         vertical-align: middle
 
         .rowImage{
-            margin-right: auto;
-        }
-
-        &:before{
-            content: '';
-            background-image: url(${bgOrange});
-            background-size: 100%;
-            background-repeat: no-repeat;
-            width: 206px;
-            height:206px;
-            left: -36px;
-            top: -36px;
-            position:absolute;
-            z-index: 1;
+            margin-left: auto;
         }
     } 
 
@@ -108,24 +132,7 @@ const RowContent = styled.div`
         position: relative;
         display: table-cell;
         width: 60%;
-        vertical-align: middle
-
-        .rowImage{
-            margin-left: auto;
-        }
-
-        &:before{
-            content: '';
-            background-image: url(${bgBlue});
-            background-size: 100%;
-            background-repeat: no-repeat;
-            width: 206px;
-            height:206px;
-            right:-36px;
-            top: -36px;
-            position:absolute;
-            z-index: 1;
-        }
+        vertical-align: middle  
     }
 
     .flexWrapper{
@@ -133,6 +140,11 @@ const RowContent = styled.div`
         vertical-align: middle;
         margin: auto;
         max-width: 500px;
+
+        .tableWrapper{
+            display: table;
+            margin: auto;
+        }
 
         &.mobile{
             display:none;
@@ -349,7 +361,7 @@ const TextContent = (props) =>
 {
     return(
         <div className="flexWrapper">
-            <div>
+            <div className="tableWrapper">
                 <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
                     {props.headerText} 
                     {props.free && <Text as="span" className="flagBackground">Free</Text>}

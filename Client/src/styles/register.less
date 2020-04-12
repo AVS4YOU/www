@@ -39,13 +39,15 @@
     }
 
     .featuresWrapper{
-        display: grid;
+        display: table;
         max-width: 700px;
         margin: auto;
-        grid-template-columns: 1fr 1fr 1fr;
         margin-top: 40px;
+        border-spacing: 20px 0px;
 
         .featuresItem{
+            display: table-cell;
+
             p{
                 text-align: center;
             }
@@ -64,18 +66,20 @@
     }
 
     .buy-block-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: table;
         grid-gap: 80px;
-        max-width: 960px;
+        border-spacing: 90px 0px;
+        max-width: 1100px;
         margin: auto;
         margin-top: 80px;
 
         .buy-block{
-            padding:40px;
+            display: table-cell;
+            padding: 40px;
             background-color: #ffffff;
-            box-shadow: 3px 3px 24px #00000029;
+            box-shadow: 3px 3px 24px #efefef;
             border-radius: 10px;
+            
         }
 
         .subscription-time-text{
@@ -135,17 +139,18 @@
 
     .why-choose-wrapper{
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        display: table;
         max-width: 1350px;
         margin: auto;
         margin-top: 100px;
         margin-bottom: 130px;
+        border-spacing: 60px 0;
 
         .why-choose-item{
             max-width: 165px;
             margin:auto;
             margin-top: 0;
+            display: table-cell;
         }
 
         .icon{

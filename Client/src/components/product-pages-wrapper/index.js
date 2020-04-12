@@ -56,11 +56,10 @@ const StyledPageWrapper = styled.div`
 
   .scrollLinksWrapper{
     padding: 100px 0;
-    display: grid;
-    grid-template-columns: 128px 128px 128px 128px;
-    grid-gap: 30px;
+    display: table;
     margin: auto;
     width: max-content;
+    border-spacing: 30px 0px;
   }
 
   .backgroundWrapper{
@@ -77,6 +76,8 @@ const StyledPageWrapper = styled.div`
   }
 
   .scrollToButton{
+    display:table-cell;
+    min-width: 80px;
     padding: 20px;
     padding-top: 85px;
     background-size: 42px;
@@ -111,11 +112,23 @@ const StyledPageWrapper = styled.div`
   }
   .downloadInfoWrapper{
     padding-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 15px;
+    display: table;
     margin: auto;
     max-width: 600px;
+    border-spacing: 10px 10px;
+
+    .downloadInfoRow{
+      display: table-row;
+    }
+  }
+
+  .downloadInfoParam{
+    display: table-cell;
+    width: 50%;
+  }
+
+  .downloadInfoText{
+    display: table-cell;
   }
 
   .licenseText{
@@ -145,11 +158,15 @@ const StyledPageWrapper = styled.div`
   }
 
   .specificationGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    display: table;
     padding-top: 50px;
     padding-bottom: 10px;
+    width: 100%;
+
+    &>div{
+      display:table-cell;
+      width: 50%;
+    }
   }
 
   .pcComponents{
