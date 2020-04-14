@@ -82,7 +82,7 @@ render(){
               <Text className="prev-price-text">$69.00</Text>
               <Text className="current-price-text">$39.00</Text>
               <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text">prices valid up to November 30, 2019</Text>
+              <Text className="limited-offer-text last">prices valid up to November 30, 2019</Text>
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
@@ -99,7 +99,7 @@ render(){
               <Text className="prev-price-text">$199.00</Text>
               <Text className="current-price-text">$59.00</Text>
               <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text">prices valid up to November 30, 2019</Text>
+              <Text className="limited-offer-text last">prices valid up to November 30, 2019</Text>
               <Button
                 href={this.state.hrefUnlim}
                 backgroundColor="orange"

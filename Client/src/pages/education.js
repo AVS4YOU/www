@@ -41,47 +41,51 @@ render(){
             Advantages of AVS4YOU software
           </Text>
           <div className="body-education__wrapper">
-            <div className="grid">
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    5 Multimedia Tools Suite fro audio and video processing
-                  </Text>
+            <div className="table">
+              <div className="tableRow first">
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      5 Multimedia Tools Suite fro audio and video processing
+                    </Text>
+                  </div>
+                </div>
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      Special discounts up to 70% off
+                    </Text>
+                  </div>
+                </div>
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      Easy software administration
+                    </Text>
+                  </div>
                 </div>
               </div>
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    Special discounts up to 70% off
-                  </Text>
+              <div className="tableRow second">
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      A single volume license key
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    Easy software administration
-                  </Text>
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      Online or offline software registration
+                    </Text>
+                  </div>
                 </div>
-              </div>
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    A single volume license key
-                  </Text>
-                </div>
-              </div>
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    Online or offline software registration
-                  </Text>
-                </div>
-              </div>
-              <div className="gridItem">
-                <div className="itemContent">
-                  <Text>
-                    Easily enhance the learning process
-                  </Text>
+                <div className="tableCell">
+                  <div className="itemContent">
+                    <Text>
+                      Easily enhance the learning process
+                    </Text>
+                  </div>
                 </div>
               </div>
             </div>

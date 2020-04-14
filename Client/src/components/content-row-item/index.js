@@ -139,7 +139,6 @@ const RowContent = styled.div`
         display: table-cell;
         vertical-align: middle;
         margin: auto;
-        max-width: 500px;
 
         .tableWrapper{
             display: table;

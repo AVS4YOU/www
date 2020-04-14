@@ -9,6 +9,10 @@
     .headerBackgroundImage{
         img{
             object-position: right center !important;
+            position: absolute;
+
+            opacity: 1;
+            transition: opacity 500ms ease 0s;
         }
     }
 
@@ -79,57 +83,71 @@
         .body-education__wrapper{
             padding-top: 80px;
 
-            .grid{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+            .table{
+                display: table;
+                margin:auto;
             }
 
-            .gridItem{
-                padding: 30px;
-                padding-top:0;
+            .tableRow{
+                display:table-row;
 
-                &:nth-child(1){
-                    border-bottom: 0.5px solid rgba(230, 230, 230);
+                &.first{
+                    .tableCell{
+                        &:nth-child(1){
+                            border-bottom: 0.5px solid rgba(230, 230, 230);
+        
+                            .itemContent{
+                                background-image: url(../images/education/education_camera.svg);
+                            }
+                        }
+                        &:nth-child(2){ 
+                            //border: 0.5px solid rgba(230, 230, 230);
+                            border-bottom: 0.5px solid rgba(230, 230, 230);
+                            border-left: 0.5px solid rgba(230, 230, 230);
+                            border-right: 0.5px solid rgba(230, 230, 230);
+        
+                            .itemContent{
+                                background-image: url(../images/education/education_discounts.svg);
+                            }
+                        }
+                        &:nth-child(3){ 
+                            border-bottom: 0.5px solid rgba(230, 230, 230);
+        
+                            .itemContent{
+                                background-image: url(../images/education/education_person.svg);
+                            }
+                        }
+                    }
+                }
 
-                    .itemContent{
-                        background-image: url(../images/education/education_camera.svg);
+                &.second{
+                    .tableCell{
+                        &:nth-child(1) {
+                            .itemContent{
+                                background-image: url(../images/education/education_key.svg);
+                            }
+                        }
+                        &:nth-child(2){
+                            border-left: 0.5px solid rgba(230, 230, 230);
+                            border-right: 0.5px solid rgba(230, 230, 230);
+        
+                            .itemContent{
+                                background-image: url(../images/education/education_monitor.svg);
+                            }
+                        }
+                        &:nth-child(3){
+                            .itemContent{
+                                background-image: url(../images/education/education_lesson.svg);
+                            }
+                        }
                     }
                 }
-                &:nth-child(2){ 
-                    //border: 0.5px solid rgba(230, 230, 230);
-                    border-bottom: 0.5px solid rgba(230, 230, 230);
-                    border-left: 0.5px solid rgba(230, 230, 230);
-                    border-right: 0.5px solid rgba(230, 230, 230);
+            }
 
-                    .itemContent{
-                        background-image: url(../images/education/education_discounts.svg);
-                    }
-                }
-                &:nth-child(3){ 
-                    border-bottom: 0.5px solid rgba(230, 230, 230);
-
-                    .itemContent{
-                        background-image: url(../images/education/education_person.svg);
-                    }
-                }
-                &:nth-child(4) {
-                    .itemContent{
-                        background-image: url(../images/education/education_key.svg);
-                    }
-                }
-                &:nth-child(5){
-                    border-left: 0.5px solid rgba(230, 230, 230);
-                    border-right: 0.5px solid rgba(230, 230, 230);
-
-                    .itemContent{
-                        background-image: url(../images/education/education_monitor.svg);
-                    }
-                }
-                &:nth-child(6){
-                    .itemContent{
-                        background-image: url(../images/education/education_lesson.svg);
-                    }
-                }
+            .tableCell{
+                display:table-cell;
+                padding: 40px;
+                padding-top:0;           
             }
 
             .itemContent{
@@ -177,6 +195,7 @@
         .headerBackgroundImage{
             img{
                 object-position: center center !important;
+                
             }
         }
         .header{
