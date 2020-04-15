@@ -55,19 +55,37 @@ const MainPageWrapper = styled.div`
   .headerBackgroundImage{
     position:absolute !important;
     top: 0px;
-    left: 0px;
+    right:0;
     width: 100%;
+    min-width: 1920px;
     height: 100%;
-    object-fit: cover;
+    object-fit: none;
     object-position: center center;
     opacity: 1;
     transition: opacity 500ms ease 0s;
     z-index: -1;
   }
 
+  @media (max-width: 1500px) {
+    .headerBackgroundImage{
+      right: -20%;
+    }
+  }
+
   @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;
+    }
+
+    .headerBackgroundImage{
+      left: 0;
+      right: auto;
+    }
+
+    .headerDownloadButtons{
+      .headerButtonsWrapper{
+        margin: auto;
+      }
     }
 
     .mobileFormWrapper{

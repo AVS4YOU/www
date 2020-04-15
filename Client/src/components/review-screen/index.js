@@ -61,7 +61,9 @@ const StyledScreen = styled.div`
         }
     }
     @media (max-width: 1500px) {
-        grid-template-columns: 60% auto;
+        .carouselWrapper{
+            width: 55%;
+        }
     }
 
     @media (max-width: 1024px) {
@@ -69,8 +71,16 @@ const StyledScreen = styled.div`
         max-width: 600px;
         margin: auto;
 
+        .carouselWrapper{
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+
         .container{
-            padding-top: 90px;
+            display: block;
+            width: 100%;
+            margin-top: 70px;
         }
     }
 
@@ -79,8 +89,15 @@ const StyledScreen = styled.div`
         padding-top: 50px;
         padding-bottom: 50px;
 
-        .container{
-            padding-top: 60px;
+        .rewTextWrapper{
+            display: block;
+            padding: 0;
+        }
+
+        .quote{
+            max-width: 150px;
+            margin: auto;
+            display: block;
         }
     }
 `;

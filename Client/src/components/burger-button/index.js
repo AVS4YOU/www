@@ -9,6 +9,12 @@ const StyledBurgerButton = styled.div`
     display: flex;
     align-self: center;
     margin-left: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 
     &>span{
         display: block;

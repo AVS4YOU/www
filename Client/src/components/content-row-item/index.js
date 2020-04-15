@@ -9,67 +9,17 @@ import bgBlue from '../../images/main-page/back_picture_blue.svg';
 import bgOrange from '../../images/main-page/back_picture_orange.svg';
 import UAParser from 'ua-parser-js';
 
-const desktopStyles = css`
-    .buttonsWrapper{
-        display: table;
-        align-items: center;
-        padding-top: 60px;
-
-        .secondaryButton{
-            color:#333333;
-            display: table-cell;
-            padding: 0 25px;
-
-            &:hover{
-                text-decoration:underline;
-            }
-        }
-        .scrollLink{
-            display:none;
-
-            .mainButton{
-                display:none;
-            }
-        }
-
-        .mainButton{
-            display: table-cell;
-        }
-    }
-`;
-
-const mobileStyles = css`
-    .buttonsWrapper{
-        .scrollLink{
-            display:block;
-
-            .mainButton{
-                display:block;
-            }
-        }
-
-        .mainButton{
-            display: none;
-            margin: auto;
-            text-align:center;
-        }
-    }
-`;
-
 const RowContent = styled.div`
    padding-top: 180px;
     display:table;
     width:100%;
 
-    &.imgLeft{
+    .HeaderListItem.mobile, .bgOrange.mobile{
+        display:none;
     }
 
     &:first-child{
         padding-top: 0;
-    }
-
-    .scrollLink{
-        display:none;
     }
 
     .rowImage{
@@ -139,14 +89,11 @@ const RowContent = styled.div`
         display: table-cell;
         vertical-align: middle;
         margin: auto;
+        padding: 0 10px;
 
         .tableWrapper{
             display: table;
             margin: auto;
-        }
-
-        &.mobile{
-            display:none;
         }
     }
 
@@ -201,13 +148,27 @@ const RowContent = styled.div`
         padding-bottom: 20px;
         display: inline-flex;
         align-items: center;
-
-        &.mobile{
-            display:none;
-        }
     }
 
-    ${props => props.touchDevice ? mobileStyles : desktopStyles}
+    .buttonsWrapper{
+        display: table;
+        align-items: center;
+        padding-top: 60px;
+
+        .secondaryButton{
+            color:#333333;
+            display: table-cell;
+            padding: 0 25px;
+
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+
+        .mainButton{
+            display: table-cell;
+        }
+    }
 
     @media (max-width: 1500px) {
         grid-gap: 65px;
@@ -219,22 +180,23 @@ const RowContent = styled.div`
     }
 
     @media (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr;
 
-        &.imgLeft{
-            grid-template-columns: 1fr 1fr;
+        .rowImage{
+            max-width: 80%;
         }
     }
 
     @media (max-width: 1050px) {
         grid-gap: 25px;
 
-        &.imgLeft{
-            grid-template-columns: 55% 1fr;
+        &.imgRight{
+            .textContentMobileWidth{
+                display:block;
+            }
         }
 
-        &.imgRight{
-            grid-template-columns: 1fr 55%;
+        .scrollLink{
+            text-decoration: none;
         }
         
         &:first-child{
@@ -250,51 +212,28 @@ const RowContent = styled.div`
             font-weight: 600;
         }
 
-        .bgOrange, .bgBlue{
-            align-items: center;
-            display: flex;
-
-            .rowImage{
-                margin:auto;
-                width:100%;
-            }
-
-            &:before{
-                content: none;
-            }
-        }
-
         .buttonsWrapper{
-            display: table;
+            display: block;
             margin: auto;
             padding-top: 35px;
 
-            .scrollLink{
-                display:block;
-
-                .mainButton{
-                    display:block;
-                }
-            }
-
             .mainButton{
-                display: none;
+                text-align: center;
+                display: table;
                 margin: auto;
-                text-align:center;
             }
 
             .secondaryButton{
-                display: block;
-                margin-top: 20px;
-                width: 100%;
-                text-align: center;       
+                text-align: center;
+                display: table;
+                margin: auto;
+                width: auto;
+                margin-top: 20px;       
             }
         }
-
-        ${props => props.touchDevice ? mobileStyles : desktopStyles}
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 780px) {
 
         padding-top: 50px;
 
@@ -303,7 +242,7 @@ const RowContent = styled.div`
         }
 
         &.imgLeft, &.imgRight{
-            grid-template-columns: 100%;
+            display:block;
         }
 
         .freeTextMobile{
@@ -330,12 +269,37 @@ const RowContent = styled.div`
         }
 
         .flexWrapper{
+            display: block;
+            max-width: 500px;
+
+            .tableWrapper{
+                margin: initial;
+                display: block;
+            }
+        }
+
+        .bgOrange, .bgBlue{
+            margin:auto;
+            display:block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width:100%;
+
+            .rowImage{
+                margin:auto;
+                width:100%;
+
+                &:before{
+                    content: none;
+                }
+            }        
+        }
+
+        .bgOrange{
             display:none;
 
             &.mobile{
-                display: block;
-                max-width: 500px;
-                width: 100%;
+                display:block;
             }
         }
 
@@ -356,7 +320,7 @@ const HeaderMobile = (props) =>
     )
 }
 
-const TextContent = (props) =>
+const TextContent = (props, touchDevice) =>
 {
     return(
         <div className="flexWrapper">
@@ -366,35 +330,26 @@ const TextContent = (props) =>
                     {props.free && <Text as="span" className="flagBackground">Free</Text>}
                 </Text>
                 {props.children}
-                {props.blueButtonLink && 
-                
-                <div className="buttonsWrapper">
-                    {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>Download now</Button>}
-                    {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
-                </div>
-                }
-            </div>
-        </div>
-    )
-}
 
-const TextContentMobile = (props) =>
-{
-    return(
-        <div className="flexWrapper mobile">
-            <div>
-                {props.children}    
+                {touchDevice 
+                    ?
+                        <div className="buttonsWrapper">
+                            {props.scrollTo && 
+                                <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
+                                    <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
+                                </Link>
+                            }
+                            {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
+                        </div>  
+                    :
+                        <div className="buttonsWrapper">
+                            {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>Download now</Button>}
+                            {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
+                        </div>  
+                }
+  
+                
             </div>
-            {props.blueButtonLink && 
-                <div className="buttonsWrapper">
-                    {props.scrollTo && <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
-                            <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
-                        </Link>
-                    }
-                    {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink} textTransform="uppercase">Download now</Button>}
-                    {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} textTransform="uppercase" color="#1E72D2" background={false}>Learn more</Button>}
-                </div>
-            }
         </div>
     )
 }
@@ -416,19 +371,20 @@ const ContentRowItem = (props) => {
                 <div className="bgBlue">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
                 </div>
-                {TextContent(props)}
-                {TextContentMobile(props)}
+                {TextContent(props, touchDevice)}
             </RowContent>
         )
     } else {
         return(
             <RowContent className="imgRight" id={props.id} touchDevice={touchDevice}>
-                {TextContent(props)}
                 {HeaderMobile(props)}
+                <div className="bgOrange mobile">
+                    <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
+                </div>
+                {TextContent(props, touchDevice)}
                 <div className="bgOrange">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
                 </div>
-                {TextContentMobile(props)}
             </RowContent>
         )
     }

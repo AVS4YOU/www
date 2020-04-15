@@ -19,7 +19,7 @@ const FooterLinksWrapper = styled.div`
     @media (max-width: 1050px) {
 
         visibility: hidden;
-        position: absolute;
+        position: relative;
         margin-top: 0;
 
         ${props => props.componentIsRendered && "visibility: visible; position:initial; margin-top: 20px;"}
@@ -42,6 +42,9 @@ const StyledFooterItem = styled.div`
     }
     
     @media (max-width: 1050px) {
+
+        width: 100%;
+        display: block;
 
         .footerHeader{
             margin: 0;

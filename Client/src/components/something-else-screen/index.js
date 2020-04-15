@@ -149,8 +149,7 @@ const StyledWrapper = styled.div`
 
     @media (max-width: 1300px) {
         .productsContainer{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: table;
             grid-gap: 20px;
             max-width: 710px;
             margin: auto;
@@ -181,6 +180,8 @@ const StyledWrapper = styled.div`
     @media (max-width: 750px) {
         .slick-initialized .slick-slide>div{
             background-color: #fff;
+            max-width: 400px;
+            margin: auto;
         }
     }
 
@@ -208,8 +209,16 @@ const StyledProductBox = styled.div`
         max-width: 280px;
     }
 
-    @media (max-width: 1024px){
+    @media (max-width: 1300px){
         height: 100%;
+        display: table !important;
+        margin: auto;
+        max-width: 375px;
+        outline: none;
+
+        &:hover{
+            box-shadow: none;
+        }
     }
 `;
 
@@ -245,7 +254,7 @@ class SomethingElseScreen extends React.PureComponent {
     updateWindowDimensions() {
 
         this.setState({
-            isTablet: window.innerWidth < 1050,
+            isTablet: window.innerWidth < 1300,
             isMobile: window.innerWidth < 750
         })
     }

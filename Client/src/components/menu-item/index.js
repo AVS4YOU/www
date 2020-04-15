@@ -21,21 +21,26 @@ const MediaWidthStyle = css`
 
 const MediaMobileStyle = css`
     height: auto;
-    width: max-content;
+    display: table;
     text-align: center;
     position: static; 
-    display: block;
     cursor: pointer;
     background-color: rgba(253,160,78,0);
     transition: .2s linear;
     margin: auto;
     margin-bottom: 16px;
     
-    .arrowStyle:after{
-        border-top: 1px solid #333333;
-        border-left: 1px solid #333333;
-        transform: rotate(135deg);
-        margin-top:0;
+    .arrowStyle{
+        padding-left:20px;
+
+        &:after{
+            border-top: 1px solid #333333;
+            border-left: 1px solid #333333;
+            transform: rotate(135deg);
+            margin-top:0;
+            right: 8px;
+            top: 8px;
+        }
     }
 
     &:hover{
@@ -50,6 +55,8 @@ const MediaMobileStyle = css`
         color:#333333;
         font-weight: 600;
         font-size: 16px;
+        display: table;
+        position: relative;
     }
 `;
 

@@ -76,6 +76,19 @@ const StyledHeaderDownloadButtons = styled.div`
             }
         }
     }
+
+    @media (max-width: 500px) {
+        .headerButtonsWrapper{
+            .mainButton{
+                display:block;
+            }
+            .secondaryButton{
+                display: table;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+    }
 `;
 
 class HeaderDownloadButtons extends React.PureComponent {

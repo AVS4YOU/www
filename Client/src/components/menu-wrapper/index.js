@@ -67,6 +67,8 @@ const StyledMenuGrid = styled.div`
     }
 
     @media (max-width: 1050px){
+        display:block;
+        
         .mobileBlock{
             display:block;
         }

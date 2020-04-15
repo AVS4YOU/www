@@ -4,10 +4,6 @@ import styled from 'styled-components';
 const StyledWrapper = styled.div`
     max-width: 1440px;
     margin:auto;
-    
-    .scrollLink{
-        display:none;
-    }
 
     @media (max-width: 1500px) {
         max-width: 1240px;
@@ -17,10 +13,6 @@ const StyledWrapper = styled.div`
     @media (max-width: 1050px) {
         .desktopButton{
             display:none;
-        }
-
-        .scrollLink{
-            display:block;
         }
     }
 

@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
-import { CSSTransition } from 'react-transition-group';
 import ContentRowItem from '../content-row-item';
 import ContentSelector from '../content-selector';
-import Link from 'react-scroll';
 
 import videoIcon from '../../images/main-page/icons/video_icon_grey.svg'
 import videoIconWhite from '../../images/main-page/icons/video_icon_for_slider.svg'
@@ -126,9 +124,8 @@ const ContentWrapper = styled.div`
     margin-top: 150px;
     margin-bottom: 100px;
 
-    @media (max-width: 1024px) {
-        margin-top: 0;
-        margin-bottom:0;
+    @media (max-width: 1050px) {
+        margin:auto;
     }
 `;
 
