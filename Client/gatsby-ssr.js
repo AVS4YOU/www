@@ -12,6 +12,9 @@ exports.onRenderBody = ({ setBodyAttributes, setPostBodyComponents }, pluginOpti
   ])
 }
 // Wraps every page in a component
-exports.wrapPageElement = ({ element, props }) => {
-  return <Layout {...props}>{element}</Layout>
-}
+
+
+
+
+
+
