@@ -80,11 +80,11 @@ render(){
             </Link>
           </div>
 
-          <PageContentWrapper>
+          <PageContentWrapper className="videoConverter">
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video_converter_convert_all_key2.png"
+                imageName="video_converter_convert_all_key2.jpg"
                 headerText="Сonvert all key video formats"    
             >
               <Text className="ListItem">Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.</Text>
@@ -95,7 +95,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_converter_convert_video_easily2.png"
+                imageName="video_converter_convert_video_easily2.jpg"
                 headerText="Convert video easily and fast"   
             >
               <Text className="ListItem">Convert videos in one click with improved settings for powerful computers</Text>
@@ -106,7 +106,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="video_converter_convert_a_large_number.png"
+              imageName="vc_convert_a_large_number.jpg"
               headerText="Convert a large number of files at once"    
             >
               <Text className="ListItem"><span>Command Line Mode</span>Automate routine work using ready conversion templates without clicking the program buttons manually</Text>
@@ -114,8 +114,8 @@ render(){
             </ContentRowItem>
 
             <ContentRowItem 
-                imgLeft={false}
-                imageName="video_converter_edit_your_videos.png"
+                imgLeft={false} 
+                imageName="video_converter_edit_your_videos.jpg"
                 headerText="Edit your videos before conversion*"   
             >
               <Text className="ListItem">Split your videos into parts, by chapters, size and cut unnecessary scenes</Text>
@@ -128,7 +128,7 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                imageName="video_converter_slider_popup3.png"
+                imageName="video_converter_slider_popup3.jpg"
                 headerText="Convert and share videos on Web"
             >
               <Text className="ListItem"><span>Save video to any format or modern gadgets</span>Apple iPhone XS/XR/X/8/7, Apple iPad Pro, 2018, 2017, iPad Air 2 etc.; Samsung Galaxy S9/S8/S7, Galaxy Note 9/8/5, Galaxy Tab S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia XZ3/XZ2/XZ1, XZ2/XZ1 Compact</Text>
@@ -164,8 +164,10 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12</Text>
           <ScreenshotsCarousel 
-            imageNames={["video_converter_slider1.png", "video_converter_slider2.png", "video_converter_slider3.png", "video_converter_slider4.png", "video_converter_slider5.png", "video_converter_slider6.png"]}
-            imageNamesPopup={["video_converter_slider_popup1.png", "video_converter_slider_popup2.png", "video_converter_slider_popup3.png", "video_converter_slider_popup4.png", "video_converter_slider_popup5.png", "video_converter_slider_popup6.png"]}
+            maxWidth={734}
+            maxWidthPopup={734}
+            imageNames={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg", "video_converter_slider6.jpg"]}
+            imageNamesPopup={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg", "video_converter_slider6.jpg"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />

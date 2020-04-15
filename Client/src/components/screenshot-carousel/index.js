@@ -77,7 +77,8 @@ const StyledCarouselWrapper = styled.div`
     }
 
     .carouselImage{
-        max-width:722px;   
+        ${props => props.maxWidth ? "max-width:" + props.maxWidth + "px;"  : "max-width:722px;"}
+          
         display:block !important;
         margin:auto;
 
@@ -147,7 +148,7 @@ const StyledPopupCarousel = styled.div`
         align-items: center;
 
         .carouselImage{
-            max-width: 1116px;
+            ${props => props.maxWidthPopup ? "max-width:" + props.maxWidthPopup + "px;"  : "max-width: 1116px;"}
             padding: 100px;
             box-sizing: border-box;
             height: 90vh;
@@ -273,9 +274,9 @@ export default class ScreenshotsCarousel extends Component {
         });
 
     return (
-      <StyledCarouselWrapper id={this.props.id}>
+      <StyledCarouselWrapper maxWidth={this.props.maxWidth} id={this.props.id}>
 
-        <StyledPopupCarousel CarouselIsShow={this.state.CarouselIsShow}>
+        <StyledPopupCarousel maxWidthPopup={this.props.maxWidthPopup} CarouselIsShow={this.state.CarouselIsShow}>
             <Slider
                 className="popupCarousel"
                 asNavFor={this.state.nav2}
