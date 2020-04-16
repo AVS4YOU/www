@@ -11,20 +11,6 @@ import LArrowPopup from '../../images/common/icons/slider_arrow_left.svg';
 import RArrowPopup from '../../images/common/icons/slider_arrow_right.svg';
 
 const StyledCarouselWrapper = styled.div`
-    .slick-dots li button:before{
-        color: #9A9997;
-        opacity: 1;
-        font-size: 10px;
-    }
-
-    .slick-dots li.slick-active button:before{
-        color: #1473E6;
-        opacity: 1;
-    }
-
-    .slick-dots li{
-        margin: 0;
-    }
 
     .slick-list{
         padding-bottom: 20px;
