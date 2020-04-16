@@ -46,7 +46,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                 <Text as="span" className="flagBackground header">Free
                   <div></div>
                 </Text>
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Document Converter")}</Text>
+                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Document Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Free PDF, DOCX, DOC, TXT, ODT, ePub, MOBI document converter. Convert PDF to Word documents and image files for free.</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}

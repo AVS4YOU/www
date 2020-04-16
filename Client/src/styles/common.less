@@ -15,57 +15,42 @@ main {
         position: relative;
         top: 0px;
         color: #fff;
-        padding-right: 30px;
+        padding-right: 17px;
 
         &.header{
-            padding-right: 17px;
             top: -16px;
-
-            &:after{
-                content: '';
-                border: 10px solid transparent;
-                border-left: 10px solid #FDA050;
-                border-top: 10px solid #FDA050;
-                position: absolute;
-                top: 0;
-                right: -13px;
-            }
-
-            &:before{
-                content: '';
-                border: 10px solid transparent;
-                border-bottom: 10px solid #FDA050;
-                border-left: 10px solid #FDA050;
-                position: absolute;
-                top: auto;
-                right: -13px;
-                bottom: 0;
-            }
-
-            &>div{
-                content: '';
-                border: 7px solid transparent;
-                border-top: 7px solid #FB8A29;
-                border-right: 7px solid #FB8A29;
-                position: absolute;
-                top: auto;
-                left: 0;
-                bottom: -14px;
-            }
         }
-    
+
         &:after{
             content: '';
-            background-color: transparent;
-            border: 13px solid transparent;
-            border-right: 13px solid #fff;
-            display: block;
-            width: 0;
-            height: 0;
+            border: 10px solid transparent;
+            border-left: 10px solid #FDA050;
+            border-top: 10px solid #FDA050;
             position: absolute;
             top: 0;
+            right: -13px;
+        }
+
+        &:before{
+            content: '';
+            border: 10px solid transparent;
+            border-bottom: 10px solid #FDA050;
+            border-left: 10px solid #FDA050;
+            position: absolute;
+            top: auto;
+            right: -13px;
             bottom: 0;
-            right: 0;
+        }
+
+        &>div{
+            content: '';
+            border: 7px solid transparent;
+            border-top: 7px solid #FB8A29;
+            border-right: 7px solid #FB8A29;
+            position: absolute;
+            top: auto;
+            left: 0;
+            bottom: -14px;
         }
     }
 
