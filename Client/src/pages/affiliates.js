@@ -123,7 +123,7 @@ render(){
                     <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-blue">
                       Sign up
                     </Button>
-                    <Button textClassName="choose-program__button-text" className="choose-program__button-transparent">
+                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-transparent">
                       Log in
                     </Button>
                   </div>
@@ -142,10 +142,10 @@ render(){
                     Avangate and MyCommerce in case you already have an account in one of these systems.
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://www.shareit.com/affiliateintro.html" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://cp.shareit.com/shareit/affiliates/signup.html?publisherid=200281390&md5=db7bc22a535e2aa3cf7440f7afbc75ce" textClassName="choose-program__button-text" className="choose-program__button-blue">
                       Sign up
                     </Button>
-                    <Button textClassName="choose-program__button-text" className="choose-program__button-transparent">
+                    <Button href="https://account.mycommerce.com/cp/Login" textClassName="choose-program__button-text" className="choose-program__button-transparent">
                       Log in
                     </Button>
                   </div>
