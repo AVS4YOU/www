@@ -28,7 +28,12 @@ const RowContent = styled.div`
         z-index: 2;
         display:block;
         overflow: unset !important;
+        border: 1px solid #ECEFF5;
+        border-radius: 5px;
 
+        img{
+            border-radius: 5px;
+        }
     }
 
     &.imgRight{
