@@ -395,7 +395,12 @@ class FormSupport extends React.Component {
     }
 
     onBlurInput = (e) => {
-        const status = this.validate(e.target.name, e.target.value);
+        let status = ErrorStatus.NoError;
+
+        if (e.target.name == "email" && e.target.value && this.isEmailInvalid(e.target.value)){
+            status = ErrorStatus.Incorrect;
+        }
+
         this.setError(e.target.name, status);
         this.updateInputClassName(e.target.name, status);
         this.updateErrorText(e.target.name, status);
