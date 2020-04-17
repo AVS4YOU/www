@@ -73,6 +73,10 @@ const StyledWrapper = styled.div`
         position:absolute;
         left: 15px;
         bottom:18px;
+
+        &>p{
+            font-weight: 600;
+        }
     }
 
     .slick-dots li button:before{
