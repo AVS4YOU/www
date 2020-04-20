@@ -4,7 +4,6 @@ import Text from '../components/text';
 import Link from '../components/link';
 import Layout from "../components/layout";
 import "../styles/download.less";
-import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
 import PanelCollapse from "../components/panel-collapse";
 import AdaptiveCarousel from "../components/adaptive-carousel"

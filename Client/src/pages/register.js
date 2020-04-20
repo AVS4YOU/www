@@ -1,9 +1,8 @@
 import React from "react";
-import Slider from "react-slick";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
 import Layout from "../components/layout";
-import ContentRowItem from '../components/content-row-item';
+import PanelCollapse from "../components/panel-collapse";
 import "../styles/register.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
@@ -18,6 +17,23 @@ const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
 
 const regExp = /=regnow:(.*):/;
+const currentMounth = new Date().getMonth();
+
+const mounth = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+]
+
 class Register extends React.PureComponent {
 
 constructor(){
@@ -52,37 +68,22 @@ render(){
           <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 
         </Helmet>
         <div className="screen-wrapper">
-          <div className="limited-offer">
-            <Text as="p">In November only!</Text>
-          </div>
           <div className="sale-text">
-            <Text as="h1">70% OFF! <span>Reduced Prices!</span></Text>
+            <Text as="h1">70% OFF! In {mounth[currentMounth]} only!</Text>
           </div>
-          <Text className="get-tools-text" as="h5">Get 5 Multimedia Professional Tools in One Package</Text>
-          <div className="featuresWrapper">
-            <div className="featuresItem">
-              <ImageGQL className="image" imageName="register-endless-trial.png"/>
-              <Text>No trial limitations</Text>
-            </div>
-            <div className="featuresItem">
-              <ImageGQL className="image" imageName="register-free-support-icon.png"/>
-              <Text>No trial limitations</Text>
-            </div>
-            <div className="featuresItem">
-              <ImageGQL className="image" imageName="register-free-updates.png"/>
-              <Text>No trial limitations</Text>
-            </div>
-          </div>
-          <ImageGQL className="product-boxes-image" imageName="register-product-boxes.png"/>
+          <Text className="get-tools-text" as="h5">AVS4YOU Multimedia Suite for Windows</Text>
           <div className="buy-block-wrapper">
             <div className="buy-block"> 
               <Text className="subscription-time-text" as="h3">1 year</Text>
-              <Text className="access-sub-text">access subscription</Text>
+              <Text className="access-sub-text">subscription</Text>
+              <Text className="access-limit">1 year access</Text>
               <Text className="sub-now-text">Subscribe now for</Text>
-              <Text className="prev-price-text">$69.00</Text>
-              <Text className="current-price-text">$39.00</Text>
+              <div className="price-block">
+                <Text className="prev-price-text">$69.00</Text>
+                <Text className="current-price-text"><span>$</span>39.00</Text>
+              </div>
               <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text last">prices valid up to November 30, 2019</Text>
+              <Text className="limited-offer-text last">prices valid till April 30, 2020</Text>
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
@@ -92,22 +93,30 @@ render(){
                 Buy now
               </Button>
             </div>
-            <div className="buy-block">
-              <Text className="subscription-time-text" as="h3">Unlimited</Text>
-              <Text className="access-sub-text">access subscription</Text>
-              <Text className="sub-now-text">Subscribe now for</Text>
-              <Text className="prev-price-text">$199.00</Text>
-              <Text className="current-price-text">$59.00</Text>
-              <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text last">prices valid up to November 30, 2019</Text>
-              <Button
-                href={this.state.hrefUnlim}
-                backgroundColor="orange"
-                color="#ffffff"
-                className="buy-block-button"
-              >
-                Buy now
-              </Button>
+            <div className="buy-block unlimited-block">
+              <div className="popular-banner">
+                <Text as="p">Most popular</Text>
+              </div>
+              <div className="unlimited-block-content">
+                <Text className="subscription-time-text" as="h3">Unlimited</Text>
+                <Text className="access-sub-text">subscription</Text>
+                <Text className="access-limit">Unlimited access</Text>
+                <Text className="sub-now-text">Subscribe now for</Text>
+                <div className="price-block">
+                  <Text className="prev-price-text">$199.00</Text>
+                  <Text className="current-price-text"><span>$</span>59.00</Text>
+                </div>
+                <Text className="limited-offer-text">Time limited offer</Text>
+                <Text className="limited-offer-text last">prices valid till April 30, 2020</Text>
+                <Button
+                  href={this.state.hrefUnlim}
+                  backgroundColor="orange"
+                  color="#ffffff"
+                  className="buy-block-button"
+                >
+                  Buy now
+                </Button>
+              </div>
             </div>
           </div>
           <div className="availableCarts">
@@ -117,131 +126,98 @@ render(){
             Why choose AVS4YOU?
           </Text>
           <div className="why-choose-wrapper">
+            <tr className="first-tr">
+              <div className="why-choose-item">
+                <ImageGQL className="icon" imageName="register-video-icon.png"></ImageGQL>
+                <Text className="text">15 multimedia programs in 1 package</Text>
+              </div>
+              <div className="why-choose-item">
+                <ImageGQL className="icon" imageName="register-secure-icon.png"/>
+                <Text className="text">100% secure, ad-free, virus-free</Text>
+              </div>
+              <div className="why-choose-item">
+                <ImageGQL className="icon" imageName="register-guarantee-icon.png"/>
+                <Text className="text">30-day Money-back guarantee</Text>
+              </div>
+            </tr>
+
+            <tr>
             <div className="why-choose-item">
-              <ImageGQL className="icon" imageName="register-secure-icon.png"/>
-              <Text className="text">100% secure</Text>
-            </div>
-            <div className="why-choose-item">
-              <ImageGQL className="icon" imageName="register-support-icon.png"/>
-              <Text className="text">First-rate Support Service</Text>
-            </div>
-            <div className="why-choose-item">
-              <ImageGQL className="icon" imageName="register-guarantee-icon.png"/>
-              <Text className="text">30-day Money-back guarantee</Text>
-            </div>
-            <div className="why-choose-item">
-              <ImageGQL className="icon" imageName="register-many-years-icon.png"/>
-              <Text className="text">10+ years on the market</Text>
-            </div>
-            <div className="why-choose-item">
-              <ImageGQL className="icon" imageName="register-world-icon.png"/>
-              <Text className="text">20.000.000 satisfied customers</Text>
-            </div>
+                <ImageGQL className="icon" imageName="register-many-years-icon.png"/>
+                <Text className="text">No watermark</Text>
+              </div>
+              <div className="why-choose-item">
+                <ImageGQL className="icon" imageName="register-support-icon.png"/>
+                <Text className="text">Free support, free updates</Text>
+              </div>  
+              <div className="why-choose-item">
+                <ImageGQL className="icon" imageName="register-world-icon.png"/>
+                <Text className="text">20M happy users worldwides</Text>
+              </div>
+             
+            </tr>
           </div>
-          <Text as="h2" className="common__heading">
-            What programs offers AVS4YOU subscription?
-          </Text>
+          <div className="questions-wrapper">
 
-          <div className="programs-slider-wrapper">
-            <Slider
-              dots={true}
-              infinite={true}
-              speed={500}
-              slidesToShow={1}
-              slidesToScroll={1}
-              arrows={false}
-            >
-              <ContentRowItem 
-                imgLeft={true}
-                imageName="slider_video_editor.png"
-                headerText="AVS Video Editor"
-                free={false}
-                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                smallButtonLink="/avs-video-editor"  
-                scrollTo="headerCoupon"    
-              >
-                <Text className="ListItem" color="#555555" fontWeight={500}>Edit all key video formats</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join video files</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Apply effects and transitions</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Add audio, comments, subtitles</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Capture PC screen</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Use Chroma key, Slow Motion</Text>
-              </ContentRowItem>
-
-              <ContentRowItem 
-                imgLeft={true}
-                imageName="slider_video_converter.png"
-                headerText="AVS Video Converter"
-                free={false}
-                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                smallButtonLink="/avs-free-video-converter" 
-                scrollTo="headerCoupon"
-              >
-                <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
-                <Text  className="ListItem" color="#555555" fontWeight={500}>Smart conversion presets</Text>
-                <Text  className="ListItem" color="#555555" fontWeight={500}>GPU conversion acceleration</Text>
-              </ContentRowItem>
-
-              <ContentRowItem 
-                imgLeft={true}
-                imageName="slider_video_remaker.png"
-                headerText="AVS Video ReMaker"
-                free={false}
-                blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
-                smallButtonLink="/avs-video-remaker"   
-                scrollTo="headerCoupon"   
-              >
-                <Text className="ListItem" color="#555555" fontWeight={500}>Edit video files without reconversion</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Support of all key video formats</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join video files</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Transfer video from camcorders and video cameras</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Capture PC screen</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Create DVD and Blu-ray menus and discs</Text>
-              </ContentRowItem>
-
-              <ContentRowItem 
-                imgLeft={true}
-                imageName="slider_audio_converter.png"
-                headerText="AVS Audio Converter"
-                free={false}
-                blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
-                smallButtonLink="/avs-audio-converter"   
-                scrollTo="headerCoupon"   
-              >
-                <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Modify audio file information</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Create Audiobooks and Ringtones</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Export audio from video</Text>
-             </ContentRowItem>
-
-             <ContentRowItem 
-                imgLeft={true}
-                imageName="slider_audio_editor.png"
-                headerText="AVS Audio Editor"
-                free={false}
-                blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                smallButtonLink="/avs-audio-editor"  
-                scrollTo="headerCoupon"    
-              >
-                <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Improve sound quality</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Remove noise</Text>
-                <Text className="ListItem" color="#555555" fontWeight={500}>Text to Speech</Text>
-              </ContentRowItem>
-            </Slider>
-          </div>
-          <div className="trademark-wrapper">
-            <Text className="trademark-text">
-              <a href="/">Read FAQ</a> to find out more information about registration terms and license types. 
-              If for some reason you are not satisfied with our software and would like your payment to be refunded, please check our <a href="/">Refund Policy</a> page.  
+            <Text as="h2" className="common__heading">
+              Frequently asked questions
             </Text>
-            <Text className="trademark-text">
-              *We guarantee that you can have your money back within 30 days since the purchase of any software from the <a href="/">www.avs4you.com</a> web site.
-              <a href="/">Click here</a> to find out more on terms of moneyback.
-            </Text>
-            <Text className="trademark-text">By using our services, you agree to our use of cookies.</Text>
+
+            <div className="questions-block">
+              <PanelCollapse className="panelCollapse" panelName="What is the difference between 1 Year and Unlimited Subscription types?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">1 Year Subscription grants you a full access to all AVS4YOU programs during a year whereas there are no 
+                    time limitations for using AVS4YOU Unlimited Subscription.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="What happens when 1 year Subscription gets expired?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">All AVS4YOU programs become unregistered and a watermark will be added to the output files.</Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="What are the limitations of unactivated AVS4YOU software?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">A voice logo is applied to output audio files and in the video programs a watermark is 
+                    added to the output files throughout the whole video.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="How can I get rid of the annoying voice logo and watermark?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">It is necessary to buy an AVS4YOU subscription and activate the software with the license key.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName=" May I transfer the license key to a new computer?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">According to AVS4YOU license policy it is not allowed to transfer the license from one computer to another. 
+                    In this case it is necessary to buy an additional subscription.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="May I use AVS4YOU software on multiple computers with the same license key?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">One license key can be used to activate the software on a single computer. 
+                    If you want to use the software on multiple computers you need to buy the appropriate number of subscriptions.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="Is my payment information secure?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">Yes, it is. All transactions are processed via the 2Checkout payment gateway. 
+                    2Checkout provides the highest standards of online security and guarantees the safety of your payments and personal information.
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName="I want a refund. How can I get my money back?">
+                <div className="collapseContent">
+                    <Text className="hiddenText">If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days. Check our Refund Policy ( <a target="_blank" href="https://support.avs4you.com/refund.aspx">https://support.avs4you.com/refund.aspx</a> ) to find out if you are eligible for a full refund.
+                    </Text>
+                </div>
+              </PanelCollapse>
+            </div>
+
           </div>
         </div>
       </Layout>
