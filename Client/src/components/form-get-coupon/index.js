@@ -59,6 +59,11 @@ const StyledForm = styled.div`
         }
     }
 
+    .formCheckbox{
+        .errorBlock{
+            bottom: -80px;
+        }
+    }
 
     .recaptchaWrapper{
         margin-top: 18px;
