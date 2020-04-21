@@ -10,6 +10,13 @@ import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
+import VideoIcon from '../images/register/register-video-icon.svg';
+import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
+import ManyYearsIcon from '../images/register/register-many-years-icon.svg';
+import SecureIcon from '../images/register/register-secure-icon.svg';
+import SupportIcon from '../images/register/register-support-icon.svg';
+import PeopleIcon from '../images/register/register-people-icon.svg';
+
 const defaultHrefUnlim = "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1";
 const defaultHrefOneYear = "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1";
 
@@ -67,9 +74,9 @@ render(){
           <script src={withPrefix('avangate-affiliates-load.js')} type="text/javascript" />
           <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 
         </Helmet>
-        <div className="screen-wrapper">
+        <div className="screen-wrapper first">
           <div className="sale-text">
-            <Text as="h1">70% OFF! In {mounth[currentMounth]} only!</Text>
+            <Text as="h1">70% OFF! <br className="mobile-br"/> In {mounth[currentMounth]} only!</Text>
           </div>
           <Text className="get-tools-text" as="h5">AVS4YOU Multimedia Suite for Windows</Text>
           <div className="buy-block-wrapper">
@@ -122,41 +129,44 @@ render(){
           <div className="availableCarts">
             <ImageGQL imageName="register-available-carts.png"/>
           </div>
+        </div>
+        <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
             Why choose AVS4YOU?
           </Text>
           <div className="why-choose-wrapper">
             <tr className="first-tr">
               <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-video-icon.png"></ImageGQL>
+                <img src={VideoIcon} className="icon" />
                 <Text className="text">15 multimedia programs in 1 package</Text>
               </div>
               <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-secure-icon.png"/>
+                <img src={SecureIcon} className="icon"/>
                 <Text className="text">100% secure, ad-free, virus-free</Text>
               </div>
               <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-guarantee-icon.png"/>
+                <img src={GuaranteeIcon} className="icon"/>
                 <Text className="text">30-day Money-back guarantee</Text>
               </div>
             </tr>
 
             <tr>
             <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-many-years-icon.png"/>
+                <img src={ManyYearsIcon} className="icon"/>
                 <Text className="text">No watermark</Text>
               </div>
               <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-support-icon.png"/>
+                <img src={SupportIcon} className="icon"/>
                 <Text className="text">Free support, free updates</Text>
               </div>  
               <div className="why-choose-item">
-                <ImageGQL className="icon" imageName="register-world-icon.png"/>
+                <img src={PeopleIcon} className="icon"/>
                 <Text className="text">20M happy users worldwides</Text>
-              </div>
-             
+              </div>     
             </tr>
           </div>
+        </div>
+        <div>
           <div className="questions-wrapper">
 
             <Text as="h2" className="common__heading">

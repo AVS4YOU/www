@@ -1,6 +1,15 @@
 .register{
+    .mobile-br{
+        display: none;
+    }
     .screen-wrapper{
-        padding-top: 40px;
+        padding-top: 120px;
+
+        &.first{
+            padding-top:100px;
+            padding-bottom:120px;
+            background-color:#F9F9F9;
+        }
     }
 
     .sale-text{
@@ -164,7 +173,6 @@
         max-width:535px;
         margin:auto;
         margin-top: 70px;
-        margin-bottom: 100px;
     }
 
     .why-choose-wrapper{
@@ -193,6 +201,7 @@
             max-width: 86px;
             margin:auto;
             margin-bottom:10px;
+            display: block;
         }
 
         .text{
@@ -263,6 +272,28 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .register { 
+        .buy-block-wrapper{
+            display:block;
+
+            .buy-block{
+                display: block;
+                max-width: 600px;
+                margin: auto;
+
+                &.unlimited-block{
+                    margin: auto; 
+                }
+
+                &:first-child{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1100px) {
     .register{ 
         .slick-slide{
@@ -278,19 +309,6 @@
         .buy-block-wrapper{
             grid-gap: 25px;
         }
-
-        .why-choose-wrapper{ 
-            display: flex;
-            flex-wrap: wrap;
-
-            .why-choose-item{
-                width: 45%;
-                max-width: 200px;
-                margin-bottom: 50px;
-                padding: 0 20px;
-                box-sizing: border-box;
-            }
-        }
     }
 }
 
@@ -301,26 +319,99 @@
             box-sizing: border-box;
         }
 
+        .common__heading{
+            padding: 0 10px;
+        }
+
         .screen-wrapper{
             padding: 10px;
             padding-top: 35px;
-        }
 
-        .sale-text > h1{
-            font-size: 28px;
-            text-align: center;
-
-            span{
-                display:block;
+            &.first{
+                padding-top:35px;
+                padding-bottom:60px;
             }
         }
 
+        .availableCarts{
+            display:none;
+        }
+
+        .buy-block-wrapper .limited-offer-text{
+            font-weight: 500;
+        }
+
+        .why-choose-wrapper{ 
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 0;
+
+            tr{
+                display: block;
+
+                &.first-tr .why-choose-item{
+                    padding-bottom: 60px;
+                }
+            }
+
+            .why-choose-item{
+                display: block;
+                padding-bottom: 60px;
+                max-width: 200px;
+            }
+
+            .text{
+                font-size: 16px;
+            }
+
+            .icon{
+                max-width: 80px;
+            }
+        }
+
+        .questions-wrapper{
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        .questions-block{
+            margin-top:64px;
+
+            .panelName{
+                font-size: 18px;
+                padding: 30px 43px;
+                padding-left: 16px;
+
+                &:before{
+                    width: 16px;
+                    height: 16px;
+                    top: 36px;
+                    right: 13px;
+                }
+            }
+
+            .collapseContent{
+                padding: 25px 16px;
+                padding-top:0;
+            }
+        }
+
+        .sale-text > h1{
+            font-size: 36px;
+            text-align: center;
+            font-weight: 700;
+        }
+
         .get-tools-text{
-            font-size: 20px;
+            font-size: 16px;
         }
 
         .buy-block-wrapper{
-            grid-template-columns: 1fr;
+            margin-top:40px;
+
+            .buy-block{
+                min-width:0;
+            }
 
             .current-price-text{
                 font-size: 48px;
@@ -340,45 +431,14 @@
 
         .availableCarts{
             margin-top: 40px;
-            margin-bottom: 50px;
-        }
-
-        .why-choose-wrapper {
-            margin-bottom: 55px;
-
-            .text{
-                font-size: 16px;
-            }
-
-            .icon{
-                max-width: 80px;
-            }
         }
     }
 }
 
-@media (max-width: 460px) {
-    .register{ 
-        .why-choose-wrapper {
-            margin-top: 56px;
-            margin-bottom: 35px;
-
-            .why-choose-item{
-                max-width:none;
-                width: 100%;
-            }
-
-            .text{
-                font-size: 16px;
-            }
-
-            display: grid;
-            flex-wrap: wrap;
-            grid-template-columns: 1fr;
-
-            .icon{
-                max-width: 60px;
-            }
+@media (max-width: 450px) {
+    .register{
+        .mobile-br{
+            display: block;
         }
     }
 }
