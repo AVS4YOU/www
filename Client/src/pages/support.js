@@ -103,30 +103,6 @@ render(){
               <Link className="common-info-block__link" to="/avs-audio-converter">
                 <Text className="common-info-block__text">AVS Audio Converter</Text>
               </Link>
-
-              <Link className="common-info-block__link read-more-target" to="/avs-free-document-converter">
-                <Text className="common-info-block__text">AVS Document Converter</Text>
-              </Link>
-              <Link className="common-info-block__link read-more-target" to="/avs-free-registry-cleaner">
-                <Text className="common-info-block__text">AVS Registry Cleaner</Text>
-              </Link>
-              <Link className="common-info-block__link read-more-target" to="/avs-free-disc-creator">
-                <Text className="common-info-block__text">AVS Disc Creator</Text>
-              </Link>
-              <Link className="common-info-block__link read-more-target" to="/avs-free-photo-editor">
-                <Text className="common-info-block__text">AVS Photo Editor</Text>
-              </Link>
-              <Link className="common-info-block__link read-more-target" to="/avs-free-image-converter">
-                <Text className="common-info-block__text">AVS Image Converter</Text>
-              </Link>
-              <Link className="common-info-block__link read-more-target" to="/avs-free-media-player">
-                <Text className="common-info-block__text">AVS Media Player</Text>
-              </Link>
-
-              <label className="read-more-trigger" htmlFor="read-more-input">
-                <Text className="common-info-block__text closed">More product</Text>
-                <Text className="common-info-block__text opened">Show less</Text>
-              </label>
             </div>
 
             <div className="common-info-block">
