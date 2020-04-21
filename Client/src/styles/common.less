@@ -38,15 +38,17 @@ main {
 
         &:after{
             content: '';
-            border: 10px solid transparent;
-            border-left: 10px solid #FDA050;
-            border-top: 10px solid #FDA050;
             position: absolute;
+            display: block;
             top: 0;
             right: -13px;
+            margin: 0em;
+            border: 1em solid #FDA050;
+            border-right-color: transparent;
+            border-left-width: 0em;
         }
 
-        &:before{
+       /* &:before{
             content: '';
             border: 10px solid transparent;
             border-bottom: 10px solid #FDA050;
@@ -55,7 +57,7 @@ main {
             top: auto;
             right: -13px;
             bottom: 0;
-        }
+        }*/
 
         &>div{
             content: '';
