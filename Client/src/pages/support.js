@@ -109,9 +109,9 @@ render(){
               <Text as="h4" className="common-info-block__headline">
                 AVS4YOU License
               </Text>
-              <Link className="common-info-block__link" to="/">
+              <a className="common-info-block__link" href="http://reg.avs4you.com/quickretrieval.aspx">
                 <Text className="common-info-block__text">License retrieval</Text>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
