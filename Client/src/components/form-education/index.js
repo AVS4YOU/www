@@ -151,11 +151,36 @@ const StyledForm = styled.div`
         width: 100%;  
         margin: 0;
         margin-bottom: 25px;
+        position:relative;
+        z-index:1;
 
         &.textArea .main-input{
             max-width: 100%;
             min-width: 100%;
             height:160px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &.focus{
+            .label-input{
+                background-color:transparent;
+                z-index:1;
+
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: #ffffff;
+                    display: block;
+                    top: 7px;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
         }
     }
 
@@ -164,8 +189,6 @@ const StyledForm = styled.div`
     }
 
     .errorBlock{
-        border: 1px solid #CECECE;
-        z-index: 1;
 
         &:before{
             content: none;
@@ -595,7 +618,8 @@ class FormEducation extends React.Component {
                             tabIndex="2"
 
                             inputName="comment"
-                            inputLabel="Give us a brief description of your specific needs"
+                            inputLabel=""
+                            placeholder="Give us a brief description of your specific needs"
 
                             value={this.state.comment.value}
                             inputClassName={this.state.comment.inputClassName}

@@ -1,25 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import Text from '../text';
-import AlertIcon from '../../images/common/icons/alert.svg';
+import AlertIcon from '../../images/common/icons/alert-icon.svg';
 
 const StyledErrorBlock = styled.div`
     display:none;
     position:absolute;
-    bottom: -57px;
-    padding: 15px;
-    background-color:#ffffff;
+    bottom: -20px;
     background-image: url(${AlertIcon});
     background-repeat: no-repeat;
-    background-position: 12px 50%;
     width: auto;
     max-width: 200px;
     margin: auto;
     left: 0;
-    border-radius: 5px;
-    padding-left: 37px;
     box-sizing: border-box;
     z-index: 1;
+    border: none;
+    padding: 0;
+    padding-left: 19px;
+    background-position: 0px 50%;
+    background-size: 11px;
 
     &:before{
         content: '';
@@ -36,7 +36,7 @@ const StyledErrorBlock = styled.div`
 function ErrorBlock(props){
     return(
         <StyledErrorBlock className={props.className}>
-            <Text fontSize={13} fontWeight={500}>{props.children}</Text>
+            <Text color="#FE1646" fontSize={13} fontWeight={500}>{props.children}</Text>
         </StyledErrorBlock>
     )
 }

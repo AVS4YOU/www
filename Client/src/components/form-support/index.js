@@ -159,8 +159,6 @@ const StyledForm = styled.div`
     }
 
     .errorBlock{
-        border: 1px solid #CECECE;
-        z-index: 1;
 
         &:before{
             content: none;
@@ -549,7 +547,8 @@ class FormSupport extends React.Component {
                             tabIndex="2"
 
                             inputName="comment"
-                            inputLabel="Give us a brief description of your specific needs"
+                            inputLabel=""
+                            placeholder="Give us a brief description of your specific needs"
 
                             value={this.state.comment.value}
                             inputClassName={this.state.comment.inputClassName}

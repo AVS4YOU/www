@@ -19,13 +19,41 @@ const StyledInputWrapper = styled.div`
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         font-size: 14px;
-        padding: 16px 16px 8px;
+        padding: 12px 16px;
         font-weight: 500;
         box-sizing: border-box;
         color: #333;
         outline: none;
         border: 1px solid #fff;
         font-family: 'Open Sans',sans-serif,Arial;
+
+        &::-moz-placeholder { 
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            opacity:1;
+        }
+
+        &::placeholder{
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            opacity:1;
+        }
+
+        &::-webkit-input-placeholder{
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            opacity:1;
+        }
+
+        &::-ms-input-placeholder{
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            opacity:1;
+        }
     }
 
     .errorBlock{
@@ -48,15 +76,16 @@ const StyledInputWrapper = styled.div`
     &.focus{
 
         .main-input{
-            background-color: #eef8ff;
             border: 1px solid #2a9ee5;
         }
 
         .label-input{
             font-size: 11px;
-            top: 2px;
-            left: 17px;
+            top: -7px;
+            left: 12px;
             color: #1296e6;
+            background-color: #fff;
+            padding: 0 5px;
         }
     }
 
@@ -81,7 +110,7 @@ class Input extends React.PureComponent {
 
     render() {
 
-        const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required, inputClassName } = this.props;
+        const { className, as: tag, inputLabel, onKeyPress, onChange, onFocus, onBlur, inputName, value, errorText, required, inputClassName, placeholder } = this.props;
 
         return (
             <StyledInputWrapper
@@ -89,6 +118,7 @@ class Input extends React.PureComponent {
 
                 <StyledInput
                     as={tag}
+                    placeholder={placeholder}
                     name={inputName}
                     value={value}
                     onKeyPress={onKeyPress}
@@ -97,7 +127,7 @@ class Input extends React.PureComponent {
                     onChange={onChange}
                     className="main-input"
                 />
-                <Text className="label-input">{`${inputLabel}${required ? '*' : ''}`}</Text>
+                {inputLabel && <Text className="label-input">{`${inputLabel}${required ? '*' : ''}`}</Text>}
                 {errorText &&
                     <ErrorBlock className="errorBlock">
                         {errorText}

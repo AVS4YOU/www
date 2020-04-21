@@ -17,6 +17,49 @@ const StyledForm = styled.div`
         position: relative;
     }
 
+    .inputsWrapper, .formCheckbox {   
+        
+        .focus{
+            .main-input{
+                
+            }
+    
+            .label-input{
+                font-size: 11px;
+                top: 2px;
+                left: 17px;
+                color: #1296e6;
+                padding: 0;
+            }
+        }
+
+        .error{
+            color:#FF0C3E;
+        }
+
+        .errorBlock{
+            bottom: -57px;
+            padding: 15px;
+            background-color:#ffffff;
+            background-position: 12px 50%;
+            border-radius: 5px;
+            padding-left: 37px;
+
+            border: none;
+            padding: 15px 15px 15px 37px;
+            background-size: 15px;
+
+            p{
+                color:#333;
+            }
+        }
+        
+        .main-input{
+            padding: 16px 16px 8px;
+        }
+    }
+
+
     .recaptchaWrapper{
         margin-top: 18px;
     }
