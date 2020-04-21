@@ -85,6 +85,10 @@ const StyledFooter = styled.footer`
     }
 
 `;
+
+const date = new Date();
+const currentYear = date.getFullYear();
+
 class Footer extends React.Component{
 
     render(){
@@ -166,7 +170,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> 2020 'All rights reserved'.</Text>
+                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> {currentYear} 'All rights reserved'.</Text>
             </StyledFooter>
         )
     }
