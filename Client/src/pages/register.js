@@ -23,8 +23,15 @@ const defaultHrefOneYear = "https://store.avs4you.com/order/checkout.php?PRODS=6
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
 
+function getLastDayOfMonth(year, month) {
+  let date = new Date(year, month + 1, 0);
+  return date.getDate();
+}
+
 const regExp = /=regnow:(.*):/;
-const currentMounth = new Date().getMonth();
+const date = new Date();
+const currentMounth = date.getMonth();
+const currentYear = date.getFullYear();
 
 const mounth = [
   "January",
@@ -90,7 +97,7 @@ render(){
                 <Text className="current-price-text"><span>$</span>39.00</Text>
               </div>
               <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text last">prices valid till April 30, 2020</Text>
+              <Text className="limited-offer-text last">prices valid till {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
@@ -114,7 +121,7 @@ render(){
                   <Text className="current-price-text"><span>$</span>59.00</Text>
                 </div>
                 <Text className="limited-offer-text">Time limited offer</Text>
-                <Text className="limited-offer-text last">prices valid till April 30, 2020</Text>
+                <Text className="limited-offer-text last">prices valid till {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
                 <Button
                   href={this.state.hrefUnlim}
                   backgroundColor="orange"
