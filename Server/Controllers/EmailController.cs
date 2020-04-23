@@ -4,16 +4,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using System.Web.Mvc;
 using avs4youAPI.Models;
+using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
 
 namespace avs4youAPI.Controllers
 {
-    [EnableCors(origins: "http://localhost:8000", headers: "*", methods: "*")]
     public class EmailController : ApiController
     {
         [HttpPost]
+        [EnableCors(origins: "http://localhost:8000", headers: "*", methods: "*")]
         public string Post([FromBody]Email emailData)
         {
             SmtpSender Sender = new SmtpSender();

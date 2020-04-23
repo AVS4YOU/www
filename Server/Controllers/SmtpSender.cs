@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Net.Mime;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Configuration;
@@ -125,7 +126,7 @@ namespace avs4youAPI.Controllers
 
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(SalesEmail, emailBody);
+                return SendEmail(SalesEmail, emailBody, emailData.FileName);
 
             }
             catch (Exception ex)
@@ -134,7 +135,7 @@ namespace avs4youAPI.Controllers
                 return false;
             }
         }
-        private bool SendEmail(string to, string emailBody)
+        private bool SendEmail(string to, string emailBody, string fileName = "")
         {
             int Port;
             if (
@@ -155,6 +156,20 @@ namespace avs4youAPI.Controllers
                 mail.IsBodyHtml = true;
                 mail.Subject = "Test Mail";
                 mail.Body = emailBody;
+
+                if (!String.IsNullOrEmpty(fileName))
+                {
+
+                    string filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), "App_Data", "File", "temp", fileName);
+                    Attachment attach = new Attachment(filePath, MediaTypeNames.Application.Octet);
+
+                    ContentDisposition disposition = attach.ContentDisposition;
+                    disposition.CreationDate = System.IO.File.GetCreationTime(filePath);
+                    disposition.ModificationDate = System.IO.File.GetLastWriteTime(filePath);
+                    disposition.ReadDate = System.IO.File.GetLastAccessTime(filePath);
+
+                    mail.Attachments.Add(attach);
+                }
 
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);

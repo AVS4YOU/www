@@ -227,17 +227,39 @@ class FormSupport extends React.Component {
     }
 
     request = () => {
+
         if (this.verifyData()) {
 
-            this.sendForm({
-                UserEmail: this.state.email.value,
-                UserName: this.state.name.value,
-                Comment: this.state.comment.value,
-                numOfSubs: this.state.subscriptions.value,
-                RecaptchaValue: this.state.recaptchaValue,
-                MailPatternName: "ru-support.html",
-                MailType: "support"
-            });
+            if(Object.keys(this.state.file).length != 0) {
+                let formData = new FormData();
+
+                formData.append(this.state.file.file0.name, this.state.file.file0);
+
+                this.sendFile(formData).then(
+                    this.sendForm({
+                        UserEmail: this.state.email.value,
+                        UserName: this.state.name.value,
+                        Comment: this.state.comment.value,
+                        numOfSubs: this.state.subscriptions.value,
+                        RecaptchaValue: this.state.recaptchaValue,
+                        MailPatternName: "ru-support.html",
+                        MailType: "support",
+                        FileName: this.state.file.file0.name
+                    })
+                ).catch(
+                    console.log()
+                );
+            } else {
+                this.sendForm({
+                    UserEmail: this.state.email.value,
+                    UserName: this.state.name.value,
+                    Comment: this.state.comment.value,
+                    numOfSubs: this.state.subscriptions.value,
+                    RecaptchaValue: this.state.recaptchaValue,
+                    MailPatternName: "ru-support.html",
+                    MailType: "support"
+                })
+            }
 
         } else {
             console.log("form invalid")
@@ -389,7 +411,7 @@ class FormSupport extends React.Component {
 
         this.setState({
             file: { ...field, [inputId]: file }
-        })
+        });
     }
 
     onBlurInput = (e) => {
@@ -428,6 +450,7 @@ class FormSupport extends React.Component {
 
     onClickAddFile = () => {
         const field = this.state.fileInputsId;
+        debugger
 
         if (field.length < 10) {
             field.push("file" + field.length);
@@ -444,6 +467,29 @@ class FormSupport extends React.Component {
 
     onClick = () => {
         this.request();
+    };
+
+    sendFile = async (formData) => {
+        let url = "http://localhost:8088/api/file";
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData,
+            });
+
+            let responseTest = await response.text();
+
+            if (responseTest.indexOf("error") > -1) {
+                throw new Error("Send file error");
+            } else {
+                console.log("Files sended")
+                return true;
+            }
+
+        } catch (error) {
+            throw new Error(error);
+        }
     };
 
     sendForm = async (data) => {

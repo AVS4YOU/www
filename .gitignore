@@ -4,3 +4,42 @@
 /Server/.vs
 /Server/bin
 /Server/obj
+
+/Server/[Dd]ebug/
+/Server/[Dd]ebugPublic/
+/Server/[Rr]elease/
+/Server/[Rr]eleases/
+/Server/x64/
+/Server/x86/
+/Server/[Ww][Ii][Nn]32/
+/Server/[Aa][Rr][Mm]/
+/Server/[Aa][Rr][Mm]64/
+/Server/bld/
+/Server/[Bb]in/
+/Server/[Oo]bj/
+/Server/[Ll]og/
+/Server/[Ll]ogs/
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2015/2017 cache/options directory
+/Server.vs/
