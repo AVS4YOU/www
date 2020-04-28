@@ -9,6 +9,7 @@ import SomethingElseScreen from '../components/something-else-screen';
 import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import ImageGQL from '../components/image-gql';
+import ScrollUpButton from '../components/scroll-up-button';
 
 const MainPageWrapper = styled.div`
 
