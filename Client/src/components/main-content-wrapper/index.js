@@ -4,6 +4,7 @@ import Text from '../text';
 import PageContentWrapper from '../page-content-wrapper';
 import ContentRowItem from '../content-row-item';
 import ContentSelector from '../content-selector';
+import ScrollUpButton from '../scroll-up-button';
 
 import videoIcon from '../../images/main-page/icons/video_icon_grey.svg'
 import videoIconWhite from '../../images/main-page/icons/video_icon_for_slider.svg'
@@ -15,6 +16,28 @@ import imageIconWhite from '../../images/main-page/icons/image_icon_white.svg'
 const StyledMainContentWrapper = styled.div`
     display:block;
     padding-bottom: 100px;
+
+    .ScrollTopWrapper{
+        position: absolute;
+        top: 100px;
+        z-index: 5;
+        cursor:pointer;
+
+        .ScrollTopMain{
+            position: fixed;
+            bottom: -30px;
+            right: 30px;
+            opacity:0;
+            transition: linear 200ms;
+        }
+
+        &.show{
+            .ScrollTopMain{
+                opacity:1;
+                bottom:30px;
+            }
+        }
+      }
 
     .alert-enter {
         opacity: 0;
@@ -84,6 +107,25 @@ const StyledMainContentWrapper = styled.div`
     }
 
     @media (max-width: 750px) {
+
+        .ScrollTopWrapper{
+            .ScrollTopMain{
+                right: 15px;
+                opacity:0;
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            &.show{
+                .ScrollTopMain{
+                    bottom:15px;
+                }
+            }
+        }
+
         .top-selector-buttons-wrapper{
             
             .top-button{
@@ -135,7 +177,9 @@ class MainContentWrapper extends React.PureComponent{
         return(
             <StyledMainContentWrapper>
                 <PageContentWrapper>
+                    <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
                     <Text fontSize={46} fontWeight={600} id="mainBodyHeader" className="bodyHeader">Turn your ideas into exciting content</Text>
+                    
                     <ContentSelector
                         className="content-wrapper"
                         buttonNames={["Video","Audio","Image"]}

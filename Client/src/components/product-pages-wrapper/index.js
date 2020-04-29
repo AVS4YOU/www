@@ -166,6 +166,10 @@ const StyledPageWrapper = styled.div`
     &>div{
       display:table-cell;
       width: 50%;
+   
+      &:first-child{
+        padding-right:40px;
+      }
     }
   }
 
@@ -207,6 +211,16 @@ const StyledPageWrapper = styled.div`
   }
 
   @media (max-width: 750px) {
+
+    .specificationGrid>div{
+      display:block;
+      width:100%;
+
+      &:first-child{
+        padding-right:0;
+        margin-bottom:45px;
+      }
+    }
 
     .headerContentWrapper{
       padding-top: 50px;
@@ -261,6 +275,8 @@ const StyledPageWrapper = styled.div`
 
     .requirementsHeader{
       font-size: 16px;
+      max-width:none;
+      text-align:center;
     }
 
     .systemWrapper span{
