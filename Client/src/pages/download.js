@@ -204,7 +204,7 @@ render(){
           </AdaptiveCarousel>
         </div>
 
-        <div className="screen-wrapper background-color">
+        <div className="screen-wrapper background-color questions-block">
           <Text className="common__heading" as="h3">Read first</Text>
           <div className="questions-wrapper">
             <PanelCollapse className="panelCollapse" panelName="How to download and install the AVS4YOU software on your PC?">
