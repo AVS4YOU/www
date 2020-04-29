@@ -232,8 +232,12 @@ class FormSupport extends React.Component {
 
             if(Object.keys(this.state.file).length != 0) {
                 let formData = new FormData();
+                let fileNames = [];
 
-                formData.append(this.state.file.file0.name, this.state.file.file0);
+                for(let file in this.state.file){
+                    formData.append(this.state.file[file].name, this.state.file[file]);
+                    fileNames.push(this.state.file[file].name);
+                }
 
                 this.sendFile(formData).then(
                     this.sendForm({
@@ -244,7 +248,7 @@ class FormSupport extends React.Component {
                         RecaptchaValue: this.state.recaptchaValue,
                         MailPatternName: "ru-support.html",
                         MailType: "support",
-                        FileName: this.state.file.file0.name
+                        FileNames: fileNames
                     })
                 ).catch(
                     console.log()
@@ -450,7 +454,6 @@ class FormSupport extends React.Component {
 
     onClickAddFile = () => {
         const field = this.state.fileInputsId;
-        debugger
 
         if (field.length < 10) {
             field.push("file" + field.length);
@@ -470,7 +473,7 @@ class FormSupport extends React.Component {
     };
 
     sendFile = async (formData) => {
-        let url = "http://localhost:8088/api/file";
+        let url = "http://avs4youapi.teamlab.info/api/file";
 
         try {
             const response = await fetch(url, {
@@ -494,7 +497,7 @@ class FormSupport extends React.Component {
 
     sendForm = async (data) => {
 
-        let url = "http://localhost:8088/api/email";
+        let url = "http://avs4youapi.teamlab.info/api/email";
 
         try {
             const response = await fetch(url, {
