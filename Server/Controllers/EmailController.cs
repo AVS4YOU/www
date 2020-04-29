@@ -16,7 +16,7 @@ namespace avs4youAPI.Controllers
     public class EmailController : ApiController
     {
         [HttpPost]
-        [EnableCors(origins: "http://localhost:8000", headers: "*", methods: "*")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public string Post([FromBody]Email emailData)
         {
             SmtpSender Sender = new SmtpSender();

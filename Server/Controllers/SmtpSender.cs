@@ -126,8 +126,14 @@ namespace avs4youAPI.Controllers
 
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(SalesEmail, emailBody, emailData.FileName);
+                if (emailData.FileNames == null)
+                {
+                    return SendEmail(SalesEmail, emailBody);
 
+                } else
+                {
+                    return SendEmail(SalesEmail, emailBody, emailData.FileNames);
+                }
             }
             catch (Exception ex)
             {
@@ -135,7 +141,8 @@ namespace avs4youAPI.Controllers
                 return false;
             }
         }
-        private bool SendEmail(string to, string emailBody, string fileName = "")
+
+        private bool SendEmail(string to, string emailBody, params string[] fileNames)
         {
             int Port;
             if (
@@ -151,29 +158,34 @@ namespace avs4youAPI.Controllers
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient(SmtpServerName);
 
+                SmtpServer.EnableSsl = true;
+
                 mail.From = new MailAddress(Sender);
                 mail.To.Add(to);
                 mail.IsBodyHtml = true;
                 mail.Subject = "Test Mail";
                 mail.Body = emailBody;
 
-                if (!String.IsNullOrEmpty(fileName))
+                if (fileNames.Length > 0)
                 {
 
-                    string filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), "App_Data", "File", "temp", fileName);
-                    Attachment attach = new Attachment(filePath, MediaTypeNames.Application.Octet);
+                    for(var i = 0; i< fileNames.Length; i++)
+                    {
+                        string filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), "App_Data", "File", "temp", fileNames[i]);
+                        Attachment attach = new Attachment(filePath, MediaTypeNames.Application.Octet);
 
-                    ContentDisposition disposition = attach.ContentDisposition;
-                    disposition.CreationDate = System.IO.File.GetCreationTime(filePath);
-                    disposition.ModificationDate = System.IO.File.GetLastWriteTime(filePath);
-                    disposition.ReadDate = System.IO.File.GetLastAccessTime(filePath);
+                        ContentDisposition disposition = attach.ContentDisposition;
+                        disposition.CreationDate = System.IO.File.GetCreationTime(filePath);
+                        disposition.ModificationDate = System.IO.File.GetLastWriteTime(filePath);
+                        disposition.ReadDate = System.IO.File.GetLastAccessTime(filePath);
 
-                    mail.Attachments.Add(attach);
+                        mail.Attachments.Add(attach);
+                    }            
                 }
 
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);
-                //SmtpServer.Send(mail);
+                SmtpServer.Send(mail);
 
                 return true;
 

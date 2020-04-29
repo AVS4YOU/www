@@ -17,7 +17,7 @@ namespace avs4youAPI.Controllers
     public class FileController : ApiController
     {
         [HttpPost]
-        [EnableCors(origins: "http://localhost:8000", headers: "*", methods: "*")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public string Upload()
         {
             var request = HttpContext.Current.Request;
