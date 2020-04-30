@@ -262,17 +262,40 @@ class FormEducation extends React.Component {
     request = () => {
         if (this.verifyData()) {
 
-            this.sendForm({
-                UserEmail: this.state.email.value,
-                UserName: this.state.name.value,
-                Comment: this.state.comment.value,
-                Occupation: this.state.occupation.value,
-                RecaptchaValue: this.state.recaptchaValue,
-                Institution: this.state.institution.value,
-                numOfSubs: this.state.subscriptions.value,
-                MailPatternName: "ru-education.html",
-                MailType: "education"
-            });
+            if(Object.keys(this.state.file).length != 0) {
+                let formData = new FormData();
+                let fileNames = [];
+
+                for(let file in this.state.file){
+                    formData.append(this.state.file[file].name, this.state.file[file]);
+                    fileNames.push(this.state.file[file].name);
+                }
+
+                this.sendFile(formData).then(
+                    this.sendForm({
+                        UserEmail: this.state.email.value,
+                        UserName: this.state.name.value,
+                        Comment: this.state.comment.value,
+                        numOfSubs: this.state.subscriptions.value,
+                        RecaptchaValue: this.state.recaptchaValue,
+                        MailPatternName: "ru-education.html",
+                        MailType: "education",
+                        FileNames: fileNames
+                    })
+                ).catch(
+                    console.log()
+                );
+            } else {
+                this.sendForm({
+                    UserEmail: this.state.email.value,
+                    UserName: this.state.name.value,
+                    Comment: this.state.comment.value,
+                    numOfSubs: this.state.subscriptions.value,
+                    RecaptchaValue: this.state.recaptchaValue,
+                    MailPatternName: "ru-education.html",
+                    MailType: "education"
+                })
+            }
 
         } else {
             console.log("form invalid")
@@ -481,9 +504,32 @@ class FormEducation extends React.Component {
         this.request();
     };
 
+    sendFile = async (formData) => {
+        let url = "http://avs4youapi.teamlab.info/api/file";
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData,
+            });
+
+            let responseTest = await response.text();
+
+            if (responseTest.indexOf("error") > -1) {
+                throw new Error("Send file error");
+            } else {
+                console.log("Files sended")
+                return true;
+            }
+
+        } catch (error) {
+            throw new Error(error);
+        }
+    };
+
     sendForm = async (data) => {
 
-        let url = "http://192.168.0.102:8088/api/email";
+        let url = "http://avs4youapi.teamlab.info/api/email";
 
         try {
             const response = await fetch(url, {
