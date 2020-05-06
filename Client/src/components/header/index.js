@@ -17,13 +17,9 @@ const Header = ({availableLocales, locale, t}) => {
                 <DropdownElement path="/avs-audio-editor" headerText="AVS Audio Editor" descriptionText="Easily edit and create audio"/>
                 <DropdownElement path="/avs-audio-converter" headerText="AVS Audio Converter" descriptionText="Convert all popular audio formats"/>
             </MenuItem>
-            <MenuItem col={2} menuItemText={t("Free software")}>
+            <MenuItem menuItemText={t("Free software")}>
                 <DropdownElement path="/avs-free-media-player" headerText="AVS Media Player" descriptionText="Watch audio and video"/>
-                <DropdownElement path="/avs-free-photo-editor" headerText="AVS Photo Editor" descriptionText="Edit and improve photos"/>
-                <DropdownElement path="/avs-free-image-converter" headerText="AVS Image Converter" descriptionText="Convert and compress images"/>
-                <DropdownElement path="/avs-free-document-converter" headerText="AVS Document Converter" descriptionText="Convert all kinds of documents"/>
-                <DropdownElement path="/avs-free-disc-creator" headerText="AVS Disc Creator" descriptionText="Write DVD/CD/Blu-ray discs"/>
-                <DropdownElement path="/avs-free-registry-cleaner" headerText="AVS Registry Cleaner" descriptionText="Clean and fix registry errors"/>
+                <DropdownElement path="/avs-free-video-converter" headerText="AVS Video Converter" descriptionText="Convert all key video formats"/>
             </MenuItem>
             <MenuItem path="/download" menuItemText={t("Download")} isDropdown={false} />
             <MenuItem path="/register" menuItemText={t("Buy now")} isDropdown={false} />
