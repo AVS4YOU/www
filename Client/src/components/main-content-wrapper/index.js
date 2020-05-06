@@ -55,7 +55,7 @@ const StyledMainContentWrapper = styled.div`
     }
 
     .top-selector-buttons-wrapper{
-        max-width: 720px;
+        max-width: 500px;
         width: 100%;
         box-sizing: border-box;
         
@@ -182,7 +182,7 @@ class MainContentWrapper extends React.PureComponent{
                     
                     <ContentSelector
                         className="content-wrapper"
-                        buttonNames={["Video","Audio","Image"]}
+                        buttonNames={["Video","Audio"]}
                         disableArrows={true}
                     >
                         <ContentWrapper>
@@ -233,8 +233,22 @@ class MainContentWrapper extends React.PureComponent{
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Capture PC screen</Text>
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Create DVD and Blu-ray menus and discs</Text>
                             </ContentRowItem>
+                            <ContentRowItem 
+                                imgLeft={true}
+                                imageName="media_player_formats2x.png"
+                                headerText="AVS Media Player"
+                                free={true}
+                                blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
+                                smallButtonLink="/avs-free-media-player"   
+                                scrollTo="headerCoupon"   
+                            >
+                                <Text className="ListItem" color="#555555" fontWeight={500}>Open and watch videos in all popular formats</Text>
+                                <Text className="ListItem" color="#555555" fontWeight={500}>Listen to your favourite music</Text>
+                                <Text className="ListItem" color="#555555" fontWeight={500}>View images as a slideshow</Text>
+                                <Text className="ListItem" color="#555555" fontWeight={500}>Create personal playlists</Text>
+                                <Text className="ListItem" color="#555555" fontWeight={500}>Take snapshots</Text>
+                            </ContentRowItem>
                         </ContentWrapper>
-
 
                         <ContentWrapper>
                             <ContentRowItem 
@@ -267,40 +281,6 @@ class MainContentWrapper extends React.PureComponent{
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Modify audio file information</Text>
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Create Audiobooks and Ringtones</Text>
                                 <Text className="ListItem" color="#555555" fontWeight={500}>Export audio from video</Text>
-                            </ContentRowItem>
-                        </ContentWrapper>
-
-                        <ContentWrapper>
-                            <ContentRowItem 
-                                imgLeft={false}
-                                imageName="slider_avs_photo_editor.png"
-                                headerText="AVS Photo Editor"
-                                free={true}
-                                blueButtonLink="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe"
-                                smallButtonLink="/avs-free-photo-editor"   
-                                scrollTo="headerCoupon"   
-                            >
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Open and edit all key image formats</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Play with colors, shades and tints</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Rotate, crop pictures without quality loss</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Remove red eye effect</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>RAdjust color balance, brightness, contrast and saturation</Text>
-                            </ContentRowItem>
-
-                            <ContentRowItem 
-                                imgLeft={true}
-                                imageName="slider_image_converter.png"
-                                headerText="AVS Image Converter"
-                                free={true}
-                                blueButtonLink="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
-                                smallButtonLink="/avs-free-image-converter"      
-                                scrollTo="headerCoupon"
-                            >
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key image formats</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Automatically resize your photos to popular formats</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Rotate, crop pictures without quality loss</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Get the effect of aging in old photographs</Text>
-                                <Text className="ListItem" color="#555555" fontWeight={500}>Use the black-and-white effect and etc.</Text>
                             </ContentRowItem>
                         </ContentWrapper>
                     </ContentSelector>

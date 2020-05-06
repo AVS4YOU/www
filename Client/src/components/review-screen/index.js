@@ -104,7 +104,7 @@ const StyledScreen = styled.div`
 
 const ReviewsScreen = (props) => {
     return(
-        <PageContentWrapper>
+        <PageContentWrapper className={props.className}>
             <StyledScreen>
                 <div className="carouselWrapper">
                     <ReviewsSlider 

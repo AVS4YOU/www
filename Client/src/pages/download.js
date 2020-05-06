@@ -91,6 +91,18 @@ render(){
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
+            
+            <div className="product-box">
+              <div className="product-image media-player"></div>
+              <Text className="product-name" as="h5">AVS Media Player</Text>
+              <div className="tech-params">
+                <Text as="p">Current Version: 9.1.2.340</Text>
+                <Text as="p">Release Date: 11/05/2019</Text>
+                <Text as="p">File Size: 155.58 MB</Text>
+                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+              </div>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+            </div>
           </AdaptiveCarousel>
         </div>
 
@@ -125,86 +137,7 @@ render(){
           </AdaptiveCarousel>
         </div>
 
-
-        <div className="screen-wrapper products-wrap">
-          <div className="product-icon free"></div>
-          <Text className="common__heading" as="h3">Free Software</Text>
-          <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
-            <div className="product-box">
-              <div className="product-image registry-cleaner"></div>
-              <Text className="product-name" as="h5">AVS Registry Cleaner</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe" to="headerContentWrapper"/>
-            </div>
-
-            <div className="product-box">
-              <div className="product-image disc-creator"></div>
-              <Text className="product-name" as="h5">AVS Disc Creator</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe" to="headerContentWrapper"/>
-            </div>
-
-            <div className="product-box">
-              <div className="product-image photo-editor"></div>
-              <Text className="product-name" as="h5">AVS Photo Editor</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe" to="headerContentWrapper"/>
-            </div>
-
-            <div className="product-box">
-              <div className="product-image image-converter"></div>
-              <Text className="product-name" as="h5">AVS Image Convertor</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe" to="headerContentWrapper"/>
-            </div>
-
-            <div className="product-box">
-              <div className="product-image media-player"></div>
-              <Text className="product-name" as="h5">AVS Media Player</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
-            </div>
-
-            <div className="product-box">
-              <div className="product-image document-converter"></div>
-              <Text className="product-name" as="h5">AVS Document Converter</Text>
-              <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
-              </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe" to="headerContentWrapper"/>
-            </div>
-          </AdaptiveCarousel>
-        </div>
-
-        <div className="screen-wrapper background-color questions-block">
+        <div className="screen-wrapper questions-block">
           <Text className="common__heading" as="h3">Read first</Text>
           <div className="questions-wrapper">
             <PanelCollapse className="panelCollapse" panelName="How to download and install the AVS4YOU software on your PC?">

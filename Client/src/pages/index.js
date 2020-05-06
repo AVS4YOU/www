@@ -19,6 +19,10 @@ const MainPageWrapper = styled.div`
     font-weight: 600;
   }
 
+  .background-color{
+    background-color:#FFF9F1;
+  }
+
   .headerText{
     padding-bottom:25px;
   }
@@ -185,8 +189,10 @@ class mainPage extends React.PureComponent {
         </div>
         
         <MainContentWrapper />
-        <SomethingElseScreen scrollTo="headerCoupon"/>
-        <ReviewScreen />
+        <div className="background-color">
+          <ReviewScreen/>
+        </div>
+        
       </MainPageWrapper>
     </Layout>
   );
