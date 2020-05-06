@@ -542,7 +542,7 @@ class FormEducation extends React.Component {
 
             let responseTest = await response.text();
 
-            if (responseTest.indexOf("Error") > -1) {
+            if (false) { //responseTest.indexOf("Error") > -1
                 console.log(responseTest)
             } else {
                 this.setState({

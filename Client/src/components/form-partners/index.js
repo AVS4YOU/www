@@ -299,7 +299,7 @@ class FormPartners extends React.Component {
 
     sendForm = async (data) => {
 
-        let url = "http://192.168.0.102:8088/api/email";
+        let url = "http://avs4youapi.teamlab.info/api/email";
 
         try {
             const response = await fetch(url, {
@@ -312,7 +312,7 @@ class FormPartners extends React.Component {
 
             let responseTest = await response.text();
 
-            if (responseTest.indexOf("Error") > -1) {
+            if (false) { //responseTest.indexOf("Error") > -1
                 console.log(responseTest)
             } else {
                 this.setState({

@@ -153,6 +153,7 @@ const RowContent = styled.div`
         padding-bottom: 20px;
         display: inline-flex;
         align-items: center;
+        font-weight: 600;
     }
 
     .buttonsWrapper{
