@@ -106,7 +106,7 @@ render(){
           </AdaptiveCarousel>
         </div>
 
-        <div className="screen-wrapper background-color products-wrap">
+        <div className="screen-wrapper border-top products-wrap">
           <div className="product-icon audio"></div>
           <Text className="common__heading" as="h3">Audio Software</Text>
           <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
