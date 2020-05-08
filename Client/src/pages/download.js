@@ -142,120 +142,53 @@ render(){
           <div className="questions-wrapper">
             <PanelCollapse className="panelCollapse" panelName="How to download and install the AVS4YOU software on your PC?">
               <div className="collapseContent">
-                <div className="linksWrapper">
-                  <Link href="/">
-                    <Text as="p">Introduction</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 1: Download AVS Video Converter</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 2: Install AVS Video Converter</Text>
-                  </Link>
+                <div className="info-block">
+                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>.</Text>   
                 </div>
                 <div className="info-block">
-                  <Text as="h5">Introduction</Text>
-                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>. 
-                    Below we'll describe how to do it, taking AVS Video Converter as an example. 
-                    Please bear in mind that the same procedure can be performed to download any AVS4YOU software.
-                  </Text>
-
-                  <Text as="h5">Step 1: Download AVS Video Converter</Text>
-                  <Text>Open our website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>, go to <Link href="/download"><Text as="span">Downloads page</Text></Link> and 
-                    select a product you need from the list. 
-                    In our case it will be AVS Video Converter. 
-                    Left-click the Download now button. Left-click the Download now button.
-                  </Text>
+                  <Text>Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example.</Text>
+                </div>
+                <div className="info-block">
+                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx"><Text as="span">Read more &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
 
             <PanelCollapse className="panelCollapse" panelName="How to activate the AVS4YOU software?">
               <div className="collapseContent">
-                <div className="linksWrapper">
-                  <Link href="/">
-                    <Text as="p">Introduction</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 1: Download AVS Video Converter</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 2: Install AVS Video Converter</Text>
-                  </Link>
+                <div className="info-block">
+                  <Text>It is necessary to purchase an AVS4YOU subscription at <Link href="/register"><Text as="span">www.avs4you.com</Text></Link> in order to activate AVS4YOU software and remove the watermark and other limitations. Once your order is processed you will get a unique license key via e-mail to activate the software.</Text>   
                 </div>
                 <div className="info-block">
-                  <Text as="h5">Introduction</Text>
-                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>. 
-                    Below we'll describe how to do it, taking AVS Video Converter as an example. 
-                    Please bear in mind that the same procedure can be performed to download any AVS4YOU software.
-                  </Text>
-                  
-                  <Text as="h5">Step 1: Download AVS Video Converter</Text>
-                  <Text>Open our website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>, go to <Link href="/download"><Text as="span">Downloads page</Text></Link> and 
-                    select a product you need from the list. 
-                    In our case it will be AVS Video Converter. 
-                    Left-click the Download now button. Left-click the Download now button.
-                  </Text>
+                  <Text>Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems.</Text>
+                </div>
+                <div className="info-block">
+                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx"><Text as="span">Read more &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
 
             <PanelCollapse className="panelCollapse" panelName="How to reinstall AVS4YOU programs?">
               <div className="collapseContent">
-                <div className="linksWrapper">
-                  <Link href="/">
-                    <Text as="p">Introduction</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 1: Download AVS Video Converter</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 2: Install AVS Video Converter</Text>
-                  </Link>
+                <div className="info-block">
+                  <Text>If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www.avs4you.com, it is recommended to reinstall the software.</Text>   
                 </div>
                 <div className="info-block">
-                  <Text as="h5">Introduction</Text>
-                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>. 
-                    Below we'll describe how to do it, taking AVS Video Converter as an example. 
-                    Please bear in mind that the same procedure can be performed to download any AVS4YOU software.
-                  </Text>
-                  
-                  <Text as="h5">Step 1: Download AVS Video Converter</Text>
-                  <Text>Open our website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>, go to <Link href="/download"><Text as="span">Downloads page</Text></Link> and 
-                    select a product you need from the list. 
-                    In our case it will be AVS Video Converter. 
-                    Left-click the Download now button. Left-click the Download now button.
-                  </Text>
+                  <Text>Below we'll describe how to reinstall the AVS4YOU software smoothly.</Text>
+                </div>
+                <div className="info-block">
+                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-reinstall-avs4you-programs.aspx"><Text as="span">Read more &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
 
             <PanelCollapse className="panelCollapse" panelName="How to uninstall AVS4YOU programs?">
               <div className="collapseContent">
-                <div className="linksWrapper">
-                  <Link href="/">
-                    <Text as="p">Introduction</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 1: Download AVS Video Converter</Text>
-                  </Link>
-                  <Link href="/">
-                    <Text as="p">Step 2: Install AVS Video Converter</Text>
-                  </Link>
+                <div className="info-block">
+                  <Text>In case you need to uninstall the AVS4YOU programs follow this detailed guide. Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict.</Text>   
                 </div>
                 <div className="info-block">
-                  <Text as="h5">Introduction</Text>
-                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>. 
-                    Below we'll describe how to do it, taking AVS Video Converter as an example. 
-                    Please bear in mind that the same procedure can be performed to download any AVS4YOU software.
-                  </Text>
-                  
-                  <Text as="h5">Step 1: Download AVS Video Converter</Text>
-                  <Text>Open our website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>, go to <Link href="/download"><Text as="span">Downloads page</Text></Link> and 
-                    select a product you need from the list. 
-                    In our case it will be AVS Video Converter. 
-                    Left-click the Download now button. Left-click the Download now button.
-                  </Text>
+                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-uninstall-AVS4YOU-programs.aspx"><Text as="span">Read more &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
