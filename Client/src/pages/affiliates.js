@@ -104,7 +104,7 @@ render(){
 
             <ContentSelector
                 className="choose-program__content-wrapper"
-                buttonNames={["Avangate","MyCommerce Share-it"]}
+                buttonNames={["Avangate","Impact Radius"]}
             >
                 <div className="choose-program__item">
                   <Text as="h2" className="common__heading">
@@ -130,7 +130,7 @@ render(){
                 </div>
                 <div className="choose-program__item">
                   <Text as="h2" className="common__heading">
-                    MyCommerce Share-it Affiliate Program
+                    Impact Radius Affiliate Program
                   </Text>
                   <Text className="choose-program__list">
                     Register as an affiliate in your preferred affiliate program. 
@@ -142,10 +142,10 @@ render(){
                     Avangate and MyCommerce in case you already have an account in one of these systems.
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://cp.shareit.com/shareit/affiliates/signup.html?publisherid=200281390&md5=db7bc22a535e2aa3cf7440f7afbc75ce" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="http://app.impact.com/campaign-mediapartner-signup/AVS4YOU.brand?type=dm" textClassName="choose-program__button-text" className="choose-program__button-blue">
                       Sign up
                     </Button>
-                    <Button href="https://account.mycommerce.com/cp/Login" textClassName="choose-program__button-text" className="choose-program__button-transparent">
+                    <Button href="https://impact.com/" textClassName="choose-program__button-text" className="choose-program__button-transparent">
                       Log in
                     </Button>
                   </div>
