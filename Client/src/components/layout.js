@@ -14,6 +14,7 @@ import "../styles/common.less"
 import Footer from "./footer";
 import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
+import { withPrefix } from "gatsby";
 
 const StyledLayout = styled.div`
   min-width: 300px;
@@ -99,6 +100,7 @@ class Layout extends React.PureComponent {
           {this.props.pageContext.originalPath}
 
           <link rel="canonical" href={"https://www.avs4you.com/" + this.pageName}></link>
+          <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
           {languageCodes.map((languageCode)=> {
             let language = languageCode.split("-")[0];
             language = language === "en" ? "" : language + "/";
@@ -116,6 +118,8 @@ class Layout extends React.PureComponent {
               f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMB2TZX');
             `}
           </script>
+
+          <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
         </Helmet>
         <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
         <StyledLayout className={this.props.className}>
