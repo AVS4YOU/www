@@ -10,6 +10,7 @@ import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-education';
 import ContentSelector from '../components/content-selector';
 import ContentRowItem from '../components/content-row-item';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class education extends React.PureComponent {
 
@@ -48,6 +49,7 @@ render(){
                     <Text>
                       5 Multimedia Tools Suite fro audio and video processing
                     </Text>
+                    <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
                   </div>
                 </div>
                 <div className="tableCell">
@@ -177,7 +179,7 @@ render(){
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
-                    href="/"
+                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
                     textTransform="uppercase"
                   >
                       Download education price list

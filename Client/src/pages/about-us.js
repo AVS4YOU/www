@@ -5,6 +5,7 @@ import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
+import ScrollUpButton from '../components/scroll-up-button';
 
 class aboutUs extends React.PureComponent {
 
@@ -43,6 +44,7 @@ render(){
             make your work with digital video and audio smooth and effective and 
             let you remain on the cutting edge of high technological advances.
           </Text>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
         <div className="stats-wrapper">
           <div className="stats-wrapper__box">

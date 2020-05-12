@@ -11,6 +11,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class avsFreeDocumentConverter extends React.PureComponent {
 
@@ -61,6 +62,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
             <ImageGQL className="headerImage" imageName="document_converter_header.png" style={{ maxWidth: "1564px" }} alt="header-image" />
             <ImageGQL className="headerImage mobile" imageName="document_converter_header.png" style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
           </div>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">Overview</Text>

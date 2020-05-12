@@ -8,6 +8,7 @@ import "../styles/support.less";
 import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-support';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class support extends React.PureComponent {
 
@@ -31,6 +32,7 @@ render(){
             </div>
           </div>
         </div>
+        
         <div className="body-reseller screen-wrapper">
           <Text as="h2" className="common__heading">
             Find answers to any questions
@@ -49,6 +51,7 @@ render(){
               <a className="common-info-block__link" href="https://support.avs4you.com/refund.aspx">
                 <Text className="common-info-block__text">Refund policy</Text>
               </a>
+              <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
 
             <div className="common-info-block">

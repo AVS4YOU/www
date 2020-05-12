@@ -7,6 +7,7 @@ import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
 import ReviewScreen from '../components/review-screen';
 import ContentSelector from '../components/content-selector';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class Affiliates extends React.PureComponent {
 
@@ -41,6 +42,7 @@ render(){
               <Text className="common-info-block__text">
                 AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors.
               </Text>
+              <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
 
             <div className="common-info-block">

@@ -12,6 +12,7 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoReMaker} from '../../static/products-info';
+import ScrollUpButton from '../components/scroll-up-button';
 
 import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
@@ -63,6 +64,7 @@ render(){
             <ImageGQL className="headerImage" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
             <ImageGQL className="headerImage mobile" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">Overview</Text>

@@ -10,6 +10,7 @@ import AdaptiveCarousel from "../components/adaptive-carousel"
 import HeaderDownloadButtons from "../components/header-download-buttons";
 import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class Download extends React.PureComponent {
 
@@ -41,9 +42,11 @@ render(){
                 </div>
             </div>
         </div>
+       
         <div className="screen-wrapper products-wrap">
           <div className="product-icon video"></div>
           <Text className="common__heading" as="h3">Video Software</Text>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image video-remaker">

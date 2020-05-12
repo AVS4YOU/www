@@ -9,6 +9,7 @@ import ImageGQL from "../components/image-gql";
 import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
+import ScrollUpButton from '../components/scroll-up-button';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -143,6 +144,7 @@ render(){
           <div className="availableCarts">
             <ImageGQL imageName="register-available-carts.png"/>
           </div>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
