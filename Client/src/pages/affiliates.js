@@ -39,7 +39,7 @@ render(){
                 50% initial commission
               </Text>
               <Text className="common-info-block__text">
-                AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors
+                AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors.
               </Text>
             </div>
 
@@ -49,7 +49,7 @@ render(){
               </Text>
               <Text className="common-info-block__text">
                 It is easy and free to join our affiliate program. You have to register in one of 
-                the suggested affiliate systems or find and join AVS4YOU in your existing affiliate account
+                the suggested affiliate systems or find and join AVS4YOU in your existing affiliate account.
               </Text>
             </div>
 
@@ -59,7 +59,7 @@ render(){
               </Text>
               <Text className="common-info-block__text">
                 AVS4YOU offers a set of professional programs, 
-                a perfect fit for both novices in multimedia prossing and experts. AVS4YOU suite is feature rich and allows to perform all multimedia tasks efficiently
+                a perfect fit for both novices in multimedia prossing and experts. AVS4YOU suite is feature rich and allows to perform all multimedia tasks efficiently.
               </Text>
             </div>
 
@@ -68,7 +68,7 @@ render(){
                 Accurate performance tracking
               </Text>
               <Text className="common-info-block__text">
-                Monitor traffic and sales in real time, enjoy powerful reporting and analytics
+                Monitor traffic and sales in real time, enjoy powerful reporting and analytics.
               </Text>
             </div>
 
@@ -77,7 +77,7 @@ render(){
                 Seasonal exclusive offers 
               </Text>
               <Text className="common-info-block__text">
-                With special deals you can gain even more than 50% on AVS4YOU products boosting your sales to the full
+                With special deals you can gain even more than 50% on AVS4YOU products boosting your sales to the full.
               </Text>
             </div>
 
@@ -87,7 +87,7 @@ render(){
               </Text>
               <Text className="common-info-block__text">
                 Affiliates may use AVS4YOU brand keywords in their PPC campaigns. 
-                For the use of trademarks in the ad titles it is obligatory to receive a written consent. Please submit your request at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>
+                For the use of trademarks in the ad titles it is obligatory to receive a written consent. Please submit your request at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>.
               </Text>
             </div>
           </div>
@@ -161,7 +161,7 @@ render(){
                 Place links to your website
               </Text>
               <Text className="choose-program__content-text">
-                Please use our link generator to build correct links and place them on your website, blog or channel. 
+                Please use our <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">link generator</a> to build correct links and place them on your website, blog or channel. 
                 You can generate a direct download link or a custom link
               </Text>
             </div>
