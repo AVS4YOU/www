@@ -154,7 +154,7 @@ render(){
             <tr className="first-tr">
               <div className="why-choose-item">
                 <img src={VideoIcon} className="icon" />
-                <Text className="text">15 multimedia programs in 1 package</Text>
+                <Text className="text">5 multimedia programs in 1 package</Text>
               </div>
               <div className="why-choose-item">
                 <img src={SecureIcon} className="icon"/>
@@ -238,7 +238,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName="I want a refund. How can I get my money back?">
                 <div className="collapseContent">
-                    <Text className="hiddenText">If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days. Check our Refund Policy ( <a target="_blank" href="https://support.avs4you.com/refund.aspx">https://support.avs4you.com/refund.aspx</a> ) to find out if you are eligible for a full refund.
+                    <Text className="hiddenText">If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days. <a href="https://support.avs4you.com/refund.aspx" target="_blank">Check our Refund Policy</a> to find out if you are eligible for a full refund.
                     </Text>
                 </div>
               </PanelCollapse>
