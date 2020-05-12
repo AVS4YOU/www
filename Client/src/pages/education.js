@@ -141,18 +141,6 @@ render(){
                   <Text className="education__ListItem" color="#555555" fontWeight={500}>Save your essays, reports and other documents in PDF format. 
                     Easily convert your DOC, DOCX files to PDF with AVS Document Converter and protect them with a personal watermark</Text>
                 </ContentRowItem>
-                <div className="content-button-wrapper">
-                  <Button 
-                    tabIndex="1"
-                    backgroundColor="blue" 
-                    padding="20px 35px"
-                    fontSize={18} 
-                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
-                    textTransform="uppercase"
-                  >
-                      Download education price list
-                  </Button>
-                </div>
               </div>
 
               <div className="education__content-wrapper">

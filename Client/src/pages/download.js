@@ -9,6 +9,7 @@ import PanelCollapse from "../components/panel-collapse";
 import AdaptiveCarousel from "../components/adaptive-carousel"
 import HeaderDownloadButtons from "../components/header-download-buttons";
 import DownloadScrollButton from "../components/download-scroll-button";
+import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 
 class Download extends React.PureComponent {
 
@@ -52,10 +53,10 @@ render(){
               </div>
               <Text className="product-name" as="h5">AVS Video Remaker</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {VideoReMaker.version}</Text>
+                <Text as="p">Release Date: {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
+                <Text as="p">File Size: {VideoReMaker.size} MB</Text>
+                <Text as="p">Platforms: {VideoReMaker.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
@@ -68,10 +69,10 @@ render(){
               </div>
               <Text className="product-name" as="h5">AVS Video Editor</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {VideoEditor.version}</Text>
+                <Text as="p">Release Date: {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
+                <Text as="p">File Size: {VideoEditor.size} MB</Text>
+                <Text as="p">Platforms: {VideoEditor.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -84,10 +85,10 @@ render(){
               </div>
               <Text className="product-name" as="h5">AVS Video Converter</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {VideoConverter.version}</Text>
+                <Text as="p">Release Date: {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
+                <Text as="p">File Size: {VideoConverter.size} MB</Text>
+                <Text as="p">Platforms: {VideoConverter.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
@@ -96,10 +97,10 @@ render(){
               <div className="product-image media-player"></div>
               <Text className="product-name" as="h5">AVS Media Player</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {MediaPlayer.version}</Text>
+                <Text as="p">Release Date: {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
+                <Text as="p">File Size: {MediaPlayer.size} MB</Text>
+                <Text as="p">Platforms: {MediaPlayer.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
@@ -114,10 +115,10 @@ render(){
               <div className="product-image audio-editor"></div>
               <Text className="product-name" as="h5">AVS Audio Editor</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {AudioEditor.version}</Text>
+                <Text as="p">Release Date: {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
+                <Text as="p">File Size: {AudioEditor.size} MB</Text>
+                <Text as="p">Platforms: {AudioEditor.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -127,10 +128,10 @@ render(){
               <div className="achievement"></div>
               <Text className="product-name" as="h5">AVS Audio Converter</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: 9.1.2.340</Text>
-                <Text as="p">Release Date: 11/05/2019</Text>
-                <Text as="p">File Size: 155.58 MB</Text>
-                <Text as="p">Platforms: Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)</Text>
+                <Text as="p">Current Version: {AudioConverter.version}</Text>
+                <Text as="p">Release Date: {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
+                <Text as="p">File Size: {AudioConverter.size} MB</Text>
+                <Text as="p">Platforms: {AudioConverter.platforms}</Text>
               </div>
               <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
