@@ -49,6 +49,11 @@ const StyledMenuGrid = styled.div`
     box-sizing: border-box;
     height:100%;
 
+    .headerLogo{
+        display: block;
+        max-width: 85px;
+    }
+
     &>*:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -203,7 +208,7 @@ class MenuWrapper extends React.PureComponent {
         return(
             <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
                 <StyledMenuGrid>
-                    <Link to="/">
+                    <Link className="headerLogo" to="/">
                         <LogoWrapper href="/">
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
