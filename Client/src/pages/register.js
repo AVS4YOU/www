@@ -46,7 +46,7 @@ const mounth = [
   "October",
   "November",
   "December"
-]
+];
 
 class Register extends React.PureComponent {
 
@@ -59,12 +59,19 @@ constructor(){
 
   if(this.siteTrasingCookie){
     this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
-  }
+  };
 
   this.state = {
     hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : defaultHrefUnlim,
     hrefOneYear: this.cookies.get("Site_Tracing") ? shareItHrefOneYear + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : defaultHrefOneYear,
-  }
+    documentLoaded: false,
+  };
+}
+
+componentDidMount(){
+  this.setState({
+   documentLoaded: true
+ })
 }
 
 render(){
@@ -78,8 +85,8 @@ render(){
        metaKeywords=""
       >
         <Helmet>
-          <script src={withPrefix('avangate-affiliates-load.js')} type="text/javascript" />
           <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 
+          {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
           <div className="sale-text">
