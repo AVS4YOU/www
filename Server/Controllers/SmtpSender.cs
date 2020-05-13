@@ -10,6 +10,7 @@ using System.Web.Configuration;
 using avs4youAPI.Models;
 using Newtonsoft.Json;
 using Nustache.Core;
+using avs4youAPI.Classes;
 
 namespace avs4youAPI.Controllers
 {
@@ -158,7 +159,7 @@ namespace avs4youAPI.Controllers
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient(SmtpServerName);
 
-                SmtpServer.EnableSsl = true;
+                //SmtpServer.EnableSsl = true;
 
                 mail.From = new MailAddress(Sender);
                 mail.To.Add(to);
@@ -166,7 +167,7 @@ namespace avs4youAPI.Controllers
                 mail.Subject = "Test Mail";
                 mail.Body = emailBody;
 
-                if (fileNames.Length > 0)
+              /*  if (fileNames.Length > 0)
                 {
 
                     for(var i = 0; i< fileNames.Length; i++)
@@ -181,17 +182,21 @@ namespace avs4youAPI.Controllers
 
                         mail.Attachments.Add(attach);
                     }            
-                }
+                }*/
 
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);
-                SmtpServer.Send(mail);
+                //SmtpServer.Send(mail);
+
+                DeleteTempFiles(fileNames);
 
                 return true;
 
             }
             catch (Exception ex)
             {
+                DeleteTempFiles(fileNames);
+
                 Console.WriteLine(ex.Message);
                 return false;
             }
@@ -201,5 +206,18 @@ namespace avs4youAPI.Controllers
         {
             return Render.StringToString(template, data);
         }
+
+        private void DeleteTempFiles(params string[] fileNames)
+        {
+            if (fileNames.Length > 0)
+            {
+                foreach (var file in fileNames)
+                {
+                    LocalFileManager localFileManager = new LocalFileManager(FileHelper.SupportRequestFolder);
+                    localFileManager.DeleteFile(file);
+                }
+            }
+        }
+
     }
 }
