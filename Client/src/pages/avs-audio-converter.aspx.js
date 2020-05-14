@@ -87,8 +87,8 @@ render(){
                 headerText="Convert and edit all key audio formats"    
             >
               <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc.</Text>
-              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize).</Text>
-              <Text className="ListItem">Modify audio file information: Title, Author, Artist and Album cover.</Text>
+              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize)</Text>
+              <Text className="ListItem">Modify audio file information: Title, Author, Artist and Album cover</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -96,8 +96,8 @@ render(){
                 imageName="audio_converter_slider3.png"
                 headerText="Create audio files for any purpose."   
             >
-              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks.</Text>
-              <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone.</Text>
+              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks</Text>
+              <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone</Text>
               <Text className="ListItem">Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc.</Text>
             </ContentRowItem>
 
@@ -106,8 +106,8 @@ render(){
               imageName="audio_converter_bath.png"
               headerText="Convert audio files in bulk"    
             >
-              <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once.</Text>
-              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode.</Text>
+              <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once</Text>
+              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
