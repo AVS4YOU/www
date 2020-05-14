@@ -21,10 +21,10 @@ const Header = ({availableLocales, locale, t}) => {
                 <DropdownElement path="/avs-free-media-player.aspx" headerText="AVS Media Player" descriptionText="Watch audio and video"/>
                 <DropdownElement path="/avs-free-video-converter.aspx" headerText="AVS Video Converter" descriptionText="Convert all key video formats"/>
             </MenuItem>
-            <MenuItem path="/download" menuItemText={t("Download")} isDropdown={false} />
-            <MenuItem path="/register" menuItemText={t("Buy now")} isDropdown={false} />
+            <MenuItem path="/download.aspx" menuItemText={t("Download")} isDropdown={false} />
+            <MenuItem path="/register.aspx" menuItemText={t("Buy now")} isDropdown={false} />
             <MenuItem menuItemText={t("Help center")}>
-                <DropdownElement path="/support" headerText="Support form"/>
+                <DropdownElement path="/support.aspx" headerText="Support form"/>
                 <DropdownElement href="https://www.avs4you.com/guides/index.aspx" headerText="Guides"/>
                 <DropdownElement href="https://onlinehelp.avs4you.com/index.aspx" headerText="Knowledge center"/>
                 <DropdownElement href="https://support.avs4you.com/faq.aspx" headerText="FAQ"/>

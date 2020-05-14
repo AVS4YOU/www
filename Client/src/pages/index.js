@@ -333,7 +333,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Video Converter"
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                          smallButtonLink="/avs-free-video-converter"
+                          smallButtonLink="/avs-free-video-converter.aspx"
                           scrollTo="headerCoupon"
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
