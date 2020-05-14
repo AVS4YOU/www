@@ -40,6 +40,20 @@ namespace avs4youAPI.Classes
             return Path.Combine(DataFolder, folder, fileName);
         }
 
+        public void DeleteFile(string fileName)
+        {
+            if (fileName == null)
+                throw new Exception("File is null");
+
+            var FilePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), DataFolder, folder, TempData, fileName);
+
+            if (File.Exists(FilePath))
+            {
+                File.Delete(FilePath);
+            }
+            
+        }
+
         public byte[] GetFile(string fileName)
         {
             var filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), DataFolder, folder, fileName);

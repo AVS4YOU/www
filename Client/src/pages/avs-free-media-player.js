@@ -11,6 +11,8 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
+import {MediaPlayer} from '../../static/products-info';
+import ScrollUpButton from '../components/scroll-up-button';
 
 
 class avsFreeMediaPlayer extends React.PureComponent {
@@ -62,6 +64,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ImageGQL className="headerImage" imageName="media_player_header.png" style={{ maxWidth: "1564px" }} alt="header-image" />
             <ImageGQL className="headerImage mobile" imageName="media_player_header.png" style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
           </div>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">Overview</Text>
@@ -131,17 +134,17 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{MediaPlayer.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{MediaPlayer.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{MediaPlayer.platforms}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper" />

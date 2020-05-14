@@ -23,28 +23,6 @@ const StyledMainContentWrapper = styled.div`
     display:block;
     padding-bottom: 100px;
 
-    .ScrollTopWrapper{
-        position: absolute;
-        top: 100px;
-        z-index: 5;
-        cursor:pointer;
-
-        .ScrollTopMain{
-            position: fixed;
-            bottom: -30px;
-            right: 30px;
-            opacity:0;
-            transition: linear 200ms;
-        }
-
-        &.show{
-            .ScrollTopMain{
-                opacity:1;
-                bottom:30px;
-            }
-        }
-      }
-
     .alert-enter {
         opacity: 0;
     }
@@ -114,23 +92,7 @@ const StyledMainContentWrapper = styled.div`
 
     @media (max-width: 750px) {
 
-        .ScrollTopWrapper{
-            .ScrollTopMain{
-                right: 15px;
-                opacity:0;
 
-                img{
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-
-            &.show{
-                .ScrollTopMain{
-                    bottom:15px;
-                }
-            }
-        }
 
         .top-selector-buttons-wrapper{
             
@@ -342,7 +304,7 @@ class mainPage extends React.PureComponent {
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio and photo content and even more, without any limitations")}</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
 
               <HeaderDownloadButtons 
                 t={this.props.t}

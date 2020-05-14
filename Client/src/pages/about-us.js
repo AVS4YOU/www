@@ -1,10 +1,11 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import { Link } from "react-scroll";
+import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
+import ScrollUpButton from '../components/scroll-up-button';
 
 class aboutUs extends React.PureComponent {
 
@@ -43,6 +44,7 @@ render(){
             make your work with digital video and audio smooth and effective and 
             let you remain on the cutting edge of high technological advances.
           </Text>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
         <div className="stats-wrapper">
           <div className="stats-wrapper__box">
@@ -105,15 +107,16 @@ render(){
             </div>
           </div>
         </div>
+        <a name="contact-us"></a>
         <div className="map-body">
           <div className="map-body__contacts-wrapper">
             <div className="map-body__block">
+            
               <Text as="h4" className="map-body__heading">We are here</Text>
               <Text as="p" className="map-body__text">85 Great Portland, London</Text>
               <Text as="p" className="map-body__text">W1W 7LT</Text>
               <Text as="p" className="map-body__text">United Kingdom</Text>
             </div>
-
             <div className="map-body__block">
               <Text as="h4" className="map-body__heading">Contacts</Text>
               <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 208 144 3359</a> (no phone support)</Text>
@@ -136,8 +139,7 @@ render(){
                   Affiliate Sales
                 </Text>
                 <Text className="common-info-block__text">
-                  No need to pay for each program. 
-                  You get a set of audio and video tools at the price of one application
+                  To learn more about affiliate program, please email us at affiliates@avs4you.com or visit our <Link to="/affiliates">Affiliate Program</Link> page.
                 </Text>
               </div>
 
@@ -167,7 +169,7 @@ render(){
                 </Text>
                 <Text className="common-info-block__text">
                   For assistance with purchasing and using our products, 
-                  please visit our Support Center
+                  please visit our <Link to="/support">Support Center</Link>
                 </Text>
               </div>
             </div>

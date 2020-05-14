@@ -11,6 +11,8 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
+import {AudioConverter} from '../../static/products-info';
+import ScrollUpButton from '../components/scroll-up-button';
 
 import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
@@ -61,6 +63,7 @@ render(){
             <ImageGQL className="headerImage" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
             <ImageGQL className="headerImage mobile" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
+          <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">Overview</Text>
@@ -83,8 +86,8 @@ render(){
                 imageName="audio_converter_slider2.png"
                 headerText="Convert and edit all key audio formats"    
             >
-              <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc;</Text>
-              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize);</Text>
+              <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc.</Text>
+              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize).</Text>
               <Text className="ListItem">Modify audio file information: Title, Author, Artist and Album cover.</Text>
             </ContentRowItem>
 
@@ -93,8 +96,8 @@ render(){
                 imageName="audio_converter_slider3.png"
                 headerText="Create audio files for any purpose."   
             >
-              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks;</Text>
-              <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone;</Text>
+              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks.</Text>
+              <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone.</Text>
               <Text className="ListItem">Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc.</Text>
             </ContentRowItem>
 
@@ -103,7 +106,7 @@ render(){
               imageName="audio_converter_bath.png"
               headerText="Convert audio files in bulk"    
             >
-              <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once;</Text>
+              <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once.</Text>
               <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode.</Text>
             </ContentRowItem>
 
@@ -139,17 +142,17 @@ render(){
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.platforms}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>

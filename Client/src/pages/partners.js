@@ -8,6 +8,7 @@ import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class partners extends React.PureComponent {
 
@@ -44,6 +45,7 @@ render(){
                 You sell powerful tools for multimedia processing popular all over the world. 
                 Over 1.000.000 people download and install AVS4YOU tools monthly
               </Text>
+              <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
 
             <div className="common-info-block">

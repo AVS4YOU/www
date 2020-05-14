@@ -8,6 +8,7 @@ import "../styles/support.less";
 import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-support';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class support extends React.PureComponent {
 
@@ -31,6 +32,7 @@ render(){
             </div>
           </div>
         </div>
+        
         <div className="body-reseller screen-wrapper">
           <Text as="h2" className="common__heading">
             Find answers to any questions
@@ -49,6 +51,7 @@ render(){
               <a className="common-info-block__link" href="https://support.avs4you.com/refund.aspx">
                 <Text className="common-info-block__text">Refund policy</Text>
               </a>
+              <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
 
             <div className="common-info-block">
@@ -123,55 +126,6 @@ render(){
           <div id="support-form-wrapper" className="reseller-from-wrapper">
             <Form></Form>
             <Text className="contact-us-text">If you have any questions about AVS4YOU Affiliate program, please contact us at <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
-          </div>
-        </div>
-        <div className="contact-body screen-wrapper">
-          <div className="contact-body__max-width">
-            <Text as="h2" className="common__heading">
-              Contact AVS4YOU
-            </Text>
-            <div className="contact-body__wrapper">
-
-              <div className="common-info-block">
-                <Text as="h4" className="common-info-block__headline">
-                  Affiliate Sales
-                </Text>
-                <Text className="common-info-block__text">
-                  No need to pay for each program. 
-                  You get a set of audio and video tools at the price of one application
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-                <Text as="h4" className="common-info-block__headline">
-                  Volume Sales
-                </Text>
-                <Text className="common-info-block__text">
-                  To purchase a large number of licenses at a special price, 
-                  contact our sales department at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-                <Text as="h4" className="common-info-block__headline">
-                  Education
-                </Text>
-                <Text className="common-info-block__text">
-                  To get a quote for schools and universities, 
-                  please email us at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> or visit Education page
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-                <Text as="h4" className="common-info-block__headline">
-                  Customer Support
-                </Text>
-                <Text className="common-info-block__text">
-                  For assistance with purchasing and using our products, 
-                  please visit our Support Center
-                </Text>
-              </div>
-            </div>
           </div>
         </div>
       </Layout>

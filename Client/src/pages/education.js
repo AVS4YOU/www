@@ -10,6 +10,7 @@ import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-education';
 import ContentSelector from '../components/content-selector';
 import ContentRowItem from '../components/content-row-item';
+import ScrollUpButton from '../components/scroll-up-button';
 
 class education extends React.PureComponent {
 
@@ -48,6 +49,7 @@ render(){
                     <Text>
                       5 Multimedia Tools Suite fro audio and video processing
                     </Text>
+                    <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
                   </div>
                 </div>
                 <div className="tableCell">
@@ -141,18 +143,6 @@ render(){
                   <Text className="education__ListItem" color="#555555" fontWeight={500}>Save your essays, reports and other documents in PDF format. 
                     Easily convert your DOC, DOCX files to PDF with AVS Document Converter and protect them with a personal watermark</Text>
                 </ContentRowItem>
-                <div className="content-button-wrapper">
-                  <Button 
-                    tabIndex="1"
-                    backgroundColor="blue" 
-                    padding="20px 35px"
-                    fontSize={18} 
-                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
-                    textTransform="uppercase"
-                  >
-                      Download education price list
-                  </Button>
-                </div>
               </div>
 
               <div className="education__content-wrapper">
@@ -189,7 +179,7 @@ render(){
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
-                    href="/"
+                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
                     textTransform="uppercase"
                   >
                       Download education price list
