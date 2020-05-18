@@ -29,7 +29,13 @@ exports.onCreatePage = async props => {
   } = props;
 
   if (/^\/dev-404-page\/?$/.test(page.path)) {
-    return;
+    const oldPage = { ...page }
+
+    const langCode = page.path.split(`/`)[1]
+    page.matchPath = `/${langCode}/*`
+
+    deletePage(oldPage)
+    createPage(page)
   }
 
   deletePage(page);

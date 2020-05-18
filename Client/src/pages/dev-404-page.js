@@ -2,7 +2,6 @@ import React from "react";
 import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import Text from '../components/text';
-import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/error404page.less";
 
