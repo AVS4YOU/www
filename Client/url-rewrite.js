@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 exports.handler = (event, context, callback) => {
 
     var request = event.Records[0].cf.request;
@@ -14,4 +14,4 @@ exports.handler = (event, context, callback) => {
     request.uri = rewritedUrl;
 
     return callback(null, request);
-};
+};*/
