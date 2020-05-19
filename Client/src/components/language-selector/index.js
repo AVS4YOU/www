@@ -75,7 +75,7 @@ const StyledLanguageSelector = styled.div`
         grid-template-columns: auto 1fr;
         align-items: center;
 
-        h4{
+        span{
             font-size: 14px;
         }
 
@@ -254,7 +254,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
@@ -268,7 +268,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
@@ -288,7 +288,7 @@ class LanguageSelector extends React.PureComponent {
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext
-                                                ? item.value !== "en" &&  "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                                ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                                 : item.value !== "en" && "https://www.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}
