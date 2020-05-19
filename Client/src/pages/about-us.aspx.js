@@ -139,7 +139,7 @@ render(){
                   Affiliate Sales
                 </Text>
                 <Text className="common-info-block__text">
-                  To learn more about affiliate program, please email us at affiliates@avs4you.com or visit our <Link to="/affiliates">Affiliate Program</Link> page.
+                  To learn more about affiliate program, please email us at affiliates@avs4you.com or visit our <Link to="/affiliates.aspx">Affiliate Program</Link> page.
                 </Text>
               </div>
 
@@ -169,7 +169,7 @@ render(){
                 </Text>
                 <Text className="common-info-block__text">
                   For assistance with purchasing and using our products, 
-                  please visit our <Link to="/support">Support Center</Link>
+                  please visit our <Link to="/support.aspx">Support Center</Link>
                 </Text>
               </div>
             </div>

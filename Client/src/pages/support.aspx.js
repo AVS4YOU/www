@@ -91,19 +91,19 @@ render(){
               <Text as="h4" className="common-info-block__headline">
                 Download now
               </Text>
-              <Link className="common-info-block__link" to="/avs-free-image-converter">
+              <Link className="common-info-block__link" to="/avs-free-image-converter.aspx">
                 <Text className="common-info-block__text">AVS Video Converter</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-video-editor">
+              <Link className="common-info-block__link" to="/avs-video-editor.aspx">
                 <Text className="common-info-block__text">AVS Video Editor</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-video-remaker">
+              <Link className="common-info-block__link" to="/avs-video-remaker.aspx">
                 <Text className="common-info-block__text">AVS Video Remaker</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-audio-editor">
+              <Link className="common-info-block__link" to="/avs-audio-editor.aspx">
                 <Text className="common-info-block__text">AVS Audio Editor</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-audio-converter">
+              <Link className="common-info-block__link" to="/avs-audio-converter.aspx">
                 <Text className="common-info-block__text">AVS Audio Converter</Text>
               </Link>
             </div>

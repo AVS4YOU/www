@@ -161,7 +161,7 @@ render(){
             <PanelCollapse className="panelCollapse" panelName="How to activate the AVS4YOU software?">
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>It is necessary to purchase an AVS4YOU subscription at <Link href="/register"><Text as="span">www.avs4you.com</Text></Link> in order to activate AVS4YOU software and remove the watermark and other limitations. Once your order is processed you will get a unique license key via e-mail to activate the software.</Text>   
+                  <Text>It is necessary to purchase an AVS4YOU subscription at <Link href="/register.aspx"><Text as="span">www.avs4you.com</Text></Link> in order to activate AVS4YOU software and remove the watermark and other limitations. Once your order is processed you will get a unique license key via e-mail to activate the software.</Text>   
                 </div>
                 <div className="info-block">
                   <Text>Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems.</Text>
