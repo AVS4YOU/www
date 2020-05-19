@@ -12,7 +12,7 @@ const StyledDropdownElement = styled.div`
     display:block;
     text-decoration: none;
 
-    &:hover h4 {
+    &:hover span {
         color: #fda050; 
         text-decoration: underline;
     }
@@ -39,7 +39,7 @@ const DropdownElement = props => {
             
             ?
                 <Link to={props.path} langChange={props.langChange}>
-                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="span" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                     {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
                 </Link>
 
@@ -48,7 +48,7 @@ const DropdownElement = props => {
             props.href &&
 
                 <a href={props.href}>
-                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="h4" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
+                    {props.headerText !== undefined ? <Text className={props.headerTextClass} as="span" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                     {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
                 </a>
             }

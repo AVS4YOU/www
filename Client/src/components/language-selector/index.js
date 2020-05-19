@@ -6,10 +6,21 @@ import MenuDropdown from "../menu-dropdown";
 import Text from '../text';
 import LangIconWhite from '../../images/common/languages/language-icon-white.svg';
 import LangIconBlack from '../../images/common/languages/language-icon-black.svg';
-import RuIcon from '../../images/common/languages/russian.svg';
-import EnIcon from '../../images/common/languages/english.svg';
 import Selected from '../../images/common/languages/selected.svg';
 import { PageContext } from '../../context/page-context';
+
+import RuIcon from '../../images/common/languages/russian.svg';
+import EnIcon from '../../images/common/languages/english.svg';
+import FrIcon from '../../images/common/languages/france.svg';
+import DeIcon from '../../images/common/languages/germany.svg';
+import EsIcon from '../../images/common/languages/spain.svg';
+import ItIcon from '../../images/common/languages/italy.svg';
+import JpIcon from '../../images/common/languages/japan.svg';
+import NlIcon from '../../images/common/languages/netherlands.svg';
+import KoIcon from '../../images/common/languages/korean.svg';
+import PlIcon from '../../images/common/languages/polish-flag.svg';
+import DaIcon from '../../images/common/languages/danish.svg';
+import PtIcon from '../../images/common/languages/portugal.svg';
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
@@ -56,12 +67,17 @@ const StyledLanguageSelector = styled.div`
         display:none;
     }
 
+    
     .langDropdown{
 
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
+
+        h4{
+            font-size: 14px;
+        }
 
         &:before{
             content: '';
@@ -74,8 +90,51 @@ const StyledLanguageSelector = styled.div`
             background-image: url(${EnIcon});
         }
 
-        &.ru:before{
-            background-image: url(${RuIcon});
+        &.ru{
+            margin-bottom: 20px;
+            &:before{
+                background-image: url(${RuIcon});
+            }
+        }
+
+        &.fr:before{
+            background-image: url(${FrIcon});
+        }
+
+        &.de:before{
+            background-image: url(${DeIcon});
+        }
+
+        &.es:before{
+            background-image: url(${EsIcon});
+        }
+
+        &.it:before{
+            background-image: url(${ItIcon});
+        }
+
+        &.jp:before{
+            background-image: url(${JpIcon});
+        }
+
+        &.nl:before{
+            background-image: url(${NlIcon});
+        }
+
+        &.ko:before{
+            background-image: url(${KoIcon});
+        }
+
+        &.pl:before{
+            background-image: url(${PlIcon});
+        }
+
+        &.da:before{
+            background-image: url(${DaIcon});
+        }
+
+        &.pt:before{
+            background-image: url(${PtIcon});
         }
     }
 
@@ -141,6 +200,22 @@ const LanguageSelectorWrapperMobile = styled.div`
     margin: auto;
 `;
 
+const availableLocales = [
+    {value: "en", text: "English"},
+    {value: "fr", text: "Français"},
+    {value: "de", text: "Deutsch"},
+    {value: "es", text: "Español"},
+    {value: "it", text: "Italiano"},
+    {value: "jp", text: "日本語"},
+    {value: "nl", text: "Nederlands"},
+    {value: "ko", text: "한국어"},
+    {value: "pl", text: "Polski"},
+    {value: "da", text: "Dansk"},
+    {value: "pt", text: "Português"},
+    {value: "ru", text: "Русский"},
+
+];
+
 class LanguageSelector extends React.PureComponent {
 
     constructor(props) {
@@ -159,6 +234,7 @@ class LanguageSelector extends React.PureComponent {
         return(
             <PageContext.Consumer>  
             {(pageContext) => (
+                
                 <StyledLanguageSelector {...this.props}>
                     <div className="mobileBlock">
                         <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
@@ -169,14 +245,17 @@ class LanguageSelector extends React.PureComponent {
                             <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
                                 <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
                             </BackSubmenuButton> 
-                            {this.props.availableLocales.map((item) =>
+                            {availableLocales.map((item) =>
                                 this.props.locale !== item.value 
                                     ? <DropdownElement 
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext
-                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
-                                            : item.value === "en" ? "/" : "/" + item.value}  
+                                            ? item.value === "en" && pageContext.originalPath
+                                            : item.value === "en" && "/"}  
+                                        href={pageContext
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                            : item.value !== "en" && "/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
                                     />
@@ -186,22 +265,32 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext
-                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
-                                            : item.value === "en" ? "/" : "/" + item.value} 
+                                            ? item.value === "en" && pageContext.originalPath
+                                            : item.value === "en" && "/"}  
+                                        href={pageContext
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                            : item.value !== "en" && "/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
                             )}
                         </MenuDropdown> 
                     </div>
                     <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
-                        {this.props.availableLocales.map((item) =>
+                        {availableLocales.map((item) =>
+
                             this.props.locale !== item.value && 
+                                    
                                     <DropdownElement 
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext
-                                            ? item.value === "en" ? pageContext.originalPath : item.value + pageContext.originalPath
-                                            : item.value === "en" ? "/" : "/" + item.value}
+                                            ? item.value === "en" && pageContext.originalPath 
+                                            : item.value === "en" && "/" }
+                                        href={
+                                            pageContext
+                                                ? item.value !== "en" &&  "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath)
+                                                : item.value !== "en" && "https://www.avs4you.com/" + item.value
+                                        }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
                                     />
