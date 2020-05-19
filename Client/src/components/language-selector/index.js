@@ -251,7 +251,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext
-                                            ? item.value === "en" && pageContext.originalPath
+                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
                                             ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -265,7 +265,7 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext
-                                            ? item.value === "en" && pageContext.originalPath
+                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
                                             ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -284,7 +284,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext
-                                            ? item.value === "en" && pageContext.originalPath 
+                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext
