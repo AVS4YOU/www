@@ -28,16 +28,6 @@ exports.onCreatePage = async props => {
     actions: { createPage, deletePage, createRedirect }
   } = props;
 
-  if (/^\/dev-404-page\/?$/.test(page.path)) {
-    const oldPage = { ...page }
-
-    const langCode = page.path.split(`/`)[1]
-    page.matchPath = `/${langCode}/*`
-
-    deletePage(oldPage)
-    createPage(page)
-  }
-
   deletePage(page);
 
   availableLocales.map(({ value }) => {
