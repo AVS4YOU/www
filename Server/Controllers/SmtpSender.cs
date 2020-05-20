@@ -53,7 +53,7 @@ namespace avs4youAPI.Controllers
                 data.Add("validUntil", validUntil);
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(emailData.UserEmail, emailBody);
+                return SendEmail(emailData.UserEmail, emailBody, "Get coupon email");
 
             }
             catch (Exception ex)
@@ -77,7 +77,7 @@ namespace avs4youAPI.Controllers
 
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(SalesEmail, emailBody);
+                return SendEmail(SalesEmail, emailBody, "Reseller email");
 
             }
             catch (Exception ex)
@@ -103,7 +103,7 @@ namespace avs4youAPI.Controllers
 
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(SalesEmail, emailBody);
+                return SendEmail(SalesEmail, emailBody, "Education email");
 
             }
             catch (Exception ex)
@@ -129,11 +129,11 @@ namespace avs4youAPI.Controllers
 
                 if (emailData.FileNames == null)
                 {
-                    return SendEmail(SalesEmail, emailBody);
+                    return SendEmail(SalesEmail, emailBody, "Support email");
 
                 } else
                 {
-                    return SendEmail(SalesEmail, emailBody, emailData.FileNames);
+                    return SendEmail(SalesEmail, emailBody, "Support email", emailData.FileNames);
                 }
             }
             catch (Exception ex)
@@ -143,7 +143,7 @@ namespace avs4youAPI.Controllers
             }
         }
 
-        private bool SendEmail(string to, string emailBody, params string[] fileNames)
+        private bool SendEmail(string to, string emailBody, string subject, params string[] fileNames)
         {
             int Port;
             if (
@@ -159,15 +159,15 @@ namespace avs4youAPI.Controllers
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient(SmtpServerName);
 
-                //SmtpServer.EnableSsl = true;
+                SmtpServer.EnableSsl = true;
 
                 mail.From = new MailAddress(Sender);
                 mail.To.Add(to);
                 mail.IsBodyHtml = true;
-                mail.Subject = "Test Mail";
+                mail.Subject = subject;
                 mail.Body = emailBody;
 
-              /*  if (fileNames.Length > 0)
+                if (fileNames.Length > 0)
                 {
 
                     for(var i = 0; i< fileNames.Length; i++)
@@ -182,11 +182,11 @@ namespace avs4youAPI.Controllers
 
                         mail.Attachments.Add(attach);
                     }            
-                }*/
+                }
 
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);
-                //SmtpServer.Send(mail);
+                SmtpServer.Send(mail);
 
                 DeleteTempFiles(fileNames);
 
