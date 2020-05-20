@@ -17,10 +17,10 @@ import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
 import NlIcon from '../../images/common/languages/netherlands.svg';
-import KoIcon from '../../images/common/languages/korean.svg';
+import KoIcon from '../../images/common/languages/korea-flag.svg';
 import PlIcon from '../../images/common/languages/polish-flag.svg';
 import DaIcon from '../../images/common/languages/danish.svg';
-import PtIcon from '../../images/common/languages/portugal.svg';
+import PtIcon from '../../images/common/languages/portugal-flag.svg';
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
