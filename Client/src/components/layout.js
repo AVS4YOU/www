@@ -94,7 +94,7 @@ class Layout extends React.PureComponent {
       <PageContext.Provider value={this.props.pageContext}>
         <Helmet>
           <title>{this.props.title}</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, min-width=330"></meta>  
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>  
           {this.props.metaDescription && <meta name="description" content={this.props.metaDescription} />}
           {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
           {this.props.pageContext.originalPath}
@@ -108,15 +108,15 @@ class Layout extends React.PureComponent {
               <link rel="alternate" href={"https://www.avs4you.com/" + language + this.pageName} hreflang={languageCode}></link>
             )
           })}
-
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1338774-7"></script>
           <script>
             {`
-              (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); 
-              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
-              j.async = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
-              f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WMB2TZX');
-            `}
+            debugger
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-1338774-7');`}
           </script>
 
           <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
