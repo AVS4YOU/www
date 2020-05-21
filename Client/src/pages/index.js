@@ -420,7 +420,7 @@ class mainPage extends React.PureComponent {
                           <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
                           <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
                           <Text className="ListItem" color="#555555" fontWeight={500}>Modify audio file information</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Create Audiobooks and Ringtones</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>Create audiobooks and ringtones</Text>
                           <Text className="ListItem" color="#555555" fontWeight={500}>Export audio from video</Text>
                       </ContentRowItem>
                   </ContentWrapper>

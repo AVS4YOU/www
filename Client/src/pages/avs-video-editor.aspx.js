@@ -112,7 +112,7 @@ render(){
               imageName="video-editor-slider5.png"
               headerText="Make your video look professional"    
             >
-              <Text className="ListItem">Ccut out a particular scene or remove shaky and unnecessary parts</Text>
+              <Text className="ListItem">Cut out a particular scene or remove shaky and unnecessary parts</Text>
               <Text className="ListItem">Split videos regardless of both the video size and formats</Text>
               <Text className="ListItem">Join as many video files as you want</Text>
               <Text className="ListItem">Fix up any white balancing issues and color mismatches with color tuning</Text>

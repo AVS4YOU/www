@@ -106,42 +106,21 @@ render(){
               <div className="education__content-wrapper">
                 <ContentRowItem
                   imgLeft={false}
-                  imageName="education_screen_students1.png"
+                  imageName="create-classroom-projects.jpg"
                   headerText="Create classroom video projects and presentations"
                   free={false}
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Easily edit webcam footage, add audio and image overlays, stickers, 
-                    visual effects, change background, and more</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more</Text>
                 </ContentRowItem>
 
                 <ContentRowItem 
                     imgLeft={true}
-                    imageName="education_screen_students2.png"
+                    imageName="make-big-saving.jpg"
                     headerText="Work with all types of documents conveniently"
                     free={false}   
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Save your essays, reports and other documents in PDF format. 
-                    Easily convert your DOC, DOCX files to PDF with AVS Document Converter and protect them with a personal watermark</Text>
-                </ContentRowItem>
-
-                <ContentRowItem
-                  imgLeft={false}
-                  imageName="education_screen_students3.png"
-                  headerText="Create classroom video projects and presentations"
-                  free={false}
-                >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Easily edit webcam footage, add audio and image overlays, stickers, 
-                    visual effects, change background, and more</Text>
-                </ContentRowItem>
-
-                <ContentRowItem 
-                    imgLeft={true}
-                    imageName="education_screen_students4.png"
-                    headerText="Work with all types of documents conveniently"
-                    free={false}   
-                >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Save your essays, reports and other documents in PDF format. 
-                    Easily convert your DOC, DOCX files to PDF with AVS Document Converter and protect them with a personal watermark</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Get an extra 30% discount by sending your request at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>. 
+                  A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof</Text>
                 </ContentRowItem>
               </div>
 
