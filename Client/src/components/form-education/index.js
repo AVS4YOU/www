@@ -8,6 +8,8 @@ import CloseIcon from '../../images/common/icons/close-popup.svg';
 import InfoPopupForm from '../info-popup-form';
 import ReCAPTCHA from "react-google-recaptcha";
 
+import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
+
 const StyledForm = styled.div`
     box-shadow: 3px 3px 24px #00000014;
     padding: 40px;
@@ -506,7 +508,7 @@ class FormEducation extends React.Component {
     };
 
     sendFile = async (formData) => {
-        let url = "http://avs4youapi.teamlab.info/api/file";
+        let url = AjaxUrls.domain + "api/file";
 
         try {
             const response = await fetch(url, {
@@ -530,7 +532,7 @@ class FormEducation extends React.Component {
 
     sendForm = async (data) => {
 
-        let url = "http://avs4youapi.teamlab.info/api/email";
+        let url = AjaxUrls.domain + "api/email";
 
         try {
             const response = await fetch(url, {
@@ -708,7 +710,7 @@ class FormEducation extends React.Component {
                             <ReCAPTCHA
                                 ref={this.recaptchaRef}
                                 onChange={this.OnChangeRecaptcha}
-                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                                sitekey={RecaptchaKeys.public}
                             />
                         </div>
 

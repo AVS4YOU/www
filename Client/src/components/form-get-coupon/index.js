@@ -7,6 +7,8 @@ import InputCheckbox from '../input-checkbox';
 import InfoPopup from '../info-popup';
 import ReCAPTCHA from "react-google-recaptcha";
 
+import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
+
 const StyledForm = styled.div`
 
     .checkBoxWrapper{
@@ -288,7 +290,7 @@ class FormGetCoupon extends React.Component {
 
     sendForm = async (data) => {
 
-        let url = "http://192.168.0.102:8088/api/email";
+        let url = AjaxUrls.domain + "api/email";
 
         try {
             const response = await fetch(url, {
@@ -354,7 +356,7 @@ class FormGetCoupon extends React.Component {
                     <ReCAPTCHA
                         ref={this.recaptchaRef}
                         onChange={this.OnChangeRecaptcha}
-                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                        sitekey={RecaptchaKeys.public}
                     />
                 </div>
 
