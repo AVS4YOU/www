@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Text from '../text';
 import Input from '../input';
+import Link from '../link';
 import Button from '../button';
 import CloseIcon from '../../images/common/icons/close-popup.svg';
 import InfoPopupForm from '../info-popup-form';
@@ -724,7 +725,7 @@ class FormEducation extends React.Component {
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                                By clicking this button, you agree to our <a href="https://www.avs4you.com/privacy.aspx" target="_blank">Terms of Service</a>.
+                                By clicking this button, you agree to our <Link to="/privacy" target="_blank">Terms of Service</Link>.
                             </Text>
                         </div>
                     </div>
