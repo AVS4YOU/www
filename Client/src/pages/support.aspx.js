@@ -19,7 +19,7 @@ render(){
         className="support" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="Welcome to AVS4YOU Support"
+        title="AVS4YOU support team will process all inquiries related to our products, terms of use, licensing to make your experience with our software enjoyable."
         metaDescription=""
         metaKeywords=""
       >

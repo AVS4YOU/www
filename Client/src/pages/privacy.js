@@ -16,7 +16,8 @@ render(){
         className="about-us-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title=""
+        title="AVS4YOU privacy Policy
+        Read AVS4YOU Privacy Policy to learn how the company collects personal information and uses it."
         metaDescription=""
         metaKeywords=""
       >
