@@ -1,6 +1,7 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import { Link } from "react-scroll";
+import Link from '../components/link';
+import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
@@ -64,18 +65,18 @@ render(){
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
-            <Link to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
+            <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">Overview</Text>
-            </Link>
-            <Link to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
+            </ScrollLink>
+            <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
               <Text color="#666666" align="center">Reviews</Text>
-            </Link>
-            <Link to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
+            </ScrollLink>
+            <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
               <Text color="#666666" align="center">Screentour</Text>
-            </Link>
-            <Link to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
+            </ScrollLink>
+            <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
               <Text color="#666666" align="center">Download</Text>
-            </Link>
+            </ScrollLink>
           </div>
 
           <PageContentWrapper>
@@ -138,7 +139,7 @@ render(){
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe" to="headerContentWrapper"/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <a href="https://www.avs4you.com/license-agreement.aspx">our End User License Agreement</a></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement">our End User License Agreement</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">

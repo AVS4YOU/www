@@ -5,6 +5,10 @@ import Link from "../components/link";
 import Layout from "../components/layout";
 import "../styles/privacy.less";
 
+
+const date = new Date();
+const currentYear = date.getFullYear();
+
 class Privacy extends React.PureComponent {
 
   render() {
@@ -99,7 +103,7 @@ class Privacy extends React.PureComponent {
           BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
           </Text>
           <Text className="body-privacy__text">
-          COPYRIGHT NOTICE. Copyright © 2020 Online Media Technologies Ltd, All rights reserved.
+          COPYRIGHT NOTICE. Copyright © {currentYear} Online Media Technologies Ltd, All rights reserved.
           </Text>
           <Text className="body-privacy__text">
           Any rights not expressly granted herein are reserved.

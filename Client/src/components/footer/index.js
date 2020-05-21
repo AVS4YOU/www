@@ -141,9 +141,9 @@ class Footer extends React.Component{
                         <Link to="/privacy">
                             <Text className="footer-link-text">{this.props.t("Privacy")}</Text>
                         </Link>
-                        <a href="https://www.avs4you.com/license-agreement.aspx">
+                        <Link to="/license-agreement">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
-                        </a>
+                        </Link>
                         <a href="https://www.avs4you.com/blog/">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
                         </a>
