@@ -333,7 +333,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Video Converter"
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                          smallButtonLink="/avs-free-video-converter"
+                          smallButtonLink="/avs-free-video-converter.aspx"
                           scrollTo="headerCoupon"
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
@@ -347,7 +347,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Video Editor"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                          smallButtonLink="/avs-video-editor"  
+                          smallButtonLink="/avs-video-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Edit all key video formats</Text>
@@ -364,7 +364,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Video ReMaker"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
-                          smallButtonLink="/avs-video-remaker"   
+                          smallButtonLink="/avs-video-remaker.aspx"   
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Edit video files without reconversion</Text>
@@ -380,7 +380,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Media Player"
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
-                          smallButtonLink="/avs-free-media-player"   
+                          smallButtonLink="/avs-free-media-player.aspx"   
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Open and watch videos in all popular formats</Text>
@@ -398,7 +398,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Audio Editor"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                          smallButtonLink="/avs-audio-editor"  
+                          smallButtonLink="/avs-audio-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data</Text>
@@ -414,7 +414,7 @@ class mainPage extends React.PureComponent {
                           headerText="AVS Audio Converter"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
-                          smallButtonLink="/avs-audio-converter"   
+                          smallButtonLink="/avs-audio-converter.aspx"   
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
