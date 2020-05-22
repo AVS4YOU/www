@@ -111,7 +111,6 @@ class Layout extends React.PureComponent {
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1338774-7"></script>
           <script>
             {`
-            debugger
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
