@@ -727,7 +727,7 @@ class FormEducation extends React.Component {
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                                By clicking this button, you agree to our <Link to="/privacy" target="_blank">Terms of Service</Link>.
+                                By clicking this button, you agree to our <Link to="/privacy.aspx" target="_blank">Terms of Service</Link>.
                             </Text>
                         </div>
                     </div>

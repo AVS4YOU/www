@@ -151,7 +151,7 @@ class avsFreeDiscCreator extends React.PureComponent {
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe" to="headerContentWrapper" />
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement">our End User License Agreement</Link></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
