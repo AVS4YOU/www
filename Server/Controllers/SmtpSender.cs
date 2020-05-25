@@ -129,11 +129,11 @@ namespace avs4youAPI.Controllers
 
                 if (emailData.FileNames == null)
                 {
-                    return SendEmail(SalesEmail, emailBody, "Support email");
+                    return SendEmail(SupportEmail, emailBody, "Support email");
 
                 } else
                 {
-                    return SendEmail(SalesEmail, emailBody, "Support email", emailData.FileNames);
+                    return SendEmail(SupportEmail, emailBody, "Support email", emailData.FileNames);
                 }
             }
             catch (Exception ex)
@@ -156,37 +156,39 @@ namespace avs4youAPI.Controllers
             try
             {
 
-                MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient(SmtpServerName);
 
                 SmtpServer.EnableSsl = true;
-
-                mail.From = new MailAddress(Sender);
-                mail.To.Add(to);
-                mail.IsBodyHtml = true;
-                mail.Subject = subject;
-                mail.Body = emailBody;
-
-                if (fileNames.Length > 0)
-                {
-
-                    for(var i = 0; i< fileNames.Length; i++)
-                    {
-                        string filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), "App_Data", "File", "temp", fileNames[i]);
-                        Attachment attach = new Attachment(filePath, MediaTypeNames.Application.Octet);
-
-                        ContentDisposition disposition = attach.ContentDisposition;
-                        disposition.CreationDate = System.IO.File.GetCreationTime(filePath);
-                        disposition.ModificationDate = System.IO.File.GetLastWriteTime(filePath);
-                        disposition.ReadDate = System.IO.File.GetLastAccessTime(filePath);
-
-                        mail.Attachments.Add(attach);
-                    }            
-                }
-
                 SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Login, Password);
-                SmtpServer.Send(mail);
+
+                using (var mailMessage = new MailMessage())
+                {
+
+                    mailMessage.From = new MailAddress(Sender);
+                    mailMessage.To.Add(to);
+                    mailMessage.IsBodyHtml = true;
+                    mailMessage.Subject = subject;
+                    mailMessage.Body = emailBody;
+
+                    if (fileNames.Length > 0)
+                    {
+                        for (var i = 0; i < fileNames.Length; i++)
+                        {
+                            string filePath = Path.Combine(HttpContext.Current.Server.MapPath("~"), "App_Data", "File", "temp", fileNames[i].Replace(' ', '_'));
+                            Attachment attach = new Attachment(filePath, MediaTypeNames.Application.Octet);
+
+                            ContentDisposition disposition = attach.ContentDisposition;
+                            disposition.CreationDate = System.IO.File.GetCreationTime(filePath);
+                            disposition.ModificationDate = System.IO.File.GetLastWriteTime(filePath);
+                            disposition.ReadDate = System.IO.File.GetLastAccessTime(filePath);
+
+                            mailMessage.Attachments.Add(attach);
+                        }
+                    }
+
+                    SmtpServer.Send(mailMessage);
+                }
 
                 DeleteTempFiles(fileNames);
 
