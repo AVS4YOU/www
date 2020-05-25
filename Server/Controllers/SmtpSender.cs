@@ -216,7 +216,7 @@ namespace avs4youAPI.Controllers
                 foreach (var file in fileNames)
                 {
                     LocalFileManager localFileManager = new LocalFileManager(FileHelper.SupportRequestFolder);
-                    localFileManager.DeleteFile(file);
+                    localFileManager.DeleteFile(file.Replace(' ', '_'));
                 }
             }
         }
