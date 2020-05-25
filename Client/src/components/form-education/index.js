@@ -269,11 +269,14 @@ class FormEducation extends React.Component {
                 let formData = new FormData();
                 let fileNames = [];
 
-                for(let file in this.state.file){
-                    formData.append(this.state.file[file].name, this.state.file[file]);
-                    fileNames.push(this.state.file[file].name);
-                }
+                for(let fileId in this.state.file){
+                    let file = this.state.file[fileId];
 
+                    if(!file.deleted){
+                        formData.append(file.name, file);
+                        fileNames.push(file.name);
+                    }
+                }
                 this.sendFile(formData).then(
                     this.sendForm({
                         UserEmail: this.state.email.value,
@@ -281,6 +284,8 @@ class FormEducation extends React.Component {
                         Comment: this.state.comment.value,
                         numOfSubs: this.state.subscriptions.value,
                         RecaptchaValue: this.state.recaptchaValue,
+                        Occupation: this.state.occupation.value,
+                        Institution: this.state.institution.value,
                         MailPatternName: "ru-education.html",
                         MailType: "education",
                         FileNames: fileNames
@@ -294,6 +299,8 @@ class FormEducation extends React.Component {
                     UserName: this.state.name.value,
                     Comment: this.state.comment.value,
                     numOfSubs: this.state.subscriptions.value,
+                    Occupation: this.state.occupation.value,
+                    Institution: this.state.institution.value,
                     RecaptchaValue: this.state.recaptchaValue,
                     MailPatternName: "ru-education.html",
                     MailType: "education"
@@ -301,7 +308,6 @@ class FormEducation extends React.Component {
             }
 
         } else {
-            console.log("form invalid")
         }
     };
 
@@ -330,7 +336,6 @@ class FormEducation extends React.Component {
     }
 
     verifyData = () => {
-
         const nameStatus = this.validate("name", this.state.name.value);
         this.setError("name", nameStatus);
         this.updateInputClassName("name", nameStatus);

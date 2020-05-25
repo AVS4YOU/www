@@ -103,7 +103,14 @@ namespace avs4youAPI.Controllers
 
                 var emailBody = HttpUtility.HtmlDecode(ProcessTemplate(template, data));
 
-                return SendEmail(SalesEmail, emailBody, "Education email");
+                if (emailData.FileNames == null)
+                {
+                    return SendEmail(SalesEmail, emailBody, "Education email");
+                }
+                else
+                {
+                    return SendEmail(SalesEmail, emailBody, "Education email", emailData.FileNames);
+                }
 
             }
             catch (Exception ex)

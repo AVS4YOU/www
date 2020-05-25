@@ -237,9 +237,14 @@ class FormSupport extends React.Component {
                 let formData = new FormData();
                 let fileNames = [];
 
-                for(let file in this.state.file){
-                    formData.append(this.state.file[file].name, this.state.file[file]);
-                    fileNames.push(this.state.file[file].name);
+                for(let fileId in this.state.file){
+
+                    let file = this.state.file[fileId];
+
+                    if(!file.deleted){
+                        formData.append(file.name, file);
+                        fileNames.push(file.name);
+                    }
                 }
 
                 this.sendFile(formData).then(
@@ -269,7 +274,6 @@ class FormSupport extends React.Component {
             }
 
         } else {
-            console.log("form invalid")
         }
     };
 
@@ -489,7 +493,6 @@ class FormSupport extends React.Component {
             if (responseTest.indexOf("error") > -1) {
                 throw new Error("Send file error");
             } else {
-                console.log("Files sended")
                 return true;
             }
 
