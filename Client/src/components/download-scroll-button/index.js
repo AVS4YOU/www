@@ -4,8 +4,9 @@ import Button from '../button';
 import Text from '../text';
 import { Link } from "react-scroll";
 import UAParser from 'ua-parser-js';
+import Cookies from 'universal-cookie';
 
-
+const formSended = new Cookies().get("formSended");
 
 const ButtonWrapper = styled.div`
 
@@ -37,9 +38,10 @@ const DownloadScrollButton = (props) => {
             {touchDevice 
 
             ?
-                <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
-                    <Button as="div" className="mainButton" color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textGetCoupon}</Button>
-                </Link>
+                !formSended &&
+                    <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
+                        <Button as="div" className="mainButton" color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textGetCoupon}</Button>
+                    </Link>
             :
                 <Button className="desktopButton" href={props.href} color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textDownload}</Button>
             }   
