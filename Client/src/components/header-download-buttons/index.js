@@ -113,6 +113,10 @@ class HeaderDownloadButtons extends React.PureComponent {
         })
     };
 
+    addClassToBody = () => {
+        document.body.classList.add('formSended');
+    }
+
     toShowInfoPopup = () => {
         this.setState({
             formSended: true
@@ -148,6 +152,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                             <div>
                                 <InfoPopup closePopupFunction={this.closePopupFunction} InfoPopupHidden={this.state.InfoPopupHidden}/>
                                 {this.cookies.set("formSended", "true")}
+                                {this.addClassToBody()}
                             </div>
                                 
                         :

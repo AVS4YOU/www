@@ -8,6 +8,7 @@ import PropTypes from "prop-types";
 import bgBlue from '../../images/main-page/back_picture_blue.svg';
 import bgOrange from '../../images/main-page/back_picture_orange.svg';
 import UAParser from 'ua-parser-js';
+import Cookies from 'universal-cookie';
 
 const RowContent = styled.div`
    padding-top: 180px;
@@ -326,6 +327,8 @@ const HeaderMobile = (props) =>
     )
 }
 
+const formSended = new Cookies().get("formSended");
+
 const TextContent = (props, touchDevice) =>
 {
     return(
@@ -340,7 +343,7 @@ const TextContent = (props, touchDevice) =>
                 {touchDevice 
                     ?
                         <div className="buttonsWrapper">
-                            {props.scrollTo && 
+                            {props.scrollTo && !formSended &&
                                 <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
                                     <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
