@@ -106,7 +106,7 @@ render(){
             <ContentRowItem 
               imgLeft={true}
               imageName="audio_editor_slider5.png"
-              headerText="Master your sound for the higher quality"    
+              headerText="Master your sound for higher quality"    
             >
               <Text className="ListItem">Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
               <Text className="ListItem">Change sound bitrate to any desired level</Text>

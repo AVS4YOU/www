@@ -116,7 +116,7 @@ render(){
                 <ContentRowItem 
                     imgLeft={true}
                     imageName="make-big-saving.jpg"
-                    headerText="Work with all types of documents conveniently"
+                    headerText="Make a big saving on the software"
                     free={false}   
                 >
                   <Text className="education__ListItem" color="#555555" fontWeight={500}>Get an extra 30% discount by sending your request at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>. 

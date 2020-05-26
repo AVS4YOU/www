@@ -160,7 +160,7 @@ render(){
                 </Text>
                 <Text className="common-info-block__text">
                   To get a quote for schools and universities, 
-                  please email us at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> or visit Education page
+                  please email us at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> or visit <Link to="/education.aspx">Education page</Link>
                 </Text>
               </div>
 

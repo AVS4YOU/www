@@ -61,7 +61,7 @@ render(){
               </Text>
               <Text className="common-info-block__text">
                 AVS4YOU offers a set of professional programs, 
-                a perfect fit for both novices in multimedia prossing and experts. AVS4YOU suite is feature rich and allows to perform all multimedia tasks efficiently.
+                a perfect fit for both novices in multimedia processing and experts. AVS4YOU suite is feature rich and allows to perform all multimedia tasks efficiently.
               </Text>
             </div>
 

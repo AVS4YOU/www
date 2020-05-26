@@ -28,7 +28,7 @@ render(){
           <div className="header__background-gradient">
             <div className="header__body">
               <Text as="h1" className="header__heading">Reseller Program</Text>
-              <Text as="h3" className="header__subtitle">AVS4YOU offers you a great opportunity to build your own business reselling one of the best multimedia software suites on today's market</Text>
+              <Text as="h3" className="header__subtitle">No registration required. There is no need to place links on the website. Request a quote whenever your customer needs AVS4YOU multimedia suite.</Text>
             </div>
           </div>
         </div>
