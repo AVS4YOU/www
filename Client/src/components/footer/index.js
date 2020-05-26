@@ -141,7 +141,7 @@ class Footer extends React.Component{
                         <Link to="/privacy.aspx">
                             <Text className="footer-link-text">{this.props.t("Privacy")}</Text>
                         </Link>
-                        <Link to="/license-agreement">
+                        <Link to="/license-agreement.aspx">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
                         </Link>
                         <a href="https://www.avs4you.com/blog/">
@@ -170,7 +170,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> {currentYear} 'All rights reserved'.</Text>
+                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> {currentYear} All rights reserved.</Text>
             </StyledFooter>
         )
     }
