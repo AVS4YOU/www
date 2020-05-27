@@ -42,53 +42,47 @@ render(){
             Advantages of AVS4YOU software
           </Text>
           <div className="body-education__wrapper">
-            <div className="table">
-              <div className="tableRow first">
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      5 Multimedia Tools Suite fro audio and video processing
-                    </Text>
-                    <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
-                  </div>
-                </div>
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      Special discounts up to 70% off
-                    </Text>
-                  </div>
-                </div>
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      Easy software administration
-                    </Text>
-                  </div>
-                </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  5 Multimedia Tools Suite fro audio and video processing
+                </Text>
+                <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
               </div>
-              <div className="tableRow second">
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      A single volume license key
-                    </Text>
-                  </div>
-                </div>
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      Online or offline software registration
-                    </Text>
-                  </div>
-                </div>
-                <div className="tableCell">
-                  <div className="itemContent">
-                    <Text>
-                      Easily enhance the learning process
-                    </Text>
-                  </div>
-                </div>
+            </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  Special discounts up to 70% off
+                </Text>
+              </div>
+            </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  Easy software administration
+                </Text>
+              </div>
+            </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  A single volume license key
+                </Text>
+              </div>
+            </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  Online or offline software registration
+                </Text>
+              </div>
+            </div>
+            <div className="tableCell">
+              <div className="itemContent">
+                <Text>
+                  Easily enhance the learning process
+                </Text>
               </div>
             </div>
           </div>
@@ -105,7 +99,7 @@ render(){
               >
               <div className="education__content-wrapper">
                 <ContentRowItem
-                  imgLeft={false}
+                  imgLeft={true}
                   imageName="create-classroom-projects.jpg"
                   headerText="Create classroom video projects and presentations"
                   free={false}
@@ -114,7 +108,7 @@ render(){
                 </ContentRowItem>
 
                 <ContentRowItem 
-                    imgLeft={true}
+                    imgLeft={false}
                     imageName="make-big-saving.jpg"
                     headerText="Make a big saving on the software"
                     free={false}   
@@ -126,7 +120,7 @@ render(){
 
               <div className="education__content-wrapper">
                 <ContentRowItem
-                  imgLeft={false}
+                  imgLeft={true}
                   imageName="education_screen_educators1_new.png"
                   headerText="Explain new topics and difficult concepts through video"
                   free={false}
@@ -136,7 +130,7 @@ render(){
                 </ContentRowItem>
 
                 <ContentRowItem 
-                    imgLeft={true}
+                    imgLeft={false}
                     imageName="education_screen_educators2.png"
                     headerText="Record lectures and webinars"
                     free={false}   
@@ -145,7 +139,7 @@ render(){
                 </ContentRowItem>
 
                 <ContentRowItem
-                  imgLeft={false}
+                  imgLeft={true}
                   imageName="education_screen_educators3.png"
                   headerText="Make video tutorials to reach even remote students"
                   free={false}

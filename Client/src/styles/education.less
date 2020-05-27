@@ -72,6 +72,7 @@
         max-width: 800px;
         margin: auto;
         margin-top: 80px;
+        padding: 0 15px;
     }
 
     .body-education{
@@ -82,79 +83,70 @@
 
         .body-education__wrapper{
             padding-top: 80px;
-
-            .table{
-                display: table;
-                margin:auto;
-            }
-
-            .tableRow{
-                display:table-row;
-
-                &.first{
-                    .tableCell{
-                        &:nth-child(1){
-                            border-bottom: 0.5px solid rgba(230, 230, 230);
-        
-                            .itemContent{
-                                background-image: url(../images/education/education_camera.svg);
-                            }
-                        }
-                        &:nth-child(2){ 
-                            //border: 0.5px solid rgba(230, 230, 230);
-                            border-bottom: 0.5px solid rgba(230, 230, 230);
-                            border-left: 0.5px solid rgba(230, 230, 230);
-                            border-right: 0.5px solid rgba(230, 230, 230);
-        
-                            .itemContent{
-                                background-image: url(../images/education/education_discounts.svg);
-                            }
-                        }
-                        &:nth-child(3){ 
-                            border-bottom: 0.5px solid rgba(230, 230, 230);
-        
-                            .itemContent{
-                                background-image: url(../images/education/education_person.svg);
-                            }
-                        }
-                    }
-                }
-
-                &.second{
-                    .tableCell{
-                        &:nth-child(1) {
-                            .itemContent{
-                                background-image: url(../images/education/education_key.svg);
-                            }
-                        }
-                        &:nth-child(2){
-                            border-left: 0.5px solid rgba(230, 230, 230);
-                            border-right: 0.5px solid rgba(230, 230, 230);
-        
-                            .itemContent{
-                                background-image: url(../images/education/education_monitor.svg);
-                            }
-                        }
-                        &:nth-child(3){
-                            .itemContent{
-                                background-image: url(../images/education/education_lesson.svg);
-                            }
-                        }
-                    }
-                }
-            }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: -ms-flex;
+            -ms-justify-content: center;
+            -ms-flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
 
             .tableCell{
-                display:table-cell;
-                padding: 40px;
-                padding-top:0;           
+                width: 30%;
+                max-width: 350px;
+                min-width: 262px;
+                padding-bottom: 30px;
+
+                &:nth-child(1){
+                    border-bottom: 0.5px solid rgba(230, 230, 230);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_camera.svg);
+                    }
+                }
+                &:nth-child(2){ 
+                    //border: 0.5px solid rgba(230, 230, 230);
+                    border-bottom: 0.5px solid rgba(230, 230, 230);
+                    border-left: 0.5px solid rgba(230, 230, 230);
+                    border-right: 0.5px solid rgba(230, 230, 230);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_discounts.svg);
+                    }
+                }
+                &:nth-child(3){ 
+                    border-bottom: 0.5px solid rgba(230, 230, 230);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_person.svg);
+                    }
+                }
+                &:nth-child(4) {
+                    .itemContent{
+                        background-image: url(../images/education/education_key.svg);
+                    }
+                }
+                &:nth-child(5){
+                    border-left: 0.5px solid rgba(230, 230, 230);
+                    border-right: 0.5px solid rgba(230, 230, 230);
+
+                    .itemContent{
+                        background-image: url(../images/education/education_monitor.svg);
+                    }
+                }
+                &:nth-child(6){
+                    .itemContent{
+                        background-image: url(../images/education/education_lesson.svg);
+                    }
+                }
             }
 
             .itemContent{
                 max-width: 220px;
-                padding-top: 100px;
+                padding-top: 110px;
                 margin: auto;
-                background-position: 0 23px;
+                background-position: 0 35px;
                 background-repeat: no-repeat;
                 background-size: 60px 60px;
             }
@@ -208,6 +200,52 @@
 
         .body-education{ 
 
+            .body-education__wrapper{
+                max-width: 580px;
+
+                .itemContent{
+                    max-width: 345px;
+                    background-position: 50% 23px;
+
+                    &>p{
+                        text-align:center;
+                    }
+                }
+    
+                .tableCell{
+                    width: 50%;
+                    padding: 0 20px 35px;
+                    box-sizing: border-box;
+                    min-width: 229px;
+    
+                    &:nth-child(1){
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(2){ 
+                        //border: 0.5px solid rgba(230, 230, 230);
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                        border-left: 0.5px solid rgba(230, 230, 230);
+                        border-right: none;
+                    }
+                    &:nth-child(3){ 
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(4) {
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                        border-left: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(5){
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(6){
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                        border-left: 0.5px solid rgba(230, 230, 230);
+                    }
+                }
+            }
+
             .body-education__button{
                 padding: 15px 20px;
             }
@@ -222,7 +260,6 @@
                 margin-bottom: 30px;
                 max-width: none;
             }
-
         }
     }
 }
@@ -233,6 +270,21 @@
             margin: auto;
             padding: 15px 30px;
         }
+
+        .form{ 
+            &> img{
+                max-width: 60px;
+                margin-bottom: 10px;
+            }
+            .common__heading{
+                padding: 0 15px;
+            }
+        }
+
+        .education-from-wrapper{
+            margin-top: 40px;
+        }
+
 
        .header{ 
            .header__body{
@@ -269,15 +321,6 @@
                         border: none;
                     }
                 }
-
-                .itemContent{
-                    max-width: 345px;
-                    background-position: 50% 23px;
-
-                    &>p{
-                        text-align:center;
-                    }
-                }
             }
         }
     }
@@ -305,16 +348,6 @@
                 background: radial-gradient(closest-side at 52% 52%, #000000CC 0%, #131313AB 173%, #54545400 362%) 0% 0% no-repeat padding-box;
             }
         }
-
-        .form{ 
-            &> img{
-                max-width: 60px;
-                margin-bottom: 10px;
-            }
-            .common__heading{
-                padding: 0 15px;
-            }
-        }
         
         .screen-wrapper{
             padding: 50px 15px;
@@ -326,6 +359,50 @@
         .body-education{ 
             .body-education__wrapper{
                 padding-top: 30px;
+
+                .itemContent{
+                    max-width: 100%;
+                    background-position: 50% 23px;
+
+                    &>p{
+                        text-align:center;
+                    }
+                }
+    
+                .tableCell{
+                    width: 100%;
+                    padding: 0 20px 25px;
+                    box-sizing: border-box;
+                    min-width: 229px;
+                    max-width: 100%;
+    
+                    &:nth-child(1){
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(2){ 
+                        //border: 0.5px solid rgba(230, 230, 230);
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                        border-left: none;
+                        border-right: none;
+                    }
+                    &:nth-child(3){ 
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(4) {
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                        border-left: none;
+                    }
+                    &:nth-child(5){
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: 0.5px solid rgba(230, 230, 230);
+                    }
+                    &:nth-child(6){
+                        border-bottom: none;
+                        border-left: none;
+                        padding-bottom: 0;
+                    }
+                }
             }
 
             .common-info-block{
@@ -337,11 +414,11 @@
 
         .choose-solution__content-wrapper{
              .top-button{
-                padding: 5px 15px;
-                max-width: 125px;
+                padding: 5px 10px;
+                max-width: 155px;
 
                 &>p{
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 21px;
                 }
              }
