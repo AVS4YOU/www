@@ -111,6 +111,7 @@ const RowContent = styled.div`
         vertical-align: middle;
         margin: auto;
         padding: 0 10px;
+        padding-left: 70px;
 
         .tableWrapper{
             display: table;
@@ -204,6 +205,10 @@ const RowContent = styled.div`
     }
 
     @media (max-width: 1300px) {
+
+        .flexWrapper{
+            padding-left: 10px;
+        }
 
         .rowImage{
             max-width: 80%;
