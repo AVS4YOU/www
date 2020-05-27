@@ -123,7 +123,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video-editor-slider2.png"
+                imageName="video-editor-slider2.jpg"
                 headerText="Make vivid slideshows"   
             >
               <Text className="ListItem">Import images, add your voice or favourite audio tracks</Text>
@@ -133,7 +133,7 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                imageName="video-editor-slider6.png"
+                imageName="video-editor-slider6.jpg"
                 headerText="Share your video"    
             >
               <Text className="ListItem">Save the newly-made video in the desired format on your computer</Text>
@@ -170,8 +170,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
           <ScreenshotsCarousel
-            imageNames={["video-editor-slider1.png", "video-editor-slider2.png", "video-editor-slider2-replace.png"]}
-            imageNamesPopup={["video-editor-slider1.png", "video-editor-slider2.png", "video-editor-slider2-replace.png"]}
+            imageNames={["video-editor-slider1.png", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
+            imageNamesPopup={["video-editor-slider1.png", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
           />
           <PageContentWrapper>
