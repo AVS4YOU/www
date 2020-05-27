@@ -132,9 +132,10 @@ class HeaderDownloadButtons extends React.PureComponent {
     componentDidMount(){
         var parser = new UAParser();
         var result = parser.getResult();
-
+        let regex = new RegExp("mobile", 'i');
+    
         this.setState({
-            touchDevice: result.device.type === "mobile" || result.device.type === "tablet"
+            touchDevice: result.device.type === "mobile" || result.device.type === "tablet" || regex.test(result.device.browser)
         })
     }
 
