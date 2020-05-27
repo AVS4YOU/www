@@ -24,10 +24,17 @@ render(){
       >
         <div className="header">
             <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.jpg" style={{position: "absolute"}}/>
-            <div className="header__body">
-                <Text as="h1" className="header__heading">Affiliate Program</Text>
-                <Text as="h3" className="header__subtitle">Generate maximum sales with AVS4YOU top tools</Text>
-                <Button className="header__button" textClassName="header__button-text" href="https://www.avangate.com/affiliates/sign-up.php?merchant=onlmetec&template=affiliate-signup-october-2011&clean=1&lang=en">Sign up now</Button>
+            <div className="header__background-gradient">
+              <div className="header__body">
+                <div className="header__body-wrapper">
+                  <Text as="span" className="flagBackgroundFlipped">Earn 50% commission on every sale!
+                    <div></div>
+                  </Text>
+                  <Text as="h1" className="header__heading">Affiliate Program</Text>
+                  <Text as="h3" className="header__subtitle">Generate maximum sales with AVS4YOU top tools</Text>
+                  <Button className="header__button" textClassName="header__button-text" href="https://www.avangate.com/affiliates/sign-up.php?merchant=onlmetec&template=affiliate-signup-october-2011&clean=1&lang=en">Sign up now</Button>
+                </div>
+              </div>
             </div>
         </div>
         <div className="body-reasons screen-wrapper">
