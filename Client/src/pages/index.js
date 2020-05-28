@@ -329,7 +329,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_converter.png"
+                          imageName="slider_video_converter.jpg"
                           headerText="AVS Video Converter"
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
@@ -343,7 +343,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_video_editor.png"
+                          imageName="slider_video_editor.jpg"
                           headerText="AVS Video Editor"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
@@ -360,7 +360,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_remaker.png"
+                          imageName="slider_video_remaker.jpg"
                           headerText="AVS Video ReMaker"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
@@ -376,7 +376,7 @@ class mainPage extends React.PureComponent {
                       </ContentRowItem>
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="media_player_formats2x.png"
+                          imageName="media_player_formats2x.jpg"
                           headerText="AVS Media Player"
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
@@ -394,7 +394,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_audio_editor.png"
+                          imageName="slider_audio_editor.jpg"
                           headerText="AVS Audio Editor"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
@@ -410,7 +410,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_audio_converter.png"
+                          imageName="slider_audio_converter.jpg"
                           headerText="AVS Audio Converter"
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
