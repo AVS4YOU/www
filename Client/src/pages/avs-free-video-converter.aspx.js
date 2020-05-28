@@ -14,6 +14,7 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import "../styles/avs-video-converter.less";
 
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
@@ -170,9 +171,9 @@ render(){
           <ScreenshotsCarousel 
             maxWidth={734}
             maxWidthPopup={734}
-            imageNames={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg", "video_converter_slider6.jpg"]}
-            imageNamesPopup={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg", "video_converter_slider6.jpg"]}
-            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
+            imageNames={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg"]}
+            imageNamesPopup={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg"]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
             
           />
           <PageContentWrapper>
