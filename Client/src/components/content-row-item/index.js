@@ -12,19 +12,6 @@ import Cookies from 'universal-cookie';
 
 const formSended = new Cookies().get("formSended");
 
-const StylesSended = css`
-    &.mobile{
-        background-color: #1373E2;
-        padding: 9px 35px;
-        border-radius: 5px;
-
-        p{
-            color: #fff;
-        }
-    }
-
-`;
-
 const RowContent = styled.div`
    padding-top: 180px;
     display:table;
@@ -183,7 +170,15 @@ const RowContent = styled.div`
             display: table-cell;
             padding: 0 25px;
 
-            ${formSended && StylesSended}
+            &.mobileSended{
+                background-color: #1373E2;
+                padding: 9px 35px;
+                border-radius: 5px;
+        
+                p{
+                    color: #fff;
+                }
+            }
 
             &:hover{
                 text-decoration:underline;
@@ -368,7 +363,9 @@ const TextContent = (props, touchDevice) =>
                                     <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
                                 </Link>
                             }
-                            {props.smallButtonLink && <Button className="secondaryButton mobile" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
+                            {props.smallButtonLink && !formSended 
+                                ? <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>
+                                : <Button className="secondaryButton mobileSended" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
                         </div>  
                     :
                         <div className="buttonsWrapper">
