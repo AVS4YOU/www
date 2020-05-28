@@ -85,7 +85,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="audio_editor_edit_all_key.png"
+                imageName="audio_editor_edit_all_key.jpg"
                 headerText="Edit all key audio formats"    
             >
               <Text className="ListItem">Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc.</Text>
@@ -96,7 +96,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="audio_editor_record_audio.png"
+                imageName="audio_editor_record_audio.jpg"
                 headerText="Record audio from any inputs"   
             >
               <Text className="ListItem">Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card</Text>
@@ -105,7 +105,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="audio_editor_slider5.png"
+              imageName="audio_editor_slider5.jpg"
               headerText="Master your sound for higher quality"    
             >
               <Text className="ListItem">Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
@@ -115,7 +115,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              imageName="audio_editor_slider6.png"
+              imageName="audio_editor_slider6.jpg"
               headerText="Extend your experience with additional features"    
             >
               <Text className="ListItem">Turn written text into a natural sounding voice with Text-to-speech function</Text>
@@ -151,8 +151,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 8.5</Text>
           <ScreenshotsCarousel 
-            imageNames={["audio_editor_slider1.png", "audio_editor_slider2.png", "audio_editor_slider3.png", "audio_editor_slider4.png", "audio_editor_slider5.png", "audio_editor_slider6.png" ]}
-            imageNamesPopup={["audio_editor_slider1@2x.png", "audio_editor_slider2@2x.png", "audio_editor_slider3@2x.png", "audio_editor_slider4@2x.png", "audio_editor_slider5@2x.png", "audio_editor_slider6@2x.png"]}
+            imageNames={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg" ]}
+            imageNamesPopup={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />
