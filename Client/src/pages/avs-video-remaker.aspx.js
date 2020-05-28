@@ -85,7 +85,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video_remaker_edit_video_files-min.png"
+                imageName="video_remaker_edit_video_files-min.jpg"
                 headerText="Edit video files without reconversion"    
             >
               <Text className="ListItem">Cut, delete unwanted parts, change scene sequence in all popular video formats</Text>
@@ -95,7 +95,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_remaker_record_video-min.png"
+                imageName="video_remaker_record_video-min.jpg"
                 headerText="Capture video"   
             >
               <Text className="ListItem">Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs</Text>
@@ -106,7 +106,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="video_remaker_disc_menu-min.png"
+              imageName="video_remaker_disc_menu-min.jpg"
               headerText="Create DVD and Blu-ray Menus"    
             >
               <Text className="ListItem">Split video into chapters, select between a number of menu templates</Text>
@@ -143,9 +143,9 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.3</Text>
           <ScreenshotsCarousel 
-            imageNames={["video_remaker_edit_video_files-min.png", "video_remaker_record_video-min.png", "video_remaker_disc_menu-min.png", "video_remaker_slider1-min.png", "video_remaker_slider2-min.png"]}
-            imageNamesPopup={["video_remaker_edit_video_files-min.png", "video_remaker_record_video-min.png", "video_remaker_disc_menu-min.png", "video_remaker_slider1-min.png", "video_remaker_slider2-min.png"]}
-            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
+            imageNames={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
+            imageNamesPopup={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />
           <PageContentWrapper>
