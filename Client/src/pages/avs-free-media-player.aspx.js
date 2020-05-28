@@ -14,6 +14,21 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {MediaPlayer} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import styled from 'styled-components';
+
+const TableWrapper = styled.table`
+  margin:auto;
+
+  span {
+    left: -47px;
+  }
+
+  @media (max-width: 750px) {
+    span {
+      left: auto;
+    }
+  }
+`;
 
 
 class avsFreeMediaPlayer extends React.PureComponent {
@@ -47,10 +62,13 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">Free
-                  <div></div>
-                </Text>
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Media Player")}</Text>
+                
+                <TableWrapper>
+                  <Text as="span" className="flagBackground header">Free
+                    <div></div>
+                  </Text>
+                  <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Media Player")}</Text>
+                </TableWrapper>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Watch video, play audio and view your pictures with Free AVS Media Player.</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
