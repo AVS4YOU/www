@@ -79,11 +79,6 @@ const StyledCarouselWrapper = styled.div`
             box-shadow: 0px 3px 6px #ffffff;
             transition: 0.15s linear;
             border: 1px solid #ECEFF5;
-            border-radius: 5px;
-    
-            img{
-                border-radius: 5px;
-            }
         
             &:hover{ 
                 box-shadow: 0px 3px 6px #00000029;
