@@ -127,6 +127,9 @@ const RowContent = styled.div`
 
         &.LinkItem{
             text-decoration:none;
+            color: #1E72D2;
+            font-weight: 500;   
+            font-size: 18px;
 
             &:before{
                 content: none;
