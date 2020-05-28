@@ -84,7 +84,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="audio_converter_slider2.png"
+                imageName="audio_converter_slider2.jpg"
                 headerText="Convert and edit all key audio formats"    
             >
               <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc.</Text>
@@ -94,7 +94,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="audio_converter_slider3.png"
+                imageName="audio_converter_slider3.jpg"
                 headerText="Create audio files for any purpose."   
             >
               <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks</Text>
@@ -104,7 +104,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="audio_converter_bath.png"
+              imageName="audio_converter_bath.jpg"
               headerText="Convert audio files in bulk"    
             >
               <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once</Text>
@@ -134,8 +134,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 9.1</Text>
           <ScreenshotsCarousel 
-            imageNames={["audio_converter_slider1.png", "audio_converter_slider2.png", "audio_converter_slider3.png", "audio_converter_bath.png" ]}
-            imageNamesPopup={["audio_converter_slider1@2x.png", "audio_converter_slider2@2x.png", "audio_converter_slider3@2x.png", "audio_converter_slider4@2x.png"]}
+            imageNames={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg" ]}
+            imageNamesPopup={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />
