@@ -87,7 +87,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video-editor-slider3.png"
+                imageName="video-editor-slider3.jpg"
                 headerText="Work with all key formats and HD videos"    
             >
               <Text className="ListItem">Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.)</Text>
@@ -100,7 +100,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video-editor-slider4.png"
+                imageName="video-editor-slider4.jpg"
                 headerText="Record your video"   
             >
               <Text className="ListItem">Transfer video from DV/HDV cameras, webcams or VHS cameras</Text>
@@ -110,7 +110,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="video-editor-slider5.png"
+              imageName="video-editor-slider5.jpg"
               headerText="Make your video look professional"    
             >
               <Text className="ListItem">Cut out a particular scene or remove shaky and unnecessary parts</Text>
@@ -170,8 +170,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
           <ScreenshotsCarousel
-            imageNames={["video-editor-slider1.png", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
-            imageNamesPopup={["video-editor-slider1.png", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
+            imageNames={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
+            imageNamesPopup={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
           />
           <PageContentWrapper>
