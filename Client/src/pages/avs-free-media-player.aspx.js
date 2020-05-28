@@ -103,7 +103,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ContentRowItem
               id="overview"
               imgLeft={true}
-              imageName="media_player_slide2.png"
+              imageName="media_player_slide2.jpg"
               headerText="Watch video"
             >
               <Text className="ListItem">Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc.</Text>
@@ -113,7 +113,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="media_player_slide3.png"
+              imageName="media_player_slide3.jpg"
               headerText="Play audio"
             >
               <Text className="ListItem">Add audio tracks of any format such as WAV, MP3, ALAC, FLAC, M4A, OGG, AAC, AMR, etc.</Text>
@@ -122,7 +122,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={true}
-              imageName="media_player_slide4.png"
+              imageName="media_player_slide4.jpg"
               headerText="View pictures"
             >
               <Text className="ListItem">Select images in PNG, JPEG, GIF, etc. and view them as a slideshow.</Text>
@@ -131,7 +131,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="media_player_slide5.png"
+              imageName="media_player_slide5.jpg"
               headerText="Enjoy sound-around effect"
             >
               <Text className="ListItem">Free AVS Media Player supports of 3.1, 5.1 and 7.1 speaker configurations.</Text>
@@ -144,8 +144,8 @@ class avsFreeMediaPlayer extends React.PureComponent {
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Media Player</Text>
           <ScreenshotsCarousel
-            imageNames={["media_player_slide1.png", "media_player_slide2.png", "media_player_slide3.png", "media_player_slide4.png", "media_player_slide5.png"]}
-            imageNamesPopup={["media_player_slide1.png", "media_player_formats2x.png", "media_player_audio_formats2x.png", "media_player_slideshow2x.png", "media_player_surround2x.png"]}
+            imageNames={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
+            imageNamesPopup={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
 
           />
