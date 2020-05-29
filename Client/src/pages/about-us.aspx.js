@@ -170,7 +170,7 @@ render(){
                 </Text>
                 <Text className="common-info-block__text">
                   For assistance with purchasing and using our products, 
-                  please visit our <Link to="/support.aspx">Support Center</Link>
+                  please visit our <a href="https://support.avs4you.com">Support Center</a>
                 </Text>
               </div>
             </div>
