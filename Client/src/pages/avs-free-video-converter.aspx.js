@@ -104,9 +104,12 @@ render(){
                 headerText="Convert video easily and fast"   
             >
               <Text className="ListItem">Convert videos in one click with improved settings for powerful computers</Text>
-              <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology for H.264/AVC и VC-1 codecs. It speeds up preview and conversion processes significantly (only for Intel CPU with integrated Intel Graphics)</Text>
-              <Text className="ListItem">Use software Intel® Media decoder for H.264/AVC and VC-1 codecs. This option is helpful for the users of AMD and old Intel processors</Text>
+              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2 codecs. It speeds up preview and conversion processes significantly</Text>
+              <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics</Text>
+              <Text className="ListItem">Use software Intel® Media decoder for AMD and old Intel processors</Text>
+              <Text className="ListItem">You can use a common software decoder for all processors as an alternative</Text>
               <Text className="ListItem">Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media</Text>
+              <Text className="ListItem">You can use NVIDIA CUDA® decoder with NVDEC/NVCUVID technology for NVIDIA video cards</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -136,7 +139,7 @@ render(){
                 imageName="video_converter_slider_popup3.jpg"
                 headerText="Convert and share videos on Web"
             >
-              <Text className="ListItem"><span>Save video to any format or modern gadgets</span>Apple iPhone XS/XR/X/8/7, Apple iPad Pro, 2018, 2017, iPad Air 2 etc.; Samsung Galaxy S9/S8/S7, Galaxy Note 9/8/5, Galaxy Tab S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia XZ3/XZ2/XZ1, XZ2/XZ1 Compact</Text>
+              <Text className="ListItem"><span>Save video to any format or modern gadgets</span>Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc.<br/> Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) <br/> Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact.</Text>
               <Text className="ListItem"><span>Create DVD/Blu-ray discs</span>Convert from/to Blu-ray or DVD formats. Cut, apply effects, add colorful DVD/Blu-ray menus. Split your movie into chapters and burn DVD/Blu-ray discs</Text>
               <Text className="ListItem"><span>Convert videos for popular social platforms</span>Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox</Text>
             </ContentRowItem>
