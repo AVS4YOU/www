@@ -91,7 +91,7 @@ render(){
               <Text as="h4" className="common-info-block__headline">
                 Download now
               </Text>
-              <Link className="common-info-block__link" to="/avs-free-image-converter.aspx">
+              <Link className="common-info-block__link" to="/avs-free-video-converter.aspx">
                 <Text className="common-info-block__text">AVS Video Converter</Text>
               </Link>
               <Link className="common-info-block__link" to="/avs-video-editor.aspx">
