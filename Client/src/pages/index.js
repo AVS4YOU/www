@@ -205,6 +205,21 @@ const MainPageWrapper = styled.div`
     }
   }
 
+  @media (max-width: 1370px) {
+    .headerText{
+      line-height: 53px;
+      font-size: 47px;
+    }
+    .headerContentWrapper{
+      padding-top: 115px;
+      padding-bottom: 160px;
+    }
+
+    .headerDownloadButtons{
+      margin-top:22px;
+    }
+  }
+
   @media (max-width: 1050px) {
     .headerBackground {
       background-position: 0 0;

@@ -10,7 +10,8 @@ const StyledInputWrapper = styled.div`
         cursor: pointer;
         position: relative;
         width: 0px;
-        height: 11px;
+        height: 14px;
+        visibility: hidden;
 
         &:checked{
             &:after{
@@ -24,6 +25,7 @@ const StyledInputWrapper = styled.div`
                 transform: rotate(45deg);
                 left: 1px;
                 top: 1px;
+                visibility: visible;
             }
         }
 
@@ -38,6 +40,7 @@ const StyledInputWrapper = styled.div`
             z-index: 1;
             position: absolute;
             left: -3px;
+            visibility: visible;
         }
     }
 
