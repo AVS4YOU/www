@@ -159,7 +159,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                         :
                             <div className="mobileFormWrapper">
                                 {this.state.formIsShown ?    
-                                    <FormGetCoupon toShowInfoPopup={this.toShowInfoPopup}/>
+                                    <FormGetCoupon t={this.props.t} toShowInfoPopup={this.toShowInfoPopup}/>
                                 :
 
                                     <Button 

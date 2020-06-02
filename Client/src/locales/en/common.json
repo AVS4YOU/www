@@ -1,22 +1,121 @@
 {
-  "hello": "Hi, how are you?",
-  "goBackHome": "Go back to home page",
-  "howToChild": "Example on how to translate in a child component",
+  "************************COMMON***************************" : "************************COMMON***************************",
+
+
   "/": "/",
-  "goSecondPage": "Go Second Page",
-  "ThisIsSecondPage": "This Is Second Page",
   "CurrentLanguage": "English",
+
+
+
+
+  "************************HEADER DOWNLOAD BUTTONS***************************" : "************************HEADER DOWNLOAD BUTTONS***************************",
+
+
+  "get $5 coupon code": "GET $5 COUPON CODE",
+  "download now": "download now",
+
+
+
+
+  "************************FORM GET COUPON***************************" : "************************FORM GET COUPON***************************",
+
+
+  "Email address" : "Email address",
+  "Get coupon" : "Get coupon",
+  "I agree that my personal data may be collected, used and processed in accordance with the privacy policy" : "I agree that my personal data may be collected, used and processed in accordance with the privacy policy",
+
+
+
+
+  "************************HEADER***************************" : "************************HEADER***************************",
+
+  "Download": "Download",
+  "Help center": "Help center",
+  "learn more": "learn more",
+  "Buy now": "Buy now",
   "Video software": "Video software",
   "Audio software": "Audio software",
   "Free software": "Free software",
-  "Download": "Download",
-  "download now": "download now",
-  "learn more": "learn more",
-  "Buy now": "Buy now",
-  "Help center": "Help center",
-  "get $5 coupon code": "GET $5 COUPON CODE",
+  "Easily edit and create videos" : "Easily edit and create videos",
+  "Convert all key video formats" : "Convert all key video formats",
+  "Edit videos without reconversion" : "Edit videos without reconversion",
+  "Easily edit and create audio" : "Easily edit and create audio",
+  "Convert all popular audio formats" : "Convert all popular audio formats",
+  "Watch audio and video" : "Watch audio and video",
+  "Support form" : "Support form",
+  "Guides" : "Guides",
+  "Knowledge center" : "Knowledge center",
+  "FAQ" : "FAQ",
+
+
+
+
+  "************************FOOTER***************************" : "************************FOOTER***************************",
+
+  "Windows Software": "Windows Software",
+  "Video Editor": "Video Editor",
+  "Video Converter": "Video Converter",
+  "Audio Editor": "Audio Editor",
+  "Partnership": "Partnership",
+  "Affiliates": "Affiliates",
+  "Resellers": "Resellers",
+  "Education": "Education",
+  "Help Center": "Help Center",
+  "Company": "Company",
+  "About AVS4YOU": "About AVS4YOU",
+  "Contact us": "Contact us",
+  "Privacy": "Privacy",
+  "EULA": "EULA",
+  "Blog": "Blog",
+  "Follow Us:": "Follow Us:",
+  "© Online Media Technologies Ltd., UK": "© Online Media Technologies Ltd., UK",
+  "All rights reserved.": "All rights reserved.",
+
+
+
+
+  "*****************************MAIN PAGE********************************" : "*****************************MAIN PAGE********************************",
+
 
   "Ultimate multimedia editing family": "Ultimate multimedia editing family",
-  "avs4you": "avs4you",
-  "Produce spectacular video, audio and photo content and even more, without any limitations": "Produce spectacular video, audio and photo content and even more, without any limitations"
+  "AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files.": "AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files.",
+  "avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter" : "avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter",
+  "Produce spectacular video, audio content and even more, without any limitations" : "Produce spectacular video, audio content and even more, without any limitations",
+  "Turn your ideas into exciting content" : "Turn your ideas into exciting content",
+  "Video" : "Video",
+  "Audio" : "Audio",
+  "AVS Video Converter" : "AVS Video Converter",
+  "Convert all key video formats and file sizes" : "Convert all key video formats and file sizes",
+  "Smart conversion presets" : "Smart conversion presets",
+  "GPU conversion acceleration" : "GPU conversion acceleration",
+  "AVS Video Editor" : "AVS Video Editor",
+  "Edit all key video formats" : "Edit all key video formats",
+  "Cut, trim, join video files" : "Cut, trim, join video files",
+  "Apply effects and transitions" : "Apply effects and transitions",
+  "Add audio, comments, subtitles" : "Add audio, comments, subtitles",
+  "Capture PC screen" : "Capture PC screen",
+  "Use Chroma key, Slow Motion" : "Use Chroma key, Slow Motion",
+  "AVS Video ReMaker" : "AVS Video ReMaker",
+  "Edit video files without reconversion" : "Edit video files without reconversion",
+  "Support of all key video formats" : "Support of all key video formats",
+  "Transfer video from camcorders and video cameras" : "Transfer video from camcorders and video cameras",
+  "Create DVD and Blu-ray menus and discs" : "Create DVD and Blu-ray menus and discs",
+  "AVS Media Player" : "AVS Media Player",
+  "Open and watch videos in all popular formats" : "Open and watch videos in all popular formats",
+  "Listen to your favourite music" : "Listen to your favourite music",
+  "View images as a slideshow" : "View images as a slideshow",
+  "Create personal playlists" : "Create personal playlists",
+  "Take snapshots" : "Take snapshots",
+  "AVS Audio Editor" : "AVS Audio Editor",
+  "Record audio data" : "Record audio data",
+  "Cut, trim, join and mix audio files" : "Cut, trim, join and mix audio files",
+  "Improve sound quality" : "Improve sound quality",
+  "Remove noise" : "Remove noise",
+  "Text to Speech" : "Text to Speech",
+  "AVS Audio Converter" : "AVS Audio Converter",
+  "Convert all key audio formats" : "Convert all key audio formats",
+  "Modify audio file information" : "Modify audio file information",
+  "Create audiobooks and ringtones" : "Create audiobooks and ringtones",
+  "Export audio from video" : "Export audio from video"
 }
+

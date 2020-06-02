@@ -307,7 +307,6 @@ class FormGetCoupon extends React.Component {
                 console.log(responseTest)
             } else {
                 this.props.toShowInfoPopup();
-                console.log("Email sended")
             }
 
         } catch (error) {
@@ -323,7 +322,7 @@ class FormGetCoupon extends React.Component {
                         tabIndex="1"
 
                         inputName="email"
-                        inputLabel="Email address"
+                        inputLabel={this.props.t("Email address")}
 
                         value={this.state.email.value}
                         inputClassName={this.state.email.inputClassName}
@@ -347,7 +346,7 @@ class FormGetCoupon extends React.Component {
                     fontSize={14}
                     textTransform="uppercase"
                 >
-                    Get coupon
+                    {this.props.t("Get coupon")}
                 </Button>
 
                 <div className="recaptchaWrapper">
@@ -376,7 +375,7 @@ class FormGetCoupon extends React.Component {
                         fontSize={12}
                         fontWeight={300}
                         color="#ffffff" >
-                        I agree that my personal data may be collected, used and processed in accordance with the privacy policy
+                        {this.props.t("I agree that my personal data may be collected, used and processed in accordance with the privacy policy")}
                     </Text>
                     {this.state.infoIsShown && <InfoPopup closePopupFunction={this.closePopupFunction}></InfoPopup>}
                 </div>

@@ -95,7 +95,7 @@ class Footer extends React.Component{
         return(
             <StyledFooter className="footerStyles">
                 <FooterGridContainer>
-                    <FooterItem header="Windows Software">
+                    <FooterItem header={this.props.t("Windows Software")}>
                         <Link to="/avs-video-editor.aspx">
                             <Text className="footer-link-text">{this.props.t("Video Editor")}</Text>
                         </Link>
@@ -106,7 +106,7 @@ class Footer extends React.Component{
                             <Text className="footer-link-text">{this.props.t("Audio Editor")}</Text>
                         </Link>
                     </FooterItem>
-                    <FooterItem header="Partnership">
+                    <FooterItem header={this.props.t("Partnership")}>
                         <Link to="/affiliates.aspx">
                             <Text className="footer-link-text">{this.props.t("Affiliates")}</Text>
                         </Link>
@@ -117,7 +117,7 @@ class Footer extends React.Component{
                             <Text className="footer-link-text">{this.props.t("Education")}</Text>
                         </Link>
                     </FooterItem>
-                    <FooterItem header="Help Center">
+                    <FooterItem header={this.props.t("Help Center")}>
                         <a href="https://support.avs4you.com">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
                         </a>
@@ -131,7 +131,7 @@ class Footer extends React.Component{
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
                         </a>
                     </FooterItem>
-                    <FooterItem header="Company">
+                    <FooterItem header={this.props.t("Company")}>
                         <Link to="/about-us.aspx">
                             <Text className="footer-link-text">{this.props.t("About AVS4YOU")}</Text>
                         </Link>
@@ -153,7 +153,7 @@ class Footer extends React.Component{
                             <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                         </Link>
                         <div>
-                            <Text fontSize={14} color="#8e999f">Follow Us:</Text>
+                            <Text fontSize={14} color="#8e999f">{this.props.t("Follow Us:")}</Text>
 
                             <a className="footerSocial" href="https://www.facebook.com/avs4you">
                                 <img src={facebook} className="footerSocialIcon" alt="facebook"/>
@@ -170,7 +170,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <Text className="rights"><Link href="/">© Online Media Technologies Ltd., UK</Link> {currentYear} All rights reserved.</Text>
+                <Text className="rights"><Link href="/">{this.props.t("© Online Media Technologies Ltd., UK")}</Link> {currentYear} {this.props.t("All rights reserved.")}</Text>
             </StyledFooter>
         )
     }

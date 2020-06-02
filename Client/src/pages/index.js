@@ -309,9 +309,9 @@ class mainPage extends React.PureComponent {
     <Layout getDevice={this.getDevice} 
             pageContext={this.props.pageContext} 
             t={this.props.t}
-            title="AVS4YOU best software for processing video, audio, image"
-            metaDescription="AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files."
-            metaKeywords="avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter"
+            title={this.props.t("AVS4YOU best software for processing video, audio, image")}
+            metaDescription={this.props.t("AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files.")}
+            metaKeywords={this.props.t("avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter")}
     >
       <MainPageWrapper>
         <div className="headerBackground">
@@ -334,75 +334,75 @@ class mainPage extends React.PureComponent {
         <StyledMainContentWrapper>
           <PageContentWrapper>
               <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
-              <Text fontSize={46} fontWeight={600} id="mainBodyHeader" className="bodyHeader">Turn your ideas into exciting content</Text>
+              <Text fontSize={46} fontWeight={600} id="mainBodyHeader" className="bodyHeader">{this.props.t("Turn your ideas into exciting content")}</Text>
               
               <ContentSelector
                   className="content-wrapper"
-                  buttonNames={["Video","Audio"]}
+                  buttonNames={[this.props.t("Video"),this.props.t("Audio")]}
                   disableArrows={true}
               >
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
                           imageName="slider_video_converter.jpg"
-                          headerText="AVS Video Converter"
+                          headerText={this.props.t("AVS Video Converter")}
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
                           scrollTo="headerCoupon"
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key video formats and file sizes</Text>
-                          <Text  className="ListItem" color="#555555" fontWeight={500}>Smart conversion presets</Text>
-                          <Text  className="ListItem" color="#555555" fontWeight={500}>GPU conversion acceleration</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Convert all key video formats and file sizes")}</Text>
+                          <Text  className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Smart conversion presets")}</Text>
+                          <Text  className="ListItem" color="#555555" fontWeight={500}>{this.props.t("GPU conversion acceleration")}</Text>
                       </ContentRowItem>
 
                       <ContentRowItem 
                           imgLeft={true}
                           imageName="slider_video_editor.jpg"
-                          headerText="AVS Video Editor"
+                          headerText={this.props.t("AVS Video Editor")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                           smallButtonLink="/avs-video-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Edit all key video formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join video files</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Apply effects and transitions</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Add audio, comments, subtitles</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Capture PC screen</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Use Chroma key, Slow Motion</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Edit all key video formats")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Cut, trim, join video files")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Apply effects and transitions")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Add audio, comments, subtitles")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Capture PC screen")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Use Chroma key, Slow Motion")}</Text>
                       </ContentRowItem>
 
                       <ContentRowItem 
                           imgLeft={false}
                           imageName="slider_video_remaker.jpg"
-                          headerText="AVS Video ReMaker"
+                          headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
                           smallButtonLink="/avs-video-remaker.aspx"   
                           scrollTo="headerCoupon"   
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Edit video files without reconversion</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Support of all key video formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join video files</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Transfer video from camcorders and video cameras</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Capture PC screen</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Create DVD and Blu-ray menus and discs</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Edit video files without reconversion")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Support of all key video formats")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Cut, trim, join video files")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Transfer video from camcorders and video cameras")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Capture PC screen")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Create DVD and Blu-ray menus and discs")}</Text>
                       </ContentRowItem>
                       <ContentRowItem 
                           imgLeft={true}
                           imageName="media_player_formats2x.jpg"
-                          headerText="AVS Media Player"
+                          headerText={this.props.t("AVS Media Player")}
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
                           smallButtonLink="/avs-free-media-player.aspx"   
                           scrollTo="headerCoupon"   
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Open and watch videos in all popular formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Listen to your favourite music</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>View images as a slideshow</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Create personal playlists</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Take snapshots</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Open and watch videos in all popular formats")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Listen to your favourite music")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("View images as a slideshow")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Create personal playlists")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Take snapshots")}</Text>
                       </ContentRowItem>
                   </ContentWrapper>
 
@@ -410,33 +410,33 @@ class mainPage extends React.PureComponent {
                       <ContentRowItem 
                           imgLeft={false}
                           imageName="slider_audio_editor.jpg"
-                          headerText="AVS Audio Editor"
+                          headerText={this.props.t("AVS Audio Editor")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                           smallButtonLink="/avs-audio-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Record audio data</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Improve sound quality</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Remove noise</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Text to Speech</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Record audio data")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Cut, trim, join and mix audio files")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Improve sound quality")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Remove noise")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Text to Speech")}</Text>
                       </ContentRowItem>
 
                       <ContentRowItem 
                           imgLeft={true}
                           imageName="slider_audio_converter.jpg"
-                          headerText="AVS Audio Converter"
+                          headerText={this.props.t("AVS Audio Converter")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
                           smallButtonLink="/avs-audio-converter.aspx"   
                           scrollTo="headerCoupon"   
                       >
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Convert all key audio formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Cut, trim, join and mix audio files</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Modify audio file information</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Create audiobooks and ringtones</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={500}>Export audio from video</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Convert all key audio formats")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Cut, trim, join and mix audio files")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Modify audio file information")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Create audiobooks and ringtones")}</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Export audio from video")}</Text>
                       </ContentRowItem>
                   </ContentWrapper>
               </ContentSelector>
