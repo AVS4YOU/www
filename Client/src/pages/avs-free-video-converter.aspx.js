@@ -100,10 +100,10 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_converter_convert_video_easily2.jpg"
+                imageName="video_converter_convert_video_easily3.jpg"
                 headerText="Convert video easily and fast"   
             >
-              <Text className="ListItem">Convert videos in one click with improved settings for powerful computers</Text>
+              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2, H.265/HEVC, VP8, VP9 codecs. It speeds up preview and conversion processes significantly</Text>
               <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2 codecs. It speeds up preview and conversion processes significantly</Text>
               <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics</Text>
               <Text className="ListItem">Use software Intel® Media decoder for AMD and old Intel processors</Text>

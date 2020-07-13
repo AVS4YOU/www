@@ -93,7 +93,7 @@ render(){
               <Text className="ListItem">Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.)</Text>
               <Text className="ListItem">Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</Text>
               <Text className="ListItem">Open, modify and save video using popular codeсs H.264, H.265 (reading only), MPEG-4, etc.</Text>
-              <Text className="ListItem">Speed up HD video editing due to the integrated video cache technology</Text>
+              <Text className="ListItem">Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards (GPU)</Text>
               <Text className="ListItem">Use new automatic presets for powerful computers</Text>
               <Text as="a" target="_blank" href="https://onlinehelp.avs4you.com/avs-video-editor/features/savingvideos/supportedformats.aspx" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
             </ContentRowItem>

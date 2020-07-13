@@ -49,6 +49,9 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
+              <Text as="span" className="flagBackground header">Free
+                  <div></div>
+                </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert audio between popular formats. Apply effects, customize output parameters, use batch mode.</Text>
                 <HeaderDownloadButtons 
@@ -88,8 +91,9 @@ render(){
                 headerText="Convert and edit all key audio formats"    
             >
               <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc.</Text>
-              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize)</Text>
+              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize) *</Text>
               <Text className="ListItem">Modify audio file information: Title, Author, Artist and Album cover</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -97,9 +101,10 @@ render(){
                 imageName="audio_converter_slider3.jpg"
                 headerText="Create audio files for any purpose."   
             >
-              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks</Text>
+              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks *</Text>
               <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone</Text>
               <Text className="ListItem">Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc.</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
             <ContentRowItem 
