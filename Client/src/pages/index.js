@@ -427,7 +427,7 @@ class mainPage extends React.PureComponent {
                           imgLeft={true}
                           imageName="slider_audio_converter.jpg"
                           headerText={this.props.t("AVS Audio Converter")}
-                          free={false}
+                          free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
                           smallButtonLink="/avs-audio-converter.aspx"   
                           scrollTo="headerCoupon"   

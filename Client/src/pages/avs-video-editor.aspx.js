@@ -168,7 +168,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.4</Text>
           <ScreenshotsCarousel
             imageNames={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
             imageNamesPopup={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}

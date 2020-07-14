@@ -104,7 +104,6 @@ render(){
                 headerText="Convert video easily and fast"   
             >
               <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2, H.265/HEVC, VP8, VP9 codecs. It speeds up preview and conversion processes significantly</Text>
-              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2 codecs. It speeds up preview and conversion processes significantly</Text>
               <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics</Text>
               <Text className="ListItem">Use software Intel® Media decoder for AMD and old Intel processors</Text>
               <Text className="ListItem">You can use a common software decoder for all processors as an alternative</Text>

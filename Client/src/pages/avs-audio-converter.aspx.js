@@ -113,7 +113,8 @@ render(){
               headerText="Convert audio files in bulk"    
             >
               <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once</Text>
-              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode</Text>
+              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode *</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
@@ -137,7 +138,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 9.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.0</Text>
           <ScreenshotsCarousel 
             imageNames={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg" ]}
             imageNamesPopup={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg"]}

@@ -142,7 +142,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
           <div id="reviews" className="backgroundWrapper">
             <ReviewScreen />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Media Player</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">Free AVS Media Player 5.2</Text>
           <ScreenshotsCarousel
             imageNames={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
             imageNamesPopup={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
