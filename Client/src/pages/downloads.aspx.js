@@ -127,7 +127,11 @@ render(){
             </div>
 
             <div className="product-box">
-              <div className="product-image audio-converter"></div>
+              <div className="product-image audio-converter">
+              <div className="achievement">
+                  <Text>Free</Text>
+                </div>
+              </div>
               <div className="achievement"></div>
               <Text className="product-name" as="h5">AVS Audio Converter</Text>
               <div className="tech-params">
