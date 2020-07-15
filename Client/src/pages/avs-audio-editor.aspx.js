@@ -149,7 +149,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 8.5</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.0</Text>
           <ScreenshotsCarousel 
             imageNames={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg" ]}
             imageNamesPopup={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg"]}

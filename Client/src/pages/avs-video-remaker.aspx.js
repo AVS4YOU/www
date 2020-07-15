@@ -141,7 +141,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.3</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.4</Text>
           <ScreenshotsCarousel 
             imageNames={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
             imageNamesPopup={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
