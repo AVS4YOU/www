@@ -52,7 +52,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Make your photos look stylish with Free AVS Photo Editor.</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSPhotoEditor.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -140,7 +140,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSPhotoEditor.exe" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>

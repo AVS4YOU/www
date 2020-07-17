@@ -58,7 +58,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -195,7 +195,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoConverter.platforms}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>
