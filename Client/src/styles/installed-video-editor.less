@@ -1,8 +1,147 @@
 .installed-video-editor-page{
 
+    .screenshotImageBlock{
+        background-image: url(../images/installed-video-editor/main-screenshot.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        height: 70%;
+        width: 70%;
+        background-size: contain;
+        background-position-y: 40%;
+}
+
+    .resourcesTable{
+        display: table;
+        margin: auto;
+        width: 800px;
+        margin-bottom: 40px;
+}
+
+    .screenshotImageBlock{
+        background-image: url(../images/installed-video-editor/main-screenshot.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        height: 70%;
+        width: 70%;
+        background-size: contain;
+        background-position-y: 40%;
+}
+
+    .helpful{
+        width: 58%;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: 400;
+        text-align: center;
+        color: #130d3d;
+        line-height: 43px;
+}
+
+    .knowledge{
+        padding: 7px 0 0 52px;
+        border-left: 3px solid #ccc;
+        display: block;
+        font-size: 17px;
+        line-height: 22px;
+        color: #393939;
+        font-weight: 600;
+        a{
+            margin: 0 auto;
+            text-decoration: underline;
+        }  
+}
+
+    .knowledgeIcon{
+        background-image: url(../images/installed-video-editor/knowledge.png);
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        padding-left: 65px;
+        margin-bottom: 29px;
+        a{
+            margin: 0;
+            text-decoration: underline;
+        }  
+}
+
+    .tipsIcon{
+        background-image: url(../images/installed-video-editor/tips-tricks.png);
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 44px;
+        padding-left: 63px;
+        margin-bottom: 34px;
+        display: flex;
+        a{
+            margin: 0;
+            text-decoration: underline;
+        }  
+}
+
+    .questionIcon{
+        background-image: url(../images/installed-video-editor/question.png);
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 40px;
+        padding-left: 65px;
+}
+
+
     main .header .header__body{
         padding-bottom: 100px;
-        padding-top: 40px;
+        padding-top: 94px;
+    }
+
+    .avs-logo{
+        display: block;
+        position: absolute;
+        top: 14px;
+        left: 454px;
+        width: 71px;
+        height: 41px;
+    }
+
+    .benefitsCarousel{
+        margin: auto;
+
+        .active .carouselItem{
+            padding: 238px 25px 62px;
+        }
+
+        .carouselItem{
+            width: 225px;
+            margin: 0 7px;
+            transition: 0.3s;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            background-color:#fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 15px;
+            height: 70px;
+            padding: 208px 10px 32px;
+
+            &.unlimited{
+                background-image: url(../images/installed-video-editor/card-1.png);
+            }
+            &.free{
+                background-image: url(../images/installed-video-editor/card-2.png);
+            }
+            &.noWatermark{
+                background-image: url(../images/installed-video-editor/card-3.png);
+            }
+            &.support{
+                background-image: url(../images/installed-video-editor/card-4.png);
+            }
+            &.secure{
+                background-image: url(../images/installed-video-editor/card-5.png);
+            }
+
+            p{
+                text-align: center;
+                margin: 0 auto;
+            }  
+        }
     }
 
     .installedSuper{
@@ -105,12 +244,12 @@
 
 
     .body-company{
-        background: #f0f0f0;
+        background: rgb(240,240,240);
         padding: 80px 30px 0;
         width: 100%;
         margin: auto;
         box-sizing: border-box;
-        height: 1000px;
+        height: 1170px;
 
         .screenshotImage{
             height: 526px;
@@ -179,112 +318,12 @@
         }
     }
 
-    .unique-body{
-        background-color:#FFF9F1;
-
-        .unique-body__max-width{
-            padding: 120px 30px;
-            max-width: 1255px;
-            margin:auto;
-        }
-
-        .unique-body__wrapper{
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding-top: 50px;
-        }
-
-        .unique-body__box{
-            max-width:285px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .unique-body__number{
-            color:#4196D4;
-            padding: 30px 0;
-            padding-left: 50px;
-            font-size: 56px;
-            position: relative;
-            font-weight: bold;
-            z-index:1;
-
-            &:before{
-                content: '';
-                position: absolute;
-                width: 85px;
-                height: 85px;
-                border-radius: 50px;
-                background-color: #FB8A29;
-                left: 0;
-                z-index: -1;
-                opacity: 0.15;
-            }
-        }
-
-        .unique-body__sub-header{
-            color:#000000;
-            font-size: 24px;
-            padding-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .unique-body__text{
-            color:#555555;
-            font-size: 18px;
-        }
-    }
-
-    .map-body{
-        padding: 120px 30px;
-        max-width: 1540px;
-        margin:auto;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .map-body__block{
-            box-shadow: 0px 0px 32px #00000014;
-            margin-bottom:60px;
-            padding:24px;
-            padding-left:57px;
-            box-sizing: border-box;
-            width: 100%;
-        }
-
-        .map-body__contacts-wrapper{
-            width: 35%;
-        }
-
-        .map-body__adaptive-map{
-            width: 60%;
-        }
-
-        .map-body__heading{
-            color:#000000;
-            font-size: 24px;
-            padding-bottom: 16px;
-            font-weight: 600;
-        }
-
-        .map-body__text{
-            color:#555555;
-            font-size: 18px;
-            line-height: 1.7;
-        }
-
-        .map-body__adaptive-map{
-            width: 60%;
-        }
-    }
-
     .contact-body{
-        background-color:#FFF9F1;
+        background-color:#fff;
 
         .contact-body__max-width{
-            padding: 120px 30px;
-            max-width: 1540px;
+            position: relative;
+            padding: 80px 30px;
             margin:auto;
         }
 
@@ -295,22 +334,105 @@
             padding-top: 80px;
         }
 
+        .common-info-block__headline{
+            width: 100%;
+            padding-top: 200px;
+            text-align: center;
+        }
+
+        .common-info-block__text{
+        text-align: center;
+        width: 100%;
+        }
+
+        .common__heading{
+        text-align: center;
+        font-size: 38px;
+        letter-spacing: 1px;
+        line-height: 43px;
+        color: #0b0b38;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 700px;
+        margin: 0 auto 0px;
+        }
+        
+        .gift{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 7px 27px 5px;
+            background-color: #8db523;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .download-product {
+            display: block;
+            font-size: 17px;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #38add8;
+            margin: 0 auto;
+            height: 48px;
+            width: 264px;
+            padding-top: 13px;
+            text-align: center;
+            align-items: center;
+            white-space: nowrap;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            margin-top: 80px;
+
+            a{
+                text-decoration: none;
+            }
+        }
+
         .common-info-block{
+
+            border: solid 1px;
+            border-color: #a9a9a9;
+            min-width: 24%;
+            height: 564px;
             
             &:nth-child(1):before{
-                background-image: url(../images/about-us/affiliates.svg);
+                background-image: url(../images/installed-video-editor/audio-editor.png);
+                width: 100%;
+                height: 216px;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                margin-top: 40px;
             }
 
             &:nth-child(2):before{
-                background-image: url(../images/about-us/sales.svg);
+                background-image: url(../images/installed-video-editor/video_converter.png);
+                height: 216px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                margin-top: 40px;
             }
 
             &:nth-child(3):before{
-                background-image: url(../images/about-us/education.svg);
+                background-image: url(../images/installed-video-editor/audio-converter.png);
+                height: 216px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                margin-top: 40px;
             }
 
             &:nth-child(4):before{
-                background-image: url(../images/about-us/customer-support.svg);
+                background-image: url(../images/installed-video-editor/video-remaker.png);
+                height: 216px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                margin-top: 40px;
             }
 
         }

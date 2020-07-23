@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from "prop-types";
+import { useSwipeable, Swipeable } from 'react-swipeable';
 
 const StyledCarousel = styled.div`
     position: relative;
@@ -126,6 +127,7 @@ class BenefitsCarousel extends React.Component{
         })
 
         return(
+            <Swipeable>
             <StyledCarousel className={className}>
                 <StyledWrapper marginLeft={this.state.marginLeft}>
                     {CarouselItems}
@@ -134,9 +136,11 @@ class BenefitsCarousel extends React.Component{
                     {CarouselButtons}
                 </StyledButtonsWrapper>     
             </StyledCarousel>
-        )
-    }
-}
+            </Swipeable>
+        );
+    };
+};
+  
 
 BenefitsCarousel.propTypes = {
     padding: PropTypes.number
