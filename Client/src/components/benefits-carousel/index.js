@@ -37,7 +37,6 @@ const StyledCarouselButton = styled.div`
     cursor: pointer;
 `;
 
-
 class BenefitsCarousel extends React.Component{
 
     constructor(props) {
@@ -48,19 +47,28 @@ class BenefitsCarousel extends React.Component{
         }
     }
 
-    onButtonRightClick = () => {
-        const nextIndex = this.state.currentIndex + 1;
-        const marginLeft = this.getMarginLeft(nextIndex);
+    swipeLeft = () => {
 
-        this.changeSlide(marginLeft, nextIndex);
+        const valueOfChildren = this.props.children.length;
+
+        const nextIndex = this.state.currentIndex + 1;
+
+        if(nextIndex < 5){
+            const marginLeft = this.getMarginLeft(nextIndex);
+
+            this.changeSlide(marginLeft, nextIndex);
+        }
     }
 
-    onButtonLeftClick = () => {
+    swipeRight = () => {
 
         const nextIndex = this.state.currentIndex - 1;
-        const marginLeft = this.getMarginLeft(nextIndex);
 
-        this.changeSlide(marginLeft, nextIndex);
+        if(nextIndex >= 0){
+            const marginLeft = this.getMarginLeft(nextIndex);
+
+            this.changeSlide(marginLeft, nextIndex);
+        }
     }
 
     onCarouselItemClick = (index) => {
@@ -84,11 +92,27 @@ class BenefitsCarousel extends React.Component{
         return marginLeft;
     }
 
+    onSwipedRight = () => {
+        this.swipeRight();
+    }
+
+    onSwipedLeft = () => {
+        this.swipeLeft();
+    }
+
     render(){
 
         const { className, children } = this.props;
         const CarouselItems = [];
         const CarouselButtons = [];
+
+        const carouselConfig = {
+            delta: 10,                            
+            preventDefaultTouchmoveEvent: false,   
+            trackTouch: true,                     
+            trackMouse: true,                     
+            rotationAngle: 0,                      
+        }
 
         children.forEach((item, index) => {
             const itemClassName = index === this.state.currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
@@ -127,15 +151,15 @@ class BenefitsCarousel extends React.Component{
         })
 
         return(
-            <Swipeable>
-            <StyledCarousel className={className}>
-                <StyledWrapper marginLeft={this.state.marginLeft}>
-                    {CarouselItems}
-                </StyledWrapper>
-                <StyledButtonsWrapper>
-                    {CarouselButtons}
-                </StyledButtonsWrapper>     
-            </StyledCarousel>
+            <Swipeable onSwipedRight={this.onSwipedRight} onSwipedLeft={this.onSwipedLeft} {...carouselConfig}>
+                <StyledCarousel className={className}>
+                    <StyledWrapper marginLeft={this.state.marginLeft}>
+                        {CarouselItems}
+                    </StyledWrapper>
+                    <StyledButtonsWrapper>
+                        {CarouselButtons}
+                    </StyledButtonsWrapper>     
+                </StyledCarousel>
             </Swipeable>
         );
     };
