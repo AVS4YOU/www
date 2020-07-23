@@ -58,7 +58,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -100,11 +100,10 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_converter_convert_video_easily2.jpg"
+                imageName="video_converter_convert_video_easily3.jpg"
                 headerText="Convert video easily and fast"   
             >
-              <Text className="ListItem">Convert videos in one click with improved settings for powerful computers</Text>
-              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2 codecs. It speeds up preview and conversion processes significantly</Text>
+              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2, H.265/HEVC, VP8, VP9 codecs. It speeds up preview and conversion processes significantly</Text>
               <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics</Text>
               <Text className="ListItem">Use software Intel® Media decoder for AMD and old Intel processors</Text>
               <Text className="ListItem">You can use a common software decoder for all processors as an alternative</Text>
@@ -170,7 +169,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.1</Text>
           <ScreenshotsCarousel 
             maxWidth={734}
             maxWidthPopup={734}
@@ -196,7 +195,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoConverter.platforms}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>

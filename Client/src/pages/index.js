@@ -323,7 +323,7 @@ class mainPage extends React.PureComponent {
 
               <HeaderDownloadButtons 
                 t={this.props.t}
-                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
+                mainHref="https://new.avs4you.com/downloads/AVSInstallPack.exe"
                 scrollTo="mainBodyHeader"
                 className="headerDownloadButtons"
               />
@@ -347,7 +347,7 @@ class mainPage extends React.PureComponent {
                           imageName="slider_video_converter.jpg"
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
                           scrollTo="headerCoupon"
                       >
@@ -361,7 +361,7 @@ class mainPage extends React.PureComponent {
                           imageName="slider_video_editor.jpg"
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
                           smallButtonLink="/avs-video-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
@@ -378,7 +378,7 @@ class mainPage extends React.PureComponent {
                           imageName="slider_video_remaker.jpg"
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoReMaker.exe"
                           smallButtonLink="/avs-video-remaker.aspx"   
                           scrollTo="headerCoupon"   
                       >
@@ -394,7 +394,7 @@ class mainPage extends React.PureComponent {
                           imageName="media_player_formats2x.jpg"
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSMediaPlayer.exe"
                           smallButtonLink="/avs-free-media-player.aspx"   
                           scrollTo="headerCoupon"   
                       >
@@ -412,7 +412,7 @@ class mainPage extends React.PureComponent {
                           imageName="slider_audio_editor.jpg"
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSAudioEditor.exe"
                           smallButtonLink="/avs-audio-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
@@ -427,8 +427,8 @@ class mainPage extends React.PureComponent {
                           imgLeft={true}
                           imageName="slider_audio_converter.jpg"
                           headerText={this.props.t("AVS Audio Converter")}
-                          free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                          free={true}
+                          blueButtonLink="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
                           smallButtonLink="/avs-audio-converter.aspx"   
                           scrollTo="headerCoupon"   
                       >

@@ -33,7 +33,7 @@ render(){
                     <Text as="h3" className="header__subtitle">Get all AVS4YOU® software in 1 installation package</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}
-                      mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
+                      mainHref="https://new.avs4you.com/downloads/AVSInstallPack.exe"
                       backgroundColor="blue"
                       mainPadding="18px 50px"
                       margin="auto"
@@ -61,7 +61,7 @@ render(){
                 <Text as="p">File Size: {VideoReMaker.size} MB</Text>
                 <Text as="p">Platforms: {VideoReMaker.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -77,7 +77,7 @@ render(){
                 <Text as="p">File Size: {VideoEditor.size} MB</Text>
                 <Text as="p">Platforms: {VideoEditor.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -93,7 +93,7 @@ render(){
                 <Text as="p">File Size: {VideoConverter.size} MB</Text>
                 <Text as="p">Platforms: {VideoConverter.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
             
             <div className="product-box">
@@ -105,7 +105,7 @@ render(){
                 <Text as="p">File Size: {MediaPlayer.size} MB</Text>
                 <Text as="p">Platforms: {MediaPlayer.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -123,11 +123,15 @@ render(){
                 <Text as="p">File Size: {AudioEditor.size} MB</Text>
                 <Text as="p">Platforms: {AudioEditor.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
-              <div className="product-image audio-converter"></div>
+              <div className="product-image audio-converter">
+              <div className="achievement">
+                  <Text>Free</Text>
+                </div>
+              </div>
               <div className="achievement"></div>
               <Text className="product-name" as="h5">AVS Audio Converter</Text>
               <div className="tech-params">
@@ -136,7 +140,7 @@ render(){
                 <Text as="p">File Size: {AudioConverter.size} MB</Text>
                 <Text as="p">Platforms: {AudioConverter.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>

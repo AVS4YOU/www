@@ -55,7 +55,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -93,7 +93,7 @@ render(){
               <Text className="ListItem">Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.)</Text>
               <Text className="ListItem">Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</Text>
               <Text className="ListItem">Open, modify and save video using popular codeсs H.264, H.265 (reading only), MPEG-4, etc.</Text>
-              <Text className="ListItem">Speed up HD video editing due to the integrated video cache technology</Text>
+              <Text className="ListItem">Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards (GPU)</Text>
               <Text className="ListItem">Use new automatic presets for powerful computers</Text>
               <Text as="a" target="_blank" href="https://onlinehelp.avs4you.com/avs-video-editor/features/savingvideos/supportedformats.aspx" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
             </ContentRowItem>
@@ -168,7 +168,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.4</Text>
           <ScreenshotsCarousel
             imageNames={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
             imageNamesPopup={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
@@ -191,7 +191,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoEditor.platforms}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>

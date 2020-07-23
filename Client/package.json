@@ -47,8 +47,8 @@
     "@storybook/react": "^5.2.5",
     "babel-loader": "^8.0.6",
     "gatsby": "^2.0.115",
-    "react": "next",
-    "react-dom": "next"
+    "react": "^0.0.0-7f28234f8",
+    "react-dom": "^0.0.0-7f28234f8"
   },
   "private": false,
   "repository": {

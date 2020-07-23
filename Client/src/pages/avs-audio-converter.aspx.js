@@ -49,11 +49,14 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
+              <Text as="span" className="flagBackground header">Free
+                  <div></div>
+                </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert audio between popular formats. Apply effects, customize output parameters, use batch mode.</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -88,8 +91,9 @@ render(){
                 headerText="Convert and edit all key audio formats"    
             >
               <Text className="ListItem">Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc.</Text>
-              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize)</Text>
+              <Text className="ListItem">Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize) *</Text>
               <Text className="ListItem">Modify audio file information: Title, Author, Artist and Album cover</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -97,9 +101,10 @@ render(){
                 imageName="audio_converter_slider3.jpg"
                 headerText="Create audio files for any purpose."   
             >
-              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks</Text>
+              <Text className="ListItem">Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks *</Text>
               <Text className="ListItem">Create ringtones: Edit an audio file and save it to M4R format for iPhone</Text>
               <Text className="ListItem">Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc.</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -108,7 +113,8 @@ render(){
               headerText="Convert audio files in bulk"    
             >
               <Text className="ListItem">Use a batch mode to convert or compress a large number of audio files at once</Text>
-              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode</Text>
+              <Text className="ListItem">Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode *</Text>
+              <Text className="ListItem footnote" fontWeight={500}>* This feature is available in a full version</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
@@ -132,7 +138,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 9.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.0</Text>
           <ScreenshotsCarousel 
             imageNames={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg" ]}
             imageNamesPopup={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg"]}
@@ -156,7 +162,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.platforms}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSAudioConverter.exe" to="headerContentWrapper"/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>

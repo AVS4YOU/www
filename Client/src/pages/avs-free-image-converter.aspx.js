@@ -52,7 +52,7 @@ class avsFreeImageConverter extends React.PureComponent {
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Share your photos, stories and adventures with Free AVS Image Converter.</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
+                  mainHref="https://new.avs4you.com/downloads/AVSImageConverter.exe"
                   secondaryText="Windows 10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
@@ -157,7 +157,7 @@ class avsFreeImageConverter extends React.PureComponent {
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSImageConverter.exe" to="headerContentWrapper" />
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
             </div>
