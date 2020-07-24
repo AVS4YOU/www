@@ -134,7 +134,7 @@ render(){
           </div>
         </div>
 
-        <div className="resourcesTable"> <table className="resourses" style={{margin: "auto"}}>
+        <div className="resourcesTable"> <table className="resourses" style={{margin: "auto", width: "1800px"}}>
 <tr>
 <td className="helpful">Helpful resources</td>
 <td className="knowledge"><p className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>Knowledge center</a></p>
