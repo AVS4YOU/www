@@ -43,7 +43,7 @@ class BenefitsCarousel extends React.Component{
         super(props);
         this.state = {
             marginLeft: 0,
-            currentIndex: 2,
+            currentIndex: this.props.centerSlide,
         }
     }
 
@@ -87,7 +87,7 @@ class BenefitsCarousel extends React.Component{
     }
 
     getMarginLeft = (nextIndex) => {
-        const diff = 2 - nextIndex;
+        const diff = this.props.centerSlide - nextIndex;
         const marginLeft = diff * this.element.offsetWidth;
         return marginLeft;
     }
@@ -172,7 +172,8 @@ BenefitsCarousel.propTypes = {
   
 BenefitsCarousel.defaultProps = {
     padding: 30,
-    marginLeft: 0
+    marginLeft: 0,
+    centerSlide: 2
 }
 
 export default BenefitsCarousel
