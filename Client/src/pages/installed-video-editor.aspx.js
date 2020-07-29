@@ -134,16 +134,13 @@ render(){
           </div>
         </div>
 
-        <div className="resourcesTable"> <table className="resourses" style={{margin: "auto", width: "1800px"}}>
-<tr>
-<td className="helpful">Helpful resources</td>
-<td className="knowledge"><p className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>Knowledge center</a></p>
-<p className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>Tips & tricks</a></p>
-<p className="questionIcon">Got a question?
-<br/>Contact our <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>support team</a> </p>
-</td>
-</tr>
-</table>
+        <div className="resourcesTable" style={{margin: "auto"}}> 
+<div className="helpful">Helpful resources</div>
+<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>Knowledge center</a></div>
+<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>Tips & tricks</a></div>
+<div className="questionIcon">Got a question?
+<br/>Contact our <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>support team</a> </div>
+</div>
 </div>
 </Layout>
     );

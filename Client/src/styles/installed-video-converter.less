@@ -198,61 +198,12 @@
         }
     }
 
-    .stats-wrapper{
-        padding: 140px 30px;
-        max-width: 1255px;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin: auto;
-        box-sizing: border-box;
-
-        .stats-wrapper__box{
-            padding-top: 250px;
-            min-width: 285px;
-            position: relative;
-            text-align: center;
-
-            h4{
-                font-size: 46px;
-                font-weight: 600;
-            }
-
-            p{
-                color:#555555;
-                font-size: 18px;
-                padding-top:10px;
-            }
-
-            &:before{
-                height: 214px;
-                position: absolute;
-                top: 0;
-                content: '';
-                left: 0;
-                right: 0;
-                background-position: 50%;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-            &:nth-child(1):before{
-                background-image: url(../images/about-us/staff.png);
-            }
-
-            &:nth-child(2):before{
-                background-image: url(../images/about-us/millions.png);
-            }
-
-            &:nth-child(3):before{
-                background-image: url(../images/about-us/sold-in.png);
-            }
-        }
-    }
-
     .resourcesTable{
-        display: table;
+        align-items: center;
+        justify-content: center;
+        padding: 45px 0 39px;
+        display: flex;
+        background: rgb(247,248,248);
         margin: auto;
         margin-bottom: 40px;
 }
@@ -459,24 +410,11 @@
             margin: auto;
         }
 
-        .resources{
-            width: 1200px;
-    }
-
         .common-info-block{
             max-width: none;
             width:45%;
             margin-bottom: 30px;
             max-width: 450px;
-        }
-
-
-        .stats-wrapper{
-            display: block;
-
-            .stats-wrapper__box{
-                margin-bottom: 40px;
-            }
         }
     }
 }
@@ -511,24 +449,6 @@
             .body-company__text{
                 font-size: 14px;
                 padding-top:30px;
-            }
-        }
-
-        .stats-wrapper{
-            padding-top:0;
-
-            .stats-wrapper__box{
-                width: 100%;
-                min-width: auto;
-                padding-top: 280px;
-
-                &:before{
-                    height: 250px;
-                }
-
-                h4{
-                    font-size: 38px;
-                }
             }
         }
 

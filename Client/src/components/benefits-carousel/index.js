@@ -44,6 +44,7 @@ class BenefitsCarousel extends React.Component{
         this.state = {
             marginLeft: 0,
             currentIndex: this.props.centerSlide,
+            currentElementWidth: 0
         }
     }
 
@@ -53,7 +54,7 @@ class BenefitsCarousel extends React.Component{
 
         const nextIndex = this.state.currentIndex + 1;
 
-        if(nextIndex < 5){
+        if(nextIndex < this.props.children.length){
             const marginLeft = this.getMarginLeft(nextIndex);
 
             this.changeSlide(marginLeft, nextIndex);
@@ -72,6 +73,7 @@ class BenefitsCarousel extends React.Component{
     }
 
     onCarouselItemClick = (index) => {
+        debugger
         if(this.state.currentIndex !== index){
             
             const marginLeft = this.getMarginLeft(index)
@@ -88,7 +90,7 @@ class BenefitsCarousel extends React.Component{
 
     getMarginLeft = (nextIndex) => {
         const diff = this.props.centerSlide - nextIndex;
-        const marginLeft = diff * this.element.offsetWidth;
+        const marginLeft = diff * this.state.currentElementWidth;
         return marginLeft;
     }
 
@@ -98,6 +100,14 @@ class BenefitsCarousel extends React.Component{
 
     onSwipedLeft = () => {
         this.swipeLeft();
+    }
+
+    componentDidMount(){
+        if(this.state.currentElementWidth !== this.element.offsetWidth){
+            this.setState({
+                currentElementWidth: this.element.offsetWidth
+            })
+        }
     }
 
     render(){
