@@ -153,32 +153,17 @@ class BenefitsCarousel extends React.Component{
             children.forEach((item, index) => {
                 const itemClassName = index === this.state.currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
 
-                CarouselItems.push(                       
-                    $('.center').slick({
-                        centerMode: true,
-                        centerPadding: '60px',
-                        slidesToShow: 3,
-                        responsive: [
-                          {
-                            breakpoint: 768,
-                            settings: {
-                              arrows: false,
-                              centerMode: true,
-                              centerPadding: '40px',
-                              slidesToShow: 3
-                            }
-                          },
-                          {
-                            breakpoint: 480,
-                            settings: {
-                              arrows: false,
-                              centerMode: true,
-                              centerPadding: '40px',
-                              slidesToShow: 1
-                            }
-                          }
-                        ]
-                      }));
+                CarouselItems.push(
+                    <div 
+                        className={itemClassName}
+                        key={index} id={"item" + index} 
+                        onClick={this.onCarouselItemClick.bind(this, index)}
+                    >
+                        {item}
+                    </div>
+                )
+            });
+        }
 
         children.forEach((item, index) => {
             CarouselButtons.push(
