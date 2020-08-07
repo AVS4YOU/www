@@ -43,7 +43,7 @@ const StyledMenuGrid = styled.div`
     grid-template-columns: auto 1fr auto;
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
-    max-width: 1155px;
+    max-width: 1350px;
     margin: auto;
     padding: 0 18px;
     box-sizing: border-box;
@@ -225,7 +225,9 @@ class MenuWrapper extends React.PureComponent {
                         <LogoWrapperMobile className="mobileBlock" href="/">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
+                        <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     </MenuItemsWrapper>
+                    <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="desktopBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
                     <BurgerButton className="mobileBlock" func={this.toggleMenu}></BurgerButton>
                 </StyledMenuGrid>
             </StyledMenuWrapper>

@@ -52,7 +52,7 @@ render(){
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
