@@ -73,7 +73,6 @@ class BenefitsCarousel extends React.Component{
     }
 
     onCarouselItemClick = (index) => {
-        debugger
         if(this.state.currentIndex !== index){
             
             const marginLeft = this.getMarginLeft(index)
@@ -149,6 +148,37 @@ class BenefitsCarousel extends React.Component{
                         </div>
                     )
         });
+
+        if(this.props.infinity){
+            children.forEach((item, index) => {
+                const itemClassName = index === this.state.currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
+
+                CarouselItems.push(                       
+                    $('.center').slick({
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 3,
+                        responsive: [
+                          {
+                            breakpoint: 768,
+                            settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '40px',
+                              slidesToShow: 3
+                            }
+                          },
+                          {
+                            breakpoint: 480,
+                            settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '40px',
+                              slidesToShow: 1
+                            }
+                          }
+                        ]
+                      }));
 
         children.forEach((item, index) => {
             CarouselButtons.push(

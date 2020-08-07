@@ -1,75 +1,90 @@
-.installed-audio-converter-page{
+.installed-pack-page{
 
     main .header .header__body{
         padding-bottom: 80px;
         padding-top: 94px;
+        max-width: 1100px;
     }
 
     .avs-logo{
+        background-image: url(../images/installed-pack/logo-gray.png);
         display: block;
         position: absolute;
         top: 14px;
         left: 454px;
-        width: 71px;
-        height: 41px;
-    }
-
-    .installedSuper{
-        width: 106px;
-        text-align: center;
+        width: 78px;
+        height: 43px;
+        z-index: 1;
     }
 
     .headerBackgroundImage{
-        height: 800px;
+        max-height: 665px;
+        overflow: hidden;
     }
 
     .header__heading.installed{
-        font-size: 38px;
-        color: #fff;
-        font-weight: 400;
-        line-height: 44px;
-        text-align: center;
-        max-width: 450px;
-        margin: auto;
-        padding-top: 25px;
-        padding-bottom: 55px;
-    }
-
-    .header__heading.exclusive{
-        background-color: #38add8;
-        color: #fff;
-        text-decoration: none;
-        padding: 3px 9px 3px 9px;
-        margin: auto;
-        font-size: 17px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-
-        a{
-            text-decoration: none;
-        }
+        width: 650px;
+        font-weight: 600;
+        font-size: 42px;
+        margin: 0;
+        padding-top: 100px;
+        text-align: left;
+        color: #120c28;
+        line-height: 1.1;
+        margin-bottom: 80px;
     }
 
     .header__buy{
-        background-color: #38add8;
+        display: block;
+        border: 0 none;
+        font-size: 20px;
+        margin: 40px auto 0;
+        padding: 10px 20px;
         color: #fff;
-        text-decoration: none;
-        padding: 15px 50px 10px;
-        border-radius: 5px;
-        margin: auto;
-        letter-spacing: 1.5px;
-        font-weight: 400;
+        background: url(../images/installed-pack/button.png) no-repeat;
+        background-color: transparent;
+        background-position: 50% 0;
+        width: 165px;
+        height: 50px;
+        line-height: 48px;
+        padding: 0;
 
         .header__buy__now{
-            font-size: 22px;
-            text-transform: uppercase;
-            font-weight: 100;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
         }
 
         a{
             text-decoration: none;
         }
     }
+
+    .header__buy__gray{
+        display: block;
+        border: 0 none;
+        font-size: 20px;
+        margin: 40px auto 0;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #9c9c9a;
+        background-position: 50% 0;
+        width: 165px;
+        height: 50px;
+        line-height: 48px;
+        padding: 0;
+
+    .header__buy__now{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
 
     .header__subtitle.installed {
         padding: 17px;
@@ -80,6 +95,93 @@
         margin: auto;
         max-width: 100%;
         margin-bottom: 30px;
+    }
+
+    .landing-block{
+        display: flex;
+    }
+
+    .landing-one-offer-block{
+        text-align: center;
+        left: 0;
+        width: 300px;
+        height: 370px;
+        background-color: #fdfdfb;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        color: #9c9c9a;
+        overflow: hidden;
+    }
+
+        .landing-one-offer-block-cross{
+        background: url(../images/installed-pack/cross.png) no-repeat;
+        margin-top: -330px;
+        width: 300px;
+        height: 370px;
+        z-index: 1;
+    }
+
+    .landing-two-offer-block{
+        text-align: center;
+        margin-left: 50px;
+        width: 300px;
+        height: 370px;
+        background-color: #fdfdfb;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        color: #303030;
+    }
+    .text-landing-box{
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: 600;
+        color: #120c28;
+        margin: 0;
+        padding: 35px 0 0;
+    }
+
+    .text-info-landing-box{
+        font-size: 15px;
+        display: block;
+        padding: 0;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    .text-info-landing-box-gray{
+        font-size: 15px;
+        display: block;
+        padding: 0;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-top: 25px;
+        color: #9c9c9a;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .text-landing-box-gray{
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: 600;
+        color: #9c9c9a;
+        margin: 0;
+        padding: 35px 0 0;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .after-text-box{
+        background-color: #efefef;
+        height: 3px;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .header__price{
@@ -93,12 +195,23 @@
     }
 
     .header__new__price{
-        display: table-cell;
-        font-size: 60px;
-        color: #fff;
-        vertical-align: top;
-        line-height: 73.93px;
-        text-align: center;
+        color: #1f9eb0;
+        font-size: 46px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .header__old__price{
+        color: #9c9c9a;
+        font-size: 46px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 20px;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     .header__price__block{
@@ -111,18 +224,8 @@
         color: #333333;
         text-align: center;
         font-weight: 400;
-        text-transform: uppercase; 
     }
 
-    .screenshotImageBlock{
-        background-image: url(../images/installed-audio-converter/audio-converter-screenshot.png);
-        background-repeat: no-repeat;
-        margin: auto;
-        height: 70%;
-        width: 70%;
-        background-size: contain;
-        background-position-y: 40%;
-}
     .benefitsCarousel{
         margin: auto;
 
@@ -150,14 +253,14 @@
             &.unlimited{
                 background-image: url(../images/installed-video-editor/card-1.png);
             }
-            &.use{
-                background-image: url(../images/installed-audio-converter/audio-card-4.png);
-            }
-            &.cut{
+            &.correct{
                 background-image: url(../images/installed-video-converter/card-2.png);
             }
-            &.support{
-                background-image: url(../images/installed-video-editor/card-4.png);
+            &.cut{
+                background-image: url(../images/installed-video-converter/card-3.png);
+            }
+            &.export{
+                background-image: url(../images/installed-video-converter/card-4.png);
             }
             &.free{
                 background-image: url(../images/installed-video-editor/card-2.png);
@@ -165,8 +268,8 @@
             &.noWatermark{
                 background-image: url(../images/installed-video-editor/card-3.png);
             }
-            &.create{
-                background-image: url(../images/installed-audio-converter/audio-card-5.png);
+            &.support{
+                background-image: url(../images/installed-video-editor/card-4.png);
             }
 
 
@@ -181,12 +284,12 @@
 
 
     .body-company{
-        background: rgb(240,240,240);
-        padding: 80px 30px 0;
+        background: #fff;
+        padding: 30px 0;
         width: 100%;
         margin: auto;
         box-sizing: border-box;
-        height: 1170px;
+        height: 570px;
 
         .screenshotImage{
             height: 526px;
@@ -313,7 +416,6 @@
         letter-spacing: 1px;
         line-height: 43px;
         color: #0b0b38;
-        text-transform: uppercase;
         font-weight: 400;
         width: 700px;
         margin: 0 auto 0px;
@@ -353,56 +455,10 @@
                 text-decoration: none;
             }
         }
-
-        .common-info-block{
-
-            border: solid 1px;
-            border-color: #a9a9a9;
-            min-width: 24%;
-            height: 564px;
-            
-            &:nth-child(1):before{
-                background-image: url(../images/installed-video-editor/video_converter.png);
-                width: 100%;
-                height: 216px;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(2):before{
-                background-image: url(../images/installed-video-converter/video-editor.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(3):before{
-                background-image: url(../images/installed-video-editor/audio-editor.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(4):before{
-                background-image: url(../images/installed-video-editor/video-remaker.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-        }
     }
-}
 
 @media (max-width: 1350px) {
-    .installed-audio-converter-page{ 
+    .installed-pack-page{ 
 
         .body-company,
         .map-body,
@@ -431,7 +487,7 @@
 }
 
 @media (max-width: 650px) {
-    .installed-audio-converter-page{ 
+    .installed-pack-page{ 
 
         .body-company,
         .map-body,
@@ -470,4 +526,5 @@
             }
         }
     }
+}
 }
