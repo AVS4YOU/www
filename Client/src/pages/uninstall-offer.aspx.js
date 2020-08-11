@@ -28,7 +28,7 @@ class installedVideoEditor extends React.PureComponent {
 render(){
     return (
       <Layout 
-        className="unistall-offer-page" 
+        className="uninstall-offer-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title="AVS4YOU is the home of ultimate multimedia editing family.
@@ -101,6 +101,22 @@ render(){
             </div>
             <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
         </div>
+
+        <Text as="h2" className="common__heading">
+            {this.props.t("With AVS4YOU you can")}
+            </Text>
+
+            <div className="uninstall-you-can-container">
+          <div className="youCan">
+                <li><span>Make stunning videos, slideshows, video projects and presentations</span></li>
+                <li><span>Convert, compress video and audio files without quality loss</span></li>
+                <li><span>Capture screen, transfer video from cameras</span></li>
+                <li><span>Polish your video footage using a variety of handy tools</span></li>
+                <li><span>Record your voice, remove noise and enhance audio recordings</span></li>
+                <li><span>Create audiobooks and your own ringtones</span></li>
+                <li><span>Burn to CD/DVD/Blu-ray discs, add metadata</span></li>
+                <li><span>Play media files, create personal playlists and more useful features.</span></li>
+    </div></div>
 
 
         <div className="resourcesTable" style={{margin: "auto"}}> 

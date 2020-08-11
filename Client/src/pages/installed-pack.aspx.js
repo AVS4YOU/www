@@ -4,6 +4,7 @@ import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
+import ScrollTools from '../components/scroll-tools';
 import "../styles/installed-pack.less";
 import ScrollUpButton from '../components/scroll-up-button';
 import BenefitsCarousel from '../components/benefits-carousel';
@@ -93,40 +94,14 @@ render(){
             {this.props.t("Get 5 professional multimedia tools for audio and video processing")}
             </Text>
             <div className="contact-body__wrapper">
-                </div>
+            </div>
           </div>
         </div>
+        <div className="contact-body">
 
-        <form className="ScrollTools">
-          <fieldset>
-            <div className="boxScrollTools">One</div>
-            <div className="boxScrollTools">Two</div>
-            <div className="boxScrollTools">Three</div>
-            <div className="boxScrollTools">Four</div>
-            <div className="boxScrollTools">Five</div>
-          </fieldset>
-        </form>
-        <div className="spacer s1" id="sec1">
-          <div className="box2">
-            <p>Make your home videos look professional with a full set of video editing tools. Play with 300+ effects and transitions.</p>
-          </div>
+          <ScrollTools className="scrollTools"/>
+
         </div>
-        <div className="spacer s1" id="sec2">
-          <div className="box2">
-            <p>Easily convert videos to all key formats: MP4, MPEG, DVD, WMV, AVI, HDV + 60 more. Use customized profiles for video playback on any device.</p>
-          </div>
-        </div>
-        <div className="spacer s1" id="sec3">
-          <div className="box2">
-            <p>Edit video files without re-encoding and quality loss. Cut, delete unwanted parts, change scene sequence. Burn video to DVD or Blu-ray discs.</p>
-          </div>
-        </div>
-        <div className="spacer s1" id="sec4">
-          <div className="box2">
-            <p>Four</p>
-          </div>
-        </div>
-        <div className="spacer s2"></div>
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>

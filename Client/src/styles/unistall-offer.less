@@ -1,9 +1,12 @@
-.unistall-offer-page{
+.uninstall-offer-page{
 
     main .header .header__body{
         padding-bottom: 80px;
         padding-top: 94px;
-        max-width: 1100px;
+        display: table;
+        padding-top: 94px;
+        max-width: 0px;
+        margin: auto;
     }
 
     .headerBackgroundImage{
@@ -35,29 +38,27 @@
         }
 
     .header__buy{
-        display: block;
-        border: 0 none;
-        font-size: 20px;
-        margin: 40px auto 0;
-        padding: 10px 20px;
-        color: #fff;
-        background: url(../images/installed-pack/button.png) no-repeat;
-        background-color: transparent;
-        background-position: 50% 0;
-        width: 165px;
-        height: 50px;
-        line-height: 48px;
-        padding: 0;
+        background: #fb8a29;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 600;
+        line-height: 1em;
+        margin: 40px auto;
+        padding: 10px 0;
+        width: 210px;
 
         .header__buy__now{
-            padding: 10px;
             font-size: 20px;
-            font-weight: 400;
-        }
+            font-weight: 600;
+            text-transform: uppercase;
 
         a{
             text-decoration: none;
         }
+        } 
     }
 
     .header__buy__orange{
@@ -66,33 +67,65 @@
         padding: 15px 50px 10px;
         border-radius: 5px;
         margin: auto;
+        margin-top: 20px;
+        margin-bottom: 100px;
 
         .header__buy__orange__now{
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 600;
             text-decoration: none;
+            font-size: 20px;
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .uninstall-you-can-container{
+        display: table;
+        background-image: url(../images/uninstall-offer/screens.png);
+        background-size: 599px 706px;
+        background-position: 960px 210px;
+        background-repeat: no-repeat;
+        padding: 0 0 112px;
+    }
+
+    .youCan{
+        text-align: left;
+        padding: 0 0 0 160px;
+        width: 700px;
+
+        li{
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: #1e72d2;
+        }
+
+        span{
+            color: #333333;
         }
     }
 
     .header__buy__gray{
-        display: block;
-        border: 0 none;
+        background: #9f9f9f;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
         font-size: 20px;
-        margin: 40px auto 0;
-        padding: 10px 20px;
-        color: #fff;
-        background-color: #9c9c9a;
-        background-position: 50% 0;
-        width: 165px;
-        height: 50px;
-        line-height: 48px;
-        padding: 0;
+        line-height: 1em;
+        margin: 40px auto;
+        padding: 10px 0;
+        width: 210px;
 
     .header__buy__now{
-        padding: 10px;
+        text-transform: uppercase;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 600;
         color: #fff;
         -moz-user-select: none;
         -khtml-user-select: none;
@@ -210,19 +243,16 @@
     }
 
     .header__old__price{
-        background: #9f9f9f;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        color: #ffffff;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1em;
-        margin: 40px auto;
-        padding: 17px 0;
-        text-transform: uppercase;
-        width: 210px;
+        color: #9c9c9a;
+        font-size: 46px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: line-through;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     .header__price__block{
@@ -331,6 +361,9 @@
         line-height: 1.5em;
         padding-bottom: 50px;
         vertical-align: top;
+        display: table;
+        max-width: 0px;
+        margin: auto;
 
         .ubc-row{
             display: flex;
@@ -478,12 +511,6 @@
 
     .contact-body{
         background-color:#fff;
-
-        .contact-body__max-width{
-            position: relative;
-            padding: 80px 30px;
-            margin: auto;
-        }
 
         .contact-body__wrapper{
             display:flex;

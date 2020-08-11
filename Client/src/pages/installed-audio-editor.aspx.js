@@ -76,8 +76,10 @@ render(){
               <Text>{this.props.t("100% secure, ad-free, virus-free")}</Text>
             </div>
           </BenefitsCarousel>
+
           <div className="screenshotImageBlock"></div>
-        </div>
+
+      </div>
 
         <div className="contact-body">
           <div className="contact-body__max-width">
