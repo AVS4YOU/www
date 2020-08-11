@@ -4,7 +4,7 @@ import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
-import "../styles/unistall-offer.less";
+import "../styles/uninstall-offer.less";
 import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
@@ -46,7 +46,8 @@ render(){
             <div className="header__body">
               <Text as="h1" className="header__heading installed"><span className="installedBig">{this.props.t("Wait!")}</span> {this.props.t("Before you uninstall ...")} </Text>
               <Text as="h2" className="header__heading get">{this.props.t("Get AVS4YOU Unlimited Subscription at a special price")} </Text>
-                <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">AVS4YOU Unlimited Subscription</Text>
+
+                <div className="landing-block"><div className="landing-one-offer-block"><div className="old_price_container">{this.props.t("Old price")}</div><Text className="text-landing-box-gray">AVS4YOU Unlimited Subscription</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
                 <Text className="header__old__price">$59.00</Text>
@@ -74,49 +75,50 @@ render(){
             <div className="ubc-row">
                 <div className="ub-box">
                 <div className="save-price"></div>
-                an extra 50% saving of the original price
+                {this.props.t("an extra 50% saving of the original price")}
             </div>
             <div className="ub-box">
                 <div className="prof-tools"></div>
-               unlimited access to <br /> 5 professional multimedia tools
+                {this.props.t("unlimited access to 5 professional multimedia tools")}
             </div>
             <div className="ub-box">
                 <div class="free-upgrades"></div>
-                free upgrades
+                {this.props.t("free upgrades")}
             </div>
             </div>
             <div className="ubc-row">
                 <div className="ub-box">
                 <div className="tech-support"></div>
-                free technical support
+                {this.props.t("free technical support")}
             </div>
             <div className="ub-box">
                 <div className="secure-software"></div>
-                100% secure, ad-free, virus-free software
+                {this.props.t("100% secure, ad-free, virus-free software")}
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                30- day Money-back guarantee
+                {this.props.t("30- day Money-back guarantee")}
             </div>
             </div>
             <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
         </div>
 
-        <Text as="h2" className="common__heading">
+        <Text as="h2" className="common__heading__with">
             {this.props.t("With AVS4YOU you can")}
             </Text>
 
             <div className="uninstall-you-can-container">
-          <div className="youCan">
-                <li><span>Make stunning videos, slideshows, video projects and presentations</span></li>
-                <li><span>Convert, compress video and audio files without quality loss</span></li>
-                <li><span>Capture screen, transfer video from cameras</span></li>
-                <li><span>Polish your video footage using a variety of handy tools</span></li>
-                <li><span>Record your voice, remove noise and enhance audio recordings</span></li>
-                <li><span>Create audiobooks and your own ringtones</span></li>
-                <li><span>Burn to CD/DVD/Blu-ray discs, add metadata</span></li>
-                <li><span>Play media files, create personal playlists and more useful features.</span></li>
-    </div></div>
+          <div className="youCan"> <ImageGQL className="youCanBackgroundImage" imageName="screens.png" style={{position: "absolute"}}/> 
+                <li><span>{this.props.t("Make stunning videos, slideshows, video projects and presentations")}</span></li>
+                <li><span>{this.props.t("Convert, compress video and audio files without quality loss")}</span></li>
+                <li><span>{this.props.t("Capture screen, transfer video from cameras")}</span></li>
+                <li><span>{this.props.t("Polish your video footage using a variety of handy tools")}</span></li>
+                <li><span>{this.props.t("Record your voice, remove noise and enhance audio recordings")}</span></li>
+                <li><span>{this.props.t("Create audiobooks and your own ringtones")}</span></li>
+                <li><span>{this.props.t("Burn to CD/DVD/Blu-ray discs, add metadata")}</span></li>
+                <li><span>{this.props.t("Play media files, create personal playlists and more useful features")}.</span></li>
+    </div>
+    </div>
 
 
         <div className="resourcesTable" style={{margin: "auto"}}> 

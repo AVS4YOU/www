@@ -17,10 +17,6 @@ const ClassToggleStyled = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  .leftSide{
-
-  }
-
   .rightSide{
       position:relative;
 
