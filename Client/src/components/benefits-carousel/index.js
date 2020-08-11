@@ -13,11 +13,17 @@ const StyledWrapper = styled.div`
     position: relative;
     left: ${props => props.marginLeft}px;
     top:10px;
-    transition: 0.3s;
+    ${props => !props.disableAnimate && "transition: 0.3s;"}
     display: flex;
     vertical-align: middle;
     align-items: center;
     height: 370px;
+
+    .BenefitsCarouselItem.animateOff{
+        .carouselItem {
+            transition: 0s;
+        }
+    }
 `;
 
 const StyledButtonsWrapper = styled.div`
@@ -37,50 +43,97 @@ const StyledCarouselButton = styled.div`
     cursor: pointer;
 `;
 
-class BenefitsCarousel extends React.Component{
+class BenefitsCarousel extends React.PureComponent{
 
     constructor(props) {
         super(props);
         this.state = {
             marginLeft: 0,
             currentIndex: this.props.centerSlide,
-            currentElementWidth: 0
+            elementWidth: 0,
+            windowWidth: 0,
+            marginLeftFirst: 0,
+            disableAnimate: false,
+            needStartAnimate: false
         }
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateWindowDimensions);
+        const windowWidth = window.innerWidth;
+        const elementWidth = this.element.offsetWidth;
+        const centerElementWidth = this.centerElement.offsetWidth;
+        let marginLeftFirst = windowWidth/2 - centerElementWidth/2 - 9;
+        marginLeftFirst = this.props.infinity ? marginLeftFirst - this.props.children.length*elementWidth : marginLeftFirst;
+        const marginLeft = marginLeftFirst - this.props.centerSlide*elementWidth;
+
+        if(this.state.elementWidth !== elementWidth){
+            this.setState({
+                elementWidth: elementWidth,
+                windowWidth: windowWidth,
+                marginLeftFirst: marginLeftFirst,
+                marginLeft: marginLeft
+            })
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions = () => {
+        this.setState({
+            windowWidth: window.innerWidth
+        })
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        const { children } = this.props 
+        const { currentIndex, disableAnimate } = this.state 
+
+        if(prevState.disableAnimate){
+            this.setState({
+                disableAnimate: false
+            })
+        }
+
+        if((currentIndex > children.length-1 || currentIndex < 0) && !disableAnimate){
+            setTimeout(this.changePosition, 300)
+        }
+    }
+
+    changePosition = () => {
+
+        const { currentIndex } = this.state 
+        const { children } = this.props 
+
+        const nextIndex = currentIndex > children.length-1 ? currentIndex - children.length : currentIndex + children.length;
+        this.changeSlide(nextIndex);
+        this.setState({
+            disableAnimate: true
+        })
     }
 
     swipeLeft = () => {
-
         const valueOfChildren = this.props.children.length;
-
         const nextIndex = this.state.currentIndex + 1;
-
-        if(nextIndex < this.props.children.length){
-            const marginLeft = this.getMarginLeft(nextIndex);
-
-            this.changeSlide(marginLeft, nextIndex);
-        }
+        this.changeSlide(nextIndex);
     }
 
     swipeRight = () => {
-
         const nextIndex = this.state.currentIndex - 1;
-
-        if(nextIndex >= 0){
-            const marginLeft = this.getMarginLeft(nextIndex);
-
-            this.changeSlide(marginLeft, nextIndex);
-        }
+        this.changeSlide(nextIndex);
     }
 
     onCarouselItemClick = (index) => {
         if(this.state.currentIndex !== index){
-            
-            const marginLeft = this.getMarginLeft(index)
-            this.changeSlide(marginLeft, index);
+            this.changeSlide(index);
         }
     }
 
-    changeSlide = (marginLeft, index) => {
+    changeSlide = (index) => {
+        const marginLeft = this.state.marginLeftFirst - index*this.state.elementWidth
+
         this.setState({
             marginLeft: marginLeft,
             currentIndex: index
@@ -89,7 +142,7 @@ class BenefitsCarousel extends React.Component{
 
     getMarginLeft = (nextIndex) => {
         const diff = this.props.centerSlide - nextIndex;
-        const marginLeft = diff * this.state.currentElementWidth;
+        const marginLeft = diff * this.state.elementWidth;
         return marginLeft;
     }
 
@@ -101,17 +154,9 @@ class BenefitsCarousel extends React.Component{
         this.swipeLeft();
     }
 
-    componentDidMount(){
-        if(this.state.currentElementWidth !== this.element.offsetWidth){
-            this.setState({
-                currentElementWidth: this.element.offsetWidth
-            })
-        }
-    }
-
     render(){
-
         const { className, children } = this.props;
+        const { currentIndex } = this.state;
         const CarouselItems = [];
         const CarouselButtons = [];
 
@@ -120,13 +165,67 @@ class BenefitsCarousel extends React.Component{
             preventDefaultTouchmoveEvent: false,   
             trackTouch: true,                     
             trackMouse: true,                     
-            rotationAngle: 0,                      
+            rotationAngle: 0,  
+            disableAnimate: false                    
         }
 
+        let elementRefCreated = false;
+        let valueOfChildren = children.length;
+
+
+        if(this.props.infinity){
+            children.forEach((item, index) => {
+                const key = index - valueOfChildren;
+                let itemClassName = key === currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
+
+                if(index === currentIndex && this.state.disableAnimate){
+                    itemClassName = itemClassName + " animateOff"
+                }
+
+                CarouselItems.push(
+                    <div 
+                        className={itemClassName}
+                        key={key} id={"itemBefore" + index} 
+                        onClick={this.onCarouselItemClick.bind(this, key)}
+                    >
+                        {item}
+                    </div>
+                )
+            });
+        }
+
+
         children.forEach((item, index) => {
-            const itemClassName = index === this.state.currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
-            index === 0 
-                ?
+            let itemClassName = index === currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
+
+            if(index === currentIndex && this.state.disableAnimate){
+                itemClassName = itemClassName + " animateOff"
+            }
+
+            let itemType = "";
+
+            if(!elementRefCreated && index !== currentIndex){
+                itemType = "refItem"
+                elementRefCreated = true
+            } else if (index === currentIndex){
+                itemType = "centerItem"
+            }
+
+            switch(itemType) {
+                case 'centerItem':  
+                    CarouselItems.push(
+                        <div 
+                            ref={(element) => {this.centerElement = element }}
+                            className={itemClassName}
+                            key={index} id={"item" + index} 
+                            onClick={this.onCarouselItemClick.bind(this, index)}
+                        >
+                            {item}
+                        </div>
+                    )
+                  break
+              
+                case 'refItem':  
                     CarouselItems.push(
                         <div 
                             ref={(element) => {this.element = element }}
@@ -137,7 +236,9 @@ class BenefitsCarousel extends React.Component{
                             {item}
                         </div>
                     )
-                : 
+                  break
+              
+                default:
                     CarouselItems.push(
                         <div 
                             className={itemClassName}
@@ -147,17 +248,24 @@ class BenefitsCarousel extends React.Component{
                             {item}
                         </div>
                     )
+                  break
+              }
         });
 
         if(this.props.infinity){
             children.forEach((item, index) => {
-                const itemClassName = index === this.state.currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
+                const key = index + valueOfChildren
+                let itemClassName = key === currentIndex ? "BenefitsCarouselItem active" : "BenefitsCarouselItem";
 
+                if(index === currentIndex && this.state.disableAnimate){
+                    itemClassName = itemClassName + " animateOff"
+                }
+                
                 CarouselItems.push(
                     <div 
                         className={itemClassName}
-                        key={index} id={"item" + index} 
-                        onClick={this.onCarouselItemClick.bind(this, index)}
+                        key={key} id={"itemAfter" + index} 
+                        onClick={this.onCarouselItemClick.bind(this, key)}
                     >
                         {item}
                     </div>
@@ -168,7 +276,7 @@ class BenefitsCarousel extends React.Component{
         children.forEach((item, index) => {
             CarouselButtons.push(
                 <StyledCarouselButton 
-                    active={index === this.state.currentIndex}
+                    active={index === this.state.currentIndex || index === this.state.currentIndex + this.props.children.length || index === this.state.currentIndex - this.props.children.length}
                     onClick = {this.onCarouselItemClick.bind(this, index)}
                 />
             )
@@ -178,13 +286,13 @@ class BenefitsCarousel extends React.Component{
         return(
             <Swipeable onSwipedRight={this.onSwipedRight} onSwipedLeft={this.onSwipedLeft} {...carouselConfig}>
                 <StyledCarousel className={className}>
-                    <StyledWrapper marginLeft={this.state.marginLeft}>
+                    <StyledWrapper marginLeft={this.state.marginLeft} disableAnimate={this.state.disableAnimate}>
                         {CarouselItems}
                     </StyledWrapper>
-                    <StyledButtonsWrapper>
-                        {CarouselButtons}
-                    </StyledButtonsWrapper>     
                 </StyledCarousel>
+                <StyledButtonsWrapper>
+                    {CarouselButtons}
+                </StyledButtonsWrapper>   
             </Swipeable>
         );
     };

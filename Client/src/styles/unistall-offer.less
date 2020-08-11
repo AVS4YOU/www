@@ -1,75 +1,105 @@
-.installed-video-editor-page{
+.unistall-offer-page{
 
     main .header .header__body{
-        padding-bottom: 100px;
+        padding-bottom: 80px;
         padding-top: 94px;
-    }
-
-    .avs-logo{
-        display: block;
-        position: absolute;
-        top: 14px;
-        left: 454px;
-        width: 71px;
-        height: 41px;
-    }
-
-    .installedSuper{
-        width: 106px;
-        text-align: center;
+        max-width: 1100px;
     }
 
     .headerBackgroundImage{
-        height: 960px;
+        max-height: 665px;
+        overflow: hidden;
     }
 
     .header__heading.installed{
-        font-size: 38px;
-        color: #fff;
-        font-weight: 400;
-        line-height: 44px;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.6em;
+        margin: 0;
         text-align: center;
-        max-width: 450px;
-        margin: auto;
-        padding-top: 25px;
-        padding-bottom: 55px;
+        text-transform: none;
+        color: #fb8a29;
+        line-height: 1.1;
+
+        .installedBig{
+            text-transform: uppercase;
+        }
     }
 
-    .header__heading.exclusive{
-        background-color: #38add8;
-        color: #fff;
-        text-decoration: none;
-        padding: 3px 9px 3px 9px;
-        margin: auto;
-        font-size: 17px;
-        letter-spacing: 1.5px;
+    .header__heading.get{
+        color: #000;
+        font-size: 30px;
         font-weight: 400;
+        margin: 30px auto 50px;
+        text-align: center;
+        }
+
+    .header__buy{
+        display: block;
+        border: 0 none;
+        font-size: 20px;
+        margin: 40px auto 0;
+        padding: 10px 20px;
+        color: #fff;
+        background: url(../images/installed-pack/button.png) no-repeat;
+        background-color: transparent;
+        background-position: 50% 0;
+        width: 165px;
+        height: 50px;
+        line-height: 48px;
+        padding: 0;
+
+        .header__buy__now{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
 
         a{
             text-decoration: none;
         }
     }
 
-    .header__buy{
-        background-color: #38add8;
+    .header__buy__orange{
+        background-color: #fb8a29;
         color: #fff;
-        text-decoration: none;
         padding: 15px 50px 10px;
         border-radius: 5px;
         margin: auto;
-        letter-spacing: 1.5px;
-        font-weight: 400;
 
-        .header__buy__now{
-            font-size: 22px;
+        .header__buy__orange__now{
             text-transform: uppercase;
-            font-weight: 100;
-        }
-
-        a{
+            letter-spacing: 1.5px;
+            font-weight: 600;
             text-decoration: none;
         }
     }
+
+    .header__buy__gray{
+        display: block;
+        border: 0 none;
+        font-size: 20px;
+        margin: 40px auto 0;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #9c9c9a;
+        background-position: 50% 0;
+        width: 165px;
+        height: 50px;
+        line-height: 48px;
+        padding: 0;
+
+    .header__buy__now{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
 
     .header__subtitle.installed {
         padding: 17px;
@@ -80,6 +110,85 @@
         margin: auto;
         max-width: 100%;
         margin-bottom: 30px;
+    }
+
+    .landing-block{
+        display: flex;
+    }
+
+    .landing-one-offer-block{
+        text-align: center;
+        left: 0;
+        height: 480px;
+        width: 420px;
+        background-color: #fdfdfb;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        color: #9c9c9a;
+        overflow: hidden;
+    }
+
+    .landing-two-offer-block{
+        text-align: center;
+        margin-left: 50px;
+        height: 480px;
+        width: 420px;
+        background-color: #fdfdfb;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        color: #303030;
+    }
+    .text-landing-box{
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: 600;
+        color: #120c28;
+        margin: 0;
+        padding: 35px 0 0;
+    }
+
+    .text-info-landing-box{
+        font-size: 15px;
+        display: block;
+        padding: 0;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    .text-info-landing-box-gray{
+        font-size: 15px;
+        display: block;
+        padding: 0;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-top: 25px;
+        color: #9c9c9a;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .text-landing-box-gray{
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: 600;
+        color: #9c9c9a;
+        margin: 0;
+        padding: 35px 0 0;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .after-text-box{
+        background-color: #cecece;
+        height: 1px;
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .header__price{
@@ -93,37 +202,43 @@
     }
 
     .header__new__price{
-        display: table-cell;
-        font-size: 60px;
-        color: #fff;
-        vertical-align: top;
-        line-height: 73.93px;
-        text-align: center;
+        color: #fb8a29;;
+        font-size: 46px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .header__old__price{
+        background: #9f9f9f;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1em;
+        margin: 40px auto;
+        padding: 17px 0;
+        text-transform: uppercase;
+        width: 210px;
     }
 
     .header__price__block{
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
-    main .common__heading {
+    .common__heading {
         font-size: 42px;
-        color: #333333;
+        color: #313131;
         text-align: center;
-        font-weight: 400;
-        text-transform: uppercase; 
+        font-weight: 600;
     }
 
-    .screenshotImageBlock{
-        background-image: url(../images/installed-video-editor/main-screenshot.png);
-        background-repeat: no-repeat;
-        margin: auto;
-        height: 70%;
-        width: 70%;
-        background-size: contain;
-        background-position-y: 40%;
-}
     .benefitsCarousel{
+        margin: auto;
 
         .active .carouselItem{
             padding: 238px 25px 62px;
@@ -149,6 +264,15 @@
             &.unlimited{
                 background-image: url(../images/installed-video-editor/card-1.png);
             }
+            &.correct{
+                background-image: url(../images/installed-video-converter/card-2.png);
+            }
+            &.cut{
+                background-image: url(../images/installed-video-converter/card-3.png);
+            }
+            &.export{
+                background-image: url(../images/installed-video-converter/card-4.png);
+            }
             &.free{
                 background-image: url(../images/installed-video-editor/card-2.png);
             }
@@ -158,9 +282,7 @@
             &.support{
                 background-image: url(../images/installed-video-editor/card-4.png);
             }
-            &.secure{
-                background-image: url(../images/installed-video-editor/card-5.png);
-            }
+
 
             p{
                 text-align: center;
@@ -173,11 +295,12 @@
 
 
     .body-company{
-        background: rgb(240,240,240);
-        padding: 80px 0px 0;
+        background: #fff;
+        padding: 30px 0;
         width: 100%;
+        margin: auto;
         box-sizing: border-box;
-        height: 1170px;
+        height: 570px;
 
         .screenshotImage{
             height: 526px;
@@ -199,6 +322,88 @@
         padding-bottom: 20px;
         font-weight: 600;
     }
+
+    .ubc-benefits{
+        background-position-x: 50%;
+        color: #333333;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5em;
+        padding-bottom: 50px;
+        vertical-align: top;
+
+        .ubc-row{
+            display: flex;
+            color: #333333;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5em;
+            padding-bottom: 50px;
+            vertical-align: top;
+            text-align: center;
+
+            .ub-box{
+                width: 206px;
+                margin: auto;
+                padding: 0 30px;
+        
+            .save-price{
+                background-image: url(../images/uninstall-offer/save_price.png);
+                background-size: 90px 90px;
+                background-repeat: no-repeat;
+                height: 100px;
+                margin: 0 auto;
+                width: 90px;
+            }
+
+            .prof-tools{
+                background-image: url(../images/uninstall-offer/prof_tools.png);
+                background-size: 90px 90px;
+                background-repeat: no-repeat;
+                height: 100px;
+                margin: 0 auto;
+                width: 90px;
+            }
+
+            .free-upgrades{
+                background-image: url(../images/uninstall-offer/free_upgrades.png);
+                background-size: 90px 90px;
+                background-repeat: no-repeat;
+                height: 100px;
+                margin: 0 auto;
+                width: 90px;
+            }
+
+                .tech-support{
+                    background-image: url(../images/uninstall-offer/tech_support.png);
+                    background-size: 90px 90px;
+                    background-repeat: no-repeat;
+                    height: 100px;
+                    margin: 0 auto;
+                    width: 90px;
+                }
+    
+                .secure-software{
+                    background-image: url(../images/uninstall-offer/secure_software.png);
+                    background-size: 90px 90px;
+                    background-repeat: no-repeat;
+                    height: 100px;
+                    margin: 0 auto;
+                    width: 90px;
+                }
+    
+                .money-back-guarant{
+                    background-image: url(../images/uninstall-offer/money_back_guarant.png);
+                    background-size: 90px 90px;
+                    background-repeat: no-repeat;
+                    height: 100px;
+                    margin: 0 auto;
+                    width: 90px;
+                }
+            }    
+        }
+    }
+
 
     .resourcesTable{
         align-items: center;
@@ -277,7 +482,7 @@
         .contact-body__max-width{
             position: relative;
             padding: 80px 30px;
-            margin:auto;
+            margin: auto;
         }
 
         .contact-body__wrapper{
@@ -303,9 +508,8 @@
         font-size: 38px;
         letter-spacing: 1px;
         line-height: 43px;
-        color: #0b0b38;
-        text-transform: uppercase;
-        font-weight: 400;
+        color: #313131;;
+        font-weight: 600;
         width: 700px;
         margin: 0 auto 0px;
         }
@@ -344,56 +548,10 @@
                 text-decoration: none;
             }
         }
-
-        .common-info-block{
-
-            border: solid 1px;
-            border-color: #a9a9a9;
-            min-width: 24%;
-            height: 564px;
-            
-            &:nth-child(1):before{
-                background-image: url(../images/installed-video-editor/audio-editor.png);
-                width: 100%;
-                height: 216px;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(2):before{
-                background-image: url(../images/installed-video-editor/video_converter.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(3):before{
-                background-image: url(../images/installed-video-editor/audio-converter.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-            &:nth-child(4):before{
-                background-image: url(../images/installed-video-editor/video-remaker.png);
-                height: 216px;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                margin-top: 40px;
-            }
-
-        }
     }
-}
 
 @media (max-width: 1350px) {
-    .installed-video-editor-page{ 
+    .installed-pack-page{ 
 
         .body-company,
         .map-body,
@@ -422,7 +580,7 @@
 }
 
 @media (max-width: 650px) {
-    .installed-video-editor-page{ 
+    .installed-pack-page{ 
 
         .body-company,
         .map-body,
@@ -461,4 +619,5 @@
             }
         }
     }
+}
 }

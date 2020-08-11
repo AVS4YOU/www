@@ -33,6 +33,7 @@
     "react-slick": "^0.25.2",
     "react-swipeable": "^5.5.1",
     "react-transition-group": "^4.3.0",
+    "scrollmagic": "^2.0.7",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.4.1",
     "ua-parser-js": "^0.7.20",

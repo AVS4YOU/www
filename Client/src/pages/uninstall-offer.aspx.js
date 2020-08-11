@@ -4,13 +4,11 @@ import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
-import "../styles/installed-pack.less";
-import ScrollUpButton from '../components/scroll-up-button';
-import BenefitsCarousel from '../components/benefits-carousel';
+import "../styles/unistall-offer.less";
 import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
-import { useSwipeable, Swipeable } from 'react-swipeable';
+
 
 const LogoWrapper = styled.div`
     width: 69px;
@@ -30,8 +28,7 @@ class installedVideoEditor extends React.PureComponent {
 render(){
     return (
       <Layout 
-        headerIsDisabled={true}
-        className="installed-pack-page" 
+        className="unistall-offer-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title="AVS4YOU is the home of ultimate multimedia editing family.
@@ -46,87 +43,65 @@ render(){
               </LogoWrapper>
           </GatsbyLink>
           </div>
-          <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing")} AVS4YOU Installation Package!</Text>
+              <Text as="h1" className="header__heading installed"><span className="installedBig">{this.props.t("Wait!")}</span> {this.props.t("Before you uninstall ...")} </Text>
+              <Text as="h2" className="header__heading get">{this.props.t("Get AVS4YOU Unlimited Subscription at a special price")} </Text>
                 <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">AVS4YOU Unlimited Subscription</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
-                <Text className="header__old__price">$199</Text>
+                <Text className="header__old__price">$59.00</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now">{this.props.t("Buy")}</Text></table>
-                <div className="landing-one-offer-block-cross"></div>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">AVS4YOU Unlimited Subscription</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
-                <Text as="h4" className="header__new__price">$59</Text>
+                <Text as="h4" className="header__new__price">$29.00</Text>
                 <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
-        </div>
-        <div className="body-company">
-          <Text as="h2" className="common__heading">{this.props.t("Why you will love AVS4YOU")}</Text>
-          <BenefitsCarousel infinity className="benefitsCarousel" centerSlide={3}>
-          <div  className="carouselItem export">
-              <Text>{this.props.t("100% secure, ad-free, virus-free software")}</Text>
-            </div>
-            <div  className="carouselItem support">
-              <Text>{this.props.t("5 professional multimedia programs in 1 package")}</Text>
-            </div>
-            <div className="carouselItem unlimited">
-              <Text>{this.props.t("Unlimited access to the program")}</Text>
-            </div>
-            <div  className="carouselItem noWatermark">
-              <Text>{this.props.t("No watermark")}</Text>
-            </div>
-            <div  className="carouselItem free">
-              <Text>{this.props.t("Free upgrades")}</Text>
-              </div>
-            <div  className="carouselItem cut">
-              <Text>{this.props.t("Free technical support")}</Text>
-            </div>
-          </BenefitsCarousel >
         </div>
 
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-            {this.props.t("Get 5 professional multimedia tools for audio and video processing")}
+            {this.props.t("Your major benefits")}
             </Text>
             <div className="contact-body__wrapper">
                 </div>
           </div>
         </div>
 
-        <form className="ScrollTools">
-          <fieldset>
-            <div className="boxScrollTools">One</div>
-            <div className="boxScrollTools">Two</div>
-            <div className="boxScrollTools">Three</div>
-            <div className="boxScrollTools">Four</div>
-            <div className="boxScrollTools">Five</div>
-          </fieldset>
-        </form>
-        <div className="spacer s1" id="sec1">
-          <div className="box2">
-            <p>Make your home videos look professional with a full set of video editing tools. Play with 300+ effects and transitions.</p>
-          </div>
+        <div className="ubc-benefits" style={{margin: "auto"}}>
+            <div className="ubc-row">
+                <div className="ub-box">
+                <div className="save-price"></div>
+                an extra 50% saving of the original price
+            </div>
+            <div className="ub-box">
+                <div className="prof-tools"></div>
+               unlimited access to <br /> 5 professional multimedia tools
+            </div>
+            <div className="ub-box">
+                <div class="free-upgrades"></div>
+                free upgrades
+            </div>
+            </div>
+            <div className="ubc-row">
+                <div className="ub-box">
+                <div className="tech-support"></div>
+                free technical support
+            </div>
+            <div className="ub-box">
+                <div className="secure-software"></div>
+                100% secure, ad-free, virus-free software
+            </div>
+            <div className="ub-box">
+                <div class="money-back-guarant"></div>
+                30- day Money-back guarantee
+            </div>
+            </div>
+            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
         </div>
-        <div className="spacer s1" id="sec2">
-          <div className="box2">
-            <p>Easily convert videos to all key formats: MP4, MPEG, DVD, WMV, AVI, HDV + 60 more. Use customized profiles for video playback on any device.</p>
-          </div>
-        </div>
-        <div className="spacer s1" id="sec3">
-          <div className="box2">
-            <p>Edit video files without re-encoding and quality loss. Cut, delete unwanted parts, change scene sequence. Burn video to DVD or Blu-ray discs.</p>
-          </div>
-        </div>
-        <div className="spacer s1" id="sec4">
-          <div className="box2">
-            <p>Four</p>
-          </div>
-        </div>
-        <div className="spacer s2"></div>
+
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
