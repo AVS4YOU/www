@@ -43,7 +43,7 @@ const StyledMenuGrid = styled.div`
     grid-template-columns: auto 1fr auto;
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
-    max-width: 1350px;
+    max-width: 1550px;
     margin: auto;
     padding: 0 18px;
     box-sizing: border-box;
