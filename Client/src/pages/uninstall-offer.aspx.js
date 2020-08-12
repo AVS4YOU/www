@@ -51,13 +51,13 @@ render(){
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
                 <Text className="header__old__price">$59.00</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now">{this.props.t("Buy")}</Text></table>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">AVS4YOU Unlimited Subscription</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">$29.00</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
 
@@ -100,7 +100,7 @@ render(){
                 {this.props.t("30- day Money-back guarantee")}
             </div>
             </div>
-            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
+            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.202734737.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
         </div>
 
         <Text as="h2" className="common__heading__with">
