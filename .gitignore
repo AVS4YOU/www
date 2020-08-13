@@ -40,6 +40,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.lock
 
 # Visual Studio 2015/2017 cache/options directory
 /Server.vs/
