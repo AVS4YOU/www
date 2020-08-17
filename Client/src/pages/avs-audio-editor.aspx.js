@@ -41,9 +41,9 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Audio Editor – record audio, cut, mix audio files, delete audio parts, edit mp3"
-        metaDescription="Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC."
-        metaKeywords="avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs"
+        title={this.props.t("AVS Audio Editor – record audio, cut, mix audio files, delete audio parts, edit mp3")}
+        metaDescription={this.props.t("Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.")}
+        metaKeywords={this.props.t("avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs")}
       >
         <ProductPagesWrapper>
           <div className="headerBackground">
@@ -51,7 +51,7 @@ render(){
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Editor")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Create outstanding tracks for any purpose with our easy audio editing app for Windows</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Create outstanding tracks for any purpose with our easy audio editing app for Windows")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://new.avs4you.com/downloads/AVSAudioEditor.exe"
@@ -68,16 +68,16 @@ render(){
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
-              <Text color="#666666" align="center">Overview</Text>
+              <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
             </ScrollLink>
             <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
-              <Text color="#666666" align="center">Reviews</Text>
+              <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
             </ScrollLink>
             <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
-              <Text color="#666666" align="center">Screentour</Text>
+              <Text color="#666666" align="center">{this.props.t("Screentour")}</Text>
             </ScrollLink>
             <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
-              <Text color="#666666" align="center">Download</Text>
+              <Text color="#666666" align="center">{this.props.t("Download")}</Text>
             </ScrollLink>
           </div>
 
@@ -86,40 +86,40 @@ render(){
                 id="overview"
                 imgLeft={true}
                 imageName="audio_editor_edit_all_key.jpg"
-                headerText="Edit all key audio formats"    
+                headerText={this.props.t("Edit all key audio formats" )}   
             >
-              <Text className="ListItem">Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc.</Text>
-              <Text className="ListItem">Cut, join, trim, delete parts, split audio files</Text>
-              <Text className="ListItem">Mix audio and blend several audio tracks together</Text>
-              <Text className="ListItem">Select between 20 built-in effects and filters including delay, flanger, chorus, reverb, reverse, echo and more</Text>
+              <Text className="ListItem">{this.props.t("Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc")}</Text>
+              <Text className="ListItem">{this.props.t("Cut, join, trim, delete parts, split audio files")}</Text>
+              <Text className="ListItem">{this.props.t("Mix audio and blend several audio tracks together")}</Text>
+              <Text className="ListItem">{this.props.t("Select between 20 built-in effects and filters including delay, flanger, chorus, reverb, reverse, echo and more")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 imageName="audio_editor_record_audio.jpg"
-                headerText="Record audio from any inputs"   
+                headerText={this.props.t("Record audio from any inputs")}
             >
-              <Text className="ListItem">Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card</Text>
-              <Text className="ListItem">Extract and edit audio from your video files</Text>
+              <Text className="ListItem">{this.props.t("Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card")}</Text>
+              <Text className="ListItem">{this.props.t("Extract and edit audio from your video files")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={true}
               imageName="audio_editor_slider5.jpg"
-              headerText="Master your sound for higher quality"    
+              headerText={this.props.t("Master your sound for higher quality")}
             >
-              <Text className="ListItem">Remove noise and irritating sounds like roaring, hissing, crackling, etc.</Text>
-              <Text className="ListItem">Change sound bitrate to any desired level</Text>
-              <Text className="ListItem">Use an equalizer to adjust volume in a desired way</Text>
+              <Text className="ListItem">{this.props.t("Remove noise and irritating sounds like roaring, hissing, crackling, etc.")}</Text>
+              <Text className="ListItem">{this.props.t("Change sound bitrate to any desired level")}</Text>
+              <Text className="ListItem">{this.props.t("Use an equalizer to adjust volume in a desired way")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={false}
               imageName="audio_editor_slider6.jpg"
-              headerText="Extend your experience with additional features"    
+              headerText={this.props.t("Extend your experience with additional features")}
             >
-              <Text className="ListItem">Turn written text into a natural sounding voice with Text-to-speech function</Text>
-              <Text className="ListItem">Create ringtones for iPhones and other smartphones</Text>
+              <Text className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
+              <Text className="ListItem">{this.props.t("Create ringtones for iPhones and other smartphones")}</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
@@ -159,97 +159,97 @@ render(){
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}:</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}:</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}:</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.platforms}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSAudioEditor.exe" to="headerContentWrapper"/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>
-                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>Technical specification</Text>
+                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
                   <div>
-                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>MINIMUM SYSTEM REQUIREMENTS</Text>
+                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
 
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Duo compatible at 3 GHz or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}:</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher </Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows compatible sound card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows compatible sound card")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Display:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Display")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("32-bit color depthv")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">CD recorder:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("CD recorderv")}:</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("32-bit color depthv")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DVD recorder:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">for importing from DVD and creating Video DVD</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DVD recorder")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("for importing from DVD and creating Video DVD")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video capture device:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">required for capturing</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video capture device")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("required for capturing")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Windows Media Player:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">11 or higher for WMV video playback</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Windows Media Player")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("11 or higher for WMV video playback")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DirectX:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Microsoft DirectX 9.0c or later</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
                     </div>
                   </div>
                   <div>
-                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>RECOMMENDED SYSTEM REQUIREMENTS</Text>
+                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("RECOMMENDED SYSTEM REQUIREMENTS")}</Text>
 
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Operating system:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible video card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible sound card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
                     </div>
                   </div>
                 </div>
-                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*Administrative permissions for program installation and Internet connection for activation</Text>
+                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*{this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
                 <div className="attentionBlock">
-                  <Text fontSize={16} fontWeight={500}>Please note that AVS4YOU® programs do not allow you to copy protected material. You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner.</Text>
+                  <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}.</Text>
                 </div>
             </PageContentWrapper>
           </div>

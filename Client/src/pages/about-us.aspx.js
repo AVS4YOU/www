@@ -28,7 +28,7 @@ render(){
             {this.props.t("Company")}
           </Text>
           <Text className="body-company__text">
-            <b>{this.props.t("Founded in 2004")}</b>, {this.props.t("Online Media Technologies Ltd. is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers. Our award-winning products have earned high reputation among millions of users worldwide. Working in touch with the latest trends in multimedia world, we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances.")}
+            <b>{this.props.t("Founded in 2004")}</b>, {this.props.t("Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances")}
           </Text>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
@@ -60,7 +60,7 @@ render(){
                   {this.props.t("Best offer on the market")}
                 </Text>
                 <Text className="unique-body__text">
-                  {this.props.t("No need to pay for each program. You get a set of audio and video tools at the price of one application")}
+                  {this.props.t("No need to pay for each program You get a set of audio and video tools at the price of one application")}
                 </Text>
               </div>
 
@@ -122,7 +122,7 @@ render(){
                   {this.props.t("Affiliate Sales")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("To learn more about affiliate program, please email us at affiliates@avs4you.com or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program")}</Link>{this.props.t(" page.")}
+                  {this.props.t("To learn more about affiliate program please email us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a> {this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program")}</Link>{this.props.t(" page.")}
                 </Text>
               </div>
 
