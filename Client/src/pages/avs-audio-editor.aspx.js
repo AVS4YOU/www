@@ -130,20 +130,20 @@ render(){
                   {
                     name: "David Lehrman",
                     avatar: AvatarDavid,
-                    revHeader: "Our customers say",
-                    revText: "I use Audio Editor to boost the overall mix volume of my work so it matches studio mastered recordings. I love this program. This Suite is the best money I ever spent."
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I use Audio Editor to boost the overall mix volume of my work so it matches studio mastered recordings I love this program This Suite is the best money I ever spent")
                   },
                   {
                     name: "Frank Lindt",
                     avatar: AvatarFrank,
-                    revHeader: "Our customers say",
-                    revText: "I trust AVS Tools and AVS Team ! I love and respect these tools ! Very easy to handle this software ! No need too much practical experiences ! Creative mind and common sense. that is enough to finish new audio/video ventures !"
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I trust AVS Tools and AVS Team I love and respect these tools Very easy to handle this software No need too much practical experiences Creative mind and common sense that is enough to finish new audio/video ventures")
                   },
                   {
                     name: "John Piquette",
                     avatar: AvatarJohn,
-                    revHeader: "Our customers say",
-                    revText: "I have dealt with and used AVS programs for more then three years. They have an incredible assortment of programs. The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat."
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I have dealt with and used AVS programs for more then three years They have an incredible assortment of programs The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat")
                   }
                 ]
               }
@@ -159,17 +159,17 @@ render(){
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioEditor.platforms}</Text>
               </div>
             </div>
@@ -186,7 +186,7 @@ render(){
                     <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
 
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}:</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                       <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">

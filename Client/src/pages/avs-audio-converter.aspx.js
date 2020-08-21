@@ -53,7 +53,7 @@ render(){
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode")}.</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
@@ -90,10 +90,10 @@ render(){
                 imageName="audio_converter_slider2.jpg"
                 headerText={this.props.t("Convert and edit all key audio formats")}
             >
-              <Text className="ListItem">{this.props.t("Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc")}.</Text>
+              <Text className="ListItem">{this.props.t("Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc")}</Text>
               <Text className="ListItem">{this.props.t("Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize)")} *</Text>
               <Text className="ListItem">{this.props.t("Modify audio file information Title, Author, Artist and Album cover")}</Text>
-              <Text className="ListItem footnote" fontWeight={500}>* {this.props.t("This feature is available in a full version")}</Text>
+              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -103,8 +103,8 @@ render(){
             >
               <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
               <Text className="ListItem">{this.props.t("Create ringtones Edit an audio file and save it to M4R format for iPhone")}</Text>
-              <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}.</Text>
-              <Text className="ListItem footnote" fontWeight={500}>* {this.props.t("This feature is available in a full version")}</Text>
+              <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}</Text>
+              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -114,7 +114,7 @@ render(){
             >
               <Text className="ListItem">{this.props.t("Use a batch mode to convert or compress a large number of audio files at once")}</Text>
               <Text className="ListItem">{this.props.t("Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode")} *</Text>
-              <Text className="ListItem footnote" fontWeight={500}>* {this.props.t("This feature is available in a full version")}</Text>
+              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
           </PageContentWrapper>
@@ -125,14 +125,14 @@ render(){
                   {
                     name: "John Woffod",
                     avatar: AvatarJohn,
-                    revHeader: "Our customers say",
-                    revText: "For the Holidays I had the need to convert audio files for my wife and kids .. After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented... so far have run many dozens of M4A to WMA and MP3 conversions.",
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the Holidays I had the need to convert audio files for my wife and kids After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented so far have run many dozens of M4A to WMA and MP3 conversions"),
                   },
                   {
                     name: "Jacky Lui",
                     avatar: AvatarJacky,
-                    revHeader: "Our customers say",
-                    revText: "The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software."
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software")
                   }
                 ]
               }
@@ -148,17 +148,17 @@ render(){
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{AudioConverter.platforms}</Text>
               </div>
             </div>

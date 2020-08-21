@@ -49,7 +49,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Disc Creator")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Burn audio, video, images easily with Free AVS Disc Creator")}.</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Burn audio, video, images easily with Free AVS Disc Creator")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://new.avs4you.com/downloads/AVSDiscCreator.exe"
@@ -135,17 +135,17 @@ class avsFreeDiscCreator extends React.PureComponent {
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
               </div>
 
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
               </div>
 
               <div className="downloadInfoRow">        
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)")}</Text>
               </div>
             </div>
@@ -162,7 +162,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                   <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
 
                   <div className="systemWrapper">
-                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}:</Text>
+                    <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                     <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                   </div>
                   <div className="systemWrapper">

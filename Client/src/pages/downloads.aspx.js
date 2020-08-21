@@ -29,8 +29,8 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
-                    <Text as="h1" className="header__heading">Download</Text>
-                    <Text as="h3" className="header__subtitle">Get all AVS4YOU® software in 1 installation package</Text>
+                    <Text as="h1" className="header__heading">{this.props.t("Download")}</Text>
+                    <Text as="h3" className="header__subtitle">{this.props.t("Get all AVS4YOU® software in 1 installation package")}</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}
                       mainHref="https://new.avs4you.com/downloads/AVSInstallPack.exe"
@@ -45,116 +45,116 @@ render(){
        
         <div className="screen-wrapper products-wrap">
           <div className="product-icon video"></div>
-          <Text className="common__heading" as="h3">Video Software</Text>
+          <Text className="common__heading" as="h3">{this.props.t("Video Software")}</Text>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image video-remaker">
                 <div className="achievement">
-                  <Text>Most popular</Text>
+                  <Text>{this.props.t("Most popular")}</Text>
                 </div>
               </div>
-              <Text className="product-name" as="h5">AVS Video Remaker</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Video Remaker")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {VideoReMaker.version}</Text>
-                <Text as="p">Release Date: {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
-                <Text as="p">File Size: {VideoReMaker.size} MB</Text>
-                <Text as="p">Platforms: {VideoReMaker.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {VideoReMaker.version}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {VideoReMaker.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoReMaker.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
               <div className="product-image video-editor">
                 <div className="achievement">
-                  <Text>Most downloadable</Text>
+                  <Text>{this.props.t("Most downloadable")}</Text>
                 </div>
               </div>
-              <Text className="product-name" as="h5">AVS Video Editor</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Video Editor")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {VideoEditor.version}</Text>
-                <Text as="p">Release Date: {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
-                <Text as="p">File Size: {VideoEditor.size} MB</Text>
-                <Text as="p">Platforms: {VideoEditor.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {VideoEditor.version}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {VideoEditor.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
               <div className="product-image video-converter">
                 <div className="achievement">
-                  <Text>Most featured</Text>
+                  <Text>{this.props.t("Most featured")}</Text>
                 </div>
               </div>
-              <Text className="product-name" as="h5">AVS Video Converter</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Video Converter")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {VideoConverter.version}</Text>
-                <Text as="p">Release Date: {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
-                <Text as="p">File Size: {VideoConverter.size} MB</Text>
-                <Text as="p">Platforms: {VideoConverter.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {VideoConverter.version}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {VideoConverter.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
             
             <div className="product-box">
               <div className="product-image media-player"></div>
-              <Text className="product-name" as="h5">AVS Media Player</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Media Player")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {MediaPlayer.version}</Text>
-                <Text as="p">Release Date: {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
-                <Text as="p">File Size: {MediaPlayer.size} MB</Text>
-                <Text as="p">Platforms: {MediaPlayer.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {MediaPlayer.version}</Text>
+                <Text as="p">{this.props.t("Release Datev")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {MediaPlayer.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
 
         <div className="screen-wrapper border-top products-wrap">
           <div className="product-icon audio"></div>
-          <Text className="common__heading" as="h3">Audio Software</Text>
+          <Text className="common__heading" as="h3">{this.props.t("Audio Software")}</Text>
           <AdaptiveCarousel className="product-wrapper" activateCarouselWidth={750} dots={true}>
             <div className="product-box">
               <div className="product-image audio-editor"></div>
-              <Text className="product-name" as="h5">AVS Audio Editor</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Audio Editor")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {AudioEditor.version}</Text>
-                <Text as="p">Release Date: {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
-                <Text as="p">File Size: {AudioEditor.size} MB</Text>
-                <Text as="p">Platforms: {AudioEditor.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {AudioEditor.version}</Text>
+                <Text as="p">{this.props.t("Release Date")} {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {AudioEditor.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSAudioEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
               <div className="product-image audio-converter">
               <div className="achievement">
-                  <Text>Free</Text>
+                  <Text>{this.props.t("Free")}</Text>
                 </div>
               </div>
               <div className="achievement"></div>
-              <Text className="product-name" as="h5">AVS Audio Converter</Text>
+              <Text className="product-name" as="h5">{this.props.t("AVS Audio Converter")}</Text>
               <div className="tech-params">
-                <Text as="p">Current Version: {AudioConverter.version}</Text>
-                <Text as="p">Release Date: {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
-                <Text as="p">File Size: {AudioConverter.size} MB</Text>
-                <Text as="p">Platforms: {AudioConverter.platforms}</Text>
+                <Text as="p">{this.props.t("Current Version")} {AudioConverter.version}</Text>
+                <Text as="p">{this.props.t("Release Date")} {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
+                <Text as="p">{this.props.t("Platforms")} {AudioConverter.platforms}</Text>
               </div>
-              <DownloadScrollButton textDownload="Download" className="product-button" href="https://new.avs4you.com/downloads/AVSAudioConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
 
         <div className="screen-wrapper questions-block">
-          <Text className="common__heading" as="h3">Read first</Text>
+          <Text className="common__heading" as="h3">{this.props.t("Read first")}</Text>
           <div className="questions-wrapper">
-            <PanelCollapse className="panelCollapse" panelName="How to download and install the AVS4YOU software on your PC?">
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>The best and the safest way to download and install our software is to do it via our official website <Link href="/"><Text as="span">www.avs4you.com</Text></Link>.</Text>   
+                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link href="/"><Text as="span">www.avs4you.com</Text></Link>.</Text>   
                 </div>
                 <div className="info-block">
-                  <Text>Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example.</Text>
+                  <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
                 <div className="info-block">
                   <a target="_blank" href="https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx"><Text as="span">Read more &#8594;</Text></a>
@@ -162,13 +162,13 @@ render(){
               </div>
             </PanelCollapse>
 
-            <PanelCollapse className="panelCollapse" panelName="How to activate the AVS4YOU software?">
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("How to activate the AVS4YOU software?")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>It is necessary to purchase an AVS4YOU subscription at <Link href="/register.aspx"><Text as="span">www.avs4you.com</Text></Link> in order to activate AVS4YOU software and remove the watermark and other limitations. Once your order is processed you will get a unique license key via e-mail to activate the software.</Text>   
+                  <Text>{this.props.t("It is necessary to purchase an AVS4YOU subscription at")} <Link href="/register.aspx"><Text as="span">www.avs4you.com </Text></Link>{this.props.t("in order to activate AVS4YOU software and remove the watermark and other limitations Once your order is processed you will get a unique license key via e-mail to activate the software")}</Text>   
                 </div>
                 <div className="info-block">
-                  <Text>Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems.</Text>
+                  <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
                 <div className="info-block">
                   <a target="_blank" href="https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx"><Text as="span">Read more &#8594;</Text></a>
@@ -176,27 +176,27 @@ render(){
               </div>
             </PanelCollapse>
 
-            <PanelCollapse className="panelCollapse" panelName="How to reinstall AVS4YOU programs?">
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("How to reinstall AVS4YOU programs?")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www.avs4you.com, it is recommended to reinstall the software.</Text>   
+                  <Text>{this.props.t("If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www avs4you com, it is recommended to reinstall the software")}</Text>   
                 </div>
                 <div className="info-block">
-                  <Text>Below we'll describe how to reinstall the AVS4YOU software smoothly.</Text>
+                  <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-reinstall-avs4you-programs.aspx"><Text as="span">Read more &#8594;</Text></a>
+                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-reinstall-avs4you-programs.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
 
-            <PanelCollapse className="panelCollapse" panelName="How to uninstall AVS4YOU programs?">
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("How to uninstall AVS4YOU programs?")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>In case you need to uninstall the AVS4YOU programs follow this detailed guide. Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict.</Text>   
+                  <Text>{this.props.t("In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict")}</Text>   
                 </div>
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-uninstall-AVS4YOU-programs.aspx"><Text as="span">Read more &#8594;</Text></a>
+                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-uninstall-AVS4YOU-programs.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>

@@ -91,52 +91,52 @@ render(){
         </Helmet>
         <div className="screen-wrapper first">
           <div className="sale-text">
-            <Text as="h1">70% OFF! <br className="mobile-br"/> In {mounth[currentMounth]} only!</Text>
+            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {mounth[currentMounth]} {this.props.t("only!")}</Text>
           </div>
-          <Text className="get-tools-text" as="h5">AVS4YOU Multimedia Suite for Windows</Text>
+          <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
           <div className="buy-block-wrapper">
             <div className="buy-block"> 
-              <Text className="subscription-time-text" as="h3">1 year</Text>
-              <Text className="access-sub-text">subscription</Text>
-              <Text className="access-limit">1 year access</Text>
-              <Text className="sub-now-text">Subscribe now for</Text>
+              <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
+              <Text className="access-sub-text">{this.props.t("subscription")}</Text>
+              <Text className="access-limit">{this.props.t("1 year access")}</Text>
+              <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
-                <Text className="prev-price-text">$69.00</Text>
-                <Text className="current-price-text"><span>$</span>39.00</Text>
+                <Text className="prev-price-text">{this.props.t("$69.00")}</Text>
+                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39.00")}</Text>
               </div>
-              <Text className="limited-offer-text">Time limited offer</Text>
-              <Text className="limited-offer-text last">prices valid till {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+              <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
+              <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
                 href={this.state.hrefOneYear}
                 className="buy-block-button"
               >
-                Buy now
+                {this.props.t("Buy now")}
               </Button>
             </div>
             <div className="buy-block unlimited-block">
               <div className="popular-banner">
-                <Text as="p">Most popular</Text>
+                <Text as="p">{this.props.t("Most popular")}</Text>
               </div>
               <div className="unlimited-block-content">
-                <Text className="subscription-time-text" as="h3">Unlimited</Text>
-                <Text className="access-sub-text">subscription</Text>
-                <Text className="access-limit">Unlimited access</Text>
-                <Text className="sub-now-text">Subscribe now for</Text>
+                <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited")}</Text>
+                <Text className="access-sub-text">{this.props.t("subscription")}</Text>
+                <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
+                <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
-                  <Text className="prev-price-text">$199.00</Text>
-                  <Text className="current-price-text"><span>$</span>59.00</Text>
+                  <Text className="prev-price-text">{this.props.t("$199.00")}</Text>
+                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59.00")}</Text>
                 </div>
-                <Text className="limited-offer-text">Time limited offer</Text>
-                <Text className="limited-offer-text last">prices valid till {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+                <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
+                <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
                 <Button
                   href={this.state.hrefUnlim}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
                 >
-                  Buy now
+                  {this.props.t("Buy now")}
                 </Button>
               </div>
             </div>
@@ -148,101 +148,96 @@ render(){
         </div>
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
-            Why choose AVS4YOU?
+          {this.props.t("Why choose AVS4YOU?")}
           </Text>
           <div className="why-choose-wrapper">
             <tr className="first-tr">
               <div className="why-choose-item">
                 <img src={VideoIcon} className="icon" />
-                <Text className="text">5 multimedia programs in 1 package</Text>
+                <Text className="text">{this.props.t("5 multimedia programs in 1 package")}</Text>
               </div>
               <div className="why-choose-item">
                 <img src={SecureIcon} className="icon"/>
-                <Text className="text">100% secure, ad-free, virus-free</Text>
+                <Text className="text">{this.props.t("100% secure, ad-free, virus-free")}</Text>
               </div>
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon"/>
-                <Text className="text">30-day Money-back guarantee</Text>
+                <Text className="text">{this.props.t("30-day Money-back guarantee")}</Text>
               </div>
             </tr>
 
             <tr>
             <div className="why-choose-item">
                 <img src={ManyYearsIcon} className="icon"/>
-                <Text className="text">No watermark</Text>
+                <Text className="text">{this.props.t("No watermark")}</Text>
               </div>
               <div className="why-choose-item">
                 <img src={SupportIcon} className="icon"/>
-                <Text className="text">Free support, free updates</Text>
+                <Text className="text">{this.props.t("Free support, free updates")}</Text>
               </div>  
               <div className="why-choose-item">
                 <img src={PeopleIcon} className="icon"/>
-                <Text className="text">20M happy users worldwides</Text>
+                <Text className="text">{this.props.t("20M happy users worldwides")}</Text>
               </div>     
             </tr>
           </div>
         </div>
         <div>
-          <div className="questions-wrapper">
+        <div className="questions-wrapper">
 
-            <Text as="h2" className="common__heading">
-              Frequently asked questions
-            </Text>
+          <Text as="h2" className="common__heading">
+          {this.props.t("Frequently asked questions")}
+          </Text>
 
-            <div className="questions-block">
-              <PanelCollapse className="panelCollapse" panelName="What is the difference between 1 Year and Unlimited Subscription types?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">1 Year Subscription grants you a full access to all AVS4YOU programs during a year whereas there are no 
-                    time limitations for using AVS4YOU Unlimited Subscription.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="What happens when 1 year Subscription gets expired?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">All AVS4YOU programs become unregistered and a watermark will be added to the output files.</Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="What are the limitations of unactivated AVS4YOU software?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">A voice logo is applied to output audio files and in the video programs a watermark is 
-                    added to the output files throughout the whole video.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="How can I get rid of the annoying voice logo and watermark?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">It is necessary to buy an AVS4YOU subscription and activate the software with the license key.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName=" May I transfer the license key to a new computer?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">According to AVS4YOU license policy it is not allowed to transfer the license from one computer to another. 
-                    In this case it is necessary to buy an additional subscription.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="May I use AVS4YOU software on multiple computers with the same license key?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">One license key can be used to activate the software on a single computer. 
-                    If you want to use the software on multiple computers you need to buy the appropriate number of subscriptions.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="Is my payment information secure?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">Yes, it is. All transactions are processed via the 2Checkout payment gateway. 
-                    2Checkout provides the highest standards of online security and guarantees the safety of your payments and personal information.
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="I want a refund. How can I get my money back?">
-                <div className="collapseContent">
-                    <Text className="hiddenText">If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days. <a href="https://support.avs4you.com/refund.aspx" target="_blank">Check our Refund Policy</a> to find out if you are eligible for a full refund.
-                    </Text>
-                </div>
-              </PanelCollapse>
-            </div>
+          <div className="questions-block">
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("What is the difference between 1 Year and Unlimited Subscription types")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("1 Year Subscription grants you a full access to all AVS4YOU programs during a year whereas there are no time limitations for using AVS4YOU Unlimited Subscription")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("What happens when 1 year Subscription gets expired?")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("All AVS4YOU programs become unregistered and a watermark will be added to the output files")}</Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("What are the limitations of unactivated AVS4YOU software?")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("A voice logo is applied to output audio files and in the video programs a watermark is added to the output files throughout the whole video")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("How can I get rid of the annoying voice logo and watermark?")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("It is necessary to buy an AVS4YOU subscription and activate the software with the license key")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("May I transfer the license key to a new computer?")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("According to AVS4YOU license policy it is not allowed to transfer the license from one computer to another In this case it is necessary to buy an additional subscription")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("May I use AVS4YOU software on multiple computers with the same license key?")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("One license key can be used to activate the software on a single computer If you want to use the software on multiple computers you need to buy the appropriate number of subscriptions")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("Is my payment information secure")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("Yes, it is All transactions are processed via the 2Checkout payment gateway 2Checkout provides the highest standards of online security and guarantees the safety of your payments and personal information")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+            <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
+              <div className="collapseContent">
+                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href="https://support.avs4you.com/refund.aspx" target="_blank">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                  </Text>
+              </div>
+            </PanelCollapse>
+          </div>
 
           </div>
         </div>
