@@ -23,7 +23,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-class installedVideoEditor extends React.PureComponent {
+class uninstallOffer extends React.PureComponent {
 
 render(){
     return (
@@ -133,4 +133,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(installedVideoEditor);
+export default withI18next({ ns: "common" })(uninstallOffer);

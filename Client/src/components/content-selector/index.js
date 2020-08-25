@@ -64,7 +64,8 @@ class ContentSelector extends React.Component {
             animate: true,
             currentContentIndex: 0,
             nextContentIndex: 1,
-            content: React.Children.toArray(this.props.children)
+            content: React.Children.toArray(this.props.children),
+            selectorInit: false
         };
 
         this.content="";  
@@ -107,6 +108,15 @@ class ContentSelector extends React.Component {
 
     onClickSelectorButton = (e) => {
         this.changeContent(+e.target.id)
+    }
+
+    componentDidUpdate(){
+        if(this.props.currentContentIndex && this.state.currentContentIndex !== this.props.currentContentIndex && !this.state.selectorInit){
+            this.setState({
+                currentContentIndex: this.props.currentContentIndex,
+                selectorInit: true
+            })
+        }
     }
 
     render(){
