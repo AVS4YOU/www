@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import ContentSelector from '../components/content-selector';
 import Button from "../components/button";
 import IndicatorCross from '../images/upgrade-now/indicator.svg';
+import IndicatorCheck from '../images/upgrade-now/indicator-check.svg';
 
 import videoIcon from '../images/main-page/icons/video_icon_grey.svg'
 import videoIconWhite from '../images/main-page/icons/video_icon_for_slider.svg'
@@ -180,7 +181,7 @@ render(){
             <ImageGQL className="upgradeImageHeader" imageName="upgrade-now.png" style={{position: "absolute"}}/> 
               <div className="header__text"><Text as="h2" className="header__heading upgrade"> {this.props.t("Upgrade now")} </Text>
               <Text as="h2" className="header__heading get">{this.props.t("and get access to all AVS4YOU programs")} </Text>
-              <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="upgrade-now-buttom-text" className="upgrade-now-buttom">
+              <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="upgrade-now-buttom-text" className="upgrade-now-buttom">
               {this.props.t("Upgrade now")}
                     </Button></div>
 
@@ -191,7 +192,7 @@ render(){
               <ContentSelector
                 currentContentIndex={this.state.currentContentIndex}
                 className="choose-program__content-wrapper"
-                buttonNames={[this.props.t("All softaware"),this.props.t("Video Converter"),this.props.t("Audio Converter"),this.props.t("Video Editor"),this.props.t("Audio Editor"),this.props.t("Video Remaker")]}
+                buttonNames={[this.props.t("All softaware"),this.props.t("Video Converter"),this.props.t("Audio Converter"),this.props.t("Video Editor"),this.props.t("Audio Editor"),this.props.t("Video ReMaker")]}
             >
                 <div className="choose-program__item">
                   <Text as="h2" className="common__heading__table">
@@ -213,73 +214,71 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div> </td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply video and audio effects")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><Text className="choose-program__list">
-                  <div className="checkIndicator"><center><span></span></center></div>
-                    </Text></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge video files")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Split videos by length, size, chapters")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Correct aspect ratio. Crop scale")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Export audio from video in MP3")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                      {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -303,77 +302,64 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key audio formats")}
                     </Text></td>
-                  <td>
-                  <center> <div className="checkIndicator"><center><span></span></center></div> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply audio effects")}
                     </Text></td>
-                    <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge audio files")}
                     </Text></td>
-                    <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Use multi-thread conversion")}
                     </Text></td>
-                    <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create audiobooks")}
                     </Text></td>
-                    <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create ringtones")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
-                    <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                  <td><Text className="choose-program__list">
-                  <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
-                    </Text></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -397,93 +383,92 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                  <td>
-                  <center> <div className="checkIndicator"><center><span></span></center></div> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Screen capture and record video")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Trim, crop, split and join videos")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply effects, transitions, overlay")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Video stabilization")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Chroma key")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Colour correction")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Freeze frame. Playback speed")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Rotate, shift, mirror or zoom")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Save to HDD, devices, for web")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                      {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -507,64 +492,63 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key audio formats")}
                     </Text></td>
-                  <td>
-                  <center><div className="checkIndicator"><center><span></span></center></div> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Record audio")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, join, mix")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply audio effects/filters")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Generate sounds")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Multitrack editing")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
 
                   <Text as="h2" className="common__heading__table">
-                  AVS Video Remaker
+                  AVS Video ReMaker
                   </Text>
                   <table className="tableProgram">
                   <tr>
@@ -582,58 +566,57 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
-                  <td>
-                  <center> <div className="checkIndicator"><center><span></span></center></div> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Capture screen and record video")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, split and merge videos")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Add transitions")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Change clip sequence")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -661,71 +644,71 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply video and audio effects")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge video files")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Split videos by length, size, chapters")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Correct aspect ratio. Crop scale")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Export audio from video in MP3")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -751,8 +734,8 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key audio formats")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
@@ -761,7 +744,7 @@ render(){
                     <td><Text className="choose-program__list">
                     <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
@@ -770,7 +753,7 @@ render(){
                     <td><Text className="choose-program__list">
                     <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
@@ -779,7 +762,7 @@ render(){
                     <td><Text className="choose-program__list">
                     <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
@@ -788,14 +771,14 @@ render(){
                     <td><Text className="choose-program__list">
                     <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create ringtones")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
@@ -804,23 +787,23 @@ render(){
                     <td><Text className="choose-program__list">
                     <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><Text className="choose-program__list">
                   <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
                     </Text></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -847,92 +830,92 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Screen capture and record video")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Trim, crop, split and join videos")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply effects, transitions, overlay")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Video stabilization")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Chroma key")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Colour correction")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Freeze frame. Playback speed")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Rotate, shift, mirror or zoom")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Save to HDD, devices, for web")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -959,57 +942,57 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key audio formats")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Record audio")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, join, mix")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply audio effects/filters")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Generate sounds")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Multitrack editing")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -1018,7 +1001,7 @@ render(){
 
                   <div className="choose-program__item">
                   <Text as="h2" className="common__heading__table">
-                  AVS Video Remaker
+                  AVS Video ReMaker
                   </Text>
                   <table className="tableProgram">
                   <tr>
@@ -1036,57 +1019,57 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
-                  <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Capture screen and record video")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, split and merge videos")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Add transitions")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Change clip sequence")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><div className="checkIndicator"><center><span></span></center></div></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                   <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Upgrade now")}
                     </Button>
                   </div>
@@ -1108,7 +1091,7 @@ render(){
                 <Text className="text-landing-old-price">$69.00</Text>
                 <Text className="text-landing-new-price"><sup>$</sup>39.00</Text>
                 <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till April 30, 2020")}</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><div className="landing-bestseller">
                 <Text className="text-bestseller">{this.props.t("Bestseller")}
@@ -1119,7 +1102,7 @@ render(){
                 <Text className="text-landing-old-price">$199.00</Text>
                 <Text className="text-landing-new-price"><sup>$</sup>59.00</Text>
                 <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till July 30, 2020")}</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table></div></div>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.143321461.1567942970.1598170647-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table></div></div>
 
                 <div className="availableCarts">
             <ImageGQL imageName="register-available-carts.png"/>
