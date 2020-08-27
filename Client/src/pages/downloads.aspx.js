@@ -157,7 +157,7 @@ render(){
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx"><Text as="span">Read more &#8594;</Text></a>
+                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>
@@ -171,7 +171,7 @@ render(){
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx"><Text as="span">Read more &#8594;</Text></a>
+                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
                 </div>
               </div>
             </PanelCollapse>

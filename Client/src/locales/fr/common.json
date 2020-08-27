@@ -3,7 +3,7 @@
   
   
     "/": "/",
-    "CurrentLanguage": "Italiano",
+    "CurrentLanguage": "Français",
   
   
   
@@ -450,7 +450,7 @@
     "*****************************404********************************" : "*****************************404********************************",
     "Page not found":"Page introuvable",
     "Ooops we could not find this page It might have been removed or never existed":"Ooops, nous n'avons pas pu trouver cette page. Elle a peut-être été supprimée ou n'a jamais existé.",
-    "Your steps":"Vos démarches",
+    "Your steps":"Vos démarches:",
     "Make sure you have entered the link correctly and try again":"Vérifier que le lien a été correctement entré et réessayez",
     "Report the issue contacting us at":"Signalez le problème en nous contactant à l'adresse suivante",
 
@@ -482,7 +482,7 @@
     "Contact":"Contact",
     "Affiliate Sales":"Ventes d'affiliation",
     "To learn more about affiliate program please email us at":"Pour en savoir plus sur le programme d'affiliation, veuillez nous contacter par courrier électronique à",
-    "or visit our ":"ou consulter notre page. ",
+    "or visit our ":"ou consulter notre",
     "page":"page",
     "Affiliate Program":"Programme d'Affiliation",
     "Volume Sales":"Volume de ventes",
@@ -551,7 +551,7 @@
     "Burn audio and data discs":"Gravez de l'audio et des disques de données",
     "Write your audio onto CD (CD-R, CD-RW) discs":"Gravez des sons audio sur des disques CD (CD-R, CD-RW).",
     "Create audio discs in MP3 and WMA audio formats":"Créez des disques audio en formats audio MP3 et WMA.",
-    "Burn data discs with files of any type: documents(.txt, .html, .doc, .odt, etc.), audio files (.mp3, .wma, .wav, etc.), video files (.avi, .mov, .mpeg, etc.), image files (.png, .png, .gif, etc.)":"Gravez des disques de données avec des fichiers de tout type : documents (.txt, .html, .doc, .odt, etc.), fichiers audio (.mp3, .wma, .wav, etc.), fichiers vidéo (.avi, .mov, .mpeg, etc.), fichiers images (.png, .png, .gif, etc.)",
+    "Burn data discs with files of any type documents txt, html, doc, odt, etc, audio files mp3, wma, wav, etc, video files avi, mov, mpeg, etc, image files png, png, gif, etc":"Gravez des disques de données avec des fichiers de tout type : documents (.txt, .html, .doc, .odt, etc.), fichiers audio (.mp3, .wma, .wav, etc.), fichiers vidéo (.avi, .mov, .mpeg, etc.), fichiers images (.png, .png, .gif, etc.)",
     "Make ISO image":"Faites une image ISO",
     "Create an image of your personal video and save it on PC":"Créez une copie de vidéos personnelles et enregistrez-la sur votre PC.",
     "Make an ISO image directly from a disc or HDD":"Réalisez une image ISO directement à partir d'un disque ou d'un disque dur.",
@@ -641,7 +641,7 @@
     "Edit photos to all key formats JPEG, JPG, BMP, PNG, GIF, etc":"Éditez les photos dans tous les formats clés : JPEG, JPG, BMP, PNG, GIF, etc.",
     "See a full list of supported image formats":"Consultez la liste complète des formats d'image pris en charge.",
     "Make an ISO image directly from a disc or HDD":"Réalisez une image ISO directement à partir d'un disque ou d'un disque dur.",
-    "Edit, delete or add new files to the ready disc imagesvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv":"Modifiez, supprimez ou ajoutez de nouveaux fichiers aux images de disque disponibles.",
+    "Edit, delete or add new files to the ready disc images":"Modifiez, supprimez ou ajoutez de nouveaux fichiers aux images de disque disponibles.",
 
 
 
@@ -682,6 +682,7 @@
     "Easily enhance the learning process":"Améliorez facilement le processus d'apprentissage",
     "Why AVS4YOU is a perfect solution?":"Pourquoi AVS4YOU est une parfaite solution ?",
     "AVS4YOU for Students":"AVS4YOU pour les élèves",
+    "AVS4YOU for Educators":"AVS4YOU pour les Éducateurs",
     "Create classroom video projects and presentations":"Créez des projets vidéo et des présentations en classe",
     "Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more":"Éditez facilement des séquences de webcam, ajoutez des superpositions d'images et d'audio, des autocollants, des effets visuels, changez le fond, et plus encore",
     "Make a big saving on the software":"Faites de grosses économies sur les logiciels",

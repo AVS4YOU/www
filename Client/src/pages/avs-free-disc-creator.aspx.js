@@ -99,7 +99,7 @@ class avsFreeDiscCreator extends React.PureComponent {
             >
               <Text className="ListItem">{this.props.t("Write your audio onto CD (CD-R, CD-RW) discs")}</Text>
               <Text className="ListItem">{this.props.t("Create audio discs in MP3 and WMA audio formats")}</Text>
-              <Text className="ListItem">{this.props.t("Burn data discs with files of any type: documents(.txt, .html, .doc, .odt, etc.), audio files (.mp3, .wma, .wav, etc.), video files (.avi, .mov, .mpeg, etc.), image files (.png, .png, .gif, etc.)")}</Text>
+              <Text className="ListItem">{this.props.t("Burn data discs with files of any type documents txt, html, doc, odt, etc, audio files mp3, wma, wav, etc, video files avi, mov, mpeg, etc, image files png, png, gif, etc")}</Text>
             </ContentRowItem>
 
             <ContentRowItem

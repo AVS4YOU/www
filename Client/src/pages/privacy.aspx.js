@@ -36,7 +36,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("By using AVS4YOU Website or Software hereinafter also referred to as AVS4YOU you explicitly consent to such use of your Personal Data and agree to the terms of this Privacy Policy")}
           </Text>
           <Text className="body-privacy__text paragraph">
-            {this.props.t("We process data based on:")}
+            {this.props.t("We process data based on")}
           </Text>
           <div className="body-privacy__text">
             <Text className="paragraph-text">

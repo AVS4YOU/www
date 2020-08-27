@@ -70,7 +70,7 @@ class Privacy extends React.PureComponent {
 
 
           <Text className="body-privacy__text">
-          {this.props.t("NO WARRANTIES")}"
+          {this.props.t("NO WARRANTIES")}
           </Text>
           <Text className="body-privacy__text">
           {this.props.t("Online Media Technologies Ltd expressly disclaims any warranty for AVS4YOU Software")}
