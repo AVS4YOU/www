@@ -86,7 +86,7 @@ render(){
        metaKeywords=""
       >
         <Helmet>
-          <script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> 
+          {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
