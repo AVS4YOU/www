@@ -132,32 +132,32 @@ class ScrollTools extends React.Component {
                             <div className="trigger" id="trigger" />
                             <div className="textItem">
                                 <Text as="h3" className="textItem__heading">AVS Video Editor</Text>
-                                <Text className="textItem__paragraph">Make your home videos look professional with a full set of video editing tools.</Text>
-                                <Text className="textItem__paragraph">Play with 300+ effects and transitions.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Make your home videos look professional with a full set of video editing tools")}.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Play with 300+ effects and transitions")}.</Text>
                             </div>
                         </div>
                         <div id="trigger1" />
                         <div className="scrollItem">
                             <div className="textItem">
                                 <Text as="h3" className="textItem__heading">AVS Video Converter</Text>
-                                <Text className="textItem__paragraph">Easily convert videos to all key formats: MP4, MPEG, DVD, WMV, AVI, HDV + 60 more.</Text>
-                                <Text className="textItem__paragraph">Use customized profiles for video playback on any device.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Easily convert videos to all key formats: MP4, MPEG, DVD, WMV, AVI, HDV + 60 more")}.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Use customized profiles for video playback on any device")}.</Text>
                             </div>
                         </div>
                         <div id="trigger2" />
                         <div className="scrollItem">
                             <div className="textItem">
                                 <Text as="h3" className="textItem__heading">AVS Video ReMaker</Text>
-                                <Text className="textItem__paragraph">Edit video files without re-encoding and quality loss. Cut, delete unwanted parts, change scene sequence.</Text>
-                                <Text className="textItem__paragraph">Burn video to DVD or Blu-ray discs.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Edit video files without re-encoding and quality loss. Cut, delete unwanted parts, change scene sequence")}.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Burn video to DVD or Blu-ray discs")}.</Text>
                             </div>
                         </div>
                         <div id="trigger3" />
                         <div className="scrollItem">
                             <div className="textItem">
                                 <Text as="h3" className="textItem__heading">AVS Audio Converter</Text>
-                                <Text className="textItem__paragraph">Convert your audio files between various formats: MP3, WAV, WMA, M4A, FLAC and others.</Text>
-                                <Text className="textItem__paragraph">Create your own audiobooks.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Convert your audio files between various formats: MP3, WAV, WMA, M4A, FLAC and others")}.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Create your own audiobooks")}.</Text>
                             </div>
                         </div>
                         <div id="trigger4" />
@@ -165,8 +165,8 @@ class ScrollTools extends React.Component {
                         <div className="trigger" id="trigger5" />
                             <div className="textItem">
                                 <Text as="h3" className="textItem__heading">AVS Audio Editor</Text>
-                                <Text className="textItem__paragraph">Enhance your audio with special effects and filters. Record audio data from various inputs.</Text>
-                                <Text className="textItem__paragraph">Save audio files to popular audio formats.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Enhance your audio with special effects and filters. Record audio data from various inputs")}.</Text>
+                                <Text className="textItem__paragraph">{this.props.t("Save audio files to popular audio formats")}.</Text>
                             </div>
                         </div>
                     </div>

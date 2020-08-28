@@ -26,7 +26,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-class installedVideoEditor extends React.PureComponent {
+class installedPack extends React.PureComponent {
 
 render(){
     return (
@@ -35,8 +35,7 @@ render(){
         className="installed-pack-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU is the home of ultimate multimedia editing family.
-        Learn more about our company, its history, who we are and what we value."
+        title={this.props.t("AVS4YOU best software for processing video, audio, image")}
         metaDescription=""
         metaKeywords=""
       >
@@ -49,18 +48,18 @@ render(){
           </div>
           <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing")} AVS4YOU Installation Package!</Text>
-                <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">AVS4YOU Unlimited Subscription</Text>
+              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS4YOU Installation Package!")}</Text>
+                <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
-                <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
-                <Text className="header__old__price">$199</Text>
+                <Text className="text-info-landing-box-gray">{this.props.t("Timelimited offer")}</Text>
+                <Text className="header__old__price">{this.props.t("$199")}</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now">{this.props.t("Buy")}</Text></table>
                 <div className="landing-one-offer-block-cross"></div>
                 </div>
-                <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">AVS4YOU Unlimited Subscription</Text>
+                <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
-                <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
-                <Text as="h4" className="header__new__price">$59</Text>
+                <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
+                <Text as="h4" className="header__new__price">{this.props.t("$59")}</Text>
                 <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
@@ -68,7 +67,7 @@ render(){
           <Text as="h2" className="common__heading">{this.props.t("Why you will love AVS4YOU")}</Text>
           <BenefitsCarousel infinity className="benefitsCarousel" centerSlide={3}>
           <div  className="carouselItem export">
-              <Text>{this.props.t("100% secure, ad-free, virus-free software")}</Text>
+              <Text>{this.props.t("100% secure adfree virusfree")}</Text>
             </div>
             <div  className="carouselItem support">
               <Text>{this.props.t("5 professional multimedia programs in 1 package")}</Text>
@@ -105,9 +104,9 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips & tricks")}</a></div>
-<div className="questionIcon">{this.props.t("Got a question?")}
+<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/index.aspx" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a href="https://www.avs4you.com/guides/index.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="questionIcon">{this.props.t("Got a question")}
 <br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
@@ -115,4 +114,4 @@ render(){
     );
   }
 };
-export default withI18next({ ns: "common" })(installedVideoEditor);
+export default withI18next({ ns: "common" })(installedPack);
