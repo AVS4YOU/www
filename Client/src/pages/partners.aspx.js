@@ -95,7 +95,13 @@ render(){
           {this.props.t("Why AVS4YOU Reseller Program")}
           </Text>
           <div className="reseller-from-wrapper">
-            <Form></Form>
+            <Form
+              formHeader={this.props.t("To become an AVS4YOU reseller, please, use the form below:")}
+              nameAuthor={this.props.t("Name")}
+              emailAddressText={this.props.t("Email address")}
+              numberOfSubscriptions={this.props.t("Number of subscriptions")}
+              comment={this.props.t("Give us a brief description of your specific needs")}
+            />
             <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
         </div>
