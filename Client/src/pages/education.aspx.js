@@ -29,23 +29,23 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="education_header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
-                    <Text as="h1" className="header__heading">AVS4YOU for Education</Text>
-                    <Text as="h3" className="header__subtitle">Make the learning process productive for students and educators, cost effective for schools, colleges and universities</Text>
+                    <Text as="h1" className="header__heading">{this.props.t("AVS4YOU for Education")}</Text>
+                    <Text as="h3" className="header__subtitle">{this.props.t("Make the learning process productive for students and educators, cost effective for schools, colleges and universities")}</Text>
                     <Link to="contact-form-header" spy={true} smooth={true} offset={0} duration={500} className="scrollToForm">
-                      <Text>Submit request</Text>
+                      <Text>{this.props.t("Submit request")}</Text>
                     </Link>
                 </div>
             </div>
         </div>
         <div className="body-education screen-wrapper">
           <Text as="h2" className="common__heading">
-            Advantages of AVS4YOU software
+          {this.props.t("Advantages of AVS4YOU software")}
           </Text>
           <div className="body-education__wrapper">
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  5 Multimedia Tools Suite fro audio and video processing
+                {this.props.t("5 Multimedia Tools Suite fro audio and video processing")}
                 </Text>
                 <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
               </div>
@@ -53,35 +53,35 @@ render(){
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  Special discounts up to 70% off
+                {this.props.t("Special discounts up to 70% off")}
                 </Text>
               </div>
             </div>
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  Easy software administration
+                {this.props.t("Easy software administration")}
                 </Text>
               </div>
             </div>
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  A single volume license key
+                {this.props.t("A single volume license key")}
                 </Text>
               </div>
             </div>
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  Online or offline software registration
+                {this.props.t("Online or offline software registration")}
                 </Text>
               </div>
             </div>
             <div className="tableCell">
               <div className="itemContent">
                 <Text>
-                  Easily enhance the learning process
+                {this.props.t("Easily enhance the learning process")}
                 </Text>
               </div>
             </div>
@@ -89,32 +89,32 @@ render(){
         </div>
         <div className="education-solution screen-wrapper">
             <Text as="h2" className="common__heading">
-              Why AVS4YOU is a perfect solution?
+            {this.props.t("Why AVS4YOU is a perfect solution?")}
             </Text>
             <div className="content-selector-wrapper">
               <ContentSelector
                   disableArrows={true}
                   className="choose-solution__content-wrapper"
-                  buttonNames={["AVS4YOU for Students","AVS4YOU for Educators"]}
+                  buttonNames={[this.props.t("AVS4YOU for Students"),this.props.t("AVS4YOU for Educators")]}
               >
               <div className="education__content-wrapper">
                 <ContentRowItem
                   imgLeft={true}
                   imageName="create-classroom-projects.jpg"
-                  headerText="Create classroom video projects and presentations"
+                  headerText={this.props.t("Create classroom video projects and presentations")}
                   free={false}
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more")}</Text>
                 </ContentRowItem>
 
                 <ContentRowItem 
                     imgLeft={false}
                     imageName="make-big-saving.jpg"
-                    headerText="Make a big saving on the software"
+                    headerText={this.props.t("Make a big saving on the software")}
                     free={false}   
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Get an extra 30% discount by sending your request at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>. 
-                  A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Get an extra 30% discount by sending your request at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>. 
+                  {this.props.t("A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof")}</Text>
                 </ContentRowItem>
               </div>
 
@@ -122,29 +122,28 @@ render(){
                 <ContentRowItem
                   imgLeft={true}
                   imageName="education_screen_educators1_new.png"
-                  headerText="Explain new topics and difficult concepts through video"
+                  headerText={this.props.t("Explain new topics and difficult concepts through video")}
                   free={false}
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Easily edit webcam footage, add audio and image overlays, stickers, 
-                    visual effects, change background, and more</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more")}</Text>
                 </ContentRowItem>
 
                 <ContentRowItem 
                     imgLeft={false}
                     imageName="education_screen_educators2.png"
-                    headerText="Record lectures and webinars"
+                    headerText={this.props.t("Record lectures and webinars")}
                     free={false}   
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Use visuals to grab students' attention and engage them</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Use visuals to grab students' attention and engage them")}</Text>
                 </ContentRowItem>
 
                 <ContentRowItem
                   imgLeft={true}
                   imageName="education_screen_educators3.png"
-                  headerText="Make video tutorials to reach even remote students"
+                  headerText={this.props.t("Make video tutorials to reach even remote students")}
                   free={false}
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>Record your screen, highlight keyboard and mouse actions</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Record your screen, highlight keyboard and mouse actions")}</Text>
                 </ContentRowItem>
                 <div className="content-button-wrapper">
                   <Button 
@@ -154,8 +153,9 @@ render(){
                     fontSize={18} 
                     href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
                     textTransform="uppercase"
+                    t={this.props.t}
                   >
-                      Download education price list
+                      {this.props.t("Download education price list")}
                   </Button>
                 </div>
               </div>
@@ -165,11 +165,11 @@ render(){
         <div className="form education screen-wrapper">
           <img src={mailIcon}/>
           <Text id="contact-form-header" as="h2" className="common__heading">
-            Contact form
+          {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
             <Form></Form>
-            <Text className="contact-us-text">If you have any questions about AVS4YOU Affiliate program, please contact us at <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
+            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>

@@ -12,6 +12,12 @@ const localesNSContent = {
       ns: "common"
     }
   ],
+  de: [
+    {
+      content: fs.readFileSync(`src/locales/de/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
   ru: [
     {
       content: fs.readFileSync(src/locales/ru/common.json, "utf8"),
@@ -39,6 +45,30 @@ const localesNSContent = {
   jp: [
     {
       content: fs.readFileSync(src/locales/jp/common.json, "utf8"),
+      ns: "common"
+    }
+  ],
+  it: [
+    {
+      content: fs.readFileSync(`src/locales/it/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+  es: [
+    {
+      content: fs.readFileSync(`src/locales/es/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+  fr: [
+    {
+      content: fs.readFileSync(`src/locales/fr/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+  jp: [
+    {
+      content: fs.readFileSync(`src/locales/jp/common.json`, "utf8"),
       ns: "common"
     }
   ]

@@ -16,55 +16,40 @@ render(){
         className="about-us-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU is the home of ultimate multimedia editing family.
-        Learn more about our company, its history, who we are and what we value."
-        metaDescription=""
-        metaKeywords=""
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
+        metaDescription={this.props.t("")}
+        metaKeywords={this.props.t("")}
       >
         <div className="header">
           <ImageGQL className="headerBackgroundImage" imageName="about-us-header.jpg" style={{position: "absolute"}}/>
-          <div className="header__background-gradient">
-            <div className="header__body">
-              <Text as="h1" className="header__heading">About AVS4YOU</Text>
-              <Text as="h3" className="header__subtitle">Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development</Text>
-            </div>
-          </div>
         </div>
         <div className="body-company">
           <Text as="h2" className="common__heading">
-            Company
+            {this.props.t("Company")}
           </Text>
           <Text className="body-company__text">
-            <b>Founded in 2004</b>, Online Media Technologies Ltd. 
-            is an IT high-tech company that specializes in 
-            developing innovative video and audio solutions 
-            for end-users and professional developers. 
-            Our award-winning products have earned high reputation 
-            among millions of users worldwide. Working in touch with 
-            the latest trends in multimedia world, we create software tools that
-            make your work with digital video and audio smooth and effective and 
-            let you remain on the cutting edge of high technological advances.
+            <b>{this.props.t("Founded in 2004")}</b>, {this.props.t("Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances")}
           </Text>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
         <div className="stats-wrapper">
           <div className="stats-wrapper__box">
             <Text as="h4">150+</Text>
-            <Text as="p">Staff members</Text>
+            <Text as="p">{this.props.t("Staff members")}</Text>
           </div>
           <div className="stats-wrapper__box">
-            <Text as="h4">Millions</Text>
-            <Text as="p">Of happy users</Text>
+            <Text as="h4">{this.props.t("Millions")}</Text>
+            <Text as="p">{this.props.t("Of happy users")}</Text>
           </div>
           <div className="stats-wrapper__box">
             <Text as="h4">200+</Text>
-            <Text as="p">Сountries sold in</Text>
+            <Text as="p">{this.props.t("Сountries sold in")}</Text>
           </div>
         </div>
         <div className="unique-body">
           <div className="unique-body__max-width">
             <Text as="h2" className="common__heading">
-              What makes AVS4YOU unique?
+              {this.props.t("What makes AVS4YOU unique?")}
             </Text>
             <div className="unique-body__wrapper">
               <div className="unique-body__box">
@@ -72,11 +57,10 @@ render(){
                   01
                 </Text>
                 <Text className="unique-body__sub-header">
-                  Best offer on the market
+                  {this.props.t("Best offer on the market")}
                 </Text>
                 <Text className="unique-body__text">
-                  No need to pay for each program. 
-                  You get a set of audio and video tools at the price of one application
+                  {this.props.t("No need to pay for each program You get a set of audio and video tools at the price of one application")}
                 </Text>
               </div>
 
@@ -85,11 +69,10 @@ render(){
                   02
                 </Text>
                 <Text className="unique-body__sub-header">
-                  Software for everyone
+                  {this.props.t("Software for everyone")}
                 </Text>
                 <Text className="unique-body__text">
-                  All the software have user-friendly 
-                  interface and meet the needs of both professionals and beginners
+                  {this.props.t("All the software have user-friendly interface and meet the needs of both professionals and beginners")}
                 </Text>
               </div>
 
@@ -98,11 +81,10 @@ render(){
                   03
                 </Text>
                 <Text className="unique-body__sub-header">
-                  Focus on users’ needs
+                  {this.props.t("Focus on users’ needs")}
                 </Text>
                 <Text className="unique-body__text">
-                  AVS4YOU is committed to make all users 
-                  contented offering them a number of programs absolutely free of charge
+                  AVS4YOU {this.props.t("is committed to make all users contented offering them a number of programs absolutely free of charge")}
                 </Text>
               </div>
             </div>
@@ -113,14 +95,14 @@ render(){
           <div className="map-body__contacts-wrapper">
             <div className="map-body__block">
             
-              <Text as="h4" className="map-body__heading">We are here</Text>
-              <Text as="p" className="map-body__text">85 Great Portland, London</Text>
-              <Text as="p" className="map-body__text">W1W 7LT</Text>
-              <Text as="p" className="map-body__text">United Kingdom</Text>
+              <Text as="h4" className="map-body__heading">{this.props.t("We are here")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("85 Great Portland, London")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("W1W 7LT")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("United Kingdom")}</Text>
             </div>
             <div className="map-body__block">
               <Text as="h4" className="map-body__heading">Contacts</Text>
-              <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 208 144 3359</a> (no phone support)</Text>
+              <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 208 144 3359</a> ({this.props.t("no phone support")})</Text>
               <Text as="p" className="map-body__text"><a href="tel:+442071826722">(+44) 207 182 6722</a></Text>
             </div>
           </div>
@@ -131,46 +113,43 @@ render(){
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-              Contact AVS4YOU
+              {this.props.t("Contact")} AVS4YOU
             </Text>
             <div className="contact-body__wrapper">
 
               <div className="common-info-block">
                 <Text as="h4" className="common-info-block__headline">
-                  Affiliate Sales
+                  {this.props.t("Affiliate Sales")}
                 </Text>
                 <Text className="common-info-block__text">
-                  To learn more about affiliate program, please email us at affiliates@avs4you.com or visit our <Link to="/affiliates.aspx">Affiliate Program</Link> page.
+                  {this.props.t("To learn more about affiliate program please email us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a> {this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program")}</Link>{this.props.t(" page.")}
                 </Text>
               </div>
 
               <div className="common-info-block">
                 <Text as="h4" className="common-info-block__headline">
-                  Volume Sales
+                  {this.props.t("Volume Sales")}
                 </Text>
                 <Text className="common-info-block__text">
-                  To purchase a large number of licenses at a special price, 
-                  contact our sales department at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>
+                  {this.props.t("To purchase a large number of licenses at a special price, contact our sales department at ")}<a href="mailto:sales@avs4you.com">sales@avs4you.com</a>
                 </Text>
               </div>
 
               <div className="common-info-block">
                 <Text as="h4" className="common-info-block__headline">
-                  Education
+                  {this.props.t("Education")}
                 </Text>
                 <Text className="common-info-block__text">
-                  To get a quote for schools and universities, 
-                  please email us at <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> or visit <Link to="/education.aspx">Education page</Link>
+                  {this.props.t("To get a quote for schools and universities, please email us at ")}<a href="mailto:sales@avs4you.com">sales@avs4you.com</a>{this.props.t(" or visit ")}<Link to="/education.aspx">{this.props.t("Education page")}</Link>
                 </Text>
               </div>
 
               <div className="common-info-block">
                 <Text as="h4" className="common-info-block__headline">
-                  Customer Support
+                  {this.props.t("Customer Support")}
                 </Text>
                 <Text className="common-info-block__text">
-                  For assistance with purchasing and using our products, 
-                  please visit our <a href="https://support.avs4you.com">Support Center</a>
+                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a href="https://support.avs4you.com">{this.props.t("Support Center")}</a>
                 </Text>
               </div>
             </div>
