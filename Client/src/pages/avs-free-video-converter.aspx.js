@@ -55,7 +55,7 @@ render(){
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
@@ -72,16 +72,16 @@ render(){
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
-              <Text color="#666666" align="center">Overview</Text>
+              <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
             </ScrollLink>
             <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
-              <Text color="#666666" align="center">Reviews</Text>
+              <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
             </ScrollLink>
             <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
-              <Text color="#666666" align="center">Screentour</Text>
+              <Text color="#666666" align="center">{this.props.t("Screentour")}</Text>
             </ScrollLink>
             <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
-              <Text color="#666666" align="center">Download</Text>
+              <Text color="#666666" align="center">{this.props.t("Download")}</Text>
             </ScrollLink>
           </div>
 
@@ -90,57 +90,57 @@ render(){
                 id="overview"
                 imgLeft={true}
                 imageName="video_converter_convert_all_key2.jpg"
-                headerText="Сonvert all key video formats"    
+                headerText={this.props.t("Сonvert all key video formats")}    
             >
-              <Text className="ListItem">Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.</Text>
-              <Text className="ListItem">Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc.</Text>
-              <Text className="ListItem">Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback</Text>
-              <Text as="a" href="https://onlinehelp.avs4you.com/avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx" target="_blank" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>See a full list of all supported formats</Text>
+              <Text className="ListItem">{this.props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
+              <Text className="ListItem">{this.props.t("Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc")}</Text>
+              <Text className="ListItem">{this.props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text>
+              <Text as="a" href="https://onlinehelp.avs4you.com/avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx" target="_blank" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false}
                 imageName="video_converter_convert_video_easily3.jpg"
-                headerText="Convert video easily and fast"   
+                headerText={this.props.t("Convert video easily and fast")}   
             >
-              <Text className="ListItem">Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics or NVIDIA® GeForce®. It is available for H.264/AVC, VC-1, MPEG-2, H.265/HEVC, VP8, VP9 codecs. It speeds up preview and conversion processes significantly</Text>
-              <Text className="ListItem">Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics</Text>
-              <Text className="ListItem">Use software Intel® Media decoder for AMD and old Intel processors</Text>
-              <Text className="ListItem">You can use a common software decoder for all processors as an alternative</Text>
-              <Text className="ListItem">Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media</Text>
-              <Text className="ListItem">You can use NVIDIA CUDA® decoder with NVDEC/NVCUVID technology for NVIDIA video cards</Text>
+              <Text className="ListItem">{this.props.t("Use hardware acceleration for video decoding by means of video cards GPU  Intel HD Graphics or NVIDIA GeForce It is available for H 264 AVC, VC-1, MPEG-2, H 265 HEVC, VP8, VP9 codecs It speeds up preview and conversion processes significantly")}</Text>
+              <Text className="ListItem">{this.props.t("Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics")}</Text>
+              <Text className="ListItem">{this.props.t("Use software Intel® Media decoder for AMD and old Intel processors")}</Text>
+              <Text className="ListItem">{this.props.t("You can use a common software decoder for all processors as an alternative")}</Text>
+              <Text className="ListItem">{this.props.t("Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media")}</Text>
+              <Text className="ListItem">{this.props.t("You can use NVIDIA CUDA® decoder with NVDEC/NVCUVID technology for NVIDIA video cards")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
               imgLeft={true}
               imageName="vc_convert_a_large_number.jpg"
-              headerText="Convert a large number of files at once"    
+              headerText={this.props.t("Convert a large number of files at once")}    
             >
-              <Text className="ListItem"><span>Command Line Mode</span>Automate routine work using ready conversion templates without clicking the program buttons manually</Text>
-              <Text className="ListItem"><span>Batch Mode</span>Save your time spent on video conversion by using a batch mode which allows you to convert a large number of video files at once with easy-to-use configurations</Text>
+              <Text className="ListItem"><span>{this.props.t("Command Line Mode")}</span>{this.props.t("Automate routine work using ready conversion templates without clicking the program buttons manually")}</Text>
+              <Text className="ListItem"><span>{this.props.t("Batch Mode")}</span>{this.props.t("Save your time spent on video conversion by using a batch mode which allows you to convert a large number of video files at once with easy-to-use configurations")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
                 imgLeft={false} 
                 imageName="video_converter_edit_your_videos.jpg"
-                headerText="Edit your videos before conversion*"   
+                headerText={this.props.t("Edit your videos before conversion")}   
             >
-              <Text className="ListItem">Split your videos into parts, by chapters, size and cut unnecessary scenes</Text>
-              <Text className="ListItem">Change the aspect ratio of your video</Text>
-              <Text className="ListItem">Use basic video editing effects to make your videos more breathtaking</Text>
-              <Text className="ListItem">Convert video files with subtitles</Text>
-              <Text className="ListItem">Export audio and images from your video</Text>
-              <Text className="ListItem footnote" fontWeight={500}>*This feature is available in a full version</Text>
+              <Text className="ListItem">{this.props.t("Split your videos into parts, by chapters, size and cut unnecessary scenes")}</Text>
+              <Text className="ListItem">{this.props.t("Change the aspect ratio of your video")}</Text>
+              <Text className="ListItem">{this.props.t("Use basic video editing effects to make your videos more breathtaking")}</Text>
+              <Text className="ListItem">{this.props.t("Convert video files with subtitles")}</Text>
+              <Text className="ListItem">{this.props.t("Export audio and images from your video")}</Text>
+              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
             <ContentRowItem
                 imgLeft={true}
                 imageName="video_converter_slider_popup3.jpg"
-                headerText="Convert and share videos on Web"
+                headerText={this.props.t("Convert and share videos on Web")}
             >
-              <Text className="ListItem"><span>Save video to any format or modern gadgets</span>Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc.<br/> Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita) <br/> Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact.</Text>
-              <Text className="ListItem"><span>Create DVD/Blu-ray discs</span>Convert from/to Blu-ray or DVD formats. Cut, apply effects, add colorful DVD/Blu-ray menus. Split your movie into chapters and burn DVD/Blu-ray discs</Text>
-              <Text className="ListItem"><span>Convert videos for popular social platforms</span>Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox</Text>
+              <Text className="ListItem"><span>{this.props.t("Save video to any format or modern gadgets")}</span>{this.props.t("Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc")}<br/> {this.props.t("Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita)")} <br/> {this.props.t("Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact.")}</Text>
+              <Text className="ListItem"><span>{this.props.t("Create DVD/Blu-ray discs")}</span>{this.props.t("Convert from to Blu-ray or DVD formats Cut, apply effects, add colorful DVD Blu-ray menus Split your movie into chapters and burn DVD Blu-ray discs")}</Text>
+              <Text className="ListItem"><span>{this.props.t("Convert videos for popular social platforms")}</span>{this.props.t("Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox")}</Text>
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
@@ -150,26 +150,26 @@ render(){
                   {
                     name: "Gayle Hibbert",
                     avatar: AvatarGayle,
-                    revHeader: "Our customers say",
-                    revText: "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results. Would certainly recommend to anyone who wants good video software at a reasonable price."
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price")
                   },
                   {
                     name: "Terrance Jenkins",
                     avatar: AvatarTerrance,
-                    revHeader: "Our customers say",
-                    revText: "The product is super easy to download and use. Anyone can do this in just minutes. The company is always supportive. I highly recommend"
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
                   },
                   {
                     name: "Lawrence Thompson",
                     avatar: AvatarLawrence,
-                    revHeader: "Our customers say",
-                    revText: "I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional"
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
                   }
                 ]
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
           <ScreenshotsCarousel 
             maxWidth={734}
             maxWidthPopup={734}
@@ -181,97 +181,97 @@ render(){
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">File Size:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoConverter.size} MB</Text>
               </div>
 
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Current Version:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoConverter.version}</Text>
               </div>
 
               <div className="downloadInfoRow">        
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">Platforms:</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoConverter.platforms}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>By clicking the Download button you agree to <Link to="/license-agreement.aspx">our End User License Agreement</Link></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>
-                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>Technical specification</Text>
+                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
                   <div>
-                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>MINIMUM SYSTEM REQUIREMENTS</Text>
+                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
 
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Duo compatible at 3 GHz or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher </Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")} </Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows compatible sound card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows compatible sound card")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Display:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Display")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("32-bit color depth")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">CD recorder:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">32-bit color depth</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("CD recorder")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("32-bit color depth")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DVD recorder:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">for importing from DVD and creating Video DVD</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DVD recorder")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("for importing from DVD and creating Video DVD")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video capture device:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">required for capturing</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video capture device")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("required for capturing")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Windows Media Player:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">11 or higher for WMV video playback</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Windows Media Player")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("11 or higher for WMV video playback")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">DirectX:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Microsoft DirectX 9.0c or later</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
                     </div>
                   </div>
                   <div>
-                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>RECOMMENDED SYSTEM REQUIREMENTS</Text>
+                    <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("RECOMMENDED SYSTEM REQUIREMENTS")}</Text>
 
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Operating system:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Processor:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">RAM:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">2 GB or higher</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Video:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible video card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">Sound:</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 compatible sound card</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
                     </div>
                   </div>
                 </div>
-                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*Administrative permissions for program installation and Internet connection for activation</Text>
+                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>{this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
                 <div className="attentionBlock">
-                  <Text fontSize={16} fontWeight={500}>Please note that AVS4YOU® programs do not allow you to copy protected material. You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner.</Text>
+                  <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
                 </div>
             </PageContentWrapper>
           </div>
