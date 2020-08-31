@@ -142,11 +142,12 @@
         }
 
         .choose-program__button-transparent{
-            background-color:transparent;
-            border: 1px solid #1E72D2;
-
+            background-color: transparent;
+            text-decoration: underline;
+            color: #1373E2;
+            border: 1px solid #1373E2;
             .choose-program__button-text{
-                color:#1E72D2;
+                color:#1373E2;
             }
         }
 
@@ -238,6 +239,66 @@
         padding-top:40px;
 
     }
+    
+
+
+    .panelCollapse{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        border-radius: 0;
+        border-bottom: 1px solid #E4E4E4;
+
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        &:last-child{
+            margin-bottom:0px;
+            border:none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    .questions-wrapper{
+        background-color: #FFF9F1;
+        padding-bottom: 70px;
+    }
+    .common__heading-quest{
+        padding-top: 60px;
+    }
+    .questions-block{
+        max-width: 944px;
+        margin: auto;
+        margin-top: 90px;
+        box-shadow: 3px 3px 24px rgb(240, 240, 240);
+
+        .panelName{
+            padding: 30px 70px;
+            padding-left: 40px;
+            font-size: 22px;
+            text-align: left;
+            font-weight: 700;
+            color:#000000;
+            cursor: pointer;
+
+            &:before{
+                width: 16px;
+                height: 24px;
+                top: 34px;
+                right: 25px;
+            }
+        }
+
+        .collapseContent{
+            padding: 35px 40px;
+            padding-top: 0px;
+        }
+
+        .hiddenText{
+            color:#666666;
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 850px) {
@@ -265,7 +326,7 @@
             }
 
             .choose-program__contact-us{
-                font-size:14px;
+                font-size:12px;
             }
 
             .choose-program__content-text{
@@ -277,8 +338,8 @@
             }
 
             .choose-program__item{
-                padding-left: 32px;
-                padding-right: 32px;
+                padding-left: 28px;
+                padding-right: 28px;
             }
 
             .top-selector-buttons-wrapper{
@@ -335,10 +396,39 @@
             }
         }
     }
+    .questions-wrapper{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .questions-block{
+        margin-top:64px;
+
+        .panelName{
+            font-size: 18px;
+            padding: 30px 43px;
+            padding-left: 16px;
+
+            &:before{
+                width: 16px;
+                height: 16px;
+                top: 36px;
+                right: 13px;
+            }
+        }
+
+        .collapseContent{
+            padding: 25px 16px;
+            padding-top:0;
+        }
+    }
 }
 
 @media (max-width: 620px) {
     .affiliates{ 
+        .questions-wrapper{
+            display: none;
+        }
 
         .headerBackgroundImage{
             right: -560px;
@@ -409,11 +499,11 @@
         .screen-wrapper.choose-program{
             padding: 35px 0px;
         }
-  
+
         .choose-program {
 
             .choose-program__wrapper{
-                padding: 25px 30px 10px;
+                padding: 25px 20px 10px;
             }
 
             .common__heading{
@@ -462,6 +552,16 @@
         }
 
         .header__body{
+            .header__heading{
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: center;
+            }
+            .header__subtitle{
+                padding-left: 18%;
+                padding-right: 18%;
+                text-align: center;
+            }
             padding-top: 100px;
             padding-bottom: 200px;
         }
@@ -488,6 +588,9 @@
                     line-height: 27px;
                 }
             }
+        }
+        .choose-program__contact-us{
+            font-size: 12px;
         }
         
         .screen-wrapper{
