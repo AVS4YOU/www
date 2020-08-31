@@ -21,6 +21,10 @@ const RowContent = styled.div`
         display:none;
     }
 
+    h1{
+        padding: 0;
+    }
+
     &:first-child{
         padding-top: 0;
     }
@@ -84,6 +88,7 @@ const RowContent = styled.div`
         vertical-align: middle;
         left: 100px;
         max-width: 450px;  
+        top: 25px;
     }
 
     .flexWrapper{

@@ -59,7 +59,7 @@ th {
     text-decoration-color: #333;
   }
 td, th { 
-	padding: 10px; 
+	padding: 35px; 
 	/*border: 1px solid #ccc; */
 	text-align: left; 
 	font-size: 16px;
