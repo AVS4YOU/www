@@ -191,7 +191,7 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoEditor.platforms}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>

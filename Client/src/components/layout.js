@@ -130,7 +130,7 @@ class Layout extends React.PureComponent {
 
           <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
         </Helmet>
-        <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>
+        {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>

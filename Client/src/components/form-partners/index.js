@@ -338,14 +338,14 @@ class FormPartners extends React.Component {
                     :
                     <div>
                         <Text as="h2" className="formHeader">
-                            To become an AVS4YOU reseller, please, use the form below:
+                            {this.props.formHeader}
                         </Text>
                         <div className="inputsWrapper">
                             <Input
                                 tabIndex="0"
 
                                 inputName="name"
-                                inputLabel="Name"
+                                inputLabel={this.props.nameAuthor}
 
                                 value={this.state.name.value}
                                 inputClassName={this.state.name.inputClassName}
@@ -363,7 +363,7 @@ class FormPartners extends React.Component {
                                 tabIndex="1"
 
                                 inputName="email"
-                                inputLabel="Email address"
+                                inputLabel={this.props.emailAddressText}
 
                                 value={this.state.email.value}
                                 inputClassName={this.state.email.inputClassName}
@@ -381,7 +381,7 @@ class FormPartners extends React.Component {
                                 tabIndex="0"
 
                                 inputName="subscriptions"
-                                inputLabel="Number of subscriptions"
+                                inputLabel={this.props.numberOfSubscriptions}
 
                                 value={this.state.subscriptions.value}
                                 inputClassName={this.state.subscriptions.inputClassName}
@@ -401,7 +401,7 @@ class FormPartners extends React.Component {
 
                             inputName="comment"
                             inputLabel=""
-                            placeholder="Give us a brief description of your specific needs"
+                            placeholder={this.props.comment}
 
                             value={this.state.comment.value}
                             inputClassName={this.state.comment.inputClassName}
