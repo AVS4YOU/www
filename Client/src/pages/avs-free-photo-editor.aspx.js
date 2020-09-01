@@ -14,6 +14,10 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 
+import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
+import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
+import AvatarWilliamHolmes from '../images/common/review-carousel/quote_1.png';
+
 class avsFreePhotoEditor extends React.PureComponent {
 
   constructor(props) {
@@ -114,7 +118,30 @@ render(){
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen />
+          <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Chen Wang",
+                    avatar: AvatarChenWang,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results")
+                  },
+                  {
+                    name: "Andy Stephens",
+                    avatar: AvatarAndyStephens,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
+                  },
+                  {
+                    name: "William Holmes",
+                    avatar: AvatarWilliamHolmes,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                  }
+                ]
+              }
+            />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Photo Editor")}</Text>
           <ScreenshotsCarousel 
