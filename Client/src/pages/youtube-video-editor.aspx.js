@@ -9,19 +9,20 @@ import Button from '../components/button';
 import { Link as ScrollLink } from "react-scroll";
 import Slider from "react-slick";
 import styled, { css } from 'styled-components';
+import Layout from "../components/layout";
 
   function customPaging(i) {
     return (
         <ul className="slick-dots" id="slick-steps">
             {i === 0 ? 
-             <li className="slick-active" aria-hidden="false" style={{width:"48vw", top:"-18vw"}}><div className="lfb_tab lfb_btn_capture"><div className="lfb_es_icon"></div>Capture video</div></li>
-            : i === 1 ? <li aria-hidden="true" style={{width:"48vw", top:"-14vw"}}><div className="lfb_tab lfb_btn_cut" ><div className="lfb_es_icon"></div>Cut, trim and join</div></li>
-            : i === 2 ? <li aria-hidden="true" style={{width:"48vw", top:"-10vw"}}><div className="lfb_tab lfb_btn_apply" ><div className="lfb_es_icon"></div>Apply effects</div></li>
-            : i === 3 ? <li aria-hidden="true" style={{width:"48vw", top:"-6vw"}}><div className="lfb_tab lfb_btn_remove" ><div className="lfb_es_icon"></div>Remove defects</div></li>
-            : i === 4 ? <li aria-hidden="true" style={{left:"30vw", top:"-5vw"}}><div className="lfb_tab lfb_btn_use" ><div className="lfb_es_icon"></div>Change background</div></li>
-            : i === 5 ? <li aria-hidden="true" style={{left:"27.5vw", top:"2vw"}}><div className="lfb_tab lfb_btn_addtracks" ><div className="lfb_es_icon"></div>Add your audio tracks</div></li>
-            : i === 6 ? <li aria-hidden="true" style={{left:"25vw", top:"8.5vw"}}><div className="lfb_tab lfb_btn_insert" ><div className="lfb_es_icon"></div>Add text</div></li>
-            : i === 7 ? <li aria-hidden="true" style={{left:"22.5vw", top:"15vw"}}><div className="lfb_tab lfb_btn_save" ><div className="lfb_es_icon"></div>Upload to YouTube</div></li> 
+             <li className="slick-active" aria-hidden="false" ><div className="lfb_tab lfb_btn_capture"><div className="lfb_es_icon"></div>Capture video</div></li>
+            : i === 1 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_cut" ><div className="lfb_es_icon"></div>Cut, trim and join</div></li>
+            : i === 2 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_apply" ><div className="lfb_es_icon"></div>Apply effects</div></li>
+            : i === 3 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_remove" ><div className="lfb_es_icon"></div>Remove defects</div></li>
+            : i === 4 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_use" ><div className="lfb_es_icon"></div>Change background</div></li>
+            : i === 5 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_addtracks" ><div className="lfb_es_icon"></div>Add your audio tracks</div></li>
+            : i === 6 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_insert" ><div className="lfb_es_icon"></div>Add text</div></li>
+            : i === 7 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_save" ><div className="lfb_es_icon"></div>Upload to YouTube</div></li> 
             : ''}
         </ul>
     );
@@ -78,7 +79,15 @@ render(){
         ));  
     return (
       
-        <ProductPagesWrapper>  
+      <Layout 
+      headerIsDisabled={true}
+      footerIsDisabled={true}
+      className="youtube-video-editor" 
+      pageContext={this.props.pageContext} 
+      t={this.props.t}
+      metaDescription=""
+      metaKeywords=""
+    > 
           <header>
     <div className="lfb_header">
         <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank"></a><ul className="topmainmenu max-width-1">
@@ -134,26 +143,26 @@ render(){
             <div className="lfb_reas_t">Generate content for any blogging format, from tutorials and training videos to slideshows and reviews</div>
         </div>
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="smart.png" />
+            <ImageGQL className="lfb_reas_i" imageName="smart.webp" />
             <div className="lfb_reas_h">Smart presets</div>
             <div className="lfb_reas_t">Use specially designed templates depending on the desired quality of the output video when saving your project</div>
         </div>
         </div>
         <div className="lfb_reas_block">
         <div className="lfb_reason lfb_reason_center">
-            <ImageGQL className="lfb_reas_i" imageName="simple.png" />
+            <ImageGQL className="lfb_reas_i" imageName="simple.webp" />
             <div className="lfb_reas_h">Simple, but feature-rich</div>
             <div className="lfb_reas_t">AVS Video Editor is easy to learn, regardless of skill level. It is simple but has all necessary tools to make high-quality video</div>
         </div>
         </div>
         <div className="lfb_reas_block">
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="popular.png" />
+            <ImageGQL className="lfb_reas_i" imageName="popular.webp" />
             <div className="lfb_reas_h">Popular video formats</div>
             <div className="lfb_reas_t">Work with all key video formats such as MP4, MOV, AVI, WMV, FLV, AVCHD, MPEG and common video codecs H.264, MPEG-4,DivX,MPEG-2, HEVC (H.265)</div>
         </div>
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="high.png" />
+            <ImageGQL className="lfb_reas_i" imageName="high.webp" />
             <div className="lfb_reas_h">High-definition video</div>
             <div className="lfb_reas_t">Create video with different frame sizes: HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</div>
         </div>
@@ -242,7 +251,7 @@ render(){
     </div>
 </div>
                 </div>
-        </ProductPagesWrapper>
+        </Layout>
     );
   }
 };

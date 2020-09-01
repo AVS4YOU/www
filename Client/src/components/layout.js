@@ -134,7 +134,7 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
-        <Footer t={this.props.t}/>
+        {!this.props.headerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>
     )
   }

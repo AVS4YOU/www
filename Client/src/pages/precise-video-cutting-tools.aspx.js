@@ -27,12 +27,12 @@ render(){
         <Layout 
         headerIsDisabled={true}
         footerIsDisabled={true}
-        className="precise-video-cutting-tools" 
+        className="powerful-video-maker" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
         metaDescription=""
         metaKeywords=""
-      >   
+      > 
          <div className="vel_header">
         <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
             <source src="https://imgs.avs4you.com/en/images/landing/video-editor/video/diving.mp4" type="video/mp4" />
