@@ -1,7 +1,6 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
-import ProductPagesWrapper from '../components/product-pages-wrapper';
 import PWM from "../components/cinema-slider-redactor/pwm";
 import MenuWrapper from "../components/language-selector";
 import Layout from "../components/layout";

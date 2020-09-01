@@ -29,123 +29,32 @@ const CinemaSliderStyle = styled.div`
 }
 .slick-slide > div {
     padding-bottom: 75px;
-    .imgdetails{}
   }
-
-  .slick-dots {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    width: 900px;
-    margin: 0;
+  .scrollLinksWrapper {
+    border-spacing: 20px 0px;
     padding: 0;
-    position: absolute;
-    top: -200px;
-    left: -24px;
-    vertical-align: top;
-}
-    .slick-dots li {
-    margin: 0 auto;
-    padding: 0 50px;
-    }
-        .slick-dots li:first-of-type {
-        padding-left: 0;
-        }
-        .slick-dots li:last-of-type {
-        padding-right: 0;
-        }
-.slick-dots li, .slick-dots li button {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 0 none;
-    color: transparent;
-    background-color: transparent;
-    vertical-align: top;
-}
-    .slick-dots li button {
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    font-size: 8px;
-    }
-    .slick-dots li button:before {
-    background-image: url(https://imgs.avs4you.com/en/images/landing/video-editor-2/tools/icons.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-    content: '';
-    }
-.landing-feature1 button:before {
-background-position: -29px -2px;
-}
-.landing-feature2 button:before {/* background-position: -216px -2px; */}
-.landing-feature3 button:before {
-background-position: -400px -2px;
-}
-.landing-feature4 button:before {
-background-position: -587px -2px;
-}
-.landing-feature5 button:before {
-background-position: -765px -2px;
-}
-    .slick-dots li button:after {
-        font-weight: 600;
-        color: #3E3D62;
-        font-size: 18px;
-        line-height: 1.1em;
-        display: block;
-        padding: 3px 0 0;
-        font-family: 'Open Sans', Arial, Tahoma;
-    }
-.landing-feature1 button:after {
-content: 'Color Tuning';
-}
-.landing-feature2 button:after {
-content: 'Green Screen';
-}
-.landing-feature3 button:after {
-content: 'Stabilization';
-}
-.landing-feature4 button:after {
-content: 'Speed Control';
-}
-.landing-feature5 button:after {
-content: 'Text';
-}
-.landing-feature1.slick-active button:before,
-.landing-feature1 button:hover:before {
-background-position: -29px -108px;
-}
-
-.landing-feature2.slick-active button:before,
-.landing-feature2 button:hover:before {
-background-position: -216px -108px;
-}
-
-.landing-feature3.slick-active button:before,
-.landing-feature3 button:hover:before {
-background-position: -400px -108px;
-}
-
-.landing-feature4.slick-active button:before,
-.landing-feature4 button:hover:before {
-background-position: -587px -108px;
-}
-
-.landing-feature5.slick-active button:before,
-.landing-feature5 button:hover:before {
-background-position: -765px -108px;
-}
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
 .scrollToButton{
 padding-top: 115px;
 margin-bottom: 25px; 
 border-radius: 0;
 box-shadow: none;
 transition: 0;
+display: table-cell;
+min-width: 80px;
+padding: 20px;
+padding-top: 115px;
+background-size: 42px;
+background-position: 50% 20px;
+    background-position-y: 20px;
+background-repeat: no-repeat;
+cursor: pointer;
+height: 50px;
 }
 .scrollToButton:hover {
     box-shadow: none;
@@ -265,10 +174,10 @@ export class CinemaSlider extends Component {
           <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
             {this.state.hoveringTrim || this.state.activeSlide === 0 ?
               <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})`, backgroundSize:`auto` }} className="scrollToButton"> 
-              <Text  align="center"  style={{ width:'100px' }}>Trim and multi-trim</Text>
+              <Text  align="center"  style={{ width:'100px', paddingTop:"-55px" }}>Trim and multi-trim</Text>
               </div> 
                 : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`, backgroundSize:`auto`}} className="scrollToButton"> 
-                  <Text align="center"  style={{ width:'100px' }}>Trim and multi-trim</Text> 
+                  <Text align="center"  style={{ width:'100px', paddingTop:"-5px" }}>Trim and multi-trim</Text> 
                    </div>}
           </div>
 
@@ -315,7 +224,6 @@ export class CinemaSlider extends Component {
           </div>
       <Slider ref={slider => (this.slider = slider)} {...settings}>
          {imgSlides()}
-         <ul class="slick-dots" style=""><li class="landing-feature1" aria-hidden="true"><button type="button" data-role="none">1</button></li><li aria-hidden="true" class="landing-feature2"><button type="button" data-role="none">2</button></li><li aria-hidden="true" class="landing-feature3"><button type="button" data-role="none">3</button></li><li aria-hidden="true" class="landing-feature4"><button type="button" data-role="none">4</button></li><li aria-hidden="false" class="landing-feature5 slick-active"><button type="button" data-role="none">5</button></li></ul>
         </Slider>      
     </div>
     </CinemaSliderStyle>  

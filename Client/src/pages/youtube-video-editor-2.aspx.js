@@ -6,6 +6,7 @@ import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import { Link as ScrollLink } from "react-scroll";
+import Layout from "../components/layout";
 
 
 class avsYoutubeVideoEditor extends React.PureComponent {
@@ -26,7 +27,15 @@ class avsYoutubeVideoEditor extends React.PureComponent {
   render(){
   
       return (
-
+<Layout 
+      headerIsDisabled={true}
+      footerIsDisabled={true}
+      className="youtube-video-editor2" 
+      pageContext={this.props.pageContext} 
+      t={this.props.t}
+      metaDescription=""
+      metaKeywords=""
+    > 
         <div className="overv ve offset-top">
             <div className="aspNetHidden">
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2Njk0NTAxNDZkZGiBCsJb/cMSY5SVfxBuNuD7Iac6Bb5gp9fljuTH1uNw" />
@@ -203,7 +212,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
             
 
         </div>
-
+</Layout>
         );
     }
   };
