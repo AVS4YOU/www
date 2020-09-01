@@ -444,7 +444,7 @@ class mainPage extends React.PureComponent {
         </StyledMainContentWrapper>  
 
         <div className="background-color">
-          <ReviewScreen/>
+          <ReviewScreen t={this.props.t} revHeader={this.props.t("Our customers say")} />
         </div>
         
       </MainPageWrapper>
