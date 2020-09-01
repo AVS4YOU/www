@@ -291,6 +291,7 @@ const RowContent = styled.div`
             position: relative;
             width: 38%;
             left: -135px;
+            top: 24px;
         } 
         .flexWrapper{
             .tableWrapper{

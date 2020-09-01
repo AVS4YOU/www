@@ -39,7 +39,7 @@ class padFiles extends React.PureComponent {
               <div className="header__body header__body_bg">
                 <div className="header__body-wrapper">
                   <Text as="h1" className="header__heading">Pad files</Text>
-                  <Text as="h3" className="header__subtitle">Use the following PAD files for all AVS4YOU programs</Text>
+                  <Text as="h3" className="header__subtitle" style={{padding: '0'}}>Use the following PAD files for all AVS4YOU programs</Text>
                   <ScrollLink to="padFilesTable" spy={true} smooth={true} offset={-70} duration={500} >
                   <Button className="header__button header__button_pad" style={{position:"center"}} textClassName="header__button-text" href="https://www.avs4you.com/pads/en/avsvideoconverter.xml">GET ALL PAD FILES</Button>
                   </ScrollLink>

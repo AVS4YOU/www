@@ -76,7 +76,6 @@ td, th {
     font-size: 22px;
     color: #000; 
     background-color: #E8E8E8;
-    padding-top: 10px;
     vertical-align:middle;
   }
 
