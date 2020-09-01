@@ -88,7 +88,6 @@ const RowContent = styled.div`
         vertical-align: middle;
         left: 100px;
         max-width: 450px;  
-        top: 25px;
     }
 
     .flexWrapper{
@@ -291,7 +290,7 @@ const RowContent = styled.div`
             position: relative;
             width: 38%;
             left: -135px;
-            top: 24px;
+            top: -1px;
         } 
         .flexWrapper{
             .tableWrapper{

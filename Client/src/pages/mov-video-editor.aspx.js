@@ -3,6 +3,8 @@ import withI18next from "../components/withI18next";
 import "../styles/video-editor-maker-tools.less";
 import MenuWrapper from "../components/language-selector";
 import Layout from "../components/layout";
+import Text from '../components/text';
+import Star from '../images/main-page/icons/star.svg';
 
 class movVideoEditor extends React.PureComponent {
 
@@ -43,7 +45,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <h1>AVS Video Editor</h1>
+                <Text color="FFFFFF" className="TextH1">AVS Video Editor</Text>
                 <div className="vel_description">Create professional-looking movies fast and effectively, and save them to all popular formats <span className="vel_desc_formats">DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc.</span></div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
@@ -60,7 +62,14 @@ render(){
     <div className="vel_stars" id="video_editor_landing1">
         <div className="vel_narrow">
             <div className="vel_happy_users">
-                <div className="vel_stars">
+            <div class="vel_stars">
+            <div className="imgWrapper">
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                    </div>
                 </div>
                 <div className="vel_users">Over <b>50,000,000</b> Happy Users.</div>
                 <div className="vel_button">
@@ -77,23 +86,23 @@ render(){
     </div>
     <div className="vel_features">
         <div className="vel_narrow">
-            <h2>4 reasons to choose AVS Video Editor</h2>
+            <Text className="TextH2">4 reasons to choose AVS Video Editor</Text>
             <div className="vel_features_block">
                 <div className="vel_feature_rotate">
                     <div className="velf_block velfeat_block1">
-                        <h3>Multiformat movie editor</h3>
+                        <Text className="TextH3">Multiformat movie editor</Text>
                         <div className="velfb_description">Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM, etc.</div>
                     </div>
                     <div className="velf_block velfeat_block2">
-                        <h3>2k and 4k video editing</h3>
+                        <Text className="TextH3">2k and 4k video editing</Text>
                         <div className="velfb_description">Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.</div>
                     </div>
                     <div className="velf_block velfeat_block3">
-                        <h3>An array of creative features</h3>
+                        <Text className="TextH3">An array of creative features</Text>
                         <div className="velfb_description">Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.</div>
                     </div>
                     <div className="velf_block velfeat_block4">
-                        <h3>Create video for your Devices</h3>
+                        <Text className="TextH3">Create video for your Devices</Text>
                         <div className="velfb_description">Save your final projects to the necessary format which is supported by your device be it a smartphone, phablet or a player. No need to adjust special settings, just select your gadget from the list.</div>
                     </div>
                 </div>
@@ -102,16 +111,16 @@ render(){
     </div>
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <h2>3 Reasons Why People Choose AVS4YOU</h2>
+            <Text className="TextH2">3 Reasons Why People Choose AVS4YOU</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_1">
-                    <h4>User-friendly Interface</h4>
+                    <Text className="TextH4">User-friendly Interface</Text>
                 </div>
                 <div className="velee_block veleeb_2">
-                    <h4>Free support and updates</h4>
+                    <Text className="TextH4">Free support and updates</Text>
                 </div>
                 <div className="velee_block veleeb_3">
-                    <h4>30-day Money-back guarantee</h4>
+                    <Text className="TextH4">30-day Money-back guarantee</Text>
                 </div>
             </div>
             <div className="vel_bottom_buttons">

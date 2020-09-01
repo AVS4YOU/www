@@ -3,7 +3,9 @@ import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
 import MenuWrapper from "../components/language-selector";
 import Layout from "../components/layout";
-import TTP from "../components/cinema-slider-redactor/tps";
+import PWM from "../components/cinema-slider-redactor/pwm";
+import Text from '../components/text';
+import Star from '../images/main-page/icons/star.svg';
 
 class avsYoutubeVideoEditor extends React.PureComponent {
 
@@ -48,7 +50,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <h1>AVS Video Editor</h1>
+                <Text color="FFFFFF" className="TextH1">AVS Video Editor</Text>
                 <div className="vel_description">Trim, cut, split, crop, merge, rotate videos to create impressive movies</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
@@ -65,7 +67,15 @@ render(){
     <div className="vel_stars" id="video_editor_landing1">
         <div className="vel_narrow">
             <div className="vel_happy_users">
-               
+            <div class="vel_stars">
+            <div className="imgWrapper">
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                    </div>
+                </div>
                 <div className="vel_users">Over <b>50,000,000</b> Happy Users.</div>
                 <div className="vel_button">
                     <div className="velb_button"><span id="reviewsNumber">659475</span> Reviews</div>
@@ -79,21 +89,21 @@ render(){
             </div>
         </div>
     </div>
-    <TTP></TTP>
-     <div className="vel_edit_enhance">
+    <PWM></PWM>
+    <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <h2>Give your movie a cinematic look</h2>
+            <Text className="TextH2">Give your movie a cinematic look</Text>
             <div className="vel_ee_blocks">
-                <div className="velee_block veleeb_1">
-                    <h3>Edit your videos with fantasy</h3>
+                <div className="velee_block veleeb_tools_1">
+                    <Text fontSize={18} className="TextH3">Edit your videos with fantasy</Text>
                     <div className="velee_description">Select between 300 innovative video effects and transitions. Insert menus, audio, text comments and subtitles.</div>
                 </div>
-                <div className="velee_block veleeb_2">
-                    <h3>Stabilize your videos</h3>
+                <div className="velee_block veleeb_tools_2">
+                    <Text fontSize={18} className="TextH3">Stabilize your videos</Text>
                     <div className="velee_description">Eliminate negative effects of your camera shake making video smooth.</div>
                 </div>
-                <div className="velee_block veleeb_3">
-                    <h3>Edit HD videos of any size</h3>
+                <div className="velee_block veleeb_tools_3">
+                    <Text fontSize={18} className="TextH3">Edit HD videos of any size</Text>
                     <div className="velee_description">Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes.</div>
                 </div>
             </div>
@@ -107,6 +117,7 @@ render(){
             </div>
         </div>
     </div>
+    
     <div className="vel_footer">
         <div className="vel_page_footer">
             <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>

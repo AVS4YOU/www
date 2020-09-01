@@ -1,9 +1,11 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
-import PWM from "../components/cinema-slider-redactor/pwm";
 import MenuWrapper from "../components/language-selector";
 import Layout from "../components/layout";
+import Text from '../components/text';
+import TTP from "../components/cinema-slider-redactor/tps";
+import Star from '../images/main-page/icons/star.svg';
 
 class pwfVideoMaker extends React.PureComponent {
 
@@ -48,7 +50,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <h1>AVS Video Editor</h1>
+                <Text color="FFFFFF" className="TextH1">AVS Video Editor</Text>
                 <div className="vel_description">Powerful video maker<br />
                     Create professional-looking movies easily</div>
                 <div className="vel_top_buttons">
@@ -62,10 +64,18 @@ render(){
                 </div>
             </div>
         </div>
-        <div className="vel_stars" id="video_editor_landing1">
+        <div className="vel_stars_powerful" id="video_editor_landing1">
             <div className="vel_narrow">
                 <div className="vel_happy_users">
-                    
+                <div class="vel_stars_video">
+            <div className="imgWrapper">
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                        <img src={Star} alt="star"/>
+                    </div>
+                </div>
                     <div className="vel_users">Over <b>50,000,000</b> Happy Users.</div>
                     <div className="vel_button">
                         <div className="velb_button"><span id="reviewsNumber">659476</span> Reviews</div>
@@ -80,21 +90,21 @@ render(){
             </div>
         </div>
     </div>
-    <PWM />
-   <div className="vel_edit_enhance">
+    <TTP />
+    <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <h2>Innovative movie editing tools</h2>
+            <Text className="TextH2">Innovative movie editing tools</Text>
             <div className="vel_ee_blocks">
-                <div className="velee_block veleeb_1">
-                    <h3>Creative video making</h3>
+                <div className="velee_block veleeb_video_1">
+                    <Text fontSize={18} className="TextH3">Creative video making</Text>
                     <div className="velee_description">Select between 300 innovative video effects and transitions. Insert menus, audio, text comments and subtitles.</div>
                 </div>
-                <div className="velee_block veleeb_2">
-                    <h3>Multiformat video creator</h3>
+                <div className="velee_block veleeb_video_2">
+                    <Text fontSize={18} className="TextH3">Multiformat video creator</Text>
                     <div className="velee_description">Edit &amp; save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM using popular codecs H.264, MPEG-4, etc.</div>
                 </div>
-                <div className="velee_block veleeb_3">
-                    <h3>Accelerated HD-video editing</h3>
+                <div className="velee_block veleeb_video_3">
+                    <Text fontSize={18} className="TextH3">Accelerated HD-video editing</Text>
                     <div className="velee_description">Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes.</div>
                 </div>
             </div>
@@ -105,7 +115,7 @@ render(){
                 <div className="vel_bottom_buy">
                     <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">Buy</a>
                 </div>
-                <div className="vel_bottom_eula">By clicking the Download button you agree to our <a href="https://www.avs4you.com/license-agreement.aspx">End User License Agreement</a></div>
+                <div class="vel_bottom_eula">By clicking the Download button you agree to our <a href="https://www.avs4you.com/license-agreement.aspx">End User License Agreement</a></div>
             </div>
         </div>
     </div>

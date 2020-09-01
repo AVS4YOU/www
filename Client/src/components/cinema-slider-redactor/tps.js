@@ -25,10 +25,12 @@ import Img5 from "../../images/avs-video-editor-tools/slider-powerful/text.webp"
 
 const CinemaSliderStyle = styled.div`
 .slick-slide {
-    width: 852px;
+    width: 860px;
 }
 .slick-slide > div {
-    padding-bottom: 75px;
+  padding-bottom: 80px;
+  padding-left: 102px;
+  width: 850px;
   }
   .scrollLinksWrapper {
     border-spacing: 20px 0px;
@@ -48,7 +50,7 @@ transition: 0;
 display: table-cell;
 min-width: 80px;
 padding: 20px;
-padding-top: 115px;
+padding-top: 125px;
 background-size: 42px;
 background-position: 50% 20px;
     background-position-y: 20px;
@@ -62,10 +64,9 @@ height: 50px;
 .velfb_description {
     text-align: center;
     font-size: 24px;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 15px;
+    height: 115px;
 }
 `;
 
@@ -129,9 +130,10 @@ export class CinemaSlider extends Component {
         const settings = {    
             centerMode: true,
             fade: true,
-            speed: 500,
+            speed: 700,
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: false,
             beforeChange: (current, next) => this.setState({ activeSlide: next }), 
           };
     
@@ -152,9 +154,8 @@ export class CinemaSlider extends Component {
     images.map(num => ( 
         <div>
         <div className="velfb_description">
-          <Text>{num.imgText}</Text> 
+          <Text fontSize={24}>{num.imgText}</Text> 
         </div>
-        <div style={{paddingTop:`${num.img === Img3 ? '25px': ''}`}}></div>
       <div className="imgpad"> 
           <img className="imgdetails" src= {num.img} width="100%"/>    
       </div>  
@@ -164,7 +165,7 @@ export class CinemaSlider extends Component {
   return (
     <div className="video_vel_features">
         <div className="video_vel_narrow">
-        <h2>5 professional cinematic tools</h2>
+        <Text className="TextH2">5 professional cinematic tools</Text>
             <div className="vel_features_block">
     <CinemaSliderStyle>
     <div className="container">  

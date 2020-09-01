@@ -44,7 +44,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
 
 render(){
     const settings = {
-        fade:false,
+        fade:true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -88,7 +88,7 @@ render(){
       metaDescription=""
       metaKeywords=""
     > 
-          <header>
+          <header className="Youtubeheader">
     <div className="lfb_header">
         <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank"></a><ul className="topmainmenu max-width-1">
             <li className="topmenuoption"><a href="https://www.avs4you.com/index.aspx" target="_blank">Main</a></li>

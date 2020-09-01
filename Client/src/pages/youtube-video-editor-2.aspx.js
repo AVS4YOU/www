@@ -48,7 +48,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
                     <div className="toppart">
                         
     
-<header>
+<header className="Youtubeheader">
     <div className="lfb_header">
         <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank"></a>
         <ul className="topmainmenu max-width-1">
