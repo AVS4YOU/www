@@ -5,6 +5,7 @@ import Input from '../input';
 import Button from '../button';
 import InfoPopupForm from '../info-popup-form';
 import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslation } from "react-i18next";
 
 import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
 
@@ -328,6 +329,8 @@ class FormPartners extends React.Component {
         }
     }
 
+
+    
     render() {
 
         return (
@@ -431,7 +434,7 @@ class FormPartners extends React.Component {
                             fontSize={14}
                             textTransform="uppercase"
                         >
-                            Send your request
+                            {this.props.buttonTextSend}
                         </Button>
                     </div>
 
