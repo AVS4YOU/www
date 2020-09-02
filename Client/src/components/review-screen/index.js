@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Star from '../../images/main-page/icons/star.svg';
 import RevPeople from '../../images/main-page/icons/reviews-people.png'
+import { useTranslation } from "react-i18next";
 
 
 const StyledScreen = styled.div`
@@ -102,7 +103,10 @@ const StyledScreen = styled.div`
     }
 `;
 
-const ReviewsScreen = (props) => {
+const ReviewsScreen = props => {
+
+    const { t } = useTranslation('common');
+
     return(
         <PageContentWrapper className={props.className}>
             <StyledScreen>
@@ -119,9 +123,9 @@ const ReviewsScreen = (props) => {
                         <img src={Star} alt="star"/>
                         <img src={Star} alt="star"/>
                     </div>
-                    <Text className="text" fontSize={20} fontWeight={600}>Over <b className="orange">20,000,000</b> of satisfied clients!</Text>
+                    <Text className="text" fontSize={20} fontWeight={600}>{t("Over")} <b className="orange">20,000,000</b> {t("of satisfied clients!")}</Text>
                     <img className="revPeople" src={RevPeople} alt="People"/>
-                    <Text className="text" color="#505B63" fontSize={18}>659133 Reviews</Text>
+                    <Text className="text" color="#505B63" fontSize={18}>659133 {t("Reviews")}</Text>
                 </div>
             </StyledScreen>
         </PageContentWrapper>
