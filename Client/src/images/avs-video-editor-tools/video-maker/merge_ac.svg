@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="split_copy_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="84px" height="84px" viewBox="0 0 84 84" style="enable-background:new 0 0 84 84;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#55B1BA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M42,83.5C19.12,83.5,0.5,64.88,0.5,42C0.5,19.12,19.12,0.5,42,0.5c22.88,0,41.5,18.62,41.5,41.5
+				C83.5,64.88,64.88,83.5,42,83.5z"/>
+			<path class="st1" d="M42,1c22.61,0,41,18.39,41,41S64.61,83,42,83C19.39,83,1,64.61,1,42S19.39,1,42,1 M42,0C18.8,0,0,18.8,0,42
+				s18.8,42,42,42c23.2,0,42-18.8,42-42S65.2,0,42,0L42,0z"/>
+		</g>
+	</g>
+	<g>
+		<rect x="40.08" y="61.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="55.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="48.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="41.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="34.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="26.24" class="st0" width="2" height="3"/>
+		<rect x="40.08" y="20.24" class="st0" width="2" height="3"/>
+	</g>
+	<g>
+		<path class="st2" d="M47.08,62.08h31.76c3.36-5.87,5.28-12.62,5.28-19.82c0-6.87-1.75-13.34-4.84-19.03H47.08V62.08z"/>
+		<path class="st2" d="M-0.07,42.27c0,7.19,1.92,13.95,5.28,19.82h42.87V23.24H4.78C1.69,28.92-0.07,35.39-0.07,42.27z"/>
+	</g>
+	<path class="st0" d="M70.08,58.18v-2.94h3v2.94H70.08z M70.08,27.24h3v3h-3V27.24z M63.1,58.18h-0.02v-2.94h0.02h2.88h0.09v2.94
+		h-0.09H63.1z M63.1,30.24h-0.02v-3h0.02h2.88h0.09v3h-0.09H63.1z M56.08,55.24h3v2.94h-3V55.24z M56.08,27.24h3v3h-3V27.24z
+		 M49.08,55.24h3v2.94h-3V55.24z M49.08,27.24h3v3h-3V27.24z M32.08,55.24h3v2.94h-3V55.24z M32.08,27.24h3v3h-3V27.24z
+		 M25.08,55.24h3v2.94h-3V55.24z M25.08,27.24h3v3h-3V27.24z M18.11,58.18h-0.03v-2.94h0.03h2.96h0.01v2.94h-0.01H18.11z
+		 M18.11,30.24h-0.03v-3h0.03h2.88h0.09v3h-0.09H18.11z M11.08,55.24h3v2.94h-3V55.24z M11.08,27.24h3v3h-3V27.24z"/>
+	<g>
+		<rect x="41.08" y="61.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="55.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="48.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="41.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="34.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="27.24" class="st0" width="2" height="3"/>
+		<rect x="41.08" y="21.24" class="st0" width="2" height="3"/>
+	</g>
+	<rect x="48.08" y="42.24" class="st0" width="12" height="2"/>
+	<polygon class="st0" points="51.08,39.48 51.08,47.48 45.08,43.48 	"/>
+	
+		<rect x="24.08" y="42.24" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 60.1577 86.478)" class="st0" width="12" height="2"/>
+	<polygon class="st0" points="33.08,47.48 33.08,39.48 39.08,43.48 	"/>
+</g>
+</svg>

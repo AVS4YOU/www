@@ -3,19 +3,17 @@ import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
 
-//import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/bckGroupImage.svg";
-import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
-import  img1  from "../../images/avs-video-editor-tools/slider-powerful/icon_1.svg";
-import  img2 from "../../images/avs-video-editor-tools/slider-powerful/icon_2.svg";
-import  img3  from "../../images/avs-video-editor-tools/slider-powerful/icons_3.svg";
-import  img4  from "../../images/avs-video-editor-tools/slider-powerful/icons_4.svg";
-import  img5  from "../../images/avs-video-editor-tools/slider-powerful/icons_5.svg";
+import  img1  from "../../images/avs-video-editor-tools/slider-powerful/color_tun.svg";
+import  img2 from "../../images/avs-video-editor-tools/slider-powerful/green_screen.svg";
+import  img3  from "../../images/avs-video-editor-tools/slider-powerful/stabilization.svg";
+import  img4  from "../../images/avs-video-editor-tools/slider-powerful/speed_control.svg";
+import  img5  from "../../images/avs-video-editor-tools/slider-powerful/text.svg";
 
-import  Actimg1  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_1.svg";
-import  Actimg2 from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_2.svg";
-import  Actimg3  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_3.svg";
-import  Actimg4  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_4.svg";
-import  Actimg5  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_5.svg";
+import  Actimg1  from "../../images/avs-video-editor-tools/slider-powerful/color_tun_ac.svg";
+import  Actimg2 from "../../images/avs-video-editor-tools/slider-powerful/green_screen_ac.svg";
+import  Actimg3  from "../../images/avs-video-editor-tools/slider-powerful/stabilization_ac.svg";
+import  Actimg4  from "../../images/avs-video-editor-tools/slider-powerful/speed_control_ac.svg";
+import  Actimg5  from "../../images/avs-video-editor-tools/slider-powerful/text_ac.svg";
 
 import Img1 from "../../images/avs-video-editor-tools/slider-powerful/color.webp";
 import Img2 from "../../images/avs-video-editor-tools/slider-powerful/green.webp";
@@ -70,7 +68,7 @@ height: 50px;
 }
 `;
 
-export class CinemaSlider extends Component {  
+export class PowerfulSlider extends Component {  
     state = {
         slideIndex: 0,
         updateCount: 0,
@@ -233,4 +231,4 @@ export class CinemaSlider extends Component {
   );  
 }  
 }  
-export default CinemaSlider;
+export default PowerfulSlider;

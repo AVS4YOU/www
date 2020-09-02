@@ -3,19 +3,18 @@ import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
 
-//import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/bckGroupImage.svg";
-import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
-import  img1  from "../../images/avs-video-editor-tools/slider-powerful/icon_1.svg";
-import  img2 from "../../images/avs-video-editor-tools/slider-powerful/icon_2.svg";
-import  img3  from "../../images/avs-video-editor-tools/slider-powerful/icons_3.svg";
-import  img4  from "../../images/avs-video-editor-tools/slider-powerful/icons_4.svg";
-import  img5  from "../../images/avs-video-editor-tools/slider-powerful/icons_5.svg";
 
-import  Actimg1  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_1.svg";
-import  Actimg2 from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_2.svg";
-import  Actimg3  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_3.svg";
-import  Actimg4  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_4.svg";
-import  Actimg5  from "../../images/avs-video-editor-tools/slider-powerful/icon_ac_5.svg";
+import  img1  from "../../images/avs-video-editor-tools/video-maker/trim.svg";
+import  img2 from "../../images/avs-video-editor-tools/video-maker/cut.svg";
+import  img3  from "../../images/avs-video-editor-tools/video-maker/split.svg";
+import  img4  from "../../images/avs-video-editor-tools/video-maker/merge.svg";
+import  img5  from "../../images/avs-video-editor-tools/video-maker/crop.svg";
+
+import  Actimg1  from "../../images/avs-video-editor-tools/video-maker/trim_ac.svg";
+import  Actimg2 from "../../images/avs-video-editor-tools/video-maker/cut_ac.svg";
+import  Actimg3  from "../../images/avs-video-editor-tools/video-maker/split.svg";
+import  Actimg4  from "../../images/avs-video-editor-tools/video-maker/merge_ac.svg";
+import  Actimg5  from "../../images/avs-video-editor-tools/video-maker/crop_ac.svg";
 
 import Img1 from "../../images/avs-video-editor-tools/video-maker/trim.webp";
 import Img2 from "../../images/avs-video-editor-tools/video-maker/cut.webp";
