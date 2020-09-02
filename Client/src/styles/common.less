@@ -15,14 +15,16 @@
     }
 }
 main {
-    font-family: 'Open Sans',sans-serif,Arial;
+    font-family: 'Open Sans',sans-serif,Arial,Montserrat;
     .common__heading{
         font-size: 44px;
         color:#333333;
         text-align: center;
         font-weight: 600;
     }
-
+    .header__button_pad{
+        margin-top: 40px;
+    }
     .ScrollTopWrapper{
         position: absolute;
         top: 100px;
@@ -334,5 +336,17 @@ main {
                 height: 60px;
             }
         }
+    }
+    .header__button_pad{
+        margin: auto;
+        margin-top: 50px;
+        padding: 12px 20px;
+        display: table;
+    }
+    .header__body_bg{
+        background: transparent linear-gradient(90deg, #000000CC 100%, #080808A1 100%, #0A0A0A8F 100%, #0C0C0C6A 100%, #1111110A 100%, #54545400 100%) 0% 0% padding-box;
+    }
+    .header__button-text{
+        font-size: 14px;
     }
 }
