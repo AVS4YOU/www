@@ -64,10 +64,10 @@ render(){
             </div>
         </div>
     </div>
-    <div className="vel_stars" id="video_editor_landing1">
+    <div className="vel_stars_tools" id="video_editor_landing1">
         <div className="vel_narrow">
             <div className="vel_happy_users">
-            <div class="vel_stars">
+            <div class="vel_stars_tools">
             <div className="imgWrapper">
                         <img src={Star} alt="star"/>
                         <img src={Star} alt="star"/>
