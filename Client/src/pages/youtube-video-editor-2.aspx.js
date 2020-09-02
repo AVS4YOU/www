@@ -93,7 +93,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     </div>
 </div>
 <div className="lfb_steps" id="to_easy_steps">
-    <div className="lfb_s_h">4 Steps for creating your captivating video</div>
+    <div className="lfb_s_h">4 Steps for creating<br /> your captivating video</div>
     <div className="lfb_step lfb_step_1">
         <div className="lfb_img lfb_img_r"><ImageGQL className="lfb_i" imageName="prepare_your_material.webp" /></div>
         <div className="lfb_s_text">

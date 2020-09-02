@@ -22,13 +22,25 @@ import Img4 from "../../images/avs-video-editor-tools/slider-powerful/stab.webp"
 import Img5 from "../../images/avs-video-editor-tools/slider-powerful/text.webp";
 
 const CinemaSliderStyle = styled.div`
+.slick-list{
+  margin: 0 150px;
+  width: 850px;
+  padding: 0;
+}
 .slick-slide {
-    width: 860px;
+    width: 1000px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    overflow: hidden;
 }
 .slick-slide > div {
   padding-bottom: 80px;
-  padding-left: 102px;
-  width: 850px;
+  width: 100%;
+  margin: 0;
+  }
+  .slick-active{
+    z-index: 10;
   }
   .scrollLinksWrapper {
     border-spacing: 20px 0px;
@@ -126,9 +138,9 @@ export class PowerfulSlider extends Component {
       const { isActive } = this.props;
 
         const settings = {    
-            centerMode: true,
-            fade: true,
+            fade: false,
             speed: 700,
+            infinity:false,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -150,7 +162,7 @@ export class PowerfulSlider extends Component {
 
     const imgSlides = () =>  
     images.map(num => ( 
-        <div>
+        <div className="slickActiveSlider">
         <div className="velfb_description">
           <Text fontSize={24}>{num.imgText}</Text> 
         </div>

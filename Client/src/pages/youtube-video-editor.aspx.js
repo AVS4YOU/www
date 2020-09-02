@@ -15,7 +15,7 @@ import Layout from "../components/layout";
     return (
         <ul className="slick-dots" id="slick-steps">
             {i === 0 ? 
-             <li className="slick-active" aria-hidden="false" ><div className="lfb_tab lfb_btn_capture"><div className="lfb_es_icon"></div>Capture video</div></li>
+             <li aria-hidden="false" ><div className="lfb_tab lfb_btn_capture"><div className="lfb_es_icon"></div>Capture video</div></li>
             : i === 1 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_cut" ><div className="lfb_es_icon"></div>Cut, trim and join</div></li>
             : i === 2 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_apply" ><div className="lfb_es_icon"></div>Apply effects</div></li>
             : i === 3 ? <li aria-hidden="true" ><div className="lfb_tab lfb_btn_remove" ><div className="lfb_es_icon"></div>Remove defects</div></li>

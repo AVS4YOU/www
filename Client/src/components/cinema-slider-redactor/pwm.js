@@ -12,7 +12,7 @@ import  img5  from "../../images/avs-video-editor-tools/video-maker/crop.svg";
 
 import  Actimg1  from "../../images/avs-video-editor-tools/video-maker/trim_ac.svg";
 import  Actimg2 from "../../images/avs-video-editor-tools/video-maker/cut_ac.svg";
-import  Actimg3  from "../../images/avs-video-editor-tools/video-maker/split.svg";
+import  Actimg3  from "../../images/avs-video-editor-tools/video-maker/split_ac.svg";
 import  Actimg4  from "../../images/avs-video-editor-tools/video-maker/merge_ac.svg";
 import  Actimg5  from "../../images/avs-video-editor-tools/video-maker/crop_ac.svg";
 
