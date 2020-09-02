@@ -102,7 +102,7 @@ render(){
                 </div>
                 <div className="velee_block veleeb_video_2">
                     <Text fontSize={18} className="TextH3">{this.props.t("Multiformat video creator")}</Text>
-                    <div className="velee_description">{this.props.t("Edit &amp; save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM using popular codecs H.264, MPEG-4, etc.")}</div>
+                    <div className="velee_description">{this.props.t("Edit & save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM using popular codecs H.264, MPEG-4, etc.")}</div>
                 </div>
                 <div className="velee_block veleeb_video_3">
                     <Text fontSize={18} className="TextH3">{this.props.t("Accelerated HD-video editing")}</Text>
