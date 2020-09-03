@@ -45,15 +45,15 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <Text color="FFFFFF" className="TextH1">AVS Video Editor</Text>
-                <div className="vel_description">Create professional-looking movies fast and effectively, and save them to all popular formats <span className="vel_desc_formats">DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc.</span></div>
+                <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
+                <div className="vel_description">{this.props.t("Create professional-looking movies fast and effectively, and save them to all popular formats")} <span className="vel_desc_formats">{this.props.t("DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc.")}</span></div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
-                        <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">Download now</a>
-                        <span>Windows 10/8/XP/Vista</span>
+                        <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
+                        <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
                     </div>
                     <div className="vel_top_buy">
-                        <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">Buy now</a>
+                        <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">{this.props.t("Buy now")}</a>
                     </div>
                 </div>
             </div>
@@ -71,39 +71,39 @@ render(){
                         <img src={Star} alt="star"/>
                     </div>
                 </div>
-                <div className="vel_users">Over <b>50,000,000</b> Happy Users.</div>
+                <div className="vel_users">{this.props.t("Over")} <b>50,000,000</b> {this.props.t("Happy Users.")}</div>
                 <div className="vel_button">
-                    <div className="velb_button"><span id="reviewsNumber">659475</span> Reviews</div>
+                    <div className="velb_button"><span id="reviewsNumber">659475</span> {this.props.t("Reviews")}</div>
                 </div>
             </div>
             <div className="vel_quote">
                 <blockquote>
-                    "I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion."
-                    <div className="quote_user">William Holmes</div>
+                {this.props.t("I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion.")}
+                    <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
         </div>
     </div>
     <div className="vel_features">
         <div className="vel_narrow">
-            <Text className="TextH2">4 reasons to choose AVS Video Editor</Text>
+            <Text className="TextH2">{this.props.t("4 reasons to choose AVS Video Editor")}</Text>
             <div className="vel_features_block">
                 <div className="vel_feature_rotate">
                     <div className="velf_block velfeat_block1">
-                        <Text className="TextH3">Multiformat movie editor</Text>
-                        <div className="velfb_description">Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM, etc.</div>
+                        <Text className="TextH3">{this.props.t("Multiformat movie editor")}</Text>
+                        <div className="velfb_description">{this.props.t("Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM, etc.")}</div>
                     </div>
                     <div className="velf_block velfeat_block2">
-                        <Text className="TextH3">2k and 4k video editing</Text>
-                        <div className="velfb_description">Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.</div>
+                        <Text className="TextH3">{this.props.t("2k and 4k video editing")}</Text>
+                        <div className="velfb_description">{this.props.t("Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.")}</div>
                     </div>
                     <div className="velf_block velfeat_block3">
-                        <Text className="TextH3">An array of creative features</Text>
-                        <div className="velfb_description">Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.</div>
+                        <Text className="TextH3">{this.props.t("An array of creative features")}</Text>
+                        <div className="velfb_description">{this.props.t("Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.")}</div>
                     </div>
                     <div className="velf_block velfeat_block4">
-                        <Text className="TextH3">Create video for your Devices</Text>
-                        <div className="velfb_description">Save your final projects to the necessary format which is supported by your device be it a smartphone, phablet or a player. No need to adjust special settings, just select your gadget from the list.</div>
+                        <Text className="TextH3">{this.props.t("Create video for your Devices")}</Text>
+                        <div className="velfb_description">{this.props.t("Save your final projects to the necessary format which is supported by your device be it a smartphone, phablet or a player. No need to adjust special settings, just select your gadget from the list.")}</div>
                     </div>
                 </div>
             </div>
@@ -111,24 +111,24 @@ render(){
     </div>
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <Text className="TextH2">3 Reasons Why People Choose AVS4YOU</Text>
+            <Text className="TextH2">{this.props.t("3 Reasons Why People Choose AVS4YOU")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_1">
-                    <Text className="TextH4">User-friendly Interface</Text>
+                    <Text className="TextH4">{this.props.t("User-friendly Interface")}</Text>
                 </div>
                 <div className="velee_block veleeb_2">
-                    <Text className="TextH4">Free support and updates</Text>
+                    <Text className="TextH4">{this.props.t("Free support and updates")}</Text>
                 </div>
                 <div className="velee_block veleeb_3">
-                    <Text className="TextH4">30-day Money-back guarantee</Text>
+                    <Text className="TextH4">{this.props.t("30-day Money-back guarantee")}</Text>
                 </div>
             </div>
             <div className="vel_bottom_buttons">
                 <div className="vel_bottom_download">
-                    <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">Download AVS Video Editor</a>
+                    <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
-                    <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">Buy</a>
+                    <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">{this.props.t("Buy")}</a>
                 </div>
             </div>
         </div>
@@ -138,13 +138,13 @@ render(){
             <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><a href="https://www.avs4you.com/downloads.aspx">Downloads</a></li>
-                    <li><a href="https://www.avs4you.com/register.aspx">Buy now</a></li>
-                    <li><a href="https://www.avs4you.com/guides/index.aspx">Help</a></li>
-                    <li><a href="https://support.avs4you.com/login.aspx">Support</a></li>
-                    <li><a href="https://www.avs4you.com/contact.aspx">Contact us</a></li>
+                    <li><a href="https://www.avs4you.com/downloads.aspx">{this.props.t("Downloads")}</a></li>
+                    <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
+                    <li><a href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
+                    <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
+                    <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
+                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies&nbsp;Ltd.,&nbsp;UK")}</a>{this.props.t(" 2020 &nbsp; All rights reserved.")}</div>
             </div>
             <div className="lfn-social">
                 <a className="lfns-button lfnsb-fb" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
