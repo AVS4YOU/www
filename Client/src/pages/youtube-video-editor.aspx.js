@@ -138,31 +138,31 @@ render(){
     <div className="lfb_reasons">
         <div className="lfb_reas_block">
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="any.webp" />
+            <ImageGQL className="lfb_reas_i" imageName="any.png" />
             <div className="lfb_reas_h">Any type of content</div>
             <div className="lfb_reas_t">Generate content for any blogging format, from tutorials and training videos to slideshows and reviews</div>
         </div>
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="smart.webp" />
+            <ImageGQL className="lfb_reas_i" imageName="smart.png" />
             <div className="lfb_reas_h">Smart presets</div>
             <div className="lfb_reas_t">Use specially designed templates depending on the desired quality of the output video when saving your project</div>
         </div>
         </div>
         <div className="lfb_reas_block">
         <div className="lfb_reason lfb_reason_center">
-            <ImageGQL className="lfb_reas_i" imageName="simple.webp" />
+            <ImageGQL className="lfb_reas_i" imageName="simple.png" />
             <div className="lfb_reas_h">Simple, but feature-rich</div>
             <div className="lfb_reas_t">AVS Video Editor is easy to learn, regardless of skill level. It is simple but has all necessary tools to make high-quality video</div>
         </div>
         </div>
         <div className="lfb_reas_block">
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="popular.webp" />
+            <ImageGQL className="lfb_reas_i" imageName="popular.png" />
             <div className="lfb_reas_h">Popular video formats</div>
             <div className="lfb_reas_t">Work with all key video formats such as MP4, MOV, AVI, WMV, FLV, AVCHD, MPEG and common video codecs H.264, MPEG-4,DivX,MPEG-2, HEVC (H.265)</div>
         </div>
         <div className="lfb_reason">
-            <ImageGQL className="lfb_reas_i" imageName="high.webp" />
+            <ImageGQL className="lfb_reas_i" imageName="high.png" />
             <div className="lfb_reas_h">High-definition video</div>
             <div className="lfb_reas_t">Create video with different frame sizes: HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</div>
         </div>

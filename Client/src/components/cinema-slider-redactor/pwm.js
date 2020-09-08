@@ -28,7 +28,7 @@ const CinemaSliderStyle = styled.div`
 }
 .slick-slide > div {
   padding-bottom: 80px;
-  padding-left: 102px;
+  margin: 0 15px;
   width: 850px;
   }
   .scrollLinksWrapper {
@@ -67,6 +67,27 @@ height: 50px;
     margin: 0 auto;
     height: 115px;
 }
+@media screen and (max-width: 1130px) {
+  .slick-slide {
+    width: 760px;
+}
+.slick-slide > div {
+  padding: 40px;
+  width: 450px;
+  }
+  .slick-list{
+    margin:auto;
+    width: 560px;
+  }
+  .velfb_description{
+    height: 60px;
+  }
+  .velfb_description_Text{
+    font-size: 14px;
+  }
+}
+
+
 `;
 
 export class CinemaSlider extends Component {  
@@ -126,8 +147,8 @@ export class CinemaSlider extends Component {
     render() {
       const { isActive } = this.props;
 
-        const settings = {    
-            centerMode: true,
+        const settings = {  
+            centerMode: true,  
             infinity: false,
             fade: false,
             speed: 500,
@@ -154,7 +175,7 @@ export class CinemaSlider extends Component {
     images.map(num => ( 
         <div>
         <div className="velfb_description">
-          <Text>{num.imgText}</Text> 
+          <Text className="velfb_description_Text">{num.imgText}</Text> 
         </div>
       <div className="imgpad"> 
           <img className="imgdetails" src= {num.img} width="100%"/>    
@@ -163,11 +184,11 @@ export class CinemaSlider extends Component {
     )); 
 
   return (
+    <CinemaSliderStyle>
     <div className="maker_vel_features">
         <div className="video_vel_narrow">
         <Text className="TextH1" style={{padding:"100px 0 50px", textAlign:"center"}}>5 Precise video cutting tools</Text>
             <div className="vel_features_block">
-    <CinemaSliderStyle>
     <div className="container">  
        <div className="scrollLinksWrapper" style={{padding: 0, display: "flex"}} >
           <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
@@ -225,10 +246,10 @@ export class CinemaSlider extends Component {
          {imgSlides()}
         </Slider>      
     </div>
-    </CinemaSliderStyle>  
     </div> 
     </div>
     </div>
+    </CinemaSliderStyle>  
   );  
 }  
 }  

@@ -147,10 +147,10 @@ render(){
                 <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies&nbsp;Ltd.,&nbsp;UK")}</a>{this.props.t(" 2020 &nbsp; All rights reserved.")}</div>
             </div>
             <div className="lfn-social">
-                <a className="lfns-button lfnsb-fb" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
-                <a className="lfns-button lfnsb-tw" target="_blank" title="Twitter" href="https://www.twitter.com/avs4you"></a>
-                <a className="lfns-button lfnsb-gp" target="_blank" title="Google+" href="https://plus.google.com/u/0/b/105357609614583331144/+avs4you/posts"></a>
-                <a className="lfns-button lfnsb-yt" target="_blank" title="YouTube" href="https://www.youtube.com/user/avs4you"></a>
+                <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
+                <a className="lfns-button-footer lfnsb-tw-footer" target="_blank" title="Twitter" href="https://www.twitter.com/avs4you"></a>
+                <a className="lfns-button-footer lfnsb-gp-footer" target="_blank" title="Google+" href="https://plus.google.com/u/0/b/105357609614583331144/+avs4you/posts"></a>
+                <a className="lfns-button-footer lfnsb-yt-footer" target="_blank" title="YouTube" href="https://www.youtube.com/user/avs4you"></a>
             </div>
         </div>
     </div>

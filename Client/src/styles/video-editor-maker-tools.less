@@ -14,7 +14,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        height: 844px;
+        height: 744px;
         color: #fff;
         text-align: center;
         position: relative;
@@ -75,6 +75,8 @@
         background-image: url(https://imgs.avs4you.com/en/images/landing/mov-video-editor/header/5.jpg);
     }
     
+
+
     .TextH1 {
     margin: 0;
     padding: 200px 0 0;
@@ -269,7 +271,7 @@
             background-color: rgba(74, 50, 98, 0.7);
             text-align: center;
             color: #FFFFFF;
-            margin: 95px 0;
+            margin: 0;
             padding: 30px;
             }
                 
@@ -461,24 +463,24 @@
     padding: 4px 0 0;
     text-align: right;
     }
-    .lfns-button {
+    .lfns-button-footer {
     width: 35px;
     height: 35px;
     display: inline-block;
     background-repeat: no-repeat;
     background-image: url(https://imgs.avs4you.com/en/images/landing/bundle/social.png);
-    margin: 0;
+    margin: 5px;
     }
-    .lfnsb-yt {
+    .lfnsb-yt-footer {
     background-position: -3px 0;
     }
-    .lfnsb-gp {
+    .lfnsb-gp-footer {
     background-position: -42px 0;
     }
-    .lfnsb-fb {
+    .lfnsb-fb-footer {
     background-position: -81px 0;
     }
-    .lfnsb-tw {
+    .lfnsb-tw-footer {
     background-position: -121px 0;
     }
     button {
@@ -544,54 +546,83 @@
     .vel_content {
         position: relative;
     }
+    @media screen and (max-width: 1320px) {
+        .vel_header_powerful{
+            height: 700px;
+        }
+        .vel_header{
+            height: 700px;
+        }
+        .desktopBlock > div {
+            background-color: none;
+        }
 
-    @media screen and (min-width: 1000px) {
-        .language {
-            width: 85px;
-            display: inline-block;
-            vertical-align: top;
-            text-transform: uppercase;
-            color: #fff;
-            padding: 14px 15px 0 0;
-            line-height: 1em;
+    }
+    @media screen and (max-width: 1149px) {
+        .velf_block{
+            left: 25%;
+        }
+        .velee_block{
+            width:300px;
+        }
+        .vel_ee_blocks{
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .vel_header_powerful{
+            height: 544px;
+        }
+        .vel_header{
+            height: 544px;
+        }
+        .velee_block{
+            display: block;
+            margin: 40px auto;
+        }
+
+        .velf_block{
+            left: 20%;
+        }
+
+        .mobileBlock{
             position: relative;
-            text-align: right;
+            top: 50px;
+            margin-left: 70%;
         }
-        ul.language:after {
-            display: block;
-            width: 0;
-            height: 0;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 19px;
-            border: 4px solid transparent;
-            border-top: 5px solid #fff;
-            content: '';
-        }
-        ul.languages_menu {
-            top: 55px;
-            right: -36px;
-            text-align: right;
-            width: 110px;
-        }
-        ul.languages_menu li {
-            padding: 0 29px 0 0;
-        }
-        ul.languages_menu a {
-            color: #fff;
-            text-transform: none;
-        }
-        ul.languages_menu a:hover {
-            border-bottom: 1px solid #fff;
+        
+        .mobileBlock > div {
+            background-color: none;
         }
     }
-    @media screen and (max-width: 999px) {
-        ul.languages_menu {
-            width: 19px;
+
+    @media screen and (max-width: 890px) {
+        .video_vel_features{
+            background-image: none;
         }
-        ul.languages_menu a {
-            color: transparent;
-            width: 19px;
+        .vel_header_powerful{
+            height: 430px;
+            .TextH1{
+                padding: 30px 0 0;
+            }
+        }
+        .vel_header{
+            height: 444px;
+            .TextH1{
+                padding: 30px 0 0;
+            }
+        }
+
+        .velf_block{
+            left: 15%;
+        }
+        .vel_quote{
+            padding: 0;
+        } 
+        .lfn-social {
+            width: 30%;
         }
     }
+
+    
