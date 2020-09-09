@@ -325,7 +325,11 @@ const MoneybackStyled = styled.div`
       }
   }
 
-
+  @media (max-width: 1300px){
+    .common-info-block{
+        max-width:285px;
+    }
+  }
   @media (max-width: 850px) {
  
         .screen-wrapper.choose-program{
