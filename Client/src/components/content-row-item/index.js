@@ -9,6 +9,7 @@ import bgBlue from '../../images/main-page/back_picture_blue.svg';
 import bgOrange from '../../images/main-page/back_picture_orange.svg';
 import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
+import { useTranslation } from 'react-i18next';
 
 const formSended = new Cookies().get("formSended");
 
@@ -335,21 +336,25 @@ const RowContent = styled.div`
 
 const HeaderMobile = (props) =>
 {
+    const { t } = useTranslation('common');
     return(
         <Text className="HeaderListItem mobile" as="h3" color="#000000" fontSize={28}>
-            <Text className="mobileFreeInfo" as="span">{props.free && "Free" + " "}</Text> {props.headerText} 
+            <Text className="mobileFreeInfo" as="span">{props.free && t("Free") + " "}</Text> {props.headerText} 
         </Text>
     )
 }
 
 const TextContent = (props, touchDevice) =>
 {
+
+    const { t } = useTranslation('common');
+
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
                 <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
                     {props.headerText} 
-                    {props.free && <Text as="span" className="flagBackground">Free</Text>}
+                    {props.free && <Text as="span" className="flagBackground">{t("Free")}</Text>}
                 </Text>
                 {props.children}
 
@@ -358,17 +363,17 @@ const TextContent = (props, touchDevice) =>
                         <div className="buttonsWrapper">
                             {props.scrollTo && !formSended &&
                                 <Link className="scrollLink" to={props.scrollTo} spy={true} smooth={true} offset={0} duration={500}>
-                                    <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">GET $5 COUPON CODE</Button>
+                                    <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">{t("GET $5 COUPON CODE")}</Button>
                                 </Link>
                             }
                             {props.smallButtonLink && !formSended 
-                                ? <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>
-                                : <Button className="secondaryButton mobileSended" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
+                                ? <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>
+                                : <Button className="secondaryButton mobileSended" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>}
                         </div>  
                     :
                         <div className="buttonsWrapper">
-                            {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>Download now</Button>}
-                            {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>Learn more</Button>}
+                            {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
+                            {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>}
                         </div>  
                 }
   

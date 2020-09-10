@@ -122,7 +122,7 @@ render(){
                   {this.props.t("Affiliate Sales")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("To learn more about affiliate program please email us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a> {this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program")}</Link>{this.props.t(" page.")}
+                  {this.props.t("To learn more about affiliate program please email us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a> {this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program")}</Link>{this.props.t(" page")}
                 </Text>
               </div>
 
@@ -140,7 +140,7 @@ render(){
                   {this.props.t("Education")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("To get a quote for schools and universities, please email us at ")}<a href="mailto:sales@avs4you.com">sales@avs4you.com</a>{this.props.t(" or visit ")}<Link to="/education.aspx">{this.props.t("Education page")}</Link>
+                  {this.props.t("To get a quote for schools and universities, please email us at ")}<a href="mailto:sales@avs4you.com">sales@avs4you.com</a>{this.props.t("or visit")}<Link to="/education.aspx">{this.props.t("Education page")}</Link>
                 </Text>
               </div>
 

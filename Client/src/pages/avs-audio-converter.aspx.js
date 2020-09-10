@@ -176,7 +176,7 @@ render(){
 
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
@@ -208,7 +208,7 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                     </div>
                   </div>
                   <div>
@@ -220,7 +220,7 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
@@ -228,11 +228,11 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 {this.props.t("compatible video card")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10/Windows 8.x/Windows 7 {this.props.t("compatible sound card")}</Text>
                     </div>
                   </div>
                 </div>

@@ -101,6 +101,7 @@ render(){
               emailAddressText={this.props.t("Email address")}
               numberOfSubscriptions={this.props.t("Number of subscriptions")}
               comment={this.props.t("Give us a brief description of your specific needs")}
+              buttonTextSend={this.props.t("Send your request")}
             />
             <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
