@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import styled , { css, sc } from "styled-components";
+import styled , { css } from "styled-components";
 import Text from '../text';
 
 import ArrowStl from '../../images/avs-video-editor-final/cinema-slider/cinema-slider/arrow.svg';
@@ -244,7 +244,7 @@ const ButtonSliderStyle = styled.div`
 }
 `;
 
-export class VideoEditorSlider extends Component {  
+export class CinemaSlider extends Component {  
   state = {
       slideIndex: 0,
       slideIndexItem: 0,
@@ -268,7 +268,9 @@ export class VideoEditorSlider extends Component {
         nav2: this.slider2
       });
     }
+    
   render() {  
+    const { affilateImage, SliderImages, headerDescription, headerDescriptionSlider } = this.props;
       const settings = {
           fade: true,
           speed: 500,
@@ -300,113 +302,93 @@ export class VideoEditorSlider extends Component {
             }
           ],
       };
-    
-      const images = [      
-          { img: Transitions,
+      
+      const MainSliderImages = [      
+        { img: Transitions,
             id: 1,
-              title:"Transitions",
-              desc:"Add transitions to create visual effects between clips.",
-              bckimg:frameTransitions,
-             },
-          { img: Transformation,
+            bckimg:frameTransitions,
+           },
+        { img: Transformation,
             id: 2,
-              title:"Transformation",
-              desc:"Rotation, shift, mirror or zoom. Reproduce the entire image or a part of it.",
-              bckimg:frameTransformation,
-             },
-          { img: TextGraphics,
+            bckimg:frameTransformation,
+           },
+        { img: TextGraphics,
             id: 3,
-              title:"Text and Graphics",
-              desc:"Add static and animated captions and shapes.",
-              bckimg:frameTextGraphics,
-             },
-          { img: VideoOderlay,
+            bckimg:frameTextGraphics,
+           },
+        { img: VideoOderlay,
             id: 4,
-              title:"Video overlay",
-              desc:"Make a picture in picture effect easily.",
-              bckimg:frameVideoOderlay,
-             },
-          { img: VideoStabilization,
+            bckimg:frameVideoOderlay,
+           },
+        { img: VideoStabilization,
             id: 5,
-              title:"Video stabilization",
-              desc:"Fix shaky footages with video stabilization.",
-              bckimg:frameVideoStabilization,
-             },
-          { img: ChromaKey,
+            bckimg:frameVideoStabilization,
+           },
+        { img: ChromaKey,
             id: 6,
-              title:"Chroma Key",
-              desc:"Change your background with Chroma Key effect.",
-              bckimg:frameChromaKey,
-             },
-          { img: ColourCorrection,
+            bckimg:frameChromaKey,
+           },
+        { img: ColourCorrection,
             id: 7,
-              title:"Colour correction",
-              desc:"Make adjustments automatically or apply one of the colour effect.",
-              bckimg:frameColourCorrection,
-             },
-          { img: FreezeFrame,
+            bckimg:frameColourCorrection,
+           },
+        { img: FreezeFrame,
             id: 8,
-              title:"Freeze Frame",
-              desc:"Make a still shot from your video clip.",
-              bckimg:frameFreezeFrame,
-             },
-          { img: PlaybackSpeed,
+            bckimg:frameFreezeFrame,
+           },
+        { img: PlaybackSpeed,
             id: 9,
-              title:"Playback Speed",
-              desc:"Correct too slow or too fast episodes speeding up or slowing down your clips.",
-              bckimg:framePlaybackSpeed,
-             },
-          { img: SpecialEffects,
+            bckimg:framePlaybackSpeed,
+           },
+        { img: SpecialEffects,
             id: 10,
-              title:"Special effects",
-              desc:"Imitate faded photos and old movie, turn your film into a hand-drawn sketch or watercolour painting, and do even more.",
-              bckimg:frameSpecialEffects,
-             },               
-        ];  
-      const affilateImage = [{
+            bckimg:frameSpecialEffects,
+           },               
+      ];
+
+      const affilateImageSlider = [{
         imgBck: frameTransitions,
-        nameAffilate:"Transitions",
         id: 0,
       },{
         imgBck: frameTransformation,
-        nameAffilate:"Transformation",
         id: 1,
       },{
         imgBck: frameTextGraphics,
-        nameAffilate:"Text & Graphics",
         id: 2,
       },{
         imgBck: frameVideoOderlay,
-        nameAffilate:"Video overlay",
         id: 3,
       },{
         imgBck: frameVideoStabilization,
-        nameAffilate:"Video stabilization",
         id: 4,
       },{
         imgBck: frameChromaKey,
-        nameAffilate:"Chroma Key",
         id: 5,
       },{
         imgBck: frameColourCorrection,
-        nameAffilate:"Colour correction",
         id: 6,
       },{
         imgBck: frameFreezeFrame,
-        nameAffilate:"Freeze Frame",
         id: 7,
       },{
         imgBck: framePlaybackSpeed,
-        nameAffilate:"Playback Speed",
         id: 8,
       },{
         imgBck: frameSpecialEffects,
-        nameAffilate:"Special effects",
         id: 9,
       },
-      ]   
+      ];
+
+      affilateImageSlider.forEach((it, i) => { 
+        return  Object.assign(it, affilateImage[i]);
+      });
+      
+      MainSliderImages.forEach((it, i) => { 
+        return  Object.assign(it, SliderImages[i]);
+      })
+
         const affilSlides = () =>  
-        affilateImage.map(num => (
+        affilateImageSlider.map((num, index) => (
           <div className="affilSliderItem">
             <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`}} className="scrollToButton">
                 <Text className="scrollToSlideText" color="#666666" align="center" fontWeight={300} fontSize={14}>{num.nameAffilate}</Text>
@@ -415,7 +397,7 @@ export class VideoEditorSlider extends Component {
         ));  
 
   const imgSlides = () =>  
-  images.map(num => (
+  MainSliderImages.map((num, index) => (
     <div className="effectsSliderItem">
       <div className="imgpadSlider">  
           <img className="imgdetails" src= {num.img} />
@@ -443,9 +425,8 @@ export class VideoEditorSlider extends Component {
 return (
   <CinemaSliderStyle>
     <div style={{paddingTop:"40px"}}>
-        <Text color="#ffffff" align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >Make breathtaking videos with effects and transitions</Text>
-        <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >Apply more than 300 modern video effects. Switch between Timeline and Storyboard to add and manage video effects and transitions with ease.
-        </Text>      
+        <Text color="#ffffff" align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
+        <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >{this.props.headerDescriptionSlider}</Text>      
     </div>
         <div className="CCinemaSlider">
           <Slider
@@ -466,4 +447,4 @@ return (
 );  
 }  
 }  
-export default VideoEditorSlider;
+export default CinemaSlider;

@@ -105,7 +105,7 @@ word-wrap: break-word;
 position: relative;
 width: 90%;
 text-align: left;
-min-height: ${remy(455)};
+min-height: ${remy(460)};
 cursor: pointer;
 perspective: 1000px;
 transition: all .25s ease-in-out;
@@ -118,11 +118,11 @@ font-family:Montserrat;
 }
 
 @media (max-width: 1280px){
-  min-height: ${remy(500)};
+  min-height: ${remy(510)};
 }
 
 @media (max-width: 1180px){
-  min-height: ${remy(575)};
+  min-height: ${remy(585)};
 }
 
 `
@@ -204,7 +204,7 @@ word-wrap: break-word;
 position: relative;
 width: 90%;
 text-align: center;
-min-height: ${remy(415)};
+min-height: ${remy(425)};
 cursor: pointer;
 perspective: 1000px;
 transition: all .25s ease-in-out;
@@ -216,13 +216,13 @@ font-family:Montserrat;
   box-shadow: 0 0 ${remy(40)} rgba(0,0,0,.15);
 }
 @media (max-width: 1200px){
-  min-height: ${remy(510)};
+  min-height: ${remy(515)};
 }
 @media (min-width: 1280px) {
-  min-height: ${remy(455)};
+  min-height: ${remy(460)};
 }
 @media (min-width: 1920px) {
-  min-height: ${remy(415)};
+  min-height: ${remy(430)};
 }
 `
 

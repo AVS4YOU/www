@@ -22,6 +22,9 @@ import Img4 from "../../images/avs-video-editor-tools/slider-powerful/stab.webp"
 import Img5 from "../../images/avs-video-editor-tools/slider-powerful/text.webp";
 
 const CinemaSliderStyle = styled.div`
+.velfb_description_Text{
+  font-size: 24px;
+}
 .slick-list{
   margin: 0 150px;
   width: 850px;
@@ -78,6 +81,25 @@ height: 50px;
     margin: 0 auto;
     height: 115px;
 }
+@media screen and (max-width: 1130px) {
+  .slick-list{
+    margin:auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slick-list{
+    margin:auto;
+    width: 560px;
+  }
+  .velfb_description{
+    height: 60px;
+  }
+  .velfb_description_Text{
+    font-size: 14px;
+  }
+}
+
 `;
 
 export class PowerfulSlider extends Component {  
@@ -164,7 +186,7 @@ export class PowerfulSlider extends Component {
     images.map(num => ( 
         <div className="slickActiveSlider">
         <div className="velfb_description">
-          <Text fontSize={24}>{num.imgText}</Text> 
+          <Text className="velfb_description_Text">{num.imgText}</Text> 
         </div>
       <div className="imgpad"> 
           <img className="imgdetails" src= {num.img} width="100%"/>    
@@ -203,11 +225,11 @@ export class PowerfulSlider extends Component {
           <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit">
             {this.state.hoveringSplit || this.state.activeSlide === 2 ?
               <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`, backgroundSize:`auto`}} className="scrollToButton">
-                                                    <Text align="center">Stabilization</Text> 
+                  <Text align="center">Stabilization</Text> 
 
               </div>
             :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`, backgroundSize:`auto`}} className="scrollToButton">
-                                                  <Text align="center">Stabilization</Text> 
+                  <Text align="center">Stabilization</Text> 
 
                 </div>}
             </div>    

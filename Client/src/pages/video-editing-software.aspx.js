@@ -254,9 +254,83 @@ render(){
               </GroupCard.GridRow>
             </GroupCard>
 
-          <CinemaSlider /> 
+            <CinemaSlider     
+            NameButtonTrim  = {this.props.t("Trim")}
+            NameButtonCrop  = {this.props.t("Crop")}
+            NameButtonSplit = {this.props.t("Split")}
+            NameButtonJoin  = {this.props.t("Join")}
+            headerDescription = {this.props.t("Trim, crop, split and join videos")}
+            headerDescriptionSlider = {this.props.t("Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale.  Just drag clips to the timeline in order to join them.")}  
+          /> 
           
-          <VideoEditorSlider />
+          <VideoEditorSlider
+          headerDescription = {this.props.t("Make breathtaking videos with effects and transitions")}
+          headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects. Switch between Timeline and Storyboard to add and manage video effects and transitions with ease.")}
+          SliderImages = {[      
+            {
+                title: this.props.t("Transitions"),
+                desc: this.props.t("Add transitions to create visual effects between clips."),
+               },
+            {
+                title: this.props.t("Transformation"),
+                desc: this.props.t("Rotation, shift, mirror or zoom. Reproduce the entire image or a part of it."),
+               },
+            { 
+                title: this.props.t("Text and Graphics"),
+                desc: this.props.t("Add static and animated captions and shapes."),
+               },
+            { 
+                title: this.props.t("Video overlay"),
+                desc: this.props.t("Make a picture in picture effect easily."),
+               },
+            { 
+                title: this.props.t("Video stabilization"),
+                desc: this.props.t("Fix shaky footages with video stabilization."),
+               },
+            { 
+                title: this.props.t("Chroma Key"),
+                desc: this.props.t("Change your background with Chroma Key effect."),
+               },
+            { 
+                title: this.props.t("Colour correction"),
+                desc: this.props.t("Make adjustments automatically or apply one of the colour effect."),
+               },
+            { 
+                title: this.props.t("Freeze Frame"),
+                desc: this.props.t("Make a still shot from your video clip."),
+               },
+            { 
+                title: this.props.t("Playback Speed"),
+                desc: this.props.t("Correct too slow or too fast episodes speeding up or slowing down your clips."),
+               },
+            { 
+                title: this.props.t("Special effects"),
+                desc: this.props.t("Imitate faded photos and old movie, turn your film into a hand-drawn sketch or watercolour painting, and do even more."),
+               },               
+          ]}
+          affilateImage = {[{
+            nameAffilate: this.props.t("Transitions"),
+          },{
+            nameAffilate: this.props.t("Transformation"),
+          },{
+            nameAffilate: this.props.t("Text & Graphics"),
+          },{
+            nameAffilate: this.props.t("Video overlay"),
+          },{
+            nameAffilate: this.props.t("Video stabilization"),
+          },{
+            nameAffilate: this.props.t("Chroma Key"),
+          },{
+            nameAffilate: this.props.t("Colour correction"),
+          },{
+            nameAffilate: this.props.t("Freeze Frame"),
+          },{
+            nameAffilate: this.props.t("Playback Speed"),
+          },{
+            nameAffilate: this.props.t("Special effects"),
+          },
+          ]}
+          />
           
           <GroupCard>
             <GroupCard.Text align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28}>{this.props.t("Save to computer or devices")},<br /> {this.props.t("burn discs or upload to social media networks")}</GroupCard.Text>

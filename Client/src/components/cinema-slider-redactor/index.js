@@ -1,9 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
+import PropTypes from "prop-types";
 
-//import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/bckGroupImage.svg";
 import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
 import  img1  from "../../images/avs-video-editor-final/cinema-slider/Trim_black.svg";
 import  img2 from "../../images/avs-video-editor-final/cinema-slider/Crop_black.svg";
@@ -392,52 +392,52 @@ export class CinemaSlider extends Component {
           <img className="imgdetails" src= {num.img} width="100%"/>    
       </div>  
     )); 
-
+    
   return (  
     <CinemaSliderStyle>
-      <div style={{paddingTop:"40px", paddingBottom:"25px"}}>
-        <Text color="#ffffff" align="center" className="headerTitleSlider" as="h5" color="#32393e" fontWeight={700} fontSize={28} >Trim, crop, split and join videos</Text>
-        <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} >Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale.  Just drag clips to the timeline in order to join them.</Text>      
+      <div className="CinemaSliderTitle" style={{paddingTop:"40px", paddingBottom:"25px"}}>
+  <Text color="#ffffff" align="center" className="headerTitleSlider" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
+            <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} >{this.props.headerDescriptionSlider}</Text>      
       </div>
     <div className="container">  
        <div className="scrollLinksWrapper">
           <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
             {this.state.hoveringTrim || this.state.activeSlide === 0 ?
               <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})` }} className="scrollToButton"> 
-              <Text color="#FC4B15" align="center">Trim</Text>
+              <Text color="#FC4B15" align="center">{this.props.NameButtonTrim}</Text>
               </div> 
                 : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`}} className="scrollToButton"> 
-                  <Text color="#666666" align="center">Trim</Text> 
+                  <Text color="#666666" align="center">{this.props.NameButtonTrim}</Text> 
                    </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverCroup} onMouseLeave={this.handleOnMouseOut} className="scrollSlideCrop">
             {this.state.hoveringCroup || this.state.activeSlide === 1 ?
               <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${Actimg2})`}} className="scrollToButton">
-              <Text color="#FC4B15" align="center">Crop</Text>
+              <Text color="#FC4B15" align="center">{this.props.NameButtonCrop}</Text>
               </div>   
             : <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${img2})`}} className="scrollToButton">
-            <Text color="#666666" align="center">Crop</Text>
+            <Text color="#666666" align="center">{this.props.NameButtonCrop}</Text>
             </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit">
             {this.state.hoveringSplit || this.state.activeSlide === 2 ?
               <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`}} className="scrollToButton">
-              <Text color="#FC4B15" align="center">Split</Text>
+              <Text color="#FC4B15" align="center">{this.props.NameButtonSplit}</Text>
               </div>
             :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`}} className="scrollToButton">
-                <Text color="#666666" align="center">Split</Text>
+                <Text color="#666666" align="center">{this.props.NameButtonSplit}</Text>
                 </div>}
             </div>    
 
           <div onMouseEnter={this.handleOnMouseOverJoin} onMouseLeave={this.handleOnMouseOut} className="scrollSlideJoin">
             {this.state.hoveringJoin || this.state.activeSlide === 3 ?            
               <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${Actimg4})`}} className="scrollToButton"> 
-              <Text color="#FC4B15" align="center">Join</Text>
+              <Text color="#FC4B15" align="center">{this.props.NameButtonJoin}</Text>
               </div>
             : <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${img4})`}} className="scrollToButton"> 
-              <Text color="#666666" align="center">Join</Text>
+              <Text color="#666666" align="center">{this.props.NameButtonJoin}</Text>
               </div>}
           </div>    
           </div>
