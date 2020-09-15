@@ -196,8 +196,8 @@ render(){
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title="AVS Video Editor - easy video editing software for Windows."
-        metaDescription="AVS Video Editor is an easy video editing program. Create, edit video, capture video/ make a video slideshow/ cut, merge, trim video files/ save to any format."
-        metaKeywords="video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow"
+        metaDescription=""
+        metaKeywords=""
       >
         <ProductPagesWrapper>        
           <div className="headerBackground" style={{marginBottom:"2%", marginTop:"1%"}}>
@@ -260,7 +260,7 @@ render(){
                   <GroupCard.Card>
                       <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide})`}}></GroupCard.CardImage>    
                       <GroupCard.CardTitle>{this.props.t("All key video formats and codecs")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Edit & save video files in AVI, VOB, MP4, DVD, WMV, 3GP, MOV, MKV, using popular codecs H.264, MPEG-4, H.263 etc. Process video with different frame sizes")}: {this.props.t("HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Edit & save video files in AVI, VOB, MP4, DVD, WMV, 3GP, MOV, MKV, using popular codecs H264, MPEG-4, H263 etc Process video with different frame sizes")}: {this.props.t("HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K.")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -268,7 +268,7 @@ render(){
                   <GroupCard.Card>
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide1})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Video capturing and recording")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras. Record media files from your PC screen.")}</GroupCard.CardDescription>            
+                      <GroupCard.CardDescription>{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras Record media files from your PC screen")}</GroupCard.CardDescription>            
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -276,7 +276,7 @@ render(){
                   <GroupCard.Card >
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide2})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Creating slideshows")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Make slideshows with your photos. BMP, JPEG, PNG, TIFF, GIF, ICO, WMF, EMF, PCX, TGA, RAS, PSD formats are supported.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Make slideshows with your photos BMP, JPEG, PNG, TIFF, GIF, ICO, WMF, EMF, PCX, TGA, RAS, PSD formats are supported")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -284,7 +284,7 @@ render(){
                   <GroupCard.Card>
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide3})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Adding soundtracks")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Record voice and add your favourite audio tracks. Adjust audio applying different effects")}: {this.props.t(" Amplify,  Noise Removal,  Equalizer,  Normalize,  Compressor,  Pitch Shift.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Record voice and add your favourite audio tracks Adjust audio applying different effects")} {this.props.t("Amplify,  Noise Removal,  Equalizer,  Normalize,  Compressor,  Pitch Shift")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
               </GroupCard.GridRow>
@@ -296,7 +296,7 @@ render(){
             NameButtonSplit = {this.props.t("Split")}
             NameButtonJoin  = {this.props.t("Join")}
             headerDescription = {this.props.t("Trim, crop, split and join videos")}
-            headerDescriptionSlider = {this.props.t("Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale.  Just drag clips to the timeline in order to join them.")}  
+            headerDescriptionSlider = {this.props.t("Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale. Just drag clips to the timeline in order to join them.")}  
           /> 
           
           <VideoEditorSlider
@@ -383,7 +383,7 @@ render(){
                   <GroupCard.CardCenter >
                     <GroupCard.CardImageCenter style={{ backgroundImage: `url(${CreateSlide5})`}}></GroupCard.CardImageCenter>
                       <GroupCard.CardTitleCenter>{this.props.t("Save to disc")}</GroupCard.CardTitleCenter>
-                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a DVD-video or Blu-ray disc with a menu, or a DivX & Xvid disc compatible with most up-to-date hardware DVD players.")}</GroupCard.CardDescriptionCenter>
+                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a DVD-video or Blu-ray disc with a menu, or a DivX & Xvid disc compatible with most up-to-date hardware DVD players")}</GroupCard.CardDescriptionCenter>
                   </GroupCard.CardCenter>
                 </GroupCard.GridColumn>
 
@@ -391,7 +391,7 @@ render(){
                   <GroupCard.CardCenter >
                     <GroupCard.CardImageCenter style={{ backgroundImage: `url(${CreateSlide6})`}}></GroupCard.CardImageCenter>
                       <GroupCard.CardTitleCenter>{this.props.t("Save to devices")}</GroupCard.CardTitleCenter>
-                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a video for mobile phones or gaming consoles such as Apple iPod, Apple iPhone, Apple iPad, Sony PSP, Android and BlackBerry and upload it right to the device.")}</GroupCard.CardDescriptionCenter>
+                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a video for mobile phones or gaming consoles such as Apple iPod, Apple iPhone, Apple iPad, Sony PSP, Android and BlackBerry and upload it right to the device")}</GroupCard.CardDescriptionCenter>
                   </GroupCard.CardCenter>
                 </GroupCard.GridColumn>
 
@@ -425,7 +425,7 @@ render(){
           </PageContentWrapper>
         </div>
         <div className="footerInfoAVS35">
-        <Text align="center" color="#32393e" className="headerDescriptionTitleAVS" as="h5" fontSize={13} >{this.props.t("Purchasing AVS Video Editor unlimited subscription, you acquire full access to the program without any time limitations. There is no need to renew the subscription.")}</Text>
+        <Text align="center" color="#32393e" className="headerDescriptionTitleAVS" as="h5" fontSize={13} >{this.props.t("Purchasing AVS Video Editor unlimited subscription, you acquire full access to the program without any time limitations")} {this.props.t("There is no need to renew the subscription")}</Text>
         </div>
         </MainPageWrapper>
         </ProductPagesWrapper>

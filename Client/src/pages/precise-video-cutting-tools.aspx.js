@@ -76,35 +76,54 @@ render(){
                         <img src={Star} alt="star"/>
                     </div>
                 </div>
-                <div className="vel_users">{this.props.t("Over")} <b>{this.props.t("50,000,000")}</b> {this.props.t("Happy Users.")}</div>
+                <div className="vel_users">{this.props.t("Over")} <b>{this.props.t("50,000,000")}</b> {this.props.t("Happy Users")}</div>
                 <div className="vel_button">
                     <div className="velb_button"><span id="reviewsNumber">{this.props.t("659475")}</span> {this.props.t("Reviews")}</div>
                 </div>
             </div>
             <div className="vel_quote">
                 <blockquote>
-                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion."`)}
+                {this.props.t("I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion")}
                     <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
         </div>
     </div>
-    <PWM></PWM>
+    <PWM
+    Trim = {this.props.t("Trim and multi-trim")}
+    Cut = {this.props.t("Cut")}
+    Split = {this.props.t("Split")}
+    Crop = {this.props.t("Crop")}
+    Merge = {this.props.t("Merge")}
+    HeaderSlider = {this.props.t("5 Precise video cutting tools")}
+    SliderText = {[    
+        { 
+          imgText: this.props.t("Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor")}, 
+        { 
+            imgText: this.props.t("Cut videos to the desired length or delete unnecessary scenes This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device")},   
+        { 
+            imgText: this.props.t("Split videos regardless both the video size and formats Cut your clip into smaller sections, without losing any frames in the process The clips can then be trimmed or edited separately")},    
+        { 
+            imgText: this.props.t("Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks")},
+        { 
+            imgText: this.props.t("Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements") },         
+      ]}   
+    ></PWM>
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
             <Text className="TextH2">{this.props.t("Give your movie a cinematic look")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_tools_1">
                     <Text fontSize={18} className="TextH3">{this.props.t("Edit your videos with fantasy")}</Text>
-                    <div className="velee_description">{this.props.t("Select between 300 innovative video effects and transitions. Insert menus, audio, text comments and subtitles.")}</div>
+                    <div className="velee_description">{this.props.t("Select between 300 innovative video effects and transitions Insert menus, audio, text comments and subtitles")}</div>
                 </div>
                 <div className="velee_block veleeb_tools_2">
                     <Text fontSize={18} className="TextH3">{this.props.t("Stabilize your videos")}</Text>
-                    <div className="velee_description">{this.props.t("Eliminate negative effects of your camera shake making video smooth.")}</div>
+                    <div className="velee_description">{this.props.t("Eliminate negative effects of your camera shake making video smooth")}</div>
                 </div>
                 <div className="velee_block veleeb_tools_3">
                     <Text fontSize={18} className="TextH3">{this.props.t("Edit HD videos of any size")}</Text>
-                    <div className="velee_description">{this.props.t("Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes.")}</div>
+                    <div className="velee_description">{this.props.t("Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes")}</div>
                 </div>
             </div>
             <div className="vel_bottom_buttons">
@@ -129,7 +148,7 @@ render(){
                     <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd., UK")}</a> {this.props.t("2020  All rights reserved.")}</div>
+                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
                 <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>

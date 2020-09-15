@@ -46,7 +46,7 @@ render(){
             </div>
             <div className="vel_narrow">
                 <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
-                <div className="vel_description">{this.props.t("Create professional-looking movies fast and effectively, and save them to all popular formats")} <span className="vel_desc_formats">{this.props.t("DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc.")}</span></div>
+                <div className="vel_description">{this.props.t("Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
                         <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
@@ -71,14 +71,14 @@ render(){
                         <img src={Star} alt="star"/>
                     </div>
                 </div>
-                <div className="vel_users">{this.props.t("Over")} <b>50,000,000</b> {this.props.t("Happy Users.")}</div>
+                <div className="vel_users">{this.props.t("Over")} <b>50,000,000</b> {this.props.t("Happy Users")}</div>
                 <div className="vel_button">
                     <div className="velb_button"><span id="reviewsNumber">659475</span> {this.props.t("Reviews")}</div>
                 </div>
             </div>
             <div className="vel_quote">
                 <blockquote>
-                {this.props.t("I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion.")}
+                {this.props.t("I've been using AVS Video Editor for more than 10 years and it is an excellent product in my opinion")}
                     <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
@@ -91,19 +91,19 @@ render(){
                 <div className="vel_feature_rotate">
                     <div className="velf_block velfeat_block1">
                         <Text className="TextH3">{this.props.t("Multiformat movie editor")}</Text>
-                        <div className="velfb_description">{this.props.t("Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM, etc.")}</div>
+                        <div className="velfb_description">{this.props.t("Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor Import and save your video in all key formats such as MP4 MPEG DVD AVI MOV FLV MTS WebM etc")}</div>
                     </div>
                     <div className="velf_block velfeat_block2">
                         <Text className="TextH3">{this.props.t("2k and 4k video editing")}</Text>
-                        <div className="velfb_description">{this.props.t("Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.")}</div>
+                        <div className="velfb_description">{this.props.t("Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology Achieve amazing results editing high resolution video files")}</div>
                     </div>
                     <div className="velf_block velfeat_block3">
                         <Text className="TextH3">{this.props.t("An array of creative features")}</Text>
-                        <div className="velfb_description">{this.props.t("Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.")}</div>
+                        <div className="velfb_description">{this.props.t("Apply 300+ modern video effects to make breathtaking videos Chroma key color tuning slow motion video stabilization, screen capture and others are the most popular")}</div>
                     </div>
                     <div className="velf_block velfeat_block4">
                         <Text className="TextH3">{this.props.t("Create video for your Devices")}</Text>
-                        <div className="velfb_description">{this.props.t("Save your final projects to the necessary format which is supported by your device be it a smartphone, phablet or a player. No need to adjust special settings, just select your gadget from the list.")}</div>
+                        <div className="velfb_description">{this.props.t("Save your final projects to the necessary format which is supported by your device be it a smartphone phablet or a player No need to adjust special settings just select your gadget from the list")}</div>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ render(){
                     <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies&nbsp;Ltd.,&nbsp;UK")}</a>{this.props.t(" 2020 &nbsp; All rights reserved.")}</div>
+                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a>{this.props.t(" 2020 All rights reserved")}</div>
             </div>
             <div className="lfn-social">
                 <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>

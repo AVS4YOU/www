@@ -157,7 +157,7 @@ export class PowerfulSlider extends Component {
     }
 
     render() {
-      const { isActive } = this.props;
+      const { SliderText, SColorT, SText, SHeader, SStabilization, SGreenScrin, SSpeedCont} = this.props;
 
         const settings = {    
             fade: false,
@@ -171,16 +171,21 @@ export class PowerfulSlider extends Component {
     
         const images = [    
             { img: Img1,
-              imgText: "Use the Color correction to give your movie a cinematic look. Fix up any white balancing issues and color mismatches between consecutive scenes." }, 
+               }, 
             { img: Img2,
-                imgText: "Use the Chroma Key to change your background and create fantastic effects." },   
+               },   
             { img: Img3,
-                imgText: "Make your video look professional and fix the effects of camera shake." },    
+                 },    
             { img: Img4,
-                imgText: "Use Slow Mo or make your videos up to ten times faster. Create amazing slow motion videos in HD and 4K and see how easy it can be." },
+                },
             { img: Img5,
-                imgText: "Use the AVS Video Editor to edit the color, size and animation of your text and titles." },         
+                },         
           ];   
+
+          images.forEach((it, i) => { 
+            return  Object.assign(it, SliderText[i]);
+          });
+
 
     const imgSlides = () =>  
     images.map(num => ( 
@@ -197,7 +202,7 @@ export class PowerfulSlider extends Component {
   return (
     <div className="video_vel_features">
         <div className="video_vel_narrow">
-        <Text className="TextH2">5 professional cinematic tools</Text>
+  <Text className="TextH2">{this.props.SHeader}</Text>
             <div className="vel_features_block">
     <CinemaSliderStyle>
     <div className="container">  
@@ -205,31 +210,31 @@ export class PowerfulSlider extends Component {
           <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
             {this.state.hoveringTrim || this.state.activeSlide === 0 ?
               <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})`, backgroundSize:`auto` }} className="scrollToButton"> 
-              <Text  align="center">Color Tunnig</Text>
+              <Text  align="center">{this.props.SColorT}</Text>
               </div> 
                 : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`, backgroundSize:`auto`}} className="scrollToButton"> 
-                  <Text align="center">Color Tunnig</Text> 
+                  <Text align="center">{this.props.SColorT}</Text> 
                    </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverCroup} onMouseLeave={this.handleOnMouseOut} className="scrollSlideCrop">
             {this.state.hoveringCroup || this.state.activeSlide === 1 ?
               <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${Actimg2})`, backgroundSize:`auto`}} className="scrollToButton">
-                 <Text align="center">Green Screen</Text> 
+                 <Text align="center">{this.props.SGreenScrin}</Text> 
               </div>   
             : <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${img2})`, backgroundSize:`auto`}} className="scrollToButton">       
-                                  <Text align="center">Green Screen</Text> 
+                                  <Text align="center">{this.props.SGreenScrin}</Text> 
             </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit">
             {this.state.hoveringSplit || this.state.activeSlide === 2 ?
               <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Stabilization</Text> 
+                  <Text align="center">{this.props.SStabilization}</Text> 
 
               </div>
             :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Stabilization</Text> 
+                  <Text align="center">{this.props.SStabilization}</Text> 
 
                 </div>}
             </div>    
@@ -237,19 +242,19 @@ export class PowerfulSlider extends Component {
           <div onMouseEnter={this.handleOnMouseOverJoin} onMouseLeave={this.handleOnMouseOut} className="scrollSlideJoin">
             {this.state.hoveringJoin || this.state.activeSlide === 3 ?            
               <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${Actimg4})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Speed Control</Text> 
+                  <Text align="center">{this.props.SSpeedCont}</Text> 
               </div>
             : <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${img4})`, backgroundSize:`auto`}} className="scrollToButton">
-                <Text align="center">Speed Control</Text> 
+                <Text align="center">{this.props.SSpeedCont}</Text> 
               </div>}
           </div>
           <div onMouseEnter={this.handleOnMouseOverSS} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSS">
             {this.state.hoveringSS || this.state.activeSlide === 4 ?            
               <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${Actimg5})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Text</Text> 
+                  <Text align="center">{this.props.SText}</Text> 
               </div>
             : <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${img5})`, backgroundSize:`auto`}} className="scrollToButton">
-                <Text align="center">Text</Text> 
+                <Text align="center">{this.props.SText}</Text> 
               </div>}
           </div>    
           </div>
