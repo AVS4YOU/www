@@ -23,6 +23,9 @@ import Img4 from "../../images/avs-video-editor-tools/video-maker/merge.webp";
 import Img5 from "../../images/avs-video-editor-tools/video-maker/crop.webp";
 
 const CinemaSliderStyle = styled.div`
+.slick-list{
+  padding-left: 120px;
+}
 .slick-slide {
     width: 860px;
 }
@@ -30,6 +33,8 @@ const CinemaSliderStyle = styled.div`
   padding-bottom: 80px;
   margin: 0 15px;
   width: 850px;
+  padding-left: 70px;
+
   }
   .scrollLinksWrapper {
     border-spacing: 20px 0px;
@@ -55,7 +60,7 @@ background-position: 50% 20px;
     background-position-y: 20px;
 background-repeat: no-repeat;
 cursor: pointer;
-height: 50px;
+height: 70px;
 }
 .scrollToButton:hover {
     box-shadow: none;
@@ -145,7 +150,7 @@ export class CinemaSlider extends Component {
     }
 
     render() {
-      const { isActive } = this.props;
+      const { SliderText, Trim, Cut, Split, Merge, Crop, HeaderSlider } = this.props;
 
         const settings = {  
             centerMode: true,  
@@ -160,16 +165,21 @@ export class CinemaSlider extends Component {
     
         const images = [    
             { img: Img1,
-              imgText: "Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor." }, 
+               }, 
             { img: Img2,
-                imgText: "Cut videos to the desired length or delete unnecessary scenes. This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device." },   
+                },   
             { img: Img3,
-                imgText: "Split videos regardless both the video size and formats. Cut your clip into smaller sections, without losing any frames in the process. The clips can then be trimmed or edited separately." },    
+                 },    
             { img: Img4,
-                imgText: "Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks." },
+                 },
             { img: Img5,
-                imgText: "Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements." },         
+                 },         
           ];   
+
+          images.forEach((it, i) => { 
+            return  Object.assign(it, SliderText[i]);
+          });
+
 
     const imgSlides = () =>  
     images.map(num => ( 
@@ -187,38 +197,38 @@ export class CinemaSlider extends Component {
     <CinemaSliderStyle>
     <div className="maker_vel_features">
         <div className="video_vel_narrow">
-        <Text className="TextH1" style={{padding:"100px 0 50px", textAlign:"center"}}>5 Precise video cutting tools</Text>
+  <Text className="TextH1" style={{padding:"100px 0 50px", textAlign:"center"}}>{this.props.HeaderSlider}</Text>
             <div className="vel_features_block">
     <div className="container">  
        <div className="scrollLinksWrapper" style={{padding: 0, display: "flex"}} >
           <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
             {this.state.hoveringTrim || this.state.activeSlide === 0 ?
               <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})`, backgroundSize:`auto` }} className="scrollToButton"> 
-              <Text  align="center"  style={{ width:'100px', paddingTop:"-55px" }}>Trim and multi-trim</Text>
+              <Text  align="center"  style={{ width:'100px', paddingTop:"-55px" }}>{this.props.Trim}</Text>
               </div> 
                 : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`, backgroundSize:`auto`}} className="scrollToButton"> 
-                  <Text align="center"  style={{ width:'100px', paddingTop:"-5px" }}>Trim and multi-trim</Text> 
+                  <Text align="center"  style={{ width:'100px', paddingTop:"-5px" }}>{this.props.Trim}</Text> 
                    </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverCroup} onMouseLeave={this.handleOnMouseOut} className="scrollSlideCrop">
             {this.state.hoveringCroup || this.state.activeSlide === 1 ?
               <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${Actimg2})`, backgroundSize:`auto`}} className="scrollToButton">
-                 <Text align="center">Cut</Text> 
+                 <Text align="center">{this.props.Cut}</Text> 
               </div>   
             : <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${img2})`, backgroundSize:`auto`}} className="scrollToButton">       
-                                  <Text align="center">Cut</Text> 
+                                  <Text align="center">{this.props.Cut}</Text> 
             </div>}
           </div>
 
           <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit">
             {this.state.hoveringSplit || this.state.activeSlide === 2 ?
               <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`, backgroundSize:`auto`}} className="scrollToButton">
-                                                    <Text align="center">Split</Text> 
+                                                    <Text align="center">{this.props.Split}</Text> 
 
               </div>
             :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`, backgroundSize:`auto`}} className="scrollToButton">
-                                                  <Text align="center">Split</Text> 
+                                                  <Text align="center">{this.props.Split}</Text> 
 
                 </div>}
             </div>    
@@ -226,19 +236,19 @@ export class CinemaSlider extends Component {
           <div onMouseEnter={this.handleOnMouseOverJoin} onMouseLeave={this.handleOnMouseOut} className="scrollSlideJoin">
             {this.state.hoveringJoin || this.state.activeSlide === 3 ?            
               <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${Actimg4})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Merge</Text> 
+                  <Text align="center">{this.props.Merge}</Text> 
               </div>
             : <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${img4})`, backgroundSize:`auto`}} className="scrollToButton">
-                <Text align="center">Merge</Text> 
+                <Text align="center">{this.props.Merge}</Text> 
               </div>}
           </div>
           <div onMouseEnter={this.handleOnMouseOverSS} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSS">
             {this.state.hoveringSS || this.state.activeSlide === 4 ?            
               <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${Actimg5})`, backgroundSize:`auto`}} className="scrollToButton">
-                  <Text align="center">Crop</Text> 
+                  <Text align="center">{this.props.Crop}</Text> 
               </div>
             : <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${img5})`, backgroundSize:`auto`}} className="scrollToButton">
-                <Text align="center">Crop</Text> 
+                <Text align="center">{this.props.Crop}</Text> 
               </div>}
           </div>    
           </div>

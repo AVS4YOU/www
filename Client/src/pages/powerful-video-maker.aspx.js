@@ -52,7 +52,7 @@ render(){
             <div className="vel_narrow">
                 <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
                 <div className="vel_description">{this.props.t("Powerful video maker")}<br />
-                {this.props.t(" Create professional-looking movies easily")}</div>
+                {this.props.t("Create professional-looking movies easily")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
                         <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
@@ -84,28 +84,46 @@ render(){
             </div>
             <div className="vel_quote">
                 <blockquote>
-                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion."`)}
+                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion`)}
                     <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
         </div>
     </div>
-        <TTP />
+        <TTP 
+        SHeader = {this.props.t("5 professional cinematic tools")}
+        SColorT =  {this.props.t("Color Tunnig")}
+        SText =  {this.props.t("Text")}
+        SStabilization = {this.props.t("Stabilization")}
+        SGreenScrin =  {this.props.t("Green Screen")}
+        SSpeedCont =  {this.props.t("Speed Control")}
+        SliderText = {[    
+            { 
+                imgText: this.props.t("Use the Color correction to give your movie a cinematic look Fix up any white balancing issues and color mismatches between consecutive scenes") }, 
+            { 
+                imgText: this.props.t("Use the Chroma Key to change your background and create fantastic effects") },   
+            { 
+                imgText: this.props.t("Make your video look professional and fix the effects of camera shake") },    
+            { 
+                imgText: this.props.t("Use Slow Mo or make your videos up to ten times faster Create amazing slow motion videos in HD and 4K and see how easy it can be") },
+            { 
+                imgText: this.props.t("Use the AVS Video Editor to edit the color, size and animation of your text and titles") },         
+          ]}   />
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
             <Text className="TextH2">{this.props.t("Innovative movie editing tools")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_video_1">
                     <Text fontSize={18} className="TextH3">{this.props.t("Creative video making")}</Text>
-                    <div className="velee_description">{this.props.t("Select between 300 innovative video effects and transitions. Insert menus, audio, text comments and subtitles.")}</div>
+                    <div className="velee_description">{this.props.t("Select between 300 innovative video effects and transitions Insert menus, audio, text comments and subtitles")}</div>
                 </div>
                 <div className="velee_block veleeb_video_2">
                     <Text fontSize={18} className="TextH3">{this.props.t("Multiformat video creator")}</Text>
-                    <div className="velee_description">{this.props.t("Edit & save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM using popular codecs H.264, MPEG-4, etc.")}</div>
+                    <div className="velee_description">{this.props.t("Edit & save video files in AVI, VOB, MP4, DVD, WMV, 3GP, MOV, MKV, using popular codecs H264, MPEG-4, H263 etc Process video with different frame sizes")}</div>
                 </div>
                 <div className="velee_block veleeb_video_3">
                     <Text fontSize={18} className="TextH3">{this.props.t("Accelerated HD-video editing")}</Text>
-                    <div className="velee_description">{this.props.t("Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes.")}</div>
+                    <div className="velee_description">{this.props.t("Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes")}</div>
                 </div>
             </div>
             <div className="vel_bottom_buttons">
@@ -130,7 +148,7 @@ render(){
                     <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd., UK")}</a> {this.props.t("2020  All rights reserved.")}</div>
+                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd, UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
                 <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>

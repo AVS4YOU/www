@@ -108,7 +108,7 @@ render(){
               imageName="audio_editor_slider5.jpg"
               headerText={this.props.t("Master your sound for higher quality")}
             >
-              <Text className="ListItem">{this.props.t("Remove noise and irritating sounds like roaring, hissing, crackling, etc.")}</Text>
+              <Text className="ListItem">{this.props.t("Remove noise and irritating sounds like roaring, hissing, crackling, etc")}</Text>
               <Text className="ListItem">{this.props.t("Change sound bitrate to any desired level")}</Text>
               <Text className="ListItem">{this.props.t("Use an equalizer to adjust volume in a desired way")}</Text>
             </ContentRowItem>

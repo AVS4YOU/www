@@ -661,8 +661,8 @@ render(){
         className="moneyback" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="Earn money with the affiliate program AVS4YOU"
-        metaDescription="AVS4YOU affiliate program: earn money with Links"
+        title=""
+        metaDescription=""
         metaKeywords=""
       >
         <div className="header">

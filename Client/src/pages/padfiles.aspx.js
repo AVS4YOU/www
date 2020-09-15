@@ -54,134 +54,134 @@ class padFiles extends React.PureComponent {
           
         <TabIndex 
         data = {[{
-          id: "Index",
+          id: this.props.t("Index"),
           title: {
-            hed:"Name",
+            hed:this.props.t("Name"),
           },
           dwn: {
-            wrd:"PAD File",
+            wrd:this.props.t("PAD File"),
           },
         },
           {
           id: 1,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsvideoconverter.xml",
-            hed:"AVS Video Converter",
-            desc:"Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
+            hed:this.props.t("AVS Video Converter"),
+            desc:this.props.t("Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsvideoconverter.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 2,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsaudioconverter.xml",
-            hed:"AVS Audio Converter",
-            desc:"Convert audio between popular formats. Apply effects, customize output parameters, use batch mode",
+            hed:this.props.t("AVS Audio Converter"),
+            desc:this.props.t("Convert audio between popular formats. Apply effects, customize output parameters, use batch mode"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsaudioconverter.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 3,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsvideoeditor.xml",
-            hed:"AVS Video Editor",
-            desc:"Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays",
+            hed:this.props.t("AVS Video Editor"),
+            desc:this.props.t("Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsvideoeditor.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 4,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsaudioeditor.xml",
-            hed:"AVS Audio Editor",
-            desc:"Create outstanding tracks for any purpose with our easy audio editing app for Windows",
+            hed:this.props.t("AVS Audio Editor"),
+            desc:this.props.t("Create outstanding tracks for any purpose with our easy audio editing app for Windows"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsaudioeditor.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 5,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsvideoremaker.xml",
-            hed:"AVS Video ReMaker",
-            desc:"Mighty production software for capturing and editing videos, and creating DVD and Blu-ray content",
+            hed:this.props.t("AVS Video ReMaker"),
+            desc:this.props.t("Mighty production software for capturing and editing videos, and creating DVD and Blu-ray content"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsvideoremaker.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 6,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsimageconverter.xml",
-            hed:"AVS Image Converter",
-            desc:"Share your photos, stories and adventures with Free AVS Image Converter",
+            hed:this.props.t("AVS Image Converter"),
+            desc:this.props.t("Share your photos, stories and adventures with Free AVS Image Converter"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsimageconverter.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 7,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsregistrycleaner.xml",
-            hed:"AVS Registry Cleaner",
-            desc:"Make your PC operate clean and fast with Free AVS Registry Cleaner",
+            hed:this.props.t("AVS Registry Cleaner"),
+            desc:this.props.t("Make your PC operate clean and fast with Free AVS Registry Cleaner"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsregistrycleaner.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 8,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsdisccreator.xml",
-            hed:"AVS Disc Creator",
-            desc:"Burn audio, video, images easily with Free AVS Disc Creator",
+            hed:this.props.t("AVS Disc Creator"),
+            desc:this.props.t("Burn audio, video, images easily with Free AVS Disc Creator"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsdisccreator.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 9,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsphotoeditor.xml",
-            hed:"AVS Photo Editor",
-            desc:"Make your photos look stylish with Free AVS Photo Editor",
+            hed:this.props.t("AVS Photo Editor"),
+            desc:this.props.t("Make your photos look stylish with Free AVS Photo Editor"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsphotoeditor.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 10,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsmediaplayer.xml",
-            hed:"AVS Media Player",
-            desc:"Watch video, play audio and view your pictures with Free AVS Media Player",
+            hed:this.props.t("AVS Media Player"),
+            desc:this.props.t("Watch video, play audio and view your pictures with Free AVS Media Player"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsmediaplayer.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }, {
           id: 11,
           title: {
             hr:"https://www.avs4you.com/pads/en/avsdocumentconverter.xml",
-            hed:"AVS Document Converter",
-            desc:"Convert documents between DOCX, PDF, RTF, TXT, HTML, etc. Work with text files and images without additional editing software.",
+            hed:this.props.t("AVS Document Converter"),
+            desc:this.props.t("Convert documents between DOCX, PDF, RTF, TXT, HTML, etc. Work with text files and images without additional editing software."),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsdocumentconverter.xml",
-            wrd:"Download",
+            wrd:this.props.t("Download"),
           },
         }]}/>
 
