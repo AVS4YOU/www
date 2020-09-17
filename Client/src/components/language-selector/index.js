@@ -254,8 +254,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                             //? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? `/${item.value}` : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
@@ -269,8 +268,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                             // ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? `/${item.value}` : pageContext.originalPath.replace(/(\/)?$/, '')) 
+                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, '')) 
                                             : item.value !== "en" && "/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
@@ -290,10 +288,8 @@ class LanguageSelector extends React.PureComponent {
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext
-                                                //? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                //: item.value !== "en" && "https://www.avs4you.com/" + item.value
-                                                ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? `/${item.value}` : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value
+                                                ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value !== "en" && "/" + item.value
                                                 
                                         }
                                         langChange={item.value === "en"}
