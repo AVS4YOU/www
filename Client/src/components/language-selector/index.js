@@ -43,9 +43,7 @@ const BackSubmenuButton = styled.div`
     -o-transition: color 0 ease-in;
     transition: none;
     opacity: 0;
-
     ${props => props.submenuOpen && BackSubmenuButtonShow}
-
     &:after{
         display: block;
         content: '';
@@ -62,82 +60,64 @@ const BackSubmenuButton = styled.div`
 `;
 
 const StyledLanguageSelector = styled.div`
-
     .mobileBlock{
         display:none;
     }
-
     
     .langDropdown{
-
         margin-bottom: 12px;
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-
         span{
             font-size: 14px;
         }
-
         &:before{
             content: '';
             height: 16px;
             width:16px;
             margin-right: 8px;
         }
-
         &.en:before {
             background-image: url(${EnIcon});
         }
-
         &.ru{
             margin-bottom: 20px;
             &:before{
                 background-image: url(${RuIcon});
             }
         }
-
         &.fr:before{
             background-image: url(${FrIcon});
         }
-
         &.de:before{
             background-image: url(${DeIcon});
         }
-
         &.es:before{
             background-image: url(${EsIcon});
         }
-
         &.it:before{
             background-image: url(${ItIcon});
         }
-
         &.jp:before{
             background-image: url(${JpIcon});
         }
-
         &.nl:before{
             background-image: url(${NlIcon});
         }
-
         &.ko:before{
             background-image: url(${KoIcon});
         }
-
         &.pl:before{
             background-image: url(${PlIcon});
         }
-
         &.da:before{
             background-image: url(${DaIcon});
         }
-
         &.pt:before{
             background-image: url(${PtIcon});
         }
     }
-
     .languageSelector:before{
         content: '';
         background-image: url(${LangIconWhite});
@@ -145,21 +125,16 @@ const StyledLanguageSelector = styled.div`
         width:16px;
         margin-right: 8px;
     }
-
     @media (max-width: 1050px){
         .mobileBlock{
             display:block;
         }
-
         .langDropdown{
             &:before{
                 content: none;
             }
-
             &.selected{
-
                 position:relative;
-
                 &:before{
                     content: '';
                     background-image: url(${Selected});
@@ -172,15 +147,12 @@ const StyledLanguageSelector = styled.div`
                 }
             }
         }
-
         .languageSelector{
             grid-template-columns: auto 1fr auto;
-
             &:before{
                 background-image: url(${LangIconBlack});
             }
         }
-
         .desktopBlock{
             display:none;
         }
@@ -254,8 +226,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                             //? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
@@ -269,8 +240,7 @@ class LanguageSelector extends React.PureComponent {
                                             ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext
-                                             // ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
@@ -290,10 +260,8 @@ class LanguageSelector extends React.PureComponent {
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext
-                                                //? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                //: item.value !== "en" && "https://www.avs4you.com/" + item.value
                                                 ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value                                                
+                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
