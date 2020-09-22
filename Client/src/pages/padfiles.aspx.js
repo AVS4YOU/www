@@ -38,10 +38,10 @@ class padFiles extends React.PureComponent {
             <div className="header__background-gradient">
               <div className="header__body header__body_bg">
                 <div className="header__body-wrapper">
-                  <Text as="h1" className="header__heading">Pad files</Text>
-                  <Text as="h3" className="header__subtitle" style={{padding: '0'}}>Use the following PAD files for all AVS4YOU programs</Text>
+                  <Text as="h1" className="header__heading">{this.props.t("Pad files")}</Text>
+                  <Text as="h3" className="header__subtitle" style={{padding: '0'}}>{this.props.t("Use the following PAD files for all AVS4YOU programs")}</Text>
                   <ScrollLink to="padFilesTable" spy={true} smooth={true} offset={-70} duration={500} >
-                  <Button className="header__button header__button_pad" style={{position:"center"}} textClassName="header__button-text" href="https://www.avs4you.com/pads/en/avsvideoconverter.xml">GET ALL PAD FILES</Button>
+                  <Button className="header__button header__button_pad" style={{position:"center"}} textClassName="header__button-text" href="https://www.avs4you.com/pads/en/avsvideoconverter.xml">{this.props.t("GET ALL PAD FILES")}</Button>
                   </ScrollLink>
                 </div>
               </div>
@@ -53,6 +53,9 @@ class padFiles extends React.PureComponent {
         <div id="padFilesTable">
           
         <TabIndex 
+         headerTable={this.props.t("PAD Files Download Center")}
+         footerTable={this.props.t("Use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line")}
+         hrefTable={("affiliates@avs4you.com")}
         data = {[{
           id: this.props.t("Index"),
           title: {
@@ -67,7 +70,7 @@ class padFiles extends React.PureComponent {
           title: {
             hr:"https://www.avs4you.com/pads/en/avsvideoconverter.xml",
             hed:this.props.t("AVS Video Converter"),
-            desc:this.props.t("Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!"),
+            desc:this.props.t("Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsvideoconverter.xml",
@@ -78,7 +81,7 @@ class padFiles extends React.PureComponent {
           title: {
             hr:"https://www.avs4you.com/pads/en/avsaudioconverter.xml",
             hed:this.props.t("AVS Audio Converter"),
-            desc:this.props.t("Convert audio between popular formats. Apply effects, customize output parameters, use batch mode"),
+            desc:this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsaudioconverter.xml",
@@ -89,7 +92,7 @@ class padFiles extends React.PureComponent {
           title: {
             hr:"https://www.avs4you.com/pads/en/avsvideoeditor.xml",
             hed:this.props.t("AVS Video Editor"),
-            desc:this.props.t("Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays"),
+            desc:this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsvideoeditor.xml",
@@ -177,7 +180,7 @@ class padFiles extends React.PureComponent {
           title: {
             hr:"https://www.avs4you.com/pads/en/avsdocumentconverter.xml",
             hed:this.props.t("AVS Document Converter"),
-            desc:this.props.t("Convert documents between DOCX, PDF, RTF, TXT, HTML, etc. Work with text files and images without additional editing software."),
+            desc:this.props.t("Convert documents between DOCX, PDF, RTF, TXT, HTML, etc Work with text files and images without additional editing software"),
           },
           dwn: {
             hrf:"https://www.avs4you.com/pads/en/avsdocumentconverter.xml",

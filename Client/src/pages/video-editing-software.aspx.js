@@ -224,7 +224,7 @@ render(){
                   <GroupCard.Card>
                       <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide})`}}></GroupCard.CardImage>    
                       <GroupCard.CardTitle>{this.props.t("All key video formats and codecs")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Edit & save video files in AVI, VOB, MP4, DVD, WMV, 3GP, MOV, MKV, using popular codecs H.264, MPEG-4, H.263 etc. Process video with different frame sizes")}: {this.props.t("HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Edit & save video files in AVI, VOB, MP4, DVD, WMV, 3GP, MOV, MKV, using popular codecs H264, MPEG-4, H263 etc Process video with different frame sizes")}: {this.props.t("HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -232,7 +232,7 @@ render(){
                   <GroupCard.Card>
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide1})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Video capturing and recording")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras. Record media files from your PC screen.")}</GroupCard.CardDescription>            
+                      <GroupCard.CardDescription>{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras Record media files from your PC screen")}</GroupCard.CardDescription>            
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -240,7 +240,7 @@ render(){
                   <GroupCard.Card >
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide2})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Creating slideshows")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Make slideshows with your photos. BMP, JPEG, PNG, TIFF, GIF, ICO, WMF, EMF, PCX, TGA, RAS, PSD formats are supported.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Make slideshows with your photos BMP, JPEG, PNG, TIFF, GIF, ICO, WMF, EMF, PCX, TGA, RAS, PSD formats are supported")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
 
@@ -248,7 +248,7 @@ render(){
                   <GroupCard.Card>
                     <GroupCard.CardImage style={{ backgroundImage: `url(${CreateSlide3})`}}></GroupCard.CardImage>
                       <GroupCard.CardTitle>{this.props.t("Adding soundtracks")}</GroupCard.CardTitle>
-                      <GroupCard.CardDescription>{this.props.t("Record voice and add your favourite audio tracks. Adjust audio applying different effects")}: {this.props.t(" Amplify,  Noise Removal,  Equalizer,  Normalize,  Compressor,  Pitch Shift.")}</GroupCard.CardDescription>
+                      <GroupCard.CardDescription>{this.props.t("Record voice and add your favourite audio tracks Adjust audio applying different effects")}: {this.props.t("Amplify,  Noise Removal,  Equalizer,  Normalize,  Compressor,  Pitch Shift")}</GroupCard.CardDescription>
                   </GroupCard.Card>
                 </GroupCard.GridColumn>
               </GroupCard.GridRow>
@@ -260,52 +260,52 @@ render(){
             NameButtonSplit = {this.props.t("Split")}
             NameButtonJoin  = {this.props.t("Join")}
             headerDescription = {this.props.t("Trim, crop, split and join videos")}
-            headerDescriptionSlider = {this.props.t("Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale.  Just drag clips to the timeline in order to join them.")}  
+            headerDescriptionSlider = {this.props.t("Detect scenes and cut out the unnecessary ones with Trim and MutiTrim options Change the video aspect ratio and get rid of the black bars with Crop Scale Just drag clips to the timeline in order to join them")}  
           /> 
           
           <VideoEditorSlider
           headerDescription = {this.props.t("Make breathtaking videos with effects and transitions")}
-          headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects. Switch between Timeline and Storyboard to add and manage video effects and transitions with ease.")}
+          headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects Switch between Timeline and Storyboard to add and manage video effects and transitions with ease")}
           SliderImages = {[      
             {
                 title: this.props.t("Transitions"),
-                desc: this.props.t("Add transitions to create visual effects between clips."),
+                desc: this.props.t("Add transitions to create visual effects between clips"),
                },
             {
                 title: this.props.t("Transformation"),
-                desc: this.props.t("Rotation, shift, mirror or zoom. Reproduce the entire image or a part of it."),
+                desc: this.props.t("Rotation, shift, mirror or zoom Reproduce the entire image or a part of it"),
                },
             { 
                 title: this.props.t("Text and Graphics"),
-                desc: this.props.t("Add static and animated captions and shapes."),
+                desc: this.props.t("Add static and animated captions and shapes"),
                },
             { 
                 title: this.props.t("Video overlay"),
-                desc: this.props.t("Make a picture in picture effect easily."),
+                desc: this.props.t("Make a picture in picture effect easily"),
                },
             { 
                 title: this.props.t("Video stabilization"),
-                desc: this.props.t("Fix shaky footages with video stabilization."),
+                desc: this.props.t("Fix shaky footages with video stabilization"),
                },
             { 
                 title: this.props.t("Chroma Key"),
-                desc: this.props.t("Change your background with Chroma Key effect."),
+                desc: this.props.t("Change your background with Chroma Key effect"),
                },
             { 
                 title: this.props.t("Colour correction"),
-                desc: this.props.t("Make adjustments automatically or apply one of the colour effect."),
+                desc: this.props.t("Make adjustments automatically or apply one of the colour effect"),
                },
             { 
                 title: this.props.t("Freeze Frame"),
-                desc: this.props.t("Make a still shot from your video clip."),
+                desc: this.props.t("Make a still shot from your video clip"),
                },
             { 
                 title: this.props.t("Playback Speed"),
-                desc: this.props.t("Correct too slow or too fast episodes speeding up or slowing down your clips."),
+                desc: this.props.t("Correct too slow or too fast episodes speeding up or slowing down your clips"),
                },
             { 
                 title: this.props.t("Special effects"),
-                desc: this.props.t("Imitate faded photos and old movie, turn your film into a hand-drawn sketch or watercolour painting, and do even more."),
+                desc: this.props.t("Imitate faded photos and old movie, turn your film into a hand-drawn sketch or watercolour painting, and do even more"),
                },               
           ]}
           affilateImage = {[{
@@ -347,7 +347,7 @@ render(){
                   <GroupCard.CardCenter >
                     <GroupCard.CardImageCenter style={{ backgroundImage: `url(${CreateSlide5})`}}></GroupCard.CardImageCenter>
                       <GroupCard.CardTitleCenter>{this.props.t("Save to disc")}</GroupCard.CardTitleCenter>
-                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a DVD-video or Blu-ray disc with a menu, or a DivX & Xvid disc compatible with most up-to-date hardware DVD players.")}</GroupCard.CardDescriptionCenter>
+                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a DVD-video or Blu-ray disc with a menu, or a DivX & Xvid disc compatible with most up-to-date hardware DVD players")}</GroupCard.CardDescriptionCenter>
                   </GroupCard.CardCenter>
                 </GroupCard.GridColumn>
 
@@ -355,7 +355,7 @@ render(){
                   <GroupCard.CardCenter >
                     <GroupCard.CardImageCenter style={{ backgroundImage: `url(${CreateSlide7})`}}></GroupCard.CardImageCenter>
                       <GroupCard.CardTitleCenter>{this.props.t("Save to devices")}</GroupCard.CardTitleCenter>
-                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a video for mobile phones or gaming consoles such as Apple iPod, Apple iPhone, Apple iPad, Sony PSP, Android and BlackBerry and upload it right to the device.")}</GroupCard.CardDescriptionCenter>
+                      <GroupCard.CardDescriptionCenter>{this.props.t("Create a video for mobile phones or gaming consoles such as Apple iPod, Apple iPhone, Apple iPad, Sony PSP, Android and BlackBerry and upload it right to the device")}</GroupCard.CardDescriptionCenter>
                   </GroupCard.CardCenter>
                 </GroupCard.GridColumn>
 
@@ -363,7 +363,7 @@ render(){
                   <GroupCard.CardCenter >
                     <GroupCard.CardImageCenter style={{ backgroundImage: `url(${CreateSlide6})`}}></GroupCard.CardImageCenter>
                       <GroupCard.CardTitleCenter>{this.props.t("Save for Web")}</GroupCard.CardTitleCenter>
-                      <GroupCard.CardDescriptionCenter>{this.props.t("Save video into Flash or WebM format and upload to the popular web services")}: {this.props.t("YouTube, Facebook, Telly, Dailymotion, Flickr and Dropbox.")}</GroupCard.CardDescriptionCenter>
+                      <GroupCard.CardDescriptionCenter>{this.props.t("Save video into Flash or WebM format and upload to the popular web services")}: {this.props.t("YouTube, Facebook, Telly, Dailymotion, Flickr and Dropbox")}</GroupCard.CardDescriptionCenter>
                   </GroupCard.CardCenter>
                 </GroupCard.GridColumn>
             </GroupCard.GridRow>
