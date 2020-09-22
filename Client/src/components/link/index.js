@@ -7,7 +7,7 @@ function AvsLink(props){
         <PageContext.Consumer>  
             {(pageContext) => (
                 <Link className={props.className} to={pageContext && !props.langChange
-                    ? pageContext.locale == "en" ? props.to : pageContext.locale + props.to
+                    ? pageContext.locale == "en" ? props.to : "/" + pageContext.locale + props.to
                     : props.to} 
                 >   
                     {props.children}
