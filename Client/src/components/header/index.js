@@ -9,18 +9,18 @@ const Header = ({availableLocales, locale, t}) => {
 
         <MenuWrapper availableLocales={availableLocales} locale={locale} t={t} style={{ height: 60}}>
             <MenuItem menuItemText={t("Video software")}>
-                <DropdownElement path="/avs-video-editor.aspx" headerText="AVS Video Editor" descriptionText={t("Easily edit and create videos")}/>
-                <DropdownElement path="/avs-free-video-converter.aspx" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>
-                <DropdownElement path="/avs-video-remaker.aspx" headerText="AVS Video Remaker" descriptionText={t("Edit videos without reconversion")}/>
+                <DropdownElement path="/avs-video-editor.aspx/" headerText="AVS Video Editor" descriptionText={t("Easily edit and create videos")}/>
+                <DropdownElement path="/avs-free-video-converter.aspx/" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>
+                <DropdownElement path="/avs-video-remaker.aspx/" headerText="AVS Video Remaker" descriptionText={t("Edit videos without reconversion")}/>
             </MenuItem>
             <MenuItem menuItemText={t("Audio software")}>
-                <DropdownElement path="/avs-audio-editor.aspx" headerText="AVS Audio Editor" descriptionText={t("Easily edit and create audio")}/>
-                <DropdownElement path="/avs-audio-converter.aspx" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
+                <DropdownElement path="/avs-audio-editor.aspx/" headerText="AVS Audio Editor" descriptionText={t("Easily edit and create audio")}/>
+                <DropdownElement path="/avs-audio-converter.aspx/" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
             </MenuItem>
             <MenuItem menuItemText={t("Free software")}>
-                <DropdownElement path="/avs-free-media-player.aspx" headerText="AVS Media Player" descriptionText={t("Watch audio and video")}/>
-                <DropdownElement path="/avs-free-video-converter.aspx" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>
-                <DropdownElement path="/avs-audio-converter.aspx" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
+                <DropdownElement path="/avs-free-media-player.aspx/" headerText="AVS Media Player" descriptionText={t("Watch audio and video")}/>
+                <DropdownElement path="/avs-free-video-converter.aspx/" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>
+                <DropdownElement path="/avs-audio-converter.aspx/" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
             </MenuItem>
             <MenuItem path="/downloads.aspx" menuItemText={t("Download")} isDropdown={false} />
             <MenuItem path="/register.aspx" menuItemText={t("Buy now")} isDropdown={false} />
