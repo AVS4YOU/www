@@ -208,7 +208,7 @@ tr:first-child td{
  class TableRow extends React.Component {
     render() {
       const {
-        data
+        data, headerTable, footerTable, hrefTable
       } = this.props;
       const row = data.map((data) =>
       <tr>
@@ -230,11 +230,11 @@ tr:first-child td{
     render() {
       return (
         <TableStyled>
-        <Text className="headerTable">PAD Files Download Center</Text>
+        <Text className="headerTable">{this.props.headerTable}</Text>
         <table className="DataTable">
           <TableRow data={this.props.data} />
         </table>
-        <Text className="TextTable">Use our graphics/product description fully or in parts, as you like. Upon request we will create custom banners for you. Drop us a line: <a target="_blank" href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a>.</Text>
+      <Text className="TextTable">{this.props.footerTable} <a target="_blank" href="mailto:affiliates@avs4you.com">{this.props.hrefTable}</a>.</Text>
         </TableStyled>
       );
     }

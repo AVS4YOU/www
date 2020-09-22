@@ -671,8 +671,8 @@ render(){
               <div className="header__body">
                 <div className="header__body-wrapper">
                   <Text as="h1" className="header__heading">{this.props.t("30 Days")} <span className="colorMoneyback" color="#F59541">{this.props.t("Moneyback")}</span> {this.props.t("Guarantee")}</Text>
-                  <Text as="h3" className="header__subtitle">{this.props.t("In case you are not satisfied with the software bought from the www.avs4you.com web site, you can have your money back within 30 days since the purchase.")}</Text>
-                  <Button className="header__button" textClassName="header__button-text" href="">{this.props.t("LEARN MORE")}</Button>
+                  <Text as="h3" className="header__subtitle">{this.props.t("In case you are not satisfied with the software bought from the wwwavs4youcom web site, you can have your money back within 30 days since the purchase")}</Text>
+                  <Button className="header__button" textClassName="header__button-text" href="">{this.props.t("Learn more")}</Button>
                 </div>
               </div>
             </div>
@@ -687,10 +687,10 @@ render(){
                   {this.props.t("Moneyback rules")}
                   </Text>
                   <Text className="choose-program__list">
-                    {this.props.t("The moneyback is applicable for all the subscription types (at the moment this includes the unlimited and the one-year subscription types).")}
+                    {this.props.t("The moneyback is applicable for all the subscription types (at the moment this includes the unlimited and the one-year subscription types)")}
                   </Text>
                   <Text className="choose-program__list">
-                   {this.props.t("We reserve the right to suspend moneyback service at any moment. Nevertheless all the requests for moneyback before this date will be accepted.")}
+                   {this.props.t("We reserve the right to suspend moneyback service at any moment Nevertheless all the requests for moneyback before this date will be accepted")}
                   </Text>
                 </div>
                 </div>       
@@ -713,7 +713,7 @@ render(){
               {this.props.t("Download application")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Please")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU® programs have been installed. This program will delete all the registration information from the computer and the AVS4YOU® programs status will turn to 'Non-activated'")}
+                {this.props.t("Please")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'")}
               </Text>
             </div>
 
@@ -727,7 +727,7 @@ render(){
               {this.props.t("Send form")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("After that download our")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/refund.pdf" className="hrefMoneyback">{this.props.t("refund form")}</a> {this.props.t("and print it. When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number. Its electronic copy can also be sent via")} <a target="_blank" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a> {this.props.t("as an attachment")}
+                {this.props.t("After that download our")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/refund.pdf" className="hrefMoneyback">{this.props.t("refund form")}</a> {this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")} <a target="_blank" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a> {this.props.t("as an attachment")}
               </Text>
             </div>
 
@@ -741,7 +741,7 @@ render(){
               {this.props.t("Get moneyback")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("The moneyback will be performed the same way the purchase was done. For instance, if you paid using a credit card, the money will be returned to the credit card bank account used")}
+                {this.props.t("The moneyback will be performed the same way the purchase was done For instance, if you paid using a credit card, the money will be returned to the credit card bank account used")}
               </Text>
             </div>
 
