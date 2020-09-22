@@ -261,7 +261,7 @@ class LanguageSelector extends React.PureComponent {
                                         href={
                                             pageContext
                                                 ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value
+                                                : item.value !== "en" && "https://www.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
