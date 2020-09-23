@@ -43,7 +43,9 @@ class Layout extends React.PureComponent {
       isMobile: false
     }
 
-    this.pageName = this.props.pageContext.originalPath.replace(/\//g, '');
+    const OriginalPath = this.props.pageContext.originalPath;
+
+    this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 

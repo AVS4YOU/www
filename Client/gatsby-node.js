@@ -58,31 +58,47 @@ const availableLocales = [
 const defaultLocales = { value: "en", text: "English" };
 
 exports.onCreatePage = async props => {
-  const {
-    page,
-    actions: { createPage, deletePage, createRedirect }
-  } = props;
+
+  const { page, actions: { createPage, deletePage, createRedirect } } = props;
 
   deletePage(page);
 
-  availableLocales.map(({ value }) => {
-    let newPath = `/${value}${page.path}`;
-    if (defaultLocales.value === value) {
-      newPath = page.path;
-    }
+  if (page.path === '/') { 
+    
+    availableLocales.map(({ value }) => {
+      const newPath = defaultLocales.value === value ? page.path : `${value}`
+      createPage({
+        ...page,
+        path: newPath,
+        context: {
+          availableLocales,
+          locale: value,
+          routed: true,
+          data: localesNSContent[value],
+          originalPath: page.path,
+          page: page
+        }
+      });
+    })
+    
+  } else {
+    availableLocales.map(({ value }) => {
+      const newPath = defaultLocales.value === value ? page.path : `/${value}${page.path}`
 
-    const localePage = {
-      ...page,
-      originalPath: page.path,
-      path: newPath,
-      context: {
-        availableLocales,
-        locale: value,
-        routed: true,
-        data: localesNSContent[value],
-        originalPath: page.path
+      const localePage = {
+        ...page,
+        originalPath: page.path,
+        path: newPath,
+        context: {
+          availableLocales,
+          locale: value,
+          routed: true,
+          data: localesNSContent[value],
+          originalPath: page.path,
+          page: page
+        },
       }
-    };
-    createPage(localePage);
-  });
+      createPage(localePage)
+    });
+  }
 };
