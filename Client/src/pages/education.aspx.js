@@ -168,8 +168,10 @@ render(){
           {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
-            <Form></Form>
-            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
+            <Form
+            showAddFile={false}
+            />
+            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>.</Text>
           </div>
         </div>
       </Layout>

@@ -68,7 +68,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 
                 <TableWrapper>
-                  <Text as="span" className="flagBackground header">Free
+                  <Text as="span" className="flagBackground header">{this.props.t("Free")}
                     <div></div>
                   </Text>
                   <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Media Player")}</Text>
@@ -163,13 +163,13 @@ class avsFreeMediaPlayer extends React.PureComponent {
                     name: "William Holmes",
                     avatar: AvatarWilliamHolmes,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
                   }
                 ]
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Media Player 5.2")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Media Player 52")}</Text>
           <ScreenshotsCarousel
             imageNames={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
             imageNamesPopup={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
@@ -239,7 +239,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                   </div>
                 </div>
                 <div>
@@ -247,11 +247,11 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
@@ -259,11 +259,11 @@ class avsFreeMediaPlayer extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible video card")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible sound card")}</Text>
                   </div>
                 </div>
               </div>

@@ -101,8 +101,8 @@ render(){
               <Text className="access-limit">{this.props.t("1 year access")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
-                <Text className="prev-price-text">{this.props.t("$69.00")}</Text>
-                <Text className="current-price-text"><span>$</span>{this.props.t("39.00")}</Text>
+                <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
+                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
               <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
@@ -125,8 +125,8 @@ render(){
                 <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
-                  <Text className="prev-price-text">{this.props.t("$199.00")}</Text>
-                  <Text className="current-price-text"><span>$</span>{this.props.t("59.00")}</Text>
+                  <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
+                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>

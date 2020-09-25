@@ -132,7 +132,7 @@ class Privacy extends React.PureComponent {
             <Text className="paragraph-text">{this.props.t("to provide users with better experience")}</Text>
             <Text className="paragraph-text">{this.props.t("to investigate performance issues, bugs and any other technical issues regarding Resources")}</Text>
             <Text className="paragraph-text">{this.props.t("to make AVS4YOU better")}</Text>
-            <Text className="paragraph-text">{this.props.t("vto comply with the law")}</Text>
+            <Text className="paragraph-text">{this.props.t("to comply with the law")}</Text>
           </div>
 
           <Text className="body-privacy__text">
@@ -160,7 +160,7 @@ class Privacy extends React.PureComponent {
             <b>{this.props.t("Data portability right")}</b> {this.props.t("You have the right to request a digital copy of your Data in a structured, commonly used and machine-readable format to be able to move from one service to another This can be achieved by emailing us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("and we will provide you with an electronic file containing your Data")}
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>
+            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.
           </Text>
           <Text className="body-privacy__text">
             <b>{this.props.t("Right to restriction of processing")}</b> {this.props.t("You also have the right to request that we cease to process or use your Data in any way If you choose to do so, your Data will become unavailable for everyone, but it won't be deleted, so you can restore it at any time To achieve this goal, please email us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.
