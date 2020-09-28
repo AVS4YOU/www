@@ -196,56 +196,56 @@ render(){
             </Text>
 
             <div className="questions-block">
-              <PanelCollapse className="panelCollapse" panelName="Is it free to participate in your affiliate program?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Is it free to participate in your affiliate program?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Yes, the participation is absolutely free")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="You offer one-year and unlimited software subscriptions for users Are they the only options?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("You offer one-year and unlimited software subscriptions for users Are they the only options?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, we offer affiliates to sell 2 types of subscriptions to all our products")}: {this.props.t("this selling scheme is very attractive to users and time-proved as effective in terms of conversion")}
+                    <Text className="hiddenText">{this.props.t("Yes, we offer affiliates to sell 2 types of subscriptions to all our products this selling scheme is very attractive to users and time-proved as effective in terms of conversion")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="Does 'subscription model' get better conversion results as compared to usual software sale?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Does 'subscription model' get better conversion results as compared to usual software sale?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, we launched")} <a href="https://www.avs4you.com/" target="_blank">AVS4YOU.com</a> {this.props.t("in 2006, December and subscription model proved to bring excellent results: several times better as compared to usuall selling scheme we had used before")}
+                    <Text className="hiddenText">{this.props.t("Yes, we launched")} <a href="https://www.avs4you.com/" target="_blank">AVS4YOU.com</a> {this.props.t("in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Yes, please use our")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="How do I get money?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("How do I get money?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="How can I make sure your system really works and where can I get statistics for clicks to you from my links?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("How can I make sure your system really works and where can I get statistics for clicks to you from my links?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Once you're registered with us, you get login and password to access our ")} 
-                    <a href="https://stat.avs4you.com/" target="_blank">{this.props.t("control panel")}</a>: {this.props.t("There you'll be able to see statistics: number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information")}
+                    <Text className="hiddenText">{this.props.t("Once you're registered with us, you get login and password to access our")} 
+                    <a href="https://stat.avs4you.com/" target="_blank">{this.props.t("control panel")}</a>: {this.props.t("There you'll be able to see statistics number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="I don't believe in cookie principle Is your system based solely on cookies or I can get software custom builds?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("I don't believe in cookie principle Is your system based solely on cookies or I can get software custom builds?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Upon request to")} <a href="mailto:affiliates@avs4you.com" target="_blank">affiliates@avs4you.com</a> {this.props.t("we can make custom builds for you In this case the link from software will contain your affiliate ID However, we do recommend to use cookies additionally")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="Can I use your graphics/text in my custom builds/websites?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I use your graphics/text in my custom builds/websites?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line")}: <a href="mailto:affiliates@avs4you.com" target="_blank">affiliates@avs4you.com</a>.
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName="How long do you allow cookies to be stored on a customer's PC?">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("How long do you allow cookies to be stored on a customer's PC?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period")}
                     </Text>
