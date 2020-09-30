@@ -132,7 +132,7 @@
 	"File Size": "File Size:",
 	"Current Version": "Current Version:",
 	"Platforms": "Platforms:",
-	"Windows 10, 8.1, 8, 7, XP, 2003, Vista no Mac OS Linux support": "Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)",
+	"Windows 10, 81, 8, 7, XP, 2003, Vista no Mac OS Linux support": "Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)",
 	"By clicking the Download button you agree to": "By clicking the Download button you agree to",
 	"our End User License Agreement": "our End User License Agreement",
 	"Technical specification": "Technical specification",
@@ -153,10 +153,10 @@
 	"Windows Media Player": "Windows Media Player:",
 	"11 or higher for WMV video playback": "11 or higher for WMV video playback",
 	"DirectX": "DirectX:",
-	"Microsoft DirectX 9.0c or later": "Microsoft DirectX 9.0c or later",
+	"Microsoft DirectX 90c or later": "Microsoft DirectX 9.0c or later",
 	"RECOMMENDED SYSTEM REQUIREMENTS": "RECOMMENDED SYSTEM REQUIREMENTS",
 	"Operating system": "Operating system:",
-	"Windows 10/Windows 8.x/Windows 7": "Windows 10/Windows 8.x/Windows 7",
+	"Windows 10/Windows 8x/Windows 7": "Windows 10/Windows 8.x/Windows 7",
 	"Video": "Video:",	
 	"compatible sound card": "compatible sound card",
 	"Administrative permissions for program installation and Internet connection for activation": "Administrative permissions for program installation and Internet connection for activation",
@@ -764,9 +764,9 @@
 	"Our managers carefully lead you through the purchase process and provide you with all accompanying documentation":"Our managers carefully lead you through the purchase process and provide you with all accompanying documentation.",
 	"Benefit from flexible discounts on volume licenses The more licenses you purchase at once, the higher the discount is": "Benefit from flexible discounts on volume licenses. The more licenses you purchase at once, the higher the discount is.",
 	"Download reseller prose list": "Download reseller prose list",
-
+	"If you have any questions about AVS4YOU partnership program, please contact us at sales" : "If you have any questions about AVS4YOU partnership program, please contact us at sales",
 	"Send your request": "Send your request",
-
+	
 
 
 	"*****************************Privacy Policy********************************": "*****************************Privacy Policy********************************",

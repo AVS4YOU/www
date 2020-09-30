@@ -14,6 +14,7 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import LinkHref from '../components/link-href';
 
 import AvatarJames from '../images/avs-video-editor/james_k.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';

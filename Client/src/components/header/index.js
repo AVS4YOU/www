@@ -15,7 +15,7 @@ const Header = ({availableLocales, locale, t}) => {
             </MenuItem>
             <MenuItem menuItemText={t("Audio software")}>
                 <DropdownElement path="/avs-audio-editor.aspx" headerText="AVS Audio Editor" descriptionText={t("Easily edit and create audio")}/>
-                <DropdownElement path="/avs-audio-converter.aspx" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
+                <DropdownElement path="/avs-free-audio-converter.aspx" headerText="AVS Audio Converter" descriptionText={t("Convert all popular audio formats")}/>
             </MenuItem>
             <MenuItem menuItemText={t("Free software")}>
                 <DropdownElement path="/avs-free-media-player.aspx" headerText="AVS Media Player" descriptionText={t("Watch audio and video")}/>
