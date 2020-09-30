@@ -1115,7 +1115,7 @@ render(){
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Write an article about AVS4YOU programs, publish it in your blog or website, or")}</span></li>
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Make a video and post it on your YouTube channel, or")}</span></li>
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Share AVS4YOU.com in 3 different social networks")}.</span></li>
-             {this.props.t("Once done, contact us at")} <a href="sales@avs4you.com">sales@avs4you.com</a> {this.props.t("with links provided")}. 
+             {this.props.t("Once done, contact us at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> {this.props.t("with links provided")}. 
              <br />{this.props.t("The free license key gives you an annual access to the chosen program with all paid features included")}.</div>
     </div>
     </div>
