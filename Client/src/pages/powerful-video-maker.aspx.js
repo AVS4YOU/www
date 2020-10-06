@@ -50,7 +50,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
+                <Text fontSize={66} color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
                 <div className="vel_description">{this.props.t("Powerful video maker")}<br />
                 {this.props.t("Create professional-looking movies easily")}</div>
                 <div className="vel_top_buttons">
@@ -148,14 +148,14 @@ render(){
                     <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd, UK")}</a> {this.props.t("2020  All rights reserved")}</div>
+                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-                <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-tw-footer" target="_blank" title="Twitter" href="https://www.twitter.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-gp-footer" target="_blank" title="Google+" href="https://plus.google.com/u/0/b/105357609614583331144/+avs4you/posts"></a>
-                <a className="lfns-button-footer lfnsb-yt-footer" target="_blank" title="YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            </div>
+            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+        </div>
         </div>
     </div>  
         </Layout>

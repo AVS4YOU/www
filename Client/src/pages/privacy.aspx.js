@@ -57,7 +57,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("Online Media Technologies Ltd collects Personal Data (hereinafter also Data) in case you choose to register with AVS4YOU service")}
           </Text>
           <Text className="body-privacy__text paragraph">
-            {this.props.t("We ask users to provide following Data:")}
+            {this.props.t("We ask users to provide following Data")}
           </Text>
           <div className="body-privacy__text">
             <Text className="paragraph-text">
@@ -75,7 +75,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("Aforementioned Data is collected only upon user either enters particular information or uploads it on his own initiative using AVS4YOU forms and tools")}
           </Text>
           <Text className="body-privacy__text paragraph">
-            {this.props.t("We also collect following technical data:")}
+            {this.props.t("We also collect following technical data")}
           </Text>
           <div className="body-privacy__text">
             <Text className="paragraph-text">
@@ -105,7 +105,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("We do not link IP addresses to anything personally identifiable This means, for instance, that a user's session will be tracked, but the user will remain anonymous We do not use this information for any other purposes")}
           </Text>
           <Text className="body-privacy__text paragraph">
-            {this.props.t("We also collect certain categories of personal information about users from other sources In particular:")}
+            {this.props.t("We also collect certain categories of personal information about users from other sources In particular")}
           </Text>
 
           <div className="body-privacy__text">
@@ -125,7 +125,7 @@ class Privacy extends React.PureComponent {
           <Text className="subHeader">{this.props.t("How we use Personal Data")}</Text>
 
           <Text className="body-privacy__text paragraph">
-            {this.props.t("We collect and processes Data for the following purposes:")}
+            {this.props.t("We collect and processes Data for the following purposes")}
           </Text>
 
           <div className="body-privacy__text">
@@ -199,7 +199,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("Our website does not use cookies to collect Personal Data from your computer that was not initially sent as a cookie")}
           </Text>
           <Text className="body-privacy__text paragraph">
-            {this.props.t("What cookies do we use and why:")}
+            {this.props.t("What cookies do we use and why")}
           </Text>
           <div className="body-privacy__text">
             <Text className="paragraph-text">
@@ -219,7 +219,7 @@ class Privacy extends React.PureComponent {
           <Text className="subHeader">{this.props.t("Data Protection")}</Text>
 
           <Text className="body-privacy__text">{this.props.t("Your Forum Account is password-protected so that you have secure access to your Forum account and Personal Data stored on your website It is the user's responsibility to protect the security of their password We do not take responsibility for any undesirable information disclosure due to password insecurity")}</Text>
-          <Text className="body-privacy__text paragraph">{this.props.t("To minimize any personal data breach we implemented following different security measures including:")}</Text>
+          <Text className="body-privacy__text paragraph">{this.props.t("To minimize any personal data breach we implemented following different security measures including")}</Text>
 
           <div className="body-privacy__text">
             <Text className="paragraph-text">{this.props.t("physical access control")}</Text>
@@ -233,10 +233,10 @@ class Privacy extends React.PureComponent {
 
           <Text className="body-privacy__text">{this.props.t("We use third-party service providers to provide hosting and analytics")}</Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link:")} <a href="https://aws.amazon.com/privacy" target="_blank">https://aws.amazon.com/privacy</a>
+          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link")} <a href="https://aws.amazon.com/privacy" target="_blank">https://aws.amazon.com/privacy</a>.
           </Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy:")} <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>
+          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy")} <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>.
           </Text>
           <Text className="body-privacy__text">
           <b>{this.props.t("Google Ads & Google Merchant Center")}</b>{this.props.t("We use the services of Google Ads and Google Merchant Center to draw attention to our offers by means of advertising materials and advertising campaigns on external websites In terms of the advertising campaign data we pursue thereby the aim of showing you interest-based advertisements and of making a fair calculation of advertising costs")}

@@ -50,7 +50,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
+                <Text fontSize={66} color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
                 <div className="vel_description">{this.props.t("Trim, cut, split, crop, merge, rotate videos to create impressive movies")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
@@ -98,7 +98,7 @@ render(){
     HeaderSlider = {this.props.t("5 Precise video cutting tools")}
     SliderText = {[    
         { 
-          imgText: this.props.t("Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor")}, 
+          imgText: this.props.t("Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor.")}, 
         { 
             imgText: this.props.t("Cut videos to the desired length or delete unnecessary scenes This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device")},   
         { 
@@ -151,11 +151,11 @@ render(){
                 <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-                <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-tw-footer" target="_blank" title="Twitter" href="https://www.twitter.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-gp-footer" target="_blank" title="Google+" href="https://plus.google.com/u/0/b/105357609614583331144/+avs4you/posts"></a>
-                <a className="lfns-button-footer lfnsb-yt-footer" target="_blank" title="YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            </div>
+            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+        </div>
         </div>
     </div>   
         

@@ -168,10 +168,15 @@ render(){
           {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
-            <Form
-            showAddFile={false}
+            <Form 
+              formHeader={this.props.t("To become an AVS4YOU reseller, please, use the form below:")}
+              nameAuthor={this.props.t("Name")}
+              emailAddressText={this.props.t("Email address")}
+              numberOfSubscriptions={this.props.t("Number of subscriptions")}
+              comment={this.props.t("Give us a brief description of your specific needs")}
+              buttonTextSend={this.props.t("Send your request")}
             />
-            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>.</Text>
+            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>
