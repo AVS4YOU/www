@@ -84,9 +84,6 @@ height: 70px;
     margin:auto;
     width: 560px;
   }
-  .velfb_description{
-    height: 60px;
-  }
   .velfb_description_Text{
     font-size: 14px;
   }

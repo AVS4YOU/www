@@ -284,6 +284,7 @@ export class CinemaSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: true,
+            centerPadding: '455px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
               {

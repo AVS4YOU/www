@@ -99,7 +99,7 @@ render(){
                     </div>
                     <div className="velf_block velfeat_block3">
                         <Text className="TextH3">{this.props.t("An array of creative features")}</Text>
-                        <div className="velfb_description">{this.props.t("Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.")}</div>
+                        <div className="velfb_description">{this.props.t("Apply 300+ modern video effects to make breathtaking videos Chroma key color tuning slow motion video stabilization screen capture and others are the most popular")}</div>
                     </div>
                     <div className="velf_block velfeat_block4">
                         <Text className="TextH3">{this.props.t("Create video for your Devices")}</Text>

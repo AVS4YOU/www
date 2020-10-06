@@ -98,7 +98,7 @@ render(){
     HeaderSlider = {this.props.t("5 Precise video cutting tools")}
     SliderText = {[    
         { 
-          imgText: this.props.t("Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor.")}, 
+          imgText: this.props.t("Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor")}, 
         { 
             imgText: this.props.t("Cut videos to the desired length or delete unnecessary scenes This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device")},   
         { 

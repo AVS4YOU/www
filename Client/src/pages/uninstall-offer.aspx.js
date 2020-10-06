@@ -97,7 +97,7 @@ render(){
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                {this.props.t("30- day Money-back guarantee")}
+                {this.props.t("30- day money-back guarantee")}
             </div>
             </div>
             <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.202734737.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>

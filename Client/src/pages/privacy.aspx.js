@@ -160,7 +160,7 @@ class Privacy extends React.PureComponent {
             <b>{this.props.t("Data portability right")}</b> {this.props.t("You have the right to request a digital copy of your Data in a structured, commonly used and machine-readable format to be able to move from one service to another This can be achieved by emailing us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("and we will provide you with an electronic file containing your Data")}
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.
+            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>
           </Text>
           <Text className="body-privacy__text">
             <b>{this.props.t("Right to restriction of processing")}</b> {this.props.t("You also have the right to request that we cease to process or use your Data in any way If you choose to do so, your Data will become unavailable for everyone, but it won't be deleted, so you can restore it at any time To achieve this goal, please email us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.
@@ -233,10 +233,10 @@ class Privacy extends React.PureComponent {
 
           <Text className="body-privacy__text">{this.props.t("We use third-party service providers to provide hosting and analytics")}</Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link")} <a href="https://aws.amazon.com/privacy" target="_blank">https://aws.amazon.com/privacy</a>.
+          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link")} <a href="https://aws.amazon.com/privacy" target="_blank">https://aws.amazon.com/privacy</a>
           </Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy")} <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>.
+          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy")} <a href="https://policies.google.com/privacy?hl=en" target="_blank">https://policies.google.com/privacy?hl=en</a>
           </Text>
           <Text className="body-privacy__text">
           <b>{this.props.t("Google Ads & Google Merchant Center")}</b>{this.props.t("We use the services of Google Ads and Google Merchant Center to draw attention to our offers by means of advertising materials and advertising campaigns on external websites In terms of the advertising campaign data we pursue thereby the aim of showing you interest-based advertisements and of making a fair calculation of advertising costs")}
