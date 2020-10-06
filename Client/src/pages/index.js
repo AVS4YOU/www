@@ -429,7 +429,7 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
-                          smallButtonLink="/avs-audio-converter.aspx"   
+                          smallButtonLink="/avs-free-audio-converter.aspx"   
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Convert all key audio formats")}</Text>
