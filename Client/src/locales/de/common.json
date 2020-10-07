@@ -183,6 +183,19 @@
     "Occupation":"Berufsbezeichnung",
     "Institution":"Einrichtung",
     "Number of subscriptions":"Anzahl der Abonnements",
+    "(no Mac OS/ Linux support)" : "(Mac OS/ Linux nicht unterstützt)",
+    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher" : "Dual-Core (Intel Core 2 Duo oder gleichwertiger AMD-Prozessor)",
+    "4 GB or higher" : "4 GB oder höher",
+    "3 GB or higher" : "3 GB oder höher",
+    "1 GB or higher" : "1 GB oder höher",
+    "Quad core (Intel Core i5 series or AMD equivalent)" : "Quad Core (Intel Core i5-Serie oder gleichwertiger AMD-Prozessor)",
+    "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration" : "Intel HD Graphics, NVIDIA GeForce für Hardwarebeschleunigung empfohlen",
+    "Windows 10/Windows 8x/Windows 7 compatible sound card" : "Mit Windows 10/Windows 8.x/Windows 7 kompatible Soundkarte",
+    "for importing from CD" : "Rekorder für Importierung der Daten von CD",
+    "Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD kompatibel mit 1.86 GHz oder höher",
+    "Dual core (Intel Core i3 series or AMD equivalent)" : "Dual Core (Intel Core i3-Serie oder gleichwertiger AMD-Prozessor)",
+
+    
 
 
 

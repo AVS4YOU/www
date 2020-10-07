@@ -84,8 +84,8 @@ render(){
             </div>
             <div className="vel_quote">
                 <blockquote>
-                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion`)}
-                    <div className="quote_user">{this.props.t("William Holmes")}</div>
+                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product in my opinion`)}
+                <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
         </div>
@@ -111,7 +111,7 @@ render(){
           ]}   />
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <Text className="TextH2">{this.props.t("Innovative movie editing tools")}</Text>
+            <Text fontSize={40} className="TextH2">{this.props.t("Innovative movie editing tools")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_video_1">
                     <Text fontSize={18} className="TextH3">{this.props.t("Creative video making")}</Text>

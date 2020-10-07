@@ -118,7 +118,7 @@
     "Technical specification" : "Specifiche tecniche",
     "MINIMUM SYSTEM REQUIREMENTS" : "REQUISITI MINIMI DI SISTEMA",
     "Processor" : "Processore:",
-    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher" : "AMD / Intel Core 2 Duo compatibile a 3 GHz o superiore",
+    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher " : "AMD / Intel Core 2 Duo compatibile a 3 GHz o superiore",
     "AMD / Intel Core 2 Quad compatible at 24 GHz or higher":"AMD / Intel Core 2 Duo compatibile a 2.4 GHz o superiore",
     "RAM" : "RAM:",
     "2 GB or higher" : "2 GB o superiore",
@@ -165,6 +165,19 @@
     "Occupation" : "Occupazione",
     "Institution" : "Istituzione",
     "Number of subscriptions" : "Numero di abbonamento",
+    "(no Mac OS/ Linux support)" : "(Mac OS/Linux non supportati)",
+    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher" : "Dual core (Intel Core 2 Duo o equivalente AMD)",
+    "4 GB or higher" : "4 GB o superiore",
+    "3 GB or higher" : "3 GB o superiore",
+    "1 GB or higher" : "1 GB o superiore",
+    "Quad core (Intel Core i5 series or AMD equivalent)" : "Quad core (Intel Core i5 series o equivalente AMD)",
+    "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration" : "Intel HD Graphics, NVIDIA GeForce consigliata per l'accelerazione hardware",
+    "Windows 10/Windows 8x/Windows 7 compatible sound card" : "Scheda suono compatibile con Windows 10/Windows 8.x/Windows 7",
+    "for importing from CD" : "per importare da CD",
+    "Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD a 1.86 GHz o superiore",
+    "Dual core (Intel Core i3 series or AMD equivalent)" : "Dual core (Intel Core i3 series o equivalente AMD)",
+
+
 
 
     "*****************************Avs-Video-Editor********************************" : "*****************************Avs-Video-Editor********************************",

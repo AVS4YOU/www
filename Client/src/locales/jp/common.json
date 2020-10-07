@@ -3,7 +3,7 @@
   
   
     "/": "/",
-    "urrentLanguage": "英語",
+    "CurrentLanguage": "英語",
   
   
   
@@ -162,7 +162,7 @@
     "compatible video card":"対応ビデオカード",
     "compatible sound card":"対応サウンドカード",
     "Administrative permissions for program installation and Internet connection for activation":"プログラムのインストールへの管理許可と有効化に必要なインターネット接続",
-    "Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner":"AVS4YOUÂ® プログラムでは保護されている部分のコピーはできません。ご注意ください。著作権がある部分、著作権保有者からコピー権を取得した部分のコピーにはこのソフトウェアを使用できます。",
+    "Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner":"AVS4YOU® プログラムでは保護されている部分のコピーはできません。ご注意ください。著作権がある部分、著作権保有者からコピー権を取得した部分のコピーにはこのソフトウェアを使用できます。",
     "Read more":"もっと読む",
     "subscription":"サブスクリプション",
     "Subscribe now for":"今すぐサブスクリプション",
@@ -181,6 +181,20 @@
     "Occupation":"職業",
     "Institution":"会社名",
     "Number of subscriptions":"サブスクリプション数",
+    "(no Mac OS/ Linux support)" : "(Mac OS/Linux サポートなし)",
+    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher" : "デュアルコア(Intel Core 2 Duo かAMDの相当)",
+    "4 GB or higher" : "4 GB 以上",
+    "3 GB or higher" : "3 GB 以上",
+    "1 GB or higher" : "1 GB 以上",
+    "Quad core (Intel Core i5 series or AMD equivalent)" : "クアッドコア(Intel Core i5 モデルかAMDの相当)",
+    "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration" : "ハードウェアの加速度のためにIntel HD Graphics、NVIDIA GeForceが適当です",
+    "Windows 10/Windows 8x/Windows 7 compatible sound card" : "Windows 10/Windows 8.x/Windows 7 互換のサウンドカード",
+    "for importing from CD" : "CD からインポートのため",
+    "Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD 互換プロセッサ 1.86 GHz 以上",
+    "Dual core (Intel Core i3 series or AMD equivalent)" : "デュアルコア(Intel Core i3 モデルかAMDの相当)",
+    
+
+
 
 
 
@@ -238,12 +252,12 @@
     "Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback":"HD、フル HD、2K QHD、4K UHD、DCI 4K 動画をウルトラ新規事前設定を使用して変換。高品質の動画再生を楽しめます",
     "Convert video easily and fast":"動画を簡単に素早く変換",
     "Convert videos in one click with improved settings for powerful computers":"強力なコンピューター用に改良された設定を使って、ワンクリックで動画を変換",
-    "Use hardware acceleration for video decoding by means of video cards GPU  Intel HD Graphics or NVIDIA GeForce It is available for H 264 AVC, VC-1, MPEG-2, H 265 HEVC, VP8, VP9 codecs It speeds up preview and conversion processes significantly":"ハードウェア加速化技術を使用して、ビデオカード (GPU) で動画をデコード: Intel HD グラフィックスまたは NVIDIAÂ® GeForceÂ®。H.264/AVC、VC-1、MPEG-2 コーデックに対応。プレビューと変換処理が劇的に加速",
-    "Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics":"IntelÂ® Quick Sync Video 技術を使用するハードウェア、IntelÂ® メディアデコーダーは、統合型 Intel グラフィックスを搭載する Intel CPU だけにご利用ください",
-    "Use software Intel® Media decoder for AMD and old Intel processors":"AMD と旧型 Intel プロセッサーにはソフトウェアの IntelÂ® メディアデコーダーをご利用ください",
+    "Use hardware acceleration for video decoding by means of video cards GPU  Intel HD Graphics or NVIDIA GeForce It is available for H 264 AVC, VC-1, MPEG-2, H 265 HEVC, VP8, VP9 codecs It speeds up preview and conversion processes significantly":"ハードウェア加速化技術を使用して、ビデオカード (GPU) で動画をデコード: Intel HD グラフィックスまたは NVIDIA® GeForce®。H.264/AVC、VC-1、MPEG-2 コーデックに対応。プレビューと変換処理が劇的に加速",
+    "Use hardware Intel® Media decoder with Intel® Quick Sync Video technology only for Intel CPU with integrated Intel Graphics":"Intel® Quick Sync Video 技術を使用するハードウェア、Intel® メディアデコーダーは、統合型 Intel グラフィックスを搭載する Intel CPU だけにご利用ください",
+    "Use software Intel® Media decoder for AMD and old Intel processors":"AMD と旧型 Intel プロセッサーにはソフトウェアの Intel® メディアデコーダーをご利用ください",
     "You can use a common software decoder for all processors as an alternative":"代替品として、すべてのプロセッサーに一般のソフトウェアデコーダーを利用できます",
-    "Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media":"自動モードを使用して、一般商品、IntelÂ® Media のソフトウェア、ハードウェアの中から最適なデコーダーを選択",
-    "You can use NVIDIA CUDA® decoder with NVDEC/NVCUVID technology for NVIDIA video cards":"NVIDIA ビデオカードには、NVDEC/NVCUVID 技術搭載の NVIDIA CUDAÂ® デコーダーを使用できます",
+    "Use Auto mode to choose the optimal decoder among common, hardware or software Intel® Media":"自動モードを使用して、一般商品、Intel® Media のソフトウェア、ハードウェアの中から最適なデコーダーを選択",
+    "You can use NVIDIA CUDA® decoder with NVDEC/NVCUVID technology for NVIDIA video cards":"NVIDIA ビデオカードには、NVDEC/NVCUVID 技術搭載の NVIDIA CUDA® デコーダーを使用できます",
     "Convert a large number of files at once":"一度で大量のファイルを変換",
     "Command Line Mode":"コマンドラインモード",
     "Automate routine work using ready conversion templates without clicking the program buttons manually":"いちいちプログラムボタンをクリックせずに、すぐに利用できる変換テンプレートを使用して、ルーティーン作業を自動化",
@@ -756,7 +770,7 @@
     "THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WITH YOU":"AVS4YOU ソフトウェアの使用または性能から発生したすべてのリスクは、お客様が負うものとします ",
     "NO LIABILITY FOR CONSEQUENTIAL DAMAGES":"AVS4YOU は、派生的損害には責任を負いません",
     "IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INEducation, OR ANY OTHER PECUNIARY LOSS ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE":"いかなる場合でも、ONLINE MEDIA TECHNOLOGIES LTD は、AVS4YOU ソフトウェアの使用、または使用できないことから起こる特別、偶発、非直接または派生的損害に一切の責任を負いません (制限、損失、事業利益への損害、業務評価、業務情報の損失または他金銭的損害を含むが、これに限らず)。",
-    "COPYRIGHT NOTICE Copyright":"著作権表示。Copyright Â© ",
+    "COPYRIGHT NOTICE Copyright":"著作権表示。Copyright © ",
     "ONLINE MEDIA TECHNOLOGIES LTD, ALL RIGHTS RESERVED":"Online Media Technologies Ltd, All rights reserved.",
     "Any rights not expressly granted herein are reserved":"この使用許諾契約で明示的に許可されて いな い 権利は留保されています。",
     "A license for AVS4YOU Software may not be shared or used concurrently on different computers":"AVS4YOUソフトウェアのライセ",
@@ -802,7 +816,7 @@
     "当社の収集する個人情報":"当社の収集する個人情報",
     "Online Media Technologies Ltd. では、お客様が AVS4YOU サービスに登録する場合に、個人情報 (以下、情報という) を収集しています":"Online Media Technologies Ltd. では、お客様が AVS4YOU サービスに登録する場合に、個人情報 (以下、情報という) を収集しています",
     "当社では、お客様に次の情報の提供をお願いしています":"当社では、お客様に次の情報の提供をお願いしています",
-    "氏名：ユーザーを特定し、forum.avs4you.com のフォーラムアカウント (â€œアカウントâ€) と関係する AVS4YOU サポートフォーラムの特定のユーザーネームを表示するため":"氏名：ユーザーを特定し、forum.avs4you.com のフォーラムアカウント (â€œアカウントâ€) と関係する AVS4YOU サポートフォーラムの特定のユーザーネームを表示するため",
+    "氏名：ユーザーを特定し、forum.avs4you.com のフォーラムアカウント (â€œアカウントâ€) と関係する AVS4YOU サポートフォーラムの特定のユーザーネームを表示するため":"氏名：ユーザーを特定し、forum.avs4you.com のフォーラムアカウント (€œアカウント€) と関係する AVS4YOU サポートフォーラムの特定のユーザーネームを表示するため",
     "メールアドレス：ユーザーの承認、サポートフォーラムへのアクセスを可能にし、紛失したパスワードや忘れたパスワードを回復してサポートフォーラムへアクセスを可能にするため":"メールアドレス：ユーザーの承認、サポートフォーラムへのアクセスを可能にし、紛失したパスワードや忘れたパスワードを回復してサポートフォーラムへアクセスを可能にするため",
     "AVS4YOU ソフトウェアに関するユーザーの問題に効果的にトラブルシューティングを行うためのユーザーのデバイス (OS、携帯電話、PC 構成) に関する情報":"AVS4YOU ソフトウェアに関するユーザーの問題に効果的にトラブルシューティングを行うためのユーザーのデバイス (OS、携帯電話、PC 構成) に関する情報",
     "ユーザーが特定の情報を入力するか、またはそれをユーザー自身の AVS4YOUA フォーム、ツールを使用する意思でアップロードする場合のみに、前記の情報を収集します":"ユーザーが特定の情報を入力するか、またはそれをユーザー自身の AVS4YOUA フォーム、ツールを使用する意思でアップロードする場合のみに、前記の情報を収集します",

@@ -183,7 +183,17 @@
     "Occupation":"Puesto",
     "Institution":"Institución",
     "Number of subscriptions":"Número de suscripciones",
-
+    "(no Mac OS/ Linux support)" : "(no hay soporte para SO Mac / Linux)",
+    "AMD / Intel Core 2 Duo compatible at 3 GHz or higher" : "Doble núcleo (Intel Core 2 Duo o equivalente de AMD)",
+    "4 GB or higher" : "4 GB o superior",
+    "3 GB or higher" : "3 GB o superior",
+    "1 GB or higher" : "1 GB o superior",
+    "Quad core (Intel Core i5 series or AMD equivalent)" : "Cuatro núcleos (Serie Intel Core i5 o equivalente de AMD)",
+    "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration" : "Intel HD Graphics, NVIDIA GeForce recomendado para la aceleración de hardware",
+    "Windows 10/Windows 8x/Windows 7 compatible sound card" : "tarjeta de sonido compatible con Windows 10/Windows 8.x/Windows 7",
+    "for importing from CD" : "para importar desde CD",
+    "Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD compatible a 1.86 GHz o superior",
+    "Dual core (Intel Core i3 series or AMD equivalent)" : "Doble núcleo (Serie Intel Core i3 o equivalente de AMD)",
 
 
     "*****************************Avs-Video-Editor********************************" : "*****************************Avs-Video-Editor********************************",
@@ -273,7 +283,7 @@
     "Terrance Jenkins":"Terrance Jenkins",
     "The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend":"Es supersencillo descargar y utilizar este producto. Solo tardarás un par de minutos. La empresa siempre responde. Lo recomiendo, sin ninguna duda.",
     "Lawrence Thompson":"Lawrence Thompson",
-    "I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional":"Llevo varios años utilizando AVS y puedo decir con total seguridad que es muy cómodo, fácil de usar y funcional",
+    "I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional":"Llevo varios años utilizando AVS y puedo decir con total seguridad que es muy cómodo, fácil de usar y funcional.",
     "AVS Video Converter 12":"AVS Video Converter 12",
 
 

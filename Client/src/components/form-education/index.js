@@ -686,7 +686,7 @@ class FormEducation extends React.Component {
                             className="formInput textArea"
                         />
 
-                        {this.state.fileInputsId.map((id) =>
+                        {/*{this.state.fileInputsId.map((id) =>
                             <div key={"attachFileWrapper" + id}
                                 className={[
                                     "attachFileWrapper ",
@@ -709,7 +709,7 @@ class FormEducation extends React.Component {
                                 Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg).
                                 Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.
                             </Text>
-                        </div>
+                            </div>*/}
 
                         <div className="recaptchaWrapper">
                             <ReCAPTCHA

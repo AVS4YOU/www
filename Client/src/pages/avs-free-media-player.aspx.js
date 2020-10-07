@@ -149,7 +149,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                     name: "Chen Wang",
                     avatar: AvatarChenWang,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results")
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
                   },
                   {
                     name: "Andy Stephens",
@@ -161,7 +161,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                     name: "William Holmes",
                     avatar: AvatarWilliamHolmes,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
                   }
                 ]
               }

@@ -178,6 +178,16 @@
 	"Occupation": "Occupation",
 	"Institution": "Institution",
 	"Number of subscriptions": "Number of subscriptions",
+	"(no Mac OS/ Linux support)" : "(no Mac OS/ Linux support)",
+    "4 GB or higher" : "4 GB or higher",
+    "3 GB or higher" : "3 GB or higher",
+    "1 GB or higher" : "1 GB or higher",
+    "Quad core (Intel Core i5 series or AMD equivalent)" : "Quad core (Intel Core i5 series or AMD equivalent)",
+    "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration" : "Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration",
+    "Windows 10/Windows 8x/Windows 7 compatible sound card" : "Windows 10/Windows 8.x/Windows 7 compatible sound card",
+    "for importing from CD" : "for importing from CD",
+	"Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD compatible at 1.86 GHz or higher",
+	"Dual core (Intel Core i3 series or AMD equivalent)" : "Dual core (Intel Core i3 series or AMD equivalent)",
 
 
 
@@ -213,12 +223,12 @@
 	"Create video for YouTube, Video and other video hosting websites": "Create video for YouTube, Video and other video hosting websites.",
 	"Publish your creative work in social networks": "Publish your creative work in social networks.",
 	"James K.": "James K.",
-	"For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results.": "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results.",
 	"Linda K.": "Linda K.",
-	"I love all the programs. I use the registry cleaner weekly and the video converter almost daily. You can not get a better deal for just the registry cleaner alone. The audio and video converter programs are easy to work.": "I love all the programs. I use the registry cleaner weekly and the video converter almost daily. You can not get a better deal for just the registry cleaner alone. The audio and video converter programs are easy to work.",
+	"I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work": "I love all the programs. I use the registry cleaner weekly and the video converter almost daily. You can not get a better deal for just the registry cleaner alone. The audio and video converter programs are easy to work.",
 	"Marc N.": "Marc N.",
-	"I've used several AVS products for years and they have never fallen short on what I needed them to do.": "I've used several AVS products for years and they have never fallen short on what I needed them to do.",
+	"Ive used several AVS products for years and they have never fallen short on what I needed them to do": "I've used several AVS products for years and they have never fallen short on what I needed them to do.",
 	"AVS Video Editor 9.1": "AVS Video Editor 9.1",
+	"For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results" : "For the price, this is certainly great value for money. I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results.",
 
 
 
@@ -266,7 +276,7 @@
 	"Terrance Jenkins": "Terrance Jenkins",
 	"The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend": "The product is super easy to download and use. Anyone can do this in just minutes. The company is always supportive. I highly recommend.",
 	"Lawrence Thompson": "Lawrence Thompson",
-	"I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional": "I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional",
+	"I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional": "I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional.",
 	"AVS Video Converter 12": "AVS Video Converter 12",
 
 
@@ -350,9 +360,9 @@
 	"Use a batch mode to convert or compress a large number of audio files at once": "Use a batch mode to convert or compress a large number of audio files at once.",
 	"Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode": "Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode.",
 	"John Woffod": "John Woffod",
-	"For the Holidays I had the need to convert audio files for my wife and kids After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented so far have run many dozens of M4A to WMA and MP3 conversions": "For the Holidays I had the need to convert audio files for my wife and kids After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented so far have run many dozens of M4A to WMA and MP3 conversions",
+	"For the Holidays I had the need to convert audio files for my wife and kids After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented so far have run many dozens of M4A to WMA and MP3 conversions": "For the Holidays I had the need to convert audio files for my wife and kids After using your app I saw immediately that it was well written, straight forward, easy to use, fast and very detail oriented so far have run many dozens of M4A to WMA and MP3 conversions.",
 	"Jacky Lui": "Jacky Lui",
-	"The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software.": "The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software.",
+	"The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software": "The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software.",
 	"AVS Audio Converter 9.1": "AVS Audio Converter 9.1",
 
 
@@ -1039,10 +1049,10 @@
 "Merge" : "Merge",
 "Crop" : "Crop",
 "5 Precise video cutting tools" : "5 Precise video cutting tools",
-"Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor" : "Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor.",
+"Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor" : "Want to cut out a particular scene or remove shaky and useless parts from a camcorder video to save space on your hard drive? You can effectively keep any part of the video but remove the rest in Timeline editing with the inbuilt video trimmer in AVS Video Editor.",
 "Cut videos to the desired length or delete unnecessary scenes This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device" : "Cut videos to the desired length or delete unnecessary scenes. This video cutter will shorten your video in a few clicks so that you can easily playback your video clips on a mobile device.",
 "Split videos regardless both the video size and formats Cut your clip into smaller sections, without losing any frames in the process The clips can then be trimmed or edited separately" : "Split videos regardless both the video size and formats. Cut your clip into smaller sections, without losing any frames in the process. The clips can then be trimmed or edited separately.",
-"Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems Join clips into a long movie in a couple of clicks" : "Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks.",
+"Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks" : "Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks.",
 "Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements" : "Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements.",
 
 "*****************************POWERFUL-VIDEO-MAKER********************************" : "*****************************POWERFUL-VIDEO-MAKER********************************",
@@ -1076,7 +1086,7 @@
 "3 Reasons Why People Choose AVS4YOU" : "3 Reasons Why People Choose AVS4YOU",
 "Create video for your Devices" : "Create video for your Devices",
 "Save your final projects to the necessary format which is supported by your device be it a smartphone phablet or a player No need to adjust special settings just select your gadget from the list" : "Save your final projects to the necessary format which is supported by your device be it a smartphone, phablet or a player. No need to adjust special settings, just select your gadget from the list.",
-"Apply 300+ modern video effects to make breathtaking videos Chroma key color tuning slow motion video stabilization screen capture and others are the most popular" : "Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.",
+"Apply 300+ modern video effects to make breathtaking videos. Chroma key color tuning slow motion video stabilization screen capture and others are the most popular" : "Apply 300+ modern video effects to make breathtaking videos. Chroma key, color tuning, slow motion, video stabilization, screen capture and others are the most popular.",
 "An array of creative features" : "An array of creative features",
 "2k and 4k video editing" : "2k and 4k video editing",
 "Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology Achieve amazing results editing high resolution video files" : "Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.",

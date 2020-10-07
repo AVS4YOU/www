@@ -86,7 +86,7 @@ render(){
     </div>
     <div className="vel_features">
         <div className="vel_narrow">
-            <Text fontSize={60} className="TextH2">{this.props.t("4 reasons to choose AVS Video Editor")}</Text>
+            <Text fontSize={40} className="TextH2">{this.props.t("4 reasons to choose AVS Video Editor")}</Text>
             <div className="vel_features_block">
                 <div className="vel_feature_rotate">
                     <div className="velf_block velfeat_block1">
@@ -111,7 +111,7 @@ render(){
     </div>
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <Text fontSize={60} className="TextH2">{this.props.t("3 Reasons Why People Choose AVS4YOU")}</Text>
+            <Text fontSize={40} className="TextH2">{this.props.t("3 Reasons Why People Choose AVS4YOU")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_1">
                     <Text className="TextH4">{this.props.t("User-friendly Interface")}</Text>
