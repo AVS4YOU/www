@@ -189,7 +189,7 @@
 	"Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD compatible at 1.86 GHz or higher",
 	"Dual core (Intel Core i3 series or AMD equivalent)" : "Dual core (Intel Core i3 series or AMD equivalent)",
 	"Windows 10/Windows 8x/Windows 7 compatible video card" : "Windows 10/Windows 8.x/Windows 7 compatible video card",
-
+	"Free AVS Media Player 52" : "Free AVS Media Player 5.2",
 
 
 
@@ -455,7 +455,11 @@
 	"If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days": "If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days.",
 	"Check our Refund Policy": "Check our Refund Policy",
 	"to find out if you are eligible for a full refund": "to find out if you are eligible for a full refund.",
-
+	"$69/00" : "69.00",
+	"39/00" : "39.00",
+	"59/00" : "59.00",
+	"$199/00" : "$199.00",
+	"$" : "$",
 
 
 	"*****************************404********************************": "*****************************404********************************",
@@ -505,7 +509,7 @@
 	"Customer Support": "Customer Support",
 	"For assistance with purchasing and using our products, please visit our ": "For assistance with purchasing and using our products, please visit our ",
 	"Support Center": "Support Center.",
-
+	"AVS4YOU is the home of ultimate multimedia editing family Learn more about our company its history who we are and what we value" : "AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.",
 
 
 
@@ -712,6 +716,8 @@
 	"Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg). Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.": "Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg). Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.",
 	"By clicking this button, you agree to our": "By clicking this button, you agree to our",
 	"Terms of Service.": "Terms of Service.",
+	"Terms of Service" : "Terms of Service",
+	"For more details and discount requests, please write at" : "For more details and discount requests, please write at",
 
 
 
@@ -853,7 +859,7 @@
 	"randomly-generated brute-force resistant staff passwords": "randomly-generated brute-force resistant staff passwords;",
 	"strong cipher-encryption for all mediums containing Personal Data (where appropriate)": "strong cipher-encryption for all mediums containing Personal Data (where appropriate);",
 	"end-to-end encryption using modern TLS (Transport Layer Security) cryptographic protocol for all connections containing Personal Data": "end-to-end encryption using modern TLS (Transport Layer Security) cryptographic protocol for all connections containing Personal Data;",
-	"other safety measures to reduce the risk of unauthorized access": "other safety measures to reduce the risk of unauthorized access;",
+	"other safety measures to reduce the risk of unauthorized access": "other safety measures to reduce the risk of unauthorized access.",
 	"Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns. Users may adjust their privacy settings on how their data is used for advertising purposes. For more information please go to",
 	"We use third-party service providers to provide hosting and analytics": "We use third-party service providers to provide hosting and analytics.",
 	"AWS Amazon file hosting": "AWS Amazon file hosting",
@@ -873,6 +879,7 @@
 	"If you have any questions about our Privacy Policy, feel free to email us at": "If you have any questions about our Privacy Policy, feel free to email us at",
 	"Data Protection Officer": "Data Protection Officer.",
 	"You can contact Data Protection Officer by emailing": "You can contact Data Protection Officer by emailing",
+	"There is no need to place links on the website Request a quote whenever your customer needs AVS4YOU multimedia suite" : "There is no need to place links on the website. Request a quote whenever your customer needs AVS4YOU multimedia suite.",
 
 
 
@@ -1044,8 +1051,8 @@
 "Edit HD videos of any size" : "Edit HD videos of any size",
 "Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes" : "Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes.",
 "Download AVS Video Editor" : "Download AVS Video Editor",
-"Online Media Technologies Ltd UK" : "Online Media Technologies Ltd., UK",
-"2020  All rights reserved" : "2020  All rights reserved.",
+"Online Media Technologies Ltd, UK" : "Online Media Technologies Ltd., UK",
+"All rights reserved" : "All rights reserved.",
 "Trim and multi-trim" : "Trim and multi-trim",
 "Cut" : "Cut",
 "Merge" : "Merge",

@@ -9,7 +9,7 @@ import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
 import ScrollUpButton from '../components/scroll-up-button';
-
+import LinkHref from '../components/link-href';
 class partners extends React.PureComponent {
 
 render(){
@@ -19,7 +19,7 @@ render(){
         className="partners" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU partnership Program for resellers"
+        title={this.props.t("AVS4YOU partnership Program for resellers")}
         metaDescription="AVS4YOU Reseller program: Safe and cost-effective"
         metaKeywords=""
       >
@@ -70,7 +70,7 @@ render(){
               {this.props.t("No registration required")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Our managers carefully lead you through the purchase process and provide you with all accompanying documentation")}
+                {this.props.t("There is no need to place links on the website Request a quote whenever your customer needs AVS4YOU multimedia suite")}
               </Text>
             </div>
 
@@ -84,16 +84,15 @@ render(){
             </div>
           </div>
           <div className="body-reseller__button-wrapper">
-            <Button href="https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners.pdf" className="body-reseller__button" textClassName="body-reseller__button-text">
-            {this.props.t("Download reseller prose list")}
+          <LinkHref mainLink="https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners" toLink=".pdf">
+            <Button className="body-reseller__button" textClassName="body-reseller__button-text">
+                {this.props.t("Download reseller prose list")}
             </Button>
+          </LinkHref>
           </div>
         </div>
         <div className="form screen-wrapper">
           <img src={mailIcon}/>
-          <Text as="h2" className="common__heading">
-          {this.props.t("Why AVS4YOU Reseller Program")}
-          </Text>
           <div className="reseller-from-wrapper">
             <Form
               formHeader={this.props.t("To become an AVS4YOU reseller, please, use the form below:")}

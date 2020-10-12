@@ -16,7 +16,7 @@ render(){
         className="about-us-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family Learn more about our company its history who we are and what we value")}
         metaDescription={this.props.t("")}
         metaKeywords={this.props.t("")}
       >

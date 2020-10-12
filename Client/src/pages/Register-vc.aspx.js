@@ -81,7 +81,7 @@ render(){
        className="register" 
        pageContext={this.props.pageContext} 
        t={this.props.t}
-       title="AVS4YOU Get professionals multimedia tools"
+       title={this.props.t("AVS4YOU Get professionals multimedia tools")}
        metaDescription="AVS4YOU: Professional Multimedia Tools"
        metaKeywords=""
       >

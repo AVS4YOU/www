@@ -40,7 +40,7 @@ class avsFreeImageConverter extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF"
+        title={this.props.t("AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF")}
         metaDescription="Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter. Resize photos,rotate, adjust color and contrast, apply photo effects."
         metaKeywords="Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize"
       >
@@ -184,7 +184,7 @@ class avsFreeImageConverter extends React.PureComponent {
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSImageConverter.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSImageConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>

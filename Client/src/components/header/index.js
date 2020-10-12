@@ -25,10 +25,10 @@ const Header = ({availableLocales, locale, t}) => {
             <MenuItem path="/downloads.aspx" menuItemText={t("Download")} isDropdown={false} />
             <MenuItem path="/register.aspx" menuItemText={t("Buy now")} isDropdown={false} />
             <MenuItem menuItemText={t("Help center")}>
-                <DropdownElement href="https://support.avs4you.com" headerText={t("Support form")}/>
-                <DropdownElement href="https://www.avs4you.com/guides/index.aspx" headerText={t("Guides")}/>
-                <DropdownElement href="https://onlinehelp.avs4you.com/index.aspx" headerText={t("Knowledge center")}/>
-                <DropdownElement href="https://support.avs4you.com/faq.aspx" headerText={t("FAQ")}/>
+                <DropdownElement href={locale === "en" ? "https://support.avs4you.com" : "https://support.avs4you.com/" + locale} headerText={t("Support form")}/>
+                <DropdownElement href={locale === "en" ? "https://www.avs4you.com/guides/index.aspx" : "https://www.avs4you.com/" + locale + "/guides/index.aspx"} headerText={t("Guides")}/>
+                <DropdownElement href={locale === "en" ? "https://onlinehelp.avs4you.com/index.aspx" : "https://onlinehelp.avs4you.com/" + locale + "/index.aspx"} headerText={t("Knowledge center")}/>
+                <DropdownElement href={locale === "en" ? "https://support.avs4you.com/faq.aspx" : "https://support.avs4you.com/" + locale + "/faq.aspx" } headerText={t("FAQ")}/>
             </MenuItem>
         </MenuWrapper>
     )

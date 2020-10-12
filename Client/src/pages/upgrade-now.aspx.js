@@ -181,8 +181,7 @@ render(){
         className="upgrade-now-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU is the home of ultimate multimedia editing family.
-        Learn more about our company, its history, who we are and what we value."
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
         metaDescription=""
         metaKeywords=""
       >

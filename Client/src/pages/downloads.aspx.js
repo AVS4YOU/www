@@ -11,7 +11,7 @@ import HeaderDownloadButtons from "../components/header-download-buttons";
 import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
-
+import LinkHref from '../components/link-href';
 class Download extends React.PureComponent {
 
 render(){
@@ -21,7 +21,7 @@ render(){
         className="download" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU Download multimedia software for free!"
+        title={this.props.t("AVS4YOU Download multimedia software for free!")}
         metaDescription="AVS4YOU Download: safely download programs"
         metaKeywords=""
       >
@@ -59,7 +59,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoReMaker.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {VideoReMaker.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
@@ -75,7 +75,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoEditor.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {VideoEditor.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -91,7 +91,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoConverter.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {VideoConverter.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
@@ -103,7 +103,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {MediaPlayer.version}</Text>
                 <Text as="p">{this.props.t("Release Datev")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {MediaPlayer.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
@@ -121,7 +121,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {AudioEditor.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {AudioEditor.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -138,7 +138,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {AudioConverter.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} {AudioConverter.platforms}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://new.avs4you.com/downloads/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
@@ -156,9 +156,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
+                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx">
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
+                  <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
+                </LinkHref>
               </div>
             </PanelCollapse>
 
@@ -170,10 +172,12 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
+                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-activate-the-avs4you-software.aspx">
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
+                  <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
-              </div>
+                </LinkHref>
+              </div>          
             </PanelCollapse>
 
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to reinstall AVS4YOU programs?")}>
@@ -184,9 +188,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
+                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-reinstall-avs4you-programs.aspx">
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/how-to-reinstall-avs4you-programs.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
+                  <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
+                </LinkHref>
               </div>
             </PanelCollapse>
 
@@ -195,9 +201,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict")}</Text>   
                 </div>
+                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/How-to-uninstall-AVS4YOU-programs.aspx">
                 <div className="info-block">
-                  <a target="_blank" href="https://www.avs4you.com/guides/How-to-uninstall-AVS4YOU-programs.aspx"><Text as="span">{this.props.t("Read more")} &#8594;</Text></a>
+                  <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
+                </LinkHref>
               </div>
             </PanelCollapse>
           </div>

@@ -40,7 +40,7 @@ class avsFreeDiscCreator extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Free Disc Creator is a free CD /DVD burning software."
+        title={this.props.t("AVS Free Disc Creator is a free CD /DVD burning software.")}
         metaDescription="Copy DVD with AVS Free Disc Creator software. Write DVD/CD/Blu-ray data discs. Download free DVD /Blu-ray burning software!"
         metaKeywords="copy dvd, Free Disc Creator, blu-ray"
       >
@@ -176,7 +176,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDiscCreator.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDiscCreator.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>

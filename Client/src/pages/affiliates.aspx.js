@@ -9,6 +9,7 @@ import ReviewScreen from '../components/review-screen';
 import ContentSelector from '../components/content-selector';
 import ScrollUpButton from '../components/scroll-up-button';
 import PanelCollapse from "../components/panel-collapse";
+import LinkHref from "../components/link-href";
 
 class Affiliates extends React.PureComponent {
 
@@ -19,7 +20,7 @@ render(){
         className="affiliates" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="Earn money with the affiliate program AVS4YOU"
+        title={this.props.t("Earn money with the affiliate program AVS4YOU")}
         metaDescription="AVS4YOU affiliate program: earn money with Links"
         metaKeywords=""
       >
@@ -162,7 +163,7 @@ render(){
               {this.props.t("Place links to your website")}
               </Text>
               <Text className="choose-program__content-text">
-                {this.props.t("Please use our")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("link generator")}</a> {this.props.t("to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link")}
+                {this.props.t("Please use our")} <LinkHref mainLink="https://stat.avs4you.com/linkgenerationarea.aspx?lng=" toLink="">{this.props.t("link generator")}</LinkHref> {this.props.t("to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link")}
               </Text>
             </div>
 

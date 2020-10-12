@@ -9,6 +9,7 @@ import bgBlue from '../../images/main-page/back_picture_blue.svg';
 import bgOrange from '../../images/main-page/back_picture_orange.svg';
 import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
+import LinkProducts from '../link';
 import { useTranslation } from 'react-i18next';
 
 const formSended = new Cookies().get("formSended");
@@ -367,13 +368,15 @@ const TextContent = (props, touchDevice) =>
                                 </Link>
                             }
                             {props.smallButtonLink && !formSended 
-                                ? <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>
-                                : <Button className="secondaryButton mobileSended" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>}
+                                ? 
+                                <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
+                                : <Button className="secondaryButton mobileSended" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
+                                }
                         </div>  
                     :
                         <div className="buttonsWrapper">
                             {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
-                            {props.smallButtonLink && <Button className="secondaryButton" href={props.smallButtonLink} color="#333333" background={false}>{t("Learn more")}</Button>}
+                            {props.smallButtonLink && <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
                         </div>  
                 }
   

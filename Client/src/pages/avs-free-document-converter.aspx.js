@@ -40,7 +40,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Free Document Converter converts Doc to PDF, DOCX, MOBI"
+        title={this.props.t("AVS Free Document Converter converts Doc to PDF, DOCX, MOBI")}
         metaDescription="Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter. Convert doc to JPEG, PNG, GIF for free. Add a text watermark, encrypt PDF files."
         metaKeywords="document converter, convert pdf to word document, avs docs converter, docs converter, word to pdf converter, jpg to pdf converter, microsoft word to pdf converter, docs conversion, docs convert to pdf, docs to doc converter, docx to doc converter, djvu converter, odt  converter, xps  converter doc, xps  converter, xps  to pdf, convert  pdf, mobi  converter, djvu  to pdf, djvu  to pdf converter, djvu  reader, convert  epub to mobi, convert  pdf to jpg, universal  document converter, epub  converter, mobi  to epub, convert  djvu to pdf, pdf  to mobi converter, word  converter, convert  html, pdf  creator, pdf  converter"
       >
@@ -175,7 +175,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDocumentConverter.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDocumentConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>

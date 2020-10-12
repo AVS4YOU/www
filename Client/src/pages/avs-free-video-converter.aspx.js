@@ -15,6 +15,7 @@ import ImageGQL from '../components/image-gql';
 import {VideoConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
+import LinkHref from '../components/link-href';
 
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
@@ -42,7 +43,7 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="Convert any video with AVS Free Video Converter for Windows"
+        title={this.props.t("Convert any video with AVS Free Video Converter for Windows")}
         metaDescription="AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV, FLV and others absolutely free. Download Free AVS Video Converter"
         metaKeywords="free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion"
       >
@@ -51,7 +52,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">Free
+                <Text as="span" className="flagBackground header">{this.props.t("Free")}
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
@@ -95,7 +96,9 @@ render(){
               <Text className="ListItem">{this.props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
               <Text className="ListItem">{this.props.t("Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc")}</Text>
               <Text className="ListItem">{this.props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text>
-              <Text as="a" href="https://onlinehelp.avs4you.com/avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx" target="_blank" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
+              <LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx">
+                <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
+              </LinkHref>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -261,7 +264,7 @@ render(){
                     </div>
                   </div>
                 </div>
-                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>{this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
+                <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>* {this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
                 <div className="attentionBlock">
                   <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
                 </div>
