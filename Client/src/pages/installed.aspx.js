@@ -6,6 +6,8 @@ import Layout from "../components/layout";
 import styled from 'styled-components';
 import Slider from "react-slick";
 import LinkImage from "../components/link-image";
+import LinkHref from "../components/link-href";
+import Link from "../components/link";
 
 import uploadMediaFiles from "../images/installed/abs1.webp";
 import cutOrTrim from "../images/installed/abs2.webp";
@@ -514,13 +516,18 @@ const StyledFooter = styled.div`
     margin: 0;
     padding: 0 0 0 12px;
     }
-        .landing-footer-narrow ul li:after,
-        ul.top-menu li:after {
+        .landing-footer-narrow ul li:after{
         content: '|';
         display: inline-block;
         margin: 0 0 0 12px;
         color: #fff;
         }
+        ul.top-menu li:after {
+            content: '|';
+            display: inline-block;
+            margin: 0 0 0 12px;
+            color: #222;
+            }
         .landing-footer-narrow ul li:last-of-type:after,
         ul.top-menu li:last-of-type:after {
         content: none;
@@ -717,12 +724,12 @@ render(){
          <div id="centerall">   
         <div className="landing-first-block">
             <div className="landing-first-block-narrow">
-                <a className="lfb-logo" href="https://www.avs4you.com/"></a>
+                <Link className="lfb-logo" to="/"></Link>
                 <div className="lfb-language">
                     <ul className="top-menu">
-                        <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
-                        <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                        <li><a href="https://www.avs4you.com/privacy.aspx">{this.props.t("Privacy")}</a></li>
+                        <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                        <li><LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support")}</LinkHref></li>
+                        <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
                 <div className="lfb-header-title">
@@ -770,10 +777,10 @@ render(){
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" href="https://www.avs4you.com/guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx">{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
-                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" href="https://www.avs4you.com/guides/create-video-slideshow.aspx">{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" href="https://www.avs4you.com/guides/how-to-start-working-with-video-editor.aspx">{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
-                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" href="https://onlinehelp.avs4you.com/avs-video-editor/">{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx">{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></LinkHref></div>
+                    <div className="llbn-ht-block llbnht-block2"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/create-video-slideshow.aspx">{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></LinkHref>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-start-working-with-video-editor.aspx">{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</LinkHref></div>
+                    <div className="llbn-ht-block llbnht-block4"><LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/">{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></LinkHref>{this.props.t("lang Help Center")}</div>
                 </div>
                 <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a>
                                                                                                                          </span>            
@@ -782,13 +789,13 @@ render(){
         <div className="landing-footer">
             <div className="landing-footer-narrow">
                 <ul>
-                    <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
-                    <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><a href="https://www.avs4you.com/affiliates/index.aspx">{this.props.t("Affiliates")}</a></li>
-                    <li><a href="https://www.avs4you.com/education.aspx">{this.props.t("Education")}</a></li>
-                    <li><a href="https://www.avs4you.com/partners.aspx">{this.props.t("Partners")}</a></li>
-                    <li><a href="https://www.avs4you.com/license-agreement.aspx">{this.props.t("EULA")}</a></li>
-                    <li><a href="https://www.avs4you.com/privacy.aspx">{this.props.t("Privacy")}</a></li>
+                    <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><Link to="/login.aspx">{this.props.t("Support")}</Link></li>
+                    <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
+                    <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
+                    <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>
+                    <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
+                    <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
                 <div className="lfn-social">
                     <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
@@ -796,9 +803,9 @@ render(){
                     <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
                     <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
                 </div>
-                <div className="lfn-copyright"> © <a className="blacklink" href="https://www.avs4you.com/index.aspx">
+                <div className="lfn-copyright"> © <Link className="blacklink" to="/">
                 {this.props.t("Online Media Technologies Ltd UK")}
-                </a> {this.props.t("2020 All rights reserved")}</div>
+                </Link> {this.props.t("2020 All rights reserved")}</div>
             </div>
         </div>
     
