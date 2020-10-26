@@ -101,7 +101,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Media Player")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {MediaPlayer.version}</Text>
-                <Text as="p">{this.props.t("Release Datev")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>

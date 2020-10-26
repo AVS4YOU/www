@@ -139,12 +139,12 @@
     "our End User License Agreement":"nuestro Acuerdo de licencia de usuario final",
     "Technical specification":"Especificación técnica",
     "MINIMUM SYSTEM REQUIREMENTS":"REQUISITOS MÍNIMOS DEL SISTEMA",
-    "Processor":"Processor:",
+    "Processor":"Procesador:",
     "AMD Intel Core 2 Duo compatible at 3 GHz or higher":"AMD/Intel Core 2 Duo compatible con 3 GHz o superior",
     "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"AMD/Intel Core 2 Duo compatible con 2.4 GHz o superior",
     "RAM":"RAM:",
     "2 GB or higher":"2 GB o superior",
-    "Sound":"Sound:",
+    "Sound":"Sonido:",
     "Windows compatible sound card":"tarjeta de sonido compatible con Windows",
     "Display":"Display:",
     "32-bit color depth":"profundidad cromática de 32 bits",
@@ -406,7 +406,7 @@
 
     "*****************************Download page********************************" : "*****************************Página de descarga********************************",
     "AVS4YOU Download: safely download programs":"Descarga AVS4YOU: descarga programas de forma segura",
-    "Get all AVS4YOU® software in 1 installation package":"Obtén todos los programas de AVS4YOU® en 1 paquete de instalación",
+    "Get all AVS4YOU® software in 1 installation package":"Obtén todos los programas de AVS4YOU ® en 1 paquete de instalación",
     "Read first":"Lee esto primero",
     "How to download and install the AVS4YOU software on your PC":"¿Cómo descargar e instalar el software de AVS4YOU en tu ordenador?",
     "The best and the safest way to download and install our software is to do it via our official website":"La mejor manera y la más segura de descargar e instalar nuestro software es hacerlo a través de nuestro sitio web oficial",
@@ -420,7 +420,7 @@
     "Below we ll describe how to reinstall the AVS4YOU software smoothly":"A continuación, te describimos cómo reinstalar el software de AVS4YOU fácilmente.",
     "How to uninstall AVS4YOU programs?":"¿Cómo se desinstalan los programas de AVS4YOU?",
     "In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict":"Si necesitas desinstalar los programas de AVS4YOU, sigue esta guía detallada. Recuerda que se recomienda desinstalar un programa antes de actualizarlo para evitar un posible conflicto entre las dos versiones.",
-    "Release Date":"Fecha de lanzamiento",
+    "Release Date":"Fecha de lanzamiento:",
     "Read more":"Más información",
 
 
@@ -549,9 +549,9 @@
     "Yes, the participation is absolutely free" : "Sí, la participación es absolutamente gratuita.",
     "You offer one-year and unlimited software subscriptions for users Are they the only options?" : "Vosotros ofreceis suscripción ilimitada y anual para usuarios. ¿Son las únicas opciones disponibles?",
     "Yes, we offer affiliates to sell 2 types of subscriptions to all our products this selling scheme is very attractive to users and time-proved as effective in terms of conversion" : " Sí, ofrecemos a nuestros afiliados que vendan 2 tipos de suscripciones para nuestro software: este esquema es muy atractivo para los usuarios y se ha comprobado efectivo en cuanto al ratio de conversión.",
-    "Does 'subscription model' get better conversion results as compared to usual software sale?" : "",
-    "Yes, we launched" : "",
-    "in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before" : "",
+    "Does 'subscription model' get better conversion results as compared to usual software sale?" : "¿Es cierto que el 'modelo de suscripción' da mejores resultados en comparación con el esquema clásico de ventas de software?",
+    "Yes, we launched" : "Sí, lanzamos",
+    "in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before" : "en diciembre de 2006, y el modelo de suscripción nos dio excelentes resultados: resultó mucho mejor que el sistema clásico que usamos antes.",
     "Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?" : "¿Hay manera de simplificar el proceso de generar enlaces afiliados desde AVS4YOU®?",
     "Yes, please use our" : "Sí, utiliza nuestro",
     "Affiliate Links Generator" : "Generador de enlaces afiliados",
@@ -761,7 +761,7 @@
     "Add file":"Añadir archivo",
     "Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg). Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.":"Sube archivos de registro (txt, log), documentos (doc, docx, pdf) y documentos de imagen (bmp, png, gif, jpeg). Para que otros tipos de archivos sean aceptados, se debe utilizar un compresor de archivos. El tamaño máximo de archivo es 5 Mb.",
     "By clicking this button, you agree to our":"Al hacer clic en este botón, aceptas nuestros",
-    "Terms of Service.":"Términos de servicio.",
+    "Terms of Service":"Términos de servicio",
     "If you have any questions about AVS4YOU Affiliate program, please contact us at":"Para obtener más información y aprovecharte de descuentos, por favor escribe a",
 
 
@@ -879,7 +879,7 @@
     "Right to restriction of processing":"Derecho a la restricción del procesamiento",
     "You also have the right to request that we cease to process or use your Data in any way If you choose to do so, your Data will become unavailable for everyone, but it won't be deleted, so you can restore it at any time To achieve this goal, please email us at":"También tienes derecho a solicitar que dejemos de procesar o utilizar tus Datos de cualquier manera. Si decides hacerlo, tus Datos no estarán disponibles para todo el mundo, pero no se eliminarán, por lo que podrás restaurarlos en cualquier momento. Para lograr este objetivo, envíanos un correo electrónico a",
     "Right to erasure ('Right to be forgotten')":"Derecho de supresión ('Derecho al olvido')",
-    "You are eligible to delete certain Data from our site and services Please contact us by sending e-mail at":"Usted tiene el derecho de eliminar ciertos datos de nuestro sitio y servicios. Pongase en contacto con nosotros enviando un correo electrónico a info",
+    "You are eligible to delete certain Data from our site and services Please contact us by sending e-mail at":"Tienes el derecho de eliminar ciertos datos de nuestro sitio y servicios. Pongase en contacto con nosotros enviando un correo electrónico a info",
     "Please, be aware, that sometimes we have to store some Data for a longer period of time either due to technical limitations or to comply with the law":"Ten en cuenta que en ocasiones nos vemos obligados a almacenar algunos datos durante un período de tiempo más largo, ya sea por limitaciones técnicas o para cumplir con la ley.",
     "Underage":"Menores de edad",
     "Online Media Technologies Ltd does not intentionally collect Personal Data from persons, who are minors under their applicable local legislation If you are under 16, you will need consent from your parent(s) or other legal guardian(s) before submitting any Personal Data to Online Media Technologies Ltd via AVS4YOU website or software, with the exception if such activities are allowed by applicable law of your country If we become aware that a person under 16 has provided us with personal information without appropriate aforementioned consent, we will take steps to delete such information":"Online Media Technologies Ltd. no recopila intencionadamente Datos personales de personas menores de edad según la legislación local aplicable. Si eres menor de 16 años, necesitarás el consentimiento de tus padres o tutores legales para enviar cualquier tipo de información personal a Online Media Technologies Ltd. a través del sitio web o el software de AVS4YOU, con la excepción de que dichas actividades estén permitidas por la ley de tu país. Si nos damos cuenta de que una persona menor de 16 años nos ha proporcionado información personal sin el consentimiento mencionado anteriormente, tomaremos medidas para eliminar dicha información.",
@@ -928,7 +928,7 @@
     "We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy" : "También usamos Google Analytics para rastrear lo que más se usa, para comprender las necesidades de nuestros usuarios y para mejorar nuestro sitio y servicio. Visita el enlace para comprender el enfoque de privacidad de Google",
     "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "Los códigos de seguimiento de conversiones de Yahoo Japón se utilizan para analizar la eficacia de nuestras campañas publicitarias. Los usuarios pueden ajustar su configuración de privacidad sobre cómo se utilizan sus datos con fines publicitarios. Para obtener más información, visita",
     "We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link" : "Utilizamos el almacenamiento en la nube de AWS para almacenar archivos de usuario, incluidos los datos, que se encuentra en Virginia del Norte, Estados Unidos. Para saber cómo Amazon trata tu privacidad, consulta el siguiente enlace",
-
+    "There is no need to place links on the website Request a quote whenever your customer needs AVS4YOU multimedia suite" : "No es necesario colocar enlaces en el sitio web. Solicita un presupuesto cuando un cliente necesite la suite multimedia AVS4YOU.",
 
 
     "*****************************Support********************************" : "*****************************Soporte********************************",

@@ -90,7 +90,7 @@ const StyledFooter = styled.div`
         text-decoration: none;
         width: 670px;
         height: 53px;
-        padding: 13px 0 0;
+        padding: 46px 0px 0px;
         margin: 0 auto;
         display: block;
         }

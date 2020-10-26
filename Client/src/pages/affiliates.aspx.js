@@ -112,7 +112,7 @@ render(){
 
             <ContentSelector
                 className="choose-program__content-wrapper"
-                buttonNames={["Avangate","MyCommerce Share-it"]}
+                buttonNames={["Avangate","MyCommerce Share-IT"]}
             >
                 <div className="choose-program__item">
                   <Text as="h2" className="common__heading">
@@ -217,7 +217,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
+                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <LinkHref mainLink="https://stat.avs4you.com/linkgenerationarea.aspx?lng=" toLink="=">{this.props.t("Affiliate Links Generator")}</LinkHref> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>
