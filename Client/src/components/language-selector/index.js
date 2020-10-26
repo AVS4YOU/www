@@ -260,7 +260,7 @@ class LanguageSelector extends React.PureComponent {
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext && pageContext.originalPath
-                                                ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.html" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                                 : item.value !== "en" && "https://www.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}

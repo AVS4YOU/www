@@ -202,7 +202,7 @@ export class PowerfulSlider extends Component {
   return (
     <div className="video_vel_features">
         <div className="video_vel_narrow">
-  <Text className="TextH2">{this.props.SHeader}</Text>
+  <Text fontSize={40} className="TextH2">{this.props.SHeader}</Text>
             <div className="vel_features_block">
     <CinemaSliderStyle>
     <div className="container">  

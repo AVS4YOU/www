@@ -50,7 +50,7 @@ render(){
                 </div>
             </div>
             <div className="vel_narrow">
-                <Text color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
+                <Text fontSize={66} color="FFFFFF" className="TextH1">{this.props.t("AVS Video Editor")}</Text>
                 <div className="vel_description">{this.props.t("Trim, cut, split, crop, merge, rotate videos to create impressive movies")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
@@ -83,8 +83,8 @@ render(){
             </div>
             <div className="vel_quote">
                 <blockquote>
-                {this.props.t("I've been using AVS Video Editor for more than 10 years and it is an excellent product, in my opinion")}
-                    <div className="quote_user">{this.props.t("William Holmes")}</div>
+                {this.props.t(`I've been using AVS Video Editor for more than 10 years and it is an excellent product in my opinion`)}
+                <div className="quote_user">{this.props.t("William Holmes")}</div>
                 </blockquote>
             </div>
         </div>
@@ -111,7 +111,7 @@ render(){
     ></PWM>
     <div className="vel_edit_enhance">
         <div className="vel_narrow">
-            <Text className="TextH2">{this.props.t("Give your movie a cinematic look")}</Text>
+            <Text fontSize={40} className="TextH2">{this.props.t("Give your movie a cinematic look")}</Text>
             <div className="vel_ee_blocks">
                 <div className="velee_block veleeb_tools_1">
                     <Text fontSize={18} className="TextH3">{this.props.t("Edit your videos with fantasy")}</Text>
@@ -128,7 +128,7 @@ render(){
             </div>
             <div className="vel_bottom_buttons">
                 <div className="vel_bottom_download">
-                    <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
+                    <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
                     <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">{this.props.t("Buy")}</a>
@@ -151,11 +151,11 @@ render(){
                 <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-                <a className="lfns-button-footer lfnsb-fb-footer" target="_blank" title="Facebook" href="https://www.facebook.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-tw-footer" target="_blank" title="Twitter" href="https://www.twitter.com/avs4you"></a>
-                <a className="lfns-button-footer lfnsb-gp-footer" target="_blank" title="Google+" href="https://plus.google.com/u/0/b/105357609614583331144/+avs4you/posts"></a>
-                <a className="lfns-button-footer lfnsb-yt-footer" target="_blank" title="YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            </div>
+            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+        </div>
         </div>
     </div>   
         

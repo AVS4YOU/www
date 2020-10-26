@@ -14,6 +14,7 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import LinkHref from '../components/link-href';
 
 import AvatarJames from '../images/avs-video-editor/james_k.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -42,7 +43,7 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Video Editor - easy video editing software for Windows."
+        title={this.props.t("AVS Video Editor - easy video editing software for Windows")}
         metaDescription="AVS Video Editor is an easy video editing program. Create, edit video, capture video/ make a video slideshow/ cut, merge, trim video files/ save to any format."
         metaKeywords="video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow"
       >
@@ -95,7 +96,9 @@ render(){
               <Text className="ListItem">{this.props.t("Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc")}</Text>
               <Text className="ListItem">{this.props.t("Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU")}</Text>
               <Text className="ListItem">{this.props.t("Use new automatic presets for powerful computers")}</Text>
-              <Text as="a" target="_blank" href="https://onlinehelp.avs4you.com/avs-video-editor/features/savingvideos/supportedformats.aspx" className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
+              <LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/features/savingvideos/supportedformats.aspx">
+                <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
+              </LinkHref>
             </ContentRowItem>
 
             <ContentRowItem 
@@ -150,7 +153,7 @@ render(){
                     name: "James K.",
                     avatar: AvatarJames,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results")
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
                   },
                   {
                     name: "Linda K.",
@@ -188,7 +191,7 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{VideoEditor.platforms}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
@@ -212,12 +215,12 @@ render(){
                       <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")} </Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows compatible sound card")}</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Intel HD Graphics, NVIDIA GeForce, AMD Radeon Graphics")}</Text>
                     </div>
                     <div className="systemWrapper">
-                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Display")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("32-bit color depth")}</Text>
+                      <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows compatible sound card")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("CD recorder")}</Text>
@@ -237,7 +240,7 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                     </div>
                   </div>
                   <div>
@@ -249,19 +252,19 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Quad core (Intel Core i5 series or AMD equivalent)")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("2 GB or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("4 GB or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Intel HD Graphics, NVIDIA GeForce recommended for hardware acceleration")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible sound card")}</Text>
                     </div>
                   </div>
                 </div>

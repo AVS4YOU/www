@@ -6,8 +6,9 @@ import twitter from '../../images/common/social/twitter.svg';
 import youtube from '../../images/common/social/youtube.svg';
 import pinterest from '../../images/common/social/pinterest.svg';
 import Text from '../text';
-import Link from '../link'
+import Link from '../link';
 import FooterItem from '../footer-item';
+import LinkHref from '../link-href';
 
 const FooterGridContainer = styled.div`
     display: table;
@@ -118,18 +119,18 @@ class Footer extends React.Component{
                         </Link>
                     </FooterItem>
                     <FooterItem header={this.props.t("Help Center")}>
-                        <a href="https://support.avs4you.com">
+                        <LinkHref mainLink="https://support.avs4you.com/" toLink="">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
-                        </a>
-                        <a href="https://www.avs4you.com/guides/index.aspx">
+                        </LinkHref>
+                        <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/index.aspx">
                             <Text className="footer-link-text">{this.props.t("Guides")}</Text>
-                        </a>
-                        <a href="https://onlinehelp.avs4you.com/index.aspx">
+                        </LinkHref>
+                        <LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="index.aspx">
                             <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
-                        </a>
-                        <a href="https://support.avs4you.com/faq.aspx">
+                        </LinkHref>
+                        <LinkHref mainLink="https://support.avs4you.com/" toLink="faq.aspx">
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
-                        </a>
+                        </LinkHref>
                     </FooterItem>
                     <FooterItem header={this.props.t("Company")}>
                         <Link to="/about-us.aspx">
@@ -144,9 +145,9 @@ class Footer extends React.Component{
                         <Link to="/license-agreement.aspx">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
                         </Link>
-                        <a href="https://www.avs4you.com/blog/">
+                        <LinkHref mainLink="https://www.avs4you.com/blog/" toLink="">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
-                        </a>
+                        </LinkHref>
                     </FooterItem>
                     <div className="footer-links-box last">
                         <Link className="footerLogoLink" to="/">
@@ -170,7 +171,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <Text className="rights"><Link href="/">{this.props.t("© Online Media Technologies Ltd., UK")}</Link> {currentYear} {this.props.t("All rights reserved.")}</Text>
+                <Text className="rights"><Link href="/">{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</Text>
             </StyledFooter>
         )
     }

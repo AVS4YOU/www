@@ -21,7 +21,7 @@ render(){
         className="education" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU special Offer for educational institutions"
+        title={this.props.t("AVS4YOU special Offer for educational institutions")}
         metaDescription="AVS4YOU: educational Software"
         metaKeywords=""
       >
@@ -168,8 +168,19 @@ render(){
           {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
-            <Form></Form>
-            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
+            <Form 
+                 formHeader = {this.props.t("Write a message")}
+                 formName = {this.props.t("Name")}
+                 formEmailAddress = {this.props.t("Email address")}
+                 formOccupation = {this.props.t("Occupation")}
+                 formInstitution = {this.props.t("Institution")}
+                 formNumberOfSub = {this.props.t("Number of subscriptions")}
+                 formComment = {this.props.t("Give us a brief description of your specific needs")}
+                 formButton = {this.props.t("Send your request")}
+                 formAgreeTermsWrapper = {this.props.t("By clicking this button, you agree to our")}
+                 formAgreeLink = {this.props.t("Terms of Service")}                 
+            />
+            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>

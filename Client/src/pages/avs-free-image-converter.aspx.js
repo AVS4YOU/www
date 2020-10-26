@@ -40,7 +40,7 @@ class avsFreeImageConverter extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF"
+        title={this.props.t("AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF")}
         metaDescription="Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter. Resize photos,rotate, adjust color and contrast, apply photo effects."
         metaKeywords="Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize"
       >
@@ -49,7 +49,7 @@ class avsFreeImageConverter extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">Free
+                <Text as="span" className="flagBackground header">{this.props.t("Free")}
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Image Converter")}</Text>
@@ -154,7 +154,7 @@ class avsFreeImageConverter extends React.PureComponent {
                     name: "William Holmes",
                     avatar: AvatarWilliamHolmes,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
                   }
                 ]
               }
@@ -181,10 +181,10 @@ class avsFreeImageConverter extends React.PureComponent {
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSImageConverter.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSImageConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
@@ -230,7 +230,7 @@ class avsFreeImageConverter extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                   </div>
                 </div>
                 <div>
@@ -238,11 +238,11 @@ class avsFreeImageConverter extends React.PureComponent {
 
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
@@ -250,11 +250,11 @@ class avsFreeImageConverter extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible video card")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible sound card")}</Text>
                   </div>
                 </div>
               </div>

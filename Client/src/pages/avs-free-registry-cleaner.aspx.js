@@ -40,7 +40,7 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="Repair Windows registry with AVS Free Registry Cleaner."
+        title={this.props.t("Repair Windows registry with AVS Free Registry Cleaner.")}
         metaDescription="Scan your pc registry automatically, repair registry errors effectively. Improve your computer performance easily with AVS Free Registry Cleaner."
         metaKeywords="Registry Cleaner, free registry cleaner,best registry cleaner, AVS Registry Cleaner, optimize your computer, computer performance"
       >
@@ -49,7 +49,7 @@ render(){
           <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">Free
+                <Text as="span" className="flagBackground header">{this.props.t("Free")}
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Registry Cleaner")}</Text>
@@ -134,7 +134,7 @@ render(){
                     name: "William Holmes",
                     avatar: AvatarWilliamHolmes,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
                   }
                 ]
               }
@@ -161,7 +161,7 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSRegistryCleaner.exe" to="headerContentWrapper"/>
@@ -210,7 +210,7 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                     </div>
                   </div>
                   <div>
@@ -218,11 +218,11 @@ render(){
 
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>
@@ -230,11 +230,11 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible video card")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible sound card")}</Text>
                     </div>
                   </div>
                 </div>

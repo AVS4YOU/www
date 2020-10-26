@@ -84,9 +84,6 @@ height: 70px;
     margin:auto;
     width: 560px;
   }
-  .velfb_description{
-    height: 60px;
-  }
   .velfb_description_Text{
     font-size: 14px;
   }
@@ -197,7 +194,7 @@ export class CinemaSlider extends Component {
     <CinemaSliderStyle>
     <div className="maker_vel_features">
         <div className="video_vel_narrow">
-  <Text className="TextH1" style={{padding:"100px 0 50px", textAlign:"center"}}>{this.props.HeaderSlider}</Text>
+  <Text fontSize={40} className="TextH1" style={{padding:"100px 0 50px", textAlign:"center"}}>{this.props.HeaderSlider}</Text>
             <div className="vel_features_block">
     <div className="container">  
        <div className="scrollLinksWrapper" style={{padding: 0, display: "flex"}} >

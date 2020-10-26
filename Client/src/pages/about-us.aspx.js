@@ -6,6 +6,7 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
 import ScrollUpButton from '../components/scroll-up-button';
+import LinkHref from "../components/link-href";
 
 class aboutUs extends React.PureComponent {
 
@@ -16,7 +17,7 @@ render(){
         className="about-us-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family Learn more about our company its history who we are and what we value")}
         metaDescription={this.props.t("")}
         metaKeywords={this.props.t("")}
       >
@@ -101,7 +102,7 @@ render(){
               <Text as="p" className="map-body__text">{this.props.t("United Kingdom")}</Text>
             </div>
             <div className="map-body__block">
-              <Text as="h4" className="map-body__heading">Contacts</Text>
+              <Text as="h4" className="map-body__heading">{this.props.t("Contacts")}</Text>
               <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 208 144 3359</a> ({this.props.t("no phone support")})</Text>
               <Text as="p" className="map-body__text"><a href="tel:+442071826722">(+44) 207 182 6722</a></Text>
             </div>
@@ -113,7 +114,7 @@ render(){
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-              {this.props.t("Contact")} AVS4YOU
+              {this.props.t("Contact AVS4YOU")}
             </Text>
             <div className="contact-body__wrapper">
 
@@ -149,7 +150,7 @@ render(){
                   {this.props.t("Customer Support")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a href="https://support.avs4you.com">{this.props.t("Support Center")}</a>
+                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support Center")}</LinkHref>
                 </Text>
               </div>
             </div>

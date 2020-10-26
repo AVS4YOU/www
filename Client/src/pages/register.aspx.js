@@ -10,6 +10,7 @@ import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
+import LinkHref from '../components/link-href';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -83,7 +84,7 @@ componentDidMount(){
       hrefOneYear: this.state.hrefOneYear+"&SRC="+parsed.SRC,
     })
   }
- 
+
   this.setState({
    documentLoaded: true
  })
@@ -95,7 +96,7 @@ render(){
        className="register" 
        pageContext={this.props.pageContext} 
        t={this.props.t}
-       title="AVS4YOU Get professionals multimedia tools"
+       title={this.props.t("AVS4YOU Get professionals multimedia tools")}
        metaDescription="AVS4YOU: Professional Multimedia Tools"
        metaKeywords=""
       >
@@ -115,8 +116,8 @@ render(){
               <Text className="access-limit">{this.props.t("1 year access")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
-                <Text className="prev-price-text">{this.props.t("$69.00")}</Text>
-                <Text className="current-price-text"><span>$</span>{this.props.t("39.00")}</Text>
+                <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
+                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
               <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
@@ -139,8 +140,8 @@ render(){
                 <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
-                  <Text className="prev-price-text">{this.props.t("$199.00")}</Text>
-                  <Text className="current-price-text"><span>$</span>{this.props.t("59.00")}</Text>
+                  <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
+                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
@@ -247,7 +248,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href="https://support.avs4you.com/refund.aspx" target="_blank">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com/" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
                     </Text>
                 </div>
               </PanelCollapse>

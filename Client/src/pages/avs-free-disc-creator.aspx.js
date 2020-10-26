@@ -40,7 +40,7 @@ class avsFreeDiscCreator extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Free Disc Creator is a free CD /DVD burning software."
+        title={this.props.t("AVS Free Disc Creator is a free CD /DVD burning software.")}
         metaDescription="Copy DVD with AVS Free Disc Creator software. Write DVD/CD/Blu-ray data discs. Download free DVD /Blu-ray burning software!"
         metaKeywords="copy dvd, Free Disc Creator, blu-ray"
       >
@@ -49,7 +49,7 @@ class avsFreeDiscCreator extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="aquamarine_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">Free
+                <Text as="span" className="flagBackground header">{this.props.t("Free")}
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Disc Creator")}</Text>
@@ -146,7 +146,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                     name: "William Holmes",
                     avatar: AvatarWilliamHolmes,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient, user friendly and functional")
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
                   }
                 ]
               }
@@ -173,10 +173,10 @@ class avsFreeDiscCreator extends React.PureComponent {
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDiscCreator.exe" to="headerContentWrapper" />
+            <DownloadScrollButton className="buttonWrapper" href="https://new.avs4you.com/downloads/AVSDiscCreator.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
@@ -222,7 +222,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("DirectX")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 9.0c or later")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Microsoft DirectX 90c or later")}</Text>
                   </div>
                 </div>
                 <div>
@@ -230,7 +230,7 @@ class avsFreeDiscCreator extends React.PureComponent {
 
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}:</Text>
@@ -242,11 +242,11 @@ class avsFreeDiscCreator extends React.PureComponent {
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Video")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible video card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible video card")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Sound")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7 compatible sound card")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7 compatible sound card")}</Text>
                   </div>
                 </div>
               </div>

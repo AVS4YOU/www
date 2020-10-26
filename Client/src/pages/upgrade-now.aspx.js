@@ -20,12 +20,36 @@ import audioIconWhite from '../images/main-page/icons/audio_icon_white.svg'
 import allSoftIcon from '../images/upgrade-now/all-software.svg'
 import discountIcon from '../images/upgrade-now/icon-discount.svg'
 
+function getLastDayOfMonth(year, month) {
+  let date = new Date(year, month + 1, 0);
+  return date.getDate();
+}
+
+const regExp = /=regnow:(.*):/;
+const date = new Date();
+const currentMounth = date.getMonth();
+const currentYear = date.getFullYear();
+const currentDay = date.getDay();
+const mounth = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
 
 const LogoWrapper = styled.div`
     width: 69px;
     height: 0px;
     display: table;
-
     &>img{
         position: absolute;
         top: 0;
@@ -37,7 +61,6 @@ const LogoWrapper = styled.div`
     const StyledMainContentWrapper = styled.div`
     display:block;
     padding-bottom: 100px;
-
     .top-selector-buttons-wrapper{
         width: 100%;
         box-sizing: border-box;
@@ -45,12 +68,10 @@ const LogoWrapper = styled.div`
         .top-button{
             position:relative;
             padding: 0 10px;
-
             .selectorText{
                 display: inline-block;
                 padding-left: 25px;
             }
-
             .selectorText:before{
                 display:block;
                 content: '';
@@ -64,7 +85,6 @@ const LogoWrapper = styled.div`
                 bottom: 0;
                 margin: auto;   
             }
-
             &:nth-child(1) .selectorText:before{
               background-image: url(${allSoftIcon});
           }
@@ -83,7 +103,6 @@ const LogoWrapper = styled.div`
             &:nth-child(6) .selectorText:before{
               background-image: url(${videoIcon});
           }
-
             &.selected{
               &:nth-child(1) .selectorText:before{
                 background-image: url(${allSoftIcon});
@@ -104,9 +123,7 @@ const LogoWrapper = styled.div`
                 background-image: url(${videoIconWhite});
             }
           }
-
             @media (max-width: 1300px) {
-
           .selectorText:before{
           display: none;
           }
@@ -164,8 +181,7 @@ render(){
         className="upgrade-now-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU is the home of ultimate multimedia editing family.
-        Learn more about our company, its history, who we are and what we value."
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
         metaDescription=""
         metaKeywords=""
       >
@@ -564,7 +580,7 @@ render(){
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
-                  {this.props.t("Edit all key video formats without changing the original format")}
+                  {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
                     <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                     <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
@@ -1017,7 +1033,7 @@ render(){
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
-                  {this.props.t("Edit all key video formats without changing the original format")}
+                  {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
                     <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
                     <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
@@ -1082,7 +1098,7 @@ render(){
           <img  src={discountIcon}/>
         </div>
 
-            <div className="allSoftaware"><Text as="h2" className="title-discover"> {this.props.t("Buy now at the")} <span className="title-discover-orange">{this.props.t("best price")}!</span> <br />{this.props.t("In July only")}!</Text></div>
+            <div className="allSoftaware"><Text as="h2" className="title-discover"> {this.props.t("Buy now at the")} <span className="title-discover-orange">{this.props.t("best price")}!</span> <br />{this.props.t("In")} {mounth[currentMounth]} {this.props.t("only")}!</Text></div>
                 <div className="landing-block"><div className="landing-one-offer-block">
                 <Text className="text-landing-box">{this.props.t("1 year")}</Text>
                 <Text className="text-landing-sub">{this.props.t("subscription")}</Text>
@@ -1090,7 +1106,7 @@ render(){
                 <Text className="text-landing-now-for">{this.props.t("Subscribe now for")}</Text>
                 <Text className="text-landing-old-price">$69.00</Text>
                 <Text className="text-landing-new-price"><sup>$</sup>39.00</Text>
-                <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till April 30, 2020")}</Text>
+                <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till ")}{mounth[currentMounth]} {currentDay}, {currentYear}</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><div className="landing-bestseller">
@@ -1101,7 +1117,7 @@ render(){
                 <Text className="text-landing-now-for">{this.props.t("Subscribe now for")}</Text>
                 <Text className="text-landing-old-price">$199.00</Text>
                 <Text className="text-landing-new-price"><sup>$</sup>59.00</Text>
-                <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till July 30, 2020")}</Text>
+                <Text className="text-landing-limited">{this.props.t("Time limited offer prices valid till")} {mounth[currentMounth]} {currentDay}, {currentYear}</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.143321461.1567942970.1598170647-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table></div></div>
 
                 <div className="availableCarts">
@@ -1115,7 +1131,7 @@ render(){
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Write an article about AVS4YOU programs, publish it in your blog or website, or")}</span></li>
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Make a video and post it on your YouTube channel, or")}</span></li>
                 <li style={{color: "#1E72D2"}}><span style={{color: "#555555"}}>{this.props.t("Share AVS4YOU.com in 3 different social networks")}.</span></li>
-             {this.props.t("Once done, contact us at")} <a href="sales@avs4you.com">sales@avs4you.com</a> {this.props.t("with links provided")}. 
+             {this.props.t("Once done, contact us at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a> {this.props.t("with links provided")}. 
              <br />{this.props.t("The free license key gives you an annual access to the chosen program with all paid features included")}.</div>
     </div>
     </div>

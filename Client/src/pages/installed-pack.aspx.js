@@ -17,7 +17,6 @@ const LogoWrapper = styled.div`
     width: 69px;
     height: 60px;
     display: table;
-
     &>img{
         position: absolute;
         top: 0;
@@ -60,7 +59,7 @@ render(){
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("$59")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_VE_en&_ga=2.16320382.990617256.1594635509-193195073.1594635509" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_Pack_en" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
         <div className="body-company">
@@ -70,7 +69,8 @@ render(){
               <Text>{this.props.t("100% secure adfree virusfree")}</Text>
             </div>
             <div  className="carouselItem support">
-              <Text>{this.props.t("5 professional multimedia programs in 1 package")}</Text>
+              <Text>{this.props.t("5 professional multimedia programs in")}</Text>
+              <Text>{this.props.t("1 package")}</Text>
             </div>
             <div className="carouselItem unlimited">
               <Text>{this.props.t("Unlimited access to the program")}</Text>

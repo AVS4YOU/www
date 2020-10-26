@@ -195,7 +195,7 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS Video Editor - easy video editing software for Windows."
+        title=""
         metaDescription=""
         metaKeywords=""
       >

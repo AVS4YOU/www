@@ -31,8 +31,7 @@ render(){
         className="uninstall-offer-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title="AVS4YOU is the home of ultimate multimedia editing family.
-        Learn more about our company, its history, who we are and what we value."
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
         metaDescription=""
         metaKeywords=""
       >
@@ -47,16 +46,16 @@ render(){
               <Text as="h1" className="header__heading installed"><span className="installedBig">{this.props.t("Wait")}</span> {this.props.t("Before you uninstall")} </Text>
               <Text as="h2" className="header__heading get">{this.props.t("Get AVS4YOU Unlimited Subscription at a special price")} </Text>
 
-                <div className="landing-block"><div className="landing-one-offer-block"><div className="old_price_container">{this.props.t("Old price")}</div><Text className="text-landing-box-gray">AVS4YOU Unlimited Subscription</Text>
+                <div className="landing-block"><div className="landing-one-offer-block"><div className="old_price_container">{this.props.t("Old price")}</div><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
-                <Text className="header__old__price">$59.00</Text>
+                <Text className="header__old__price">{this.props.t("$59.00")}</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
-                <Text as="h4" className="header__new__price">$29.00</Text>
+                <Text as="h4" className="header__new__price">{this.props.t("$29.00")}</Text>
                 <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
@@ -97,7 +96,7 @@ render(){
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                {this.props.t("30- day Money-back guarantee")}
+                {this.props.t("30- day money-back guarantee")}
             </div>
             </div>
             <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.202734737.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>

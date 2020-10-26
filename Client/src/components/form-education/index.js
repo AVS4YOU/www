@@ -565,6 +565,7 @@ class FormEducation extends React.Component {
     }
 
     render() {
+        const { formHeader, formName, formEmailAddress, formOccupation, formInstitution, formNumberOfSub } = this.props;
         return (
             <StyledForm>
                 {this.state.formSended
@@ -572,14 +573,14 @@ class FormEducation extends React.Component {
                     <InfoPopupForm />
                     : <div>
                         <Text as="h2" className="formHeader">
-                            Write a message
+                            {this.props.formHeader}
                         </Text>
                         <div className="inputsWrapper two">
                             <Input
                                 tabIndex="0"
 
                                 inputName="name"
-                                inputLabel="Name"
+                                inputLabel={this.props.formName}
 
                                 value={this.state.name.value}
                                 inputClassName={this.state.name.inputClassName}
@@ -597,7 +598,7 @@ class FormEducation extends React.Component {
                                 tabIndex="1"
 
                                 inputName="email"
-                                inputLabel="Email address"
+                                inputLabel={this.props.formEmailAddress}
 
                                 value={this.state.email.value}
                                 inputClassName={this.state.email.inputClassName}
@@ -617,7 +618,7 @@ class FormEducation extends React.Component {
                                 tabIndex="0"
 
                                 inputName="occupation"
-                                inputLabel="Occupation"
+                                inputLabel={this.props.formOccupation}
 
                                 value={this.state.occupation.value}
                                 inputClassName={this.state.occupation.inputClassName}
@@ -635,7 +636,7 @@ class FormEducation extends React.Component {
                                 tabIndex="1"
 
                                 inputName="institution"
-                                inputLabel="Institution"
+                                inputLabel={this.props.formInstitution}
 
                                 value={this.state.institution.value}
                                 inputClassName={this.state.institution.inputClassName}
@@ -653,7 +654,7 @@ class FormEducation extends React.Component {
                                 tabIndex="0"
 
                                 inputName="subscriptions"
-                                inputLabel="Number of subscriptions"
+                                inputLabel={this.props.formNumberOfSub}
 
                                 value={this.state.subscriptions.value}
                                 inputClassName={this.state.subscriptions.inputClassName}
@@ -673,7 +674,7 @@ class FormEducation extends React.Component {
 
                             inputName="comment"
                             inputLabel=""
-                            placeholder="Give us a brief description of your specific needs"
+                            placeholder={this.props.formComment}
 
                             value={this.state.comment.value}
                             inputClassName={this.state.comment.inputClassName}
@@ -686,7 +687,7 @@ class FormEducation extends React.Component {
                             className="formInput textArea"
                         />
 
-                        {this.state.fileInputsId.map((id) =>
+                        {/*{this.state.fileInputsId.map((id) =>
                             <div key={"attachFileWrapper" + id}
                                 className={[
                                     "attachFileWrapper ",
@@ -709,7 +710,7 @@ class FormEducation extends React.Component {
                                 Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg).
                                 Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.
                             </Text>
-                        </div>
+                            </div>*/}
 
                         <div className="recaptchaWrapper">
                             <ReCAPTCHA
@@ -728,11 +729,11 @@ class FormEducation extends React.Component {
                             fontSize={14}
                             textTransform="uppercase"
                         >
-                            Send your request
+                            {this.props.formButton}
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                                By clicking this button, you agree to our <Link to="/privacy.aspx" target="_blank">Terms of Service</Link>.
+                        {this.props.formAgreeTermsWrapper} <Link to="/privacy.aspx" target="_blank">{this.props.formAgreeLink}</Link>.
                             </Text>
                         </div>
                     </div>
