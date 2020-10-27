@@ -10,7 +10,7 @@ function AvsLinkHref(props){
                     } 
                 >   
 
-                    {console.log(props.toLink === "=")}
+                    
                     {props.children}
                 </a>   
             )}              
