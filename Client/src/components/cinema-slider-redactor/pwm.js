@@ -147,7 +147,7 @@ export class CinemaSlider extends Component {
     }
 
     render() {
-      const { SliderText, Trim, Cut, Split, Merge, Crop, HeaderSlider } = this.props;
+      const { SliderText } = this.props;
 
         const settings = {  
             centerMode: true,  

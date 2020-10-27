@@ -276,7 +276,6 @@ export class CinemaSlider extends Component {
     }
 
     render() {
-      const { isActive } = this.props;
 
         const settings = {    
             centerMode: true,

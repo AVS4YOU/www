@@ -9,8 +9,6 @@ function AvsLinkHref(props){
                 props.mainLink + (props.toLink !== ".pdf" ? "" : "_") + pageContext.locale + (props.toLink === ".pdf" ? "" : props.toLink === "=" ? "" :  "/") + (props.toLink === "=" ? "" : props.toLink)
                     } 
                 >   
-
-                    
                     {props.children}
                 </a>   
             )}              

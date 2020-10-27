@@ -157,7 +157,7 @@ export class PowerfulSlider extends Component {
     }
 
     render() {
-      const { SliderText, SColorT, SText, SHeader, SStabilization, SGreenScrin, SSpeedCont} = this.props;
+      const { SliderText } = this.props;
 
         const settings = {    
             fade: false,
