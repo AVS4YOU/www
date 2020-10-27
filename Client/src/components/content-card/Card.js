@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import Text from '../../components/text';
 
-import {GridContainer, Image, GridRow, GridColumn, Card, CardCenter, CardImage, CardNumber, CardTitle, CardDescription, CardTitleCenter, CardDescriptionCenter, CardImageCenter} from './styles/card';
+import {GridContainer, GridRow, GridColumn, Card, CardCenter, CardImage, CardNumber, CardTitle, CardDescription, CardTitleCenter, CardDescriptionCenter, CardImageCenter} from './styles/card';
 
 export function GroupCard({ classes, children, ...restProps }) {
     return (
@@ -51,17 +51,6 @@ export function GroupCard({ classes, children, ...restProps }) {
       </CardCenter>
     );
   }; 
-
-  GroupCard.Image = function CardImage({ src, alt, classes, ...restProps }) {
-    return (
-      <Image
-        src={src}
-        alt={alt}
-        className={classNames('groupCard__image', classes)}
-        {...restProps}
-      />
-    );
-  };
 
   GroupCard.CardImage = function Card_CardImage({ classes, children, ...restProps }) {
     return (
