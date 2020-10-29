@@ -15,10 +15,10 @@ import  Actimg2 from "../../images/avs-video-editor-final/cinema-slider/Crop_act
 import  Actimg3  from "../../images/avs-video-editor-final/cinema-slider/Split_active.svg";
 import  Actimg4  from "../../images/avs-video-editor-final/cinema-slider/Join_active.svg";
 
-import Img1 from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.png";
-import Img2 from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.png";
-import Img3 from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.png";
-import Img4 from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.png";
+import Img1 from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.webp";
+import Img2 from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.webp";
+import Img3 from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.webp";
+import Img4 from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.webp";
 
 const CinemaSliderStyle = styled.div`
 .headerDescriptionSlider{
