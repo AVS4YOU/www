@@ -151,7 +151,7 @@ render(){
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link href="/"><Text as="span">www.avs4you.com</Text></Link>.</Text>   
+                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link href="/"><Text as="span">www.avs4you.com</Text></Link>{this.props.t("jpn")}</Text>   
                 </div>
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>

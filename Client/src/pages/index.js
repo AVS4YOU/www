@@ -319,7 +319,7 @@ class mainPage extends React.PureComponent {
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
 
               <HeaderDownloadButtons 
                 t={this.props.t}
