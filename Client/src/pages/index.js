@@ -344,7 +344,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_converter.jpg"
+                          imageName={this.props.t("slider video converter jpg")}
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoConverter.exe"

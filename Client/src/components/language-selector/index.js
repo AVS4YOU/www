@@ -16,11 +16,6 @@ import DeIcon from '../../images/common/languages/germany.svg';
 import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
-import NlIcon from '../../images/common/languages/netherlands.svg';
-import KoIcon from '../../images/common/languages/korea-flag.svg';
-import PlIcon from '../../images/common/languages/polish-flag.svg';
-import DaIcon from '../../images/common/languages/danish.svg';
-import PtIcon from '../../images/common/languages/portugal-flag.svg';
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
@@ -102,21 +97,6 @@ const StyledLanguageSelector = styled.div`
         &.jp:before{
             background-image: url(${JpIcon});
         }
-        &.nl:before{
-            background-image: url(${NlIcon});
-        }
-        &.ko:before{
-            background-image: url(${KoIcon});
-        }
-        &.pl:before{
-            background-image: url(${PlIcon});
-        }
-        &.da:before{
-            background-image: url(${DaIcon});
-        }
-        &.pt:before{
-            background-image: url(${PtIcon});
-        }
     }
     .languageSelector:before{
         content: '';
@@ -179,11 +159,6 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
-    {value: "nl", text: "Nederlands"},
-    {value: "ko", text: "한국어"},
-    {value: "pl", text: "Polski"},
-    {value: "da", text: "Dansk"},
-    {value: "pt", text: "Português"},
     {value: "ru", text: "Русский"},
 
 ];
