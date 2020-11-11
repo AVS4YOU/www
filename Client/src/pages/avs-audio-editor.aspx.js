@@ -62,8 +62,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="audio_editor_en_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="audio_editor_en_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage" imageName="audio editor en header png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName="audio editor en header png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -85,7 +85,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="audio_editor_edit_all_key.jpg"
+                imageName="audio editor edit all key jpg"
                 headerText={this.props.t("Edit all key audio formats" )}   
             >
               <Text className="ListItem">{this.props.t("Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc")}</Text>

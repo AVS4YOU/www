@@ -1329,5 +1329,13 @@
     "Any questions on how to buy, activate, or use the program? Visit online" : "¿Tiene alguna pregunta de cómo comprar, activar o utilizar el programa? Visite el",
     "Help Center" :"Centro de ayuda",
     "lang Help Center" : " en línea",
-    "2020 All rights reserved" :" 2020 Todos los derechos reservados."
-  }
+    "2020 All rights reserved" :" 2020 Todos los derechos reservados.",
+
+  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
+  "slider video converter jpg" :  "es_slider_video_converter.jpg",
+  "slider video editor jpg" : "es_slider_video_editor.jpg",
+  "slider video remaker jpg" : "es_slider_video_remaker.jpg",
+  "media player formats2x jpg" : "es_media_player_formats2x.jpg",
+  "audio editor en header png" : "es_audio_editor_en_header.png",
+  "audio editor edit all key jpg" : "es_audio_editor_edit_all_key.jpg"
+}
