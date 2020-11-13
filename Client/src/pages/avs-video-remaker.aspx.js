@@ -62,8 +62,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="video_remaker_en_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage" imageName={this.props.t("video remaker en header png")} style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("video remaker en header png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -85,7 +85,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video_remaker_edit_video_files-min.jpg"
+                imageName={this.props.t("video remaker edit video files min jpg")}
                 headerText={this.props.t("Edit video files without reconversion")}    
             >
               <Text className="ListItem">{this.props.t("Cut, delete unwanted parts, change scene sequence in all popular video formats")}</Text>
@@ -95,7 +95,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_remaker_record_video-min.jpg"
+                imageName={this.props.t("video remaker record video min jpg")}
                 headerText={this.props.t("Capture video")}   
             >
               <Text className="ListItem">{this.props.t("Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs")}</Text>
@@ -106,7 +106,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="video_remaker_disc_menu-min.jpg"
+              imageName={this.props.t("video remaker disc menu min jpg")}
               headerText={this.props.t("Create DVD and Blu-ray Menus")}    
             >
               <Text className="ListItem">{this.props.t("Split video into chapters, select between a number of menu templates")}</Text>
@@ -143,8 +143,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.4</Text>
           <ScreenshotsCarousel 
-            imageNames={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
-            imageNamesPopup={["video_remaker_edit_video_files-min.jpg", "video_remaker_record_video-min.jpg", "video_remaker_disc_menu-min.jpg", "video_remaker_slider1-min.jpg"]}
+            imageNames={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
+            imageNamesPopup={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

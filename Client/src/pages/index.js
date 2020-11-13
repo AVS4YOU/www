@@ -344,7 +344,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_converter.jpg"
+                          imageName={this.props.t("slider video converter jpg")}
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
@@ -358,7 +358,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_video_editor.jpg"
+                          imageName={this.props.t("slider video editor jpg")}
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
@@ -375,7 +375,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_remaker.jpg"
+                          imageName={this.props.t("slider video remaker jpg")}
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoReMaker.exe"
@@ -391,7 +391,7 @@ class mainPage extends React.PureComponent {
                       </ContentRowItem>
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="media_player_formats2x.jpg"
+                          imageName={this.props.t("media player formats2x jpg")}
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSMediaPlayer.exe"
