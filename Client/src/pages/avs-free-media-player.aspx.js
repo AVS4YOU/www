@@ -56,8 +56,8 @@ class avsFreeMediaPlayer extends React.PureComponent {
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title={this.props.t("AVS Free Media Player is the best media player for Windows")}
-        metaDescription="Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported."
-        metaKeywords="Free media player, avs4you video player,Video player software, media player, audio player, video player"
+        metaDescription={this.props.t("Open all popular video and audio formats with AVS Free Media player Download AVS Free Media Player from the official site All key media formats supported")}
+        metaKeywords={this.props.t("Free media player, avs4you video player,Video player software, media player, audio player, video player")}
       >
         <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">

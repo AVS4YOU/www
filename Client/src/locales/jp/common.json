@@ -243,6 +243,7 @@
 
 
     "*****************************AVS Video Converter********************************" : "*****************************AVS Video Converter********************************",
+    "Convert any video with AVS Free Video Converter for Windows" : "Windows用のAVS Free Video Converterで様々な動画と変換します。",
     "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion":"無料動画コンバーター、動画から mp3、動画コンバーター、動画ダウンロードコンバーター、mp4 動画コンバーター、avs 動画コンバーター、avs4you、avs、avs コンバーター、avs4u、動画コンバーターツール、動画コンバーターソフトウェア、mp4 mp3 コンバーター、mp4 avi コンバーター、mp4 3gp コンバーター、mp4 動画コンバーター、dvd 変換、avi 変換、mp4 変換、wmv 変換、mov 変換、動画ファイルコンバーター、dvd コンバーター、dvd から mp4 へ変換、avi コンバーター、動画変換、動画変換",
     "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion":"無料動画コンバーター、動画から mp3、動画コンバーター、動画ダウンロードコンバーター、mp4 動画コンバーター、avs 動画コンバーター、avs4you、avs、avs コンバーター、avs4u、動画コンバーターツール、動画コンバーターソフトウェア、mp4 mp3 コンバーター、mp4 avi コンバーター、mp4 3gp コンバーター、mp4 動画コンバーター、dvd 変換、avi 変換、mp4 変換、wmv 変換、mov 変換、動画ファイルコンバーター、dvd コンバーター、dvd から mp4 へ変換、avi コンバーター、動画変換、動画変換",
     "Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily":"以下のフォーマットでの変換: MP4、DVD、AVI、WMV、MOV、MPEG4、VOB、FLV、MKV、MTS、2K QHD、4K UHD、DCI 4K など。速くて簡単!",
@@ -286,6 +287,7 @@
     "Lawrence Thompson":"ローレンス・トンプソン",
     "I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional":"AVS を使って数年になりますが、簡単で便利なうえに機能的だと自信をもって言えます",
     "AVS Video Converter 12":"AVS 動画コンバーター 12",
+    
 
 
 
@@ -321,7 +323,7 @@
 
 
     "*****************************AVS Audio Editor********************************" : "*****************************AVS Audio Editor********************************",
-    "Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.":"音声録音。音声トラックをカット、分割、ミックス。音声部分を削除。音声効果やフィルターを適用。MP3、WAV、WMA、 M4A、 FLAC ファイルへ音声を保存",
+    "Record audio cut, split, mix audio tracks, delete audio parts apply audio effects and filters save audio to MP3 WAV WMA M4A FLAC":"音声録音。音声トラックをカット、分割、ミックス。音声部分を削除。音声効果やフィルターを適用。MP3、WAV、WMA、 M4A、 FLAC ファイルへ音声を保存",
     "avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs":"avs 音声エディター、avs 音楽エディター、avs 音声クリエイター、音声エディター、音声編集ソフトウェア、mp3 エディター、音楽エディター、音楽エディターダウンロード、音声エディターソフトウェア、mp3 編集、音声ムービーメーカー編集、音声クリップ編集、 windows 7 音声編集、音声クール編集、音声録音、声録音、音声ミックス、音声ソフトウェアミックス、音楽ミックス、音声CD カット、音声クリップカット、動画音声カット、オーディオブック作成、音声作成、音声ファイル作成、動画音声作成、音楽編集、音声編集、歌編集、mp3 フォーマット編集",
     "AVS Audio Editor":"AVS Audio Editor",
     "Create outstanding tracks for any purpose with our easy audio editing app for Windows":"当社の Windows 用インスタント音声編集アプリを使って美しい多目的トラックを作成",
@@ -347,14 +349,15 @@
     "ジョン・ピケット":"ジョン・ピケット",
     "I have dealt with and used AVS programs for more then three years They have an incredible assortment of programs The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat":"AVS プログラムを 3 年以上も使用し続けています。信じられないほどの種類のプログラムがあり、私が使っているプログラムはこの分野でもトップに入っています。この 1 パッケージ半永久価格は圧勝だと思います。",
     "AVS Audio Editor 85":"AVS 音声エディター 8.5",
+    "AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3" : "AVS Audio Editor で音楽ファイルを編集して MP3、Flac、WAV、M4A、WMA、AAC、OGG などに保存します。",
 
 
 
 
 
     "*****************************AVS Audio Converter********************************" : "*****************************AVS Audio Converter********************************",
-    "あらゆる人気フォーマット (MP3、 WAV、WMA、M4A、FLAC) へ変換。オーディオブックを作成、編集。音声トラックを分割、結合。":"あらゆる人気フォーマット (MP3、 WAV、WMA、M4A、FLAC) へ変換。オーディオブックを作成、編集。音声トラックを分割、結合",
-    "avs 音声コンバーター、avs ソングコンバーター、avs  音楽コンバーター、音楽コンバーター、音楽を変換、音楽 mp3 を変換、音声コンバーター、音声 mp3 コンバーター、音声変換、歌変換、mp3 ソングコンバーター、mp3 コンバーター、wav コンバーター、wav mp3 コンバーター、動画音声コンバーター、mp4 mp3 コンバーター、mp4 から mp3、wma コンバーター、mp4 wma コンバーター、 wma mp3、m4a 変換、m4a から mp3、flac コンバーター、flac mp3 コンバーター、amr コンバーター":"avs 音声コンバーター、avs ソングコンバーター、avs  音楽コンバーター、音楽コンバーター、音楽を変換、音楽 mp3 を変換、音声コンバーター、音声 mp3 コンバーター、音声変換、歌変換、mp3 ソングコンバーター、mp3 コンバーター、wav コンバーター、wav mp3 コンバーター、動画音声コンバーター、mp4 mp3 コンバーター、mp4 から mp3、wma コンバーター、mp4 wma コンバーター、 wma mp3、m4a 変換、m4a から mp3、flac コンバーター、flac mp3 コンバーター、amr コンバーター",
+    "Convert audio to any popular format MP3 WAV WMA M4A FLAC create and edit audio books split and merge audio tracks":"あらゆる人気フォーマット (MP3、 WAV、WMA、M4A、FLAC) へ変換。オーディオブックを作成、編集。音声トラックを分割、結合",
+    "avs audio converter, avs song converter, avs  music converter, music converter, convert music, convert music mp3, audio converter, audio converter mp3, convert audio,song converter, mp3 song converter, mp3 converter, wav converter, wav mp3 converter, video to audio converter, mp4 to mp3 converter, mp4 to mp3, wma converter, mp4 wma converter, wma mp3, convert m4a, m4a to mp3, flac converter, flac to mp3 converter, amr converter":"avs 音声コンバーター、avs ソングコンバーター、avs  音楽コンバーター、音楽コンバーター、音楽を変換、音楽 mp3 を変換、音声コンバーター、音声 mp3 コンバーター、音声変換、歌変換、mp3 ソングコンバーター、mp3 コンバーター、wav コンバーター、wav mp3 コンバーター、動画音声コンバーター、mp4 mp3 コンバーター、mp4 から mp3、wma コンバーター、mp4 wma コンバーター、 wma mp3、m4a 変換、m4a から mp3、flac コンバーター、flac mp3 コンバーター、amr コンバーター",
     "Convert audio between popular formats Apply effects, customize output parameters, use batch mode":"音声を人気フォーマット間で変換。効果適用、出力パラミーターをカスタマイズ。一括モード使用。",
     "Convert and edit all key audio formats":"主な音声フォーマットすべてを編集、変換",
     "Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc":"MP3、WMA、WAV、M4A、AMR、OGG、ALAC、FLAC、AC3、MP2 ファイルなどを変換",
@@ -372,13 +375,14 @@
     "Jacky Lui":"ジャッキー・ルイ",
     "The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software":"AVS 音声コンバーターソフトウェアはとても優秀で、作業がしやすいです。このソフトウェアは買っておくべきで、しかも価格がお値打ち。AVS 音声コンバーターソフトウェアにとても満足しています",
     "AVS Audio Converter 9.1":"AVS 音声コンバーター 9.1",
+    "AVS Audio Converter is a lossless tool to convert MP3 WAV WMA M4A FLAC AMR": "AVS Audio  Converterで音声を次の形式の間に変換: MP3、WAV、WMA、M4A、FLAC など。",
 
 
 
 
 
     "*****************************AVS Media Player********************************" : "*****************************AVS Media Player********************************",
-    "Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported.":"無料 AVS メディアプレーヤーを使って、すべての人気動画、音声フォーマットを開始。無料 AVS メディアプレーヤーを公式サイトからダウンロード。主なメディアフォーマットすべてに対応。",
+    "Open all popular video and audio formats with AVS Free Media player Download AVS Free Media Player from the official site All key media formats supported":"ソフトウェアビデオプレーヤー。 ビデオ/オーディオプレーヤーソフトウェアをダウンロードしてください。 すべての主要なオーディオ/ビデオフォーマットがサポートされています。",
     "Free media player, avs4you video player,Video player software, media player, audio player, video player":"無料メディアプレーヤー、avs4you 動画プレーヤー、動画プレーヤーソフトウェア、メディアプレーヤー、音声プレーヤー、動画プレーヤー",
     "Watch video, play audio and view your pictures with Free AVS Media Player":"無料 AVS メディアプレーヤーを使って、動画を閲覧、音声を再生、写真を閲覧。",
     "Watch video":"動画を閲覧",
@@ -580,8 +584,9 @@
 
 
     "*****************************Free AVS Disc Creator********************************" : "*****************************Free AVS Disc Creator********************************",
+    "AVS Free Disc Creator is a free CD DVD burning software": "AVS Disc Creator。パーソナル DVD の書き込みとコピーを行います。データを CD、DVD、Blu-ray Disc に書き込みます。",
     "Free AVS Disc Creator":"無料 AVS ディスククリエーター",
-    "Copy DVD with AVS Free Disc Creator software. Write DVD/CD/Blu-ray data discs. Download free DVD /Blu-ray burning software!":"AVS ディスククリエーターソフトウェアを使って、DVD をコピー。DVD、CD、ブルーレイなどのデータディスクへ書き込み可能。無料の DVD、ブルーレイ読み取りソフトウェアをダウンロード!",
+    "Copy DVD with AVS Free Disc Creator software Write DVD CD Blu-ray data discs Download free DVD Blu-ray burning software":"AVS ディスククリエーターソフトウェアを使って、DVD をコピー。DVD、CD、ブルーレイなどのデータディスクへ書き込み可能。無料の DVD、ブルーレイ読み取りソフトウェアをダウンロード!",
     "copy dvd, Free Disc Creator, blu-ray":"DVD コピー、無料ディスククリエーター、ブルーレイ",
     "Burn audio, video, images easily with Free AVS Disc Creator":"無料の AVS ディスククリエーターを使って、音声、動画、画像を簡単に読み取り。",
     "Burn video discs":"ビデオディスクを読み取り",
@@ -607,8 +612,9 @@
 
 
     "*****************************AVS Document Converter********************************" : "*****************************AVS Document Converter********************************",
+    "AVS Free Document Converter converts Doc to PDF, DOCX, MOBI": "AVSDocumentConverterでDOC、PDF、HTML、PDF, PPTなどの間に文書を変換します。",
     "AVS Document Converter":"AVS ドキュメントコンバーター",
-    "Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter. Convert doc to JPEG, PNG, GIF for free. Add a text watermark, encrypt PDF files.":"AVS 無料ドキュメントコンバーターで、DOC、PDF、EPUB、MOBI、HTML、ODT ファイルを変換。無料でドキュメントを JPEG、PNG、GIF ファイルに変換。透かしテキストを追加、PDF ファイルを暗号化。",
+    "Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter Convert doc to JPEG, PNG, GIF for free Add a text watermark, encrypt PDF files":"AVS 無料ドキュメントコンバーターで、DOC、PDF、EPUB、MOBI、HTML、ODT ファイルを変換。無料でドキュメントを JPEG、PNG、GIF ファイルに変換。透かしテキストを追加、PDF ファイルを暗号化。",
     "document converter, convert pdf to word document, avs docs converter, docs converter, word to pdf converter, jpg to pdf converter, microsoft word to pdf converter, docs conversion, docs convert to pdf, docs to doc converter, docx to doc converter, djvu converter, odt  converter, xps  converter doc, xps  converter, xps  to pdf, convert  pdf, mobi  converter, djvu  to pdf, djvu  to pdf converter, djvu  reader, convert  epub to mobi, convert  pdf to jpg, universal  document converter, epub  converter, mobi  to epub, convert  djvu to pdf, pdf  to mobi converter, word  converter, convert  html, pdf  creator, pdf  converter":"ドキュメントコンバーター、PDF ワードドキュメント変換、avs ドキュメントコンバーター、ドキュメントコンバーター、ワード PDF コンバーター、jpg PDF コンバーター、Microsoft ワード PDF コンバーター、ドキュメント変換、PDF ドキュメント変換、 docs ファイルドキュメント変換、docx ファイルドキュメント変換、djvu コンバーター、odt   コンバーター、xps   コンバーター、xps  から PDF、PDF 変換、mobi  コンバーター、djvu  から PDF、djvu  PDF コンバーター、djvu  リーダー、epub から mobi 変換、PDF から jpg 変換、ユニバーサルドキュメントコンバーター、epub  コンバーター、mobi  から epub 変換、djvu から PDF 変換、PDF mobi コンバーター、ワードコンバーター、html 変換、PDF  クリエーター、PDF  コンバーター",
     "Free PDF, DOCX, DOC, TXT, ODT, ePub, MOBI document converter Convert PDF to Word documents and image files for free":"無料 PDF、DOCX、DOC、TXT、ODT、ePub、MOBI ドキュメントコンバーター。無料で PDF から Word ドキュメント、画像ファイル変換。",
     "Convert various document formats":"様々なドキュメントのフォーマットを変換",
@@ -634,9 +640,10 @@
 
 
     "*****************************Free AVS Image Converter********************************" : "*****************************Free AVS Image Converter********************************",
-    "無料 AVS 画像コンバーター":"無料 AVS 画像コンバーター",
-    "無料 AVS 画像コンバーターを使って、画像ファイルを JPEG、JPG、PNG、CR2、PDF ファイルに変換。写真の大きさを変更、回転、色彩コントラスト調節、写真効果を適用。":"無料 AVS 画像コンバーターを使って、画像ファイルを JPEG、JPG、PNG、CR2、PDF ファイルに変換。写真の大きさを変更、回転、色彩背景調節、写真効果を適用。",
-    "無料画像コンバーター、写真コンバーター、avs 画像コンバーター、avs 写真コンバーター、画像コンバーター、画像サイズコンバーター、画像コンバーターダウンロード、画像一括コンバーター、png 画像コンバーター、PDF 画像コンバーター、画像変換ソフトウェア、画像変換ツール、画像変換、写真フォーマット変換、写真 PDF 変換、写真テキスト変換、写真 jpg 変換、画像変換、画像 jpeg 変換、画像 png 変換、写真変換、画像サイズ変換、画像変換、画像サイズ縮小ツール、画像リサイズ":"無料画像コンバーター、写真コンバーター、avs 画像コンバーター、avs 写真コンバーター、画像コンバーター、画像サイズコンバーター、画像コンバーターダウンロード、画像一括コンバーター、png 画像コンバーター、PDF 画像コンバーター、画像変換ソフトウェア、画像変換ツール、画像変換、写真フォーマット変換、写真 PDF 変換、写真テキスト変換、写真 jpg 変換、画像変換、画像 jpeg 変換、画像 png 変換、写真変換、画像サイズ変換、画像変換、画像サイズ縮小ツール、画像リサイズ",
+    "AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF": "AVS Image Converterで写真サイズ変更、効果適用、すべての主要な形式で変換します。",
+    "Free AVS Image Converter":"無料 AVS 画像コンバーター",
+    "Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter Resize photos,rotate, adjust color and contrast, apply photo effects":"様々な形式の画像変換、画像サイズの変更、白効果の適用、ピクチャの透かし の加え。",
+    "Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize":"Image converter,avs image converter,画像変換,画像編集,写真編集,画像変換ソフト,ソフト画像,写真変換,写真ソフト,写真変換ソフト,写真サイズ変換,イラスト変換,jpeg変換,pdf変換,png変換,gif変換画像サイズ小さくする,写真サイズ小さくするpdf変換ソフト",
     "無料 AVS 画像コンバーターを使って、写真、ストーリー、広告を共有":"無料 AVS 画像コンバーターを使って、写真、ストーリー、広告を共有",
     "人気フォーマットでの変換":"人気フォーマットでの変換",
     "Convert images to all key formats JPEG JPG PNG BMP TIFF TGA GIF animated GIF PNG APNG ITHMB iPhone iPod Thumbnail Files":"JPEG、JPG、PNG、BMP、TIFF、TGA、GIF、アニメ化 GIF、アニメ化 PNG、APNG、ITHMB (iPhone、iPod サムネイルファイル) などの主なフォーマットすべてに画像を変換。",
@@ -663,6 +670,7 @@
 
 
     "*****************************AVS Media Player********************************" : "*****************************AVS Media Player********************************",
+    "AVS Free Media Player is the best media player for Windows": "AVS Media Player。ビデオプレーヤーのソフトウェア。",
     "AVS メディアプレーヤー":"AVS メディアプレーヤー",
     "無料 AVS メディアプレーヤーを使って動画閲覧、音声再生、画像閲覧":"無料 AVS メディアプレーヤーを使って動画閲覧、音声再生、画像閲覧",
     "無料 AVS メディアプレーヤーを使って人気動画フォーマットと音声フォーマットすべてを開始。無料 AVS メディアプレーヤーを公式サイトからダウンロード。主なメディアフォーマットにすべて対応。":"無料 AVS メディアプレーヤーを使って人気動画フォーマットと音声フォーマットすべてを開始。無料 AVS メディアプレーヤーを公式サイトからダウンロード。主なメディアフォーマットにすべて対応。",

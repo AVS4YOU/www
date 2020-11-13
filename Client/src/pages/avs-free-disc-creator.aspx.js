@@ -40,9 +40,9 @@ class avsFreeDiscCreator extends React.PureComponent {
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS Free Disc Creator is a free CD /DVD burning software.")}
-        metaDescription="Copy DVD with AVS Free Disc Creator software. Write DVD/CD/Blu-ray data discs. Download free DVD /Blu-ray burning software!"
-        metaKeywords="copy dvd, Free Disc Creator, blu-ray"
+        title={this.props.t("AVS Free Disc Creator is a free CD DVD burning software")}
+        metaDescription={this.props.t("Copy DVD with AVS Free Disc Creator software Write DVD CD Blu-ray data discs Download free DVD Blu-ray burning software")}
+        metaKeywords={this.props.t("copy dvd, Free Disc Creator, blu-ray")}
       >
         <ProductPagesWrapper imageName="aquamarine_background_main.jpg">
           <div className="headerBackground">

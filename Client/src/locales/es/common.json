@@ -116,6 +116,7 @@
     "Modify audio file information" : "Modifica la información del archivo de audio",
     "Create audiobooks and ringtones" : "Crea audiolibros y tonos de llamada",
     "Export audio from video" : "Exporta audio desde vídeo",
+    
 
 
     "*****************************Common Phrases********************************" : "*****************************Frases comunes********************************",
@@ -240,6 +241,7 @@
     "For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price" : "Tiene muy buena relación calidad-precio. Normalmente, uso AVS Video Editor y Video Converter los cuales son increíbles, fáciles de usar y dan resultados de calidad.",
     "If you have any questions about AVS4YOU partnership program, please contact us at" : "Si tienes alguna pregunta sobre el programa de revendedores de AVS4YOU, ponte en contacto con nosotros en",
     "For more details and discount requests, please write at" : "Para obtener más información y aprovecharte de descuentos, por favor escribe a",
+    
 
 
 
@@ -288,6 +290,7 @@
     "Lawrence Thompson":"Lawrence Thompson",
     "I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional":"Llevo varios años utilizando AVS y puedo decir con total seguridad que es muy cómodo, fácil de usar y funcional.",
     "AVS Video Converter 12":"AVS Video Converter 12",
+    
 
 
 
@@ -322,7 +325,7 @@
 
 
     "*****************************AVS Audio Editor********************************" : "*****************************AVS Audio Editor********************************",
-    "Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.":"Graba audio/ corta, divide y mezcla pistas de audio, elimina partes de un audio/ aplica efectos y filtros de audio y filtros/ guarda audio en MP3 WAV WMA M4A FLAC.",
+    "Record audio cut, split, mix audio tracks, delete audio parts apply audio effects and filters save audio to MP3 WAV WMA M4A FLAC":"Graba audio/ corta, divide y mezcla pistas de audio, elimina partes de un audio/ aplica efectos y filtros de audio y filtros/ guarda audio en MP3 WAV WMA M4A FLAC.",
     "avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs":"editor de audio avs, edutor de música avs, creador de audio avs, editor de audio, software de edición de audio, editor de mp3, editor de música, descargar editor de música, descargar editor de audio, software de edición de audio, editar mp3, movie maker editar audio, editar clips de audio, editar audio windows 7, edición de audio chula, grabar audio, grabar voz, mezclar audio, software para mezclar audio, mezclar música, cortar cd de audio, cortar clips de audio , cortar audio de un vídeo, crear audiolibro, crear audio, crear archivo de audio,  crear audio desde un vídeo, editar música, editar audio, editar canción, editar canciones mp3",
     "AVS Audio Editor":"AVS Audio Editor",
     "Create outstanding tracks for any purpose with our easy audio editing app for Windows":"Crea pistas increíbles para cualquier propósito con nuestra sencilla app de edición de audio para Windows.",
@@ -348,13 +351,14 @@
     "John Piquette":"John Piquette",
     "I have dealt with and used AVS programs for more then three years They have an incredible assortment of programs The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat":"Llevo más de tres años utilizando programas de AVS. Tienen una variedad increíble de programas. Los que utilizo yo son los mejores de su área y tienen un paquete de uso ilimitado por un precio fijo. Son imbatibles.",
     "AVS Audio Editor 8.5":"AVS Audio Editor 8.5",
+    "AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3" : "AVS Audio Editor | Editor de sonido | Editar y grabar audio",
 
 
 
 
 
     "*****************************AVS Audio Converter********************************" : "*****************************AVS Audio Converter********************************",
-    "Convert audio to any popular format (MP3  WAV WMA M4A FLAC)/ create and edit audio books/ split and merge audio tracks.":"Convierte audio a cualquier formato conocido (MP3  WAV WMA M4A FLAC)/ crea y edita audiolibros/ divide y fusiona pistas de audio.",
+    "Convert audio to any popular format MP3 WAV WMA M4A FLAC create and edit audio books split and merge audio tracks":"Convierte audio a cualquier formato conocido (MP3  WAV WMA M4A FLAC)/ crea y edita audiolibros/ divide y fusiona pistas de audio.",
     "avs audio converter, avs song converter, avs  music converter, music converter, convert music, convert music mp3, audio converter, audio converter mp3, convert audio,song converter, mp3 song converter, mp3 converter, wav converter, wav mp3 converter, video to audio converter, mp4 to mp3 converter, mp4 to mp3, wma converter, mp4 wma converter, wma mp3, convert m4a, m4a to mp3, flac converter, flac to mp3 converter, amr converter":"conversor de audio avs, conversor de canciones avs, conversor de música avs , conversor de música, convertir música, convertir de música mp3, conversor de audio, conversor de audio mp3, convertir audio, conversor de canciones, conversor de canciones mp3, conversor mp3, conversor wav, conversor wav mp3, conversor de vídeo a audio, conversor de mp4 a mp3, mp4 a mp3, conversor wma, conversor mp4 wma, wma mp3, convertir m4a, m4a a mp3, conversor flac, conversor de flac a mp3, conversor amr",
     "Convert audio between popular formats Apply effects, customize output parameters, use batch mode":"Convierte audio entre formatos populares. Aplica effectos, personaliza los parámetros de salida, utiliza el modo por lotes.",
     "Convert and edit all key audio formats":"Convierte y edita todos los formatos básicos de audio.",
@@ -373,13 +377,14 @@
     "Jacky Lui":"Jacky Lui",
     "The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software":"Es un placer y un gustazo trabajar con el software de AVS Audio Converter. El software es un imprescindible y tiene un precio muy atractivo. Estoy muy satisfecho con el software de AVS Audio Converter.",
     "AVS Audio Converter 9.1":"AVS Audio Converter 9.1",
+    "AVS Audio Converter is a lossless tool to convert MP3 WAV WMA M4A FLAC AMR": "AVS Audio Converter | Mejor Conversor Audio | Convertir MP3",
 
 
 
 
 
     "*****************************AVS Media Player********************************" : "*****************************AVS Media Player********************************",
-    "Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported.":"Abre todos los formatos populares de vídeo y audio con el reproductor multimedia gratuito AVS. Descárgate AVS Free Media Player en el sitio web oficial. Compatible con los formatos multimedia más conocidos.",
+    "Open all popular video and audio formats with AVS Free Media player Download AVS Free Media Player from the official site All key media formats supported":"Reproduce todos los formatos populares de vídeo y audio con AVS Free Media Player. Descargue AVS Free Media Player desde el sitio oficial.",
     "Free media player, avs4you video player,Video player software, media player, audio player, video player":"Reproductor multimedia gratis, reproductor de vídeo avs4you,software de reproducción de vídeo, reproductor multimedia, reproductor de audio, reproductor de vídeo",
     "Watch video, play audio and view your pictures with Free AVS Media Player.":"Visualiza vídeo, reproduce audio y visualiza tus imágenes conel AVS Media Player gratuito.",
     "Watch video":"Visualiza vídeo",
@@ -578,8 +583,9 @@
 
 
     "*****************************Free AVS Disc Creator********************************" : "*****************************AVS Disc Creator gratis*************************",
+    "AVS Free Disc Creator is a free CD DVD burning software": "AVS Free Disc Creator permite grabar discos CD / DVD.",
     "Free AVS Disc Creator":"AVS Disc Creator Gratis",
-    "Copy DVD with AVS Free Disc Creator software. Write DVD/CD/Blu-ray data discs. Download free DVD /Blu-ray burning software!":"Copia DVD con el software gratuito de AVS Disc Creator. Graba discos DVD/CD/Blu-ray de datos. ¡Descárgate el software gratuito de grabación de DVD/Blu-ray!",
+    "Copy DVD with AVS Free Disc Creator software Write DVD CD Blu-ray data discs Download free DVD Blu-ray burning software":"Copia DVD con el software gratuito de AVS Disc Creator. Graba discos DVD/CD/Blu-ray de datos. ¡Descárgate el software gratuito de grabación de DVD/Blu-ray!",
     "copy dvd, Free Disc Creator, blu-ray":"Copiar dvd, Disc Creator gratis, blu-ray",
     "Burn audio, video, images easily with Free AVS Disc Creator":"Graba audio, vídeo, imágenes fácilmente con AVS Disc Creator gratis.",
     "Burn video discs":"Graba discos de vídeo.",
@@ -605,8 +611,9 @@
 
 
     "*****************************AVS Document Converter********************************" : "*****************************AVS Document Converter********************************",
+    "AVS Free Document Converter converts Doc to PDF, DOCX, MOBI": "AVS Free Document Converter convierte DOC a PDF, DOCX, MOBI.",
     "AVS Document Converter":"AVS Document Converter",
-    "Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter. Convert doc to JPEG, PNG, GIF for free. Add a text watermark, encrypt PDF files.":"Convierte DOC, DOCX a PDF, EPUB, MOBI, HTML, ODT con AVS Document Converter gratis. Convierte doc a JPEG, PNG, GIF gratis. Añade una marca de agua de texto, encripta archivos PDF.",
+    "Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter Convert doc to JPEG, PNG, GIF for free Add a text watermark, encrypt PDF files":"Convierte DOC, DOCX a PDF, EPUB, MOBI, HTML, ODT con AVS Document Converter gratis. Convierte doc a JPEG, PNG, GIF gratis. Añade una marca de agua de texto, encripta archivos PDF.",
     "document converter, convert pdf to word document, avs docs converter, docs converter, word to pdf converter, jpg to pdf converter, microsoft word to pdf converter, docs conversion, docs convert to pdf, docs to doc converter, docx to doc converter, djvu converter, odt  converter, xps  converter doc, xps  converter, xps  to pdf, convert  pdf, mobi  converter, djvu  to pdf, djvu  to pdf converter, djvu  reader, convert  epub to mobi, convert  pdf to jpg, universal  document converter, epub  converter, mobi  to epub, convert  djvu to pdf, pdf  to mobi converter, word  converter, convert  html, pdf  creator, pdf  converter":"convertidor de documento, convierte pdf a documento word, convertirdor de dcumento avs, convertidor de documentos, convertidor word a pdf, convertidor jpg a pdf, convertidor microsoft word a pdf, conversión de doucmentos, convierte documentos a pdf, convertidor de documentos a documento, convertidor de docx a doc, convertidor djvu, convertidor odt, convertidor de documento xps, convertidor xps, xps  a pdf, convierte  pdf, convertidor mobi, djvu  a pdf, convertidor djvu  a pdf, lector djvu, convierte epub a mobi, convierte pdf a jpg, convertidor de documento universal, convertidor epub, mobi  a epub, convierte djvu a pdf, convertidor pdf a mobi converter, convertidor word, convierte  html, pdf  creator, convertidor pdf",
     "Free PDF, DOCX, DOC, TXT, ODT, ePub, MOBI document converter Convert PDF to Word documents and image files for free":"Convertidor de documento gratis en PDF, DOCX, DOC, TXT, ODT, ePub, MOBI. Convierte documentos PDF a Word y a archivos de imágenes gratis.",
     "Convert various document formats":"Convierte varios formatos de documentos.",
@@ -632,9 +639,10 @@
 
 
     "*****************************Free AVS Image Converter********************************" : "*****************************AVS Image Converter gratis********************************",
+    "AVS Free Image Converter is a reliable tool to resize images and to convert JPEG JPG PNG CR2 PDF": "AVS Image Converter |Conversor poderoso de imágenes.",
     "Free AVS Image Converter":"AVS Image Converter Gratis",
-    "Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter. Resize photos,rotate, adjust color and contrast, apply photo effects.":"Convierte archivos de imágen a JPEG, JPG, PNG, CR2, PDF gratis con AVS Image Converter gratis. Cambia el tamaño de fotos,gira, ajusta elcolor y contraste, aplica efectos de foto.",
-    "Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize":"image converter gratis, convertidor de foto, convertidor de imagen avs, convertidor de foto avs, convertidor de imagen, convertidor de tamaño de imagen, convertidor de imagen descargar, convertidor de imágenes en lote, convertidor de imagen a png, convertidor de imagen a pdf, software de conversión de imagen, herramienta de conversión de imagen, conversión de imagen, convertir formato de foto, convertir foto a pdf, convertir foto a texto, convertir foto a jpg, convertir imagen, convertir imagen a pdf, convertir imagen a jpeg, convertir imagen a png, convertir tamaño de imagen, convertir foto, cambiar tamaño de imagen, reducir tamaño de imagen, redimensionar imagen",
+    "Convert image files to JPEG, JPG, PNG, CR2, PDF for free with Free AVS Image Converter Resize photos,rotate, adjust color and contrast, apply photo effects":"Convierte imágenes a JPEG, JPG, PNG, CR2, PDF gratis con AVS Image Converter. Cambia el tamaño de las fotos, ajusta el color y el contraste, aplica efectos.",
+    "Free image converter, picture converter, avs image converter, avs photo converter, image converter, image size converter, image converter download, batch image converter, image converter to png, image converter to pdf, image conversion software, image conversion tool, image converting, convert picture format, convert picture to pdf, convert picture to text, convert picture to jpg, convert image, convert image to pdf, convert image to jpeg, convert image to png, convert image size, convert photo, change image size, image size reducer, image resize":"image converter,avs image converter,batch image converter,conversor de imágenes,raw a jpeg,pdf a jpeg,convertir jpg en pdf,convertir cr2 a jpg,convertir imágenes,convertir imagenes a jpg,conversor de imágenes,conversor de fotos, conversor de fotos,convertidor imágenes,redimensionar fotos",
     "Share your photos, stories and adventures with Free AVS Image Converter":"Comparte tus fotos, historias y aventuras con AVS Image Converter gratis.",
     "Convert from and to popular formats":"Convierte de y a formatos populares.",
     "Convert images to all key formats JPEG JPG PNG BMP TIFF TGA GIF animated GIF PNG APNG ITHMB iPhone iPod Thumbnail Files":"Convierte imágenes a todos los formatos básicos JPEG, JPG, PNG, BMP, TIFF, TGA, GIF, GIF/PNG animados, APNG, ITHMB (archivos en miniatura en iPhone/iPod).",
@@ -661,6 +669,7 @@
 
 
     "*****************************AVS Media Player********************************" : "*****************************AVS Media Player********************************",
+    "AVS Free Media Player is the best media player for Windows": "AVS Free Media Player es un reproductor multimedia para Windows.",
     "AVS Media Player":"AVS Media Player",
     "Watch video, play audio and view your pictures with Free AVS Media Player":"Visualiza el vídeo, reproduce el audio and mira tus fotos con AVS Media Player gratis.",
     "Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported.":"Abre todos los vídeos populares y formatos de audio con AVS Media player gratis. Descárgate AVS Media Player gratis del sitio web oficial. Compatible con todos los formatos multimedia.",
