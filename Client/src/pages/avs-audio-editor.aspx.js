@@ -62,8 +62,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="audio editor en header png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="audio editor en header png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage" imageName={this.props.t("audio editor en header png")} style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("audio editor en header png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -85,7 +85,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="audio editor edit all key jpg"
+                imageName={this.props.t("audio editor edit all key jpg")} 
                 headerText={this.props.t("Edit all key audio formats" )}   
             >
               <Text className="ListItem">{this.props.t("Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc")}</Text>
@@ -96,7 +96,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="audio_editor_record_audio.jpg"
+                imageName={this.props.t("audio editor record audio jpg")}
                 headerText={this.props.t("Record audio from any inputs")}
             >
               <Text className="ListItem">{this.props.t("Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card")}</Text>
@@ -105,7 +105,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="audio_editor_slider5.jpg"
+              imageName={this.props.t("audio_editor_slider5.jpg")}
               headerText={this.props.t("Master your sound for higher quality")}
             >
               <Text className="ListItem">{this.props.t("Remove noise and irritating sounds like roaring, hissing, crackling, etc")}</Text>
@@ -115,7 +115,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={false}
-              imageName="audio_editor_slider6.jpg"
+              imageName={this.props.t("audio editor slider6 jpg")}
               headerText={this.props.t("Extend your experience with additional features")}
             >
               <Text className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
@@ -151,8 +151,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.0</Text>
           <ScreenshotsCarousel 
-            imageNames={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg" ]}
-            imageNamesPopup={["audio_editor_slider1.jpg", "audio_editor_slider2.jpg", "audio_editor_slider3.jpg", "audio_editor_slider4.jpg", "audio_editor_slider5.jpg", "audio_editor_slider6.jpg"]}
+            imageNames={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg") ]}
+            imageNamesPopup={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5", "slideCarousel6"]}
             
           />

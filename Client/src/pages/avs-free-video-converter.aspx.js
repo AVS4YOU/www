@@ -67,7 +67,7 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="video_converter_en_avs_video_converter.png" style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage" imageName={this.props.t("video converter en avs video converter png")} style={{maxWidth: "1564px"}} alt="header-image"/>
             <ImageGQL className="headerImage mobile" imageName="video_converter_header_en_mobile.png" style={{maxWidth: "366px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
@@ -90,7 +90,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video_converter_convert_all_key2.jpg"
+                imageName={this.props.t("video converter convert all key2 jpg")}
                 headerText={this.props.t("Сonvert all key video formats")}    
             >
               <Text className="ListItem">{this.props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
@@ -103,7 +103,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video_converter_convert_video_easily3.jpg"
+                imageName={this.props.t("video converter convert video easily3 jpg")}
                 headerText={this.props.t("Convert video easily and fast")}   
             >
               <Text className="ListItem">{this.props.t("Use hardware acceleration for video decoding by means of video cards GPU  Intel HD Graphics or NVIDIA GeForce It is available for H 264 AVC, VC-1, MPEG-2, H 265 HEVC, VP8, VP9 codecs It speeds up preview and conversion processes significantly")}</Text>
@@ -116,7 +116,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="vc_convert_a_large_number.jpg"
+              imageName={this.props.t("vc convert a large number jpg")}
               headerText={this.props.t("Convert a large number of files at once")}    
             >
               <Text className="ListItem"><span>{this.props.t("Command Line Mode")}</span>{this.props.t("Automate routine work using ready conversion templates without clicking the program buttons manually")}</Text>
@@ -125,7 +125,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false} 
-                imageName="video_converter_edit_your_videos.jpg"
+                imageName={this.props.t("video converter edit your videos jpg")}
                 headerText={this.props.t("Edit your videos before conversion")}   
             >
               <Text className="ListItem">{this.props.t("Split your videos into parts, by chapters, size and cut unnecessary scenes")}</Text>
@@ -138,7 +138,7 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                imageName="video_converter_slider_popup3.jpg"
+                imageName={this.props.t("video converter slider popup3 jpg")}
                 headerText={this.props.t("Convert and share videos on Web")}
             >
               <Text className="ListItem"><span>{this.props.t("Save video to any format or modern gadgets")}</span>{this.props.t("Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc")}<br/> {this.props.t("Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita)")} <br/> {this.props.t("Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact.")}</Text>
@@ -176,8 +176,8 @@ render(){
           <ScreenshotsCarousel 
             maxWidth={734}
             maxWidthPopup={734}
-            imageNames={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg"]}
-            imageNamesPopup={["video_converter_slider1.jpg", "video_converter_slider2.jpg", "video_converter_slider3.jpg", "video_converter_slider4.jpg", "video_converter_slider5.jpg"]}
+            imageNames={[this.props.t("video converter slider1 jpg"), this.props.t("video converter slider2 jpg"), this.props.t("video converter slider3 jpg"), this.props.t("video converter slider4 jpg"), this.props.t("video converter slider5 jpg")]}
+            imageNamesPopup={[this.props.t("video converter slider1 jpg"), this.props.t("video converter slider2 jpg"), this.props.t("video converter slider3 jpg"), this.props.t("video converter slider4 jpg"), this.props.t("video converter slider5 jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
             
           />

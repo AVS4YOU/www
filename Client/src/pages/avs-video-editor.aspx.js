@@ -65,8 +65,8 @@ render(){
               </div> 
             </PageContentWrapper>
             
-            <ImageGQL className="headerImage" imageName="en_avs_video_editor_main.png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="en_avs_video_editor_main.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage" imageName={this.props.t("en avs video editor main png")} style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("en avs video editor main png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -88,7 +88,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="video-editor-slider3.jpg"
+                imageName={this.props.t("video editor slider3 jpg")}
                 headerText={this.props.t("Work with all key formats and HD videos")}    
             >
               <Text className="ListItem">{this.props.t("Edit and save video in all popular formats MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc")}</Text>
@@ -103,7 +103,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video-editor-slider4.jpg"
+                imageName={this.props.t("video editor slider4 jpg")}
                 headerText={this.props.t("Record your video")}   
             >
               <Text className="ListItem">{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras")}</Text>
@@ -113,7 +113,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="video-editor-slider5.jpg"
+              imageName={this.props.t("video editor slider5 jpg")}
               headerText={this.props.t("Make your video look professional")}    
             >
               <Text className="ListItem">{this.props.t("Cut out a particular scene or remove shaky and unnecessary parts")}</Text>
@@ -126,7 +126,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="video-editor-slider2.jpg"
+                imageName={this.props.t("video editor slider2 jpg")}
                 headerText={this.props.t("Make vivid slideshows")}   
             >
               <Text className="ListItem">{this.props.t("Import images, add your voice or favourite audio tracks")}</Text>
@@ -136,7 +136,7 @@ render(){
 
             <ContentRowItem
                 imgLeft={true}
-                imageName="video-editor-slider6.jpg"
+                imageName={this.props.t("video editor slider6 jpg")}
                 headerText={this.props.t("Share your video")}    
             >
               <Text className="ListItem">{this.props.t("Save the newly-made video in the desired format on your computer")}</Text>
@@ -173,8 +173,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.4</Text>
           <ScreenshotsCarousel
-            imageNames={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
-            imageNamesPopup={["video-editor-slider1.jpg", "video-editor-slider2.jpg", "video-editor-slider2-replace.png"]}
+            imageNames={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), "video-editor-slider2-replace.png"]}
+            imageNamesPopup={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), "video-editor-slider2-replace.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
           />
           <PageContentWrapper>
