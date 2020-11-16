@@ -173,8 +173,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.4</Text>
           <ScreenshotsCarousel
-            imageNames={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), "video-editor-slider2-replace.png"]}
-            imageNamesPopup={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), "video-editor-slider2-replace.png"]}
+            imageNames={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg")]}
+            imageNamesPopup={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
           />
           <PageContentWrapper>
