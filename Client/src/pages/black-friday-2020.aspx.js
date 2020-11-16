@@ -6,8 +6,7 @@ import ImageGQL from '../components/image-gql';
 import Music from '../components/music';
 import ReactTurntable from "react-turntable";
 import styled from 'styled-components';
-
-import Button from "../components/button";
+import Modal from '../components/modal';
 
 
 import logoAVS from '../images/black-friday-2020/AVS_Black_friday.svg';
@@ -165,6 +164,28 @@ const BlackFridayStyle = styled.div`
 }
 `;
 
+const modalStyle = {
+	overlay: {
+		backgroundColor: "rgba(0, 0, 0,0.5)"
+	}
+};
+
+const mainStyle = {
+	app: {
+		margin: "120px 0"
+	},
+	button: {
+		backgroundColor: "#408cec",
+		border: 0,
+		padding: "12px 20px",
+		color: "#fff",
+		margin: "0 auto",
+		width: 150,
+		display: "block",
+		borderRadius: 3
+	}
+};
+
 class blackFriday extends React.PureComponent {
   turntable = null
 
@@ -172,15 +193,34 @@ class blackFriday extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+			isInnerModalOpen: false
     };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+		this.openModal = this.openModal.bind(this);
   }
 
 
   getDevice(device){
     this.setState({ device: device });
   }
+
+  // close modal (set isModalOpen, true)
+	closeModal() {
+		this.setState({
+			isModalOpen: false
+		});
+	}
+
+	// open modal (set isModalOpen, false)
+	openModal() {
+		this.setState({
+			isModalOpen: true
+		});
+	}
+
 
   render(){
   return (
@@ -226,7 +266,35 @@ class blackFriday extends React.PureComponent {
                     <button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start")} </button>
                     <Text className="overwey">{this.props.t("*Please, note that you may try your luck only once a day.")}</Text>
                 </div>
+                <div >
+		
+                <button  onClick={this.openModal}>
+                    Open modal
+                  </button>
 
+                  <Modal
+                    isModalOpen={this.state.isModalOpen}
+                    closeModal={this.closeModal}
+                  >
+                    <img
+                      width="100%"
+                      style={{ borderRadius: 3 }}
+                      src="https://source.unsplash.com/random"
+                      alt="unsplash"
+                    />
+
+                    <button
+                      style={{
+                        margin: 0,
+                        width: "auto",
+                        marginTop: 10
+                      }}
+                      onClick={this.closeModal}
+                    >
+                      Close
+                    </button>
+                  </Modal>
+			</div>
             </div>
                 </div>
               </div>
