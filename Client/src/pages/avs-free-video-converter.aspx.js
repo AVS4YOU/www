@@ -68,7 +68,7 @@ render(){
               </div> 
             </PageContentWrapper>
             <ImageGQL className="headerImage" imageName={this.props.t("video converter en avs video converter png")} style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="video_converter_header_en_mobile.png" style={{maxWidth: "366px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("video converter en avs video converter png")} style={{maxWidth: "366px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
