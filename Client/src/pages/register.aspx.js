@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
 import LinkHref from '../components/link-href';
+import LstDay from '../components/last-day';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -120,7 +121,7 @@ render(){
                 <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-              <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+              <LstDay  MText = {"prices valid till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
@@ -144,7 +145,7 @@ render(){
                   <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-                <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+                <LstDay  MText = {"prices valid till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button
                   href={this.state.hrefUnlim}
                   backgroundColor="orange"

@@ -223,6 +223,7 @@ class LanguageSelector extends React.PureComponent {
                         </MenuDropdown> 
                     </div>
                     <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
+
                         {availableLocales.map((item) =>
 
                             this.props.locale !== item.value && 
@@ -231,15 +232,17 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
-                                            : item.value === "en" && "/" }
+                                            ? item.value === "en" && (pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" &&  "/" 
+                                        }
                                         href={
                                             pageContext && pageContext.originalPath
                                                 ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.html" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "https://www.avs4you.com/" + item.value
+                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
+                                        
                                     />
                                     
                         )}
