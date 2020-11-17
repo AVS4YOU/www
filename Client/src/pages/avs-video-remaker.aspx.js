@@ -41,9 +41,9 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS Video ReMaker - cut out the scenes without reconverting video files!")}
-        metaDescription="AVS Video ReMaker. Cut out the scenes and remove commercials without reconverting video files!"
-        metaKeywords="video remaker, convert video, video formats, remake video, no recompression, delete scenes, remove commercials"
+        title={this.props.t("AVS Video ReMaker - cut out the scenes without reconverting video files")}
+        metaDescription={this.props.t("AVS Video ReMaker Cut out the scenes and remove commercials without reconverting video files")}
+        metaKeywords={this.props.t("video remaker, convert video, video formats, remake video, no recompression, delete scenes, remove commercials")}
       >
         <ProductPagesWrapper>
           <div className="headerBackground">
