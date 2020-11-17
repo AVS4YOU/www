@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Music_page  from "../../images/black-friday-2020/ost/operation_casino.mp3";
 import styled from 'styled-components';
 
@@ -52,3 +52,4 @@ export default class Music extends React.Component {
     );
   }
 }
+*/
