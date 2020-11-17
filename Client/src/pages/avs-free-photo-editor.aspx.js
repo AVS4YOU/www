@@ -40,9 +40,9 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS Free Photo Editor is a free photo editing software.")}
-        metaDescription="Edit JPEG, JPG, PNG, GIF, BMP, TIFF for free with AVS Free Photo Editor. Rotate & crop image files, remove red eye effect, adjust colour and tints, add effects."
-        metaKeywords="photo editor,free photo editor,picture editor, photo editing software, edit photos, picture editing"
+        title={this.props.t("AVS Free Photo Editor is a free photo editing software")}
+        metaDescription={this.props.t("Edit JPEG, JPG, PNG, GIF, BMP, TIFF for free with AVS Free Photo Editor Rotate & crop image files, remove red eye effect, adjust colour and tints, add effects")}
+        metaKeywords={this.props.t("photo editor,free photo editor,picture editor, photo editing software, edit photos, picture editing")}
       >
         <ProductPagesWrapper>
           <div className="headerBackground">

@@ -18,8 +18,8 @@ class Privacy extends React.PureComponent {
         className="privacy"
         pageContext={this.props.pageContext}
         t={this.props.t}
-        title=""
-        metaDescription=""
+        title={this.props.t("AVS4YOU Read the end user license agreement")}
+        metaDescription={this.props.t("Read the license agreement for the end-user of the software AVS4YOU")}
         metaKeywords=""
       >
 

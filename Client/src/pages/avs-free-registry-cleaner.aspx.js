@@ -40,9 +40,9 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("Repair Windows registry with AVS Free Registry Cleaner.")}
-        metaDescription="Scan your pc registry automatically, repair registry errors effectively. Improve your computer performance easily with AVS Free Registry Cleaner."
-        metaKeywords="Registry Cleaner, free registry cleaner,best registry cleaner, AVS Registry Cleaner, optimize your computer, computer performance"
+        title={this.props.t("Repair Windows registry with AVS Free Registry Cleaner")}
+        metaDescription={this.props.t("Scan your pc registry automatically, repair registry errors effectively Improve your computer performance easily with AVS Free Registry Cleaner")}
+        metaKeywords={this.props.t("Registry Cleaner, free registry cleaner,best registry cleaner, AVS Registry Cleaner, optimize your computer, computer performance")}
       >
         <ProductPagesWrapper>
           <div className="headerBackground">
