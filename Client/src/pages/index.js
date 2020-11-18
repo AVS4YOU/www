@@ -409,7 +409,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_audio_editor.jpg"
+                          imageName={this.props.t("slider audio editor jpg")}
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSAudioEditor.exe"
@@ -425,7 +425,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_audio_converter.jpg"
+                          imageName={this.props.t("slider audio converter jpg")}
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
