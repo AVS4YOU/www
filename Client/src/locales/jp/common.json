@@ -173,7 +173,7 @@
     "Sign up":"サインアップ",
     "Log in":"ログイン",
     "Most popular":"一番人気",
-    "Most downloadable":"一番ダウンロードが簡単",
+    "Most downloadable":"最もダウンロードされる",
     "Most featured":"最も機能的",
     "Submit request":"リクエストを送信",
     "If you have any questions about AVS4YOU Affiliate program, please contact us at":"AVS4YOU アフィリエイトプログラムについてのお問い合わせがありましたら、以下まで当社にご連絡ください",
@@ -274,7 +274,7 @@
     "Convert video files with subtitles":"サブタイトルと一緒に動画ファイルを変換",
     "Export audio and images from your video":"動画から音声や画像をエクスポート",
     "This feature is available in a full version":"* この機能はフルバージョンで利用できます",
-    "Convert and share videos on Web":"ウェブ上で動画を変換、共有",
+    "Convert and share videos on Web":"動画を変換して、ウェブで共有",
     "Save video to any format or modern gadgets":"任意のフォーマットまたは最新デバイスへ動画を保存",
     "Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc":"Apple iPhone 11/XS/XR/X/8/7/SE、Apple iPad Pro、Apple iPad 2019、Apple iPad 2018、Apple iPad 2017、iPad Air 2 など",
     "Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita)":"Samsung Galaxy S20/S10/S9/S8/S7、A51/A50/A71/A70、Galaxy Note 10/9/8/5、Galaxy Tab S6/S5e/S4/S3、Samsung UHD/SUHD TV、Sony PlayStation 4 Pro (PS4 Pro)、Sony PlayStation Vita (PS Vita)",
@@ -319,7 +319,7 @@
     "Michael Bryant":"ミシェル・ブリアン",
     "As a supporter of your programs, I must say that I have never been disappointed in your software or your customer service team Your software does exactly what I need it to do":"プログラムを応援して、御社のソフトウェアや顧客サービスチームに 100% 満足していると言っておかなければなりません。御社のソフトウェアこそ私が必要とするものです。",
     "Arthur Rees":"アーサー・リー",
-    "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise":"優秀なアプリ、迅速なサービス、手頃な価格という条件が揃っています。すごい製品です！直感的に理解でき、ヘルプファイルが簡単に理解できます。.",
+    "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise":"優秀なアプリ、迅速なサービス、手頃な価格という条件が揃っています。すごい製品です！直感的に理解でき、ヘルプファイルが簡単に理解できます。",
     "AVS Video Remaker 6.3":"AVS 動画リメイカー 6.3",
 
 
@@ -349,7 +349,7 @@
     "David Lehrman":"デビッド・リアマン",
     "I use Audio Editor to boost the overall mix volume of my work so it matches studio mastered recordings I love this program This Suite is the best money I ever spent":"AVS 音声エディターを使って、作業全体のミックスボリュームを改善して、スタジオのマスター記録システムに合わせられるようにしています。このプログラムをとても気に入っており、すごく賢い投資です。",
     "Frank Lindt":"フランク・リンツ",
-    "I trust AVS Tools and AVS Team I love and respect these tools Very easy to handle this software No need too much practical experiences Creative mind and common sense that is enough to finish new audio/video ventures":"AVS ツールと AVS チームを信頼しています。AVS ツールを手放せません!。とても簡単にこのソフトウェアを操作でき、初心者でも大丈夫です。利口なアイデアであって、常識とも言って良いでしょう。これで新しい音声動画ツールを探し終えてしまいました。",
+    "I trust AVS Tools and AVS Team I love and respect these tools Very easy to handle this software No need too much practical experiences Creative mind and common sense that is enough to finish new audio/video ventures":"AVS ツールと AVS チームを信頼しています。AVS ツールを手放せません!とても簡単にこのソフトウェアを操作でき、初心者でも大丈夫です。利口なアイデアであって、常識とも言って良いでしょう。これで新しい音声動画ツールを探し終えてしまいました。",
     "ジョン・ピケット":"ジョン・ピケット",
     "I have dealt with and used AVS programs for more then three years They have an incredible assortment of programs The ones I use are tops in those areas and with a ONE package forever pricing, it cannot be beat":"AVS プログラムを 3 年以上も使用し続けています。信じられないほどの種類のプログラムがあり、私が使っているプログラムはこの分野でもトップに入っています。この 1 パッケージ半永久価格は圧勝だと思います。",
     "AVS Audio Editor 85":"AVS 音声エディター 8.5",
@@ -784,6 +784,7 @@
     "If you have any questions about AVS4YOU Affiliate program, please contact us at":"アフィリエイトプログラムにお問い合わせの場合は、以下にご連絡お願いします",
     "AVS4YOU for Educators":"教育者用 AVS4YOU",
     "I’m not a robot" : "私はロボットではありません",
+    "https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools_jp.pdf",
 
 
 
@@ -1237,6 +1238,7 @@
     "Featured guides" : " ",
     "to work with AVS Video Editor efficiently effortlessly" : "AVSVideoEditorを効率的に操作するための詳細なガイド",
     "Any questions on how to buy, activate, or use the program? Visit online" : "プログラムの購入、有効化、または使用に関する質問はありますか？オンラインヘルプセンターにアクセスするか",
+    "Help Center" :"ヘルプセンター",
     "lang Help Center" : " ",
     "2020 All rights reserved" :" 2020 All rights reserved.",
     "Support" : "サポート",
