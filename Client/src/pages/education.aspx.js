@@ -151,7 +151,7 @@ render(){
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
-                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
+                    href={this.props.t("https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf")}
                     textTransform="uppercase"
                     t={this.props.t}
                   >
