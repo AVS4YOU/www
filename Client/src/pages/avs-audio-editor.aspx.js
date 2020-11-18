@@ -105,7 +105,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName={this.props.t("audio_editor_slider5.jpg")}
+              imageName={this.props.t("audio editor slider5 jpg")}
               headerText={this.props.t("Master your sound for higher quality")}
             >
               <Text className="ListItem">{this.props.t("Remove noise and irritating sounds like roaring, hissing, crackling, etc")}</Text>
