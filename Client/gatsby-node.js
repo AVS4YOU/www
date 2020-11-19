@@ -39,7 +39,6 @@ const localesNSContent = {
 };
 
 const availableLocales = [
-  { /*value: "ru", text: "Русский" */},
   { value: "en", text: "English" },
   { value: "de", text: "Deutsch" },
   { value: "it", text: "Italiano" },

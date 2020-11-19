@@ -195,13 +195,13 @@ const options = {
   duration: 1000,
   onStart(){
     //If you want before the rotate do some...
-    console.log('start...');
+   // console.log('start...');
     //If you want stop rotate you can return false
     return true
   },
 onComplete(codeBF) {
     //console.log(codeBF)
-    return codeBF;
+ //   return codeBF;
     //alert(codeBF)
  }
 }
@@ -288,7 +288,7 @@ class blackFriday extends React.PureComponent {
                 <div >
 		
                   <Modal
-                    isModalOpen={options.onComplete(prizes) !== undefined ? console.log(options.onComplete(prizes)) : false}
+                    isModalOpen={this.closeModal}
                     closeModal={this.closeModal}
                   >
                     <img
