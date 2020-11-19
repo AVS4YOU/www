@@ -215,7 +215,7 @@ render(){
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Dual core Intel Core i3 series or AMD equivalent")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("RAM")}</Text>

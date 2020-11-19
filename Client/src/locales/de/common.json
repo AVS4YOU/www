@@ -194,7 +194,7 @@
     "Windows 10/Windows 8x/Windows 7 compatible sound card" : "Mit Windows 10/Windows 8.x/Windows 7 kompatible Soundkarte",
     "for importing from CD" : "Rekorder für Importierung der Daten von CD",
     "Intel / AMD compatible at 186 GHz or higher" : "Intel / AMD kompatibel mit 1.86 GHz oder höher",
-    "Dual core (Intel Core i3 series or AMD equivalent)" : "Dual Core (Intel Core i3-Serie oder gleichwertiger AMD-Prozessor)",
+    "Dual core Intel Core i3 series or AMD equivalent" : "Dual Core (Intel Core i3-Serie oder gleichwertiger AMD-Prozessor)",
     "Windows 10/Windows 8x/Windows 7 compatible video card" : "Mit Windows 10/Windows 8.x/Windows 7 kompatible Grafikkarte",
 
 
@@ -514,9 +514,9 @@
     "Contact":"Kontakt",
     "Affiliate Sales":"Affiliate-Programm",
     "To learn more about affiliate program please email us at":"Um mehr über dieses Partnerprogramm zu erfahren, senden Sie uns bitte eine E-Mail an",
-    "or visit our ":"oder besuchen Seite des ",
+    "or visit our ":"oder besuchen Sie die Seite des Affiliate-Programms.",
     "page":".",
-    "Volume Sales":"Mengenrabatte",
+    "Volume Sales":"Mengenrabatte", 
     "To purchase a large number of licenses at a special price, contact our sales department at ":" Um eine große Anzahl von Lizenzen zu einem Sonderpreis zu erwerben, wenden Sie sich bitte an unsere Verkaufsabteilung unter ",
     "Education":"Bildungswesen",
     "To get a quote for schools and universities, please email us at ":"Um ein Angebot für Schulen und Universitäten zu erhalten, senden Sie bitte eine E-Mail an ",
