@@ -310,7 +310,7 @@ class mainPage extends React.PureComponent {
             pageContext={this.props.pageContext} 
             t={this.props.t}
             title={this.props.t("AVS4YOU best software for processing video, audio, image")}
-            metaDescription={this.props.t("AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video. Use AVS4YOU freeware to work with image & document files.")}
+            metaDescription={this.props.t("AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video Use AVS4YOU freeware to work with image & document files")}
             metaKeywords={this.props.t("avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter")}
     >
       <MainPageWrapper>
@@ -344,7 +344,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_converter.jpg"
+                          imageName={this.props.t("slider video converter jpg")}
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
@@ -358,7 +358,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_video_editor.jpg"
+                          imageName={this.props.t("slider video editor jpg")}
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
@@ -375,7 +375,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_video_remaker.jpg"
+                          imageName={this.props.t("slider video remaker jpg")}
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSVideoReMaker.exe"
@@ -391,7 +391,7 @@ class mainPage extends React.PureComponent {
                       </ContentRowItem>
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="media_player_formats2x.jpg"
+                          imageName={this.props.t("media player formats2x jpg")}
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSMediaPlayer.exe"
@@ -409,7 +409,7 @@ class mainPage extends React.PureComponent {
                   <ContentWrapper>
                       <ContentRowItem 
                           imgLeft={false}
-                          imageName="slider_audio_editor.jpg"
+                          imageName={this.props.t("slider audio editor jpg")}
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSAudioEditor.exe"
@@ -425,7 +425,7 @@ class mainPage extends React.PureComponent {
 
                       <ContentRowItem 
                           imgLeft={true}
-                          imageName="slider_audio_converter.jpg"
+                          imageName={this.props.t("slider audio converter jpg")}
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
                           blueButtonLink="https://new.avs4you.com/downloads/AVSAudioConverter.exe"

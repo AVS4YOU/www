@@ -21,7 +21,7 @@ render(){
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title={this.props.t("Earn money with the affiliate program AVS4YOU")}
-        metaDescription="AVS4YOU affiliate program: earn money with Links"
+        metaDescription={this.props.t("AVS4YOU affiliate program earn money with Links")}
         metaKeywords=""
       >
         <div className="header">
@@ -242,7 +242,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I use your graphics/text in my custom builds/websites?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line")}: <a href="mailto:affiliates@avs4you.com" target="_blank">affiliates@avs4you.com</a>{this.props.t("jpAffiliate")}
+                    <Text className="hiddenText">{this.props.t("Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line")} <a href="mailto:affiliates@avs4you.com" target="_blank">affiliates@avs4you.com</a>{this.props.t("jpAffiliate")}
                     </Text>
                 </div>
               </PanelCollapse>

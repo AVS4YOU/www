@@ -121,7 +121,7 @@ render(){
               <div className="education__content-wrapper">
                 <ContentRowItem
                   imgLeft={true}
-                  imageName="education_screen_educators1_new.png"
+                  imageName={this.props.t("education screen educators1 new png")}
                   headerText={this.props.t("Explain new topics and difficult concepts through video")}
                   free={false}
                 >
@@ -139,7 +139,7 @@ render(){
 
                 <ContentRowItem
                   imgLeft={true}
-                  imageName="education_screen_educators3.png"
+                  imageName={this.props.t("education screen educators3 png")}
                   headerText={this.props.t("Make video tutorials to reach even remote students")}
                   free={false}
                 >
@@ -151,7 +151,7 @@ render(){
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
-                    href="https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf"
+                    href={this.props.t("https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf")}
                     textTransform="uppercase"
                     t={this.props.t}
                   >

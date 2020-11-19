@@ -5,7 +5,7 @@ function AvsLinkHref(props){
     return(
         <PageContext.Consumer>  
             {(pageContext) => (
-                <a target="_blank" className={props.className}   href={ pageContext.locale === "en" ?  props.mainLink + "/" + (props.toLink === "=" ? "" : props.toLink) : 
+                <a className={props.className}   href={ pageContext.locale === "en" ?  (props.mainLink === "/" ? "" : props.mainLink) + "/" + (props.toLink === "=" ? "" : props.toLink) : 
                 props.mainLink + (props.toLink !== ".pdf" ? "" : "_") + pageContext.locale + (props.toLink === ".pdf" ? "" : props.toLink === "=" ? "" :  "/") + (props.toLink === "=" ? "" : props.toLink)
                     } 
                 >   

@@ -20,7 +20,7 @@ render(){
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title={this.props.t("AVS4YOU partnership Program for resellers")}
-        metaDescription="AVS4YOU Reseller program: Safe and cost-effective"
+        metaDescription={this.props.t("AVS4YOU Reseller program: Safe and cost-effective")}
         metaKeywords=""
       >
         <div className="header">

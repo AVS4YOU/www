@@ -40,8 +40,8 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS Audio Converter is a lossless tool to convert MP3 WAV WMA M4A FLAC AMR")}
-        metaDescription={this.props.t("Convert audio to any popular format (MP3  WAV WMA M4A FLAC)/ create and edit audio books/ split and merge audio tracks.")}
+        title={this.props.t("AVS Free Audio Converter - Convert all key audio formats")}
+        metaDescription={this.props.t("Free Audio Converter - Convert MP3, WAV, WMA, M4A, OGG, FLAC, AMR, AAC for free and losslessly Download AVS Free Audio Converter")}
         metaKeywords={this.props.t("avs audio converter, avs song converter, avs  music converter, music converter, convert music, convert music mp3, audio converter, audio converter mp3, convert audio,song converter, mp3 song converter, mp3 converter, wav converter, wav mp3 converter, video to audio converter, mp4 to mp3 converter, mp4 to mp3, wma converter, mp4 wma converter, wma mp3, convert m4a, m4a to mp3, flac converter, flac to mp3 converter, amr converter")}
       >
         <ProductPagesWrapper>
@@ -64,8 +64,8 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName="audio_converter_header.png" style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
+            <ImageGQL className="headerImage" imageName={this.props.t("audio converter header png")} style={{maxWidth: "1564px"}} alt="header-image"/>
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("audio converter header png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -87,7 +87,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                imageName="audio_converter_slider2.jpg"
+                imageName={this.props.t("audio converter slider2 jpg")}
                 headerText={this.props.t("Convert and edit all key audio formats")}
             >
               <Text className="ListItem">{this.props.t("Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc")}</Text>
@@ -98,7 +98,7 @@ render(){
 
             <ContentRowItem 
                 imgLeft={false}
-                imageName="audio_converter_slider3.jpg"
+                imageName={this.props.t("audio converter slider3 jpg")}
                 headerText={this.props.t("Create audio files for any purpose")}
             >
               <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
@@ -109,7 +109,7 @@ render(){
 
             <ContentRowItem 
               imgLeft={true}
-              imageName="audio_converter_bath.jpg"
+              imageName={this.props.t("audio converter bath jpg")}
               headerText={this.props.t("Convert audio files in bulk")}    
             >
               <Text className="ListItem">{this.props.t("Use a batch mode to convert or compress a large number of audio files at once")}</Text>
@@ -140,8 +140,8 @@ render(){
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.0</Text>
           <ScreenshotsCarousel 
-            imageNames={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg" ]}
-            imageNamesPopup={["audio_converter_slider1.jpg", "audio_converter_slider2.jpg", "audio_converter_slider3.jpg", "audio_converter_bath.jpg"]}
+            imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
+            imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
             
           />

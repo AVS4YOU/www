@@ -3,7 +3,7 @@ import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
 import Text from '../components/text';
 import ImageGQL from '../components/image-gql';
-import Music from '../components/music';
+//import Music from '../components/music';
 import ReactTurntable from "react-turntable";
 import styled from 'styled-components';
 import Modal from '../components/modal';
@@ -299,8 +299,7 @@ class blackFriday extends React.PureComponent {
                   <img className="wheelAVSfoot"  src ={wheelAVSfoot}/>
                   </Wheelstyle>
 
-                <div className="bf_container">
-                
+                <div className="bf_container">                
                 <img className="logoAVS" src={logoAVS} />
                 <div className="block_content">
                     <img className="golden_arrow_bf_first" src={goldenArrowBf}></img>

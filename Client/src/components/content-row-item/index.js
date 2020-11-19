@@ -174,7 +174,9 @@ const RowContent = styled.div`
                 background-color: #1373E2;
                 padding: 9px 35px;
                 border-radius: 5px;
-        
+                a{
+                    color: #fff;
+                }
                 p{
                     color: #fff;
                 }
