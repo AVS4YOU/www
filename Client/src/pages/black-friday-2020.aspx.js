@@ -102,6 +102,17 @@ position: relative;
 `;
 
 const BlackFridayStyle = styled.div`
+background: radial-gradient(72.85% 59.35% at 0% 46.77%, #4E6368 0%, #0A0F11 98.22%);
+background-repeat: repeat;
+background-position: 0 0;
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+font-family: Tahoma;
+color: #fff;
+vertical-align: top;
+
 .bf_container{
   display: grid;
 }
