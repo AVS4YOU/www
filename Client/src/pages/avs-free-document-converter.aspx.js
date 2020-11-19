@@ -41,8 +41,8 @@ class avsFreeDocumentConverter extends React.PureComponent {
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title={this.props.t("AVS Free Document Converter converts Doc to PDF, DOCX, MOBI")}
-        metaDescription="Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter. Convert doc to JPEG, PNG, GIF for free. Add a text watermark, encrypt PDF files."
-        metaKeywords="document converter, convert pdf to word document, avs docs converter, docs converter, word to pdf converter, jpg to pdf converter, microsoft word to pdf converter, docs conversion, docs convert to pdf, docs to doc converter, docx to doc converter, djvu converter, odt  converter, xps  converter doc, xps  converter, xps  to pdf, convert  pdf, mobi  converter, djvu  to pdf, djvu  to pdf converter, djvu  reader, convert  epub to mobi, convert  pdf to jpg, universal  document converter, epub  converter, mobi  to epub, convert  djvu to pdf, pdf  to mobi converter, word  converter, convert  html, pdf  creator, pdf  converter"
+        metaDescription={this.props.t("Convert DOC, DOCX to PDF, EPUB, MOBI, HTML, ODT with AVS Free Document Converter Convert doc to JPEG, PNG, GIF for free Add a text watermark, encrypt PDF files")}
+        metaKeywords={this.props.t("document converter, convert pdf to word document, avs docs converter, docs converter, word to pdf converter, jpg to pdf converter, microsoft word to pdf converter, docs conversion, docs convert to pdf, docs to doc converter, docx to doc converter, djvu converter, odt  converter, xps  converter doc, xps  converter, xps  to pdf, convert  pdf, mobi  converter, djvu  to pdf, djvu  to pdf converter, djvu  reader, convert  epub to mobi, convert  pdf to jpg, universal  document converter, epub  converter, mobi  to epub, convert  djvu to pdf, pdf  to mobi converter, word  converter, convert  html, pdf  creator, pdf  converter")}
       >
         <ProductPagesWrapper>
           <div className="headerBackground">

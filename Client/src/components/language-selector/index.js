@@ -16,11 +16,6 @@ import DeIcon from '../../images/common/languages/germany.svg';
 import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
-import NlIcon from '../../images/common/languages/netherlands.svg';
-import KoIcon from '../../images/common/languages/korea-flag.svg';
-import PlIcon from '../../images/common/languages/polish-flag.svg';
-import DaIcon from '../../images/common/languages/danish.svg';
-import PtIcon from '../../images/common/languages/portugal-flag.svg';
 
 const BackSubmenuButtonShow = css`
     opacity: 1;
@@ -95,21 +90,6 @@ const StyledLanguageSelector = styled.div`
         }
         &.jp:before{
             background-image: url(${JpIcon});
-        }
-        &.nl:before{
-            background-image: url(${NlIcon});
-        }
-        &.ko:before{
-            background-image: url(${KoIcon});
-        }
-        &.pl:before{
-            background-image: url(${PlIcon});
-        }
-        &.da:before{
-            background-image: url(${DaIcon});
-        }
-        &.pt:before{
-            background-image: url(${PtIcon});
         }
     }
     .languageSelector:before{
@@ -215,10 +195,10 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
+                                            ? item.value === "en" && pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, '')
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
-                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
@@ -229,10 +209,10 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && pageContext.originalPath.replace(/(\/)?$/, '')
-                                            : item.value === "en" && "/"}  
+                                            ? item.value === "en" && pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, '')
+                                            : item.value === "en" && "/" + item.value}  
                                         href={pageContext && pageContext.originalPath
-                                            ? item.value !== "en" && "https://www.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.aspx" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value !== "en" && "/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
@@ -250,12 +230,12 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
                                             ? item.value === "en" && (pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" &&  "/" 
+                                            : item.value === "en" &&  "/" + item.value
                                         }
                                         href={
                                             pageContext && pageContext.originalPath
-                                                ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/index.html" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "https://teststatic.avs4you.com/" + item.value
+                                                ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value !== "en" && "/" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 

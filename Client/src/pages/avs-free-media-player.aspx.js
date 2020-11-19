@@ -56,8 +56,8 @@ class avsFreeMediaPlayer extends React.PureComponent {
         pageContext={this.props.pageContext} 
         t={this.props.t}
         title={this.props.t("AVS Free Media Player is the best media player for Windows")}
-        metaDescription="Open all popular video and audio formats with AVS Free Media player. Download AVS Free Media Player from the official site. All key media formats supported."
-        metaKeywords="Free media player, avs4you video player,Video player software, media player, audio player, video player"
+        metaDescription={this.props.t("Open all popular video and audio formats with AVS Free Media player Download AVS Free Media Player from the official site All key media formats supported")}
+        metaKeywords={this.props.t("Free media player, avs4you video player,Video player software, media player, audio player, video player")}
       >
         <ProductPagesWrapper imageName="purple_background_main.jpg">
           <div className="headerBackground">
@@ -82,8 +82,8 @@ class avsFreeMediaPlayer extends React.PureComponent {
                 />
               </div>
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="media_player_header.png" style={{ maxWidth: "1564px" }} alt="header-image" />
-            <ImageGQL className="headerImage mobile" imageName="media_player_header.png" style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
+            <ImageGQL className="headerImage" imageName={this.props.t("media player header png")} style={{ maxWidth: "1564px" }} alt="header-image" />
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("media player header png")} style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -105,7 +105,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ContentRowItem
               id="overview"
               imgLeft={true}
-              imageName="media_player_slide2.jpg"
+              imageName={this.props.t("media player slide2 jpg")}
               headerText={this.props.t("Watch video")}
             >
               <Text className="ListItem">{this.props.t("Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc")}</Text>
@@ -115,7 +115,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="media_player_slide3.jpg"
+              imageName={this.props.t("media player slide3 jpg")}
               headerText={this.props.t("Play audio")}
             >
               <Text className="ListItem">{this.props.t("Add audio tracks of any format such as WAV, MP3, ALAC, FLAC, M4A, OGG, AAC, AMR, etc")}</Text>
@@ -124,7 +124,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={true}
-              imageName="media_player_slide4.jpg"
+              imageName={this.props.t("media player slide4 jpg")}
               headerText={this.props.t("View pictures")}
             >
               <Text className="ListItem">{this.props.t("Select images in PNG, JPEG, GIF, etc and view them as a slideshow")}</Text>
@@ -133,7 +133,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="media_player_slide5.jpg"
+              imageName={this.props.t("media player slide5 jpg")}
               headerText={this.props.t("Enjoy sound-around effect")}
             >
               <Text className="ListItem">{this.props.t("Free AVS Media Player supports of 31, 51 and 71 speaker configurations")}</Text>
@@ -169,8 +169,8 @@ class avsFreeMediaPlayer extends React.PureComponent {
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Media Player 52")}</Text>
           <ScreenshotsCarousel
-            imageNames={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
-            imageNamesPopup={["media_player_slide1.jpg", "media_player_slide2.jpg", "media_player_slide3.jpg", "media_player_slide4.jpg", "media_player_slide5.jpg"]}
+            imageNames={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
+            imageNamesPopup={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
 
           />

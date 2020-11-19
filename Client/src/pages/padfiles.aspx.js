@@ -29,8 +29,8 @@ class padFiles extends React.PureComponent {
     <Layout getDevice={this.getDevice} 
             pageContext={this.props.pageContext} 
             t={this.props.t}
-            title={this.props.t("AVS4YOU best software for processing video, audio, image")}
-            metaDescription={this.props.t("")}
+            title={this.props.t("AVS4YOU®  Programs Pad Files")}
+            metaDescription={this.props.t("AVS4YOU: information from Affiliate program")}
             metaKeywords={this.props.t("")}
     >
       <div className="header">

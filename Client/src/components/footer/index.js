@@ -145,9 +145,9 @@ class Footer extends React.Component{
                         <Link to="/license-agreement.aspx">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
                         </Link>
-                        <LinkHref mainLink="https://www.avs4you.com/blog/" toLink="">
+                        <a href="https://www.avs4you.com/blog/" target="_blank">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
-                        </LinkHref>
+                        </a>
                     </FooterItem>
                     <div className="footer-links-box last">
                         <Link className="footerLogoLink" to="/">
