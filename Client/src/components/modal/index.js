@@ -36,7 +36,7 @@ export default class Modal extends React.Component {
 			backgroundColor: "#fff",
 			margin: "40px auto",
 			borderRadius: 3,
-			zIndex: 2,
+			zIndex: 50,
 			textAlign: "left",
 			boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
 			...this.props.stylemodal

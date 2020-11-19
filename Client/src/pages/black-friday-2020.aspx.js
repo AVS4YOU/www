@@ -140,6 +140,10 @@ const modalStyle = {
 	}
 };
 
+const StyleModal = styled.div`
+z-index: 50;
+`;
+
 const mainStyle = {
 	app: {
 		margin: "120px 0"
@@ -163,50 +167,13 @@ const prizes = [
 ]
 
 const codeBF = [
-  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
-  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
-  '20%', '30%', '40%', '50%',
+  '1%', '2%', '3%', '4%', '5%', '6%', '7%', '8%',
+  '9%', 'a%', 'q%', 'w%', 'e%', 'r%', 't%', 'y%',
+  'f%', 'v%', 'z%', 'x%',
 ]
-
-const styles = {
-  //justifyContent:"center",
-  //alignContent:"center",
-  //float: "left",
-  //display:"flex"
-  paddingLeft: "15px",
-}
-
-
-
-const options = {
-  prizes,
-  width: 500,
-  height: 550,
-  primaryColor: "#ba0000",
-  secondaryColor: "#eeeeee",
-  fontStyle:{
-      color:"#fff",
-      size:"14px",
-      fontVertical:true,
-      fontWeight:"bold",
-      fontFamily:"Microsoft YaHei"
-  },
-  speed : 1000,
-  duration: 1000,
-  onStart(){
-    //If you want before the rotate do some...
-    console.log('start...');
-    //If you want stop rotate you can return false
-    return true
-  },
-onComplete(codeBF) {
-    //console.log(codeBF)
-    return codeBF;
-    //alert(codeBF)
- }
-}
 class blackFriday extends React.PureComponent {
   turntable = null
+
 
   constructor(props) {
     super(props);
@@ -242,6 +209,66 @@ class blackFriday extends React.PureComponent {
 
 
   render(){
+    const styles = {
+      //justifyContent:"center",
+      //alignContent:"center",
+      //float: "left",
+      //display:"flex"
+      paddingLeft: "15px",
+    }
+
+
+    let arm;
+
+
+    const options = {
+      prizes,
+      width: 500,
+      height: 550,
+      primaryColor: "#ba0000",
+      secondaryColor: "#eeeeee",
+      fontStyle:{
+          color:"#fff",
+          size:"14px",
+          fontVertical:true,
+          fontWeight:"bold",
+          fontFamily:"Microsoft YaHei"
+      },
+      speed : 1000,
+      duration: 1000,
+      onStart(){
+        //If you want before the rotate do some...
+        console.log('start...');
+        //If you want stop rotate you can return false
+        return true
+      },
+     onComplete(codeBF) {
+      //this.openModal;
+      arm = codeBF; 
+      console.log(codeBF)
+      return arm; 
+     // console.log(arm)
+      /*return (  <StyleModal >
+        <Modal
+          isModalOpen={true}
+          
+        >
+          <button
+            style={{
+              margin: 0,
+              width: "auto",
+              marginTop: 10
+            }}
+          >
+            Close
+          </button>
+        </Modal>
+      </StyleModal>);*/
+        //return arm;
+        //alert(codeBF)
+     }
+    }
+    console.log(arm);
   return (
     <Layout 
             footerIsDisabled={true}
@@ -263,8 +290,10 @@ class blackFriday extends React.PureComponent {
                   <div className="WheelAVS"  style={styles}>
                       <ReactTurntable {...options}
                       hiddenButton
-                      getTurntable={turntable => (this.turntable = turntable)}                     
+                      getTurntable={turntable => (this.turntable = turntable)}
+                      
                      />
+                       
                   </div>
                   </div>
                   <img className="wheelAVSfoot"  src ={wheelAVSfoot}/>
@@ -286,19 +315,11 @@ class blackFriday extends React.PureComponent {
                     <button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start")} </button>
                     <Text className="overwey">{this.props.t("*Please, note that you may try your luck only once a day.")}</Text>
                 </div>
-                <div >
-		
+                <StyleModal >
                   <Modal
-                    isModalOpen={options.onComplete(prizes) !== undefined ? console.log(options.onComplete(prizes)) : false}
+                    isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
                   >
-                    <img
-                      width="100%"
-                      style={{ borderRadius: 3 }}
-                      src="https://source.unsplash.com/random"
-                      alt="unsplash"
-                    />
-
                     <button
                       style={{
                         margin: 0,
@@ -310,7 +331,7 @@ class blackFriday extends React.PureComponent {
                       Close
                     </button>
                   </Modal>
-			</div>
+			</StyleModal>
             </div>
                 </div>
               </div>
