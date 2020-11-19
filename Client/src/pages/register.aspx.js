@@ -107,7 +107,7 @@ render(){
         </Helmet>
         <div className="screen-wrapper first">
           <div className="sale-text">
-            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {mounth[currentMounth]} {this.props.t("only!")}</Text>
+            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`${mounth[currentMounth]}`)} {this.props.t("only!")}</Text>
           </div>
           <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
           <div className="buy-block-wrapper">

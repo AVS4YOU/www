@@ -12,12 +12,6 @@ const localesNSContent = {
       ns: "common"
     }
   ],
-  ru: [
-    {
-      content: fs.readFileSync(`src/locales/ru/common.json`, "utf8"),
-      ns: "common"
-    }
-  ],
   it: [
     {
       content: fs.readFileSync(`src/locales/it/common.json`, "utf8"),
@@ -45,7 +39,7 @@ const localesNSContent = {
 };
 
 const availableLocales = [
-  { value: "ru", text: "Русский" },
+  { /*value: "ru", text: "Русский" */},
   { value: "en", text: "English" },
   { value: "de", text: "Deutsch" },
   { value: "it", text: "Italiano" },

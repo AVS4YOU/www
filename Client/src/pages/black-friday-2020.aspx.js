@@ -10,57 +10,11 @@ import Modal from '../components/modal';
 
 
 import logoAVS from '../images/black-friday-2020/AVS_Black_friday.svg';
-import wheelAVS from '../images/black-friday-2020/wheel/ram.svg';
+import wheelAVS from '../images/black-friday-2020/wheel/bg_wheel.png';
 import wheelAVSpointer from '../images/black-friday-2020/wheel/pointer.png';
 import wheelAVScircle from '../images/black-friday-2020/wheel/bf_vector.png';
 import wheelAVSfoot from '../images/black-friday-2020/wheel/foot.svg';
 import goldenArrowBf from '../images/black-friday-2020/bf_golden_arrow.svg';
-
-const codeBF = [
-
-]
-
-const styles = {
-  //justifyContent:"center",
-  //alignContent:"center",
-  //float: "left",
-  //display:"flex"
-  paddingLeft: "15px",
-}
-
-const prizes = [
-  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
-  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
-  '20%', '30%', '40%', '50%',
-]
-
-const options = {
-  prizes,
-  width: 503,
-  height: 550,
-  primaryColor: "#ba0000",
-  secondaryColor: "#eeeeee",
-  fontStyle:{
-      color:"#fff",
-      size:"14px",
-      fontVertical:true,
-      fontWeight:"bold",
-      fontFamily:"Microsoft YaHei"
-  },
-  speed : 1000,
-  duration:5000,
-  clickText:"Click",
-  onStart(){
-    //If you want before the rotate do some...
-    console.log('start...');
-    //If you want stop rotate you can return false
-    return true
-  },
-  onComplete(prize) {
-    console.log(prize)
-    alert(prize)
-  }
-}
 
 const Wheelstyle = styled.div`
 float: left;
@@ -75,9 +29,14 @@ position: relative;
 
 .wheelAVSram{
   background-image: url(${wheelAVS});
-  z-index: 5;
-  background-position-x: center;
-  background-position-y: center;
+  background-size: 546px 845px;
+    float: left;
+    height: 900px;
+    position: relative;
+    width: 600px;
+    z-index: 2;
+    background-position: -8px 5px;
+    background-repeat: no-repeat;
 }
 
 .wheelAVSpointer{
@@ -102,6 +61,17 @@ position: relative;
 `;
 
 const BlackFridayStyle = styled.div`
+background: radial-gradient(72.85% 59.35% at 0% 46.77%, #4E6368 0%, #0A0F11 98.22%);
+background-repeat: repeat;
+background-position: 0 0;
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+font-family: Tahoma;
+color: #fff;
+vertical-align: top;
+
 .bf_container{
   display: grid;
 }
@@ -186,6 +156,55 @@ const mainStyle = {
 	}
 };
 
+const prizes = [
+  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
+  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
+  '20%', '30%', '40%', '50%',
+]
+
+const codeBF = [
+  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
+  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
+  '20%', '30%', '40%', '50%',
+]
+
+const styles = {
+  //justifyContent:"center",
+  //alignContent:"center",
+  //float: "left",
+  //display:"flex"
+  paddingLeft: "15px",
+}
+
+
+
+const options = {
+  prizes,
+  width: 500,
+  height: 550,
+  primaryColor: "#ba0000",
+  secondaryColor: "#eeeeee",
+  fontStyle:{
+      color:"#fff",
+      size:"14px",
+      fontVertical:true,
+      fontWeight:"bold",
+      fontFamily:"Microsoft YaHei"
+  },
+  speed : 1000,
+  duration: 1000,
+  onStart(){
+    //If you want before the rotate do some...
+    console.log('start...');
+    //If you want stop rotate you can return false
+    return true
+  },
+onComplete(codeBF) {
+    //console.log(codeBF)
+    return codeBF;
+    //alert(codeBF)
+ }
+}
 class blackFriday extends React.PureComponent {
   turntable = null
 
@@ -244,14 +263,14 @@ class blackFriday extends React.PureComponent {
                   <div className="WheelAVS"  style={styles}>
                       <ReactTurntable {...options}
                       hiddenButton
-                      getTurntable={turntable => (this.turntable = turntable)}/>
+                      getTurntable={turntable => (this.turntable = turntable)}                     
+                     />
                   </div>
                   </div>
                   <img className="wheelAVSfoot"  src ={wheelAVSfoot}/>
                   </Wheelstyle>
 
-                <div class="bf_container">
-                
+                <div className="bf_container">                
                 <img className="logoAVS" src={logoAVS} />
                 <div className="block_content">
                     <img className="golden_arrow_bf_first" src={goldenArrowBf}></img>
@@ -268,12 +287,8 @@ class blackFriday extends React.PureComponent {
                 </div>
                 <div >
 		
-                <button  onClick={this.openModal}>
-                    Open modal
-                  </button>
-
                   <Modal
-                    isModalOpen={this.state.isModalOpen}
+                    isModalOpen={options.onComplete(prizes) !== undefined ? console.log(options.onComplete(prizes)) : false}
                     closeModal={this.closeModal}
                   >
                     <img

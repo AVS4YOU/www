@@ -73,7 +73,7 @@ const StyledMenuGrid = styled.div`
     }
 
     @media (max-width: 1400px){
-        max-width: 950px;
+        max-width: 1200;
     }
 
     @media (max-width: 1050px){
