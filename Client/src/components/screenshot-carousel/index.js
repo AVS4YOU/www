@@ -127,7 +127,7 @@ const StyledPopupCarousel = styled.div`
     z-index: 5;
     display: ${props => props.CarouselIsShow ? "block" : "none"};
     background-color: rgba(51, 51, 51, 0.9);
-
+    
     .popupCarousel{
         margin: auto;
         height: 100vh;

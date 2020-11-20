@@ -369,11 +369,11 @@ const TextContent = (props, touchDevice) =>
                                     <Button as="div" className="mainButton" fontSize={18} padding="9px 35px" textTransform="uppercase">{t("GET $5 COUPON CODE")}</Button>
                                 </Link>
                             }
-                            {props.smallButtonLink && !formSended 
+                            {/*props.smallButtonLink && !formSended 
                                 ? 
                                 <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
                                 : <Button className="secondaryButton mobileSended" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
-                                }
+                            */}
                         </div>  
                     :
                         <div className="buttonsWrapper">

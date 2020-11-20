@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import ReviewCarouselItem from '../review-carousel-item';
@@ -37,9 +37,8 @@ const StyledCarouselWrapper = styled.div`
 `;
 
 const ReviewSlider = props => {
-
   const { t } = useTranslation('common');
-
+ 
   const reviews = (reviewsData) => reviewsData.map((item, index) => 
     <ReviewCarouselItem
       id={item.name}
@@ -75,6 +74,8 @@ const ReviewSlider = props => {
     const settings = {
       dots: true,
       infinite: true,
+      swipe: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,

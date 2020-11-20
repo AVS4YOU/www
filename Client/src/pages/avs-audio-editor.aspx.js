@@ -86,7 +86,7 @@ render(){
                 id="overview"
                 imgLeft={true}
                 imageName={this.props.t("audio editor edit all key jpg")} 
-                headerText={this.props.t("Edit all key audio formats" )}   
+                headerText={this.props.t("Edit all key audio formats" )}  
             >
               <Text className="ListItem">{this.props.t("Edit all popular formats MP3, FLAC, WAV, M4A, WMA, AAC, MP2, AMR, OGG, etc")}</Text>
               <Text className="ListItem">{this.props.t("Cut, join, trim, delete parts, split audio files")}</Text>

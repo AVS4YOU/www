@@ -213,17 +213,23 @@ class MenuWrapper extends React.PureComponent {
         return(
             <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
                 <StyledMenuGrid>
+                    {this.state.isTablet ?
+                    <LogoWrapper>
+                        <img src={Logo} alt="avs4you logo"/>
+                    </LogoWrapper>
+                    :
                     <LinkHref mainLink="/" toLink="=">
                         <LogoWrapper>
                             <img src={Logo} alt="avs4you logo"/>
                         </LogoWrapper>
                     </LinkHref>
+                    }
                     {this.state.isTablet && <div className="mobileBlock"></div>}
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
               
                         <CloseMobileMenu className="mobileBlock" onClick={this.toggleMenu}>×</CloseMobileMenu>
-                        <LogoWrapperMobile className="mobileBlock" href="/">
+                        <LogoWrapperMobile className="mobileBlock">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
                         <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
