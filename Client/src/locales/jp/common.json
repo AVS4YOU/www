@@ -470,7 +470,8 @@
     "If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days":"技術上の問題や他の問題があって解決できない場合は、ご購入時から 30 日間以内なら全額を返金できます。",
     "Check our Refund Policy":"当社の返金ポリシーをご覧になり",
     "to find out if you are eligible for a full refund":"全額返金になる対象をご確認ください。",
-
+    "ad-free, virus-free" : " ",
+    "70% OFF!" : "70％オフ！",
 
 
     "*****************************404********************************" : "*****************************404********************************",
@@ -1100,6 +1101,18 @@
     "prices valid till" : "価格は",
     "In" : " ",
     "only!" : "のみ",
+    "January" : "1月",
+    "February" : "2月",
+    "March" : "3月",
+    "April" : "4月",
+    "May" : "5月",
+    "June" : "6月",
+    "July" : "7月",
+    "August" : "8月",
+    "September" : "9月",
+    "October" : "10月",
+    "November" : "11月",
+    "December" : "12月",
 
     "*****************************AVS VIDEO EDITOR FINAL********************************" : "*****************************AVS VIDEO EDITOR FINAL********************************",
     "All key formats supported" : "主なフォーマットすべてをサポート",

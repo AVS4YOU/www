@@ -483,10 +483,21 @@
     "70% OFF!" : "70% !",
     "In" : "Au mois de",
     "only!" : "seulement !",
+    "January" : "janvier",
+    "February" : "février",
+    "March" : "mars",
+    "April" : "avril",
+    "May" : "mai",
+    "June" : "juin",
+    "July" : "juillet",
+    "August" : "août",
+    "September" : "septembre",
+    "October" : "octobre",
+    "November" : "novembre",
+    "December" : "décembre",
     "Time limited offer" : "Offre à durée limitée, ",
     "prices valid till" : "valide jusqu’à",
-    "November" : "novembre",
-
+    "ad-free, virus-free" : " ",
 
 
     "*****************************404********************************" : "*****************************404********************************",

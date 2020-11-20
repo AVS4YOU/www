@@ -175,6 +175,7 @@ render(){
               <div className="why-choose-item">
                 <img src={SecureIcon} className="icon"/>
                 <Text className="text">{this.props.t("100% secure, ad-free, virus-free")}</Text>
+                <Text className="text" style={{paddingTop:"0px"}}>{this.props.t("ad-free, virus-free")}</Text>
               </div>
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon"/>
