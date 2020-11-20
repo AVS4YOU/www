@@ -153,11 +153,6 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
-    {value: "nl", text: "Nederlands"},
-    {value: "ko", text: "한국어"},
-    {value: "pl", text: "Polski"},
-    {value: "da", text: "Dansk"},
-    {value: "pt", text: "Português"},
 ];
 
 class LanguageSelector extends React.PureComponent {
