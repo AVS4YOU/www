@@ -59,7 +59,7 @@ render(){
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("$59")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_Pack_en" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={`https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_Pack_${this.props.t("en")}`} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
         <div className="body-company">
