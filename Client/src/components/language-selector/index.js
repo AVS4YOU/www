@@ -190,11 +190,11 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, '')
+                                            ? item.value === "en" && "https://teststatic.avs4you.com" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "/" + item.value}
+                                            : item.value !== "en" && "https://www.avs4you.com/" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
                                     />
@@ -204,18 +204,17 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, '')
-                                            : item.value === "en" && "/" + item.value}  
+                                            ? item.value === "en" && "https://teststatic.avs4you.com" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "/" + item.value}
+                                            : item.value !== "en" && "https://www.avs4you.com/" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
                             )}
                         </MenuDropdown> 
                     </div>
                     <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
-
                         {availableLocales.map((item) =>
 
                             this.props.locale !== item.value && 
@@ -224,17 +223,15 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && (pageContext.originalPath === "/" ? "https://teststatic.avs4you.com/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" &&  "/" + item.value
-                                        }
+                                            ? item.value === "en" && "https://teststatic.avs4you.com" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" && "/" }
                                         href={
                                             pageContext && pageContext.originalPath
                                                 ? item.value !== "en" && "https://teststatic.avs4you.com/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "/" + item.value
+                                                : item.value !== "en" && "https://www.avs4you.com/" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
-                                        
                                     />
                                     
                         )}

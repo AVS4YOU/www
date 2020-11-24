@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import React from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import ReviewCarouselItem from '../review-carousel-item';
@@ -39,23 +38,6 @@ const StyledCarouselWrapper = styled.div`
 
 const ReviewSlider = props => {
   const { t } = useTranslation('common');
-  const sliderRef = useRef();
-  const parentRef = useRef(null);
-  const [rowData, setRowData] = useState([]);
-
-  const [slideIndex, setIndex] = useState(0);
-  const [end, setEnd] = useState(0);
-
-  useEffect(() => {
-    if (!parentRef.current) {
-      return;
-    }
-    parentRef.current.addEventListener('wheel', (e)=>handleScroll(e));
-  
-    return (() => {
-      parentRef.current.removeEventListener('wheel',(e)=>handleScroll(e));
-    });
-  }, [parentRef, rowData]);
 
   const reviews = (reviewsData) => reviewsData.map((item, index) => 
     <ReviewCarouselItem
@@ -67,21 +49,6 @@ const ReviewSlider = props => {
     />
   );
 
-  useEffect(() => {
-    axios
-      .get(`${reviews}`)
-      .then(res => res.data.results)
-      .then(res => setRowData(rowData.concat(res)))
-      .catch(err => {});
-  }, [end]);
-
-  const handleScroll = e => {
-    if (e.deltaX > 0) {
-      sliderRef && sliderRef.current.slickPrev();
-    } else if (e.deltaX < 0) {
-      sliderRef && sliderRef.current.slickNext();
-    }
-  };
 
 
   const defaultReviewsData = 
@@ -110,16 +77,15 @@ const ReviewSlider = props => {
       dots: true,
       infinite: true,
       swipe: true,
-      swipeToSlide: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
     };
 
     return (
       <StyledCarouselWrapper>
-        <Slider ref={sliderRef} {...settings}>
+        <Slider {...settings}>
           {props.reviewsData ? reviews(props.reviewsData) : reviews(defaultReviewsData)}
         </Slider>
       </StyledCarouselWrapper>

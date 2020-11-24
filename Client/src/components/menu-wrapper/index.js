@@ -128,6 +128,10 @@ const LogoWrapper = styled.div`
         bottom: 0;
         margin: auto;
     }
+    .avs4youLogoTable{
+        position: absolute;
+        padding-top: 10px
+    }
 `;
 
 const LogoWrapperMobile = styled.a`
@@ -213,23 +217,17 @@ class MenuWrapper extends React.PureComponent {
         return(
             <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
                 <StyledMenuGrid>
-                    {this.state.isTablet ?
-                    <LogoWrapper>
-                        <img src={Logo} alt="avs4you logo"/>
-                    </LogoWrapper>
-                    :
-                    <LinkHref mainLink="/" toLink="=">
-                        <LogoWrapper>
+                <LogoWrapper>
+                    <LinkHref className="avs4youLogoTable" mainLink="/" toLink="=">
                             <img src={Logo} alt="avs4you logo"/>
-                        </LogoWrapper>
                     </LinkHref>
-                    }
+                </LogoWrapper>
                     {this.state.isTablet && <div className="mobileBlock"></div>}
                     <MenuItemsWrapper isOpen={this.state.open}>
                         {this.props.children}
               
                         <CloseMobileMenu className="mobileBlock" onClick={this.toggleMenu}>×</CloseMobileMenu>
-                        <LogoWrapperMobile className="mobileBlock">
+                        <LogoWrapperMobile className="mobileBlock" href="/">
                             <img src={LogoBlack} alt="avs4you logo"></img>
                         </LogoWrapperMobile>
                         <LanguageSelector availableLocales={this.props.availableLocales} locale={this.props.locale} className="mobileBlock" isMobile={this.props.isMobile} menuItemText={this.props.t("CurrentLanguage")} />
