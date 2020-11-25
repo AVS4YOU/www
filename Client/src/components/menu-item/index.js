@@ -17,6 +17,21 @@ const MediaWidthStyle = css`
         font-weight: 500;
         font-size: 14px;
     }
+    @media (max-width: 1280px){
+        .textStyles{
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 1195px){
+        .textStyles{
+            font-size: 11px;
+        }
+    }
+    @media (max-width: 1124px){
+        .textStyles{
+            font-size: 9px;
+        }
+    }
 `;
 
 const MediaMobileStyle = css`
