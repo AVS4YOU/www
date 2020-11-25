@@ -7,8 +7,14 @@ import { useTranslation } from "react-i18next";
 import AvatarChenWang from '../../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../../images/common/review-carousel/quote_1.png';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const StyledCarouselWrapper = styled.div`
+.slick-slider .slick-track,
+    .slick-slider .slick-list {
+      transform: translate3d(0, 0, 0);
+      touch-action: pan-y;
+    }
   .slick-dots li button:before{
     color: #9A9997;
     opacity: 1;
@@ -49,8 +55,6 @@ const ReviewSlider = props => {
     />
   );
 
-
-
   const defaultReviewsData = 
     [
       {
@@ -76,16 +80,17 @@ const ReviewSlider = props => {
     const settings = {
       dots: true,
       infinite: true,
-      swipe: true,
+      swipeToSlide: true,
+      swipe: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
     };
 
-    return (
+    return ( 
       <StyledCarouselWrapper>
-        <Slider {...settings}>
+        <Slider {...settings} style={{touchAction:"pan-y"}}>
           {props.reviewsData ? reviews(props.reviewsData) : reviews(defaultReviewsData)}
         </Slider>
       </StyledCarouselWrapper>
