@@ -6,6 +6,7 @@ import BurgerButton from '../burger-button'
 import LanguageSelector from '../language-selector'
 import { Link } from 'gatsby';
 import LinkHref from '../link-href'
+import LinkL from '../link';
 
 const StyledMenuWrapper = styled.div`
     width: 100%;
@@ -218,9 +219,9 @@ class MenuWrapper extends React.PureComponent {
             <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
                 <StyledMenuGrid>
                 <LogoWrapper>
-                    <LinkHref className="avs4youLogoTable" mainLink="/" toLink="=">
+                    <LinkL className="avs4youLogoTable" to="/" >
                             <img src={Logo} alt="avs4you logo"/>
-                    </LinkHref>
+                    </LinkL>
                 </LogoWrapper>
                     {this.state.isTablet && <div className="mobileBlock"></div>}
                     <MenuItemsWrapper isOpen={this.state.open}>

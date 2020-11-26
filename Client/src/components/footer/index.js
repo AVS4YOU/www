@@ -119,18 +119,18 @@ class Footer extends React.Component{
                         </Link>
                     </FooterItem>
                     <FooterItem header={this.props.t("Help Center")}>
-                        <LinkHref mainLink="https://support.avs4you.com/" toLink="">
+                        <a href="https://support.avs4you.com/" target="_blank">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
-                        </LinkHref>
-                        <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/index.aspx">
+                        </a>
+                        <a href="https://www.avs4you.com/guides/index.aspx" target="_blank">
                             <Text className="footer-link-text">{this.props.t("Guides")}</Text>
-                        </LinkHref>
-                        <LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="index.aspx">
+                        </a>
+                        <a href="https://onlinehelp.avs4you.com/index.aspx" target="_blank">
                             <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
-                        </LinkHref>
-                        <LinkHref mainLink="https://support.avs4you.com/" toLink="faq.aspx">
+                        </a>
+                        <a href="https://support.avs4you.com/faq.aspx" target="_blank">
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
-                        </LinkHref>
+                        </a>
                     </FooterItem>
                     <FooterItem header={this.props.t("Company")}>
                         <Link to="/about-us.aspx">
