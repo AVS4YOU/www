@@ -323,7 +323,7 @@ class mainPage extends React.PureComponent {
 
               <HeaderDownloadButtons 
                 t={this.props.t}
-                mainHref="https://new.avs4you.com/downloads/AVSInstallPack.exe"
+                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
                 scrollTo="mainBodyHeader"
                 className="headerDownloadButtons"
               />
@@ -347,7 +347,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video converter jpg")}
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoConverter.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
                           scrollTo="headerCoupon"
                       >
@@ -361,7 +361,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video editor jpg")}
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoEditor.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                           smallButtonLink="/avs-video-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
@@ -378,7 +378,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video remaker jpg")}
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSVideoReMaker.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
                           smallButtonLink="/avs-video-remaker.aspx"   
                           scrollTo="headerCoupon"   
                       >
@@ -394,7 +394,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("media player formats2x jpg")}
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSMediaPlayer.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
                           smallButtonLink="/avs-free-media-player.aspx"   
                           scrollTo="headerCoupon"   
                       >
@@ -412,7 +412,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider audio editor jpg")}
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSAudioEditor.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                           smallButtonLink="/avs-audio-editor.aspx"  
                           scrollTo="headerCoupon"    
                       >
@@ -428,7 +428,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider audio converter jpg")}
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
-                          blueButtonLink="https://new.avs4you.com/downloads/AVSAudioConverter.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
                           smallButtonLink="/avs-free-audio-converter.aspx"   
                           scrollTo="headerCoupon"   
                       >
