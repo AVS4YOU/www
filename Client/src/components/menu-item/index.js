@@ -15,12 +15,7 @@ const MediaWidthStyle = css`
 
     .textStyles{
         font-weight: 500;
-        font-size: 14px;
-    }
-    @media (max-width: 1280px){
-        .textStyles{
-            font-size: 13px;
-        }
+        font-size: 12px;
     }
     @media (max-width: 1195px){
         .textStyles{
@@ -120,7 +115,7 @@ const BackSubmenuButton = styled.div`
 
 const StyledMenuItem = styled.div`
     background-color: rgba(253,160,78,0);
-    padding: 0 24px;
+    padding: 0 20px;
     cursor: pointer;
     display: inline-flex;
     position: relative;
@@ -196,7 +191,7 @@ class MenuItem extends React.PureComponent  {
                             arrow={this.props.isDropdown ? true : false}
                             arrowDeg={this.props.isDropdown && 225}
                             color="#ffffff"
-                            fontSize={14} 
+                            fontSize={12} 
                             fontWeight={600} 
                             textTransform="uppercase">
 
@@ -208,7 +203,7 @@ class MenuItem extends React.PureComponent  {
                         arrow={this.props.isDropdown ? true : false}
                         arrowDeg={this.props.isDropdown && 225}
                         color="#ffffff"
-                        fontSize={14} 
+                        fontSize={12} 
                         fontWeight={600} 
                         textTransform="uppercase">
 
