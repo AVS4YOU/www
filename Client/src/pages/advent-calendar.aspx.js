@@ -10,8 +10,49 @@ import LogoWrapper from '../images/common/logo.svg';
 import styled from 'styled-components';
 import { useSwipeable, Swipeable } from 'react-swipeable';
 
-class adventCalendar extends React.PureComponent {
+import MusicOn from "../images/advent-calendar/music.svg";
+import MusicOff from "../images/advent-calendar/share.svg";
+import AudioCalendar from "../images/advent-calendar/Illusion_disclosure.mp3";
 
+class adventCalendar extends React.PureComponent {
+    constructor(props) {
+        super(props);
+    this.state = {
+        play: true,
+        autoplay: false,
+      }
+      this.audio = new Audio(AudioCalendar)
+    }
+      componentDidMount() {
+        this.audio.load();
+        this.playAudio();
+        this.audio.addEventListener('ended', () => this.setState({ play: true }));
+      }
+    
+      componentWillUnmount() {
+        this.audio.removeEventListener('ended', () => this.setState({ play: true }));
+      }
+
+      playAudio() {
+        const audioPromise = this.audio.play(!this.state.autoplay)
+        if (audioPromise !== undefined) {
+          audioPromise
+            .then(_ => {
+              // autoplay started
+            })
+            .catch(err => {
+              // catch dom exception
+              console.info(err)
+            })
+        }
+    }
+     
+      togglePlay = () => {
+        this.setState({ play: !this.state.play }, () => {
+          this.state.play ? this.audio.play() : this.audio.pause();
+        });
+      }
+   
 render(){
     return (
       <Layout 
@@ -44,7 +85,12 @@ render(){
                 <div class="afh_share"></div>
             </div>
             <div class="afh_music_block">
-                <div class="afh_music"></div>
+                <button onClick={this.togglePlay}>
+                    {(this.state.play && !this.state.autoplay) 
+                        ? <img src={MusicOff}/>  // pause
+                        : <img src={MusicOn}/>   // play
+                    }
+                </button>
             </div>
             <audio class="audio_christmas" src="" type="audio/wav" autoplay="true"></audio>
         </div>
