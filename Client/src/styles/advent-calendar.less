@@ -1,237 +1,167 @@
+.advent-calendar {
+  .adventCalendarContainer {
+    display: grid;
+    grid-template-columns: 169px 169px 169px 169px 169px 169px;
+    grid-gap: 22px;
+    max-width: 1125px;
+    margin: auto;
+  }
 
-.advent-calendar{
-
-#particles-js {
+  #particles-js {
     background-color: #003942;
     text-align: center;
-    background-image: url(../images/advent-calendar/left.png), url(../images/advent-calendar/top.png), url(../images/advent-calendar/right.png), url(../images/advent-calendar/bottom.png);
+    background-image: url(../images/advent-calendar/left.png),
+      url(../images/advent-calendar/top.png),
+      url(../images/advent-calendar/right.png),
+      url(../images/advent-calendar/bottom.png);
     background-position: left, top, right, bottom;
     background-repeat: no-repeat;
     background-size: auto;
     position: fixed;
     min-width: 320px;
     overflow-x: none;
-}
-.advent_header_top {
+  }
+  
+  .advent_header_top {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: #142d33;
     z-index: 600;
-}
+  }
 
-.aht_narrow {
+  .aht_narrow {
     max-width: 1500px;
     margin: 0 auto;
-    height: 70px;
+    height: 50px;
     padding: 0 16px;
-}
-.afh_logo {
+  }
+  .afh_logo {
     background-position-y: 50%;
     margin: 0;
     width: 180px;
-    display:inline-block;
-    float:left;
+    display: inline-block;
+    float: left;
     background-repeat: no-repeat;
     background-image: url(../images/advent-calendar/logo.svg);
-}
-.social_block {
-    position: fixed;
-    height: 120px;
-    width: 100%;
-    background-color: transparent;
-    top: -50px;
-    z-index: 110;
-    display: block;
-    left: 0;
-    transition: 0.5s;
-    box-sizing: border-box;
-
-    &.active {
-        top: 0px;
-    }
-
-    .social_block_opacity {
-        display: block;
-        background-color: #000000;
-        opacity: 0.5;
-        width: inherit;
-        height: inherit;
-        position: absolute;
-    }
-
-    .social_box {
-        max-width: 1500px;
-        height: inherit;
-        position: relative;
-        margin: auto;
-        padding-right: 15px;
-    }
-    .social_image {
-        float: right;
-        margin-top: 74px;
-        margin-left: 17px;
-    }
-}
-.social_image {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-image: url(/images/landing/advent-calendar/social/vk.svg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transition: 0.5s;
-    filter: contrast(0.5);
+  }
 
 
-    &.google {
-        background-image: url(/images/landing/advent-calendar/social/google.svg);
-
-        &:hover {
-            filter:contrast(1);
-        }
-    }
-
-    &.twitter {
-        background-image: url(/images/landing/advent-calendar/social/twitter.svg);
-
-        &:hover {
-            filter:contrast(1);
-        }
-    }
-
-    &.fb {
-        background-image: url(/images/landing/advent-calendar/social/facebook.svg);
-
-        &:hover {
-            filter:contrast(1);
-        }
-    }
-
-    &.vk {
-        &:hover {
-            filter:contrast(1);
-        }
-    }
-
-
-    a {
-        width: 100%;
-        height: 100%;
-        content: "";
-        display: block;
-    }
-}
-
-.afh_music_block, .afh_share_block {
-    height: 70px;
+  .afh_music_block,
+  .afh_share_block {
+    height: 50px;
     width: 40px;
     display: inline-block;
     float: right;
     cursor: pointer;
 
-    .afh_music, .afh_share {
-        background-image: url(../images/advent-calendar/music.svg);
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 30px;
-        margin-right: 5px;
-        transition: 0.5s;
-        height: 100%;
+    .afh_music {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 30px;
+      margin-right: 5px;
+      transition: 0.5s;
+      height: 100%;
+      background-color: #142d33;
+      border: none;
     }
 
     .afh_share {
-        background-image: url(../images/advent-calendar/share.svg);
-        margin-right: 0px;
+      background-image: url(../images/advent-calendar/share.svg);
+      margin-right: 0px;
+      background-size: 22px;
+      height: 100%;
+      transition: 0.5s;
+      background-repeat: no-repeat;
+      background-position: 50%;
 
-        &:hover {
-            filter: brightness(0)
-        }
+      &:hover {
+        filter: brightness(0);
+      }
     }
-}
-.afh_music_block {
+  }
+  .afh_music_block {
     margin-right: 10px;
     position: relative;
     transition: 0.5s;
 
     &::before {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 30px;
-        background-color: transparent;
-        border-bottom: 3px solid rgba(206, 206, 206, 0);
-        transform: rotate(35deg);
-        content: "";
-        left: 10px;
-        top: 7px;
-        z-index: 1;
-        transition: 0.5s;
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 20px;
+      background-color: transparent;
+      border-bottom: 3px solid rgba(206, 206, 206, 0);
+      transform: rotate(35deg);
+      content: "";
+      left: 10px;
+      top: 7px;
+      z-index: 1;
+      transition: 0.5s;
     }
 
     &:hover {
-        &::before {
-            border-bottom: 3px solid rgba(206, 206, 206, 1);
-        }
+      &::before {
+        border-bottom: 3px solid rgba(206, 206, 206, 1);
+      }
     }
 
     &.active {
+      &::before {
+        border-bottom: 3px solid rgba(206, 206, 206, 1);
+      }
+
+      &:hover {
         &::before {
-            border-bottom: 3px solid rgba(206, 206, 206, 1);
+          border-bottom: 3px solid rgba(206, 206, 206, 0);
         }
-
-        &:hover {
-            &::before {
-                border-bottom: 3px solid rgba(206, 206, 206, 0);
-            }
-        }
+      }
     }
-}
+  }
 
-.afh_logo_link {
+  .afh_logo_link {
     display: inline-block;
     width: 180px;
-    height: 70px;
+    height: 50px;
     background-image: url(/images/landing/advent-calendar/logo_color.svg);
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 180px auto;
-}
-.advent_heading {
+  }
+  .advent_heading {
     padding: 150px 0 30px;
     position: relative;
-    z-index: 100;
     h1 {
-        color: #fff;
-        font-size: 48px;
-        font-weight: 600;
-        text-align: center;
-        margin: 0 auto;
-        font-family: 'Open Sans';
-        letter-spacing: -2px;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Open Sans";
+      letter-spacing: -2px;
     }
-}
-.advent_header_sub {
+  }
+  .advent_header_sub {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
     margin: 30px auto 20px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     text-align: center;
     max-width: 450px;
-}
-.advent_calendar_grid {
+  }
+  .advent_calendar_grid {
     width: 1079px;
     margin: 0 auto;
     border: solid 10px transparent;
     position: relative;
-}
-.acg_row_wrapper {
+  }
+  .acg_row_wrapper {
     display: table-row;
-}
-.acg_cell {
+  }
+  .acg_cell {
     display: table-cell;
     width: 160px;
     height: 160px;
@@ -240,223 +170,75 @@
     -webkit-perspective: 800px;
     perspective: 800px;
     background-color: transparent;
-    
-}
-.acgc_window {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-    -webkit-transition: -webkit-transform .75s ease;
-    transition: -webkit-transform .75s ease;
-    transition: transform .75s ease;
-    transition: transform .75s ease, -webkit-transform .75s ease;
-    z-index: 2;
-    background-image: url(../images/advent-calendar/calendar.svg);
-    background-repeat: no-repeat;
-    background-size: 4407px auto;
-    background-position-y: -14px;
-    
-    &.acgc_active {
-        cursor: pointer;
-        &:hover {
-            -webkit-transform: rotateY(-30deg);
-            transform: rotateY(-30deg); 
-        }
-    }
-}
-.acg_cell_1 {
-    .acgc_window {
-        background-position-x: -5px;
-        background-position-y: -5px;
-    }
-}
-.acg_cell_2 {
-    .acgc_window {
-        background-position-x: -193px;
-    }
-}
-.acg_cell_3 {
-    .acgc_window {
-        background-position-x: -377px;
-    }
-}
-.acg_cell_4 {
-    .acgc_window {
-        background-position-x: -561px;
-    }
-}
-.acg_cell_5 {
-    .acgc_window {
-        background-position-x: -745px;
-    }
-}
-.acg_cell_6 {
-    .acgc_window {
-        background-position-x: -930px;
-    }
-}
-.acg_cell_7 {
-    .acgc_window {
-        background-position-x: -1113px;
-    }
-}
-.acg_cell_8 {
-    .acgc_window {
-        background-position-x: -1297px;
-    }
-}
-.acg_cell_9 {
-    .acgc_window {
-        background-position-x: -1477px;
-    }
-}
-.acg_cell_10 {
-    .acgc_window {
-        background-position-x: -1660px;
-    }
-}
-.acg_cell_11 {
-    .acgc_window {
-        background-position-x: -1844px;
-    }
-}
-.acg_cell_12 {
-    .acgc_window {
-        background-position-x: -2028px;
-    }
-}
-.acg_cell_13 {
-    .acgc_window {
-        background-position-x: -2213px;
-    }
-}
-.acg_cell_14 {
-    .acgc_window {
-        background-position-x: -2397px;
-    }
-}
-.acg_cell_15 {
-    .acgc_window {
-        background-position-x: -2581px;
-    }
-}
-.acg_cell_16 {
-    .acgc_window {
-        background-position-x: -2765px;
-    }
-}
-.acg_cell_17 {
-    .acgc_window {
-        background-position-x: -2950px;
-    }
-}
-.acg_cell_18 {
-    .acgc_window {
-        background-position-x: -3133px;
-    }
-}
-.acg_cell_19 {
-    .acgc_window {
-        background-position-x: -3318px;
-    }
-}
-.acg_cell_20 {
-    .acgc_window {
-        background-position-x: -3502px;
-    }
-}
-.acg_cell_21 {
-    .acgc_window {
-        background-position-x: -3686px;
-    }
-}
-.acg_cell_22 {
-    .acgc_window {
-        background-position-x: -3870px;
-    }
-}
-.acg_cell_23 {
-    .acgc_window {
-        background-position-x: -4055px;
-    }
-}
-.acg_cell_24 {
-    .acgc_window {
-        background-position-x: -4240px;
-    }
-}
+  }
 
-.afb_copyright {
+  .afb_copyright {
     font-size: 12px;
     text-align: center;
     color: #fff;
     margin: 30px 0 0;
     padding-bottom: 20px;
-}
-.acgc_popup {
+  }
+  .acgc_popup {
     width: 680px;
     height: 450px;
     display: none;
     text-align: center;
-    background-color: #D0333E;
-    background-image: url(/images/landing/advent-calendar/pop1x2.png), url(/images/landing/advent-calendar/pop2x2.png);
+    background-color: #d0333e;
+    background-image: url(/images/landing/advent-calendar/pop1x2.png),
+      url(/images/landing/advent-calendar/pop2x2.png);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 100%;
     background-size: 125px auto, 110px auto;
-    
+
     &.acg_xmas_pop {
-        background-image: url(/images/landing/advent-calendar/pop1x2.png), url(/images/landing/advent-calendar/pop2x2.png), url(/images/landing/advent-calendar/stars.png);
-        background-position: 0 0, 100% 100%, 50% 50%;
-        background-size: 125px auto, 110px auto, 670px auto;
+      background-image: url(/images/landing/advent-calendar/pop1x2.png),
+        url(/images/landing/advent-calendar/pop2x2.png),
+        url(/images/landing/advent-calendar/stars.png);
+      background-position: 0 0, 100% 100%, 50% 50%;
+      background-size: 125px auto, 110px auto, 670px auto;
     }
-    &.acgc_popup_expired, &.acgc_popup_expired .acgc_close_button {
-        background-color: #587884;
-        
-        .acgc_valid_block {
-            background-color: #395A68;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-        }
-        .acgc_button {
-            background-color: #395A68;
-            border-color: #395A68;
-            cursor: default;
-            pointer-events: none;
-        }
+    &.acgc_popup_expired,
+    &.acgc_popup_expired .acgc_close_button {
+      background-color: #587884;
+
+      .acgc_valid_block {
+        background-color: #395a68;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+      .acgc_button {
+        background-color: #395a68;
+        border-color: #395a68;
+        cursor: default;
+        pointer-events: none;
+      }
     }
     &.small_height {
-        height: 320px;
-        
-        .acgc_close_button {
-            top: 5px;
-            right: 5px;
-        }
-        .acgc_heading_block {
-            font-size: 30px;
-            margin-top: 10px;
-        }
-        .acgc_text_block, .acgc_coupon_block {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-size: 15px;
-        }
+      height: 320px;
+
+      .acgc_close_button {
+        top: 5px;
+        right: 5px;
+      }
+      .acgc_heading_block {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .acgc_text_block,
+      .acgc_coupon_block {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
     }
-}
-.acgc_close_button {
+  }
+  .acgc_close_button {
     position: absolute;
     top: -27px;
     right: -27px;
-    background-color: #D0333E;
+    background-color: #d0333e;
     width: 32px;
     height: 32px;
     color: #fff;
@@ -465,18 +247,18 @@
     text-align: center;
     line-height: 32px;
     cursor: pointer;
-}
-.acgc_valid_block {
+  }
+  .acgc_valid_block {
     color: #fff;
     font-size: 14px;
-    background-color: #B12E36;
+    background-color: #b12e36;
     display: inline-block;
     margin: 0 auto;
     padding: 12px 30px;
     line-height: 1em;
-}
-.acgc_heading_block {
-    font-family: 'Fredoka One', cursive;
+  }
+  .acgc_heading_block {
+    font-family: "Fredoka One", cursive;
     font-weight: 400;
     font-size: 50px;
     color: #fff;
@@ -484,27 +266,27 @@
     text-transform: uppercase;
     line-height: 1em;
     letter-spacing: 2px;
-    text-shadow: 0px 2px 1px rgba(153,39,49,0.8);
-    
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+
     &.acgc_merry_heading {
-        padding-top: 120px;
-        font-size: 60px;
-        margin-top: 0;
+      padding-top: 120px;
+      font-size: 60px;
+      margin-top: 0;
     }
-}
-.acgc_heading_block_smaller {
-    font-size: .8em;
+  }
+  .acgc_heading_block_smaller {
+    font-size: 0.8em;
     display: block;
     font-weight: 400;
-}
-.acgc_heading_block_smaller_smaller {
-    font-size: .6em;
+  }
+  .acgc_heading_block_smaller_smaller {
+    font-size: 0.6em;
     display: block;
     font-weight: 400;
     line-height: 1.2em;
     padding-top: 10px;
-}
-.acgc_text_block {
+  }
+  .acgc_text_block {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
@@ -512,58 +294,58 @@
     margin: 25px auto;
 
     &.no_coupon_area {
-        padding: 30px 0;
+      padding: 30px 0;
     }
     &.too_many_lines {
-        margin: 10px auto 0;
+      margin: 10px auto 0;
     }
     &.acgc_merry_xmas {
-        font-size: 22px;
-        font-weight: 600;
-        max-width: 500px;
-        line-height: 1.3em;
+      font-size: 22px;
+      font-weight: 600;
+      max-width: 500px;
+      line-height: 1.3em;
     }
-}
-.acgc_xmas_holidays{
+  }
+  .acgc_xmas_holidays {
     display: block;
-    font-family: 'Cookie', cursive;
+    font-family: "Cookie", cursive;
     font-size: 46px;
     font-weight: 400;
     padding: 20px 0 0;
-    line-height: .8em;
-    text-shadow: 0px 2px 1px rgba(153,39,49,0.8);
-}
-.acgc_coupon_block {
+    line-height: 0.8em;
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+  }
+  .acgc_coupon_block {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     line-height: 1.6em;
     margin: 25px auto;
-    
+
     &.acgc_no_coupon {
-        padding: 10px 0;
-        font-weight: 600;
-        font-size: 16px;
+      padding: 10px 0;
+      font-weight: 600;
+      font-size: 16px;
     }
     &.max-width-narrow {
-        max-width: 430px;
+      max-width: 430px;
     }
     &.max-width-wide {
-        max-width: 550px;
+      max-width: 550px;
     }
-    
+
     a {
-        color: #fff;
+      color: #fff;
     }
     &.too_many_lines {
-        margin: 10px auto 0;
+      margin: 10px auto 0;
     }
-}
-.acgc_coupon_area {
+  }
+  .acgc_coupon_area {
     width: 265px;
     height: 40px;
     background-color: #fff;
-    color: #1A3A53;
+    color: #1a3a53;
     line-height: 40px;
     font-size: 18px;
     font-weight: 400;
@@ -573,24 +355,25 @@
     position: relative;
     z-index: 10000;
     cursor: text;
-    
+
     &:before {
-        position: absolute;
-        content: '';
-        width: 275px;
-        height: 50px;
-        border: dashed 2px #fff;
-        left: -7px;
-        top: -7px;
-        z-index: -1;
+      position: absolute;
+      content: "";
+      width: 275px;
+      height: 50px;
+      border: dashed 2px #fff;
+      left: -7px;
+      top: -7px;
+      z-index: -1;
     }
-}
-.acgc_button_block {
+  }
+  .acgc_button_block {
     &.top_padding {
-        padding-top: 10px;
+      padding-top: 10px;
     }
-}
-a.acgc_button, a.acgc_button:visited {
+  }
+  a.acgc_button,
+  a.acgc_button:visited {
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -598,17 +381,17 @@ a.acgc_button, a.acgc_button:visited {
     line-height: 1em;
     text-transform: uppercase;
     font-size: 18px;
-    background-color: #18A264;
-    border: 1px solid #D0333E;
+    background-color: #18a264;
+    border: 1px solid #d0333e;
     letter-spacing: 2px;
-    
+
     &:hover {
-        color: #fff;
-        text-decoration: none;
-        border-color: #39905D;
+      color: #fff;
+      text-decoration: none;
+      border-color: #39905d;
     }
-}
-.acgc_subbutton_note {
+  }
+  .acgc_subbutton_note {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
@@ -616,22 +399,22 @@ a.acgc_button, a.acgc_button:visited {
     margin: 30px auto 0;
     text-align: left;
     padding: 0 0 0 30px;
-    
+
     &.acgc_ho_ho_ho {
-        font-size: 32px;
-        font-family: 'Fredoka One', cursive;
-        text-transform: uppercase;
-        text-shadow: 0px 2px 1px rgba(153,39,49,0.8);
+      font-size: 32px;
+      font-family: "Fredoka One", cursive;
+      text-transform: uppercase;
+      text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
     }
-}
-.advent_footer_block {
+  }
+  .advent_footer_block {
     position: relative;
-}
-.afb_logo {
+  }
+  .afb_logo {
     text-align: center;
     padding: 100px 0 0;
-}
-.afb_logo_link {
+  }
+  .afb_logo_link {
     display: inline-block;
     margin: 0 auto;
     width: 216px;
@@ -640,81 +423,84 @@ a.acgc_button, a.acgc_button:visited {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 216px auto;
-}
-#particles-js {
+  }
+  #particles-js {
     position: fixed;
     z-index: 0;
     width: 100%;
     height: 100%;
-}
-.advent_counter_window {
+  }
+  .advent_counter_window {
     display: none;
     width: 680px;
     height: 450px;
     display: none;
     text-align: center;
-    background-color: #D0333E;
-    background-image: url(/images/landing/advent-calendar/pop1x2.png), url(/images/landing/advent-calendar/pop2x2.png), url(/images/landing/advent-calendar/stars.png);
+    background-color: #d0333e;
+    background-image: url(/images/landing/advent-calendar/pop1x2.png),
+      url(/images/landing/advent-calendar/pop2x2.png),
+      url(/images/landing/advent-calendar/stars.png);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 100%, 50% 50%;
     background-size: 125px auto, 110px auto, 670px auto;
-    
+
     &.small_height {
-        height: 320px;
-        
-        .advent_counter_clock {
-            padding-top: 50px;
-        }
-        .advent_counter_logo {
-            padding-top: 10px;
-        }
-        .acgc_close_button {
-            top: 5px;
-            right: 5px;
-        }
+      height: 320px;
+
+      .advent_counter_clock {
+        padding-top: 50px;
+      }
+      .advent_counter_logo {
+        padding-top: 10px;
+      }
+      .acgc_close_button {
+        top: 5px;
+        right: 5px;
+      }
     }
-}
-.advent_counter_clock {
+  }
+  .advent_counter_clock {
     padding: 110px 0 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: #fff;
     font-size: 80px;
-    text-shadow: 0px 2px 1px rgba(153,39,49,0.8);
-    
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+
     div {
-        display: inline-block;
-        margin: 0 15px;
+      display: inline-block;
+      margin: 0 15px;
     }
-}
-.counter_label, .counter_data {
+  }
+  .counter_label,
+  .counter_data {
     display: block;
-}
-.counter_label {
+  }
+  .counter_label {
     font-size: 26px;
     padding: 0 0 10px;
-}
-.counter_data {
+  }
+  .counter_data {
     width: 125px;
     height: 115px;
-    background-color: #AD121E;
+    background-color: #ad121e;
     font-size: 80px;
     font-weight: 400;
     line-height: 115px;
-    text-shadow: 0px 2px 1px rgba(153,39,49,1);
-}
-.advent_counter_text {
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 1);
+  }
+  .advent_counter_text {
     text-transform: uppercase;
     color: #fff;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 30px 0 0;
-}
-.advent_counter_logo {
+  }
+  .advent_counter_logo {
     padding: 50px 0 0;
-}
-.advent_counter_logo_link {
+  }
+  .advent_counter_logo_link {
     display: inline-block;
     margin: 0 auto;
     width: 150px;
@@ -723,441 +509,211 @@ a.acgc_button, a.acgc_button:visited {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 150px auto;
-}
-@media screen and (max-width: 1109px) {
+  }
+  @media screen and (max-width: 1109px) {
     .social_block {
-        .social_box {
-            padding-right: 15px;
-        }
+      .social_box {
+        padding-right: 15px;
+      }
     }
     .advent_calendar_grid {
-        width: 761px;
+      width: 761px;
     }
     .acg_cell {
-        width: 107px;
-        height: 107px;
+      width: 107px;
+      height: 107px;
     }
-    .acgc_window {
-        background-size: 2938px auto;
-        background-position-y: -10px;
-    }
-    .acg_cell_1 {
-        .acgc_window {
-            background-position-x: -6px;
-        }
-    }
-    .acg_cell_2 {
-        .acgc_window {
-            background-position-x: -129px;
-        }
-    }
-    .acg_cell_3 {
-        .acgc_window {
-            background-position-x: -251px;
-        }
-    }
-    .acg_cell_4 {
-        .acgc_window {
-            background-position-x: -374px;
-        }
-    }
-    .acg_cell_5 {
-        .acgc_window {
-            background-position-x: -497px;
-        }
-    }
-    .acg_cell_6 {
-        .acgc_window {
-            background-position-x: -620px;
-        }
-    }
-    .acg_cell_7 {
-        .acgc_window {
-            background-position-x: -742px;
-        }
-    }
-    .acg_cell_8 {
-        .acgc_window {
-            background-position-x: -865px;
-        }
-    }
-    .acg_cell_9 {
-        .acgc_window {
-            background-position-x: -985px;
-        }
-    }
-    .acg_cell_10 {
-        .acgc_window {
-            background-position-x: -1107px;
-        }
-    }
-    .acg_cell_11 {
-        .acgc_window {
-            background-position-x: -1229px;
-        }
-    }
-    .acg_cell_12 {
-        .acgc_window {
-            background-position-x: -1352px;
-        }
-    }
-    .acg_cell_13 {
-        .acgc_window {
-            background-position-x: -1475px;
-        }
-    }
-    .acg_cell_14 {
-        .acgc_window {
-            background-position-x: -1598px;
-        }
-    }
-    .acg_cell_15 {
-        .acgc_window {
-            background-position-x: -1721px;
-        }
-    }
-    .acg_cell_16 {
-        .acgc_window {
-            background-position-x: -1843px;
-        }
-    }
-    .acg_cell_17 {
-        .acgc_window {
-            background-position-x: -1967px;
-        }
-    }
-    .acg_cell_18 {
-        .acgc_window {
-            background-position-x: -2089px;
-        }
-    }
-    .acg_cell_19 {
-        .acgc_window {
-            background-position-x: -2212px;
-        }
-    }
-    .acg_cell_20 {
-        .acgc_window {
-            background-position-x: -2335px;
-        }
-    }
-    .acg_cell_21 {
-        .acgc_window {
-            background-position-x: -2457px;
-        }
-    }
-    .acg_cell_22 {
-        .acgc_window {
-            background-position-x: -2580px;
-        }
-    }
-    .acg_cell_23 {
-        .acgc_window {
-            background-position-x: -2703px;
-        }
-    }
-    .acg_cell_24 {
-        .acgc_window {
-            background-position-x: -2827px;
-        }
-    }
-}
-@media screen and (max-width: 789px) {
+
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px 169px 169px 169px;
+        width: 740px;
+        grid-gap: 22px;
+        margin: auto;
+      }
+
+  }
+  @media screen and (max-width: 789px) {
     .afh_music_block {
+      &:hover {
+        &::before {
+          border-bottom: 3px solid rgba(206, 206, 206, 0);
+        }
+      }
+
+      &.active {
+        &::before {
+          border-bottom: 3px solid rgba(206, 206, 206, 1);
+        }
 
         &:hover {
-            &::before {
-                border-bottom: 3px solid rgba(206, 206, 206, 0);
-            }
+          &::before {
+            border-bottom: 3px solid rgba(206, 206, 206, 1);
+          }
         }
-
-        &.active {
-            &::before {
-                border-bottom: 3px solid rgba(206, 206, 206, 1);
-            }
-
-            &:hover {
-                &::before {
-                    border-bottom: 3px solid rgba(206, 206, 206, 1);
-                }
-            }
-        }
+      }
     }
-
 
     .afh_share_block {
-        .afh_share {
-            &:hover {
-                filter: brightness(1);
-            }
+      .afh_share {
+        &:hover {
+          filter: brightness(1);
         }
+      }
     }
 
     .advent_calendar_grid {
-        width: auto;
-        max-width: 508px;
+      width: auto;
+      max-width: 508px;
     }
     .acg_row_wrapper {
-        display: inline;
-        margin-bottom: -1px;
+      display: inline;
+      margin-bottom: -1px;
     }
     .acg_cell {
-        display: inline-block;
-        margin-bottom: -1px;
+      display: inline-block;
+      margin-bottom: -1px;
     }
     body {
-        background-size: auto 400vh;
+      background-size: auto 400vh;
     }
     .acgc_popup {
-        width: 420px;
-        height: auto;
-        padding-bottom: 20px;
-        background-position: 0 38px, 100% 100%;
+      width: 420px;
+      height: auto;
+      padding-bottom: 20px;
+      background-position: 0 38px, 100% 100%;
     }
     .advent_counter_clock {
-        font-size: 40px;
+      font-size: 40px;
     }
     .counter_label {
-        font-size: 16px;
+      font-size: 16px;
     }
     .agc_minutes {
-        .counter_label {
-            margin-left: -7px;
-        }
+      .counter_label {
+        margin-left: -7px;
+      }
     }
     .counter_data {
-        font-size: 40px;
-        width: 60px;
-        height: 55px;
-        line-height: 55px;
+      font-size: 40px;
+      width: 60px;
+      height: 55px;
+      line-height: 55px;
     }
     .advent_counter_window {
-        width: 420px;
-        height: 410px;
+      width: 420px;
+      height: 410px;
     }
     .advent_counter_text {
-        line-height: 1.4em;
+      line-height: 1.4em;
     }
     .acgc_valid_block {
-        width: calc(~"100% - 60px");
+      width: calc(~"100% - 60px");
     }
     .acgc_heading_block {
-        font-size: 40px;
-        margin-top: 60px;
-        
-        &.acgc_merry_heading {
-            font-size: 44px;
-            padding-top: 80px;
-        }
+      font-size: 40px;
+      margin-top: 60px;
+
+      &.acgc_merry_heading {
+        font-size: 44px;
+        padding-top: 80px;
+      }
     }
     .acgc_text_block {
-        &.acgc_merry_xmas {
-            font-size: 18px;
-        }
+      &.acgc_merry_xmas {
+        font-size: 18px;
+      }
     }
     .acgc_xmas_holidays {
-        font-size: 36px;
+      font-size: 36px;
     }
     .acgc_heading_block_smaller_smaller {
-        font-size: .4em;
+      font-size: 0.4em;
     }
     .acgc_subbutton_note {
-        &.acgc_ho_ho_ho {
-            font-size: 28px;
-        }
+      &.acgc_ho_ho_ho {
+        font-size: 28px;
+      }
     }
     #particles-js {
-        background-size: 50%;
+      background-size: 50%;
     }
-}
-@media screen and (max-width: 549px) {
+
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px 169px 169px;
+        grid-gap: 22px;
+        margin: auto;
+        width: 570px;
+      }
+  }
+  @media screen and (max-width: 549px) {
     .advent_calendar_grid {
-        width: auto;
-        max-width: 381px;
+      width: auto;
+      max-width: 381px;
     }
-}
-@media screen and (max-width: 489px) {
+  }
+  @media screen and (max-width: 489px) {
     .acgc_close_button {
-        top: -35px;
-        right: 0;
+      top: -35px;
+      right: 0;
     }
 
     #particles-js {
-        background-size: 35%;
+      background-size: 35%;
     }
-}
-@media screen and (max-width: 439px) {
+  }
+  @media screen and (max-width: 439px) {
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px 169px 169px;
+        grid-gap: 22px;
+        margin: auto;
+        width: 300px;
+      }
     .advent_heading {
-        h1 {
-            font-size: 36px;
-        }
+      h1 {
+        font-size: 36px;
+      }
     }
     .advent_header_sub {
-        font-size: 26px;
-        max-width: 300px;
+      font-size: 26px;
+      max-width: 300px;
     }
-    .afh_music_block, .afh_share_block {
-        width: 40px;
+    .afh_music_block,
+    .afh_share_block {
+      width: 40px;
     }
     .advent_calendar_grid {
-        max-width: 300px;
-    }
-    .acg_cell {
-        width: 80px;
-        height: 80px;
-    }
-    .acgc_window {
-        background-size: 2204px auto;
-        background-position-y: -8px;
-    }
-    .acg_cell_1 {
-        .acgc_window {
-            background-position-x: -2px;
-            background-position-y: -2px;
-        }
-    }
-    .acg_cell_2 {
-        .acgc_window {
-            background-position-x: -96px;
-        }
-    }
-    .acg_cell_3 {
-        .acgc_window {
-            background-position-x: -189px;
-        }
-    }
-    .acg_cell_4 {
-        .acgc_window {
-            background-position-x: -280px;
-        }
-    }
-    .acg_cell_5 {
-        .acgc_window {
-            background-position-x: -373px;
-        }
-    }
-    .acg_cell_6 {
-        .acgc_window {
-            background-position-x: -465px;
-        }
-    }
-    .acg_cell_7 {
-        .acgc_window {
-            background-position-x: -556px;
-        }
-    }
-    .acg_cell_8 {
-        .acgc_window {
-            background-position-x: -649px;
-        }
-    }
-    .acg_cell_9 {
-        .acgc_window {
-            background-position-x: -739px;
-        }
-    }
-    .acg_cell_10 {
-        .acgc_window {
-            background-position-x: -830px;
-        }
-    }
-    .acg_cell_11 {
-        .acgc_window {
-            background-position-x: -922px;
-        }
-    }
-    .acg_cell_12 {
-        .acgc_window {
-            background-position-x: -1014px;
-        }
-    }
-    .acg_cell_13 {
-        .acgc_window {
-            background-position-x: -1107px;
-        }
-    }
-    .acg_cell_14 {
-        .acgc_window {
-            background-position-x: -1199px;
-        }
-    }
-    .acg_cell_15 {
-        .acgc_window {
-            background-position-x: -1291px;
-        }
-    }
-    .acg_cell_16 {
-        .acgc_window {
-            background-position-x: -1383px;
-        }
-    }
-    .acg_cell_17 {
-        .acgc_window {
-            background-position-x: -1475px;
-        }
-    }
-    .acg_cell_18 {
-        .acgc_window {
-            background-position-x: -1567px;
-        }
-    }
-    .acg_cell_19 {
-        .acgc_window {
-            background-position-x: -1659px;
-        }
-    }
-    .acg_cell_20 {
-        .acgc_window {
-            background-position-x: -1751px;
-        }
-    }
-    .acg_cell_21 {
-        .acgc_window {
-            background-position-x: -1843px;
-        }
-    }
-    .acg_cell_22 {
-        .acgc_window {
-            background-position-x: -1935px;
-        }
-    }
-    .acg_cell_23 {
-        .acgc_window {
-            background-position-x: -2028px;
-        }
-    }
-    .acg_cell_24 {
-        .acgc_window {
-            background-position-x: -2120px;
-        }
+      max-width: 300px;
     }
     .acgc_popup {
-        width: 320px;
-        height: 500px;
-        background-position: 0 38px, 100% 100%;
+      width: 320px;
+      height: 500px;
+      background-position: 0 38px, 100% 100%;
     }
     .advent_counter_window {
-        width: 320px;
+      width: 320px;
     }
     .acgc_valid_block {
-        width: calc(~"100% - 10px");
-        padding-left: 5px;
-        padding-right: 5px;
+      width: calc(~"100% - 10px");
+      padding-left: 5px;
+      padding-right: 5px;
     }
     .acgc_heading_block {
-        font-size: 30px;
-        margin-top: 40px;
-        
-        &.acgc_merry_heading {
-            padding-top: 110px;
-        }
+      font-size: 30px;
+      margin-top: 40px;
+
+      &.acgc_merry_heading {
+        padding-top: 110px;
+      }
     }
     .afb_copyright {
-        line-height: 1.4em;
+      line-height: 1.4em;
     }
-}
-.blockOverlay.blockUI {
+  }
+  .blockOverlay.blockUI {
     background-color: #333 !important;
-    opacity: .6 !important;
-}
+    opacity: 0.6 !important;
+  }
 }
