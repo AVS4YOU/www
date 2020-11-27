@@ -10,9 +10,94 @@ import LogoWrapper from '../images/common/logo.svg';
 import styled from 'styled-components';
 import { useSwipeable, Swipeable } from 'react-swipeable';
 
+
 import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/share.svg";
 import AudioCalendar from "../images/advent-calendar/Illusion_disclosure.mp3";
+
+const MenuWrstyle = styled.div`
+
+.share {
+	position: fixed;
+	top: 10px;
+    right: 10px;
+
+	@include breakpoint(tablet) {
+		right: unset;
+		bottom: unset;
+	}
+
+	&__toggle:checked {
+		~ .share__button {
+		transform: rotate(-180deg);
+		}
+
+		~ .share__icon--facebook {
+			transform: translateY(55px) rotate(0);
+		}
+
+		~ .share__icon--twitter {
+			transform: translateY(110px) rotate(0);
+		}
+
+		~ .share__icon--pinterest {
+			transform: translateY(165px) rotate(0);
+		}
+
+		~ .share__icon--linkedin {
+			transform: translateY(220px) rotate(0);
+		}
+	}
+
+	&__button {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		color: white;
+		background-color:rgb(20, 45, 51);
+		border-radius: 50px;
+		box-shadow: 0px 0px 0px 1px rgb(20, 45, 51);
+		cursor: pointer;
+		transition: .3s ease;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		transform: translateX(0) rotate(180deg);
+		cursor: pointer;
+		transition: .3s ease-in-out;
+
+		&--facebook {
+			background-color: #3b5998;
+		}
+
+		&--twitter {
+			background-color: #1da1f2;
+		}
+
+		&--pinterest {
+			background-color: #bd081c;
+		}
+
+		&--linkedin {
+			background-color: #0077b5;
+		}
+	}
+}
+
+`;
+
 
 class adventCalendar extends React.PureComponent {
     constructor(props) {
@@ -65,7 +150,6 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-
 <div className="avs-logo">
 </div>
         
@@ -81,9 +165,28 @@ render(){
             <div class="afh_logo">
                 <a class="afh_logo_link" href="https://avs4you.com"></a>
             </div>
-            <div class="afh_share_block">
-                <div class="afh_share"></div>
+            <MenuWrstyle>
+            <div class="share">
+                <input type="checkbox" id="toggle" class="share__toggle" hidden />
+                <label for="toggle" class="share__button">
+                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" />
+                </label>
+                <a href="#" class="share__icon share__icon--facebook">
+                    <img src="https://www.dropbox.com/s/ipzd6c5q9zgf4jw/facebook.png?raw=1" alt="" />
+                </a>
+                <a href="#" class="share__icon share__icon--twitter">
+                    <img src="https://www.dropbox.com/s/676kgc6amdcske8/twitter.png?raw=1" alt="" />
+                </a>
+                <a href="#" class="share__icon share__icon--pinterest">
+                    <img src="https://www.dropbox.com/s/tw9scb2s7nsmrsb/pinterest.png?raw=1" alt="" />
+                </a>
+                <a href="#" class="share__icon share__icon--linkedin">
+                    <img src="https://www.dropbox.com/s/uzbh5k9p2dlzav4/linkedin.png?raw=1" alt="" />
+                </a>
             </div>
+
+            </MenuWrstyle>
+
             <div class="afh_music_block">
                 <button onClick={this.togglePlay}>
                     {(this.state.play && !this.state.autoplay) 
