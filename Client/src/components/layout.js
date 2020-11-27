@@ -16,7 +16,6 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
-import Link from "../components/link";
 import WrdAVS from "../images/pl/Back_text.png";
 import PlAVS from "../images/pl/pattern.png";
 const StyledPL =styled.div`
@@ -199,9 +198,9 @@ class Layout extends React.PureComponent {
 
         <StyledPL>
         <div className="PLnewAvs">
-        <Link to="/advent-calendar.aspx">
+        <a href="/advent-calendar.aspx">
         <span className="PLnewAvsText">{this.props.t("Enjoy AVS4YOU amazing gifts and discounts each day up to")} <span className="PLnewAvsTextCoupon"> {this.props.t("99% OFF")} </span>{this.props.t("multi lang")}</span>
-        </Link>
+        </a>
           <div className="PLnewAvsLeft">
             <img src={PlAVS}></img>
           </div>
