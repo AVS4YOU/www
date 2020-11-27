@@ -12,7 +12,7 @@ import { useSwipeable, Swipeable } from 'react-swipeable';
 
 
 import MusicOn from "../images/advent-calendar/music.svg";
-import MusicOff from "../images/advent-calendar/share.svg";
+import MusicOff from "../images/advent-calendar/sound_On.svg";
 import AudioCalendar from "../images/advent-calendar/Illusion_disclosure.mp3";
 
 const MenuWrstyle = styled.div`
@@ -44,7 +44,7 @@ const MenuWrstyle = styled.div`
 			transform: translateY(165px) rotate(0);
 		}
 
-		~ .share__icon--linkedin {
+		~ .share__icon--youtube {
 			transform: translateY(220px) rotate(0);
 		}
 	}
@@ -90,8 +90,8 @@ const MenuWrstyle = styled.div`
 			background-color: #bd081c;
 		}
 
-		&--linkedin {
-			background-color: #0077b5;
+		&--youtube {
+			background-color: #bd081c;
 		}
 	}
 }
@@ -171,24 +171,24 @@ render(){
                 <label for="toggle" class="share__button">
                     <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" />
                 </label>
-                <a href="#" class="share__icon share__icon--facebook">
+                <a href="https://www.facebook.com/avs4you" class="share__icon share__icon--facebook">
                     <img src="https://www.dropbox.com/s/ipzd6c5q9zgf4jw/facebook.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--twitter">
+                <a href="https://twitter.com/avs4you" class="share__icon share__icon--twitter">
                     <img src="https://www.dropbox.com/s/676kgc6amdcske8/twitter.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--pinterest">
+                <a href="https://www.pinterest.ru/avs4you/_saved/" class="share__icon share__icon--pinterest">
                     <img src="https://www.dropbox.com/s/tw9scb2s7nsmrsb/pinterest.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--linkedin">
-                    <img src="https://www.dropbox.com/s/uzbh5k9p2dlzav4/linkedin.png?raw=1" alt="" />
+                <a href="https://www.youtube.com/user/avs4you" class="share__icon share__icon--youtube">
+                    <img src="https://imgs.avs4you.com/en/2019.04/images/youtube.svg" alt="" />
                 </a>
             </div>
 
             </MenuWrstyle>
 
             <div class="afh_music_block">
-                <button onClick={this.togglePlay}>
+                <button class="afh_music_button" onClick={this.togglePlay}>
                     {(this.state.play && !this.state.autoplay) 
                         ? <img src={MusicOff}/>  // pause
                         : <img src={MusicOn}/>   // play
