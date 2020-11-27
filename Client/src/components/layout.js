@@ -16,6 +16,7 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
+import Link from "../components/link";
 import WrdAVS from "../images/pl/Back_text.png";
 import PlAVS from "../images/pl/pattern.png";
 const StyledPL =styled.div`
@@ -57,9 +58,13 @@ font-size: 14px;
     z-index:10;
     transform: translateX(-90%);
   }
+  @media (max-width: 940px) {
+    .PLnewAvsText{
+      font-size: 18px;  
+  }
   @media (max-width: 680px) {
     .PLnewAvsText{
-      font-size: 16px;  
+      font-size: 15px;  
   }
 }
 `;
@@ -194,9 +199,9 @@ class Layout extends React.PureComponent {
 
         <StyledPL>
         <div className="PLnewAvs">
-        <a href="/advent-calendar.aspx" target="_blank">
-        <span className="PLnewAvsText">Enjoy AVS4YOU amazing gifts and discounts each day up to <span className="PLnewAvsTextCoupon"> 99% OFF </span></span>
-        </a>
+        <Link to="/advent-calendar.aspx">
+        <span className="PLnewAvsText">{this.props.t("Enjoy AVS4YOU amazing gifts and discounts each day up to")} <span className="PLnewAvsTextCoupon"> {this.props.t("99% OFF")} </span>{this.props.t("multi lang")}</span>
+        </Link>
           <div className="PLnewAvsLeft">
             <img src={PlAVS}></img>
           </div>
