@@ -8,6 +8,7 @@ import "../styles/advent-calendar.less";
 import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
 
+
 import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/music.svg";
 import AudioCalendar from "../images/advent-calendar/Illusion_disclosure.mp3";
@@ -16,7 +17,7 @@ const MenuWrstyle = styled.div`
 .share {
 	position: fixed;
 	top: 30px;
-    right: 10px;
+  right: 10px;
 	@include breakpoint(tablet) {
 		right: unset;
 		bottom: unset;
@@ -66,7 +67,7 @@ const MenuWrstyle = styled.div`
 		transform: translateX(0) rotate(180deg);
 		cursor: pointer;
 		transition: .3s ease-in-out;
-		&--facebook {
+    &--facebook {
 			background-color: #3b5998;
 		}
 		&--twitter {
@@ -75,8 +76,8 @@ const MenuWrstyle = styled.div`
 		&--pinterest {
 			background-color: #bd081c;
 		}
-		&--linkedin {
-			background-color: #0077b5;
+		&--youtube {
+			background-color: #bd081c;
 		}
 	}
 }
@@ -135,8 +136,6 @@ class adventCalendar extends React.PureComponent {
         metaDescription=""
         metaKeywords=""
       >
-        <div className="avs-logo"></div>
-
         <div className="advent_main_part">
           <div id="particles-js"></div>
           <div className="social_block">
@@ -155,35 +154,30 @@ class adventCalendar extends React.PureComponent {
                 <label for="toggle" class="share__button">
                     <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" />
                 </label>
-                <a href="#" class="share__icon share__icon--facebook">
+                <a href="https://www.facebook.com/avs4you" class="share__icon share__icon--facebook">
                     <img src="https://www.dropbox.com/s/ipzd6c5q9zgf4jw/facebook.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--twitter">
+                <a href="https://twitter.com/avs4you" class="share__icon share__icon--twitter">
                     <img src="https://www.dropbox.com/s/676kgc6amdcske8/twitter.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--pinterest">
+                <a href="https://www.pinterest.ru/avs4you/_saved/" class="share__icon share__icon--pinterest">
                     <img src="https://www.dropbox.com/s/tw9scb2s7nsmrsb/pinterest.png?raw=1" alt="" />
                 </a>
-                <a href="#" class="share__icon share__icon--linkedin">
-                    <img src="https://www.dropbox.com/s/uzbh5k9p2dlzav4/linkedin.png?raw=1" alt="" />
+                <a href="https://www.youtube.com/user/avs4you" class="share__icon share__icon--youtube">
+                    <img src="https://imgs.avs4you.com/en/2019.04/images/youtube.svg" alt="" />
                 </a>
                 </MenuWrstyle>
             </div>
               </div>
-              <div onClick={this.togglePlay} className="afh_music_block">
-                <button className="afh_music" >
+              <div className="afh_music_block">
+                <button class="afh_music" onClick={this.togglePlay}>
                     {(this.state.play && !this.state.autoplay) 
                         ? <img src={MusicOff}/>  // pause
                         : <img src={MusicOn}/>   // play
                     }
                 </button>
               </div>
-              <audio
-                class="audio_christmas"
-                src=""
-                type="audio/wav"
-                autoplay="true"
-              ></audio>
+              <audio class="audio_christmas" src="" type="audio/wav" autoplay="true"></audio>
             </div>
           </div>
           <div className="advent_heading">
@@ -196,6 +190,7 @@ class adventCalendar extends React.PureComponent {
               <b>99% Off!</b>
             </div>
           </div>
+
           <div className="adventCalendarContainer">
             <CalendarItem
               imageCoordinate={0}
