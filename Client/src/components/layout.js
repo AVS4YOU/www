@@ -16,6 +16,54 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
+import WrdAVS from "../images/pl/Back_text.png";
+import PlAVS from "../images/pl/pattern.png";
+const StyledPL =styled.div`
+position: relative;
+text-align: center;
+background-image:url(${PlAVS});
+span {
+  text-align: center;
+}
+.PLnewAvs{
+display: flex;
+margin-bottom: -5px;
+font-size: 14px;
+  .PLnewAvsText{
+    position: absolute;
+    z-index: 25;
+    color: #fff7d6;
+    font-size: 22px;
+    top: 7px;
+    margin: auto;
+    width: 100%;  
+}
+  .PLnewAvsTextCoupon{
+    background-color: #b23e39;
+    padding: 1px 5px;
+  }
+  .PLnewAvsLeft{
+    height: 48px;
+    z-index:10;
+    transform: translateX(-35%);
+  }
+  .PLnewAvsCenter{
+    height: 48px;
+    transform: translateX(-75%);
+    z-index:9;
+  }
+  .PLnewAvsRight{
+    height: 48px;
+    z-index:10;
+    transform: translateX(-90%);
+  }
+  @media (max-width: 680px) {
+    .PLnewAvsText{
+      font-size: 16px;  
+  }
+}
+`;
+
 const StyledLayout = styled.div`
   min-width: 300px;
 `;
@@ -143,6 +191,24 @@ class Layout extends React.PureComponent {
 
           <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
         </Helmet>
+
+        <StyledPL>
+        <div className="PLnewAvs">
+        <a href="/advent-calendar.aspx" target="_blank">
+        <span className="PLnewAvsText">Enjoy AVS4YOU amazing gifts and discounts each day up to <span className="PLnewAvsTextCoupon"> 99% OFF </span></span>
+        </a>
+          <div className="PLnewAvsLeft">
+            <img src={PlAVS}></img>
+          </div>
+          <div className="PLnewAvsCenter">
+          <img src={WrdAVS}></img>
+          </div>
+          <div className="PLnewAvsRight">
+          <img src={PlAVS}></img>
+          </div>
+        </div>
+        </StyledPL>
+        
         {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
