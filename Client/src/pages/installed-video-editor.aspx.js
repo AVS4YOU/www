@@ -33,8 +33,8 @@ render(){
         className="installed-video-editor-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS4YOU: Audio und Video Editor & Dowloader")}
-        metaDescription=""
+        title={this.props.t("AVS4YOU Audio und Video Editor & Dowloader")}
+        metaDescription="" 
         metaKeywords=""
       >
         <div className="header">
