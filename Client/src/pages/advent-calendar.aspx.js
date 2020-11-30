@@ -8,7 +8,8 @@ import "../styles/advent-calendar.less";
 import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
 import Modal from '../components/modal';
-import CopyLink from '../images/advent-calendar/copy_link.svg';
+import CopyLink from '../images/advent-calendar/link_copy.svg';
+import CancelModal from '../images/advent-calendar/cancel.svg';
 
 import {
   TwitterShareButton,
@@ -97,15 +98,15 @@ const ModalStyle = styled.div`
   display: grid;
   }
   .ModalShaerClose{
-    margin: 10px 0px 0px;
+    margin: 25px 10px 0px;
     width: 50px;
     height: 50px;
-    padding: 10px;
     border: none;
     border-radius: 25px;
     position: absolute;
     top: -65px;
     right: -55px;
+    background: none;
   }
   
   .ModalShaerText{
@@ -256,7 +257,11 @@ class adventCalendar extends React.PureComponent {
                     className="ModalShaerClose"
                       onClick={this.closeModal}
                     >
-                      x
+                      <img className=".Demo__some-network__image_copylink" 
+                        src={CancelModal}
+                        style={{
+                          width: "32px"
+                        }}/>
                     </button>
                     
                     <FacebookShareButton
