@@ -7,7 +7,15 @@ import Layout from "../components/layout";
 import "../styles/advent-calendar.less";
 import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
+import Modal from '../components/modal';
+import CopyLink from '../images/advent-calendar/copy_link.svg';
 
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from "react-share";
 
 import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/music.svg";
@@ -35,7 +43,7 @@ const MenuWrstyle = styled.div`
 		~ .share__icon--pinterest {
 			transform: translateY(165px) rotate(0);
 		}
-		~ .share__icon--linkedin {
+		~ .share__icon--youtube {
 			transform: translateY(220px) rotate(0);
 		}
 	}
@@ -83,15 +91,85 @@ const MenuWrstyle = styled.div`
 }
 `;
 
+
+const ModalStyle = styled.div`
+.ModalShaer{
+  display: grid;
+  }
+  .ModalShaerClose{
+    margin: 10px 0px 0px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    top: -65px;
+    right: -55px;
+  }
+  
+  .ModalShaerText{
+    margin: 15px;
+  }
+  .Demo__some-network {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .Demo__some-network__share-button {
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: visible;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+  
+  .Demo__some-network__share-button:hover:not(:active) {
+    opacity: 0.75;
+  }
+  .Demo__some-network__image_copylink
+  {
+    width: 64px;
+  }
+`;
+
 class adventCalendar extends React.PureComponent {
     constructor(props) {
         super(props);
-    this.state = {
-        play: true,
-        autoplay: false,
-      }
-      this.audio = new Audio(AudioCalendar)
+          this.state = {
+              play: true,
+              autoplay: false,
+              device: "",
+              isModalOpen: false,
+              isInnerModalOpen: false,
+            }
+            this.audio = new Audio(AudioCalendar);
+            this.getDevice = this.getDevice.bind(this);
+            this.closeModal = this.closeModal.bind(this);
+            this.openModal = this.openModal.bind(this);
     }
+
+    getDevice(device){
+      this.setState({ device: device });
+    }
+  
+    // close modal (set isModalOpen, true)
+    closeModal() {
+      this.setState({
+        isModalOpen: false
+      });
+    }
+  
+    // open modal (set isModalOpen, false)
+    openModal() {
+      this.setState({
+        isModalOpen: true
+      });
+    }
+
       componentDidMount() {
         this.audio.load();
         this.playAudio();
@@ -123,6 +201,10 @@ class adventCalendar extends React.PureComponent {
       }
 
   render() {
+    const shareUrl = 'http://avs4you.com/advent-calendar.aspx';
+    const title = 'AVS4YOU';
+
+
     return (
       <Layout
         headerIsDisabled={true}
@@ -152,21 +234,65 @@ class adventCalendar extends React.PureComponent {
             <MenuWrstyle>
                 <input type="checkbox" id="toggle" class="share__toggle" hidden />
                 <label for="toggle" class="share__button">
-                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" />
+                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" onClick={() => this.openModal()}/>
                 </label>
-                <a href="https://www.facebook.com/avs4you" class="share__icon share__icon--facebook">
-                    <img src="https://www.dropbox.com/s/ipzd6c5q9zgf4jw/facebook.png?raw=1" alt="" />
-                </a>
-                <a href="https://twitter.com/avs4you" class="share__icon share__icon--twitter">
-                    <img src="https://www.dropbox.com/s/676kgc6amdcske8/twitter.png?raw=1" alt="" />
-                </a>
-                <a href="https://www.pinterest.ru/avs4you/_saved/" class="share__icon share__icon--pinterest">
-                    <img src="https://www.dropbox.com/s/tw9scb2s7nsmrsb/pinterest.png?raw=1" alt="" />
-                </a>
-                <a href="https://www.youtube.com/user/avs4you" class="share__icon share__icon--youtube">
-                    <img src="https://imgs.avs4you.com/en/2019.04/images/youtube.svg" alt="" />
-                </a>
                 </MenuWrstyle>
+                <Modal
+                    isModalOpen={this.state.isModalOpen}
+                    closeModal={this.closeModal}
+                  >
+                    <ModalStyle>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={this.closeModal}
+                    >
+                      x
+                    </button>
+                    
+                    <FacebookShareButton
+                      url={shareUrl}
+                      quote={title}
+                      style={{
+                        paddingBottom: "15px"
+                      }}
+                      className="Demo__some-network__share-button"
+                    >
+                      <FacebookIcon size={64} round />
+                      <Text className="ModalShaerText">Share</Text>
+                    </FacebookShareButton>
+
+                    <TwitterShareButton
+                      url={shareUrl}
+                      title={title}
+                      style={{
+                        paddingBottom: "15px"
+                      }}
+                      className="Demo__some-network__share-button"
+                    >
+                      <TwitterIcon size={64} round />
+                      <Text className="ModalShaerText">Tweet</Text>
+                    </TwitterShareButton>
+
+
+                    <button 
+                        onClick={() =>  navigator.clipboard.writeText({shareUrl})}
+                        style={{
+                          paddingBottom: "15px",
+                          border: "none",
+                          backgroundColor: "#ffffff",
+                        }}
+                        className="Demo__some-network__share-button"
+                      >
+                        <img className=".Demo__some-network__image_copylink" 
+                        size={64} 
+                        round src={CopyLink}
+                        style={{
+                          width: "64px"
+                        }}/>
+                        <Text className="ModalShaerText">Copy the link</Text>
+                      </button>
+                    </ModalStyle>
+                  </Modal>
             </div>
               </div>
               <div className="afh_music_block">
