@@ -7,9 +7,10 @@ import Layout from "../components/layout";
 import "../styles/advent-calendar.less";
 import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
-
 import Modal from '../components/modal';
-import CopyLink from '../images/advent-calendar/copy_link.svg';
+import CopyLink from '../images/advent-calendar/link_copy.svg';
+import CancelModal from '../images/advent-calendar/cancel.svg';
+
 
 import {
   TwitterShareButton,
@@ -98,15 +99,15 @@ const ModalStyle = styled.div`
   display: grid;
   }
   .ModalShaerClose{
-    margin: 10px 0px 0px;
+    margin: 25px 10px 0px;
     width: 50px;
     height: 50px;
-    padding: 10px;
     border: none;
     border-radius: 25px;
     position: absolute;
     top: -65px;
     right: -55px;
+    background: none;
   }
   
   .ModalShaerText{
@@ -136,40 +137,39 @@ const ModalStyle = styled.div`
     width: 64px;
   }
 `;
-
 class adventCalendar extends React.PureComponent {
-  constructor(props) {
-    super(props);
-      this.state = {
-          play: true,
-          autoplay: false,
-          device: "",
-          isModalOpen: false,
-          isInnerModalOpen: false,
-        }
-        this.audio = new Audio(AudioCalendar);
-        this.getDevice = this.getDevice.bind(this);
-        this.closeModal = this.closeModal.bind(this);
-        this.openModal = this.openModal.bind(this);
-}
+constructor(props) {
+        super(props);
+          this.state = {
+              play: true,
+              autoplay: false,
+              device: "",
+              isModalOpen: false,
+              isInnerModalOpen: false,
+            }
+            this.audio = new Audio(AudioCalendar);
+            this.getDevice = this.getDevice.bind(this);
+            this.closeModal = this.closeModal.bind(this);
+            this.openModal = this.openModal.bind(this);
+    }
 
-getDevice(device){
-  this.setState({ device: device });
-}
-
-// close modal (set isModalOpen, true)
-closeModal() {
-  this.setState({
-    isModalOpen: false
-  });
-}
-
-// open modal (set isModalOpen, false)
-openModal() {
-  this.setState({
-    isModalOpen: true
-  });
-}
+    getDevice(device){
+      this.setState({ device: device });
+    }
+  
+    // close modal (set isModalOpen, true)
+    closeModal() {
+      this.setState({
+        isModalOpen: false
+      });
+    }
+  
+    // open modal (set isModalOpen, false)
+    openModal() {
+      this.setState({
+        isModalOpen: true
+      });
+    }
 
       componentDidMount() {
         this.audio.load();
@@ -212,6 +212,10 @@ openModal() {
       }
 
   render() {
+    const shareUrl = 'http://avs4you.com/advent-calendar.aspx';
+    const title = 'AVS4YOU';
+
+
     return (
       <Layout
         headerIsDisabled={true}
@@ -244,7 +248,7 @@ openModal() {
                     <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt=""/>
                 </label>
                 </MenuWrstyle>
-                <Modal
+  <Modal
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
                   >
@@ -253,7 +257,11 @@ openModal() {
                     className="ModalShaerClose"
                       onClick={this.closeModal}
                     >
-                      x
+                      <img className=".Demo__some-network__image_copylink" 
+                        src={CancelModal}
+                        style={{
+                          width: "32px"
+                        }}/>
                     </button>
                     
                     <FacebookShareButton
@@ -300,11 +308,10 @@ openModal() {
                         <Text className="ModalShaerText">Copy the link</Text>
                       </button>
                     </ModalStyle>
-                  </Modal>
-            </div>
+                  </Modal>            </div>
               </div>
-              <div className="afh_music_block">
-                <button class="afh_music" onClick={this.togglePlay}>
+              <div className="afh_music_block" onClick={this.togglePlay}>
+                <button class="afh_music">
                     {(this.state.play && !this.state.autoplay) 
                         ? <img src={MusicOff}/>  // pause
                         : <img src={MusicOn}/>   // play
