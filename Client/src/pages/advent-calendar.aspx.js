@@ -1,8 +1,6 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
 import withI18next from "../components/withI18next";
-import Link from "../components/link";
 import Text from "../components/text";
-import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/advent-calendar.less";
 import styled from 'styled-components';
@@ -10,7 +8,6 @@ import CalendarItem from "../components/calendar-item";
 import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CancelModal from '../images/advent-calendar/cancel.svg';
-
 
 import {
   TwitterShareButton,
@@ -22,6 +19,12 @@ import {
 import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/music.svg";
 import AudioCalendar from "../images/advent-calendar/christmas.wav";
+
+
+import { PlayButton, Timer } from 'react-soundplayer/components';
+import { withCustomAudio } from 'react-soundplayer/addons';
+import { withSoundCloudAudio } from 'react-soundplayer/addons';
+
 
 
 const MenuWrstyle = styled.div`
@@ -137,6 +140,56 @@ const ModalStyle = styled.div`
     width: 64px;
   }
 `;
+
+const streamUrl = AudioCalendar;
+
+const CustomPlayer = withSoundCloudAudio(props => {
+  const { soundCloudAudio, playing, track } = props;
+
+  const play = () => {
+    if (playing) {
+      soundCloudAudio.pause();
+    } else {
+      soundCloudAudio.play();
+    }
+  };
+
+  const [autoPlay, setAutoPlay] = useState(true);
+
+	const prevUrl = usePrevious(streamUrl);
+
+	useEffect(() => {
+		if(autoPlay){
+			soundCloudAudio.play({streamUrl}); //This seems to be the magic line
+			setAutoPlay(false);
+		} 
+		if(prevUrl !== streamUrl) {
+			setAutoPlay(true);
+		}
+	},[streamUrl])
+
+  return (
+    <div>
+    <div className="afh_music_block" onClick={() => play()}>
+      <button className="afh_music" >
+        {playing 
+          ? <img src={MusicOff}/>         
+          : <img src={MusicOn}/> 
+        }
+      </button>
+    </div>
+    </div>
+  );
+  function usePrevious(value) {
+		const ref = useRef();
+		useEffect(() => {
+		  ref.current = value;
+		});
+		return ref.current;
+	}
+});
+ 
+
 class adventCalendar extends React.PureComponent {
 constructor(props) {
         super(props);
@@ -147,10 +200,9 @@ constructor(props) {
               isModalOpen: false,
               isInnerModalOpen: false,
             }
-            this.audio = new Audio(AudioCalendar);
             this.getDevice = this.getDevice.bind(this);
             this.closeModal = this.closeModal.bind(this);
-            this.openModal = this.openModal.bind(this);
+            this.openModal = this.openModal.bind(this);         
     }
 
     getDevice(device){
@@ -170,36 +222,6 @@ constructor(props) {
         isModalOpen: true
       });
     }
-
-      componentDidMount() {
-        this.audio.load();
-        this.playAudio();
-        this.audio.addEventListener('ended', () => this.setState({ play: true }));
-      }
-    
-      componentWillUnmount() {
-        this.audio.removeEventListener('ended', () => this.setState({ play: true }));
-      }
-
-      playAudio() {
-        const audioPromise = this.audio.play(!this.state.autoplay)
-        if (audioPromise !== undefined) {
-          audioPromise
-            .then(_ => {
-              // autoplay started
-            })
-            .catch(err => {
-              // catch dom exception
-              console.info(err)
-            })
-        }
-    }
-     
-      togglePlay = () => {
-        this.setState({ play: !this.state.play }, () => {
-          this.state.play ? this.audio.play() : this.audio.pause();
-        });
-      }
 
       renderTextWithLink = (textBefore, linkText, linkHref, textAfter) => {
         return(
@@ -248,7 +270,7 @@ constructor(props) {
                     <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt=""/>
                 </label>
                 </MenuWrstyle>
-  <Modal
+                <Modal
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
                   >
@@ -308,17 +330,16 @@ constructor(props) {
                         <Text className="ModalShaerText">Copy the link</Text>
                       </button>
                     </ModalStyle>
-                  </Modal>            </div>
+                  </Modal>          
+                  </div>
               </div>
-              <div className="afh_music_block" onClick={this.togglePlay}>
-                <button class="afh_music">
-                    {(this.state.play && !this.state.autoplay) 
-                        ? <img src={MusicOff}/>  // pause
-                        : <img src={MusicOn}/>   // play
-                    }
-                </button>
-              </div>
-              <audio class="audio_christmas" src="" type="audio/wav" autoplay="true"></audio>
+            
+              <CustomPlayer
+                  streamUrl={AudioCalendar}
+                  playing={true}
+                  preloadType="auto" 
+                  className="afh_music"
+                  />  
             </div>
           </div>
           <div className="advent_heading">
