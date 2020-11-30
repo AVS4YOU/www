@@ -285,7 +285,7 @@ class adventCalendar extends React.PureComponent {
 
 
                     <button 
-                        onClick={() =>  navigator.clipboard.writeText({shareUrl})}
+                        onClick={() =>  navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
                         style={{
                           paddingBottom: "15px",
                           border: "none",
@@ -295,7 +295,8 @@ class adventCalendar extends React.PureComponent {
                       >
                         <img className=".Demo__some-network__image_copylink" 
                         size={64} 
-                        round src={CopyLink}
+                        round 
+                        src={CopyLink}
                         style={{
                           width: "64px"
                         }}/>
@@ -305,8 +306,8 @@ class adventCalendar extends React.PureComponent {
                   </Modal>
             </div>
               </div>
-              <div className="afh_music_block">
-                <button class="afh_music" onClick={this.togglePlay}>
+              <div className="afh_music_block" onClick={this.togglePlay}>
+                <button class="afh_music">
                     {(this.state.play && !this.state.autoplay) 
                         ? <img src={MusicOff}/>  // pause
                         : <img src={MusicOn}/>   // play
