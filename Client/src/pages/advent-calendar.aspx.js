@@ -243,8 +243,8 @@ class adventCalendar extends React.PureComponent {
             <div className="share">
             <MenuWrstyle>
                 <input type="checkbox" id="toggle" class="share__toggle" hidden />
-                <label for="toggle" class="share__button">
-                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt="" onClick={() => this.openModal()}/>
+                <label for="toggle" class="share__button" onClick={() => this.openModal()}>
+                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt=""/>
                 </label>
                 </MenuWrstyle>
                 <Modal
