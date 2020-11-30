@@ -1,0 +1,780 @@
+.advent-calendar {
+  .adventCalendarContainer {
+    display: grid;
+    grid-template-columns: 169px 169px 169px 169px 169px 169px;
+    grid-gap: 22px;
+    max-width: 1125px;
+    margin: auto;
+  }
+
+  #particles-js {
+    background-color: #003942;
+    text-align: center;
+    background-image: url(../images/advent-calendar/left.png),
+      url(../images/advent-calendar/top.png),
+      url(../images/advent-calendar/right.png),
+      url(../images/advent-calendar/bottom.png);
+    background-position: left, top, right, bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    min-width: 320px;
+    overflow-x: none;
+  }
+
+  .popupBlock {
+    &.topTree{
+    background-image: url(../images/advent-calendar/top.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-x: -337px;
+    z-index: 20;
+}
+}
+
+.bottomTree{
+  background-image: url(../images/advent-calendar/bottom.png);
+  background-repeat: no-repeat;
+  background-size: 285%;
+  background-position-y: 323px;
+  background-position-x: -452px;
+  height: 483px;
+  z-index: 20;
+}
+
+  .advent_header_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #142d33;
+    z-index: 600;
+  }
+
+  .aht_narrow {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0 16px;
+  }
+  .afh_logo {
+    background-position-y: 50%;
+    margin: 0;
+    width: 180px;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/advent-calendar/logo.svg);
+  }
+
+
+  .afh_music_block,
+  .afh_share_block {
+    height: 50px;
+    width: 40px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+
+    .afh_music {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 30px;
+      margin-right: 5px;
+      transition: 0.5s;
+      height: 100%;
+      background-color: #142d33;
+      border: none;
+    }
+
+    .afh_share {
+      background-image: url(../images/advent-calendar/share.svg);
+      margin-right: 0px;
+      background-size: 22px;
+      height: 100%;
+      transition: 0.5s;
+      background-repeat: no-repeat;
+      background-position: 50%;
+
+      &:hover {
+        filter: brightness(0);
+      }
+    }
+  }
+  .afh_music_block {
+    margin-right: 10px;
+    position: relative;
+    transition: 0.5s;
+
+    &::before {
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 20px;
+      background-color: transparent;
+      border-bottom: 3px solid rgba(206, 206, 206, 0);
+      transform: rotate(35deg);
+      content: "";
+      left: 10px;
+      top: 7px;
+      z-index: 1;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom: 3px solid rgba(206, 206, 206, 1);
+      }
+    }
+
+    &.active {
+      &::before {
+        border-bottom: 3px solid rgba(206, 206, 206, 1);
+      }
+
+      &:hover {
+        &::before {
+          border-bottom: 3px solid rgba(206, 206, 206, 0);
+        }
+      }
+    }
+  }
+
+  .afh_logo_link {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-image: url(/images/landing/advent-calendar/logo_color.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 180px auto;
+  }
+  .advent_heading {
+    padding: 150px 0 30px;
+    position: relative;
+    h1 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Open Sans";
+      letter-spacing: -2px;
+    }
+  }
+  .advent_header_sub {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 30px auto 20px;
+    font-family: "Open Sans";
+    text-align: center;
+    max-width: 450px;
+  }
+  .advent_calendar_grid {
+    width: 1079px;
+    margin: 0 auto;
+    border: solid 10px transparent;
+    position: relative;
+  }
+  .acg_row_wrapper {
+    display: table-row;
+  }
+  .acg_cell {
+    display: table-cell;
+    width: 160px;
+    height: 160px;
+    border: 10px solid transparent;
+    position: relative;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    background-color: transparent;
+  }
+
+  .afb_copyright {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0 0;
+    padding-bottom: 20px;
+  }
+  .acgc_popup {
+    width: 680px;
+    height: 450px;
+    display: none;
+    text-align: center;
+    background-color: #d0333e;
+    background-image: url(/images/landing/advent-calendar/pop1x2.png),
+      url(/images/landing/advent-calendar/pop2x2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%;
+    background-size: 125px auto, 110px auto;
+
+    &.acg_xmas_pop {
+      background-image: url(/images/landing/advent-calendar/pop1x2.png),
+        url(/images/landing/advent-calendar/pop2x2.png),
+        url(/images/landing/advent-calendar/stars.png);
+      background-position: 0 0, 100% 100%, 50% 50%;
+      background-size: 125px auto, 110px auto, 670px auto;
+    }
+    &.acgc_popup_expired,
+    &.acgc_popup_expired .acgc_close_button {
+      background-color: #587884;
+
+      .acgc_valid_block {
+        background-color: #395a68;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+      .acgc_button {
+        background-color: #395a68;
+        border-color: #395a68;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+    &.small_height {
+      height: 320px;
+
+      .acgc_close_button {
+        top: 5px;
+        right: 5px;
+      }
+      .acgc_heading_block {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .acgc_text_block,
+      .acgc_coupon_block {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+  .acgc_close_button {
+    position: absolute;
+    top: -27px;
+    right: -27px;
+    background-color: #d0333e;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+  }
+  .acgc_valid_block {
+    color: #fff;
+    font-size: 14px;
+    background-color: #b12e36;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    line-height: 1em;
+  }
+  .acgc_heading_block {
+    font-family: "Fredoka One", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+
+    &.acgc_merry_heading {
+      padding-top: 120px;
+      font-size: 60px;
+      margin-top: 0;
+    }
+  }
+  .acgc_heading_block_smaller {
+    font-size: 0.8em;
+    display: block;
+    font-weight: 400;
+  }
+  .acgc_heading_block_smaller_smaller {
+    font-size: 0.6em;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding-top: 10px;
+  }
+  .acgc_text_block {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+    margin: 25px auto;
+
+    &.no_coupon_area {
+      padding: 30px 0;
+    }
+    &.too_many_lines {
+      margin: 10px auto 0;
+    }
+    &.acgc_merry_xmas {
+      font-size: 22px;
+      font-weight: 600;
+      max-width: 500px;
+      line-height: 1.3em;
+    }
+  }
+  .acgc_xmas_holidays {
+    display: block;
+    font-family: "Cookie", cursive;
+    font-size: 46px;
+    font-weight: 400;
+    padding: 20px 0 0;
+    line-height: 0.8em;
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+  }
+  .acgc_coupon_block {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+    margin: 25px auto;
+
+    &.acgc_no_coupon {
+      padding: 10px 0;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    &.max-width-narrow {
+      max-width: 430px;
+    }
+    &.max-width-wide {
+      max-width: 550px;
+    }
+
+    a {
+      color: #fff;
+    }
+    &.too_many_lines {
+      margin: 10px auto 0;
+    }
+  }
+  .acgc_coupon_area {
+    width: 265px;
+    height: 40px;
+    background-color: #fff;
+    color: #1a3a53;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px auto 20px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 10000;
+    cursor: text;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 275px;
+      height: 50px;
+      border: dashed 2px #fff;
+      left: -7px;
+      top: -7px;
+      z-index: -1;
+    }
+  }
+  .acgc_button_block {
+    &.top_padding {
+      padding-top: 10px;
+    }
+  }
+  a.acgc_button,
+  a.acgc_button:visited {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #18a264;
+    border: 1px solid #d0333e;
+    letter-spacing: 2px;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      border-color: #39905d;
+    }
+  }
+  .acgc_subbutton_note {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+    margin: 30px auto 0;
+    text-align: left;
+    padding: 0 0 0 30px;
+
+    &.acgc_ho_ho_ho {
+      font-size: 32px;
+      font-family: "Fredoka One", cursive;
+      text-transform: uppercase;
+      text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+    }
+  }
+  .advent_footer_block {
+    position: relative;
+  }
+  .afb_logo {
+    text-align: center;
+    padding: 100px 0 0;
+  }
+  .afb_logo_link {
+    display: inline-block;
+    margin: 0 auto;
+    width: 216px;
+    height: 46px;
+    background-image: url(/images/landing/advent-calendar/logo_white.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 216px auto;
+  }
+  #particles-js {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .advent_counter_window {
+    display: none;
+    width: 680px;
+    height: 450px;
+    display: none;
+    text-align: center;
+    background-color: #d0333e;
+    background-image: url(/images/landing/advent-calendar/pop1x2.png),
+      url(/images/landing/advent-calendar/pop2x2.png),
+      url(/images/landing/advent-calendar/stars.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%, 50% 50%;
+    background-size: 125px auto, 110px auto, 670px auto;
+
+    &.small_height {
+      height: 320px;
+
+      .advent_counter_clock {
+        padding-top: 50px;
+      }
+      .advent_counter_logo {
+        padding-top: 10px;
+      }
+      .acgc_close_button {
+        top: 5px;
+        right: 5px;
+      }
+    }
+  }
+  .advent_counter_clock {
+    padding: 110px 0 0;
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 0.8);
+
+    div {
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+  .counter_label,
+  .counter_data {
+    display: block;
+  }
+  .counter_label {
+    font-size: 26px;
+    padding: 0 0 10px;
+  }
+  .counter_data {
+    width: 125px;
+    height: 115px;
+    background-color: #ad121e;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 115px;
+    text-shadow: 0px 2px 1px rgba(153, 39, 49, 1);
+  }
+  .advent_counter_text {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 30px 0 0;
+  }
+  .advent_counter_logo {
+    padding: 50px 0 0;
+  }
+  .advent_counter_logo_link {
+    display: inline-block;
+    margin: 0 auto;
+    width: 150px;
+    height: 46px;
+    background-image: url(/images/landing/advent-calendar/logo_white.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 150px auto;
+  }
+  @media screen and (max-width: 1109px) {
+    .social_block {
+      .social_box {
+        padding-right: 15px;
+      }
+    }
+    .advent_calendar_grid {
+      width: 761px;
+    }
+    .acg_cell {
+      width: 107px;
+      height: 107px;
+    }
+
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px 169px 169px 169px;
+        width: 740px;
+        grid-gap: 22px;
+        margin: auto;
+      }
+
+  }
+  @media screen and (max-width: 789px) {
+    .afh_music_block {
+      &:hover {
+        &::before {
+          border-bottom: 3px solid rgba(206, 206, 206, 0);
+        }
+      }
+
+      &.active {
+        &::before {
+          border-bottom: 3px solid rgba(206, 206, 206, 1);
+        }
+
+        &:hover {
+          &::before {
+            border-bottom: 3px solid rgba(206, 206, 206, 1);
+          }
+        }
+      }
+    }
+
+    .afh_share_block {
+      .afh_share {
+        &:hover {
+          filter: brightness(1);
+        }
+      }
+    }
+
+    .advent_calendar_grid {
+      width: auto;
+      max-width: 508px;
+    }
+    .acg_row_wrapper {
+      display: inline;
+      margin-bottom: -1px;
+    }
+    .acg_cell {
+      display: inline-block;
+      margin-bottom: -1px;
+    }
+    body {
+      background-size: auto 400vh;
+    }
+    .acgc_popup {
+      width: 420px;
+      height: auto;
+      padding-bottom: 20px;
+      background-position: 0 38px, 100% 100%;
+    }
+    .advent_counter_clock {
+      font-size: 40px;
+    }
+    .counter_label {
+      font-size: 16px;
+    }
+    .agc_minutes {
+      .counter_label {
+        margin-left: -7px;
+      }
+    }
+    .counter_data {
+      font-size: 40px;
+      width: 60px;
+      height: 55px;
+      line-height: 55px;
+    }
+    .advent_counter_window {
+      width: 420px;
+      height: 410px;
+    }
+    .advent_counter_text {
+      line-height: 1.4em;
+    }
+    .acgc_valid_block {
+      width: calc(~"100% - 60px");
+    }
+    .acgc_heading_block {
+      font-size: 40px;
+      margin-top: 60px;
+
+      &.acgc_merry_heading {
+        font-size: 44px;
+        padding-top: 80px;
+      }
+    }
+    .acgc_text_block {
+      &.acgc_merry_xmas {
+        font-size: 18px;
+      }
+    }
+    .acgc_xmas_holidays {
+      font-size: 36px;
+    }
+    .acgc_heading_block_smaller_smaller {
+      font-size: 0.4em;
+    }
+    .acgc_subbutton_note {
+      &.acgc_ho_ho_ho {
+        font-size: 28px;
+      }
+    }
+    #particles-js {
+      background-size: 50%;
+    }
+
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px 169px 169px;
+        grid-gap: 22px;
+        margin: auto;
+        width: 570px;
+      }
+  }
+  @media screen and (max-width: 549px) {
+    .advent_calendar_grid {
+      width: auto;
+      max-width: 381px;
+    }
+  }
+  @media screen and (max-width: 489px) {
+    .acgc_close_button {
+      top: -35px;
+      right: 0;
+    }
+
+    #particles-js {
+      background-size: 35%;
+    }
+  }
+  @media screen and (max-width: 439px) {
+    .adventCalendarContainer {
+        display: grid;
+        grid-template-columns: 169px;
+        grid-gap: 22px;
+        margin: auto;
+        width: 170px;
+      }
+    .advent_heading {
+      h1 {
+        font-size: 36px;
+      }
+    }
+    .advent_header_sub {
+      font-size: 26px;
+      max-width: 300px;
+    }
+    .afh_music_block,
+    .afh_share_block {
+      width: 40px;
+    }
+    .advent_calendar_grid {
+      max-width: 300px;
+    }
+    .acgc_popup {
+      width: 320px;
+      height: 500px;
+      background-position: 0 38px, 100% 100%;
+    }
+    .advent_counter_window {
+      width: 320px;
+    }
+    .acgc_valid_block {
+      width: calc(~"100% - 10px");
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .acgc_heading_block {
+      font-size: 30px;
+      margin-top: 40px;
+
+      &.acgc_merry_heading {
+        padding-top: 110px;
+      }
+    }
+    .afb_copyright {
+      line-height: 1.4em;
+    }
+  }
+  .blockOverlay.blockUI {
+    background-color: #333 !important;
+    opacity: 0.6 !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .popupBlock {
+    max-width: 300px;
+    height: 500px;
+  }
+
+  .adventCalendarContainer {
+    .popupHeader{
+      width: 250px;
+    }
+  
+    .popupTitle {
+      width: 250px;
+    }
+  
+    .popupDiscount{
+      width: 250px;
+    }
+  
+    .popupCoupon{
+      font-size: 18px;
+      width: 250px;
+    }
+  
+    .popupSub{
+      width: 250px;
+    }
+
+    .bottomTree{
+      height: 0;
+    }
+
+    .subText{
+      display: inline-block;
+      width: 300px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
