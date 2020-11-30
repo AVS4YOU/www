@@ -24,8 +24,8 @@ const StyledCalendarItem = styled.div`
 
   .calendarImage {
     background-color: transparent;
-    width: 169px;
-    height: 169px;
+    width: 168px;
+    height: 168px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transform-style: preserve-3d;
@@ -174,6 +174,27 @@ const StyledCalendarItem = styled.div`
       padding-right: 3px;
     }
   }
+
+  .shopButton{
+    background-color: #00786b;
+    text-decoration: none;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
+    a{
+      color: #fff;
+      text-decoration: none;
+      padding: 2em;     
+      margin: -2em; 
+    }
+  }
 }
 `;
 
@@ -270,8 +291,18 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButton = (textButton, hrefButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a href={hrefButton}>{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref, hrefButton, textButton  } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
     console.log(futureCoupon)
     return (
@@ -299,6 +330,7 @@ class CalendarItem extends React.Component {
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}
+              {textButton && hrefButton && this.renderButton(textButton, hrefButton)}
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground"></div>
