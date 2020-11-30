@@ -97,8 +97,9 @@ render(){
             <div className="map-body__block">
             
               <Text as="h4" className="map-body__heading">{this.props.t("We are here")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("85 Great Portland, London")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("W1W 7LT")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("Suite 12, 2nd Floor, Queens House")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("180 Tottenham Court Road")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("London W1T 7PD")}</Text>
               <Text as="p" className="map-body__text">{this.props.t("United Kingdom")}</Text>
             </div>
             <div className="map-body__block">
@@ -108,7 +109,7 @@ render(){
             </div>
           </div>
           <div className="map-body__adaptive-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6779277871989!2d-0.1427611707373586!3d51.51850479872734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad5966688f5%3A0x7f597ce753ed6230!2zODUgR3JlYXQgUG9ydGxhbmQgU3QsIExvbmRvbiBXMVcgN0xULCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1579611829457!5m2!1sru!2sru" width="100%" height="100%" frameBorder="0" allowFullScreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2569405901709!2d-0.13665574168987776!3d51.52213386381332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b29329cc78f%3A0xe28600fd84cdb10!2zU3VpdGUgMTIsIDJuZCBGbG9vciwgMTgwIFRvdHRlbmhhbSBDb3VydCBSZCwgRml0enJvdmlhLCBMb25kb24gVzFUIDdOWiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1606730021347!5m2!1sru!2sru" width="100%" height="100%" frameBorder="0" allowFullScreen=""></iframe>
           </div>
         </div>
         <div className="contact-body">
