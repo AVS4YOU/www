@@ -16,7 +16,6 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
-import WrdAVS from "../images/pl/Back_text.png";
 import PlAVS from "../images/pl/pattern.png";
 const StyledPL =styled.div`
 position: relative;
@@ -203,9 +202,6 @@ class Layout extends React.PureComponent {
         </a>
           <div className="PLnewAvsLeft">
             <img src={PlAVS}></img>
-          </div>
-          <div className="PLnewAvsCenter">
-          <img src={WrdAVS}></img>
           </div>
           <div className="PLnewAvsRight">
           <img src={PlAVS}></img>
