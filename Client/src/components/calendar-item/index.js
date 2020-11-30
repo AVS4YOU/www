@@ -116,6 +116,17 @@ const StyledCalendarItem = styled.div`
     line-height: 1;
   }
 
+  .titleText {
+    font-size: 18px;
+    color: #ca2a28;
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 15px;
+  }
+
   .popupDiscount{
     font-size: 18px;
     margin: auto;
@@ -291,6 +302,17 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderTextWithLinkTitle = (textBeforeTitle, linkTextTitle, linkHrefTitle) => {
+    return(
+      <>
+        <div className="titleText">
+        <Text fontSize="18" lineHeight="1" fontWeight="600">{textBeforeTitle}</Text>
+        <a href={linkHrefTitle}>{linkTextTitle}</a>
+        </div>
+      </>
+    )
+  }
+
   renderButton = (textButton, hrefButton) => {
     return(
       <>
@@ -302,7 +324,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref, hrefButton, textButton  } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
     console.log(futureCoupon)
     return (
@@ -326,6 +348,7 @@ class CalendarItem extends React.Component {
               </Text>
               <Text>{popupHeader}</Text>
               <Text className="popupTitle">{popupTitle}</Text>
+              {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
               <Text className="popupDiscount">{popupDiscount}</Text>
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
