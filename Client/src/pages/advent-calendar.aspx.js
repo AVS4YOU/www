@@ -515,8 +515,10 @@ constructor(props) {
               date={new Date(2020, 11, 17)}
               validDate="The offer is valid thru December 17 -19, 2020"
               popupTitle="On the 17th day of Christmas"
-              popupDiscount="Need a secure document office for your private project? 
-              Get a 50% discount on ONLYOFFICE Home Server."
+              textBeforeTitle="Need a secure document office for your private project? 
+              Get a 50% discount on"
+              linkTextTitle="ONLYOFFICE Home Server." 
+              linkHrefTitle="https://www.onlyoffice.com/blog/2020/07/onlyoffice-home-server-101-building-a-private-home-office/"
               popupCoupon="Home50"
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.onlyoffice.com/order/checkout.php?PRODS=28704881&ORDERSTYLE=nLXO4pSppn4%3d&QTY=1&DCURRENCY=USD&CURRENCY=USD&LANGUAGES=en&PAY_TYPE=&COUPON=Home50&CART=1&CARD=2&CLEAN_CART=ALL"
