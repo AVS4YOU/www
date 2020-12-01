@@ -22,8 +22,6 @@ import AudioCalendar from "../images/advent-calendar/christmas.wav";
 
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
 
-
-
 const MenuWrstyle = styled.div`
 .share {
 	position: fixed;
@@ -186,7 +184,6 @@ const CustomPlayer = withSoundCloudAudio(props => {
 	}
 });
  
-
 class adventCalendar extends React.PureComponent {
 constructor(props) {
         super(props);
@@ -260,8 +257,8 @@ constructor(props) {
               <div className="afh_share_block">
             <div className="share">
             <MenuWrstyle>
-                <input type="checkbox" id="toggle" class="share__toggle" hidden />
-                <label for="toggle" class="share__button" onClick={() => this.openModal()}>
+                <input type="checkbox" id="toggle" className="share__toggle" hidden />
+                <label for="toggle" className="share__button" onClick={() => this.openModal()}>
                     <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt=""/>
                 </label>
                 </MenuWrstyle>

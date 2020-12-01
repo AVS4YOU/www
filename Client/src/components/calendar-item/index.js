@@ -326,7 +326,7 @@ class CalendarItem extends React.Component {
   render() {
     const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
-    console.log(futureCoupon)
+    //console.log(futureCoupon)
     return (
       <StyledCalendarItem
         imageCoordinate={imageCoordinate}
