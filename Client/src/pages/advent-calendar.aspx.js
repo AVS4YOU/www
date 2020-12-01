@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from "react";
 import withI18next from "../components/withI18next";
 import Text from "../components/text";
 import Layout from "../components/layout";
+import Link from "../components/link";
 import "../styles/advent-calendar.less";
 import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
@@ -252,7 +253,7 @@ constructor(props) {
           <div className="advent_header_top">
             <div className="aht_narrow">
               <div className="afh_logo">
-                <a className="afh_logo_link" href="https://avs4you.com"></a>
+                <Link className="afh_logo_link" to="/"></Link>
               </div>
               <div className="afh_share_block">
             <div className="share">
