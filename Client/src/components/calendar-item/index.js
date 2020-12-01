@@ -43,6 +43,8 @@ const StyledCalendarItem = styled.div`
     background-position-x: ${(props) =>
       props.imageCoordinate ? props.imageCoordinate : 0}px;
     background-position-y: 0px;
+    filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
+    box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
   }
 
   .closeButton {
@@ -85,7 +87,7 @@ const StyledCalendarItem = styled.div`
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 57, 66, 0.3);
+    background-color: rgba(0, 57, 66, 0.4);
     top: 0;
     left: 0;
   }
@@ -165,7 +167,7 @@ const StyledCalendarItem = styled.div`
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 350px;
+    max-width: 332px;
 
     a{
       padding-left: 3px; 
@@ -181,7 +183,34 @@ class CalendarItem extends React.Component {
     this.state = {
       popupOpened: false,
       isExpired: null,
+      futureCoupon: null,
     };
+  }
+
+  componentDidMount () {
+    const itemDay = this.props.date.getDate();
+    const currentDay = new Date().getDate();
+
+    if (this.state.popupOpened) return;
+
+    if (currentDay > itemDay) {
+      //console.log("Истёкший купон");
+      this.setState({
+        isExpired: true,
+        futureCoupon: false,
+      });
+    } else if (currentDay === itemDay) {
+      //console.log("Показать купон");
+      this.setState({
+        isExpired: false,
+        futureCoupon: false,
+      });
+    } else {
+      //console.log("Еще не наступивший купон");
+      this.setState({
+        futureCoupon: true,
+      });
+    }
   }
 
   onItemClick = () => {
@@ -195,15 +224,20 @@ class CalendarItem extends React.Component {
       this.setState({
         popupOpened: true,
         isExpired: true,
+        futureCoupon: false,
       });
     } else if (currentDay === itemDay) {
       //console.log("Показать купон");
       this.setState({
         popupOpened: true,
         isExpired: false,
+        futureCoupon: false,
       });
     } else {
       //console.log("Еще не наступивший купон");
+      this.setState({
+        futureCoupon: true,
+      });
     }
   };
 
@@ -238,11 +272,13 @@ class CalendarItem extends React.Component {
 
   render() {
     const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref } = this.props;
-    const { popupOpened, isExpired } = this.state;
+    const { popupOpened, isExpired, futureCoupon } = this.state;
+    console.log(futureCoupon)
     return (
       <StyledCalendarItem
         imageCoordinate={imageCoordinate}
         isExpired={isExpired}
+        futureCoupon={futureCoupon}
         onClick={this.onItemClick}
       >
         <div className="calendarImage"></div>
