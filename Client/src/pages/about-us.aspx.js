@@ -105,7 +105,6 @@ render(){
             <div className="map-body__block">
               <Text as="h4" className="map-body__heading">{this.props.t("Contacts")}</Text>
               <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 208 144 3359</a> ({this.props.t("no phone support")})</Text>
-              <Text as="p" className="map-body__text"><a href="tel:+442071826722">(+44) 207 182 6722</a></Text>
             </div>
           </div>
           <div className="map-body__adaptive-map">
