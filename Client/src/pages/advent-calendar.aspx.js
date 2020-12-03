@@ -353,7 +353,6 @@ constructor(props) {
               date={new Date(2020, 11, 2)}
               validDate="The offer is valid till December 24, 2020"
               popupTitle="Happy first Sunday of Advent 2020!"
-              className="CalendarItem"
               popupDiscount="AVS4YOU wishes you a miraculous festive season!"
               popupCoupon="Get a $20 gift card for a review of AVS4YOU programs on Capterra"
                 textBefore="just" 
@@ -377,7 +376,6 @@ constructor(props) {
               popupDiscount="a 15% discount coupon on AVS4YOU 1 Year Subscription!"
               popupCoupon="Annual15"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
               />
             <CalendarItem imageCoordinate={-553} date={new Date(2020, 11, 5)}
               validDate="The offer is valid thru December 5-7, 2020" 
@@ -386,7 +384,6 @@ constructor(props) {
               1 year cloud subscription for 1-2 users with a 50% discount!"
               popupCoupon="Cloud50"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
               />
             <CalendarItem imageCoordinate={-737} date={new Date(2020, 11, 6)} 
               validDate="The offer is valid till December 6, 2020"
@@ -394,7 +391,6 @@ constructor(props) {
               popupDiscount="Warm up with a 25% on AVS4YOU Unlimited Subscription!"
               popupCoupon="Warm25"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
               />
             <CalendarItem
               imageCoordinate={-922}
@@ -404,7 +400,6 @@ constructor(props) {
               popupDiscount="AVS4YOU grants you a 20% promo code on 1 Year Subscription"
               popupCoupon="Annual20"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-1106}
@@ -414,7 +409,6 @@ constructor(props) {
               popupDiscount="Rock out - 40% Off on AVS4YOU Unlimited Subscription!"
               popupCoupon="Magic40"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
            <CalendarItem
               imageCoordinate={-1290}
@@ -425,7 +419,6 @@ constructor(props) {
               AVS Video ReMaker 1 Year Subscription"
               popupCoupon="ReMaker100"
               popupSub="*Just use this 100% coupon to get your key"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-1474}
@@ -435,7 +428,6 @@ constructor(props) {
               popupDiscount="Take a 18% discount on AVS4YOU 1 Year Subscription"
               popupCoupon="18Winter"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-1658}
@@ -444,7 +436,6 @@ constructor(props) {
               popupTitle="On the 10th day of Christmas"
               popupDiscount="Another fabulous gift from ONLYOFFICE is waiting for you!"
               popupCoupon="Get free desktop office suite to work with all types of documents, spreadsheets and presentations"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-1842}
@@ -454,7 +445,6 @@ constructor(props) {
               popupDiscount="Save 50% on AVS Video ReMaker Unlimited Subscription!"
               popupCoupon="Remaker50"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2026}
@@ -464,7 +454,6 @@ constructor(props) {
               popupDiscount="22% Off on AVS4YOU Annual Subscription"
               popupCoupon="Clock12"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2210}
@@ -474,7 +463,6 @@ constructor(props) {
               popupDiscount="Redeem a 50% coupon code on AVS Video Editor!"
               popupCoupon="A50VEditor"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2394}
@@ -484,7 +472,6 @@ constructor(props) {
               popupDiscount="AVS4YOU treats you to a 33% discount on AVS4YOU Unlimited Subscription"
               popupCoupon="AVS33Unlim"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2578}
@@ -495,7 +482,6 @@ constructor(props) {
               with a 35% discount on AVS4YOU Unlimited Subscription!"
               popupCoupon="Gift35"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2764}
@@ -506,7 +492,6 @@ constructor(props) {
               Edit videos easily and fast during 1 year!"
               popupCoupon="Remake20"
               popupSub="*Just use this 100% coupon to get your key"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-2946}
@@ -517,7 +502,6 @@ constructor(props) {
               Get a 50% discount on ONLYOFFICE Home Server."
               popupCoupon="Home50"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-3130}
@@ -528,7 +512,6 @@ constructor(props) {
               Get a 45% discount on AVS4YOU Unlimited Subscription!"
               popupCoupon="Gift45"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-3314}
@@ -538,7 +521,6 @@ constructor(props) {
               popupDiscount="A new surprise for you - 30% on AVS Video Editor!"
               popupCoupon="Snow30"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-3498}
@@ -548,7 +530,6 @@ constructor(props) {
               popupDiscount="A generous offer - 40% Off on AVS4YOU Unlimited Subscription"
               popupCoupon="Candle40"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
               <CalendarItem
               imageCoordinate={-3682}
@@ -558,7 +539,6 @@ constructor(props) {
               popupDiscount="Enjoy a 30% promo code on AVS4YOU 1 Year Subscription"
               popupCoupon="AVS30Frost"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-3866}
@@ -570,7 +550,6 @@ constructor(props) {
               popupCoupon="Get a free personal online office -
               share and collaborate on docs free of charge!"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-4050}
@@ -580,7 +559,6 @@ constructor(props) {
               popupDiscount="give you a 50% coupon on AVS4YOU Unlimited Subscription!"
               popupCoupon="Lucky21"
               popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
             />
             <CalendarItem
               imageCoordinate={-4236}
@@ -589,7 +567,6 @@ constructor(props) {
               popupTitle="Merry Christmas!"
               popupDiscount="AVS4YOU wishes you and your family a happy and prosperous 2021 year!
               May your home be blessed with Christmas joy, peace and love!"
-              className="CalendarItem"
             />
           </div>
 
