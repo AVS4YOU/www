@@ -1,7 +1,7 @@
 {
     "************************COMMON***************************" : "************************COMMON***************************",
     "/" : "/",
-    "CurrentLanguage" : "Italiana",
+    "CurrentLanguage" : "Italiano",
 
     "************************HEADER DOWNLOAD BUTTONS***************************" : "************************HEADER DOWNLOAD BUTTONS***************************",
     "get $5 coupon code" : "OTTIENI UN COUPON DI $5",
@@ -416,6 +416,8 @@
     "AVS4YOU Multimedia Suite for Windows" : "AVS4YOU suite multimediale per Windows",
     "1 year" : "1 anno",
     "Unlimited" : "Illimitato",
+    "subscription_rc" : "abbonamento",
+    "Unlimited_rc" : "Illimitato",
     "1 year access" : "Accesso per 1 anno",
     "Unlimited access" : "Accesso illimitato",
     "Why choose AVS4YOU?" : "Perché scegliere AVS4YOU?",
