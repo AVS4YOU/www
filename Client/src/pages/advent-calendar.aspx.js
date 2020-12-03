@@ -20,6 +20,7 @@ import {
 import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/music.svg";
 import AudioCalendar from "../images/advent-calendar/christmas.wav";
+import shareSVGAVS from "../images/advent-calendar/share.svg";
 
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
 
@@ -260,7 +261,7 @@ constructor(props) {
             <MenuWrstyle>
                 <input type="checkbox" id="toggle" className="share__toggle" hidden />
                 <label for="toggle" className="share__button" onClick={() => this.openModal()}>
-                    <img src="https://www.dropbox.com/s/7xu7sivp4wzscer/share.png?raw=1" alt=""/>
+                    <img src={shareSVGAVS} alt=""/>
                 </label>
                 </MenuWrstyle>
                 <Modal
@@ -368,6 +369,7 @@ constructor(props) {
               popupDiscount="a 20% discount coupon on AVS4YOU Unlimited Subscription"
               popupCoupon="Unlim20"
               popupSub="*Just use this coupon while purchasing"
+              className="CalendarItem"
             />
             <CalendarItem imageCoordinate={-369} date={new Date(2020, 11, 4)}
               validDate="The offer is valid till December 4, 2020"

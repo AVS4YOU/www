@@ -1,8 +1,12 @@
 .advent-calendar {
   .adventCalendarContainer {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 169px 169px 169px 169px 169px 169px;
     grid-gap: 22px;
+   -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+   -ms-grid-rows: 1fr 1em 1fr 1em 1fr 1em 1fr 1em;
+    position: relative;
     max-width: 1125px;
     margin: auto;
   }
@@ -102,6 +106,112 @@
       }
     }
   }
+
+  .CalendarItem:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .CalendarItem:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+  .CalendarItem:nth-child(3) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+  }
+  
+  .CalendarItem:nth-child(4) {
+    -ms-grid-column: 7;
+    -ms-grid-row: 1;
+  }
+  .CalendarItem:nth-child(5) {
+    -ms-grid-column: 9;
+    -ms-grid-row: 1;
+  }
+  
+  .CalendarItem:nth-child(6) {
+    -ms-grid-column: 11;
+    -ms-grid-row: 1;
+  }
+  .CalendarItem:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .CalendarItem:nth-child(8) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  .CalendarItem:nth-child(9) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;
+  }
+  .CalendarItem:nth-child(10) {
+    -ms-grid-column: 7;
+    -ms-grid-row: 3;
+  }
+  .CalendarItem:nth-child(11) {
+    -ms-grid-column: 9;
+    -ms-grid-row: 3;
+  }
+  .CalendarItem:nth-child(12) {
+    -ms-grid-column: 11;
+    -ms-grid-row: 3;
+  }
+  
+  .CalendarItem:nth-child(13) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  .CalendarItem:nth-child(14) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+  }
+  
+  .CalendarItem:nth-child(15) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 5;
+  }
+  .CalendarItem:nth-child(16) {
+    -ms-grid-column: 7;
+    -ms-grid-row: 5;
+  }
+  
+  .CalendarItem:nth-child(17) {
+    -ms-grid-column: 9;
+    -ms-grid-row: 5;
+  }
+  .CalendarItem:nth-child(18) {
+    -ms-grid-column: 11;
+    -ms-grid-row: 5;
+  }
+  .CalendarItem:nth-child(19) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+  }
+  .CalendarItem:nth-child(20) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 7;
+  }
+  
+  .CalendarItem:nth-child(21) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 7;
+  }
+  .CalendarItem:nth-child(22) {
+    -ms-grid-column: 7;
+    -ms-grid-row: 7;
+  }
+  
+  .CalendarItem:nth-child(23) {
+    -ms-grid-column: 9;
+    -ms-grid-row: 7;
+  }
+  .CalendarItem:nth-child(24) {
+    -ms-grid-column: 11;
+    -ms-grid-row: 7;
+  }
+
   .afh_music_block {
     margin-right: 10px;
     position: relative;
@@ -519,6 +629,7 @@
     .adventCalendarContainer {
         display: grid;
         grid-template-columns: 169px 169px 169px 169px;
+        -ms-grid-columns: 169px 169px 169px 169px;
         width: 740px;
         grid-gap: 22px;
         margin: auto;
@@ -634,6 +745,8 @@
     .adventCalendarContainer {
         display: grid;
         grid-template-columns: 169px 169px 169px;
+        -ms-grid-columns: 169px 169px 169px;
+
         grid-gap: 22px;
         margin: auto;
         width: 570px;
@@ -659,6 +772,8 @@
     .adventCalendarContainer {
         display: grid;
         grid-template-columns: 169px;
+        -ms-grid-columns: 169px;
+
         grid-gap: 22px;
         margin: auto;
         width: 170px;

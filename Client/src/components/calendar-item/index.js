@@ -328,6 +328,7 @@ class CalendarItem extends React.Component {
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
+      <div className="CalendarItem">
       <StyledCalendarItem
         imageCoordinate={imageCoordinate}
         isExpired={isExpired}
@@ -360,6 +361,7 @@ class CalendarItem extends React.Component {
           </>
         )}
       </StyledCalendarItem>
+      </div>
     );
   }
 }
