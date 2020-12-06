@@ -351,7 +351,7 @@ constructor(props) {
           <div className="adventCalendarContainer">
             <CalendarItem
               imageCoordinate={0}
-              date={new Date(2020, 11, 2)}
+              date={new Date(2020, 11, 1)}
               validDate="The offer is valid till December 24, 2020"
               popupTitle="Happy first Sunday of Advent 2020!"
               popupDiscount="AVS4YOU wishes you a miraculous festive season!"
@@ -363,7 +363,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-184}
-              date={new Date(2020, 11, 3)}
+              date={new Date(2020, 11, 1)}
               validDate="The offer is valid till December 3, 2020"
               popupTitle="On the second Day of Christmas AVS4YOU gives"
               popupDiscount="a 20% discount coupon on AVS4YOU Unlimited Subscription"
@@ -371,14 +371,14 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               className="CalendarItem"
             />
-            <CalendarItem imageCoordinate={-369} date={new Date(2020, 11, 4)}
+            <CalendarItem imageCoordinate={-369} date={new Date(2020, 11, 2)}
               validDate="The offer is valid till December 4, 2020"
               popupTitle="On the third  Day of Christmas AVS4YOU gives"
               popupDiscount="a 15% discount coupon on AVS4YOU 1 Year Subscription!"
               popupCoupon="Annual15"
               popupSub="*Just use this coupon while purchasing"
               />
-            <CalendarItem imageCoordinate={-553} date={new Date(2020, 11, 4)}
+            <CalendarItem imageCoordinate={-553} date={new Date(2020, 11, 3)}
               validDate="The offer is valid thru December 5-7, 2020" 
               popupTitle="On the fourth day of Christmas"
               popupDiscount="Get a special gift from our partner ONLYOFFICE, an online office suite manufacturer, 
