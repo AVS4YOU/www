@@ -91,6 +91,9 @@ const StyledLanguageSelector = styled.div`
         &.jp:before{
             background-image: url(${JpIcon});
         }
+        &.ru:before{
+            background-image: url(${RuIcon});
+        }
     }
     .languageSelector:before{
         content: '';

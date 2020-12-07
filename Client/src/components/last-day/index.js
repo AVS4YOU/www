@@ -97,10 +97,10 @@ function getLastDayOfMonth(year, month) {
     "декабря"
 ];
   let DE_MText = "nur bis "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + de_mounth[currentMounth] + " "  +  currentYear + " gültig";
-  let FR_MText = "valide jusqu’à " + getLastDayOfMonth(currentYear, currentMounth) + " " + fr_mounth[currentMounth] + " "  +  currentYear;
-  let IT_MText = "prezzo valido fino al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
+  let FR_MText = "jusqu’à " + getLastDayOfMonth(currentYear, currentMounth) + " " + fr_mounth[currentMounth] + " "  +  currentYear;
+  let IT_MText = "al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
   let JP_MText = "価格は" + currentYear + "年" + jp_mounth[currentMounth] + "" + getLastDayOfMonth(currentYear, currentMounth) + "日までに有効です";
-  let ES_MText = "válida hasta el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
+  let ES_MText = "el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
   let RU_MText = "действительно до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
 
 function AvsLinkHref(props){
