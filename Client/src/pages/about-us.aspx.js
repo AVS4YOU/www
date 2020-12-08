@@ -85,7 +85,7 @@ render(){
                   {this.props.t("Focus on users’ needs")}
                 </Text>
                 <Text className="unique-body__text">
-                  AVS4YOU {this.props.t("is committed to make all users contented offering them a number of programs absolutely free of charge")}
+                  {this.props.t("AVS4YOU")} {this.props.t("is committed to make all users contented offering them a number of programs absolutely free of charge")}
                 </Text>
               </div>
             </div>

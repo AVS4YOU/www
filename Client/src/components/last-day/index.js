@@ -101,7 +101,7 @@ function getLastDayOfMonth(year, month) {
   let IT_MText = "al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
   let JP_MText = "価格は" + currentYear + "年" + jp_mounth[currentMounth] + "" + getLastDayOfMonth(currentYear, currentMounth) + "日までに有効です";
   let ES_MText = "el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
-  let RU_MText = "действительно до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
+  let RU_MText = "до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
 
 function AvsLinkHref(props){
     return(
