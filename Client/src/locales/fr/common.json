@@ -1270,6 +1270,7 @@
 
     "***************************Padfiles***********************" : "***************************Fichiers Pad***********************",
     "Download"  : "Télécharger",
+    "Download_dwn" : "Télécharger",
     "Index" : "Index",
     "Name" : "Nom",
     "PAD File" : "Fichier PAD",
