@@ -82,7 +82,8 @@ function getLastDayOfMonth(year, month) {
     "novembre",
     "dicembre"
   ];
-  const ru_mounth = [
+
+const ru_mounth = [
     "января",
     "февраля",
     "марта",
@@ -96,12 +97,80 @@ function getLastDayOfMonth(year, month) {
     "ноября",
     "декабря"
 ];
+
+const pl_mounth = [
+  "styczeń",
+  "luty",
+  "marzec",
+  "kwiecień",
+  "maj",
+  "czerwiec",
+  "lipiec",
+  "sierpień",
+  "wrzesień",
+  "październik",
+  "listopad",
+  "grudzień"
+];
+
+const kr_mounth = [
+  "1월",
+  "2월",
+  "3월",
+  "4월",
+  "5월",
+  "6월",
+  "7월",
+  "8월",
+  "9월",
+  "10월",
+  "11월",
+  "12월",
+];
+
+const dk_mounth = [
+  "januar",
+  "februar",
+  "marts",
+  "april",
+  "maj",
+  "juni",
+  "juli",
+  "august",
+  "september",
+  "oktober",
+  "november",
+  "december",
+];
+
+const nl_mounth = [
+  "januari",
+  "februari",
+  "maart",
+  "april",
+  "mei",
+  "juni",
+  "juli",
+  "augustus",
+  "september",
+  "oktober",
+  "november",
+  "december",
+];
+ 
+
+
   let DE_MText = "nur bis "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + de_mounth[currentMounth] + " "  +  currentYear + " gültig";
-  let FR_MText = "jusqu’à " + getLastDayOfMonth(currentYear, currentMounth) + " " + fr_mounth[currentMounth] + " "  +  currentYear;
-  let IT_MText = "al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
+  let FR_MText = "valide jusqu’à " + getLastDayOfMonth(currentYear, currentMounth) + " " + fr_mounth[currentMounth] + " "  +  currentYear;
+  let IT_MText = "prezzo valido fino al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
   let JP_MText = "価格は" + currentYear + "年" + jp_mounth[currentMounth] + "" + getLastDayOfMonth(currentYear, currentMounth) + "日までに有効です";
-  let ES_MText = "el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
-  let RU_MText = "до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
+  let ES_MText = "válida hasta el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
+  let RU_MText = "действительно до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
+  let PL_MText = "ważna do "  + getLastDayOfMonth(currentYear, currentMounth) + " " + pl_mounth[currentMounth] + " "  +  currentYear;
+  let KR_MText = currentYear + "년 " + kr_mounth[currentMounth] + "월 " + getLastDayOfMonth(currentYear, currentMounth) + "일까지 유효합니다";
+  let DK_MText = "er tilgængelige indtil "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + dk_mounth[currentMounth] + ", "  +  currentYear;
+  let NL_MText = "geldig tot "  + getLastDayOfMonth(currentYear, currentMounth) + " " + nl_mounth[currentMounth] + " "  +  currentYear+ ".";
+
 
 function AvsLinkHref(props){
     return(
@@ -117,6 +186,10 @@ function AvsLinkHref(props){
                 pageContext.locale === "jp" ? JP_MText : 
                 pageContext.locale === "es" ? ES_MText :
                 pageContext.locale === "ru" ? RU_MText :
+                pageContext.locale === "pl" ? PL_MText :
+                pageContext.locale === "kr" ? KR_MText :
+                pageContext.locale === "dk" ? DK_MText :
+                pageContext.locale === "nl" ? NL_MText :
                 ""
                 }
                 {props.children}
@@ -128,4 +201,3 @@ function AvsLinkHref(props){
 }
 
 export default AvsLinkHref;
-
