@@ -41,8 +41,34 @@ const localesNSContent = {
       content: fs.readFileSync(`src/locales/ru/common.json`, "utf8"),
       ns: "common"
     }
-  ]
+  ],
+  pl: [
+    {
+      content: fs.readFileSync(`src/locales/pl/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+kr: [
+    {
+      content: fs.readFileSync(`src/locales/kr/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+dk: [
+    {
+      content: fs.readFileSync(`src/locales/dk/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
+nl: [
+    {
+      content: fs.readFileSync(`src/locales/dk/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
 };
+
+
 
 const availableLocales = [
   { value: "en", text: "English" },
@@ -51,7 +77,11 @@ const availableLocales = [
   { value: "fr", text: "Français" },
   { value: "es", text: "Español" },
   { value: "jp", text: "日本語" },
-  { value: "ru", text: "Русский" }
+  { value: "ru", text: "Русский" },
+  { value: "pl", text: "Polski"},
+  { value: "kr", text: "한국어"},
+  { value: "dk", text: "Dansk"},
+  { value: "nl", text: "Nederland"},
 ];
 
 // default locales don't end up in a specific locale route i.e example.com for english and example.com/fr for franch

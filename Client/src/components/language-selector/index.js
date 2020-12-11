@@ -10,6 +10,10 @@ import Selected from '../../images/common/languages/selected.svg';
 import { PageContext } from '../../context/page-context';
 
 import RuIcon from '../../images/common/languages/russian.svg';
+import KrIcon from '../../images/common/languages/korea-flag.svg';
+import PlIcon from '../../images/common/languages/polish-flag.svg';
+import DkIcon from '../../images/common/languages/danish.svg';
+import NlIcon from '../../images/common/languages/netherlands.svg';
 import EnIcon from '../../images/common/languages/english.svg';
 import FrIcon from '../../images/common/languages/france.svg';
 import DeIcon from '../../images/common/languages/germany.svg';
@@ -94,6 +98,18 @@ const StyledLanguageSelector = styled.div`
         &.ru:before{
             background-image: url(${RuIcon});
         }
+        &.pl:before{
+            background-image: url(${PlIcon});
+        }
+        &.kr:before{
+            background-image: url(${KrIcon});
+        }
+        &.dk:before{
+            background-image: url(${DkIcon});
+        }
+        &.nl:before{
+            background-image: url(${NlIcon});
+        }
     }
     .languageSelector:before{
         content: '';
@@ -156,7 +172,11 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
-  { value: "ru", text: "Русский" }
+    {value: "ru", text: "Русский"},
+    {value: "pl", text: "Polski"},
+    {value: "kr", text: "한국어"},
+    {value: "dk", text: "Dansk"},
+    {value: "nl", text: "Nederland"}
 ];
 
 class LanguageSelector extends React.PureComponent {
