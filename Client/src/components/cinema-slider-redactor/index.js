@@ -373,10 +373,10 @@ export class CinemaSlider extends Component {
           };
     
         const images = [    
-            { id:1, img: "groupTrim.png" }, 
-            { id:2, img: "groupCroup.png" },   
-            { id:3, img: "groupSplit.png" },    
-            { id:4, img: "groupJoin.png" },         
+            { id:1, img: "GroupTrim.png" }, 
+            { id:2, img: "GroupCroup.png" },   
+            { id:3, img: "GroupSplit.png" },    
+            { id:4, img: "GroupJoin.png" },         
           ];   
 
     const imgSlides = () =>  
