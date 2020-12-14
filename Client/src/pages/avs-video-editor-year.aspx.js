@@ -191,7 +191,7 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-        <ProductPagesWrapper>
+    
           
         <div className="headerBackground" style={{marginBottom:"2%", marginTop:"1%"}}>
             <PageContentWrapper>
@@ -423,7 +423,6 @@ render(){
         <Text align="center" color="#32393e" className="headerDescriptionTitleAVS" as="h5" fontSize={13}>{this.props.t("At the end of your 1 year subscription, your subscription auto-renews on an annual basis and you will incur the cost for the subscription until you explicitly cancel your subscription by logging into My account and clicking Cancel Subscription in your account settings")}</Text>
         </div>
         </MainPageWrapper>
-        </ProductPagesWrapper>
       </Layout>
     );
   }

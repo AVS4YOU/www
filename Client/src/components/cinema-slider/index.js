@@ -276,7 +276,7 @@ export class CinemaSlider extends Component {
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinity: true,
+          infinity: false,
           centerMode: true,
           swipeToSlide: false,
           afterChange: current =>

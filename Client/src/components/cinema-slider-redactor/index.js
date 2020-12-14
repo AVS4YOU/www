@@ -275,7 +275,7 @@ export class CinemaSlider extends Component {
             speed: 400,
             slidesToShow: 1,
             slidesToScroll: 1,
-            swipeToSlide: true,
+            swipeToSlide: false,
             centerPadding: '455px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
@@ -440,6 +440,6 @@ export class CinemaSlider extends Component {
     </div>
     </CinemaSliderStyle>  
   );  
-}  
+ }  
 }  
 export default CinemaSlider;
