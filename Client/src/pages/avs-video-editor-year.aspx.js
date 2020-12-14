@@ -408,7 +408,7 @@ render(){
 
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="fonImage.png"/> 
+        <ImageGQL className="headerBackgroundImage" imageName={this.props.t("fonImage")}/> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
