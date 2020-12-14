@@ -15,10 +15,10 @@ import  Actimg2 from "../../images/avs-video-editor-final/cinema-slider/Crop_act
 import  Actimg3  from "../../images/avs-video-editor-final/cinema-slider/Split_active.svg";
 import  Actimg4  from "../../images/avs-video-editor-final/cinema-slider/Join_active.svg";
 
-import GroupTrim from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.png";
-import GroupCroup from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.png";
-import GroupSplit from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.png";
-import GroupJoin from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.png";
+import groupTrim from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.png";
+import groupCroup from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.png";
+import groupSplit from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.png";
+import groupJoin from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.png";
 
 
 const CinemaSliderStyle = styled.div`
@@ -373,10 +373,10 @@ export class CinemaSlider extends Component {
           };
     
         const images = [    
-            { id:1, img: "GroupTrim.png" }, 
-            { id:2, img: "GroupCroup.png" },   
-            { id:3, img: "GroupSplit.png" },    
-            { id:4, img: "GroupJoin.png" },         
+            { id:1, img: "groupTrim.png" }, 
+            { id:2, img: "groupCroup.png" },   
+            { id:3, img: "groupSplit.png" },    
+            { id:4, img: "groupJoin.png" },         
           ];   
 
     const imgSlides = () =>  

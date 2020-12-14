@@ -172,6 +172,8 @@ render(){
         <ProductPagesWrapper>  
           <div className="headerBackground">
           <ImageGQL className="headerBackgroundImage" imageName={this.props.t("backGround Image video-editing-software")} style={{position: "absolute"}}/>
+          <ImageGQL className="headerBackgroundImage" imageName="backGroundImageFinal.jpg" style={{position: "absolute"}}/>
+
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"

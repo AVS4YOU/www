@@ -305,43 +305,43 @@ export class CinemaSlider extends Component {
       
       const MainSliderImages = [      
         { img: Transitions,
-            id: 1,
+            id: 0,
             bckimg:frameTransitions,
            },
         { img: Transformation,
-            id: 2,
+            id: 1,
             bckimg:frameTransformation,
            },
         { img: TextGraphics,
-            id: 3,
+            id: 2,
             bckimg:frameTextGraphics,
            },
         { img: VideoOderlay,
-            id: 4,
+            id: 3,
             bckimg:frameVideoOderlay,
            },
         { img: VideoStabilization,
-            id: 5,
+            id: 4,
             bckimg:frameVideoStabilization,
            },
         { img: ChromaKey,
-            id: 6,
+            id: 5,
             bckimg:frameChromaKey,
            },
         { img: ColourCorrection,
-            id: 7,
+            id: 6,
             bckimg:frameColourCorrection,
            },
         { img: FreezeFrame,
-            id: 8,
+            id: 7,
             bckimg:frameFreezeFrame,
            },
         { img: PlaybackSpeed,
-            id: 9,
+            id: 8,
             bckimg:framePlaybackSpeed,
            },
         { img: SpecialEffects,
-            id: 10,
+            id: 9,
             bckimg:frameSpecialEffects,
            },               
       ];
@@ -414,7 +414,7 @@ export class CinemaSlider extends Component {
               <button className=" Sliderbutton btnPrevArrow" onClick={this.previous}>
               </button>
                <span className="slideIdSlider">
-                  {num.id} out of 10
+                  {num.id + 1} out of 10
                </span>
               <button className="Sliderbutton btnNextArrow" onClick={this.next}>
               </button>
