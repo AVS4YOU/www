@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
-import PropTypes from "prop-types";
 
 import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
 import  img1  from "../../images/avs-video-editor-final/cinema-slider/Trim_black.svg";
@@ -148,8 +147,8 @@ const CinemaSliderStyle = styled.div`
     margin-right: 30%;
   }
   .slick-slide > div {
-    margin: 5px 10px;
-    max-height: 490px;
+    margin: 5px 15px;
+    max-height: 610px;
     padding-top: 10px;
   }
 }
@@ -283,7 +282,7 @@ export class CinemaSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: true,
-            centerPadding: '455px',
+            centerPadding: '450px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
               {
@@ -362,8 +361,7 @@ export class CinemaSlider extends Component {
                 breakpoint: 480,
                 settings: {
                   arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
+                  centerMode: false,
                   slidesToShow: 1
                 }
               },
@@ -371,8 +369,7 @@ export class CinemaSlider extends Component {
                 breakpoint: 768,
                 settings: {
                   arrows: false,
-                  centerMode: true,
-                  centerPadding: '240px',
+                  centerMode: false,
                   slidesToShow: 1
                 }
               }

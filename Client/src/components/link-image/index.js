@@ -7,7 +7,9 @@ function AvsLinkHref(props){
         <PageContext.Consumer>  
             {(pageContext) => (
                 
-                <ImageGQL className={props.className} imageName={ pageContext.locale === "en" ?  `${props.mainName + pageContext.locale + props.toName}`: 
+                <ImageGQL className={props.className} imageName={ pageContext.locale === "en" 
+                ?  
+                `${props.mainName + pageContext.locale + props.toName}`: 
                 `${props.mainName + pageContext.locale + props.toName}`
                     } 
                 >   

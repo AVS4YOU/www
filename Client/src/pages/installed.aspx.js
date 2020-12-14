@@ -498,6 +498,7 @@ const StyledFooter = styled.div`
     margin-left: 30px;
     }
     .landing-footer-narrow {
+    width: 1020px;
     text-align: left;
     }
     .landing-footer-narrow ul,
@@ -712,6 +713,7 @@ render(){
     return (
       <Layout 
         headerIsDisabled={true}
+        footerIsDisabled={true}
         className="installed-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -751,7 +753,7 @@ render(){
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
                     <p className="lohbn-regular-price">{this.props.t("Regularly")} <span className="lohbn-rp"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("199 ")}</span></p>
-                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a>                                                                                                            </span>
+                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>
                 </div>
             </div>
         </div>
@@ -772,6 +774,7 @@ render(){
                         {Slides()}
                     </Slider>
                 </StyledSlider>
+
             </div>
         </div>
         <div className="landing-last-block">
@@ -782,8 +785,7 @@ render(){
                     <div className="llbn-ht-block llbnht-block3"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-start-working-with-video-editor.aspx">{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</LinkHref></div>
                     <div className="llbn-ht-block llbnht-block4"><LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/">{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></LinkHref>{this.props.t("lang Help Center")}</div>
                 </div>
-                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a>
-                                                                                                                         </span>            
+                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>            
             </div>
         </div>
         <div className="landing-footer">
@@ -808,9 +810,6 @@ render(){
                 </Link> {this.props.t("2020 All rights reserved")}</div>
             </div>
         </div>
-    
-        
-    
         </div>
         </StyledFooter>
 </Layout>

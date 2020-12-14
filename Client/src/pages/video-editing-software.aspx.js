@@ -143,13 +143,6 @@ const MainPageWrapper = styled.div`
    }
 `;
 
-const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;
 class avsVideoEditorSoftware extends React.PureComponent {
 
   constructor(props) {
@@ -168,7 +161,6 @@ class avsVideoEditorSoftware extends React.PureComponent {
 render(){
 
     return (
-      <StyleTextMontserrat>
       <Layout 
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
@@ -391,7 +383,6 @@ render(){
         </MainPageWrapper>
         </ProductPagesWrapper>
       </Layout>
-      </StyleTextMontserrat>
     );
   }
 };
