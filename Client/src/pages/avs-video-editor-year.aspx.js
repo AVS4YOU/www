@@ -165,13 +165,6 @@ const MainPageWrapper = styled.div`
    }
 `;
 
-/*const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;*/
 class avsVideoEditorYear extends React.PureComponent {
 
   constructor(props) {
@@ -205,7 +198,7 @@ render(){
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE 1.png"      
+               imageName="VE.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>

@@ -13,7 +13,7 @@ import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
 import {GroupCard} from '../components/content-card/card-index';
 
-import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
+import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
 import CreateSlide2 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame3.svg';
 import CreateSlide3 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame4.svg';
@@ -197,7 +197,7 @@ render(){
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE 1.png"      
+               imageName="VE.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
