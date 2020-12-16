@@ -53,6 +53,18 @@ const StyledCalendarItem = styled.div`
     position: absolute;
     right: -30px;
     top: -30px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      background-color: transparent;
+      content: "x";
+      left: 8px;
+      top: -9px;
+      z-index: 1;
+      color: #185674;
+    }
   }
 
   .popupBlock {
@@ -134,6 +146,33 @@ const StyledCalendarItem = styled.div`
     line-height: 1;
     font-weight: 600;
   }
+
+  .textBefore{
+    font-size: 12px;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .subText{
+    display: flex;
+    font-size: 11px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 350px;
+
+    a{
+      padding-left: 3px; 
+      padding-right: 3px;
+    }
+  }
+}
 `;
 
 class CalendarItem extends React.Component {
@@ -149,18 +188,15 @@ class CalendarItem extends React.Component {
     const itemDay = this.props.date.getDate();
     const currentDay = new Date().getDate();
 
-    const itemMonth = this.props.date.getMonth();
-    const currentMonth = new Date().getMonth();
-
     if (this.state.popupOpened) return;
 
-    if (currentDay > itemDay && currentMonth > itemMonth) {
+    if (currentDay > itemDay) {
       //console.log("Истёкший купон");
       this.setState({
         popupOpened: true,
         isExpired: true,
       });
-    } else if (currentDay === itemDay && currentMonth === itemMonth) {
+    } else if (currentDay === itemDay) {
       //console.log("Показать купон");
       this.setState({
         popupOpened: true,
@@ -187,8 +223,21 @@ class CalendarItem extends React.Component {
     return `${mm} ${dd}, ${yy}`;
   };
 
+  
+  renderTextWithLink = (textBefore, linkText, linkHref, textAfter) => {
+    return(
+      <>
+        <div className="subText">
+        <Text fontSize="11">{textBefore}</Text>
+        <a href={linkHref}>{linkText}</a>
+        <Text fontSize="11">{textAfter}</Text>
+        </div>
+      </>
+    )
+  }
+
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref } = this.props;
     const { popupOpened, isExpired } = this.state;
     return (
       <StyledCalendarItem
@@ -200,19 +249,22 @@ class CalendarItem extends React.Component {
 
         {popupOpened && (
           <>
-            <div className="popupBlock">
+            <div className="popupBlock topTree">
+            <div className="bottomTree">
             <div onClick={this.onClosePopup} className="closeButton"></div>
               <Text className="popupHeader">
                 {isExpired
                   ? "OFFER EXPIRED"
-                  : `The offer is valid till ${this.getFormattedDate()}`}
+                  : this.props.validDate}
               </Text>
               <Text>{popupHeader}</Text>
               <Text className="popupTitle">{popupTitle}</Text>
               <Text className="popupDiscount">{popupDiscount}</Text>
-              <Text className="popupCoupon">{popupCoupon}</Text>
+              {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
-            </div>
+              {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}
+              </div>
+              </div>
             <div onClick={this.onClosePopup} className="closeBackground"></div>
           </>
         )}
