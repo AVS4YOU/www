@@ -24,11 +24,11 @@ const CookieMessange = props => {
                 cookieName="UsersCookieMessages"
                 className="AVSCookieMessages"
                 style={{
-                    backgroundColor: "#647585",
+                    backgroundColor: "#32393e",
                     textAlign: "center",
                 }}
                 buttonStyle={{
-                    background: "#8FC33D",
+                    background: "#1373E2",
                     color: "white",
                     textAlign: "center",
                     fontWeight: "bolder",
