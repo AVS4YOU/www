@@ -36,12 +36,7 @@ render(){
         metaKeywords=""
       >
         <div className="header">
-          <div className="avs-logo">
-          <GatsbyLink className="headerLogo" to="/">
-              <LogoWrapper href="/">
-              </LogoWrapper>
-          </GatsbyLink>
-          </div>
+          
             <div className="header__body">
               <Text as="h1" className="header__heading installed"><span className="installedBig">{this.props.t("Wait")}</span> {this.props.t("Before you uninstall")} </Text>
               <Text as="h2" className="header__heading get">{this.props.t("Get AVS4YOU Unlimited Subscription at a special price")} </Text>
