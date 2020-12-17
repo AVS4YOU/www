@@ -12,8 +12,9 @@ const CookieStyle = styled.div`
         text-decoration: underline;
     }
     .CookieText{
+        font-family: Open Sans;
         color: #fff;
-        font-size: 18px;
+        font-size: 14px;
     }
     .alert-warning{
         align-items: baseline;
@@ -46,6 +47,22 @@ const CookieStyle = styled.div`
         margin: 15px;
         position: relative;
         margin-left: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .CookieText{
+            font-size: 12px;
+        }
+        .btnWrapperClasses{
+            position: relative;
+            margin-right: auto;
+            top: 10px;
+        }
+        .text-capitalize{
+            margin: 15px;
+            position: relative;
+            width: 60%;
+        }
     }
 `;
 
