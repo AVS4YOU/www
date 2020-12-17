@@ -416,9 +416,9 @@
 	"Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems": "Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems.",
 	"How to reinstall AVS4YOU programs?": "How to reinstall AVS4YOU programs?",
 	"If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www avs4you com, it is recommended to reinstall the software": "If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www.avs4you.com, it is recommended to reinstall the software.",
-	"Below we ll describe how to reinstall the AVS4YOU software smoothly": "Below we'll describe how to reinstall the AVS4YOU software smoothly.",
+	"Below we ll describe how to reinstall the AVS4YOU software smoothly": "Below we'll describe how to reinstall the AVS4YOU software smoothly.",
 	"How to uninstall AVS4YOU programs?": "How to uninstall AVS4YOU programs?",
-	"In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict": "In case you need to uninstall the AVS4YOU programs follow this detailed guide. Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict.",
+	"In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict": "In case you need to uninstall the AVS4YOU programs follow this detailed guide. Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict.",
 	"jpn" : ".",
 	"jpAffiliate" : ".",
 
@@ -519,7 +519,7 @@
 	"Support Center": "Support Center.",
 	"AVS4YOU is the home of ultimate multimedia editing family Learn more about our company its history who we are and what we value" : "AVS4YOU Our contacts",
 	"AVS4YOU Multimedia tools contact": "AVS4YOU Multimedia tools: contact",
-
+	"Release Date" : "Release Date:",
 
 
 	"*****************************affiliates********************************": "*****************************affiliates********************************",
@@ -738,7 +738,7 @@
 	"Get an extra 30% discount by sending your request at": "Get an extra 30% discount by sending your request at",
 	"A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof": " A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof.",
 	"Explain new topics and difficult concepts through video": "Explain new topics and difficult concepts through video.",
-
+	"Add callouts, captions, and arrows, use pan and zoom effects" : "Add callouts, captions, and arrows, use pan and zoom effects.",
 	"Record lectures and webinars": "Record lectures and webinars.",
 	"Use visuals to grab students' attention and engage them": "Use visuals to grab students' attention and engage them.",
 	"Make video tutorials to reach even remote students": "Make video tutorials to reach even remote students.",
@@ -1290,6 +1290,12 @@
  "Just" : " ",
  "2020 All rights reserved" :"2020 All rights reserved.",
  "Online Media Technologies Ltd UK" :"Online Media Technologies Ltd., UK",
+
+ "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "This site uses cookies. By continuing to browse the site you agree to our ",
+    "privacy policy" : "privacy policy",
+	"pointeCookie" : ".",
+	"I Agree" : "I Agree",
  
  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",

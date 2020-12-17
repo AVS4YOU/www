@@ -1262,6 +1262,15 @@
     "Support" : "サポート",
     "Partners" : "パートナー",
 
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "このサイトはCookieを使用しています。 このサイトの利用を継続すること で、",
+    "privacy policy" : "プライバシーポリシー",
+    "pointeCookie" : "に同意することになります。",
+    "I Agree" : "同意する",
+
+    "Add callouts, captions, and arrows, use pan and zoom effects" : "コールアウト、キャプションと矢を追加し、パンとズーム効果を使用",
+
+
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "jp_slider_video_converter.jpg",
     "slider video editor jpg" : "jp_slider_video_editor.jpg",

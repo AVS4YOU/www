@@ -210,9 +210,9 @@
   "Record media files from your PC screen": "Записывайте медиафайлы с экрана вашего ПК.",
   "Give a new life to old VHS tapes": "Вдохните новую жизнь в старые кассеты VHS.",
   "Make your video look professional": "Пусть ваши видео выглядят профессионально.",
-  "Cut out a particular scene or remove shaky and unnecessary parts": "Вырезайте определенные сцены или удаляйте дрожащие и лишние фрагменты.",
+  "Cut out a particular scene or remove shaky and unnecessary parts": "Вырезайте определенные сцены или удаляйте размытые и лишние фрагменты.",
   "Split videos regardless of both the video size and formats": "Нарезайте видео независимо от его размера и формата.",
-  "Join as many video files as you want": "Склеивайте столько видеофайлов, сколько понадобится.",
+  "Join as many video files as you want": "Склеивайте столько видеофайлов, сколько необходимо.",
   "Fix up any white balancing issues and color mismatches with color tuning": "Исправляйте любые проблемы с балансом белого и несоответствия цвета при помощи цветокоррекции.",
   "Fix a shaky footage with video stabilization": "Избавьтесь от эффекта дрожащих рук с помощью стабилизации видео.",
   "Use chroma key effect to change your background": "Используйте хромакей для смены фона.",
@@ -227,7 +227,7 @@
   "Publish your creative work in social networks": "Публикуйте свои креативные работы в соцсетях.",
   "James K.": "Джеймс К.",
   "Linda K.": "Линда К.",
-  "I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work": "Я люблю все эти программы. Я еженедельно использую редактор реестра, а конвертер видео почти каждый день. Уверяю, вы не найдете более выгодного инструмента для чистки реестра. Этими конвертерами аудио и видео невероятно легко пользоваться.",
+  "I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work": "Я люблю все эти программы. Я еженедельно использую программу для чистки системного реестра, а конвертер видео почти каждый день. Уверяю, вы не найдете более выгодного инструмента для чистки реестра. Этими конвертерами аудио и видео невероятно легко пользоваться.",
   "Marc N.": "Марк Н.",
   "Ive used several AVS products for years and they have never fallen short on what I needed them to do": "Я использовал некоторые программы AVS в течение многих лет, и они всегда справлялись с моими задачами.",
   "AVS Video Editor 9.1": "AVS Video Editor 9.1",
@@ -512,7 +512,7 @@
   "Volume Sales": "Продажи оптом",
   "To purchase a large number of licenses at a special price, contact our sales department at ": "Чтобы приобрести большое количество лицензий по специальной цене, свяжитесь с нашим отделом продаж по адресу  ",
   "To get a quote for schools and universities, please email us at ": "Чтобы получить предложение для школ и университетов, пожалуйста, напишите нам на ",
-  "or visit": " ",
+  "or visit": " или посетите ",
   "Education page": "страницу Образование",
   "Customer Support": "Поддержка клиентов",
   "For assistance with purchasing and using our products, please visit our ": "Для получения помощи в приобретении и использовании наших продуктов, пожалуйста, посетите наш ",
@@ -557,7 +557,7 @@
   "link generator": "генератор ссылок",
   "to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link": "для создания ссылок, которые можно размещать на сайте, блоге или в каналах. Вы можете создать прямую ссылку для загрузки или ссылку на собственный лендинг.",
   "Control your sales": "Контроль продаж",
-  "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Наша система отслеживания файлов cookie перенаправляет клиентов на страницу оформления заказа внутри вашей партнерской системы с указанием вашего партнерского ID. Таким образом, вы можете легко контролировать свои продажи в Панели управления Avangate, MyCommerce/ShareIt.",
+  "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Наша система отслеживания файлов cookie перенаправляет клиентов на страницу оформления заказа внутри вашей партнерской системы с указанием вашего партнерского ID. Таким образом, вы можете легко контролировать свои продажи в Панели управления Avangate, MyCommerce.",
   
 
    "Is it free to participate in your affiliate program?" : "Бесплатное ли участие в вашей партнерской программе?",
@@ -574,7 +574,7 @@
     "here" : "здесь",
     "It will automatically make correct links" : "Он автоматически создаст правильные ссылки.",
     "How do I get money?" : "Как мне получить вознаграждение?",
-    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Вы контролируете продажи и получаете деньги через существующую панель аффилиатской сети. Это либо Avangate, либо MyCommerce - Share IT.",
+    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Вы контролируете продажи и получаете деньги через существующую панель аффилиатской сети. Это либо Avangate, либо MyCommerce.",
     "How can I make sure your system really works and where can I get statistics for clicks to you from my links?" : "Как я могу убедиться, что ваша система действительно работает, и где я могу получить статистику переходов на ваш сайт по моим ссылкам?",
     "Once you're registered with us, you get login and password to access our" : "Как только вы зарегистрируетесь у нас, вы получите логин и пароль для доступа к нашей ",
     "control panel" : "панели управления",
@@ -585,7 +585,7 @@
     "Can I use your graphics/text in my custom builds/websites?" : "Могу ли я использовать вашу графику / текст в моих кастомизированных инсталляционных файлах / веб-сайтах?",
     "Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line" : "Да, вы можете использовать нашу графику / описание продукта полностью или частично по своему усмотрению. По запросу мы создадим для вас индивидуальные баннеры. Напишите нам на",
     "How long do you allow cookies to be stored on a customer's PC?" : "Как долго вы разрешаете хранить файлы cookie на компьютере клиента?",
-    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Файлы cookie устанавливаются на компьютер клиента автоматически после того, как он перешел по ссылке или баннеру с вашего веб-сайта. Файлы cookie действительны в течение 30 дней в партнерской сети Avangate и 45 дней в MyCommerce-Share-IT. Это означает, что вы получаете гарантированную комиссию, если тот же клиент покупает наше программное обеспечение в течение этого периода.",
+    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Файлы cookie устанавливаются на компьютер клиента автоматически после того, как он перешел по ссылке или баннеру с вашего веб-сайта. Файлы cookie действительны в течение 30 дней в партнерской сети Avangate и 45 дней в MyCommerce. Это означает, что вы получаете гарантированную комиссию, если тот же клиент покупает наше программное обеспечение в течение этого периода.",
 
 
   "*****************************Free AVS Disc Creator********************************": "*****************************Free AVS Disc Creator********************************",
@@ -751,7 +751,7 @@
   "Upload log-files (txt, log), documents (doc, docx, pdf) and image files (bmp, png, gif, jpeg). Other file types have to be packed using a zip-archiver to be accepted. Max file size 5 Mb.": "Загружайте лог-файлы (txt, log), документы (doc, docx, pdf) и файлы изображений (bmp, png, gif, jpeg). Другие типы файлов должны можно упаковать в zip-формат. Макс. размер файла – 5 Мб.",
   "By clicking this button, you agree to our": "Нажимая на эту кнопку, вы соглашаетесь с нашими",
   "Terms of Service.": "Условия использования.",
-  "Terms of Service": "Условия использования",
+  "Terms of Service": "Условиями использования",
   "For more details and discount requests, please write at": "Для получения более подробной информации и скидок, пожалуйста, напишите на ",
   "AVS4YOU for Education" : "AVS4YOU для образования",
 
@@ -1289,6 +1289,7 @@
   "and you will have": "и у вас будет",
   "a stunning video made": "потрясающее видео, сделанное",
   "JP easy steps": " ",
+  "Add callouts, captions, and arrows, use pan and zoom effects" : "Добавляйте уточнения, подписи и стрелки, используйте эффекты панорамирования и масштабирования.",
   "easy steps to create a movie": "несколько простых шагов к созданию настоящего фильма:",
   "Upload media files": "Загрузите медиа",
   "Cut or trim videos": "Вырежьте или обрежьте видео",
@@ -1311,6 +1312,12 @@
   "2020 All rights reserved": "2020 Все права защищены.",
   "Online Media Technologies Ltd UK": "Online Media Technologies Ltd., Великобритания",
 
+
+  "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+  "This site uses cookies By continuing to browse the site you agree to our" : "Этот сайт использует cookies. Продолжая просматривать сайт, вы соглашаетесь с нашей ",
+  "privacy policy" : "политикой конфиденциальности",
+  "pointeCookie" : ". ",
+  "I Agree" : "Я принимаю",
 
 
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
