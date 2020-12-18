@@ -34,7 +34,7 @@ render(){
                   </Text>
                   <Text as="h1" className="header__heading">{this.props.t("Affiliate Program")}</Text>
                   <Text as="h3" className="header__subtitle">{this.props.t("Generate maximum sales with AVS4YOU top tools")}</Text>
-                  <Button className="header__button" textClassName="header__button-text" href="https://account.mycommerce.com/Cp/Login">{this.props.t("Sign up now")}</Button>
+                  <Button className="header__button" textClassName="header__button-text" href="https://www.avangate.com/affiliates/sign-up.php?merchant=onlmetec&template=affiliate-signup-october-2011&clean=1&lang=en">{this.props.t("Sign up now")}</Button>
                 </div>
               </div>
             </div>
@@ -144,10 +144,10 @@ render(){
                     {this.props.t("Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems")}
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="http://app.impact.com/campaign-mediapartner-signup/AVS4YOU.brand?type=dm" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://account.mycommerce.com//Signup/Affiliate/200281390?md5=db7bc22a535e2aa3cf7440f7afbc75ce" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Sign up")}
                     </Button>
-                    <Button href="https://impact.com/" textClassName="choose-program__button-text" className="choose-program__button-transparent">
+                    <Button href="https://account.mycommerce.com/Cp/Login" textClassName="choose-program__button-text" className="choose-program__button-transparent">
                       {this.props.t("Log in")}
                     </Button>
                   </div>
