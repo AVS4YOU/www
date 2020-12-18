@@ -79,10 +79,13 @@ componentDidMount(){
     cookies.set('SRC', parsed.SRC, { path: '/' });
   }
 
-  if(cookies.get('SRC')){
+  const SRCParam = cookies.get('SRC')
+
+  if(SRCParam){
+
     this.setState({
-      hrefUnlim: this.state.hrefUnlim+"&SRC="+parsed.SRC,
-      hrefOneYear: this.state.hrefOneYear+"&SRC="+parsed.SRC,
+      hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
+      hrefOneYear: this.state.hrefOneYear+"&SRC="+SRCParam,
     })
   }
 
