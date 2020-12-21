@@ -576,7 +576,7 @@ constructor(props) {
             />
               <CalendarItem
               imageCoordinate={-3685}
-              date={new Date(2020, 11, 20)}
+              date={new Date(2020, 11, 21)}
               validDate="The offer is valid till December 22, 2020"
               popupTitle="On the 21th day of Christmas"
               popupDiscount="Enjoy a 30% promo code on AVS4YOU 1 Year Subscription"
@@ -587,7 +587,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-3870}
-              date={new Date(2020, 11, 21)}
+              date={new Date(2020, 11, 22)}
               validDate="The offer is valid thru December 22-26, 2020"
               popupTitle="On the 22th day of Christmas"
               popupDiscount="ONLYOFFICE wishes you a happy year ahead and
@@ -600,7 +600,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-4054}
-              date={new Date(2020, 11, 22)}
+              date={new Date(2020, 11, 23)}
               validDate=""
               popupTitle="On Christmas Eve AVS4YOU is happy to"
               popupDiscount="give you a 50% coupon on AVS4YOU Unlimited Subscription!"
@@ -611,7 +611,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-4238}
-              date={new Date(2020, 11, 23)}
+              date={new Date(2020, 11, 24)}
               validDate=""
               popupTitle="Merry Christmas!"
               popupDiscount="AVS4YOU wishes you and your family a happy and prosperous 2021 year!
