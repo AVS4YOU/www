@@ -126,7 +126,7 @@ render(){
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
-                href={this.state.hrefOneYear}
+                href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12")}
                 className="buy-block-button"
               >
                 {this.props.t("Buy now")}
@@ -148,7 +148,7 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button
-                  href={this.state.hrefUnlim}
+                  href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1")}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
@@ -251,7 +251,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com/" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
+                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
                     </Text>
                 </div>
               </PanelCollapse>

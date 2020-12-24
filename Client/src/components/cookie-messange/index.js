@@ -1,7 +1,6 @@
 import React from 'react';
-import CookieConsent, { Cookies } from "react-cookie-consent";
-import styled, {css} from 'styled-components';
-import Text from '../text';
+import CookieConsent from "react-cookie-consent";
+import styled from 'styled-components';
 import Link from '../link';
 import { useTranslation } from "react-i18next";
 
