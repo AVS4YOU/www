@@ -250,6 +250,9 @@ class Privacy extends React.PureComponent {
           <Text className="body-privacy__text">
             <b>{this.props.t("Yahoo Japan")}</b> {this.props.t("Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to")} <a href="https://privacy.yahoo.co.jp/en_index.html" target="_blank">https://privacy.yahoo.co.jp/en_index.html</a>.
           </Text>
+          <Text className="body-privacy__text">
+            <b>{this.props.t("YandexMetrica")}</b> {this.props.t("We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them")}
+          </Text>
 
 
 
