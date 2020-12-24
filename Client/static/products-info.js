@@ -36,7 +36,7 @@ let MediaPlayer = {
 
 let AudioEditor = {
     version: "10.0.4.553",
-    releaseDD: "12",
+    releaseDD: "11",
     releaseMM: "12",
     releaseYYYY: "2020",
     size: "48.19",
