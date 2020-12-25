@@ -209,7 +209,7 @@ render(){
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
-                <Text color="#ffffff" align="left" className="headerText" lineHeight="45px" color="#32393e" fontSize={14} fontWeight={600} as="h1">{this.props.t("License AVS Video Editor 1 Year Subscription")}</Text>
+                <Text color="#ffffff" align="left" className="headerText" lineHeight="45px" color="#32393e" fontSize={14} fontWeight={600} as="h1">{this.props.t("License AVS Video Editor Unlimited Subscription")}</Text>
                 <Text color="#ffffff" align="left" className="headerText" lineHeight="25px" color="#32393e" fontSize={25} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
                 <Text color="#ffffff" align="left" className="headerDescription" lineHeight="10px" color="#32393e"  style={{paddingBottom:"10px"}} fontSize={18} fontWeight={600} as="h5">{this.props.t("Key features")}</Text>
                 <div className="HeaderListItemTable" style={{paddingLeft:"15px"}}>

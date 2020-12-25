@@ -125,7 +125,7 @@ render(){
                   headerText={this.props.t("Explain new topics and difficult concepts through video")}
                   free={false}
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Easily edit webcam footage, add audio and image overlays, stickers, visual effects, change background, and more")}</Text>
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Add callouts, captions, and arrows, use pan and zoom effects")}</Text>
                 </ContentRowItem>
 
                 <ContentRowItem 

@@ -448,8 +448,9 @@
     "AVS4YOU Multimedia Suite for Windows":"AVS4YOU Multimedia-Paket für Windows",
     "1 year":"1 Jahr",
     "Unlimited":"Unbefristetes",
-    "1 year access":"1 Jahr Zugang",
-    "Unlimited access":"Unbegrenzter Zugang",
+    "1 year access_rc":"1 Jahr Zugang auf 5 AVS4YOU-Programme",
+    "Unlimited access_rc":"Unbegrenzter Zugang auf 5 AVS4YOU-Programme",
+    "Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" : "Holen Sie sich 5 professionelle Multimedia-Programme in 1 Paket + Kostenlose Upgrades + Kostenloser Support",
     "Why choose AVS4YOU?":"Warum AVS4YOU?",
     "5 multimedia programs in 1 package":"5 Multimedia-Programme in 1 Paket",
     "100% secure, ad-free, virus-free":"100% sicher, werbe- & virenfrei",
@@ -609,6 +610,7 @@
     "How long do you allow cookies to be stored on a customer's PC?" : "Wie lange werden die Cookies auf dem Computer des Kunden aufbewahrt?",
     "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Die Cookies werden auf dem PC der Kunden automatisch installiert, sobald sie auf einen Link oder Banner von Ihrer Website klickt. Die Cookies sind bei Avangate 30 Tage gültig, für MyCommerce-Share-IT gelten diese 45 Tage. Das heißt, dass Sie sichere Provisionen erhalten, wenn derselbe Kunde unsere Programme innerhalb dieser Periode käuflich erwirbt.",
     "Earn money with the affiliate program AVS4YOU" : "AVS4YOU: Partnerprogramm: Geld mit Links verdienen",
+    "or" : " ",
 
 
     "*****************************Free AVS Disc Creator********************************" : "*****************************Free AVS Disc Creator********************************",
@@ -975,7 +977,8 @@
     "Yahoo Japan" : "Yahoo Japan",
     "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "Wir verwenden die Conversion-Tracking-Codes von Yahoo Japan, um die Wirksamkeit unserer Werbekampagnen zu analysieren. Benutzer können ihre Datenschutzeinstellungen bezüglich der Verwendung ihrer Daten für Werbezwecke anpassen. Weitere Informationen finden Sie unter",
     "Third-party service providers" : "Drittdienstleister",
-
+    "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "Wir verwenden Yandex.Metrica, um die Benutzerfreundlichkeit unserer Website zu verbessern. Dieser Dienst sammelt anonym allgemeine Log-Informationen und Details über die Navigation auf der Website. Solche Informationen geben uns Bescheid, wie Besucher/innen unserer Website damit interagieren und welche Handlungen sie ausführen. Dies hilft uns Design-Nachteile finden und beheben.",
+	"YandexMetrica" : "Yandex.Metrica",
 
 
     "*****************************Support********************************" : "*****************************Support********************************",
@@ -1283,6 +1286,7 @@
     "Name" : "Name",
     "PAD File" : "PAD-Datei",
     "Download" : "Herunterladen",
+    "Download_dwn" : "Herunterladen",
     "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily" : "Schnell und einfach in/von Videoformaten konvertieren: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD und DCI 4K etc.! ",
     "Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays" :"Videos zuschneiden, kürzen, teilen, zusammenfügen, drehen, mischen. 300+ innovative Effekte, Übergänge, Overlays",
     "Create outstanding tracks for any purpose with our easy audio editing app for Windows" : "Erstellen Sie erstklassige Tracks für die verschiedensten Zwecke mit unserer einfachen Audiobearbeitungsanwendung für Windows",
@@ -1362,6 +1366,17 @@
     "lang Help Center" : " ",
     "2020 All rights reserved" :" 2020 Alle Rechte vorbehalten.",
 
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "Diese Webseite verwendet Cookies. Wenn Sie weiterhin auf der Webseite surfen, erklären Sie sich mit unserer ",
+    "privacy policy" : "Datenschutzerklärung",
+    "pointeCookie" : " einverstanden.",
+    "I Agree" : "Ich bin einverstanden",
+    "Add callouts, captions, and arrows, use pan and zoom effects" : "Fügen Sie Callouts, Beschriftungen und Pfeile hinzu, nutzen Sie Effekte wie Mitziehen und Zoom.",
+
+    "*****************************LINK********************************" : "*****************************LINK********************************",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" : "de_slider_video_converter.jpg",
     "slider video editor jpg" : "de_slider_video_editor.jpg",

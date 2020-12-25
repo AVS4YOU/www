@@ -106,26 +106,27 @@ render(){
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
+        <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
           <div className="sale-text">
             <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`${mounth[currentMounth]}`)} {this.props.t("only!")}</Text>
           </div>
-          <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
-          <div className="buy-block-wrapper">
+        <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
+          <div className="buy-block-wrapper" style={{marginTop:"20px", borderSpacing: "0px"}}>
             <div className="buy-block"> 
               <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
               <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
-              <Text className="access-limit">{this.props.t("1 year access")}</Text>
+              <Text className="access-limit">{this.props.t("1 year access_rc")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
                 <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
                 <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-              <LstDay  MText = {"prices valid till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
+              <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
-                href={this.state.hrefOneYear}
+                href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12")}
                 className="buy-block-button"
               >
                 {this.props.t("Buy now")}
@@ -138,16 +139,16 @@ render(){
               <div className="unlimited-block-content">
                 <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited_rc")}</Text>
                 <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
-                <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
+                <Text className="access-limit">{this.props.t("Unlimited access_rc")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
                   <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
                   <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-                <LstDay  MText = {"prices valid till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
+                <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button
-                  href={this.state.hrefUnlim}
+                  href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1")}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
@@ -250,7 +251,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com/" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
+                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
                     </Text>
                 </div>
               </PanelCollapse>

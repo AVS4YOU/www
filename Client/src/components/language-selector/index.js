@@ -91,6 +91,9 @@ const StyledLanguageSelector = styled.div`
         &.jp:before{
             background-image: url(${JpIcon});
         }
+        &.ru:before{
+            background-image: url(${RuIcon});
+        }
     }
     .languageSelector:before{
         content: '';
@@ -153,6 +156,7 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
+  { value: "ru", text: "Русский" }
 ];
 
 class LanguageSelector extends React.PureComponent {

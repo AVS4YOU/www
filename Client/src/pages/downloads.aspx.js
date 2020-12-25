@@ -29,7 +29,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
-                    <Text as="h1" className="header__heading">{this.props.t("Download")}</Text>
+                    <Text as="h1" className="header__heading">{this.props.t("Download_dwn")}</Text>
                     <Text as="h3" className="header__subtitle">{this.props.t("Get all AVS4YOU® software in 1 installation package")}</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}
@@ -61,7 +61,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -77,7 +77,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -93,7 +93,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
             
             <div className="product-box">
@@ -105,7 +105,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -123,7 +123,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -140,7 +140,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -151,7 +151,7 @@ render(){
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link href="/"><Text as="span">www.avs4you.com</Text></Link>{this.props.t("jpn")}</Text>   
+                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link to="/"><Text as="span">www.avs4you.com</Text></Link>{this.props.t("jpn")}</Text>   
                 </div>
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
@@ -167,7 +167,7 @@ render(){
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to activate the AVS4YOU software?")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>{this.props.t("It is necessary to purchase an AVS4YOU subscription at")} <Link href="/register.aspx"><Text as="span">www.avs4you.com </Text></Link>{this.props.t("in order to activate AVS4YOU software and remove the watermark and other limitations Once your order is processed you will get a unique license key via e-mail to activate the software")}</Text>   
+                  <Text>{this.props.t("It is necessary to purchase an AVS4YOU subscription at")} <Link to="/register.aspx"><Text as="span">www.avs4you.com </Text></Link>{this.props.t("in order to activate AVS4YOU software and remove the watermark and other limitations Once your order is processed you will get a unique license key via e-mail to activate the software")}</Text>   
                 </div>
                 <div className="info-block">
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>

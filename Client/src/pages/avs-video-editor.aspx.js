@@ -16,7 +16,7 @@ import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import LinkHref from '../components/link-href';
 
-import AvatarJames from '../images/avs-video-editor/james_k.png';
+import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
@@ -150,8 +150,8 @@ render(){
               reviewsData={
                 [
                   {
-                    name: "James K.",
-                    avatar: AvatarJames,
+                    name: "Chen Wang",
+                    avatar: AvatarChenWang,
                     revHeader: this.props.t("Our customers say"),
                     revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
                   },
