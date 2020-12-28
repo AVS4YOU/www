@@ -26,7 +26,7 @@ span {
   text-align: center;
 }
 .PLnewAvs{
-display: flex;
+display: none;
 margin-bottom: -5px;
 font-size: 14px;
   .PLnewAvsText{
