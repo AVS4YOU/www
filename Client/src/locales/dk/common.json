@@ -1265,6 +1265,18 @@
  "2020 All rights reserved" :"2020 Alle rettigheder forbeholdes.",
  "Online Media Technologies Ltd UK" :"Online Media Technologies Ltd., Storbritannien",
 
+
+ "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "This site uses cookies. By continuing to browse the site you agree to our ",
+    "privacy policy" : "privacy policy",
+    "pointeCookie" : ".",
+    "I Agree" : "I Agree",
+
+	"*****************************LINK********************************" : "*****************************LINK********************************",
+	"https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	
+
  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
  "slider video editor jpg" : "slider_video_editor.jpg",

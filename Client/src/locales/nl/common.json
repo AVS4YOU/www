@@ -196,6 +196,7 @@
     "Marc N.": "Marc N.",
     "Ive used several AVS products for years and they have never fallen short on what I needed them to do": "Ik heb jarenlang verschillende AVS producten gebruikt en ze zijn nooit tekortgeschoten in wat ik wou dat ze deden",
     "AVS Video Editor 9.1": "AVS Video Editor 9.1",
+    "For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results" : "Voor de prijs is dit zeker waar voor je geld. Ik gebruik vooral AVS Video Editor en Video Converter en ik vind ze allebei uitstekend, gemakkelijk te gebruiken met hoogwaardige resultaten",
     "For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results": "Voor de prijs is dit zeker waar voor je geld. Ik gebruik vooral AVS Video Editor en Video Converter en ik vind ze allebei uitstekend, gemakkelijk te gebruiken met hoogwaardige resultaten",
     "*****************************AVS Video Converter********************************" : "*****************************AVS Video Converter********************************",
     "Convert any video with AVS Free Video Converter for Windows": "Converteer elke video met AVS Free Video Converter voor Windows",
@@ -785,6 +786,7 @@
     "Thank you for installing Audio Converter": "Bedankt voor de installatie van Audio Converter!",
     "Thank you for installing Video ReMaker": "Bedankt voor de installatie van Video ReMaker!",
     "Thank you for installing AVS4YOU Installation Package": "Bedankt voor de installatie van AVS4YOU Installatiepakket!",
+    "Thank you for installing" : "Bedankt voor de installatie van",
     "Exclusive Offer Only Today": "Exclusief Aanbod Alleen Vandaag",
     "Save 70 on the full version and edit your audio without limitations": "Bespaar 70% op de volledige versie en bewerk uw audio zonder beperkingen!",
     "Save 70 on the full version and": "Bespaar 70% op de volledige versie en",
@@ -1104,6 +1106,18 @@
     "Just": "Slechts",
     "2020 All rights reserved": "2020 Alle rechten voorbehouden",
     "Online Media Technologies Ltd UK": "Online Media Technologies Ltd UK",
+
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "This site uses cookies. By continuing to browse the site you agree to our ",
+    "privacy policy" : "privacy policy",
+    "pointeCookie" : ".",
+    "I Agree" : "I Agree",
+
+	"*****************************LINK********************************" : "*****************************LINK********************************",
+	"https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	
+ 
 
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
