@@ -879,7 +879,8 @@
     "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "I codici di monitoraggio delle conversioni di Yahoo Japan vengono utilizzati per analizzare l'efficacia delle nostre campagne pubblicitarie. Gli utenti possono modificare le proprie impostazioni sulla privacy su come i propri dati vengono utilizzati per scopi pubblicitari. Per ulteriori informazioni, visita",
     "We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link" : "Utilizziamo il cloud hosting AWS per memorizzare i file degli utenti, inclusi i dati, che si trova nella Virginia del Nord, Stati Uniti.",
     "We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy" : "Utilizziamo anche Google Analytics per tracciare ciò che viene utilizzato di più, per comprendere le esigenze dei nostri utenti e per migliorare il nostro sito e il nostro servizio. Visita il link per comprendere l'approccio di Google alla privacy",
-
+    "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "Usiamo Yandex.Metrica al fine di migliorare l'usabilità del sito web. Raccoglie informazioni di registro Internet standard e dettagli di navigazione del sito Web in forma anonima. Queste informazioni ci consentono di comprendere meglio il modo in cui gli utenti interagiscono con il nostro sito Web e le azioni che eseguono, aiutandoci quindi a identificare i difetti di progettazione e risolverli.",
+	"YandexMetrica" : "Yandex.Metrica",
 
     "*****************************Support********************************" : "*****************************Support********************************",
     "Support" : "Supporto",
@@ -1182,6 +1183,19 @@
     "lang Help Center" : " ",
     "2020 All rights reserved" :"  2020 Tutti i diritti riservati.",
 
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "Questo sito usa cookie. Continuando a navigare nel sito Lei accetta le nostre ",
+    "privacy policy" : "norme sulla privacy",
+    "pointeCookie" : ". ",
+    "I Agree" : "Sono d'accordo",
+
+    "Add callouts, captions, and arrows, use pan and zoom effects" : "Aggiungi fumetti, sottotitoli e e frecce, usa effetto pan e zoom.",
+
+
+    "*****************************LINK********************************" : "*****************************LINK********************************",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "it_slider_video_converter.jpg",
     "slider video editor jpg" : "it_slider_video_editor.jpg",

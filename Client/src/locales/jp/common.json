@@ -950,7 +950,8 @@
     "You can contact Data Protection Officer by emailing":"情報保護事務部へはメールでお問い合わせください",
     "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "Yahoo Japanのコンバージョントラッキングコードは、広告キャンペーンの効果を分析するために使用されます。ユーザーは、広告目的でのデータの使用方法に関するプライバシー設定を調整できます。詳細情報について",
     "For more details and discount requests, please write at" : "詳細情報について、または割引リクエストのためにを連絡してください。",
-
+    "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "当社では、ウェブサイトのユーザビリティを改善することを目的として、Yandex.Metricaを使用しています。それは、匿名の形で標準的なインターネット・ログ情報とウェブサイト・ナビゲーションの詳細を集めます。その情報を基本として、弊社のチームはお客様がどのように毎日のウェブサイトと相互作用する方法と行う行動する方法をトラックして、欠陥を早くに処理できます。",
+	"YandexMetrica" : "Yandex.Metrica",
 
     "*****************************Support********************************" : "*****************************Support********************************",
     "サポート":"サポート",
@@ -1261,6 +1262,19 @@
     "2020 All rights reserved" :" 2020 All rights reserved.",
     "Support" : "サポート",
     "Partners" : "パートナー",
+
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "このサイトはCookieを使用しています。 このサイトの利用を継続すること で、",
+    "privacy policy" : "プライバシーポリシー",
+    "pointeCookie" : "に同意することになります。",
+    "I Agree" : "同意する",
+
+    "Add callouts, captions, and arrows, use pan and zoom effects" : "コールアウト、キャプションと矢を追加し、パンとズーム効果を使用",
+
+    "*****************************LINK********************************" : "*****************************LINK********************************",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    
 
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "jp_slider_video_converter.jpg",

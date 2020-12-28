@@ -30,7 +30,7 @@ class Privacy extends React.PureComponent {
             {this.props.t("The following Privacy Policy discloses our approach in gathering and processing Personal Data for Online Media Technologies Ltd website")} <Link to="/">www.avs4you.com</Link>, {this.props.t("related websites, services and AVS4YOU software")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("Any data collected through avs4youcom,")} <a href="forum.avs4you.com" target="_blank">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Online Media Technologies Ltd which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
+            {this.props.t("Any data collected through avs4youcom,")} <a href="https://forum.avs4you.com" target="_blank">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Online Media Technologies Ltd which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("By using AVS4YOU Website or Software (hereinafter also referred to as AVS4YOU) you explicitly consent to such use of your Personal Data and agree to the terms of this Privacy Policy")}
@@ -249,6 +249,9 @@ class Privacy extends React.PureComponent {
           </Text>
           <Text className="body-privacy__text">
             <b>{this.props.t("Yahoo Japan")}</b> {this.props.t("Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to")} <a href="https://privacy.yahoo.co.jp/en_index.html" target="_blank">https://privacy.yahoo.co.jp/en_index.html</a>.
+          </Text>
+          <Text className="body-privacy__text">
+            <b>{this.props.t("YandexMetrica")}</b> {this.props.t("We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them")}
           </Text>
 
 

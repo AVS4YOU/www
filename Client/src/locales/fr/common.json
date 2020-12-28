@@ -162,7 +162,7 @@
     "11 or higher for WMV video playback":"11 ou plus pour la lecture vidéo au format WMV",
     "DirectX":"DirectX :",
     "Microsoft DirectX 90c or later":"Microsoft DirectX 9.0c ou version ultérieure",
-    "RECOMMENDED SYSTEM REQUIREMENTS":"CONFIGURATION MINIMALE REQUISE",
+    "RECOMMENDED SYSTEM REQUIREMENTS":"CONFIGURATION MINIMALE RÉCOMMANDÉE",
     "Operating system":"Système d'exploitation :",
     "Windows 10/Windows 8.x/Windows 7":"Windows 10/Windows 8.x/Windows 7",
     "Video":"Vidéo :",
@@ -539,7 +539,7 @@
     "Contact":"Contact",
     "Affiliate Sales":"Ventes d'affiliation",
     "To learn more about affiliate program please email us at":"Pour en savoir plus sur le programme d'affiliation, veuillez nous contacter par courrier électronique à",
-    "or visit our ":"ou consulter notre",
+    "or visit our ":"ou consulter notre ",
     "page":"page",
     "Affiliate Program ":"Programme d'Affiliation",
     "Volume Sales":"Volume de ventes",
@@ -958,7 +958,8 @@
     "Google Tag Manager" : "Google Tag Manager",
     "Yahoo Japan" : "Yahoo Japan",
     "Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to" : "Les codes de suivi des conversions de Yahoo Japan sont utilisés pour analyser l'efficacité de nos campagnes publicitaires. Les utilisateurs peuvent ajuster leurs paramètres de confidentialité sur la façon dont leurs données sont utilisées à des fins publicitaires. Pour plus d'informations, veuillez consulter le site https://privacy.yahoo.co.jp/en_index.html",
-
+    "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "Nous utilisons Yandex.Metrica afin d'améliorer l'utilisabilité de notre site web. Сe service collecte les fichiers log et les détails sur la navigation à travers le site web sous une forme anonyme. Cette information nous permet de mieux comprendre les intérêts de nos utilisateurs et les actions qu'ils accomplissent, en nous aidant à identifier les défauts de conception et les corriger.",
+	"YandexMetrica" : "Yandex.Metrica",
 
 
 
@@ -1355,6 +1356,19 @@
     "lang Help Center" : " ",
     "2020 All rights reserved" :  " 2020 Tous droits réservés.",
 
+    "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
+    "This site uses cookies By continuing to browse the site you agree to our" : "Ce site utilise les cookies. En continuant à naviguer sur ce site, vous acceptez notre ",
+    "privacy policy" : "politique de confidentialité",
+    "pointeCookie" : ". ",
+    "I Agree" : "J'accepte",
+
+    "Add callouts, captions, and arrows, use pan and zoom effects" : "Ajoutez des légendes, libellés et flèches, appliquez des effets de panoramique/zoom.",
+
+
+    "*****************************LINK********************************" : "*****************************LINK********************************",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "fr_slider_video_converter.jpg",
     "slider video editor jpg" : "fr_slider_video_editor.jpg",

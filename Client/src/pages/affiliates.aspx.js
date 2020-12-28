@@ -112,7 +112,7 @@ render(){
 
             <ContentSelector
                 className="choose-program__content-wrapper"
-                buttonNames={["Avangate","MyCommerce Share-IT"]}
+                buttonNames={["Avangate","MyCommerce"]}
             >
                 <div className="choose-program__item">
                   <Text as="h2" className="common__heading">
@@ -144,10 +144,10 @@ render(){
                     {this.props.t("Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems")}
                   </Text>
                   <div className="choose-program__buttons-wrapper">
-                    <Button href="http://app.impact.com/campaign-mediapartner-signup/AVS4YOU.brand?type=dm" textClassName="choose-program__button-text" className="choose-program__button-blue">
+                    <Button href="https://account.mycommerce.com//Signup/Affiliate/200281390?md5=db7bc22a535e2aa3cf7440f7afbc75ce" textClassName="choose-program__button-text" className="choose-program__button-blue">
                     {this.props.t("Sign up")}
                     </Button>
-                    <Button href="https://impact.com/" textClassName="choose-program__button-text" className="choose-program__button-transparent">
+                    <Button href="https://account.mycommerce.com/Cp/Login" textClassName="choose-program__button-text" className="choose-program__button-transparent">
                       {this.props.t("Log in")}
                     </Button>
                   </div>

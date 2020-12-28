@@ -16,6 +16,7 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 
+import CookieMessange from "../components/cookie-messange";
 import PlAVS from "../images/pl/pattern.png";
 const StyledPL =styled.div`
 position: relative;
@@ -25,7 +26,7 @@ span {
   text-align: center;
 }
 .PLnewAvs{
-display: flex;
+display: none;
 margin-bottom: -5px;
 font-size: 14px;
   .PLnewAvsText{
@@ -213,6 +214,7 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
+        <CookieMessange />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>
     )
