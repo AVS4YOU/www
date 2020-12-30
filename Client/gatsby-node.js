@@ -62,7 +62,7 @@ dk: [
   ],
 nl: [
     {
-      content: fs.readFileSync(`src/locales/dk/common.json`, "utf8"),
+      content: fs.readFileSync(`src/locales/nl/common.json`, "utf8"),
       ns: "common"
     }
   ],
