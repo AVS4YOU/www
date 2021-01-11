@@ -8,7 +8,6 @@ import pinterest from '../../images/common/social/pinterest.svg';
 import Text from '../text';
 import Link from '../link';
 import FooterItem from '../footer-item';
-import LinkHref from '../link-href';
 
 const FooterGridContainer = styled.div`
     display: table;

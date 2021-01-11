@@ -14,7 +14,6 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from '../components/link-href';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -96,9 +95,9 @@ render(){
               <Text className="ListItem">{this.props.t("Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc")}</Text>
               <Text className="ListItem">{this.props.t("Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU")}</Text>
               <Text className="ListItem">{this.props.t("Use new automatic presets for powerful computers")}</Text>
-              <LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/features/savingvideos/supportedformats.aspx">
+              <a target="_blank" href={this.props.t("avs-video-editor-onlinehelp-avs4you")}>
                 <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
-              </LinkHref>
+              </a>
             </ContentRowItem>
 
             <ContentRowItem 

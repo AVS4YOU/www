@@ -39,7 +39,7 @@ const MainPageWrapper = styled.div`
     margin-bottom: 150px;
   }
 
-  .headerBackgroundImage{
+  .fonImage{
     position:absolute !important;
     top: 0px;
     right:0;
@@ -66,7 +66,7 @@ const MainPageWrapper = styled.div`
 
   @media (min-width: 2150px) {
     .headerBackground{
-    .headerBackgroundImage{
+    .fonImage{
       margin-bottom: 5%;
       top: -55px;
     }
@@ -79,7 +79,7 @@ const MainPageWrapper = styled.div`
       background-position: 0 0;
     }
 
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
 
@@ -92,7 +92,7 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1500px) {
     .headerBackground{
-    .headerBackgroundImage{
+    .fonImage{
       right: -20%;
       padding-top: 8%;
     }
@@ -100,7 +100,7 @@ const MainPageWrapper = styled.div`
   }
 
   @media (max-width: 1480px) {
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
     .headerText{
@@ -120,7 +120,7 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1290px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -30%;
       }
     }
@@ -128,7 +128,7 @@ const MainPageWrapper = styled.div`
 
    @media (max-width: 1200px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -35%;
       }
     }
@@ -136,7 +136,7 @@ const MainPageWrapper = styled.div`
 
    @media (max-width: 1150px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -40%;
       }
     }
@@ -171,8 +171,8 @@ render(){
       >
         <ProductPagesWrapper>  
           <div className="headerBackground">
-          <ImageGQL className="headerBackgroundImage" imageName={this.props.t("backGround Image video-editing-software")} style={{position: "absolute"}}/>
-          <ImageGQL className="headerBackgroundImage" imageName="backGroundImageFinal.jpg" style={{position: "absolute"}}/>
+          <ImageGQL className="headerImage" imageName={this.props.t("backGround Image video-editing-software")} style={{position: "absolute", zIndex: "1"}}/>
+          <ImageGQL className="headerImage" imageName="backGroundImageFinal.jpg" style={{position: "absolute"}}/>
 
             <PageContentWrapper>
               <HeaderRowItem 
@@ -365,7 +365,7 @@ render(){
           
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName={this.props.t("fonImage")}/> 
+        <ImageGQL className="fonImage" imageName={this.props.t("fonImage")}/> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>

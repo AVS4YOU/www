@@ -9,7 +9,6 @@ import ReviewScreen from '../components/review-screen';
 import ContentSelector from '../components/content-selector';
 import ScrollUpButton from '../components/scroll-up-button';
 import PanelCollapse from "../components/panel-collapse";
-import LinkHref from "../components/link-href";
 
 class Affiliates extends React.PureComponent {
 
@@ -163,7 +162,7 @@ render(){
               {this.props.t("Place links to your website")}
               </Text>
               <Text className="choose-program__content-text">
-                {this.props.t("Please use our")} <LinkHref mainLink="https://stat.avs4you.com/linkgenerationarea.aspx?lng=" toLink="">{this.props.t("link generator")}</LinkHref> {this.props.t("to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link")}
+                {this.props.t("Please use our")} <a target="_blank" href={this.props.t("affiliate_link_generator")}>{this.props.t("link generator")}</a> {this.props.t("to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link")}
               </Text>
             </div>
 
@@ -217,7 +216,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <LinkHref mainLink="https://stat.avs4you.com/linkgenerationarea.aspx?lng=" toLink="=">{this.props.t("Affiliate Links Generator")}</LinkHref> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
+                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" href={this.props.t("Affiliate_Links_Generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>

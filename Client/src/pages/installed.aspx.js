@@ -5,8 +5,6 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import styled from 'styled-components';
 import Slider from "react-slick";
-import LinkImage from "../components/link-image";
-import LinkHref from "../components/link-href";
 import Link from "../components/link";
 
 import uploadMediaFiles from "../images/installed/abs1.webp";
@@ -730,7 +728,7 @@ render(){
                 <div className="lfb-language">
                     <ul className="top-menu">
                         <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                        <li><LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support")}</LinkHref></li>
+                        <li><a target="_blank" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
                         <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
@@ -748,7 +746,7 @@ render(){
         </div>
         <div className="landing-one-half-block">
             <div className="landing-one-half-block-narrow">
-            <LinkImage className="lohbn-image-block" mainName="" toName=".webp"/>
+            <ImageGQL className="lohbn-image-block" imageName={this.props.t("lohbn-image-block-en-webp")} />
                 <div className="lohbn-text-block">  
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
@@ -780,10 +778,10 @@ render(){
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx">{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></LinkHref></div>
-                    <div className="llbn-ht-block llbnht-block2"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/create-video-slideshow.aspx">{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></LinkHref>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-start-working-with-video-editor.aspx">{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</LinkHref></div>
-                    <div className="llbn-ht-block llbnht-block4"><LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/">{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></LinkHref>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
+                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
+                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
                 </div>
                 <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>            
             </div>

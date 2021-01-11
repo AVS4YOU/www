@@ -351,7 +351,7 @@
     "Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems": "Oto poradnik, który pomoże Ci aktywować oprogramowanie AVS4YOU bez żadnych problemów.",
     "How to reinstall AVS4YOU programs?": "Jak ponownie zainstalować oprogramowanie AVS4YOU?",
     "If your program files were accidentally removed, infected or damaged, or you would like to update your applications to a newer version available at www avs4you com, it is recommended to reinstall the software": "Jeśli Twoje oprogramowanie zostało przypadkowo usunięte, zainfekowane, uszkodzone lub chcesz zaktualizować je do nowszej wersji dostępnej na www.avs4you.com, zalecamy ponowną instalację oprogramowania.",
-    "Below we ll describe how to reinstall the AVS4YOU software smoothly": "Poniżej opisujemy, jak z łatwością ponownie zainstalować oprogramowanie AVS4YOU.",
+    "Below we ll describe how to reinstall the AVS4YOU software smoothly": "Poniżej opisujemy, jak z łatwością ponownie zainstalować oprogramowanie AVS4YOU.",
     "How to uninstall AVS4YOU programs?": "Jak odinstalować oprogramowanie AVS4YOU?",
     "In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict": "Jeśli chcesz odinstalować oprogramowanie AVS4YOU, skorzystaj z naszego szczegółowego poradnika. Pamiętaj, że nie zalecamy usuwania programu, zanim zostanie zaktualizowany, aby zapobiec ewentualnej niezgodności wersji.",
     "jpn": ".",
@@ -433,7 +433,7 @@
     "no phone support": "Brak wsparcia telefonicznego",
     "Contact": "Kontakt",
     "Affiliate Sales": "Sprzedaż Partnerska",
-    "To learn more about affiliate program please email us at": "Aby dowiedzieć się więcej na temat programu partnerskiego, skontaktuj się z nami drogą mailową pod adresem: affiliates@avs4you.com lub odwiedź naszą",
+    "To learn more about affiliate program please email us at": "Aby dowiedzieć się więcej na temat programu partnerskiego, skontaktuj się z nami drogą mailową pod adresem: ",
     "or visit our ": "lub odwiedź naszą ",
     "page": "witrynę.",
     "Affiliate Program": "Program Partnerski",
@@ -478,7 +478,7 @@
     "link generator": "generatora linków,",
     "to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link": "aby utworzyć prawidłowe linki i opublikuj je na swojej stronie, blogu lub kanale. Możesz wygenerować bezpośredni link do pobierania lub link niestandardowy",
     "Control your sales": "Kontroluj sprzedaż",
-    "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Nasz system monitorowania plików cookie przekierowuje klientów na stronę płatności Twojej sieci partnerskiej, do której przypisany jest Twój identyfikator wydawcy. Dzięki temu możesz z łatwością kontrolować swoje zarobki w standardowy sposób, poprzez panel administracyjny Avangate, MyCommerce czy ShareIt.",
+    "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Nasz system monitorowania plików cookie przekierowuje klientów na stronę płatności Twojej sieci partnerskiej, do której przypisany jest Twój identyfikator wydawcy. Dzięki temu możesz z łatwością kontrolować swoje zarobki w standardowy sposób, poprzez panel administracyjny Avangate czy MyCommerce.",
     "*****************************Free AVS Disc Creator********************************": "*****************************Free AVS Disc Creator********************************",
     "AVS Free Disc Creator is a free CD /DVD burning software.": "AVS Disc Creator to darmowe oprogramowanie do nagrywania płyt CD/DVD.",
     "Free AVS Disc Creator": "AVS Disc Creator za darmo",
@@ -1114,9 +1114,26 @@
     "I Agree" : "I Agree",
 
 	"*****************************LINK********************************" : "*****************************LINK********************************",
-	"https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=pl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf",
+  "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=pl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=pl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	
+  "affiliate_link_generator" : "https://stat.avs4you.com/linkgenerationarea.aspx?lng=en",
+	"Affiliate_Links_Generator" : "https://stat.avs4you.com/linkgenerationarea.aspx?lng=en",
+	"avs-free-video-converter-onlinehelp-avs4you" : "https://onlinehelp.avs4you.com/avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx",
+	"avs-video-editor-onlinehelp-avs4you" : "https://onlinehelp.avs4you.com/avs-video-editor/features/savingvideos/supportedformats.aspx",
+	"downolads-avs4you-guides" : "https://www.avs4you.com/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx",
+	"downloads-avs4you-guides-how-to-activate-the-avs4you-software" : "https://www.avs4you.com/guides/how-to-activate-the-avs4you-software.aspx",
+	"downloads-avs4you-guides-how-to-reinstall-avs4you-programs" : "https://www.avs4you.com/guides/how-to-reinstall-avs4you-programs.aspx",
+	"downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs" : "https://www.avs4you.com/guides/How-to-uninstall-AVS4YOU-programs.aspx",
+	"installed-support-avs4you-login" : "https://support.avs4you.com/login.aspx",
+	"installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor" : "https://www.avs4you.com/guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx",
+	"installed-avs4you-guides-create-video-slideshow" : "https://www.avs4you.com/guides/create-video-slideshow.aspx",
+	"installed-avs4you-guides-how-to-start-working-with-video-editor" : "https://www.avs4you.com/guides/how-to-start-working-with-video-editor.aspx",
+	"installed-onlinehelp-avs4you-avs-video-editor" : "https://onlinehelp.avs4you.com/avs-video-editor/",
+	"partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" : "https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners.pdf",
+	"register-support-avs4you-refund" : "https://support.avs4you.com/refund.aspx",
+	"about-us-support-avs4you-login" : "https://support.avs4you.com/login.aspx",
+
 
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
@@ -1170,5 +1187,6 @@
  "education screen educators3 png" : "education_screen_educators3.png",
  "slider audio converter jpg" : "slider_audio_converter.jpg",
  "slider audio editor jpg" : "slider_audio_editor.jpg",
- "en" : "en"
+ "lohbn-image-block-en-webp" : "en.webp",
+ "en" : "pl"
   }

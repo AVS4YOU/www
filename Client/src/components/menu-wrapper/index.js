@@ -4,8 +4,6 @@ import Logo from '../../images/common/logo.svg'
 import LogoBlack from '../../images/common/logo-black.svg'
 import BurgerButton from '../burger-button'
 import LanguageSelector from '../language-selector'
-import { Link } from 'gatsby';
-import LinkHref from '../link-href'
 import LinkL from '../link';
 
 const StyledMenuWrapper = styled.div`

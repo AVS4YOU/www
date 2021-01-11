@@ -6,7 +6,6 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from "../components/link-href";
 
 class aboutUs extends React.PureComponent {
 
@@ -150,7 +149,7 @@ render(){
                   {this.props.t("Customer Support")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support Center")}</LinkHref>
+                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a target="_blank" href={this.props.t("about-us-support-avs4you-login")} >{this.props.t("Support Center")}</a>
                 </Text>
               </div>
             </div>
