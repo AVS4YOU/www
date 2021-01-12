@@ -70,6 +70,7 @@ constructor(){
 }
 
 componentDidMount(){
+
   const queryString = require('query-string');
   const parsed = queryString.parse(document.location.search);
   const cookies = new Cookies();

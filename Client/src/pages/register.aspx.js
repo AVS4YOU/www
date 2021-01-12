@@ -127,12 +127,12 @@ render(){
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
               <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
               <Button
-                backgroundColor="orange"
-                color="#ffffff"
-                href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12")}
-                className="buy-block-button"
+              backgroundColor="orange"
+              color="#ffffff"
+              href={this.state.hrefOneYear}
+              className="buy-block-button"
               >
-                {this.props.t("Buy now")}
+              {this.props.t("Buy now")}
               </Button>
             </div>
             <div className="buy-block unlimited-block">
@@ -151,7 +151,7 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button
-                  href={this.props.t("https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1")}
+                href={this.state.hrefUnlim}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
