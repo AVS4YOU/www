@@ -461,11 +461,11 @@
   "If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days": "Если у вас возникли технические или другие проблемы, которые невозможно решить, то вы можете получить полный возврат уплаченной вами суммы в течение 30 дней.",
   "Check our Refund Policy": "Ознакомьтесь с нашей Политикой возврата средств,",
   "to find out if you are eligible for a full refund": "чтобы узнать, имеете ли вы право на полный возврат денег.",
-  "$69/00": "69.00",
-  "39/00": "39.00",
-  "59/00": "59.00",
-  "$199/00": "$199.00",
-  "$": "$",
+  "$69/00": "5999 руб.",
+  "39/00": "1999 руб.",
+  "59/00": "2499 руб.",
+  "$199/00": "7999 руб.",
+  "$": "",
 
 
   "*****************************404********************************": "*****************************404********************************",
@@ -1323,8 +1323,8 @@
 
   "*****************************LINK********************************" : "*****************************LINK********************************",
   "https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf",
-  "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-  "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
   
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
   "slider video converter jpg" :  "ru_slider_video_converter.jpg",
