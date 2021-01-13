@@ -73,7 +73,7 @@ const CookieMessange = props => {
         <CookieStyle>
             <CookieConsent
                 buttonText={t("I Agree")}
-                cookieName="UsersCookieMessages"
+                cookieName="AVSUsersCookieMessages"
                 disableStyles={true}
                 expires={365} // days save cookie
                 buttonClasses="btn-primary"

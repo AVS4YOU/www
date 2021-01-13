@@ -15,10 +15,10 @@ import  Actimg2 from "../../images/avs-video-editor-final/cinema-slider/Crop_act
 import  Actimg3  from "../../images/avs-video-editor-final/cinema-slider/Split_active.svg";
 import  Actimg4  from "../../images/avs-video-editor-final/cinema-slider/Join_active.svg";
 
-import groupTrim from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.png";
-import groupCroup from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.png";
-import groupSplit from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.png";
-import groupJoin from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.png";
+import groupTrim from "../../images/avs-video-editing-software/GroupTrim.png";
+import groupCroup from "../../images/avs-video-editing-software/GroupCroup.png";
+import groupSplit from "../../images/avs-video-editing-software/GroupSplit.png";
+import groupJoin from "../../images/avs-video-editing-software/GroupJoin.png";
 
 
 const CinemaSliderStyle = styled.div`
@@ -273,10 +273,11 @@ export class CinemaSlider extends Component {
         const settings = {    
             centerMode: true,
             speed: 400,
+            infinity: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: false,
-            centerPadding: '455px',
+            centerPadding: '470px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
               {
@@ -373,16 +374,16 @@ export class CinemaSlider extends Component {
           };
     
         const images = [    
-            { id:1, img: "GroupTrim.png" }, 
-            { id:2, img: "GroupCroup.png" },   
-            { id:3, img: "GroupSplit.png" },    
-            { id:4, img: "GroupJoin.png" },         
+            { id:1, nameSlide: "GroupTrim", img: groupTrim}, 
+            { id:2, nameSlide: "GroupCroup", img: groupCroup},   
+            { id:3, nameSlide: "GroupSplit", img: groupSplit},    
+            { id:4, nameSlide: "GroupJoin", img: groupJoin},         
           ];   
 
     const imgSlides = () =>  
     images.map(num => (  
       <div className="imgpad" key={num.id}>  
-          <ImageGQL className={num.nameSlide} imageName={num.img} />    
+          <img className={num.nameSlide} src={num.img} />    
       </div>  
     )); 
     

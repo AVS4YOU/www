@@ -12,6 +12,8 @@ import styled from 'styled-components';
 import VideoEditorSlider from '../components/cinema-slider';
 import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
+import BackGroundImage from '../images/avs-video-editing-software/fonImage.png';
+import headerBackgroundImage from '../images/avs-video-editing-software/backGroundImageFinal.jpg';
 
 import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
@@ -40,6 +42,8 @@ const MainPageWrapper = styled.div`
   }
 
   .fonImage{
+    background-image: url(${BackGroundImage});
+    visibility: visible;
     position:absolute !important;
     top: 0px;
     right:0;
@@ -171,9 +175,7 @@ render(){
       >
         <ProductPagesWrapper>  
           <div className="headerBackground">
-          <ImageGQL className="headerImage" imageName={this.props.t("backGround Image video-editing-software")} style={{position: "absolute", zIndex: "1"}}/>
-          <ImageGQL className="headerImage" imageName="backGroundImageFinal.jpg" style={{position: "absolute"}}/>
-
+          <div className="headerBackgroundImage" style={{position: "absolute", backgroundImage:`url(${headerBackgroundImage})`}} />
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"
@@ -365,7 +367,7 @@ render(){
           
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="fonImage" imageName={this.props.t("fonImage")}/> 
+        <div className="fonImage"></div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
