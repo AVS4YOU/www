@@ -156,6 +156,7 @@ export class CinemaSlider extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
+            swipeToSlide: false,
             arrows: false,
             beforeChange: (current, next) => this.setState({ activeSlide: next }), 
           };
