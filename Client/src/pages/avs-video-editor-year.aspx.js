@@ -192,13 +192,13 @@ render(){
         metaKeywords=""
       >
     
-          
+        <ProductPagesWrapper>  
         <div className="headerBackground" style={{marginBottom:"2%", marginTop:"1%"}}>
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE.png"      
+               imageName="ve.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
@@ -423,6 +423,7 @@ render(){
         <Text align="center" color="#32393e" className="headerDescriptionTitleAVS" as="h5" fontSize={13}>{this.props.t("At the end of your 1 year subscription, your subscription auto-renews on an annual basis and you will incur the cost for the subscription until you explicitly cancel your subscription by logging into My account and clicking Cancel Subscription in your account settings")}</Text>
         </div>
         </MainPageWrapper>
+        </ProductPagesWrapper>
       </Layout>
     );
   }

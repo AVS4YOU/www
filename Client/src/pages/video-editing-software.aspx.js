@@ -4,7 +4,6 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
-import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import HeaderRowItem from '../components/header-row-item';
 import {GroupCard} from '../components/content-card/card-index';
@@ -12,10 +11,12 @@ import styled from 'styled-components';
 import VideoEditorSlider from '../components/cinema-slider';
 import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
-import BackGroundImage from '../images/avs-video-editing-software/fonImage.png';
-import headerBackgroundImage from '../images/avs-video-editing-software/backGroundImageFinal.jpg';
 
-import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
+import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
+import HeaderBackgroundImage from '../images/avs-video-editing-software/back_ground_image_final.jpg';
+import "../styles/youtube-video-editor.less";
+
+import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
 import CreateSlide2 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame3.svg';
 import CreateSlide3 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame4.svg';
@@ -23,6 +24,7 @@ import CreateSlide4 from '../images/avs-video-editor-final/cinema-slider/cards-f
 import CreateSlide5 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame6.svg';
 import CreateSlide6 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame7.svg';
 import CreateSlide7 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame8.svg';
+import Transitions  from '../images/avs-video-editor-final/cinema-slider/cinema-slider/transitions.png';
 
 
 const MainPageWrapper = styled.div`
@@ -39,24 +41,6 @@ const MainPageWrapper = styled.div`
   .headerBackground{
     position:relative;
     margin-bottom: 150px;
-  }
-
-  .fonImage{
-    background-image: url(${BackGroundImage});
-    visibility: visible;
-    position:absolute !important;
-    top: 0px;
-    right:0;
-    width: 100%;
-    padding-top: 9%;
-    max-height: 350px;
-    min-width: 1920px;
-    height: 100%;
-    object-fit: none;
-    object-position: center center;
-    opacity: 1;
-    transition: opacity 500ms ease 0s;
-    z-index: -1;
   }
 
   .headerDescription{
@@ -97,7 +81,6 @@ const MainPageWrapper = styled.div`
   @media (max-width: 1500px) {
     .headerBackground{
     .fonImage{
-      right: -20%;
       padding-top: 8%;
     }
   }
@@ -175,7 +158,9 @@ render(){
       >
         <ProductPagesWrapper>  
           <div className="headerBackground">
-          <div className="headerBackgroundImage" style={{position: "absolute", backgroundImage:`url(${headerBackgroundImage})`}} />
+          <div className="headerBackgroundImage">
+              <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} />
+            </div>
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"
@@ -263,11 +248,11 @@ render(){
           headerDescription = {this.props.t("Make breathtaking videos with effects and transitions")}
           headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects Switch between Timeline and Storyboard to add and manage video effects and transitions with ease")}
           SliderImages = {[      
-            {
+            {   img: Transitions,
                 title: this.props.t("Transitions"),
                 desc: this.props.t("Add transitions to create visual effects between clips"),
                },
-            {
+            {   
                 title: this.props.t("Transformation"),
                 desc: this.props.t("Rotation, shift, mirror or zoom Reproduce the entire image or a part of it"),
                },
@@ -367,7 +352,9 @@ render(){
           
         <MainPageWrapper>
         <div className="headerBackground">
-        <div className="fonImage"></div> 
+        <div className="fonImage">
+            <img className="fonImage" src={BackGroundImage}/>
+        </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>

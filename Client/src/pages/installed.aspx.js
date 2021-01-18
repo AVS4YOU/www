@@ -8,10 +8,10 @@ import Slider from "react-slick";
 import Link from "../components/link";
 
 import uploadMediaFiles from "../images/installed/abs1.webp";
-import cutOrTrim from "../images/installed/abs2.webp";
-import applyEffects from "../images/installed/abs3.webp";
-import addBackground from "../images/installed/abs4.webp";
-import saveMovie from "../images/installed/abs5.webp";
+import cutOrTrim        from "../images/installed/abs2.webp";
+import applyEffects     from "../images/installed/abs3.webp";
+import addBackground    from "../images/installed/abs4.webp";
+import saveMovie        from "../images/installed/abs5.webp";
 
 
 
@@ -790,7 +790,7 @@ render(){
             <div className="landing-footer-narrow">
                 <ul>
                     <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><Link to="/login.aspx">{this.props.t("Support")}</Link></li>
+                    <li><a target="_blank" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
                     <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
                     <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
                     <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>

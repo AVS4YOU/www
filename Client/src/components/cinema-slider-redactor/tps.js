@@ -166,6 +166,7 @@ export class PowerfulSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+            swipeToSlide: false,
             beforeChange: (current, next) => this.setState({ activeSlide: next }), 
           };
     

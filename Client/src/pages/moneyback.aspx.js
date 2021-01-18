@@ -422,6 +422,7 @@ const MoneybackStyled = styled.div`
                 margin: 10px;
                 margin-bottom: 30px;
                 max-width: none;
+                padding: 5px;
             }
         }
     }
