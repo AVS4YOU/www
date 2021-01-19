@@ -213,8 +213,8 @@ tr:first-child td{
       const row = data.map((data) =>
       <tr>
         <td className="tableId" key={data.id}>{data.id}</td>
-        <td className="tableTitle" key={data.title}><a target="_blank" href={data.title.hr} className="hrfTableTitle"><h1 className="hDataTitle">{data.title.hed}</h1></a><span className="tableTitleDesc">{data.title.desc}</span></td>
-        <td className="tableDwn" key={data.dwn}><span className="spanTableDwn"><img className="tbImg" src={Img}></img><a target="_blank" href={data.dwn.hrf} className="hrfTableDwn">{data.dwn.wrd}</a></span></td>
+        <td className="tableTitle" key={data.title}><a target="_blank" rel="noreferrer noopener" href={data.title.hr} className="hrfTableTitle"><h1 className="hDataTitle">{data.title.hed}</h1></a><span className="tableTitleDesc">{data.title.desc}</span></td>
+        <td className="tableDwn" key={data.dwn}><span className="spanTableDwn"><img className="tbImg" src={Img}></img><a target="_blank" rel="noreferrer noopener" href={data.dwn.hrf} className="hrfTableDwn">{data.dwn.wrd}</a></span></td>
       </tr>
       );
       return (

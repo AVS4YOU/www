@@ -249,7 +249,7 @@ render(){
             </PanelCollapse>
             <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
               <div className="collapseContent">
-                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href="https://support.avs4you.com/refund.aspx" target="_blank">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href="https://support.avs4you.com/refund.aspx" target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
                   </Text>
               </div>
             </PanelCollapse>

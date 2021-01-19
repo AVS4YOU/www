@@ -155,7 +155,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
-                <a target="_blank" href={("downolads-avs4you-guides")}>
+                <a target="_blank" rel="noreferrer noopener" href={("downolads-avs4you-guides")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -171,7 +171,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
-                <a target="_blank" href={this.props.t("downloads-avs4you-guides-how-to-activate-the-avs4you-software")}>
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-activate-the-avs4you-software")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -187,7 +187,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
-                <a target="_blank" mainLink={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
+                <a target="_blank" rel="noreferrer noopener" mainLink={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -200,7 +200,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict")}</Text>   
                 </div>
-                <a target="_blank" href={this.props.t("downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs")}>
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>

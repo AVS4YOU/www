@@ -95,7 +95,7 @@ render(){
               <Text className="ListItem">{this.props.t("Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc")}</Text>
               <Text className="ListItem">{this.props.t("Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU")}</Text>
               <Text className="ListItem">{this.props.t("Use new automatic presets for powerful computers")}</Text>
-              <a target="_blank" href={this.props.t("avs-video-editor-onlinehelp-avs4you")}>
+              <a target="_blank" rel="noreferrer noopener" href={this.props.t("avs-video-editor-onlinehelp-avs4you")}>
                 <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
               </a>
             </ContentRowItem>

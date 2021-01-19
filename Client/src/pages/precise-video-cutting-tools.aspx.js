@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import PWM from "../components/cinema-slider-redactor/pwm";
 import Text from '../components/text';
 import Star from '../images/main-page/icons/star.svg';
+import Link from '../components/link';
 
 class preciseVideoCuttingTools extends React.PureComponent {
 
@@ -142,19 +143,19 @@ render(){
             <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><a href="https://www.avs4you.com/downloads.aspx">{this.props.t("Downloads")}</a></li>
-                    <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
-                    <li><a href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
-                    <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
+                    <li style={{fontSize:"14px"}}><Link to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
+                    <li style={{fontSize:"14px"}}><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
+                    <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
+                    <li style={{fontSize:"14px"}}><Link to="/contact.aspx">{this.props.t("Contact us")}</Link></li>
                 </ul>
                 <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
         </div>
         </div>
     </div>   

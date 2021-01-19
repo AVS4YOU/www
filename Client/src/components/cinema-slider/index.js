@@ -287,7 +287,8 @@ export class CinemaSlider extends Component {
         const settingsAffil = {
           centerMode:false,     
           draggable:false,    
-          arrows:true,    
+          arrows:true, 
+          autoplay: true,   
           autoplaySpeed:1500,     
           slidesToShow:8,     
           slidesToScroll:6,   

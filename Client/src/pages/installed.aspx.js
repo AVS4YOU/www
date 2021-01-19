@@ -728,7 +728,7 @@ render(){
                 <div className="lfb-language">
                     <ul className="top-menu">
                         <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                        <li><a target="_blank" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
+                        <li><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
                         <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
@@ -778,10 +778,10 @@ render(){
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
-                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
-                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
+                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
+                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
                 </div>
                 <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>            
             </div>
@@ -790,7 +790,7 @@ render(){
             <div className="landing-footer-narrow">
                 <ul>
                     <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><a target="_blank" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
                     <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
                     <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
                     <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>
@@ -798,10 +798,10 @@ render(){
                     <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
                 <div className="lfn-social">
-                    <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-                    <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-                    <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-                    <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+                    <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+                    <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+                    <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+                    <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
                 </div>
                 <div className="lfn-copyright"> © <Link className="blacklink" to="/">
                 {this.props.t("Online Media Technologies Ltd UK")}

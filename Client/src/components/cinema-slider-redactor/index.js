@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
-import ImageGQL from '../image-gql';
 
 import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
 import  img1  from "../../images/avs-video-editor-final/cinema-slider/Trim_black.svg";
@@ -220,7 +219,7 @@ const CinemaSliderStyle = styled.div`
 }
 `;
 
-export class CinemaSlider extends Component {  
+export class AVSCinemaSlider extends Component {  
     state = {
         slideIndex: 0,
         updateCount: 0,
@@ -268,7 +267,6 @@ export class CinemaSlider extends Component {
     }
 
     render() {
-      const { isActive } = this.props;
 
         const settings = {    
             centerMode: true,
@@ -374,15 +372,15 @@ export class CinemaSlider extends Component {
           };
     
         const images = [    
-            { id:1, nameSlide: "Slide_Trim",  img: GroupTrim}, 
-            { id:2, nameSlide: "Slide_Croup", img: GroupCroup},   
-            { id:3, nameSlide: "Slide_Split", img: GroupSplit},    
-            { id:4, nameSlide: "Slide_Join",  img: GroupJoin},         
+            {  nameSlide: "slide_Trim",  img: GroupTrim}, 
+            {  nameSlide: "slide_Croup", img: GroupCroup},   
+            {  nameSlide: "slide_Split", img: GroupSplit},    
+            {  nameSlide: "slide_Join",  img: GroupJoin},         
           ];   
 
     const imgSlides = () =>  
     images.map(num => (  
-      <div className="imgpad" key={num.id}>  
+      <div className="imgpad">  
           <img className={num.nameSlide} src={num.img} />    
       </div>  
     )); 
@@ -443,4 +441,4 @@ export class CinemaSlider extends Component {
   );  
  }  
 }  
-export default CinemaSlider;
+export default AVSCinemaSlider;

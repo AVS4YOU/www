@@ -149,7 +149,7 @@ render(){
                   {this.props.t("Customer Support")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a target="_blank" href={this.props.t("about-us-support-avs4you-login")} >{this.props.t("Support Center")}</a>
+                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a target="_blank" rel="noreferrer noopener" href={this.props.t("about-us-support-avs4you-login")} >{this.props.t("Support Center")}</a>
                 </Text>
               </div>
             </div>

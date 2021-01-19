@@ -1,10 +1,7 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
-import Text from '../components/text';
 import ImageGQL from '../components/image-gql';
-import ScrollUpButton from '../components/scroll-up-button';
-import Button from '../components/button';
 import { Link as ScrollLink } from "react-scroll";
 import Layout from "../components/layout";
 
@@ -50,9 +47,9 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     
 <header className="Youtubeheader">
     <div className="lfb_header">
-        <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank"></a>
+        <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener"></a>
         <ul className="topmainmenu max-width-1">
-            <li className="topmenuoption"><a href="https://www.avs4you.com/index.aspx" target="_blank">Main</a></li>
+            <li className="topmenuoption"><a href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener">Main</a></li>
             <ScrollLink to="to_easy_steps" spy={true} smooth={true}>
             <li className="topmenuoption to_easy_steps">Steps</li>
             </ScrollLink>
@@ -189,22 +186,22 @@ class avsYoutubeVideoEditor extends React.PureComponent {
                     
 <div className="vel_footer">
     <div className="vel_page_footer">
-        <div className="vph_logo"><a href="https://www.avs4you.com/index.aspx" target="_blank"></a></div>
+        <div className="vph_logo"><a href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener"></a></div>
         <div className="vph_menu_footer">
             <ul>
-                <li><a href="https://www.avs4you.com/downloads.aspx" target="_blank">Downloads</a></li>
-                <li><a href="https://www.avs4you.com/register.aspx" target="_blank">Buy now</a></li>
-                <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank">Help</a></li>
-                <li><a href="https://support.avs4you.com/login.aspx" target="_blank">Support</a></li>
-                <li><a href="https://www.avs4you.com/contact.aspx" target="_blank">Contact us</a></li>
+                <li><a href="https://www.avs4you.com/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</a></li>
+                <li><a href="https://www.avs4you.com/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</a></li>
+                <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank" rel="noreferrer noopener">Help</a></li>
+                <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
+                <li><a href="https://www.avs4you.com/contact.aspx" target="_blank" rel="noreferrer noopener">Contact us</a></li>
             </ul>
             <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
         </div>
         <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
         </div>
     </div>
 </div>
