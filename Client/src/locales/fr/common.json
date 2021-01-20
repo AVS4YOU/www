@@ -1386,7 +1386,10 @@
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/fr/login.aspx",
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    
+    "header_support_avs4you" : "https://support.avs4you.com/fr",
+	"header_avs4you_guides" : "https://www.avs4you.com/guides/fr/index.aspx",
+	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/fr/index.aspx",
+	"header_support_avs4you_faq" : "https://support.avs4you.com/fr/faq.aspx",
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "fr_slider_video_converter.jpg",
     "slider video editor jpg" : "fr_slider_video_editor.jpg",

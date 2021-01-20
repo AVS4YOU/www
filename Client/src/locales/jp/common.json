@@ -1291,6 +1291,11 @@
 	"register-support-avs4you-refund" : "https://support.avs4you.com/jp/refund.aspx",
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/jp/login.aspx",
 
+    "header_support_avs4you" : "https://support.avs4you.com/jp",
+	"header_avs4you_guides" : "https://www.avs4you.com/guides/jp/index.aspx",
+	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/jp/index.aspx",
+	"header_support_avs4you_faq" : "https://support.avs4you.com/jp/faq.aspx",
+
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     

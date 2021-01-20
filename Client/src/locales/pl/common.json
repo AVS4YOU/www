@@ -1138,7 +1138,14 @@
 	"partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" : "https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners.pdf",
 	"register-support-avs4you-refund" : "https://support.avs4you.com/refund.aspx",
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/login.aspx",
-
+  "header_support_avs4you" : "https://support.avs4you.com",
+	"header_avs4you_guides" : "https://www.avs4you.com/guides/index.aspx",
+	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/index.aspx",
+	"header_support_avs4you_faq" : "https://support.avs4you.com/faq.aspx",
+	
+	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	
 
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
