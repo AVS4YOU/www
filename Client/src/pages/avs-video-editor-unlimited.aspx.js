@@ -13,7 +13,7 @@ import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
 import {GroupCard} from '../components/content-card/card-index';
 
-import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
+import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
 import CreateSlide2 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame3.svg';
 import CreateSlide3 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame4.svg';
@@ -165,13 +165,6 @@ const MainPageWrapper = styled.div`
    }
 `;
 
-const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;
 class avsVideoEditorUnlimited extends React.PureComponent {
 
   constructor(props) {
@@ -190,7 +183,6 @@ class avsVideoEditorUnlimited extends React.PureComponent {
 render(){
 
     return (
-      <StyleTextMontserrat>
       <Layout 
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
@@ -205,7 +197,7 @@ render(){
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE 1.png"      
+               imageName="VE.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
@@ -407,7 +399,7 @@ render(){
          
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="fonImage.png"/> 
+        <ImageGQL className="headerBackgroundImage" imageName={this.props.t("fonImage")}/> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
@@ -430,7 +422,6 @@ render(){
         </MainPageWrapper>
         </ProductPagesWrapper>
       </Layout>
-      </StyleTextMontserrat>
     );
   }
 };

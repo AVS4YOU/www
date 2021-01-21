@@ -165,13 +165,6 @@ const MainPageWrapper = styled.div`
    }
 `;
 
-const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;
 class avsVideoEditorYear extends React.PureComponent {
 
   constructor(props) {
@@ -190,7 +183,6 @@ class avsVideoEditorYear extends React.PureComponent {
 render(){
 
     return (
-      <StyleTextMontserrat>
       <Layout 
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
@@ -199,14 +191,14 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-        <ProductPagesWrapper>
-          
+    
+        <ProductPagesWrapper>  
         <div className="headerBackground" style={{marginBottom:"2%", marginTop:"1%"}}>
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE 1.png"      
+               imageName="ve.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
@@ -409,7 +401,7 @@ render(){
 
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="fonImage.png"/> 
+        <ImageGQL className="headerBackgroundImage" imageName={this.props.t("fonImage")}/> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
@@ -433,7 +425,6 @@ render(){
         </MainPageWrapper>
         </ProductPagesWrapper>
       </Layout>
-      </StyleTextMontserrat>
     );
   }
 };
