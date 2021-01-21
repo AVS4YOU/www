@@ -14,7 +14,6 @@ import Button from '../components/button';
 
 import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
 import HeaderBackgroundImage from '../images/avs-video-editing-software/back_ground_image_final.jpg';
-import "../styles/youtube-video-editor.less";
 
 import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
