@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
-import PropTypes from "prop-types";
 
 import backgroundImage from "../../images/avs-video-editor-final/cinema-slider/MaskGroup.png";
 import  img1  from "../../images/avs-video-editor-final/cinema-slider/Trim_black.svg";
@@ -15,10 +14,11 @@ import  Actimg2 from "../../images/avs-video-editor-final/cinema-slider/Crop_act
 import  Actimg3  from "../../images/avs-video-editor-final/cinema-slider/Split_active.svg";
 import  Actimg4  from "../../images/avs-video-editor-final/cinema-slider/Join_active.svg";
 
-import Img1 from "../../images/avs-video-editor-final/cinema-slider/GroupTrim.webp";
-import Img2 from "../../images/avs-video-editor-final/cinema-slider/GroupCroup.webp";
-import Img3 from "../../images/avs-video-editor-final/cinema-slider/GroupSplit.webp";
-import Img4 from "../../images/avs-video-editor-final/cinema-slider/GroupJoin.webp";
+import GroupTrim from "../../images/avs-video-editing-software/group-trim.png";
+import GroupCroup from "../../images/avs-video-editing-software/group-croup.png";
+import GroupSplit from "../../images/avs-video-editing-software/group-split.png";
+import GroupJoin from "../../images/avs-video-editing-software/group-join.png";
+
 
 const CinemaSliderStyle = styled.div`
 .headerDescriptionSlider{
@@ -31,7 +31,6 @@ const CinemaSliderStyle = styled.div`
   padding-bottom: 1%;
   font-family:Montserrat;
 }
-
 .slick-slider {
   margin: 30px auto 10px;
   padding-top: 50px;
@@ -41,7 +40,6 @@ const CinemaSliderStyle = styled.div`
   background-position-x: center;
   height: auto;
 }
-
 .slick-slide > div {
   margin: 0 20px;
   max-height: 710px;
@@ -61,7 +59,6 @@ const CinemaSliderStyle = styled.div`
 .slick-slide[aria-hidden="true"] {
   opacity: 0.5;
 }
-
 }
 .scrollSlideTrim{
   .scrollToButton{
@@ -105,7 +102,6 @@ const CinemaSliderStyle = styled.div`
     }
   }
 }
-
 .scrollLinksWrapper {
   border-spacing: 20px 0px;
   padding: 0;
@@ -115,7 +111,6 @@ const CinemaSliderStyle = styled.div`
   align-items: center;
   justify-content: center;
 }
-
 @media (max-width: 1280px) {
   .container {
   margin: 0 3px;
@@ -132,7 +127,6 @@ const CinemaSliderStyle = styled.div`
   }
 }
 }
-
 @media (max-width: 1560px) {
   .slick-slider{
     padding-top: 20px;
@@ -153,7 +147,6 @@ const CinemaSliderStyle = styled.div`
     padding-top: 10px;
   }
 }
-
     
 @media (max-width: 2560){
   .headerDescriptionSlider{
@@ -176,8 +169,6 @@ const CinemaSliderStyle = styled.div`
     }
   }
 }
-
-
 @media (max-width: 1080px) {
   .headerDescriptionSlider{
     margin-left: 15%;
@@ -228,7 +219,7 @@ const CinemaSliderStyle = styled.div`
 }
 `;
 
-export class CinemaSlider extends Component {  
+export class AVSCinemaSlider extends Component {  
     state = {
         slideIndex: 0,
         updateCount: 0,
@@ -280,6 +271,7 @@ export class CinemaSlider extends Component {
         const settings = {    
             centerMode: true,
             speed: 400,
+            infinity: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: false,
@@ -380,16 +372,16 @@ export class CinemaSlider extends Component {
           };
     
         const images = [    
-            { img: Img1 }, 
-            { img: Img2 },   
-            { img: Img3 },    
-            { img: Img4 },         
+            {  nameSlide: "slide_Trim",  img: GroupTrim}, 
+            {  nameSlide: "slide_Croup", img: GroupCroup},   
+            {  nameSlide: "slide_Split", img: GroupSplit},    
+            {  nameSlide: "slide_Join",  img: GroupJoin},         
           ];   
 
     const imgSlides = () =>  
     images.map(num => (  
       <div className="imgpad">  
-          <img className="imgdetails" src= {num.img} width="100%"/>    
+          <img className={num.nameSlide} src={num.img} />    
       </div>  
     )); 
     
@@ -447,6 +439,6 @@ export class CinemaSlider extends Component {
     </div>
     </CinemaSliderStyle>  
   );  
+ }  
 }  
-}  
-export default CinemaSlider;
+export default AVSCinemaSlider;

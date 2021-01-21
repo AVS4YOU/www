@@ -22,7 +22,7 @@ import PlaybackSpeed from "../../images/avs-video-editor-final/cinema-slider/cin
 import SpecialEffects from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/spec-effects.png";
 import TextGraphics from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/text-and-graph.png";
 import Transformation from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transformation.png";
-import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/Transitions.webp";
+import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transitions.png";
 import VideoOderlay from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-overlay.png";
 import VideoStabilization from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-stab.png";
 
