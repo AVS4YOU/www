@@ -107,7 +107,7 @@ const MainPageWrapper = styled.div`
   @media (max-width: 1290px) {
     .headerBackground{
       .fonImage{
-        right: -30%;
+        right: -5%;
       }
     }
    }
