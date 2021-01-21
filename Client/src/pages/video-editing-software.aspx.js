@@ -23,7 +23,6 @@ import CreateSlide4 from '../images/avs-video-editor-final/cinema-slider/cards-f
 import CreateSlide5 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame6.svg';
 import CreateSlide6 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame7.svg';
 import CreateSlide7 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame8.svg';
-import Transitions  from '../images/avs-video-editor-final/cinema-slider/cinema-slider/transitions.png';
 
 
 const MainPageWrapper = styled.div`
