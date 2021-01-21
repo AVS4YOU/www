@@ -10,6 +10,7 @@ import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
+import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -162,6 +163,11 @@ render(){
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
+        <ScreenshotsCarousel
+            imageNames={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            imageNamesPopup={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
+          />
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Why choose AVS4YOU?")}
