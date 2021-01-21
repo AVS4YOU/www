@@ -275,7 +275,7 @@ export class AVSCinemaSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: false,
-            centerPadding: '470px',
+            centerPadding: '455px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
               {

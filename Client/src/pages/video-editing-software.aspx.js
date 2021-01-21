@@ -14,7 +14,6 @@ import Button from '../components/button';
 
 import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
 import HeaderBackgroundImage from '../images/avs-video-editing-software/back_ground_image_final.jpg';
-import "../styles/youtube-video-editor.less";
 
 import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
@@ -165,7 +164,7 @@ render(){
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={false}
-               imageName="headerBackGroundImage1.png"      
+               imageName="header-back-image-avs.png"      
               >
                 <div className="tableWrapperHeader">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
@@ -248,7 +247,7 @@ render(){
           headerDescription = {this.props.t("Make breathtaking videos with effects and transitions")}
           headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects Switch between Timeline and Storyboard to add and manage video effects and transitions with ease")}
           SliderImages = {[      
-            {   img: Transitions,
+            {   
                 title: this.props.t("Transitions"),
                 desc: this.props.t("Add transitions to create visual effects between clips"),
                },
