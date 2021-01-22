@@ -83,7 +83,7 @@ render(){
             </div>
           </div>
           <div className="body-reseller__button-wrapper">
-          <a target="_blank" rel="noreferrer noopener" href="partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" >
+          <a target="_blank" rel="noreferrer noopener" href={this.props.t("partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners")} >
             <Button className="body-reseller__button" textClassName="body-reseller__button-text">
                 {this.props.t("Download reseller prose list")}
             </Button>
