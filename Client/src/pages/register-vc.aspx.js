@@ -164,6 +164,8 @@ render(){
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
         <ScreenshotsCarousel
+            titleImage={[this.props.t("AVS Video Editor"), this.props.t("AVS Video Converter"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Converter"), this.props.t("AVS Audio Editor")]}
+            descriptionImage={[this.props.t("Make your home videos"), this.props.t("Easily convert videos"), this.props.t("Edit video files"), this.props.t("Convert your audio"), this.props.t("Enhance your audio")]}
             imageNames={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
             imageNamesPopup={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import PropTypes from "prop-types";
+import Text from '../text';
 import styled from 'styled-components';
 import ImageGQL from '../image-gql';
 
@@ -60,6 +62,21 @@ const StyledCarouselWrapper = styled.div`
 
     .slick-initialized .slick-slide.slick-current{
         z-index: 3 !important;
+    }
+
+    .title-image{
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .description-image{
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     .carouselImage{
@@ -201,7 +218,7 @@ const StyledPopupCarousel = styled.div`
     }
 `;
 
-export default class ScreenshotsCarousel extends Component {
+class ScreenshotsCarousel extends Component {
 
 
     constructor(props) {
@@ -246,13 +263,21 @@ export default class ScreenshotsCarousel extends Component {
 
   render() {
     const isMobile = this.state.width < 1050;
+    const titleImage = this.props.titleImage;
+    const descriptionImage = this.props.descriptionImage;
     const imageNames =  this.props.imageNames;
     const imageNamesPopup = this.props.imageNamesPopup;
     const altText = this.props.altText;
 
     const carouselImages = imageNames.length > 0 && 
         imageNames.map((imageName, i) => {
-            return(<div key={"CarouselItem_"+i} onClick={this.toggleCarousel}><ImageGQL className="carouselImage visible" imageName={imageName} alt={altText[i]}/></div>)
+            return(
+            <div key={"CarouselItem_"+i} onClick={this.toggleCarousel}>
+                {titleImage.length > 0 && <Text className="title-image">{titleImage[i]}</Text>}
+                {descriptionImage.length > 0 && <Text className="description-image">{descriptionImage[i]}</Text>}
+                <ImageGQL className="carouselImage visible" imageName={imageName} alt={altText[i]}/>
+            </div>
+            )
         });
 
     const PopupCarouselImages = imageNamesPopup.length > 0 && 
@@ -293,3 +318,15 @@ export default class ScreenshotsCarousel extends Component {
     );
   }
 }
+
+ScreenshotsCarousel.propTypes = {
+    titleImage:  PropTypes.array ,
+    descriptionImage: PropTypes.array
+}
+
+ScreenshotsCarousel.defaultProps = {
+    titleImage:  [] ,
+    descriptionImage: []
+}
+
+export default ScreenshotsCarousel
