@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_Description></Company_Description>
+    <Product_UIN>APP-008514B6CA9</Product_UIN>
+    <Search_String>AVS Disc Creator</Search_String>
+    <Search_String_Unique>AVS Disc Creator</Search_String_Unique>
+    <Publish_on_CD>FALSE</Publish_on_CD>
+    <RSProductType></RSProductType>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Backlink></Backlink>
+  </RoboSoft>
+  <Company_Info>
+    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
+    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
+    <Address_2>180 Tottenham Court Road</Address_2>
+    <City_Town>London</City_Town>
+    <State_Province></State_Province>
+    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
+    <Country>United Kingdom</Country>
+    <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
+    <Contact_Info>
+      <Contact_First_Name>Irina</Contact_First_Name>
+      <Contact_Last_Name>Sanaeva</Contact_Last_Name>
+      <Contact_Email>submit@avs4you.com</Contact_Email>
+      <Author_First_Name>Irina</Author_First_Name>
+      <Author_Last_Name>Sanaeva</Author_Last_Name>
+      <Author_Email>submit@avs4you.com</Author_Email>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>submit@avs4you.com</Sales_Email>
+      <Support_Email>submit@avs4you.com</Support_Email>
+      <General_Email>submit@avs4you.com</General_Email>
+      <Sales_Phone></Sales_Phone>
+      <Support_Phone></Support_Phone>
+      <General_Phone></General_Phone>
+      <Fax_Phone></Fax_Phone>
+    </Support_Info>
+    <GooglePlusPage></GooglePlusPage>
+    <LinkedinPage></LinkedinPage>
+    <TwitterCompanyPage>https://twitter.com/avs4you</TwitterCompanyPage>
+    <FacebookCompanyPage>https://www.facebook.com/avs4you</FacebookCompanyPage>
+    <CompanyStorePage></CompanyStorePage>
+  </Company_Info>
+  <ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>Y</ASP_Member>
+    <ASP_Member_Number>06467</ASP_Member_Number>
+  </ASP>
+  <NewsFeed>
+    <NewsFeed_FORM>Y</NewsFeed_FORM>
+    <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
+    <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
+    <NewsFeed_DESCRIPTION>This PAD extension allows you to add your RSS and Atom news feeds info into your PAD file. This info can be used by RSS feed submission software or by feed directories themselves.</NewsFeed_DESCRIPTION>
+    <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
+    <NewsFeed_Language>English</NewsFeed_Language>
+    <NewsFeed_Purpose>News</NewsFeed_Purpose>
+    <NewsFeed_Author_Email>submit@avs4you.com</NewsFeed_Author_Email>
+    <NewsFeed_Author_First_Name>Irina</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Sanaeva</NewsFeed_Author_Last_Name>
+    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
+    <NewsFeed_Site_Name></NewsFeed_Site_Name>
+    <NewsFeed_Site_URL></NewsFeed_Site_URL>
+    <NewsFeed_Title></NewsFeed_Title>
+    <NewsFeed_Description_70></NewsFeed_Description_70>
+    <NewsFeed_Description_250></NewsFeed_Description_250>
+  </NewsFeed>
+  <PAD_Certification_Promotion>
+    <Apply_For_Certification>N</Apply_For_Certification>
+  </PAD_Certification_Promotion>
+  <Program_Info>
+    <Program_Target_Platform>Windows</Program_Target_Platform>
+    <File_Info>
+      <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
+      <File_Size_Bytes>118834176</File_Size_Bytes>
+      <File_Size_K>116049</File_Size_K>
+      <File_Size_MB>113.33</File_Size_MB>
+      <Filename_Versioned></Filename_Versioned>
+      <Filename_Previous></Filename_Previous>
+      <Filename_Generic></Filename_Generic>
+      <Filename_Long></Filename_Long>
+    </File_Info>
+    <Program_Name>AVS Disc Creator</Program_Name>
+    <Program_Version>6.2.4.564</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>11</Program_Release_Day>
+    <Program_Release_Year>2020</Program_Release_Year>
+    <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+    <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+    <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
+    <Program_Change_Info>Einige Änderungen am Installationsprogramm. Einige Marketingänderungen.</Program_Change_Info>
+    <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
+    <Program_Category_Class>Audio &amp; Multimedia::CD Burners</Program_Category_Class>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Based_On>Days</Expire_Based_On>
+      <Expire_Count></Expire_Count>
+      <Expire_Other_Info></Expire_Other_Info>
+      <Expire_Month></Expire_Month>
+      <Expire_Day></Expire_Day>
+      <Expire_Year></Expire_Year>
+    </Expire_Info>
+    <Program_Categories>MP3 &amp; Audio :: Audio CD Burners,Multimedia and Design :: Miscellaneous</Program_Categories>
+    <Limitations>Unbeschränkt</Limitations>
+    <Program_Cost_Other_Code></Program_Cost_Other_Code>
+    <Program_Cost_Other></Program_Cost_Other>
+    <Awards></Awards>
+    <Program_Specific_Category></Program_Specific_Category>
+    <Includes_JAVA_VM></Includes_JAVA_VM>
+    <Includes_VB_Runtime></Includes_VB_Runtime>
+    <Includes_DirectX></Includes_DirectX>
+    <FacebookProductPage></FacebookProductPage>
+    <GooglePlusProductPage></GooglePlusProductPage>
+  </Program_Info>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://www.avs4you.com/de/avs-free-disc-creator.aspx</Application_Info_URL>
+      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsdisccreator.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsdisccreator.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsdisccreator.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSDiscCreator.exe</Primary_Download_URL>
+      <Secondary_Download_URL></Secondary_Download_URL>
+      <Additional_Download_URL_1></Additional_Download_URL_1>
+      <Additional_Download_URL_2></Additional_Download_URL_2>
+    </Download_URLs>
+  </Web_Info>
+  <Permissions>
+    <Distribution_Permissions>Dieses Produkt darf unbegrenzt im Internet verbreitet werden. Um es auf einer CD zu veroffentlichen, wenden Sie sich bitte an uns unter info@avs4you.com</Distribution_Permissions>
+    <EULA>ENDVERBRAUCHER-LIZENZVERTRAG FÜR DIE SOFTWARE-PRODUKTE VON ONLINE MEDIA TECHNOLOGIES LTD.
+
+WICHTIG! BITTE AUFMERKSAM LESEN! Der vorliegende Endverbraucher-Lizenzvertrag ist eine rechtswirksame Vereinbarung zwischen Ihnen und Online Media Technologies Ltd. betreffend der entsprechenden Software-Produkte von Online Media Technologies Ltd. Bitte kopieren, installieren und benutzen Sie die unter diesem Lizenzvetrag ("Vertrag") angebotenen Software-Produkte nicht, bis Sie die unten angegebenen Bestimmungen sorgfältig gelesen haben.
+
+Jede Vervielfältigung oder Weitergabe der Software-Produkte oder ihrer Bestandteile, die nicht in Übereinstimmung mit dem Lizenzvertrag stehen, werden nach geltendem Recht ausdrücklich verboten, und können auf strenge bürgerliche und kriminelle Strafen hinauslaufen. 
+
+Begriffsbestimmungen: Der Begriff “Software-Produkte” umfasst die AVS4YOU-Programme. 
+
+Der Begriff “AVS4YOU-Programme” umfasst den kompletten Inhalt der Dateien, die durch elektronischen Download, auf einem physischen Datenträger oder durch weitere Verbreitungsmethoden (Festplatte(n), CD-ROM(s) oder weitere Speicher, in denen der vorliegende Lizenzvertrag miteingeschlossen ist) angeboten werden und die auf der Website www.avs4you.com zu finden sind. 
+
+Die AVS4YOU-Programme werden auf einer Pro-Computer-Basis lizenziert. Jede käuflich erworbene Lizenz erlaubt Ihnen die AVS4YOU-Programme nur auf einem Computer zu installieren. Wenn Sie die AVS4YOU-Programme auf weiteren Computern installieren und benutzen oder neu installieren möchten, müssen Sie für jeden weiteren Computer eine zusätzliche Lizenz käuflich erwerben. Bei der Änderung des Computers muss eine zusätzliche Lizenz gekauft werden. Alle Updates und Upgrades für die AVS4YOU-Programme sind innerhalb der ganzen Gültigkeitsperiode der AVS4YOU-Lizenz kostenlos. 
+
+Ihre Rechte und Pflichten im Bezug auf den Gebrauch der AVS4YOU-Programme oder ihrer Bestandteile sind wie folgt:
+
+Sie dürfen:
+1. eine Kopie der AVS4YOU-Programme oder ihrer Bestandteile, sowie alle Upgrades und Updates auf einem einzelnen Computer innerhalb der Periode benutzen, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet);
+2. eine Kopie der AVS4YOU-Programme oder ihrer Bestandteile zu Archivzwecken auf einem Speichergerät oder Datenträger erstellen;
+3. die AVS4YOU-Programme in einem Netzwerk benutzen, wenn Sie eine lizenzierte Kopie der AVS4YOU-Programme für jeden Computer haben, und den Zugriff auf die AVS4YOU-Programme über dieses Netzwerk innerhalb der Periode haben, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet);
+4. wenn Sie Fragen oder Probleme betreffend der AVS4YOU-Programme haben, sich an den Kundendienst per E-Mail innerhalb der Periode wenden, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet). 
+
+Sie dürfen nicht:
+1. Kopien von den AVS4YOU-Programmen in den Fällen benutzen, kopieren, modifizieren oder übertragen, die in diesem Lizenzvertrag nicht vorgesehen sind;
+2. jegliche urheberrechtliche Daten oder Markenzeichen von den AVS4YOU-Programmen entfernen;
+3. Reverse-Engineering, Dekompilierung, Disassemblierung oder abgeleitete Arbeiten auf den AVS4YOU-Programmen basieren (außer und nur so weit solche Tätigkeit durch geltendes Recht trotz dieser Beschränkung ausdrücklich erlaubt ist);
+4. die AVS4YOU-Programme oder jede Kopie davon, sowie dazugehörige Dokumentation mieten, leasen, unterlizenzieren oder übereignen;
+5. die Bestandteile der AVS4YOU-Programme für den Gebrauch auf mehreren PCs voneinander trennen; 
+6. den Lizenzschlüssel in irgend einer Form verbreiten;
+7. jeglichen Versuch unternehmen, den Quellcode von den AVS4YOU-Programmen zu entziffern.
+
+KEINE GARANTIEN.
+
+Online Media Technologies Ltd. lehnt ausdrücklich jede Garantie auf die AVS4YOU-Programme ab. 
+
+Die AVS4YOU-PROGRAMME, SOWIE JEDE DAZUGEHÖRIGE DOKUMENTATION WERDEN "SO WIE SIE SIND" GELIEFERT, D.H. OHNE GARANTIEN JEGLICHER ART, ENTWEDER AUSDRÜCKLICH ODER STILLSCHWEIGEND, OHNE STILLSCHWEIGENDE GARANTIEN ODER MARKTFÄHIGKEIT, ANGEMESSENHEIT ZU EINEM BESONDEREN ZWECK ODER NICHTVERSTOSS.
+
+DAS KOMPLETTE RISIKO, DAS AUS DEM GEBRAUCH ODER AUSFÜHRUNG DER AVS4YOU-PROGRAMME ENTSTEHT, WIRD VON IHNEN GETRAGEN.
+
+KEINE HAFTUNG FÜR FOLGESCHÄDEN.
+AUF KEINEN FALL WIRD ONLINE MEDIA TECHNOLOGIES LTD. FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE SCHÄDEN (EINGESCHRÄNKT ODER UNEINGESCHRÄNKT, SCHÄDEN AUS DEM VERLUST VON GESCHÄFTSGEWINNEN, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER VERMÖGENSSCHÄDEN) HAFTEN, DIE AUS DEM GEBRAUCH DER AVS4YOU-PROGRAMME ODER DER GEBRAUCHSUNFÄHIGKEIT ENTSTEHEN.
+
+URHEBERRECHTLICHER HINWEIS. Copyright(C) 2020 Online Media Technologies Ltd. Alle Rechte vorbehalten.
+Die Rechte, die hiermit ausdrücklich nicht eingeräumt werden, sind vorbehalten.</EULA>
+  </Permissions>
+  <AppStore>
+    <AppStore_AppID></AppStore_AppID>
+    <AppStore_Category></AppStore_Category>
+    <AppStore_Info_URL></AppStore_Info_URL>
+    <AppStore_Download_URL></AppStore_Download_URL>
+    <AppStore_Promo_Code_1></AppStore_Promo_Code_1>
+    <AppStore_Promo_Code_2></AppStore_Promo_Code_2>
+    <AppStore_Promo_Code_3></AppStore_Promo_Code_3>
+    <AppStore_Supported_Devices></AppStore_Supported_Devices>
+    <AppStore_Other_Applications></AppStore_Other_Applications>
+    <AppStore_Advantages_And_Unique_Features></AppStore_Advantages_And_Unique_Features>
+    <AppStore_Awards_And_Ratings></AppStore_Awards_And_Ratings>
+  </AppStore>
+  <Program_Descriptions>
+    <English>
+      <Keywords>burn dvd, dvd burner, create dvd, record cd, dvd creator, burn blu-ray, dvd burning, write dvd, dvd writer, dvd recorder, dvd copy, audio cd burner, dvd writer software, rip blu ray, bluray burner, burn audio cd, cd writing software, create boot cd</Keywords>
+      <Char_Desc_45>DVD/CD and data with AVS Disc Creator.</Char_Desc_45>
+      <Char_Desc_80>Burn various data onto CD/DVD/Blu-Ray discs with AVS Disc Creator.</Char_Desc_80>
+      <Char_Desc_250>Burn and copy your CD/DVD/Blu-ray discs easily with AVS Disc Creator. Burn data in several sessions onto the same disc. Burn boot discs, create password protected file image formats (.daa, .uif). AVS Disc Creator supports multiple file image formats.</Char_Desc_250>
+      <Char_Desc_450>Burn your discs quickly and easily with AVS Disc Creator. Copy personal home audio in the original quality. 
+Write your data onto Blu-ray (BD-R, BD-RE) discs. Create boot CD/DVD discs. Create an image of your personal video and save it on PC. Or make an ISO image directly from a disc or HDD. All major media are supported: DVD+/-R, DVD+/-RW, DVD-RAM, Double/Dual Layer DVD, etc.</Char_Desc_450>
+      <Char_Desc_2000>Write your data to CDs, DVDs quickly and easily with AVS Disc Creator. Burn data in several sessions onto the same disc. Make personal audio CD backups. Create your own DVD disc for home DVD Players. Burn DVD-Video files available on HDD directly to a DVD disc and watch a movie now with a home DVD Player. Create your own disc cover using a new integrated disc cover creator. Burn boot discs. Write your data onto Blu-ray (BD-R, BD-RE) discs. Store your data in the highest possible quality due to the unique BD data capacity of 25 or 50 GB per disc. Make an ISO image or a password protected file image and save it on your PC. Use any CD/DVD recording drives, software, designed and tested for IDE, SATA, SCSI, USB, and Firewire drives, works easily with most of them. 
+AVS Disc Creator supports CD-R/RW, DVD+/-R, DVD+/-RW, DVD-RAM, Double/Dual Layer DVD and the latest Blu-ray technology BD-R and BD-RE. 
+A recently updated simple and intuitive interface, a variety of hot features and supported media types make AVS Disc Creator the most convenient and demanded software to make home video DVD copies, create DVD/Blu-ray discs for home DVD Players and perform other burning tasks. 
+AVS Disc Creator is a part of the AVS4YOU package. Register once and work with all tools from the AVS4YOU.com. Subscribe for $39/year or $59/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
+    </English>
+    <German>
+      <Keywords>dvd copy, brennprogramm, brennsoftware, cd brennen, cd kopieren, dvd kopieren, DVD brennen, DVD-Brenner, DVD erstellen, CD aufnehmen, DVD Creator, Blu ray brennen, iso brennen, boot cd, iso image erstellen, brennen, audio cd brennen, iso datei</Keywords>
+      <Char_Desc_45>CD/DVD/Blu-ray mit AVS Disc Creator brennen.</Char_Desc_45>
+      <Char_Desc_80>Mehrere Dateien auf CD/DVD/Blu-ray Disks mit AVS Disc Creator brennen.</Char_Desc_80>
+      <Char_Desc_250>CD/DVD/Blu-ray einfach mit AVS Disc Creator brennen. Brennen Brennen Sie Boot-Disks, erstellen Sie kennwortgeschützte Diskabbilder. AVS Disc Creator unterstützt mehrere Diskabbildformate.</Char_Desc_250>
+      <Char_Desc_450>Ihre Disks schnell und einfach mit AVS Disc Creator brennen. Brennen Sie Ihre Daten in mehreren Sessionen auf dieselbe Disk. Erstellen Sie eigene Covers für Ihre Disks mit dem intergrierten Cover Creator. Brennen Sie Boot-Disks und kennwortgeschützte Diskabbilder (.daa, .uif). AVS Disc Creator unterstützt CD-R/RW, DVD+/-R, DVD+/-RW, DVD-RAM, Double/Dual Layer DVD und Blu-Ray Disks.</Char_Desc_450>
+      <Char_Desc_2000>Ihre Daten schnell und einfach auf CD/DVD mit AVS Disc Creator schreiben. Brennen Sie Daten in mehreren Sessionen auf dieselbe Disk. Erstellen Sie eigene CD-Backups. Erstellen Sie Ihre eigene DVD-Disk für Heim-DVD-Player. 
+Brennen Sie DVD-Videodateien von der Festplatte direkt auf DVD und spielen Sie diese in Ihrem Heim-DVD-Player ab. Erstellen Sie eigene Covers für Ihre Disks mit dem integrierten Cover Creator. Brennen Sie Boor-Disks. Schreiben Sie Ihre Daten auf Blu-ray Disks (BD-R, BD-RE). Speichern Sie mehr Daten dank der einzigartigen BD-Daten-Kapazität von 25 oder 50 GB pro Disk. Erstellen Sie ISO-Abbilder oder kennwortgeschützte Diskabbilder und speichern Sie sie auf PC. Benutzen Sie ein beliebiges CD/Blu-ray/DVD-Laufwerk. Die Software wurde für IDE, SATA, SCSI, USB und Firewire-Laufwerke entwickelt und damit getestet. Sie funktioniert einwandfrei. AVS Disc Creator unterstützt CD-R/RW, DVD+/-R, DVD+/-RW, DVD-RAM, Double/Dual Layer DVD und Blu-ray (BD-R und BD-RE). Einfache und benutzerfreundliche Bedienfläche, eine Vielzahl von aktuellsten Funktionen und unterstützten Datenträgern machen den AVS Disc Creator zu einem bequemen und stark nachgefragten Programm, mit dem man DVD-Kopien erstellen, DVD-Disks für Heim-DVD- und Blu-Ray-Player brennen und andere Brennaufgaben erledigen kann. 
+AVS Disc Creator ist ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet. Die AVS4YOU-Programme ermöglichen Ihnen Audio-, Bilder-, Videodateien zu rippen, zu konvertieren und zu bearbeiten. Sie können auch DVDs zu brennen, Klingeltöne zu erstellen, Videos auf tragbare Geräte, Player sowie Mobiltelefone zu übertragen und vieles mehr!</Char_Desc_2000>
+    </German>
+  </Program_Descriptions>
+</XML_DIZ_INFO>
