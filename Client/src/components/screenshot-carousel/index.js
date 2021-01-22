@@ -134,6 +134,20 @@ const StyledCarouselWrapper = styled.div`
             margin-top:20px;
         }
     }
+
+    @media (max-width: 500px) {
+        .title-image{
+            margin-top: 10px;
+            font-size: 28px;
+        }
+    
+        .description-image{
+            font-size: 18px;
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
 `;
 
 const StyledPopupCarousel = styled.div`
