@@ -1323,8 +1323,8 @@
 
   "*****************************LINK********************************" : "*****************************LINK********************************",
   "https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf",
-  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
   
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
   "slider video converter jpg" :  "ru_slider_video_converter.jpg",
