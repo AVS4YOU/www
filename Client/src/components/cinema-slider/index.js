@@ -22,7 +22,7 @@ import PlaybackSpeed from "../../images/avs-video-editor-final/cinema-slider/cin
 import SpecialEffects from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/spec-effects.png";
 import TextGraphics from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/text-and-graph.png";
 import Transformation from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transformation.png";
-import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/Transitions.webp";
+import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transitions.png";
 import VideoOderlay from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-overlay.png";
 import VideoStabilization from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-stab.png";
 
@@ -279,6 +279,8 @@ export class CinemaSlider extends Component {
           infinity: true,
           centerMode: true,
           swipeToSlide: false,
+          autoplaySpeed:4000,
+          autoplay: true, 
           afterChange: current =>
           this.setState({slideIndexItem: current}),
          beforeChange: (current, next) => this.setState({ slideIndex: next })
@@ -287,8 +289,7 @@ export class CinemaSlider extends Component {
         const settingsAffil = {
           centerMode:false,     
           draggable:false,    
-          arrows:true,    
-          autoplaySpeed:1500,     
+          arrows:true,        
           slidesToShow:8,     
           slidesToScroll:6,   
           dots:true,
@@ -390,7 +391,7 @@ export class CinemaSlider extends Component {
         const affilSlides = () =>  
         affilateImageSlider.map((num, index) => (
           <div className="affilSliderItem">
-            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`}} className="scrollToButton">
+            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
                 <Text className="scrollToSlideText" color="#666666" align="center" fontWeight={300} fontSize={14}>{num.nameAffilate}</Text>
             </div>
           </div>    

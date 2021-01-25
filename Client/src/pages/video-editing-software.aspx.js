@@ -4,7 +4,6 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
-import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import HeaderRowItem from '../components/header-row-item';
 import {GroupCard} from '../components/content-card/card-index';
@@ -13,7 +12,10 @@ import VideoEditorSlider from '../components/cinema-slider';
 import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
 
-import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
+import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
+import HeaderBackgroundImage from '../images/avs-video-editing-software/back_ground_image_final.jpg';
+
+import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
 import CreateSlide2 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame3.svg';
 import CreateSlide3 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame4.svg';
@@ -39,22 +41,6 @@ const MainPageWrapper = styled.div`
     margin-bottom: 150px;
   }
 
-  .headerBackgroundImage{
-    position:absolute !important;
-    top: 0px;
-    right:0;
-    width: 100%;
-    padding-top: 9%;
-    max-height: 350px;
-    min-width: 1920px;
-    height: 100%;
-    object-fit: none;
-    object-position: center center;
-    opacity: 1;
-    transition: opacity 500ms ease 0s;
-    z-index: -1;
-  }
-
   .headerDescription{
     padding-top:15px;
     font-family:Montserrat;
@@ -66,7 +52,7 @@ const MainPageWrapper = styled.div`
 
   @media (min-width: 2150px) {
     .headerBackground{
-    .headerBackgroundImage{
+    .fonImage{
       margin-bottom: 5%;
       top: -55px;
     }
@@ -79,7 +65,7 @@ const MainPageWrapper = styled.div`
       background-position: 0 0;
     }
 
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
 
@@ -92,15 +78,14 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1500px) {
     .headerBackground{
-    .headerBackgroundImage{
-      right: -20%;
+    .fonImage{
       padding-top: 8%;
     }
   }
   }
 
   @media (max-width: 1480px) {
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
     .headerText{
@@ -120,15 +105,15 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1290px) {
     .headerBackground{
-      .headerBackgroundImage{
-        right: -30%;
+      .fonImage{
+        right: -5%;
       }
     }
    }
 
    @media (max-width: 1200px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -35%;
       }
     }
@@ -136,20 +121,13 @@ const MainPageWrapper = styled.div`
 
    @media (max-width: 1150px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -40%;
       }
     }
    }
 `;
 
-const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;
 class avsVideoEditorSoftware extends React.PureComponent {
 
   constructor(props) {
@@ -168,7 +146,6 @@ class avsVideoEditorSoftware extends React.PureComponent {
 render(){
 
     return (
-      <StyleTextMontserrat>
       <Layout 
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
@@ -179,12 +156,14 @@ render(){
       >
         <ProductPagesWrapper>  
           <div className="headerBackground">
-          <ImageGQL className="headerBackgroundImage" imageName="backGroundImageFinal.jpg" style={{position: "absolute"}}/>
+          <div className="headerBackgroundImage">
+              <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} />
+            </div>
             <PageContentWrapper>
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={false}
-               imageName="headerBackGroundImage1.png"      
+               imageName="header-back-image-avs.png"      
               >
                 <div className="tableWrapperHeader">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
@@ -267,11 +246,11 @@ render(){
           headerDescription = {this.props.t("Make breathtaking videos with effects and transitions")}
           headerDescriptionSlider = {this.props.t("Apply more than 300 modern video effects Switch between Timeline and Storyboard to add and manage video effects and transitions with ease")}
           SliderImages = {[      
-            {
+            {   
                 title: this.props.t("Transitions"),
                 desc: this.props.t("Add transitions to create visual effects between clips"),
                },
-            {
+            {   
                 title: this.props.t("Transformation"),
                 desc: this.props.t("Rotation, shift, mirror or zoom Reproduce the entire image or a part of it"),
                },
@@ -371,7 +350,9 @@ render(){
           
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="fonImage.png"/> 
+        <div className="fonImage">
+            <img className="fonImage" src={BackGroundImage}/>
+        </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
@@ -391,7 +372,6 @@ render(){
         </MainPageWrapper>
         </ProductPagesWrapper>
       </Layout>
-      </StyleTextMontserrat>
     );
   }
 };

@@ -13,7 +13,9 @@ import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
 import {GroupCard} from '../components/content-card/card-index';
 
-import CreateSlide from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
+import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
+
+import CreateSlide  from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame1.svg';
 import CreateSlide1 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame2.svg';
 import CreateSlide2 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame3.svg';
 import CreateSlide3 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame4.svg';
@@ -26,36 +28,7 @@ const MainPageWrapper = styled.div`
   .bodyHeader{
     text-align: center; 
   }
-
-  .headerContentWrapper{
-    max-width: 400px;
-    padding-left:45%;
-    font-family:Montserrat;
-  }
-
-  .headerBackground{
-    position:relative;
-    margin-bottom: 150px;
-  }
-
-
-  .headerBackgroundImage{
-    position:absolute !important;
-    top: 0px;
-    right:0;
-    width: 100%;
-    padding-top: 9%;
-    max-height: 350px;
-    min-width: 1920px;
-    height: 100%;
-    object-fit: none;
-    object-position: center center;
-    opacity: 1;
-    transition: opacity 500ms ease 0s;
-    z-index: -1;
-  }
-
-  .footerInfoAVS35 {
+  footerInfoAVS35 {
     font-family:Montserrat;
     .headerDescriptionTitleAVS {
         padding-top: 15px;
@@ -64,6 +37,16 @@ const MainPageWrapper = styled.div`
         padding-bottom: 40px;
     }
 }
+  .headerContentWrapper{
+    max-width: 400px;
+    padding-left:45%;
+    font-family:Montserrat;
+  }
+
+  .headerBackground{
+    position:relative;
+    margin-bottom: 50px;
+  }
 
   .headerDescription{
     padding-top:15px;
@@ -76,7 +59,7 @@ const MainPageWrapper = styled.div`
 
   @media (min-width: 2150px) {
     .headerBackground{
-    .headerBackgroundImage{
+    .fonImage{
       margin-bottom: 5%;
       top: -55px;
     }
@@ -89,7 +72,7 @@ const MainPageWrapper = styled.div`
       background-position: 0 0;
     }
 
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
 
@@ -102,21 +85,20 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1500px) {
     .headerBackground{
-    .headerBackgroundImage{
-      right: -20%;
+    .fonImage{
       padding-top: 8%;
     }
+    .footerInfoAVS35 {
+      .headerDescriptionTitleAVS {
+          padding-left: 25%;
+          padding-right: 25%;
+      }
   }
-  .footerInfoAVS35 {
-    .headerDescriptionTitleAVS {
-        padding-left: 25%;
-        padding-right: 25%;
-    }
-}
+  }
   }
 
   @media (max-width: 1480px) {
-    .headerBackgroundImage{
+    .fonImage{
       padding-top: 7%;
     }
     .headerText{
@@ -136,21 +118,21 @@ const MainPageWrapper = styled.div`
 
   @media (max-width: 1290px) {
     .headerBackground{
-      .headerBackgroundImage{
-        right: -30%;
+      .fonImage{
+        right: -5%;
       }
+      .footerInfoAVS35 {
+        .headerDescriptionTitleAVS {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
     }
-    .footerInfoAVS35 {
-      .headerDescriptionTitleAVS {
-          padding-left: 20%;
-          padding-right: 20%;
-      }
-  }
+    }
    }
 
    @media (max-width: 1200px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -35%;
       }
     }
@@ -158,20 +140,13 @@ const MainPageWrapper = styled.div`
 
    @media (max-width: 1150px) {
     .headerBackground{
-      .headerBackgroundImage{
+      .fonImage{
         right: -40%;
       }
     }
    }
 `;
 
-const StyleTextMontserrat = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-@font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-`;
 class avsVideoEditorUnlimited extends React.PureComponent {
 
   constructor(props) {
@@ -190,7 +165,6 @@ class avsVideoEditorUnlimited extends React.PureComponent {
 render(){
 
     return (
-      <StyleTextMontserrat>
       <Layout 
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
@@ -205,7 +179,7 @@ render(){
               <HeaderRowItem 
                className="flexWrapper"
                imgLeft={true}
-               imageName="VE 1.png"      
+               imageName="ve.png"      
               >
                 <div className="tableWrapperHeader35">
                 <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
@@ -407,7 +381,9 @@ render(){
          
         <MainPageWrapper>
         <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="fonImage.png"/> 
+        <div className="fonImage">
+            <img className="fonImage" src={BackGroundImage}/>
+        </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
               <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
@@ -430,7 +406,6 @@ render(){
         </MainPageWrapper>
         </ProductPagesWrapper>
       </Layout>
-      </StyleTextMontserrat>
     );
   }
 };
