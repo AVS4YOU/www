@@ -29,7 +29,7 @@ const MainPageWrapper = styled.div`
     text-align: center; 
   }
   footerInfoAVS35 {
-    font-family:Montserrat;
+    font-family:'Open Sans',sans-serif,Arial;
     .headerDescriptionTitleAVS {
         padding-top: 15px;
         padding-left: 33%;
@@ -40,7 +40,7 @@ const MainPageWrapper = styled.div`
   .headerContentWrapper{
     max-width: 400px;
     padding-left:45%;
-    font-family:Montserrat;
+    font-family:'Open Sans',sans-serif,Arial;
   }
 
   .headerBackground{
@@ -50,7 +50,7 @@ const MainPageWrapper = styled.div`
 
   .headerDescription{
     padding-top:15px;
-    font-family:Montserrat;
+    font-family:'Open Sans',sans-serif,Arial;
   }
 
   .buttonsWrapper{
@@ -209,7 +209,7 @@ render(){
                     fontSize={18}
                     padding="16.5px 92.5px"
                     textTransform="uppercase"
-                    href="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&">
+                    href={this.props.t("defaultHrefOneYear")}>
                       {this.props.t("Buy")}</Button>
                 </div>
                 <div className="HeaderListItem" style={{marginLeft:"115px"}}>
