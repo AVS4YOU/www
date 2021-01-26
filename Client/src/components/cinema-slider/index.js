@@ -44,7 +44,7 @@ background-color: #fff;
   border: 1px solid #f5f5f5;
   border-radius: 5px;
   box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
-  font-family: Montserrat;
+  font-family: 'Open Sans',sans-serif,Arial;
 `;
 const CardSide = css`
   position: absolute;
@@ -79,7 +79,7 @@ const CardTitle = styled.div`
     word-wrap: break-word;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: ''Open Sans',sans-serif,Arial';
 `
 const CardDescription = styled.div`
  padding-left:15px;
@@ -88,7 +88,7 @@ const CardDescription = styled.div`
  width: 90%;
  word-wrap: break-word;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: ''Open Sans',sans-serif,Arial';
 `
 const CinemaSliderStyle = styled.div`
 .CCinemaSlider{
@@ -96,7 +96,7 @@ const CinemaSliderStyle = styled.div`
   background: #fff;
   overflow: none; 
   padding-top: 45px;
-  font-family: 'Montserrat';
+  font-family: ''Open Sans',sans-serif,Arial';
   outline:none;
 .imgSlider{
   margin-left: auto;
@@ -138,10 +138,10 @@ background-color: #fff;
     padding-left: 25%;
     padding-right: 25%;
     line-height: 22px;
-    font-family: 'Montserrat';
+    font-family: ''Open Sans',sans-serif,Arial';
     }
     .headerDescription{
-      font-family: 'Montserrat';
+      font-family: ''Open Sans',sans-serif,Arial';
       padding-top: 25px;
       }
 
@@ -166,8 +166,8 @@ background-color: #fff;
           .scrollToSlideText{
             outline:none;
             width: 108px;
-            font-size:14px;
-            font-family: Montserrat;
+            font-size:12px;
+            font-family: 'Open Sans',sans-serif,Arial;
         }
       }  
   }

@@ -24,12 +24,12 @@ const CinemaSliderStyle = styled.div`
 .headerDescriptionSlider{
   margin-left: 30%;
   margin-right: 30%;
-  font-family:Montserrat;
+  font-family:'Open Sans',sans-serif,Arial;
 }
 .headerTitleSlider{
   font-weight: 700;
   padding-bottom: 1%;
-  font-family:Montserrat;
+  font-family:'Open Sans',sans-serif,Arial;
 }
 .slick-slider {
   margin: 30px auto 10px;
@@ -39,6 +39,7 @@ const CinemaSliderStyle = styled.div`
   background-size: contain;
   background-position-x: center;
   height: auto;
+  max-width: 2000px;
 }
 .slick-slide > div {
   margin: 0 20px;
@@ -67,7 +68,7 @@ const CinemaSliderStyle = styled.div`
     width:88px;
     padding-top: 86px;
     p{
-      font-family:Montserrat;
+      font-family:'Open Sans',sans-serif,Arial;
     }
   }
 }
@@ -78,7 +79,7 @@ const CinemaSliderStyle = styled.div`
     width:88px;
     padding-top: 86px;
     p{
-      font-family:Montserrat;
+      font-family:'Open Sans',sans-serif,Arial;
     }
   }
 }
@@ -88,7 +89,7 @@ const CinemaSliderStyle = styled.div`
     width:88px;
     padding-top: 86px;
     p{
-      font-family:Montserrat;
+      font-family:'Open Sans',sans-serif,Arial;
     }
   }
 }
@@ -98,7 +99,7 @@ const CinemaSliderStyle = styled.div`
     width:88px;
     padding-top: 86px;
     p{
-      font-family:Montserrat;
+      font-family:'Open Sans',sans-serif,Arial;
     }
   }
 }
@@ -275,7 +276,7 @@ export class AVSCinemaSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: false,
-            centerPadding: '455px',
+            centerPadding: '480px',
             beforeChange: (current, next) => this.setState({ activeSlide: next }),
             responsive: [
               {
