@@ -20,7 +20,7 @@ import DeIcon from '../../images/common/languages/germany.svg';
 import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
-
+import PtIcon from '../../images/common/languages/portugal-flag.svg';
 const BackSubmenuButtonShow = css`
     opacity: 1;
     transition: .2s linear;
@@ -110,6 +110,9 @@ const StyledLanguageSelector = styled.div`
         &.nl:before{
             background-image: url(${NlIcon});
         }
+        &.pt:before{
+            background-image: url(${PtIcon});
+        }
     }
     .languageSelector:before{
         content: '';
@@ -176,7 +179,8 @@ const availableLocales = [
     {value: "pl", text: "Polski"},
     {value: "kr", text: "한국어"},
     {value: "dk", text: "Dansk"},
-    {value: "nl", text: "Nederland"}
+    {value: "nl", text: "Nederland"},
+    { value: "pt", text: "Português"}
 ];
 
 class LanguageSelector extends React.PureComponent {

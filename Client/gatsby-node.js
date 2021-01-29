@@ -66,6 +66,12 @@ nl: [
       ns: "common"
     }
   ],
+  pt: [
+    {
+      content: fs.readFileSync(`src/locales/pt/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
 };
 
 
@@ -82,6 +88,7 @@ const availableLocales = [
   { value: "kr", text: "한국어"},
   { value: "dk", text: "Dansk"},
   { value: "nl", text: "Nederland"},
+  { value: "pt", text: "Português"}
 ];
 
 // default locales don't end up in a specific locale route i.e example.com for english and example.com/fr for franch
