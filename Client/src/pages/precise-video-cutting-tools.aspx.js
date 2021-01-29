@@ -105,9 +105,9 @@ render(){
         { 
             imgText: this.props.t("Split videos regardless both the video size and formats Cut your clip into smaller sections, without losing any frames in the process The clips can then be trimmed or edited separately")},    
         { 
-            imgText: this.props.t("Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks")},
+            imgText: this.props.t("Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems Join clips into a long movie in a couple of clicks")},
         { 
-            imgText: this.props.t("Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements") },         
+            imgText: this.props.t("Crop your video to delete unnecessary parts such as black borders and draw your viewers attention to interesting or important elements") },         
       ]}   
     ></PWM>
     <div className="vel_edit_enhance">
