@@ -10,6 +10,7 @@ import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
+import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -106,6 +107,7 @@ render(){
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
+        <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
           <div className="sale-text">
             <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {mounth[currentMounth]} {this.props.t("only!")}</Text>
           </div>
@@ -162,6 +164,13 @@ render(){
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
+        <ScreenshotsCarousel
+            titleImage={[this.props.t("AVS Video Editor"), this.props.t("AVS Video Converter"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Converter"), this.props.t("AVS Audio Editor")]}
+            descriptionImage={[this.props.t("Make your home videos"), this.props.t("Easily convert videos"), this.props.t("Edit video files"), this.props.t("Convert your audio"), this.props.t("Enhance your audio")]}
+            imageNames={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            imageNamesPopup={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
+          />
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Why choose AVS4YOU?")}
