@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Text from "../text";
 import PropTypes from "prop-types";
 import spriteImage from "../../images/advent-calendar/calendar.svg";

@@ -270,7 +270,7 @@ export class CinemaSlider extends Component {
     }
     
   render() {  
-    const { affilateImage, SliderImages, headerDescription, headerDescriptionSlider } = this.props;
+    const { affilateImage, SliderImages } = this.props;
       const settings = {
           fade: true,
           speed: 500,
