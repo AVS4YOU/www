@@ -22,7 +22,7 @@ import PlaybackSpeed from "../../images/avs-video-editor-final/cinema-slider/cin
 import SpecialEffects from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/spec-effects.png";
 import TextGraphics from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/text-and-graph.png";
 import Transformation from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transformation.png";
-import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/Transitions.webp";
+import Transitions from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/transitions.png";
 import VideoOderlay from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-overlay.png";
 import VideoStabilization from "../../images/avs-video-editor-final/cinema-slider/cinema-slider/video-stab.png";
 
@@ -44,7 +44,7 @@ background-color: #fff;
   border: 1px solid #f5f5f5;
   border-radius: 5px;
   box-shadow: 5px 5px 30px rgba(0,0,0,0.25);
-  font-family: Montserrat;
+  font-family: 'Open Sans',sans-serif,Arial;
 `;
 const CardSide = css`
   position: absolute;
@@ -79,7 +79,7 @@ const CardTitle = styled.div`
     word-wrap: break-word;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: ''Open Sans',sans-serif,Arial';
 `
 const CardDescription = styled.div`
  padding-left:15px;
@@ -88,7 +88,7 @@ const CardDescription = styled.div`
  width: 90%;
  word-wrap: break-word;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: ''Open Sans',sans-serif,Arial';
 `
 const CinemaSliderStyle = styled.div`
 .CCinemaSlider{
@@ -96,7 +96,7 @@ const CinemaSliderStyle = styled.div`
   background: #fff;
   overflow: none; 
   padding-top: 45px;
-  font-family: 'Montserrat';
+  font-family: ''Open Sans',sans-serif,Arial';
   outline:none;
 .imgSlider{
   margin-left: auto;
@@ -138,10 +138,10 @@ background-color: #fff;
     padding-left: 25%;
     padding-right: 25%;
     line-height: 22px;
-    font-family: 'Montserrat';
+    font-family: ''Open Sans',sans-serif,Arial';
     }
     .headerDescription{
-      font-family: 'Montserrat';
+      font-family: ''Open Sans',sans-serif,Arial';
       padding-top: 25px;
       }
 
@@ -166,8 +166,8 @@ background-color: #fff;
           .scrollToSlideText{
             outline:none;
             width: 108px;
-            font-size:14px;
-            font-family: Montserrat;
+            font-size:12px;
+            font-family: 'Open Sans',sans-serif,Arial;
         }
       }  
   }
@@ -279,6 +279,8 @@ export class CinemaSlider extends Component {
           infinity: true,
           centerMode: true,
           swipeToSlide: false,
+          autoplaySpeed:4000,
+          autoplay: true, 
           afterChange: current =>
           this.setState({slideIndexItem: current}),
          beforeChange: (current, next) => this.setState({ slideIndex: next })
@@ -287,8 +289,7 @@ export class CinemaSlider extends Component {
         const settingsAffil = {
           centerMode:false,     
           draggable:false,    
-          arrows:true,    
-          autoplaySpeed:1500,     
+          arrows:true,        
           slidesToShow:8,     
           slidesToScroll:6,   
           dots:true,
@@ -390,7 +391,7 @@ export class CinemaSlider extends Component {
         const affilSlides = () =>  
         affilateImageSlider.map((num, index) => (
           <div className="affilSliderItem">
-            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`}} className="scrollToButton">
+            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
                 <Text className="scrollToSlideText" color="#666666" align="center" fontWeight={300} fontSize={14}>{num.nameAffilate}</Text>
             </div>
           </div>    
