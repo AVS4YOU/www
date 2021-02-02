@@ -116,8 +116,8 @@ render(){
           <div className="buy-block-wrapper">
             <div className="buy-block"> 
               <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
-              <Text className="access-sub-text">{this.props.t("subscription")}</Text>
-              <Text className="access-limit">{this.props.t("1 year access")}</Text>
+              <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
+              <Text className="access-limit">{this.props.t("1 year access_rc")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
                 <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
@@ -140,8 +140,8 @@ render(){
               </div>
               <div className="unlimited-block-content">
                 <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited")}</Text>
-                <Text className="access-sub-text">{this.props.t("subscription")}</Text>
-                <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
+                <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
+                <Text className="access-limit">{this.props.t("Unlimited access_rc")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
                   <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
