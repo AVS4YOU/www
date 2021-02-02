@@ -448,7 +448,10 @@
     "jpn" : ".",
     "jpAffiliate" : ".",
     "support avs4you com" : "https://support.avs4you.com/fr/refund.aspx",
-
+    "support avs4you" : "https://support.avs4you.com/fr",
+    "avs4you guides index" : "https://www.avs4you.com/fr/guides/index.aspx",
+    "onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/fr/index.aspx",
+    "support avs4you faq" : "https://support.avs4you.com/fr/faq.aspx",
 	
 	
     "*****************************Buy Now page********************************": "*****************************Buy Now page********************************",
@@ -500,8 +503,8 @@
     "October" : "octobre",
     "November" : "novembre",
     "December" : "décembre",
-    "Time limited offer" : "L'offre est",
-    "prices valid till" : "valide jusqu’à",
+    "Time limited offer" : "L'offre est valide",
+    "prices valid till" : "jusqu’à",
     "ad-free, virus-free" : " ",
 
 
