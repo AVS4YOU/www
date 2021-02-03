@@ -238,7 +238,7 @@ render(){
                 <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
                 <li><a href="https://www.avs4you.com/contact.aspx" target="_blank" rel="noreferrer noopener">Contact us</a></li>
             </ul>
-            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
+            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
         </div>
         <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>

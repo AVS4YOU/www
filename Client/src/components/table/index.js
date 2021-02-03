@@ -208,7 +208,7 @@ tr:first-child td{
  class TableRow extends React.Component {
     render() {
       const {
-        data, headerTable, footerTable, hrefTable
+        data
       } = this.props;
       const row = data.map((data) =>
       <tr>
