@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import Button from '../button';
 import { CSSTransition } from 'react-transition-group';
 import CategorySelectorComponent from '../category-selector-component';
 

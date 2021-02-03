@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Text from '../text';
 import ErrorBlock from '../error-block';
 
 const StyledInputWrapper = styled.div`

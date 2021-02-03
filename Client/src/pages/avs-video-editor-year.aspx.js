@@ -4,7 +4,6 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
-import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import HeaderRowItem from '../components/header-row-item';
 import styled from 'styled-components';

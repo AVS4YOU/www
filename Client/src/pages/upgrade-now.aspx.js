@@ -1,12 +1,10 @@
-import React, {useRef } from "react";
+import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/upgrade-now.less";
 import { Link as GatsbyLink } from 'gatsby';
-import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
 import ContentSelector from '../components/content-selector';
 import Button from "../components/button";

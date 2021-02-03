@@ -7,7 +7,6 @@ function getLastDayOfMonth(year, month) {
     return date.getDate();
   }
   
-  const regExp = /=regnow:(.*):/;
   const date = new Date();
   const currentMounth = date.getMonth();
   const currentYear = date.getFullYear();
