@@ -118,16 +118,16 @@ class Footer extends React.Component{
                         </Link>
                     </FooterItem>
                     <FooterItem header={this.props.t("Help Center")}>
-                        <a href="https://support.avs4you.com/" target="_blank" rel="noreferrer noopener">
+                        <a href={this.props.t("support avs4you")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
                         </a>
-                        <a href="https://www.avs4you.com/guides/index.aspx" target="_blank" rel="noreferrer noopener">
+                        <a href={this.props.t("avs4you guides index")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Guides")}</Text>
                         </a>
-                        <a href="https://onlinehelp.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener">
+                        <a href={this.props.t("onlinehelp avs4you index")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
                         </a>
-                        <a href="https://support.avs4you.com/faq.aspx" target="_blank" rel="noreferrer noopener">
+                        <a href={this.props.t("support avs4you faq")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
                         </a>
                     </FooterItem>

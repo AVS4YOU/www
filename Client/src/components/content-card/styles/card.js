@@ -28,7 +28,7 @@ text-align: left;
 .headerDescription{
 padding-top:30px;
 padding-bottom:20px;
-font-family: Montserrat;
+font-family: 'Open Sans',sans-serif,Arial;
 }
 @media (min-width: 576px) {
   max-width: ${remy(650)};
@@ -111,7 +111,7 @@ perspective: 1000px;
 transition: all .25s ease-in-out;
 margin:2px;
 border: 1px solid #E2E2E2;
-font-family:Montserrat;
+font-family:'Open Sans',sans-serif,Arial;
 &:focus,
 &:hover {
   box-shadow: 0 0 ${remy(40)} rgba(0,0,0,.15);
@@ -167,7 +167,7 @@ export const CardTitle = styled.div`
   word-wrap: break-word;
   font-size: 18px;
   font-weight: 700;
-  font-family:Montserrat;
+  font-family:'Open Sans',sans-serif,Arial;
   opera:-o-prefocus {
     width: 80%;
   }
@@ -210,7 +210,7 @@ perspective: 1000px;
 transition: all .25s ease-in-out;
 margin:2px;
 border: 1px solid #E2E2E2;
-font-family:Montserrat;
+font-family:'Open Sans',sans-serif,Arial;
 &:focus,
 &:hover {
   box-shadow: 0 0 ${remy(40)} rgba(0,0,0,.15);

@@ -33,7 +33,7 @@ const MainPageWrapper = styled.div`
   .headerContentWrapper{
     max-width: 400px;
     padding-left:45%;
-    font-family:Montserrat;
+    font-family:'Open Sans',sans-serif,Arial;
   }
 
   .headerBackground{
@@ -43,7 +43,7 @@ const MainPageWrapper = styled.div`
 
   .headerDescription{
     padding-top:15px;
-    font-family:Montserrat;
+    font-family:'Open Sans',sans-serif,Arial;
   }
 
   .buttonsWrapper{
@@ -153,7 +153,7 @@ render(){
         title={this.props.t("AVS Video Editor - easy video editing software for Windows.")}
         metaDescription=""
         metaKeywords=""
-      >
+      >    
         <ProductPagesWrapper>  
           <div className="headerBackground">
           <div className="headerBackgroundImage">

@@ -468,7 +468,11 @@
 	"ad-free, virus-free" : " ",
 	"One license key can be used to activate the software on a single computer If you want to use the software on multiple computers you need to buy the appropriate number of subscriptions" : "One license key can be used to activate the software on a single computer. If you want to use the software on multiple computers you need to buy the appropriate number of subscriptions.",
 	"or" : "or",
-
+	"support avs4you com" : "https://support.avs4you.com/refund.aspx",
+	"support avs4you" : "https://support.avs4you.com/",
+	"avs4you guides index" : "https://www.avs4you.com/guides/index.aspx",
+	"onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/index.aspx",
+	"support avs4you faq" : "https://support.avs4you.com/faq.aspx",
 
 	"*****************************404********************************": "*****************************404********************************",
 	"Page not found": "Page not found",
@@ -1000,6 +1004,11 @@
 "Create your own audiobooks" : "Create your own audiobooks",
 "Enhance your audio with special effects and filters Record audio data from various inputs" : "Enhance your audio with special effects and filters. Record audio data from various inputs",
 "Save audio files to popular audio formats" : "Save audio files to popular audio formats",
+"Make your home videos" : "Make your home videos look professional with a full set of video editing tools. Play with 300+ visual effects and transitions.",
+"Easily convert videos" : "Easily convert videos to all key formats: MP4, MPEG, DVD, WMV, AVI + 60  more. Use customized profiles for video playback on any device.",
+"Edit video files" : "Edit video files without re-encoding and quality loss. Cut, delete unwanted parts, change scene sequence. Burn video to DVD or Blu-Ray.",
+"Convert your audio" : "Convert your audio files between various formats: MP3, WMA, WAV, M4A, FLAC and others. Create your own audiobooks.",
+"Enhance your audio" : "Enhance your audio with special effects and filters. Record audio data from various inputs. Save audio files in popular audio formats.",
 
 "*****************************UNISTALL-OFFER********************************" : "*****************************UNISTALL-OFFER********************************",
 "Wait" : "Wait!",
@@ -1323,8 +1332,9 @@
 	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/index.aspx",
 	"header_support_avs4you_faq" : "https://support.avs4you.com/faq.aspx",
 	
-	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+
+	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	
  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",

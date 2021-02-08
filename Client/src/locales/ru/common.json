@@ -466,6 +466,11 @@
   "59/00": "2499 руб.",
   "$199/00": "7999 руб.",
   "$": "",
+  "support avs4you com" : "https://support.avs4you.com/refund.aspx",
+  "avs4you guides index" : "https://www.avs4you.com/ru/guides/index.aspx",
+  "support avs4you" : "https://support.avs4you.com/",
+	"onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/index.aspx",
+	"support avs4you faq" : "https://support.avs4you.com/faq.aspx",
 
 
   "*****************************404********************************": "*****************************404********************************",
@@ -999,6 +1004,11 @@
   "Create your own audiobooks": "Создавайте собственные аудиокниги",
   "Enhance your audio with special effects and filters Record audio data from various inputs": "Улучшите звук с помощью специальных эффектов и фильтров. Записывайте аудиоданные с различных источников",
   "Save audio files to popular audio formats": "Сохраняйте аудиофайлы в популярных форматах",
+  "Make your home videos" : "Пусть ваши домашние видео выглядят профессионально благодаря полному набору инструментов для редактирования видео. Играйте с более чем 300 эффектами и переходами.",
+  "Easily convert videos" : "С легкостью конвертируйте видео во все ключевые форматы: MP4, MPEG, DVD, WMV, AVI, HDV, и еще 60 других. Используйте индивидуальные профили для воспроизведения видео на любом устройстве.",
+  "Edit video files" : "Редактируйте видеофайлы без перекодирования и потери качества. Вырезайте, удаляйте ненужные фрагменты, меняйте последовательность сцен. Записывайте файлы на диски DVD или Blu-Ray.",
+  "Convert your audio" : "Конвертируйте аудиофайлы между различными форматами: MP3, WAV, WMA, M4A, FLAC и другими. Создавайте собственные аудиокниги.",
+  "Enhance your audio" : "Улучшите звук с помощью специальных эффектов и фильтров. Записывайте аудиоданные с различных источников. Сохраняйте аудиофайлы в популярных форматах.",
 
 
 
@@ -1341,13 +1351,14 @@
 	"partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" : "https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners_ru.pdf",
 	"register-support-avs4you-refund" : "https://support.avs4you.com/refund.aspx",
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/login.aspx",
-  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
   "header_support_avs4you" : "https://support.avs4you.com",
 	"header_avs4you_guides" : "https://www.avs4you.com/guides/index.aspx",
 	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/index.aspx",
 	"header_support_avs4you_faq" : "https://support.avs4you.com/faq.aspx",
 	
+  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
   "slider video converter jpg" :  "ru_slider_video_converter.jpg",
   "slider video editor jpg" : "ru_slider_video_editor.jpg",

@@ -447,7 +447,11 @@
     "59/00" : "49.00",
     "jpn" : ".",
     "jpAffiliate" : ".",
-
+    "support avs4you com" : "https://support.avs4you.com/fr/refund.aspx",
+    "support avs4you" : "https://support.avs4you.com/fr",
+    "avs4you guides index" : "https://www.avs4you.com/fr/guides/index.aspx",
+    "onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/fr/index.aspx",
+    "support avs4you faq" : "https://support.avs4you.com/fr/faq.aspx",
 	
 	
     "*****************************Buy Now page********************************": "*****************************Buy Now page********************************",
@@ -459,7 +463,7 @@
     "Unlimited access_rc":"Accès illimité à 5 logiciels 5 AVS4YOU",
     "Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" : "Obtenir 5 outils professionnels en un seul paquet  + Mises à jour gratuites + Assistance gratuite",
     "Why choose AVS4YOU?":"Pourquoi choisir AVS4YOU ?",
-    "5 multimedia programs in 1 package":"5 programmes multimédia en 1 seul paquet",
+    "5 multimedia programs in 1 package":"5 logiciels multimédia en 1 seul paquet",
     "100% secure, ad-free, virus-free":"100% sécurisé, sans publicité, sans virus",
     "30-day Money-back guarantee":"Garantie de remboursement valable 30 jours",
     "No watermark":"Aucun filigrane",
@@ -500,7 +504,7 @@
     "November" : "novembre",
     "December" : "décembre",
     "Time limited offer" : "L'offre est valide",
-    "prices valid till" : "valide jusqu’à",
+    "prices valid till" : "jusqu’à",
     "ad-free, virus-free" : " ",
 
 
@@ -1047,6 +1051,11 @@
     "Create your own audiobooks" : "Créez vos livres audio",
     "Enhance your audio with special effects and filters Record audio data from various inputs" : "Améliorez vos audios avec des effets spéciaux et des filtres. Enregistrez les audios depuis des sources différentes",
     "Save audio files to popular audio formats" : "Enregistrez les fichiers audio aux formats populaires",
+    "Make your home videos" : "Créez vos vidéos à l’aide des outils professionnels. Profitez de plus de 300 effets visuels et transitions.",
+    "Easily convert videos" : "Convertissez facilement vos vidéos à tous les formats populaires : MP4, MPEG, DVD, WMV, AVI et encore 50 de plus. Utilisez les profiles personnalisés pour la lecture de vidéo sur tous les appareils.",
+    "Edit video files" : "Modifiez les fichiers vidéo sans aucun réencodage et perte de qualité. Coupez et supprimez les morceaux indésirables, changez la séquence des scènes. Gravez les vidéos  pour les lire sur les DVD ou Blu-Ray.",
+    "Convert your audio" : "Convertissez vos fichiers audio aux formats différents : MP3, WMA, WAV, M4A, FLAC et d’autres. Créez vos livres audio.",
+    "Enhance your audio" : "Améliorez vos audios avec des effets spéciaux et des filtres. Enregistrez les audios à partir de différentes sources. Enregistrez les fichiers audio sous les formats populaires.",
 
     "*****************************PRECISE-VIDEO-TOOLS********************************" : "*****************************PRECISE-VIDEO-TOOLS********************************",
     "Trim, cut, split, crop, merge, rotate videos to create impressive movies" : "Rognez, coupez, divisez, recadrez, fusionnez, faites pivoter les vidéos pour créer des films impressionnants.",
@@ -1384,12 +1393,15 @@
 	"partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" : "https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners_fr.pdf",
 	"register-support-avs4you-refund" : "https://support.avs4you.com/fr/refund.aspx",
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/fr/login.aspx",
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "header_support_avs4you" : "https://support.avs4you.com/fr",
 	"header_avs4you_guides" : "https://www.avs4you.com/guides/fr/index.aspx",
 	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/fr/index.aspx",
 	"header_support_avs4you_faq" : "https://support.avs4you.com/fr/faq.aspx",
+
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+
+    
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "fr_slider_video_converter.jpg",
     "slider video editor jpg" : "fr_slider_video_editor.jpg",

@@ -10,6 +10,8 @@ import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
+import ScreenshotsCarousel from '../components/screenshot-carousel';
+import LstDay from '../components/last-day';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -106,22 +108,23 @@ render(){
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
+        <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
           <div className="sale-text">
-            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {mounth[currentMounth]} {this.props.t("only!")}</Text>
+            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`${mounth[currentMounth]}`)} {this.props.t("only!")}</Text>
           </div>
           <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
           <div className="buy-block-wrapper">
             <div className="buy-block"> 
               <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
-              <Text className="access-sub-text">{this.props.t("subscription")}</Text>
-              <Text className="access-limit">{this.props.t("1 year access")}</Text>
+              <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
+              <Text className="access-limit">{this.props.t("1 year access_rc")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
-                <Text className="prev-price-text">{this.props.t("$69.00")}</Text>
-                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39.00")}</Text>
+                <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
+                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-              <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+              <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
               <Button
                 backgroundColor="orange"
                 color="#ffffff"
@@ -136,16 +139,16 @@ render(){
                 <Text as="p">{this.props.t("Most popular")}</Text>
               </div>
               <div className="unlimited-block-content">
-                <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited")}</Text>
-                <Text className="access-sub-text">{this.props.t("subscription")}</Text>
-                <Text className="access-limit">{this.props.t("Unlimited access")}</Text>
+                <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited_rc")}</Text>
+                <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
+                <Text className="access-limit">{this.props.t("Unlimited access_rc")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
                 <div className="price-block">
-                  <Text className="prev-price-text">{this.props.t("$199.00")}</Text>
-                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59.00")}</Text>
+                  <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
+                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
-                <Text className="limited-offer-text last">{this.props.t("prices valid till")} {mounth[currentMounth]} {getLastDayOfMonth(currentYear, currentMounth)}, {currentYear}</Text>
+                <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button
                   href={this.state.hrefUnlim}
                   backgroundColor="orange"
@@ -162,6 +165,13 @@ render(){
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
+        <ScreenshotsCarousel
+            titleImage={[this.props.t("AVS Video Editor"), this.props.t("AVS Video Converter"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Editor"), this.props.t("AVS Audio Converter")]}
+            descriptionImage={[this.props.t("Make your home videos"), this.props.t("Easily convert videos"), this.props.t("Edit video files"), this.props.t("Enhance your audio"), this.props.t("Convert your audio")]}
+            imageNames={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            imageNamesPopup={[this.props.t("video editor slider2 jpg"), this.props.t("video converter edit your videos jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
+          />
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Why choose AVS4YOU?")}
@@ -249,7 +259,7 @@ render(){
             </PanelCollapse>
             <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
               <div className="collapseContent">
-                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href="https://support.avs4you.com/refund.aspx" target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href={this.props.t("support avs4you com")} target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
                   </Text>
               </div>
             </PanelCollapse>

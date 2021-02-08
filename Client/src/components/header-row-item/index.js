@@ -97,7 +97,7 @@ const RowContent = styled.div`
         padding-top: 25px;
         padding-bottom: 25px;
         width:60%;
-        font-family:Montserrat;
+        font-family:'Open Sans',sans-serif,Arial;
         .tableWrapper{
             display: table;
             margin: auto;
@@ -133,7 +133,7 @@ const RowContent = styled.div`
         color:#555555;
         font-weight: 500;
         list-style-type: none;
-        font-family:Montserrat;
+        font-family:'Open Sans',sans-serif,Arial;
         font-size:14px;
         &>span{
             display:block;
@@ -195,16 +195,16 @@ const RowContent = styled.div`
     }
     .headerText{
         padding-left:15px;
-        font-family:Montserrat;
+        font-family:'Open Sans',sans-serif,Arial;
     }
     .headerDescription{
         padding-left:15px;
-        font-family:Montserrat;
+        font-family:'Open Sans',sans-serif,Arial;
         padding-bottom: 3px;
     }
     .headerButtonsWrapper{
         padding-top: 30px;
-        font-family:Montserrat;
+        font-family:'Open Sans',sans-serif,Arial;
     }
     .buttonsWrapper{
         display: table;
