@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from "prop-types";
 import Text from "../text";
 import CloseIcon from '../../images/common/icons/close-popup.svg';
