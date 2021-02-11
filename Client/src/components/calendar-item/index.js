@@ -341,7 +341,7 @@ class CalendarItem extends React.Component {
           <>
             <div className="popupBlock topTree">
             <div className="bottomTree">
-            <div onClick={this.onClosePopup} className="closeButton"></div>
+            <div onClick={this.onClosePopup} className="closeButton" aria-hidden="true"></div>
               <Text className="popupHeader">
                 {isExpired
                   ? "OFFER EXPIRED"
@@ -357,7 +357,7 @@ class CalendarItem extends React.Component {
               {textButton && hrefButton && this.renderButton(textButton, hrefButton)}
               </div>
               </div>
-            <div onClick={this.onClosePopup} className="closeBackground"></div>
+            <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>
           </>
         )}
       </StyledCalendarItem>

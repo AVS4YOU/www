@@ -90,7 +90,7 @@ render(){
           </div>
         </div>
         <div className="form screen-wrapper">
-          <img src={mailIcon}/>
+          <img src={mailIcon} alt=""/>
           <div className="reseller-from-wrapper">
             <Form
               formHeader={this.props.t("To become an AVS4YOU reseller, please, use the form below:")}

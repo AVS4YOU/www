@@ -2,8 +2,9 @@ import React from "react";
 import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
 import ImageGQL from '../components/image-gql';
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "react-scroll";
 import Layout from "../components/layout";
+import Link from "../components/link";
 
 
 class avsYoutubeVideoEditor extends React.PureComponent {
@@ -47,9 +48,9 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     
 <header className="Youtubeheader">
     <div className="lfb_header">
-        <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener"></a>
+    <Link className="lfb_logo" to="/" target="_blank" rel="noreferrer noopener"></Link>
         <ul className="topmainmenu max-width-1">
-            <li className="topmenuoption"><a href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener">Main</a></li>
+            <li className="topmenuoption"><Link to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
             <ScrollLink to="to_easy_steps" spy={true} smooth={true}>
             <li className="topmenuoption to_easy_steps">Steps</li>
             </ScrollLink>
@@ -151,7 +152,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     
     <div className="lfb_carousel">
         <div className="slick-reviews slick-initialized slick-slider">
-            <div aria-live="polite" className="slick-list draggable" tabindex="0"><div className="slick-track"><div className="item slick-slide slick-active" data-slick-index="0" aria-hidden="false">
+            <div aria-live="polite" className="slick-list draggable"><div className="slick-track"><div className="item slick-slide slick-active" data-slick-index="0" aria-hidden="false">
                 <div className="lfb_av lfb_av_as"></div>
                 <div className="lfb_profile">
                     <div className="lfb_name">Andy Stephens</div>
@@ -186,22 +187,22 @@ class avsYoutubeVideoEditor extends React.PureComponent {
                     
 <div className="vel_footer">
     <div className="vel_page_footer">
-        <div className="vph_logo"><a href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener"></a></div>
+        <div className="vph_logo"><Link to="/" target="_blank" rel="noreferrer noopener"></Link></div>
         <div className="vph_menu_footer">
             <ul>
-                <li><a href="https://www.avs4you.com/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</a></li>
-                <li><a href="https://www.avs4you.com/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</a></li>
+                <li><Link to="/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</Link></li>
+                <li><Link to="/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</Link></li>
                 <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank" rel="noreferrer noopener">Help</a></li>
                 <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
-                <li><a href="https://www.avs4you.com/contact.aspx" target="_blank" rel="noreferrer noopener">Contact us</a></li>
+                <li><Link to="/about-us.aspx#contact-us" target="_blank" rel="noreferrer noopener">Contact us</Link></li>
             </ul>
-            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
+            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com" target="_blank" rel="noreferrer noopener">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
         </div>
         <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
         </div>
     </div>
 </div>

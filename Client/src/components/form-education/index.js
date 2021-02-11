@@ -265,7 +265,7 @@ class FormEducation extends React.Component {
     request = () => {
         if (this.verifyData()) {
 
-            if(Object.keys(this.state.file).length != 0) {
+            if(Object.keys(this.state.file).length !== 0) {
                 let formData = new FormData();
                 let fileNames = [];
 
@@ -385,7 +385,7 @@ class FormEducation extends React.Component {
     setInputData = (inputName, value) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState(
             {
@@ -397,7 +397,7 @@ class FormEducation extends React.Component {
     setError = (inputName, newStatus) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         if (field.status !== newStatus) {
             this.setState(
@@ -411,7 +411,7 @@ class FormEducation extends React.Component {
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState({
             [inputName]: { ...field, inputClassName: className }
@@ -461,7 +461,7 @@ class FormEducation extends React.Component {
     onBlurInput = (e) => {
         let status = ErrorStatus.NoError;
 
-        if (e.target.name == "email" && e.target.value && this.isEmailInvalid(e.target.value)){
+        if (e.target.name === "email" && e.target.value && this.isEmailInvalid(e.target.value)){
             status = ErrorStatus.Incorrect;
         }
 
@@ -565,7 +565,7 @@ class FormEducation extends React.Component {
     }
 
     render() {
-        const { formHeader, formName, formEmailAddress, formOccupation, formInstitution, formNumberOfSub } = this.props;
+        //const { formHeader, formName, formEmailAddress, formOccupation, formInstitution, formNumberOfSub } = this.props;
         return (
             <StyledForm>
                 {this.state.formSended
@@ -595,7 +595,7 @@ class FormEducation extends React.Component {
 
                             />
                             <Input
-                                tabIndex="1"
+                                tabIndex="0"
 
                                 inputName="email"
                                 inputLabel={this.props.formEmailAddress}
@@ -633,7 +633,7 @@ class FormEducation extends React.Component {
 
                             />
                             <Input
-                                tabIndex="1"
+                                tabIndex="0"
 
                                 inputName="institution"
                                 inputLabel={this.props.formInstitution}
@@ -670,7 +670,7 @@ class FormEducation extends React.Component {
                         </div>
                         <Input
                             as="textarea"
-                            tabIndex="2"
+                            tabIndex="0"
 
                             inputName="comment"
                             inputLabel=""
@@ -721,7 +721,7 @@ class FormEducation extends React.Component {
                         </div>
 
                         <Button
-                            tabIndex="1"
+                            tabIndex="0"
                             className="getCouponButton"
                             onClick={this.onClick}
                             backgroundColor="blue"

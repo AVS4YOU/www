@@ -21,7 +21,7 @@ render(){
         metaKeywords=""
       >
           <div className="bodyWrapper">
-            <img className="mainImage" src={ImageMain}/>
+            <img className="mainImage" src={ImageMain} alt=""/>
             <Text className="common__heading" as="h1">{this.props.t("Page not found")}</Text>
             <Text>{this.props.t("Ooops we could not find this page It might have been removed or never existed")}</Text>
             <div className="yourSteps">

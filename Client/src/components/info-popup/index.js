@@ -61,9 +61,9 @@ const StyledPopupWrapper = styled.div`
 const InfoPopup = (props) =>{
     return(
         <StyledPopupWrapper {...props}>
-            <div onClick={props.closePopupFunction} className="background"></div>
-            <div onClick={undefined} className="infoPopup">
-                <div onClick={props.closePopupFunction} className="closeButton"></div>
+            <div onClick={props.closePopupFunction} className="background" aria-hidden="true"></div>
+            <div onClick={undefined} className="infoPopup" aria-hidden="true">
+                <div onClick={props.closePopupFunction} className="closeButton" aria-hidden="true"></div>
                 <Text 
                     color="#000000"
                     fontSize={20}

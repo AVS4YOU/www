@@ -18,12 +18,13 @@ import audioIconWhite from '../images/main-page/icons/audio_icon_white.svg'
 import allSoftIcon from '../images/upgrade-now/all-software.svg'
 import discountIcon from '../images/upgrade-now/icon-discount.svg'
 
-function getLastDayOfMonth(year, month) {
+/*function getLastDayOfMonth(year, month) {
   let date = new Date(year, month + 1, 0);
   return date.getDate();
 }
 
-const regExp = /=regnow:(.*):/;
+const regExp = /=regnow:(.*):/;*/
+
 const date = new Date();
 const currentMounth = date.getMonth();
 const currentYear = date.getFullYear();
@@ -228,64 +229,64 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply video and audio effects")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge video files")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Split videos by length, size, chapters")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Correct aspect ratio. Crop scale")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Export audio from video in MP3")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -316,57 +317,57 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key audio formats")}
                     </Text></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply audio effects")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge audio files")}
                     </Text></td>
-                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Use multi-thread conversion")}
                     </Text></td>
-                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create audiobooks")}
                     </Text></td>
-                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create ringtones")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
-                    <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -397,85 +398,85 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Screen capture and record video")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Trim, crop, split and join videos")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply effects, transitions, overlay")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Video stabilization")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Chroma key")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Colour correction")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Freeze frame. Playback speed")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Rotate, shift, mirror or zoom")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Save to HDD, devices, for web")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -506,50 +507,50 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key audio formats")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Record audio")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, join, mix")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply audio effects/filters")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Generate sounds")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Multitrack editing")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -580,50 +581,50 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Capture screen and record video")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, split and merge videos")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Add transitions")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Change clip sequence")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -658,64 +659,64 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply video and audio effects")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge video files")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Split videos by length, size, chapters")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Correct aspect ratio. Crop scale")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Export audio from video in MP3")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
-                  <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
+                  <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -748,68 +749,68 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Convert all key audio formats")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, apply audio effects")}
                     </Text></td>
                     <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                    <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Merge audio files")}
                     </Text></td>
                     <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                    <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Use multi-thread conversion")}
                     </Text></td>
                     <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                    <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create audiobooks")}
                     </Text></td>
                     <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                    <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create ringtones")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Command-line conversion")}
                     </Text></td>
                     <td><Text className="choose-program__list">
-                    <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                    <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   <td><Text className="choose-program__list">
-                  <div><center><img src={IndicatorCross} className="indicatorCross" /> </center></div>
+                  <div><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></div>
                     </Text></td>
                   </tr>
                   </table>
@@ -844,85 +845,85 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats, Full HD, 2K QHD and 4K UHD")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Screen capture and record video")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Trim, crop, split and join videos")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply effects, transitions, overlay")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Video stabilization")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Chroma key")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Colour correction")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Freeze frame. Playback speed")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Rotate, shift, mirror or zoom")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create stylish DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Save to HDD, devices, for web")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -956,50 +957,50 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key audio formats")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Record audio")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, join, mix")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Apply audio effects/filters")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Generate sounds")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Multitrack editing")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Voice logo in output audio with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -1033,50 +1034,50 @@ render(){
                   <td><Text className="choose-program__list">
                   {this.props.t("Edit all key video formats without changing the original format")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Capture screen and record video")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Cut, trim, split and merge videos")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Add transitions")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Change clip sequence")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Create DVD/Blu-ray menus")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
                   </tr>
                   <tr>
                   <td><Text className="choose-program__list">
                   {this.props.t("Watermark in output videos with edits")}
                     </Text></td>
-                    <td><center><img src={IndicatorCheck} className="checkIndicator" /> </center> </td>
-                  <td><center><img src={IndicatorCross} className="indicatorCross" /> </center></td>
+                    <td><center><img src={IndicatorCheck} className="checkIndicator" alt=""/> </center> </td>
+                  <td><center><img src={IndicatorCross} className="indicatorCross" alt=""/> </center></td>
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
@@ -1093,7 +1094,7 @@ render(){
             </StyledMainContentWrapper>
 
                   <div className="availableDiscount">
-          <img  src={discountIcon}/>
+          <img  src={discountIcon} alt=""/>
         </div>
 
             <div className="allSoftaware"><Text as="h2" className="title-discover"> {this.props.t("Buy now at the")} <span className="title-discover-orange">{this.props.t("best price")}!</span> <br />{this.props.t("In")} {mounth[currentMounth]} {this.props.t("only")}!</Text></div>

@@ -106,9 +106,9 @@ class Layout extends React.PureComponent {
 
       if(this.props.getDevice){
 
-        if(this.state.isMobile == true) {
+        if(this.state.isMobile === true) {
           this.props.getDevice("Mobile");
-        } else if (this.state.isTablet == true) {
+        } else if (this.state.isTablet === true) {
           this.props.getDevice("Tablet");
         } else {
           this.props.getDevice("Desktop");
@@ -133,9 +133,9 @@ class Layout extends React.PureComponent {
 
     if(this.props.getDevice){
 
-      if(this.state.isMobile == true) {
+      if(this.state.isMobile === true) {
         this.props.getDevice("Mobile");
-      } else if (this.state.isTablet == true) {
+      } else if (this.state.isTablet === true) {
         this.props.getDevice("Tablet");
       } else {
         this.props.getDevice("Desktop");
@@ -202,10 +202,10 @@ class Layout extends React.PureComponent {
         <span className="PLnewAvsText">{this.props.t("Enjoy AVS4YOU amazing gifts and discounts each day up to")} <span className="PLnewAvsTextCoupon"> {this.props.t("99% OFF")} </span>{this.props.t("multi lang")}</span>
         </a>
           <div className="PLnewAvsLeft">
-            <img src={PlAVS}></img>
+            <img src={PlAVS} alt=""></img>
           </div>
           <div className="PLnewAvsRight">
-          <img src={PlAVS}></img>
+          <img src={PlAVS} alt=""></img>
           </div>
         </div>
         </StyledPL>

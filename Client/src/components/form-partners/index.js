@@ -5,7 +5,6 @@ import Input from '../input';
 import Button from '../button';
 import InfoPopupForm from '../info-popup-form';
 import ReCAPTCHA from "react-google-recaptcha";
-import { useTranslation } from "react-i18next";
 
 import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
 
@@ -211,7 +210,7 @@ class FormPartners extends React.Component {
     setInputData = (inputName, value) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState(
             {
@@ -223,7 +222,7 @@ class FormPartners extends React.Component {
     setError = (inputName, newStatus) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         if (field.status !== newStatus) {
             this.setState(
@@ -237,7 +236,7 @@ class FormPartners extends React.Component {
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState({
             [inputName]: { ...field, inputClassName: className }
@@ -276,7 +275,7 @@ class FormPartners extends React.Component {
     onBlurInput = (e) => {
         let status = ErrorStatus.NoError;
 
-        if (e.target.name == "email" && e.target.value && this.isEmailInvalid(e.target.value)){
+        if (e.target.name === "email" && e.target.value && this.isEmailInvalid(e.target.value)){
             status = ErrorStatus.Incorrect;
         }
 
@@ -363,7 +362,7 @@ class FormPartners extends React.Component {
 
                             />
                             <Input
-                                tabIndex="1"
+                                tabIndex="0"
 
                                 inputName="email"
                                 inputLabel={this.props.emailAddressText}
@@ -400,7 +399,7 @@ class FormPartners extends React.Component {
                         </div>
                         <Input
                             as="textarea"
-                            tabIndex="2"
+                            tabIndex="0"
 
                             inputName="comment"
                             inputLabel=""
@@ -426,7 +425,7 @@ class FormPartners extends React.Component {
                         </div>
 
                         <Button
-                            tabIndex="1"
+                            tabIndex="0"
                             className="getCouponButton"
                             onClick={this.onClick}
                             backgroundColor="blue"

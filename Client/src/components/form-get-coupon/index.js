@@ -200,7 +200,7 @@ class FormGetCoupon extends React.Component {
     setInputData = (inputName, value) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState(
             {
@@ -212,7 +212,7 @@ class FormGetCoupon extends React.Component {
     setError = (inputName, newStatus) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         if (field.status !== newStatus) {
             this.setState(
@@ -226,7 +226,7 @@ class FormGetCoupon extends React.Component {
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState({
             [inputName]: { ...field, inputClassName: className }
@@ -319,7 +319,7 @@ class FormGetCoupon extends React.Component {
             <StyledForm>
                 <div className="inputsWrapper">
                     <Input
-                        tabIndex="1"
+                        tabIndex="0"
 
                         inputName="email"
                         inputLabel={this.props.t("Email address")}
@@ -338,7 +338,7 @@ class FormGetCoupon extends React.Component {
                 </div>
 
                 <Button
-                    tabIndex="1"
+                    tabIndex="0"
                     className="getCouponButton mobile"
                     onClick={this.onClick}
                     backgroundColor="orange"
@@ -359,7 +359,7 @@ class FormGetCoupon extends React.Component {
 
                 <div className="checkBoxWrapper">
                     <InputCheckbox
-                        tabIndex="2"
+                        tabIndex="0"
 
                         inputName="checkbox"
 

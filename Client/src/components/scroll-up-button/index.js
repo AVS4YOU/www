@@ -27,11 +27,11 @@ const ClassToggleStyled = styled.div`
 const ScrollUpButton = (props) => (
     <ClassToggleStyled>
         <Controller>
-            <Scene duration={0} classToggle="show" triggerHook="onEnter" triggerElement={props.triggerId && '#', props.triggerId} indicators={false}>
+            <Scene duration={0} classToggle="show" triggerHook="onEnter" triggerElement={(props.triggerId && '#', props.triggerId)} indicators={false}>
                 {() => (
                     <div className={props.className}>
                         <Link spy={true} smooth={true} offset={0} duration={500} to="___gatsby" className={props.ButtonClassName}>
-                            <img src={ScrollUpIcon}></img>
+                            <img src={ScrollUpIcon} alt=""></img>
                         </Link>
                     </div>
                 )}

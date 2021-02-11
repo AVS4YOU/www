@@ -69,7 +69,7 @@ class InputCheckbox extends React.PureComponent {
 
     render() {
 
-        const { className, onChange, inputName, errorText, inputClassName, value } = this.props;
+        const { className, onChange, inputName, errorText, inputClassName } = this.props;
 
         return (
             <StyledInputWrapper

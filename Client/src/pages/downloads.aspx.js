@@ -187,7 +187,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
-                <a target="_blank" rel="noreferrer noopener" mainLink={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>

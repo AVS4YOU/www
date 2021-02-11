@@ -391,7 +391,7 @@ export class CinemaSlider extends Component {
         const affilSlides = () =>  
         affilateImageSlider.map((num, index) => (
           <div className="affilSliderItem">
-            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
+            <div aria-hidden="true" onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
                 <Text className="scrollToSlideText" color="#666666" align="center" fontWeight={300} fontSize={14}>{num.nameAffilate}</Text>
             </div>
           </div>    
@@ -401,7 +401,7 @@ export class CinemaSlider extends Component {
   MainSliderImages.map((num, index) => (
     <div className="effectsSliderItem">
       <div className="imgpadSlider">  
-          <img className="imgdetails" src= {num.img} />
+          <img className="imgdetails" src= {num.img} alt=""/>
        </div>
             <div className="CardsItem">
                 <Card >
@@ -426,8 +426,8 @@ export class CinemaSlider extends Component {
 return (
   <CinemaSliderStyle>
     <div style={{paddingTop:"40px"}}>
-        <Text color="#ffffff" align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
-        <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >{this.props.headerDescriptionSlider}</Text>      
+        <Text align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
+        <Text align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >{this.props.headerDescriptionSlider}</Text>      
     </div>
         <div className="CCinemaSlider">
           <Slider
