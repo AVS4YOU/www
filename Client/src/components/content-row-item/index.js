@@ -396,7 +396,7 @@ const ContentRowItem = (props) => {
         var parser = new UAParser();
         var result = parser.getResult();
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
-    });
+    }, [setTouchDevice]);
 
     if (props.imgLeft){
         return(

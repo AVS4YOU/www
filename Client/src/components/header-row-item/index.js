@@ -598,7 +598,7 @@ const HeaderMobile = (props) =>
 {
     return(
         <Text className="HeaderListItem mobile" as="h3" color="#000000" fontSize={28}>
-            <Text className="mobileFreeInfo" as="span">{props.free && "Free" + " "}</Text> {props.headerText} 
+            <Text className="mobileFreeInfo" as="span">{props.free && "Free"} </Text> {props.headerText} 
         </Text>
     )
 }
@@ -648,7 +648,7 @@ const ContentRowItem = (props) => {
         var parser = new UAParser();
         var result = parser.getResult();
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
-    });
+    }, [setTouchDevice]);
 
     if (props.imgLeft){
         return(

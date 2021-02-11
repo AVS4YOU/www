@@ -28,7 +28,7 @@ const DownloadScrollButton = (props) => {
         var parser = new UAParser();
         var result = parser.getResult();
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
-    });
+    }, [setTouchDevice]);
 
 
     return(

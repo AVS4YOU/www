@@ -163,8 +163,8 @@ const CustomPlayer = withSoundCloudAudio(props => {
 		if(prevUrl !== streamUrl) {
 			setAutoPlay(true);
 		}
-	},[streamUrl])
-
+	//},[streamUrl])
+  },[setAutoPlay, prevUrl, autoPlay, soundCloudAudio])
   return (
     <div>
     <div className="afh_music_block" onClick={() => play()} aria-hidden="true">
@@ -259,8 +259,8 @@ constructor(props) {
               <div className="afh_share_block">
             <div className="share">
             <MenuWrstyle>
-                <input type="checkbox" id="toggle" className="share__toggle" hidden />
                 <label for="toggle" className="share__button" onClick={() => this.openModal()} aria-hidden="true">
+                <input type="checkbox" id="toggle" className="share__toggle" hidden />
                     <img src={shareSVGAVS} alt=""/>
                 </label>
                 </MenuWrstyle>
