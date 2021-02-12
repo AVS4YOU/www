@@ -15,6 +15,12 @@ pipeline {
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKey', passwordVariable: 'SecretKey')
 					]){
 			bat 'deploy.bat'
+			powershell(''' 
+			get-psdrive
+				   echo $WORKSPACE
+				   $bucketName = "new.avs4you.com"
+				   echo $bucketName 
+			''') 
 	}
       }
     }
