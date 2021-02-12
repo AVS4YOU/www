@@ -1,0 +1,2 @@
+echo %AccessKey%
+echo %SecretKey%
