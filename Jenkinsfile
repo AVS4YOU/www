@@ -14,8 +14,7 @@ pipeline {
                        withCredentials([
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKey', passwordVariable: 'SecretKey')
 					]){
-			echo %AccessKey%
-			echo %SecretKey%
+			bat 'deploy.bat'
 	}
       }
     }
