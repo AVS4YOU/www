@@ -30,7 +30,6 @@ const DownloadScrollButton = (props) => {
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
     }, [setTouchDevice]);
 
-
     return(
         <ButtonWrapper id="downloadButton" touchDevice={touchDevice} className={props.className}>
 
