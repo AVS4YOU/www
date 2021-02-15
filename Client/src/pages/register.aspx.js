@@ -146,9 +146,10 @@ const ModalStyle = styled.div`
   background-image: url(${IndicatorCheck});
   width: 17px;
   padding: 1px 15px 8px 10px;
-    content: ' ';
-    background-repeat: no-repeat;
-    background-size: auto;
+  content: ' ';
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-right: 5px;
 }
 `;
 class Register extends React.PureComponent {
