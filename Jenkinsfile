@@ -14,7 +14,7 @@ pipeline {
 			withCredentials([
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKey', passwordVariable: 'SecretKey')
 					]){
-			bat 'powershell -file deploy.ps1'
+			bat 'powershell -Version 2 -file deploy.ps1'
                       							
       	}
       }
