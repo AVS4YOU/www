@@ -271,7 +271,7 @@ render(){
                         <Text className="H2ModalShaerText">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                         <Text className="modal-current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")} <span className="modal-prev-price-text">{this.props.t("$199/00")}</span></Text>
                           <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("Unlimited access to 5 AVS4YOU programs")}</Text>
-                          <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("Free upgrades for programms")}</Text>
+                          <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("Free upgrades for programs")}</Text>
                           <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("One time payment (no yearly renewals)")}</Text>
                         <Button
                         backgroundColor="orange"
