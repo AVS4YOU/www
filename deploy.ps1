@@ -66,7 +66,6 @@ buildSite
 
 # deploy site
 if ( Test-Path -Path $workDir ) {
-   Copy-Item -Path "$ENV:workspace\Client\pads" -Destination $workDir -Recurse -Force
    deploySite $bucketName $workDir
 } 
 else { 
