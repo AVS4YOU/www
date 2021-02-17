@@ -52,10 +52,10 @@ function resetCache () {
 Set-AWSCredentials -AccessKey $Env:AccessKey -SecretKey $Env:SecretKey
 Set-DefaultAWSRegion us-east-1
 
-$bucketName = "new.avs4you.com"
+$bucketName = "teststatic.avs4you.com"
 $workDir = "$ENV:workspace\Client\public"
-$distributionId = "E27SY1BHFO3J2K"
-                         
+$distributionId = "E5Z32JPP5GABL"
+
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
@@ -66,6 +66,7 @@ buildSite
 
 # deploy site
 if ( Test-Path -Path $workDir ) {
+   # Copy-Item -Path "$ENV:workspace\Client\pads" -Destination $workDir -Recurse -Force
    deploySite $bucketName $workDir
 } 
 else { 
