@@ -157,7 +157,7 @@ render(){
         <ProductPagesWrapper>  
           <div className="headerBackground">
           <div className="headerBackgroundImage">
-              <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} />
+              <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} alt=""/>
             </div>
             <PageContentWrapper>
               <HeaderRowItem 
@@ -166,8 +166,8 @@ render(){
                imageName="header-back-image-avs.png"      
               >
                 <div className="tableWrapperHeader">
-                <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
-                  <Text color="#ffffff" align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
+                <Text align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
+                  <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
                   <div className="HeaderListItemTable" style={{paddingLeft:"15px", paddingBottom:"10px"}}>
                     <div className="HeaderListItem35">
                       <Text className="ListItem">{this.props.t("All key formats supported")}</Text>
@@ -351,7 +351,7 @@ render(){
         <MainPageWrapper>
         <div className="headerBackground">
         <div className="fonImage">
-            <img className="fonImage" src={BackGroundImage}/>
+            <img className="fonImage" src={BackGroundImage} alt=""/>
         </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   

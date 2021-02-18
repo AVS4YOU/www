@@ -141,7 +141,7 @@ const ModalStyle = styled.div`
 const streamUrl = AudioCalendar;
 
 const CustomPlayer = withSoundCloudAudio(props => {
-  const { soundCloudAudio, playing, track } = props;
+  const { soundCloudAudio, playing } = props;
 
   const play = () => {
     if (playing) {
@@ -163,15 +163,15 @@ const CustomPlayer = withSoundCloudAudio(props => {
 		if(prevUrl !== streamUrl) {
 			setAutoPlay(true);
 		}
-	},[streamUrl])
-
+	//},[streamUrl])
+  },[setAutoPlay, prevUrl, autoPlay, soundCloudAudio])
   return (
     <div>
-    <div className="afh_music_block" onClick={() => play()}>
+    <div className="afh_music_block" onClick={() => play()} aria-hidden="true">
       <button className="afh_music" >
         {playing 
-          ? <img src={MusicOff}/>         
-          : <img src={MusicOn}/> 
+          ? <img src={MusicOff} alt="Music Off"/>         
+          : <img src={MusicOn} alt="Music On"/> 
         }
       </button>
     </div>
@@ -259,8 +259,8 @@ constructor(props) {
               <div className="afh_share_block">
             <div className="share">
             <MenuWrstyle>
+                <label for="toggle" className="share__button" onClick={() => this.openModal()} aria-hidden="true">
                 <input type="checkbox" id="toggle" className="share__toggle" hidden />
-                <label for="toggle" className="share__button" onClick={() => this.openModal()}>
                     <img src={shareSVGAVS} alt=""/>
                 </label>
                 </MenuWrstyle>
@@ -275,6 +275,7 @@ constructor(props) {
                     >
                       <img className=".Demo__some-network__image_copylink" 
                         src={CancelModal}
+                        alt="Cancel"
                         style={{
                           width: "32px"
                         }}/>
@@ -318,6 +319,7 @@ constructor(props) {
                         size={64} 
                         round 
                         src={CopyLink}
+                        alt=""
                         style={{
                           width: "64px"
                         }}/>

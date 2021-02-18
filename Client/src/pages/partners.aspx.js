@@ -1,6 +1,5 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import { Link } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
 import "../styles/partners.less";
@@ -9,7 +8,6 @@ import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from '../components/link-href';
 class partners extends React.PureComponent {
 
 render(){
@@ -84,15 +82,15 @@ render(){
             </div>
           </div>
           <div className="body-reseller__button-wrapper">
-          <LinkHref mainLink="https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners" toLink=".pdf">
+          <a target="_blank" rel="noreferrer noopener" href={this.props.t("partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners")} >
             <Button className="body-reseller__button" textClassName="body-reseller__button-text">
                 {this.props.t("Download reseller prose list")}
             </Button>
-          </LinkHref>
+          </a>
           </div>
         </div>
         <div className="form screen-wrapper">
-          <img src={mailIcon}/>
+          <img src={mailIcon} alt=""/>
           <div className="reseller-from-wrapper">
             <Form
               formHeader={this.props.t("To become an AVS4YOU reseller, please, use the form below:")}

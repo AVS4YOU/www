@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
 import Text from '../text';
@@ -156,6 +156,7 @@ export class CinemaSlider extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
+            swipeToSlide: false,
             arrows: false,
             beforeChange: (current, next) => this.setState({ activeSlide: next }), 
           };
@@ -185,7 +186,7 @@ export class CinemaSlider extends Component {
           <Text className="velfb_description_Text">{num.imgText}</Text> 
         </div>
       <div className="imgpad"> 
-          <img className="imgdetails" src= {num.img} width="100%"/>    
+          <img className="imgdetails" src= {num.img} width="100%" alt=""/>    
       </div>  
       </div> 
     )); 
@@ -198,53 +199,53 @@ export class CinemaSlider extends Component {
             <div className="vel_features_block">
     <div className="container">  
        <div className="scrollLinksWrapper" style={{padding: 0, display: "flex"}} >
-          <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim">
+          <div onMouseEnter={this.handleOnMouseOverTrim} onMouseLeave={this.handleOnMouseOut} className="scrollSlideTrim" aria-hidden="true">
             {this.state.hoveringTrim || this.state.activeSlide === 0 ?
-              <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})`, backgroundSize:`auto` }} className="scrollToButton"> 
+              <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${Actimg1})`, backgroundSize:`auto` }} className="scrollToButton" aria-hidden="true"> 
               <Text  align="center"  style={{ width:'100px', paddingTop:"-55px" }}>{this.props.Trim}</Text>
               </div> 
-                : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`, backgroundSize:`auto`}} className="scrollToButton"> 
+                : <div onClick={() => this.slider.slickGoTo(0)} style={{ backgroundImage: `url(${img1})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true"> 
                   <Text align="center"  style={{ width:'100px', paddingTop:"-5px" }}>{this.props.Trim}</Text> 
                    </div>}
           </div>
 
-          <div onMouseEnter={this.handleOnMouseOverCroup} onMouseLeave={this.handleOnMouseOut} className="scrollSlideCrop">
+          <div onMouseEnter={this.handleOnMouseOverCroup} onMouseLeave={this.handleOnMouseOut} className="scrollSlideCrop" aria-hidden="true">
             {this.state.hoveringCroup || this.state.activeSlide === 1 ?
-              <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${Actimg2})`, backgroundSize:`auto`}} className="scrollToButton">
+              <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${Actimg2})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                  <Text align="center">{this.props.Cut}</Text> 
               </div>   
-            : <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${img2})`, backgroundSize:`auto`}} className="scrollToButton">       
+            : <div onClick={() => this.slider.slickGoTo(1)} style={{ backgroundImage: `url(${img2})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">       
                                   <Text align="center">{this.props.Cut}</Text> 
             </div>}
           </div>
 
-          <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit">
+          <div onMouseEnter={this.handleOnMouseOverSplit} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSplit" aria-hidden="true">
             {this.state.hoveringSplit || this.state.activeSlide === 2 ?
-              <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`, backgroundSize:`auto`}} className="scrollToButton">
+              <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${Actimg3})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                                                     <Text align="center">{this.props.Split}</Text> 
 
               </div>
-            :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`, backgroundSize:`auto`}} className="scrollToButton">
+            :   <div onClick={() => this.slider.slickGoTo(2)} style={{ backgroundImage: `url(${img3})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                                                   <Text align="center">{this.props.Split}</Text> 
 
                 </div>}
             </div>    
 
-          <div onMouseEnter={this.handleOnMouseOverJoin} onMouseLeave={this.handleOnMouseOut} className="scrollSlideJoin">
+          <div onMouseEnter={this.handleOnMouseOverJoin} onMouseLeave={this.handleOnMouseOut} className="scrollSlideJoin" aria-hidden="true">
             {this.state.hoveringJoin || this.state.activeSlide === 3 ?            
-              <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${Actimg4})`, backgroundSize:`auto`}} className="scrollToButton">
+              <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${Actimg4})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                   <Text align="center">{this.props.Merge}</Text> 
               </div>
-            : <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${img4})`, backgroundSize:`auto`}} className="scrollToButton">
+            : <div onClick={() => this.slider.slickGoTo(3)} style={{ backgroundImage: `url(${img4})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                 <Text align="center">{this.props.Merge}</Text> 
               </div>}
           </div>
-          <div onMouseEnter={this.handleOnMouseOverSS} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSS">
+          <div onMouseEnter={this.handleOnMouseOverSS} onMouseLeave={this.handleOnMouseOut} className="scrollSlideSS" aria-hidden="true">
             {this.state.hoveringSS || this.state.activeSlide === 4 ?            
-              <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${Actimg5})`, backgroundSize:`auto`}} className="scrollToButton">
+              <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${Actimg5})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                   <Text align="center">{this.props.Crop}</Text> 
               </div>
-            : <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${img5})`, backgroundSize:`auto`}} className="scrollToButton">
+            : <div onClick={() => this.slider.slickGoTo(4)} style={{ backgroundImage: `url(${img5})`, backgroundSize:`auto`}} className="scrollToButton" aria-hidden="true">
                 <Text align="center">{this.props.Crop}</Text> 
               </div>}
           </div>    

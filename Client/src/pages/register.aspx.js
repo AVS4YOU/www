@@ -6,12 +6,16 @@ import PanelCollapse from "../components/panel-collapse";
 import "../styles/register.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
+import Link from "../components/link";
 import Cookies from 'universal-cookie';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from '../components/link-href';
 import LstDay from '../components/last-day';
+import ModalBuy from '../components/modal-register';
+import styled from 'styled-components';
+import imagelogo from '../images/common/logo.svg';
+import IndicatorCheck from '../images/upgrade-now/indicator-check.svg';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -48,6 +52,106 @@ const mounth = [
   "December"
 ];
 
+
+
+const ModalStyle = styled.div`
+.headerModal{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headerLogo{
+  margin-left: 150px;
+  width: 69px;
+    height: 60px;
+    display: table;
+    &>img{
+        position: absolute;
+        top: 15px;
+        margin: auto;
+    }
+}
+.ModalShaerClose{
+  margin: 10px 10px 0px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+}
+
+.ModalShaerClose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+.ModalShaerClose:hover {
+  opacity: 1;
+}
+.ModalShaerClose:before, .ModalShaerClose:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #fff;
+}
+.ModalShaerClose:before {
+  transform: rotate(45deg);
+}
+.ModalShaerClose:after {
+  transform: rotate(-45deg);
+}
+
+.H1ModalShaerText{
+  font-size: 40px;
+  text-align:center;
+  color: #f9f9f9;
+  padding-bottom: 15px;
+}
+.H2ModalShaerText{
+  font-size: 22px;
+  text-align:center;
+  color: #fb8a2a;
+  padding-bottom: 5px;
+}
+.modal-current-price-text{
+  font-size: 35px;
+  text-align:center;
+  color: #f9f9f9;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.modal-prev-price-text{
+  font-size: 35px;
+  text-align:center;
+  color: #f65108;
+  text-decoration: line-through;
+}
+.ModalShaerText{
+  font-size: 16px;
+  text-align:center;
+  color: #f9f9f9;
+  padding-bottom: 10px;
+}
+.IndicatorCheck{
+  background-image: url(${IndicatorCheck});
+  width: 17px;
+  padding: 1px 15px 8px 10px;
+  content: ' ';
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-right: 5px;
+}
+`;
 class Register extends React.PureComponent {
 
 constructor(props){
@@ -61,11 +165,26 @@ constructor(props){
     this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
   };
 
+  this.closeModal = this.closeModal.bind(this);
+  this.openModal = this.openModal.bind(this);
+
   this.state = {
     hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("defaultHrefUnlim"),
     hrefOneYear: this.cookies.get("Site_Tracing") ? shareItHrefOneYear + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("defaultHrefOneYear"),
     documentLoaded: false,
   };
+}
+
+closeModal() {
+  this.setState({
+    isModalOpen: false
+  });
+}
+
+openModal() {
+  this.setState({
+    isModalOpen: true
+  });
 }
 
 componentDidMount(){
@@ -126,12 +245,66 @@ render(){
               <Button
               backgroundColor="orange"
               color="#ffffff"
-              href={this.state.hrefOneYear}
+              //href={this.state.hrefOneYear}
+              onClick={() => this.openModal()}
               className="buy-block-button"
               >
               {this.props.t("Buy now")}
               </Button>
             </div>
+            <ModalBuy
+                    isModalOpen={this.state.isModalOpen}
+                    closeModal={this.closeModal}
+                  >
+                    <ModalStyle>
+                    <div className="headerModal">
+                     <Link to ="/" className="headerLogo">
+                            <img src={imagelogo} alt=""/>
+                      </Link>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={this.closeModal}
+                    >
+                    </button>
+                    </div>
+                        <Text className="H1ModalShaerText">{this.props.t("Upgrade now")}</Text>
+                        <Text className="H2ModalShaerText">{this.props.t("Benefit from switching 1-Year to")}</Text>
+                        <Text className="H2ModalShaerText">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
+                        <Text className="modal-current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")} <span className="modal-prev-price-text">{this.props.t("$199/00")}</span></Text>
+                          <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("Unlimited access to 5 AVS4YOU programs")}</Text>
+                          <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("Free upgrades for programs")}</Text>
+                          <Text className="ModalShaerText"><span className="IndicatorCheck"></span>{this.props.t("One time payment (no yearly renewals)")}</Text>
+                        <Button
+                        backgroundColor="orange"
+                        color="#ffffff"
+                        href={this.state.hrefUnlim}
+                        className="buy-block-button"
+                        style={{
+                          maxWidth: "none",
+                          marginTop: "15px",
+                          textTransform: "none"
+                        }}
+                        >
+                        {this.props.t("Yes! Upgrade to Unlimited")}
+                        </Button>
+                        <Button                
+                        href={this.state.hrefOneYear}
+                        backgroundColor="#32393d"
+                        color="#ffffff"
+                        className="buy-block-button"
+                        style={{
+                          maxWidth: "none",
+                          backgroundColor: "#32393d",
+                          border: "1px solid #fb8a2a",
+                          marginTop: "10px",
+                          textTransform: "none"
+                        }}
+                      >
+                        {this.props.t("Keep 1-Year")}
+                      </Button>
+                      </ModalStyle>
+                  </ModalBuy>
+            
             <div className="buy-block unlimited-block">
               <div className="popular-banner">
                 <Text as="p">{this.props.t("Most popular")}</Text>
@@ -148,7 +321,7 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button                
-                href={this.state.hrefUnlim}
+                  href={this.state.hrefUnlim}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
@@ -170,31 +343,31 @@ render(){
           <div className="why-choose-wrapper">
             <tr className="first-tr">
               <div className="why-choose-item">
-                <img src={VideoIcon} className="icon" />
+                <img src={VideoIcon} className="icon" alt="Video Icon"/>
                 <Text className="text">{this.props.t("5 multimedia programs in 1 package")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={SecureIcon} className="icon"/>
+                <img src={SecureIcon} className="icon" alt="Secure Icon"/>
                 <Text className="text">{this.props.t("100% secure, ad-free, virus-free")}</Text>
                 <Text className="text" style={{paddingTop:"0px"}}>{this.props.t("ad-free, virus-free")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={GuaranteeIcon} className="icon"/>
+                <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
                 <Text className="text">{this.props.t("30-day Money-back guarantee")}</Text>
               </div>
             </tr>
 
             <tr>
             <div className="why-choose-item">
-                <img src={ManyYearsIcon} className="icon"/>
+                <img src={ManyYearsIcon} className="icon" alt="Many Years Icon"/>
                 <Text className="text">{this.props.t("No watermark")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={SupportIcon} className="icon"/>
+                <img src={SupportIcon} className="icon" alt="Support Icon"/>
                 <Text className="text">{this.props.t("Free support, free updates")}</Text>
               </div>  
               <div className="why-choose-item">
-                <img src={PeopleIcon} className="icon"/>
+                <img src={PeopleIcon} className="icon" alt="People Icon"/>
                 <Text className="text">{this.props.t("20M happy users worldwides")}</Text>
               </div>     
             </tr>
@@ -251,7 +424,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <LinkHref mainLink="https://support.avs4you.com" toLink="refund.aspx">{this.props.t("Check our Refund Policy")}</LinkHref> {this.props.t("to find out if you are eligible for a full refund")}
+                    <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("register-support-avs4you-refund")} >{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
                     </Text>
                 </div>
               </PanelCollapse>

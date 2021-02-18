@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from "prop-types";
-import { useSwipeable, Swipeable } from 'react-swipeable';
+import { Swipeable } from 'react-swipeable';
 
 const StyledCarousel = styled.div`
     position: relative;
@@ -115,7 +115,7 @@ class BenefitsCarousel extends React.PureComponent{
     }
 
     swipeLeft = () => {
-        const valueOfChildren = this.props.children.length;
+       // const valueOfChildren = this.props.children.length;
         const nextIndex = this.state.currentIndex + 1;
         this.changeSlide(nextIndex);
     }
@@ -187,6 +187,7 @@ class BenefitsCarousel extends React.PureComponent{
                         className={itemClassName}
                         key={key} id={"itemBefore" + index} 
                         onClick={this.onCarouselItemClick.bind(this, key)}
+                        aria-hidden="true"
                     >
                         {item}
                     </div>
@@ -219,6 +220,7 @@ class BenefitsCarousel extends React.PureComponent{
                             className={itemClassName}
                             key={index} id={"item" + index} 
                             onClick={this.onCarouselItemClick.bind(this, index)}
+                            aria-hidden="true"
                         >
                             {item}
                         </div>
@@ -232,6 +234,7 @@ class BenefitsCarousel extends React.PureComponent{
                             className={itemClassName}
                             key={index} id={"item" + index} 
                             onClick={this.onCarouselItemClick.bind(this, index)}
+                            aria-hidden="true"
                         >
                             {item}
                         </div>
@@ -244,6 +247,7 @@ class BenefitsCarousel extends React.PureComponent{
                             className={itemClassName}
                             key={index} id={"item" + index} 
                             onClick={this.onCarouselItemClick.bind(this, index)}
+                            aria-hidden="true"
                         >
                             {item}
                         </div>
@@ -266,6 +270,7 @@ class BenefitsCarousel extends React.PureComponent{
                         className={itemClassName}
                         key={key} id={"itemAfter" + index} 
                         onClick={this.onCarouselItemClick.bind(this, key)}
+                        aria-hidden="true"
                     >
                         {item}
                     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import Link from "../components/link";
 import Layout from "../components/layout";
 import "../styles/privacy.less";
 

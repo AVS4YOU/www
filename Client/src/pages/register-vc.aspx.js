@@ -179,30 +179,30 @@ render(){
           <div className="why-choose-wrapper">
             <tr className="first-tr">
               <div className="why-choose-item">
-                <img src={VideoIcon} className="icon" />
+                <img src={VideoIcon} className="icon" alt="Video Icon"/>
                 <Text className="text">{this.props.t("5 multimedia programs in 1 package")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={SecureIcon} className="icon"/>
+                <img src={SecureIcon} className="icon" alt="Secure Icon"/>
                 <Text className="text">{this.props.t("100% secure, ad-free, virus-free")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={GuaranteeIcon} className="icon"/>
+                <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
                 <Text className="text">{this.props.t("30-day Money-back guarantee")}</Text>
               </div>
             </tr>
 
             <tr>
             <div className="why-choose-item">
-                <img src={ManyYearsIcon} className="icon"/>
+                <img src={ManyYearsIcon} className="icon" alt="Many Years Icon"/>
                 <Text className="text">{this.props.t("No watermark")}</Text>
               </div>
               <div className="why-choose-item">
-                <img src={SupportIcon} className="icon"/>
+                <img src={SupportIcon} className="icon" alt="Support Icon"/>
                 <Text className="text">{this.props.t("Free support, free updates")}</Text>
               </div>  
               <div className="why-choose-item">
-                <img src={PeopleIcon} className="icon"/>
+                <img src={PeopleIcon} className="icon" alt="People Icon"/>
                 <Text className="text">{this.props.t("20M happy users worldwides")}</Text>
               </div>     
             </tr>
@@ -259,7 +259,7 @@ render(){
             </PanelCollapse>
             <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
               <div className="collapseContent">
-                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href={this.props.t("support avs4you com")} target="_blank">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href={this.props.t("support avs4you com")} target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
                   </Text>
               </div>
             </PanelCollapse>

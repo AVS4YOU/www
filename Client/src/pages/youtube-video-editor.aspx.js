@@ -1,15 +1,12 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import "../styles/youtube-video-editor.less";
-import ProductPagesWrapper from '../components/product-pages-wrapper';
-import Text from '../components/text';
 import ImageGQL from '../components/image-gql';
-import ScrollUpButton from '../components/scroll-up-button';
-import Button from '../components/button';
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "react-scroll";
 import Slider from "react-slick";
-import styled, { css } from 'styled-components';
 import Layout from "../components/layout";
+import Link from "../components/link";
+
 
   function customPaging(i) {
     return (
@@ -67,7 +64,7 @@ render(){
         nameSlide:"add_you_audio_tracks.webp",  
       },{
         nameSlide:"add_text.webp",  
-      },,{
+      },{
         nameSlide:"upload_to_youtube.webp",  
       },
     ]
@@ -90,8 +87,8 @@ render(){
     > 
           <header className="Youtubeheader">
     <div className="lfb_header">
-        <a className="lfb_logo" href="https://www.avs4you.com/index.aspx" target="_blank"></a><ul className="topmainmenu max-width-1">
-            <li className="topmenuoption"><a href="https://www.avs4you.com/index.aspx" target="_blank">Main</a></li>
+        <Link className="lfb_logo" to="/" target="_blank" rel="noreferrer noopener"></Link><ul className="topmainmenu max-width-1">
+            <li className="topmenuoption"><Link to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
             <ScrollLink to="to_easy_steps" spy={true} smooth={true}>
             <li className="topmenuoption to_easy_steps">Steps</li>
             </ScrollLink>
@@ -121,7 +118,7 @@ render(){
   <div className="lfb_head_img"><ImageGQL imageName="main_picture-youtube.png" alt="Professional-looking clips or vlogs" /></div>
 </div>
     <div id="mainbody">
-
+    
     <div className="lfb_steps" id="to_easy_steps">
         <div className="lfb_easy_steps">Easy steps for creating your captivating video</div>
             <div className="lfb_easy_steps_car">
@@ -132,6 +129,7 @@ render(){
                 </Slider>         
         </div>
     </div>  
+    
 
 <div className="lfb_wcaqm" id="to_wcaqm">
     <div className="lfb_wcaqm_h">Why choose AVS4YOU</div>
@@ -187,7 +185,7 @@ render(){
     </div>
     <div className="lfb_carousel">
         <div className="slick-reviews slick-initialized slick-slider">
-            <div aria-live="polite" className="slick-list draggable" tabindex="0"><div className="slick-track"><div className="item slick-slide slick-active" data-slick-index="0" aria-hidden="false">
+            <div aria-live="polite" className="slick-list draggable"><div className="slick-track"><div className="item slick-slide slick-active" data-slick-index="0" aria-hidden="false">
                 <div className="lfb_av lfb_av_as"></div>
                 <div className="lfb_profile">
                     <div className="lfb_name">Andy Stephens</div>
@@ -231,22 +229,22 @@ render(){
                     
 <div className="vel_footer">
     <div className="vel_page_footer">
-        <div className="vph_logo"><a href="https://www.avs4you.com/index.aspx" target="_blank"></a></div>
+        <div className="vph_logo"><Link to="/" target="_blank" rel="noreferrer noopener"></Link></div>
         <div className="vph_menu_footer">
             <ul>
-                <li><a href="https://www.avs4you.com/downloads.aspx" target="_blank">Downloads</a></li>
-                <li><a href="https://www.avs4you.com/register.aspx" target="_blank">Buy now</a></li>
-                <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank">Help</a></li>
-                <li><a href="https://support.avs4you.com/login.aspx" target="_blank">Support</a></li>
-                <li><a href="https://www.avs4you.com/contact.aspx" target="_blank">Contact us</a></li>
+                <li><Link to="/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</Link></li>
+                <li><Link to="/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</Link></li>
+                <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank" rel="noreferrer noopener">Help</a></li>
+                <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
+                <li><Link to="/about-us.aspx#contact-us" target="_blank" rel="noreferrer noopener">Contact us</Link></li>
             </ul>
-            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
+            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx" target="_blank" rel="noreferrer noopener">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
         </div>
         <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube"   href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook"  href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter"   href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
         </div>
     </div>
 </div>

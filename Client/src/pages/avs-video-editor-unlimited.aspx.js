@@ -4,7 +4,6 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
-import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import HeaderRowItem from '../components/header-row-item';
 import styled from 'styled-components';
@@ -12,6 +11,7 @@ import VideoEditorSlider from '../components/cinema-slider';
 import CinemaSlider from '../components/cinema-slider-redactor';
 import Button from '../components/button';
 import {GroupCard} from '../components/content-card/card-index';
+
 
 import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
 
@@ -182,10 +182,10 @@ render(){
                imageName="ve.png"      
               >
                 <div className="tableWrapperHeader35">
-                <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
-                <Text color="#ffffff" align="left" className="headerText" lineHeight="45px" color="#32393e" fontSize={14} fontWeight={600} as="h1">{this.props.t("License AVS Video Editor Unlimited Subscription")}</Text>
-                <Text color="#ffffff" align="left" className="headerText" lineHeight="25px" color="#32393e" fontSize={25} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
-                <Text color="#ffffff" align="left" className="headerDescription" lineHeight="10px" color="#32393e"  style={{paddingBottom:"10px"}} fontSize={18} fontWeight={600} as="h5">{this.props.t("Key features")}</Text>
+                <Text className="headerDescription" as="h5" color="#32393e" fontSize={45} fontWeight={700}>AVS Video Editor</Text>
+                <Text className="headerText" lineHeight="45px" color="#32393e" fontSize={14} fontWeight={600} as="h1">{this.props.t("License AVS Video Editor Unlimited Subscription")}</Text>
+                <Text className="headerText" lineHeight="25px" color="#32393e" fontSize={25} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
+                <Text className="headerDescription" lineHeight="10px" color="#32393e"  style={{paddingBottom:"10px"}} fontSize={18} fontWeight={600} as="h5">{this.props.t("Key features")}</Text>
                 <div className="HeaderListItemTable" style={{paddingLeft:"15px"}}>
                    <div className="HeaderListItem35">
                       <Text className="ListItem">{this.props.t("All key formats supported")}</Text>
@@ -198,9 +198,9 @@ render(){
                       <Text className="ListItem">{this.props.t("Exporting & publishing")}</Text>
                     </div>
                 </div>
-                <Text color="#ffffff" align="left" className="headerDescription" lineHeight="50px" color="#32393e" fontSize={14} fontWeight={600} as="h5">{this.props.t("Platforms Windows 10, 81, 8, 7, XP, 2003, Vista")}</Text>
-                <Text color="#ffffff" align="left" className="headerDescription" color="#32393e" fontSize={14} as="h5">{this.props.t("In stock")}</Text>
-                <Text color="#ffffff" align="left" className="headerDescription" as="h5" color="#32393e" fontSize={35} fontWeight={900}>{this.props.t("$ 59.00")}</Text>
+                <Text className="headerDescription" lineHeight="50px" color="#32393e" fontSize={14} fontWeight={600} as="h5">{this.props.t("Platforms Windows 10, 81, 8, 7, XP, 2003, Vista")}</Text>
+                <Text className="headerDescription" color="#32393e" fontSize={14} as="h5">{this.props.t("In stock")}</Text>
+                <Text className="headerDescription" as="h5" color="#32393e" fontSize={35} fontWeight={900}>{this.props.t("$ 59.00")}</Text>
                 <div className="buttonsWrapper" style={{display:"flex"}}>
                 <div className="HeaderListItem35">  
                 <Button
@@ -382,7 +382,7 @@ render(){
         <MainPageWrapper>
         <div className="headerBackground">
         <div className="fonImage">
-            <img className="fonImage" src={BackGroundImage}/>
+            <img className="fonImage" src={BackGroundImage} alt=""/>
         </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   

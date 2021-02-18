@@ -286,7 +286,7 @@ class ScreenshotsCarousel extends Component {
     const carouselImages = imageNames.length > 0 && 
         imageNames.map((imageName, i) => {
             return(
-            <div key={"CarouselItem_"+i} onClick={this.toggleCarousel}>
+            <div key={"CarouselItem_"+i} onClick={this.toggleCarousel} aria-hidden="true">
                 {titleImage.length > 0 && <Text className="title-image">{titleImage[i]}</Text>}
                 {descriptionImage.length > 0 && <Text className="description-image">{descriptionImage[i]}</Text>}
                 <ImageGQL className="carouselImage visible" imageName={imageName} alt={altText[i]}/>
@@ -312,7 +312,7 @@ class ScreenshotsCarousel extends Component {
             >
                 {PopupCarouselImages}
             </Slider>
-            <div onClick={this.toggleCarousel} className="closeCarousel"></div>
+            <div onClick={this.toggleCarousel} className="closeCarousel" aria-hidden="true"></div>
         </StyledPopupCarousel>
 
         <Slider 

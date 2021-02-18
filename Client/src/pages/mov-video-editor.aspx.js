@@ -5,6 +5,7 @@ import MenuWrapper from "../components/language-selector";
 import Layout from "../components/layout";
 import Text from '../components/text';
 import Star from '../images/main-page/icons/star.svg';
+import Link from "../components/link";
 
 class movVideoEditor extends React.PureComponent {
 
@@ -37,7 +38,7 @@ render(){
         <div className="rotating_image rimage_4"></div><div className="rotating_image rimage_5"></div><div className="rotating_image rimage_1" ></div><div className="rotating_image rimage_2"></div><div className="rotating_image rimage_3"></div></div>
         <div className="vel_content">
             <div className="vel_page_header">
-                <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
+                <div className="vph_logo"><Link to="/"></Link></div>
                 <div className="vph_menu">
                 </div>
                 <div className="language_inside">
@@ -49,7 +50,7 @@ render(){
                 <div className="vel_description">{this.props.t("Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
-                        <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
+                        <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download now")}</a>
                         <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
                     </div>
                     <div className="vel_top_buy">
@@ -135,22 +136,22 @@ render(){
     </div>
     <div className="vel_footer">
         <div className="vel_page_footer">
-            <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
+            <div className="vph_logo"><Link to="/"></Link></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><a href="https://www.avs4you.com/downloads.aspx">{this.props.t("Downloads")}</a></li>
-                    <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
-                    <li><a href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
-                    <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
+                    <li><Link href="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
+                    <li><Link href="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
+                    <li><Link href="/contact.aspx">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
+                <div className="vph_copyright">© <Link className="blacklink" to="/">{this.props.t("Online Media Technologies Ltd UK")}</Link> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
         </div>
         </div>
     </div>

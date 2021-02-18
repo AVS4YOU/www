@@ -1,27 +1,10 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/uninstall-offer.less";
-import { Link as GatsbyLink } from 'gatsby';
-import Logo from '../images/common/logo.svg';
-import styled from 'styled-components';
 
-
-const LogoWrapper = styled.div`
-    width: 69px;
-    height: 60px;
-    display: table;
-
-    &>img{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-`;
 
 class uninstallOffer extends React.PureComponent {
 

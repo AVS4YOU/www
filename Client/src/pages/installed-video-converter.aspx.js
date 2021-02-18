@@ -1,16 +1,13 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/installed-video-converter.less";
-import ScrollUpButton from '../components/scroll-up-button';
 import BenefitsCarousel from '../components/benefits-carousel';
 import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
-import { useSwipeable, Swipeable } from 'react-swipeable';
 
 const LogoWrapper = styled.div`
     width: 69px;

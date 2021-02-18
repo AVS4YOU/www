@@ -270,13 +270,13 @@ export class CinemaSlider extends Component {
     }
     
   render() {  
-    const { affilateImage, SliderImages, headerDescription, headerDescriptionSlider } = this.props;
+    const { affilateImage, SliderImages } = this.props;
       const settings = {
           fade: true,
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinity: true,
+          infinity: false,
           centerMode: true,
           swipeToSlide: false,
           autoplaySpeed:4000,
@@ -306,43 +306,43 @@ export class CinemaSlider extends Component {
       
       const MainSliderImages = [      
         { img: Transitions,
-            id: 1,
+            id: 0,
             bckimg:frameTransitions,
            },
         { img: Transformation,
-            id: 2,
+            id: 1,
             bckimg:frameTransformation,
            },
         { img: TextGraphics,
-            id: 3,
+            id: 2,
             bckimg:frameTextGraphics,
            },
         { img: VideoOderlay,
-            id: 4,
+            id: 3,
             bckimg:frameVideoOderlay,
            },
         { img: VideoStabilization,
-            id: 5,
+            id: 4,
             bckimg:frameVideoStabilization,
            },
         { img: ChromaKey,
-            id: 6,
+            id: 5,
             bckimg:frameChromaKey,
            },
         { img: ColourCorrection,
-            id: 7,
+            id: 6,
             bckimg:frameColourCorrection,
            },
         { img: FreezeFrame,
-            id: 8,
+            id: 7,
             bckimg:frameFreezeFrame,
            },
         { img: PlaybackSpeed,
-            id: 9,
+            id: 8,
             bckimg:framePlaybackSpeed,
            },
         { img: SpecialEffects,
-            id: 10,
+            id: 9,
             bckimg:frameSpecialEffects,
            },               
       ];
@@ -391,7 +391,7 @@ export class CinemaSlider extends Component {
         const affilSlides = () =>  
         affilateImageSlider.map((num, index) => (
           <div className="affilSliderItem">
-            <div onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
+            <div aria-hidden="true" onClick={() => this.state.nav1.slickGoTo(num.id)} style={{backgroundImage: `url(${num.imgBck})`/*, paddingTop: `${num.id === 4 || num.id === 6 || num.id === 8 ? '72px' :''}`*/}} className="scrollToButton">
                 <Text className="scrollToSlideText" color="#666666" align="center" fontWeight={300} fontSize={14}>{num.nameAffilate}</Text>
             </div>
           </div>    
@@ -401,7 +401,7 @@ export class CinemaSlider extends Component {
   MainSliderImages.map((num, index) => (
     <div className="effectsSliderItem">
       <div className="imgpadSlider">  
-          <img className="imgdetails" src= {num.img} />
+          <img className="imgdetails" src= {num.img} alt=""/>
        </div>
             <div className="CardsItem">
                 <Card >
@@ -415,7 +415,7 @@ export class CinemaSlider extends Component {
               <button className=" Sliderbutton btnPrevArrow" onClick={this.previous}>
               </button>
                <span className="slideIdSlider">
-                  {num.id} out of 10
+                  {num.id + 1} out of 10
                </span>
               <button className="Sliderbutton btnNextArrow" onClick={this.next}>
               </button>
@@ -426,8 +426,8 @@ export class CinemaSlider extends Component {
 return (
   <CinemaSliderStyle>
     <div style={{paddingTop:"40px"}}>
-        <Text color="#ffffff" align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
-        <Text color="#ffffff" align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >{this.props.headerDescriptionSlider}</Text>      
+        <Text align="center" className="headerDescription" as="h5" color="#32393e" fontWeight={700} fontSize={28} >{this.props.headerDescription}</Text>
+        <Text align="center" className="headerDescriptionSlider" as="h5" color="#32393e" fontSize={16} paddingLeft="25%" paddingRight="25%" >{this.props.headerDescriptionSlider}</Text>      
     </div>
         <div className="CCinemaSlider">
           <Slider

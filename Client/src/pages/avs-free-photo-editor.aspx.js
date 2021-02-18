@@ -111,7 +111,7 @@ render(){
               imageName="photo_editor_slide4.png"
               headerText={this.props.t("Work with various formats")}   
             >
-              <Text className="ListItem">{this.props.t("Edit photos to all key formats JPEG, JPG, BMP, PNG, GIF, etc")} <a href="https://onlinehelp.avs4you.com/avs-photo-editor/working/addingpreviewing/supportedformats.aspx" target="_blank">{this.props.t("See a full list of supported image formats")}</a></Text>
+              <Text className="ListItem">{this.props.t("Edit photos to all key formats JPEG, JPG, BMP, PNG, GIF, etc")} <a href="https://onlinehelp.avs4you.com/avs-photo-editor/working/addingpreviewing/supportedformats.aspx" target="_blank" rel="noreferrer noopener">{this.props.t("See a full list of supported image formats")}</a></Text>
               <Text className="ListItem">{this.props.t("Make an ISO image directly from a disc or HDD")}</Text>
               <Text className="ListItem">{this.props.t("Edit, delete or add new files to the ready disc images")}</Text>
             </ContentRowItem>

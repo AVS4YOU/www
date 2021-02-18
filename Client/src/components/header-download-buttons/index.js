@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Button from '../button';
 import FormGetCoupon from '../form-get-coupon';
 import InfoPopup from '../info-popup';
@@ -163,7 +163,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                                 :
 
                                     <Button 
-                                        tabIndex="1"
+                                        tabIndex="0"
                                         className="getCouponButton" 
                                         onClick={this.toShowForm}
                                         backgroundColor="orange" 
@@ -183,7 +183,6 @@ class HeaderDownloadButtons extends React.PureComponent {
                             href={this.props.mainHref} 
                             color="#fff" 
                             padding={this.props.mainPadding && this.props.mainPadding} 
-                            textTransform="uppercase" 
                             backgroundColor={this.props.backgroundColor && this.props.backgroundColor}
                             secondaryText={this.props.secondaryText && this.props.secondaryText} 
                             textTransform="uppercase">

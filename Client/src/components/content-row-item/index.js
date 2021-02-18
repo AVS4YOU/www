@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Text from '../text';
 import { Link } from "react-scroll";
 import Button from '../button';
@@ -396,7 +396,7 @@ const ContentRowItem = (props) => {
         var parser = new UAParser();
         var result = parser.getResult();
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
-    });
+    }, [setTouchDevice]);
 
     if (props.imgLeft){
         return(

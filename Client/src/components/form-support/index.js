@@ -233,7 +233,7 @@ class FormSupport extends React.Component {
 
         if (this.verifyData()) {
 
-            if(Object.keys(this.state.file).length != 0) {
+            if(Object.keys(this.state.file).length !== 0) {
                 let formData = new FormData();
                 let fileNames = [];
 
@@ -352,7 +352,7 @@ class FormSupport extends React.Component {
     setInputData = (inputName, value) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState(
             {
@@ -364,7 +364,7 @@ class FormSupport extends React.Component {
     setError = (inputName, newStatus) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         if (field.status !== newStatus) {
             this.setState(
@@ -378,7 +378,7 @@ class FormSupport extends React.Component {
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
-        if (!field) throw "Unknown name";
+        if (!field) throw new Error("Unknown name");
 
         this.setState({
             [inputName]: { ...field, inputClassName: className }
@@ -428,7 +428,7 @@ class FormSupport extends React.Component {
     onBlurInput = (e) => {
         let status = ErrorStatus.NoError;
 
-        if (e.target.name == "email" && e.target.value && this.isEmailInvalid(e.target.value)){
+        if (e.target.name === "email" && e.target.value && this.isEmailInvalid(e.target.value)){
             status = ErrorStatus.Incorrect;
         }
 
@@ -562,7 +562,7 @@ class FormSupport extends React.Component {
 
                             />
                             <Input
-                                tabIndex="1"
+                                tabIndex="0"
 
                                 inputName="email"
                                 inputLabel="Email address"
@@ -599,7 +599,7 @@ class FormSupport extends React.Component {
                         </div>
                         <Input
                             as="textarea"
-                            tabIndex="2"
+                            tabIndex="0"
 
                             inputName="comment"
                             inputLabel=""
@@ -629,7 +629,7 @@ class FormSupport extends React.Component {
                                     <div className="chooseFileButton">Choose file</div>
                                     <Text className="fileName">{this.state.file[id] ? this.state.file[id].name : "No file selected"}</Text>
                                 </label>
-                                <div id={id + "-remove"} onClick={this.onClickRemove} className="removeFile"></div>
+                                <div id={id + "-remove"} onClick={this.onClickRemove} className="removeFile" aria-hidden="true"></div>
                             </div>
                         )}
 
@@ -648,7 +648,7 @@ class FormSupport extends React.Component {
                             />
                         </div>
                         <Button
-                            tabIndex="1"
+                            tabIndex="0"
                             className="getCouponButton"
                             onClick={this.onClick}
                             backgroundColor="blue"

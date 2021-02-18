@@ -6,7 +6,8 @@ import Layout from "../components/layout";
 import PWM from "../components/cinema-slider-redactor/pwm";
 import Text from '../components/text';
 import Star from '../images/main-page/icons/star.svg';
-
+import Link from '../components/link';
+import videoDiv from '../images/avs-video-editor-tools/video/diving.webm';
 class preciseVideoCuttingTools extends React.PureComponent {
 
   constructor(props) {
@@ -35,14 +36,13 @@ render(){
         metaKeywords=""
       > 
          <div className="vel_header">
-        <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
-            <source src="https://imgs.avs4you.com/en/images/landing/video-editor/video/diving.mp4" type="video/mp4" />
-            <source src="https://imgs.avs4you.com/en/images/landing/video-editor/video/diving.webm" type="video/mp4" />
+         <video autoPlay loop muted id="myVideo">
+            <source src={videoDiv} type="video/mp4" />
             Your browser does not support HTML5 video.
         </video>
         <div className="vel_content">
             <div className="vel_page_header">
-                <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
+                <div className="vph_logo"><Link to="/"></Link></div>
                 <div className="vph_menu">
                 </div>
                 <div className="language_inside">
@@ -104,9 +104,9 @@ render(){
         { 
             imgText: this.props.t("Split videos regardless both the video size and formats Cut your clip into smaller sections, without losing any frames in the process The clips can then be trimmed or edited separately")},    
         { 
-            imgText: this.props.t("Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems. Join clips into a long movie in a couple of clicks")},
+            imgText: this.props.t("Combine as many video files as you want and save them to all popular formats accepted by literally all PC's, mobile phones, TVs and multimedia systems Join clips into a long movie in a couple of clicks")},
         { 
-            imgText: this.props.t("Crop your video to delete unnecessary parts such as black borders and draw your viewers' attention to interesting or important elements") },         
+            imgText: this.props.t("Crop your video to delete unnecessary parts such as black borders and draw your viewers attention to interesting or important elements") },         
       ]}   
     ></PWM>
     <div className="vel_edit_enhance">
@@ -139,22 +139,22 @@ render(){
     
     <div className="vel_footer">
         <div className="vel_page_footer">
-            <div className="vph_logo"><a href="https://www.avs4you.com/"></a></div>
+            <div className="vph_logo"><Link to="/"></Link></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><a href="https://www.avs4you.com/downloads.aspx">{this.props.t("Downloads")}</a></li>
-                    <li><a href="https://www.avs4you.com/register.aspx">{this.props.t("Buy now")}</a></li>
-                    <li><a href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
-                    <li><a href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><a href="https://www.avs4you.com/contact.aspx">{this.props.t("Contact us")}</a></li>
+                    <li style={{fontSize:"14px"}}><Link to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
+                    <li style={{fontSize:"14px"}}><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
+                    <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
+                    <li style={{fontSize:"14px"}}><Link to="/contact.aspx">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com/index.aspx">{this.props.t("Online Media Technologies Ltd UK")}</a> {this.props.t("2020  All rights reserved")}</div>
+                <div className="vph_copyright">© <Link className="blacklink" to="/">{this.props.t("Online Media Technologies Ltd UK")}</Link> {this.props.t("2020  All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-            <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-            <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-            <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
         </div>
         </div>
     </div>   

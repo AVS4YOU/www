@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Text from '../text';
-import PropTypes from "prop-types";
 import { Controller, Scene } from 'react-scrollmagic';
 import VideoEditor from '../../images/installed-pack/video-editor-slide.jpg'
 import videoConverter from '../../images/installed-pack/video-converter-slide.jpg'

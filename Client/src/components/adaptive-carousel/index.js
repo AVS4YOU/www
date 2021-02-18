@@ -1,9 +1,8 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from "prop-types";
 import Slider from "react-slick";
-import LeftArrow from '../../images/common/icons/arrow-left.svg';
-import RightArrow from '../../images/common/icons/arrow-right.svg';
+
 
 
 const StyledWrapper = styled.div`
