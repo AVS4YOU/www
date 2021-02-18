@@ -11,7 +11,7 @@ import uploadMediaFiles from "../images/installed/abs1.webp";
 import cutOrTrim        from "../images/installed/abs2.webp";
 import applyEffects     from "../images/installed/abs3.webp";
 import addBackground    from "../images/installed/abs4.webp";
-import saveMovie        from "../images/installed/abs5.webp";
+import saveMovie        from "../images/installed/abs5.webp"; 
 
 
 
