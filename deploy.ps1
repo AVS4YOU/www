@@ -52,10 +52,10 @@ function resetCache () {
 Set-AWSCredentials -AccessKey $Env:AccessKey -SecretKey $Env:SecretKey
 Set-DefaultAWSRegion us-east-1
 
-$bucketName = "teststatic.avs4you.com"
+$bucketName = "new.avs4you.com"
 $workDir = "$ENV:workspace\Client\public"
-$distributionId = "E5Z32JPP5GABL"
-
+$distributionId = "E27SY1BHFO3J2K"
+                         
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
