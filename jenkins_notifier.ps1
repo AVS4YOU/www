@@ -5,4 +5,4 @@ $URL = "https://api.telegram.org/bot$TOKEN/sendMessage"
 
 # dev avs4you
 $CHAT_ID = "-378391550"
-Invoke-WebRequest -Uri $URL -Body @{chat_id=$CHAT_ID; text=$MESSAGE} -UseBasicParsing
+# Invoke-WebRequest -Uri $URL -Body @{chat_id=$CHAT_ID; text=$MESSAGE} -UseBasicParsing
