@@ -61,8 +61,8 @@ $branch =  $env:BRANCH_NAME
 if ( $branch -eq "test.new" ) {
     Set-AWSCredentials -AccessKey $Env:AccessKeyTest -SecretKey $Env:SecretKeyTest
 
-    $bucketName = "new.avs4you.com"
     $distributionId = "E27SY1BHFO3J2K"
+    $bucketName = "new.avs4you.com"
 }
 elseif ( $branch -eq "test.teststatic" ) {
     Set-AWSCredentials -AccessKey $Env:AccessKeyTest -SecretKey $Env:SecretKeyTest   
@@ -73,20 +73,21 @@ elseif ( $branch -eq "test.teststatic" ) {
 elseif ( $branch -eq "test.teststatic" ) {
     Set-AWSCredentials -AccessKey $Env:AccessKeyProd -SecretKey $Env:SecretKeyProd 
 
-    $bucketName = "www.avs4you.com"
     $distributionId = "E21GNZRPS0AW6N"
+    $bucketName = "www.avs4you.com"
 }
 else {
     Write-host "Branch: $branch do not for deploy."
 }
 
+Write-host "Deploy from $branch branch."
+
 # build site
-# buildSite
+buildSite
 
 # deploy site
 if ( Test-Path -Path $workDir ) {
-   # deploySite $bucketName $workDir
-   write-host "if go"
+   deploySite $bucketName $workDir
 } 
 else { 
    write-host "build error"
@@ -94,4 +95,4 @@ else {
 }
 
 # reset cache
-# resetCache $distributionId
+resetCache $distributionId
