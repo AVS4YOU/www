@@ -13,7 +13,7 @@ pipeline {
 			
 			withCredentials([
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKeyTest', passwordVariable: 'SecretKeyTest')
-                usernamePassword(credentialsId: 'aws-s3', usernameVariable: 'AccessKeyProd', passwordVariable: 'SecretKeyProd')
+                	usernamePasswordProd(credentialsId: 'aws-s3', usernameVariable: 'AccessKeyProd', passwordVariable: 'SecretKeyProd')
 					])
 			{
 	
