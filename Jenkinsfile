@@ -15,17 +15,10 @@ pipeline {
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKey', passwordVariable: 'SecretKey')
 					])
 			{
-		def scmVars = checkout([
-        		$class: 'GitSCM'
-      		])
-		      // Display the variable using scmVars
-	      echo "scmVars.GIT_COMMIT"
-	      echo "${scmVars.GIT_COMMIT}"
-
-	      // Displaying the variables saving it as environment variable
-	      env.GIT_COMMIT = scmVars.GIT_COMMIT
-	      echo "env.GIT_COMMIT"
-	      echo "${env.GIT_COMMIT}"	
+		final scmVars = checkout(scm)
+		echo "scmVars: ${scmVars}"
+		echo "scmVars.GIT_COMMIT: ${scmVars.GIT_COMMIT}"
+		echo "scmVars.GIT_BRANCH: ${scmVars.GIT_BRANCH
 				
 		bat 'powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File deploy.ps1'
 		bat 'powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File jenkins_notifier.ps1'
