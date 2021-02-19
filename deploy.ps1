@@ -62,12 +62,13 @@ $fileFilter = @(
 ) 
 
 # build site
-buildSite
+# buildSite
 
 # deploy site
 if ( Test-Path -Path $workDir ) {
    # Copy-Item -Path "$ENV:workspace\Client\pads" -Destination $workDir -Recurse -Force
-   deploySite $bucketName $workDir
+   # deploySite $bucketName $workDir
+   write-host "if"
 } 
 else { 
    write-host "build error"
@@ -75,4 +76,4 @@ else {
 }
 
 # reset cache
-resetCache
+# resetCache
