@@ -61,6 +61,12 @@ $fileFilter = @(
 	"robots.txt"
 ) 
 
+$branch =  $env:BRANCH_NAME
+if ( $branch -eq "test.new" ) {
+
+    Write-Host " Deploy from  $branch branch   "
+}
+
 # build site
 # buildSite
 
