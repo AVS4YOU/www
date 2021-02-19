@@ -37,8 +37,7 @@ function buildSite () {
     if ( $LASTEXITCODE -eq 1) {exit 1 }
 }
 
-
-function resetCache () {
+function resetCache ( $distributionId ) {
     write-host "=== reset cache ==="
     $UniqNumber = Get-Date -Format "yyyyMMddHHmmss"
     $Paths = "/*"
@@ -48,23 +47,37 @@ function resetCache () {
 
 # === main ===
 
-# S3_teststatic
-Set-AWSCredentials -AccessKey $Env:AccessKey -SecretKey $Env:SecretKey
 Set-DefaultAWSRegion us-east-1
+$workDir = "$ENV:workspace\Client\public"                         
 
-$bucketName = "new.avs4you.com"
-$workDir = "$ENV:workspace\Client\public"
-$distributionId = "E27SY1BHFO3J2K"
-                         
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
 ) 
 
+#  branch
 $branch =  $env:BRANCH_NAME
-if ( $branch -eq "test.new" ) {
 
-    Write-Host " Deploy from  $branch branch   "
+if ( $branch -eq "test.new" ) {
+    Set-AWSCredentials -AccessKey $Env:AccessKeyTest -SecretKey $Env:SecretKeyTest
+
+    $bucketName = "new.avs4you.com"
+    $distributionId = "E27SY1BHFO3J2K"
+}
+elseif ( $branch -eq "test.teststatic" ) {
+    Set-AWSCredentials -AccessKey $Env:AccessKeyTest -SecretKey $Env:SecretKeyTest   
+
+    $distributionId = "E5Z32JPP5GABL"
+    $bucketName = "teststatic.avs4you.com"
+} 
+elseif ( $branch -eq "test.teststatic" ) {
+    Set-AWSCredentials -AccessKey $Env:AccessKeyProd -SecretKey $Env:SecretKeyProd 
+
+    $bucketName = "www.avs4you.com"
+    $distributionId = "E21GNZRPS0AW6N"
+}
+else {
+    Write-host "Branch: $branch do not for deploy."
 }
 
 # build site
@@ -72,9 +85,8 @@ if ( $branch -eq "test.new" ) {
 
 # deploy site
 if ( Test-Path -Path $workDir ) {
-   # Copy-Item -Path "$ENV:workspace\Client\pads" -Destination $workDir -Recurse -Force
    # deploySite $bucketName $workDir
-   write-host "if"
+   write-host "if go"
 } 
 else { 
    write-host "build error"
@@ -82,4 +94,4 @@ else {
 }
 
 # reset cache
-# resetCache
+# resetCache $distributionId
