@@ -15,10 +15,7 @@ pipeline {
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKey', passwordVariable: 'SecretKey')
 					])
 			{
-		scmInfo = checkout scm
-	        echo "scm : ${scmInfo}"
-		echo "${scmInfo.GIT_COMMIT}"
-				
+		bat "echo ${env.BRANCH_NAME}"			
 		bat 'powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File deploy.ps1'
 		bat 'powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File jenkins_notifier.ps1'
                       							
