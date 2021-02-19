@@ -38,7 +38,7 @@ function buildSite () {
 }
 
 
-function resetCache () {
+function resetCache ($distributionId) {
     write-host "=== reset cache ==="
     $UniqNumber = Get-Date -Format "yyyyMMddHHmmss"
     $Paths = "/*"
@@ -48,18 +48,18 @@ function resetCache () {
 
 # === main ===
 
-# S3_teststatic
+# S3_deploy
 Set-AWSCredentials -AccessKey $Env:AccessKey -SecretKey $Env:SecretKey
 Set-DefaultAWSRegion us-east-1
 
-$bucketName = "new.avs4you.com"
+$bucketName = "www.avs4you.com"
 $workDir = "$ENV:workspace\Client\public"
-$distributionId = "E27SY1BHFO3J2K"
-                         
+$distributionId = "E21GNZRPS0AW6N"
+
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
-) 
+)                         
 
 # build site
 buildSite
@@ -67,7 +67,7 @@ buildSite
 # deploy site
 if ( Test-Path -Path $workDir ) {
    # Copy-Item -Path "$ENV:workspace\Client\pads" -Destination $workDir -Recurse -Force
-   deploySite $bucketName $workDir
+   deploySite $bucketName $workDir $fileFilter
 } 
 else { 
    write-host "build error"
@@ -75,4 +75,4 @@ else {
 }
 
 # reset cache
-resetCache
+resetCache $distributionId
