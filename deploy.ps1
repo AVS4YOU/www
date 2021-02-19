@@ -107,7 +107,7 @@ else {
 
 Write-host "Deploy from $branch branch."
 
-# build site
+# build
 buildSite
 
 # deploy site
