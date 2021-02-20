@@ -37,7 +37,11 @@ function buildSite () {
     if ( $LASTEXITCODE -eq 1) {exit 1 }
 }
 
+
 function resetCache ( $distributionId ) {
+=======
+
+
     write-host "=== reset cache ==="
     $UniqNumber = Get-Date -Format "yyyyMMddHHmmss"
     $Paths = "/*"
@@ -61,11 +65,10 @@ function notifyTelegram () {
 
 Set-DefaultAWSRegion us-east-1
 $workDir = "$ENV:workspace\Client\public"                         
-
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
-) 
+)                         
 
 #  branch
 $branch =  $env:BRANCH_NAME
@@ -121,6 +124,5 @@ else {
 
 # reset cache
 resetCache $distributionId
-
-# notifications
 notifyTelegram $CHAT_ID $MESSAGE
+

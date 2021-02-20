@@ -12,11 +12,13 @@ pipeline {
 		steps {
 			
 			withCredentials([
+
             		usernamePassword(credentialsId: 'aws-s3-teststatic', usernameVariable: 'AccessKeyTest', passwordVariable: 'SecretKeyTest'),
-                	usernamePassword(credentialsId: 'aws-s3', usernameVariable: 'AccessKeyProd', passwordVariable: 'SecretKeyProd')
+                usernamePassword(credentialsId: 'aws-s3', usernameVariable: 'AccessKeyProd', passwordVariable: 'SecretKeyProd')
 					])
 			{
 	
+
 			bat 'powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File deploy.ps1'
 
                       							
