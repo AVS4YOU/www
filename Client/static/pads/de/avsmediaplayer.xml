@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_Description></Company_Description>
+    <Product_UIN>APP-00A61219310</Product_UIN>
+    <Search_String>AVS Media Player</Search_String>
+    <Search_String_Unique>AVS Media Player</Search_String_Unique>
+    <Publish_on_CD>FALSE</Publish_on_CD>
+    <RSProductType></RSProductType>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Backlink></Backlink>
+  </RoboSoft>
+  <Company_Info>
+    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
+    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
+    <Address_2>180 Tottenham Court Road</Address_2>
+    <City_Town>London</City_Town>
+    <State_Province></State_Province>
+    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
+    <Country>United Kingdom</Country>
+    <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
+    <Contact_Info>
+      <Contact_First_Name>Irina</Contact_First_Name>
+      <Contact_Last_Name>Sanaeva</Contact_Last_Name>
+      <Contact_Email>submit@avs4you.com</Contact_Email>
+      <Author_First_Name>Irina</Author_First_Name>
+      <Author_Last_Name>Sanaeva</Author_Last_Name>
+      <Author_Email>submit@avs4you.com</Author_Email>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>submit@avs4you.com</Sales_Email>
+      <Support_Email>submit@avs4you.com</Support_Email>
+      <General_Email>submit@avs4you.com</General_Email>
+      <Sales_Phone></Sales_Phone>
+      <Support_Phone></Support_Phone>
+      <General_Phone></General_Phone>
+      <Fax_Phone></Fax_Phone>
+    </Support_Info>
+    <GooglePlusPage></GooglePlusPage>
+    <LinkedinPage></LinkedinPage>
+    <TwitterCompanyPage>https://twitter.com/avs4you</TwitterCompanyPage>
+    <FacebookCompanyPage>https://www.facebook.com/avs4you</FacebookCompanyPage>
+    <CompanyStorePage></CompanyStorePage>
+  </Company_Info>
+  <ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>Y</ASP_Member>
+    <ASP_Member_Number>06467</ASP_Member_Number>
+  </ASP>
+  <NewsFeed>
+    <NewsFeed_FORM>Y</NewsFeed_FORM>
+    <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
+    <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
+    <NewsFeed_DESCRIPTION>This PAD extension allows you to add your RSS and Atom news feeds info into your PAD file. This info can be used by RSS feed submission software or by feed directories themselves.</NewsFeed_DESCRIPTION>
+    <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
+    <NewsFeed_Language>English</NewsFeed_Language>
+    <NewsFeed_Purpose>News</NewsFeed_Purpose>
+    <NewsFeed_Author_Email>submit@avs4you.com</NewsFeed_Author_Email>
+    <NewsFeed_Author_First_Name>Irina</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Sanaeva</NewsFeed_Author_Last_Name>
+    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
+    <NewsFeed_Site_Name></NewsFeed_Site_Name>
+    <NewsFeed_Site_URL></NewsFeed_Site_URL>
+    <NewsFeed_Title></NewsFeed_Title>
+    <NewsFeed_Description_70></NewsFeed_Description_70>
+    <NewsFeed_Description_250></NewsFeed_Description_250>
+  </NewsFeed>
+  <Site>
+    <Site_FORM>Y</Site_FORM>
+    <Site_VERSION>1.0</Site_VERSION>
+    <Site_URL>http://Submit-Everywhere.com/extensions/Site.htm</Site_URL>
+    <Site_DESCRIPTION>This PAD extension allows you to add your site info into your PAD file. This info can be used by site submission software or by web directories themselves.</Site_DESCRIPTION>
+    <Site_Contact_Email>submit@avs4you.com</Site_Contact_Email>
+    <Site_Contact_First_Name>Irina</Site_Contact_First_Name>
+    <Site_Contact_Last_Name>Sanaeva</Site_Contact_Last_Name>
+    <Site_Site_URL>http://www.avs4you.com/de/AVS-Media-Player.aspx</Site_Site_URL>
+    <Site_Site_Title>AVS Media Player</Site_Site_Title>
+    <Site_Keywords>Videoplayer, Mediaplayer, Mediadatei abspielen, Clip abspielen, Film abspielen, Heimvideos abspielen, tragbarer Mediaplayer, Multimedia-Player, Film abspielen, Video-Wiedergabe, AVI-Player</Site_Keywords>
+    <Site_Description_100>Ihre Videos/Musik und Bilder mit AVS Media Player einfach abspielen.</Site_Description_100>
+    <Site_Description_250>Mehrere Videoformate wie AVI, MPEG, MP4, DIVX, WMV, etc. mit AVS Media Player einfach abspielen. Audiodateien wie MP3, M4A, WMA, FLAC, WAV, AAC, etc. problemlos wiedergeben. Bilder wie BMP, JPEG, PNG, etc. als Diashow anschauen.</Site_Description_250>
+    <Site_Description_450>MPEG, AVI, RM, QT, WMV, 3GP, MP4, etc. abspielen. FLAC, MP3, WAV, etc. wiedergeben und Sound-Around-Effekt genießen. JPEG, BMP, PNG, TIFF, etc. mit AVS Media Player anschauen.  AVS Media Player ist ein Gratis-Bestandteil des AVS4YOU.com-Pakets. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket.</Site_Description_450>
+  </Site>
+  <PAD_Certification_Promotion>
+    <Apply_For_Certification>N</Apply_For_Certification>
+  </PAD_Certification_Promotion>
+  <Program_Info>
+    <Program_Target_Platform>Windows</Program_Target_Platform>
+    <File_Info>
+      <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
+      <File_Size_Bytes>110353408</File_Size_Bytes>
+      <File_Size_K>107767</File_Size_K>
+      <File_Size_MB>105.24</File_Size_MB>
+      <Filename_Versioned></Filename_Versioned>
+      <Filename_Previous></Filename_Previous>
+      <Filename_Generic></Filename_Generic>
+      <Filename_Long></Filename_Long>
+    </File_Info>
+    <Program_Name>AVS Media Player</Program_Name>
+    <Program_Version>5.2.4.143</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>11</Program_Release_Day>
+    <Program_Release_Year>2020</Program_Release_Year>
+    <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+    <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+    <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
+    <Program_Change_Info>Unterstützung von M4A dash Audio und MP4 dash Video. Einige Fehlerbehebungen.</Program_Change_Info>
+    <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
+    <Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Based_On>Days</Expire_Based_On>
+      <Expire_Count></Expire_Count>
+      <Expire_Other_Info></Expire_Other_Info>
+      <Expire_Month></Expire_Month>
+      <Expire_Day></Expire_Day>
+      <Expire_Year></Expire_Year>
+    </Expire_Info>
+    <Program_Categories>Multimedia and Design :: Video Players</Program_Categories>
+    <Limitations>Unbeschränkt</Limitations>
+    <Program_Cost_Other_Code></Program_Cost_Other_Code>
+    <Program_Cost_Other></Program_Cost_Other>
+    <Awards></Awards>
+    <Program_Specific_Category></Program_Specific_Category>
+    <Includes_JAVA_VM></Includes_JAVA_VM>
+    <Includes_VB_Runtime></Includes_VB_Runtime>
+    <Includes_DirectX></Includes_DirectX>
+    <FacebookProductPage></FacebookProductPage>
+    <GooglePlusProductPage></GooglePlusProductPage>
+  </Program_Info>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://www.avs4you.com/de/avs-free-media-player.aspx</Application_Info_URL>
+      <Application_Order_URL>http://www.avs4you.com/de/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsmediaplayer.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsmediaplayer.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsmediaplayer.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSMediaPlayer.exe</Primary_Download_URL>
+      <Secondary_Download_URL></Secondary_Download_URL>
+      <Additional_Download_URL_1></Additional_Download_URL_1>
+      <Additional_Download_URL_2></Additional_Download_URL_2>
+    </Download_URLs>
+  </Web_Info>
+  <Permissions>
+    <Distribution_Permissions>Dieses Produkt darf unbegrenzt im Internet verbreitet werden. Um es auf einer CD zu veroffentlichen, wenden Sie sich bitte an uns unter info@avs4you.com</Distribution_Permissions>
+    <EULA>ENDVERBRAUCHER-LIZENZVERTRAG FÜR DIE SOFTWARE-PRODUKTE VON ONLINE MEDIA TECHNOLOGIES LTD.
+
+WICHTIG! BITTE AUFMERKSAM LESEN! Der vorliegende Endverbraucher-Lizenzvertrag ist eine rechtswirksame Vereinbarung zwischen Ihnen und Online Media Technologies Ltd. betreffend der entsprechenden Software-Produkte von Online Media Technologies Ltd. Bitte kopieren, installieren und benutzen Sie die unter diesem Lizenzvetrag ("Vertrag") angebotenen Software-Produkte nicht, bis Sie die unten angegebenen Bestimmungen sorgfältig gelesen haben.
+
+Jede Vervielfältigung oder Weitergabe der Software-Produkte oder ihrer Bestandteile, die nicht in Übereinstimmung mit dem Lizenzvertrag stehen, werden nach geltendem Recht ausdrücklich verboten, und können auf strenge bürgerliche und kriminelle Strafen hinauslaufen. 
+
+Begriffsbestimmungen: Der Begriff “Software-Produkte” umfasst die AVS4YOU-Programme. 
+
+Der Begriff “AVS4YOU-Programme” umfasst den kompletten Inhalt der Dateien, die durch elektronischen Download, auf einem physischen Datenträger oder durch weitere Verbreitungsmethoden (Festplatte(n), CD-ROM(s) oder weitere Speicher, in denen der vorliegende Lizenzvertrag miteingeschlossen ist) angeboten werden und die auf der Website www.avs4you.com zu finden sind. 
+
+Die AVS4YOU-Programme werden auf einer Pro-Computer-Basis lizenziert. Jede käuflich erworbene Lizenz erlaubt Ihnen die AVS4YOU-Programme nur auf einem Computer zu installieren. Wenn Sie die AVS4YOU-Programme auf weiteren Computern installieren und benutzen oder neu installieren möchten, müssen Sie für jeden weiteren Computer eine zusätzliche Lizenz käuflich erwerben. Bei der Änderung des Computers muss eine zusätzliche Lizenz gekauft werden. Alle Updates und Upgrades für die AVS4YOU-Programme sind innerhalb der ganzen Gültigkeitsperiode der AVS4YOU-Lizenz kostenlos. 
+
+Ihre Rechte und Pflichten im Bezug auf den Gebrauch der AVS4YOU-Programme oder ihrer Bestandteile sind wie folgt:
+
+Sie dürfen:
+1. eine Kopie der AVS4YOU-Programme oder ihrer Bestandteile, sowie alle Upgrades und Updates auf einem einzelnen Computer innerhalb der Periode benutzen, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet);
+2. eine Kopie der AVS4YOU-Programme oder ihrer Bestandteile zu Archivzwecken auf einem Speichergerät oder Datenträger erstellen;
+3. die AVS4YOU-Programme in einem Netzwerk benutzen, wenn Sie eine lizenzierte Kopie der AVS4YOU-Programme für jeden Computer haben, und den Zugriff auf die AVS4YOU-Programme über dieses Netzwerk innerhalb der Periode haben, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet);
+4. wenn Sie Fragen oder Probleme betreffend der AVS4YOU-Programme haben, sich an den Kundendienst per E-Mail innerhalb der Periode wenden, für die Sie das Abonnement erworben haben (gewöhnlich für ein Jahr oder unbefristet). 
+
+Sie dürfen nicht:
+1. Kopien von den AVS4YOU-Programmen in den Fällen benutzen, kopieren, modifizieren oder übertragen, die in diesem Lizenzvertrag nicht vorgesehen sind;
+2. jegliche urheberrechtliche Daten oder Markenzeichen von den AVS4YOU-Programmen entfernen;
+3. Reverse-Engineering, Dekompilierung, Disassemblierung oder abgeleitete Arbeiten auf den AVS4YOU-Programmen basieren (außer und nur so weit solche Tätigkeit durch geltendes Recht trotz dieser Beschränkung ausdrücklich erlaubt ist);
+4. die AVS4YOU-Programme oder jede Kopie davon, sowie dazugehörige Dokumentation mieten, leasen, unterlizenzieren oder übereignen;
+5. die Bestandteile der AVS4YOU-Programme für den Gebrauch auf mehreren PCs voneinander trennen; 
+6. den Lizenzschlüssel in irgend einer Form verbreiten;
+7. jeglichen Versuch unternehmen, den Quellcode von den AVS4YOU-Programmen zu entziffern.
+
+KEINE GARANTIEN.
+
+Online Media Technologies Ltd. lehnt ausdrücklich jede Garantie auf die AVS4YOU-Programme ab. 
+
+Die AVS4YOU-PROGRAMME, SOWIE JEDE DAZUGEHÖRIGE DOKUMENTATION WERDEN "SO WIE SIE SIND" GELIEFERT, D.H. OHNE GARANTIEN JEGLICHER ART, ENTWEDER AUSDRÜCKLICH ODER STILLSCHWEIGEND, OHNE STILLSCHWEIGENDE GARANTIEN ODER MARKTFÄHIGKEIT, ANGEMESSENHEIT ZU EINEM BESONDEREN ZWECK ODER NICHTVERSTOSS.
+
+DAS KOMPLETTE RISIKO, DAS AUS DEM GEBRAUCH ODER AUSFÜHRUNG DER AVS4YOU-PROGRAMME ENTSTEHT, WIRD VON IHNEN GETRAGEN.
+
+KEINE HAFTUNG FÜR FOLGESCHÄDEN.
+AUF KEINEN FALL WIRD ONLINE MEDIA TECHNOLOGIES LTD. FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE SCHÄDEN (EINGESCHRÄNKT ODER UNEINGESCHRÄNKT, SCHÄDEN AUS DEM VERLUST VON GESCHÄFTSGEWINNEN, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER VERMÖGENSSCHÄDEN) HAFTEN, DIE AUS DEM GEBRAUCH DER AVS4YOU-PROGRAMME ODER DER GEBRAUCHSUNFÄHIGKEIT ENTSTEHEN.
+
+URHEBERRECHTLICHER HINWEIS. Copyright(C) 2020 Online Media Technologies Ltd. Alle Rechte vorbehalten.
+Die Rechte, die hiermit ausdrücklich nicht eingeräumt werden, sind vorbehalten.</EULA>
+  </Permissions>
+  <AppStore>
+    <AppStore_AppID></AppStore_AppID>
+    <AppStore_Category></AppStore_Category>
+    <AppStore_Info_URL></AppStore_Info_URL>
+    <AppStore_Download_URL></AppStore_Download_URL>
+    <AppStore_Promo_Code_1></AppStore_Promo_Code_1>
+    <AppStore_Promo_Code_2></AppStore_Promo_Code_2>
+    <AppStore_Promo_Code_3></AppStore_Promo_Code_3>
+    <AppStore_Supported_Devices></AppStore_Supported_Devices>
+    <AppStore_Other_Applications></AppStore_Other_Applications>
+    <AppStore_Advantages_And_Unique_Features></AppStore_Advantages_And_Unique_Features>
+    <AppStore_Awards_And_Ratings></AppStore_Awards_And_Ratings>
+  </AppStore>
+  <Program_Descriptions>
+    <English>
+      <Keywords>video player, media player, movie player, mp4 video player, music player, play movies, avi video player, mobile media player, videoplayback, avi player, mpeg player, play video, audio player, view image, watch video, media play, flv media player</Keywords>
+      <Char_Desc_45>Play your video/audio and watch pics easily!</Char_Desc_45>
+      <Char_Desc_80>Watch video, play audio, view pictures with AVS Media Player.</Char_Desc_80>
+      <Char_Desc_250>Open videos with almost any file extension such as AVI, MPEG, WMV, MP4, DVR-MS, MKV, FLV, OGG, etc. with AVS Media Player. Add audio tracks of any format such as WAV, MP3, FLAC, M4A, OGG, AAC, AMR, etc. View images in PNG, JPEG, TIFF, GIF, etc.</Char_Desc_250>
+      <Char_Desc_450>Watch AVI, MPEG, WMV, MP4, MKV, FLV, video. Add WAV, MP3, FLAC, M4A, AAC, AMR and create personal playlists. Select images in PNG, JPEG, TIFF, GIF, etc. and view them as a slideshow. Enjoy Sound-Around Effect and get the feeling as if you are in a movie theater. AVS Media Player is a free application from AVS4YOU.com. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
+      <Char_Desc_2000>Watch your video easily and without any limits using AVS Media Player! Play a variety of video formats with AVS Media Player! It supports such video formats as MPEG, VOB, Xvid, MPEG-1, MPEG-2, AVI, Real Media video, Quick Time, WMV, WMV-HD, H.263, H.264, 3GP, MP4, etc. Listen to your favorite music with AVS Media Player. Add audio tracks of any format such as WAV, MP3, FLAC, M4A, OGG, AAC, AMR, etc. Create personal playlists to any taste and style with AVS Media Player. Select images in PNG, JPEG, TIFF, GIF, etc. and view them as a slideshow. AVS Media Player supports of 3.1, 5.1 and 7.1 speaker configurations. Switch on the Surround Effect and get the feeling as if you are in a movie theater. AVS Media Player is a free application from the AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime.</Char_Desc_2000>
+    </English>
+    <German>
+      <Char_Desc_45>Video/Musik einfach abspielen!</Char_Desc_45>
+      <Char_Desc_80>Ihre Videos/Musik und Bilder mit AVS Media Player einfach abspielen.</Char_Desc_80>
+      <Char_Desc_250>Mehrere Videoformate wie AVI, MPEG, MP4, VOB, WMV, etc. mit AVS Media Player einfach abspielen. Audiodateien wie MP3, M4A, WMA, FLAC, WAV, AAC, etc. problemlos wiedergeben. Bilder wie BMP, JPEG, PNG, etc. als Diashow anschauen.</Char_Desc_250>
+      <Char_Desc_450>MPEG, AVI, RM, QT, WMV, 3GP, MP4, etc. Video abspielen. FLAC, MP3, WAV, etc. Audio wiedergeben und Sound-Around-Effekt genießen. JPEG, BMP, PNG, TIFF, etc. Bilder mit AVS Media Player anschauen. AVS Media Player ist ein Gratis-Bestandteil des AVS4YOU.com-Pakets. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Unterstützung von H.265 (HEVC) und VP8/ VP9</Char_Desc_450>
+      <Char_Desc_2000>Spielen Sie sich Ihre Videos ganz einfach und ohne jegliche Einschränkungen mit AVS Media Player ab! 
+Schauen Sie sich auch digitales Video auf Ihrem Computer an. Oder verbinden Sie die Videokarte Ihres Computers mit einem TV-Eingang und sehen Sie sich Videos zusammen mit Ihren Freunden auf einem TV-Bildschirm an. 
+Öffnen Sie Videos mit beliebigen Dateierweiterungen wie AVI, MPEG, WMV, MP4, DVR-MS, MKV, FLV, OGG usw. im AVS Media Player. 
+Benutzen Sie AVS Media Player, um sich Ihre Lieblingsmusik anzuhören. Fügen Sie Audiotracks mit unterschiedlichen Formaten wie WAV, MP3, FLAC, M4A, OGG, AAC, AMR usw. hinzu. Erstellen Sie eigene Wiedergabelisten nach Ihrem Wunsch und Geschmack mit dem AVS Media Player. 
+Wählen Sie Bilder in Formaten PNG, JPEG, TIFF, GIF usw. und sehen Sie diese als Diashow. 
+Der AVS Media Player unterstützt solche Konfigurationen der Lautsprecherboxen wie 3.1, 5.1 und 7.1. Wechseln Sie zum Surround-Effekt und bekommen Sie das Gefühl im Kino zu sein. 
+AVS Media Player ist ein Gratis-Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet.</Char_Desc_2000>
+      <Keywords>Videoplayer, Mediaplayer, Mediadatei abspielen, Clip abspielen, Film abspielen, Heimvideos abspielen, tragbarer Mediaplayer, Multimedia-Player, Film abspielen, Video-Wiedergabe, AVI-Player, MPEG-Player, Video abspielen, Heimvideos abspielen</Keywords>
+    </German>
+  </Program_Descriptions>
+</XML_DIZ_INFO>
