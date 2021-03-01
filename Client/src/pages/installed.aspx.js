@@ -8,11 +8,11 @@ import Slider from "react-slick";
 import Link from "../components/link";
 import Cookies from 'universal-cookie';
 
-import uploadMediaFiles from "../images/installed/abs1.webp";
-import cutOrTrim        from "../images/installed/abs2.webp";
-import applyEffects     from "../images/installed/abs3.webp";
-import addBackground    from "../images/installed/abs4.webp";
-import saveMovie        from "../images/installed/abs5.webp"; 
+import uploadMediaFiles from "../images/installed/04.svg";
+import cutOrTrim        from "../images/installed/02.svg";
+import applyEffects     from "../images/installed/03.svg";
+import addBackground    from "../images/installed/01.svg";
+import saveMovie        from "../images/installed/05.svg"; 
 
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
