@@ -1235,6 +1235,32 @@
     "Multiformat movie editor" : "マルチフォーマット動画エディター",
     "4 reasons to choose AVS Video Editor" : "AVS Video Editorを選ぶ 4 つの理由",
 
+
+    "***************************Moneyback***********************" : "***************************Moneyback***********************",
+    "30 Days Moneyback Guarantee" : "30 日間返金保証",
+    "30 Days" : "30 日間",
+    "Moneyback" : "返金",
+    "Guarantee" : "保証",
+    "In case you are not satisfied with the software bought from the wwwavs4youcom web site, you can have your money back within 30 days since the purchase" : "www.avs4you.comウェブサイトで購入されたプログラムで満足しない場合は、購入から30日以内に返金できます",
+    "Moneyback rules" : "返金の条件",
+    "The moneyback is applicable for all the subscription types (at the moment this includes the unlimited and the one-year subscription types)" : "すべてのサブスクリプションタイプにおいて、返金を申し込むことができます（現在、無制限と1年間のライセンスがあります）",
+    "We reserve the right to suspend moneyback service at any moment Nevertheless all the requests for moneyback before this date will be accepted" : "弊社はいかなる場合でも返金をお断りする権利を留保します。それにも関わらず、購入から30日以内に要求された返金は意志 受け入れられます",
+    "a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'" : "アプリケーションをダウンロードして、AVS4YOU®プログラムがインストールされたコンピューターで起動してください。このプログラムはコンピュータからすべての登録情報を削除し、AVS4YOU　プログラムを未登録状態に戻します。",
+    "and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via" : "印刷してください。フォームを正しく記入して署名した後、44 207 182 6722 ファックスにそれを送りなさい。電子的コピーを（support form）で添付できます。",
+    "The moneyback will be performed the same way the purchase was done For instance, if you paid using a credit card, the money will be returned to the credit card bank account used" : "返金は購入時の決済方法と同じように行われます。例えば、クレジットカードを使用して支払ったら、お金はクレジットカードの銀行口座に戻ります。",
+    "Send form" : "フォーム送信",
+    "Please" : "ください",
+    "support form" : "サポートフォーム",
+    "download" : "ダウンロード",
+    "After that download our" : "その後(refund form)をダウンロードし、",
+    "refund form" : "返金フォーム",
+    "as an attachment" : " ",
+    "Get moneyback" : "返金を受ける",
+    "Moneyback procedure" :  "返金の手続き",
+    "Download application" : "アプリをダウンロード",
+    
+   
+
     "*****************************INSTALLED********************************" : "*****************************INSTALLED********************************",
     "Thank you" : "",
     "for installing" : " ",
@@ -1331,7 +1357,7 @@
 	"installed-avs4you-guides-how-to-start-working-with-video-editor" : "https://www.avs4you.com/jp/guides/how-to-start-working-with-video-editor.aspx",
 	"installed-onlinehelp-avs4you-avs-video-editor" : "https://onlinehelp.avs4you.com/jp/avs-video-editor/",
 	"partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners" : "https://onlinehelpstaticcontents.avs4you.com/downloads/reseller/partners_jp.pdf",
-	"register-support-avs4you-refund" : "https://support.avs4you.com/jp/refund.aspx",
+	"register-support-avs4you-refund" : "https://support.avs4you.com/jp/refund.aspx?_ga=2.183014054.141552133.1614670425-706531219.1585037246",
 	"about-us-support-avs4you-login" : "https://support.avs4you.com/jp/login.aspx",
 
     "header_support_avs4you" : "https://support.avs4you.com/jp",
