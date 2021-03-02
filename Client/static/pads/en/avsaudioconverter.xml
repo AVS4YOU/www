@@ -5,10 +5,14 @@
     <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
     <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+
+    <CERTIFIED>N</CERTIFIED>
+
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
     <Company_UIN>CMP-005B0BB0661</Company_UIN>
     <Company_Description></Company_Description>
+
     <Product_UIN>APP-007519FEB0E</Product_UIN>
     <Search_String>AVS Audio Converter</Search_String>
     <Search_String_Unique>AVS Audio Converter</Search_String_Unique>
@@ -23,6 +27,7 @@
   </RoboSoft>
   <Company_Info>
     <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
+
     <Address_1>85 Great Portland, London W1W 7LT</Address_1>
     <Address_2></Address_2>
     <City_Town>London</City_Town>
@@ -39,6 +44,7 @@
       <Author_Email>submit@avs4you.com</Author_Email>
     </Contact_Info>
     <Support_Info>
+
       <Sales_Email>sales@avs4you.com</Sales_Email>
       <Support_Email>support@avs4you.com</Support_Email>
       <General_Email>info@avs4you.com</General_Email>
@@ -52,6 +58,8 @@
     <TwitterCompanyPage>https://twitter.com/avs4you</TwitterCompanyPage>
     <FacebookCompanyPage>https://www.facebook.com/avs4you</FacebookCompanyPage>
     <CompanyStorePage></CompanyStorePage>
+    <PublisherID>pid-3800119d2d51</PublisherID>
+    <BrandID>bid-79007e1bd361</BrandID>
   </Company_Info>
   <ASP>
     <ASP_FORM>Y</ASP_FORM>
@@ -80,6 +88,7 @@
     <Apply_For_Certification>N</Apply_For_Certification>
   </PAD_Certification_Promotion>
   <Program_Info>
+
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>52026064</File_Size_Bytes>
@@ -90,11 +99,13 @@
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
+
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Audio Converter</Program_Name>
     <Program_Version>10.0.1.607</Program_Version>
     <Program_Release_Month>07</Program_Release_Month>
     <Program_Release_Day>07</Program_Release_Day>
+
     <Program_Release_Year>2020</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -145,7 +156,7 @@
     </Download_URLs>
   </Web_Info>
   <Permissions>
-    <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com.</Distribution_Permissions>
+    <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com.</Distribution_Permissions>    
     <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ONLINE MEDIA TECHNOLOGIES LTD.
 
 IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Online Media Technologies Ltd for the applicable Software Products of Online Media Technologies Ltd. Do not copy, install, or use the Software Products provided under this license agreement ("Agreement"), until you have carefully read the following terms and conditions.
@@ -284,6 +295,7 @@ Convierta sus pistas de audio al formato M4B con AVS Audio Converter: divídalos
 Edite archivo de audio y guárdelo en formato M4R para iPhone. Haga un tono de llamada individual con AVS Audio Converter. 
 Automatice el trabajo de rutina utilizando plantillas de conversión listas sin hacer clic en los botones del programa manualmente. Cree sus propios plantillasde conversión, establezca preajustes favoritos y programe un proceso de conversión automático. 
 Las herramientas AVS4YOU le permiten extraer, convertir y editar fácilmente archivos de audio / vídeo, grabar DVDs, crear tonos de llamada, subir vídeos a dispositivos portátiles, reproductores, teléfonos y mucho más.</Char_Desc_2000>
+
     </Spanish>
   </Program_Descriptions>
 </XML_DIZ_INFO>
