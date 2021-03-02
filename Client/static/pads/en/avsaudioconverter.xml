@@ -5,14 +5,17 @@
     <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
     <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+
     <CERTIFIED>N</CERTIFIED>
+
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
     <Company_UIN>CMP-005B0BB0661</Company_UIN>
     <Company_Description></Company_Description>
-    <Product_UIN>APP-00850F35B87</Product_UIN>
-    <Search_String>Free AVS Video Converter</Search_String>
-    <Search_String_Unique>Free AVS Video Converter</Search_String_Unique>
+
+    <Product_UIN>APP-007519FEB0E</Product_UIN>
+    <Search_String>AVS Audio Converter</Search_String>
+    <Search_String_Unique>AVS Audio Converter</Search_String_Unique>
     <Publish_on_CD>FALSE</Publish_on_CD>
     <RSProductType></RSProductType>
     <Press_Release_Search_String></Press_Release_Search_String>
@@ -24,11 +27,12 @@
   </RoboSoft>
   <Company_Info>
     <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
-    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
-    <Address_2>180 Tottenham Court Road</Address_2>
+
+    <Address_1>85 Great Portland, London W1W 7LT</Address_1>
+    <Address_2></Address_2>
     <City_Town>London</City_Town>
     <State_Province></State_Province>
-    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
+    <Zip_Postal_Code>W1W 7LT</Zip_Postal_Code>
     <Country>United Kingdom</Country>
     <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
     <Contact_Info>
@@ -40,9 +44,10 @@
       <Author_Email>submit@avs4you.com</Author_Email>
     </Contact_Info>
     <Support_Info>
-      <Sales_Email>submit@avs4you.com</Sales_Email>
-      <Support_Email>submit@avs4you.com</Support_Email>
-      <General_Email>submit@avs4you.com</General_Email>
+
+      <Sales_Email>sales@avs4you.com</Sales_Email>
+      <Support_Email>support@avs4you.com</Support_Email>
+      <General_Email>info@avs4you.com</General_Email>
       <Sales_Phone></Sales_Phone>
       <Support_Phone></Support_Phone>
       <General_Phone></General_Phone>
@@ -67,11 +72,11 @@
     <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
     <NewsFeed_DESCRIPTION>This PAD extension allows you to add your RSS and Atom news feeds info into your PAD file. This info can be used by RSS feed submission software or by feed directories themselves.</NewsFeed_DESCRIPTION>
     <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
-    <NewsFeed_Author_First_Name>Irina</NewsFeed_Author_First_Name>
-    <NewsFeed_Author_Last_Name>Sanaeva</NewsFeed_Author_Last_Name>
-    <NewsFeed_Author_Email>submit@avs4you.com</NewsFeed_Author_Email>
     <NewsFeed_Language>English</NewsFeed_Language>
     <NewsFeed_Purpose>News</NewsFeed_Purpose>
+    <NewsFeed_Author_Email>submit@avs4you.com</NewsFeed_Author_Email>
+    <NewsFeed_Author_First_Name>Irina</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Sanaeva</NewsFeed_Author_Last_Name>
     <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
     <NewsFeed_Site_Name></NewsFeed_Site_Name>
     <NewsFeed_Site_URL></NewsFeed_Site_URL>
@@ -83,32 +88,34 @@
     <Apply_For_Certification>N</Apply_For_Certification>
   </PAD_Certification_Promotion>
   <Program_Info>
-    <AppID>app-210023cfff7a</AppID>
-    <Program_Target_Platform>Windows</Program_Target_Platform>
+
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>85043200</File_Size_Bytes>
-      <File_Size_K>83050</File_Size_K>
-      <File_Size_MB>81.10</File_Size_MB>
+      <File_Size_Bytes>52026064</File_Size_Bytes>
+      <File_Size_K>50807</File_Size_K>
+      <File_Size_MB>49.62</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
-    <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>12.1.4.672</Program_Version>
-    <Program_Release_Month>12</Program_Release_Month>
-    <Program_Release_Day>13</Program_Release_Day>
+
+    <Program_Target_Platform>Windows</Program_Target_Platform>
+    <Program_Name>Free AVS Audio Converter</Program_Name>
+    <Program_Version>10.0.1.607</Program_Version>
+    <Program_Release_Month>07</Program_Release_Month>
+    <Program_Release_Day>07</Program_Release_Day>
+
     <Program_Release_Year>2020</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
-    <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Support of MP4 dash video. 2 new video effects: Vignette and Rectangular Vignette. Some bug fixes.</Program_Change_Info>
-    <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
-    <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
+    <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
+    <Program_Change_Info>Enhanced support of MP4/MOV/M4V/3GP video files and M4A audio files. Enhanced usability and accessibility. Some bug fixes.</Program_Change_Info>
+    <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz or higher, 1 GB RAM or higher, sound card, DirectX 9.0c or later</Program_System_Requirements>
+    <Program_Category_Class>Audio &amp; Multimedia::Rippers &amp; Converters</Program_Category_Class>
     <Expire_Info>
       <Has_Expire_Info>N</Has_Expire_Info>
       <Expire_Based_On>Days</Expire_Based_On>
@@ -118,7 +125,7 @@
       <Expire_Day></Expire_Day>
       <Expire_Year></Expire_Year>
     </Expire_Info>
-    <Program_Categories>Multimedia and Design :: Video Editors,Multimedia and Design :: Converters</Program_Categories>
+    <Program_Categories>Rippers,Converters,Audio,Multimedia</Program_Categories>
     <Limitations>No limitations</Limitations>
     <Program_Cost_Other_Code></Program_Cost_Other_Code>
     <Program_Cost_Other></Program_Cost_Other>
@@ -132,33 +139,24 @@
   </Program_Info>
   <Dynamic_PAD>
     <Dynamic_Distributive>N</Dynamic_Distributive>
-    <General>
-      <DP_Pad_Enabled>TRUE</DP_Pad_Enabled>
-      <DP_AtFormFill_Enabled>TRUE</DP_AtFormFill_Enabled>
-      <DP_Distributive_Enabled>FALSE</DP_Distributive_Enabled>
-      <DP_Script_Base_URL>http://repository.appvisor.com/</DP_Script_Base_URL>
-      <DP_Pad_Mask>AVSVideoConverter.xml</DP_Pad_Mask>
-      <DP_Distributive_Primary_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</DP_Distributive_Primary_URL>
-      <DP_Distributive_Mask>AVSVideoConverter.exe</DP_Distributive_Mask>
-    </General>
   </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
-      <Application_Info_URL>https://www.avs4you.com/avs-free-video-converter.aspx</Application_Info_URL>
-      <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>https://www.avs4you.com/pads/screenshots/avsvideoconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoconverter.gif</Application_Icon_URL>
+      <Application_Info_URL>http://www.avs4you.com/AVS-Audio-Converter.aspx</Application_Info_URL>
+      <Application_Order_URL>http://www.avs4you.com/Register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/AVSAudioConverter.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/AVSaudioconverter.gif</Application_Icon_URL>
       <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsaudioconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSAudioConverter.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
     </Download_URLs>
   </Web_Info>
   <Permissions>
-    <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com</Distribution_Permissions>
+    <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com.</Distribution_Permissions>    
     <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ONLINE MEDIA TECHNOLOGIES LTD.
 
 IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Online Media Technologies Ltd for the applicable Software Products of Online Media Technologies Ltd. Do not copy, install, or use the Software Products provided under this license agreement ("Agreement"), until you have carefully read the following terms and conditions.
@@ -218,75 +216,86 @@ Any rights not expressly granted herein are reserved.</EULA>
   </AppStore>
   <Program_Descriptions>
     <English>
-      <Keywords>video converter, free video converter, convert video, mp4 converter, video converter download, best free video converter, video converter to mp4, video to audio converter, youtube video converter, convert video to gif, video to audio converter</Keywords>
-      <Char_Desc_45>Convert all video formats for free.</Char_Desc_45>
-      <Char_Desc_80>Convert all popular video formats with Free AVS Video Converter free and fast.</Char_Desc_80>
-      <Char_Desc_250>Convert video to all key video formats and for all popular devices with Free AVS Video Converter. Convert MP4 DVD AVI MPEG VOB MOV WMV M4V HDV free and fast. Speed up video conversion due to GPU acceleration. Export audio from video.</Char_Desc_250>
-      <Char_Desc_450>Convert video between all formats with Free AVS Video Converter absolutely for free: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Use smart presets to convert video for iPhone, iPad, Samsung, Android tablets,phablets, smart TV and smartphones. Use batch conversion mode to convert a large number of files at once. Correct aspect ratio. Export audio from video. Burn video to DVD/Blu-ray discs with a menu.</Char_Desc_450>
-      <Char_Desc_2000>Convert video between all key formats with Free AVS Video Converter absolutely for free: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Use smart presets to convert video for iPhone, iPad, Samsung, Android tablets,phablets, smart TV and smartphones. 
-Free AVS Video Converter allows you to convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback. 
-Convert video files including MKV with subtitles easily and fast. 
-Free AVS Video Converter can speed up video conversion in several ways. You can convert a large number of video files at once choosing batch conversion or command-line modes. Command-line mode helps to automate and schedule conversion that is extremely useful for routine work. 
-Use hardware acceleration for video decoding by means of video cards (GPU): Intel HD Graphics (Intel Quick Sync Video technology) or NVIDIA GeForce (NVIDIA CUDA platform). These technologies help to playback and convert Full HD video with a high bitrate or 2K QHD and 4K UHD faster. 
-Make basic edits before converting video: correct aspect ratio, crop scale, split videos by size or chapters, export audio and images from video, add various video, audio and text effects. Play with new effects such as arrows, Tilt-shift, particles, countdown, etc. 
-Convert video for YouTube free and fast, select a necessary preset depending on the desired quality of the output file. Free AVS Video Converter also converts video for Facebook and popular video hosting websites such as Vimeo, Daily Motion, Telly. Burn DVD/Blu-ray discs with stylish menus.</Char_Desc_2000>
+      <Keywords>convert audio, convert music, convert file to mp3, mp3 converter, audio mp3, convert music to mp3, audio ripper, cda converter, audio cd, mp3 format, MP3, WMA, WAV, M4A, AMR, OGG, FLAC, audio from video, create audiobooks, ringtone for Iphone</Keywords>
+      <Char_Desc_45>Convert all audio formats for free.</Char_Desc_45>
+      <Char_Desc_80>Convert all popular audio formats with Free AVS Audio Converter free and fast.</Char_Desc_80>
+      <Char_Desc_250>Convert audio between MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 and other formats for free. Export and convert audio from your video files. Create ringtones for iPhone and make audiobooks. Use a command line mode for automatic conversion process.</Char_Desc_250>
+      <Char_Desc_450>Manage your music files efficiently with Free AVS Audio Converter. Convert MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 and other popular audio formats for free. Automate routine work using ready conversion templates. Trim, delete parts, merge files, apply effects. Use batch conversion mode to convert a large number of audio files at once. Export audio from video files. Create individual ringtones for your iPhone and make simple audiobooks.</Char_Desc_450>
+      <Char_Desc_2000>Convert all key audio formats, make basic edits, manage your audio collection, create ringtones for free. Enjoy fast audio conversion with Free AVS Audio Converter. Convert MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2, etc. for free. Manage APE files and encode them to any key audio format. 
+Select and convert audio from your video files. Free AVS Audio Converter supports DVD, MPEG, MP4, AVI, DIVX, MOV, WMV, VOB, 3GP, RM, QT, FLV, etc. Support of H.265 (HEVC) and VP8/ VP9 video codecs. 
+Use batch mode to convert and work with several files at one go. 
+Edit audio before conversion. Trim, delete parts, merge files, apply effects. 
+Modify extra text information in your audio files. Add your own data to audio files such as titles, authors, comments. 
+Create audiobooks with AVS Audio Converter. Convert your audio tracks to M4B format, divide them into chapters, add bookmarks, set up quality level before audio conversion, prepare audio files for your iPod/iPhone. 
+Create a unique ringtone for iPhone with AVS Audio Converter. Edit an audio file, save it to M4R format and upload to your smartphone. 
+Automate routine work using ready conversion templates without clicking the program buttons manually. Create your own conversion patterns, set favourite presets and schedule an automatic conversion process. 
+AVS4YOU tools let you easily convert and edit audio/video files, burn DVD/Blu-ray discs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
-    <French>
-      <Keywords>video converter, free video converter, convertisseur video, convertisseur video gratuit, convertisseur video youtube, logiciel convertisseur video, convertisseur video mp4, convertisseur vidéo gratuit, convertir video, convertir video youtube</Keywords>
-      <Char_Desc_45>Convertissez tous formats vidéo gratuitement</Char_Desc_45>
-      <Char_Desc_80>Convertissez tous les formats vidéo avec AVS Video Converter vite et gratuitem</Char_Desc_80>
-      <Char_Desc_250>Convertissez vidéo dans tous formats pour tous les appareils avec Free AVS Video Converter. Convertissez MP4 DVD AVI MPEG VOB MOV WMV M4V HDV vite et gratuitement. Accélérez conversion vidéo grâce a l'accélération GPU. Exportez audio depuis vidéo.</Char_Desc_250>
-      <Char_Desc_450>Convertissez vidéo entre tous les formats avec Free AVS Video Converter gratuitement: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Profitez de presets intelligents pour convertir vidéo pour iPhone, iPad, Samsung, tablettes Android, phablettes, téléviseurs intelligents et smartphones.</Char_Desc_450>
-      <Char_Desc_2000>Convertissez vidéo entre tous les formats avec Free AVS Video Converter gratuitement: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Profitez de presets intelligents pour convertir vidéo pour iPhone, iPad, Samsung, tablettes Android, phablettes, téléviseurs intelligents et smartphones. 
-Free AVS Video Converter vous permet de convertir HD, Full HD, 2K Quad HD, 4K Ultra HD et DCI 4K vidéo en utilisant des nouveaux presets et profiter de vidéos de haute qualité. 
-Convertissez fichiers vidéo y compris MKV avec sous-titres vite et facilement. 
-Free AVS Video Converter peut accélérer la conversion de vos vidéos de plusieurs façons. Vous pouvez convertir un grand nombre de fichiers vidéo à la fois avec la conversion en batch ou mode ligne de commande. Mode ligne de commande permet d'automatiser et programmer la conversion ce qui est très utile pour le travail de routine. 
-Utilisez l'accélération matérielle pour le décodage vidéo au moyen de cartes vidéo (GPU): Intel HD Graphics (Intel® Quick Sync Video technology) ou NVIDIA® GeForce® (NVIDIA CUDA® platform). Ces technologies aident à convertir et reproduire vidéo Full HD avec un débit binaire élevé ou 2K QHD et 4K UHD plus vite. 
-Faites des corrections basiques avant convertir vidéo: changer le rapport d'aspect, utiliser recadrage, diviser vidéo selon la taille ou par chapitres, exporter audio et images depuis vidéo, ajouter différents effets vidéo, audio et texte. Jouez avec des nouveaux effets tels comme flèches, tête inclinable, particules, compte à rebours, etc. 
-Convertissez vidéo pour YouTube gratuitement et vite, choisissez presets nécessaires selon la qualité souhaitée du fichier de sortie. Free AVS Video Converter convertit vidéo pour Facebook et d'autres site d'hébergement de vidéos comme Vimeo, Daily Motion, Telly. Gravez disques DVD/Blu-ray avec menus de style.</Char_Desc_2000>
-    </French>
     <German>
-      <Keywords>video converter, free video converter, youtube video converter, facebook video converter, video to audio converter, video konvertieren, kostenloser video converter</Keywords>
-      <Char_Desc_45>Konvertieren Sie alle Videoformate kostenlos</Char_Desc_45>
-      <Char_Desc_80>Konvertieren Sie Videos kostenlos mit Free AVS Video Converter.</Char_Desc_80>
-      <Char_Desc_250>Konvertieren Sie Videos in alle gängigen Videoformate und für alle beliebten Geräte Mit Free AVS Video Converter. Konvertieren Sie MP4 DVD AVI MPEG VOB MOV WMV M4V HDV kostenlos und schnell. Beschleunigen Sie Videoumwandlung mit GPU.</Char_Desc_250>
-      <Char_Desc_450>Konvertieren Sie Videos zwischen allen Formaten mit Free AVS Video Converter absolut kostenlos: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, usw. Verwenden Sie fertige Voreinstellungen für die Konvertierung der Videos für iPhone, iPad, Samsung, Android-Tablets, Smart-TV und Smartphones. Verwenden Sie Stapelmodus, um eine große Anzahl von Dateien auf einmal zu konvertieren. Passen Sie Seitenverhältnis an.</Char_Desc_450>
-      <Char_Desc_2000>Konvertieren Sie Videos zwischen allen gängigen Formaten mit Free AVS Video Converter absolut kostenlos: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Verwenden Sie fertige Voreinstellungen für die Konvertierung der Videos für iPhone, iPad, Samsung, Android-Tablets, Smart-TV und Smartphones. 
-Free AVS Video Converter ermöglicht es Ihnen, HD, Full HD, 2K Quad HD, 4K Ultra HD und DCI 4K Video mit ultra neuen Voreinstellungen zu konvertieren und hochwertige Video-Wiedergabe zu genießen. 
-Konvertieren Sie Videodateien einschließlich MKV mit Untertiteln einfach und schnell. 
-Free AVS Video Converter kann Videoumwandlung auf verschiedene Arten beschleunigen. Sie können eine große Anzahl von Videodateien mit der Hilfe von Stapelmodus oder Kommandozeilen Modus auf einmal konvertieren. 
-Kommandozeilenmodus hilft, die Konvertierung zu automatisieren und zu planen, die für Routineaufgaben äußerst nützlich ist. 
-Verwenden Sie Hardwarebeschleunigung für die Video-Dekodierung mittels Grafikkarten (GPU): Intel HD-Grafik (Intel Quick Sync Video Technologie) oder NVIDIA GeForce (NVIDIA CUDA Plattform). Diese Technologien helfen, Full-HD-Video mit einer großen Bitrate oder 2K QHD und 4K UHD schneller zu spielen und zu konvertieren. 
-Nehmen Sie vor der Videoumwandlung grundlegende Änderungen vor: passen Sie Seitenverhältnis an, teilen Sie Videos nach Größe oder Kapiteln auf, exportieren Sie den Ton aus Videodatei, fügen Sie verschiedene Video -, Audio-und Texteffekte hinzu. 
-Konvertieren Sie Video für YouTube kostenlos und schnell, wählen Sie ein notwendiges Preset abhängig von der gewünschten Qualität der Ausgabedatei. Free AVS Video Converter konvertiert auch video für Facebook, Vimeo, Daily Motion, Telly. Brennen Sie DVD - /Blu-ray-Вiscs mit stilvollen Menüs.</Char_Desc_2000>
+      <Keywords>MP3, WMA, WAV, M4A, AMR, OGG, FLAC, MP2, APE, audio converter, mp3 music converter, audio ripper, mp3 umwandler, flac in mp3, cd mp3 converter, hörbuch erstellen, audiobook converter, m4b, klingelton iphone, audiodateien bearbeiten</Keywords>
+      <Char_Desc_45>Konvertieren Sie Audios in mehrere Formate.</Char_Desc_45>
+      <Char_Desc_80>Konvertieren Sie gängige Audioformate mit AVS Audio Converter kostenlos.</Char_Desc_80>
+      <Char_Desc_250>Konvertieren Sie Audios in MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 und andere Formate kostenlos. Exportieren Sie Audio aus Videos zum Konvertieren. Erstellen Sie Klingeltöne für iPhone und eigene Hörbücher. Verwenden Sie Kommandozeilen Modus.</Char_Desc_250>
+      <Char_Desc_450>Verwalten Sie Musikdateien effizient und kostenlos mit AVS Audio Converter. Konvertieren Sie MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 und andere gängige Formate kostenlos. Automatisieren Sie die Konvertierung mit gebrauchsfertigen Vorlagen.  Schneiden, vereinigen Sie Audiodateien, löschen Sie einzelne Abschnitte, wenden Sie Effekte an. Exportieren/wandeln Sie Audio aus Videos um. Erstellen Sie Klingeltöne für iPhone und einfache Hörbücher.</Char_Desc_450>
+      <Char_Desc_2000>Konvertieren Sie gängige Audioformate, nutzen Sie grundlegende Bearbeitungstools, verwalten Sie Ihre Sammlung von Audios, erstellen Sie Klingeltöne kostenlos. Wandeln Sie Audios schneller und kostenlos mit AVS Audio Converter um. Konvertieren Sie MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2, usw. kostenlos. Verwalten Sie APE-Dateien und kodieren Sie diese in jedes Audioformat.
+Wählen und konvertieren Sie Audiospuren aus Ihren Videodateien. Kostenloser AVS Audio Converter unterstützt DVD, MPEG, MP4, AVI, DIVX, MOV, WMV, VOB, 3GP, RM, QT, FLV usw. 
+Nutzen Sie den Stampelmodus, um mehrere Dateien auf einmal zu verarbeiten.
+Bearbeiten Sie Audios vor der Konvertierung. Schneiden und löschen Sie Abschnitte, vereinigen Sie Dateien und wenden Sie Effekte an.
+Ändern Sie zusätzliche Textinformationen in Ihren Audiodateien. Fügen Sie Titel, Autoren, Kommentare und andere Daten hinzu.
+Erstellen Sie Hörbücher: wandeln Sie Ihre Audiotracks ins gängige M4B-Format um, teilen Sie diese in Kapitel auf und fügen Sie Lesezeichen hinzu. Bestimmen Sie die Qualität der Ausgabeaudiodatei vor der Umwandlung. Bereiten Sie Ihre Audiodateien für Ihren iPod bzw. Ihr iPhone vor. 
+Mit AVS Audio Converter können Sie Klingeltöne für iPhone erstellen: bearbeiten Sie eine Audiodatei und speichern Sie diese ins M4R-Format für Ihr Smartphone. 
+Schneiden und vereinigen Sie Audiodateien, löschen Sie einzelne Abschnitte, wenden Sie Effekte an, ändern Sie zusätzliche Textinformationen. 
+Automatisieren Sie die Konvertierung mit gebrauchsfertigen Konvertierungsvorlagen, sodass Sie jedes Mal auf Schaltflächen nicht klicken müssen. Erstellen Sie Ihre eigenen Konvertierungsparameter, nutzen Sie Ihre bevorzugten Voreinstellungen und planen Sie automatische Konvertierung ein.
+Die AVS4YOU-Programme ermöglichen Ihnen Audio- und Videodateien einfach zu rippen, zu konvertieren und zu bearbeiten, DVDs zu brennen, Klingeltöne zu erstellen, Videos auf tragbare Geräte, Player sowie Mobiltelefone zu übertragen und vieles.</Char_Desc_2000>
     </German>
+    <French>
+      <Keywords>convertisseur audio, convertisseur musique, convertir audio en mp3,convertisseur mp3, audio mp3, convertisseur musique en mp3, extraire audio, convertisseur cda, cd audio, format MP3,WMA,WAV,M4A,AMR,OGG,FLAC, créez livres audio, sonnerie pour iPhone</Keywords>
+      <Char_Desc_45>Traitez les formats audio!</Char_Desc_45>
+      <Char_Desc_80>Convertissez les audios des tous les formats avec AVS Audio Converter gratuit.</Char_Desc_80>
+      <Char_Desc_250>Convertissez gratuitement des formats audio MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2. Extrayez, convertissez l'audio à partir des vidéos. Créez des sonneries pour iPhone et des livres audio. Automatisez la conversion via la ligne de commande.</Char_Desc_250>
+      <Char_Desc_450>Gérez vos fichiers avec AVS Audio Converter gratuit. Convertissez gratuitement les formats : MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2. Automatiser le travail en utilisant les modèles de conversion. Découpez, supprimez des parties, fusionnez des fichiers, appliquez des effets. Convertissez plusieurs fichiers en même temps. Extrayez l'audio des vidéos. Créez des sonneries pour iPhone et des livres audio simples.</Char_Desc_450>
+      <Char_Desc_2000>Convertissez tous les formats audio populaires, éditez, gérez vos fichiers, créez des sonneries. Profitez de la conversion rapide avec AVS Audio Converter gratuit. Convertissez gratuitement MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2, etc. Gérez les fichiers APE et décodez-les aux formats audio courants.
+Sélectionnez et convertissez l'audio à partir des fichiers vidéo. Le logiciel prend en charge DVD, MPEG, MP4, AVI, DIVX, MOV, WMV, VOB, 3GP, RM, QT, FLV, etc. 
+Utilisez le mode de traitement par lots pour convertir et traiter plusieurs fichiers en une seule fois. 
+Éditez l'audio avant la conversion. Découpez, supprimez les parties, fusionnez des fichiers, appliquez des effets. 
+Modifiez des informations textuelles de vos fichiers audio. Ajoutez vos données : titre, auteur, commentaires. 
+Convertissez des pistes audio au format M4B avec AVS Audio Converter. Divisez les pistes en parties et ajoutez des signets. Définissez le niveau de qualité avant de convertir. 
+Créez les fichiers audio pour votre iPod/iPhone. Ajoutez vos propres informations aux fichiers audio (titres, auteurs, commentaires). 
+Éditez un fichier audio et enregistrez-le au format M4P pour iPhone. Créez une sonnerie individuelle avec AVS Audio Converter. 
+La ligne de commande permet d'automatiser votre travail de routine à l'aide des modèles de conversion sans avoir cliqué sur les boutons manuellement. 
+Les logiciels AVS4YOU vous permettent d'extraire, de convertir et d'éditer facilement des fichiers audio/vidéo, de graver DVD, de créer des sonneries, de télécharger des vidéos sur les appareils portables, lecteurs, téléphones et encore plus !</Char_Desc_2000>
+    </French>
     <Russian>
-      <Keywords>видео конвертер, бесплатный видео конвертер, конвертировать видео, MP4 конвертер, видео конвертер скачать, лучший бесплатный видео конвертер, видео конвертер в MP4, видео в аудио конвертер, YouTube конвертер видео, конвертировать видео в GIF</Keywords>
-      <Char_Desc_45>Конвертируйте все видео форматы бесплатно.</Char_Desc_45>
-      <Char_Desc_80>Конвертируйте все популярные форматы видео с помощью Free AVS Video Converter</Char_Desc_80>
-      <Char_Desc_250>Конвертируйте видео во все ключевые форматы видео и для всех популярных устройств с помощью Free AVS Video Converter. Конвертировать MP4 DVD AVI MPEG VOB MOV бесплатно и быстро. Ускорьте конвертацию видео за счет ускорения графического процессора.</Char_Desc_250>
-      <Char_Desc_450>Конвертируйте видео во все форматы с помощью бесплатного AVS Video Converter абсолютно бесплатно: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray и т. Д. Используйте умные настройки для конвертации видео для iPhone, iPad, Samsung, планшетов Android, фаблетов, smart телевизоров и смартфонов. Используйте режим пакетного преобразования для одновременного конвертирования большого количества файлов.</Char_Desc_450>
-      <Char_Desc_2000>Конвертируйте видео между всеми ключевыми форматами с помощью Free AVS Video Converter абсолютно бесплатно: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray и т. Д. Используйте умные пресеты, чтобы конвертировать видео для iPhone, iPad, Samsung, планшетов Android, фаблетов, smart телевизоров и смартфонов. 
-Free AVS Video Converter позволяет конвертировать HD, Full HD, 2K Quad HD, 4K Ultra HD и DCI 4K видео с использованием ультра новых пресетов и наслаждаться высококачественным воспроизведением видео. 
-Конвертируйте видео файлы, включая MKV с субтитрами, легко и быстро. 
-Free AVS Video Converter может ускорить конвертацию видео несколькими способами. Вы можете конвертировать большое количество видеофайлов одновременно, выбирая пакетную конвертацию или режимы командной строки. Режим командной строки помогает автоматизировать и планировать процесс конвертации, что чрезвычайно полезно для рутинной работы. 
-Используйте аппаратное ускорение для декодирования видео с помощью видеокарт (GPU): Intel HD Graphics (технология Intel® Quick Sync Video) или NVIDIA® GeForce® (платформа NVIDIA CUDA®). Эти технологии помогают воспроизводить и конвертировать видео Full HD с высокой скоростью передачи данных или 2K QHD и 4K UHD быстрее. 
-Вносите основные изменения перед конвертацией видео: корректируйте соотношение сторон, масштаб изображения, разделяйте видео по размеру или разделам, экспортируйте аудио и изображения из видео, добавляйте различные видео, аудио и текстовые эффекты. Экспериментируйте с новыми эффектами, такими как стрелки, Tilt-shift, частицы, обратный отсчет и т.д. 
-Конвертируйте видео на YouTube бесплатно и быстро, выбирайте необходимые пресеты в зависимости от желаемого качества выходного файла. Free AVS Video Converter также конвертирует видео для Facebook и популярных видеохостингов, таких как Vimeo, Daily Motion, Telly. Записывайте DVD / Blu-ray диски со стильным меню.</Char_Desc_2000>
+      <Keywords>аудио конвертер, конвертировать в mp3, конвертер музыки, mp3 конвертер, MP3, WMA, WAV, M4A, AMR, OGG, FLAC, рингтон для iphone</Keywords>
+      <Char_Desc_45>Конвертируйте все аудио форматы бесплатно!</Char_Desc_45>
+      <Char_Desc_80>Конвертируйте все популярные аудио форматы в  Free AVS Audio Converter  беслатно</Char_Desc_80>
+      <Char_Desc_250>Конвертируйте файлы в форматах MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG и др. Извлекайте и конвертируйте звуковые дорожки из своих видеофайлов. Создавайте рингтоны и аудиокниги. Используйте режим командной строки для автоматизации процесса конвертации</Char_Desc_250>
+      <Char_Desc_450>Конвертируйте файлы в форматах MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 и др бесплатно с помощью Free AVS Audio Converter. Автоматизируйте рутинную работу, используя готовые шаблоны конвертации. Обрезайте, удаляйте части, объединяйте файлы, применяйте эффекты. Используйте пакетный режим конвертации для преобразования и работы с несколькими файлами одновременно. Создавайте уникальные рингтоны и аудиокниги для прослушивания на iPod/iPhone.</Char_Desc_450>
+      <Char_Desc_2000>Конвертируйте все ключевые аудио форматы, вносите основные изменения, управляйте своей аудио коллекцией, создавайте рингтоны бесплатно. Наслаждайтесь быстрым преобразованием звука с помощью бесплатного AVS Audio Converter. Конвертируйте MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 и т. д. бесплатно. Управляйте файлами APE и кодируйте их в любой ключевой аудиоформат.
+Извлекайте и конвертируйте звуковые дорожки из своих видеофайлов. Free AVS Audio Converter поддерживает форматы DVD, MPEG, MP4, AVI, DIVX, MOV, WMV, VOB, 3GP, RM, QT, FLV и другие. Поддержка H.265 (HEVC) и VP8/ VP9 видео кодеков. 
+Используйте пакетный режим конвертации для преобразования и работы с несколькими файлами одновременно. 
+Вы можете отредактировать аудио перед конвертацией: обрезать, удалить отдельные части, объединить файлы, наложить эффекты, изменить дополнительную текстовую информацию в аудиофайлах. Вы можете добавить такие данные в аудио файлы, как названия, авторов, комментарии. 
+Создавайте аудиокниги с помощью AVS Audio Converter: конвертируйте аудиофайлы в формат M4B, разделяйте их на главы и добавляйте закладки, подготовьте аудиофайлы для прослушивания на iPod/iPhone. 
+Создавайте рингтон для iPhone с AVS Audio Converter: отредактируйте аудиофайл и сохраните его в формат M4R для iPhone, создайте свой собственный оригинальный рингтон. 
+С помощью AVS Audio Converter Вы можете автоматизировать рутинную работу, используя режим командной строки. Используйте готовые шаблоны конвертации без необходимости нажатия кнопок программы вручную. Это поможет ускорить процесс преобразования Ваших файлов. 
+AVS4YOU продукты позволяют легко конвертировать и редактировать аудио/видео файлы, редактировать изображения, записывать DVD, создавать рингтоны, загружать видео на портативные устройства, плееры, телефоны и многое другое!</Char_Desc_2000>
     </Russian>
     <Spanish>
-      <Keywords>video converter, convertidor de vídeos, convertidor mp4, convertidor de video a mp3, convertir video a mp4, convertidor de videos gratis, convertir video a audio</Keywords>
-      <Char_Desc_45>Convierta todos los formatos de vídeo gratis.</Char_Desc_45>
-      <Char_Desc_80>Convierta todos los formatos de vídeo con Free AVS Video Converter gratis.</Char_Desc_80>
-      <Char_Desc_250>Convierta vídeo a cualquier formato de video y para todos los dispositivos populares con Free AVS Video Converter. Convierta MP4 DVD AVI MPEG VOB MOV WMV M4V HDV gratis y rápidamente. Acelere la conversión de vídeo con GPU. Exporta audio desde vídeo.</Char_Desc_250>
-      <Char_Desc_450>Convierta vídeo entre todos los formatos con Free AVS Video Converter absolutamente gratis: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Use presets inteligentes para convertir vídeos para iPhone, iPad, Samsung, tabletas Android, phablets, smart TV y smartphones. Convierta una gran cantidad de archivos de vídeo a la vez usando el modo de conversión por lotes. Grabe vídeo en discos DVD / Blu-ray con un menú.</Char_Desc_450>
-      <Char_Desc_2000>Convierta vídeo entre todos los formatos con Free AVS Video Converter absolutamente gratis: MP4, DVD, MPEG, VOB, 2K QHD, 4K UHD, MOV, AVI, WMV, MKV, FLV, TS, Blu-ray, etc. Use presets inteligentes para convertir vídeos para iPhone, iPad, Samsung, tabletas Android, phablets, smart TV y smartphones. 
-Free AVS Video Converter le permite convertir vídeos HD, Full HD, 2K Quad HD, 4K Ultra HD y DCI 4K usando presets ultra nuevos para que disfrute de una reproducción de video de alta calidad. 
-Convierta archivos de vídeo incluyendo MKV con subtítulos de manera fácil y rápida. 
-Free AVS Video Converter puede acelerar la conversión de video de varias maneras. Puede convertir una gran cantidad de archivos de vídeo a la vez, eligiendo la conversión por lotes o el modo de línea de comandos. El modo de línea de comandos ayuda a automatizar y programar la conversión que es extremadamente útil para el trabajo de rutina. 
-Utilice la aceleración de hardware para la decodificación de vídeo mediante tarjetas de vídeo (GPU): Intel HD Graphics (tecnología Intel® Quick Sync Video) o NVIDIA® GeForce® (plataforma NVIDIA CUDA®). Estas tecnologías ayudan a reproducir y convertir vídeo Full HD con bitrate alto o 2K QHD y 4K UHD más rápido. 
-Modifique vídeo antes de convertirlo: corrija la relación de aspecto, divida vídeo por tamaño o capítulos, exporte audio e imágenes de vídeo, agregue varios efectos de vídeo, audio y texto. Aplique nuevos efectos tales como flechas, Tilt-shift, partículas, cuenta atrás, etc. 
-Convierta vídeo para YouTube de forma gratuita y rápida, seleccione un ajuste preestablecido según la calidad deseada del archivo de salida. Asimismo Free AVS Video Converter convierte vídeos para Facebook y sitios web de alojamiento de vídeos populares Vimeo, Daily Motion, Telly y otros. Grabe discos DVD / Blu-ray con menús elegantes.</Char_Desc_2000>
+      <Keywords>convertir audio, convertir música, convertir archivos a mp3, convertidor mp3, mp3 audio, convertir música a mp3, grabadora de audio, audio cd, formato mp3, MP3, WMA, WAV, M4A, AMR, OGG, FLAC, crear audiolibros, tono de llamada para Iphone</Keywords>
+      <Char_Desc_45>Convierta archivos de audio gratis.</Char_Desc_45>
+      <Char_Desc_80>Convierta todos los formatos de audio con Free AVS Audio Converter gratis.</Char_Desc_80>
+      <Char_Desc_250>Convierta archivos de audio MP3, WMA, WAV, AMR, AAC, M4A, FLAC, OGG, MP2, etc. gratis. Exporte y convierta audio de sus archivos de vídeo. Cree tonos de llamada y audiolibros para iPhone. Utilice modo de línea de comandos para conversión automática.</Char_Desc_250>
+      <Char_Desc_450>Administre archivos de música eficientemente con Free AVS Audio Converter. Convierta MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 y otros formatos de audio gratis. Automatice trabajo de rutina utilizando plantillas listas. Recorte, elimine partes, fusione archivos, aplique efectos.Use el modo de conversión por lotes para convertir una gran cantidad de archivos de audio a la vez. Cree tonos de llamada individuales y haga audiolibros.</Char_Desc_450>
+      <Char_Desc_2000>Convierta todos los formatos de audio clave, realice ediciones básicas, gestione su colección de audio, cree tonos de llamada gratis. Disfruta de una rápida conversión de audio con Free AVS Audio Converter. Convierta archivos MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2, etc gratis. Administre archivos APE y codifíquelos a cualquier formato de audio compatible con AVS Audio Converter. 
+Seleccione y convierte audio de sus archivos de vídeo. Free AVS Audio Converter soporta DVD, MPEG, MP4, AVI, DIVX, MOV, WMV, VOB, 3GP, RM, QT, FLV, etc. Soporte de códecs de video H.265 (HEVC) y VP8 / VP9. 
+Utilice el modo por lotes para convertir y trabajar con varios archivos a la vez. 
+Edite audio antes de conversión. Recorte, elimine partes, fusione archivos, aplique efectos. 
+Modifique la información de texto adicional en sus archivos de audio. Agregue sus propios datos a archivos de audio tales como títulos, autores, comentarios. 
+Convierta sus pistas de audio al formato M4B con AVS Audio Converter: divídalos en capítulos y agregue marcadores, configure el nivel de calidad antes de la conversión de audio, prepare archivos de audio para su iPod / iPhone. 
+Edite archivo de audio y guárdelo en formato M4R para iPhone. Haga un tono de llamada individual con AVS Audio Converter. 
+Automatice el trabajo de rutina utilizando plantillas de conversión listas sin hacer clic en los botones del programa manualmente. Cree sus propios plantillasde conversión, establezca preajustes favoritos y programe un proceso de conversión automático. 
+Las herramientas AVS4YOU le permiten extraer, convertir y editar fácilmente archivos de audio / vídeo, grabar DVDs, crear tonos de llamada, subir vídeos a dispositivos portátiles, reproductores, teléfonos y mucho más.</Char_Desc_2000>
+
     </Spanish>
   </Program_Descriptions>
 </XML_DIZ_INFO>
