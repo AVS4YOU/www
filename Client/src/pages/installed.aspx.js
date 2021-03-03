@@ -24,6 +24,12 @@ const regExp = /=regnow:(.*):/;
 
 
 const StyledFooter = styled.div`
+a {
+    text-decoration : none;
+}
+a:hover {
+    text-decoration: none;
+   }
 .centerall {
     position: relative;
     }
@@ -541,11 +547,10 @@ const StyledFooter = styled.div`
         content: none;
         }
     .lfn-copyright {
+    display: inline-flex;
     padding: 0 0 30px 12px;
     font-size: 12px;
-    }
-
-    
+    }    
       
 `;
 
@@ -849,9 +854,7 @@ render(){
                     <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
                     <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
-                
-                <div className="lfn-copyrigh" style={{paddingLeft: "10px;"}}><Link to="/" style={{color: "#fff;"}}>{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
-
+                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Online Media Technologies Ltd, UK")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
             </div>
         </div>
         </div>

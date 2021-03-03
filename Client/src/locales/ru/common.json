@@ -994,6 +994,8 @@
   "59": "₽2499",
   "199 ": "₽2998",
   "59 ": "₽2499",
+  "$59" : "₽2499",
+  "$199" : "₽2998",
   "Get 5 professional multimedia tools for audio and video processing": "Получите 5 профессиональных мультимедийных инструментов для обработки аудио и видео",
   "AVS4YOU Unlimited Subscription": "AVS4YOU Безлимитная подписка",
   "Make your home videos look professional with a full set of video editing tools": "Пусть ваши домашние видео выглядят профессионально благодаря полному набору инструментов для редактирования видео",
@@ -1038,6 +1040,7 @@
   "Play media files, create personal playlists and more useful features" : "Воспроизводить медиафайлы, создавать личные плейлисты и другие полезные функции.",
   "$59.00" : "2499 ₽",
   "$29.00" : "1200 ₽",
+
   "prices valid till September 30, 2020" : "prices valid till September 30, 2020",
   "AVS4YOU Unlimited Subscription" : "AVS4YOU Безлимитная подписка",
   "Time-limited offer" : "Предложение ограничено",
