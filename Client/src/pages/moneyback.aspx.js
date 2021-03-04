@@ -8,6 +8,7 @@ import ScrollUpButton from '../components/scroll-up-button';
 import MoneybackProcedure from '../images/moneyback/icon-moneyback.svg';
 import MoneybackRules from '../images/moneyback/icon-rules.svg';
 import styled from 'styled-components';
+import { Link as ScrollLink } from "react-scroll";
 
 const MoneybackStyled = styled.div`
 
@@ -673,7 +674,10 @@ render(){
                 <div className="header__body-wrapper">
                   <Text as="h1" className="header__heading">{this.props.t("30 Days")} <span className="colorMoneyback" color="#F59541">{this.props.t("Moneyback")}</span> {this.props.t("Guarantee")}</Text>
                   <Text as="h3" className="header__subtitle">{this.props.t("In case you are not satisfied with the software bought from the wwwavs4youcom web site, you can have your money back within 30 days since the purchase")}</Text>
+               
+                  <ScrollLink to="choose-program__info" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
                   <Button className="header__button" textClassName="header__button-text" href="">{this.props.t("Learn more")}</Button>
+                </ScrollLink>
                 </div>
               </div>
             </div>
@@ -681,7 +685,7 @@ render(){
         <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         <div className="body-reasons screen-wrapper">
             <div className="choose-program">
-                <div className="choose-program__wrapper">
+                <div className="choose-program__wrapper" id="choose-program__info">
                 <div className="choose-program__round-wrapper-wp">
                 </div>
                   <Text as="h2" className="common__heading">

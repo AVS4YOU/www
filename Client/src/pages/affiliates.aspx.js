@@ -33,7 +33,7 @@ render(){
                   </Text>
                   <Text as="h1" className="header__heading">{this.props.t("Affiliate Program")}</Text>
                   <Text as="h3" className="header__subtitle">{this.props.t("Generate maximum sales with AVS4YOU top tools")}</Text>
-                  <Button className="header__button" textClassName="header__button-text" href="https://www.avangate.com/affiliates/sign-up.php?merchant=onlmetec&template=affiliate-signup-october-2011&clean=1&lang=en">{this.props.t("Sign up now")}</Button>
+                  <Button className="header__button" textClassName="header__button-text" href={this.props.t("avangatenetwork-affiliates-sign-up")}>{this.props.t("Sign up now")}</Button>
                 </div>
               </div>
             </div>

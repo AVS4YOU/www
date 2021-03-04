@@ -9,6 +9,9 @@ import Star from '../images/main-page/icons/star.svg';
 import Link from '../components/link';
 import videoDiv from '../images/avs-video-editor-tools/video/maker.mp4';
 
+const date = new Date();
+const currentYear = date.getFullYear();
+
 class pwfVideoMaker extends React.PureComponent {
 
   constructor(props) {
@@ -147,9 +150,9 @@ render(){
                     <li style={{fontSize:"14px"}}><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
                     <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
                     <li style={{fontSize:"14px"}}><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li style={{fontSize:"14px"}}><Link to="/contact.aspx">{this.props.t("Contact us")}</Link></li>
+                    <li style={{fontSize:"14px"}}><Link to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright">© <Link className="blacklink" to="/">{this.props.t("Online Media Technologies Ltd UK")}</Link> {this.props.t("2020  All rights reserved")}</div>
+                <div className="vph_copyright"><Link to="/">{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
             </div>
             <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>

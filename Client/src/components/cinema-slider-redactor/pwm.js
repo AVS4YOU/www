@@ -71,6 +71,7 @@ height: 70px;
     max-width: 800px;
     margin: 0 auto;
     height: 115px;
+    padding: 0;
 }
 @media screen and (max-width: 1130px) {
   .slick-slide {
