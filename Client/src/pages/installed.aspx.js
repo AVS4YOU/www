@@ -5,19 +5,31 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import styled from 'styled-components';
 import Slider from "react-slick";
-import LinkImage from "../components/link-image";
-import LinkHref from "../components/link-href";
 import Link from "../components/link";
+import Cookies from 'universal-cookie';
 
-import uploadMediaFiles from "../images/installed/abs1.webp";
-import cutOrTrim from "../images/installed/abs2.webp";
-import applyEffects from "../images/installed/abs3.webp";
-import addBackground from "../images/installed/abs4.webp";
-import saveMovie from "../images/installed/abs5.webp";
+import uploadMediaFiles from "../images/installed/04.svg";
+import cutOrTrim        from "../images/installed/02.svg";
+import applyEffects     from "../images/installed/03.svg";
+import addBackground    from "../images/installed/01.svg";
+import saveMovie        from "../images/installed/05.svg"; 
 
+
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+
+
+const date = new Date();
+const currentYear = date.getFullYear();
+const regExp = /=regnow:(.*):/;
 
 
 const StyledFooter = styled.div`
+a {
+    text-decoration : none;
+}
+a:hover {
+    text-decoration: none;
+   }
 .centerall {
     position: relative;
     }
@@ -78,7 +90,7 @@ const StyledFooter = styled.div`
     bottom: 0;
     width: 910px;
     height: 66px;
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -90,7 +102,7 @@ const StyledFooter = styled.div`
         text-decoration: none;
         width: 670px;
         height: 53px;
-        padding: 46px 0px 0px;
+        padding: 10px 0px 0px;
         margin: 0 auto;
         display: block;
         }
@@ -140,6 +152,7 @@ const StyledFooter = styled.div`
     position: absolute;
     left: 600px;
     top: 172px;
+    margin-left: 80px;
     }
         .lohbn-regular-price:after {
         content: '';
@@ -498,6 +511,7 @@ const StyledFooter = styled.div`
     margin-left: 30px;
     }
     .landing-footer-narrow {
+    width: 1020px;
     text-align: left;
     }
     .landing-footer-narrow ul,
@@ -533,11 +547,10 @@ const StyledFooter = styled.div`
         content: none;
         }
     .lfn-copyright {
+    display: inline-flex;
     padding: 0 0 30px 12px;
     font-size: 12px;
-    }
-
-    
+    }    
       
 `;
 
@@ -663,9 +676,45 @@ padding-top:50px;
 class Installed extends React.PureComponent {
     constructor(props) {
         super(props);
+        this.cookies = new Cookies();
+
+        this.affiliateID = "";
+        this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+        if(this.siteTrasingCookie){
+            this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+        };
         this.play = this.play.bind(this);
         this.pause = this.pause.bind(this);
+
+        this.state = {
+            hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("defaultHrefUnlim"),
+            documentLoaded: false,
+          };
       }
+
+      componentDidMount(){
+        const queryString = require('query-string');
+        const parsed = queryString.parse(document.location.search);
+        const cookies = new Cookies();
+        if (parsed.SRC) {
+          cookies.set('SRC', parsed.SRC, { path: '/' });
+        }
+      
+        const SRCParam = cookies.get('SRC')
+      
+        if(SRCParam){
+      
+          this.setState({
+            hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
+          })
+        }
+      
+        this.setState({
+         documentLoaded: true
+       })
+      }
+
       play() {
         this.slider.slickPlay();
       }
@@ -712,6 +761,7 @@ render(){
     return (
       <Layout 
         headerIsDisabled={true}
+        footerIsDisabled={true}
         className="installed-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -728,7 +778,7 @@ render(){
                 <div className="lfb-language">
                     <ul className="top-menu">
                         <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                        <li><LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support")}</LinkHref></li>
+                        <li><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
                         <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
@@ -739,19 +789,24 @@ render(){
                     </h1>
                 </div>
                 <span>
-    <div className="lfb-offer">
-        <a id="landingPage_landingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><span>{this.props.t("Exclusive Offer Only Today ")}</span></a>
-    </div>                                    </span>
+                <div className="lfb-offer">
+                    <a id="landingPage_landingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1"                 
+                    href={this.props.t(`${this.state.hrefUnlim}`)}
+                    ><span>{this.props.t("Exclusive Offer Only Today ")}</span></a>
+                </div>                                    
+                </span>
             </div>
         </div>
         <div className="landing-one-half-block">
             <div className="landing-one-half-block-narrow">
-            <LinkImage className="lohbn-image-block" mainName="" toName=".webp"/>
+            <ImageGQL className="lohbn-image-block" imageName={this.props.t("lohbn-image-block-en-webp")} />
                 <div className="lohbn-text-block">  
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
                     <p className="lohbn-regular-price">{this.props.t("Regularly")} <span className="lohbn-rp"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("199 ")}</span></p>
-                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a>                                                                                                            </span>
+                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3"                 
+                    href={this.state.hrefUnlim}
+                    ><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>
                 </div>
             </div>
         </div>
@@ -772,45 +827,36 @@ render(){
                         {Slides()}
                     </Slider>
                 </StyledSlider>
+
             </div>
         </div>
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx">{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></LinkHref></div>
-                    <div className="llbn-ht-block llbnht-block2"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/create-video-slideshow.aspx">{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></LinkHref>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-start-working-with-video-editor.aspx">{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</LinkHref></div>
-                    <div className="llbn-ht-block llbnht-block4"><LinkHref mainLink="https://onlinehelp.avs4you.com/" toLink="avs-video-editor/">{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></LinkHref>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
+                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
+                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
                 </div>
-                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=1&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1&amp;SRC=ThanksInstallation_en"><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a>
-                                                                                                                         </span>            
+                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3"                 
+                href={this.state.hrefUnlim}
+                ><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>            
             </div>
         </div>
         <div className="landing-footer">
             <div className="landing-footer-narrow">
                 <ul>
                     <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><Link to="/login.aspx">{this.props.t("Support")}</Link></li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
                     <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
                     <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
                     <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>
                     <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
                     <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
-                <div className="lfn-social">
-                    <a className="lfns-button lfnsb-yt" target="_blank" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"></a>
-                    <a className="lfns-button lfnsb-fb" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"></a>
-                    <a className="lfns-button lfnsb-tw" target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"></a>
-                    <a className="lfns-button lfnsb-pi" target="_blank" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"></a>
-                </div>
-                <div className="lfn-copyright"> © <Link className="blacklink" to="/">
-                {this.props.t("Online Media Technologies Ltd UK")}
-                </Link> {this.props.t("2020 All rights reserved")}</div>
+                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Online Media Technologies Ltd, UK")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
             </div>
         </div>
-    
-        
-    
         </div>
         </StyledFooter>
 </Layout>

@@ -1,18 +1,17 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import ScrollTools from '../components/scroll-tools';
 import "../styles/installed-pack.less";
-import ScrollUpButton from '../components/scroll-up-button';
 import BenefitsCarousel from '../components/benefits-carousel';
 import { Link as GatsbyLink } from 'gatsby';
-import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
-import { useSwipeable, Swipeable } from 'react-swipeable';
+import Cookies from 'universal-cookie';
 
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+const regExp = /=regnow:(.*):/;
 const LogoWrapper = styled.div`
     width: 69px;
     height: 60px;
@@ -26,6 +25,45 @@ const LogoWrapper = styled.div`
 `;
 
 class installedPack extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.cookies = new Cookies();
+
+    this.affiliateID = "";
+    this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+    if(this.siteTrasingCookie){
+        this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+    };
+
+    this.state = {
+        hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("defaultHrefUnlim"),
+        documentLoaded: false,
+      };
+  }
+
+  componentDidMount(){
+    const queryString = require('query-string');
+    const parsed = queryString.parse(document.location.search);
+    const cookies = new Cookies();
+    if (parsed.SRC) {
+      cookies.set('SRC', parsed.SRC, { path: '/' });
+    }
+  
+    const SRCParam = cookies.get('SRC')
+  
+    if(SRCParam){
+  
+      this.setState({
+        hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
+      })
+    }
+  
+    this.setState({
+     documentLoaded: true
+   })
+  }
 
 render(){
     return (
@@ -59,7 +97,7 @@ render(){
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("$59")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={`https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_Pack_${this.props.t("en")}`} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
         <div className="body-company">

@@ -8,7 +8,6 @@ import pinterest from '../../images/common/social/pinterest.svg';
 import Text from '../text';
 import Link from '../link';
 import FooterItem from '../footer-item';
-import LinkHref from '../link-href';
 
 const FooterGridContainer = styled.div`
     display: table;
@@ -119,16 +118,16 @@ class Footer extends React.Component{
                         </Link>
                     </FooterItem>
                     <FooterItem header={this.props.t("Help Center")}>
-                        <a href={this.props.t("support avs4you")} target="_blank">
+                        <a href={this.props.t("support avs4you")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Support form")}</Text>
                         </a>
-                        <a href={this.props.t("avs4you guides index")} target="_blank">
+                        <a href={this.props.t("avs4you guides index")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Guides")}</Text>
                         </a>
-                        <a href={this.props.t("onlinehelp avs4you index")} target="_blank">
+                        <a href={this.props.t("onlinehelp avs4you index")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Knowledge center")}</Text>
                         </a>
-                        <a href={this.props.t("support avs4you faq")} target="_blank">
+                        <a href={this.props.t("support avs4you faq")} target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("FAQ")}</Text>
                         </a>
                     </FooterItem>
@@ -145,7 +144,7 @@ class Footer extends React.Component{
                         <Link to="/license-agreement.aspx">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
                         </Link>
-                        <a href="https://www.avs4you.com/blog/" target="_blank">
+                        <a href="https://www.avs4you.com/blog/" target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
                         </a>
                     </FooterItem>

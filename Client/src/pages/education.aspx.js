@@ -147,7 +147,7 @@ render(){
                 </ContentRowItem>
                 <div className="content-button-wrapper">
                   <Button 
-                    tabIndex="1"
+                    tabIndex="0"
                     backgroundColor="blue" 
                     padding="20px 35px"
                     fontSize={18} 
@@ -163,7 +163,7 @@ render(){
           </div>
         </div>
         <div className="form education screen-wrapper">
-          <img src={mailIcon}/>
+          <img src={mailIcon} alt="mail icon"/>
           <Text id="contact-form-header" as="h2" className="common__heading">
           {this.props.t("Contact form")}
           </Text>

@@ -6,7 +6,6 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/about-us.less";
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from "../components/link-href";
 
 class aboutUs extends React.PureComponent {
 
@@ -91,7 +90,6 @@ render(){
             </div>
           </div>
         </div>
-        <a name="contact-us"></a>
         <div className="map-body">
           <div className="map-body__contacts-wrapper">
             <div className="map-body__block">
@@ -108,7 +106,7 @@ render(){
             </div>
           </div>
           <div className="map-body__adaptive-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2569405901709!2d-0.13665574168987776!3d51.52213386381332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b29329cc78f%3A0xe28600fd84cdb10!2zU3VpdGUgMTIsIDJuZCBGbG9vciwgMTgwIFRvdHRlbmhhbSBDb3VydCBSZCwgRml0enJvdmlhLCBMb25kb24gVzFUIDdOWiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1606730021347!5m2!1sru!2sru" width="100%" height="100%" frameBorder="0" allowFullScreen=""></iframe>
+            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2569405901709!2d-0.13665574168987776!3d51.52213386381332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b29329cc78f%3A0xe28600fd84cdb10!2zU3VpdGUgMTIsIDJuZCBGbG9vciwgMTgwIFRvdHRlbmhhbSBDb3VydCBSZCwgRml0enJvdmlhLCBMb25kb24gVzFUIDdOWiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1606730021347!5m2!1sru!2sru" width="100%" height="100%" frameBorder="0" allowFullScreen=""  />
           </div>
         </div>
         <div className="contact-body">
@@ -123,7 +121,7 @@ render(){
                   {this.props.t("Affiliate Sales")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("To learn more about affiliate program please email us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a> {this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program ")}</Link> {this.props.t("page")}
+                  {this.props.t("To learn more about affiliate program please email us at")}<a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a>{this.props.t("or visit our ")}<Link to="/affiliates.aspx">{this.props.t("Affiliate Program ")}</Link> {this.props.t("page")}
                 </Text>
               </div>
 
@@ -150,7 +148,7 @@ render(){
                   {this.props.t("Customer Support")}
                 </Text>
                 <Text className="common-info-block__text">
-                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<LinkHref mainLink="https://support.avs4you.com/" toLink="login.aspx">{this.props.t("Support Center")}</LinkHref>
+                  {this.props.t("For assistance with purchasing and using our products, please visit our ")}<a target="_blank" rel="noreferrer noopener" href={this.props.t("about-us-support-avs4you-login")} >{this.props.t("Support Center")}</a>
                 </Text>
               </div>
             </div>

@@ -10,13 +10,17 @@ import Selected from '../../images/common/languages/selected.svg';
 import { PageContext } from '../../context/page-context';
 
 import RuIcon from '../../images/common/languages/russian.svg';
+import KrIcon from '../../images/common/languages/korea-flag.svg';
+import PlIcon from '../../images/common/languages/polish-flag.svg';
+import DkIcon from '../../images/common/languages/danish.svg';
+import NlIcon from '../../images/common/languages/netherlands.svg';
 import EnIcon from '../../images/common/languages/english.svg';
 import FrIcon from '../../images/common/languages/france.svg';
 import DeIcon from '../../images/common/languages/germany.svg';
 import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
-
+import PtIcon from '../../images/common/languages/portugal-flag.svg';
 const BackSubmenuButtonShow = css`
     opacity: 1;
     transition: .2s linear;
@@ -94,6 +98,21 @@ const StyledLanguageSelector = styled.div`
         &.ru:before{
             background-image: url(${RuIcon});
         }
+        &.pl:before{
+            background-image: url(${PlIcon});
+        }
+        &.kr:before{
+            background-image: url(${KrIcon});
+        }
+        &.dk:before{
+            background-image: url(${DkIcon});
+        }
+        &.nl:before{
+            background-image: url(${NlIcon});
+        }
+        &.pt:before{
+            background-image: url(${PtIcon});
+        }
     }
     .languageSelector:before{
         content: '';
@@ -156,7 +175,12 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
-  { value: "ru", text: "Русский" }
+    {value: "ru", text: "Русский"},
+    {value: "pl", text: "Polski"},
+    {value: "kr", text: "한국어"},
+    {value: "dk", text: "Dansk"},
+    {value: "nl", text: "Nederland"},
+    { value: "pt", text: "Português"}
 ];
 
 class LanguageSelector extends React.PureComponent {
@@ -194,7 +218,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -208,7 +232,7 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -227,7 +251,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext && pageContext.originalPath

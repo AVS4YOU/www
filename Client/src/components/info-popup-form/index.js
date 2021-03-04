@@ -44,7 +44,7 @@ const StyledPopupWrapper = styled.div`
 const InfoPopupForm = () => {
     return (
         <StyledPopupWrapper>
-            <img src={CheckMarkIcon} className="CheckMarkIcon" />
+            <img src={CheckMarkIcon} className="CheckMarkIcon" alt="Check Mark Icon"/>
             <Text as="h4">Your message has been successfully sent.</Text>
             <Text as="p">Thank you very much. We will contact you promptly.</Text>
         </StyledPopupWrapper>

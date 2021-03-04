@@ -8,6 +8,7 @@ import ScrollUpButton from '../components/scroll-up-button';
 import MoneybackProcedure from '../images/moneyback/icon-moneyback.svg';
 import MoneybackRules from '../images/moneyback/icon-rules.svg';
 import styled from 'styled-components';
+import { Link as ScrollLink } from "react-scroll";
 
 const MoneybackStyled = styled.div`
 
@@ -422,6 +423,7 @@ const MoneybackStyled = styled.div`
                 margin: 10px;
                 margin-bottom: 30px;
                 max-width: none;
+                padding: 5px;
             }
         }
     }
@@ -672,7 +674,10 @@ render(){
                 <div className="header__body-wrapper">
                   <Text as="h1" className="header__heading">{this.props.t("30 Days")} <span className="colorMoneyback" color="#F59541">{this.props.t("Moneyback")}</span> {this.props.t("Guarantee")}</Text>
                   <Text as="h3" className="header__subtitle">{this.props.t("In case you are not satisfied with the software bought from the wwwavs4youcom web site, you can have your money back within 30 days since the purchase")}</Text>
+               
+                  <ScrollLink to="choose-program__info" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
                   <Button className="header__button" textClassName="header__button-text" href="">{this.props.t("Learn more")}</Button>
+                </ScrollLink>
                 </div>
               </div>
             </div>
@@ -680,7 +685,7 @@ render(){
         <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         <div className="body-reasons screen-wrapper">
             <div className="choose-program">
-                <div className="choose-program__wrapper">
+                <div className="choose-program__wrapper" id="choose-program__info">
                 <div className="choose-program__round-wrapper-wp">
                 </div>
                   <Text as="h2" className="common__heading">
@@ -713,7 +718,7 @@ render(){
               {this.props.t("Download application")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Please")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'")}
+                {this.props.t("Please")} <a target="_blank" rel="noreferrer noopener" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'")}
               </Text>
             </div>
 
@@ -727,7 +732,7 @@ render(){
               {this.props.t("Send form")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("After that download our")} <a target="_blank" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/refund.pdf" className="hrefMoneyback">{this.props.t("refund form")}</a> {this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")} <a target="_blank" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a> {this.props.t("as an attachment")}
+                {this.props.t("After that download our")} <a target="_blank" rel="noreferrer noopener" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/refund.pdf" className="hrefMoneyback">{this.props.t("refund form")}</a> {this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")} <a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a> {this.props.t("as an attachment")}
               </Text>
             </div>
 

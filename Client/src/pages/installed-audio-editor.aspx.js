@@ -1,16 +1,17 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/installed-audio-editor.less";
-import ScrollUpButton from '../components/scroll-up-button';
 import BenefitsCarousel from '../components/benefits-carousel';
 import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
-import { useSwipeable, Swipeable } from 'react-swipeable';
+import Cookies from 'universal-cookie';
+
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+const regExp = /=regnow:(.*):/;
 
 const LogoWrapper = styled.div`
     width: 69px;
@@ -25,6 +26,45 @@ const LogoWrapper = styled.div`
 `;
 
 class installedAudioEditor extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.cookies = new Cookies();
+
+    this.affiliateID = "";
+    this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+    if(this.siteTrasingCookie){
+        this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+    };
+
+    this.state = {
+        hrefUnlim: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("defaultHrefUnlim"),
+        documentLoaded: false,
+      };
+  }
+
+  componentDidMount(){
+    const queryString = require('query-string');
+    const parsed = queryString.parse(document.location.search);
+    const cookies = new Cookies();
+    if (parsed.SRC) {
+      cookies.set('SRC', parsed.SRC, { path: '/' });
+    }
+  
+    const SRCParam = cookies.get('SRC')
+  
+    if(SRCParam){
+  
+      this.setState({
+        hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
+      })
+    }
+  
+    this.setState({
+     documentLoaded: true
+   })
+  }
 
 render(){
     return (
@@ -48,11 +88,11 @@ render(){
           <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Audio Editor")}</Text>
-             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={`https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_AE_${this.props.t("en")}`} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
+             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
               <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and edit your audio without limitations")}</Text>
               <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
               <Text as="h4" className="header__new__price">{this.props.t("590")}</Text></table>
-              <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={`https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&SRC=ThanksInstallation_AE_${this.props.t("en")}`} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
+              <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
             </div>
         </div>
         <div className="body-company">

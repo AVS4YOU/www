@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import Button from '../button';
 import { CSSTransition } from 'react-transition-group';
 import CategorySelectorComponent from '../category-selector-component';
 
@@ -74,7 +73,7 @@ class ContentSelector extends React.Component {
 
     changeContent = (nextContentIndex) => {
 
-        if(nextContentIndex != this.state.currentContentIndex){
+        if(nextContentIndex !== this.state.currentContentIndex){
             this.setState({
                 animate: !this.state.animate,
                 nextContentIndex: nextContentIndex
@@ -140,8 +139,8 @@ class ContentSelector extends React.Component {
                     </div>
                 </CSSTransition>
                 </div>
-                {!this.props.disableArrows && <div className="previous-button" onClick={this.onClickPrev.bind(this)}></div>}
-                {!this.props.disableArrows && <div className="next-button" onClick={this.onClickNext.bind(this)}></div>}
+                {!this.props.disableArrows && <div className="previous-button" onClick={this.onClickPrev.bind(this)} aria-hidden="true"></div>}
+                {!this.props.disableArrows && <div className="next-button" onClick={this.onClickNext.bind(this)} aria-hidden="true"></div>}
             </StyledContentSelector>
         )
     }

@@ -11,7 +11,6 @@ import HeaderDownloadButtons from "../components/header-download-buttons";
 import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
-import LinkHref from '../components/link-href';
 class Download extends React.PureComponent {
 
 render(){
@@ -156,11 +155,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
-                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx">
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downolads-avs4you-guides")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
-                </LinkHref>
+                </a>
               </div>
             </PanelCollapse>
 
@@ -172,11 +171,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
-                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-activate-the-avs4you-software.aspx">
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-activate-the-avs4you-software")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
-                </LinkHref>
+                </a>
               </div>          
             </PanelCollapse>
 
@@ -188,11 +187,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
-                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/how-to-reinstall-avs4you-programs.aspx">
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
-                </LinkHref>
+                </a>
               </div>
             </PanelCollapse>
 
@@ -201,11 +200,11 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict")}</Text>   
                 </div>
-                <LinkHref mainLink="https://www.avs4you.com/" toLink="guides/How-to-uninstall-AVS4YOU-programs.aspx">
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
-                </LinkHref>
+                </a>
               </div>
             </PanelCollapse>
           </div>

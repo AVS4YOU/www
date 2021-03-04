@@ -119,7 +119,7 @@ render(){
           </div>
         </div>
         <div className="form screen-wrapper">
-          <img src={mailIcon}/>
+          <img src={mailIcon} alt=""/>
           <Text as="h2" className="common__heading">
           {this.props.t("If you have not found the necessary information, please send a request")}
           </Text>

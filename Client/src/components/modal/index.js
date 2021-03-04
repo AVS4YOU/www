@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
 
 
 
@@ -66,8 +65,8 @@ export default class Modal extends React.Component {
 					display: this.props.isModalOpen ? "block" : "none"
 				}}
 			>
-				<div style={this.styleoverlay} onClick={this.props.closeModal} />
-				<div onClick={this.props.closeModal} />
+				<div style={this.styleoverlay} onClick={this.props.closeModal} aria-hidden="true"/>
+				<div onClick={this.props.closeModal} aria-hidden="true"/>
 				<div style={this.stylemodal}>{this.props.children}</div>
 			</div>
 		);

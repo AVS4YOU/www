@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Button from '../button';
-import Text from '../text';
 import { Link } from "react-scroll";
 import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
@@ -29,8 +28,7 @@ const DownloadScrollButton = (props) => {
         var parser = new UAParser();
         var result = parser.getResult();
         setTouchDevice(result.device.type === "mobile" || result.device.type === "tablet");
-    });
-
+    }, [setTouchDevice]);
 
     return(
         <ButtonWrapper id="downloadButton" touchDevice={touchDevice} className={props.className}>

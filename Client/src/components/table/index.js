@@ -208,13 +208,13 @@ tr:first-child td{
  class TableRow extends React.Component {
     render() {
       const {
-        data, headerTable, footerTable, hrefTable
+        data
       } = this.props;
       const row = data.map((data) =>
       <tr>
         <td className="tableId" key={data.id}>{data.id}</td>
-        <td className="tableTitle" key={data.title}><a target="_blank" href={data.title.hr} className="hrfTableTitle"><h1 className="hDataTitle">{data.title.hed}</h1></a><span className="tableTitleDesc">{data.title.desc}</span></td>
-        <td className="tableDwn" key={data.dwn}><span className="spanTableDwn"><img className="tbImg" src={Img}></img><a target="_blank" href={data.dwn.hrf} className="hrfTableDwn">{data.dwn.wrd}</a></span></td>
+        <td className="tableTitle" key={data.title}><a target="_blank" rel="noreferrer noopener" href={data.title.hr} className="hrfTableTitle"><h1 className="hDataTitle">{data.title.hed}</h1></a><span className="tableTitleDesc">{data.title.desc}</span></td>
+        <td className="tableDwn" key={data.dwn}><span className="spanTableDwn"><img className="tbImg" src={Img} alt="Download button"></img><a target="_blank" rel="noreferrer noopener" href={data.dwn.hrf} className="hrfTableDwn">{data.dwn.wrd}</a></span></td>
       </tr>
       );
       return (
@@ -224,9 +224,6 @@ tr:first-child td{
   }
   
   export default class Table extends React.Component {
-    constructor(props) {
-      super(props);
-    }
     render() {
       return (
         <TableStyled>
@@ -234,7 +231,7 @@ tr:first-child td{
         <table className="DataTable">
           <TableRow data={this.props.data} />
         </table>
-      <Text className="TextTable">{this.props.footerTable} <a target="_blank" href="mailto:affiliates@avs4you.com">{this.props.hrefTable}</a>.</Text>
+      <Text className="TextTable">{this.props.footerTable} <a target="_blank" rel="noreferrer noopener" href="mailto:affiliates@avs4you.com">{this.props.hrefTable}</a>.</Text>
         </TableStyled>
       );
     }

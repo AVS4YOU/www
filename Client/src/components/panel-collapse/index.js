@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from "prop-types";
 import Text from "../text";
 import CloseIcon from '../../images/common/icons/close-popup.svg';
@@ -100,7 +100,7 @@ class PanelCollapse extends React.Component {
     render(){
         return( 
             <StyledPanelCollapse className={this.props.className} heightVal={this.state.heightVal} isInitialized={this.state.isInitialized} isOpen={this.state.isOpen} {...this.props}>
-                <div onClick={this.togglePanel} className="panelNameWrapper">
+                <div onClick={this.togglePanel} className="panelNameWrapper" aria-hidden="true">
                     <Text className="panelName">{this.props.panelName}</Text>
                 </div>
                 <div className="panelContent" ref={this.myRef}>
@@ -118,7 +118,7 @@ PanelCollapse.propTypes = {
 
 PanelCollapse.defaultProps = {
     visibly: true,
-    panelName: "Enter \'panelName\'"
+    panelName: "Enter panelName"
 }
 
 export default PanelCollapse;
