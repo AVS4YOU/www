@@ -108,7 +108,9 @@ else {
     exit
 }
 
-Write-host "Deploy from $branch branch."
+$StartMessage = "Deploy from $branch is starting."
+Write-host "$StartMessage"
+notifyTelegram $CHAT_ID $StartMessage
 
 # build
 buildSite
