@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /
 Disallow: /static/impact-write-cookie.js
