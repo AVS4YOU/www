@@ -30,9 +30,9 @@ const localesNSContent = {
       ns: "common"
     }
   ],
-  ja: [
+  jp: [
     {
-      content: fs.readFileSync(`src/locales/ja/common.json`, "utf8"),
+      content: fs.readFileSync(`src/locales/jp/common.json`, "utf8"),
       ns: "common"
     }
   ],
@@ -82,7 +82,7 @@ const availableLocales = [
   { value: "it", text: "Italiano" },
   { value: "fr", text: "Français" },
   { value: "es", text: "Español" },
-  { value: "ja", text: "日本語" },
+  { value: "jp", text: "日本語" },
   { value: "ru", text: "Русский" },
   { value: "pl", text: "Polski"},
   { value: "ko", text: "한국어"},
