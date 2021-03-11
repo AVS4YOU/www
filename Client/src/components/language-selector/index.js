@@ -174,11 +174,11 @@ const availableLocales = [
     {value: "de", text: "Deutsch"},
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
-    {value: "jp", text: "日本語"},
+    {value: "ja", text: "日本語"},
     {value: "ru", text: "Русский"},
     {value: "pl", text: "Polski"},
-    {value: "kr", text: "한국어"},
-    {value: "dk", text: "Dansk"},
+    {value: "ko", text: "한국어"},
+    {value: "da", text: "Dansk"},
     {value: "nl", text: "Nederland"},
     { value: "pt", text: "Português"}
 ];

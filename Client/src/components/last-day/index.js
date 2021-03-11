@@ -195,12 +195,12 @@ function AvsLinkHref(props){
                 pageContext.locale === "de" ? DE_MText: 
                 pageContext.locale === "fr" ? FR_MText : 
                 pageContext.locale === "it" ? IT_MText : 
-                pageContext.locale === "jp" ? JP_MText : 
+                pageContext.locale === "ja" ? JP_MText : 
                 pageContext.locale === "es" ? ES_MText :
                 pageContext.locale === "ru" ? RU_MText :
                 pageContext.locale === "pl" ? PL_MText :
-                pageContext.locale === "kr" ? KR_MText :
-                pageContext.locale === "dk" ? DK_MText :
+                pageContext.locale === "ko" ? KR_MText :
+                pageContext.locale === "da" ? DK_MText :
                 pageContext.locale === "nl" ? NL_MText :
                 pageContext.locale === "pt" ? PT_MText :
                 ""
