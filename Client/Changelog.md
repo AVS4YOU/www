@@ -5,6 +5,8 @@
 * Добавлен robots.txt
 * Добавлен sitemap.xml
 ### Исправления
+* правка блока "Outils de montage vidéo innovants" на странице fr/powerful-video-maker.aspx 
+* правка футера на странице /powerful-video-maker.aspx 
 * Правка меню /pl
 * Правка кнопок на странице pl/downloads.aspx
 * Правка заголовка на странице pl/downloads.aspx
