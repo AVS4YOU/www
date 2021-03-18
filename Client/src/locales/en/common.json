@@ -13,6 +13,7 @@
 
 	"get $5 coupon code": "GET $5 COUPON CODE",
 	"download now": "download now",
+    "GET $5 COUPON CODE" : "GET $5 COUPON CODE",
 
 
 
@@ -1250,6 +1251,7 @@
 "PAD File" : "PAD File",
 "Download" : "Download",
 "Download_dwn" : "Download",
+"Download_dwn_h" : "Download",
 "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily" : "Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
 "Convert audio between popular formats Apply effects, customize output parameters, use batch mode" :"Convert audio between popular formats. Apply effects, customize output parameters, use batch mode",
 "Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays" : "Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays",

@@ -1,4 +1,24 @@
 # Changelog
+## 1.0.1
+
+### Новое
+* Добавлен robots.txt
+* Добавлен sitemap.xml
+### Исправления
+* Правка перевода блока "Program AVS4YOU" pl/partners.aspx
+* Правка перевода блока "Dlaczego AVS4YOU" и формы pl/education.aspx
+* Правка перевода блока "Firma" pl/about-us.aspx
+* Правка перевода блока "Więcej powodów" pl/affiliates.aspx
+* Правка перевода кнопок на странице pl/avs-video-editor.aspx
+* Правка блока "Outils de montage vidéo innovants" на странице fr/powerful-video-maker.aspx 
+* Правка футера на странице /powerful-video-maker.aspx 
+* Правка меню /pl
+* Правка кнопок на странице pl/downloads.aspx
+* Правка заголовка на странице pl/downloads.aspx
+* Исправлены переводы для кнопки "GET $5 COUPON CODE" на главной странице для языков da/nl/pl/de/fr/jp/ko
+* Исправлен текст в блоке с безлимитной подпиской/ru/register.aspx
+* Исправлены цены на странице /pt/register.aspx 
+* Заменены домены dk/kr на da/ko 
 
 ## 1.0.0
 

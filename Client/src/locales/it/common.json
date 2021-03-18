@@ -6,6 +6,7 @@
     "************************HEADER DOWNLOAD BUTTONS***************************" : "************************HEADER DOWNLOAD BUTTONS***************************",
     "get $5 coupon code" : "OTTIENI UN COUPON DI $5",
     "download now" : "scarica ora",
+    "GET $5 COUPON CODE" : "OTTIENI UN COUPON DI $5",
 
 
     "************************FORM GET COUPON***************************" : "************************FORM GET COUPON***************************",
@@ -403,7 +404,10 @@
     "Free AVS Media Player" : "AVS Media Player",
     "Windows 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)" : "Windows 10, 8.1, 8, 7, XP, 2003, Vista (Mac OS/Linux non supportati)",
     "Download" : "Scarica",
+    "Downloads" : "Scarica",
+    "Help" : "Aiuto",
     "Download_dwn" : "Scarica",
+    "Download_dwn_h" :  "Scarica",
     "$" : "€",
     "39/00" : "39.00",
     "$69/00" : "€69.00",
@@ -1138,7 +1142,7 @@
     "Stabilize your videos" : "Stabilizza i tuoi video.",
     "Eliminate negative effects of your camera shake making video smooth" : "Elimina gli effetti negativi del tremolio della telecamera rendendo il video uniforme.",
     "Edit HD videos of any size" : "Edita video HD di qualsiasi dimensione.",
-    "Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes" : "Grazie alla tecnologia video chace integrata, l’editing di video HD e 4K diventa più veloce. Lavora con ogni formato video e con file di qualsiasi dimensione.",
+    "Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes" : "Grazie alla tecnologia video chace integrata, l’editing di video HD e 4K diventa più veloce. Lavora con ogni formato video e con file di qualsiasi dimensione.",
     "Download AVS Video Editor" : "Scarica AVS Video Editor",
     "Online Media Technologies Ltd UK" : "Online Media Technologies Ltd., UK",
     "2020 All rights reserved." : "2021 Tutti i diritti riservati.",

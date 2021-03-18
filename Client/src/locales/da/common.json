@@ -13,6 +13,7 @@
 
 	"get $5 coupon code": "Få $5-KUPONKODE",
 	"download now": "download nu",
+	"GET $5 COUPON CODE" : "Få $5-KUPONKODE",
 
 
 
@@ -1206,7 +1207,9 @@
 "Download application" : "Download applikation",
 "Please" : "Venligst",
 "download" : "download",
+"Downloads" : "Downloads",
 "Download_dwn" : "Hent",
+"Download_dwn_h" : "Hent",
 "a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'" : "en mindre applikation her og kør det på den computer, hvor AVS4YOU-programmerne har været installeret. Dette program vil fjerne alle registrerede informationer fra computeren og AVS4YOU-programmernes status vil ændres til 'Ikke-aktiveret",
 "Send form" : "Send formular",
 "After that download our" : "Efter dette, download vores",

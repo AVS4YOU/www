@@ -28,7 +28,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
-                    <Text as="h1" className="header__heading">{this.props.t("Download_dwn")}</Text>
+                    <Text as="h1" className="header__heading">{this.props.t("Download_dwn_h")}</Text>
                     <Text as="h3" className="header__subtitle">{this.props.t("Get all AVS4YOU® software in 1 installation package")}</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}

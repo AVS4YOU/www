@@ -13,7 +13,8 @@
   
     "get $5 coupon code": "OBTENIR UN CODE DE RÉDUCTION DE 5$",
     "download now": "télécharger maintenant",
-  
+    "GET $5 COUPON CODE" : "OBTENIR UN CODE DE RÉDUCTION DE 5$",
+
   
   
   
@@ -1071,7 +1072,7 @@
     "Stabilize your videos" : "Stabilisez vos vidéos",
     "Eliminate negative effects of your camera shake making video smooth" : "Éliminez les effets négatifs du tremblement de votre appareil photo en rendant les images vidéo fluides.",
     "Edit HD videos of any size" : "Montez des vidéos HD de toutes tailles",
-    "Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes" : "Grâce à la technologie de cache vidéo intégrée, le montage vidéo HD et 4K devient plus rapide. Travaillez avec tous les formats vidéo et toutes les tailles de fichiers.",
+    "Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes" : "Grâce à la technologie de cache vidéo intégrée, le montage vidéo HD et 4K devient plus rapide. Travaillez avec tous les formats vidéo et toutes les tailles de fichiers.",
     "Download AVS Video Editor" : "Télécharger AVS Video Editor",
     "Online Media Technologies Ltd UK" : "Online Media Technologies Ltd., UK",
     "2020 All rights reserved." : "2021 Tous droits réservés.",
@@ -1285,6 +1286,10 @@
     "***************************Padfiles***********************" : "***************************Fichiers Pad***********************",
     "Download"  : "Télécharger",
     "Download_dwn" : "Télécharger",
+    "Download_dwn_h" : "Télécharger",
+    "Downloads" : "Téléchargements",
+    "Help" : "Aide",
+
     "Index" : "Index",
     "Name" : "Nom",
     "PAD File" : "Fichier PAD",
