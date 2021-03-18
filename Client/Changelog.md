@@ -5,8 +5,13 @@
 * Добавлен robots.txt
 * Добавлен sitemap.xml
 ### Исправления
-* правка блока "Outils de montage vidéo innovants" на странице fr/powerful-video-maker.aspx 
-* правка футера на странице /powerful-video-maker.aspx 
+* Правка перевода блока "Program AVS4YOU" pl/partners.aspx
+* Правка перевода блока "Dlaczego AVS4YOU" и формы pl/education.aspx
+* Правка перевода блока "Firma" pl/about-us.aspx
+* Правка перевода блока "Więcej powodów" pl/affiliates.aspx
+* Правка перевода кнопок на странице pl/avs-video-editor.aspx
+* Правка блока "Outils de montage vidéo innovants" на странице fr/powerful-video-maker.aspx 
+* Правка футера на странице /powerful-video-maker.aspx 
 * Правка меню /pl
 * Правка кнопок на странице pl/downloads.aspx
 * Правка заголовка на странице pl/downloads.aspx
