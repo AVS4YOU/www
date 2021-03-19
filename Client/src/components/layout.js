@@ -168,7 +168,6 @@ class Layout extends React.PureComponent {
             {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-1338774-7');
             `}
           </script>
