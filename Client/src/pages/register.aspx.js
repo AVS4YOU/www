@@ -103,6 +103,7 @@ render(){
         <Helmet>
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
+          {this.state.documentLoaded && <script src={withPrefix('modal-register.js')} type="text/javascript" />}
         </Helmet>
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
@@ -125,7 +126,7 @@ render(){
               <Button
               backgroundColor="orange"
               color="#ffffff"
-              href={this.state.hrefOneYear}
+              //href=""//{this.state.hrefOneYear}
               className="buy-block-button"
               >
               {this.props.t("Buy now")}

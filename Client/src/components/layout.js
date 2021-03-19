@@ -78,12 +78,13 @@ const languageCodes = [
   "fr-FR",
   "es-ES",
   "it-IT",
-  "ja-JP",
+  "jp-JA",
   "nl-NL",
   "pl-PL",
   "da-DK",
   "pt-BR",
-  "ru-RU"
+  "ru-RU",
+  "ko-KR",
 ];
 
 class Layout extends React.PureComponent {
@@ -153,7 +154,7 @@ class Layout extends React.PureComponent {
           {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
           {this.props.pageContext.originalPath}
 
-          <link rel="canonical" href={"https://www.avs4you.com/" + this.pageName}></link>
+          <link rel="canonical" href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? this.props.to : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
           <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
           {languageCodes.map((languageCode)=> {
             let language = languageCode.split("-")[0];
