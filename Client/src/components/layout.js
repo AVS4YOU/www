@@ -15,8 +15,10 @@ import Footer from "./footer";
 import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
-
 import CookieMessage from "../components/cookie-message";
+
+import CookieEaster from '../components/easter/cookie';
+
 import PlAVS from "../images/pl/pattern.png";
 const StyledPL =styled.div`
 position: relative;
@@ -214,6 +216,7 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
+        <CookieEaster />
         <CookieMessage />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>

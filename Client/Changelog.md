@@ -5,6 +5,8 @@
 * Добавлен robots.txt
 * Добавлен sitemap.xml
 ### Исправления
+* Правка rel canonical/alternative
+* Добавлено модальное окно на страницах /register.aspx, /register-vc.aspx
 * Правка перевода блока "Program AVS4YOU" pl/partners.aspx
 * Правка перевода блока "Dlaczego AVS4YOU" и формы pl/education.aspx
 * Правка перевода блока "Firma" pl/about-us.aspx

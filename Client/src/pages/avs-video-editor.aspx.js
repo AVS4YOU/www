@@ -19,6 +19,24 @@ import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
+import ModalEgg from '../components/easter/index';
+import Egg from '../images/easter-event/mini_egg.png';
+import CloseEgg from '../images/easter-event/close_egg.png';
+import EggM  from '../images/easter-event/egg.png';
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import styled from 'styled-components';
+
+const EggEventS = styled.div`
+.ModalEventEgg{
+  width: 448px;
+  height: 565px;
+  background-image: url(${EggM});
+  .EventEggContent{
+    padding-top: 175px;
+    text-align: center;
+  }
+}
+`;
 
 class avsVideoEditor extends React.PureComponent {
 
@@ -26,13 +44,29 @@ class avsVideoEditor extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
     };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this); 
   }
 
   getDevice(device){
     this.setState({ device: device });
+  }
+
+  closeModal() {
+    this.setState({
+      isModalOpen: false
+    });
+  }
+
+  openModal() {
+    this.setState({
+      isModalOpen: true
+    });
   }
 
 render(){
@@ -99,6 +133,54 @@ render(){
                 <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
               </a>
             </ContentRowItem>
+           
+            {(getCookieConsentValue("AVSEasterEvents") === "true") ? 
+            <div className="eggsEvent"><img src={Egg} onClick={() => this.openModal()}></img></div>
+            : <div className="eggsEvent"></div>}
+            <ModalEgg
+                    isModalOpen={this.state.isModalOpen}
+                    closeModal={this.closeModal}
+                  >
+                    <EggEventS>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={this.closeModal}
+                    >
+                      <img className="CloseEggButton" 
+                        src={CloseEgg}
+                        alt="Close"
+                        style={{
+                          width: "32px"
+                        }}/>
+                    </button>
+                    <div className="ModalEventEgg">
+                    { /* <img
+                      className="EventEgg"
+                      src={EggM}
+                      ></img>*/}
+                    <div className="EventEggContent">
+                    <button 
+                        onClick={() =>  navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
+                        style={{
+                          paddingBottom: "15px",
+                          border: "none",
+                          backgroundColor: "#ffffff",
+                        }}
+                        className="Demo__some-network__share-button"
+                      >
+                        xxx
+                        <Text className="ModalShaerText">Copy the link</Text>
+                        
+                      </button>
+                      <Text className="ModalShaerText">Copy the link</Text>
+                        <Text className="ModalShaerText">Copy the link</Text>
+                        <Text className="ModalShaerText">Copy the link</Text>
+                        <Text className="ModalShaerText">Copy the link</Text>
+                      </div>    
+                      </div>                
+                      </EggEventS>
+                  </ModalEgg> 
+
 
             <ContentRowItem 
                 imgLeft={false}
