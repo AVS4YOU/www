@@ -4,6 +4,7 @@
 ### Новое
 * Добавлен robots.txt
 * Добавлен sitemap.xml
+* Добавлен ивент "Easter hunt"
 ### Исправления
 * Правка rel canonical/alternative
 * Добавлено модальное окно на страницах /register.aspx, /register-vc.aspx
