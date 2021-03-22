@@ -43,9 +43,9 @@ export default class Modal extends React.Component {
 		// default style
 		this.stylemodal = {
 			position: "relative",
-            width: "380px",
+            width: "475px",
             height: "580px",
-            top: "150px",
+            top: "80px",
 			padding: "35px 15px",
 			boxSizing: "border-box",
 			backgroundColor: "none",
