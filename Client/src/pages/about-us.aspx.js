@@ -17,7 +17,6 @@ import EggM  from '../images/easter-event/egg.png';
 import Eggm from '../images/easter-event/mobile_egg.png';
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import styled from 'styled-components';
-const hrefButton = "/";
 const EggEventS = styled.div`
 a: hover{
   text-decoration: none;
@@ -181,6 +180,8 @@ class aboutUs extends React.PureComponent {
       device: "",
       isModalOpen: false,
       isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonAbouUS")
+
     };
 
     this.getDevice = this.getDevice.bind(this);
@@ -310,15 +311,15 @@ render(){
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">Congrats!<br />You win a 35% discount</Text>
-                        <Text className="ModalShaerTexth2">on AVS4YOU Unlimited<br />Subscription</Text>
-                        <Text className="ModalShaerTextCoupon"><span>Winner35</span></Text>
-                        <Text className="ModalShaerTexth4">*Just use this coupon while purchasing</Text>
-                        <a href={hrefButton}>
+                        <Text className="ModalShaerTexth1">{this.props.t("ABSCongrats!")}<br />{this.props.t("ABSYou win a 35% discount")}</Text>
+                        <Text className="ModalShaerTexth2">{this.props.t("ABSon AVS4YOU Unlimited")}<br />{this.props.t("ABSSubscription")}</Text>
+                        <Text className="ModalShaerTextCoupon"><span>{this.props.t("Winner35")}</span></Text>
+                        <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
+                        <a href={this.state.hrefButton}>
                         <button
                           className="ModalShaerClose"                  
                           >
-                            SHOP NOW
+                            {this.props.t("SHOP NOW")}
                           </button>
                           </a> 
                       </div>    

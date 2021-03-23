@@ -28,7 +28,6 @@ import EggM  from '../images/easter-event/egg.png';
 import Eggm from '../images/easter-event/mobile_egg.png';
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import styled from 'styled-components';
-const hrefButton = "/";
 const EggEventS = styled.div`
 a: hover{
   text-decoration: none;
@@ -193,6 +192,7 @@ class avsAudioEditor extends React.PureComponent {
       device: "",
       isModalOpen: false,
       isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonAudioEditor")
     };
 
     this.getDevice = this.getDevice.bind(this);
@@ -270,15 +270,15 @@ render(){
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">Get a lucky<br />30% coupon</Text>
-                        <Text className="ModalShaerTexth2"> on AVS4YOU 1 Year<br />Subscription</Text>
-                        <Text className="ModalShaerTextCoupon"><span>Lucky30</span></Text>
-                        <Text className="ModalShaerTexth4">*Just use this coupon while purchasing</Text>
-                        <a href={hrefButton}>
+                        <Text className="ModalShaerTexth1">{this.props.t("VAEGet a lucky")}<br />{this.props.t("VAE30% coupon")}</Text>
+                        <Text className="ModalShaerTexth2">{this.props.t("VAEon AVS4YOU 1 Year")}<br />{this.props.t("VAESubscription")}</Text>
+                        <Text className="ModalShaerTextCoupon"><span>{this.props.t("Lucky30")}</span></Text>
+                        <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
+                        <a href={this.state.hrefButton}>
                         <button
                           className="ModalShaerClose"                  
                           >
-                            SHOP NOW
+                            {this.props.t("SHOP NOW")}
                           </button>
                           </a> 
                       </div>    

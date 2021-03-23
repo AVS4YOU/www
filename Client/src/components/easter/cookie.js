@@ -125,7 +125,7 @@ const CookieMessange = props => {
         ? <CookieStyleN> 
          <div className="alert-warning" style={{bottom: `${styleww}`}}>
           <div className="text-capitalize">
-            <span className="CookieText">Surf the website and find <span className="cookiePL">9 EASTER EGGS</span> with discounts up to <span className="cookiePL">75% OFF</span>!</span>
+            <span className="CookieText">{t("Surf better to find a")}<span className="cookiePL">{t("75% discount")}</span>{t("Good luck!")}</span>
           </div>
         </div>
       </CookieStyleN>
@@ -144,7 +144,7 @@ const CookieMessange = props => {
                     window.location.reload(true);
                 }}               
                 >
-                <span className="CookieText">Surf the website and find <span className="cookiePL">9 EASTER EGGS</span> with discounts up to <span className="cookiePL">75% OFF</span>!</span>
+                    <span className="CookieText">{t("Surf the website and find")}<span className="cookiePL">{t("9 EASTER EGGS")}</span>{t("with discounts up to")}<span className="cookiePL">{t("75% OFF!")}</span></span>
             </CookieConsent>
         </CookieStyle>
         }
