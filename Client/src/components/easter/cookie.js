@@ -13,7 +13,6 @@ const CookieStyleN = styled.div`
         font-size: 14px;
     }
     .alert-warning{
-        align-items: baseline;
         /*background-color: #1E5839;*/
         background-image: url(${Pl});
         background-size: cover;
@@ -21,7 +20,6 @@ const CookieStyleN = styled.div`
         color: white;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         left: 0px;
         position: fixed;
         width: 100%;
@@ -31,11 +29,11 @@ const CookieStyleN = styled.div`
    
     .text-capitalize{
       text-align:center;
-        margin: 35px;
+        margin: 35px auto 35px auto;
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    
+        background-size: cover;
+
+        
         .cookiePL{
             color: #F4D272;
         }
@@ -53,7 +51,7 @@ const CookieStyleN = styled.div`
     }
 `;
 const CookieStyle = styled.div`
-.alert-warning{bottom: 50px;}
+
 
     .CookieText{
         font-family: Open Sans;
@@ -64,6 +62,7 @@ const CookieStyle = styled.div`
         align-items: baseline;
         /*background: #32393E;*/
         background-image: url(${Pl});
+        background-size: cover;
         height: 70px;
         color: white;
         display: flex;
@@ -73,7 +72,7 @@ const CookieStyle = styled.div`
         position: fixed;
         width: 100%;
         z-index: 999;
-        bottom: 50px;
+        bottom: ${(getCookieConsentValue("AVSUsersCookieMessages") === "true") ? '0px': '48px'}
     }
     .btn-primary{
         background: #F4D272;
@@ -140,6 +139,7 @@ const CookieMessange = props => {
                 containerClasses="alert-warning"
                 contentClasses="text-capitalize"
                 buttonWrapperClasses="btnWrapperClasses" 
+                location="none"
                 onAccept= {() => {
                     window.location.reload(true);
                 }}               
