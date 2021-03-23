@@ -2,9 +2,29 @@
 ## 1.0.1
 
 ### Новое
+* Добавлены переводы fr/it/de/jp/es для ивента "Easter hunt"
+* Добавлен ивент "Easter hunt"
 * Добавлен robots.txt
 * Добавлен sitemap.xml
 ### Исправления
+* Заменены скриншоты на странице pl/avs-free-media-player.aspx
+* Заменены скриншоты на странице pl/avs-video-remaker.aspx
+* Заменены скриншоты на странице pl/avs-free-audio-converter.aspx
+* Заменены скриншоты на странице pl/avs-audio-editor.aspx
+* Заменены скриншоты на странице pl/avs-video-editor.aspx
+* Заменены скриншоты на странице pl/avs-free-video-converter.aspx
+* Заменены скриншоты на странице pl/education.aspx
+* Заменены скриншоты на странице nl/avs-free-audio-converter.aspx
+* Заменены скриншоты на странице nl/avs-audio-editor.aspx
+* Заменены скриншоты на странице nl/avs-video-editor.aspx
+* Заменены скриншоты на странице nl/avs-free-video-converter.aspx
+* Заменены скриншоты на странице nl/education.aspx
+* Заменены скриншоты на странице da/avs-video-editor.aspx
+* Заменены скриншоты на странице da/avs-free-video-converter.aspx
+* Заменены скриншоты на странице da/education.aspx
+* Заменены скриншоты на странице ko/avs-free-video-converter.aspx
+* Правка rel canonical/alternative
+* Добавлено скрипт для модального окна на страницах /register.aspx, /register-vc.aspx
 * Правка перевода блока "Program AVS4YOU" pl/partners.aspx
 * Правка перевода блока "Dlaczego AVS4YOU" и формы pl/education.aspx
 * Правка перевода блока "Firma" pl/about-us.aspx
@@ -18,7 +38,7 @@
 * Исправлены переводы для кнопки "GET $5 COUPON CODE" на главной странице для языков da/nl/pl/de/fr/jp/ko
 * Исправлен текст в блоке с безлимитной подпиской/ru/register.aspx
 * Исправлены цены на странице /pt/register.aspx 
-* Заменены домены dk/kr на da/ko 
+* Исправлены домены dk/kr на da/ko 
 
 ## 1.0.0
 

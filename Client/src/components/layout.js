@@ -15,9 +15,14 @@ import Footer from "./footer";
 import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
-
 import CookieMessage from "../components/cookie-message";
 import PlAVS from "../images/pl/pattern.png";
+
+//
+import CookieEaster from '../components/easter/cookie';
+
+
+//
 const StyledPL =styled.div`
 position: relative;
 text-align: center;
@@ -168,7 +173,6 @@ class Layout extends React.PureComponent {
             {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-1338774-7');
             `}
           </script>
@@ -215,6 +219,11 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
+
+        
+        <CookieEaster />
+        
+        
         <CookieMessage />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>

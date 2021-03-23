@@ -30,7 +30,7 @@ const RowContent = styled.div`
     .rowImage{
         max-width: 722px;
         position: relative;
-        z-index: 2;
+        z-index: 0;
         display:block;
         overflow: unset !important;
         border: 1px solid #ECEFF5;
