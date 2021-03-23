@@ -26,7 +26,7 @@ import AvatarLawrence from '../images/avs-free-video-converter/lawrence_thompson
 import ModalEgg from '../components/easter/index';
 import Egg from '../images/easter-event/mini_egg.png';
 import CloseEgg from '../images/easter-event/close_egg.png';
-import EggM  from '../images/easter-event/egg.png';
+import EggM  from '../images/easter-event/egg4.png';
 import Eggm from '../images/easter-event/mobile_egg.png';
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import styled from 'styled-components';
@@ -327,38 +327,10 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen 
-              reviewsData={
-                [
-                  {
-                    name: "Gayle Hibbert",
-                    avatar: AvatarGayle,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price")
-                  },
-                  {
-                    name: "Terrance Jenkins",
-                    avatar: AvatarTerrance,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
-                  },
-                  {
-                    name: "Lawrence Thompson",
-                    avatar: AvatarLawrence,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
-                  }
-                ]
-              }
-            />
-          </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
-       
-       
-       
+
           {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEvent"><img src={Egg} onClick={() => this.openModal()}></img></div>
-            : <div className="eggsEvent"></div>}
+            <div className="eggsEventRight"><img src={Egg} onClick={() => this.openModal()}></img></div>
+            : <div className="eggsEventRight"></div>}
             <ModalEgg
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
@@ -396,6 +368,33 @@ render(){
 
 
 
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Gayle Hibbert",
+                    avatar: AvatarGayle,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price")
+                  },
+                  {
+                    name: "Terrance Jenkins",
+                    avatar: AvatarTerrance,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
+                  },
+                  {
+                    name: "Lawrence Thompson",
+                    avatar: AvatarLawrence,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
+                  }
+                ]
+              }
+            />
+          </div>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
+       
 
           <ScreenshotsCarousel 
             maxWidth={734}

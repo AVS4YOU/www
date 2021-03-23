@@ -22,9 +22,9 @@ import AvatarJacky from '../images/avs-audio-converter/jacky.png';
 
 //
 import ModalEgg from '../components/easter/index';
-import Egg from '../images/easter-event/mini_egg.png';
+import Egg from '../images/easter-event/mini_egg3.png';
 import CloseEgg from '../images/easter-event/close_egg.png';
-import EggM  from '../images/easter-event/egg.png';
+import EggM  from '../images/easter-event/egg4.png';
 import Eggm from '../images/easter-event/mobile_egg.png';
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import styled from 'styled-components';
@@ -255,8 +255,8 @@ render(){
 
 
           {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEvent"><img src={Egg} onClick={() => this.openModal()}></img></div>
-            : <div className="eggsEvent"></div>}
+            <div className="eggsEventRightN"><img src={Egg} onClick={() => this.openModal()}></img></div>
+            : <div className="eggsEventRightN"></div>}
             <ModalEgg
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
