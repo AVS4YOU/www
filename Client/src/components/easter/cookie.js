@@ -25,11 +25,16 @@ const CookieStyleN = styled.div`
         width: 100%;
         z-index: 999;
         bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
    
-    .text-capitalize{
+    .textcapitalize{
       text-align:center;
-        margin: 35px auto 35px auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
         background-size: cover;
 
@@ -123,7 +128,7 @@ const CookieMessange = props => {
         {(getCookieConsentValue("AVSEasterEvents") === "true")
         ? <CookieStyleN> 
          <div className="alert-warning" style={{bottom: `${styleww}`}}>
-          <div className="text-capitalize">
+          <div className="textcapitalize">
             <span className="CookieText">{t("Surf better to find a")}<span className="cookiePL">{t("75% discount")}</span>{t("Good luck!")}</span>
           </div>
         </div>
