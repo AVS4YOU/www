@@ -339,6 +339,50 @@ render(){
         </div>
 
         <div className="screen-wrapper questions-block">
+
+
+        {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+            <div className="eggsEventRight"><img src={Egg} onClick={() => this.openModal()}></img></div>
+            : <div className="eggsEventRight"></div>}
+            <ModalEgg
+                    isModalOpen={this.state.isModalOpen}
+                    closeModal={this.closeModal}
+                  >
+                    <EggEventS>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={this.closeModal}
+                    >
+                      <img className="CloseEggButton" 
+                        src={CloseEgg}
+                        alt="Close"
+                        style={{
+                          width: "28px"
+                        }}/>
+                    </button>
+                    <div className="ModalEventEgg">
+                   
+                    <div className="EventEggContent">                    
+                        <Text className="ModalShaerTexth1">{this.props.t("DWNWow!")}<br />{this.props.t("DWNSave a 50% off")}</Text>
+                        <Text className="ModalShaerTexth2">{this.props.t("DWNon AVS Video Editor")}<br /></Text>
+                        <Text className="ModalShaerTextCoupon"><span>{this.props.t("Spring50")}</span></Text>
+                        <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
+                        <a href={this.state.hrefButton}>
+                        <button
+                          className="ModalShaerClose"                  
+                          >
+                            {this.props.t("SHOP NOW")}
+                          </button>
+                          </a> 
+                      </div>    
+                      </div>                
+                      </EggEventS>
+                  </ModalEgg> 
+
+
+
+
+
           <Text className="common__heading" as="h3">{this.props.t("Read first")}</Text>
           <div className="questions-wrapper">
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
@@ -389,46 +433,7 @@ render(){
               </div>
 
 
-              {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEventRight"><img src={Egg} onClick={() => this.openModal()}></img></div>
-            : <div className="eggsEventRight"></div>}
-            <ModalEgg
-                    isModalOpen={this.state.isModalOpen}
-                    closeModal={this.closeModal}
-                  >
-                    <EggEventS>
-                    <button
-                    className="ModalShaerClose"
-                      onClick={this.closeModal}
-                    >
-                      <img className="CloseEggButton" 
-                        src={CloseEgg}
-                        alt="Close"
-                        style={{
-                          width: "28px"
-                        }}/>
-                    </button>
-                    <div className="ModalEventEgg">
-                   
-                    <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{this.props.t("DWNWow!")}<br />{this.props.t("DWNSave a 50% off")}</Text>
-                        <Text className="ModalShaerTexth2">{this.props.t("DWNon AVS Video Editor")}<br /></Text>
-                        <Text className="ModalShaerTextCoupon"><span>{this.props.t("Spring50")}</span></Text>
-                        <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={this.state.hrefButton}>
-                        <button
-                          className="ModalShaerClose"                  
-                          >
-                            {this.props.t("SHOP NOW")}
-                          </button>
-                          </a> 
-                      </div>    
-                      </div>                
-                      </EggEventS>
-                  </ModalEgg> 
-
-
-
+   
 
             </PanelCollapse>
 
