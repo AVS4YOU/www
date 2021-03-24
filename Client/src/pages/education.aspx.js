@@ -355,15 +355,30 @@ render(){
             </ContentSelector>
           </div>
         </div>
+        
         <div className="form education screen-wrapper">
+
+          
           <img src={mailIcon} alt="mail icon"/>
           <Text id="contact-form-header" as="h2" className="common__heading">
           {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
 
-
-
+            <Form 
+                 formHeader = {this.props.t("Write a message")}
+                 formName = {this.props.t("Name")}
+                 formEmailAddress = {this.props.t("Email address")}
+                 formOccupation = {this.props.t("Occupation")}
+                 formInstitution = {this.props.t("Institution")}
+                 formNumberOfSub = {this.props.t("Number of subscriptions")}
+                 formComment = {this.props.t("Give us a brief description of your specific needs")}
+                 formButton = {this.props.t("Send your request")}
+                 formAgreeTermsWrapper = {this.props.t("By clicking this button, you agree to our")}
+                 formAgreeLink = {this.props.t("Terms of Service")}                 
+            />
+            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
+          </div>
           {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEvent"><img src={Egg} onClick={() => this.openModal()}></img></div>
             : <div className="eggsEvent"></div>}
@@ -401,25 +416,6 @@ render(){
                       </div>                
                       </EggEventS>
                   </ModalEgg> 
-
-
-
-
-
-            <Form 
-                 formHeader = {this.props.t("Write a message")}
-                 formName = {this.props.t("Name")}
-                 formEmailAddress = {this.props.t("Email address")}
-                 formOccupation = {this.props.t("Occupation")}
-                 formInstitution = {this.props.t("Institution")}
-                 formNumberOfSub = {this.props.t("Number of subscriptions")}
-                 formComment = {this.props.t("Give us a brief description of your specific needs")}
-                 formButton = {this.props.t("Send your request")}
-                 formAgreeTermsWrapper = {this.props.t("By clicking this button, you agree to our")}
-                 formAgreeLink = {this.props.t("Terms of Service")}                 
-            />
-            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
-          </div>
         </div>
       </Layout>
     );
