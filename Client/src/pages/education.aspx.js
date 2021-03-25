@@ -404,7 +404,7 @@ render(){
                         <Text className="ModalShaerTexth1">{this.props.t("EDTake advantage")}<br />{this.props.t("EDof 40% Off")}</Text>
                         <Text className="ModalShaerTexth2">{this.props.t("EDon AVS4YOU 1 Year")}<br />{this.props.t("EDSubscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{this.props.t("Bunny40")}</span></Text>
-                        <Text className="ModalShaerTexth4">{this.props.t("Just use this coupon while purchasing")}</Text>
+                        <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
                         <a href={this.state.hrefButton}>
                         <button
                           className="ModalShaerClose"                  
