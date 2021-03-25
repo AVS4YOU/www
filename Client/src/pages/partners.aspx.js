@@ -292,7 +292,7 @@ render(){
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{this.props.t("Get 25% off")}<br /></Text>
+                        <Text className="ModalShaerTexth1">{this.props.t("Get 25% off")}<br />{this.props.t("VVVCGet 25% off")}</Text>
                         <Text className="ModalShaerTexth2">{this.props.t("on AVS4YOU Unlimited")}<br />{this.props.t("Subscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{this.props.t("Partner25")}</span></Text>
                         <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
