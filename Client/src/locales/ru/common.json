@@ -311,7 +311,7 @@
   "Michael Bryant": "Майкл Брайант",
   "As a supporter of your programs, I must say that I have never been disappointed in your software or your customer service team Your software does exactly what I need it to do": "Как сторонник ваших программ, должен признаться, что еще ни разу не разочаровался в том, что вы делаете, а также в вашей клиентской поддержке. Ваша программа делает именно то, что мне нужно...",
   "Arthur Rees": "Артур Рис",
-  "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise": "Хорошие приложения, быстрое обслуживание и разумные цены. Отличные продукты, интуитивно понятные руководства, кторые приятно читать.",
+  "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise": "Хорошие приложения, быстрое обслуживание и разумные цены. Отличные продукты, интуитивно понятные руководства, которые приятно читать.",
   "AVS Video Remaker 6.3": "AVS Video Remaker 6.3",
 
 
@@ -1339,75 +1339,76 @@
 
 
   "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
-  "Surf the website and find" : "Surf the website and find ",
-  "9 EASTER EGGS" : "9 EASTER EGGS",
-  "with discounts up to" : " with discounts up to ",
-  "75% OFF!" : "75% OFF!",
-  "Surf better to find a" : "Surf better to find a ",
-  "75% discount" : "75% discount",
-  "Good luck!" : ". Good luck!",
-  "Hunt now!" : "Hunt now!",
-  "SHOP NOW" : "SHOP NOW",
-  "*Just use this coupon while purchasing" : "*Just use this coupon while purchasing",
+  "Surf the website and find" : "Найдите ",
+  "9 EASTER EGGS" : "9 пасхальных яиц",
+  "with discounts up to" : ", спрятанных на сайте, со ",
+  "75% OFF!" : "скидкой до 75%.",
+  "Surf better to find a" : "Ищите лучше, чтобы найти ",
+  "75% discount" : "скидку 75%",
+  "Good luck!" : ". Удачи!",
+  "Hunt now!" : "Начать игру!",
+  "SHOP NOW" : "Купить сейчас",
+  "*Just use this coupon while purchasing" : "*Используйте данный купон при оформлении заказа",
   
-  "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Glory20&CLEAN_CART=ALL",
-  "PWell done!" : "Well done!",
-  "PTake a 20% off" : "Take a 20% off",
-  "Pon AVS4YOU Unlimited": "on AVS4YOU Unlimited",
-  "PSubscription" : "Subscription",
-  
-  
-  "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Egg30&CLEAN_CART=ALL",
-  "MPRedeem a 30%" : "Redeem a 30%",
-  "MPdiscount coupon" : "discount coupon",
-  "MPon AVS Video Editor" : "on AVS Video Editor",
+  "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Glory20&CLEAN_CART=ALL",
+  "PWell done!" : "Отлично!",
+  "PTake a 20% off" : "Получите скидку 20%",
+  "Pon AVS4YOU Unlimited": "на безлимитную подписку",
+  "PSubscription" : "AVS4YOU",
   
   
-  "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Sunny50&CLEAN_CART=ALL",
-  "VCEnjoy this spring with" : "Enjoy this spring with",
-  "VCa 50% discount" : "a 50% discount",
-  "VCon AVS Video ReMaker" : "on AVS Video ReMaker",
-  "VCUnlimited Subscription" : "Unlimited Subscription",
+  "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Egg30&CLEAN_CART=ALL",
+  "MPRedeem a 30%" : "Активируйте",
+  "MPdiscount coupon" : "30% купон",
+  "MPon AVS Video Editor" : "на AVS Video Editor",
   
   
-  "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Treasure75&CLEAN_CART=ALL",
-  "VCABingo!" : "Bingo!",
-  "VCAYou have found our treasure egg!!!" : "You have found our treasure egg!!!",
-  "VCAGet 75% Off on AVS Video ReMaker" : "Get 75% Off on AVS Video ReMaker",
-  "VCA1 Year Subscription" : "1 Year Subscription",
+  "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Sunny50&CLEAN_CART=ALL",
+  "VCEnjoy this spring with" : "Встречайте весну",
+  "VCa 50% discount" : "со скидкой 50%",
+  "VCon AVS Video ReMaker" : "на безлимитную подписку",
+  "VCUnlimited Subscription" : "AVS Video ReMake",
   
   
-  "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Lucky30&CLEAN_CART=ALL",
-  "VAEGet a lucky" : "Get a lucky",
-  "VAE30% coupon" : "30% coupon",
-  "VAEon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
-  "VAESubscription" : "Subscription",
+  "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Treasure75&CLEAN_CART=ALL",
+  "VCABingo!" : "Бинго!",
+  "VCAYou have found our treasure egg!!!" : "Вы нашли супер купон!!!",
+  "VCAGet 75% Off on AVS Video ReMaker" : "Получите скидку 75%",
+  "VCA1 Year Subscription" : "на одногодичную подписку AVS Video ReMaker",
   
   
-  "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Spring50&CLEAN_CART=ALL",
-  "DWNWow!" : "Wow!",
-  "DWNSave a 50% off" : "Save a 50% off",
-  "DWNon AVS Video Editor" : "on AVS Video Editor",
+  "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Lucky30&CLEAN_CART=ALL",
+  "VAEGet a lucky" : "Получите",
+  "VAE30% coupon" : "счастливый 30% купон",
+  "VAEon AVS4YOU 1 Year" : "на одногодичную подписку",
+  "VAESubscription" : "AVS4YOU",
   
   
-  "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Winner35&CLEAN_CART=ALL",
-  "ABSCongrats!" : "Congrats!",
-  "ABSYou win a 35% discount" : "You win a 35% discount",
-  "ABSon AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
-  "ABSSubscription" : "Subscription",
+  "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Spring50&CLEAN_CART=ALL",
+  "DWNWow!" : " ",
+  "DWNSave a 50% off" : "Сэкономьте 50%",
+  "DWNon AVS Video Editor" : "на AVS Video Editor",
   
   
-  "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Bunny40&CLEAN_CART=ALL",
-  "EDTake advantage" : "Take advantage",
-  "EDof 40% Off" : "of 40% Off",
-  "EDon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
-  "EDSubscription" : "Subscription",
+  "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Winner35&CLEAN_CART=ALL",
+
+  "ABSCongrats!" : "Поздравляем!",
+  "ABSYou win a 35% discount" : "Вы получаете скидку 35%",
+  "ABSon AVS4YOU Unlimited" : "на безлимитную подписку",
+  "ABSSubscription" : "AVS4YOU",
+  
+  
+  "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Bunny40&CLEAN_CART=ALL",
+  "EDTake advantage" : "Воспользуйтесь",
+  "EDof 40% Off" : "скидкой 40%",
+  "EDon AVS4YOU 1 Year" : "на одногодичную подписку",
+  "EDSubscription" : "AVS4YOU",
   "VVVCGet 25% off" : " ",
   
-  "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Partner25&CLEAN_CART=ALL",
-  "Get 25% off" : "Get 25% off",
-  "on AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
-  "Subscription" : "Subscription",
+  "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Partner25&CLEAN_CART=ALL",
+  "Get 25% off" : "Получите скидку 25%",
+  "on AVS4YOU Unlimited" : "на безлимитную подписку",
+  "Subscription" : "AVS4YOU",
   
 
 
