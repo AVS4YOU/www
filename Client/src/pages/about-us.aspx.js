@@ -36,7 +36,7 @@ a: hover{
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 30px;
     line-height: 34px;
     text-align: center;
     color: #1E5839;

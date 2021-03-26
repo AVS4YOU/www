@@ -47,7 +47,7 @@ a: hover{
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 30px;
     line-height: 34px;
     text-align: center;
     color: #1E5839;
@@ -277,7 +277,7 @@ render(){
                    
                     <div className="EventEggContent">                    
                         <Text className="ModalShaerTexth1">{this.props.t("VCABingo!")}<br />{this.props.t("VCAYou have found our treasure egg!!!")}</Text>
-                        <Text className="ModalShaerTexth2">{this.props.t("VCAGet 75% Off on AVS Video ReMaker")}<br />{this.props.t("VCA1 Year Subscription")}</Text>
+                        <Text className="ModalShaerTexth2">{this.props.t("VCAGet 75% Off on AVS Video ReMaker")}<br />{this.props.t("VCA1 Year Subscription")}<br />{this.props.t("VACAVS Video ReMaker")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{this.props.t("Treasure75")}</span></Text>
                         <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
                         <a href={this.state.hrefButton}>
