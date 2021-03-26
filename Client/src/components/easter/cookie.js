@@ -139,7 +139,7 @@ const CookieMessange = props => {
                 buttonText={t("Hunt now!")}
                 cookieName="AVSEasterEvents"
                 disableStyles={true}
-                expires={5} // days save cookie
+                expires={8} // days save cookie
                 buttonClasses="btn-primary"
                 containerClasses="alert-warning"
                 contentClasses="text-capitalize"
