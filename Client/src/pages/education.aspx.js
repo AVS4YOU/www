@@ -323,7 +323,7 @@ render(){
 
                 <ContentRowItem 
                     imgLeft={false}
-                    imageName="education_screen_educators2.png"
+                    imageName={this.props.t("video editor slider4 jpg")}
                     headerText={this.props.t("Record lectures and webinars")}
                     free={false}   
                 >
