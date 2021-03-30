@@ -1,5 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from 'styled-components';
+
+import Egg  from '../../images/easter-event/egg.png';
+import Egg1 from '../../images/easter-event/egg1.png';
+import Egg2 from '../../images/easter-event/egg2.png';
+import Egg3 from '../../images/easter-event/egg3.png';
+import Egg4 from '../../images/easter-event/egg4.png';
+
 
 
 export default class Modal extends React.Component {
@@ -35,16 +43,16 @@ export default class Modal extends React.Component {
 		// default style
 		this.stylemodal = {
 			position: "relative",
-            width: "400px",
+            width: "475px",
             height: "580px",
-            top: "150px",
+            top: "80px",
 			padding: "35px 15px",
 			boxSizing: "border-box",
-			backgroundColor: "#32393d",
+			backgroundColor: "none",
 			margin: "40px auto",
 			zIndex: 2,
 			textAlign: "left",
-			boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
+			//boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
 			...this.props.stylemodal
 		};
 
@@ -70,10 +78,11 @@ export default class Modal extends React.Component {
 					...this.outerStyle,
 					display: this.props.isModalOpen ? "block" : "none"
 				}}
-			>
+			>	<div className="EggsModal"> 
 				<div style={this.styleoverlay} onClick={this.props.closeModal} aria-hidden="true"/>
 				<div onClick={this.props.closeModal} aria-hidden="true"/>
-				<div style={this.stylemodal}>{this.props.children}</div>
+				<div style={this.stylemodal}>{this.props.children}</div>				
+				</div>
 			</div>
 		);
 	}

@@ -400,10 +400,10 @@
     "If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days": "Se tiver problemas técnicos ou outros problemas que não possam ser resolvidos, você pode obter um reembolso completo do preço de compra em 30 dias.",
     "Check our Refund Policy": "Confira nossa Política de Reembolso",
     "to find out if you are eligible for a full refund": "para descobrir se você tem direito a um reembolso total.",
-    "$69/00": "69,00",
-    "39/00": "39,00",
-    "59/00": "59,00",
-    "$199/00": "$199,00",
+    "$69/00": "$69.00",
+    "39/00": "39.00",
+    "59/00": "59.00",
+    "$199/00": "$199.00",
     "$": "$",
     "ad-free, virus-free": " ",
     "or": "ou",
@@ -1096,6 +1096,9 @@
     "Name": "Nome",
     "PAD File": "Arquivo PAD",
     "Download_dwn": "Download",
+    "Download_dwn_h" : "Download",
+    "Downloads" : "Download",
+    "Help" : "Ajuda",
     "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Converta de/para formatos de vídeos: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD, DCI 4K, entre outros, de forma rápida e fácil!",
     "Convert documents between DOCX, PDF, RTF, TXT, HTML, etc Work with text files and images without additional editing software": "Converta documentos entre DOCX, PDF, RTF, TXT, HTML, etc. Trabalhe com arquivos de texto e imagens sem software de edição adicional.",
     "*****************************INSTALLED********************************": "*****************************INSTALLED********************************",
@@ -1139,6 +1142,80 @@
     "privacy policy": "política de privacidade",
     "pointeCookie": ".",
     "I Agree": "Concordo",
+
+    "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
+    "Surf the website and find" : "Surf the website and find ",
+    "9 EASTER EGGS" : "9 EASTER EGGS",
+    "with discounts up to" : " with discounts up to ",
+    "75% OFF!" : "75% OFF!",
+    "Surf better to find a" : "Surf better to find a ",
+    "75% discount" : "75% discount",
+    "Good luck!" : ". Good luck!",
+    "Hunt now!" : "Hunt now!",
+    "SHOP NOW" : "SHOP NOW",
+    "*Just use this coupon while purchasing" : "*Just use this coupon while purchasing",
+    
+    "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Glory20&CLEAN_CART=ALL",
+    "PWell done!" : "Well done!",
+    "PTake a 20% off" : "Take a 20% off",
+    "Pon AVS4YOU Unlimited": "on AVS4YOU Unlimited",
+    "PSubscription" : "Subscription",
+    
+    
+    "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Egg30&CLEAN_CART=ALL",
+    "MPRedeem a 30%" : "Redeem a 30%",
+    "MPdiscount coupon" : "discount coupon",
+    "MPon AVS Video Editor" : "on AVS Video Editor",
+    
+    
+    "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Sunny50&CLEAN_CART=ALL",
+    "VCEnjoy this spring with" : "Enjoy this spring with",
+    "VCa 50% discount" : "a 50% discount",
+    "VCon AVS Video ReMaker" : "on AVS Video ReMaker",
+    "VCUnlimited Subscription" : "Unlimited Subscription",
+    
+    
+    "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Treasure75&CLEAN_CART=ALL",
+    "VCABingo!" : "Bingo!",
+    "VCAYou have found our treasure egg!!!" : "You have found our treasure egg!!!",
+    "VCAGet 75% Off on AVS Video ReMaker" : "Get 75% Off on AVS Video ReMaker",
+    "VCA1 Year Subscription" : "1 Year Subscription",
+    
+    
+    "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Lucky30&CLEAN_CART=ALL",
+    "VAEGet a lucky" : "Get a lucky",
+    "VAE30% coupon" : "30% coupon",
+    "VAEon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
+    "VAESubscription" : "Subscription",
+    
+    
+    "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Spring50&CLEAN_CART=ALL",
+    "DWNWow!" : "Wow!",
+    "DWNSave a 50% off" : "Save a 50% off",
+    "DWNon AVS Video Editor" : "on AVS Video Editor",
+    
+    
+    "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Winner35&CLEAN_CART=ALL",
+    "ABSCongrats!" : "Congrats!",
+    "ABSYou win a 35% discount" : "You win a 35% discount",
+    "ABSon AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
+    "ABSSubscription" : "Subscription",
+    "VVVCGet 25% off" : " ",
+    
+    "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Bunny40&CLEAN_CART=ALL",
+    "EDTake advantage" : "Take advantage",
+    "EDof 40% Off" : "of 40% Off",
+    "EDon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
+    "EDSubscription" : "Subscription",
+    
+    
+    "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANG=pt&COUPON=Partner25&CLEAN_CART=ALL",
+    "Get 25% off" : "Get 25% off",
+    "on AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
+    "Subscription" : "Subscription",
+    "VACAVS Video ReMaker" : " ",
+
+
     "*****************************LINK********************************": "*****************************LINK********************************",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
