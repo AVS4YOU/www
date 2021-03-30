@@ -13,6 +13,7 @@
 
 	"get $5 coupon code": "$5 쿠폰 코드를 받으세요",
 	"download now": "지금 다운로드",
+    "GET $5 COUPON CODE" : "$5 쿠폰 코드를 받으세요",
 
 
 
@@ -1205,7 +1206,10 @@
 "Download application" : "신청서 다운로드",
 "Please" : "여기에서 소형 애플리케이션을",
 "download" : "다운로드",
+"Downloads" : "다운로드",
+"Help" : "도움",
 "Download_dwn" : "다운로드",
+"Download_dwn_h" :  "다운로드",
 "a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'" : "받은 뒤 AVS4YOU® 프로그램이 설치된 컴퓨터에서 실행하세요. 이 프로그램은 컴퓨터에서 모든 등록 정보를 삭제하며 AVS4YOU® 프로그램 상태가 '비활성화'로 바뀝니다",
 "Send form" : "양식 전송",
 "After that download our" : "당사의",
@@ -1324,6 +1328,79 @@
     "6 Reasons to Become an AVS4YOU Affiliate" : "AVS4YOU 제휴자가 돼야 하는 6가지 이유",
     "If you have any questions about AVS4YOU partnership program, please contact us at" : "AVS4YOU 파트너십 프로그램에 대한 문의 사항이 있으시면, 다음으로 연락주세요:",
     "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "당사는 웹사이트의 유용성을 향상시키기 위해 YandexMetrica를 사용하며, 이는 표준 인터넷 로그 정보 및 웹사이트 네비게이션 정보를 익명 형식으로 수집합니다. 이러한 정보는 사용자가 당사 웹사이트와 상호 작용하는 방식 및 사용자가 수행하는 작업을 더 잘 이해할 수 있도록 하여, 디자인 결함을 식별하고 수정하는 데 도움이 됩니다.",
+	
+	"*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
+"Surf the website and find" : "Surf the website and find ",
+"9 EASTER EGGS" : "9 EASTER EGGS",
+"with discounts up to" : " with discounts up to ",
+"75% OFF!" : "75% OFF!",
+"Surf better to find a" : "Surf better to find a ",
+"75% discount" : "75% discount",
+"Good luck!" : ". Good luck!",
+"Hunt now!" : "Hunt now!",
+"SHOP NOW" : "SHOP NOW",
+"*Just use this coupon while purchasing" : "*Just use this coupon while purchasing",
+
+"hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Glory20&CLEAN_CART=ALL",
+"PWell done!" : "Well done!",
+"PTake a 20% off" : "Take a 20% off",
+"Pon AVS4YOU Unlimited": "on AVS4YOU Unlimited",
+"PSubscription" : "Subscription",
+
+
+"hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Egg30&CLEAN_CART=ALL",
+"MPRedeem a 30%" : "Redeem a 30%",
+"MPdiscount coupon" : "discount coupon",
+"MPon AVS Video Editor" : "on AVS Video Editor",
+
+
+"hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Sunny50&CLEAN_CART=ALL",
+"VCEnjoy this spring with" : "Enjoy this spring with",
+"VCa 50% discount" : "a 50% discount",
+"VCon AVS Video ReMaker" : "on AVS Video ReMaker",
+"VCUnlimited Subscription" : "Unlimited Subscription",
+
+
+"hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Treasure75&CLEAN_CART=ALL",
+"VCABingo!" : "Bingo!",
+"VCAYou have found our treasure egg!!!" : "You have found our treasure egg!!!",
+"VCAGet 75% Off on AVS Video ReMaker" : "Get 75% Off on AVS Video ReMaker",
+"VCA1 Year Subscription" : "1 Year Subscription",
+
+
+"hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Lucky30&CLEAN_CART=ALL",
+"VAEGet a lucky" : "Get a lucky",
+"VAE30% coupon" : "30% coupon",
+"VAEon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
+"VAESubscription" : "Subscription",
+
+
+"hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Spring50&CLEAN_CART=ALL",
+"DWNWow!" : "Wow!",
+"DWNSave a 50% off" : "Save a 50% off",
+"DWNon AVS Video Editor" : "on AVS Video Editor",
+
+
+"hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Winner35&CLEAN_CART=ALL",
+"ABSCongrats!" : "Congrats!",
+"ABSYou win a 35% discount" : "You win a 35% discount",
+"ABSon AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
+"ABSSubscription" : "Subscription",
+
+
+"hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Bunny40&CLEAN_CART=ALL",
+"EDTake advantage" : "Take advantage",
+"EDof 40% Off" : "of 40% Off",
+"EDon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
+"EDSubscription" : "Subscription",
+
+
+"hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Partner25&CLEAN_CART=ALL",
+"Get 25% off" : "Get 25% off",
+"on AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
+"Subscription" : "Subscription",
+"VVVCGet 25% off" : " ",
+"VACAVS Video ReMaker" : " ",
 	"*****************************LINK********************************" : "*****************************LINK********************************",
 	"https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf",
 	"https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ko&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
@@ -1389,17 +1466,17 @@
  "video remaker record video min jpg" : "video_remaker_record_video-min.jpg",
  "video remaker disc menu min jpg" : "video_remaker_disc_menu-min.jpg",
  "video remaker slider1 min jpg" : "video_remaker_slider1-min.jpg",
- "video converter en avs video converter png" : "video_converter_en_avs_video_converter.png",
- "video converter convert all key2 jpg" : "video_converter_convert_all_key2.jpg",
- "video converter convert video easily3 jpg" : "video_converter_convert_video_easily3.jpg",
- "vc convert a large number jpg" : "vc_convert_a_large_number.jpg",
- "video converter edit your videos jpg" : "video_converter_edit_your_videos.jpg",
- "video converter slider popup3 jpg" : "video_converter_slider_popup3.jpg",
- "video converter slider1 jpg" : "video_converter_slider1.jpg",
- "video converter slider2 jpg" : "video_converter_slider2.jpg",
- "video converter slider3 jpg" : "video_converter_slider3.jpg",
- "video converter slider4 jpg" : "video_converter_slider4.jpg",
- "video converter slider5 jpg" : "video_converter_slider5.jpg",
+ "video converter en avs video converter png" : "ko_video_converter_en_avs_video_converter.png",
+ "video converter convert all key2 jpg" : "ko_video_converter_convert_all_key2.png",
+ "video converter convert video easily3 jpg" : "ko_video_converter_convert_video_easily2.png",
+ "vc convert a large number jpg" : "ko_vc_convert_a_large_number.png",
+ "video converter edit your videos jpg" : "ko_video_converter_edit_your_videos.png",
+ "video converter slider popup3 jpg" : "ko_video_converter_slider_popup3.png",
+ "video converter slider1 jpg" : "ko_video_converter_slider1.png",
+ "video converter slider2 jpg" : "ko_video_converter_slider2.png",
+ "video converter slider3 jpg" : "ko_video_converter_slider3.png",
+ "video converter slider4 jpg" : "ko_video_converter_slider4.png",
+ "video converter slider5 jpg" : "ko_video_converter_slider5.png",
  "media player header png" : "media_player_header.png",
  "media player slide1 jpg" : "media_player_slide1.jpg",
  "media player slide2 jpg" : "media_player_slide2.jpg",

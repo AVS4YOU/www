@@ -13,7 +13,8 @@
   
     "get $5 coupon code": "obtener código de descuento de 5 $",
     "download now": "descargar ahora",
-  
+    "GET $5 COUPON CODE" : "obtener código de descuento de 5 $",
+
   
   
   
@@ -1066,7 +1067,7 @@
     "Stabilize your videos" : "Estabiliza tus vídeos",
     "Eliminate negative effects of your camera shake making video smooth" : "Elimina efectos negativos de la vibración de la cámara suavizando el vídeo.",
     "Edit HD videos of any size" : "Edita vídeos HD de cualquier tamaño",
-    "Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes" : "on la tecnología de cache de vídeo integrada, editar vídeo HD y 4K es más rápido Trabaja con cualquier formato de vídeo y tamaño de archivo.",
+    "Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes" : "on la tecnología de cache de vídeo integrada, editar vídeo HD y 4K es más rápido Trabaja con cualquier formato de vídeo y tamaño de archivo.",
     "Download AVS Video Editor" : "Descargar AVS Video Editor",
     "Online Media Technologies Ltd UK" : "Online Media Technologies Ltd., UK",
     "2020 All rights reserved." : "2021 Todos los derechos reservados.",
@@ -1307,7 +1308,10 @@
     "Name" : "Nombre",
     "PAD File" : "Archivo PAD",
     "Download" : "Descargar",
+    "Downloads" : "Descargar",
+    "Help" : "Ayuda",
     "Download_dwn" : "Descargar",
+    "Download_dwn_h" :"Descargar",
     "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily" : "Convierte de a formatos de vídeo: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD, DCI 4K, etc. de forma rápida y sencilla.",
     "Convert audio between popular formats Apply effects, customize output parameters, use batch mode" :"Convierte entre los formatos de audio más populares. Aplica efectos, personaliza parámetros de salida, utiliza el modo por lotes",
     "Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays" :"Recorta, corta, divide, fusiona, rota y mezcla vídeos. Más de 300 nuevos efectos, transiciones y superposiciones",
@@ -1396,6 +1400,78 @@
     "I Agree" : "Estoy de acuerdo",
 
     "Add callouts, captions, and arrows, use pan and zoom effects" : "Agregue globos de texto, subtítulos y flechas, use efectos de panorámica y zoom.",
+
+
+    "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
+    "Surf the website and find" : "Navegue por el sitio web y encuentre ",
+    "9 EASTER EGGS" : "9 huevos de Pascua",
+    "with discounts up to" : " con descuentos de hasta ",
+    "75% OFF!" : "el 75%.",
+    "Surf better to find a" : "Busque mejor para encontrar un ",
+    "75% discount" : "75% de descuento",
+    "Good luck!" : ". ¡Buena suerte!",
+    "Hunt now!" : "¡Empiece a jugar ahora!",
+    "SHOP NOW" : "Comprar ahora",
+    "*Just use this coupon while purchasing" : "*Use este cupón para hacer un pedido",
+    
+    "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Glory20&CLEAN_CART=ALL",
+    "PWell done!" : "¡Bien hecho!",
+    "PTake a 20% off" : "Obtenga un 20% de descuento",
+    "Pon AVS4YOU Unlimited": "en la suscripción ilimitada",
+    "PSubscription" : "AVS4YOU",
+    
+    
+    "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Egg30&CLEAN_CART=ALL",
+    "MPRedeem a 30%" : "Canjee un cupón de",
+    "MPdiscount coupon" : "descuento del 30%",
+    "MPon AVS Video Editor" : "en AVS Video Editor",
+    
+    
+    "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Sunny50&CLEAN_CART=ALL",
+    "VCEnjoy this spring with" : "Disfrute esta primavera",
+    "VCa 50% discount" : "con un 50% de descuento",
+    "VCon AVS Video ReMaker" : "en la suscripción ilimitada",
+    "VCUnlimited Subscription" : "AVS Video ReMaker",
+    
+    
+    "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Treasure75&CLEAN_CART=ALL",
+    "VCABingo!" : "¡Bingo!",
+    "VCAYou have found our treasure egg!!!" : "¡Ha encontrado nuestro huevo del tesoro!",
+    "VCAGet 75% Off on AVS Video ReMaker" : "Obtenga un 75% de descuento en la",
+    "VCA1 Year Subscription" : "suscripción de 1 año  AVS Video ReMaker",
+    
+    
+    "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Lucky30&CLEAN_CART=ALL",
+    "VAEGet a lucky" : "Obtenga un",
+    "VAE30% coupon" : "cupón del 30%",
+    "VAEon AVS4YOU 1 Year" : "en la suscripción",
+    "VAESubscription" : "anual AVS4YOU",
+    "VACAVS Video ReMaker" : " ",
+    
+    "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Spring50&CLEAN_CART=ALL",
+    "DWNWow!" : "¡Fantástico!",
+    "DWNSave a 50% off" : "Ahorre un 50% de descuento",
+    "DWNon AVS Video Editor" : "en AVS Video Editor",
+    "VVVCGet 25% off" : " ",
+    
+    "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Winner35&CLEAN_CART=ALL",
+    "ABSCongrats!" : "¡Felicitaciones!",
+    "ABSYou win a 35% discount" : "Ha ganado un 35%",
+    "ABSon AVS4YOU Unlimited" : " de descuento en la suscripción",
+    "ABSSubscription" : "ilimitada AVS4YOU",
+    
+    
+    "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Bunny40&CLEAN_CART=ALL",
+    "EDTake advantage" : "Aproveche",
+    "EDof 40% Off" : "el 40% de descuento",
+    "EDon AVS4YOU 1 Year" : "en la suscripción anual",
+    "EDSubscription" : "AVS4YOU",
+    
+    
+    "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Partner25&CLEAN_CART=ALL",
+    "Get 25% off" : "Obtenga un 25%",
+    "on AVS4YOU Unlimited" : "de descuento en la suscripción",
+    "Subscription" : "ilimitada AVS4YOU",
 
     "*****************************LINK********************************" : "*****************************LINK********************************",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",

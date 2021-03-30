@@ -289,7 +289,7 @@ const RowContent = styled.div`
         .bgOrange{
             position: relative;
             width: 38%;
-            left: -135px;
+            left: -110px;
             top: -1px;
         } 
         .flexWrapper{

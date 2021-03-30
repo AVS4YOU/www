@@ -48,15 +48,15 @@ const localesNSContent = {
       ns: "common"
     }
   ],
-kr: [
+ko: [
     {
-      content: fs.readFileSync(`src/locales/kr/common.json`, "utf8"),
+      content: fs.readFileSync(`src/locales/ko/common.json`, "utf8"),
       ns: "common"
     }
   ],
-dk: [
+da: [
     {
-      content: fs.readFileSync(`src/locales/dk/common.json`, "utf8"),
+      content: fs.readFileSync(`src/locales/da/common.json`, "utf8"),
       ns: "common"
     }
   ],
@@ -85,8 +85,8 @@ const availableLocales = [
   { value: "jp", text: "日本語" },
   { value: "ru", text: "Русский" },
   { value: "pl", text: "Polski"},
-  { value: "kr", text: "한국어"},
-  { value: "dk", text: "Dansk"},
+  { value: "ko", text: "한국어"},
+  { value: "da", text: "Dansk"},
   { value: "nl", text: "Nederland"},
   { value: "pt", text: "Português"}
 ];

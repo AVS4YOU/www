@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /src/pages/advent-calendar.aspx.js
+Sitemap: https://www.avs4you.com/sitemap.xml

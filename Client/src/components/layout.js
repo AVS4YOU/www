@@ -15,9 +15,14 @@ import Footer from "./footer";
 import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
-
 import CookieMessage from "../components/cookie-message";
 import PlAVS from "../images/pl/pattern.png";
+
+//
+import CookieEaster from '../components/easter/cookie';
+
+
+//
 const StyledPL =styled.div`
 position: relative;
 text-align: center;
@@ -78,12 +83,13 @@ const languageCodes = [
   "fr-FR",
   "es-ES",
   "it-IT",
-  "ja-JP",
+  "jp-JA",
   "nl-NL",
   "pl-PL",
   "da-DK",
   "pt-BR",
-  "ru-RU"
+  "ru-RU",
+  "ko-KR",
 ];
 
 class Layout extends React.PureComponent {
@@ -153,7 +159,7 @@ class Layout extends React.PureComponent {
           {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
           {this.props.pageContext.originalPath}
 
-          <link rel="canonical" href={"https://www.avs4you.com/" + this.pageName}></link>
+          <link rel="canonical" href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? this.props.to : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
           <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
           {languageCodes.map((languageCode)=> {
             let language = languageCode.split("-")[0];
@@ -167,7 +173,6 @@ class Layout extends React.PureComponent {
             {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-1338774-7');
             `}
           </script>
@@ -214,6 +219,11 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
+
+        
+        <CookieEaster />
+        
+        
         <CookieMessage />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>
