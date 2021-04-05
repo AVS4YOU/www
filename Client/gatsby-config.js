@@ -1,3 +1,17 @@
+const excludeSitemap = [
+             '/advent-calendar.aspx',
+             '/da/advent-calendar.aspx',
+             '/de/advent-calendar.aspx',
+             '/es/advent-calendar.aspx',
+             '/fr/advent-calendar.aspx',
+             '/it/advent-calendar.aspx',
+             '/jp/advent-calendar.aspx',
+             '/ko/advent-calendar.aspx',
+             '/nl/advent-calendar.aspx',
+             '/pl/advent-calendar.aspx',
+             '/pt/advent-calendar.aspx',
+             '/ru/advent-calendar.aspx',
+];
 module.exports = {
   siteMetadata: {
     title: "avs4you",
@@ -30,7 +44,7 @@ module.exports = {
       options: {
         sitemapSize: 5000,
         output: `/sitemap.xml`,
-        exclude: [`/advent-calendar.aspx`],
+        exclude: [...excludeSitemap],
         query: `
         {
           site {
