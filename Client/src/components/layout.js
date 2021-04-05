@@ -18,11 +18,6 @@ import { withPrefix } from "gatsby";
 import CookieMessage from "../components/cookie-message";
 import PlAVS from "../images/pl/pattern.png";
 
-//
-import CookieEaster from '../components/easter/cookie';
-
-
-//
 const StyledPL =styled.div`
 position: relative;
 text-align: center;
@@ -221,7 +216,6 @@ class Layout extends React.PureComponent {
         </StyledLayout>
 
         
-        <CookieEaster />
         
         
         <CookieMessage />
