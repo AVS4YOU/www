@@ -91,6 +91,7 @@ const availableLocales = [
   { value: "pt", text: "Português"}
 ];
 
+
 // default locales don't end up in a specific locale route i.e example.com for english and example.com/fr for franch
 const defaultLocales = { value: "en", text: "English" };
 
@@ -98,6 +99,23 @@ exports.onCreatePage = async props => {
 
   const { page, actions: { createPage, deletePage, createRedirect } } = props;
 
+ /* const nts = createRedirect({
+    fromPath: '/free.aspx',
+    toPath: '/downloads2.aspx',
+    isPermanent: true
+  });
+  createRedirect({
+    fromPath: '/free.aspx',
+    toPath: '/downloads.aspx',
+    isPermanent: true
+  });
+ createRedirect({ fromPath: '/AVS-System-Info.aspx', toPath: '/', isPermanent: true });
+  /* createRedirect({ fromPath: '/free.aspx', toPath: '/downloads.aspx', isPermanent: true });*/
+  createRedirect({
+    fromPath: '/contact.aspx',
+    toPath: '/about-us.aspx',
+    isPermanent: true
+  });
   deletePage(page);
 
   if (page.path === '/') { 

@@ -6,6 +6,7 @@ const pageID = [
     '/mov-video-editor.aspx',
     '/powerful-video-maker.aspx',
     '/precise-video-cutting-tools.aspx',
+    '/installed.aspx',
 ];
 
 let policeDisallow = [];
