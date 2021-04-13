@@ -73,29 +73,6 @@ module.exports = {
         configFile: 'robots-txt.config.js'
       }
     },
-    {
-      resolve: 'gatsby-plugin-htaccess',
-      options: {
-        RewriteBase: '/custom/',
-        https: false,
-        www: false,
-        SymLinksIfOwnerMatch: true,
-        siteUrl: 'http://teststatic.avs4you.com/', // if 'www' is set to 'false', be sure to also remove it here!
-        ErrorDocument: `
-          ErrorDocument 404 /404.html
-        `,
-        redirect: [
-          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
-        ],
-        custom: `
-            # This is a custom rule!
-            # This is a another custom rule!
-            RewriteRule ^index.html$ / [L,NC]
-            RewriteRule ^free\.aspx$ /downloads.aspx [L,NC]
-            RewriteRule ^AVS-System-Info\.aspx$ / [L,NC]
-        `,
-      },
-    },
     `gatsby-plugin-client-side-redirect`, 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
