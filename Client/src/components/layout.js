@@ -214,10 +214,6 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
-
-        
-        
-        
         <CookieMessage />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>
