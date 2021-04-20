@@ -1,8 +1,7 @@
 # Changelog
 
 ## 1.0.3
-### Новое
-* Добавлен main-sitemap.xml
+
 ### Исправления
 * Исправлен robots.txt
 * Исправлен sitemap.xml
