@@ -26,48 +26,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        sitemapSize: 5000,
-        output: `/main-sitemap.xml`,
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-          allFile(filter: {extension: {eq: "md"}}) {
-            edges {
-              node {
-                sourceInstanceName
-                modifiedTime
-                relativeDirectory
-              }
-            }
-          }
-          allSitePage {
-            edges {
-              node {
-                path               
-              }
-            }
-          }
-      }`,
-        serialize: ({ site, allSitePage, allFile }) =>
-        allSitePage.edges.map(edge => {
-          const itemPresent= allFile.edges.find(item=>`/${item.node.relativeDirectory}/`===edge.node.path);
-          const urlAdress = "https://www.avs4you.com/";
-          return {
-            url: site.siteMetadata.siteUrl + edge.node.path,
-            changefreq: `weekly`,
-            priority: (site.siteMetadata.siteUrl + edge.node.path) === urlAdress ? 1.0 : 0.5,
-            lastmod: itemPresent ? itemPresent.node.modifiedTime.split('T')[0] : new Date().toISOString().split('T')[0],
-          }
-        })
-      }
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         configFile: 'robots-txt.config.js'
