@@ -25,7 +25,7 @@ for(let i = 0; i < langID.length; i++){
 
 module.exports = {
     host: 'https://www.avs4you.com',
-    sitemap: 'https://www.avs4you.com/sitemap.xml',
+    sitemap: ['https://www.avs4you.com/sitemap.xml', 'https://www.avs4you.com/main-sitemap.xml'],
     policy: [{ userAgent: userAgentID[2], disallow: [...policeDisallow] }],
 };
 
