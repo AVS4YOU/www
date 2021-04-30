@@ -233,6 +233,9 @@
   "AVS Video Editor 9.1": "AVS Video Editor 9.1",
   "For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results": "Что касается цены, то это, безусловно, отличное соотношение цены и качества. В основном я использую AVS Video Editor и Video Converter, и считаю их превосходными, простыми в использовании, с качественными результатами.",
   "Download_dwn" : "Установить сейчас",
+  "Download_dwn_h" :"Установить сейчас",
+  "Downloads" : "Установить сейчас",
+  "Help" : "Помощь",
   "Affiliate Program" : "Аффилиатская программа",
 
 
@@ -308,7 +311,7 @@
   "Michael Bryant": "Майкл Брайант",
   "As a supporter of your programs, I must say that I have never been disappointed in your software or your customer service team Your software does exactly what I need it to do": "Как сторонник ваших программ, должен признаться, что еще ни разу не разочаровался в том, что вы делаете, а также в вашей клиентской поддержке. Ваша программа делает именно то, что мне нужно...",
   "Arthur Rees": "Артур Рис",
-  "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise": "Хорошие приложения, быстрое обслуживание и разумные цены. Отличные продукты, интуитивно понятные руководства, кторые приятно читать.",
+  "Good applications, prompt service and reasonable pricing Great products, intuitive to learn and help files are concise": "Хорошие приложения, быстрое обслуживание и разумные цены. Отличные продукты, интуитивно понятные руководства, которые приятно читать.",
   "AVS Video Remaker 6.3": "AVS Video Remaker 6.3",
 
 
@@ -431,7 +434,7 @@
   "only!": "!",
   "subscription_rc" : "подписка",
   "1 year": "1 год",
-  "Unlimited_rc": "Безлимитно",
+  "Unlimited_rc": "Безлимитная",
   "1 year access_rc": "1 год доступа к 5 программам AVS4YOU",
   "Unlimited access_rc": "Безлимитный доступ к программам AVS4YOU",
   "Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" : "Получите 5 профессиональных мультимедийных программ в 1 пакете + Бесплатные обновления + Бесплатная поддержка",
@@ -989,9 +992,13 @@
   "Why you will love AVS4YOU": "Почему вы полюбите AVS4YOU",
   "Timelimited offer": "Предложение действительно",
   "24hour exclusive offer": "Эксклюзивное предложение на 24 часа",
-  "199": "$199",
-  "590": "$59",
-  "59": "$59",
+  "199": "₽2998",
+  "590": "₽2499",
+  "59": "₽2499",
+  "199 ": "₽2998",
+  "59 ": "₽2499",
+  "$59" : "₽2499",
+  "$199" : "₽2998",
   "Get 5 professional multimedia tools for audio and video processing": "Получите 5 профессиональных мультимедийных инструментов для обработки аудио и видео",
   "AVS4YOU Unlimited Subscription": "AVS4YOU Безлимитная подписка",
   "Make your home videos look professional with a full set of video editing tools": "Пусть ваши домашние видео выглядят профессионально благодаря полному набору инструментов для редактирования видео",
@@ -1036,6 +1043,7 @@
   "Play media files, create personal playlists and more useful features" : "Воспроизводить медиафайлы, создавать личные плейлисты и другие полезные функции.",
   "$59.00" : "2499 ₽",
   "$29.00" : "1200 ₽",
+
   "prices valid till September 30, 2020" : "prices valid till September 30, 2020",
   "AVS4YOU Unlimited Subscription" : "AVS4YOU Безлимитная подписка",
   "Time-limited offer" : "Предложение ограничено",
@@ -1100,7 +1108,7 @@
   "Spread the word and get a free license key for AVS Video Editor or AVS Video ReMaker 1 year subscription. To do it,": "Распространите информацию и получите бесплатный лицензионный ключ для AVS Video Editor или AVS Video ReMaker с подпиской на 1 год. Для этого,",
   "Write an article about AVS4YOU programs, publish it in your blog or website, or": "Напишите статью о программах AVS4YOU, опубликуйте ее в своем блоге или на сайте, или",
   "Make a video and post it on your YouTube channel, or": "Смонтируйте видео и разместите его на своем YouTube-канале, или",
-  "Share AVS4YOU.com in 3 different social networks.": "Расскажите о AVS4YOU.com в 3 разных соцсетях",
+  "Share AVS4YOUcom in 3 different social networks": "Расскажите о AVS4YOU.com в 3 разных соцсетях",
   "Once done, contact us at": "После этого свяжитесь с нами по адресу",
   "with links provided": "и предоставьте ссылки",
   "The free license key gives you an annual access to the chosen program with all paid features included": "Бесплатный лицензионный ключ дает вам годовой доступ к программе на ваш выбор, со всеми доступными платными функциями",
@@ -1271,7 +1279,7 @@
   "Send form": "Отправка заявления",
   "After that download our": "После этого скачайте нашу",
   "refund form": "форму возврата денег",
-  "and print it. When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via": "и распечатайте её. После того, как вы правильно заполните и подпишете этот документ, отправьте его факсом на номер + 44 207 182 6722. Его электронная копия также может быть отправлена через",
+  "and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via": "и распечатайте её. После того, как вы правильно заполните и подпишете этот документ, отправьте его факсом на номер + 44 207 182 6722. Его электронная копия также может быть отправлена через",
   "support form": "форму поддержки",
   "as an attachment": "в виде вложения",
   "Get moneyback": "Получение возврата",
@@ -1294,8 +1302,6 @@
   "JP Thank you": " ",
   "JP for installing": " ",
   " $ ": "$",
-  "59 ": "59 ",
-  "199 ": "199 ",
   "Buy now!": "Купить!",
   "Just a few clicks –": "Всего несколько кликов –",
   "and you will have": "и у вас будет",
@@ -1330,6 +1336,82 @@
   "privacy policy" : "политикой конфиденциальности",
   "pointeCookie" : ". ",
   "I Agree" : "Я принимаю",
+
+
+  "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
+  "Surf the website and find" : "Найдите ",
+  "9 EASTER EGGS" : "9 пасхальных яиц",
+  "with discounts up to" : ", спрятанных на сайте, со ",
+  "75% OFF!" : "скидкой до 75%.",
+  "Surf better to find a" : "Ищите лучше, чтобы найти ",
+  "75% discount" : "скидку 75%",
+  "Good luck!" : ". Удачи!",
+  "Hunt now!" : "Начать игру!",
+  "SHOP NOW" : "Купить сейчас",
+  "*Just use this coupon while purchasing" : "*Используйте данный купон при оформлении заказа",
+  
+  "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Glory20&CLEAN_CART=ALL",
+  "PWell done!" : "Отлично!",
+  "PTake a 20% off" : "Получите скидку 20%",
+  "Pon AVS4YOU Unlimited": "на безлимитную подписку",
+  "PSubscription" : "AVS4YOU",
+  
+  
+  "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Egg30&CLEAN_CART=ALL",
+  "MPRedeem a 30%" : "Активируйте",
+  "MPdiscount coupon" : "30% купон",
+  "MPon AVS Video Editor" : "на AVS Video Editor",
+  
+  
+  "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Sunny50&CLEAN_CART=ALL",
+  "VCEnjoy this spring with" : "Встречайте весну",
+  "VCa 50% discount" : "со скидкой 50%",
+  "VCon AVS Video ReMaker" : "на безлимитную подписку",
+  "VCUnlimited Subscription" : "AVS Video ReMaker",
+  
+  
+  "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Treasure75&CLEAN_CART=ALL",
+  "VCABingo!" : "Бинго!",
+  "VCAYou have found our treasure egg!!!" : "Вы нашли супер купон!!!",
+  "VCAGet 75% Off on AVS Video ReMaker" : "Получите скидку 75%",
+  "VCA1 Year Subscription" : "на одногодичную подписку",
+  "VACAVS Video ReMaker" : "AVS Video ReMaker",
+  
+  
+  "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Lucky30&CLEAN_CART=ALL",
+  "VAEGet a lucky" : "Получите",
+  "VAE30% coupon" : "счастливый 30% купон",
+  "VAEon AVS4YOU 1 Year" : "на одногодичную подписку",
+  "VAESubscription" : "AVS4YOU",
+  
+  
+  "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Spring50&CLEAN_CART=ALL",
+  "DWNWow!" : " ",
+  "DWNSave a 50% off" : "Сэкономьте 50%",
+  "DWNon AVS Video Editor" : "на AVS Video Editor",
+  
+  
+  "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Winner35&CLEAN_CART=ALL",
+
+  "ABSCongrats!" : "Поздравляем!",
+  "ABSYou win a 35% discount" : "Вы получаете скидку 35%",
+  "ABSon AVS4YOU Unlimited" : "на безлимитную подписку",
+  "ABSSubscription" : "AVS4YOU",
+  
+  
+  "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Bunny40&CLEAN_CART=ALL",
+  "EDTake advantage" : "Воспользуйтесь",
+  "EDof 40% Off" : "скидкой 40%",
+  "EDon AVS4YOU 1 Year" : "на одногодичную подписку",
+  "EDSubscription" : "AVS4YOU",
+  "VVVCGet 25% off" : " ",
+  
+  "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&COUPON=Partner25&CLEAN_CART=ALL",
+  "Get 25% off" : "Получите скидку 25%",
+  "on AVS4YOU Unlimited" : "на безлимитную подписку",
+  "Subscription" : "AVS4YOU",
+  
+
 
   "*****************************LINK********************************" : "*****************************LINK********************************",
   "https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf" : "https://onlinehelpstaticcontents.avs4you.com/downloads/schools/avs4you_price_list_for_schools.pdf",

@@ -13,7 +13,8 @@
   
     "get $5 coupon code": "OBTENIR UN CODE DE RÉDUCTION DE 5$",
     "download now": "télécharger maintenant",
-  
+    "GET $5 COUPON CODE" : "OBTENIR UN CODE DE RÉDUCTION DE 5$",
+
   
   
   
@@ -1041,6 +1042,10 @@
     "199" : "199 €",
     "590" : "49.00 €",
     "59" : "49 €",
+    "$59" : "€59",
+    "$199" : "€199",
+    "199" : "€199",
+    "590" : "€49.00",
     "Make your home videos look professional with a full set of video editing tools" : "Même vos vidéos amateurs deviennent professionnels grâce à un kit complet des outils d’édition",
     "Play with 300 effects and transitions" : "Jouez avec plus de 300 effets et transitions",
     "Easily convert videos to all key formats MP4 MPEG DVD WMV AVI HDV 60 more" : "Convertissez facilement vos vidéos à tous les formats populaires : MP4, MPEG, DVD, WMV, AVI, HDV et encore 60",
@@ -1067,10 +1072,10 @@
     "Stabilize your videos" : "Stabilisez vos vidéos",
     "Eliminate negative effects of your camera shake making video smooth" : "Éliminez les effets négatifs du tremblement de votre appareil photo en rendant les images vidéo fluides.",
     "Edit HD videos of any size" : "Montez des vidéos HD de toutes tailles",
-    "Due to the integrated video cache technology, HD and 4K video editing becomes faster. Work with any video formats and file sizes" : "Grâce à la technologie de cache vidéo intégrée, le montage vidéo HD et 4K devient plus rapide. Travaillez avec tous les formats vidéo et toutes les tailles de fichiers.",
+    "Due to the integrated video cache technology, HD and 4K video editing becomes faster Work with any video formats and file sizes" : "Grâce à la technologie de cache vidéo intégrée, le montage vidéo HD et 4K devient plus rapide. Travaillez avec tous les formats vidéo et toutes les tailles de fichiers.",
     "Download AVS Video Editor" : "Télécharger AVS Video Editor",
     "Online Media Technologies Ltd UK" : "Online Media Technologies Ltd., UK",
-    "2020 All rights reserved." : "2020 Tous droits réservés.",
+    "2020 All rights reserved." : "2021 Tous droits réservés.",
     "Trim and multi-trim" : "Rognage et multi-rognage",
     "Cut" : "Couper",
     "Merge" : "Fusionner",
@@ -1178,7 +1183,7 @@
     "Spread the word and get a free license key for AVS Video Editor or AVS Video ReMaker 1 year subscription. To do it," : "Faites passer le mot et obtenez une clé de licence gratuite pour l'abonnement d'un an à AVS Video Editor ou AVS Video ReMaker. Pour le faire,",
     "Write an article about AVS4YOU programs, publish it in your blog or website, or" : "Écrivez un article sur les programmes AVS4YOU, publiez-le sur votre blog ou votre site web, ou",
     "Make a video and post it on your YouTube channel, or" : "Réalisez une vidéo et publiez-la sur votre chaîne YouTube, ou",
-    "Share AVS4YOU.com in 3 different social networks." : "Partagez AVS4YOU.com dans 3 réseaux sociaux différents",
+    "Share AVS4YOUcom in 3 different social networks" : "Partagez AVS4YOU.com dans 3 réseaux sociaux différents",
     "Once done, contact us at" : "Une fois fait, contactez nous à",
     "with links provided" : "avec les liens fournis",
     "The free license key gives you an annual access to the chosen program with all paid features included" : "La clé de licence gratuite vous donne un accès annuel au programme choisi avec toutes les fonctionnalités payantes incluses",
@@ -1281,6 +1286,10 @@
     "***************************Padfiles***********************" : "***************************Fichiers Pad***********************",
     "Download"  : "Télécharger",
     "Download_dwn" : "Télécharger",
+    "Download_dwn_h" : "Télécharger",
+    "Downloads" : "Téléchargements",
+    "Help" : "Aide",
+
     "Index" : "Index",
     "Name" : "Nom",
     "PAD File" : "Fichier PAD",
@@ -1363,7 +1372,7 @@
     "im AVS Video Editor?" : " ",
     "lang Featured guides" : " ",
     "lang Help Center" : " ",
-    "2020 All rights reserved" :  " 2020 Tous droits réservés.",
+    "2020 All rights reserved" :  " 2021 Tous droits réservés.",
 
     "*****************************CookieMsg********************************" : "*****************************CookieMsg********************************",
     "This site uses cookies By continuing to browse the site you agree to our" : "Ce site utilise les cookies. En continuant à naviguer sur ce site, vous acceptez notre ",
@@ -1372,6 +1381,78 @@
     "I Agree" : "J'accepte",
 
     "Add callouts, captions, and arrows, use pan and zoom effects" : "Ajoutez des légendes, libellés et flèches, appliquez des effets de panoramique/zoom.",
+
+    "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
+"Surf the website and find" : "Naviguez à travers les pages du site web et trouvez ",
+"9 EASTER EGGS" : "9 œufs de Pâques",
+"with discounts up to" : " avec les remises ",
+"75% OFF!" : "jusqu’au 75%.",
+"Surf better to find a" : "Soyez plus attentif pour ne pas manquer ",
+"75% discount" : "la remise de 75%",
+"Good luck!" : ". Bonne chance !",
+"Hunt now!" : "Rejoignez la chasse aux œufs maintenant !",
+"SHOP NOW" : "Obtenir",
+"*Just use this coupon while purchasing" : "*Saisissez ce code promo lors de l’achat",
+
+"hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Glory20&CLEAN_CART=ALL",
+"PWell done!" : "Bien joué !",
+"PTake a 20% off" : "Profitez d’une remise de 20%",
+"Pon AVS4YOU Unlimited": "sur le forfait illimité AVS4YOU",
+"PSubscription" : " ",
+
+
+"hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Egg30&CLEAN_CART=ALL",
+"MPRedeem a 30%" : "Procurez-vous",
+"MPdiscount coupon" : "AVS Video Editor avec",
+"MPon AVS Video Editor" : "la remise de 30%",
+
+
+"hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Sunny50&CLEAN_CART=ALL",
+"VCEnjoy this spring with" : "Profitez de ce printemps",
+"VCa 50% discount" : "et de la remise de 50%",
+"VCon AVS Video ReMaker" : "sur le forfait illimité pour",
+"VCUnlimited Subscription" : "AVS Video ReMaker",
+
+
+"hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Treasure75&CLEAN_CART=ALL",
+"VCABingo!" : "Bingo !",
+"VCAYou have found our treasure egg!!!" : "La chasse aux œufs s’avère fructueuse pour vous !!!",
+"VCAGet 75% Off on AVS Video ReMaker" : "75% en cadeau sur l’abonnement d’un",
+"VCA1 Year Subscription" : "an pour AVS Video ReMaker",
+
+
+"hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Lucky30&CLEAN_CART=ALL",
+"VAEGet a lucky" : "La chance est de votre côté",
+"VAE30% coupon" : "avec la remise de 30%",
+"VAEon AVS4YOU 1 Year" : "sur un an d’abonnement à",
+"VAESubscription" : "AVS4YOU",
+"VVVCGet 25% off" : " ",
+"VACAVS Video ReMaker" : " ",
+"hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Spring50&CLEAN_CART=ALL",
+"DWNWow!" : "Génial !",
+"DWNSave a 50% off" : "Économisez 50% du prix",
+"DWNon AVS Video Editor" : "sur AVS Video Editor",
+
+
+"hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Winner35&CLEAN_CART=ALL",
+"ABSCongrats!" : "Félicitations !",
+"ABSYou win a 35% discount" : "Vous avez gagné 35%",
+"ABSon AVS4YOU Unlimited" : "de remise sur le forfait",
+"ABSSubscription" : "illimité AVS4YOU",
+
+
+"hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Bunny40&CLEAN_CART=ALL",
+"EDTake advantage" : "Profitez bien",
+"EDof 40% Off" : "de la remise de 40%",
+"EDon AVS4YOU 1 Year" : "sur un an d’abonnement",
+"EDSubscription" : "à AVS4YOU",
+
+
+"hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Partner25&CLEAN_CART=ALL",
+"Get 25% off" : "Recevez 25%",
+"on AVS4YOU Unlimited" : "de réduction sur le forfait",
+"Subscription" : "illimité AVS4YOU",
+
 
 
     "*****************************LINK********************************" : "*****************************LINK********************************",
@@ -1386,7 +1467,7 @@
 	"downloads-avs4you-guides-how-to-reinstall-avs4you-programs" : "https://www.avs4you.com/fr/guides/how-to-reinstall-avs4you-programs.aspx",
 	"downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs" : "https://www.avs4you.com/fr/guides/How-to-uninstall-AVS4YOU-programs.aspx",
 	"installed-support-avs4you-login" : "https://support.avs4you.com/fr/login.aspx",
-	"installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor" : "https://www.avs4you.com/fr/guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx",
+	"installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor" : "https://www.avs4you.com/guides/how-to-use-the-chromakey-effect-in-avs-video-editor.aspx",
 	"installed-avs4you-guides-create-video-slideshow" : "https://www.avs4you.com/fr/guides/create-video-slideshow.aspx",
 	"installed-avs4you-guides-how-to-start-working-with-video-editor" : "https://www.avs4you.com/fr/guides/how-to-start-working-with-video-editor.aspx",
 	"installed-onlinehelp-avs4you-avs-video-editor" : "https://onlinehelp.avs4you.com/fr/avs-video-editor/",
@@ -1397,6 +1478,7 @@
 	"header_avs4you_guides" : "https://www.avs4you.com/guides/fr/index.aspx",
 	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/fr/index.aspx",
 	"header_support_avs4you_faq" : "https://support.avs4you.com/fr/faq.aspx",
+    "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php?lang=fr",
 
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",

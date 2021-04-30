@@ -7,7 +7,24 @@ import Layout from "../components/layout";
 import "../styles/about-us.less";
 import ScrollUpButton from '../components/scroll-up-button';
 
+
+
+
+
+
 class aboutUs extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      device: "",
+    };
+
+    this.getDevice = this.getDevice.bind(this);
+  }
+
+  getDevice(device){
+    this.setState({ device: device });
+  }
 
 render(){
 

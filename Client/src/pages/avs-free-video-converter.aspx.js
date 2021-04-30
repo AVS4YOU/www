@@ -20,21 +20,39 @@ import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
 import AvatarLawrence from '../images/avs-free-video-converter/lawrence_thompson.png';
 
+
+
 class avsFreeVideoConverter extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonVideoConverter")
     };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this); 
   }
 
   getDevice(device){
     this.setState({ device: device });
   }
 
+  closeModal() {
+    this.setState({
+      isModalOpen: false
+    });
+  }
+
+  openModal() {
+    this.setState({
+      isModalOpen: true
+    });
+  }
 render(){
 
     return (
@@ -146,7 +164,7 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen 
+          <ReviewScreen 
               reviewsData={
                 [
                   {
@@ -172,6 +190,8 @@ render(){
             />
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
+       
+
           <ScreenshotsCarousel 
             maxWidth={734}
             maxWidthPopup={734}

@@ -12,7 +12,21 @@ import ContentSelector from '../components/content-selector';
 import ContentRowItem from '../components/content-row-item';
 import ScrollUpButton from '../components/scroll-up-button';
 
+
+
 class education extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      device: "",
+    };
+
+    this.getDevice = this.getDevice.bind(this);
+  }
+
+  getDevice(device){
+    this.setState({ device: device });
+  }
 
 render(){
 
@@ -130,7 +144,7 @@ render(){
 
                 <ContentRowItem 
                     imgLeft={false}
-                    imageName="education_screen_educators2.png"
+                    imageName={this.props.t("video editor slider4 jpg")}
                     headerText={this.props.t("Record lectures and webinars")}
                     free={false}   
                 >
@@ -162,12 +176,16 @@ render(){
             </ContentSelector>
           </div>
         </div>
+        
         <div className="form education screen-wrapper">
+
+          
           <img src={mailIcon} alt="mail icon"/>
           <Text id="contact-form-header" as="h2" className="common__heading">
           {this.props.t("Contact form")}
           </Text>
           <div className="education-from-wrapper">
+
             <Form 
                  formHeader = {this.props.t("Write a message")}
                  formName = {this.props.t("Name")}
@@ -182,7 +200,7 @@ render(){
             />
             <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
           </div>
-        </div>
+         </div>
       </Layout>
     );
   }

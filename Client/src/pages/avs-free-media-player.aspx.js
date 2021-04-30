@@ -20,6 +20,8 @@ import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../images/common/review-carousel/quote_1.png';
 
+
+
 const TableWrapper = styled.table`
   margin:auto;
   span {
@@ -39,12 +41,13 @@ class avsFreeMediaPlayer extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
-    };
+   };
 
     this.getDevice = this.getDevice.bind(this);
+
   }
 
-  getDevice(device) {
+  getDevice(device){
     this.setState({ device: device });
   }
 

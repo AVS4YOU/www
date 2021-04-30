@@ -6,6 +6,8 @@ import { ScrollLink } from "react-scroll";
 import Layout from "../components/layout";
 import Link from "../components/link";
 
+const date = new Date();
+const currentYear = date.getFullYear();
 
 class avsYoutubeVideoEditor extends React.PureComponent {
 
@@ -196,7 +198,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
                 <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
                 <li><Link to="/about-us.aspx#contact-us" target="_blank" rel="noreferrer noopener">Contact us</Link></li>
             </ul>
-            <div className="vph_copyright">© <a className="blacklink" href="https://www.avs4you.com" target="_blank" rel="noreferrer noopener">Online Media Technologies&nbsp;Ltd.,&nbsp;UK</a> 2020 &nbsp; All rights reserved.</div>
+            <div className="vph_copyright"><Link to="/">{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
         </div>
         <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>

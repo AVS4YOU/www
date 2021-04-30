@@ -26,14 +26,16 @@ class avsVideoEditor extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
-    };
+      };
 
     this.getDevice = this.getDevice.bind(this);
-  }
+    }
 
   getDevice(device){
     this.setState({ device: device });
   }
+
+ 
 
 render(){
 
@@ -99,7 +101,7 @@ render(){
                 <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
               </a>
             </ContentRowItem>
-
+           
             <ContentRowItem 
                 imgLeft={false}
                 imageName={this.props.t("video editor slider4 jpg")}

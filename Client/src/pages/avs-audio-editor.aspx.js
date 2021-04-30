@@ -19,20 +19,24 @@ import AvatarDavid from '../images/avs-audio-editor/david.png';
 import AvatarFrank from '../images/avs-audio-editor/frank.png';
 import AvatarJohn from '../images/avs-audio-editor/john.png';
 
+
+
 class avsAudioEditor extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
-    };
+     };
 
     this.getDevice = this.getDevice.bind(this);
+
   }
 
   getDevice(device){
     this.setState({ device: device });
   }
+
 
 render(){
 
@@ -49,7 +53,7 @@ render(){
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
-              <div id="headerContentWrapper" className="headerContentWrapper" >
+              <div id="headerContentWrapper" className="headerContentWrapper" >           
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Create outstanding tracks for any purpose with our easy audio editing app for Windows")}</Text>
                 <HeaderDownloadButtons
@@ -62,6 +66,7 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
+
             <ImageGQL className="headerImage" imageName={this.props.t("audio editor en header png")} style={{maxWidth: "1564px"}} alt="header-image"/>
             <ImageGQL className="headerImage mobile" imageName={this.props.t("audio editor en header png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
@@ -102,7 +107,7 @@ render(){
               <Text className="ListItem">{this.props.t("Record audio data from various inputs like microphone, vinyl records, and other input lines on a sound card")}</Text>
               <Text className="ListItem">{this.props.t("Extract and edit audio from your video files")}</Text>
             </ContentRowItem>
-
+          
             <ContentRowItem 
               imgLeft={true}
               imageName={this.props.t("audio editor slider5 jpg")}

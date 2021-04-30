@@ -101,10 +101,10 @@ const StyledLanguageSelector = styled.div`
         &.pl:before{
             background-image: url(${PlIcon});
         }
-        &.kr:before{
+        &.ko:before{
             background-image: url(${KrIcon});
         }
-        &.dk:before{
+        &.da:before{
             background-image: url(${DkIcon});
         }
         &.nl:before{
@@ -177,10 +177,10 @@ const availableLocales = [
     {value: "jp", text: "日本語"},
     {value: "ru", text: "Русский"},
     {value: "pl", text: "Polski"},
-    {value: "kr", text: "한국어"},
-    {value: "dk", text: "Dansk"},
+    {value: "ko", text: "한국어"},
+    {value: "da", text: "Dansk"},
     {value: "nl", text: "Nederland"},
-    { value: "pt", text: "Português"}
+    {value: "pt", text: "Português"}
 ];
 
 class LanguageSelector extends React.PureComponent {
@@ -218,7 +218,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -232,7 +232,7 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/"}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
@@ -251,7 +251,7 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
                                             : item.value === "en" && "/" }
                                         href={
                                             pageContext && pageContext.originalPath

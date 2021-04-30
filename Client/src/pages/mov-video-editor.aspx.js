@@ -7,6 +7,9 @@ import Text from '../components/text';
 import Star from '../images/main-page/icons/star.svg';
 import Link from "../components/link";
 
+const date = new Date();
+const currentYear = date.getFullYear();
+
 class movVideoEditor extends React.PureComponent {
 
   constructor(props) {
@@ -139,13 +142,13 @@ render(){
             <div className="vph_logo"><Link to="/"></Link></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><Link href="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
-                    <li><Link href="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><Link to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
+                    <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
                     <li><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
                     <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><Link href="/contact.aspx">{this.props.t("Contact us")}</Link></li>
+                    <li><Link to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright">© <Link className="blacklink" to="/">{this.props.t("Online Media Technologies Ltd UK")}</Link> {this.props.t("2020  All rights reserved")}</div>
+                <div className="vph_copyright"><Link to="/">{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
             </div>
             <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>

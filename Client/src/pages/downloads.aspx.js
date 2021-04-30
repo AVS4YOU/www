@@ -11,7 +11,22 @@ import HeaderDownloadButtons from "../components/header-download-buttons";
 import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+
+
+
 class Download extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      device: "",
+     };
+
+    this.getDevice = this.getDevice.bind(this); 
+  }
+
+  getDevice(device){
+    this.setState({ device: device });
+  }
 
 render(){
 
@@ -28,7 +43,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="download-header.jpg" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
                 <div className="header__body">
-                    <Text as="h1" className="header__heading">{this.props.t("Download_dwn")}</Text>
+                    <Text as="h1" className="header__heading">{this.props.t("Download_dwn_h")}</Text>
                     <Text as="h3" className="header__subtitle">{this.props.t("Get all AVS4YOU® software in 1 installation package")}</Text>
                     <HeaderDownloadButtons 
                       t={this.props.t}
@@ -155,7 +170,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
-                <a target="_blank" rel="noreferrer noopener" href={("downolads-avs4you-guides")}>
+                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downolads-avs4you-guides")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -193,6 +208,10 @@ render(){
                 </div>
                 </a>
               </div>
+
+
+   
+
             </PanelCollapse>
 
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to uninstall AVS4YOU programs?")}>

@@ -199,8 +199,8 @@ function AvsLinkHref(props){
                 pageContext.locale === "es" ? ES_MText :
                 pageContext.locale === "ru" ? RU_MText :
                 pageContext.locale === "pl" ? PL_MText :
-                pageContext.locale === "kr" ? KR_MText :
-                pageContext.locale === "dk" ? DK_MText :
+                pageContext.locale === "ko" ? KR_MText :
+                pageContext.locale === "da" ? DK_MText :
                 pageContext.locale === "nl" ? NL_MText :
                 pageContext.locale === "pt" ? PT_MText :
                 ""

@@ -8,7 +8,23 @@ import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
 import ScrollUpButton from '../components/scroll-up-button';
+
+
+
+
 class partners extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      device: "",
+    };
+
+    this.getDevice = this.getDevice.bind(this);
+  }
+
+  getDevice(device){
+    this.setState({ device: device });
+  }
 
 render(){
 
