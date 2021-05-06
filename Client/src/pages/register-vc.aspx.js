@@ -20,6 +20,9 @@ import SecureIcon from '../images/register/register-secure-icon.svg';
 import SupportIcon from '../images/register/register-support-icon.svg';
 import PeopleIcon from '../images/register/register-people-icon.svg';
 
+import ModalLogoBtn from '../images/moneyback/logo.svg';
+import ModalCloseBtn from '../images/moneyback/close.svg';
+
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
@@ -302,10 +305,10 @@ render(){
         <div class='ModalStyle' id='upsell_modal'>
             <div class='headerModal'>
               <a href ='#' class='headerLogo'>
-              <img src='logo.svg' class='headerLogoImage' alt='logo avs'/>
+              <img src={ModalLogoBtn} class='headerLogoImage' alt='logo avs'/>
               </a>
               <button class='ModalShaerClose' id='close_button'>
-              <img src='cancel.svg' class='closeImage' alt='close modal'/>
+              <img src={ModalCloseBtn} class='closeImage' alt='close modal'/>
               </button>
             </div>
               <p class='H1ModalShaerText'>Upgrade now</p>
