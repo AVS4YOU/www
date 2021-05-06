@@ -106,6 +106,24 @@ render(){
         <Helmet>
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
+          {<style>{`#upsell_modal {display: none;}`}</style>}
+          {<script>{`
+          (function (document, src, libName, config) {
+            var script             = document.createElement('script');
+            script.src             = src;
+            script.async           = true;
+            var firstScriptElement = document.getElementsByTagName('script')[0];
+            script.onload          = function () {
+            for (var namespace in config) {
+            if (config.hasOwnProperty(namespace)) {
+              window[libName].setup.setConfig(namespace, config[namespace]);
+              }
+            }
+            window[libName].register();
+            };
+            firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
+            })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"immediate"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
+            `}</script>}
           {<script>
             {`
                 window._vwo_code = window._vwo_code || (function(){
@@ -281,6 +299,29 @@ render(){
 
           </div>
         </div>
+        <div class='ModalStyle' id='upsell_modal'>
+            <div class='headerModal'>
+              <a href ='#' class='headerLogo'>
+              <img src='logo.svg' class='headerLogoImage' alt='logo avs'/>
+              </a>
+              <button class='ModalShaerClose' id='close_button'>
+              <img src='cancel.svg' class='closeImage' alt='close modal'/>
+              </button>
+            </div>
+              <p class='H1ModalShaerText'>Upgrade now</p>
+              <p class='H2ModalShaerText'>Benefit from switching 1-Year to</p>
+              <p class='H2ModalShaerText'>AVS4YOU Unlimited Subscription</p>
+              <p class='modal-current-price-text'>$59.00 <span class='modal-prev-price-text'>$190.00</span></p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Unlimited access to 5 AVS4YOU programs</p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Free upgrades for programs</p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>One time payment (no yearly renewals)</p>
+              <a id='replace_button' href='#'>
+              <button class='Unlimited-Up' id='Unlimited'>Yes! Upgrade to Unlimited</button>
+              </a>
+              <a id='skip_button' href='#'>
+              <button class='One-Year' id='1Year'>Keep 1-Year</button>
+              </a>
+          </div>
       </Layout>
     );
   }
