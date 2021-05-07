@@ -91,6 +91,7 @@ const availableLocales = [
   { value: "pt", text: "Português"}
 ];
 
+
 // default locales don't end up in a specific locale route i.e example.com for english and example.com/fr for franch
 const defaultLocales = { value: "en", text: "English" };
 

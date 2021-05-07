@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: "avs4you",
+    siteUrl: "https://www.avs4you.com",
+  },
   plugins: [`gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -21,6 +25,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        configFile: 'robots-txt.config.js'
+      }
+    },
+    `gatsby-plugin-client-side-redirect`, 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,

@@ -8,9 +8,7 @@ import "../styles/error404page.less";
 import ImageMain from '../images/404/error-unfound-main.svg';
 
 class Error404Page extends React.PureComponent {
-
 render(){
-
     return (
       <Layout 
         className="error-404-page" 
