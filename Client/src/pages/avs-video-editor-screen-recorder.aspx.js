@@ -158,7 +158,7 @@ const CardInfo = styled.div`
     .common-info-block{
         margin: 15px;
         width: 454px;
-        height: 244px;
+        min-height: 244px;
         max-width: 472px;
         border: 1px solid rgba(50, 57, 62, 0.15);
         box-sizing: border-box;
@@ -397,7 +397,7 @@ render(){
               >
                 <div className="tableWrapperHeader">
                 <Text align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
-                  <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">Record your PC screen<br/> and create engaging videos like clockwork</Text>
+                  <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">{this.props.t("Record your PC screen")}<br/> {this.props.t("and create engaging videos like clockwork")}</Text>
                   <div className="HeaderListItemTable" style={{paddingLeft:"15px", paddingBottom:"10px"}}>
                     <div className="HeaderListItem35">
                       <Text className="ListItem">{this.props.t("All-in-one editor and recorder")}</Text>
@@ -435,7 +435,7 @@ render(){
               {this.props.t("Record video and capture screen")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras. Easily capture screen to record presentations, demo videos, tutorials, online calls and more. Capture full screen or select an area to be recorded. It is possible to record video with sound or disable it if necessary.")}
+                {this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras Easily capture screen to record presentations, demo videos, tutorials, online calls and more Capture full screen or select an area to be recorded It is possible to record video with sound or disable it if necessary")}
               </Text>
               <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
@@ -445,7 +445,7 @@ render(){
               {this.props.t("Real-time drawing")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Draw on video anything you like, add text annotations, highlight important details with circles, rectangles and arrowed lines.")}
+                {this.props.t("Draw on video anything you like, add text annotations, highlight important details with circles, rectangles and arrowed lines")}
               </Text>
             </div>
 
@@ -454,7 +454,7 @@ render(){
               {this.props.t("Mouse click effect & snapshots")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Add a mouse click effect and animation while recording. Make snapshots in a click and save them to JPEG, PNG, BMP.")}
+                {this.props.t("Add a mouse click effect and animation while recording Make snapshots in a click and save them to JPEG, PNG, BMP")}
               </Text>
             </div>
 
@@ -463,7 +463,7 @@ render(){
               {this.props.t("Schedule recording")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Split the recording by file size or duration. Stop recording automatically by setting the time limit or maximum file size.")}
+                {this.props.t("Split the recording by file size or duration Stop recording automatically by setting the time limit or maximum file size")}
               </Text>
             </div>
           </div>
@@ -474,19 +474,19 @@ render(){
         headerDescription = {this.props.t("Make quick edits")}
 
         headerDescriptionSliderTCSJR = {this.props.t("Trim, crop, split and join, rotate")}
-        descriptionSliderTCSJR = {this.props.t("Adjust video to the perfect length by deleting unnecessary scenes with Trim and MultiTrim options. Change the video aspect ratio and get rid of the black bars with Crop Scale. Just drag clips to the timeline in order to join them. Rotate video 90, 180 or 270 degrees and easily correct footage filmed upside down.")}
+        descriptionSliderTCSJR = {this.props.t("Adjust video to the perfect length by deleting unnecessary scenes with Trim and MultiTrim options Change the video aspect ratio and get rid of the black bars with Crop Scale Just drag clips to the timeline in order to join them Rotate video 90, 180 or 270 degrees and easily correct footage filmed upside down")}
         btn1SliderTCSJR = {this.props.t("Trim")}
         btn2SliderTCSJR = {this.props.t("Crop")}
         btn3SliderTCSJR = {this.props.t("Split & Join")}
         btn4SliderTCSJR = {this.props.t("Rotate")}
 
         headerDescriptionSliderAV = {this.props.t("Audio and video overlays")}
-        descriptionSliderAV = {this.props.t("Record voice and add your favourite audio tracks. Fine-tune sound applying different effects: Amplify, Noise Removal, Equalizer, Normalize, Compressor, Pitch Shift. Make a picture in picture effect easily.")}
+        descriptionSliderAV = {this.props.t("Record voice and add your favourite audio tracks Fine-tune sound applying different effects Amplify, Noise Removal, Equalizer, Normalize, Compressor, Pitch Shift Make a picture in picture effect easily")}
         btn1SliderAV = {this.props.t("Video Overlay")}
         btn2SliderAV = {this.props.t("Audio Overlay")}
 
         headerDescriptionSliderMake = {this.props.t("Make your videos shine")}
-        descriptionSliderMake = {this.props.t("Bring your story, be it a wedding, a birthday party, a love story or a trip, to life with amazing effects and transitions. Easily improve video quality with advanced editing tools such as video stabilization, speed control, color correction and others.")}
+        descriptionSliderMake = {this.props.t("Bring your story, be it a wedding, a birthday party, a love story or a trip, to life with amazing effects and transitions Easily improve video quality with advanced editing tools such as video stabilization, speed control, color correction and others")}
         btn1SliderMake = {this.props.t("Special Effects")}
         btn2SliderMake = {this.props.t("Stabilization")}
         btn3SliderMake = {this.props.t("Speed control")}
@@ -507,7 +507,7 @@ render(){
           {this.props.t("Share your story the way you like")}
           </Text>
           <Text className="common__heading_recorder_p">
-          {this.props.t("Save the ready video project onto your computer hard disk drive, upload it to modern gadgets, share online on popular web hostings or replenish your video collection with a new DVD/Blu-ray disc.")}
+          {this.props.t("Save the ready video project onto your computer hard disk drive, upload it to modern gadgets, share online on popular web hostings or replenish your video collection with a new DVD/Blu-ray disc")}
           </Text>
 
           <div className="body-reseller__wrapper">
@@ -517,7 +517,7 @@ render(){
               {this.props.t("HDV video file")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("MP4, AVI, DVD, MOV, MPEG, WMV, MKV, M2TS, etc.")}
+                {this.props.t("MP4, AVI, DVD, MOV, MPEG, WMV, MKV, M2TS, etc")}
               </Text>
               <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
             </div>
@@ -536,7 +536,7 @@ render(){
               {this.props.t("Save to Disc")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Create a DVD-video or Blu-ray disc with a menu.")}
+                {this.props.t("Create a DVD-video or Blu-ray disc with a menu")}
               </Text>
             </div>
 
@@ -545,7 +545,7 @@ render(){
               {this.props.t("Save for Web")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Upload to YouTube, Facebook, Telly, Dropbox.")}
+                {this.props.t("Upload to YouTube, Facebook, Telly, Dropbox")}
               </Text>
             </div>
 
