@@ -132,7 +132,7 @@ margin: 0 auto;
    border-spacing: 0;
    float: left;
    div{
-    display: inline-block;
+    display: inline-grid;
    }
    #scrollLinksBtn{
     margin-right: 30px;
@@ -150,15 +150,23 @@ margin: 0 auto;
   .scrollToButton {
     display: table-cell;
     min-width: 90px;
+    max-width: 90px;
     padding: 5px;
-    padding-top: 64px;
+    padding-top: 50px;
     background-size: 36px;
     border: 1px solid rgba(50, 57, 62, 0.15);
     box-sizing: border-box;
     border-radius: 5px;
+    background-position: 50% 15px;
     p{
-      font-size: 12px;
+      font-size: 11px;
       color: #32393E;
+      height: 33px;
+      max-width: 85px;
+      vertical-align: middle;
+      line-height: normal;
+      word-break: break-all;
+
     }
   }
 }

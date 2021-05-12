@@ -5,13 +5,14 @@ import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import ScrollUpButton from '../components/scroll-up-button';
-import HeaderRowItem from '../components/header-row-item';
+import HeaderRowImage from '../images/avs-video-editing-software/header-back-image-avs.png';
 import Sliders from '../components/slider-screen-recorder';
 import styled from 'styled-components';
 import Button from '../components/button';
 
 import BackGroundImage from '../images/avs-video-editing-software/fon_image.png';
 import HeaderBackgroundImage from '../images/avs-video-editing-software/back_ground_image_final.jpg';
+import Marker from '../images/avs-video-editor-final/file-02 2.svg';
 
 import EffectSnapshots from '../images/editor-screen-recorder/svg/effect_i_snapshots.svg';
 import RealTime from '../images/editor-screen-recorder/svg/real-time-draw.svg';
@@ -23,6 +24,198 @@ import SaveDisc from '../images/avs-video-editor-final/cinema-slider/cards-frame
 import SaveWeb from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame7.svg';
 import Devices from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame8.svg';
 
+
+const HeaderMain = styled.div`
+.headerAVSVScrRec{
+  max-width:1180px;
+  margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 125px;
+}
+
+.headerTextInfo{
+  padding: 30px;
+  max-width: 610px;
+}
+
+.tableWrapperHeader{
+  max-width: 720px;
+    min-width: 710px;
+    min-height: 480px;
+    margin: 38px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.flexWrapper{
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width:60%;
+  font-family:'Open Sans',sans-serif,Arial;
+  .tableWrapper{
+      display: table;
+      margin: auto;
+      width: 95%;
+      margin-left:18%;
+      padding-top:15px;
+      .tableWrapperHeader{
+          display: inline-table;
+          width: 90%;
+          height: 45%;
+          padding: 20px;
+          z-index: 1;
+          background-color: #fff;
+          .headerText{
+              width: 85%;
+          }
+      }
+      .tableWrapperHeader35{
+          display: inline-table;
+          width: 100%;
+          height: 45%;
+          padding: 20px;
+          z-index: 1;
+          background-color: #fff;
+      }
+  }
+}
+
+.ListItem{
+  padding-left: 30px;
+  padding-bottom: 10px;
+  position:relative;
+  color:#555555;
+  font-weight: 500;
+  list-style-type: none;
+  font-family:'Open Sans',sans-serif,Arial;
+  font-size:14px;
+  &>span{
+      display:block;
+      font-weight:bold;
+      font-size:19px;
+  }
+
+  &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url(${Marker});
+      background-repeat: no-repeat;
+      position: absolute;
+      left:0;
+      top: 0;
+  }
+
+  &.LinkItem{
+      text-decoration:none;
+      color: #1E72D2;
+      font-weight: 500;   
+      font-size: 18px;
+
+      &:before{
+          content: none;
+      }
+
+      &:hover{
+          text-decoration:underline;
+      }
+
+  }
+
+  &.footnote{
+      font-size:14px;
+      font-weight:500;
+
+      &:before{
+          content: none;
+      }
+  }
+}
+.HeaderListItemTable{
+  display:inline-flex;
+  padding-top: 10px; 
+.HeaderListItem{
+  padding-left: 40px;
+  display: table-column;
+  align-items: center;
+  font-weight: 600;
+}
+.HeaderListItem35{
+  display: table-column;
+  align-items: center;
+  font-weight: 600;
+}
+  
+}
+.headerText{
+  padding-left:15px;
+  font-family:'Open Sans',sans-serif,Arial;
+}
+.headerDescription{
+  padding-left:15px;
+  font-family:'Open Sans',sans-serif,Arial;
+  padding-bottom: 3px;
+}
+.headerButtonsWrapper{
+  padding-top: 30px;
+  font-family:'Open Sans',sans-serif,Arial;
+}
+.buttonsWrapper{
+  display: table;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  .secondaryButton{
+      color:#333333;
+      display: block;
+      margin-left: 50px;
+      &.mobileSended{
+          background-color: #fff;
+          color: #333
+          border-radius: 5px;
+          border: 1px solid #333;
+          p{
+              color: #333;
+          }
+      }
+
+      &:hover{
+          text-decoration:underline;
+      }
+  }
+
+  .mainButton{
+      display: table-cell;
+      background-color: #FC4B15;
+  }
+  .secondaryButton{
+      display: block;
+      margin-left:-25px;
+      background-color: #FFFFFF;
+      color: #333;
+      border: 1px solid #333;
+      p{
+          color: #333;
+          font-weight: 700;
+      }
+  }
+}
+
+.hdrBckIMg{
+  left: 550px;
+  top: 40px;
+  width: 636px;
+  height: 490px;
+  position: relative;
+  .headerBackgroundImageROW{
+    width: 636px;
+    height: 490px;
+  }
+}
+`;
 
 const MainPageWrapper = styled.div`
   .bodyHeader{
@@ -390,14 +583,12 @@ render(){
               <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} alt=""/>
             </div>
             <PageContentWrapper>
-              <HeaderRowItem 
-               className="flexWrapper"
-               imgLeft={false}
-               imageName="header-back-image-avs.png"      
-              >
-                <div className="tableWrapperHeader">
+              <HeaderMain>
+              <div className="headerAVSVScrRec">
+              <div className="tableWrapperHeader">
+                <div className="headerTextInfo">
                 <Text align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
-                  <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">{this.props.t("Record your PC screen")}<br/> {this.props.t("and create engaging videos like clockwork")}</Text>
+                  <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="43px" color="#32393e" fontSize={42} fontWeight={600} as="h1">{this.props.t("Record your PC screen")}<br/> {this.props.t("and create engaging videos like clockwork")}</Text>
                   <div className="HeaderListItemTable" style={{paddingLeft:"15px", paddingBottom:"10px"}}>
                     <div className="HeaderListItem35">
                       <Text className="ListItem">{this.props.t("All-in-one editor and recorder")}</Text>
@@ -420,7 +611,13 @@ render(){
                       {this.props.t("Download now")}</Button>
                     </div>
                 </div>
-              </HeaderRowItem>                     
+                </div>
+                <div className="hdrBckIMg">
+              <img className="headerBackgroundImageROW" src={HeaderRowImage} alt=""/>
+            </div>
+              </div>
+             
+              </HeaderMain>                  
             </PageContentWrapper>
           </div>      
 
