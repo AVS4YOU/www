@@ -218,11 +218,11 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown"} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "/" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" && "/"}  
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" && ""}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "/" + item.value}
+                                            : item.value !== "en" && "" + item.value}
                                         headerText={item.text} 
                                         langChange={item.value === "en"}
                                     />
@@ -232,11 +232,11 @@ class LanguageSelector extends React.PureComponent {
                                         className={"langDropdown selected"} 
                                         headerTextClass="selected" 
                                         path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && "/" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" && "/"}  
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" && ""}  
                                         href={pageContext && pageContext.originalPath
                                             ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "/" + item.value}
+                                            : item.value !== "en" && "" + item.value}
                                         langChange={item.value === "en"}
                                         headerText={item.text} />
                             )}
@@ -251,12 +251,12 @@ class LanguageSelector extends React.PureComponent {
                                         key={item.value} 
                                         className={"langDropdown " + item.value} 
                                         path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "/" + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" && "/" }
+                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                            : item.value === "en" && "" }
                                         href={
                                             pageContext && pageContext.originalPath
                                                 ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                                : item.value !== "en" && "/" + item.value
+                                                : item.value !== "en" && "" + item.value
                                         }
                                         langChange={item.value === "en"}
                                         headerText={item.text} 
