@@ -149,8 +149,8 @@ margin: 0 auto;
   padding: 0;
   .scrollToButton {
     display: table-cell;
-    min-width: 90px;
-    max-width: 90px;
+    min-width: 95px;
+    max-width: 95px;
     padding: 5px;
     padding-top: 50px;
     background-size: 36px;
@@ -161,12 +161,9 @@ margin: 0 auto;
     p{
       font-size: 11px;
       color: #32393E;
-      height: 33px;
-      max-width: 85px;
+      height: 38px;
+      max-width: 95px;
       vertical-align: middle;
-      line-height: normal;
-      word-break: break-all;
-
     }
   }
 }
