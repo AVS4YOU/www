@@ -109,7 +109,212 @@ render(){
         <Helmet>
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
-          {<style>{`#upsell_modal {display: none;}`}</style>}
+          {<style>{`#upsell_modal {display: none;}         
+        .ModalStyle{
+            position: relative;
+            width: 400px;
+            height: 580px;
+            top: 150px;
+              padding: 35px 15px;
+              box-sizing: border-box;
+              background-color: #32393d;
+              margin: 40px auto;
+              z-index: 2;
+              text-align: left;
+              box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+              font-family: sans-serif;
+              a{
+                text-decoration: none;
+                color:#ffffff;
+                font-size: 18px;
+              }
+        }
+        .headerModal{
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+        }
+        .headerLogo{
+            width: 69px;
+            display: table;
+        }
+        .headerLogoImage{
+          position: absolute;
+          top: 15px;
+          margin-left: 150px;
+        }
+        .ModalShaerClose{
+          margin: 10px 10px 0px;
+          width: 50px;
+          height: 50px;
+          border: none;
+            border-radius: 25px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            
+          }
+          .closeImage{
+            width: 18px;
+            left: 15px;
+          }
+
+          .ModalShaerClose {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            opacity: 1;
+          }
+          .ModalShaerClose:hover {
+            opacity: 1;
+          }
+          .ModalShaerClose:before, .ModalShaerClose:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 20px;
+            width: 2px;
+          }
+
+          .H1ModalShaerText{
+            font-size: 40px;
+            text-align:center;
+            color: #f9f9f9;
+            margin: 40px 0px 20px 0px;
+          }
+          .H2ModalShaerText{
+            font-size: 22px;
+            margin: 5px 0px 0px 0px;
+            text-align:center;
+            color: #fb8a2a;
+            padding-bottom: 5px;
+          }
+          .modal-current-price-text{
+            font-size: 35px;
+            text-align:center;
+            color: #f9f9f9;
+            padding-bottom: 15px;
+            padding-top: 10px;
+            margin: 20px 0px 0px 0px;
+            font-weight: bold;
+          }
+          .modal-prev-price-text{
+            font-size: 35px;
+            text-align:center;
+            color: #f65108;
+            text-decoration: line-through;
+          }
+          .ModalShaerText{
+            font-size: 16px;
+            text-align:center;
+            color: #f9f9f9;
+          }
+          .IndicatorCheck{
+            background-image: url("indicator-check.svg");
+            width: 17px;
+            padding: 5px 15px 10px 10px;
+            content: ' ';
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin-right: 5px;
+          }
+
+          .Unlimited-Up{
+            background-color: #FE9235;
+            border: 1px solid #FE9235;
+            padding: 20px 25px;
+            border-radius: 5px;
+            color:#ffffff;
+            max-width: 315px;
+            margin-top: 15px;
+            text-transform: none;
+            display: block;
+              margin: auto;
+              width: 400px;
+              text-decoration: none;
+            color:#ffffff;
+            font-size: 18px;
+            margin-top: 10px;
+          }
+
+          .One-Year{
+            max-width: 315px;
+            padding: 20px 25px;
+            border-radius: 5px;
+            background-color:#32393d;
+            border: 1px solid #FE9235;
+            margin-top: 10px;
+            text-transform: none;
+            color:#ffffff;
+            display: block;
+              margin: auto;
+              width: 400px;
+              text-decoration: none;
+            color:#ffffff;
+            font-size: 18px;
+            margin-top: 15px;
+          }
+
+          @media screen and (max-device-width:600px){
+
+          
+            .ModalStyle{
+              width: 80%;
+              height: auto;
+              }
+          
+
+            .headerLogoImage{
+              margin-left: 10px;
+              width: 100px;
+            }
+            .ModalShaerClose{
+              margin: 10px 10px 0px;
+              width: 50px;
+            }
+
+            
+            .Unlimited-Up{
+              background-color: #FE9235;
+              border: 1px solid #FE9235;
+              padding: 20px 25px;
+              border-radius: 5px;
+              color:#ffffff;
+              max-width: 380px;
+              margin-top: 15px;
+              text-transform: none;
+              display: block;
+                margin: auto;
+                width: 400px;
+                text-decoration: none;
+              color:#ffffff;
+              font-size: 25px;
+              margin-top: 10px;
+            }
+            
+            .One-Year{
+              max-width: 315px;
+              padding: 20px 25px;
+              border-radius: 5px;
+              max-width: 380px;
+              background-color:#32393d;
+              border: 1px solid #FE9235;
+              margin-top: 10px;
+              text-transform: none;
+              color:#ffffff;
+              display: block;
+                margin: auto;
+                width: 400px;
+                text-decoration: none;
+              color:#ffffff;
+              font-size: 25px;
+              margin-top: 15px;
+            }
+          }`}</style>}
           {<script>{`
           (function (document, src, libName, config) {
             var script             = document.createElement('script');
