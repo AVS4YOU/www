@@ -165,8 +165,6 @@ margin: 0 auto;
       max-width: 85px;
       vertical-align: middle;
       line-height: normal;
-      word-break: break-all;
-
     }
   }
 }
