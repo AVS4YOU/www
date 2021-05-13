@@ -205,7 +205,7 @@ const HeaderMain = styled.div`
 }
 
 .hdrBckIMg{
-  left: 550px;
+  left: 570px;
   top: 40px;
   width: 636px;
   height: 490px;
@@ -607,7 +607,7 @@ render(){
                     fontSize={18} 
                     padding="16.5px 35px"
                     textTransform="uppercase"
-                    href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
                 </div>
@@ -757,7 +757,7 @@ render(){
         </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   
-              <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}:</Text>
+              <Text align="left" color="#32393e" fontWeight={600} className="headerDescription" as="h5" fontSize={30}>{this.props.t("Become an expert in video editing right now")}</Text>
               <div className="buttonsWrapper">
                   <Button
                     className="mainButton" 
@@ -765,7 +765,7 @@ render(){
                     padding="16px 43px"
                     style={{backgroundColor:"#FC4B15"}}
                     textTransform="uppercase"
-                    href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
             </div>
