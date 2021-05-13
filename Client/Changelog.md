@@ -2,7 +2,7 @@
 ## 1.0.4
 
 ### Новое
-* Добавлены переводы на it/fr/de для страницы avs-video-screen-recorder.aspx
+* Добавлены переводы на it/fr/de/jp для страницы avs-video-screen-recorder.aspx
 * Добавлена страница avs-video-screen-recorder.aspx
 * Добавлены стили для модального окна платежной системы в head на странице register.aspx/register-vc.aspx
 
