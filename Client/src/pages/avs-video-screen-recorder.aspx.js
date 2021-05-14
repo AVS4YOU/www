@@ -136,14 +136,14 @@ const HeaderMain = styled.div`
 .HeaderListItemTable{
   display:inline-flex;
   padding-top: 10px; 
+  display:-ms-inline-flexbox;
+
 .HeaderListItem{
   padding-left: 40px;
-  display: table-column;
   align-items: center;
   font-weight: 600;
 }
 .HeaderListItem35{
-  display: table-column;
   align-items: center;
   font-weight: 600;
 }
@@ -242,14 +242,24 @@ const MainPageWrapper = styled.div`
     margin-top:35px;
   }
 
-  @media (min-width: 2150px) {
-    .headerBackground{
-    .fonImage{
-      margin-bottom: 5%;
-      top: -55px;
-    }
+  .fonImageT{
+    position: absolute;
+    top: -120px;
+    right: 0;
+    width: 100%;
+    padding-top: 9%;
+    height: 100%;
+    -o-object-fit: none;
+    object-fit: none;
+    -o-object-position: center center;
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+    z-index: -1;
+    margin: 0 auto;
+    width: 100%;
   }
-  }
+
 
   @media (max-width: 1050px) {
     .headerBackground {
@@ -257,9 +267,6 @@ const MainPageWrapper = styled.div`
       background-position: 0 0;
     }
 
-    .fonImage{
-      padding-top: 7%;
-    }
 
     .headerDownloadButtons{
       .headerButtonsWrapper{
@@ -268,18 +275,8 @@ const MainPageWrapper = styled.div`
     }
   }
 
-  @media (max-width: 1500px) {
-    .headerBackground{
-    .fonImage{
-      padding-top: 8%;
-    }
-  }
-  }
 
   @media (max-width: 1480px) {
-    .fonImage{
-      padding-top: 7%;
-    }
     .headerText{
       line-height: 53px;
       font-size: 47px;
@@ -295,29 +292,7 @@ const MainPageWrapper = styled.div`
     
   }
 
-  @media (max-width: 1290px) {
-    .headerBackground{
-      .fonImage{
-        right: -5%;
-      }
-    }
-   }
 
-   @media (max-width: 1200px) {
-    .headerBackground{
-      .fonImage{
-        right: -35%;
-      }
-    }
-   }
-
-   @media (max-width: 1150px) {
-    .headerBackground{
-      .fonImage{
-        right: -40%;
-      }
-    }
-   }
 `;
 
 const CardInfo = styled.div`
@@ -462,7 +437,7 @@ const CardInfoFooter = styled.div`
   }
 }
 .body-reseller{
-  max-width: 1220px;
+  max-width: 1180px;
   width: 100%;
   margin: auto;
   box-sizing: border-box;
@@ -480,7 +455,7 @@ const CardInfoFooter = styled.div`
   .common-info-block{
       margin: 22px;
       height: 266px;
-      max-width: 260px;
+      max-width: 250px;
       border: 1px solid rgba(50, 57, 62, 0.15);
       box-sizing: border-box;
       padding: 30px;
@@ -752,8 +727,8 @@ render(){
 
         <MainPageWrapper>
         <div className="headerBackground">
-        <div className="fonImage">
-            <img className="fonImage" src={BackGroundImage} alt=""/>
+        <div className="fonImageTelo">
+            <img className="fonImageT" src={BackGroundImage} alt=""/>
         </div> 
           <PageContentWrapper>
             <div id="headerCoupon" className="headerContentWrapper">   

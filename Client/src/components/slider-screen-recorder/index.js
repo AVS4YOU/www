@@ -63,6 +63,7 @@ margin: 0 auto;
 }
 
 .screen-recorder-sliders{
+  display: -ms-flexbox;
   display: grid;
   grid-row: 1fr;
   grid-template-rows: 1fr;
@@ -133,6 +134,7 @@ margin: 0 auto;
    float: left;
    div{
     display: inline-grid;
+    display: -ms-inline-flexbox;
    }
    #scrollLinksBtn{
     margin-right: 30px;
@@ -144,7 +146,10 @@ margin: 0 auto;
     margin-top: 20px;
   }
 }
-
+#text-screen-right-last{
+  width: 454px;
+  margin-right: 30px;
+}
 .scrollLinksWrapper {
   padding: 0;
   .scrollToButton {
@@ -164,8 +169,12 @@ margin: 0 auto;
       height: 38px;
       max-width: 95px;
       vertical-align: middle;
+      margin: 0 auto;
     }
   }
+}
+.scrollLinksWrapper> div:hover{
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 }`;
 
@@ -412,7 +421,7 @@ return (
 
 
     <div className="screen-recorder-sliders">
-            <div>
+            <div id="text-screen-right-last">
             <div className="text-screen-right">
                 <Text className="header-text-screen">
                 {this.props.headerDescriptionSliderOther} 
