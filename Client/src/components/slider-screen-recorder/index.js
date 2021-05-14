@@ -137,7 +137,7 @@ margin: 0 auto;
     display: -ms-inline-flexbox;
    }
    #scrollLinksBtn{
-    margin-right: 30px;
+    margin-right: 26px;
    }
 }
 
@@ -148,10 +148,11 @@ margin: 0 auto;
 }
 #text-screen-right-last{
   width: 454px;
-  margin-right: 30px;
+  margin-right: 0px;
 }
 .scrollLinksWrapper {
   padding: 0;
+  border-spacing: 26px 0px;
   .scrollToButton {
     display: table-cell;
     min-width: 95px;
