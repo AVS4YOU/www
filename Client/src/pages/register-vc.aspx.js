@@ -20,6 +20,9 @@ import SecureIcon from '../images/register/register-secure-icon.svg';
 import SupportIcon from '../images/register/register-support-icon.svg';
 import PeopleIcon from '../images/register/register-people-icon.svg';
 
+import ModalLogoBtn from '../images/moneyback/logo.svg';
+import ModalCloseBtn from '../images/moneyback/close.svg';
+
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
@@ -106,6 +109,229 @@ render(){
         <Helmet>
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
+          {<style>{`#upsell_modal {display: none;}         
+        .ModalStyle{
+            position: relative;
+            width: 400px;
+            height: 580px;
+            top: 150px;
+              padding: 35px 15px;
+              box-sizing: border-box;
+              background-color: #32393d;
+              margin: 40px auto;
+              z-index: 2;
+              text-align: left;
+              box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+              font-family: sans-serif;
+              a{
+                text-decoration: none;
+                color:#ffffff;
+                font-size: 18px;
+              }
+        }
+        .headerModal{
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+        }
+        .headerLogo{
+            width: 69px;
+            display: table;
+        }
+        .headerLogoImage{
+          position: absolute;
+          top: 15px;
+          margin-left: 150px;
+        }
+        .ModalShaerClose{
+          margin: 10px 10px 0px;
+          width: 50px;
+          height: 50px;
+          border: none;
+            border-radius: 25px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            
+          }
+          .closeImage{
+            width: 18px;
+            left: 15px;
+          }
+
+          .ModalShaerClose {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            opacity: 1;
+          }
+          .ModalShaerClose:hover {
+            opacity: 1;
+          }
+          .ModalShaerClose:before, .ModalShaerClose:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 20px;
+            width: 2px;
+          }
+
+          .H1ModalShaerText{
+            font-size: 40px;
+            text-align:center;
+            color: #f9f9f9;
+            margin: 40px 0px 20px 0px;
+          }
+          .H2ModalShaerText{
+            font-size: 22px;
+            margin: 5px 0px 0px 0px;
+            text-align:center;
+            color: #fb8a2a;
+            padding-bottom: 5px;
+          }
+          .modal-current-price-text{
+            font-size: 35px;
+            text-align:center;
+            color: #f9f9f9;
+            padding-bottom: 15px;
+            padding-top: 10px;
+            margin: 20px 0px 0px 0px;
+            font-weight: bold;
+          }
+          .modal-prev-price-text{
+            font-size: 35px;
+            text-align:center;
+            color: #f65108;
+            text-decoration: line-through;
+          }
+          .ModalShaerText{
+            font-size: 16px;
+            text-align:center;
+            color: #f9f9f9;
+          }
+          .IndicatorCheck{
+            background-image: url("indicator-check.svg");
+            width: 17px;
+            padding: 5px 15px 10px 10px;
+            content: ' ';
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin-right: 5px;
+          }
+
+          .Unlimited-Up{
+            background-color: #FE9235;
+            border: 1px solid #FE9235;
+            padding: 20px 25px;
+            border-radius: 5px;
+            color:#ffffff;
+            max-width: 315px;
+            margin-top: 15px;
+            text-transform: none;
+            display: block;
+              margin: auto;
+              width: 400px;
+              text-decoration: none;
+            color:#ffffff;
+            font-size: 18px;
+            margin-top: 10px;
+          }
+
+          .One-Year{
+            max-width: 315px;
+            padding: 20px 25px;
+            border-radius: 5px;
+            background-color:#32393d;
+            border: 1px solid #FE9235;
+            margin-top: 10px;
+            text-transform: none;
+            color:#ffffff;
+            display: block;
+              margin: auto;
+              width: 400px;
+              text-decoration: none;
+            color:#ffffff;
+            font-size: 18px;
+            margin-top: 15px;
+          }
+
+          @media screen and (max-device-width:600px){
+
+          
+            .ModalStyle{
+              width: 80%;
+              height: auto;
+              }
+          
+
+            .headerLogoImage{
+              margin-left: 10px;
+              width: 100px;
+            }
+            .ModalShaerClose{
+              margin: 10px 10px 0px;
+              width: 50px;
+            }
+
+            
+            .Unlimited-Up{
+              background-color: #FE9235;
+              border: 1px solid #FE9235;
+              padding: 20px 25px;
+              border-radius: 5px;
+              color:#ffffff;
+              max-width: 380px;
+              margin-top: 15px;
+              text-transform: none;
+              display: block;
+                margin: auto;
+                width: 400px;
+                text-decoration: none;
+              color:#ffffff;
+              font-size: 25px;
+              margin-top: 10px;
+            }
+            
+            .One-Year{
+              max-width: 315px;
+              padding: 20px 25px;
+              border-radius: 5px;
+              max-width: 380px;
+              background-color:#32393d;
+              border: 1px solid #FE9235;
+              margin-top: 10px;
+              text-transform: none;
+              color:#ffffff;
+              display: block;
+                margin: auto;
+                width: 400px;
+                text-decoration: none;
+              color:#ffffff;
+              font-size: 25px;
+              margin-top: 15px;
+            }
+          }`}</style>}
+          {<script>{`
+          (function (document, src, libName, config) {
+            var script             = document.createElement('script');
+            script.src             = src;
+            script.async           = true;
+            var firstScriptElement = document.getElementsByTagName('script')[0];
+            script.onload          = function () {
+            for (var namespace in config) {
+            if (config.hasOwnProperty(namespace)) {
+              window[libName].setup.setConfig(namespace, config[namespace]);
+              }
+            }
+            window[libName].register();
+            };
+            firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
+            })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"immediate"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
+            `}</script>}
           {<script>
             {`
                 window._vwo_code = window._vwo_code || (function(){
@@ -281,6 +507,29 @@ render(){
 
           </div>
         </div>
+        <div class='ModalStyle' id='upsell_modal'>
+            <div class='headerModal'>
+              <a href ='#' class='headerLogo'>
+              <img src={ModalLogoBtn} class='headerLogoImage' alt='logo avs'/>
+              </a>
+              <button class='ModalShaerClose' id='close_button'>
+              <img src={ModalCloseBtn} class='closeImage' alt='close modal'/>
+              </button>
+            </div>
+              <p class='H1ModalShaerText'>Upgrade now</p>
+              <p class='H2ModalShaerText'>Benefit from switching 1-Year to</p>
+              <p class='H2ModalShaerText'>AVS4YOU Unlimited Subscription</p>
+              <p class='modal-current-price-text'>$59.00 <span class='modal-prev-price-text'>$190.00</span></p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Unlimited access to 5 AVS4YOU programs</p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Free upgrades for programs</p>
+              <p class='ModalShaerText'><span class='IndicatorCheck'></span>One time payment (no yearly renewals)</p>
+              <a id='replace_button' href='#'>
+              <button class='Unlimited-Up' id='Unlimited'>Yes! Upgrade to Unlimited</button>
+              </a>
+              <a id='skip_button' href='#'>
+              <button class='One-Year' id='1Year'>Keep 1-Year</button>
+              </a>
+          </div>
       </Layout>
     );
   }

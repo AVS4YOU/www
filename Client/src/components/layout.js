@@ -154,13 +154,13 @@ class Layout extends React.PureComponent {
           {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords} />}
           {this.props.pageContext.originalPath}
 
-          <link rel="canonical" href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? this.props.to : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
+          <link rel="canonical" href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? "" : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
           <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
           {languageCodes.map((languageCode)=> {
             let language = languageCode.split("-")[0];
             language = language === "en" ? "" : language + "/";
             return(
-              <link rel="alternate" href={"https://www.avs4you.com/" + language + this.pageName} hreflang={languageCode}></link>
+              <link rel="alternate" href={"https://www.avs4you.com/" + language + this.pageName} hrefLang={languageCode}></link>
             )
           })}
 
@@ -214,10 +214,6 @@ class Layout extends React.PureComponent {
         <StyledLayout className={this.props.className}>
           <main>{this.props.children}</main>
         </StyledLayout>
-
-        
-        
-        
         <CookieMessage />
         {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
       </PageContext.Provider>
