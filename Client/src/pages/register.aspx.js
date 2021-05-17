@@ -21,7 +21,7 @@ import PeopleIcon from '../images/register/register-people-icon.svg';
 
 import ModalLogoBtn from '../images/moneyback/logo.svg';
 import ModalCloseBtn from '../images/moneyback/close.svg';
-
+import ModalIndicatorCheck from '../images/moneyback/indicator-check.svg';
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
 
@@ -212,7 +212,7 @@ render(){
             color: #f9f9f9;
           }
           .IndicatorCheck{
-            background-image: url("indicator-check.svg");
+            background-image: url(${ModalIndicatorCheck});
             width: 17px;
             padding: 5px 15px 10px 10px;
             content: ' ';
