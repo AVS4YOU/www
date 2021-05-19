@@ -110,12 +110,15 @@ render(){
         <Helmet>
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
-          {<style>{`#upsell_modal {display: none;}         
+          {<style>{`#upsell_modal {display: none;}       
+          .ModalAvangate{}  
         .ModalStyle{
-            position: relative;
+            position: fixed;
             width: 400px;
             height: 580px;
-            top: 150px;
+            top: 250px;
+            left: 0;
+            right: 0;
               padding: 35px 15px;
               box-sizing: border-box;
               background-color: #32393d;
@@ -124,11 +127,12 @@ render(){
               text-align: left;
               box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
               font-family: sans-serif;
-              a{
-                text-decoration: none;
-                color:#ffffff;
-                font-size: 18px;
-              }
+        
+        }
+        a{
+          text-decoration: none;
+          color:#ffffff;
+          font-size: 18px;
         }
         .headerModal{
           display: -webkit-box;
@@ -264,8 +268,9 @@ render(){
 
           
             .ModalStyle{
-              width: 80%;
               height: auto;
+              width: 100%;
+              top: 150px;
               }
           
 
@@ -285,7 +290,6 @@ render(){
               padding: 20px 25px;
               border-radius: 5px;
               color:#ffffff;
-              max-width: 380px;
               margin-top: 15px;
               text-transform: none;
               display: block;
@@ -293,15 +297,13 @@ render(){
                 width: 400px;
                 text-decoration: none;
               color:#ffffff;
-              font-size: 25px;
+              font-size: 20px;
               margin-top: 10px;
             }
             
             .One-Year{
-              max-width: 315px;
               padding: 20px 25px;
               border-radius: 5px;
-              max-width: 380px;
               background-color:#32393d;
               border: 1px solid #FE9235;
               margin-top: 10px;
@@ -312,11 +314,11 @@ render(){
                 width: 400px;
                 text-decoration: none;
               color:#ffffff;
-              font-size: 25px;
+              font-size: 20px;
               margin-top: 15px;
             }
           }`}</style>}
-          {<script>{`
+         {<script>{`
           (function (document, src, libName, config) {
             var script             = document.createElement('script');
             script.src             = src;
