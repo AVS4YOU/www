@@ -177,6 +177,7 @@ margin: 0 auto;
 .scrollLinksWrapper> div:hover{
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
+
 }`;
 
 
@@ -408,7 +409,7 @@ return (
                   <div onClick={() => this.MakeSlider.slickGoTo(1)} style={{ backgroundImage: `url(${StabPic})` }} className="scrollToButton" aria-hidden="true"> 
                     <Text align="center">{this.props.btn2SliderMake}</Text>
                   </div> 
-                  <div onClick={() => this.MakeSlider.slickGoTo(2)} style={{ backgroundImage: `url(${SpeedCtrlPic})` }} className="scrollToButton" aria-hidden="true"> 
+                  <div onClick={() => this.MakeSlider.slickGoTo(2)} style={{ backgroundImage: `url(${SpeedCtrlPic})`, wordBreak: `initial` }} className="scrollToButton" aria-hidden="true" id="scrGEBtn"> 
                     <Text align="center">{this.props.btn3SliderMake}</Text>
                   </div> 
                   <div onClick={() => this.MakeSlider.slickGoTo(3)} style={{ backgroundImage: `url(${ColorCorPic})` }} className="scrollToButton" aria-hidden="true"> 
