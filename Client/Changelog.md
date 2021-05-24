@@ -1,4 +1,11 @@
 # Changelog
+
+## 1.0.5
+
+### Исправления
+* Исправлены стили для модального окна платежной системы в head на странице register.aspx/register-vc.aspx
+* Поправлены стили для слайдеров на странице /avs-video-screen-recorder.aspx
+* Исправлены перевода блока "¿Por qué elegir AVS4YOU?" на странице /es/register.aspx
 ## 1.0.4
 
 ### Новое

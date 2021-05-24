@@ -137,7 +137,7 @@ margin: 0 auto;
     display: -ms-inline-flexbox;
    }
    #scrollLinksBtn{
-    margin-right: 30px;
+    margin-right: 26px;
    }
 }
 
@@ -148,10 +148,11 @@ margin: 0 auto;
 }
 #text-screen-right-last{
   width: 454px;
-  margin-right: 30px;
+  margin-right: 0px;
 }
 .scrollLinksWrapper {
   padding: 0;
+  border-spacing: 26px 0px;
   .scrollToButton {
     display: table-cell;
     min-width: 95px;
@@ -176,6 +177,7 @@ margin: 0 auto;
 .scrollLinksWrapper> div:hover{
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
+
 }`;
 
 
@@ -407,7 +409,7 @@ return (
                   <div onClick={() => this.MakeSlider.slickGoTo(1)} style={{ backgroundImage: `url(${StabPic})` }} className="scrollToButton" aria-hidden="true"> 
                     <Text align="center">{this.props.btn2SliderMake}</Text>
                   </div> 
-                  <div onClick={() => this.MakeSlider.slickGoTo(2)} style={{ backgroundImage: `url(${SpeedCtrlPic})` }} className="scrollToButton" aria-hidden="true"> 
+                  <div onClick={() => this.MakeSlider.slickGoTo(2)} style={{ backgroundImage: `url(${SpeedCtrlPic})`, wordBreak: `initial` }} className="scrollToButton" aria-hidden="true" id="scrGEBtn"> 
                     <Text align="center">{this.props.btn3SliderMake}</Text>
                   </div> 
                   <div onClick={() => this.MakeSlider.slickGoTo(3)} style={{ backgroundImage: `url(${ColorCorPic})` }} className="scrollToButton" aria-hidden="true"> 
