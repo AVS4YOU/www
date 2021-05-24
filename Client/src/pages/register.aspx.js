@@ -21,7 +21,7 @@ import PeopleIcon from '../images/register/register-people-icon.svg';
 
 import ModalLogoBtn from '../images/moneyback/logo.svg';
 import ModalCloseBtn from '../images/moneyback/close.svg';
-
+import ModalIndicatorCheck from '../images/moneyback/indicator-check.svg';
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const shareItHrefOneYear = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919254]=1";
 
@@ -107,12 +107,14 @@ render(){
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
           {/*this.state.documentLoaded && <script src={withPrefix('modal-register.js')} type="text/javascript" />*/}
-          {<style>{`#upsell_modal {display: none;}         
+          {<style>{`#upsell_modal {display: none;}       
         .ModalStyle{
-            position: relative;
+            position: fixed;
             width: 400px;
             height: 580px;
-            top: 150px;
+            top: 250px;
+            left: 0;
+            right: 0;
               padding: 35px 15px;
               box-sizing: border-box;
               background-color: #32393d;
@@ -121,11 +123,12 @@ render(){
               text-align: left;
               box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
               font-family: sans-serif;
-              a{
-                text-decoration: none;
-                color:#ffffff;
-                font-size: 18px;
-              }
+        
+        }
+        a{
+          text-decoration: none;
+          color:#ffffff;
+          font-size: 18px;
         }
         .headerModal{
           display: -webkit-box;
@@ -212,7 +215,7 @@ render(){
             color: #f9f9f9;
           }
           .IndicatorCheck{
-            background-image: url("indicator-check.svg");
+            background-image: url(${ModalIndicatorCheck});
             width: 17px;
             padding: 5px 15px 10px 10px;
             content: ' ';
@@ -261,8 +264,8 @@ render(){
 
           
             .ModalStyle{
-              width: 80%;
               height: auto;
+              width: 100%;
               }
           
 
@@ -282,7 +285,6 @@ render(){
               padding: 20px 25px;
               border-radius: 5px;
               color:#ffffff;
-              max-width: 380px;
               margin-top: 15px;
               text-transform: none;
               display: block;
@@ -290,15 +292,13 @@ render(){
                 width: 400px;
                 text-decoration: none;
               color:#ffffff;
-              font-size: 25px;
+              font-size: 20px;
               margin-top: 10px;
             }
             
             .One-Year{
-              max-width: 315px;
               padding: 20px 25px;
               border-radius: 5px;
-              max-width: 380px;
               background-color:#32393d;
               border: 1px solid #FE9235;
               margin-top: 10px;
@@ -309,7 +309,7 @@ render(){
                 width: 400px;
                 text-decoration: none;
               color:#ffffff;
-              font-size: 25px;
+              font-size: 20px;
               margin-top: 15px;
             }
           }`}</style>}
