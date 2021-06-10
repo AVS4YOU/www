@@ -433,7 +433,7 @@ render(){
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
                 <Link to="/moneyback.aspx">
-                <Text className="text">{this.props.t("30-day Money-back guarantee")}</Text>
+                <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={16} style={{textAlign:"center"}}>{this.props.t("30-day Money-back guarantee")}</Text>
                 </Link>
               </div>
             </tr>
