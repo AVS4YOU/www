@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import ScrollUpButton from '../components/scroll-up-button';
 import LstDay from '../components/last-day';
+import Link from '../components/link';
 
 import VideoIcon from '../images/register/register-video-icon.svg';
 import GuaranteeIcon from '../images/register/register-guarantee-icon.svg';
@@ -125,7 +126,7 @@ render(){
               font-family: sans-serif;
         
         }
-        a{
+        .link_modal_plt{
           text-decoration: none;
           color:#ffffff;
           font-size: 18px;
@@ -422,7 +423,11 @@ render(){
               </div>
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
-                <Text className="text">{this.props.t("30-day Money-back guarantee")}</Text>
+                  <Text className="text" id="text_link">
+                  <Link to="/moneyback.aspx">
+                    {this.props.t("30-day Money-back guarantee")}
+                  </Link>
+                  </Text>
               </div>
             </tr>
 
@@ -501,27 +506,27 @@ render(){
 
           </div>
         </div>
-        <div class='ModalStyle' id='upsell_modal'>
-            <div class='headerModal'>
-              <a href ='#' class='headerLogo'>
-              <img src={ModalLogoBtn} class='headerLogoImage' alt='logo avs'/>
+        <div className='ModalStyle' id='upsell_modal'>
+            <div className='headerModal'>
+              <a href ='#' className='headerLogo'>
+              <img src={ModalLogoBtn} className='headerLogoImage' alt='logo avs'/>
               </a>
-              <button class='ModalShaerClose' id='close_button'>
-              <img src={ModalCloseBtn} class='closeImage' alt='close modal'/>
+              <button className='ModalShaerClose' id='close_button'>
+              <img src={ModalCloseBtn} className='closeImage' alt='close modal'/>
               </button>
             </div>
-              <p class='H1ModalShaerText'>Upgrade now</p>
-              <p class='H2ModalShaerText'>Benefit from switching 1-Year to</p>
-              <p class='H2ModalShaerText'>AVS4YOU Unlimited Subscription</p>
-              <p class='modal-current-price-text'>$59.00 <span class='modal-prev-price-text'>$190.00</span></p>
-              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Unlimited access to 5 AVS4YOU programs</p>
-              <p class='ModalShaerText'><span class='IndicatorCheck'></span>Free upgrades for programs</p>
-              <p class='ModalShaerText'><span class='IndicatorCheck'></span>One time payment (no yearly renewals)</p>
-              <a id='replace_button' href='#'>
-              <button class='Unlimited-Up' id='Unlimited'>Yes! Upgrade to Unlimited</button>
+              <p className='H1ModalShaerText'>Upgrade now</p>
+              <p className='H2ModalShaerText'>Benefit from switching 1-Year to</p>
+              <p className='H2ModalShaerText'>AVS4YOU Unlimited Subscription</p>
+              <p className='modal-current-price-text'>$59.00 <span className='modal-prev-price-text'>$190.00</span></p>
+              <p className='ModalShaerText'><span className='IndicatorCheck'></span>Unlimited access to 5 AVS4YOU programs</p>
+              <p className='ModalShaerText'><span className='IndicatorCheck'></span>Free upgrades for programs</p>
+              <p className='ModalShaerText'><span className='IndicatorCheck'></span>One time payment (no yearly renewals)</p>
+              <a id='replace_button' className='link_modal_plt' href='#'>
+              <button className='Unlimited-Up' id='Unlimited'>Yes! Upgrade to Unlimited</button>
               </a>
-              <a id='skip_button' href='#'>
-              <button class='One-Year' id='1Year'>Keep 1-Year</button>
+              <a id='skip_button' className='link_modal_plt' href='#'>
+              <button className='One-Year' id='1Year'>Keep 1-Year</button>
               </a>
           </div>
       </Layout>
