@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6
+
+### Новое
+* Добавлена ссылка на /moneyback.aspx, на страницах register.aspx/register-vc.aspx в блоке "Why choose AVS4YOU?"
+
 ## 1.0.5
 
 ### Исправления
