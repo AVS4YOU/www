@@ -53,6 +53,9 @@ const CookieStyle = styled.div`
         .CookieText{
             font-size: 12px;
         }
+        a{
+            font-size: 12px;
+        }
         .btnWrapperClasses{
             position: relative;
             margin-right: auto;

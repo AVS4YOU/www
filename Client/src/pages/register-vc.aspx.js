@@ -319,7 +319,7 @@ render(){
               margin-top: 15px;
             }
           }`}</style>}
-         {<script>{`
+          {<script>{`
           (function (document, src, libName, config) {
             var script             = document.createElement('script');
             script.src             = src;
@@ -434,9 +434,9 @@ render(){
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
                 <Text className="text" id="text_link">
-                <Link to="/moneyback.aspx">
+                  <Link to="/moneyback.aspx">
                     {this.props.t("30-day Money-back guarantee")}
-                </Link>
+                  </Link>
                 </Text>
               </div>
             </tr>
@@ -538,7 +538,7 @@ render(){
               <a id='skip_button' className='link_modal_plt' href='#'>
               <button className='One-Year' id='1Year'>Keep 1-Year</button>
               </a>
-          </div>
+          </div>                   
       </Layout>
     );
   }
