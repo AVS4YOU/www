@@ -126,7 +126,7 @@ render(){
               font-family: sans-serif;
         
         }
-        a{
+        .link_modal_plt{
           text-decoration: none;
           color:#ffffff;
           font-size: 18px;
@@ -423,9 +423,11 @@ render(){
               </div>
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
-                <Link to="/moneyback.aspx">
-                <Text className="text_link">{this.props.t("30-day Money-back guarantee")}</Text>
-                </Link>
+                  <Text className="text" id="text_link">
+                  <Link to="/moneyback.aspx">
+                    {this.props.t("30-day Money-back guarantee")}
+                  </Link>
+                  </Text>
               </div>
             </tr>
 
@@ -520,10 +522,10 @@ render(){
               <p className='ModalShaerText'><span className='IndicatorCheck'></span>Unlimited access to 5 AVS4YOU programs</p>
               <p className='ModalShaerText'><span className='IndicatorCheck'></span>Free upgrades for programs</p>
               <p className='ModalShaerText'><span className='IndicatorCheck'></span>One time payment (no yearly renewals)</p>
-              <a id='replace_button' href='#'>
+              <a id='replace_button' className='link_modal_plt' href='#'>
               <button className='Unlimited-Up' id='Unlimited'>Yes! Upgrade to Unlimited</button>
               </a>
-              <a id='skip_button' href='#'>
+              <a id='skip_button' className='link_modal_plt' href='#'>
               <button className='One-Year' id='1Year'>Keep 1-Year</button>
               </a>
           </div>

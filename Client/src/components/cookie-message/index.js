@@ -9,6 +9,7 @@ const CookieStyle = styled.div`
         color: #009FFF;
         cursor: pointer;
         text-decoration: underline;
+        font-size: 14px;
     }
     .CookieText{
         font-family: Open Sans;
