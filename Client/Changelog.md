@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7
+
+### Исправления
+* Убран формат FLV
+* Заменены html теги для заголовков, на страницах avs-free-video-converter.aspx/avs-free-audio-converter.aspx
+
 ## 1.0.6
 
 ### Новое
