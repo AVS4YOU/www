@@ -190,7 +190,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.1</Text>
        
 
           <ScreenshotsCarousel 
