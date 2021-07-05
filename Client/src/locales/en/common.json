@@ -50,7 +50,7 @@
 	"Guides": "Guides",
 	"Knowledge center": "Knowledge center",
 	"FAQ": "FAQ",
-
+	"Technical specification - converter" : "Technical specification - converter",
 
 
 
@@ -202,7 +202,7 @@
 	"video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow": "video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow",
 	"Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays": "Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays.",
 	"Work with all key formats and HD videos": "Work with all key formats and HD videos.",
-	"Edit and save video in all popular formats MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc": "Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc.)",
+	"Edit and save video in all popular formats MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc": "Edit and save video in all popular formats (MP4, DVD, AVI, MOV, VOB, WMV, MKV, WEBM, etc.)",
 	"Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K": "Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K.",
 	"Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc": "Open, modify and save video using popular codeсs H.264, H.265 (reading only), MPEG-4, etc.",
 	"Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU": "Speed up HD video editing due to the integrated video cache technology.",
@@ -241,11 +241,11 @@
 
 	"*****************************AVS Video Converter********************************": "*****************************AVS Video Converter********************************",
 	"Convert any video with AVS Free Video Converter for Windows": "Convert any video with AVS Free Video Converter for Windows",
-	"AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV, FLV and others absolutely free Download Free AVS Video Converter": "AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV, FLV and others absolutely free. Download Free AVS Video Converter",
+	"AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV, FLV and others absolutely free Download Free AVS Video Converter": "AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV and others absolutely free. Download Free AVS Video Converter",
 	"free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion": "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion",
-	"Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
+	"Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Convert to/ from video formats: MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
 	"Сonvert all key video formats": "Сonvert all key video formats.",
-	"Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc": "Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H.264 codec, H.265 (reading only) and etc.",
+	"Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc": "Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, H.264 codec, H.265 (reading only) and etc.",
 	"Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc": "Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc.",
 	"Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback": "Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback.",
 	"Convert video easily and fast": "Convert video easily and fast.",
@@ -299,7 +299,7 @@
 	"Capture video": "Capture video.",
 	"Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs": "Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs.",
 	"Capture video from Web cameras and DV cameras": "Capture video from Web cameras and DV cameras.",
-	"Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects": "Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects.",
+	"Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects": "Choose the desired format of captured file (WMV, AVI), Sound source, Mouse cursor effects.",
 	"Use Screen Capture function to create How-to videos or tutorials": "Use Screen Capture function to create How-to videos or tutorials.",
 	"Create DVD and Blu-ray Menus": "Create DVD and Blu-ray Menus.",
 	"Split video into chapters, select between a number of menu templates": "Split video into chapters, select between a number of menu templates.",
@@ -362,7 +362,7 @@
 	"Create audio files for any purpose": "Create audio files for any purpose.",
 	"Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks": "Create Audiobooks. Convert your audio tracks to M4B format, divide them into chapters and add bookmarks.",
 	"Create ringtones Edit an audio file and save it to M4R format for iPhone": "Create ringtones: Edit an audio file and save it to M4R format for iPhone.",
-	"Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc": "Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc.",
+	"Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc": "Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV etc.",
 	"Convert audio files in bulk": "Convert audio files in bulk.",
 	"Use a batch mode to convert or compress a large number of audio files at once": "Use a batch mode to convert or compress a large number of audio files at once.",
 	"Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode": "Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode.",
@@ -371,8 +371,8 @@
 	"Jacky Lui": "Jacky Lui",
 	"The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software": "The software AVS Audio Converter is a very great and very pleasant to work with. The software is a must and that for a very attractive price. I am very happy with the AVS Audio Converter software.",
 	"AVS Audio Converter 9.1": "AVS Audio Converter 9.1",
-
-
+	"Use AVS Audio Converter for popular WAV, MP3 and M4A conversion destinations WAV to MP3, M4A to MP3, M4A to WAV, etc" : "Use AVS Audio Converter for popular WAV, MP3 and M4A conversion destinations: WAV to MP3, M4A to MP3, M4A to WAV, etc.",
+	"Use AVS Video Converter for popular MP4 conversion destinations MOV to MP4, MKV to MP4, AVI to MP4, WMV to MP4, etc" : "Use AVS Video Converter for popular MP4 conversion destinations: MOV to MP4, MKV to MP4, AVI to MP4, WMV to MP4, etc.",
 
 
 
@@ -382,7 +382,7 @@
 	"Free media player, avs4you video player,Video player software, media player, audio player, video player": "Free media player, avs4you video player,Video player software, media player, audio player, video player",
 	"Watch video, play audio and view your pictures with Free AVS Media Player": "Watch video, play audio and view your pictures with Free AVS Media Player.",
 	"Watch video": "Watch video.",
-	"Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc": "Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc.",
+	"Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc": "Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, OGG, etc.",
 	"Watch videos with subtitles": "Watch videos with subtitles.",
 	"Take snapshots if necessary": "Take snapshots if necessary.",
 	"Play audio": "Play audio.",
@@ -1118,7 +1118,7 @@
 "Create professional-looking movies easily" : "Create professional-looking movies easily.",
 "Creative video making" : "Creative video making",
 "Multiformat video creator" : "Multiformat video creator",
-"Edit & save video files in  MP4 MPEG DVD AVI VOB WMV 3GP MOV MKV FLV WEBM using popular codecs H264 MPEG4 etc" : "Edit & save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM using popular codecs H.264, MPEG-4, etc.",
+"Edit & save video files in  MP4 MPEG DVD AVI VOB WMV 3GP MOV MKV FLV WEBM using popular codecs H264 MPEG4 etc" : "Edit & save video files in  MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, WEBM using popular codecs H.264, MPEG-4, etc.",
 "Accelerated HD-video editing" : "Accelerated HD-video editing",
 "Innovative movie editing tools" : "Innovative movie editing tools",
 "End User License Agreement" : "End User License Agreement",
@@ -1137,7 +1137,7 @@
 "5 professional cinematic tools" : "5 professional cinematic tools",
 
 "*****************************MOV-VIDEO-EDITOR********************************" : "*****************************MOV-VIDEO-EDITOR********************************",
-"Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc" : "Create professional-looking movies fast and effectively, and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc.",
+"Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc" : "Create professional-looking movies fast and effectively, and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV etc.",
 "Free support and updates" : "Free support and updates",
 "30-day Money-back guarantee" :"30-day Money-back guarantee",
 "User-friendly Interface" : "User-friendly Interface",
@@ -1148,7 +1148,7 @@
 "An array of creative features" : "An array of creative features",
 "2k and 4k video editing" : "2k and 4k video editing",
 "Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology Achieve amazing results editing high resolution video files" : "Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology. Achieve amazing results editing high resolution video files.",
-"Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor Import and save your video in all key formats such as MP4 MPEG DVD AVI MOV FLV MTS WebM etc" : "Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM, etc.",
+"Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor Import and save your video in all key formats such as MP4 MPEG DVD AVI MOV FLV MTS WebM etc" : "Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor. Import and save your video in all key formats such as MP4, MPEG, DVD, AVI, MOV, MTS, WebM, etc.",
 "Multiformat movie editor" : "Multiformat movie editor",
 "4 reasons to choose AVS Video Editor" : "4 reasons to choose AVS Video Editor",
 
@@ -1252,7 +1252,7 @@
 "Download" : "Download",
 "Download_dwn" : "Download",
 "Download_dwn_h" : "Download",
-"Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily" : "Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
+"Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily" : "Convert to/ from video formats: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc. fast and easily!",
 "Convert audio between popular formats Apply effects, customize output parameters, use batch mode" :"Convert audio between popular formats. Apply effects, customize output parameters, use batch mode",
 "Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays" : "Trim, cut, split, merge, rotate, mix videos. 300+ innovative effects, transitions, overlays",
 "Create outstanding tracks for any purpose with our easy audio editing app for Windows" : "Create outstanding tracks for any purpose with our easy audio editing app for Windows",

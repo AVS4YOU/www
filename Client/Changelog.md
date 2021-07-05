@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7
+
+### Исправления
+* Убран формат FLV на странице /avs-free-video-converter.aspx
+* Заменены html теги для заголовков, на страницах avs-free-video-converter.aspx/avs-free-audio-converter.aspx: AVS Audio Converter H5 на H2, Convert and edit all key audio formats H3 на H2, Technical specification - H3
+
 ## 1.0.6
 
 ### Новое
