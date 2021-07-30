@@ -548,16 +548,16 @@
 	"Impact Radius": "Impact Radius",
 	"Impact Radius Affiliate Program": "제휴 프로그램",
 	"Register as an affiliate in your preferred affiliate program All new affiliates are automatically approved, so you can start making money right away instead of wasting time on asking for permission to sell products": "선호하는 제휴 프로그램에 제휴자로 등록하세요. 모든 새로운 제휴자가 자동으로 승인되므로 제품 판매 허가를 요청하는 데 시간을 낭비할 필요 없이 즉시 수익을 창출할 수 있습니다!",
-	"Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems": "이러한 시스템 중 하나의 계정을 이미 갖고 있는 경우, Avangate 및 MyCommerce에서 AVS4YOU를 찾는 방법에 대한 관련 단계별 정보를 찾기 위해 여기를 클릭하세요.",
+	"Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems": "이러한 시스템 중 하나의 계정을 이미 갖고 있는 경우, Avangate 및 AVS4YOU를 찾는 방법에 대한 관련 단계별 정보를 찾기 위해 여기를 클릭하세요.",
 	"Avangate Affiliate Program": "제휴 프로그램 혜택",
 
-
+	"Join Avangate Affiliate Network" : "Avangate 제휴 네트워크 가입",
 	"Place links to your website": "고객님의 웹사이트에 링크를 배치해주세요",
 	"Please use our": "당사의",
 	"link generator": "링크 생성기",
 	"to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link": "를 사용하여 적적할 링크를 만들고 웹사이트, 블로그 또는 채널에 배치하세요. 다이렉트 다운로드 링크 또는 커스텀 링크를 만들 수 있습니다.",
 	"Control your sales": "판매를 제어하세요",
-	"Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "당사의 쿠키 추적 시스템은 귀하의 제휴 ID를 사용하여 고객을 귀하의 제휴 시스템 결제 페이지로 리디렉션합니다. 따라서 Avangate, MyCommerce 제어판을 통해 일반적인 방식으로 판매를 쉽게 제어할 수 있습니다.",
+	"Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "당사의 쿠키 추적 시스템은 귀하의 제휴 ID를 사용하여 고객을 귀하의 제휴 시스템 결제 페이지로 리디렉션합니다. 따라서 Avangate제어판을 통해 일반적인 방식으로 판매를 쉽게 제어할 수 있습니다.",
 
 
 
@@ -1295,7 +1295,7 @@
     "here" : "여기에서 이용하세요",
     "It will automatically make correct links" : "자동으로 정확한 링크를 만들어줍니다",
     "How do I get money?" : "어떻게 수익을 내나요?",
-    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Avangate 또는 MyCommerce 같은 기존 공급 업체 패널을 통해 판매를 제어하고 수익을 얻으세요.",
+    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Avangate 또는 같은 기존 공급 업체 패널을 통해 판매를 제어하고 수익을 얻으세요.",
     "How can I make sure your system really works and where can I get statistics for clicks to you from my links?" : "귀사의 시스템이 정말로 잘 작동하는지 어떻게 알 수 있으며 제 링크에서 발생하는 클릭에 대한 통계를 어디에서 확인할 수 있나요?",
     "Once you're registered with us, you get login and password to access our" : "등록을 완료한 후, 로그인과 비밀번호를 이용하여 당사의",
     "control panel" : "제어판에 액세스할 수 있습니다",
@@ -1306,7 +1306,7 @@
     "Can I use your graphics/text in my custom builds/websites?" : "제 커스텀 빌드/웹사이트에서 그래픽/텍스트를 사용할 수 있나요?",
     "Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line" : "네, 원하시는 대로 그래픽/제품 설명을 전체적 또는 부분적으로 사용하실 수 있습니다. 요청 시 커스텀 배너를 만들어 드립니다. 연락주세요.",
     "How long do you allow cookies to be stored on a customer's PC?" : "쿠키가 고객 PC에 얼마나 오래 저장되도록 하나요?",
-    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : "쿠키는 고객님의 웹사이트에서 링크 또는 배너를 이용하는 사용자의 PC에 자동으로 설치됩니다. 쿠키는 Avangate 제휴 네트워크의 경우 30일 동안, MyCommerce의 경우 45일 동안 유효합니다. 이는 해당 사용자가 이 기간 내에 당사의 소프트웨어를 구매할 경우 고객님께 보장된 수수료가 지급됨을 의미합니다.",
+    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : "쿠키는 고객님의 웹사이트에서 링크 또는 배너를 이용하는 사용자의 PC에 자동으로 설치됩니다. 쿠키는 Avangate 제휴 네트워크의 경우 30일 동안. 이는 해당 사용자가 이 기간 내에 당사의 소프트웨어를 구매할 경우 고객님께 보장된 수수료가 지급됨을 의미합니다.",
     "Earn money with the affiliate program AVS4YOU" : "AVS4YOU 제휴 프로그램으로 수익을 올리세요",
     "or" : "또는",
     "Release Date" : "게시일:",
