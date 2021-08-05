@@ -90,7 +90,7 @@ render(){
           <PageContentWrapper>
             <ContentRowItem 
                 id="overview"
-                asType="h2"
+                asType={this.props.t("h2")}
                 imgLeft={true}
                 imageName={this.props.t("audio converter slider2 jpg")}
                 headerText={this.props.t("Convert and edit all key audio formats")}
@@ -174,7 +174,7 @@ render(){
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>
-                <Text as="h3" className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
+                <Text as={this.props.t("h3")} className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
                   <div>
                     <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
