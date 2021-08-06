@@ -1,4 +1,50 @@
 # Changelog
+
+## 1.0.8
+
+### Исправления
+* Убран MyCommerce на странице /affiliates.aspx
+
+## 1.0.7
+
+### Исправления
+* Убран формат FLV на странице /avs-free-video-converter.aspx
+* Заменены html теги для заголовков, на страницах avs-free-video-converter.aspx/avs-free-audio-converter.aspx: AVS Audio Converter H5 на H2, Convert and edit all key audio formats H3 на H2, Technical specification - H3
+
+## 1.0.6
+
+### Новое
+* Добавлена ссылка на /moneyback.aspx, на страницах register.aspx/register-vc.aspx в блоке "Why choose AVS4YOU?"
+
+## 1.0.5
+
+### Исправления
+* Исправлены стили для модального окна платежной системы в head на странице register.aspx/register-vc.aspx
+* Поправлены стили для слайдеров на странице /avs-video-screen-recorder.aspx
+* Исправлены перевода блока "¿Por qué elegir AVS4YOU?" на странице /es/register.aspx
+## 1.0.4
+
+### Новое
+* Добавлены переводы на it/fr/de/jp для страницы avs-video-screen-recorder.aspx
+* Добавлена страница avs-video-screen-recorder.aspx
+* Добавлены стили для модального окна платежной системы в head на странице register.aspx/register-vc.aspx
+
+### Исправления
+* Исправлена проблема со сменом языка (была проблем при смене с любого яз. на английский, был не корректно задан путь)
+## 1.0.3
+### Новое
+* Добавлено модальное окно для платежной системы на странице register.aspx
+### Исправления
+* Исправлен robots.txt
+* Исправлен sitemap.xml
+* Исправлены rel в head
+* Исправлены ссылки с редиректом в меню (настроена переадресация с URL с слэшем на конце на URL без слэша)
+* Исправлен перевод загаловка слайдера на странице jp/video-editing-software.aspx  
+## 1.0.2
+
+### Исправления
+* Убран ивент "Easter hunt"
+
 ## 1.0.1
 
 ### Новое

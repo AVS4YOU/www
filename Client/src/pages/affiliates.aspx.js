@@ -105,18 +105,11 @@ render(){
                     01
                 </Text>
             </div>
-            <Text as="h2" className="common__heading">
-            {this.props.t("Choose Affiliate Program")}
+            <Text as="h2" className="common__heading" style={{paddingBottom:"0px"}}>
+            {this.props.t("Join Avangate Affiliate Network")}
             </Text>
-
-            <ContentSelector
-                className="choose-program__content-wrapper"
-                buttonNames={["Avangate","MyCommerce"]}
-            >
+            <div className="choose-program__wrapper" style={{padding:"0px 30px 10px"}}>
                 <div className="choose-program__item">
-                  <Text as="h2" className="common__heading">
-                  {this.props.t("Avangate Affiliate Program")}
-                  </Text>
                   <Text className="choose-program__list">
                     {this.props.t("Register as an affiliate in your preferred affiliate program All new affiliates are automatically approved, so you can start making money right away instead of wasting time on asking for permission to sell products")}
                   </Text>
@@ -132,26 +125,7 @@ render(){
                     </Button>
                   </div>
                 </div>
-                <div className="choose-program__item">
-                  <Text as="h2" className="common__heading">
-                  {this.props.t("Impact Radius Affiliate Program")}
-                  </Text>
-                  <Text className="choose-program__list">
-                    {this.props.t("Register as an affiliate in your preferred affiliate program All new affiliates are automatically approved, so you can start making money right away instead of wasting time on asking for permission to sell products")}
-                  </Text>
-                  <Text className="choose-program__list">
-                    {this.props.t("Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems")}
-                  </Text>
-                  <div className="choose-program__buttons-wrapper">
-                    <Button href="https://account.mycommerce.com//Signup/Affiliate/200281390?md5=db7bc22a535e2aa3cf7440f7afbc75ce" textClassName="choose-program__button-text" className="choose-program__button-blue">
-                    {this.props.t("Sign up")}
-                    </Button>
-                    <Button href="https://account.mycommerce.com/Cp/Login" textClassName="choose-program__button-text" className="choose-program__button-transparent">
-                      {this.props.t("Log in")}
-                    </Button>
-                  </div>
-                </div>
-            </ContentSelector>
+             </div>
             <div className="choose-program__wrapper">
               <div className="choose-program__round-wrapper">
                   <Text as="h3" className="round-and-number">

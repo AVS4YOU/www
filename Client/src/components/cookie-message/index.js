@@ -9,6 +9,7 @@ const CookieStyle = styled.div`
         color: #009FFF;
         cursor: pointer;
         text-decoration: underline;
+        font-size: 14px;
     }
     .CookieText{
         font-family: Open Sans;
@@ -50,6 +51,9 @@ const CookieStyle = styled.div`
 
     @media only screen and (max-width: 600px) {
         .CookieText{
+            font-size: 12px;
+        }
+        a{
             font-size: 12px;
         }
         .btnWrapperClasses{
