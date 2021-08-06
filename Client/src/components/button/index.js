@@ -5,7 +5,9 @@ import PropTypes from "prop-types";
 
 const backgroundColor = {
     blue: "#1373E2",
-    orange: "#FE9235"
+    orange: "#FE9235",
+    white: "#FFFFFF",
+    none: "none",
 }
 
 const backgroundStylesButton = css`
@@ -13,9 +15,9 @@ const backgroundStylesButton = css`
     ${props => props.padding && "padding:" + props.padding};
     border-radius: 5px;
     text-decoration: none;
-
+    ${(props) => props.border && "border:" + props.border};
     &:hover{
-        background-color: ${props => props.backgroundColor === "blue" ? "#428fe8" : "#f7a966"}
+        background-color: ${props => props.backgroundColorHover ? props.backgroundColorHover : (props.backgroundColor === "blue" ? "#428fe8" : "#f7a966")}
     }
 
     .buttonText{
@@ -54,6 +56,8 @@ Button.propTypes = {
     fontSize: PropTypes.number,
     color: PropTypes.string,
     padding: PropTypes.string,
+    border: PropTypes.string,
+    backgroundColorHover: PropTypes.string,
     backgroundColor: PropTypes.string,
     background: PropTypes.bool,
     href: PropTypes.string,
