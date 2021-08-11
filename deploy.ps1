@@ -32,8 +32,8 @@ function deleteOldFiles {
 function buildSite () {
     write-host "=== build site ==="
     Set-Location -Path ((Get-Item -Path ".\").FullName + "\Client")
-    cmd.exe /c "yarn --ignore-engines"
-    cmd.exe /c "yarn build --ignore-engines"
+    cmd.exe /c "yarn"
+    cmd.exe /c "yarn build"
     if ( $LASTEXITCODE -eq 1) {exit 1 }
 }
 
