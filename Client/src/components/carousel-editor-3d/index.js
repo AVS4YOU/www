@@ -18,6 +18,7 @@ const Carousel = (props) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         swipeToSlide: false,
+        swipe: false,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 4900,

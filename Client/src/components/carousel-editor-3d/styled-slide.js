@@ -29,6 +29,7 @@ background-color: #fff;
     }
 }
 .slick-slider{
+    touch-action: none;
     padding-top: 60px;
     max-width: 1180px;
     .slick-dots{
