@@ -4,8 +4,8 @@
 
 ### Исправления
 * Обновление версий продуктов avs
-* Заменены изображаения в первых двух слайдах карусели, на страницах: installed-audio-converter.aspx, installed-audio-editor.aspx, installed-pack.aspx, installed-video-converter.aspx, installed-video-editor.aspx, installed-video-remaker.aspx
-* Заменены html теги для заголовков, на страницах для языков fr/it avs-free-video-converter.aspx/avs-free-audio-converter.aspx: `Convert and edit all key audio formats` H2 на H3, `Technical specification` - p
+* Заменены изображаения в слайдах ` Free upgrades / Unlimited access to the program `, на страницах: installed-audio-converter.aspx, installed-audio-editor.aspx, installed-pack.aspx, installed-video-converter.aspx, installed-video-editor.aspx, installed-video-remaker.aspx
+* Заменены html теги для заголовков, на страницах avs-free-video-converter.aspx/avs-free-audio-converter.aspx для языков fr/it: `Convert and edit all key audio formats` H2 на H3, `Technical specification` - p
 
 ## 1.0.8
 
