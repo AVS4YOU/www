@@ -107,7 +107,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
-                asType="h2"
+                asType={this.props.t("h2")}
                 imageName={this.props.t("video converter convert all key2 jpg")}
                 headerText={this.props.t("Сonvert all key video formats")}    
             >
@@ -190,7 +190,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.1</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.2</Text>
        
 
           <ScreenshotsCarousel 
