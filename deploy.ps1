@@ -32,12 +32,16 @@ function deleteOldFiles {
 function buildSite () {
     write-host "=== build site ==="
     Set-Location -Path ((Get-Item -Path ".\").FullName + "\Client")
-    cmd.exe /c "yarn --ignore-engines"
-    cmd.exe /c "yarn build --ignore-engines"
+    cmd.exe /c "yarn"
+    cmd.exe /c "yarn build"
     if ( $LASTEXITCODE -eq 1) {exit 1 }
 }
 
+
 function resetCache ( $distributionId ) {
+=======
+
+
     write-host "=== reset cache ==="
     $UniqNumber = Get-Date -Format "yyyyMMddHHmmss"
     $Paths = "/*"
@@ -61,11 +65,10 @@ function notifyTelegram () {
 
 Set-DefaultAWSRegion us-east-1
 $workDir = "$ENV:workspace\Client\public"                         
-
 $fileFilter = @(
 	"web.config",
 	"robots.txt"
-) 
+)                         
 
 #  branch
 $branch =  $env:BRANCH_NAME
@@ -105,7 +108,9 @@ else {
     exit
 }
 
-Write-host "Deploy from $branch branch."
+$StartMessage = "Deploy from $branch is starting."
+Write-host "$StartMessage"
+notifyTelegram $CHAT_ID $StartMessage
 
 # build
 buildSite
@@ -121,6 +126,5 @@ else {
 
 # reset cache
 resetCache $distributionId
-
-# notifications
 notifyTelegram $CHAT_ID $MESSAGE
+
