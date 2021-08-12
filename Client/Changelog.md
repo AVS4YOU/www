@@ -2,6 +2,9 @@
 
 ## 1.0.9
 
+### Новое
+* Добавлена страница audio-editor.aspx
+
 ### Исправления
 * Обновление версий продуктов avs
 * Заменены изображаения в слайдах ` Free upgrades / Unlimited access to the program `, на страницах: installed-audio-converter.aspx, installed-audio-editor.aspx, installed-pack.aspx, installed-video-converter.aspx, installed-video-editor.aspx, installed-video-remaker.aspx
