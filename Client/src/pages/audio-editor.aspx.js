@@ -30,6 +30,12 @@ import Imgbtn5 from "../images/avs-audio-editor-3d/group_5.svg";
 import Imgbtn6 from "../images/avs-audio-editor-3d/group_6.svg";
 import Imgbtn7 from "../images/avs-audio-editor-3d/group_7.svg";
 import Imgbtn8 from "../images/avs-audio-editor-3d/group_8.svg";
+import CUT_3d from "../images/avs-audio-editor-3d/CUT_3d.png";
+import TRIM_3d from "../images/avs-audio-editor-3d/TRIM_3d.png";
+import SPLIT_3d from "../images/avs-audio-editor-3d/SPLIT_3d.png";
+import MERGE_3d from "../images/avs-audio-editor-3d/MERGE_3d.png";
+import AudioEdit from "../images/avs-audio-editor-3d/Audio-Edit-3d.png";
+
 import Carousel from "../components/carousel-editor-3d/index";
 
 const StyledAudio = styled.div`
@@ -350,19 +356,19 @@ render(){
             <Text color="#32393E" align="center" className="headerText" id="IdheaderText" lineHeight="26px" fontSize={18} fontWeight={700} style={{maxWidth:"1000px"}}>{this.props.t("Easily rearrange any audio track to fit any duration by cutting out unnecessary parts with Cut and Trim options. Split an audio file by setting markers automatically or manually. Use timeline for maximum precision.")}</Text>
             <div className="idworkFormats">
               <div className="idworkFormatsImage">
-                <ImageGQL imageName="CUT_3d.png" className="workFormatsImage"/>
+                <img src={CUT_3d} className="workFormatsImage"/>
                 <Text color="#32393E" align="center" lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Cut")}</Text>
               </div>
               <div className="idworkFormatsImage">
-              <ImageGQL imageName="TRIM_3d.png" className="workFormatsImage"/>
+              <img src={TRIM_3d} className="workFormatsImage"/>
                 <Text color="#32393E" align="center"  lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Trim")}</Text>
               </div>
               <div className="idworkFormatsImage">
-              <ImageGQL imageName="SPLIT_3d.png" className="workFormatsImage"/>
+              <img src={SPLIT_3d} className="workFormatsImage"/>
                 <Text color="#32393E" align="center" lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Split")}</Text>
               </div>
               <div className="idworkFormatsImage">
-              <ImageGQL imageName="MERGE_3d.png" className="workFormatsImage"/>
+              <img src={MERGE_3d} className="workFormatsImage"/>
               <Text color="#32393E" align="center"  lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Join")}</Text>
               </div>
             </div>
@@ -376,7 +382,7 @@ render(){
 
           <div  className="buyFooter">
            <div className="buyAudio3D">
-              <ImageGQL imageName="Audio-Edit-3d.png" className="AudioEdit3d"/>
+              <img src={AudioEdit} className="AudioEdit3d"/>
               <div className="buyAudio3DFlex">
               
                 <Text color="#0943B4" align="left" className="headerText" id="IdheaderText" lineHeight="45px" fontSize={34} fontWeight={700} as="h1">{this.props.t("Become an expert in Audio Editing right now")}</Text>
