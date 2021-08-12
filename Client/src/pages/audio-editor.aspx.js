@@ -34,7 +34,7 @@ import CUT_3d from "../images/avs-audio-editor-3d/CUT_3d.png";
 import TRIM_3d from "../images/avs-audio-editor-3d/TRIM_3d.png";
 import SPLIT_3d from "../images/avs-audio-editor-3d/SPLIT_3d.png";
 import MERGE_3d from "../images/avs-audio-editor-3d/MERGE_3d.png";
-import AudioEdit from "../images/avs-audio-editor-3d/Audio-Edit-3d.png";
+import AudioEdit from "../images/avs-audio-editor-3d/Audio_Edit.png";
 
 import Carousel from "../components/carousel-editor-3d/index";
 
