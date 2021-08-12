@@ -14,6 +14,7 @@ import ImgRec from "../images/avs-audio-editor-3d/sound_rec_3d.svg";
 import ImgMixes from "../images/avs-audio-editor-3d/mixes_3d.svg";
 import ImgTxt from "../images/avs-audio-editor-3d/text_to_speach_3d.svg";
 import Weva from "../images/avs-audio-editor-3d/wave_footer.png";
+import Audioedit from "../images/avs-audio-editor-3d/audioedit.png";
 import Img1 from "../images/avs-audio-editor-3d/1.png";
 import Img2 from "../images/avs-audio-editor-3d/2.png";
 import Img3 from "../images/avs-audio-editor-3d/3.png";
@@ -34,7 +35,6 @@ import CUT_3d from "../images/avs-audio-editor-3d/CUT_3d.png";
 import TRIM_3d from "../images/avs-audio-editor-3d/TRIM_3d.png";
 import SPLIT_3d from "../images/avs-audio-editor-3d/SPLIT_3d.png";
 import MERGE_3d from "../images/avs-audio-editor-3d/MERGE_3d.png";
-import Audioedit from "../images/avs-audio-editor-3d/audioedit.png";
 
 import Carousel from "../components/carousel-editor-3d/index";
 
