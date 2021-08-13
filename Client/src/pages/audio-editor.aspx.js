@@ -15,22 +15,6 @@ import ImgMixes from "../images/avs-audio-editor-3d/mixes_3d.svg";
 import ImgTxt from "../images/avs-audio-editor-3d/text_to_speach_3d.svg";
 import Weva from "../images/avs-audio-editor-3d/wave_footer.png";
 import Audioedit from "../images/avs-audio-editor-3d/audioedit.png";
-import Img1 from "../images/avs-audio-editor-3d/1.png";
-import Img2 from "../images/avs-audio-editor-3d/2.png";
-import Img3 from "../images/avs-audio-editor-3d/3.png";
-import Img4 from "../images/avs-audio-editor-3d/4.png";
-import Img5 from "../images/avs-audio-editor-3d/5.png";
-import Img6 from "../images/avs-audio-editor-3d/6.png";
-import Img7 from "../images/avs-audio-editor-3d/7.png";
-import Img8 from "../images/avs-audio-editor-3d/8.png";
-import Imgbtn1 from "../images/avs-audio-editor-3d/group_1.svg";
-import Imgbtn2 from "../images/avs-audio-editor-3d/group_2.svg";
-import Imgbtn3 from "../images/avs-audio-editor-3d/group_3.svg";
-import Imgbtn4 from "../images/avs-audio-editor-3d/group_4.svg";
-import Imgbtn5 from "../images/avs-audio-editor-3d/group_5.svg";
-import Imgbtn6 from "../images/avs-audio-editor-3d/group_6.svg";
-import Imgbtn7 from "../images/avs-audio-editor-3d/group_7.svg";
-import Imgbtn8 from "../images/avs-audio-editor-3d/group_8.svg";
 import CUT_3d from "../images/avs-audio-editor-3d/CUT_3d.png";
 import TRIM_3d from "../images/avs-audio-editor-3d/TRIM_3d.png";
 import SPLIT_3d from "../images/avs-audio-editor-3d/SPLIT_3d.png";
@@ -131,6 +115,9 @@ const StyledAudio = styled.div`
     margin: 0 10px;
     max-width: 252px;
     padding: 0 10px;
+    p {
+      max-width: 252px;
+    }
     #workFormatsTextH{
         height: 56px;
       }
@@ -224,6 +211,27 @@ const StyledAudio = styled.div`
     height: 400px;
     top: -35px;
 }
+
+@media(max-width: 1024px) {
+  .buyAudio3DFlex{
+    p{
+        font-size: 28px !important;
+    }
+    h1{
+      font-size: 14px !important;
+    }
+  }
+
+  .sheaderContentWrapper{
+    max-width: auto;
+  }
+    
+  .workWithFormats{
+    p {
+      font-size: 18px !important;
+    }
+  }
+}
 `;
 
 class avsAudioEditor extends React.PureComponent {
@@ -241,7 +249,7 @@ class avsAudioEditor extends React.PureComponent {
   getDevice(device) {
     this.setState({ device: device });
   }
-  ItemButton = [
+  /*ItemButton = [
     { src: Imgbtn8, text: this.props.t("Normalize") },
     { src: Imgbtn1, text: this.props.t("Amplify") },
     { src: Imgbtn2, text: this.props.t("Fade In/ Fade Out") },
@@ -261,7 +269,7 @@ class avsAudioEditor extends React.PureComponent {
     { header: this.props.t("Time Stretch/Pitch Shift Effects"), text: this.props.t("Increase or decrease the speed and the tone of your audio or play your audio backwards with Reverse effect."), src: Img6 },
     { header: this.props.t("Remove noise"), text: this.props.t("Remove irritating sounds like roaring, hissing, crackling, etc. from your audio tracks making the sound clearer."), src: Img7 },
     { header: this.props.t("Special effects"), text: this.props.t("Generate tones, silence, noise, instruments or rhythm track."), src: Img8 },
-  ];
+  ];*/
 
   render() {
 
@@ -365,7 +373,7 @@ class avsAudioEditor extends React.PureComponent {
                 </div>
                 <div className="idworkFormatsImage">
                   <img src={TRIM_3d} className="workFormatsImage" />
-                  <Text color="#32393E" align="center" lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Trim")}</Text>
+                  <Text color="#32393E" align="center" lineHeight="45px" fontSize={16} fontWeight={700} as="h1">{this.props.t("Trim ")}</Text>
                 </div>
                 <div className="idworkFormatsImage">
                   <img src={SPLIT_3d} className="workFormatsImage" />

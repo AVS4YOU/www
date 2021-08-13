@@ -27,16 +27,22 @@ background-color: #fff;
     .button-ellement:hover{
         cursor: pointer;
     }
-}
+
 .slick-slider{
     touch-action: none;
     padding-top: 60px;
     max-width: 1180px;
     .slick-dots{
         bottom: 600px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         .slick-active{
             .btn-el{
-            background: linear-gradient(#5D91F4, #9E5CB6);
+                background: linear-gradient(#5D91F4, #9E5CB6);           
             }
         }
         li{
@@ -45,15 +51,19 @@ background-color: #fff;
             border-radius: 5px;
             margin: 0 5px;
         .nFlex{
-            display: grid;
+            display: flex;
             justify-items: center;
+            flex-direction: column;
+            align-items: center;
         }
         .btn-el{
             width: 64px;
+            height: 64px;
             background-color: #274490;
+            border-radius: 5px;
         }
 
-        svg{
+        img{
             width: 64px;
             padding-top: 15px;
             height: 44px;
@@ -64,7 +74,10 @@ background-color: #fff;
             padding-top: 10px;
         }
 
+        span{
+            max-width: 130px;
         
+         }
 
         .btn-el:hover{
         background: linear-gradient(#5D91F4, #9E5CB6);
@@ -139,7 +152,7 @@ background-color: #fff;
                 border-radius: 4px;
             }
         }
-    
+}
 
 `;
 
