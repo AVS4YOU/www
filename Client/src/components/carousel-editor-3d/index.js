@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import StyledSlider from "./styled-slide";
 import Img1 from "../../images/avs-audio-editor-3d/1.png";
 import Img2 from "../../images/avs-audio-editor-3d/2.png";
@@ -79,7 +81,10 @@ const Carousel = (props) => {
     };
 
     const Carousel = Slide.map((it, i) =>
-        <div className="carousel-slide" key={`carousel-slide-${i}`}>
+        <div
+            className="carousel-slide"
+            key={`carousel-slide-${i}`}
+        >
             <div className="carousel-items">
                 <div className="text-slide">
                     <h2 className="text-slide-head">{it.header}</h2>
