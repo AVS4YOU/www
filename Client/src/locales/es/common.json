@@ -593,7 +593,8 @@
     "Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line" : "Sí, puedes usar nuestros gráficos/descripciones de productos en parte o en su totalidad, como lo quieras. Bajo solicitud crearemos banners personalizados para ti gratis. Escríbenos a ",
     "How long do you allow cookies to be stored on a customer's PC?" : "¿Por cuánto tiempo se almacenan los cookies en el PC del cliente?",
     "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Las cookies se instalan en el PC del usuario automáticamente, en cuanto él/ella siga un enlace o banner desde tu página web. Las cookies son válidas durante el período de 30 días en la red de afiliados Avangate. Esto significa que recibes una comisión segura si este mismo cliente compra nuestro programa en el transcurso de este período.",
-    
+    "h22" : "h5",
+    "h3" : "p",
 
 
 
@@ -1248,6 +1249,7 @@
     "Purchasing AVS Video Editor unlimited subscription, you acquire full access to the program without any time limitations" : "Al comprar una suscripción ilimitada a AVS Video Editor, adquieres acceso completo al programa sin límites de tiempo.",
     "There is no need to renew the subscription" : "No tienes que renovar la suscripción.",
     "Trim" : "Cortar",
+    "Trim " : "Podar",
     "Crop" : "Ajustar",
     "Split" : "Dividir",
     "Join" : "Unir",
