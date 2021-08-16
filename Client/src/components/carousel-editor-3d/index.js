@@ -19,6 +19,7 @@ import Imgbtn5 from "../../images/avs-audio-editor-3d/group_5.svg";
 import Imgbtn6 from "../../images/avs-audio-editor-3d/group_6.svg";
 import Imgbtn7 from "../../images/avs-audio-editor-3d/group_7.svg";
 import Imgbtn8 from "../../images/avs-audio-editor-3d/group_8.svg";
+
 const Carousel = (props) => {
 
     const [slideState, setSlideState] = useState({
@@ -37,6 +38,7 @@ const Carousel = (props) => {
         { src: Imgbtn6, text: "Remove noise" },
         { src: Imgbtn7, text: "Special effects" }
     ];
+    
     const Slide = [
         { header: "Normalize", text: "Align the volume of an audio track in accordance with the selected level.", src: Img1 },
         { header: "Amplify", text: "Increase or decrease the sound volume by adjusting its amplitude.", src: Img2 },

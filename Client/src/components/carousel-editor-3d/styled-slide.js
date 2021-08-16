@@ -154,6 +154,22 @@ background-color: #fff;
         }
 }
 
+
+@media(max-width: 1180px) {
+    padding: 170px 0 108px;
+    .slick-slider{
+        max-width: 968px;
+        margin: 0 auto;
+        .carousel-slide {
+            .image-slide {
+                height: auto;
+            }
+        }
+        .loader-line{
+            bottom: -50px;
+        }
+    }
+}
 `;
 
 export default StyledSlider;
