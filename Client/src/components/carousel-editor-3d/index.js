@@ -54,6 +54,7 @@ const Carousel = (props) => {
         infinity: true,
         fade: true,
         speed: 500,
+        initialSlide: 0,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipeToSlide: false,
@@ -61,7 +62,7 @@ const Carousel = (props) => {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 5000,
-        dots: true,
+        dots: true,      
         appendDots: dots => <div className="group-button">{dots}</div>,
         customPaging: i => (
             <div className="nFlex">
@@ -73,7 +74,27 @@ const Carousel = (props) => {
                 </div>
                 <span className="textDots">{ItemButton[i].text}</span>
             </div>
-        )
+        ),
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                infinity: true,
+                initialSlide: 2,
+                autoplaySpeed: 4700,
+                speed: 500,
+              }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    infinity: true,
+                  initialSlide: 3,
+                  autoplaySpeed: 4500,
+                  speed: 500,
+                }
+              },
+        ],
     };
 
     const sliderRef = useRef();

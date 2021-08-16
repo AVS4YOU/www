@@ -300,14 +300,14 @@ class avsAudioEditor extends React.PureComponent {
                         className="ButtonAudio3dBuy"
                         padding={"18px 72px"}
                         href={this.props.t("defaultHrefUnlim")}
-                        fontSize="16px">BUY</Button>
+                        fontSize={16}>BUY</Button>
                       <Button
                         className="ButtonAudio3dDwn"
                         padding={"18px 25px"}
                         href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"}
                         backgroundColor={"none"}
                         color={"white"}
-                        fontSize="16px"
+                        fontSize={16}
                         border="1px solid #ffffff"
                         backgroundColorHover="none">Download now</Button>
                     </div>
@@ -387,8 +387,8 @@ class avsAudioEditor extends React.PureComponent {
             </div>
 
             <div className="carousel-section">
-              <Text align="center" color="#0943B4" fontSize="38" fontWeight={700} lineHeight="38px" className="headerSlider">{this.props.t("Enhance sound quality of audio tracks")}</Text>
-              <Text align="center" color="#32393E" fontSize="18" fontWeight={700} className="textSlider">{this.props.t("Apply an array of audio effects to improve sound quality with ease.")}</Text>
+              <Text align="center" color="#0943B4" fontSize={38} fontWeight={700} lineHeight="38px" className="headerSlider">{this.props.t("Enhance sound quality of audio tracks")}</Text>
+              <Text align="center" color="#32393E" fontSize={18} fontWeight={700} className="textSlider">{this.props.t("Apply an array of audio effects to improve sound quality with ease.")}</Text>
               <Carousel Slide={this.Slide} ItemButton={this.ItemButton} />
             </div>
 
@@ -399,8 +399,8 @@ class avsAudioEditor extends React.PureComponent {
 
                   <Text color="#0943B4" align="left" className="headerText" id="IdheaderText" lineHeight="45px" fontSize={34} fontWeight={700} as="h1">{this.props.t("Become an expert in Audio Editing right now")}</Text>
                   <div className="buyAudio3DFlexN">
-                    <Button padding={"18px 72px"} href={this.props.t("defaultHrefUnlim")} fontSize="16px" className="buttonBuy">BUY</Button>
-                    <Button padding={"18px 25px"} href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"} className="buttonDownload" backgroundColor={"#fff"} color={"#232C33"} border="1px solid #232C33" background="#ffffff" style={{ marginLeft: "60px" }} fontSize="16px">Download now</Button>
+                    <Button padding={"18px 72px"} href={this.props.t("defaultHrefUnlim")} fontSize={16} className="buttonBuy">BUY</Button>
+                    <Button padding={"18px 25px"} href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"} className="buttonDownload" backgroundColor={"#fff"} color={"#232C33"} border="1px solid #232C33" background="#ffffff" style={{ marginLeft: "60px" }} fontSize={16}>Download now</Button>
                   </div>
                   <Text color="#232C33" align="left" className="headerText" id="IdheaderText" lineHeight="26px" fontSize={14} fontWeight={400} style={{ marginTop: "20px" }} >{this.props.t("For Windows 10, 8.1, 8, 7 / XP, 2003 / Vista")}</Text>
 
