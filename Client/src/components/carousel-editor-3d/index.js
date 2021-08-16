@@ -81,7 +81,7 @@ const Carousel = (props) => {
               settings: {
                 infinity: true,
                 initialSlide: 2,
-                autoplaySpeed: 4700,
+                autoplaySpeed: 5000,
                 speed: 500,
               }
             },
@@ -90,7 +90,7 @@ const Carousel = (props) => {
                 settings: {
                     infinity: true,
                   initialSlide: 3,
-                  autoplaySpeed: 4500,
+                  autoplaySpeed: 4800,
                   speed: 500,
                 }
               },
