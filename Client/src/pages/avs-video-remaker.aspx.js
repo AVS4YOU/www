@@ -141,7 +141,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.4</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.5</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
             imageNamesPopup={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
