@@ -149,7 +149,7 @@ notifyTelegram () {
 
 #===main===
 echo "$StartMessage"
-#notifyTelegram $CHAT_ID "$StartMessage"
+notifyTelegram $CHAT_ID "$StartMessage"
 
 get_old_backet_name $FindNameBucket
 
@@ -165,7 +165,7 @@ modify_cloud_front
 
 delete_old_bucket
 echo "$MESSAGE"
-#notifyTelegram $CHAT_ID "$MESSAGE"
+notifyTelegram $CHAT_ID "$MESSAGE"
 
 echo "=== Finish ==="
 
