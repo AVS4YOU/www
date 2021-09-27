@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.11
+
+### Исправления
+* Обновлен sitemap 
+
+## 1.0.10
+
+### Исправления
+* Обновлены pads файлы en/de `avsaudioconverter.xml / avsaudioeditor.xml / avsimageconverter.xml / avsmediaplayer.xml / avsvideoconverter.xml / avsvideoeditor.xml  / avsvideoremaker.xml / ` пример пути: `/static/en/avsaudioconverter.xml`
+
 ## 1.0.9
 
 ### Новое
