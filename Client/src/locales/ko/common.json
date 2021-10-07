@@ -115,6 +115,7 @@
 	"Text to Speech": "텍스트 음성 변환",
 	"AVS Audio Converter": "AVS Audio Converter",
 	"Convert all key audio formats": "모든 주요 오디오 포맷 변환",
+	"AVS Free Audio Converter - Convert all key audio formats" : "AVS Free Audio Converter – WAV, MP3, M4A 등으로 변환하세요",
 	"Modify audio file information": "오디오 파일 정보 수정",
 	"Create audiobooks and ringtones": "오디오북 & 링톤 생성",
 	"Export audio from video": "동영상에서 오디오 추출",
@@ -195,8 +196,8 @@
 
 
 	"*****************************Avs-Video-Editor********************************": "*****************************Avs-Video-Editor********************************",
-	"AVS Video Editor - easy video editing software for Windows.": "AVS 동영상 편집기 - 간단한 Windows용 동영상 편집 소프트웨어.",
-	"AVS Video Editor is an easy video editing program. Create, edit video, capture video/ make a video slideshow/ cut, merge, trim video files/ save to any format.": "AVS 동영상 편집기는 간단한 동영상 편집 프로그램입니다. 동영상을 생성, 편집, 캡처하고/ 동영상 슬라이드쇼를 만들고/ 동영상 파일을 자르고, 병합하고, 트림하고/ 원하시는 포맷으로 저장하세요.",
+	"AVS Video Editor - easy video editing software for Windows.": "비디오 편집기 AVS Video Editor 윈도우 10",
+	"AVS Video Editor is an easy video editing program Create, edit video, capture video make a video slideshow cut, merge, trim video files save to any format": "비디오 자르기, 자르기, 분할, 병합, 회전 및 혼합. 300개 이상의 혁신적인 효과, 전환, 오버레이를 살펴보세요. 모든 주요 형식 및 HD 비디오로 작업하십시오.",
 	"video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow": "동영상 편집기, 동영상 편집 소프트웨어, 동영상 편집, 동영상 편집기 다운로드, avs 동영상 편집기, avs 편집기, avs 영화 편집기, 동영상 편집 팁, windows 영화 메이커, 동영상 편집 앱, 동영상 편집, 아이폰 동영상 편집, 동영상 자르기, 동영상 편집 다운로드, 동영상 편집 소프트웨어, mp4 편집기, 영항 메이커 소프트웨어, 동영상 슬라이드쇼 생성",
 	"Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays": "동영상을 트림, 자르기, 분할, 병합, 회전, 믹스하세요. 300+ 혁신적인 효과, 트랜지션, 오버레이.",
 	"Work with all key formats and HD videos": "모든 주요 포맷 및 HD 동영상과 함께 작동합니다.",
@@ -315,8 +316,8 @@
 
 
 	"*****************************AVS Audio Editor********************************": "*****************************AVS Audio Editor********************************",
-	"AVS Audio Editor – record audio, cut, mix audio files, delete audio parts, edit mp3": "AVS 오디오 편집기 – 오디오를 녹음하고, 오디오 파일을 자르고, 믹스하고, 오디오 일부를 삭제하고, mp3를 편집하세요",
-	"Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.": "오디오를 녹음하고/ 오디오 일부를 자르거나, 분할하거나, 믹스하고/ 오디오 효과 및 필터를 적용하고/ 오디오를 MP3 WAV WMA M4A FLAC로 저장하세요.",
+	"AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3": "MP3 편집 AVS Audio Editor 오디오 편집 프로그램",
+	"Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.": "간단한 오디오 편집 소프트웨어로 완벽한 오디오 트랙을 녹음하십시오. 음향 효과를 적용하고 MP3, WAV, WMA, M4A, FLAC, OGG에 저장합니다.",
 	"avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs": "avs 오디오 편집기, avs 음악 편집기, avs 오디오 제조기, 오디오 편집기, 오디오 편집 소프트웨어, mp3 편집기, 음악 편집기, 음악 편집기 다운로드, 오디오 편집기 다운로드, 오디오 편집 소프트웨어, mp3 편집, 영화 메이커 오디오 편집,, 오디오 클립 편집, window 7 오디오 편집, 쿨 에디트 오디오, 오디오 녹음, 음성 녹음, 오디오 믹스, 오디오 소프트웨어 믹스, 음악 믹스, 오디오 cd 자르기, 오디오 클립 자르기, 동영상에서 오디오 자르기, 오디오북 생성, 오디오 생성, 오디오 파일 생성, 동영상에서 오디오 생성, 음악 편집, 오디오 편집, 음악 편집, mp3 음악 편집",
 	"Create outstanding tracks for any purpose with our easy audio editing app for Windows": "간단한 Windows용 오디오 편집 앱으로 목적에 맞는 멋진 트랙을 생성하세요.",
 	"Edit all key audio formats": "모든 주요 오디오 포맷을 편집하세요.",
@@ -968,6 +969,7 @@
 "Edit video files without reencoding and quality loss Cut delete unwanted parts change scene sequence" : "재인코딩 및 품질 손실 없이 동영상 파일을 편집하세요. 원치 않는 부분을 자르고, 삭제하고, 장면 순서를 변경하세요.",
 "Burn video to DVD or Blu discs" : "동영상을 DVD 또는 Blu-ray 디스크로 구우세요",
 "Convert your audio files between various formats MP3 WAV WMA M4A FLAC and others" : "오디오 파일을 다양한 포맷: MP3, WAV, WMA, M4A, FLAC 등으로 변환하세요",
+"Free Audio Converter - Convert MP3, WAV, WMA, M4A, OGG, FLAC, AMR, AAC for free and losslessly Download AVS Free Audio Converter" : "MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2 등으로 변환하세요. 불필요한 부분을 트림 또는 삭제하고, 파일을 병합하고, 효과(페이드 인, 페이드 아웃, 노멀라이즈)를 적용하세요.",
 "Create your own audiobooks" : "나만의 오디오북을 만드세요",
 "Enhance your audio with special effects and filters Record audio data from various inputs" : "특수 효과 및 필터로 오디오를 강화하세요. 다양한 입력기에서 오디오 데이터를 녹음하세요",
 "Save audio files to popular audio formats" : "오디오 파일을 인기 오디오 포맷으로 저장하세요",
