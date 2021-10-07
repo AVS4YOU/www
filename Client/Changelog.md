@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.12
+
+### Исправления
+* Внесены правки в переводы da/de/fr/it/jp/ko/nl/pl/pt/ru метаданных для страниц `/avs-free-audio-converter.aspx, /avs-video-editor.aspx, /avs-audio-editor.aspx`
+
 ## 1.0.11
 
 ### Исправления
