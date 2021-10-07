@@ -83,27 +83,27 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>23969792</File_Size_Bytes>
-      <File_Size_K>23408</File_Size_K>
-      <File_Size_MB>22.86</File_Size_MB>
+      <File_Size_Bytes>36684320</File_Size_Bytes>
+      <File_Size_K>35824</File_Size_K>
+      <File_Size_MB>34.98</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Image Converter</Program_Name>
-    <Program_Version>5.2.6.306</Program_Version>
-    <Program_Release_Month>12</Program_Release_Month>
-    <Program_Release_Day>13</Program_Release_Day>
-    <Program_Release_Year>2020</Program_Release_Year>
+    <Program_Version>5.3.1.310</Program_Version>
+    <Program_Release_Month>08</Program_Release_Month>
+    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>11 new effects: Tilt-Shift, Vignette, Rectangular Vignette, Adorable, Orange-Blue, Red-Blue, Emerald, Noir, Dark, Equilibrium, Mild. Some installer changes, marketing changes and usability changes.</Program_Change_Info>
-    <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM</Program_System_Requirements>
+    <Program_Change_Info>Support of HEIF/HEIC images. Optimization and bug fixes.</Program_Change_Info>
+    <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz or higher, 2 GB RAM or higher</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Expire_Info>
       <Has_Expire_Info>N</Has_Expire_Info>
@@ -126,16 +126,13 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
-      <Application_Info_URL>https://www.avs4you.com/avs-free-image-converter.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/avsimageconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsimageconverter.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsimageconverter.xml</Application_XML_File_URL>
+      <Application_Info_URL>http://www.avs4you.com/AVS-Image-Converter.aspx</Application_Info_URL>
+      <Application_Order_URL>http://www.avs4you.com/Register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/AVSImageConverter.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/AVSImageConverter.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.avs4you.com/pads/en/AVSImageConverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
       <Primary_Download_URL>http://download.avs4you.com/distributives/AVSImageConverter.exe</Primary_Download_URL>
@@ -190,6 +187,9 @@ IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCID
 COPYRIGHT NOTICE. Copyright(C) 2020 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
   <AppStore>
     <AppStore_AppID></AppStore_AppID>
     <AppStore_Category></AppStore_Category>

@@ -57,7 +57,7 @@ render(){
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h2" fontSize={24}>{this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
@@ -90,6 +90,7 @@ render(){
           <PageContentWrapper>
             <ContentRowItem 
                 id="overview"
+                asType={this.props.t("h2")}
                 imgLeft={true}
                 imageName={this.props.t("audio converter slider2 jpg")}
                 headerText={this.props.t("Convert and edit all key audio formats")}
@@ -142,7 +143,7 @@ render(){
               }
             />
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.0</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.1</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
@@ -173,7 +174,7 @@ render(){
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>
-                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
+                <Text as={this.props.t("h3")} className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
                   <div>
                     <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
