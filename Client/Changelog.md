@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.12
+
+### Исправления
+* Внесены правки в переводы da/de/fr/it/jp/ko/nl/pl/pt/ru метаданных для страниц `/avs-free-audio-converter.aspx, /avs-video-editor.aspx, /avs-audio-editor.aspx`
+
+## 1.0.11
+
+### Исправления
+* Обновлен sitemap 
+
+## 1.0.10
+
+### Исправления
+* Обновлены pads файлы en/de `avsaudioconverter.xml / avsaudioeditor.xml / avsimageconverter.xml / avsmediaplayer.xml / avsvideoconverter.xml / avsvideoeditor.xml  / avsvideoremaker.xml / ` пример пути: `/static/en/avsaudioconverter.xml`
+
 ## 1.0.9
 
 ### Новое

@@ -115,6 +115,7 @@
 	"Text to Speech": "Tekst til tale",
 	"AVS Audio Converter": "AVS Audio Converter",
 	"Convert all key audio formats": "Konverter alle nøglelydformater",
+	"AVS Free Audio Converter - Convert all key audio formats" : "AVS Free Audio Converter – konverter WAV, MP3, M4A",
 	"Modify audio file information": "Modificer lydfilsinformation",
 	"Create audiobooks and ringtones": "Opret lydbøger og ringetoner",
 	"Export audio from video": "Eksporter lyd fra video",
@@ -195,8 +196,8 @@
 
 
 	"*****************************Avs-Video-Editor********************************": "*****************************Avs-Video-Editor********************************",
-	"AVS Video Editor - easy video editing software for Windows.": "AVS Video Editor – nemt videoredigeringssoftware til Windows.",
-	"AVS Video Editor is an easy video editing program. Create, edit video, capture video/ make a video slideshow/ cut, merge, trim video files/ save to any format.": "AVS Video Editor er et nemt videoredigeringsprogram. Opret, rediger video, optag video/opret et videolysbilledshow/ klip, sammenflet, trim videofiler/ gem til ethvert format.",
+	"AVS Video Editor - easy video editing software for Windows.": "Video redigering - AVS Video Editor (Windows)",
+	"AVS Video Editor is an easy video editing program Create, edit video, capture video make a video slideshow cut, merge, trim video files save to any format": "Trim, klip, opdel, flette, flette, rotere og blande videoer. Udforsk mere end 300 innovative effekter, overgange og overlejringer. Arbejd med alle vigtige formater.",
 	"video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow": "videoredigering, videoredigeringssoftware, videoredigering, download videoredigering, avs video editor, avs editor, avs movieredigering, videoredigeringstips,  windows movie maker, videoredigeringsapp, rediger video, rediger video på iphone, klip video, download rediger video, videoredigeringssoftware, mp4 redigering, filmskabersoftware, opret videolysbilledshow",
 	"Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays": "Trim, klip, del, sammenflet, roter, mix videoer. 300+ innovative effekter, overgange, tilretninger.",
 	"Work with all key formats and HD videos": "Arbejd med alle nøgleformater og HD-videoer.",
@@ -316,8 +317,8 @@
 
 
 	"*****************************AVS Audio Editor********************************": "*****************************AVS Audio Editor********************************",
-	"AVS Audio Editor ΓÇô record audio, cut, mix audio files, delete audio parts, edit mp3": "AVS Audio Editor ΓÇô optag lyd, beskær, mix lydfiler, slet lyddele, rediger mp3",
-	"Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.": "Optag lyd/ beskær, opdel, mix lydfiler, slet lyddele/ tilføj lydeffekter og filtre/ gem lyd til MP3 WAV WMA M4A FLAC.",
+	"AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3": "AVS Audio Editor - MP3, M4A, WAV sound editor til Windows",
+	"Record audio cut, split, mix audio tracks, delete audio parts apply audio effects and filters save audio to MP3 WAV WMA M4A FLAC": "Optag det perfekte lydspor med et simpelt lydredigeringsprogram. Anvend lydeffekter, gem til MP3, WAV, WMA, M4A, FLAC, OGG.",
 	"avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs": "avs audio editor, avs musikredigering, avs lydredigering, lydredigering, lydredigeringssoftware, mp3-redigering, musikredigering, download musikredigering, lydredigering download, lydredigeringssoftware, rediger mp3, filmskaber lydredigering, rediger lydklip, rediger lyd windows 7, cool redigering lyd, optag lyd, optag stemme, mix lyd, mix lydsoftware, mix musik, beskær lyd cd, beskær lydklip, beskær lyd fra video, opret lydbog, opret lyd, opret lydfil,  opret lyd fra video, rediger musik, rediger lyd, rediger sang, rediger mp3 sange",
 	"Create outstanding tracks for any purpose with our easy audio editing app for Windows": "Lav fremragende sange til alle formal med vores nemme lydredigeringsapp til Windows.",
 	"Edit all key audio formats": "Rediger alle almindelige lydformater.",
@@ -970,6 +971,7 @@
 "Edit video files without reencoding and quality loss Cut delete unwanted parts change scene sequence" : "Rediger videofiler uden genkodning og tab af kvalitet. Klip, slet uønskede dele, skift scenesekvenser",
 "Burn video to DVD or Blu discs" : "Brænd video til DVD eller Blu-ray-diske",
 "Convert your audio files between various formats MP3 WAV WMA M4A FLAC and others" : "Konverter dine lydfiler mellem forskellige formater: MP3, WAV, WMA, M4A, FLAC og andre",
+"Free Audio Converter - Convert MP3, WAV, WMA, M4A, OGG, FLAC, AMR, AAC for free and losslessly Download AVS Free Audio Converter" : "Konverter MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, osv. Trim, slet unødvendige dele, sammenfelt filer, tilføj effekter.",
 "Create your own audiobooks" : "Opret din egen lydbog",
 "Enhance your audio with special effects and filters Record audio data from various inputs" : "Forbedr din lyd med specielle effekter og filtre. Optag lyddata fra forskellige indgange",
 "Save audio files to popular audio formats" : "Gem lydfiler i populære lydformater",
