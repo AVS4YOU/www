@@ -3,6 +3,12 @@
 ## 1.0.12
 
 ### Исправления
+
+* Исправлены метаданные на странице `/avs-video-editor.aspx` для языков da/ko/nl/pl 
+
+## 1.0.12
+
+### Исправления
 * Внесены правки в переводы da/de/fr/it/jp/ko/nl/pl/pt/ru метаданных для страниц `/avs-free-audio-converter.aspx, /avs-video-editor.aspx, /avs-audio-editor.aspx`
 
 ## 1.0.11
