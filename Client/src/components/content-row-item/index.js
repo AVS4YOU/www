@@ -33,42 +33,46 @@ const RowContent = styled.div`
         z-index: 0;
         display:block;
         overflow: unset !important;
-        border: 1px solid #ECEFF5;
+        ${props => !props.disableBG && `
+            border: 1px solid #ECEFF5;
+        `}
     }
 
     &.imgRight{
         .rowImage{
             margin-left: auto;
-
-            &:before{
-                content: '';
-                background-image: url(${bgOrange});
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 206px;
-                height:206px;
-                left: -36px;
-                top: -36px;
-                position:absolute;
-            }
+            ${props => !props.disableBG && `
+                &:before{
+                    content: '';
+                    background-image: url(${bgOrange});
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 206px;
+                    height:206px;
+                    left: -36px;
+                    top: -36px;
+                    position:absolute;
+                }
+            `}
         }
     }
 
     &.imgLeft{
         .rowImage{
             margin-right: auto;
-
-            &:before{
-                content: '';
-                background-image: url(${bgBlue});
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 206px;
-                height:206px;
-                right:-36px;
-                top: -36px;
-                position:absolute;
-            }
+            ${props => !props.disableBG && `
+                &:before{
+                    content: '';
+                    background-image: url(${bgBlue});
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 206px;
+                    height:206px;
+                    right:-36px;
+                    top: -36px;
+                    position:absolute;
+                }`
+            }   
         }
     }
 
@@ -400,7 +404,7 @@ const ContentRowItem = (props) => {
 
     if (props.imgLeft){
         return(
-            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice}>
+            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -410,7 +414,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice}>
+            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
                 {HeaderMobile(props)}
                 <div className="bgOrange mobile">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
