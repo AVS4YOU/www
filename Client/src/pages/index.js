@@ -8,6 +8,8 @@ import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import ContentRowItem from '../components/content-row-item';
 import ContentSelector from '../components/content-selector';
@@ -197,6 +199,27 @@ const MainPageWrapper = styled.div`
     opacity: 1;
     transition: opacity 500ms ease 0s;
     z-index: -1;
+  }
+
+  .block-awards {
+    max-width: 1120px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .awards-item {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+
+    &:nth-child(1) .selectorText:before{
+      background-image: url(${videoIcon});
+  }
+  }
+
+  .trustButton {
+    margin: auto;
+    display: table;
   }
 
   @media (max-width: 1500px) {
@@ -441,10 +464,30 @@ class mainPage extends React.PureComponent {
                   </ContentWrapper>
               </ContentSelector>
           </PageContentWrapper>
-        </StyledMainContentWrapper>  
+        </StyledMainContentWrapper>
+
+        <div className="block-awards">
+            <Text className="awards-title" fontSize={28} fontWeight={600} color="#000000">{this.props.t("AVS4YOU Awards and Ratings")}</Text>
+            <div className="list-awards">
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Clean Award")}</Text></div>
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Rating: Excellent")}</Text></div>
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic clean award")}</Text></div>
+            </div>
+            <div className="list-awards">
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic Rating: Very good")}</Text></div>
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("chip.de First Impression: Very Good")}</Text></div>
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("GetApp: Very Good")}</Text></div>
+              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Capterra: Very Good")}</Text></div>
+            </div>
+        </div>  
 
         <div className="background-color">
           <ReviewScreen t={this.props.t} revHeader={this.props.t("Our customers say")} />
+          <Button className="trustButton" 
+                    href={this.props.mainHref} 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
         </div>
         
       </MainPageWrapper>

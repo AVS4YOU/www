@@ -14,11 +14,13 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
+import styled from 'styled-components';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
-
 
 class avsVideoEditor extends React.PureComponent {
 
@@ -171,6 +173,11 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.4</Text>
           <ScreenshotsCarousel

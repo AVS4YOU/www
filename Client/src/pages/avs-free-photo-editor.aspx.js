@@ -13,6 +13,8 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
@@ -142,6 +144,11 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Photo Editor")}</Text>
           <ScreenshotsCarousel 

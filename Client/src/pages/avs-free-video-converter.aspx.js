@@ -15,6 +15,8 @@ import ImageGQL from '../components/image-gql';
 import {VideoConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
@@ -188,6 +190,11 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
        
