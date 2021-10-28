@@ -21,6 +21,14 @@ import audioIconWhite from '../images/main-page/icons/audio_icon_white.svg'
 import imageIcon from '../images/main-page/icons/image_icon_grey.svg'
 import imageIconWhite from '../images/main-page/icons/image_icon_white.svg'
 
+import awardClean from '../images/main-page/awards/award-clean.png'
+import awardCapterra from '../images/main-page/awards/award-capterra.png'
+import awardChip from '../images/main-page/awards/award-chip.png'
+import awardGetapp from '../images/main-page/awards/award-getapp.png'
+import awardPick from '../images/main-page/awards/award-epick.png'
+import awardSoftonic from '../images/main-page/awards/award-softonic.png'
+import awardSoft from '../images/main-page/awards/softonic-award.png'
+
 const StyledMainContentWrapper = styled.div`
     display:block;
     padding-bottom: 100px;
@@ -151,6 +159,7 @@ const MainPageWrapper = styled.div`
 
   .background-color{
     background-color:#FFF9F1;
+    padding-bottom: 100px;
   }
 
   .headerText{
@@ -211,10 +220,18 @@ const MainPageWrapper = styled.div`
     display: inline-block;
     width: 200px;
     height: 150px;
-
-    &:nth-child(1) .selectorText:before{
-      background-image: url(${videoIcon});
   }
+
+  .list-awards {
+    margin-bottom: 50px;
+  }
+
+  .awards-text {
+    padding-top: 16px;
+  }
+
+  .awards-title { 
+    margin-bottom: 50px;
   }
 
   .trustButton {
@@ -469,15 +486,15 @@ class mainPage extends React.PureComponent {
         <div className="block-awards">
             <Text className="awards-title" fontSize={28} fontWeight={600} color="#000000">{this.props.t("AVS4YOU Awards and Ratings")}</Text>
             <div className="list-awards">
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Clean Award")}</Text></div>
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Rating: Excellent")}</Text></div>
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic clean award")}</Text></div>
+              <div className="awards-item"><img src={awardClean}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Clean Award")}</Text></div>
+              <div className="awards-item"><img src={awardPick}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Rating: Excellent")}</Text></div>
+              <div className="awards-item"><img src={awardSoftonic}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic clean award")}</Text></div>
             </div>
             <div className="list-awards">
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic Rating: Very good")}</Text></div>
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("chip.de First Impression: Very Good")}</Text></div>
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("GetApp: Very Good")}</Text></div>
-              <div className="awards-item"><Text color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Capterra: Very Good")}</Text></div>
+              <div className="awards-item"><img src={awardSoft}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic Rating: Very good")}</Text></div>
+              <div className="awards-item"><img src={awardChip}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("chip.de First Impression: Very Good")}</Text></div>
+              <div className="awards-item"><img src={awardGetapp}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("GetApp: Very Good")}</Text></div>
+              <div className="awards-item"><img src={awardCapterra}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Capterra: Very Good")}</Text></div>
             </div>
         </div>  
 
