@@ -217,9 +217,15 @@ const MainPageWrapper = styled.div`
   }
 
   .awards-item {
-    display: inline-block;
-    width: 200px;
+    display: inline-table;
+    width: 192px;
     height: 150px;
+    padding: 0 30px;
+  }
+
+  .awards-img {
+    height: 124px;    
+    vertical-align: middle;
   }
 
   .list-awards {
@@ -486,22 +492,22 @@ class mainPage extends React.PureComponent {
         <div className="block-awards">
             <Text className="awards-title" fontSize={28} fontWeight={600} color="#000000">{this.props.t("AVS4YOU Awards and Ratings")}</Text>
             <div className="list-awards">
-              <div className="awards-item"><img src={awardClean}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Clean Award")}</Text></div>
-              <div className="awards-item"><img src={awardPick}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Informer Rating: Excellent")}</Text></div>
-              <div className="awards-item"><img src={awardSoftonic}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic clean award")}</Text></div>
+              <div className="awards-item"><img src={awardClean}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Clean Award</Text></div>
+              <div className="awards-item"><img src={awardPick}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Rating: Excellent</Text></div>
+              <div className="awards-item"><img src={awardSoftonic}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic clean award</Text></div>
             </div>
             <div className="list-awards">
-              <div className="awards-item"><img src={awardSoft}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Softonic Rating: Very good")}</Text></div>
-              <div className="awards-item"><img src={awardChip}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("chip.de First Impression: Very Good")}</Text></div>
-              <div className="awards-item"><img src={awardGetapp}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("GetApp: Very Good")}</Text></div>
-              <div className="awards-item"><img src={awardCapterra}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>{this.props.t("Capterra: Very Good")}</Text></div>
+              <div className="awards-item"><img src={awardSoft}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic Rating: Very good</Text></div>
+              <div className="awards-item"><img src={awardChip}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>chip.de First Impression: Very Good</Text></div>
+              <div className="awards-item"><img src={awardGetapp}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>GetApp: Very Good</Text></div>
+              <div className="awards-item"><img src={awardCapterra}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Capterra: Very Good</Text></div>
             </div>
         </div>  
 
         <div className="background-color">
           <ReviewScreen t={this.props.t} revHeader={this.props.t("Our customers say")} />
           <Button className="trustButton" 
-                    href={this.props.mainHref} 
+                    href="https://www.trustpilot.com/review/www.avs4you.com"
                     color="#fff">
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>

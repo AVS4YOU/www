@@ -4,23 +4,45 @@
     position: relative;
 }
 
+.headerSpecialOffer {
+    background-image: url(../images/avs-special-offer/background-avs-special-offer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.blockButton {
+    width: 24px;
+    display: inline-block;
+  }
+
 .content-header {
     position: absolute;
     bottom: 0;
     display: flex;
     .snowflakes-header {
         height: 777px;
-        width: 959px;
+        width: 50vw;
+        background-size: contain;
         position: absolute !important;
         top: -100px;
+        background-image: url(../images/avs-special-offer/snowflakes-special-offer.png);
+        background-repeat: no-repeat;
+        z-index: 1;
     }
     .multimedia-header {
-        width: 862px;
+        width: 50vw;
         height: 710px;
+        background-size: contain;
+        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
+        z-index: 2;
+        background-repeat: no-repeat;
+        position: relative;
     }
 
 .text-header {
-    h1 {
+    position: relative;
+    margin-left: 100px;
+    .textHeader {
         background: linear-gradient(to bottom, #EA1313, #AF0B0E);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -30,25 +52,73 @@
     .text-header-avs {
         font-size: 24px;
         text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .text-grab {
+        margin-left: 100px;
+    }
+
+    .textSpecial {
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .avs-logo {
+        background-image: url(../images/avs-special-offer/logo-special-offer.png);
+        height: 135px;
+        width: 142px;
+        position: absolute;
+        top: -52px;
+        left: -155px;
+    }
+
+    .headerButton {
+        margin: 50px 0 24px 0;
+    }
+
+    .bodyGrab {
+        text-transform: uppercase;
+    }
+
+    .avs-logo {
+        background-image: url(../images/avs-special-offer/logo-special-offer.png);
+        height: 135px;
+        width: 142px;
+        position: absolute;
+        top: -52px;
+        left: -155px;
     }
 
     .bodyOff {
         position: relative;
         font-style: bolt;
+        margin-left: 50px;
+        margin-top: -30px;
+        align-items: flex-start;
         .text-off {
             font-size: 80px;
-            position: absolute;
+            line-height: 143px;
         }
         .letter-off {
             font-size: 46px;
             text-transform: uppercase;
-            position: absolute;
             top: 37px;
-            right: 123px;
+            right: 113px;
         }
     }
     }
 }
+
+.text-avs {
+    display: flex;
+    align-items: baseline;
+}
+
+.text-header-avs {
+    padding-right: 20px;
+}
+
     .bodyWrapper{
         max-width: 1120px;
         margin:auto;
@@ -117,8 +187,181 @@
     .full-pack {
         margin-bottom: 150px;
     }
+
+    .why-choose {
+        margin:auto;
+        text-align: center;
+        position: relative;
+        background-image: url(../images/avs-special-offer/line-why-choose-block.png);
+        height: 440px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+        margin-bottom: 100px;
+
+        .choose-background {
+            margin: auto;
+        }
+
+        h1 {
+            background: linear-gradient(to bottom, #EA1313, #AF0B0E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #EA1313;
+          }
+
+          .block-choose {
+            max-width: 1120px;
+            margin: auto;
+            text-align: center;
+          }
+        
+          .choose-item {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            vertical-align: top;
+            padding: 0 20px;
+          }
+        
+          .list-choose {
+            margin-bottom: 50px;
+            position: absolute;
+            top: 170px;
+          }
+        
+          .choose-text {
+            padding-top: 16px;
+          }
+        
+          .choose-title { 
+            margin-bottom: 50px;
+          }
+    }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1289px) {
+    .why-choose {
+        background-image: none !important;
+    }
+
+    .headerButton {
+        margin: 6px 0 10px 0 !important;
+    }
+
+    .textHeader {
+        margin-left: 70px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-header {
+        display: block !important;
+    }
+
+    .avs-logo {
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .full-pack {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .text-header {
+        margin-left: 0 !important;
+    }
+
+    .text-grab {
+        margin-left: 50px !important;
+    }
+    .bodyHeader {
+        font-size: 28px !important;
+    }
+
+    .headerButton {
+        display: none !important;
+    }
+    
+    .textSpecial {
+        font-size: 23px !important;
+    }
+
+    .avs-logo {
+        top: -44px !important;
+        left: 0 !important;
+    }
+
+    .textSpecial {
+        margin-left: 130px !important;
+    }
+
+    .bodyGrab {
+        font-size: 45px !important;
+    }
+
+
+    .mainBodyTitle {
+        font-size: 16px !important;
+    }
+
+    .mainBodyComment {
+        font-size: 13px !important;
+    }
+
+    .specialButton {
+        margin: 20px 0 !important;
+        display: table !important;
+    }
+
+    .special-buttons {
+        margin: auto;
+        display: table;
+    }
+
+    .blockButton {
+        display: none !important;
+    }
+
+    .ListTitle {
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .ListItem {
+        font-size: 13px !important;
+    }
+
+    .awards-text {
+        font-size: 13px !important;
+    }
+
+    .why-choose {
+        background-image: url(../images/avs-special-offer/line-mobile-special.png) !important;
+        margin-bottom: 0 !important;
+    }
+
+    .choose-item {
+        width: 112px !important;
+        padding: 0 !important;
+        height: 100px !important;
+    }
+
+    .icon-mobile {
+        height: 40px !important;
+    }
+    
+    .list-choose {
+        top: 80px !important;
+    }
+
+    .list-choose {
+        margin-bottom: 50px;
+        position: absolute;
+        top: 80px !important;
+      }
 
 }
