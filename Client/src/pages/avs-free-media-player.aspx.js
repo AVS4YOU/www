@@ -177,7 +177,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Media Player 52")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Media Player 5.3")}</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
             imageNamesPopup={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}

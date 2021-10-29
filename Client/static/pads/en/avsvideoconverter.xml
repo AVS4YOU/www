@@ -87,26 +87,26 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>85043200</File_Size_Bytes>
-      <File_Size_K>83050</File_Size_K>
-      <File_Size_MB>81.10</File_Size_MB>
+      <File_Size_Bytes>84916992</File_Size_Bytes>
+      <File_Size_K>82926</File_Size_K>
+      <File_Size_MB>80.98</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>12.1.4.672</Program_Version>
-    <Program_Release_Month>12</Program_Release_Month>
-    <Program_Release_Day>13</Program_Release_Day>
-    <Program_Release_Year>2020</Program_Release_Year>
+    <Program_Version>12.2.1.684</Program_Version>
+    <Program_Release_Month>08</Program_Release_Month>
+    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Support of MP4 dash video. 2 new video effects: Vignette and Rectangular Vignette. Some bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Support of OPUS audio in MKV, MKA, WEBM, WEBA files. New slideshow presets for MOV and MKV. New video effects - Bezier Curve, Curved Arrow. Enhanced support of AVI, MKV and WEBM files. Support of HEIF/HEIC images in disc menu. Enhanced usability and accessibility. Optimization and bug fixes.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>

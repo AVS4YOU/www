@@ -115,6 +115,7 @@
   "Text to Speech": "Преобразование текста в речь",
   "AVS Audio Converter": "AVS Audio Converter",
   "Convert all key audio formats": "Конвертируйте все ключевые аудиоформаты",
+  "AVS Free Audio Converter - Convert all key audio formats" : "Аудио-конвертер AVS Free Audio Converter – конвертируйте WAV, MP3, M4A",
   "Modify audio file information": "Изменяйте информацию об аудиофайлах",
   "Create audiobooks and ringtones": "Создавайте аудиокниги и рингтоны",
   "Export audio from video": "Экспортируйте аудио из видео",
@@ -196,11 +197,11 @@
 
   "*****************************Avs-Video-Editor********************************": "*****************************Avs-Video-Editor********************************",
   "AVS Video Editor - easy video editing software for Windows.": "AVS Video Editor – удобное ПО под Windows для видеоредактуры.",
-  "AVS Video Editor is an easy video editing program. Create, edit video, capture video/ make a video slideshow/ cut, merge, trim video files/ save to any format.": "AVS Video Editor представляет собой удобное ПО для видеоредактуры. Создавайте, редактируйте видео, захватывайте видео/создавайте слайд-шоу видео/вырезайте, объединяйте, обрезайте видеофайлы/сохраняйте их в любом формате.",
+  "AVS Video Editor is an easy video editing program Create, edit video, capture video make a video slideshow cut, merge, trim video files save to any format": "AVS Video Editor представляет собой удобное ПО для видеоредактуры. Создавайте, редактируйте видео, захватывайте видео/создавайте слайд-шоу видео/вырезайте, объединяйте, обрезайте видеофайлы/сохраняйте их в любом формате.",
   "video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow": "редактор видео, по для редактирования видео, для видеоредактуры, скачать видеоредактор, avs video editor, редактор AVS, AVS видеоредактор, видеомонтаж советы, редактор видео в Windows, приложение видеоредактор, редактировать видео, редактировать видео на iPhone, вырезать видео, скачать редактор видео, по для видеоредактирования, редактор в формате mp4, программа для создания слайд-шоу",
   "Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays": "Обрезайте, склеивайте, поворачивайте, комбинируйте видео. Более 300 инновационных эффектов, переходов, оверлеев.",
   "Work with all key formats and HD videos": "Работа со всеми ключевыми форматами и HD-видео.",
-  "Edit and save video in all popular formats MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc": "Редактируйте и сохраняйте видео во всех популярных форматах (MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, и т. д.)",
+  "Edit and save video in all popular formats MP4, DVD, AVI, MOV, VOB, WMV, MKV, FLV, WEBM, etc": "Редактируйте и сохраняйте видео во всех популярных форматах (MP4, DVD, AVI, MOV, VOB, WMV, MKV, WEBM, и т. д.)",
   "Process video in any resolution HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K": "Обрабатывайте видео в любом разрешении: HD, Full HD, 2K Quad HD, 4K Ultra HD и DCI 4K.",
   "Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc": "Открывайте, редактируйте и сохраняйте видео с помощью популярных кодеков H. 264, H. 265 (только для чтения), MPEG-4 и др.",
   "Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU": "Ускорьте редактирование HD-видео благодаря встроенной технологии кэширования видео.",
@@ -244,9 +245,9 @@
   "*****************************AVS Video Converter********************************": "*****************************AVS Video Converter********************************",
   "Convert any video with AVS Free Video Converter for Windows": "Конвертируйте любое видео с помощью AVS Free Video Converter для Windows",
   "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion": "бесплатный конвертер видео, видео в mp3, конвертер видео, видеоконвертер скачать, конвертер видео в MP4, видео конвертер AVS, avs4you, AVS, конвертер AVS, avs4u, видеоконвертер, по для конвертации видео, конвертер MP4 в mp3, конвертер MP4 в AVI, конвертер MP4 в 3gp, MP4 видеоконвертер, конвертировать DVD, конвертировать VOB в AVI, конвертировать mp4, конвертировать wmv, конвертировать mov, конвертер видеофайлов, конвертер DVD, конвертировать MP4 в DVD, avi-конвертер, конвертирование видео, конвертировать видео",
-  "Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Конвертируйте в/из видеоформатов: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD и DCI 4K и т. д. Быстро и легко!",
+  "Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Конвертируйте в/из видеоформатов: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, MKV, MTS, 2K QHD, 4K UHD и DCI 4K и т. д. Быстро и легко!",
   "Сonvert all key video formats": "Конвертируйте все ключевые видеоформаты",
-  "Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc": "Кодируйте HD-видео, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, кодек H. 264, H.265 (только для чтения) и т. д.",
+  "Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc": "Кодируйте HD-видео, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, кодек H. 264, H.265 (только для чтения) и т. д.",
   "Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc": "Конвертируйте записи HD-камер: AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS и др.",
   "Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback": "Конвертируйте видео HD, Full HD, 2K Quad HD, 4K Ultra HD и DCI 4K с использованием актуальных пресетов и наслаждайтесь просмотром высококачественного видео.",
   "Convert video easily and fast": "Конвертируйте видео легко и быстро.",
@@ -284,7 +285,8 @@
   "The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend": "Программу очень просто скачать и использовать. Любой сможет сделать это в считанные минуты. Компания всегда оказывает поддержку. Я очень рекомендую ее.",
   "Lawrence Thompson": "Лоуренс Томпсон",
   "I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional": "Я использую AVS уже несколько лет и могу с уверенностью сказать, что это очень удобная программа с хорошим набором функций.",
-  "AVS Video Converter 12": "AVS Video Converter 12",
+  "AVS Audio Converter 10" : "AVS Audio Converter 10.0 - аудио-конвертер",
+  "AVS Video Converter 12" : "AVS Video Converter 12.1 - конвертер видео",
 
 
 
@@ -300,7 +302,7 @@
   "Capture video": "Захват видео.",
   "Transfer video from camcorders and video cameras to your PC, edit files and create home video DVDs": "Переносите кадры с видеокамер на ПК, редактируйте файлы и создавайте ваши DVD-диски.",
   "Capture video from Web cameras and DV cameras": "Захват видео с веб-камер и DV-камер.",
-  "Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects": "Выберите нужный формат для захвата видео на выходе (FLV, WMV, AVI), источник звука, эффекты для курсора мыши.",
+  "Choose the desired format of captured file (FLV, WMV, AVI), Sound source, Mouse cursor effects": "Выберите нужный формат для захвата видео на выходе (WMV, AVI), источник звука, эффекты для курсора мыши.",
   "Use Screen Capture function to create How-to videos or tutorials": "Используйте функцию Захвата экрана для создания обучающих видеороликов или пошаговых видео инструкций.",
   "Create DVD and Blu-ray Menus": "Создавайте меню для DVD и Blu-ray.",
   "Split video into chapters, select between a number of menu templates": "Поделите видео на главы, выберите один из нескольких шаблонов меню.",
@@ -319,8 +321,8 @@
 
 
   "*****************************AVS Audio Editor********************************": "*****************************AVS Audio Editor********************************",
-  "AVS Audio Editor – record audio, cut, mix audio files, delete audio parts, edit mp3": "AVS Audio Editor –записывайте и обрезайте аудио, микшируйте аудифайлы, вырезайте фрагменты, редактируйте mp3",
-  "Record audio/ cut, split, mix audio tracks, delete audio parts/ apply audio effects and filters/ save audio to MP3 WAV WMA M4A FLAC.": "Записывайте/ обрезайте аудио, микшируйте аудифайлы, вырезайте фрагменты/добавляйте эффекты и фильтры, сохраняйте аудио в MP3 WAV WMA M4A FLAC.",
+  "AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3": "AVS Audio Editor - аудиоредактор для Windows",
+  "Record audio cut, split, mix audio tracks, delete audio parts apply audio effects and filters save audio to MP3 WAV WMA M4A FLAC": "Записывайте идеальные аудио дорожки с помощью простой программы для редактирования аудио. Применяйте звуковые эффекты, сохраняйте в MP3, WAV, WMA, M4A, FLAC, OGG.",
   "avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs": "аудиоредактор AVS, музыкальный редактор AVS, AVS, создание аудио, аудиоредактор, редактор аудио, редактор MP3, редактор музыки, скачать музыкальный редактор, скачать аудиоредактор, по для редактирования аудио, редактировать MP3, редактирование аудио, редактирование аудиоклипов, редактура аудио под Windows 7, крутой редактор аудио, запись аудио, запись голоса, микширование звука, по для микширования, микшировать музыку, записать музыкальный компакт-диск, обрезать аудиоклип, вырезать аудио из видео, создание аудиокниг, создание аудио, создание аудиофайлов, создание аудио из видео, редактирование музыки, редактирование аудио, редактирование композиций, редактирование песни MP3",
   "Create outstanding tracks for any purpose with our easy audio editing app for Windows": "Создавайте потрясающие треки для любых целей с помощью нашего простого приложения для редактирования аудио на Windows.",
   "Edit all key audio formats": "Редактируйте все ключевые аудиоформаты",
@@ -357,12 +359,13 @@
   "Convert audio between popular formats Apply effects, customize output parameters, use batch mode": "Конвертируйте аудио в популярные форматы. Применяйте эффекты, настраивайте выходные параметры, используйте преимущества пакетного режима.",
   "Convert and edit all key audio formats": "Конвертируйте и редактируйте все ключевые аудиоформаты",
   "Convert MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2, etc": "Конвертируйте MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2 и т. д.",
+  "Free Audio Converter - Convert MP3, WAV, WMA, M4A, OGG, FLAC, AMR, AAC for free and losslessly Download AVS Free Audio Converter" : "Конвертируйте MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2 и т. д. Обрезайте, удаляйте ненужные фрагменты, склеивайте файлы, применяйте эффекты.",
   "Trim, delete unnecessary parts, merge files, apply effects (Fade in, Fade out, Normalize)": "Обрезайте, удаляйте ненужные фрагменты, склеивайте файлы, применяйте эффекты (усиление, затухание, нормализация).",
   "Modify audio file information Title, Author, Artist and Album cover": "Изменяйте информацию об аудиофайле: название, автора, исполнителя и обложку альбома.",
   "Create audio files for any purpose": "Создавайте аудиофайлы для любых целей.",
   "Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks": "Создавайте аудиокниги. Конвертируйте аудиодорожки в формат M4B, разделяйте их на главы и добавляйте закладки.",
   "Create ringtones Edit an audio file and save it to M4R format for iPhone": "Создавайте рингтоны: отредактируйте аудиофайл и сохраните его в формате M4R для iPhone.",
-  "Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc": "Экспортируйте аудио из видеофайлов DVD, MPEG, MP4, AVI, MOV, WMV, FLV и т. д.",
+  "Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc": "Экспортируйте аудио из видеофайлов DVD, MPEG, MP4, AVI, MOV, WMV и т. д.",
   "Convert audio files in bulk": "Массово конвертируйте аудиофайлы.",
   "Use a batch mode to convert or compress a large number of audio files at once": "Используйте пакетный режим для преобразования или сжатия большого количества аудиофайлов одновременно.",
   "Create your own conversion patterns, set favorite presets and schedule an automatic conversion process using a command-line mode": "Создавайте свои собственные шаблоны преобразования, используйте любимые пресеты и планируйте автоматический процесс преобразования с помощью режима командной строки.",
@@ -371,7 +374,9 @@
   "Jacky Lui": "Джеки Луи",
   "The software AVS Audio Converter is a very great and very pleasant to work with The software is a must and that for a very attractive price I am very happy with the AVS Audio Converter software": "Конвертер аудио AVS – очень крупный инструмент, которым приятно пользоваться. Это просто must-have, причем за довольно привлекательную цену. Я очень доволен AVS Audio Converter.",
   "AVS Audio Converter 9.1": "AVS Audio Converter 9.1",
-
+  "AVS Free Audio Converter - Convert all key audio formats" : "Аудио-конвертер AVS Free Audio Converter – конвертируйте WAV, MP3, M4A",
+  "Free Audio Converter - Convert MP3, WAV, WMA, M4A, OGG, FLAC, AMR, AAC for free and losslessly Download AVS Free Audio Converter" : "Конвертируйте MP3, WMA, WAV, M4A, AMR, OGG, ALAC, FLAC, AC3, MP2 и т. д. Обрезайте, удаляйте ненужные фрагменты, склеивайте файлы, применяйте эффекты.",
+	"Use AVS Audio Converter for popular WAV, MP3 and M4A conversion destinations WAV to MP3, M4A to MP3, M4A to WAV, etc" : "Use AVS Audio Converter for popular WAV, MP3 and M4A conversion destinations: WAV to MP3, M4A to MP3, M4A to WAV, etc.",
 
 
 
@@ -382,7 +387,7 @@
   "Free media player, avs4you video player,Video player software, media player, audio player, video player": "Бесплатный медиаплеер, видеоплеер avs4you, по видеоплеер, медиаплеер, аудиоплеер, видеоплеер",
   "Watch video, play audio and view your pictures with Free AVS Media Player": "Смотрите видео, слушайте аудио и просматривайте фотографии благодаря бесплатному AVS Media Player.",
   "Watch video": "Просмотр видео.",
-  "Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc": "Воспроизводите видеофайлы практически с любым расширением - AVI, MPEG, WMV, MP4, MKV, FLV, OGG и т. д.",
+  "Play videos with almost any file extension such as AVI, MPEG, WMV, MP4, MKV, FLV, OGG, etc": "Воспроизводите видеофайлы практически с любым расширением - AVI, MPEG, WMV, MP4, MKV, OGG и т. д.",
   "Watch videos with subtitles": "Смотрите видео с субтитрами.",
   "Take snapshots if necessary": "При необходимости делайте скриншоты.",
   "Play audio": "Воспроизведение аудио.",
@@ -557,16 +562,16 @@
   "Impact Radius": "Impact Radius",
   "Impact Radius Affiliate Program": "Партнерская программа Impact Radius",
   "Register as an affiliate in your preferred affiliate program All new affiliates are automatically approved, so you can start making money right away instead of wasting time on asking for permission to sell products": "Зарегистрируйтесь в качестве партнера в партнерской программе по вашему выбору. Заявки всех новых партнеров подтверждаются автоматически, так что вы можете начать зарабатывать деньги прямо сейчас, и не тратить время на ожидание разрешения!",
-  "Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems": "Нажмите сюда, чтобы получить пошаговую информацию о том, как найти AVS4YOU в Avangate и MyCommerce, если у вас уже есть учетная запись в одной из этих систем.",
+  "Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems": "Нажмите сюда, чтобы получить пошаговую информацию о том, как найти AVS4YOU в Avangate, если у вас уже есть учетная запись в одной из этих систем.",
   "Avangate Affiliate Program": "Партнерская программа Avangate ",
-  
+  "Join Avangate Affiliate Network" : "Присоединяйтесь к партнерской сети Avangate",
 
   "Place links to your website": "Размещайте ссылки на свой сайт",
   "Please use our": "Пожалуйста, используйте наш",
   "link generator": "генератор ссылок",
   "to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link": "для создания ссылок, которые можно размещать на сайте, блоге или в каналах. Вы можете создать прямую ссылку для загрузки или ссылку на собственный лендинг.",
   "Control your sales": "Контроль продаж",
-  "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Наша система отслеживания файлов cookie перенаправляет клиентов на страницу оформления заказа внутри вашей партнерской системы с указанием вашего партнерского ID. Таким образом, вы можете легко контролировать свои продажи в Панели управления Avangate, MyCommerce.",
+  "Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel": "Наша система отслеживания файлов cookie перенаправляет клиентов на страницу оформления заказа внутри вашей партнерской системы с указанием вашего партнерского ID. Таким образом, вы можете легко контролировать свои продажи в Панели управления Avangate.",
   
 
    "Is it free to participate in your affiliate program?" : "Бесплатное ли участие в вашей партнерской программе?",
@@ -583,7 +588,7 @@
     "here" : "здесь",
     "It will automatically make correct links" : "Он автоматически создаст правильные ссылки.",
     "How do I get money?" : "Как мне получить вознаграждение?",
-    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Вы контролируете продажи и получаете деньги через существующую панель аффилиатской сети. Это либо Avangate, либо MyCommerce.",
+    "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "Вы контролируете продажи и получаете деньги через существующую панель аффилиатской сети. Это либо Avangate.",
     "How can I make sure your system really works and where can I get statistics for clicks to you from my links?" : "Как я могу убедиться, что ваша система действительно работает, и где я могу получить статистику переходов на ваш сайт по моим ссылкам?",
     "Once you're registered with us, you get login and password to access our" : "Как только вы зарегистрируетесь у нас, вы получите логин и пароль для доступа к нашей ",
     "control panel" : "панели управления",
@@ -594,7 +599,7 @@
     "Can I use your graphics/text in my custom builds/websites?" : "Могу ли я использовать вашу графику / текст в моих кастомизированных инсталляционных файлах / веб-сайтах?",
     "Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line" : "Да, вы можете использовать нашу графику / описание продукта полностью или частично по своему усмотрению. По запросу мы создадим для вас индивидуальные баннеры. Напишите нам на",
     "How long do you allow cookies to be stored on a customer's PC?" : "Как долго вы разрешаете хранить файлы cookie на компьютере клиента?",
-    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Файлы cookie устанавливаются на компьютер клиента автоматически после того, как он перешел по ссылке или баннеру с вашего веб-сайта. Файлы cookie действительны в течение 30 дней в партнерской сети Avangate и 45 дней в MyCommerce. Это означает, что вы получаете гарантированную комиссию, если тот же клиент покупает наше программное обеспечение в течение этого периода.",
+    "Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period" : " Файлы cookie устанавливаются на компьютер клиента автоматически после того, как он перешел по ссылке или баннеру с вашего веб-сайта. Файлы cookie действительны в течение 30 дней в партнерской сети Avangate. Это означает, что вы получаете гарантированную комиссию, если тот же клиент покупает наше программное обеспечение в течение этого периода.",
 
 
   "*****************************Free AVS Disc Creator********************************": "*****************************Free AVS Disc Creator********************************",
@@ -926,6 +931,7 @@
   "You can contact Data Protection Officer by emailing": "Вы можете связаться с сотрудником, ответственным за защиту данных, по электронной почте",
   "There is no need to place links on the website Request a quote whenever your customer needs AVS4YOU multimedia suite": "Нет необходимости размещать ссылки на сайте. Вы можете запрашивать коммерческое предложение всякий раз, когда ваш клиент заинтересован в пакете мультимедийного ПО AVS4YOU.",
   "or" : "или",
+  "h22" : "h5",
   "We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them" : "Мы используем Яндекс.Метрику с целью повышения удобства использования сайта. Данный инструмент собирает стандартные данные из интернет-журнала и детали навигации по сайту в анонимной форме. Эта информация позволяет нам лучше понять, как пользователи взаимодействуют с нашим веб-сайтом, и какие действия они выполняют, тем самым помогая нам выявлять недостатки дизайна и исправлять их.",
 	"YandexMetrica" : "Яндекс.Метрика",
 
@@ -1158,7 +1164,7 @@
   "Create professional-looking movies easily": "С легкостью создавайте видеоролики в профессиональном стиле.",
   "Creative video making": "Создание творческих видео",
   "Multiformat video creator": "Многоформатный конструктор видео",
-  "Edit & save video files in  MP4 MPEG DVD AVI VOB WMV 3GP MOV MKV FLV WEBM using popular codecs H264 MPEG4 etc": "Редактируйте и сохраняйте видеофайлы в формате MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, FLV, WEBM, используя популярные кодеки H.264, MPEG-4 и т. д.",
+  "Edit & save video files in  MP4 MPEG DVD AVI VOB WMV 3GP MOV MKV FLV WEBM using popular codecs H264 MPEG4 etc": "Редактируйте и сохраняйте видеофайлы в формате MP4, MPEG, DVD, AVI, VOB, WMV, 3GP, MOV, MKV, WEBM, используя популярные кодеки H.264, MPEG-4 и т. д.",
   "Accelerated HD-video editing": "Ускоренное редактирование HD-видео",
   "Innovative movie editing tools": "Инновационные инструменты редактирования фильмов",
   "End User License Agreement": "Пользовательское соглашение",
@@ -1177,7 +1183,7 @@
   "5 professional cinematic tools": "5 профессиональных инструментов кинематографа",
 
   "*****************************MOV-VIDEO-EDITOR********************************": "*****************************MOV-VIDEO-EDITOR********************************",
-  "Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc": "Создавайте профессиональные фильмы быстро и эффективно, а также сохраняйте их во всех популярных форматах: DVD, MPEG, MP4, AVI, MOV, WMV, FLV и т. д.",
+  "Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc": "Создавайте профессиональные фильмы быстро и эффективно, а также сохраняйте их во всех популярных форматах: DVD, MPEG, MP4, AVI, MOV, WMV, и т. д.",
   "Free support and updates": "Бесплатная поддержка и обновления",
   "30-day Money-back guarantee": "30-дневная гарантия возврата денег",
   "User-friendly Interface": "Удобный интерфейс",
@@ -1188,7 +1194,7 @@
   "An array of creative features": "Множество возможностей для творчества",
   "2k and 4k video editing": "Редактура видео 2k и 4k",
   "Editing of 2k and 4k video has become easier as never before due to  integrated video cache technology Achieve amazing results editing high resolution video files": "Редактировать видео в 2k и 4k стало проще, как никогда, благодаря интегрированной технологии кэширования видео. Получите потрясающий результат в редактуре видеофайлов в высоком разрешении.",
-  "Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor Import and save your video in all key formats such as MP4 MPEG DVD AVI MOV FLV MTS WebM etc": "Благодаря встроенному в AVS Video Editor видеоконвертеру вы можете работать с любым видеоформатом. Импортируйте и сохраняйте видео во всех ключевых форматах, таких как MP4, MPEG, DVD, AVI, MOV, FLV, MTS, WebM и т. д.",
+  "Thanks to the inbuilt video converter you can work with any video format in AVS Video Editor Import and save your video in all key formats such as MP4 MPEG DVD AVI MOV FLV MTS WebM etc": "Благодаря встроенному в AVS Video Editor видеоконвертеру вы можете работать с любым видеоформатом. Импортируйте и сохраняйте видео во всех ключевых форматах, таких как MP4, MPEG, DVD, AVI, MOV, MTS, WebM и т. д.",
   "Multiformat movie editor": "Многоформатный редактор видео",
   "4 reasons to choose AVS Video Editor": "4 причины, почему люди выбирают AVS Video Editor",
 
@@ -1289,7 +1295,7 @@
   "Index": "Индекс",
   "Name": "Название",
   "PAD File": "PAD-файл",
-  "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Конвертируйте в/из видеоформатов: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD и DCI 4K и т. д. Быстро и легко!",
+  "Convert to from video formats MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily": "Конвертируйте в/из видеоформатов: MP4, DVD, AVI, WMV, MOV, MPEG4, VOB, MKV, MTS, 2K QHD, 4K UHD и DCI 4K и т. д. Быстро и легко!",
   "Convert documents between DOCX, PDF, RTF, TXT, HTML, etc Work with text files and images without additional editing software": "Конвертируйте документы между форматами DOCX, PDF, RTF, TXT, HTML и т. д. Работайте с текстовыми файлами и изображениями без дополнительного ПО для редактирования.",
 
   "*****************************INSTALLED********************************": "*****************************INSTALLED********************************",

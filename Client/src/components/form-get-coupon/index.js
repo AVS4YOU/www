@@ -7,7 +7,7 @@ import InputCheckbox from '../input-checkbox';
 import InfoPopup from '../info-popup';
 import ReCAPTCHA from "react-google-recaptcha";
 
-import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
+import { RecaptchaKeys, AjaxUrls } from '../../../static/static-data';
 
 const StyledForm = styled.div`
 
@@ -155,8 +155,8 @@ class FormGetCoupon extends React.Component {
         this.updateCheckboxClassName(checkBoxStatus === ErrorStatus.NoError ? "" : "error");
 
         let formValid = emailStatus === ErrorStatus.NoError &&
-        checkBoxStatus === ErrorStatus.NoError &&
-        this.state.recaptchaValue.length > 0;
+            checkBoxStatus === ErrorStatus.NoError &&
+            this.state.recaptchaValue.length > 0;
 
         return formValid;
     }

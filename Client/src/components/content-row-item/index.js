@@ -359,7 +359,7 @@ const TextContent = (props, touchDevice) =>
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
-                <Text className="HeaderListItem" as="h3" color="#000000" fontSize={28}>
+                <Text className="HeaderListItem" as={props.asType} color="#000000" fontSize={28}>
                     {props.headerText} 
                     {props.free && <Text as="span" className="flagBackground">{t("Free")}</Text>}
                 </Text>
@@ -439,6 +439,7 @@ ContentRowItem.propTypes = {
 
 ContentRowItem.defaultProps = {
     free: false,
+    asType: "h3",
     imgLeft: false
 };
 
