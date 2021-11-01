@@ -11,7 +11,6 @@ import Button from '../components/button';
 
 import ContentRowItem from '../components/content-row-item';
 
-import chooseBack from '../images/avs-special-offer/line-why-choose-block.png'
 import secureIcon from '../images/avs-special-offer/secure-icon.png'
 import supportIcon from '../images/avs-special-offer/support-icon.png'
 import customersIcon from '../images/avs-special-offer/customers-icon.png'
@@ -51,9 +50,10 @@ render(){
 
 <div className="headerSpecialOffer">
       <div className="content-header">
+      <div className="line-mobile"></div>
       <div className="img-header">
-          <div className="snowflakes-header" imageName="snowflakes-special-offer.png"></div>
-          <div className="multimedia-header" imageName="multimedia-special-offer.png"></div>
+      <div className="snowflakes-header" imageName="snowflakes-special-offer.png"></div>
+      <div className="multimedia-header" imageName="multimedia-special-offer.png"></div>
       </div>
       <div className="text-header">
       <div className="avs-logo"></div>
@@ -88,6 +88,7 @@ render(){
                     {this.props.t("buy now")}
             </RedButton>
             <Text fontSize={16} fontWeight={400} color="#fff" className="mainBodyComment">The offer is valid till December 26, 2021</Text>
+            <div className="multimedia-header-mobile"></div>
       </div>
     </div>
   </div>

@@ -41,7 +41,7 @@
 
 .text-header {
     position: relative;
-    margin-left: 100px;
+    margin-left: 50px;
     .textHeader {
         background: linear-gradient(to bottom, #EA1313, #AF0B0E);
         -webkit-background-clip: text;
@@ -56,7 +56,7 @@
     }
 
     .text-grab {
-        margin-left: 100px;
+        margin-left: 70px;
     }
 
     .textSpecial {
@@ -254,6 +254,12 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .ListTitle {
+        font-size: 16px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .content-header {
         display: block !important;
@@ -267,9 +273,32 @@
     .full-pack {
         margin-bottom: 0 !important;
     }
+
+    .textHeader {
+        margin-left: 0 !important;
+    }
 }
 
 @media (max-width: 500px) {
+
+    .content-header {
+        position: relative !important;
+    }
+
+    .line-mobile {
+        background-image: url(../images/avs-special-offer/mobile-header.png);
+        height: 332px;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position-x: 50%;
+        background-size: contain;
+        top: 10px;
+    }
+
+    .multimedia-header {
+        display: none;
+    }
 
     .text-header {
         margin-left: 0 !important;
@@ -277,6 +306,7 @@
 
     .text-grab {
         margin-left: 50px !important;
+        margin-top: 40px;
     }
     .bodyHeader {
         font-size: 28px !important;
@@ -285,10 +315,6 @@
     .headerButton {
         display: none !important;
     }
-    
-    .textSpecial {
-        font-size: 23px !important;
-    }
 
     .avs-logo {
         top: -44px !important;
@@ -296,7 +322,10 @@
     }
 
     .textSpecial {
-        margin-left: 130px !important;
+        margin-left: 125px !important;
+        margin-bottom: 0 !important;
+        font-size: 23px !important;
+        padding-top: 43px;
     }
 
     .bodyGrab {
@@ -340,7 +369,6 @@
     }
 
     .why-choose {
-        background-image: url(../images/avs-special-offer/line-mobile-special.png) !important;
         margin-bottom: 0 !important;
     }
 
@@ -362,6 +390,27 @@
         margin-bottom: 50px;
         position: absolute;
         top: 80px !important;
-      }
+    }
 
+    .headerSpecialOffer {
+        height: 818px !important; 
+    }
+
+    .multimedia-header-mobile {
+        height: 100vh;
+        background-size: contain;
+        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 2;
+    }
+
+    .avs-logo {
+        top: 0px !important;
+    }
+
+    .snowflakes-header {
+        top: 451px !important;
+        width: 100vw !important;
+    }
 }
