@@ -49,8 +49,8 @@ render(){
       >
 
 <div className="headerSpecialOffer">
+    <div className="line-mobile"></div>
       <div className="content-header">
-      <div className="line-mobile"></div>
       <div className="img-header">
       <div className="snowflakes-header" imageName="snowflakes-special-offer.png"></div>
       <div className="multimedia-header" imageName="multimedia-special-offer.png"></div>
@@ -68,26 +68,23 @@ render(){
               </SaleWrapper>
             </SaleWrapper> 
             <div className="text-avs">
-              <Text fontSize={24} fontWeight={700} color="#fff" className="text-header-avs">on </Text>
+              <Text fontSize={24} fontWeight={700} color="#fff" className="text-header-avs">on</Text>
               <Text fontSize={46} fontWeight={700} className="textHeader">AVS4YOU</Text>
             </div>
-            <Text fontSize={46} fontWeight={700} color="#fff" className="mainBodyTitle">Multimedia Suite</Text>
+            <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader">Multimedia Suite</Text>
             <Button className="headerButton" 
-                    href={this.props.mainHref} 
-                    color="#fff" 
                     secondaryText={this.props.secondaryText && this.props.secondaryText} 
                     textTransform="uppercase">
-                    {this.props.t("download now")}
+                    <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
             </Button>
             <div className="blockButton"></div>
             <RedButton className="headerButton" 
-                    href={this.props.mainHref} 
-                    color="#fff" 
                     secondaryText={this.props.secondaryText && this.props.secondaryText} 
                     textTransform="uppercase">
-                    {this.props.t("buy now")}
+                    <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
             </RedButton>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainBodyComment">The offer is valid till December 26, 2021</Text>
+
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 26, 2021</Text>
             <div className="multimedia-header-mobile"></div>
       </div>
     </div>
@@ -99,19 +96,15 @@ render(){
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
               <Button className="specialButton" 
-                      href={this.props.mainHref} 
-                      color="#fff" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      {this.props.t("download now")}
+                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="specialButton" 
-                      href={this.props.mainHref} 
-                      color="#fff" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      {this.props.t("buy now")}
+                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
             <ImageGQL className="full-pack" imageName="full-pack-special-offer.png"/>
@@ -141,28 +134,28 @@ render(){
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                           scrollTo="headerCoupon"    
                       >
-                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>All-in-one video converter with basic editing features.</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert and compress all key video formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Use ready conversion presets for modern gadgets</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut, trim, merge video files together</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Export audio from video in MP3/WAV</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Adjust aspect ratio, apply effects</Text>
+                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Professional level audio editing and recording software.</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Record audio from microphone, Line In, Vinyl records</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create an amazing audio mix</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Improve your sound quality</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Remove noise, apply 20+ special effects and filters</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Multitrack audio editing</Text>
                       </ContentRowItem>
 
                       <ContentRowItem 
                           disableBG={true}
                           imgLeft={true}
                           imageName={"video-converter-special-offer.png"}
-                          headerText={this.props.t("AVS Audio Converter")}
+                          headerText={this.props.t("AVS Video Converter")}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           scrollTo="headerCoupon"    
                       >
-                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Professional level audio editing and recording software.</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc.</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Grab audio from CD disks to store soundtracks on your pc</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Edit audio tags to update metadata and enable tracks grouping</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create your own audiobooks</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make customized ringtones for iPhone</Text>
+                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>All-in-one video converter with basic editing features.</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert and compress all key video formats</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Use ready conversion presets for modern gadgets</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut, trim, merge video files together</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Export audio from video in MP3/WAV</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Adjust aspect ratio, apply effects</Text>
                       </ContentRowItem>
 
                       <ContentRowItem 
@@ -174,10 +167,11 @@ render(){
                           scrollTo="headerCoupon"   
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Feature-rich audio conversion program for Windows.</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut and delete unnecessary parts</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Change scene sequence in all popular video formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Transfer video from camcorders and video cameras to hard drive</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create home video DVD or Blu-ray discs</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc.</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Grab audio from CD disks to store soundtracks on your pc</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Edit audio tags to update metadata and enable tracks grouping</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create your own audiobooks</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make customized ringtones for iPhone</Text>
                       </ContentRowItem>
                   </PageContentWrapper>
 
