@@ -52,8 +52,8 @@ render(){
     <div className="line-mobile"></div>
       <div className="content-header">
       <div className="img-header">
-      <div className="snowflakes-header" imageName="snowflakes-special-offer.png"></div>
-      <div className="multimedia-header" imageName="multimedia-special-offer.png"></div>
+      <div className="snowflakes-header"></div>
+      <div className="multimedia-header"></div>
       </div>
       <div className="text-header">
       <div className="avs-logo"></div>
@@ -107,7 +107,7 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
-            <ImageGQL className="full-pack" imageName="full-pack-special-offer.png"/>
+            <ImageGQL className="full-pack" imageName="pack-special-offer.png"/>
           </div>
           <PageContentWrapper>
                       <ContentRowItem 
