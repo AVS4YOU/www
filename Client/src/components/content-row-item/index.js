@@ -382,6 +382,7 @@ const TextContent = (props, touchDevice) =>
                     :
                         <div className="buttonsWrapper">
                             {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
+                            {props.translateButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.translateButtonLink}>Download now</Button>}
                             {props.smallButtonLink && <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
                         </div>  
                 }
@@ -434,6 +435,7 @@ ContentRowItem.propTypes = {
     headerText: PropTypes.string,
     free: PropTypes.bool,
     blueButtonLink: PropTypes.string,
+    translateButtonLink: PropTypes.string,
     smallButtonLink: PropTypes.string
 };
 

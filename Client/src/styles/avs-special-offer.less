@@ -5,10 +5,20 @@
 }
 
 .headerSpecialOffer {
-    background-image: url(../images/avs-special-offer/background-avs-special-offer.png);
+    background: radial-gradient(72.85% 59.35% at 0% 46.77%, #4E6368 0%, #0A0F11 98.22%);
     background-repeat: no-repeat;
     width: 100%;
 }
+
+.line-mobile {
+    background-image: url(../images/avs-special-offer/background-line.png);
+    height: 745px;
+    width: 1300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
 
 .blockButton {
     width: 24px;
@@ -28,20 +38,23 @@
         background-image: url(../images/avs-special-offer/snowflakes-special-offer.png);
         background-repeat: no-repeat;
         z-index: 1;
+        background-position-y: 50%;
     }
     .multimedia-header {
         width: 50vw;
-        height: 710px;
+        height: 700px;
         background-size: contain;
-        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
+        background-image: url(../images/avs-special-offer/box-special-offer.png);
         z-index: 2;
         background-repeat: no-repeat;
         position: relative;
+        background-position-y: 50%;
     }
 
 .text-header {
     position: relative;
     margin-left: 50px;
+    padding: 0 40px 0 0;
     .textHeader {
         background: linear-gradient(to bottom, #EA1313, #AF0B0E);
         -webkit-background-clip: text;
@@ -79,15 +92,6 @@
 
     .bodyGrab {
         text-transform: uppercase;
-    }
-
-    .avs-logo {
-        background-image: url(../images/avs-special-offer/logo-special-offer.png);
-        height: 135px;
-        width: 142px;
-        position: absolute;
-        top: -52px;
-        left: -155px;
     }
 
     .bodyOff {
@@ -180,6 +184,15 @@
         margin: 54px 0;
     }
 
+    .style-button {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .mainHeaderComment {
+        text-transform: none !important;
+    }
+
     .buttonsWrapper {
         padding-top: 44px !important;
     }
@@ -248,34 +261,104 @@
     .headerButton {
         margin: 6px 0 10px 0 !important;
     }
-
-    .textHeader {
-        margin-left: 70px !important;
-    }
 }
 
 @media (max-width: 1024px) {
+
+    .headerSpecialOffer {
+        height: 700px !important;
+    }
+
     .ListTitle {
         font-size: 16px !important;
     }
-}
 
-@media (max-width: 768px) {
-    .content-header {
-        display: block !important;
+    .snowflakes-header {
+        background-image: url(../images/avs-special-offer/snowflakes-tablet-special-offer.png) !important;
+        top: 100px !important;
+        right: 100px !important;
+        background-size: auto !important;
+        width: 100% !important;
+        height: 581px !important;
     }
 
+    .multimedia-header {
+        background-image: url(../images/avs-special-offer/box-tablet-special-offer.png) !important;
+        margin-top: -53px;
+    }
+
+    .content-header {
+        position: relative !important;
+        padding-top: 30px;
+    }
+
+    .textHeader {
+        margin-left: 0 !important;
+    }
+
+    .text-header {
+        margin-left: 0 !important;
+        max-width: 500px;
+    }
+
+    .line-mobile {
+        background-image: url(../images/avs-special-offer/line-tablet-offer.png) !important;
+        height: 700px !important;
+        width: 700px !important;
+        right: 30px;
+        top: 35px;
+      }
+
     .avs-logo {
-        background-size: 80%;
+        background-size: 108px;
         background-repeat: no-repeat;
+        top: 6px !important;
+        left: -74px !important;
+    }
+
+    .precent-off {
+        margin-bottom: -20px !important;
+    }
+
+    .textSpecial {
+        font-size: 26px !important;
+        margin: 45px 0px 20px 44px !important;
+    }
+
+    .bodyGrab {
+        font-size: 50px !important;
     }
 
     .full-pack {
         margin-bottom: 0 !important;
     }
 
-    .textHeader {
+    .mainHeaderComment {
+        font-size: 10px !important;
+        padding: 10px 0;
+    }
+
+    .textMultiHeader {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .headerSpecialOffer {
+        background: radial-gradient(117.07% 95.37% at 0% 46.77%, #4E6368 0%, #0A0F11 98.22%) !important;
+    }
+
+    .text-header {
+        padding: 0 !important;
+    }
+
+    .text-grab {
         margin-left: 0 !important;
+    }
+
+    .multimedia-header {
+        margin-top: 0 !important;
     }
 }
 
@@ -286,22 +369,20 @@
     }
 
     .line-mobile {
-        background-image: url(../images/avs-special-offer/mobile-header.png);
-        height: 332px;
-        width: 100%;
+        background-image: url(../images/avs-special-offer/mobile-header.png) !important;
+        height: 332px !important;
+        width: 100% !important;
         background-repeat: no-repeat;
         position: absolute;
         background-position-x: 50%;
-        background-size: contain;
-        top: 10px;
-    }
-
-    .multimedia-header {
-        display: none;
+        top: 25px !important;
+        right: 0 !important;
+        background-size: 90% !important;
     }
 
     .text-header {
         margin-left: 0 !important;
+        padding: 0 !important;
     }
 
     .text-grab {
@@ -317,21 +398,44 @@
     }
 
     .avs-logo {
-        top: -44px !important;
         left: 0 !important;
+        top: 3px !important;
+    }
+
+    .text-off {
+        font-size: 40px !important;
+    }
+
+    .letter-off {
+        font-size: 23px !important;
+    }
+
+    .text-header-avs {
+        font-size: 18px !important;
+    }
+
+    .textMultiHeader {
+        font-size: 28px !important;      
+    }
+
+    .textHeader {
+        font-size: 28px !important;
+    }
+
+    .text-header-avs {
+        padding-right: 10px !important;
     }
 
     .textSpecial {
-        margin-left: 125px !important;
+        margin-left: 119px !important;
         margin-bottom: 0 !important;
         font-size: 23px !important;
-        padding-top: 43px;
+        margin-top: 41px !important;
     }
 
     .bodyGrab {
         font-size: 45px !important;
     }
-
 
     .mainBodyTitle {
         font-size: 16px !important;
@@ -393,24 +497,56 @@
     }
 
     .headerSpecialOffer {
-        height: 818px !important; 
+        height: 772px !important; 
     }
 
-    .multimedia-header-mobile {
-        height: 100vh;
-        background-size: contain;
-        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
-        background-repeat: no-repeat;
-        position: relative;
-        z-index: 2;
+    .multimedia-header {
+        height: 391px !important;
+        background-image: url(../images/avs-special-offer/box-mobile-special-offer.png) !important;
+        position: absolute !important;
+        z-index: 2 !important;
+        top: 400px !important;
+        right: 0px !important;
+        width: 367px !important;
+    }
+
+    .precent-off {
+        font-size: 90px !important;
+        margin-top: 28px !important;
+    }
+
+    .bodyOff {
+        margin-top: -52px !important;
+        margin-left: 80px !important;
+    }
+
+    .snowflakes-header {
+        background-image: url(../images/avs-special-offer/snowflakes-mobile-special-offer.png) !important;
+        height: 399px !important;
+        right: -55px !important;
+        width: 483px !important;
+        top: 375px !important;
+    }
+
+    .mainHeaderComment {
+        font-size: 10px !important;
+        text-transform: none !important;
+        padding: 15px 0 !important;
     }
 
     .avs-logo {
         top: 0px !important;
     }
+}
+
+@media (max-width: 350px) {
+    .multimedia-header {
+        background-size: 80% !important;
+        background-position-x: 75% !important;
+    }
 
     .snowflakes-header {
-        top: 451px !important;
-        width: 100vw !important;
+        background-size: 90% !important;
+        right: -110px !important;
     }
 }
