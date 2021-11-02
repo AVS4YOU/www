@@ -233,7 +233,7 @@ const MainPageWrapper = styled.div`
   }
 
   .awards-text {
-    padding-top: 16px;
+    padding: 16px 0;
   }
 
   .awards-title { 

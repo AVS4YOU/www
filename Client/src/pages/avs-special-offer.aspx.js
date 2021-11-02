@@ -52,8 +52,8 @@ render(){
     <div className="line-mobile"></div>
       <div className="content-header">
       <div className="img-header">
-      <div className="snowflakes-header" imageName="snowflakes-special-offer.png"></div>
-      <div className="multimedia-header" imageName="multimedia-special-offer.png"></div>
+      <div className="snowflakes-header"></div>
+      <div className="multimedia-header"></div>
       </div>
       <div className="text-header">
       <div className="avs-logo"></div>
@@ -73,7 +73,7 @@ render(){
             </div>
             <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader">Multimedia Suite</Text>
             <div className="button-block">
-              <Button className="headerButton" 
+              <Button className="headerButton button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
@@ -95,7 +95,7 @@ render(){
             <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$59</span>  <span className="text-line-through">$199</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
-              <Button className="specialButton" 
+              <Button className="specialButton button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
@@ -116,7 +116,6 @@ render(){
                           imageName={"video-editor-special-offer.png"}
                           headerText={this.props.t("AVS Video Editor")}
                           translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                          scrollTo="headerCoupon"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Powerful video editing program for Windows with basic and pro editing tools.</Text>
                           <Text  className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make stunning videos with music and effects</Text>
@@ -131,8 +130,7 @@ render(){
                           imgLeft={false}
                           imageName={"audio-editor-special-offer.png"}
                           headerText={this.props.t("AVS Audio Editor")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                          scrollTo="headerCoupon"    
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"   
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Professional level audio editing and recording software.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Record audio from microphone, Line In, Vinyl records</Text>
@@ -147,8 +145,7 @@ render(){
                           imgLeft={true}
                           imageName={"video-converter-special-offer.png"}
                           headerText={this.props.t("AVS Video Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                          scrollTo="headerCoupon"    
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"  
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>All-in-one video converter with basic editing features.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert and compress all key video formats</Text>
@@ -163,8 +160,7 @@ render(){
                           imgLeft={false}
                           imageName={"audio-converter-special-offer.png"}
                           headerText={this.props.t("AVS Audio Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" 
-                          scrollTo="headerCoupon"   
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"  
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Feature-rich audio conversion program for Windows.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc.</Text>
@@ -180,7 +176,6 @@ render(){
                           imageName={"remaker-special-offer.png"}
                           headerText={this.props.t("AVS Video ReMaker")}
                           translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
-                          scrollTo="headerCoupon"   
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>A fast video editor to make edits without changing the original video file format.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut and delete unnecessary parts</Text>
