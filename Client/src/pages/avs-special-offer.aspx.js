@@ -115,7 +115,7 @@ render(){
                           imgLeft={true}
                           imageName={"video-editor-special-offer.png"}
                           headerText={this.props.t("AVS Video Editor")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                           scrollTo="headerCoupon"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Powerful video editing program for Windows with basic and pro editing tools.</Text>
@@ -131,7 +131,7 @@ render(){
                           imgLeft={false}
                           imageName={"audio-editor-special-offer.png"}
                           headerText={this.props.t("AVS Audio Editor")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                           scrollTo="headerCoupon"    
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Professional level audio editing and recording software.</Text>
@@ -147,7 +147,7 @@ render(){
                           imgLeft={true}
                           imageName={"video-converter-special-offer.png"}
                           headerText={this.props.t("AVS Video Converter")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           scrollTo="headerCoupon"    
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>All-in-one video converter with basic editing features.</Text>
@@ -163,7 +163,7 @@ render(){
                           imgLeft={false}
                           imageName={"audio-converter-special-offer.png"}
                           headerText={this.props.t("AVS Audio Converter")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" 
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" 
                           scrollTo="headerCoupon"   
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Feature-rich audio conversion program for Windows.</Text>
@@ -179,7 +179,7 @@ render(){
                           imgLeft={true}
                           imageName={"remaker-special-offer.png"}
                           headerText={this.props.t("AVS Video ReMaker")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
                           scrollTo="headerCoupon"   
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>A fast video editor to make edits without changing the original video file format.</Text>
