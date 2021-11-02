@@ -38,21 +38,23 @@
         background-image: url(../images/avs-special-offer/snowflakes-special-offer.png);
         background-repeat: no-repeat;
         z-index: 1;
+        background-position-y: 50%;
     }
     .multimedia-header {
         width: 50vw;
-        height: 710px;
+        height: 700px;
         background-size: contain;
-        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
+        background-image: url(../images/avs-special-offer/box-special-offer.png);
         z-index: 2;
         background-repeat: no-repeat;
         position: relative;
+        background-position-y: 50%;
     }
 
 .text-header {
     position: relative;
     margin-left: 50px;
-    padding: 0 40px;
+    padding: 0 40px 0 0;
     .textHeader {
         background: linear-gradient(to bottom, #EA1313, #AF0B0E);
         -webkit-background-clip: text;
@@ -90,15 +92,6 @@
 
     .bodyGrab {
         text-transform: uppercase;
-    }
-
-    .avs-logo {
-        background-image: url(../images/avs-special-offer/logo-special-offer.png);
-        height: 135px;
-        width: 142px;
-        position: absolute;
-        top: -52px;
-        left: -155px;
     }
 
     .bodyOff {
@@ -280,6 +273,15 @@
         font-size: 16px !important;
     }
 
+    .snowflakes-header {
+        background-image: url(../images/avs-special-offer/snowflakes-tablet-special-offer.png) !important;
+        top: 100px !important;
+        right: 100px !important;
+        background-size: auto !important;
+        width: 100% !important;
+        height: 581px !important;
+    }
+
     .multimedia-header {
         background-image: url(../images/avs-special-offer/box-tablet-special-offer.png) !important;
         margin-top: -53px;
@@ -292,10 +294,6 @@
 
     .textHeader {
         margin-left: 0 !important;
-    }
-
-    .snowflakes-header {
-        top: 150px !important;
     }
 
     .text-header {
@@ -329,6 +327,10 @@
 
     .bodyGrab {
         font-size: 50px !important;
+    }
+
+    .full-pack {
+        margin-bottom: 0 !important;
     }
 
     .mainHeaderComment {
@@ -373,13 +375,9 @@
         background-repeat: no-repeat;
         position: absolute;
         background-position-x: 50%;
-        background-size: contain;
         top: 25px !important;
         right: 0 !important;
-    }
-
-    .multimedia-header {
-        display: none;
+        background-size: 90% !important;
     }
 
     .text-header {
@@ -502,26 +500,53 @@
         height: 772px !important; 
     }
 
-    .full-pack {
-        margin-bottom: 0 !important;
+    .multimedia-header {
+        height: 391px !important;
+        background-image: url(../images/avs-special-offer/box-mobile-special-offer.png) !important;
+        position: absolute !important;
+        z-index: 2 !important;
+        top: 400px !important;
+        right: 0px !important;
+        width: 367px !important;
     }
 
-    .multimedia-header-mobile {
-        height: 300px !important;
-        background-size: contain;
-        background-image: url(../images/avs-special-offer/multimedia-special-offer.png);
-        background-repeat: no-repeat;
-        position: relative;
-        z-index: 2;
-        margin-top: 50px;
+    .precent-off {
+        font-size: 90px !important;
+        margin-top: 28px !important;
+    }
+
+    .bodyOff {
+        margin-top: -52px !important;
+        margin-left: 80px !important;
+    }
+
+    .snowflakes-header {
+        background-image: url(../images/avs-special-offer/snowflakes-mobile-special-offer.png) !important;
+        height: 399px !important;
+        right: -55px !important;
+        width: 483px !important;
+        top: 375px !important;
+    }
+
+    .mainHeaderComment {
+        font-size: 10px !important;
+        text-transform: none !important;
+        padding: 15px 0 !important;
     }
 
     .avs-logo {
         top: 0px !important;
     }
+}
+
+@media (max-width: 350px) {
+    .multimedia-header {
+        background-size: 80% !important;
+        background-position-x: 75% !important;
+    }
 
     .snowflakes-header {
-        top: 451px !important;
-        width: 100vw !important;
+        background-size: 90% !important;
+        right: -110px !important;
     }
 }

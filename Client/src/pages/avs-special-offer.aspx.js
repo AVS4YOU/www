@@ -72,20 +72,20 @@ render(){
               <Text fontSize={46} fontWeight={700} className="textHeader">AVS4YOU</Text>
             </div>
             <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader">Multimedia Suite</Text>
-            <Button className="headerButton" 
-                    secondaryText={this.props.secondaryText && this.props.secondaryText} 
-                    textTransform="uppercase">
-                    <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
-            </Button>
-            <div className="blockButton"></div>
-            <RedButton className="headerButton" 
-                    secondaryText={this.props.secondaryText && this.props.secondaryText} 
-                    textTransform="uppercase">
-                    <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
-            </RedButton>
-
+            <div className="button-block">
+              <Button className="headerButton" 
+                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
+                      textTransform="uppercase">
+                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+              </Button>
+              <div className="blockButton"></div>
+              <RedButton className="headerButton" 
+                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
+                      textTransform="uppercase">
+                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
+              </RedButton>
+            </div>
             <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 26, 2021</Text>
-            <div className="multimedia-header-mobile"></div>
       </div>
     </div>
   </div>
@@ -172,6 +172,21 @@ render(){
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Edit audio tags to update metadata and enable tracks grouping</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create your own audiobooks</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make customized ringtones for iPhone</Text>
+                      </ContentRowItem>
+
+                      <ContentRowItem 
+                          disableBG={true}
+                          imgLeft={true}
+                          imageName={"remaker-special-offer.png"}
+                          headerText={this.props.t("AVS Video ReMaker")}
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+                          scrollTo="headerCoupon"   
+                      >
+                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>A fast video editor to make edits without changing the original video file format.</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut and delete unnecessary parts</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Change scene sequence in all popular video formats</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Transfer video from camcorders and video cameras to hard drive</Text>
+                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create home video DVD or Blu-ray discs</Text>
                       </ContentRowItem>
                   </PageContentWrapper>
 
