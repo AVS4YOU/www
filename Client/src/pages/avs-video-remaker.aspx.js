@@ -14,6 +14,8 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {VideoReMaker} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
@@ -140,6 +142,11 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.5</Text>
           <ScreenshotsCarousel 

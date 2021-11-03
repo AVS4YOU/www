@@ -14,6 +14,8 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
@@ -142,6 +144,11 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.1</Text>
           <ScreenshotsCarousel 

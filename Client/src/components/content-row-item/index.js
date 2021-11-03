@@ -33,42 +33,46 @@ const RowContent = styled.div`
         z-index: 0;
         display:block;
         overflow: unset !important;
-        border: 1px solid #ECEFF5;
+        ${props => !props.disableBG && `
+            border: 1px solid #ECEFF5;
+        `}
     }
 
     &.imgRight{
         .rowImage{
             margin-left: auto;
-
-            &:before{
-                content: '';
-                background-image: url(${bgOrange});
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 206px;
-                height:206px;
-                left: -36px;
-                top: -36px;
-                position:absolute;
-            }
+            ${props => !props.disableBG && `
+                &:before{
+                    content: '';
+                    background-image: url(${bgOrange});
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 206px;
+                    height:206px;
+                    left: -36px;
+                    top: -36px;
+                    position:absolute;
+                }
+            `}
         }
     }
 
     &.imgLeft{
         .rowImage{
             margin-right: auto;
-
-            &:before{
-                content: '';
-                background-image: url(${bgBlue});
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 206px;
-                height:206px;
-                right:-36px;
-                top: -36px;
-                position:absolute;
-            }
+            ${props => !props.disableBG && `
+                &:before{
+                    content: '';
+                    background-image: url(${bgBlue});
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 206px;
+                    height:206px;
+                    right:-36px;
+                    top: -36px;
+                    position:absolute;
+                }`
+            }   
         }
     }
 
@@ -378,6 +382,7 @@ const TextContent = (props, touchDevice) =>
                     :
                         <div className="buttonsWrapper">
                             {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
+                            {props.translateButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.translateButtonLink}>Download now</Button>}
                             {props.smallButtonLink && <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
                         </div>  
                 }
@@ -400,7 +405,7 @@ const ContentRowItem = (props) => {
 
     if (props.imgLeft){
         return(
-            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice}>
+            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -410,7 +415,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice}>
+            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
                 {HeaderMobile(props)}
                 <div className="bgOrange mobile">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -430,6 +435,7 @@ ContentRowItem.propTypes = {
     headerText: PropTypes.string,
     free: PropTypes.bool,
     blueButtonLink: PropTypes.string,
+    translateButtonLink: PropTypes.string,
     smallButtonLink: PropTypes.string
 };
 
