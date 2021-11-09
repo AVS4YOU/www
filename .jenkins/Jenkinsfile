@@ -1,70 +1,74 @@
 switch(BRANCH_NAME) {
-	case "test.new":
-		region="us-east-1"
-		FindNameBucket="new.avs4you.com"
-		CloudFrontID="E27SY1BHFO3J2K"
-		OriginName="S3-Website-new.avs4you.com.s3-website-us-east-1.amazonaws.com"
-		CHAT_ID="-1001346473906" // Dep. Automation & Operation
-		MESSAGE="new.avs4you.com is deployed to amazon."
-		break
-	case "test.teststatic":
-		region="us-east-1"
-		FindNameBucket="teststatic.avs4you.com"
-		CloudFrontID="E5Z32JPP5GABL"
-		OriginName="S3-teststatic.avs4you.com"
-		CHAT_ID="-378391550" //dev avs4you
-		MESSAGE="teststatic.avs4you.com is deployed to amazon."
-		break
-	case "production.avs4you":
-		region="us-east-1"
-		FindNameBucket="www.avs4you.com"
-		CloudFrontID="E21GNZRPS0AW6N"
-		OriginName="S3-Website-www.avs4you.com.s3-website-us-east-1.amazonaws.com"
-		CHAT_ID="-378391550" //dev avs4you
-		MESSAGE="www.avs4you.com is deployed to amazon."
-		break
-	default:
-		println("Branch: ${BRANCH_NAME} do not for deploy.")
-		break
+  case "test.new":
+    region="us-east-1"
+    find_name_bucket="new.avs4you.com"
+    cloud_front_id="E27SY1BHFO3J2K"
+    origin_name="S3-Website-new.avs4you.com.s3-website-us-east-1.amazonaws.com"
+    chat_id="-1001346473906" // Dep. Automation & Operation
+    message="new.avs4you.com is deployed to amazon."
+    break
+  case "test.teststatic":
+    region="us-east-1"
+    find_name_bucket="teststatic.avs4you.com"
+    cloud_front_id="E5Z32JPP5GABL"
+    origin_name="S3-teststatic.avs4you.com"
+    chat_id="-378391550" //dev avs4you
+    message="teststatic.avs4you.com is deployed to amazon."
+    break
+  case "production.avs4you":
+    region="us-east-1"
+    find_name_bucket="www.avs4you.com"
+    cloud_front_id="E21GNZRPS0AW6N"
+    origin_name="S3-Website-www.avs4you.com.s3-website-us-east-1.amazonaws.com"
+    chat_id="-378391550" //dev avs4you
+    message="www.avs4you.com is deployed to amazon."
+    break
+  default:
+    println("Branch: ${BRANCH_NAME} do not for deploy.")
+    break
 }
 
 pipeline {
-	agent { label 'ubuntu' }
-	triggers {
-		githubPush()
-	}
+  agent { label 'ubuntu' }
+  triggers {
+    githubPush()
+  }
     options {
-		disableConcurrentBuilds()
-		buildDiscarder (logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
-	}
-	stages {
-        stage('deploy') {
-			when { 
-				anyOf { branch 'test.new'; branch 'test.teststatic'; branch 'production.avs4you' }
-			}
-			environment {
-				region = "${region}"
-				FindNameBucket = "${FindNameBucket}"
-				CloudFrontID = "${CloudFrontID}"
-				OriginName = "${OriginName}"
-				CHAT_ID = "${CHAT_ID}"
-				MESSAGE = "${MESSAGE}"
-			}
-			steps {
-				withCredentials([
-								string(credentialsId: 'token_bot_jenkins_notifier', 
-								variable: 'TEL_TOKEN'), 
-								usernamePassword(credentialsId: 'aws-s3', 
-								usernameVariable: 'AccessKeyProd', 
-								passwordVariable: 'SecretKeyProd')
-								]) {
-					sh '''
-						echo "Deploy from ${BRANCH_NAME} is starting."
-						
-						bash $WORKSPACE/.jenkins/deploy.sh "$AccessKeyProd" "$SecretKeyProd" "$FindNameBucket" "$CloudFrontID" "$region" "$OriginName" "$TEL_TOKEN" "$CHAT_ID" "$MESSAGE"
-					'''	          							
-				}
-			}
-		}
-	}
+    disableConcurrentBuilds()
+    buildDiscarder (logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+  }
+  stages {
+    stage('deploy') {
+      when { 
+        anyOf { branch 'test.new'; 
+                branch 'test.teststatic'; 
+                branch 'production.avs4you' }
+      }
+      environment {
+        region = "${region}"
+        find_name_bucket = "${find_name_bucket}"
+        cloud_front_id = "${cloud_front_id}"
+        origin_name = "${origin_name}"
+        chat_id = "${chat_id}"
+        message = "${message}"
+      }
+      steps {
+        withCredentials([
+                string(credentialsId: 'token_bot_jenkins_notifier', 
+                variable: 'tel_token'), 
+                usernamePassword(credentialsId: 'aws-s3', 
+                usernameVariable: 'access_key_prod', 
+                passwordVariable: 'secret_key_prod')
+                ]) {
+          sh '''
+            echo "Deploy from ${BRANCH_NAME} is starting."
+            
+            bash $WORKSPACE/.jenkins/deploy.sh "$access_key_prod" "$secret_key_prod" \
+              "$find_name_bucket" "$cloud_front_id" "$region" "$origin_name" \
+              "$tel_token" "$chat_id" "$message"
+          '''                          
+        }
+      }
+    }
+  }
 }
