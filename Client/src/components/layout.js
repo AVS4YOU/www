@@ -16,31 +16,54 @@ import {PageContext} from '../context/page-context';
 import { Helmet } from "react-helmet";
 import { withPrefix } from "gatsby";
 import CookieMessage from "../components/cookie-message";
-import PlAVS from "../images/pl/pattern.png";
+import PlAVS from "../images/pl/bg_black_friday.svg";
+import PlBg from "../images/pl/point-black-friday.svg";
 
 const StyledPL =styled.div`
 position: relative;
 text-align: center;
-background-image:url(${PlAVS});
 span {
   text-align: center;
 }
 .PLnewAvs{
-display: none;
-margin-bottom: -5px;
+display: flex;
 font-size: 14px;
+background-color: #32393E;
+background-image:url(${PlAVS});
   .PLnewAvsText{
     position: absolute;
     z-index: 25;
-    color: #fff7d6;
-    font-size: 22px;
-    top: 7px;
+    color: #6bcaff;
+    font-size: 18px;
+    font-weight: 700;
+    top: 11px;
     margin: auto;
-    width: 100%;  
+    width: 100%;
+    font-family: 'Open Sans';
+    text-shadow:0px 1px 20px rgba(0,0,0,1);
+    -webkit-text-shadow:0px 1px 20px rgba(0,0,0,1);
+    -moz-text-shadow:0px 1px 20px rgba(0,0,0,1);  
 }
   .PLnewAvsTextCoupon{
-    background-color: #b23e39;
     padding: 1px 5px;
+    color: #fff;
+    width: 600px;
+  }
+
+  .PLAvsShadow {
+    background-color: #292929;
+    width: 600px;
+    height: 56px;
+    border-radius: 100px;
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    margin: auto;
+  }
+
+  .PLAvs {
+    position: absolute;
+    width: 900px;
+    top: -7px;
   }
   .PLnewAvsLeft{
     height: 48px;
@@ -49,7 +72,7 @@ font-size: 14px;
   }
   .PLnewAvsCenter{
     height: 48px;
-    transform: translateX(-75%);
+    margin: auto;
     z-index:9;
   }
   .PLnewAvsRight{
@@ -59,11 +82,13 @@ font-size: 14px;
   }
   @media (max-width: 940px) {
     .PLnewAvsText{
-      font-size: 18px;  
+      font-size: 16px;
+      top: 10px;  
   }
   @media (max-width: 680px) {
     .PLnewAvsText{
-      font-size: 15px;  
+      font-size: 12px;
+      top: 5px;    
   }
 }
 `;
@@ -198,14 +223,14 @@ class Layout extends React.PureComponent {
 
         <StyledPL>
         <div className="PLnewAvs">
-        <a href="/advent-calendar.aspx">
-        <span className="PLnewAvsText">{this.props.t("Enjoy AVS4YOU amazing gifts and discounts each day up to")} <span className="PLnewAvsTextCoupon"> {this.props.t("99% OFF")} </span>{this.props.t("multi lang")}</span>
+        <a href="">
+        <span className="PLnewAvsText">{this.props.t("Black Friday Sale 25 Off on")} <span className="PLnewAvsTextCoupon"> AVS4YOU </span>{this.props.t("suite with BLF21 Coupon")}</span>
         </a>
-          <div className="PLnewAvsLeft">
-            <img src={PlAVS} alt=""></img>
+          <div className="PLnewAvsCenter">
+            <img src={PlBg} alt=""></img>
+            <div className="PLAvs">
+            <div className="PLAvsShadow"></div>
           </div>
-          <div className="PLnewAvsRight">
-          <img src={PlAVS} alt=""></img>
           </div>
         </div>
         </StyledPL>
