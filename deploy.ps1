@@ -76,8 +76,8 @@ if ( $branch -eq "test.new" ) {
     $distributionId = "E27SY1BHFO3J2K"
     $bucketName = "new.avs4you.com"
     
-    # Dep. Automation & Operation
-    $CHAT_ID = "-1001346473906"
+    # 24-hour duty
+    $CHAT_ID = "-1001766175673"
     $MESSAGE = "new.avs4you.com is deployed to amazon."
 }
 elseif ( $branch -eq "test.teststatic" ) {
