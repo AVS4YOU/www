@@ -223,8 +223,8 @@ class Layout extends React.PureComponent {
 
         <StyledPL>
         <div className="PLnewAvs">
-        <a href="">
-        <span className="PLnewAvsText">{this.props.t("Black Friday Sale 25 Off on")} <span className="PLnewAvsTextCoupon"> AVS4YOU </span>{this.props.t("suite with BLF21 Coupon")}</span>
+        <a href={this.props.t("BlackFridayLink")} target="_blank">
+          <span className="PLnewAvsText">{this.props.t("Black Friday Sale 25 Off on")} <span className="PLnewAvsTextCoupon"> AVS4YOU </span>{this.props.t("suite with BLF21 Coupon")}</span>
         </a>
           <div className="PLnewAvsCenter">
             <img src={PlBg} alt=""></img>
