@@ -83,7 +83,7 @@ background-image:url(${PlAVS});
   @media (max-width: 940px) {
     .PLnewAvsText{
       font-size: 16px;
-      top: 10px;  
+      top: 12px;  
   }
   @media (max-width: 680px) {
     .PLnewAvsText{
