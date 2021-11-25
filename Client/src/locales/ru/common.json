@@ -30,6 +30,9 @@
   "Enjoy AVS4YOU amazing gifts and discounts each day up to" : "Наслаждайтесь удивительными AVS4YOU подарками и скидками до",
 	"99% OFF" : "99%",
 	"multi lang" : "каждый день!",
+  "Black Friday Sale 25 Off on" : "Распродажа «Черная пятница» - купон BLF21 с 25% скидкой на пакет",
+  "suite with BLF21 Coupon" : "",
+  "BlackFridayLink" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=BLF21&CLEAN_CART=ALL",
 
 
   "************************HEADER***************************": "************************HEADER***************************",
@@ -134,7 +137,7 @@
   "File Size": "Размер файла:",
   "Current Version": "Текущая версия:",
   "Platforms": "Платформы:",
-  "Windows 10, 8.1, 8, 7, XP, 2003, Vista no Mac OS Linux support": "Windows 10, 8.1, 8, 7, XP, 2003, Vista (Mac OS/Linux не поддерживаются)",
+  "Windows 10, 8.1, 8, 7, XP, 2003, Vista no Mac OS Linux support": "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (Mac OS/Linux не поддерживаются)",
   "By clicking the Download button you agree to": "Нажав на кнопку Скачать, вы соглашаетесь с",
   "our End User License Agreement": "нашим Пользовательским соглашением",
   "Technical specification": "Техническая спецификация",

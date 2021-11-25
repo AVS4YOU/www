@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.14
+
+### Новое
+* Добавлена плашка Black Friday BLF21 Coupon
+
+### Исправления
+* Изменен фон на на `register.aspx/register-vc.aspx`
+* Поправлен перевод nl "Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" на странице `/register.aspx`
+
+## 1.0.13
+
 ### Новое
 * Добавлена страница `/avs-special-offer.aspx`
 * Добавлены награды на главную страницу
