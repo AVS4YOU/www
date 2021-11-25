@@ -93,8 +93,7 @@
  }
  @media (max-width: 500px) {
    .PLnewAvsText{
-     font-size: 12px;
-     top: 6px;    
+     top: 7px;    
  }
  }
  `;
