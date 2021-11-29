@@ -26,7 +26,7 @@
    text-align: center;
  }
  .PLnewAvs{
- display: flex;
+ display: none;
  font-size: 14px;
  background-color: #32393E;
  background-image:url(${PlAVS});
