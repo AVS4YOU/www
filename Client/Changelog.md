@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.15
+
+### Исправления
+* Убрана плашка Black Friday BLF21 Coupon
+* Изменен фон на на `register.aspx/register-vc.aspx`
+
 ## 1.0.14
 
 ### Новое
