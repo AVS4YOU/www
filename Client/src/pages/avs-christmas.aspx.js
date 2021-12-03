@@ -32,7 +32,7 @@ render(){
             <Text className="christmas-head tablet" as="h1">{this.props.t("AVS4YOU Christmas Magic Sale")}</Text>
           </div>
         <Text className="get-tools-text" as="h5">{this.props.t("Let your creativity spark during this festive season")}</Text>
-        <Text className="get-tools-text" as="h5">{this.props.t("Convert. Edit. Create. Share. Tell your story")}</Text>
+        <Text className="get-tools-text" as="h5">{this.props.t("Convert Edit Create Share Tell your story")}</Text>
         <div className="main-pic"></div>
 
           <div className="buy-block-wrapper">
@@ -83,7 +83,7 @@ render(){
 
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
-          {this.props.t("Why choose")} <span>{this.props.t("AVS4YOUchoose")}</span> {this.props.t("?")}
+          {this.props.t("Why choose")} <span>{this.props.t("AVS4YOUchoose")}</span>{this.props.t("?")}
           </Text>
           <div className="why-choose-wrapper">
               <div className="why-choose-item">
