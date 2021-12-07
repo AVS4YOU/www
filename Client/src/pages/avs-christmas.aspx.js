@@ -114,30 +114,37 @@ render(){
       </div>
 
       <div className="bg-bottom">
-      <div className="get-desk-editors">
-          <Text  className="TitleBlock" color="#000000" fontWeight={700} fontSize={32}><span>{this.props.t("Special offer")}</span> {this.props.t("from ONLYOFFICE, AVS4YOU partner")}</Text>
-        <div className="content-special-offer">
-          <div className="content-img"></div>
-              <div className="content-text">
-                <ul  className="ListTitle">{this.props.t("Get ONLYOFFICE Desktop Editors to work with all your documents smoothly")}
-                <li className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("100 Free")}</li>
-                <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("100 Secure")}</li>
-                <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("Multiplatform (Windows, Mac, Linux)")}</li>
-                <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("Edit and create documents, spreadsheets and presentations")}</li>
-                </ul>
+          <div className="get-desk-editors">
+              <Text  className="TitleBlock" color="#000000" fontWeight={700} fontSize={32}><span>{this.props.t("Special offer")}</span> {this.props.t("from ONLYOFFICE, AVS4YOU partner")}</Text>
+            <div className="content-special-offer">
+              <div className="content-img"></div>
+                  <div className="content-text">
+                    <ul  className="ListTitle">{this.props.t("Get ONLYOFFICE Desktop Editors to work with all your documents smoothly")}
+                    <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("100 Free")}</li>
+                    <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("100 Secure")}</li>
+                    <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("Multiplatform (Windows, Mac, Linux)")}</li>
+                    <li  className="ListItem" color="#000000" fontWeight={400} fontSize={18}>{this.props.t("Edit and create documents, spreadsheets and presentations")}</li>
+                    </ul>
+                  </div>
               </div>
+            <div className="download-button">
+              <Button                
+                    href=""
+                    color="#ffffff"
+                    className="get-block-button"
+                    >
+                    {this.props.t("Download now")}
+              </Button>
+              <Button                
+                    href="https://www.onlyoffice.com/desktop.aspx"
+                    color="#ffffff"
+                    className="get-block-button-mobile"
+                    >
+                    {this.props.t("Learn more")}
+              </Button>
+            </div>
           </div>
-      <div className="download-button">
-      <Button                
-            href=""
-            color="#ffffff"
-            className="get-block-button"
-            >
-            {this.props.t("Download now")}
-      </Button>
-      </div>
-      </div>
-      </div>
+        </div>
       </Layout>
     );
   }
