@@ -107,12 +107,12 @@
  }
 
  .PLnewAvsRight{
-  left: 300px;
+  left: 330px;
 }
 
     .PLnewAvsTextMobile {
       display: block;
-      top: 15px; 
+      top: 17px; 
       position: absolute;
       z-index: 25;
       color: #fff;
@@ -256,9 +256,9 @@
          <StyledPL>
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("BlackFridayLink")} target="_blank">
+              <a href="/avs-christmas.aspx" target="_blank">
                 <span className="PLnewAvsText">{this.props.t("Magic Christmas Sale")} <span className="PLnewAvsTextCoupon"> {this.props.t("80 Off")} </span>{this.props.t("on AVS4YOU Multimedia")} <span className="PLnewAvsTextCoupon">{this.props.t("Grab it now")}</span></span>
-                <span className="PLnewAvsTextMobile">{this.props.t("Magic Christmas Sale")}</span>
+                <span className="PLnewAvsTextMobile">{this.props.t("MagicChristmasSale")}</span>
               </a>
           <div className="PLnewAvsRight"></div>
          </div>

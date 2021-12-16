@@ -11,6 +11,7 @@ import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/index.less";
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 import ContentRowItem from '../components/content-row-item';
 import ContentSelector from '../components/content-selector';
@@ -335,12 +336,6 @@ const MainPageWrapper = styled.div`
   }
 `;
 
-let bg = document.querySelector('.mouse-parallax-bg');
-window.addEventListener('mousemove', function(e) {
-let x = e.clientX / window.innerWidth;
-let y = e.clientY / window.innerHeight;  
-bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
 
 
 class mainPage extends React.PureComponent {
@@ -372,20 +367,22 @@ class mainPage extends React.PureComponent {
         <div className="bg-main-page">
             <div className="bg-content">
               <div className="block-photo-avs">
-                <div class="mouse-parallax">
-                  <div class="mouse-parallax-bg"></div>
-                </div>
+                <MouseParallaxContainer>
+                    <MouseParallaxChild factorX={0.03} factorY={0.05} >
+                        <div className="mouse-parallax"></div>
+                    </MouseParallaxChild>
+                </MouseParallaxContainer>
               </div>
               <div className="block-text-avs">
-                <Text className="text-magic-christmas">{this.props.t("Magic Christmas")}</Text>
-                <Text className="text-sale">{this.props.t("Sale 2021")}</Text>
-                <Text className="text-get-up-to">{this.props.t("Get up to")}</Text>
+                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div>
+                <div className="text-sale">{this.props.t("Sale 2021")}</div>
+                <div className="text-get-up-to">{this.props.t("Get up to")}</div>
                 <div className="img-procent"></div>
-                <Text className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</Text>
-                <Text className="text-gift">{this.props.t("an exclusive gift")}</Text>
+                <div className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</div>
+                <div className="text-gift">{this.props.t("an exclusive gift")}</div>
                 <Button
                     color="#ffffff"
-                    href=""
+                    href="/avs-christmas.aspx"
                     className="grab-block-button"
                     >
                     {this.props.t("Grab It Now")}
