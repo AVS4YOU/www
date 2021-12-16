@@ -1,0 +1,139 @@
+
+.bg-main-page {
+    height: 920px;
+    width: 100%;
+    position: relative;
+    background: #0F0F0F;
+}
+
+.bg-content {
+    display: inline-flex;
+    width: 100%;
+    height: 920px;
+    background-position: 50% 50%;
+    margin-top: 112px;
+}
+
+.bg-bottom {
+    background-image: url(../images/pl/bg_black_friday.svg);
+    position: absolute;
+    background-repeat: repeat-x;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.block-photo-avs {
+    background-image: url(../images/pl/pictures_desktop.png);
+    width: 50%;
+    height: 784px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+}
+
+.mouse-parallax {
+    width: 100%;
+    height: 920px;
+    position: relative;
+    overflow: hidden;
+}
+.mouse-parallax-bg {
+    position: absolute;
+    background-image: url(../images/pl/elements_desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    transition: all 0.1s ease;  
+}
+
+@font-face {
+    font-family: "EuropeExt Web"; 
+    src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot"); 
+    src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot?#iefix") format("embedded-opentype"), 
+         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.svg#EuropeExt Web") format("svg"); 
+       }
+
+.block-text-avs {
+    font-family: "EuropeExt Web";
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3%;
+    width: 50%;
+}
+
+.text-sale {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-shadow: rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px;
+}
+
+.text-magic-christmas {
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.text-get-up-to {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #E91E29;
+    margin-bottom: 40px;
+}
+
+.img-procent {
+    background-image: url(../images/pl/80_svg.svg);
+    height: 77px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-bottom: 40px;
+}
+
+.text-multimedia {
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.text-gift {
+    font-size: 40px;
+    color: #E91E29;
+    margin-bottom: 56px;
+}
+
+.grab-block-button {
+    background-color:#E91E29 !important;
+    text-transform: uppercase !important;
+    min-width: 240px;
+}
+
+@media (max-width: 768px) {
+    .block-photo-avs {
+        display: none;
+    }
+
+    .mouse-parallax-bg {
+        display: none;
+    }
+
+    .block-photo-avs-mobile {
+        background-image: url(../images/pl/pictures_tablet.png);
+        width: 569px;
+    }
+
+    .elements-mobile {
+        background-image: url(../images/pl/elements_tablet.svg);
+        width: 611px;
+    }
+
+    .bg-content {
+        display: block !important;
+    }
+}

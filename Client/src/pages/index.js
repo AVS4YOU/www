@@ -8,6 +8,7 @@ import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
+import "../styles/index.less";
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 
@@ -334,6 +335,14 @@ const MainPageWrapper = styled.div`
   }
 `;
 
+let bg = document.querySelector('.mouse-parallax-bg');
+window.addEventListener('mousemove', function(e) {
+let x = e.clientX / window.innerWidth;
+let y = e.clientY / window.innerHeight;  
+bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+
 class mainPage extends React.PureComponent {
 
   constructor(props) {
@@ -359,22 +368,34 @@ class mainPage extends React.PureComponent {
             metaDescription={this.props.t("AVS4YOU is a suite of 5 professional multimedia programs to convert, edit and create audio and video Use AVS4YOU freeware to work with image & document files")}
             metaKeywords={this.props.t("avs video converter, avs4you, avs, avs converter, avs4u, video to mp3, video converter, mp4 converter, dvd converter, avi converter, wmv converter, avs video editor, avs editor, avs movie editor, video editor, video editing software, avs image converter, avs photo converter, image converter, image size converter, avs audio converter, audio converter, video to audio converter, m4a converter, mp3 converter, wav converter, avs audio editor, audio editor, audio editing software, omp3 editor, music editor, audio cutter")}
     >
-      <MainPageWrapper>
-        <div className="headerBackground">
-        <ImageGQL className="headerBackgroundImage" imageName="main-page-header-image.jpg"/>
-          <PageContentWrapper>
-            <div id="headerCoupon" className="headerContentWrapper" >
-              <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
-              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
-
-              <HeaderDownloadButtons 
-                t={this.props.t}
-                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
-                scrollTo="mainBodyHeader"
-                className="headerDownloadButtons"
-              />
+     <MainPageWrapper>
+        <div className="bg-main-page">
+            <div className="bg-content">
+              <div className="block-photo-avs">
+                <div class="mouse-parallax">
+                  <div class="mouse-parallax-bg"></div>
+                </div>
+              </div>
+              <div className="block-text-avs">
+                <Text className="text-magic-christmas">{this.props.t("Magic Christmas")}</Text>
+                <Text className="text-sale">{this.props.t("Sale 2021")}</Text>
+                <Text className="text-get-up-to">{this.props.t("Get up to")}</Text>
+                <div className="img-procent"></div>
+                <Text className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</Text>
+                <Text className="text-gift">{this.props.t("an exclusive gift")}</Text>
+                <Button
+                    color="#ffffff"
+                    href=""
+                    className="grab-block-button"
+                    >
+                    {this.props.t("Grab It Now")}
+              </Button>
+              </div>
+              <div className="block-photo-avs-mobile">
+                  <div class="elements-mobile"></div>
+              </div>
             </div>
-          </PageContentWrapper>
+          <div className="bg-bottom"></div>
         </div>
 
         <StyledMainContentWrapper>

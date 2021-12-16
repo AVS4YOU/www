@@ -16,8 +16,8 @@
  import { Helmet } from "react-helmet";
  import { withPrefix } from "gatsby";
  import CookieMessage from "../components/cookie-message";
- import PlAVS from "../images/pl/bg_black_friday.svg";
- import PlBg from "../images/pl/point-black-friday.svg";
+ import PlAVSLeft from "../images/pl/pl_left.svg";
+ import PlAVSRight from "../images/pl/pl_right.svg";
  
  const StyledPL =styled.div`
  position: relative;
@@ -25,39 +25,40 @@
  span {
    text-align: center;
  }
+
+ @font-face {
+   font-family: "EuropeExt Web"; 
+   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot"); 
+   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.svg#EuropeExt Web") format("svg"); 
+      }
+
  .PLnewAvs{
- display: none;
+ display: flex;
  font-size: 14px;
- background-color: #32393E;
- background-image:url(${PlAVS});
+ background-color: #000000;
+ height: 48px;
    .PLnewAvsText{
      position: absolute;
      z-index: 25;
-     color: #6bcaff;
+     color: #fff;
      font-size: 18px;
      font-weight: 700;
-     top: 11px;
+     top: 13px;
      margin: auto;
      width: 100%;
-     font-family: 'Open Sans';
-     text-shadow:0px 1px 20px rgba(0,0,0,1);
-     -webkit-text-shadow:0px 1px 20px rgba(0,0,0,1);
-     -moz-text-shadow:0px 1px 20px rgba(0,0,0,1);  
+     font-family: "EuropeExt Web"; 
+ }
+ .PLnewAvsTextMobile {
+   display: none;
  }
    .PLnewAvsTextCoupon{
      padding: 1px 5px;
-     color: #fff;
+     color: #e91e29;
      width: 600px;
-   }
- 
-   .PLAvsShadow {
-     background-color: #292929;
-     width: 600px;
-     height: 56px;
-     border-radius: 100px;
-     -webkit-filter: blur(25px);
-     -moz-filter: blur(25px);
-     margin: auto;
    }
  
    .PLAvs {
@@ -68,7 +69,9 @@
    .PLnewAvsLeft{
      height: 48px;
      z-index:10;
-     transform: translateX(-35%);
+     background-image:url(${PlAVSLeft});
+     width: 276px;
+     position: absolute;
    }
    .PLnewAvsCenter{
      height: 48px;
@@ -78,12 +81,15 @@
    .PLnewAvsRight{
      height: 48px;
      z-index:10;
-     transform: translateX(-90%);
+     background-image:url(${PlAVSRight});
+     width: 276px;
+     position: absolute;
+     right: 0;
    }
    @media (max-width: 940px) {
      .PLnewAvsText{
        font-size: 16px;
-       top: 12px;  
+       top: 16px;  
    }
    @media (max-width: 680px) {
      .PLnewAvsText{
@@ -93,8 +99,29 @@
  }
  @media (max-width: 500px) {
    .PLnewAvsText{
-     top: 7px;    
+     display: none;
  }
+
+ .PLnewAvsLeft{
+   right: 270px;
+ }
+
+ .PLnewAvsRight{
+  left: 300px;
+}
+
+    .PLnewAvsTextMobile {
+      display: block;
+      top: 15px; 
+      position: absolute;
+      z-index: 25;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      margin: auto;
+      width: 100%;
+      font-family: "EuropeExt Web";
+    }
  }
  `;
  
@@ -228,15 +255,12 @@
  
          <StyledPL>
          <div className="PLnewAvs">
-         <a href={this.props.t("BlackFridayLink")} target="_blank">
-           <span className="PLnewAvsText">{this.props.t("Black Friday Sale 25 Off on")} <span className="PLnewAvsTextCoupon"> AVS4YOU </span>{this.props.t("suite with BLF21 Coupon")}</span>
-         </a>
-           <div className="PLnewAvsCenter">
-             <img src={PlBg} alt=""></img>
-             <div className="PLAvs">
-             <div className="PLAvsShadow"></div>
-           </div>
-           </div>
+          <div className="PLnewAvsLeft"></div>
+              <a href={this.props.t("BlackFridayLink")} target="_blank">
+                <span className="PLnewAvsText">{this.props.t("Magic Christmas Sale")} <span className="PLnewAvsTextCoupon"> {this.props.t("80 Off")} </span>{this.props.t("on AVS4YOU Multimedia")} <span className="PLnewAvsTextCoupon">{this.props.t("Grab it now")}</span></span>
+                <span className="PLnewAvsTextMobile">{this.props.t("Magic Christmas Sale")}</span>
+              </a>
+          <div className="PLnewAvsRight"></div>
          </div>
          </StyledPL>
          
