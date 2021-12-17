@@ -86,7 +86,7 @@
    }
    @media (max-width: 940px) {
      .PLnewAvsText{
-       font-size: 16px;
+      font-size: 12px;
        top: 16px;  
    }
    @media (max-width: 680px) {
