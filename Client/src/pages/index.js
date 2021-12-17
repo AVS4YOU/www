@@ -368,7 +368,7 @@ class mainPage extends React.PureComponent {
             <div className="bg-content">
               <div className="block-photo-avs">
                 <MouseParallaxContainer>
-                    <MouseParallaxChild factorX={0.03} factorY={0.05} >
+                    <MouseParallaxChild factorX={0.03} >
                         <div className="mouse-parallax"></div>
                     </MouseParallaxChild>
                 </MouseParallaxContainer>

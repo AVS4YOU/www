@@ -28,7 +28,7 @@
 
  @font-face {
    font-family: "EuropeExt Web"; 
-   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot"); 
+   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.ttf") format("truetype"); 
    src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot?#iefix") format("embedded-opentype"), 
         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff2") format("woff2"), 
         url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff") format("woff"), 
@@ -56,9 +56,7 @@
    display: none;
  }
    .PLnewAvsTextCoupon{
-     padding: 1px 5px;
      color: #e91e29;
-     width: 600px;
    }
  
    .PLAvs {

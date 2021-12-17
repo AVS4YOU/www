@@ -1595,5 +1595,8 @@
 	"80 Off" : "80%",
 	"on AVS4YOU Multimedia" : "할인!",
 	"Grab it now" : "지금 할인 받으세요!",
-    "MagicChristmasSale" : "매직 크리스마스 세일"
+    "MagicChristmasSale" : "매직 크리스마스 세일",
+    "LinkDownload" : "https://www.onlyoffice.com/ko/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
+    "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=ko&COUPON=AVS22XSM&CLEAN_CART=ALL",
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=ko&COUPON=AVS22XSM&CLEAN_CART=ALL"
 	}

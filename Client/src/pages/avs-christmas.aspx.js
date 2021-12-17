@@ -49,7 +49,7 @@ render(){
               <Button
               backgroundColor="orange"
               color="#ffffff"
-              href=""
+              href={this.props.t("Link1year")}
               className="buy-block-button"
               id="1year_button"
               >
@@ -66,7 +66,7 @@ render(){
                 </div>
                 
                 <Button                
-                  href=""
+                  href="LinkUnlimited"
                   color="#ffffff"
                   className="buy-block-button"
                   id="unlimited_button"
@@ -129,7 +129,7 @@ render(){
               </div>
             <div className="download-button">
               <Button                
-                    href=""
+                    href={this.props.t("LinkDownload")}
                     color="#ffffff"
                     className="get-block-button"
                     >
