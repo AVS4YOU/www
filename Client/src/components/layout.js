@@ -254,7 +254,7 @@
          <StyledPL>
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("avs-christmas.aspx")} target="_blank">
+              <a href={this.props.t("avschristmasaspx")} target="_blank">
                 <span className="PLnewAvsText">{this.props.t("Magic Christmas Sale")} <span className="PLnewAvsTextCoupon"> {this.props.t("80 Off")} </span>{this.props.t("on AVS4YOU Multimedia")} <span className="PLnewAvsTextCoupon">{this.props.t("Grab it now")}</span></span>
                 <span className="PLnewAvsTextMobile">{this.props.t("MagicChristmasSale")}</span>
               </a>

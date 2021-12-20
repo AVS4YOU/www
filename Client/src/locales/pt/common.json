@@ -1405,6 +1405,7 @@
     "Magic Christmas" : "Promoção mágica de",
     "Sale 2021" : "Natal 2021",
     "Sale 2021 Mobile" : " ",
+    "imgprocent" : "img-procent",
     "Get up to" : "Ganhe até",
     "on AVS4YOU Multimedia Suite" : "de desconto no Pacote Multimídia AVS4YOU",
     "an exclusive gift" : "+ um presente exclusivo!",
@@ -1414,7 +1415,7 @@
     "on AVS4YOU Multimedia" : "no Pacote Multimídia AVS4YOU!",
     "Grab it now" : "Aproveite agora!",
     "MagicChristmasSale" : "Promoção mágica de Natal",
-    "avs-christmas.aspx" : "/pt/avs-christmas.aspx",
+    "avschristmasaspx" : "/pt/avs-christmas.aspx",
     "LinkDownload" : "https://www.onlyoffice.com/pt/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&COUPON=AVS22XSM&CLEAN_CART=ALL"
