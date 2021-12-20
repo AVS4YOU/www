@@ -375,7 +375,7 @@ class mainPage extends React.PureComponent {
               </div>
               <div className="block-text-avs">
                 <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div> 
-                <div className="text-sale-mobile">{this.props.t("Sale 2021")} <div className="text-sale">{this.props.t("Sale 2021 Mobile")}</div></div>
+                <div className="text-sale-mobile">{this.props.t("Sale 2021 Mobile")} <div className="text-sale">{this.props.t("Sale 2021")}</div></div>
                 <div className="text-get-up-to">{this.props.t("Get up to")}</div>
                 <div className="img-procent"></div>
                 <div className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</div>

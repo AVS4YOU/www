@@ -67,6 +67,7 @@
     font-size: 70px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    margin-left: 20px;
     text-shadow: rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px;
 }
 
@@ -122,7 +123,6 @@
     display: inline-flex;
     font-size: 70px;
     text-transform: uppercase;
-    margin-bottom: 40px;
     text-shadow: rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px -1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) 0px 1px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px 0px 0px, rgb(255 255 255) 1px 0px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px, rgb(255 255 255) -1px -1px 0px, rgb(255 255 255) 1px -1px 0px, rgb(255 255 255) -1px 1px 0px, rgb(255 255 255) 1px 1px 0px;
 }
 
@@ -201,6 +201,16 @@
 
 }
 
+@media (max-width: 790px) {
+    .text-sale {
+        display: block;
+    }
+
+    .text-sale-mobile {
+        display: block;
+    }
+}
+
 @media (max-width: 500px) {
 
     .bg-main-page {
@@ -221,11 +231,15 @@
     }
 
     .text-sale {
+        display: block;
         margin-bottom: 32px;
         font-size: 50px;
+        margin-top: 14px;
+        margin-left: 0;
     }
 
     .text-sale-mobile {
+        display: block;
         font-size: 20px;
         margin-bottom: 20px;
     }
