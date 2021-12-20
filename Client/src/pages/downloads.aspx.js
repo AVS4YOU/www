@@ -73,7 +73,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoReMaker.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
@@ -89,7 +89,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoEditor.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -105,7 +105,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {VideoConverter.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
@@ -117,7 +117,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {MediaPlayer.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
@@ -135,7 +135,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {AudioEditor.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
@@ -152,7 +152,7 @@ render(){
                 <Text as="p">{this.props.t("Current Version")} {AudioConverter.version}</Text>
                 <Text as="p">{this.props.t("Release Date")} {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
-                <Text as="p">{this.props.t("Platforms")} Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
               <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
