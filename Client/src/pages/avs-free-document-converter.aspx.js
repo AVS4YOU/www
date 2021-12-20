@@ -59,7 +59,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe"
-                  secondaryText="Windows 10 8 7 Vista XP"
+                  secondaryText="Windows 11/10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"

@@ -161,7 +161,7 @@
   "Microsoft DirectX 90c or later": "Microsoft DirectX 9.0c или более поздней версии",
   "RECOMMENDED SYSTEM REQUIREMENTS": "РЕКОМЕНДУЕМЫЕ СИСТЕМНЫЕ ТРЕБОВАНИЯ",
   "Operating system": "Операционная система:",
-  "Windows 10/Windows 8.x/Windows 7": "Windows 11/Windows 10/Windows 8.x/Windows 7",
+  "Windows 10Windows 8.xWindows 7": "Windows 11/Windows 10/Windows 8.x/Windows 7",
   "Video": "Видео:",
   "compatible sound card": "совместимая звуковая карта",
   "Administrative permissions for program installation and Internet connection for activation": "Права администратора на установку ПО и подключение к Интернету для активации.",
