@@ -374,15 +374,15 @@ class mainPage extends React.PureComponent {
                 </MouseParallaxContainer>
               </div>
               <div className="block-text-avs">
-                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div>
-                <div className="text-sale">{this.props.t("Sale 2021")}</div>
+                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div> 
+                <div className="text-sale-mobile">{this.props.t("Sale 2021")} <div className="text-sale">{this.props.t("Sale 2021 Mobile")}</div></div>
                 <div className="text-get-up-to">{this.props.t("Get up to")}</div>
                 <div className="img-procent"></div>
                 <div className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</div>
                 <div className="text-gift">{this.props.t("an exclusive gift")}</div>
                 <Button
                     color="#ffffff"
-                    href="/avs-christmas.aspx"
+                    href={this.props.t("avs-christmas.aspx")}
                     className="grab-block-button"
                     >
                     {this.props.t("Grab It Now")}

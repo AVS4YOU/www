@@ -1432,7 +1432,8 @@
 
     "*****************************CHRISTMAS********************************" : "*****************************CHRISTMAS********************************",
     "Magic Christmas" : "Magische Kerst",
-    "Sale 2021" : "Aanbieding 2021",
+    "Sale 2021" : "2021",
+    "Sale 2021 Mobile" : "Aanbieding ",
     "Get up to" : "Ontvang tot",
     "on AVS4YOU Multimedia Suite" : "korting op AVS4YOU Multimedia Suite",
     "an exclusive gift" : "+ een exclusief cadeau!",
@@ -1442,6 +1443,7 @@
     "on AVS4YOU Multimedia" : "op AVS4YOU Multimedia Suite!",
     "Grab it now" : "Haal deze nu!",
     "MagicChristmasSale" : "Magische Kerst Aanbieding",
+    "avs-christmas.aspx" : "/nl/avs-christmas.aspx",
     "LinkDownload" : "https://www.onlyoffice.com/nl/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=AVS22XSM&CLEAN_CART=ALL"
