@@ -27,8 +27,11 @@
  }
 
  @font-face {
-  font-family: 'EuropeExt Web';
-  src: url(../images/pl/EuropeExtWeb.woff) format('woff');
+  font-family: 'EuropeExt';
+  src: url("../images/pl/EuropeExt.ttf") format("truetype");
+  src: url("../images/pl/EuropeExt.eot?#iefix") format("embedded-opentype"),
+  url("../images/pl/EuropeExt.woff") format('woff'),
+  url("../images/pl/EuropeExt.ttf") format("truetype");
 }
 
  .PLnewAvs{
