@@ -27,13 +27,13 @@
  }
 
  @font-face {
-  font-family: EuropeExt;
+  font-family: 'EuropeExt';
   font-weight: bold;
   font-style: normal;
-  src: url("../../static/fonts/EuropeExtBold.eot") format("embedded-opentype"), 
-  url("../../static/fonts/EuropeExtBold.woff") format("woff"), 
-  url("../../static/fonts/EuropeExtBold.ttf") format("truetype");
-  font-display: swap;
+  src: url('../../static/fonts/EuropeExtBold.eot') format('eot');
+  src: url('../../static/fonts/EuropeExtBold.eot?iefix') format('eot'),
+  url('../../static/fonts/EuropeExtBold.woff') format('woff'),
+  url('../../static/fonts/EuropeExtBold.ttf') format('truetype');
 }
 
  .PLnewAvs{
