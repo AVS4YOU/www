@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "EuropeExt Web",
+        name: "EuropeExt",
         path: `${__dirname}/static/fonts/`
       }
     },
