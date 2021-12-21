@@ -27,7 +27,7 @@
  }
 
  @font-face {
-  font-family: 'EuropeExt';
+  font-family: 'EuropeExt Web';
   src: url("../images/pl/EuropeExt.ttf") format("truetype");
   src: url("../images/pl/EuropeExt.eot?#iefix") format("embedded-opentype"),
   url("../images/pl/EuropeExt.woff") format('woff'),
@@ -54,7 +54,7 @@
      top: 13px;
      margin: auto;
      width: 100%;
-     font-family: 'EuropeExt';
+     font-family: 'EuropeExt Web';
     }
 
  .PLnewAvs a {
@@ -144,7 +144,7 @@
       font-weight: 700;
       margin: auto;
       width: 100%;
-      font-family: 'EuropeExt';
+      font-family: 'EuropeExt Web';
     }
  }
  `;
