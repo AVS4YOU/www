@@ -53,14 +53,16 @@
      width: 100%;
      font-family: "EuropeExt Web";
     }
-    
-    .PLnewAvs a {
-       text-decoration: none !important;
-     }
+
+ .PLnewAvs a {
+      text-decoration: none !important;
+    }
+
  .PLnewAvsTextMobile {
    display: none;
  }
-  .PLnewAvsTextCoupon{
+
+.PLnewAvsTextCoupon{
     color: #e91e29;
     font-weight: 700 !important;
   }
@@ -94,9 +96,12 @@
    }
 
    @media (max-width: 1070px) {
+    .PLnewAvs {
+      padding: 15px 0 0;
+      height: 33px;
+    }
     .PLnewAvsText{
-      font-size: 12px;
-       top: 16px;  
+      font-size: 12px; 
    }
   }
    @media (max-width: 680px) {
