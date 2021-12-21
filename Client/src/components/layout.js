@@ -51,7 +51,7 @@
      top: 13px;
      margin: auto;
      width: 100%;
-     font-family: "EuropeExt Web";
+     font-family: 'EuropeExt';
     }
 
  .PLnewAvs a {
@@ -103,6 +103,14 @@
     .PLnewAvsText{
       font-size: 12px; 
    }
+
+   .PLnewAvsLeft{
+    left: -183px;
+  }
+ 
+  .PLnewAvsRight{
+    right: -239px;
+ }
   }
    @media (max-width: 680px) {
      .PLnewAvsText{
@@ -133,7 +141,7 @@
       font-weight: 700;
       margin: auto;
       width: 100%;
-      font-family: "EuropeExt Web";
+      font-family: 'EuropeExt';
     }
  }
  `;
