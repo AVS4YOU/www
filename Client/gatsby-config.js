@@ -13,6 +13,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "EuropeExt",
+        path: `${__dirname}/static/fonts/`
+      }
+    },
+    {
       resolve: `gatsby-plugin-less`,
       options: {
         strictMath: true,

@@ -27,11 +27,11 @@
  }
 
  @font-face {
-  font-family: 'EuropeExt Web';
-  src: url("../images/pl/EuropeExt.ttf") format("truetype");
-  src: url("../images/pl/EuropeExt.eot?#iefix") format("embedded-opentype"),
-  url("../images/pl/EuropeExt.woff") format('woff'),
-  url("../images/pl/EuropeExt.ttf") format("truetype");
+  font-family: "EuropeExt";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../static/fonts/EuropeExt.woff2") format("woff2");
+  font-display: swap;
 }
 
  .PLnewAvs{
@@ -54,7 +54,7 @@
      top: 13px;
      margin: auto;
      width: 100%;
-     font-family: 'EuropeExt Web';
+     font-family: 'EuropeExt';
     }
 
  .PLnewAvs a {
@@ -144,7 +144,7 @@
       font-weight: 700;
       margin: auto;
       width: 100%;
-      font-family: 'EuropeExt Web';
+      font-family: 'EuropeExt';
     }
  }
  `;
