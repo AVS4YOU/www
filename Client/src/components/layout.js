@@ -27,22 +27,23 @@
  }
 
  @font-face {
-   font-family: "EuropeExt Web"; 
-   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.ttf") format("truetype"); 
-   src: url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.eot?#iefix") format("embedded-opentype"), 
-        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff2") format("woff2"), 
-        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.woff") format("woff"), 
-        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.ttf") format("truetype"), 
-        url("//db.onlinewebfonts.com/t/d774b33db4359ae753c71d42afdf125a.svg#EuropeExt Web") format("svg"); 
-      }
+  font-family: 'EuropeExt Web';
+  src: url(../images/pl/EuropeExtWeb.woff) format('woff');
+}
 
  .PLnewAvs{
- display: flex;
- font-size: 14px;
- background-color: #000000;
- height: 48px;
+    display: flex;
+    font-size: 14px;
+    background-color: #000000;
+    height: 22px;
+    width: 100%;
+    display: table;
+    width: 100%;
+    display: table;
+    padding: 13px 0;
+ }
    .PLnewAvsText{
-     position: absolute;
+     position: static;
      z-index: 25;
      color: #fff;
      font-size: 18px;
@@ -50,14 +51,19 @@
      top: 13px;
      margin: auto;
      width: 100%;
-     font-family: "EuropeExt Web"; 
- }
+     font-family: "EuropeExt Web";
+    }
+    
+    .PLnewAvs a {
+       text-decoration: none !important;
+     }
  .PLnewAvsTextMobile {
    display: none;
  }
-   .PLnewAvsTextCoupon{
-     color: #e91e29;
-   }
+  .PLnewAvsTextCoupon{
+    color: #e91e29;
+    font-weight: 700 !important;
+  }
  
    .PLAvs {
      position: absolute;
@@ -70,6 +76,7 @@
      background-image:url(${PlAVSLeft});
      width: 276px;
      position: absolute;
+     top: 0;
    }
    .PLnewAvsCenter{
      height: 48px;
@@ -83,12 +90,15 @@
      width: 276px;
      position: absolute;
      right: 0;
+     top: 0;
    }
-   @media (max-width: 940px) {
-     .PLnewAvsText{
+
+   @media (max-width: 1070px) {
+    .PLnewAvsText{
       font-size: 12px;
        top: 16px;  
    }
+  }
    @media (max-width: 680px) {
      .PLnewAvsText{
        font-size: 12px;

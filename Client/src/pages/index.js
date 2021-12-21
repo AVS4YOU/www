@@ -374,7 +374,7 @@ class mainPage extends React.PureComponent {
                 </MouseParallaxContainer>
               </div>
               <div className="block-text-avs">
-                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div> 
+                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div>
                 <div className="text-sale-mobile">{this.props.t("Sale 2021 Mobile")} <div className="text-sale">{this.props.t("Sale 2021")}</div></div>
                 <div className="text-get-up-to">{this.props.t("Get up to")}</div>
                 <div className={this.props.t("imgprocent")}></div>
