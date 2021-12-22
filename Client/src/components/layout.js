@@ -26,17 +26,6 @@
    text-align: center;
  }
 
- @font-face {
-  font-family: 'EuropeExt Bold';
-  src: url('../fonts/EuropeExtBold.eot');
-  src: url('../fonts/EuropeExtBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/EuropeExtBold.woff') format('woff'),
-  url('../fonts/EuropeExtBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-
  .PLnewAvs{
     display: flex;
     font-size: 14px;
@@ -57,7 +46,8 @@
      top: 13px;
      margin: auto;
      width: 100%;
-     font-family: 'EuropeExt Bold';
+     font-family: 'Open Sans';
+     letter-spacing: 1px;
     }
 
  .PLnewAvs a {
@@ -147,7 +137,8 @@
       font-weight: 700;
       margin: auto;
       width: 100%;
-      font-family: 'EuropeExt Bold';
+      font-family: 'Open Sans';
+      letter-spacing: 1px;
     }
  }
  `;
