@@ -60,7 +60,7 @@ render(){
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                  secondaryText="Windows 10/8/7/Vista/XP"
+                  secondaryText="Windows 11/10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -199,7 +199,7 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
@@ -256,7 +256,7 @@ render(){
 
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 11/Windows 10/Windows 8.x/Windows 7")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>

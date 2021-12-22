@@ -16,8 +16,8 @@
  import { Helmet } from "react-helmet";
  import { withPrefix } from "gatsby";
  import CookieMessage from "../components/cookie-message";
- import PlAVS from "../images/pl/bg_black_friday.svg";
- import PlBg from "../images/pl/point-black-friday.svg";
+ import PlAVSLeft from "../images/pl/pl_left.svg";
+ import PlAVSRight from "../images/pl/pl_right.svg";
  
  const StyledPL =styled.div`
  position: relative;
@@ -25,40 +25,43 @@
  span {
    text-align: center;
  }
+
  .PLnewAvs{
- display: none;
- font-size: 14px;
- background-color: #32393E;
- background-image:url(${PlAVS});
+    display: flex;
+    font-size: 14px;
+    background-color: #000000;
+    height: 22px;
+    width: 100%;
+    display: table;
+    width: 100%;
+    display: table;
+    padding: 13px 0;
+ }
    .PLnewAvsText{
-     position: absolute;
+     position: static;
      z-index: 25;
-     color: #6bcaff;
+     color: #fff;
      font-size: 18px;
      font-weight: 700;
-     top: 11px;
+     top: 13px;
      margin: auto;
      width: 100%;
      font-family: 'Open Sans';
-     text-shadow:0px 1px 20px rgba(0,0,0,1);
-     -webkit-text-shadow:0px 1px 20px rgba(0,0,0,1);
-     -moz-text-shadow:0px 1px 20px rgba(0,0,0,1);  
+     letter-spacing: 1px;
+    }
+
+ .PLnewAvs a {
+      text-decoration: none !important;
+    }
+
+ .PLnewAvsTextMobile {
+   display: none;
  }
-   .PLnewAvsTextCoupon{
-     padding: 1px 5px;
-     color: #fff;
-     width: 600px;
-   }
- 
-   .PLAvsShadow {
-     background-color: #292929;
-     width: 600px;
-     height: 56px;
-     border-radius: 100px;
-     -webkit-filter: blur(25px);
-     -moz-filter: blur(25px);
-     margin: auto;
-   }
+
+.PLnewAvsTextCoupon{
+    color: #e91e29;
+    font-weight: 700 !important;
+  }
  
    .PLAvs {
      position: absolute;
@@ -68,7 +71,10 @@
    .PLnewAvsLeft{
      height: 48px;
      z-index:10;
-     transform: translateX(-35%);
+     background-image:url(${PlAVSLeft});
+     width: 276px;
+     position: absolute;
+     top: 0;
    }
    .PLnewAvsCenter{
      height: 48px;
@@ -78,13 +84,30 @@
    .PLnewAvsRight{
      height: 48px;
      z-index:10;
-     transform: translateX(-90%);
+     background-image:url(${PlAVSRight});
+     width: 276px;
+     position: absolute;
+     right: 0;
+     top: 0;
    }
-   @media (max-width: 940px) {
-     .PLnewAvsText{
-       font-size: 16px;
-       top: 12px;  
+
+   @media (max-width: 1070px) {
+    .PLnewAvs {
+      padding: 15px 0 0;
+      height: 33px;
+    }
+    .PLnewAvsText{
+      font-size: 12px; 
    }
+
+   .PLnewAvsLeft{
+    left: -183px;
+  }
+ 
+  .PLnewAvsRight{
+    right: -239px;
+ }
+  }
    @media (max-width: 680px) {
      .PLnewAvsText{
        font-size: 12px;
@@ -93,8 +116,30 @@
  }
  @media (max-width: 500px) {
    .PLnewAvsText{
-     top: 7px;    
+     display: none;
  }
+
+ .PLnewAvsLeft{
+   right: 270px;
+ }
+
+ .PLnewAvsRight{
+  left: 330px;
+}
+
+    .PLnewAvsTextMobile {
+      display: block;
+      top: 17px; 
+      position: absolute;
+      z-index: 25;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      margin: auto;
+      width: 100%;
+      font-family: 'Open Sans';
+      letter-spacing: 1px;
+    }
  }
  `;
  
@@ -228,15 +273,12 @@
  
          <StyledPL>
          <div className="PLnewAvs">
-         <a href={this.props.t("BlackFridayLink")} target="_blank">
-           <span className="PLnewAvsText">{this.props.t("Black Friday Sale 25 Off on")} <span className="PLnewAvsTextCoupon"> AVS4YOU </span>{this.props.t("suite with BLF21 Coupon")}</span>
-         </a>
-           <div className="PLnewAvsCenter">
-             <img src={PlBg} alt=""></img>
-             <div className="PLAvs">
-             <div className="PLAvsShadow"></div>
-           </div>
-           </div>
+          <div className="PLnewAvsLeft"></div>
+              <a href={this.props.t("avschristmasaspx")} target="_blank">
+                <span className="PLnewAvsText">{this.props.t("Magic Christmas Sale")} <span className="PLnewAvsTextCoupon"> {this.props.t("80 Off")} </span>{this.props.t("on AVS4YOU Multimedia")} <span className="PLnewAvsTextCoupon">{this.props.t("Grab it now")}</span></span>
+                <span className="PLnewAvsTextMobile">{this.props.t("MagicChristmasSale")}</span>
+              </a>
+          <div className="PLnewAvsRight"></div>
          </div>
          </StyledPL>
          
