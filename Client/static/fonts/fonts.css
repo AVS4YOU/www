@@ -1,0 +1,9 @@
+  @font-face {
+    font-family: 'EuropeExt Bold';
+    src: url('../../static/fonts/EuropeExtBold.eot');
+    src: url('../../static/fonts/EuropeExtBold.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/EuropeExtBold.woff') format('woff'),
+    url('../../static/fonts/EuropeExtBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

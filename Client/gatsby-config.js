@@ -13,11 +13,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
-        name: `fonts`,
-        path: `${__dirname}/src/fonts/`
-      }
+        custom: {
+          families: [`EuropeExt Bold`],
+          urls: [`${__dirname}/src/fonts/fonts.css`],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-less`,
