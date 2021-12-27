@@ -35,7 +35,7 @@
     display: table;
     width: 100%;
     display: table;
-    padding: 13px 0;
+    padding: 12px 0;
  }
    .PLnewAvsText{
      position: static;
