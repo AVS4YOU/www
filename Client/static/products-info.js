@@ -1,54 +1,54 @@
 let VideoEditor = {
-    version: "9.5.1.383",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "9.6.1.390",
+    releaseDD: "23",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "170.93",
+    size: "170.40",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
-    version: "6.5.1.254",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "6.6.1.258",
+    releaseDD: "22",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "59.35",
+    size: "59.86",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
-    version: "12.2.1.684",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "12.3.1.689",
+    releaseDD: "22",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "80.98",
+    size: "80.16",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
-    version: "5.3.1.146",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "5.4.1.147",
+    releaseDD: "22",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "105.64",
+    size: "104.65",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
-    version: "10.1.1.558",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "10.2.1.562",
+    releaseDD: "22",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "47.30",
+    size: "47.35",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
-    version: "10.1.1.622",
-    releaseDD: "05",
-    releaseMM: "08",
+    version: "10.2.1.629",
+    releaseDD: "22",
+    releaseMM: "12",
     releaseYYYY: "2021",
-    size: "49.09",
+    size: "49.29",
     platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
 };
 
