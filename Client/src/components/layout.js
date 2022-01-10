@@ -16,9 +16,6 @@
  import { Helmet } from "react-helmet";
  import { withPrefix } from "gatsby";
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/pl_left.svg";
- import PlAVSRight from "../images/pl/pl_right.svg";
- 
  const StyledPL =styled.div`
  position: relative;
  text-align: center;
@@ -27,14 +24,11 @@
  }
 
  .PLnewAvs{
-    display: flex;
+    display: none;
     font-size: 14px;
     background-color: #000000;
     height: 22px;
     width: 100%;
-    display: table;
-    width: 100%;
-    display: table;
     padding: 12px 0;
  }
    .PLnewAvsText{
@@ -71,7 +65,6 @@
    .PLnewAvsLeft{
      height: 48px;
      z-index:10;
-     background-image:url(${PlAVSLeft});
      width: 276px;
      position: absolute;
      top: 0;
@@ -84,7 +77,6 @@
    .PLnewAvsRight{
      height: 48px;
      z-index:10;
-     background-image:url(${PlAVSRight});
      width: 276px;
      position: absolute;
      right: 0;
@@ -128,7 +120,7 @@
 }
 
     .PLnewAvsTextMobile {
-      display: block;
+      display: none;
       top: 17px; 
       position: absolute;
       z-index: 25;
