@@ -8,7 +8,6 @@ import ReviewScreen from '../components/review-screen';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
-import "../styles/index.less";
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
@@ -365,35 +364,21 @@ class mainPage extends React.PureComponent {
     >
 
      <MainPageWrapper>
-        <div className="bg-main-page">
-            <div className="bg-content">
-              <div className="block-photo-avs">
-                <MouseParallaxContainer>
-                    <MouseParallaxChild factorX={0.03} >
-                        <div className="mouse-parallax"></div>
-                    </MouseParallaxChild>
-                </MouseParallaxContainer>
-              </div>
-              <div className="block-text-avs">
-                <div className="text-magic-christmas">{this.props.t("Magic Christmas")}</div>
-                <div className="text-sale-mobile">{this.props.t("Sale 2021 Mobile")} <div className="text-sale">{this.props.t("Sale 2021")}</div></div>
-                <div className="text-get-up-to">{this.props.t("Get up to")}</div>
-                <div className="imgprocent">80% <span className="precentgift">{this.props.t("off")}</span></div>
-                <div className="text-multimedia">{this.props.t("on AVS4YOU Multimedia Suite")}</div>
-                <div className="text-gift">{this.props.t("an exclusive gift")}</div>
-                <Button
-                    color="#ffffff"
-                    href={this.props.t("avschristmasaspx")}
-                    className="grab-block-button"
-                    >
-                    {this.props.t("Grab It Now")} 
-              </Button>
-              </div>
-              <div className="block-photo-avs-mobile">
-                  <div class="elements-mobile"></div>
-              </div>
+     <div className="headerBackground">
+        <ImageGQL className="headerBackgroundImage" imageName="main-page-header-image.jpg"/>
+          <PageContentWrapper>
+            <div id="headerCoupon" className="headerContentWrapper" >
+              <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
+              <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
+
+              <HeaderDownloadButtons 
+                t={this.props.t}
+                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
+                scrollTo="mainBodyHeader"
+                className="headerDownloadButtons"
+              />
             </div>
-          <div className="bg-bottom"></div>
+          </PageContentWrapper>
         </div>
 
         <StyledMainContentWrapper>
