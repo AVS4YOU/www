@@ -4,7 +4,7 @@ let VideoEditor = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "170.40",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
@@ -13,7 +13,7 @@ let VideoReMaker = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "59.86",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
@@ -22,7 +22,7 @@ let VideoConverter = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "80.16",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
@@ -31,7 +31,7 @@ let MediaPlayer = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "104.65",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
@@ -40,7 +40,7 @@ let AudioEditor = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "47.35",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
@@ -49,7 +49,7 @@ let AudioConverter = {
     releaseMM: "12",
     releaseYYYY: "2021",
     size: "49.29",
-    platforms: "Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista (no Mac OS/ Linux support)"
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 export {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter};
