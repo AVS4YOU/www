@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>51476680</File_Size_Bytes>
-      <File_Size_K>50270</File_Size_K>
-      <File_Size_MB>49.09</File_Size_MB>
+      <File_Size_Bytes>51683776</File_Size_Bytes>
+      <File_Size_K>50472</File_Size_K>
+      <File_Size_MB>49.29</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Audio Converter</Program_Name>
-    <Program_Version>10.1.1.622</Program_Version>
-    <Program_Release_Month>08</Program_Release_Month>
-    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Version>10.2.1.630</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
     <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Support of OPUS audio in MKV, MKA, WEBM and WEBA files. Enhanced support of Unicode ID3v2 tags. Optimization and bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Windows 11 skin. Splittting M4B audiobooks by markers, MP3 audiobooks by markers and by files. Enhanced support of covers for MP3 files and tags in M4A/M4B/M4R files. Enhanced support for files with long duration. Optimization and bug fixes.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz or higher, 1 GB RAM or higher, sound card, DirectX 9.0c or later</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Rippers &amp; Converters</Program_Category_Class>
     <Expire_Info>
@@ -131,10 +131,10 @@
   </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
-      <Application_Info_URL>http://www.avs4you.com/AVS-Audio-Converter.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/Register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/AVSAudioConverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/AVSaudioconverter.gif</Application_Icon_URL>
+      <Application_Info_URL>https://www.avs4you.com/avs-free-audio-converter.aspx</Application_Info_URL>
+      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/avsaudioconverter.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsaudioconverter.gif</Application_Icon_URL>
       <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsaudioconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
@@ -205,7 +205,7 @@ Any rights not expressly granted herein are reserved.</EULA>
   </AppStore>
   <Program_Descriptions>
     <English>
-      <Keywords>convert audio, convert music, convert file to mp3, mp3 converter, audio mp3, convert music to mp3, audio ripper, cda converter, audio cd, mp3 format, MP3, WMA, WAV, M4A, AMR, OGG, FLAC, audio from video, create audiobooks, ringtone for Iphone</Keywords>
+      <Keywords>convert audio, mp4 to mp3, wav to mp3 converter, video to audio converter, m4a to mp3, music converter, ogg to mp3, audio converter, mp3 converter, wav converter, free audio converter, convert to mp3, audio file converter</Keywords>
       <Char_Desc_45>Convert all audio formats for free.</Char_Desc_45>
       <Char_Desc_80>Convert all popular audio formats with Free AVS Audio Converter free and fast.</Char_Desc_80>
       <Char_Desc_250>Convert audio between MP3, WAV, WMA, AMR, AAC, M4A, FLAC, OGG, MP2 and other formats for free. Export and convert audio from your video files. Create ringtones for iPhone and make audiobooks. Use a command line mode for automatic conversion process.</Char_Desc_250>

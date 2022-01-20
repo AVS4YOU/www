@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>84916992</File_Size_Bytes>
-      <File_Size_K>82926</File_Size_K>
-      <File_Size_MB>80.98</File_Size_MB>
+      <File_Size_Bytes>84048712</File_Size_Bytes>
+      <File_Size_K>82078</File_Size_K>
+      <File_Size_MB>80.15</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>12.2.1.684</Program_Version>
-    <Program_Release_Month>08</Program_Release_Month>
-    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Version>12.3.1.689</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
     <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Unterstützung von OPUS-Audio in MKV-, MKA-, WEBM-, WEBA-Dateien. Neue Diashow-Voreinstellungen für MOV und MKV. Neue Videoeffekte -Bézierkurve, Gebogener Pfeil. Verbesserte Unterstützung von AVI-, MKV- und WEBM-Dateien. Unterstützung von HEIF/HEIC-Bildern im Disc-Menü. Verbesserte Benutzerfreundlich</Program_Change_Info>
+    <Program_Change_Info>Windows 11-Skin. Verbesserte Voreinstellungen. Intel-Hardwarebeschleunigung für AV1, H.265/HEVC 10/12 bit, VP9 10 bit Video. Bessere Unterstützung von MP4/M4V/MOV/TS/MTS/M2TS-Dateien. Unterstützung von WebP-Bildern im Discmenü. Yellow Magenta-Effekt. Benutzerfreundlichere Oberfläche.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD Core 2 Duo-kompatibel Prozessor mit 3 GHz oder höher, 2 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
