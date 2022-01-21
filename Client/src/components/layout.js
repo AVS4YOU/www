@@ -15,6 +15,7 @@
  import {PageContext} from '../context/page-context';
  import { Helmet } from "react-helmet";
  import { withPrefix } from "gatsby";
+ import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
  const StyledPL =styled.div`
  position: relative;
@@ -184,6 +185,13 @@
        }
        
        window.addEventListener('resize', this.updateWindowDimensions);
+
+        const queryString = require('query-string');
+        const parsed = queryString.parse(document.location.search);
+        const cookies = new Cookies();
+        if (parsed.SRC) {
+          cookies.set('SRC', parsed.SRC, { path: '/' });
+        }
    }
  
    componentWillUnmount() {
