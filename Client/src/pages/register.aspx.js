@@ -347,7 +347,7 @@ render(){
             <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`${mounth[currentMounth]}`)} {this.props.t("only!")}</Text>
           </div>
         <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
-          <div className="buy-block-wrapper" style={{marginTop:"20px", borderSpacing: "0px"}}>
+          <div className="buy-block-wrapper">
             <div className="buy-block"> 
               <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
               <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
