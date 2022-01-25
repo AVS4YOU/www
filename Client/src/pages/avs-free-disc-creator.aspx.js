@@ -170,12 +170,12 @@ class avsFreeDiscCreator extends React.PureComponent {
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">113.33 MB</Text>
               </div>
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">6.2.4.564</Text>
               </div>
 
               <div className="downloadInfoRow">        
