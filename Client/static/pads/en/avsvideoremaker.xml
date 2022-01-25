@@ -132,13 +132,13 @@
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-video-remaker.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/avsvideoremaker.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoremaker.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsvideoremaker.xml</Application_XML_File_URL>
+      <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>https://www.avs4you.com/pads/screenshots/avsvideoremaker.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsvideoremaker.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/en/avsvideoremaker.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoReMaker.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSVideoReMaker.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -187,7 +187,7 @@ THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WI
 NO LIABILITY FOR CONSEQUENTIAL DAMAGES. 
 IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE. 
 
-COPYRIGHT NOTICE. Copyright(C) 2020 Online Media Technologies Ltd. All rights reserved. 
+COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
   <AppStore>
@@ -205,7 +205,7 @@ Any rights not expressly granted herein are reserved.</EULA>
   </AppStore>
   <Program_Descriptions>
     <English>
-      <Keywords>MPEG video editing, edit video, cut video, delete scenes, video, edit hd video, hd video, blu-ray, dvd menu, blu-ray menu, avi, divx, wmv, dvd, mpeg, mod, tod, avchd, without re-encoding, split video into chapters</Keywords>
+      <Keywords>MPEG video editing, edit video, cut video, delete scenes, video, edit hd video, hd video, blu-ray, dvd menu, blu-ray menu, simple video editor, without re-encoding, split video into chapters</Keywords>
       <Char_Desc_45>Edit videos fast with AVS Video ReMaker.</Char_Desc_45>
       <Char_Desc_80>Edit your video files fast and lossless with AVS Video ReMaker.</Char_Desc_80>
       <Char_Desc_250>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. easily and quickly! Cut, trim, remove unwanted video parts and save your video anew. Create your own DVD/Blu-ray menus. Capture your video from camcorders and video cameras &amp; make screen capturings.</Char_Desc_250>

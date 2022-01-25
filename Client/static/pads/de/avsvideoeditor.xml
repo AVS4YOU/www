@@ -132,13 +132,13 @@
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/de/avs-video-editor.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/de/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsvideoeditor.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoeditor.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsvideoeditor.xml</Application_XML_File_URL>
+      <Application_Order_URL>https://www.avs4you.com/de/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>https://www.avs4you.com/pads/de/screenshots/avsvideoeditor.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsvideoeditor.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/de/avsvideoeditor.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoEditor.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSVideoEditor.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -186,7 +186,7 @@ DAS KOMPLETTE RISIKO, DAS AUS DEM GEBRAUCH ODER AUSFÜHRUNG DER AVS4YOU-PROGRAMM
 KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 AUF KEINEN FALL WIRD ONLINE MEDIA TECHNOLOGIES LTD. FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE SCHÄDEN (EINGESCHRÄNKT ODER UNEINGESCHRÄNKT, SCHÄDEN AUS DEM VERLUST VON GESCHÄFTSGEWINNEN, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER VERMÖGENSSCHÄDEN) HAFTEN, DIE AUS DEM GEBRAUCH DER AVS4YOU-PROGRAMME ODER DER GEBRAUCHSUNFÄHIGKEIT ENTSTEHEN.
 
-URHEBERRECHTLICHER HINWEIS. Copyright(C) 2020 Online Media Technologies Ltd. Alle Rechte vorbehalten.
+URHEBERRECHTLICHER HINWEIS. Copyright(C) 2022 Online Media Technologies Ltd. Alle Rechte vorbehalten.
 Die Rechte, die hiermit ausdrücklich nicht eingeräumt werden, sind vorbehalten.</EULA>
   </Permissions>
   <AppStore>

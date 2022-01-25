@@ -147,11 +147,11 @@
       <Application_Info_URL>https://www.avs4you.com/avs-free-video-converter.aspx</Application_Info_URL>
       <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
       <Application_Screenshot_URL>https://www.avs4you.com/pads/screenshots/avsvideoconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoconverter.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsvideoconverter.xml</Application_XML_File_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsvideoconverter.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/en/avsvideoconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSVideoConverter.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -200,7 +200,7 @@ THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WI
 NO LIABILITY FOR CONSEQUENTIAL DAMAGES. 
 IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE. 
 
-COPYRIGHT NOTICE. Copyright(C) 2020 Online Media Technologies Ltd. All rights reserved. 
+COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
   <AppStore>
