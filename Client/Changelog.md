@@ -2,6 +2,17 @@
 
 ## 1.0.19
 
+### Новое
+* Добавлена страница /register-ac.aspx
+
+### Исправления
+* Исправлена ошибка src на странице /installed-pack.aspx
+* Исправлены версии и размеры файлов на страницах /avs-free-document-converter.aspx, /avs-free-photo-editor.aspx, /avs-free-disc-creator,aspx, /avs-free-registry-cleaner.aspx, /avs-free-image-converter.aspx
+* Исправлены ошибки в pads файлах
+* Исправлены отступы /register-vc.aspx 
+
+## 1.0.19
+
 ### Исправления
 * Исправлена ошибка куков для src
 * Исправлены версии Windows
