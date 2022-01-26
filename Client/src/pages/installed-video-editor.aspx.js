@@ -45,22 +45,6 @@ class installedVideoEditor extends React.PureComponent {
   }
 
   componentDidMount(){
-    const queryString = require('query-string');
-    const parsed = queryString.parse(document.location.search);
-    const cookies = new Cookies();
-    if (parsed.SRC) {
-      cookies.set('SRC', parsed.SRC, { path: '/' });
-    }
-  
-    const SRCParam = cookies.get('SRC')
-  
-    if(SRCParam){
-  
-      this.setState({
-        hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
-      })
-    }
-  
     this.setState({
      documentLoaded: true
    })
