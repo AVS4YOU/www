@@ -112,7 +112,7 @@ render(){
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-            + {this.props.t("Get 4 professional multimedia")}
+            + {this.props.t("Get 4 professional multimedia programs as a gift")}
             </Text>
             <div className="contact-body__wrapper">
 
