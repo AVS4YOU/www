@@ -69,7 +69,7 @@ render(){
           </div>
           <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS4YOU Installation Package!")}</Text>
+              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS4YOU Installation Package")}</Text>
                 <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Timelimited offer")}</Text>
