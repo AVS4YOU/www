@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.21
+
+### Новое
+* Добавлен перевод zh/register.aspx
+
+### Исправления
+* Исправлена ошибка src на страницах /installed-audio-converter.aspx, /installed-audio-editor.aspx, /installed-video-converter.aspx, /installed-video-editor.aspx, /installed-video-remaker.aspx
+* Добавлены недостающие переводы da/ko/nl/pl/pt
+* Исправлены ошибки в pads файлах
+
 ## 1.0.20
 
 ### Новое
