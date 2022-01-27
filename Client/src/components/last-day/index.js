@@ -199,7 +199,7 @@ const zh_mounth = [
   let DK_MText = "er tilgængelige indtil "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + dk_mounth[currentMounth] + ", "  +  currentYear;
   let NL_MText = "geldig tot "  + getLastDayOfMonth(currentYear, currentMounth) + " " + nl_mounth[currentMounth] + " "  +  currentYear+ ".";
   let PT_MText = "válidos até " + getLastDayOfMonth(currentYear, currentMounth) + " de " + pt_mounth[currentMounth] + " de " + currentYear;
-  let ZH_MText = "价格有效期至 " + currentYear + "年" + zh_mounth[currentMounth] + getLastDayOfMonth(currentYear, currentMounth) + "日";
+  let ZH_MText = "价格有效期至" + currentYear + "年" + zh_mounth[currentMounth] + getLastDayOfMonth(currentYear, currentMounth) + "日";
 
 function AvsLinkHref(props){
     return(
