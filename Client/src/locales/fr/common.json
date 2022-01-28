@@ -1005,8 +1005,9 @@
     "Thank you for installing AVS Video ReMaker" : "Merci d'avoir installé AVS Video ReMaker !",
     "Thank you for installing AVS4YOU Installation Package" : "Merci d’avoir installé le paquet d’installation AVS4YOU !",
     "Exclusive Offer Only Today" : "Profitez de l’offre exclusive d’aujourd’hui",
-    "Save 70% on the full version and edit your audio without limitations" : "Économisez 70% sur la version complète et créez des vidéos sans limites!",
-    "Save 70% on the full version and" : "Économisez 70% sur la version complète et accédez aux",
+    "Save 70 on the full version and edit your audio without limitations" : "Économisez 70% sur la version complète et créez des audio sans limites !",
+    "Save 70 on the full version and edit your video without limitations" : "Économisez 70% sur la version complète et créez des vidéos sans limites !",
+    "Save 70 on the full version and" : "Économisez 70% sur la version complète et accédez aux",
     "Buy now" : "Acheter maintenant",
     "get extra 4 multimedia programs as a gift" : "fonctionnalités d’édition avancées !",
     "get access to extra features" : "limites !",
@@ -1537,7 +1538,7 @@
 
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-
+	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=AVSUnGift&CLEAN_CART=ALL",
     
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "fr_slider_video_converter.jpg",
@@ -1607,10 +1608,10 @@
     "on all AVS4YOU products" : " supplémentaires sur tous les produits AVS4YOU !",
     "AVS4YOUname" : "AVS4YOU",
     "1-Year Subscription" : "Abonnement pour 1 an",
-    "29/00" : "€ 29.00",
+    "29/00" : "€29.00",
     "$39/00" : "€ 39.00",
     "Unlimited Subscription" : "Abonnement illimité",
-    "$59/00" : "€ 59.00",
+    "$59/00" : "€59.00",
     "49/00" : "€ 49.00",
     "The offer expires on December 31, 2021" : "L'offre prend fin le 30 décembre 2021.",
     "Why choose" : "Pourquoi choisir",

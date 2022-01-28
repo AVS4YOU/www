@@ -972,6 +972,7 @@
 "Thank you for installing AVS4YOU Installation Package" :   "Thank you for installing AVS4YOU Installation Package!",
 "Exclusive Offer Only Today" : "Exclusive Offer Only Today",
 "Save 70 on the full version and edit your audio without limitations" : "Save 70% on the full version and edit your audio without limitations!",
+"Save 70 on the full version and edit your video without limitations" : "Save 70% on the full version and edit your video without limitations!",
 "Save 70 on the full version and" : "Save 70% on the full version and",
 "get extra 4 multimedia programs as a gift" : "get extra 4 multimedia programs as a gift!",
 "get access to extra features" : "get access to extra features",
@@ -1478,7 +1479,8 @@
 
 	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=CNY&DCURRENCY=USD&LANG=zh&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=CNY&DCURRENCY=USD&LANG=zh&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	
+	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL",
+
  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
  "slider video editor jpg" : "slider_video_editor.jpg",

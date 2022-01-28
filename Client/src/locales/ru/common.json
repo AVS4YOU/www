@@ -971,6 +971,7 @@
   "Thank you for installing AVS4YOU Installation Package": "Спасибо, что установили Пакет программ AVS4YOU!",
   "Exclusive Offer Only Today": "Эксклюзивное предложение только сегодня",
   "Save 70 on the full version and edit your audio without limitations": "Сэкономьте 70% на полной версии и редактируйте свои аудио без ограничений!",
+  "Save 70 on the full version and edit your video without limitations" : "Сэкономьте 70% на полной версии и редактируйте свои видео без ограничений!",
   "Save 70 on the full version and": "Сэкономьте 70% на полной версии и",
   "get extra 4 multimedia programs as a gift": "получите дополнительные 4 мультимедийные программы в подарок!",
   "get access to extra features": "получите доступ к дополнительным функциям",
@@ -1505,7 +1506,8 @@
 	
   "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
   "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-  
+  "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL",
+
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
   "slider video converter jpg" :  "ru_slider_video_converter.jpg",
   "slider video editor jpg" : "ru_slider_video_editor.jpg",
@@ -1572,10 +1574,10 @@
     "on all AVS4YOU products" : "на все продукты AVS4YOU!",
     "AVS4YOUname" : "AVS4YOU",
     "1-Year Subscription" : "одногодичная подписка",
-    "29/00" : "₽ 1499",
+    "29/00" : "₽1499",
     "$39/00" : "₽ 1999",
     "Unlimited Subscription" : "безлимитная подписка",
-    "$59/00" : "₽ 2499",
+    "$59/00" : "₽2499",
     "49/00" : "₽ 1999",
     "The offer expires on December 31, 2021" : "Предложение действительно до 31 декабря 2021 года.",
     "Why choose" : "Почему выбирают",

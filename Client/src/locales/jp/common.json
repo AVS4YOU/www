@@ -995,7 +995,8 @@
     "Thank you for installing AVS Video ReMaker" : "AVS Video Remaker をインストールいただき ありがとうございます。",
     "Thank you for installing AVS4YOU Installation Package" : "AVS4YOU インストールパッケージ をインストールいただき ありがとうございます。",
     "Exclusive Offer Only Today" : "今日はのみの特別なオファー",
-    "Save 70 on the full version and edit your audio without limitations" : "フル版を 70％割引 と購入して、 動画作成を始める！",
+    "Save 70 on the full version and edit your audio without limitations" : "フル版を70％割引 と購入して、 追加の動画編集 機能を受ける！",
+    "Save 70 on the full version and edit your video without limitations" : "フル版を 70％割引 と購入して、 動画作成を始める！",
     "Save 70 on the full version and" : "フル版を 70％割引 と購入して、 動画作成を始める！",
     "Buy now" : "今すぐ購入",
     "get extra 4 multimedia programs as a gift" : "",
@@ -1502,7 +1503,8 @@
    
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    
+	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVSUnGift&CLEAN_CART=ALL",
+
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "jp_slider_video_converter.jpg",
     "slider video editor jpg" : "jp_slider_video_editor.jpg",

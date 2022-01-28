@@ -1026,7 +1026,8 @@
     "Thank you for installing AVS Video ReMaker" : "Vielen Dank für die Installation von AVS Video ReMaker!",
     "Thank you for installing AVS4YOU Installation Package" : "Vielen Dank für die Installation von AVS4YOU!",
     "Exclusive Offer Only Today" : "Sonderangebot! Nur heute:",
-    "Save 70 on the full version and edit your audio without limitations" : "Bekommen Sie die Vollversion mit 70% Rabatt und erstellen Sie Videos ohne Einschränkungen!",
+    "Save 70 on the full version and edit your audio without limitations" : "Bekommen Sie die Vollversion mit 70% Rabatt und erstellen Sie Audio ohne Einschränkungen!",
+    "Save 70 on the full version and edit your video without limitations" : "Bekommen Sie die Vollversion mit 70% Rabatt und erstellen Sie Videos ohne Einschränkungen!",
     "Save 70 on the full version and" : "Bekommen Sie die Vollversion mit 70% Rabatt und",
     "Buy now" : "Jetzt kaufen!",
     "get extra 4 multimedia programs as a gift" : "Zugriff auf zusätzliche Bearbeitungsfunktionen.",
@@ -1547,7 +1548,7 @@
 
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&DESIGN_TYPE=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-
+	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" : "de_slider_video_converter.jpg",
@@ -1617,10 +1618,10 @@
     "on all AVS4YOU products" : "bei allen AVS4YOU-Anwendungen!",
     "AVS4YOUname" : " ",
     "1-Year Subscription" : "1-Jahres-Abo von AVS4YOU",
-    "29/00" : "€ 29.00",
+    "29/00" : "€29.00",
     "$39/00" : "€ 39.00",
     "Unlimited Subscription" : "Unbefristetes Abo von AVS4YOU",
-    "$59/00" : "€ 59.00",
+    "$59/00" : "€59.00",
     "49/00" : "€ 49.00",
     "The offer expires on December 31, 2021" : "Das Angebot ist bis 31. Dezember 2021 gültig.",
     "Why choose" : "Das spricht für",

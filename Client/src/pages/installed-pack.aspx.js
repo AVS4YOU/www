@@ -91,8 +91,7 @@ render(){
               <Text>{this.props.t("100% secure adfree virusfree")}</Text>
             </div>
             <div  className="carouselItem support">
-              <Text>{this.props.t("5 professional multimedia programs in")}</Text>
-              <Text>{this.props.t("1 package")}</Text>
+              <Text>{this.props.t("5 professional multimedia programs in 1 package")}</Text>
             </div>
             <div className="carouselItem unlimited">
               <Text>{this.props.t("Unlimited access to the program")}</Text>
