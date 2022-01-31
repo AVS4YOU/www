@@ -4,6 +4,7 @@ import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/uninstall-offer.less";
+import Link from '../components/link';
 
 
 class uninstallOffer extends React.PureComponent {
@@ -74,7 +75,9 @@ render(){
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                {this.props.t("30- day money-back guarantee")}
+                <Link to="/moneyback.aspx">
+                  {this.props.t("30- day Money-back guarantee")}
+                </Link>
             </div>
             </div>
             <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
