@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.22
+
+### Исправления
+* Исправлены ошибки в переводах на страницах `/installed-audio-converter.aspx`, `/installed-audio-editor.aspx`, `/installed-video-converter.aspx`, `/installed-video-editor.aspx`, `/installed-video-remaker.aspx`
+* Добавлены корректные валюты и ссылки на покупку `/uninstall-offer.aspx` 
+
 ## 1.0.21
 
 ### Новое
