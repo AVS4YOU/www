@@ -77,7 +77,7 @@ render(){
                 {this.props.t("30- day money-back guarantee")}
             </div>
             </div>
-            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.202734737.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
+            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
         </div>
 
         <Text as="h2" className="common__heading__with">
@@ -101,8 +101,8 @@ render(){
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
 <div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips & tricks")}</a></div>
-<div className="questionIcon">{this.props.t("Got a question?")}
+<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="questionIcon">{this.props.t("Got a question")}
 <br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
