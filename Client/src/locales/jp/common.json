@@ -497,6 +497,7 @@
     "*****************************About AVS4YOU********************************" : "*****************************About AVS4YOU********************************",
     "About":"沿革",
     "Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development":"Online Media Technologies Ltd. は、マルチメディアソフトウェア開発分野の世界的リーダーである AVS4YOU.com の元会社です",
+    "AVS4YOU is the home of ultimate multimedia editing family learn more" : "AVS4YOU: 無期限サブスクリプションに特別な価格",
     "Founded in 2004":"会社 2004",
     "Company":"創業",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances":"Online Media Technologies Ltd. は、特にエンドユーザー、専門開発者向けの画期的な動画、音声ソリューションを開発する IT ハイテク技術会社です。当社の賞受賞製品は世界中から数百万人を超えるユーザーに高く支持されています。マルチメディア産業での最新のトレンドを扱い、当社ではデジタルビデオや音声を使用した作業をスムーズにできるソフトウェアツールを開発しています",
@@ -1526,7 +1527,7 @@
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVSUnGift&CLEAN_CART=ALL",
-
+    
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
     "slider video converter jpg" :  "jp_slider_video_converter.jpg",
     "slider video editor jpg" : "jp_slider_video_editor.jpg",

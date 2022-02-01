@@ -15,7 +15,7 @@ render(){
         className="uninstall-offer-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family learn more")}
         metaDescription=""
         metaKeywords=""
       >
@@ -103,10 +103,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="knowledge"><div className="knowledgeIcon"><a href={this.props.t("header_onlinehelp_avs4you")} style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a href={this.props.t("header_avs4you_guides")} style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
 <div className="questionIcon">{this.props.t("Got a question")}
-<br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<br/>{this.props.t("Contact our")} <a href={this.props.t("header_support_avs4you")} style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

@@ -488,6 +488,7 @@
 	"*****************************About AVS4YOU********************************": "*****************************About AVS4YOU********************************",
 	"AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.": "AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.",
 	"AVS4YOU is the home of ultimate multimedia editing family.": "Learn more about our company, its history, who we are and what we value.",
+	"AVS4YOU is the home of ultimate multimedia editing family learn more" : "AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.",
 	"About": "About",
 	"Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development": "Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development",
 	"Founded in 2004": "Founded in 2004",
@@ -1469,6 +1470,9 @@
 	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL",
+	"onlinehelpHref" : "https://onlinehelp.avs4you.com/index.aspx/",
+	"guidesHref" : "https://www.avs4you.com/guides/index.aspx",
+	"supportHref" : "https://support.avs4you.com/",
 
  "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "slider_video_converter.jpg",
