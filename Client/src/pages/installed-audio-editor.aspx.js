@@ -71,7 +71,7 @@ render(){
           </div>
           <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Audio Editor")}</Text>
+              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Audio Editor")} <br /> {this.props.t("AVS audio editor")}</Text>
              <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
               <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and edit your audio without limitations")}</Text>
               <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
