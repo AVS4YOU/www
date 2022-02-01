@@ -9,8 +9,8 @@ let VideoEditor = {
 
 let VideoReMaker = {
     version: "6.6.2.259",
-    releaseDD: "01",
-    releaseMM: "31",
+    releaseDD: "31",
+    releaseMM: "01",
     releaseYYYY: "2022",
     size: "59.85",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
