@@ -5,9 +5,36 @@ import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/uninstall-offer.less";
 import Link from '../components/link';
+import Cookies from 'universal-cookie';
+
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+const regExp = /=regnow:(.*):/;
 
 
 class uninstallOffer extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.cookies = new Cookies();
+
+    this.affiliateID = "";
+    this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+    if(this.siteTrasingCookie){
+        this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+    };
+
+    this.state = {
+        hrefGetIt: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("getItHref") + `&SRC=Uninstall_${this.props.t("en")}`,
+        documentLoaded: false,
+      };
+  }
+
+  componentDidMount(){  
+    this.setState({
+     documentLoaded: true
+   })
+  }
 
 render(){
     return (
@@ -29,13 +56,13 @@ render(){
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
                 <Text className="header__old__price">{this.props.t("$59/00")}</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("29/00")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
 
