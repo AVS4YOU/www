@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>62233216</File_Size_Bytes>
-      <File_Size_K>60774</File_Size_K>
-      <File_Size_MB>59.35</File_Size_MB>
+      <File_Size_Bytes>62766856</File_Size_Bytes>
+      <File_Size_K>61295</File_Size_K>
+      <File_Size_MB>59.86</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Video ReMaker</Program_Name>
-    <Program_Version>6.5.1.254</Program_Version>
-    <Program_Release_Month>08</Program_Release_Month>
-    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Version>6.6.1.258</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
     <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>39</Program_Cost_Dollars>
     <Program_Cost_Other_Code>USD</Program_Cost_Other_Code>
@@ -103,7 +103,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Bearbeiten von MP4-, MOV-, MKV- und AVI-Dateien , die mit H.265 /HEVC kodiert wurden. Verbesserte Unterstützung von AVI- und MKV-Dateien.Optimierte Bildschirmaufnahme. Unterstützung von HEIF/HEIC-Bildern im Disc-Menü. Optimierung und Fehlerbehebungen.</Program_Change_Info>
+    <Program_Change_Info>Windows 11-Skin. Verbesserte Voreinstellungen. Intel-Hardwarebeschleunigung für H.265/HEVC 10/12 bit Video. Bessere Unterstützung von MP4/M4V/MOV/TS/MTS/M2TS-Dateien. Unterstützung von WebP-Bildern im Discmenü. Voreinstellungen für Bildschirmaufnahme. Verbesserte Leistung und Fehlerbehebungen.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -132,13 +132,13 @@
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/de/avs-video-remaker.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/de/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsvideoremaker.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoremaker.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsvideoremaker.xml</Application_XML_File_URL>
+      <Application_Order_URL>https://www.avs4you.com/de/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>https://www.avs4you.com/pads/de/screenshots/avsvideoremaker.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsvideoremaker.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/de/avsvideoremaker.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoReMaker.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSVideoReMaker.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -186,7 +186,7 @@ DAS KOMPLETTE RISIKO, DAS AUS DEM GEBRAUCH ODER AUSFÜHRUNG DER AVS4YOU-PROGRAMM
 KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 AUF KEINEN FALL WIRD ONLINE MEDIA TECHNOLOGIES LTD. FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE SCHÄDEN (EINGESCHRÄNKT ODER UNEINGESCHRÄNKT, SCHÄDEN AUS DEM VERLUST VON GESCHÄFTSGEWINNEN, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER VERMÖGENSSCHÄDEN) HAFTEN, DIE AUS DEM GEBRAUCH DER AVS4YOU-PROGRAMME ODER DER GEBRAUCHSUNFÄHIGKEIT ENTSTEHEN.
 
-URHEBERRECHTLICHER HINWEIS. Copyright(C) 2020 Online Media Technologies Ltd. Alle Rechte vorbehalten.
+URHEBERRECHTLICHER HINWEIS. Copyright(C) 2022 Online Media Technologies Ltd. Alle Rechte vorbehalten.
 Die Rechte, die hiermit ausdrücklich nicht eingeräumt werden, sind vorbehalten.</EULA>
   </Permissions>
   <AppStore>

@@ -178,17 +178,17 @@ class avsFreeImageConverter extends React.PureComponent {
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">35.17 MB</Text>
               </div>
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">5.4.2.317</Text>
               </div>
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>

@@ -1,5 +1,50 @@
 # Changelog
 
+## 1.0.24
+
+### Новое
+* Добавлен перевод zh/installed-video-editor.aspx
+
+## 1.0.23
+
+### Исправления
+* Исправлены валюты для польского и португальского языков
+* Обновлены версии, даты релиза и размер файлов подуктов
+
+## 1.0.22
+
+### Исправления
+* Исправлены ошибки в переводах на страницах `/installed-audio-converter.aspx`, `/installed-audio-editor.aspx`, `/installed-video-converter.aspx`, `/installed-video-editor.aspx`, `/installed-video-remaker.aspx`
+* Добавлены корректные валюты и ссылки на покупку `/uninstall-offer.aspx` 
+
+## 1.0.21
+
+### Новое
+* Добавлен перевод zh/register.aspx
+
+### Исправления
+* Исправлена ошибка src на страницах /installed-audio-converter.aspx, /installed-audio-editor.aspx, /installed-video-converter.aspx, /installed-video-editor.aspx, /installed-video-remaker.aspx
+* Добавлены недостающие переводы da/ko/nl/pl/pt
+* Исправлены ошибки в pads файлах
+
+## 1.0.20
+
+### Новое
+* Добавлена страница /register-ac.aspx
+
+### Исправления
+* Исправлена ошибка src на странице /installed-pack.aspx
+* Исправлены версии и размеры файлов на страницах /avs-free-document-converter.aspx, /avs-free-photo-editor.aspx, /avs-free-disc-creator,aspx, /avs-free-registry-cleaner.aspx, /avs-free-image-converter.aspx
+* Исправлены ошибки в pads файлах
+* Исправлены отступы /register-vc.aspx 
+
+## 1.0.19
+
+### Исправления
+* Исправлена ошибка куков для src
+* Исправлены версии Windows
+* Исправлены pads файлы
+
 ## 1.0.18
 
 ### Исправления

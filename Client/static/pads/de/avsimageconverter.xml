@@ -83,18 +83,18 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>36684320</File_Size_Bytes>
-      <File_Size_K>35824</File_Size_K>
-      <File_Size_MB>34.98</File_Size_MB>
+      <File_Size_Bytes>36865720</File_Size_Bytes>
+      <File_Size_K>36001</File_Size_K>
+      <File_Size_MB>35.16</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Image Converter</Program_Name>
-    <Program_Version>5.3.1.310</Program_Version>
-    <Program_Release_Month>08</Program_Release_Month>
-    <Program_Release_Day>05</Program_Release_Day>
+    <Program_Version>5.4.1.316</Program_Version>
+    <Program_Release_Month>12</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
     <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Unterstützung von HEIF/HEIC-Bildern. Optimierung und Fehlerbehebungen.</Program_Change_Info>
+    <Program_Change_Info>Windows 11-Skin. Unterstützung von WebP-Bildern. Optimierte Unterstützung von HEIF/HEIC-Bildern. Yellow Magenta-Effekt.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo-kompatibel Prozessor mit 3 GHz oder höher, 2 GB oder höher RAM</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Expire_Info>
@@ -132,13 +132,13 @@
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/de/avs-free-image-converter.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/de/Register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsimageconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsimageconverter.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsimageconverter.xml</Application_XML_File_URL>
+      <Application_Order_URL>https://www.avs4you.com/de/Register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>https://www.avs4you.com/pads/de/screenshots/avsimageconverter.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsimageconverter.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/de/avsimageconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSImageConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSImageConverter.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -186,7 +186,7 @@ DAS KOMPLETTE RISIKO, DAS AUS DEM GEBRAUCH ODER AUSFÜHRUNG DER AVS4YOU-PROGRAMM
 KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 AUF KEINEN FALL WIRD ONLINE MEDIA TECHNOLOGIES LTD. FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE SCHÄDEN (EINGESCHRÄNKT ODER UNEINGESCHRÄNKT, SCHÄDEN AUS DEM VERLUST VON GESCHÄFTSGEWINNEN, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER VERMÖGENSSCHÄDEN) HAFTEN, DIE AUS DEM GEBRAUCH DER AVS4YOU-PROGRAMME ODER DER GEBRAUCHSUNFÄHIGKEIT ENTSTEHEN.
 
-URHEBERRECHTLICHER HINWEIS. Copyright(C) 2020 Online Media Technologies Ltd. Alle Rechte vorbehalten.
+URHEBERRECHTLICHER HINWEIS. Copyright(C) 2022 Online Media Technologies Ltd. Alle Rechte vorbehalten.
 Die Rechte, die hiermit ausdrücklich nicht eingeräumt werden, sind vorbehalten.</EULA>
   </Permissions>
   <AppStore>

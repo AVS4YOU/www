@@ -44,22 +44,6 @@ class installedVideoConverter extends React.PureComponent {
   }
 
   componentDidMount(){
-    const queryString = require('query-string');
-    const parsed = queryString.parse(document.location.search);
-    const cookies = new Cookies();
-    if (parsed.SRC) {
-      cookies.set('SRC', parsed.SRC, { path: '/' });
-    }
-  
-    const SRCParam = cookies.get('SRC')
-  
-    if(SRCParam){
-  
-      this.setState({
-        hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
-      })
-    }
-  
     this.setState({
      documentLoaded: true
    })
@@ -86,7 +70,7 @@ render(){
           </div>
           <ImageGQL className="headerBackgroundImage" imageName="installed-video-converter-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video Converter")}</Text>
+              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video Converter")} <br /> {this.props.t("AVS video converter")}</Text>
              <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
               <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and")}
                 <br/>{this.props.t("get extra 4 multimedia programs as a gift")}</Text>
@@ -126,7 +110,7 @@ render(){
         <div className="contact-body">
           <div className="contact-body__max-width">
             <Text as="h2" className="common__heading">
-            + {this.props.t("Get 4 professional multimedia")}
+            + {this.props.t("Get 4 professional multimedia programs as a gift")}
             </Text>
             <div className="contact-body__wrapper">
 
