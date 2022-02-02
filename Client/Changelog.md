@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.24
+
+### Новое
+* Добавлен перевод zh/installed-video-editor.aspx
+
 ## 1.0.23
 
 ### Исправления
