@@ -1332,7 +1332,7 @@
 
     "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=pt-br&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
+    "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
     "*****************************SCREENSHOT********************************": "*****************************SCREENSHOT********************************",
     "slider video converter jpg": "slider_video_converter.jpg",
