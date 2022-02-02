@@ -114,7 +114,7 @@ render(){
                 <div className="gift">{this.props.t("Gift")}</div>
                 <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
-                AVS Audio Editor
+                {this.props.t("AVS Audio Editor name")}
                 </Text>
                 <Text className="common-info-block__text">
                 {this.props.t("Professional level audio editing and recording software for Windows")}
@@ -125,7 +125,7 @@ render(){
               <div className="gift">{this.props.t("Gift")}</div>
               <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
-                AVS Video Converter
+                {this.props.t("AVS Video Converter name")}
                 </Text>
                 <Text className="common-info-block__text">
                 {this.props.t("Allinone video converter with basic video editing features")}
@@ -136,7 +136,7 @@ render(){
               <div className="gift">{this.props.t("Gift")}</div>
               <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
-                AVS Audio Converter
+                {this.props.t("AVS Audio Converter name")}
                 </Text>
                 <Text className="common-info-block__text">
                 {this.props.t("A multiformat audio conversion application with basic audio editing tools")}
@@ -147,7 +147,7 @@ render(){
               <div className="gift">{this.props.t("Gift")}</div>
               <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
-                AVS Video ReMaker
+                {this.props.t("AVS Video ReMaker name")}
                 </Text>
                 <Text className="common-info-block__text">
                 {this.props.t("A fast video editing tool to make edits without changing the original video file format")}

@@ -961,7 +961,10 @@
   "If you have not found the necessary information, please send a request": "Если вы не нашли необходимой информации, пожалуйста, отправьте запрос на ",
 
   "*****************************INSTALLED-VIDEO-EDITOR********************************": "*****************************INSTALLED-VIDEO-EDITOR********************************",
-  
+  "AVS Video ReMaker name" : "AVS Video ReMaker",
+	"AVS Audio Converter name" : "AVS Audio Converter",
+	"AVS Video Converter name" : "AVS Video Converter",
+	"AVS Audio Editor name" : "AVS Audio Editor name",
   "AVS4YOU: Audio und Video Editor & Dowloader": "AVS4YOU: Загрузчик редактора аудио и видео",
   "AVS4YOU best software for processing video audio image": "AVS4YOU – лучшее ПО для обработки видео, аудио и изображений",
   "Thank you for installing AVS Video Editor": "Спасибо, что установили",
