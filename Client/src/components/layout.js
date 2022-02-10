@@ -118,7 +118,7 @@
    }
  }
 
- @media (max-width: 550px) {
+ @media (max-width: 590px) {
   .PLnewAvsText{
     top: 12px;    
 }
