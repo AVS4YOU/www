@@ -70,7 +70,7 @@
      top: -7px;
    }
    .PLnewAvsLeft{
-     height: 98px;
+     height: 78px;
      z-index:10;
      background-image:url(${PlAVSLeft});
      width: 444px;
@@ -83,7 +83,7 @@
      z-index:9;
    }
    .PLnewAvsRight{
-     height: 98px;
+     height: 83px;
      z-index:10;
      background-image:url(${PlAVSRight});
      width: 444px;
