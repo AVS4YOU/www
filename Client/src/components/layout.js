@@ -33,9 +33,8 @@
     background-color: #EE0000;
     height: 22px;
     width: 100%;
-    display: table;
     width: 100%;
-    display: table;
+    display: none;
     padding: 13px 0;
  }
    .PLnewAvsText{
