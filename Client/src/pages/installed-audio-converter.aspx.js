@@ -9,6 +9,7 @@ import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
 import Cookies from 'universal-cookie';
+import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const regExp = /=regnow:(.*):/;
@@ -54,7 +55,7 @@ class installedAudioConverter extends React.PureComponent {
 render(){
     return (
       <Layout 
-        headerIsDisabled={true}
+        headerIsDisabled={false}
         className="installed-audio-converter-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -106,62 +107,16 @@ render(){
               <Text>{this.props.t("Create audiobooks")}</Text>
             </div>
           </BenefitsCarousel>
-          <div className="screenshotImageBlock"></div>
         </div>
 
-        <div className="contact-body">
-          <div className="contact-body__max-width">
-            <Text as="h2" className="common__heading">
-            + {this.props.t("Get 4 professional multimedia programs as a gift")}
-            </Text>
-            <div className="contact-body__wrapper">
+        <ScreenshotsCarousel 
+            imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
+            imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
+            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4"]}
+            
+          />
 
-            <div className="common-info-block">
-              <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
-                <Text as="h4" className="common-info-block__headline">
-                AVS Video Converter
-                </Text>
-                <Text className="common-info-block__text">
-                {this.props.t("Allinone video converter with basic video editing features")}
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-              <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
-                <Text as="h4" className="common-info-block__headline">
-                AVS Video Editor
-                </Text>
-                <Text className="common-info-block__text">
-                {this.props.t("Professional fullfeatured video editor for making high quality videos just in minutes")}
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-                <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
-                <Text as="h4" className="common-info-block__headline">
-                AVS Audio Editor
-                </Text>
-                <Text className="common-info-block__text">
-                {this.props.t("Professional level audio editing and recording software for Windows")}
-                </Text>
-              </div>
-
-              <div className="common-info-block">
-              <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
-                <Text as="h4" className="common-info-block__headline">
-                AVS Video ReMaker
-                </Text>
-                <Text className="common-info-block__text">
-                {this.props.t("A fast video editing tool to make edits without changing the original video file format")}
-                </Text>
-                </div>
-                </div>
-          </div>
-        </div>
+        
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>

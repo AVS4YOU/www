@@ -148,25 +148,19 @@
             background-size: 95px;
 
             &.unlimited{
-                background-image: url(../images/installed-video-editor/card-1.png);
-            }
-            &.correct{
-                background-image: url(../images/installed-video-converter/card-2.png);
-            }
-            &.cut{
-                background-image: url(../images/installed-video-converter/card-3.png);
-            }
-            &.export{
-                background-image: url(../images/installed-video-converter/card-4.png);
+                background-image: url(../images/installed-video-converter/icon-no-restrictions.svg);
             }
             &.free{
-                background-image: url(../images/installed-video-editor/card-2.png);
+                background-image: url(../images/installed-video-converter/icon-free-upgrades.svg);
             }
             &.noWatermark{
-                background-image: url(../images/installed-video-editor/card-3.png);
+                background-image: url(../images/installed-video-converter/icon-no-watermark.svg);
             }
-            &.support{
-                background-image: url(../images/installed-video-editor/card-4.png);
+            &.package{
+                background-image: url(../images/installed-video-converter/icon-pro-tools.svg);
+            }
+            &.secure{
+                background-image: url(../images/installed-video-converter/icon-secure.svg);
             }
 
 
@@ -213,31 +207,39 @@
         align-items: center;
         justify-content: center;
         padding: 45px 0 39px;
-        display: flex;
         background: rgb(247,248,248);
-        margin: auto;
+        margin: auto !important;
+        display: table;
         margin-bottom: 40px;
+        width: 100%;
 }
 
     .helpful{
-        width: 58%;
-        text-transform: uppercase;
-        font-size: 34px;
-        font-weight: 400;
+        font-size: 48px;
+        font-weight: 600;
         text-align: center;
         color: #130d3d;
-        line-height: 43px;
+        line-height:65px;
+}
+
+.helpful-block {
+    height: 220px;
+    width: 370px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0px 45px 49px rgba(209, 153, 9, 0.13);
+    margin: 15px;
 }
 
     .knowledge{
-        width: 42%;
-        padding: 7px 0 0 52px;
-        border-left: 3px solid #ccc;
-        display: block;
+        padding: 7px 0 0 0;
+        display: flex;
         font-size: 17px;
         line-height: 22px;
         color: #393939;
         font-weight: 600;
+        max-width: 1170px;
+        margin: auto;
         a{
             margin: 0 auto;
             text-decoration: underline;
