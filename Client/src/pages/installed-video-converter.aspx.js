@@ -106,9 +106,9 @@ render(){
           <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
 <div className="knowledge">
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon"></div></div><a href={this.props.t(`${this.state.onlinehelpVideoHref}`)} style={{color: "#016FD0"}}>{this.props.t("Knowledge center")}</a></div>
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon"></div></div><a href={this.props.t(`${this.state.supportVideoHref}`)} style={{color: "#016FD0"}}>{this.props.t("Tips tricks")}</a></div>
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon"></div></div><a href={this.props.t(`${this.state.guidesVideoHref}`)} style={{color: "#016FD0"}}>{this.props.t("Got a question")} {this.props.t("Contact our")} {this.props.t("support team")}</a> </div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon"></div></div><a href={this.props.t("onlinehelpVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Knowledge center")}</a></div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon"></div></div><a href={this.props.t("supportVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Tips tricks")}</a></div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon"></div></div><a href={this.props.t("guidesVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Got a question")} {this.props.t("Contact our")} {this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>
