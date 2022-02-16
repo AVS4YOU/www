@@ -4,9 +4,6 @@ import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/installed-video-converter.less";
-import BenefitsCarousel from '../components/benefits-carousel';
-import { Link as GatsbyLink } from 'gatsby';
-import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
 import Cookies from 'universal-cookie';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -62,20 +59,19 @@ render(){
         metaKeywords=""
       >
         <div className="header">
-          <ImageGQL className="headerBackgroundImage" imageName="installed-video-converter-header.jpg" style={{position: "absolute"}}/>
-            <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
+        <div className="header_image"></div>
+            <div className="header__body">
+              <Text className="installed_special_offer">{this.props.t("Special offer")}</Text>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video Converter")} <br /> {this.props.t("AVS video converter")}</Text>
-             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
-              <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and")}
-                <br/>{this.props.t("get extra 4 multimedia programs as a gift")}</Text>
+              <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("get extra 4 multimedia programs as a gift")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("free support")}</Text>
               <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
-              <Text as="h4" className="header__new__price">{this.props.t("590")}</Text></table>
+              <Text as="h4" className="header__new__price">{this.props.t("59")}</Text></table>
               <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
             </div>
         </div>
         <div className="body-company">
           <Text as="h2" className="common__heading">{this.props.t("Your benefits")}</Text>
-          <BenefitsCarousel className="benefitsCarousel">
+          <div className="benefitsCarousel">
           <div className="carouselItem package">
               <Text>{this.props.t("5 multimedia programs in 1 package")}</Text>
             </div>
@@ -92,26 +88,27 @@ render(){
               <Text>{this.props.t("100% secure, ad-free, virus-free")}</Text>
             </div>
 
-          </BenefitsCarousel>
+          </div>
         </div>
 
-          <ScreenshotsCarousel
-            maxWidth={734}
-            maxWidthPopup={734}
-            titleImage={[this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Editor"), this.props.t("AVS Audio Converter")]}
-            descriptionImage={[this.props.t("Easily convert videos"), this.props.t("Make your home videos"), this.props.t("Edit video files"), this.props.t("Enhance your audio"), this.props.t("Convert your audio")]}
-            imageNames={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
-            imageNamesPopup={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
-            altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
-          />
+          <div className="installed-carousel">
+            <ScreenshotsCarousel
+              maxWidth={734}
+              maxWidthPopup={734}
+              titleImage={[this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Editor"), this.props.t("AVS Audio Converter")]}
+              descriptionImage={[this.props.t("Easily convert videos"), this.props.t("Make your home videos"), this.props.t("Edit video files"), this.props.t("Enhance your audio"), this.props.t("Convert your audio")]}
+              imageNames={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+              imageNamesPopup={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
+              altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
+            />
+          </div>
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
 <div className="knowledge">
-  <div className="helpful-block"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-converter/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div></div>
-  <div className="helpful-block"><div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div></div>
-  <div className="helpful-block"><div className="questionIcon">{this.props.t("Got a question")}
-  <br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div></div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon"></div></div><a href="https://onlinehelp.avs4you.com/avs-video-converter/" style={{color: "#016FD0"}}>{this.props.t("Knowledge center")}</a></div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon"></div></div><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#016FD0"}}>{this.props.t("Tips tricks")}</a></div>
+  <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon"></div></div><a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#016FD0"}}>{this.props.t("Got a question")} {this.props.t("Contact our")} {this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>
