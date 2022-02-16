@@ -55,7 +55,7 @@ class avsFreeImageConverter extends React.PureComponent {
                   <div></div>
                 </Text>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Image Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Share your photos, stories and adventures with Free AVS Image Converter")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Compress resize and convert images to JPEG and other key formats")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
@@ -93,6 +93,7 @@ class avsFreeImageConverter extends React.PureComponent {
               headerText={this.props.t("Convert from and to popular formats")}
             >
               <Text className="ListItem">{this.props.t("Convert images to all key formats JPEG JPG PNG BMP TIFF TGA GIF animated GIF PNG APNG ITHMB iPhone iPod Thumbnail Files")}</Text>
+              <Text className="ListItem">{this.props.t("Open and convert new formats HEIF HEIC and WebP to JPG JPEG")}</Text>
               <Text className="ListItem">{this.props.t("Convert RAW images CR2 CRW RAF DNG MEF NEF ARW etc created by digital cameras fast and easily")}</Text>
               <Text className="ListItem">{this.props.t("Convert your images to PDF format merge multiple JPEG files to PDF")}</Text>
             </ContentRowItem>
@@ -113,6 +114,7 @@ class avsFreeImageConverter extends React.PureComponent {
               headerText={this.props.t("Apply effects")}
             >
               <Text className="ListItem">{this.props.t("Adjust contrast and brightness automatically")}</Text>
+              <Text className="ListItem">{this.props.t("Play with brand new filters Adorable")}</Text>
               <Text className="ListItem">{this.props.t("Apply retro look with the aging effect")}</Text>
               <Text className="ListItem">{this.props.t("Make your pictures look like analog photography")}</Text>
               <Text className="ListItem">{this.props.t("Use the black-and-white effect and more")}</Text>
