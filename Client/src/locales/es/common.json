@@ -1227,6 +1227,13 @@
     "onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/es/index.aspx",
     "support avs4you faq" : "https://support.avs4you.com/es/faq.aspx",
 
+    "onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/es/avs-video-converter/",
+    "onlinehelpAudioHref" : "https://onlinehelp.avs4you.com/es/avs-audio-converter/",
+    "supportVideoHref" : "https://www.avs4you.com/es/guides/video.aspx",
+    "supportAudioHref" : "https://www.avs4you.com/es/guides/audio.aspx",
+    "guidesVideoHref" : "https://support.avs4you.com/es/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+    "guidesAudioHref" : "https://support.avs4you.com/es/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+
     "*****************************AVS VIDEO EDITOR FINAL********************************" : "*****************************FINAL DE AVS VIDEO EDITOR********************************",
     "All key formats supported" : "Compatible con todos los formatos principales",
     "User-friendly Timeline/Storyboard" : "Línea de tiempo/guión gráfico fácil de usar",

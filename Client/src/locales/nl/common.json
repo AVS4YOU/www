@@ -1366,6 +1366,13 @@
 	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
+	"onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/avs-video-converter/",
+	"onlinehelpAudioHref" : "https://onlinehelp.avs4you.com/avs-audio-converter/",
+	"supportVideoHref" : "https://www.avs4you.com/guides/video.aspx",
+	"supportAudioHref" : "https://www.avs4you.com/guides/audio.aspx",
+	"guidesVideoHref" : "https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+	"guidesAudioHref" : "https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
  "slider video converter jpg" :  "nl_slider_video_converter.jpg",
  "slider video editor jpg" : "nl_slider_video_editor.jpg",

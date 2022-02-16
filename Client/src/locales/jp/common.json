@@ -1076,6 +1076,14 @@
     "avs4you guides index" : "https://www.avs4you.com/jp/guides/index.aspx",
     "onlinehelp avs4you index" : "https://onlinehelp.avs4you.com/jp/index.aspx",
     "support avs4you faq" : "https://support.avs4you.com/jp/faq.aspx",
+
+    "onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/jp/avs-video-converter/",
+	"onlinehelpAudioHref" : "https://onlinehelp.avs4you.com/jp/avs-audio-converter/",
+	"supportVideoHref" : "https://www.avs4you.com/guides/jp/video.aspx",
+	"supportAudioHref" : "https://www.avs4you.com/guides/jp/audio.aspx",
+	"guidesVideoHref" : "https://support.avs4you.com/jp/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+	"guidesAudioHref" : "https://support.avs4you.com/jp/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509",
+
     "*****************************UPGRADE-NOW********************************" : "*****************************UPGRADE-NOW********************************",
     "Upgrade now" : "今すぐアップグレード",
     "and get access to all AVS4YOU programs" : "すべての AVS4YOU プログラムへのアクセス獲得",
