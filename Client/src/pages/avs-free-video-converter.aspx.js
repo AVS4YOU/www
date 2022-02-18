@@ -3,6 +3,7 @@ import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
+import FreeFlag from '../components/free-flag';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
@@ -71,9 +72,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                  <div></div>
-                </Text>
+                <FreeFlag>{this.props.t("Free")}</FreeFlag>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as={this.props.t("h22")} fontSize={24}>{this.props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
                 <HeaderDownloadButtons 
