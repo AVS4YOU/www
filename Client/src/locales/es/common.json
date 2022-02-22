@@ -452,6 +452,7 @@
     "Unlimited access_rc":"Acceso ilimitado a 5 programas AVS4YOU",
     "Why choose AVS4YOU?":"¿Por qué elegir AVS4YOU?",
     "5 multimedia programs in 1 package":"5 programas multimedia en 1 paquete",
+    "5 multimedia programs":"5 programas profesionales en 1 paquete",
     "100% secure, ad-free, virus-free":" 100% seguro, sin anuncios, sin virus",
     "ad-free, virus-free" : "sin anuncios, sin virus ",
     "30-day Money-back guarantee":"Garantía de devolución del dinero de 30 días",
@@ -1021,6 +1022,7 @@
     "get access to extra features" : "adicionales!",
     "Your benefits" : "Sus beneficios",
     "Unlimited access to the program" : "Acceso ilimitado al programa",
+    "No restrictions" : "Sin restriccione",
     "Free upgrades" : "Actualizaciones gratuitas",
     "No watermark" : "Ninguna marca de agua",
     "Free technical support" : "Soporte técnico gratuito",
@@ -1073,6 +1075,12 @@
     "Edit video files" : "Edite archivos de vídeo sin recodificar y sin perder calidad. Corte, borre las partes no deseadas, cambie la secuencia de las escenas. Grabe vídeo en DVD o Blu-Ray.",
     "Convert your audio" : "Convierta sus archivos de audio entre varios formatos: MP3, WMA, WAV, M4A, FLAC y otros. Cree sus propios audiolibros.",
     "Enhance your audio" : "Mejore su audio con efectos especiales y filtros. Grabe los datos de audio de varias entradas. Guarde los archivos de audio en los formatos de audio más populares.",
+    "Change any video format to play on your device or pc" : "Convierta cualquier formato de vídeo para reproducirlo en su dispositivo u ordenador.",
+    "Record, edit, optimize and export videos just in minutes" : "Grabe, edite, optimice y exporte vídeos en pocos minutos.",
+    "Record & edit audio, remove noise, polish your recordings" : "Grabe y edite audio, elimine ruido, pula sus grabaciones.",
+    "Convert audio/video to MP3 and all key formats" : "Convierte archivos de audio y vídeo a MP3 y otros formatos clave.",
+    "Capture and edit video fast without re-encoding" : "Capture y edite vídeos rápidamente sin volver a codificar.",
+
 
     "*****************************PRECISE-VIDEO-TOOLS********************************" : "*****************************PRECISE-VIDEO-TOOLS********************************",
     "Trim, cut, split, crop, merge, rotate videos to create impressive movies" : "Ajusta, corta, divide, recorta, une y rota vídeos para crear impresionantes películas.",

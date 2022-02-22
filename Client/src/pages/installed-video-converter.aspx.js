@@ -1,11 +1,12 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/installed-video-converter.less";
 import styled from 'styled-components';
 import Cookies from 'universal-cookie';
+import { Link as GatsbyLink } from 'gatsby';
+import Logo from '../images/common/logo.svg';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
@@ -50,7 +51,7 @@ class installedVideoConverter extends React.PureComponent {
 render(){
     return (
       <Layout 
-        headerIsDisabled={false}
+        headerIsDisabled={true}
         className="installed-video-converter-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -61,6 +62,13 @@ render(){
         <div className="header">
         <div className="header_image"></div>
             <div className="header__body">
+            <div className="avs-logo">
+          <GatsbyLink className="headerLogo" to="/">
+              <LogoWrapper href="/">
+                  <img src={Logo} alt="avs4you logo"/>
+              </LogoWrapper>
+          </GatsbyLink>
+          </div>
               <Text className="installed_special_offer">{this.props.t("Special offer")}</Text>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video Converter")} <br /> {this.props.t("AVS video converter")}</Text>
               <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("Get 4 professional multimedia")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("free support")}</Text>
@@ -73,10 +81,10 @@ render(){
           <Text as="h2" className="common__heading">{this.props.t("Your benefits")}</Text>
           <div className="benefitsCarousel">
           <div className="carouselItem package">
-              <Text>{this.props.t("5 multimedia programs in 1 package")}</Text>
+              <Text>{this.props.t("5 multimedia programs")}</Text>
             </div>
             <div className="carouselItem unlimited">
-              <Text>{this.props.t("Unlimited access to the program")}</Text>
+              <Text>{this.props.t("No restrictions")}</Text>
             </div>
             <div  className="carouselItem noWatermark">
               <Text>{this.props.t("No watermark")}</Text>
@@ -96,7 +104,7 @@ render(){
               maxWidth={734}
               maxWidthPopup={734}
               titleImage={[this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Editor"), this.props.t("AVS Audio Converter")]}
-              descriptionImage={[this.props.t("Easily convert videos"), this.props.t("Make your home videos"), this.props.t("Edit video files"), this.props.t("Enhance your audio"), this.props.t("Convert your audio")]}
+              descriptionImage={[this.props.t("Change any video format to play on your device or pc"), this.props.t("Record, edit, optimize and export videos just in minutes"), this.props.t("Capture and edit video fast without re-encoding"), this.props.t("Record & edit audio, remove noise, polish your recordings"), this.props.t("Convert audio/video to MP3 and all key formats")]}
               imageNames={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
               imageNamesPopup={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
               altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}

@@ -5,6 +5,16 @@
         height: 779px;
     }
 
+    .avs-logo{
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 0px;
+        width: 71px;
+        height: 41px;
+        z-index: 3;
+    }
+
     .header_image {
         background-image: url(../images/installed-video-converter/installed-video-convetrer-back.png);
         background-repeat: no-repeat;
@@ -19,7 +29,7 @@
         padding-bottom: 40px;
         padding-top: 80px;
         margin-left: 10%;
-        width: 1170px;
+        max-width: 1170px;
         margin: auto;
         position: relative;
         z-index: 3;
@@ -322,14 +332,25 @@
     }
 }
 
-@media (max-width: 620px) {
-    .header__heading {
-        text-align: left !important;
-    }
+@media (max-width: 659px) {
+    .installed-video-converter-page{
+        .header__heading {
+            text-align: left !important;
+        }
 
-    .header__subtitle {
-        text-align: left !important;
-        margin: 0 !important; 
+        .header__subtitle {
+            text-align: left !important;
+            margin: 0 !important; 
+        }
+
+        .header_image {
+            background-position-x: -400% !important;
+        }
+
+        .header {
+            height: 100%;
+        }
     }
 }
+
 
