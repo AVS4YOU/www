@@ -20,41 +20,41 @@ const LogoWrapper = styled.div`
 
 export const InstalledAudioConverterOtherContent = (props) => (
   <div>
-    <div className="header">
-    <div className="header_image"></div>  
-    <div className="header__body"> 
-    <div className="avs-logo">
-  <GatsbyLink className="headerLogo" to="/">
+    <div className="header_other">
+    <div className="header_image_other"></div>  
+    <div className="header__body_other"> 
+    <div className="avs-logo_other">
+  <GatsbyLink className="headerLogo_other" to="/">
       <LogoWrapper href="/">
-          <img src={Logo} alt="avs4you logo"/>
+          <img src={Logo} alt="avs4you logo_other"/>
       </LogoWrapper>
   </GatsbyLink>
   </div>
-  <Text className="installed_special_offer">{props.t("Special offer")}</Text>
-      <Text as="h1" className="header__heading installed">{props.t("Thank you for installing AVS Audio Converter")} <br /> {props.t("AVS audio converter")}</Text>
-      <Text as="h3" className="header__subtitle installed">{props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("Get 4 professional multimedia")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("free support")}</Text>
-      <table className="header__price__block"><Text as="h4" className="header__price">{props.t("199")}</Text>
-      <Text as="h4" className="header__new__price">{props.t("59")}</Text></table>
-      <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={props.t(`${props.hrefUnlim}`)} style={{color: "#fff"}}>{props.t("Buy now")}</a></Text></table>
+  <Text className="installed_special_offer_other">{props.t("Special offer")}</Text>
+      <Text as="h1" className="header__heading_installed_other">{props.t("Thank you for installing AVS Audio Converter")} <br /> {props.t("AVS audio converter")}</Text>
+      <Text as="h3" className="header__subtitle_installed_other">{props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("Get 4 professional multimedia")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("free support")}</Text>
+      <table className="header__price__block_other"><Text as="h4" className="header__price_other">{props.t("199")}</Text>
+      <Text as="h4" className="header__new__price_other">{props.t("59")}</Text></table>
+      <table className="header__buy_other"><Text as="h2" className="header__buy__now_other"><a href={props.t(`${props.hrefUnlim}`)} style={{color: "#fff"}}>{props.t("Buy now")}</a></Text></table>
     </div>
   </div>
 
-  <div className="body-company">
-    <Text as="h2" className="common__heading">{props.t("Your benefits")}</Text>
-    <div className="benefitsCarousel">
-    <div className="carouselItem package">
+  <div className="body-company_other">
+    <Text as="h2" className="common__heading_other">{props.t("Your benefits")}</Text>
+    <div className="benefitsCarousel_other">
+    <div className="carouselItem_other package_other">
         <Text>{props.t("5 multimedia programs")}</Text>
       </div>
-      <div className="carouselItem unlimited">
+      <div className="carouselItem_other unlimited_other">
         <Text>{props.t("No restrictions")}</Text>
       </div>
-      <div  className="carouselItem noWatermark">
+      <div  className="carouselItem_other noWatermark_other">
         <Text>{props.t("No watermark")}</Text>
       </div>
-      <div  className="carouselItem free">
+      <div  className="carouselItem_other free_other">
         <Text>{props.t("Free upgrades")}</Text>
       </div>
-      <div className="carouselItem secure">
+      <div className="carouselItem_other secure_other">
         <Text>{props.t("100% secure, ad-free, virus-free")}</Text>
       </div>
     </div>
@@ -70,12 +70,12 @@ export const InstalledAudioConverterOtherContent = (props) => (
       altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
     />
   </div>
-  <div className="resourcesTable" style={{margin: "auto"}}> 
-  <div className="helpful">{props.t("Helpful resources")}</div>
-  <div className="knowledge">
-    <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon"></div></div><a href={props.t("onlinehelpAudioHref")} style={{color: "#016FD0"}}>{props.t("Knowledge center")}</a></div>
-    <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon"></div></div><a href={props.t("supportAudioHref")} style={{color: "#016FD0"}}>{props.t("Tips tricks")}</a></div>
-    <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon"></div></div><a href={props.t("guidesAudioHref")} style={{color: "#016FD0"}}>{props.t("Got a question")} {props.t("Contact our")} {props.t("support team")}</a> </div>
+  <div className="resourcesTable_other" style={{margin: "auto"}}> 
+  <div className="helpful_other">{props.t("Helpful resources")}</div>
+  <div className="knowledge_other">
+    <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon_other"></div></div><a href={props.t("onlinehelpAudioHref")} style={{color: "#016FD0"}}>{props.t("Knowledge center")}</a></div>
+    <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon_other"></div></div><a href={props.t("supportAudioHref")} style={{color: "#016FD0"}}>{props.t("Tips tricks")}</a></div>
+    <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon_other"></div></div><a href={props.t("guidesAudioHref")} style={{color: "#016FD0"}}>{props.t("Got a question")} {props.t("Contact our")} {props.t("support team")}</a> </div>
   </div>
   </div>
   </div>
