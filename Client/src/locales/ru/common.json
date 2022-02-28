@@ -447,8 +447,14 @@
   "Unlimited access_rc": "Безлимитный доступ к программам AVS4YOU",
   "Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" : "Получите 5 профессиональных мультимедийных программ в 1 пакете + Бесплатные обновления + Бесплатная поддержка",
   "Why choose AVS4YOU?": "Почему люди выбирают AVS4YOU?",
-  "5 multimedia programs in 1 package": "5 мультимедийных программ в 1 пакете",
+  "5 multimedia programs in 1 package": "5 мультимедийных программ",
+  "5 multimedia programs": "5 мультимедийных программ",
+  "in 1 package": "в 1 пакете",
+  "No restrictions" : "Без ограничений",
   "100% secure, ad-free, virus-free": "100% безопасно, без рекламы и вирусов",
+  "100% secure," : "100% безопасно,",
+  "ad-free," : "без рекламы",
+  "virus-free" : "и вирусов",
   "30-day Money-back guarantee": "30-дневная гарантия возврата денег",
   "No watermark": "Без водяных знаков",
   "Free support, free updates": "Бесплатная поддержка и обновления",
@@ -1040,7 +1046,11 @@
   "Edit video files" : "Редактируйте видеофайлы без перекодирования и потери качества. Вырезайте, удаляйте ненужные фрагменты, меняйте последовательность сцен. Записывайте файлы на диски DVD или Blu-Ray.",
   "Convert your audio" : "Конвертируйте аудиофайлы между различными форматами: MP3, WAV, WMA, M4A, FLAC и другими. Создавайте собственные аудиокниги.",
   "Enhance your audio" : "Улучшите звук с помощью специальных эффектов и фильтров. Записывайте аудиоданные с различных источников. Сохраняйте аудиофайлы в популярных форматах.",
-
+  "Fast audio conversion tool with basic audio editing tools" : "Fast audio conversion tool with basic audio editing tools.",
+  "Professional level audio editing and recording software" : "Professional level audio editing and recording software for Windows.",
+  "All-in-one video converter with basic video editing features" : "All-in-one video converter with basic video editing features.",
+  "Professional full-featured video editor for making high quality videos just in minutes" : "Professional full-featured video editor for making high quality videos just in minutes.",
+  "A simple and fast video editor without re-encoding" : "A simple and fast video editor without re-encoding.",
 
 
 
