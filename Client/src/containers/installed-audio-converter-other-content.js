@@ -30,7 +30,7 @@ export const InstalledAudioConverterOtherContent = (props) => (
       </LogoWrapper>
   </GatsbyLink>
   </div>
-    <Text className="installed_special_offer">Этот контент будет отображаться только на тех языках, которые указанны на странице в массиве lang</Text>
+  <Text className="installed_special_offer">{props.t("Special offer")}</Text>
       <Text as="h1" className="header__heading installed">{props.t("Thank you for installing AVS Audio Converter")} <br /> {props.t("AVS audio converter")}</Text>
       <Text as="h3" className="header__subtitle installed">{props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("Get 4 professional multimedia")} <br /> <div className="plus-header">{props.t("+")}</div> {props.t("free support")}</Text>
       <table className="header__price__block"><Text as="h4" className="header__price">{props.t("199")}</Text>
