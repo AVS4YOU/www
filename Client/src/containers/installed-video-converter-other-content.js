@@ -40,26 +40,22 @@ export const InstalledVideoConverterOtherContent = (props) => (
             </div>
             <div className="body-company_other">
               <Text as="h2" className="common__heading_other">{props.t("Your benefits")}</Text>
-              <div className="benefitsCarousel_other">
-              <div className="carouselItem_other package_other">
-                  <Text>{props.t("5 multimedia programs")}</Text>
+                <div className="carouselItem_other package_other">
+                    <Text>{props.t("5 multimedia programs")} <br /> {props.t("in 1 package")}</Text>
+                  </div>
+                  <div className="carouselItem_other unlimited_other">
+                    <Text>{props.t("No restrictions")}</Text>
+                  </div>
+                  <div  className="carouselItem_other noWatermark_other">
+                    <Text>{props.t("No watermark")}</Text>
+                  </div>
+                  <div  className="carouselItem_other free_other">
+                    <Text>{props.t("Free upgrades")}</Text>
+                  </div>
+                  <div className="carouselItem_other secure_other">
+                    <Text>{props.t("100% secure,")} <br /> {props.t("ad-free,")} <br /> {props.t("virus-free")}</Text>
+                  </div>
                 </div>
-                <div className="carouselItem_other unlimited_other">
-                  <Text>{props.t("No restrictions")}</Text>
-                </div>
-                <div  className="carouselItem_other noWatermark_other">
-                  <Text>{props.t("No watermark")}</Text>
-                </div>
-                <div  className="carouselItem_other free_other">
-                  <Text>{props.t("Free upgrades")}</Text>
-                </div>
-                <div className="carouselItem_other secure_other">
-                  <Text>{props.t("100% secure, ad-free, virus-free")}</Text>
-                </div>
-
-              </div>
-            </div>
-
               <div className="installed-carousel">
                 <ScreenshotsCarousel
                   maxWidth={734}
