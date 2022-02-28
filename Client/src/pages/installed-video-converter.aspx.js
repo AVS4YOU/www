@@ -28,7 +28,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const lang = ['de','en','es','fr','it','jp','ru']
+const lang = ['de','en','es','fr','it','jp']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;

@@ -43,7 +43,7 @@ export const InstalledAudioConverterOtherContent = (props) => (
     <Text as="h2" className="common__heading_other">{props.t("Your benefits")}</Text>
     <div className="benefitsCarousel_other">
     <div className="carouselItem_other package_other">
-        <Text>{props.t("5 multimedia programs")}</Text>
+        <Text>{props.t("5 multimedia programs")} <br /> {props.t("in 1 package")}</Text>
       </div>
       <div className="carouselItem_other unlimited_other">
         <Text>{props.t("No restrictions")}</Text>
@@ -55,7 +55,7 @@ export const InstalledAudioConverterOtherContent = (props) => (
         <Text>{props.t("Free upgrades")}</Text>
       </div>
       <div className="carouselItem_other secure_other">
-        <Text>{props.t("100% secure, ad-free, virus-free")}</Text>
+        <Text>{props.t("100% secure,")} <br /> {props.t("ad-free,")} <br /> {props.t("virus-free")}</Text>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ export const InstalledAudioConverterOtherContent = (props) => (
       maxWidth={734}
       maxWidthPopup={734}
       titleImage={[props.t("AVS Audio Converter"), props.t("AVS Audio Editor"), props.t("AVS Video Converter"), props.t("AVS Video Editor"), props.t("AVS Video ReMaker")]}
-      descriptionImage={[props.t("Convert audio/video to MP3 and all key formats"), props.t("Record & edit audio, remove noise, polish your recordings"), props.t("Change any video format to play on your device or pc"), props.t("Record, edit, optimize and export videos just in minutes"), props.t("Capture and edit video fast without re-encoding")]}
+      descriptionImage={[props.t("Fast audio conversion tool with basic audio editing tools"), props.t("Professional level audio editing and recording software"), props.t("All-in-one video converter with basic video editing features"), props.t("Professional full-featured video editor for making high quality videos just in minutes"), props.t("A simple and fast video editor without re-encoding")]}
       imageNames={[props.t("audio converter bath jpg"), props.t("audio editor edit all key jpg"), props.t("video converter edit your videos jpg"), props.t("video editor slider2 jpg"), props.t("video remaker edit video files min jpg")]}
       imageNamesPopup={[props.t("audio converter bath jpg"), props.t("audio editor edit all key jpg"), props.t("video converter edit your videos jpg"), props.t("video editor slider2 jpg"), props.t("video remaker edit video files min jpg")]}
       altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
