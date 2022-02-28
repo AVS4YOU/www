@@ -2,6 +2,7 @@ import React from "react";
 import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
+import FreeFlag from '../components/free-flag';
 import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
@@ -51,9 +52,7 @@ class avsFreeImageConverter extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                  <div></div>
-                </Text>
+              <FreeFlag>{this.props.t("Free")}</FreeFlag>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Image Converter")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Compress resize and convert images to JPEG and other key formats")}</Text>
                 <HeaderDownloadButtons
@@ -146,7 +145,7 @@ class avsFreeImageConverter extends React.PureComponent {
                     name: "Chen Wang",
                     avatar: AvatarChenWang,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results")
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
                   },
                   {
                     name: "Andy Stephens",

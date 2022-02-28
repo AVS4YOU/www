@@ -1,12 +1,18 @@
 import React from "react";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
+import ImageGQL from "../components/image-gql";
 import "../styles/installed-video-converter.less";
+import BenefitsCarousel from '../components/benefits-carousel';
 import styled from 'styled-components';
 import Cookies from 'universal-cookie';
+import { Link as GatsbyLink } from 'gatsby';
+import Logo from '../images/common/logo.svg';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
+
+import { InstalledVideoConverterCommonContent } from '../containers/installed-video-converter-common-content';
+import { InstalledVideoConverterOtherContent } from '../containers/installed-video-converter-other-content';
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const regExp = /=regnow:(.*):/;
@@ -21,6 +27,17 @@ const LogoWrapper = styled.div`
         margin: auto;
     }
 `;
+
+const lang = ['de','en','es','fr','it','jp','ru']
+
+const isSomeLang = (currentLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
 
 class installedVideoConverter extends React.PureComponent {
 
@@ -50,7 +67,7 @@ class installedVideoConverter extends React.PureComponent {
 render(){
     return (
       <Layout 
-        headerIsDisabled={false}
+        headerIsDisabled={true}
         className="installed-video-converter-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -58,60 +75,11 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-        <div className="header">
-        <div className="header_image"></div>
-            <div className="header__body">
-              <Text className="installed_special_offer">{this.props.t("Special offer")}</Text>
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video Converter")} <br /> {this.props.t("AVS video converter")}</Text>
-              <Text as="h3" className="header__subtitle installed">{this.props.t("Save 70 on the full version and")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("Get 4 professional multimedia")} <br /> <div className="plus-header">{this.props.t("+")}</div> {this.props.t("free support")}</Text>
-              <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
-              <Text as="h4" className="header__new__price">{this.props.t("59")}</Text></table>
-              <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
-            </div>
-        </div>
-        <div className="body-company">
-          <Text as="h2" className="common__heading">{this.props.t("Your benefits")}</Text>
-          <div className="benefitsCarousel">
-          <div className="carouselItem package">
-              <Text>{this.props.t("5 multimedia programs in 1 package")}</Text>
-            </div>
-            <div className="carouselItem unlimited">
-              <Text>{this.props.t("Unlimited access to the program")}</Text>
-            </div>
-            <div  className="carouselItem noWatermark">
-              <Text>{this.props.t("No watermark")}</Text>
-            </div>
-            <div  className="carouselItem free">
-              <Text>{this.props.t("Free upgrades")}</Text>
-            </div>
-            <div className="carouselItem secure">
-              <Text>{this.props.t("100% secure, ad-free, virus-free")}</Text>
-            </div>
-
-          </div>
-        </div>
-
-          <div className="installed-carousel">
-            <ScreenshotsCarousel
-              maxWidth={734}
-              maxWidthPopup={734}
-              titleImage={[this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker"), this.props.t("AVS Audio Editor"), this.props.t("AVS Audio Converter")]}
-              descriptionImage={[this.props.t("Easily convert videos"), this.props.t("Make your home videos"), this.props.t("Edit video files"), this.props.t("Enhance your audio"), this.props.t("Convert your audio")]}
-              imageNames={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
-              imageNamesPopup={[this.props.t("video converter edit your videos jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video remaker edit video files min jpg"), this.props.t("audio editor edit all key jpg"), this.props.t("audio converter bath jpg")]}
-              altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
-            />
-          </div>
-
-          <div className="resourcesTable" style={{margin: "auto"}}> 
-<div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge">
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="knowledgeIcon"></div></div><a href={this.props.t("onlinehelpVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Knowledge center")}</a></div>
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="tipsIcon"></div></div><a href={this.props.t("supportVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Tips tricks")}</a></div>
-  <div className="helpful-block"><div className="blue-bg-helpful"><div className="questionIcon"></div></div><a href={this.props.t("guidesVideoHref")} style={{color: "#016FD0"}}>{this.props.t("Got a question")} {this.props.t("Contact our")} {this.props.t("support team")}</a> </div>
-</div>
-</div>
-</Layout>
+          {isSomeLang(this.props.locale)
+          ? <InstalledVideoConverterOtherContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/> 
+          : <InstalledVideoConverterCommonContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/>
+        }
+      </Layout>
     );
   }
 };

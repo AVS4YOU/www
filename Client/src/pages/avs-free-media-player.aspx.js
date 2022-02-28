@@ -4,6 +4,7 @@ import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
+import FreeFlag from '../components/free-flag';
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
@@ -69,14 +70,9 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                
-                <TableWrapper>
-                  <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                    <div></div>
-                  </Text>
+                <FreeFlag>{this.props.t("Free")}</FreeFlag>
                   <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Media Player")}</Text>
-                </TableWrapper>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Watch video, play audio and view your pictures with Free AVS Media Player")}</Text>
+                  <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Watch video, play audio and view your pictures with Free AVS Media Player")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
