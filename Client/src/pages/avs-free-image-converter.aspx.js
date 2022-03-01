@@ -124,7 +124,7 @@ class avsFreeImageConverter extends React.PureComponent {
               imageName="image_converter_slide5.png"
               headerText={this.props.t("Watermark your pictures")}
             >
-              <Text className="ListItem">{this.props.t("Select a logo or write a phrase and apply it to all converted pictures as a personal watermark")}.</Text>
+              <Text className="ListItem">{this.props.t("Select a logo or write a phrase and apply it to all converted pictures as a personal watermark")}</Text>
             </ContentRowItem>
 
             <ContentRowItem
@@ -268,7 +268,7 @@ class avsFreeImageConverter extends React.PureComponent {
               </div>
               <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*{this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
               <div className="attentionBlock">
-                <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}.</Text>
+                <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
               </div>
             </PageContentWrapper>
           </div>
