@@ -4,6 +4,7 @@ import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
+import FreeFlag from '../components/free-flag';
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
@@ -15,6 +16,8 @@ import ImageGQL from '../components/image-gql';
 import {MediaPlayer} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import styled from 'styled-components';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
@@ -67,18 +70,13 @@ class avsFreeMediaPlayer extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                
-                <TableWrapper>
-                  <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                    <div></div>
-                  </Text>
+                <FreeFlag>{this.props.t("Free")}</FreeFlag>
                   <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Media Player")}</Text>
-                </TableWrapper>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Watch video, play audio and view your pictures with Free AVS Media Player")}</Text>
+                  <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Watch video, play audio and view your pictures with Free AVS Media Player")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
-                  secondaryText="Windows 10/8/7/Vista/XP"
+                  secondaryText="Windows 11/10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -169,8 +167,13 @@ class avsFreeMediaPlayer extends React.PureComponent {
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("Free AVS Media Player 52")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Media Player 5.4")}</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
             imageNamesPopup={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
@@ -191,7 +194,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
@@ -232,7 +235,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
 
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 11/Windows 10/Windows 8.x/Windows 7")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>

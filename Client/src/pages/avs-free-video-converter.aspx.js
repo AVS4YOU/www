@@ -3,6 +3,7 @@ import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
+import FreeFlag from '../components/free-flag';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
@@ -15,6 +16,8 @@ import ImageGQL from '../components/image-gql';
 import {VideoConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
@@ -69,15 +72,13 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.png" style={{position: "absolute"}}/>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                  <div></div>
-                </Text>
+                <FreeFlag>{this.props.t("Free")}</FreeFlag>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as={this.props.t("h22")} fontSize={24}>{this.props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                  secondaryText="Windows 10/8/7/Vista/XP"
+                  secondaryText="Windows 11/10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -107,6 +108,7 @@ render(){
             <ContentRowItem 
                 id="overview"
                 imgLeft={true}
+                asType={this.props.t("h2")}
                 imageName={this.props.t("video converter convert all key2 jpg")}
                 headerText={this.props.t("Сonvert all key video formats")}    
             >
@@ -188,8 +190,13 @@ render(){
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Converter 12.1")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.3</Text>
        
 
           <ScreenshotsCarousel 
@@ -214,7 +221,7 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
@@ -224,7 +231,7 @@ render(){
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>
-                <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
+                <Text as={this.props.t("h3")} className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
                   <div>
                     <Text className="requirementsHeader" fontSize={18} color="#000000" fontWeight={600}>{this.props.t("MINIMUM SYSTEM REQUIREMENTS")}</Text>
@@ -263,7 +270,7 @@ render(){
 
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8.x/Windows 7")}</Text>
+                      <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 11/Windows 10/Windows 8.x/Windows 7")}</Text>
                     </div>
                     <div className="systemWrapper">
                       <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>

@@ -2,6 +2,7 @@ import React from "react";
 import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
+import FreeFlag from '../components/free-flag';
 import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
@@ -13,6 +14,8 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
+import Button from '../components/button';
+import Star from '../images/main-page/icons/star.svg';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
@@ -49,15 +52,13 @@ class avsFreeImageConverter extends React.PureComponent {
             <ImageGQL className="headerBackgroundImage" imageName="purple_background_main.png" style={{ position: "absolute" }} />
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
-                <Text as="span" className="flagBackground header">{this.props.t("Free")}
-                  <div></div>
-                </Text>
+              <FreeFlag>{this.props.t("Free")}</FreeFlag>
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("Free AVS Image Converter")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Share your photos, stories and adventures with Free AVS Image Converter")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Compress resize and convert images to JPEG and other key formats")}</Text>
                 <HeaderDownloadButtons
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
-                  secondaryText="Windows 10/8/7/Vista/XP"
+                  secondaryText="Windows 11/10/8/7/Vista/XP"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -91,6 +92,7 @@ class avsFreeImageConverter extends React.PureComponent {
               headerText={this.props.t("Convert from and to popular formats")}
             >
               <Text className="ListItem">{this.props.t("Convert images to all key formats JPEG JPG PNG BMP TIFF TGA GIF animated GIF PNG APNG ITHMB iPhone iPod Thumbnail Files")}</Text>
+              <Text className="ListItem">{this.props.t("Open and convert new formats HEIF HEIC and WebP to JPG JPEG")}</Text>
               <Text className="ListItem">{this.props.t("Convert RAW images CR2 CRW RAF DNG MEF NEF ARW etc created by digital cameras fast and easily")}</Text>
               <Text className="ListItem">{this.props.t("Convert your images to PDF format merge multiple JPEG files to PDF")}</Text>
             </ContentRowItem>
@@ -111,6 +113,7 @@ class avsFreeImageConverter extends React.PureComponent {
               headerText={this.props.t("Apply effects")}
             >
               <Text className="ListItem">{this.props.t("Adjust contrast and brightness automatically")}</Text>
+              <Text className="ListItem">{this.props.t("Play with brand new filters Adorable")}</Text>
               <Text className="ListItem">{this.props.t("Apply retro look with the aging effect")}</Text>
               <Text className="ListItem">{this.props.t("Make your pictures look like analog photography")}</Text>
               <Text className="ListItem">{this.props.t("Use the black-and-white effect and more")}</Text>
@@ -121,7 +124,7 @@ class avsFreeImageConverter extends React.PureComponent {
               imageName="image_converter_slide5.png"
               headerText={this.props.t("Watermark your pictures")}
             >
-              <Text className="ListItem">{this.props.t("Select a logo or write a phrase and apply it to all converted pictures as a personal watermark")}.</Text>
+              <Text className="ListItem">{this.props.t("Select a logo or write a phrase and apply it to all converted pictures as a personal watermark")}</Text>
             </ContentRowItem>
 
             <ContentRowItem
@@ -142,7 +145,7 @@ class avsFreeImageConverter extends React.PureComponent {
                     name: "Chen Wang",
                     avatar: AvatarChenWang,
                     revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price, this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent, easy to use with quality results")
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
                   },
                   {
                     name: "Andy Stephens",
@@ -159,6 +162,11 @@ class avsFreeImageConverter extends React.PureComponent {
                 ]
               }
             />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
           <ScreenshotsCarousel
@@ -171,17 +179,17 @@ class avsFreeImageConverter extends React.PureComponent {
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">63.07 MB</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">35.17 MB</Text>
               </div>
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">10.1.2.627</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">5.4.2.317</Text>
               </div>
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 10, 8.1, 8, 7, XP, 2003, Vista {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
             <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
@@ -238,7 +246,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Operating system")}</Text>
-                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 10/Windows 8x/Windows 7")}</Text>
+                    <Text as="span" color="#000000" fontSize={16} fontWeight={500} align="left">{this.props.t("Windows 11/Windows 10/Windows 8.x/Windows 7")}</Text>
                   </div>
                   <div className="systemWrapper">
                     <Text className="pcComponents" as="span" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Processor")}</Text>
@@ -260,7 +268,7 @@ class avsFreeImageConverter extends React.PureComponent {
               </div>
               <Text className="systemInfo" color="#000000" fontSize={16} fontWeight={500}>*{this.props.t("Administrative permissions for program installation and Internet connection for activation")}</Text>
               <div className="attentionBlock">
-                <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}.</Text>
+                <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
               </div>
             </PageContentWrapper>
           </div>

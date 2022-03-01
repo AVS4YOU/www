@@ -218,7 +218,7 @@ const RowContent = styled.div`
             margin-left: 50px;
             &.mobileSended{
                 background-color: #fff;
-                color: #333
+                color: #333;
                 border-radius: 5px;
                 border: 1px solid #333;
                 p{

@@ -124,7 +124,7 @@ render(){
           {this.props.t("If you have not found the necessary information, please send a request")}
           </Text>
           <div id="support-form-wrapper" className="reseller-from-wrapper">
-            <Form></Form>
+            <Form />
             <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
         </div>
