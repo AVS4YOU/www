@@ -72,6 +72,12 @@ nl: [
       ns: "common"
     }
   ],
+  zh: [
+    {
+      content: fs.readFileSync(`src/locales/zh/common.json`, "utf8"),
+      ns: "common"
+    }
+  ],
 };
 
 
@@ -88,7 +94,8 @@ const availableLocales = [
   { value: "ko", text: "한국어"},
   { value: "da", text: "Dansk"},
   { value: "nl", text: "Nederland"},
-  { value: "pt", text: "Português"}
+  { value: "pt", text: "Português"},
+  { value: "zh", text: "中文"}
 ];
 
 

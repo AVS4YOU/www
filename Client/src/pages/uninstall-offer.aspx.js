@@ -4,9 +4,37 @@ import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import Layout from "../components/layout";
 import "../styles/uninstall-offer.less";
+import Link from '../components/link';
+import Cookies from 'universal-cookie';
+
+const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
+const regExp = /=regnow:(.*):/;
 
 
 class uninstallOffer extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.cookies = new Cookies();
+
+    this.affiliateID = "";
+    this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+
+    if(this.siteTrasingCookie){
+        this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
+    };
+
+    this.state = {
+        hrefGetIt: this.cookies.get("Site_Tracing") ? shareItHrefUnlim + `&languageid=1&currency=USD&affiliate=${this.affiliateID}` : this.props.t("getItHref") + `&SRC=Uninstall_${this.props.t("en")}`,
+        documentLoaded: false,
+      };
+  }
+
+  componentDidMount(){  
+    this.setState({
+     documentLoaded: true
+   })
+  }
 
 render(){
     return (
@@ -14,7 +42,7 @@ render(){
         className="uninstall-offer-page" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family. Learn more about our company, its history, who we are and what we value.")}
+        title={this.props.t("AVS4YOU is the home of ultimate multimedia editing family learn more")}
         metaDescription=""
         metaKeywords=""
       >
@@ -27,14 +55,14 @@ render(){
                 <div className="landing-block"><div className="landing-one-offer-block"><div className="old_price_container">{this.props.t("Old price")}</div><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
-                <Text className="header__old__price">{this.props.t("$59.00")}</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
+                <Text className="header__old__price">{this.props.t("$59/00")}</Text>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
-                <Text as="h4" className="header__new__price">{this.props.t("$29.00")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.268359438.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <Text as="h4" className="header__new__price">{this.props.t("29/00")}</Text>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
 
@@ -74,10 +102,12 @@ render(){
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                {this.props.t("30- day money-back guarantee")}
+                <Link to="/moneyback.aspx">
+                  {this.props.t("30- day Money-back guarantee")}
+                </Link>
             </div>
             </div>
-            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSUnGift&CLEAN_CART=ALL&SRC=Uninstall&_ga=2.202734737.1292882143.1597037333-942264271.1594810360" style={{color: "#fff"}}>{this.props.t("Get it now")}</a></Text></table>
+            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
         </div>
 
         <Text as="h2" className="common__heading__with">
@@ -100,10 +130,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips & tricks")}</a></div>
-<div className="questionIcon">{this.props.t("Got a question?")}
-<br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<div className="knowledge"><div className="knowledgeIcon"><a href={this.props.t("header_onlinehelp_avs4you")} style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a href={this.props.t("header_avs4you_guides")} style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="questionIcon">{this.props.t("Got a question")}
+<br/>{this.props.t("Contact our")} <a href={this.props.t("header_support_avs4you")} style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

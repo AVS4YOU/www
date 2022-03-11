@@ -172,17 +172,34 @@ const pt_mounth = [
   "dezembro",
 ];
 
+const zh_mounth = [
+  "一月", 
+  "二月", 
+  "三月", 
+  "四月", 
+  "五月", 
+  "六月", 
+  "七月", 
+  "八月", 
+  "九月", 
+  "十月", 
+  "十一月", 
+  "十二月"
+];
+
+
   let DE_MText = "nur bis "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + de_mounth[currentMounth] + " "  +  currentYear + " gültig";
   let FR_MText = "valide jusqu’à " + getLastDayOfMonth(currentYear, currentMounth) + " " + fr_mounth[currentMounth] + " "  +  currentYear;
   let IT_MText = "prezzo valido fino al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
   let JP_MText = "価格は" + currentYear + "年" + jp_mounth[currentMounth] + "" + getLastDayOfMonth(currentYear, currentMounth) + "日までに有効です";
   let ES_MText = "válida hasta el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
-  let RU_MText = "действительно до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
+  let RU_MText = "до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
   let PL_MText = "ważna do "  + getLastDayOfMonth(currentYear, currentMounth) + " " + pl_mounth[currentMounth] + " "  +  currentYear;
   let KR_MText = currentYear + "년 " + kr_mounth[currentMounth] + "월 " + getLastDayOfMonth(currentYear, currentMounth) + "일까지 유효합니다";
   let DK_MText = "er tilgængelige indtil "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + dk_mounth[currentMounth] + ", "  +  currentYear;
   let NL_MText = "geldig tot "  + getLastDayOfMonth(currentYear, currentMounth) + " " + nl_mounth[currentMounth] + " "  +  currentYear+ ".";
   let PT_MText = "válidos até " + getLastDayOfMonth(currentYear, currentMounth) + " de " + pt_mounth[currentMounth] + " de " + currentYear;
+  let ZH_MText = "价格有效期至" + currentYear + "年" + zh_mounth[currentMounth] + getLastDayOfMonth(currentYear, currentMounth) + "日";
 
 function AvsLinkHref(props){
     return(
@@ -203,6 +220,7 @@ function AvsLinkHref(props){
                 pageContext.locale === "da" ? DK_MText :
                 pageContext.locale === "nl" ? NL_MText :
                 pageContext.locale === "pt" ? PT_MText :
+                pageContext.locale === "zh" ? ZH_MText :
                 ""
                 }
                 {props.children}

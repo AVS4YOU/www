@@ -87,26 +87,26 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>85043200</File_Size_Bytes>
-      <File_Size_K>83050</File_Size_K>
-      <File_Size_MB>81.10</File_Size_MB>
+      <File_Size_Bytes>84048712</File_Size_Bytes>
+      <File_Size_K>82078</File_Size_K>
+      <File_Size_MB>80.15</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>12.1.4.672</Program_Version>
+    <Program_Version>12.3.1.689</Program_Version>
     <Program_Release_Month>12</Program_Release_Month>
-    <Program_Release_Day>13</Program_Release_Day>
-    <Program_Release_Year>2020</Program_Release_Year>
+    <Program_Release_Day>22</Program_Release_Day>
+    <Program_Release_Year>2021</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Support of MP4 dash video. 2 new video effects: Vignette and Rectangular Vignette. Some bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Windows 11 skin. Optimized presets. Intel hardware acceleration for AV1, H.265/HEVC 10/12 bit, VP9 10 bit video. Enhanced support of MP4/M4V/MOV/TS/MTS/M2TS files. Support of WebP images in disc menu. Yellow-Magenta filter effect. Enhanced usability, optimization and bug fixes.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -147,11 +147,11 @@
       <Application_Info_URL>https://www.avs4you.com/avs-free-video-converter.aspx</Application_Info_URL>
       <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
       <Application_Screenshot_URL>https://www.avs4you.com/pads/screenshots/avsvideoconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsvideoconverter.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsvideoconverter.xml</Application_XML_File_URL>
+      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsvideoconverter.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://www.avs4you.com/pads/en/avsvideoconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSVideoConverter.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -200,7 +200,7 @@ THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WI
 NO LIABILITY FOR CONSEQUENTIAL DAMAGES. 
 IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE. 
 
-COPYRIGHT NOTICE. Copyright(C) 2020 Online Media Technologies Ltd. All rights reserved. 
+COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
   <AppStore>
@@ -218,7 +218,7 @@ Any rights not expressly granted herein are reserved.</EULA>
   </AppStore>
   <Program_Descriptions>
     <English>
-      <Keywords>video converter, free video converter, convert video, mp4 converter, video converter download, best free video converter, video converter to mp4, video to audio converter, youtube video converter, convert video to gif, video to audio converter</Keywords>
+      <Keywords>video converter, free video converter, convert video, mp4 converter, video converter download, best free video converter, video converter to mp4, video to audio converter, youtube video converter, convert video to gif, video file converter</Keywords>
       <Char_Desc_45>Convert all video formats for free.</Char_Desc_45>
       <Char_Desc_80>Convert all popular video formats with Free AVS Video Converter free and fast.</Char_Desc_80>
       <Char_Desc_250>Convert video to all key video formats and for all popular devices with Free AVS Video Converter. Convert MP4 DVD AVI MPEG VOB MOV WMV M4V HDV free and fast. Speed up video conversion due to GPU acceleration. Export audio from video.</Char_Desc_250>

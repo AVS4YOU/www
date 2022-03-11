@@ -44,22 +44,6 @@ class installedPack extends React.PureComponent {
   }
 
   componentDidMount(){
-    const queryString = require('query-string');
-    const parsed = queryString.parse(document.location.search);
-    const cookies = new Cookies();
-    if (parsed.SRC) {
-      cookies.set('SRC', parsed.SRC, { path: '/' });
-    }
-  
-    const SRCParam = cookies.get('SRC')
-  
-    if(SRCParam){
-  
-      this.setState({
-        hrefUnlim: this.state.hrefUnlim+"&SRC="+SRCParam,
-      })
-    }
-  
     this.setState({
      documentLoaded: true
    })
@@ -85,7 +69,7 @@ render(){
           </div>
           <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
-              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS4YOU Installation Package!")}</Text>
+              <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS4YOU Installation Package")}</Text>
                 <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Timelimited offer")}</Text>
@@ -107,8 +91,7 @@ render(){
               <Text>{this.props.t("100% secure adfree virusfree")}</Text>
             </div>
             <div  className="carouselItem support">
-              <Text>{this.props.t("5 professional multimedia programs in")}</Text>
-              <Text>{this.props.t("1 package")}</Text>
+              <Text>{this.props.t("5 professional multimedia programs in 1 package")}</Text>
             </div>
             <div className="carouselItem unlimited">
               <Text>{this.props.t("Unlimited access to the program")}</Text>
