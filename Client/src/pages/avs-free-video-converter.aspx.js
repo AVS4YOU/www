@@ -148,6 +148,7 @@ render(){
                 headerText={this.props.t("Edit your videos before conversion")}   
             >
               <Text className="ListItem">{this.props.t("Split your videos into parts, by chapters, size and cut unnecessary scenes")}</Text>
+              <Text className="ListItem">{this.props.t("Merge video files into one")}</Text>
               <Text className="ListItem">{this.props.t("Change the aspect ratio of your video")}</Text>
               <Text className="ListItem">{this.props.t("Use basic video editing effects to make your videos more breathtaking")}</Text>
               <Text className="ListItem">{this.props.t("Convert video files with subtitles")}</Text>
