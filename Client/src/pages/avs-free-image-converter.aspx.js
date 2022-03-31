@@ -170,7 +170,7 @@ class avsFreeImageConverter extends React.PureComponent {
           </div>
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
           <ScreenshotsCarousel
-            imageNames={["image_converter_slide1.png", "image_converter_slide2.png", "image_converter_slide3.png", "image_converter_slide4.png", "image_converter_slide5.png"]}
+            imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
             imageNamesPopup={["image_converter_slide1.png", "image_converter_header_center2x.png", "image_converter_header_center2x.png", "image_converter_apply_effects2x.png", "image_converter_watermark2x.png"]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
 
