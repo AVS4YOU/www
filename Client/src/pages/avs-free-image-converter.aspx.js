@@ -171,14 +171,14 @@ class avsFreeImageConverter extends React.PureComponent {
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
-            imageNamesPopup={["image_converter_slide1.png", "image_converter_header_center2x.png", "image_converter_header_center2x.png", "image_converter_apply_effects2x.png", "image_converter_watermark2x.png"]}
+            imageNamesPopup={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
             altText={["slideCarousel1", "slideCarousel2", "slideCarousel3", "slideCarousel4", "slideCarousel5"]}
 
           />
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Fileyнф Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">35.17 MB</Text>
               </div>
 
