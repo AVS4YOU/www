@@ -65,15 +65,15 @@ class avsFreeImageConverter extends React.PureComponent {
                 />
               </div>
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName="image_converter_header.png" style={{ maxWidth: "1564px" }} alt="header-image" />
-            <ImageGQL className="headerImage mobile" imageName="image_converter_header.png" style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
+            <ImageGQL className="headerImage" imageName={this.props.t("image converter header png")} style={{ maxWidth: "1564px" }} alt="header-image" />
+            <ImageGQL className="headerImage mobile" imageName={this.props.t("image converter header png")} style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
             <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
             </ScrollLink>
-            <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
+            <ScrollLink to="reviews" spy={true} smooth={true} offset={0} dyauration={600} className="scrollToButton reviews">
               <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
             </ScrollLink>
             <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
