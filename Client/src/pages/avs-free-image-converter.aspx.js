@@ -65,7 +65,7 @@ class avsFreeImageConverter extends React.PureComponent {
                 />
               </div>
             </PageContentWrapper>
-            <ImageGQL className="headerImage" imageName={this.props.t("image converter header png")} style={{ maxWidth: "1564px" }} alt="header-image" />
+            <ImageGQL className="headerImage" imageName={this.props.t("image converter header png")} style={{ maxWidth: "1564px", maxHeight: "473px"}} alt="header-image" />
             <ImageGQL className="headerImage mobile" imageName={this.props.t("image converter header png")} style={{ maxWidth: "1564px" }} alt="header-image-mobile" />
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
@@ -88,7 +88,7 @@ class avsFreeImageConverter extends React.PureComponent {
             <ContentRowItem
               id="overview"
               imgLeft={true}
-              imageName="image_converter_slide2.png"
+              imageName={this.props.t("image converter block 1")}
               headerText={this.props.t("Convert from and to popular formats")}
             >
               <Text className="ListItem">{this.props.t("Convert images to all key formats JPEG JPG PNG BMP TIFF TGA GIF animated GIF PNG APNG ITHMB iPhone iPod Thumbnail Files")}</Text>
@@ -99,7 +99,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="image_converter_slide3.png"
+              imageName={this.props.t("image converter block 2")}
               headerText={this.props.t("Easily resize images using presets")}
             >
               <Text className="ListItem">{this.props.t("Automatically tailor your photos to popular printing formats")}</Text>
@@ -109,7 +109,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={true}
-              imageName="image_converter_slide4.png"
+              imageName={this.props.t("image converter block 3")}
               headerText={this.props.t("Apply effects")}
             >
               <Text className="ListItem">{this.props.t("Adjust contrast and brightness automatically")}</Text>
@@ -121,7 +121,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={false}
-              imageName="image_converter_slide5.png"
+              imageName={this.props.t("image converter block 4")}
               headerText={this.props.t("Watermark your pictures")}
             >
               <Text className="ListItem">{this.props.t("Select a logo or write a phrase and apply it to all converted pictures as a personal watermark")}</Text>
@@ -129,7 +129,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
             <ContentRowItem
               imgLeft={true}
-              imageName="image_converter_batch_mode.png"
+              imageName={this.props.t("image converter block 5")}
               headerText={this.props.t("Use Command Line Mode")}
             >
               <Text className="ListItem">{this.props.t("Run routine tasks efficiently resize and convert multiple images between various formats")}</Text>
