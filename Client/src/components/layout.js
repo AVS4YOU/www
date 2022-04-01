@@ -17,8 +17,8 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/avs_valentines_left.svg";
- import PlAVSRight from "../images/pl/avs_valentines_right.svg";
+ import PlAVSLeft from "../images/banner/avs_valentines_left.svg";
+ import PlAVSRight from "../images/banner/avs_valentines_right.svg";
  
  const StyledPL =styled.div`
  position: relative;
