@@ -52,7 +52,8 @@ render(){
       >
         <ProductPagesWrapper>
           <div className="headerBackground">
-            <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.jpg" style={{position: "absolute"}}/>
+          <video className="videoHeader" src="../images/avs-video-editor/avs_video_editor_page.mp4" autoplay loop muted preload="metadata">
+          </video>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
