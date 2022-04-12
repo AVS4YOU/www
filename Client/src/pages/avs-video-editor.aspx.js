@@ -4,6 +4,7 @@ import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import Layout from "../components/layout";
+import PanelCollapse from "../components/panel-collapse";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
@@ -17,6 +18,7 @@ import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
+import videoHeader from '../images/avs-video-editor/videoEditorPage.mp4'
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -50,12 +52,10 @@ render(){
         metaKeywords={this.props.t("video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow")}
       >
         <ProductPagesWrapper>
-          <div className="headerBackground">
-          <video autoPlay muted loop >
-              <source src="../images/avs-video-editor/videoEditorPage.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-          </video>
+          <div className="headerBackground" style={{height: "900px"}}>
+          <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
             <PageContentWrapper>
-              <div id="headerContentWrapper" className="headerContentWrapper" >
+              <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative"}} >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
                 <HeaderDownloadButtons 
@@ -68,9 +68,6 @@ render(){
                 />
               </div> 
             </PageContentWrapper>
-            
-            <ImageGQL className="headerImage" imageName={this.props.t("en avs video editor main png")} style={{maxWidth: "1564px"}} alt="header-image"/>
-            <ImageGQL className="headerImage mobile" imageName={this.props.t("en avs video editor main png")} style={{maxWidth: "1564px"}} alt="header-image-mobile"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
@@ -112,6 +109,9 @@ render(){
             >
               <Text className="ListItem">{this.props.t("Transfer video from DV/HDV cameras, webcams or VHS cameras")}</Text>
               <Text className="ListItem">{this.props.t("Record media files from your PC screen")}</Text>
+              <Text className="ListItem">{this.props.t("Draw on video anything you like")}</Text>
+              <Text className="ListItem">{this.props.t("Add a mouse click effect and animation while recording")}</Text>
+              <Text className="ListItem">{this.props.t("Split the recording by file size or duration")}</Text>
               <Text className="ListItem">{this.props.t("Give a new life to old VHS tapes")}</Text>
             </ContentRowItem>
 
@@ -149,37 +149,58 @@ render(){
               <Text className="ListItem">{this.props.t("Publish your creative work in social networks")}</Text>
             </ContentRowItem>
           </PageContentWrapper>
-          <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen 
-              reviewsData={
-                [
-                  {
-                    name: "Chen Wang",
-                    avatar: AvatarChenWang,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
-                  },
-                  {
-                    name: "Linda K.",
-                    avatar: AvatarLinda,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
-                  },
-                  {
-                    name: "Marc N.",
-                    avatar: AvatarMarc,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
-                  }
-                ]
-              }
-            />
-            <Button className="trustButton" style={{margin: "auto", display: "table"}}
-                    href="https://www.trustpilot.com/review/www.avs4you.com" 
-                    color="#fff">
-                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
-            </Button>
+          <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+          <div className="questions-wrapper">
+
+            <Text as="h2" className="common__heading">
+            {this.props.t("Frequently asked questions")}
+            </Text>
+
+            <div className="questions-block">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("What is the best video editor for free")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("There are a lot of free video editing programs on the marke")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Do you have a free video editor")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("AVS Video Editor allows users to edit video for free but a logo is inserted in the newly created files")} <a href={this.props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a> {this.props.t("japanTextVideoeditor")}</Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I edit video on all of my devices")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("AVS Video Editor is one of the best video editors for Windows")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I edit video offline and without Internet access")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("Internet access is required to download the video editing software")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I save a video in HD")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("In AVS Video Editor there are multiple presets for exporting videos in any resolution")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("How do I edit a YouTube video")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("You may save video in MP4 format from a YouTube channel with free downloading programs on the condition")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("What level of editing skills is necessary for using AVS Video Editor")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("AVS Video Editor has a friendly-user interface and there is no learning curve")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+            </div>
           </div>
+
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.6</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video editor slider3 jpg"), this.props.t("video editor slider4 jpg"), this.props.t("video editor slider5 jpg"), this.props.t("video editor slider6 jpg")]}
@@ -208,7 +229,7 @@ render(){
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
-          <div className="technicalSpecificationWrapper">
+          <div className="technicalSpecificationWrapper" style={{backgroundColor:"#F9F9F9"}}>
             <PageContentWrapper>
                 <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
@@ -282,6 +303,37 @@ render(){
                   <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
                 </div>
             </PageContentWrapper>
+          </div>
+          <div id="reviews" className="backgroundWrapper" style={{backgroundColor:"#FFF9F1"}}>
+            <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Chen Wang",
+                    avatar: AvatarChenWang,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
+                  },
+                  {
+                    name: "Linda K.",
+                    avatar: AvatarLinda,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
+                  },
+                  {
+                    name: "Marc N.",
+                    avatar: AvatarMarc,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
+                  }
+                ]
+              }
+            />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
         </ProductPagesWrapper>
       </Layout>
