@@ -22,6 +22,7 @@ import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
+
 class avsVideoEditor extends React.PureComponent {
 
   constructor(props) {
@@ -37,8 +38,6 @@ class avsVideoEditor extends React.PureComponent {
     this.setState({ device: device });
   }
 
- 
-
 render(){
 
     return (
@@ -52,7 +51,8 @@ render(){
       >
         <ProductPagesWrapper>
           <div className="headerBackground">
-          <video className="videoHeader" src="../images/avs-video-editor/avs_video_editor_page.mp4" autoplay loop muted preload="metadata">
+          <video autoPlay muted loop >
+              <source src="../images/avs-video-editor/videoEditorPage.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
           </video>
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >
