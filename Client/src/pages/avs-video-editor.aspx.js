@@ -12,7 +12,6 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
-import ImageGQL from '../components/image-gql';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
@@ -24,6 +23,11 @@ import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
 import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
+import awardCapterra from '../images/main-page/awards/award-capterra.png'
+import awardGetapp from '../images/main-page/awards/award-getapp.png'
+import awardPick from '../images/main-page/awards/award-epick.png'
+import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
+import awardRating from '../images/avs-video-editor/award-rating.png'
 
 class avsVideoEditor extends React.PureComponent {
 
@@ -150,6 +154,20 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
           <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+          
+          <PageContentWrapper>
+          <div className="block-awards">
+            <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{this.props.t("Reviewed and highly rated by")}</Text>
+            <div className="list-awards listAwards">
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardCapterra}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
+            </div>
+        </div> 
+        </PageContentWrapper>
+          
           <div className="questions-wrapper">
 
             <Text as="h2" className="common__heading">
@@ -304,7 +322,7 @@ render(){
                 </div>
             </PageContentWrapper>
           </div>
-          <div id="reviews" className="backgroundWrapper" style={{backgroundColor:"#FFF9F1"}}>
+          <div id="reviews" className="backgroundWrapper" style={{marginTop:"0px"}}>
             <ReviewScreen 
               reviewsData={
                 [
