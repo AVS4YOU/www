@@ -129,11 +129,11 @@
  }
 
  .PLnewAvsRight{
-  height: 54px;
+  height: 56px;
 }
 
 .PLnewAvsLeft{
-  height: 54px;
+  height: 56px;
 }
 
   }
@@ -144,9 +144,8 @@
        display: block;
        top: -1px;    
    }
-
    .PLnewAvs {
-    padding: 8px 0 7px;
+    padding: 14px 0 1px;
   }
  }
 
@@ -164,7 +163,7 @@
 
  .PLnewAvs {
   width: auto;
-  padding: 8px 0 7px;
+  padding: 10px 0 4px;
 }
 
  .PLnewAvsLeft{
