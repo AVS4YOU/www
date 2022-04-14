@@ -6,6 +6,7 @@ import Text from '../components/text';
 import FreeFlag from '../components/free-flag';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
+import PanelCollapse from "../components/panel-collapse";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -166,37 +167,53 @@ render(){
               <Text className="ListItem"><span>{this.props.t("Convert videos for popular social platforms")}</span>{this.props.t("Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox")}</Text>
             </ContentRowItem>
           </PageContentWrapper>
-          <div id="reviews" className="backgroundWrapper">
-          <ReviewScreen 
-              reviewsData={
-                [
-                  {
-                    name: "Gayle Hibbert",
-                    avatar: AvatarGayle,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price")
-                  },
-                  {
-                    name: "Terrance Jenkins",
-                    avatar: AvatarTerrance,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
-                  },
-                  {
-                    name: "Lawrence Thompson",
-                    avatar: AvatarLawrence,
-                    revHeader: this.props.t("Our customers say"),
-                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
-                  }
-                ]
-              }
-            />
-            <Button className="trustButton" style={{margin: "auto", display: "table"}}
-                    href="https://www.trustpilot.com/review/www.avs4you.com" 
-                    color="#fff">
-                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
-            </Button>
+
+          <div className="questions-wrapper">
+
+            <Text as="h2" className="common__heading">
+            {this.props.t("Frequently asked questions")}
+            </Text>
+
+            <div className="questions-block">
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("What is the best video converter for free")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("There are plenty of free video converters on the market but many of them are not completely free")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Is AVS Video Converter absolutely free")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("Yes it is a free video converter")}</Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I convert HD and 4K video")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("AVS Video Converter supports HD")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I convert many files at onc")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("AVS Video Converter offers batch conversion")}
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I define the conversion settings mysel")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("If you are a novice we recommend you choosing among ready presets")} <a href={this.props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>
+                    </Text>
+                </div>
+              </PanelCollapse>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Is AVS Video Converter difficult for newbies")}>
+                <div className="collapseContent">
+                    <Text className="hiddenText">{this.props.t("It is really easy and user-friendly")} <a href={this.props.t("avs4you guides index")}>{this.props.t("guides")}</a> {this.props.t("or find the necessary information in")} <a href={this.props.t("onlinehelpVideoHref")}>{this.props.t("the knowledge center")}</a>
+                    </Text>
+                </div>
+              </PanelCollapse>
+
+            </div>
           </div>
+
           <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.3</Text>
        
 
@@ -296,6 +313,38 @@ render(){
                   <Text fontSize={16} fontWeight={500}>{this.props.t("Please note that AVS4YOU programs do not allow you to copy protected material You may use this software in copying material in which you own the copyright or have obtained permission to copy from the copyright owner")}</Text>
                 </div>
             </PageContentWrapper>
+          </div>
+
+          <div id="reviews" className="backgroundWrapper">
+          <ReviewScreen 
+              reviewsData={
+                [
+                  {
+                    name: "Gayle Hibbert",
+                    avatar: AvatarGayle,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results Would certainly recommend to anyone who wants good video software at a reasonable price")
+                  },
+                  {
+                    name: "Terrance Jenkins",
+                    avatar: AvatarTerrance,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("The product is super easy to download and use Anyone can do this in just minutes The company is always supportive I highly recommend")
+                  },
+                  {
+                    name: "Lawrence Thompson",
+                    avatar: AvatarLawrence,
+                    revHeader: this.props.t("Our customers say"),
+                    revText: this.props.t("I have been using AVS for several years and can say for sure that it is very convenient user friendly and functional")
+                  }
+                ]
+              }
+            />
+            <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    color="#fff">
+                    {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
+            </Button>
           </div>
         </ProductPagesWrapper>
       </Layout>
