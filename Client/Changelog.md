@@ -3,6 +3,11 @@
 ## 1.0.27
 
 ### New
+* Added event Easter 2022
+
+## 1.0.27
+
+### New
 * Added page AVS Image Converter
 * Added link AVS Image Converter on navigation menu
 
