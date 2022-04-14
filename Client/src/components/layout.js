@@ -33,7 +33,8 @@
     background-color: #486D08;
     height: 22px;
     width: 100%; 
-    padding: 14px 0;
+    padding: 14px 0 0 0;
+    height: 38px;
  }
    .PLnewAvsText{
      position: static;
@@ -71,16 +72,15 @@
    .PLAvs {
      position: absolute;
      width: 900px;
-     top: -7px;
    }
    .PLnewAvsLeft{
-     height: 78px;
+     height: 59px;
      z-index:10;
      background-image:url(${PlAVSLeft});
      width: 550px;
      position: absolute;
      top: -7px;
-     left: -100px;
+     right: 80%;
      background-repeat: no-repeat;
    }
    .PLnewAvsCenter{
@@ -89,34 +89,30 @@
      z-index:9;
    }
    .PLnewAvsRight{
-     height: 83px;
+     height: 59px;
      z-index:10;
      background-image:url(${PlAVSRight});
      width: 550px;
      position: absolute;
-     right: -100px;
+     left: 80%;
      top: -7px;
      background-repeat: no-repeat;
    }
 
    @media (max-width: 1700px) {
     .PLnewAvsRight{
-      right: -20%;
+      left: 90%;
     }
 
     .PLnewAvsLeft{
-      left: -20%;
+      right: 90%;
     }
+
+    .PLnewAvs a{
+      position: relative;
+      z-index: 11;
    }
 
-   @media (max-width: 1400px) {
-    .PLnewAvsRight{
-      right: -35%;
-    }
-
-    .PLnewAvsLeft{
-      left: -35%;
-    }
    }
 
    @media (max-width: 1024px) {
@@ -124,23 +120,22 @@
       padding: 12px 0 3px;
       height: 33px;
     }
-    
-    .PLnewAvs a{
-      position: relative;
-      z-index: 11;
-   }
+  
 
    .PLnewAvsText {
     font-size: 12px; 
+    padding: 0 6px;
+    width: 97%;
  }
 
-   .PLnewAvsLeft{
-    left: -450px;
-  }
- 
-  .PLnewAvsRight{
-    right: -450px;
- }
+ .PLnewAvsRight{
+  height: 54px;
+}
+
+.PLnewAvsLeft{
+  height: 54px;
+}
+
   }
    @media (max-width: 750px) {
      .PLnewAvsText{
@@ -149,6 +144,10 @@
        display: block;
        top: -1px;    
    }
+
+   .PLnewAvs {
+    padding: 8px 0 7px;
+  }
  }
 
  @media (max-width: 500px) {
@@ -163,12 +162,19 @@
     letter-spacing: 1px;
  }
 
+ .PLnewAvs {
+  width: auto;
+  padding: 8px 0 7px;
+}
+
  .PLnewAvsLeft{
    left: -468px;
+   height: 56px;
  }
 
  .PLnewAvsRight{
   left: 360px;
+  height: 56px;
 }
     .PLnewAvsTextMobile {
       display: block;
