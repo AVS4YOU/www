@@ -1632,12 +1632,15 @@
     "Multiplatform (Windows, Mac, Linux)" : "Multiplataforma (Windows, Mac, Linux)",
     "Edit and create documents, spreadsheets and presentations" : "Edita y crea documentos, hojas de cálculo y presentaciones",
 
-    "*****************************CHRISTMAS********************************" : "*****************************CHRISTMAS********************************",
-    "For All AVS4YOU Valentines" : " ",
-    "20% Off on AVS4YOU Suite with" : "¡Para todos los enamorados 20 % de descuento en el paquete AVS4YOU con el cupón",
-    "Love22" : "Love22!",
-    "coupon!" : " ",
-    "avsvalentine" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Love22&CLEAN_CART=ALL",
+    "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
+
+    "beginningBanner" : "¡Aproveche",
+    "discountCoupon" : "un descuento del 20%",
+    "colorCoupon" : "con el código cupón",
+    "nameCoupon" : "Flower22",
+    "endingBanner" : "en la suscripción ilimitada de AVS4YOU!",
+    "nameCoupon2" : " ",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Flower22&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/es/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL",

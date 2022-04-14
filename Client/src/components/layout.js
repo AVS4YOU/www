@@ -17,8 +17,8 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/avs_valentines_left.svg";
- import PlAVSRight from "../images/pl/avs_valentines_right.svg";
+ import PlAVSLeft from "../images/pl/easter-left.svg";
+ import PlAVSRight from "../images/pl/easter-right.svg";
  
  const StyledPL =styled.div`
  position: relative;
@@ -28,19 +28,19 @@
  }
 
  .PLnewAvs{
-    display: flex;
+    display: table;
     font-size: 20px;
-    background-color: #EE0000;
+    background-color: #486D08;
     height: 22px;
-    width: 100%;
-	display: none;    padding: 13px 0;
+    width: 100%; 
+    padding: 13px 0;
  }
    .PLnewAvsText{
      position: static;
      z-index: 25;
      color: #fff;
-     font-size: 20px;
-     font-weight: 400;
+     font-size: 18px;
+     font-weight: 600;
      top: 13px;
      margin: auto;
      width: 100%;
@@ -57,7 +57,14 @@
  }
 
 .PLnewAvsTextCoupon{
-    color: #ffffff;
+    color: #ffbd59;
+    font-weight: 700 !important;
+  }
+
+  .PLnewAvsCoupon {
+    color: #486D08;
+    background-color: #ffbd59;
+    padding: 3px 7px;
     font-weight: 700 !important;
   }
  
@@ -296,8 +303,8 @@
          <StyledPL>
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("avsvalentine")} target="_blank">
-                <span className="PLnewAvsText"> <span className="PLnewAvsTextCoupon">{this.props.t("For All AVS4YOU Valentines")}</span> {this.props.t("20% Off on AVS4YOU Suite with")} <span className="PLnewAvsTextCoupon">{this.props.t("Love22")}</span> {this.props.t("coupon!")}</span>
+              <a href={this.props.t("avs pl link")} target="_blank">
+                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon2")}</span></span>
               </a>
           <div className="PLnewAvsRight"></div>
          </div>

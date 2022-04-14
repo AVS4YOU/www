@@ -1656,13 +1656,16 @@
     "Multiplatform (Windows, Mac, Linux)" : "マルチプラットフォーム版（Windows、Mac、Linux）",
     "Edit and create documents, spreadsheets and presentations" : "ドキュメント・スプレッドシート・プレゼンテーションを作成と編集",
 
-    "*****************************CHRISTMAS********************************" : "*****************************CHRISTMAS********************************",
-    "For All AVS4YOU Valentines" : "AVS4YOUからバレンタインデーのため：Love22",
-    "20% Off on AVS4YOU Suite with" : "クーポンでAVS4YOUスイートに20％オフ",
-    "Love22" : " ",
-    "coupon!" : " ",
-    "avsvalentine" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Love22&CLEAN_CART=ALL",
-    
+    "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
+
+    "beginningBanner" : "AVS4YOU無期限サブスクリプションに",
+    "discountCoupon" : "20％割引クーポン",
+    "nameCoupon" : "Flower22",
+    "colorCoupon" : " ",
+    "endingBanner" : "で新しいスタートを得る",
+    "nameCoupon2" : " ",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Flower22&CLEAN_CART=ALL",
+      
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL"

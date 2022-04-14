@@ -1615,13 +1615,16 @@
     "Multiplatform (Windows, Mac, Linux)" : "Multiplatform (Windows, Mac, Linux)",
     "Edit and create documents, spreadsheets and presentations" : "Edit and create documents, spreadsheets and presentations",
 
-	"*****************************CHRISTMAS********************************" : "*****************************CHRISTMAS********************************",
-	"For All AVS4YOU Valentines" : "모든 AVS4YOU 발렌타인:",
-	"20% Off on AVS4YOU Suite with" : "AVS4YOU Suite",
-	"Love22" : "Love22",
-	"coupon!" : "쿠폰 20% 할인",
-	"avsvalentine" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=KRW&LANGUAGES=ko&COUPON=Love22&CLEAN_CART=ALL",
-    
+	"*****************************EVENTS********************************" : "*****************************EVENTS********************************",
+
+	"beginningBanner" : "Get a fresh start with a ",
+	"discountCoupon" : "20% discount",
+	"colorCoupon" : "coupon",
+	"nameCoupon" : "Flower22",
+	"endingBanner" : "on AVS4YOU Unlimited Subscription!",
+	"nameCoupon2" : " ",
+	"avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=KRW&LANGUAGES=ko&COUPON=Flower22&CLEAN_CART=ALL",
+	
 	"LinkDownload" : "https://www.onlyoffice.com/ko/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=ko&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=ko&COUPON=AVS22XSM&CLEAN_CART=ALL"
