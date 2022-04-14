@@ -117,7 +117,7 @@
 
    @media (max-width: 1024px) {
     .PLnewAvs {
-      padding: 12px 0 3px;
+      padding: 9px 0 6px;
       height: 33px;
     }
   
@@ -145,7 +145,13 @@
        top: -1px;    
    }
    .PLnewAvs {
-    padding: 14px 0 1px;
+    padding: 15px 0px 0px;
+  }
+  }
+
+   @media (max-width: 662px) {
+   .PLnewAvs {
+    padding: 9px 0px 6px;
   }
  }
 
@@ -163,7 +169,7 @@
 
  .PLnewAvs {
   width: auto;
-  padding: 10px 0 4px;
+  padding: 9px 0px 5px;
 }
 
  .PLnewAvsLeft{
