@@ -304,7 +304,7 @@
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
               <a href={this.props.t("avs pl link")} target="_blank">
-                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon2")}</span></span>
+                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")}</span>
               </a>
           <div className="PLnewAvsRight"></div>
          </div>

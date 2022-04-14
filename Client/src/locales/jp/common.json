@@ -1659,11 +1659,10 @@
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
     "beginningBanner" : "AVS4YOU無期限サブスクリプションに",
-    "discountCoupon" : "20％割引クーポン",
+    "discountCoupon" : "20％",
     "nameCoupon" : "Flower22",
-    "colorCoupon" : " ",
+    "colorCoupon" : "割引クーポン",
     "endingBanner" : "で新しいスタートを得る",
-    "nameCoupon2" : " ",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Flower22&CLEAN_CART=ALL",
       
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",

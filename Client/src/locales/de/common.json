@@ -1679,10 +1679,9 @@
 
     "beginningBanner" : "Erhalten Sie",
     "discountCoupon" : "20% Rabatt auf",
-    "nameCoupon" : " ",
-    "colorCoupon" : " ",
-    "endingBanner" : "das unbefristete AVS4YOU-Abo mit dem Gutscheincode",
-    "nameCoupon2" : "Flower22",
+    "nameCoupon" : "Flower22",
+    "colorCoupon" : "das unbefristete AVS4YOU-Abo mit dem Gutscheincode",
+    "endingBanner" : "!",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=Flower22&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/de/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
