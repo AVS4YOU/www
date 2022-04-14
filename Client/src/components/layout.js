@@ -33,7 +33,7 @@
     background-color: #486D08;
     height: 22px;
     width: 100%; 
-    padding: 13px 0;
+    padding: 14px 0;
  }
    .PLnewAvsText{
      position: static;
@@ -64,7 +64,7 @@
   .PLnewAvsCoupon {
     color: #486D08;
     background-color: #ffbd59;
-    padding: 3px 7px;
+    padding: 1px 10px;
     font-weight: 700 !important;
   }
  
@@ -77,9 +77,11 @@
      height: 78px;
      z-index:10;
      background-image:url(${PlAVSLeft});
-     width: 444px;
+     width: 550px;
      position: absolute;
-     top: -25px;
+     top: -7px;
+     left: -100px;
+     background-repeat: no-repeat;
    }
    .PLnewAvsCenter{
      height: 48px;
@@ -90,52 +92,71 @@
      height: 83px;
      z-index:10;
      background-image:url(${PlAVSRight});
-     width: 444px;
+     width: 550px;
      position: absolute;
-     right: 0;
-     top: -30px;
+     right: -100px;
+     top: -7px;
+     background-repeat: no-repeat;
    }
 
-   @media (max-width: 1070px) {
+   @media (max-width: 1700px) {
+    .PLnewAvsRight{
+      right: -20%;
+    }
+
+    .PLnewAvsLeft{
+      left: -20%;
+    }
+   }
+
+   @media (max-width: 1400px) {
+    .PLnewAvsRight{
+      right: -35%;
+    }
+
+    .PLnewAvsLeft{
+      left: -35%;
+    }
+   }
+
+   @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 12px 0 3px;
       height: 33px;
     }
-    .PLnewAvsText{
-      font-size: 12px; 
+    
+    .PLnewAvs a{
+      position: relative;
+      z-index: 11;
    }
 
+   .PLnewAvsText {
+    font-size: 12px; 
+ }
+
    .PLnewAvsLeft{
-    left: -183px;
+    left: -450px;
   }
  
   .PLnewAvsRight{
-    right: -239px;
+    right: -450px;
  }
   }
-   @media (max-width: 680px) {
+   @media (max-width: 750px) {
      .PLnewAvsText{
        font-size: 12px;
-       position: absolute;
+       position: relative;
        display: block;
-       top: 17px;    
+       top: -1px;    
    }
  }
 
- @media (max-width: 590px) {
-  .PLnewAvsText{
-    top: 12px;    
-}
-}
  @media (max-width: 500px) {
    .PLnewAvsText{
     display: block;
-    top: 10px; 
-    position: absolute;
     z-index: 25;
     color: #fff;
     font-size: 12px;
-    font-weight: 400;
     margin: auto;
     width: 100%;
     font-family: 'Open Sans';
@@ -143,11 +164,11 @@
  }
 
  .PLnewAvsLeft{
-   left: -370px;
+   left: -468px;
  }
 
  .PLnewAvsRight{
-  left: 330px;
+  left: 360px;
 }
     .PLnewAvsTextMobile {
       display: block;
