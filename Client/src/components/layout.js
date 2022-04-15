@@ -51,13 +51,12 @@
       text-decoration: none !important;
       position: relative;
       z-index: 11;
-      height: 100%;
+      height: 60px;
       display: flex;
-    }
-
- .PLnewAvsTextMobile {
-   display: none;
- }
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+     }
 
 .PLnewAvsTextCoupon{
     color: #ffbd59;
@@ -109,13 +108,6 @@
     .PLnewAvsLeft{
       right: 90%;
     }
-
-    .PLnewAvs a{
-      position: relative;
-      z-index: 11;
-      height: 100%;
-      display: flex;
-   }
 }
 
    @media (max-width: 1024px) {
@@ -128,9 +120,7 @@
    .PLnewAvsText {
     font-size: 12px; 
     padding: 0 6px;
-    width: 97%;
     position: relative;
-    background-position-y: 50%;
     top: 0;
  }
 
@@ -148,13 +138,6 @@
  @media (max-width: 500px) {
    .PLnewAvsText{
     display: block;
-    z-index: 25;
-    color: #fff;
-    font-size: 12px;
-    margin: auto;
-    width: 100%;
-    font-family: 'Open Sans';
-    letter-spacing: 1px;
  }
 
   .PLnewAvsLeft{
