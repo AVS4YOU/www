@@ -56,7 +56,7 @@ render(){
       <div className="multimedia-header"></div>
       </div>
       <div className="text-header">
-      <div className="avs-logo"></div>
+      <div className="avs-logo logo-offer"></div>
         <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">Special Offer</Text>
           <div className="text-grab">
           <Text fontSize={64} fontWeight={700} color="#fff" className="bodyGrab">Grab</Text>
