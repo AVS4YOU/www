@@ -402,13 +402,14 @@
     .header_other {
         background: linear-gradient(180deg, #FFFFFF 9.44%, rgba(250, 243, 232, 0.12) 77.19%), linear-gradient(255.16deg, #FFE1B4 2.02%, #FFE5BE 41.35%, #FED9F4 66.65%, #CCF9FF 98.61%);
         height: 779px;
+        margin-top: -1px;
     }
 
     .avs-logo_other {
         display: block;
         position: absolute;
         top: 14px;
-        right: -50px;
+        right: -30px;
         width: 71px;
         height: 41px;
         z-index: 3;
@@ -422,7 +423,6 @@
         background-color: transparent;
         background-position-x: 100%;
         height: 780px;
-        top: -1px;
         width: 100%;
     }
 
@@ -700,6 +700,10 @@
 }
 
 @media (max-width: 1689px) {
+    .avs-logo_other {
+        right: 0px !important;
+    }
+
     .header_image_other {
         filter: opacity(0.3);
     }

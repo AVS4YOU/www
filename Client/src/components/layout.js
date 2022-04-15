@@ -31,7 +31,6 @@
     display: table;
     font-size: 20px;
     background-color: #486D08;
-    height: 22px;
     width: 100%; 
     padding: 14px 0 0 0;
     height: 38px;
@@ -129,11 +128,11 @@
  }
 
  .PLnewAvsRight{
-  height: 56px;
+  height: 54px;
 }
 
 .PLnewAvsLeft{
-  height: 56px;
+  height: 54px;
 }
 
   }
@@ -174,12 +173,10 @@
 
  .PLnewAvsLeft{
    left: -468px;
-   height: 56px;
  }
 
  .PLnewAvsRight{
   left: 360px;
-  height: 56px;
 }
     .PLnewAvsTextMobile {
       display: block;
