@@ -32,8 +32,7 @@
     font-size: 20px;
     background-color: #486D08;
     width: 100%; 
-    padding: 14px 0 0 0;
-    height: 38px;
+    height: 60px;
  }
    .PLnewAvsText{
      position: static;
@@ -50,6 +49,10 @@
 
  .PLnewAvs a {
       text-decoration: none !important;
+      position: relative;
+      z-index: 11;
+      height: 100%;
+      display: flex;
     }
 
  .PLnewAvsTextMobile {
@@ -73,13 +76,13 @@
      width: 900px;
    }
    .PLnewAvsLeft{
-     height: 59px;
+     height: 60px;
      z-index:10;
      background-image:url(${PlAVSLeft});
      width: 550px;
      position: absolute;
-     top: -7px;
      right: 80%;
+     top: 0;
      background-repeat: no-repeat;
    }
    .PLnewAvsCenter{
@@ -88,13 +91,13 @@
      z-index:9;
    }
    .PLnewAvsRight{
-     height: 59px;
+     height: 60px;
      z-index:10;
      background-image:url(${PlAVSRight});
      width: 550px;
      position: absolute;
      left: 80%;
-     top: -7px;
+     top: 0;
      background-repeat: no-repeat;
    }
 
@@ -110,14 +113,15 @@
     .PLnewAvs a{
       position: relative;
       z-index: 11;
+      height: 100%;
+      display: flex;
    }
-
-   }
+}
 
    @media (max-width: 1024px) {
     .PLnewAvs {
-      padding: 9px 0 6px;
-      height: 33px;
+      padding: 0;
+      height: 59px;
     }
   
 
@@ -125,34 +129,21 @@
     font-size: 12px; 
     padding: 0 6px;
     width: 97%;
+    position: relative;
+    background-position-y: 50%;
+    top: 0;
  }
 
- .PLnewAvsRight{
-  height: 54px;
+  .PLnewAvsRight{
+    height: 59px;
+    top: 0;
+  }
+
+  .PLnewAvsLeft{
+    height: 59px;
+    top: 0;
+  }
 }
-
-.PLnewAvsLeft{
-  height: 54px;
-}
-
-  }
-   @media (max-width: 750px) {
-     .PLnewAvsText{
-       font-size: 12px;
-       position: relative;
-       display: block;
-       top: -1px;    
-   }
-   .PLnewAvs {
-    padding: 15px 0px 0px;
-  }
-  }
-
-   @media (max-width: 662px) {
-   .PLnewAvs {
-    padding: 9px 0px 6px;
-  }
- }
 
  @media (max-width: 500px) {
    .PLnewAvsText{
@@ -166,32 +157,14 @@
     letter-spacing: 1px;
  }
 
- .PLnewAvs {
-  width: auto;
-  padding: 9px 0px 5px;
-}
+  .PLnewAvsLeft{
+    left: -468px;
+  }
 
- .PLnewAvsLeft{
-   left: -468px;
- }
-
- .PLnewAvsRight{
-  left: 360px;
+  .PLnewAvsRight{
+    left: 360px;
+  }
 }
-    .PLnewAvsTextMobile {
-      display: block;
-      top: 17px; 
-      position: absolute;
-      z-index: 25;
-      color: #fff;
-      font-size: 12px;
-      font-weight: 700;
-      margin: auto;
-      width: 100%;
-      font-family: 'Open Sans';
-      letter-spacing: 1px;
-    }
- }
  `;
  
  const StyledLayout = styled.div`
