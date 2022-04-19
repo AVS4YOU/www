@@ -24,7 +24,15 @@ import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
 import AvatarLawrence from '../images/avs-free-video-converter/lawrence_thompson.png';
 
-
+import awardChip from '../images/main-page/awards/award-chip.png'
+import awardSoft from '../images/main-page/awards/softonic-award.png'
+import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
+import awardCritical from '../images/avs-free-video-converter/award-criticalfiles.png'
+import awardDownload from '../images/avs-free-video-converter/award-download3000.png'
+import awardFilebuzz from '../images/avs-free-video-converter/award-filebuzz.png'
+import awardFilecluster from '../images/avs-free-video-converter/award-filecluster.png'
+import awardTops from '../images/avs-free-video-converter/award-topshareware.png'
+import awardTucows from '../images/avs-free-video-converter/award-tucows.png'
 
 class avsFreeVideoConverter extends React.PureComponent {
 
@@ -168,6 +176,23 @@ render(){
             </ContentRowItem>
           </PageContentWrapper>
 
+          <PageContentWrapper>
+          <div className="block-awards">
+            <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{this.props.t("Reviewed and highly rated by")}</Text>
+            <div className="list-awards listAwards">
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoft}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardCritical}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardChip}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardDownload}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardFilebuzz}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardFilecluster}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardTops}/></div>
+              <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardTucows}/></div>
+            </div>
+        </div> 
+        </PageContentWrapper>
+
           <div className="questions-wrapper">
 
             <Text as="h2" className="common__heading">
@@ -200,13 +225,13 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I define the conversion settings mysel")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("If you are a novice we recommend you choosing among ready presets")} <a href={this.props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>
+                    <Text className="hiddenText">{this.props.t("If you are a novice we recommend you choosing among ready presets")} <a href={this.props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>{this.props.t("endGuidesQuestion")}
                     </Text>
                 </div>
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is AVS Video Converter difficult for newbies")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("It is really easy and user-friendly")} <a href={this.props.t("avs4you guides index")}>{this.props.t("guides")}</a> {this.props.t("or find the necessary information in")} <a href={this.props.t("onlinehelpVideoHref")}>{this.props.t("the knowledge center")}</a>
+                    <Text className="hiddenText">{this.props.t("It is really easy and user-friendly")} <a href={this.props.t("avs4you guides index")}>{this.props.t("guides")}</a> {this.props.t("or find the necessary information in")} <a href={this.props.t("onlinehelpVideoHref")}>{this.props.t("the knowledge center")}</a>{this.props.t("endLastQuestionnsConverter")}
                     </Text>
                 </div>
               </PanelCollapse>
@@ -247,7 +272,7 @@ render(){
               <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
-          <div className="technicalSpecificationWrapper">
+          <div className="technicalSpecificationWrapper" style={{backgroundColor:"#f9f9f9"}}>
             <PageContentWrapper>
                 <Text as={this.props.t("h3")} className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
                 <div className="specificationGrid">
@@ -315,7 +340,7 @@ render(){
             </PageContentWrapper>
           </div>
 
-          <div id="reviews" className="backgroundWrapper">
+          <div id="reviews" className="backgroundWrapper" style={{marginTop: "0px;"}}>
           <ReviewScreen 
               reviewsData={
                 [
