@@ -113,10 +113,9 @@
    @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
-      height: 59px;
+      height: 60px;
     }
   
-
    .PLnewAvsText {
     font-size: 12px; 
     padding: 0 6px;
@@ -125,12 +124,12 @@
  }
 
   .PLnewAvsRight{
-    height: 59px;
+    height: 60px;
     top: 0;
   }
 
   .PLnewAvsLeft{
-    height: 59px;
+    height: 60px;
     top: 0;
   }
 }
