@@ -28,7 +28,7 @@
  }
 
  .PLnewAvs{
-    display: table;
+    display: none;
     font-size: 20px;
     background-color: #486D08;
     width: 100%; 
