@@ -59,6 +59,12 @@ render(){
           <div className="headerBackground" style={{height: "900px"}}>
           <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
             <PageContentWrapper>
+                <ScreenshotsCarousel
+                  maxWidth={734}
+                  maxWidthPopup={734}
+                  titleImage={[this.props.t("AVS Audio Converter"), this.props.t("AVS Audio Editor"), this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker")]}
+                  descriptionImage={[this.props.t("Fast audio conversion tool with basic audio editing tools"), this.props.t("Professional level audio editing and recording software"), this.props.t("All-in-one video converter with basic video editing features"), this.props.t("Professional full-featured video editor for making high quality videos just in minutes"), this.props.t("A simple and fast video editor without re-encoding")]}
+                />
               <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative"}} >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
