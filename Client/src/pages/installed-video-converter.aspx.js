@@ -28,7 +28,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const lang = ['de','en','es','fr','it','jp']
+const lang = ['de','en','es','fr','it','jp','da','ko','nl','pl','pt','ru','zh']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;
@@ -76,8 +76,8 @@ render(){
         metaKeywords=""
       >
           {isSomeLang(this.props.locale)
-          ? <InstalledVideoConverterOtherContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/> 
-          : <InstalledVideoConverterCommonContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/>
+          ? <InstalledVideoConverterCommonContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/> 
+          : <InstalledVideoConverterOtherContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/>
         }
       </Layout>
     );

@@ -42,7 +42,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
               </div>
               <div className="body-company">
                 <Text as="h2" className="common__heading">{props.t("Your benefits")}</Text>
-                <BenefitsCarousel className="benefitsCarousel" centerSlide={3}>
+                <BenefitsCarousel className="benefitsCarousel" centerSlide={3} marginOffset={-29.5}>
                   <div  className="carouselItem free">
                     <Text>{props.t("Free upgrades")}</Text>
                   </div>
@@ -124,10 +124,10 @@ export const InstalledVideoConverterCommonContent = (props) => (
 
               <div className="resourcesTable" style={{margin: "auto"}}> 
       <div className="helpful">{props.t("Helpful resources")}</div>
-      <div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-converter/" style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
-      <div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
+      <div className="knowledge"><div className="knowledgeIcon"><a href={props.t("onlinehelpVideoHref")} style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
+      <div className="tipsIcon"><a href={props.t("guidesVideoHref")} style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
       <div className="questionIcon">{props.t("Got a question")}
-      <br/>{props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{props.t("support team")}</a> </div>
+      <br/>{props.t("Contact our")} <a href={props.t("supportVideoHref")} style={{color: "#393939"}}>{props.t("support team")}</a> </div>
       </div>
       </div>
 </div>
