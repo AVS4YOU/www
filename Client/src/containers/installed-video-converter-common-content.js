@@ -22,15 +22,15 @@ const LogoWrapper = styled.div`
 export const InstalledVideoConverterCommonContent = (props) => (
     <div>
       <div className="header">
-                <div className="avs-logo">
-                <GatsbyLink className="headerLogo" to="/">
-                    <LogoWrapper href="/">
-                        <img src={Logo} alt="avs4you logo"/>
-                    </LogoWrapper>
-                </GatsbyLink>
-                </div>
                 <ImageGQL className="headerBackgroundImage" imageName="installed-video-converter-header.jpg" style={{position: "absolute"}}/>
                   <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
+                  <div className="avs-logo">
+                  <GatsbyLink className="headerLogo" to="/">
+                      <LogoWrapper href="/">
+                          <img src={Logo} alt="avs4you logo"/>
+                      </LogoWrapper>
+                  </GatsbyLink>
+                  </div>
                     <Text as="h1" className="header__heading installed">{props.t("Thank you for installing AVS Video Converter")} <br /> {props.t("AVS video converter")}</Text>
                   <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={props.t(`${props.hrefUnlim}`)} style={{color: "#fff"}}>{props.t("Exclusive Offer Only Today")}</a></Text></table>
                     <Text as="h3" className="header__subtitle installed">{props.t("Save 70 on the full version and")}
