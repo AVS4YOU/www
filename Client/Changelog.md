@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.29
+
+### New
+* Deleted event Easter 2022
+* Changed styles on `/installed-audio-converter.aspx`, `/installed-video-converter.aspx` for en/de/fr/es/it/jp
+
 ## 1.0.28
 
 ### New
