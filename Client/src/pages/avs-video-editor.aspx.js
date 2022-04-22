@@ -59,15 +59,18 @@ render(){
           <div className="headerBackground" style={{height: "900px"}}>
           <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
             <PageContentWrapper>
+            <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative"}} >
+                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
+                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Powerful video editing software for Windows")}</Text>
                 <ScreenshotsCarousel
                   maxWidth={734}
                   maxWidthPopup={734}
-                  titleImage={[this.props.t("AVS Audio Converter"), this.props.t("AVS Audio Editor"), this.props.t("AVS Video Converter"), this.props.t("AVS Video Editor"), this.props.t("AVS Video ReMaker")]}
-                  descriptionImage={[this.props.t("Fast audio conversion tool with basic audio editing tools"), this.props.t("Professional level audio editing and recording software"), this.props.t("All-in-one video converter with basic video editing features"), this.props.t("Professional full-featured video editor for making high quality videos just in minutes"), this.props.t("A simple and fast video editor without re-encoding")]}
+                  titleImage={[this.props.t("Creative video editing"), this.props.t("Easy fast editing"), this.props.t("Your story in color"), this.props.t("Video editor for all needs"), this.props.t("Video editor for everyone")]}
+                  descriptionImage={[this.props.t("Create great-looking videos with 300"), this.props.t("Enjoy simple video editing with GPU acceleration"), this.props.t("Capture best moments and turn them into colorful slideshows"), this.props.t("Create demos, tutorials, presentations or videos for any special occasion"), this.props.t("Make your story viral on social and video platforms")]}
+                  imageNames={[this.props.t(" "), this.props.t(" "), this.props.t(" "), this.props.t(" "), this.props.t(" ")]}
+                  imageNamesPopup={[this.props.t(" "), this.props.t(" "), this.props.t(" "), this.props.t(" "), this.props.t(" ")]}
+                  altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
                 />
-              <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative"}} >
-                <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
-                <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
