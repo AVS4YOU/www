@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import { AvsVideoEditorCommonContent } from '../containers/avs-video-editor-common-content';
 import { AvsVideoEditorOtherContent } from '../containers/avs-video-editor-other-content';
 
-const lang = ['de','en','es','fr','it','jp']
+const lang = ['de','en','es','fr','it','jp','ru']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;
