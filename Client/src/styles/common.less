@@ -237,7 +237,6 @@ main {
 
 video {
     object-fit: fill;
-    width: 100%;
     height: 100%;
 }
 
@@ -336,6 +335,33 @@ video {
 
   .listAwards {
       margin-bottom: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .awards-product {
+      padding: 0 20px;
+    &>img {
+        background-size: contain;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .listAwards {
+        display: inline-block;
+    }
+
+    .awards-product {
+        display: inline-block;
+        padding: 20px 20px;
+        vertical-align: middle;
+      &>img {
+          background-size: contain;
+          width: auto;
+      }
+    }  
   }
 
 
@@ -463,5 +489,13 @@ video {
     }
     .header__button-text{
         font-size: 14px;
+    }
+
+    .awards-product {
+        padding: 10px 10px;
+      &>img {
+          background-size: contain;
+          width: 70%;
+      }
     }
 }
