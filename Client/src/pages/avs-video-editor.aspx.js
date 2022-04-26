@@ -1,8 +1,5 @@
 import React from "react";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
-import { Link as ScrollLink } from "react-scroll";
-import Text from '../components/text';
 import Layout from "../components/layout";
 
 import { AvsVideoEditorCommonContent } from '../containers/avs-video-editor-common-content';

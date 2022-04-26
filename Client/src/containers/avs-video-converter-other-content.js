@@ -136,22 +136,20 @@ export const AvsVideoConverterOtherContent = (props) => (
     </ContentRowItem>
   </PageContentWrapper>
 
-  <PageContentWrapper>
-  <div className="block-awards">
+  <div className="block-awards" style={{maxWidth:"100%"}}>
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoft}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardCritical}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardChip}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardDownload}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardFilebuzz}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardFilecluster}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardTops}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardTucows}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardSoft}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardCritical}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardChip}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardDownload}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardFilebuzz}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardFilecluster}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardTops}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardTucows}/></div>
     </div>
 </div> 
-</PageContentWrapper>
 
   <div className="questions-wrapper">
 
