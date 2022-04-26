@@ -333,14 +333,14 @@ video {
     padding: 160px 0 80px;
   }
 
-  .listAwards {
-      margin-bottom: 160px;
+  .listAwards, .listAwardsConverter {
+      margin-bottom: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
   }
 
-  .awards-product {
+  .awards-product, .awards-product-converter {
       padding: 0 20px;
     &>img {
         background-size: contain;
@@ -349,21 +349,16 @@ video {
   }
 
   @media (max-width: 1024px){
-    .listAwards {
+    .listAwardsConverter {
         display: inline-block;
     }
-
-    .awards-product {
-        display: inline-block;
+    
+    .awards-product-converter{
         padding: 20px 20px;
-        vertical-align: middle;
-      &>img {
-          background-size: contain;
-          width: auto;
-      }
-    }  
+        width: 110px;
+        display: inline-block;
   }
-
+}
 
 @media (max-width: 750px){
     main{
@@ -491,11 +486,18 @@ video {
         font-size: 14px;
     }
 
-    .awards-product {
+    .listAwards {
+        display: inline-block;
+    }
+
+    .awards-product, .awards-product-converter {
+        display: inline-block;
         padding: 10px 10px;
+        vertical-align: middle;
+        width: 130px;
       &>img {
           background-size: contain;
-          width: 70%;
+          width: 60%;
       }
     }
 }

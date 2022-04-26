@@ -139,18 +139,16 @@ export const AvsVideoEditorOtherContent = (props) => (
   </PageContentWrapper>
   <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
   
-  <PageContentWrapper>
   <div className="block-awards">
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardCapterra}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
-      <div className="awards-item" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardCapterra}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
     </div>
 </div> 
-</PageContentWrapper>
   
   <div className="questions-wrapper">
 
