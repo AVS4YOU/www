@@ -1,9 +1,7 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
-import Layout from "../components/layout";
 import PanelCollapse from "../components/panel-collapse";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
@@ -43,6 +41,9 @@ const StyledCarousel = styled.div`
   color: #FE9235;
   opacity: 1;
 }
+.slick-dots li button:before {
+  color: #ffffff;
+}
 .slick-prev, .slick-next, .slick-prev:focus{
   width:45px;
   height:45px;
@@ -70,6 +71,7 @@ const StyledCarousel = styled.div`
 .slick-list {
   pointer-events: none;
 }
+
 .slick-next, .slick-next:focus{
   background-image: url(${RightArrow});
   background-position: 55% 50%;
@@ -85,15 +87,43 @@ const StyledCarousel = styled.div`
 .popupCarousel{
   display: none;
   background-color: transparent;
+}
+
+.visibleSlider {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .slick-list {
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .description-image {
+    margin-bottom: 0px;
+  }
+}
+`;
+
+const StyledVideo = styled.div`
+@media (max-width: 500px) {
+  .headerBackground {
+    height: 700px !important;
+  }
+  video {
+    height: 700px;
+  }
+}
 `;
 
 
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
-  <div className="headerBackground" style={{height: "900px"}}>
-  <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
+  <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
+    <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
     <PageContentWrapper>
-    <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", paddingTop: "80px"}} >
+    <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", paddingTop: "80px", maxWidth:"1300px"}} >
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Editor")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Powerful video editing software for Windows")}</Text>
         <StyledCarousel>
@@ -113,9 +143,10 @@ export const AvsVideoEditorOtherContent = (props) => (
           mainPadding="12px 37px"
           margin="auto"
         />
-      </div> 
+      </div>
     </PageContentWrapper>
   </div>
+  </StyledVideo>
   <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
   <div className="scrollLinksWrapper">
     <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
