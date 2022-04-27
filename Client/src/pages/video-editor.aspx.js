@@ -294,6 +294,7 @@ const StyledVideo = styled.div`
     top: 100px;
     left: 0;
     position: relative;
+    padding-top: 200px;
   }
 
   .headerText {
