@@ -17,7 +17,7 @@ import backgroundVELanding from "../images/avs-video-editor-landing/background-v
 import tabletVELanding from "../images/avs-video-editor-landing/bg-landing-ve-tablet.svg";
 import mobileVELanding from "../images/avs-video-editor-landing/bg-landing-ve-mobile.svg";
 import VELanding from "../images/avs-video-editor-landing/avs-video-editor-landing.svg";
-import MobileVELanding from "../images/avs-video-editor-landing/mobileVELanding.svg";
+import MobileVELanding from "../images/avs-video-editor-landing/mobile-landing-video-editor.svg";
 
 const StyledVideo = styled.div`
 

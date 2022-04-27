@@ -121,7 +121,10 @@ const StyledVideo = styled.div`
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
-    <video autoPlay loop muted src={videoHeader} style={{position: "absolute"}}></video>
+    <video autoPlay loop muted style={{position: "absolute"}}>
+    <source src={videoHeader} type="video/mp4" />
+            Your browser does not support HTML5 video.
+    </video>
     <PageContentWrapper>
     <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", paddingTop: "80px", maxWidth:"1300px"}} >
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Editor")}</Text>
