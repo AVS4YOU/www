@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.29
+
+### New
+* Deleted event Easter 2022
+* Changed styles on `/installed-audio-converter.aspx`, `/installed-video-converter.aspx` for en/de/fr/es/it/jp
+
+## 1.0.28
+
+### New
+* Added event Easter 2022
+
 ## 1.0.27
 
 ### New
@@ -13,13 +24,13 @@
 
 ### Fixes
 * Deleted event St. Valentine
-
 ## 1.0.25
 
 ### New
 * Added event St. Valentine
 
 ## 1.0.24
+
 
 ### New
 * Added translation `zh/installed-video-editor.aspx`
@@ -234,11 +245,13 @@
 
 ## 1.0.0
 
+
 ### New
 * Added folder pads with xml files
 * Added google-verification
 * Added pr/pl/ko/nl/da languages
 * Added a pop-up window with a warning about cookies on the site
+
 
 ### Fixes
 * Updated language selector

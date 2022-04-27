@@ -62,15 +62,15 @@ render(){
         metaKeywords=""
       >
         <div className="header">
-          <div className="avs-logo">
+          <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
+            <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
+            <div className="avs-logo">
           <GatsbyLink className="headerLogo" to="/">
               <LogoWrapper href="/">
                   <img src={Logo} alt="avs4you logo"/>
               </LogoWrapper>
           </GatsbyLink>
           </div>
-          <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
-            <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Audio Editor")} <br /> {this.props.t("AVS audio editor")}</Text>
              <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
               <Text as="h3" className="header__subtitle installed" style={{maxWidth:700 + 'px'}}>{this.props.t("Save 70 on the full version and edit your audio without limitations")}</Text>

@@ -1584,8 +1584,8 @@
     "*****************************LINK********************************" : "*****************************LINK********************************",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=12" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "affiliate_link_generator" : "https://stat.avs4you.com/jp/linkgenerationarea.aspx?lng=en",
-	"Affiliate_Links_Generator" : "https://stat.avs4you.com/jp/linkgenerationarea.aspx?lng=en",
+    "affiliate_link_generator" : "https://stat.avs4you.com/linkgenerationarea.aspx?lng=en",
+	"Affiliate_Links_Generator" : "https://stat.avs4you.com/linkgenerationarea.aspx?lng=en",
 	"avs-free-video-converter-onlinehelp-avs4you" : "https://onlinehelp.avs4you.com/jp/avs-video-converter/features/converting/convertingtoformat/supportedformats.aspx",
 	"avs-video-editor-onlinehelp-avs4you" : "https://onlinehelp.avs4you.com/jp/vs-video-editor/features/savingvideos/supportedformats.aspx",
 	"downolads-avs4you-guides" : "https://www.avs4you.com/jp/guides/How-to-download-and-install-the-AVS4YOU-software-on-your-PC.aspx",
@@ -1712,13 +1712,15 @@
     "Multiplatform (Windows, Mac, Linux)" : "マルチプラットフォーム版（Windows、Mac、Linux）",
     "Edit and create documents, spreadsheets and presentations" : "ドキュメント・スプレッドシート・プレゼンテーションを作成と編集",
 
-    "*****************************CHRISTMAS********************************" : "*****************************CHRISTMAS********************************",
-    "For All AVS4YOU Valentines" : "AVS4YOUからバレンタインデーのため：Love22",
-    "20% Off on AVS4YOU Suite with" : "クーポンでAVS4YOUスイートに20％オフ",
-    "Love22" : " ",
-    "coupon!" : " ",
-    "avsvalentine" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Love22&CLEAN_CART=ALL",
-    
+    "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
+
+    "beginningBanner" : "AVS4YOU無期限サブスクリプションに",
+    "discountCoupon" : "20％",
+    "nameCoupon" : "Flower22",
+    "colorCoupon" : "割引クーポン",
+    "endingBanner" : "で新しいスタートを得る",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Flower22&CLEAN_CART=ALL",
+      
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL"
