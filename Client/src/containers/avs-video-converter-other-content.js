@@ -166,7 +166,7 @@ export const AvsVideoConverterOtherContent = (props) => (
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Is AVS Video Converter absolutely free")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("Yes it is a free video converter")}</Text>
+            <Text className="hiddenText">{props.t("Yes it is a free video converter")} <a href={props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a>{props.t("textAfterRegister")}</Text>
         </div>
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I convert HD and 4K video")}>
