@@ -29,6 +29,16 @@ import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
 
+const StyledCarousel = styled.div`
+.title-image {
+  color: #ffffff;
+}
+.description-image {
+  color: #ffffff;
+}
+`;
+
+
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <div className="headerBackground" style={{height: "900px"}}>
@@ -37,6 +47,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative"}} >
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Editor")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Powerful video editing software for Windows")}</Text>
+        <StyledCarousel>
         <ScreenshotsCarousel
           maxWidth={734}
           maxWidthPopup={734}
@@ -46,6 +57,7 @@ export const AvsVideoEditorOtherContent = (props) => (
           imageNamesPopup={[props.t(" "), props.t(" "), props.t(" "), props.t(" "), props.t(" ")]}
           altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
         />
+        </StyledCarousel>
         <HeaderDownloadButtons 
           t={props.t}
           mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"

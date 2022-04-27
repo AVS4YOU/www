@@ -175,7 +175,7 @@
    "da-DK",
    "pt-BR",
    "ru-RU",
-   "ko-KR",
+   "ko-KR"
  ];
  
  class Layout extends React.PureComponent {
