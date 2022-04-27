@@ -158,7 +158,7 @@ export const AvsVideoConverterOtherContent = (props) => (
     </Text>
 
     <div className="questions-block">
-      <PanelCollapse className="panelCollapse" panelName={props.t("What is the best video converter for free")}>
+      <PanelCollapse className="panelCollapse" panelName={props.t("What is the best video editor for free")}>
         <div className="collapseContent">
             <Text className="hiddenText">{props.t("There are plenty of free video converters on the market but many of them are not completely free")}
             </Text>
