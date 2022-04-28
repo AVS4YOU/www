@@ -143,6 +143,7 @@ video {
   }
   video {
     height: 700px;
+    left: -50%;
   }
 }
 `;
