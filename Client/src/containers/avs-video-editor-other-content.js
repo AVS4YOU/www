@@ -107,6 +107,36 @@ const StyledCarousel = styled.div`
 `;
 
 const StyledVideo = styled.div`
+
+.headerBackground {
+  overflow: hidden;
+}
+
+video {
+  object-fit: fill;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 1920px) {
+  video {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerBackground {
+    height: 800px !important;
+  }
+  video {
+    height: 800px;
+  }
+
+  .visibleSlider {
+    margin: 20px auto;
+  }
+}
+
 @media (max-width: 500px) {
   .headerBackground {
     height: 700px !important;
