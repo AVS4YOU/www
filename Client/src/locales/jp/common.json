@@ -262,6 +262,7 @@
     "AVS 動画エディター　バージョン 9.1":"AVS 動画エディター　バージョン 9.1",
     "For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results" : "この価格でこれなら、相当の価値があります。ほとんどの場合、AVS の動画エディターと動画コンバーターを使っていますが、両方ともたいへん優秀でしかも使い方も簡単で、高品質を得られます。",
 
+    "What is the best video editor for" : "1． 一番いい無料なビデオ変換ツールは何ですか？",
 	"What is the best video editor for free" : "1. 無料で一番いいなビデオ編集ツールは何ですか？",
 	"There are a lot of free video editing programs on the marke" : "様々なビデオ編集ツールがあります。Windowsでビデオを編集するために、AVS Video Editorは一番いい選択だと思います。制限なし高画質のビデオを作成できます。一つだけの制限は非活性のAVS Video Editorを使用する時に、出力ファイルにはウォーターマークが入っています。ウォーターマークを取り外すためにプログラムを活性化してください。",
 	"Do you have a free video editor" : "2. 無料なビデオ編集ツールがありますか？",
@@ -282,11 +283,13 @@
 
 
     "*****************************AVS Video Converter********************************" : "*****************************AVS Video Converter********************************",
+    "Free Video Converter for Windows" : "Windows向けの無料なビデオ変換ツール",
     "AVS Free Video Converter converts video  files to all popular video formats MP4, DVD, MPEG, MOV, FLV and others absolutely free Download Free AVS Video Converter": "AVS Free Video Converterでビデオファイルを人気があるの動画形式（MP4, DVD, MPEG, MOVなど）に無料で変換できます。Free AVS Video Converterをダウンロードする。",
     "Convert any video with AVS Free Video Converter for Windows" : "Windows用のAVS Free Video Converterで様々な動画と変換します。",
     "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion":"無料動画コンバーター、動画から mp3、動画コンバーター、動画ダウンロードコンバーター、mp4 動画コンバーター、avs 動画コンバーター、avs4you、avs、avs コンバーター、avs4u、動画コンバーターツール、動画コンバーターソフトウェア、mp4 mp3 コンバーター、mp4 avi コンバーター、mp4 3gp コンバーター、mp4 動画コンバーター、dvd 変換、avi 変換、mp4 変換、wmv 変換、mov 変換、動画ファイルコンバーター、dvd コンバーター、dvd から mp4 へ変換、avi コンバーター、動画変換、動画変換",
     "free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion":"無料動画コンバーター、動画から mp3、動画コンバーター、動画ダウンロードコンバーター、mp4 動画コンバーター、avs 動画コンバーター、avs4you、avs、avs コンバーター、avs4u、動画コンバーターツール、動画コンバーターソフトウェア、mp4 mp3 コンバーター、mp4 avi コンバーター、mp4 3gp コンバーター、mp4 動画コンバーター、dvd 変換、avi 変換、mp4 変換、wmv 変換、mov 変換、動画ファイルコンバーター、dvd コンバーター、dvd から mp4 へ変換、avi コンバーター、動画変換、動画変換",
-    "Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily":"以下のフォーマットでの変換: MP4、DVD、AVI、WMV、MOV、MPEG4、VOB、MKV、MTS、2K QHD、4K UHD、DCI 4K など。速くて簡単!",
+    "Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily":"150＋形式が利用可能：MP4, MOV, MKV, WEBM, DVD, AVI, WMV, MPEG, M2TS, TS, 2K QHD, 4K UHDとDCI 4Kなど 。",
+    "Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc" : "iPhone, iPad, Android, Samsung, YouTube, Facebookなどのために変換します。",
     "Сonvert all key video formats":"主な動画フォーマット全てを変換",
     "Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc":"HD 動画、AVI、MP4、DVD、VOB、WMV、Blu-ray、MPEG、MKV、H.264 コーデック、H.265 (閲覧のみ) などでの動画をエンコード",
     "Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc":"HD カメラ記録を AVCHD、MPEG-2 HD、AVI HD、TOD/MOD、M2TS/MTS などに変換。",
@@ -312,8 +315,8 @@
     "Export audio and images from your video":"動画から音声や画像をエクスポート",
     "This feature is available in a full version":"* この機能はフルバージョンで利用できます",
     "Convert and share videos on Web":"動画を変換して、ウェブで共有",
-    "Save video to any format or modern gadgets":"任意のフォーマットまたは最新デバイスへ動画を保存",
-    "Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc":"Apple iPhone 12/11/XS/XR/X/8/7/SE、Apple iPad Pro、Apple iPad 2020、Apple iPad 2019、Apple iPad 2018、Apple iPad 2017、iPad Air 2 など",
+    "Save video to any format or modern gadgets":"任意のフォーマットまたは最新デバイス（スマートフォン、タブレット、コンソールなど）へ動画を保存します:",
+    "Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc":"Apple iPhone, Apple iPad, Samsung Galaxy, Samsung UHD TV, Sony PlayStation, Nicrosoft Xbox, Sony Xperia, Androidスマートフォンとタブレット。",
     "Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita)":"Samsung Galaxy S20/S10/S9/S8/S7、A51/A50/A71/A70、Galaxy Note 20/10/9/8/5、Galaxy Tab S6/S5e/S4/S3、Samsung UHD/SUHD TV、Sony PlayStation 4 Pro (PS4 Pro)、Sony PlayStation Vita (PS Vita)",
     "Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact":"Microsoft Xbox One、Xbox One S、Xbox One X、Sony Xperia 1/XZ3/XZ2/XZ1、XZ2/XZ1 Compact。",
     "Create DVD/Blu-ray discs":"DVD、ブルーレイディスクを作成",

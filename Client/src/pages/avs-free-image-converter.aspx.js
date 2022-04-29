@@ -178,7 +178,7 @@ class avsFreeImageConverter extends React.PureComponent {
           <PageContentWrapper>
             <div className="downloadInfoWrapper">
               <div className="downloadInfoRow">
-                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Fileyнф Size")}</Text>
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("File Size")}</Text>
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">35.17 MB</Text>
               </div>
 

@@ -43,7 +43,9 @@ export const AvsVideoConverterOtherContent = (props) => (
       <div id="headerContentWrapper" className="headerContentWrapper" >
         <FreeFlag>{props.t("Free")}</FreeFlag>
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Converter")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Free Video Converter for Windows")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
         <HeaderDownloadButtons 
           t={props.t}
           mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
@@ -130,7 +132,7 @@ export const AvsVideoConverterOtherContent = (props) => (
         imageName={props.t("video converter slider popup3 jpg")}
         headerText={props.t("Convert and share videos on Web")}
     >
-      <Text className="ListItem"><span>{props.t("Save video to any format or modern gadgets")}</span>{props.t("Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc")}<br/> {props.t("Samsung Galaxy S20/S10/S9/S8/S7, A51/A50/A71/A70, Galaxy Note 10/9/8/5, Galaxy Tab S6/S5e/S4/S3, Samsung UHD/SUHD TV, Sony PlayStation 4 Pro (PS4 Pro), Sony PlayStation Vita (PS Vita)")} <br/> {props.t("Microsoft Xbox One, Xbox One S, Xbox One X, Sony Xperia 1/XZ3/XZ2/XZ1, XZ2/XZ1 Compact.")}</Text>
+      <Text className="ListItem"><span>{props.t("Save video to any format or modern gadgets")}</span>{props.t("Apple iPhone 11/XS/XR/X/8/7/SE, Apple iPad Pro, 2019, 2018, 2017, iPad Air 2 etc")}</Text>
       <Text className="ListItem"><span>{props.t("Create DVD/Blu-ray discs")}</span>{props.t("Convert from to Blu-ray or DVD formats Cut, apply effects, add colorful DVD Blu-ray menus Split your movie into chapters and burn DVD Blu-ray discs")}</Text>
       <Text className="ListItem"><span>{props.t("Convert videos for popular social platforms")}</span>{props.t("Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox")}</Text>
     </ContentRowItem>
@@ -158,7 +160,7 @@ export const AvsVideoConverterOtherContent = (props) => (
     </Text>
 
     <div className="questions-block">
-      <PanelCollapse className="panelCollapse" panelName={props.t("What is the best video editor for free")}>
+      <PanelCollapse className="panelCollapse" panelName={props.t("What is the best video editor for")}>
         <div className="collapseContent">
             <Text className="hiddenText">{props.t("There are plenty of free video converters on the market but many of them are not completely free")}
             </Text>
@@ -177,13 +179,13 @@ export const AvsVideoConverterOtherContent = (props) => (
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I convert many files at onc")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")}
+            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")} <a href={props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>{props.t("endGuidesQuestion")}
             </Text>
         </div>
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I define the conversion settings mysel")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("If you are a novice we recommend you choosing among ready presets")} <a href={props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>{props.t("endGuidesQuestion")}
+            <Text className="hiddenText">{props.t("If you are a novice we recommend you choosing among ready presets")}
             </Text>
         </div>
       </PanelCollapse>
