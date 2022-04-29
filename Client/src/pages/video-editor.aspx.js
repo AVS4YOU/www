@@ -6,6 +6,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import styled from 'styled-components';
 import Star from '../images/main-page/icons/star.svg';
+import { Link as GatsbyLink } from 'gatsby';
 
 import awardCapterra from '../images/main-page/awards/award-capterra.png'
 import awardGetapp from '../images/main-page/awards/award-getapp.png'
@@ -18,8 +19,20 @@ import tabletVELanding from "../images/avs-video-editor-landing/bg-landing-ve-ta
 import mobileVELanding from "../images/avs-video-editor-landing/bg-landing-ve-mobile.svg";
 import VELanding from "../images/avs-video-editor-landing/avs-video-editor-landing.svg";
 import MobileVELanding from "../images/avs-video-editor-landing/mobile-landing-video-editor.svg";
+import grayLogo from "../images/installed-pack/logo-gray.png";
 
 const StyledVideo = styled.div`
+
+.avs-logo{
+  background-image: url(${grayLogo});
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  width: 78px;
+  height: 43px;
+  z-index: 2;
+}
 
 .headerBackground{
   background: linear-gradient(180deg, #FFFFFF 0%, #EAF3F7 100%);
@@ -267,9 +280,25 @@ const StyledVideo = styled.div`
 }
 
 @media (max-width: 500px) {
+
+  #IDheaderContentWrapper {
+    position: static;
+  }
+
   .textLanding {
     display: block;
     width: 100%;
+  }
+
+  .mobileFormWrapper {
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .checkBoxWrapper {
+    p {
+      color: #000000;
+    }
   }
 
   .headerContentWrapper{
@@ -365,6 +394,7 @@ class avsVideoEditor extends React.PureComponent {
 
     return (
       <Layout
+        headerIsDisabled={true}
         getDevice={this.getDevice}
         pageContext={this.props.pageContext}
         t={this.props.t}
@@ -380,20 +410,20 @@ class avsVideoEditor extends React.PureComponent {
                 <div id="IDheaderContentWrapper" className="headerContentWrapper" >
                   <div className="textLanding">
                   <div className="headerBlock">
+                  <GatsbyLink className="avs-logo" to="/"></GatsbyLink>
                   <Text color="#000000" align="left" className="headerText" id="IdheaderText" lineHeight="76px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
-                  <Text color="#000000" align="left" className="headerDescription" lineHeight="32px" fontSize={24} fontWeight={400} as="h5">{this.props.t("Simple video editor for Windows")}</Text>
+                  <Text color="#000000" align="left" className="headerDescription" lineHeight="32px" fontSize={24} fontWeight={400} as="h5">{this.props.t("Simple Video Editor for Windows")}</Text>
 
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("Cut, trim, crop, merge, rotate video files")}</Text>
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("Capture screen, record video from webcams")}</Text>
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("Super fast with GPU acceleration")}</Text>
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("150+ Supported formats")}</Text>
-                          <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("Capture PC screen")}</Text>
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("300+ Effects and transitions")}</Text>
                       </div>
                       <div>
                         <HeaderDownloadButtons
                           t={this.props.t}
-                          mainHref="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                           secondaryText="Windows 11/10/8/7/Vista/XP"
                           backgroundColor="orange"
                           mainPadding="12px 37px"
