@@ -168,10 +168,10 @@ video {
 
 @media (max-width: 1024px) {
   .headerBackground {
-    height: 800px !important;
+    height: auto !important;
   }
   video {
-    height: 800px;
+    height: 100%;
   }
 
   .visibleSlider {
