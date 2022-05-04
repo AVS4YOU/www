@@ -104,8 +104,14 @@ render(){
             >
               <Text className="ListItem">{this.props.t("Cut, delete unwanted parts, change scene sequence in all popular video formats")}</Text>
               <Text className="ListItem">{this.props.t("Save videos without changing the original format")}</Text>
-              <Text className="ListItem">{this.props.t("Merge several video files with similar parameters")}</Text>
-              <Text className="ListItem">{this.props.t("Edit MP4, M4V or MOV videos recorded with iPhone, iPad or Android smartphones and tablets")}</Text>
+              {isSomeLang(this.props.locale)
+                ? <Text className="ListItem">{this.props.t("Merge several video files with similar parameters")}</Text>
+                : <p style={{margin:"0"}}></p>
+              }
+              {isSomeLang(this.props.locale)
+                ? <Text className="ListItem">{this.props.t("Edit MP4, M4V or MOV videos recorded with iPhone, iPad or Android smartphones and tablets")}</Text>
+                : <p style={{margin:"0"}}></p>
+              }
               <Text className="ListItem">{this.props.t("Edit AVCHD, MOD, MTSM2TS, TOD, etc video files recorded with camcorders and video cameras")}</Text>
               {isSomeLang(this.props.locale)
                 ? <Text className="ListItem">{this.props.t("Edit MP4 MOV MKV or AVI video files with modern H265 HEVC codec")}</Text>

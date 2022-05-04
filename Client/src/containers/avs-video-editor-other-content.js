@@ -166,7 +166,7 @@ video {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1368px) {
   .headerBackground {
     height: auto !important;
   }
@@ -182,6 +182,7 @@ video {
 @media (max-width: 500px) {
   .headerBackground {
     height: auto !important;
+    padding-bottom: 50px;
   }
   video {
     height: 100%;
