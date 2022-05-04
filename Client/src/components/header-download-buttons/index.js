@@ -8,17 +8,6 @@ import Cookies from 'universal-cookie';
 import { Link } from "react-scroll";
 import Text from '../text';
 
-const lang = ['de','en','es','fr','it','jp','ru']
-
-const isSomeLang = (currentLang) => {
-    let isSomeLang = false;
-    for(let i = 0; i<lang.length; i++) {
-        if(lang[i] === currentLang) isSomeLang = true;
-    }
-
-    return isSomeLang;
-}
-
 const StyledHeaderDownloadButtons = styled.div`
 
     display:none;
