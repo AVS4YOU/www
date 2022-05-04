@@ -181,7 +181,7 @@ export const AvsVideoConverterOtherContent = (props) => (
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I convert many files at onc")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")} <a href={props.t("avs4you guides index")}>{props.t("https://www.avs4you.com/guides/index.aspx")}</a>{props.t("endGuidesQuestion")}
+            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")} <a href={props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>{props.t("endGuidesQuestion")}
             </Text>
         </div>
       </PanelCollapse>

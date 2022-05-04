@@ -95,7 +95,7 @@ render(){
               <Text className="ListItem">{this.props.t("Merge several video files with similar parameters")}</Text>
               <Text className="ListItem">{this.props.t("Edit MP4, M4V or MOV videos recorded with iPhone, iPad or Android smartphones and tablets")}</Text>
               <Text className="ListItem">{this.props.t("Edit AVCHD, MOD, MTSM2TS, TOD, etc video files recorded with camcorders and video cameras")}</Text>
-              <Text className="ListItem">{this.props.t("Edit MP4, MOV, MKV or AVI video files with modern H.265 HEVC codec")}</Text>
+              <Text className="ListItem">{this.props.t("Edit MP4 MOV MKV or AVI video files with modern H265 HEVC codec")}</Text>
             </ContentRowItem>
 
             <ContentRowItem 
