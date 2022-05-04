@@ -16,6 +16,7 @@ import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
 import videoHeader from '../images/avs-video-editor/avs_video_editor_page.webm'
+import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -90,18 +91,59 @@ const StyledCarousel = styled.div`
 }
 
 .visibleSlider {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 @media (max-width: 1024px) {
   .slick-list {
     pointer-events: auto;
   }
+
+  .headerText {
+    font-size: 68px;
+  }
+
+  .headerDescription {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-image {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+
+  .description-image {
+    font-size: 18px;
+  }
+
+  .headerText {
+    font-size: 48px;
+  }
+
+  .headerDescription {
+    font-size: 24px;
+  }
+
 }
 
 @media (max-width: 500px) {
+  .title-image {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+
   .description-image {
     margin-bottom: 0px;
+  }
+
+  .headerText {
+    font-size: 32px;
+  }
+
+  .headerDescription {
+    font-size: 18px;
   }
 }
 `;
@@ -139,10 +181,10 @@ video {
 
 @media (max-width: 500px) {
   .headerBackground {
-    height: 700px !important;
+    height: auto !important;
   }
   video {
-    height: 700px;
+    height: 100%;
     left: -50%;
   }
 }
@@ -153,14 +195,15 @@ export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
     <video autoPlay loop muted style={{position: "absolute"}}>
-    <source src={videoHeader} type="video/mp4" />
+    <source src={videoHeader} type='video/webm; codecs="vp8, vorbis"' />
+    <source src={videoHeaderMP} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             Your browser does not support HTML5 video.
     </video>
     <PageContentWrapper>
-    <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", paddingTop: "80px", maxWidth:"1300px"}} >
+    <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", maxWidth:"1300px"}} >
+    <StyledCarousel>
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Editor")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Powerful video editing software for Windows")}</Text>
-        <StyledCarousel>
         <ScreenshotsCarousel
           titleImage={[props.t("Creative video editing"), props.t("Easy fast editing"), props.t("Your story in color"), props.t("Video editor for all needs"), props.t("Video editor for everyone")]}
           descriptionImage={[props.t("Create great-looking videos with 300"), props.t("Enjoy simple video editing with GPU acceleration"), props.t("Capture best moments and turn them into colorful slideshows"), props.t("Create demos, tutorials, presentations or videos for any special occasion"), props.t("Make your story viral on social and video platforms")]}
