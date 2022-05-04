@@ -42,10 +42,10 @@ export const AvsVideoConverterOtherContent = (props) => (
     <PageContentWrapper>
       <div id="headerContentWrapper" className="headerContentWrapper" >
         <FreeFlag>{props.t("Free")}</FreeFlag>
-        <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Converter")}</Text>
-        <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Free Video Converter for Windows")}</Text>
-        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
-        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
+        <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1" style={{paddingBottom:"0px"}}>{props.t("AVS Video Converter")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={28} style={{paddingBottom:"60px"}}>{props.t("Free Video Converter for Windows")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24} fontWeight={400} style={{paddingBottom:"20px"}}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24} fontWeight={400}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
         <HeaderDownloadButtons 
           t={props.t}
           mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
@@ -138,6 +138,8 @@ export const AvsVideoConverterOtherContent = (props) => (
     </ContentRowItem>
   </PageContentWrapper>
 
+  <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper" textDownload={props.t("downloadnow")}/>
+
   <div className="block-awards" style={{maxWidth:"100%"}}>
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwardsConverter">
@@ -179,7 +181,7 @@ export const AvsVideoConverterOtherContent = (props) => (
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I convert many files at onc")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")} <a href={props.t("avs4you guides index")}>https://www.avs4you.com/guides/index.aspx</a>{props.t("endGuidesQuestion")}
+            <Text className="hiddenText">{props.t("AVS Video Converter offers batch conversion")} <a href={props.t("avs4you guides index")}>{props.t("https://www.avs4you.com/guides/index.aspx")}</a>{props.t("endGuidesQuestion")}
             </Text>
         </div>
       </PanelCollapse>
