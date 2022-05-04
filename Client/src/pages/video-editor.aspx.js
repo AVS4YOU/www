@@ -7,6 +7,7 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import styled from 'styled-components';
 import Star from '../images/main-page/icons/star.svg';
 import { Link as GatsbyLink } from 'gatsby';
+import Button from '../components/button';
 
 import awardCapterra from '../images/main-page/awards/award-capterra.png'
 import awardGetapp from '../images/main-page/awards/award-getapp.png'
@@ -374,6 +375,14 @@ const StyledVideo = styled.div`
 }
 `;
 
+const StyledButton = styled.div`
+  margin-top: 20px;
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+`;
+
 class avsVideoEditor extends React.PureComponent {
 
   constructor(props) {
@@ -421,14 +430,18 @@ class avsVideoEditor extends React.PureComponent {
                           <Text className="ListItem" color="#000000" fontWeight={500}>{this.props.t("300+ Effects and transitions")}</Text>
                       </div>
                       <div>
-                        <HeaderDownloadButtons
-                          t={this.props.t}
-                          mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                          secondaryText="Windows 11/10/8/7/Vista/XP"
-                          backgroundColor="orange"
-                          mainPadding="12px 37px"
-                          margin="0"
-                        />
+                        <StyledButton>
+                          <Button style={{padding:"15px 25px"}}
+                            href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                            secondaryText="Windows 11/10/8/7/Vista/XP"
+                            backgroundColor="orange"
+                            mainPadding="12px 37px"
+                            margin="0"
+                            textTransform="uppercase"
+                          >
+                            Download now
+                          </Button>
+                        </StyledButton>
                     </div>
 
                     <Text color="#000000" align="left" className="titleDescription" lineHeight="32px" fontSize={18} fontWeight={700} as="h5">{this.props.t("Trusted by 7 000 000 users worldwide")}</Text>
