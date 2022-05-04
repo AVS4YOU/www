@@ -44,8 +44,8 @@ export const AvsVideoConverterOtherContent = (props) => (
         <FreeFlag>{props.t("Free")}</FreeFlag>
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1" style={{paddingBottom:"0px"}}>{props.t("AVS Video Converter")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={28} style={{paddingBottom:"60px"}}>{props.t("Free Video Converter for Windows")}</Text>
-        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24} fontWeight={400} style={{paddingBottom:"20px"}}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
-        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24} fontWeight={400}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h2")} fontSize={24} fontWeight={400} style={{paddingBottom:"20px"}}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
+        <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h2")} fontSize={24} fontWeight={400}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
         <HeaderDownloadButtons 
           t={props.t}
           mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
