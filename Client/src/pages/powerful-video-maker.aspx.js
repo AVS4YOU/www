@@ -63,7 +63,7 @@ render(){
                         <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
                     </div>
                     <div className="vel_top_buy">
-                        <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">{this.props.t("Buy now")}</a>
+                        <a className="button buynow" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy now")}</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@ render(){
                     <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
-                    <a className="button buynow" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&amp;QTY=1&amp;CURRENCY=USD&amp;DCURRENCY=USD&amp;LANG=en&amp;LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru&amp;CART=1&amp;CARD=2&amp;CLEAN_CART=ALL&amp;SHORT_FORM=1&amp;AUTO_PREFILL=1">{this.props.t("Buy")}</a>
+                    <a className="button buynow" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy")}</a>
                 </div>
                 <div class="vel_bottom_eula">{this.props.t("By clicking the Download button you agree to our")} <a href="https://www.avs4you.com/license-agreement.aspx">{this.props.t("End User License Agreement")}</a></div>
             </div>

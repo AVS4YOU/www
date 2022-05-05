@@ -66,7 +66,6 @@ class installedAudioConverter extends React.PureComponent {
   }
 
 render(){
-    console.log(this.props.locale)
     return (
       <Layout 
         headerIsDisabled={true}

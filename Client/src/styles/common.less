@@ -236,6 +236,126 @@ main {
     }
 }
 
+.questions-wrapper{
+    background-color: #F9F9F9;
+    padding-top:110px;
+    padding-bottom:130px;
+    
+}
+
+.panelCollapse{
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #E4E4E4;
+
+    &:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &:last-child{
+        margin-bottom:0px;
+        border:none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.questions-block{
+    max-width: 944px;
+    margin: auto;
+    margin-top: 90px;
+    box-shadow: 3px 3px 24px rgb(240, 240, 240);
+
+    .panelName{
+        padding: 30px 70px;
+        padding-left: 40px;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 600;
+        color:#000000;
+        cursor: pointer;
+
+        &:before{
+            width: 16px;
+            height: 24px;
+            top: 34px;
+            right: 25px;
+        }
+    }
+
+    .collapseContent{
+        padding: 35px 40px;
+        padding-top: 0px;
+    }
+
+    .hiddenText{
+        color:#666666;
+        font-size: 16px;
+    }
+}
+
+.block-awards {
+    max-width: 1120px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .awards-item {
+    display: inline-table;
+    width: 192px;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .awards-img {
+    height: 124px;    
+    vertical-align: middle;
+  }
+
+  .list-awards {
+    margin-bottom: 50px;
+  }
+
+  .awards-text {
+    padding: 16px 0;
+  }
+
+  .awards-title { 
+    margin-bottom: 50px;
+  }
+
+  .awardsProductPage {
+    padding: 160px 0 80px;
+  }
+
+  .listAwards, .listAwardsConverter {
+      margin-bottom: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .awards-product, .awards-product-converter {
+      padding: 0 20px;
+    &>img {
+        background-size: contain;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .listAwardsConverter {
+        display: inline-block;
+    }
+    
+    .awards-product-converter{
+        padding: 20px 20px;
+        width: 110px;
+        display: inline-block;
+  }
+}
+
 @media (max-width: 750px){
     main{
         .ScrollTopWrapper{
@@ -360,5 +480,20 @@ main {
     }
     .header__button-text{
         font-size: 14px;
+    }
+
+    .listAwards {
+        display: inline-block;
+    }
+
+    .awards-product, .awards-product-converter {
+        display: inline-block;
+        padding: 10px 10px;
+        vertical-align: middle;
+        width: 130px;
+      &>img {
+          background-size: contain;
+          width: 60%;
+      }
     }
 }

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.30
+
+### New
+* Updated screenshots on `/avs-free-image-converter.aspx`
+* Changed styles on `/avs-video-editor.aspx`, `/avs-free-audio-converter.aspx` for en/de/fr/es/it/jp/ru
+* Added landing `/video-editor.aspx`
+* Added Chinese in language selector for `zh/register.aspx`
+
+### Fixes
+* Fixed CURRENCY in nl links
+
 ## 1.0.29
 
 ### New

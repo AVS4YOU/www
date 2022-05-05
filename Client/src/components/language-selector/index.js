@@ -21,6 +21,7 @@ import EsIcon from '../../images/common/languages/spain.svg';
 import ItIcon from '../../images/common/languages/italy.svg';
 import JpIcon from '../../images/common/languages/japan.svg';
 import PtIcon from '../../images/common/languages/portugal-flag.svg';
+import ZhIcon from '../../images/common/languages/china.svg';
 const BackSubmenuButtonShow = css`
     opacity: 1;
     transition: .2s linear;
@@ -113,6 +114,9 @@ const StyledLanguageSelector = styled.div`
         &.pt:before{
             background-image: url(${PtIcon});
         }
+        &.zh:before{
+            background-image: url(${ZhIcon});
+        }
     }
     .languageSelector:before{
         content: '';
@@ -180,14 +184,21 @@ const availableLocales = [
     {value: "ko", text: "한국어"},
     {value: "da", text: "Dansk"},
     {value: "nl", text: "Nederland"},
-    {value: "pt", text: "Português"}
+    {value: "pt", text: "Português"},
 ];
+
+const pagesForChinese = [
+    'register.aspx',
+]
 
 class LanguageSelector extends React.PureComponent {
 
     constructor(props) {
         super(props);
-        this.state = {open: false};
+        this.state = {
+            open: false,
+            availableLocales: availableLocales
+        };
         this.toggleSubmenu = this.toggleSubmenu.bind(this);
     }
 
@@ -197,11 +208,39 @@ class LanguageSelector extends React.PureComponent {
         });
     }
 
+    isPageForChinese(pathName) {
+        const pageForChinese = pagesForChinese.find((page) => {
+            return pathName.includes(page);
+        });
+        return pageForChinese
+    }
+
+    hasChinese(arr) {
+        return arr.find((item) => {
+            return item.value === 'zh';
+        })
+    }
+
+    addChinese(arr) {
+        const newArr = [...arr]
+        newArr.push({value: "zh", text: "中文"});
+        return newArr;
+    };
+
+    componentDidMount() {
+        const pathName = window.location.pathname;
+        if(this.isPageForChinese(pathName) && !this.hasChinese(availableLocales)) {
+            const updatedAvailableLocales = this.addChinese(availableLocales);
+            this.setState({
+                availableLocales: updatedAvailableLocales
+            })
+        }
+    }
+
     render(){
         return(
             <PageContext.Consumer>  
-            {(pageContext) => (
-                
+            {(pageContext) => (  
                 <StyledLanguageSelector {...this.props}>
                     <div className="mobileBlock">
                         <LanguageSelectorWrapperMobile onClick={this.toggleSubmenu}>
@@ -212,38 +251,41 @@ class LanguageSelector extends React.PureComponent {
                             <BackSubmenuButton submenuOpen={this.state.open} onClick={this.toggleSubmenu}>
                                 <Text fontSize={14} fontWeight={500} textTransform="uppercase">Back</Text>
                             </BackSubmenuButton> 
-                            {availableLocales.map((item) =>
-                                this.props.locale !== item.value 
-                                    ? <DropdownElement 
-                                        key={item.value} 
-                                        className={"langDropdown"} 
-                                        path={pageContext && pageContext.originalPath
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" && ""}  
-                                        href={pageContext && pageContext.originalPath
-                                            ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "" + item.value}
-                                        headerText={item.text} 
-                                        langChange={item.value === "en"}
-                                    />
+                            {this.state.availableLocales.map((item) => {
+                                return(
+                                    this.props.locale !== item.value 
+                                        ? <DropdownElement 
+                                            key={item.value} 
+                                            className={"langDropdown"} 
+                                            path={pageContext && pageContext.originalPath
+                                                ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value === "en" && ""}  
+                                            href={pageContext && pageContext.originalPath
+                                                ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value !== "en" && "" + item.value}
+                                            headerText={item.text} 
+                                            langChange={item.value === "en"}
+                                        />
 
-                                    : <DropdownElement 
-                                        key={item.value} 
-                                        className={"langDropdown selected"} 
-                                        headerTextClass="selected" 
-                                        path={pageContext && pageContext.originalPath 
-                                            ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value === "en" && ""}  
-                                        href={pageContext && pageContext.originalPath
-                                            ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
-                                            : item.value !== "en" && "" + item.value}
-                                        langChange={item.value === "en"}
-                                        headerText={item.text} />
-                            )}
+                                        : <DropdownElement 
+                                            key={item.value} 
+                                            className={"langDropdown selected"} 
+                                            headerTextClass="selected" 
+                                            path={pageContext && pageContext.originalPath 
+                                                ? item.value === "en" && "" + (pageContext.originalPath === "/" ? "/" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value === "en" && ""}  
+                                            href={pageContext && pageContext.originalPath
+                                                ? item.value !== "en" && "/" + item.value + (pageContext.originalPath === "/" ? "" : pageContext.originalPath.replace(/(\/)?$/, ''))
+                                                : item.value !== "en" && "" + item.value}
+                                            langChange={item.value === "en"}
+                                            headerText={item.text} />
+                                        )
+                                    }
+                                )}
                         </MenuDropdown> 
                     </div>
                     <MenuItem className="desktopBlock languageSelector" menuItemText={this.props.menuItemText}>
-                        {availableLocales.map((item) =>
+                        {this.state.availableLocales.map((item) =>
 
                             this.props.locale !== item.value && 
                                     

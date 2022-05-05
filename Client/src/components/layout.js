@@ -18,8 +18,7 @@
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
  import PlAVSLeft from "../images/pl/easter-left.svg";
- import PlAVSRight from "../images/pl/easter-right.svg";
- 
+ import PlAVSRight from "../images/pl/easter-right.svg"; 
  const StyledPL =styled.div`
  position: relative;
  text-align: center;
@@ -31,7 +30,7 @@
     display: none;
     font-size: 20px;
     background-color: #486D08;
-    width: 100%; 
+    width: 100%;
     height: 60px;
  }
    .PLnewAvsText{
@@ -56,12 +55,12 @@
       align-items: center;
       justify-content: center;
       width: 100vw;
-     }
+    }
 
 .PLnewAvsTextCoupon{
     color: #ffbd59;
     font-weight: 700 !important;
-  }
+ }
 
   .PLnewAvsCoupon {
     color: #486D08;
@@ -105,33 +104,33 @@
       left: 90%;
     }
 
-    .PLnewAvsLeft{
+   .PLnewAvsLeft{
       right: 90%;
-    }
+  }
 }
-
+ 
    @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
       height: 60px;
-    }
+ }
   
-   .PLnewAvsText {
-    font-size: 12px; 
+     .PLnewAvsText{
+       font-size: 12px;
     padding: 0 6px;
     position: relative;
     top: 0;
- }
+   }
 
   .PLnewAvsRight{
     height: 60px;
     top: 0;
-  }
+ }
 
   .PLnewAvsLeft{
     height: 60px;
     top: 0;
-  }
+}
 }
 
  @media (max-width: 500px) {
@@ -139,14 +138,14 @@
     display: block;
  }
 
-  .PLnewAvsLeft{
+ .PLnewAvsLeft{
     left: -468px;
-  }
+ }
 
-  .PLnewAvsRight{
+ .PLnewAvsRight{
     left: 360px;
-  }
 }
+    }
  `;
  
  const StyledLayout = styled.div`
@@ -165,7 +164,7 @@
    "da-DK",
    "pt-BR",
    "ru-RU",
-   "ko-KR",
+   "ko-KR"
  ];
  
  class Layout extends React.PureComponent {
