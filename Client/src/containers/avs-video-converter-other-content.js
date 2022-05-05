@@ -1,10 +1,8 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import FreeFlag from '../components/free-flag';
-import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import PanelCollapse from "../components/panel-collapse";
 import ContentRowItem from '../components/content-row-item';
@@ -19,6 +17,7 @@ import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
+import styled from 'styled-components';
 
 import AvatarGayle from '../images/avs-free-video-converter/gayle_hibbert.png';
 import AvatarTerrance from '../images/avs-free-video-converter/terrance_jenkins.png';
@@ -33,6 +32,12 @@ import awardFilebuzz from '../images/avs-free-video-converter/award-filebuzz.png
 import awardFilecluster from '../images/avs-free-video-converter/award-filecluster.png'
 import awardTops from '../images/avs-free-video-converter/award-topshareware.png'
 import awardTucows from '../images/avs-free-video-converter/award-tucows.png'
+
+const StyledContent = styled.div`
+.ListItem {
+  padding-left: 15px;
+}
+`;
 
 
 export const AvsVideoConverterOtherContent = (props) => (
@@ -83,7 +88,7 @@ export const AvsVideoConverterOtherContent = (props) => (
         imageName={props.t("video converter convert all key2 jpg")}
         headerText={props.t("Сonvert all key video formats")}    
     >
-      <Text className="ListItem">{props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
+      <StyledContent><Text className="ListItem">{props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text></StyledContent>
       <Text className="ListItem">{props.t("Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc")}</Text>
       <Text className="ListItem">{props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text>
       <a target="_blank" rel="noreferrer noopener"  href={props.t("avs-free-video-converter-onlinehelp-avs4you")}>
