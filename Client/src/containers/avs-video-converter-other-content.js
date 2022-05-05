@@ -90,10 +90,10 @@ export const AvsVideoConverterOtherContent = (props) => (
     >
       <StyledContent><Text className="ListItem">{props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
       <Text className="ListItem">{props.t("Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc")}</Text>
-      <Text className="ListItem">{props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text></StyledContent>
+      <Text className="ListItem">{props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text>
       <a target="_blank" rel="noreferrer noopener"  href={props.t("avs-free-video-converter-onlinehelp-avs4you")}>
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
-      </a>
+      </a></StyledContent>
     </ContentRowItem>
 
     <ContentRowItem 
