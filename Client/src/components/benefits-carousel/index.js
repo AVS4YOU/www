@@ -143,7 +143,7 @@ class BenefitsCarousel extends React.PureComponent{
     getMarginLeft = (nextIndex) => {
         const diff = this.props.centerSlide - nextIndex;
         const marginLeft = diff * this.state.elementWidth;
-        return marginLeft;
+        return marginLeft + this.props.offset;
     }
 
     onSwipedRight = () => {
@@ -285,13 +285,12 @@ class BenefitsCarousel extends React.PureComponent{
                     onClick = {this.onCarouselItemClick.bind(this, index)}
                 />
             )
-            
         })
 
         return(
             <Swipeable onSwipedRight={this.onSwipedRight} onSwipedLeft={this.onSwipedLeft} {...carouselConfig}>
                 <StyledCarousel className={className}>
-                    <StyledWrapper marginLeft={this.state.marginLeft} disableAnimate={this.state.disableAnimate}>
+                    <StyledWrapper marginLeft={this.state.marginLeft + this.props.marginOffset} disableAnimate={this.state.disableAnimate}>
                         {CarouselItems}
                     </StyledWrapper>
                 </StyledCarousel>
@@ -311,7 +310,8 @@ BenefitsCarousel.propTypes = {
 BenefitsCarousel.defaultProps = {
     padding: 30,
     marginLeft: 0,
-    centerSlide: 2
+    centerSlide: 2,
+    marginOffset: 0
 }
 
 export default BenefitsCarousel

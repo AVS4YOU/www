@@ -24,15 +24,13 @@ const LogoWrapper = styled.div`
 export const InstalledAudioConverterCommonContent = (props) => (
   <div>
     <div className="header">
-              <div className="avs-logo">
-              <GatsbyLink className="headerLogo" to="/">
-                  <LogoWrapper href="/">
-                      <img src={Logo} alt="avs4you logo"/>
-                  </LogoWrapper>
-              </GatsbyLink>
-              </div>
               <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
-                <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
+                <div className="header__body"> <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
+                 <div className="avs-logo">
+                      <LogoWrapper href="/">
+                          <img src={Logo} alt="avs4you logo"/>
+                      </LogoWrapper>
+                  </div>
                   <Text as="h1" className="header__heading installed">{props.t("Thank you for installing AVS Audio Converter")} <br /> {props.t("AVS audio converter")}</Text>
                 <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={props.t(`${props.hrefUnlim}`)} style={{color: "#fff"}}>{props.t("Exclusive Offer Only Today")}</a></Text></table>
                   <Text as="h3" className="header__subtitle installed">{props.t("Save 70 on the full version and")}
@@ -44,7 +42,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
             </div>
             <div className="body-company">
               <Text as="h2" className="common__heading">{props.t("Your benefits")}</Text>
-              <BenefitsCarousel className="benefitsCarousel" centerSlide={3}>
+              <BenefitsCarousel className="benefitsCarousel" centerSlide={3} marginOffset={-29.5}>
                 <div  className="carouselItem free">
                   <Text>{props.t("Free upgrades")}</Text>
                 </div>
@@ -126,10 +124,10 @@ export const InstalledAudioConverterCommonContent = (props) => (
 
             <div className="resourcesTable" style={{margin: "auto"}}> 
     <div className="helpful">{props.t("Helpful resources")}</div>
-    <div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-audio-converter/" style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
-    <div className="tipsIcon"><a href="https://www.avs4you.com/guides/audio.aspx" style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
+    <div className="knowledge"><div className="knowledgeIcon"><a href={props.t("onlinehelpAudioHref")} style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
+    <div className="tipsIcon"><a href={props.t("supportAudioHref")} style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
     <div className="questionIcon">{props.t("Got a question")}
-    <br/>{props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{props.t("support team")}</a> </div>
+    <br/>{props.t("Contact our")} <a href={props.t("guidesAudioHref")} style={{color: "#393939"}}>{props.t("support team")}</a> </div>
     </div>
     </div>
   </div>

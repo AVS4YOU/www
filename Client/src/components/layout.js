@@ -17,9 +17,8 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/avs_valentines_left.svg";
- import PlAVSRight from "../images/pl/avs_valentines_right.svg";
- 
+ import PlAVSLeft from "../images/pl/easter-left.svg";
+ import PlAVSRight from "../images/pl/easter-right.svg"; 
  const StyledPL =styled.div`
  position: relative;
  text-align: center;
@@ -28,20 +27,18 @@
  }
 
  .PLnewAvs{
-    display: flex;
-    font-size: 20px;
-    background-color: #EE0000;
-    height: 22px;
-    width: 100%;
     display: none;
-    padding: 13px 0;
+    font-size: 20px;
+    background-color: #486D08;
+    width: 100%;
+    height: 60px;
  }
    .PLnewAvsText{
      position: static;
      z-index: 25;
      color: #fff;
-     font-size: 20px;
-     font-weight: 400;
+     font-size: 18px;
+     font-weight: 600;
      top: 13px;
      margin: auto;
      width: 100%;
@@ -51,29 +48,40 @@
 
  .PLnewAvs a {
       text-decoration: none !important;
+      position: relative;
+      z-index: 11;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
     }
 
- .PLnewAvsTextMobile {
-   display: none;
+.PLnewAvsTextCoupon{
+    color: #ffbd59;
+    font-weight: 700 !important;
  }
 
-.PLnewAvsTextCoupon{
-    color: #ffffff;
+  .PLnewAvsCoupon {
+    color: #486D08;
+    background-color: #ffbd59;
+    padding: 1px 10px;
     font-weight: 700 !important;
   }
  
    .PLAvs {
      position: absolute;
      width: 900px;
-     top: -7px;
    }
    .PLnewAvsLeft{
-     height: 78px;
+     height: 60px;
      z-index:10;
      background-image:url(${PlAVSLeft});
-     width: 444px;
+     width: 550px;
      position: absolute;
-     top: -25px;
+     right: 80%;
+     top: 0;
+     background-repeat: no-repeat;
    }
    .PLnewAvsCenter{
      height: 48px;
@@ -81,82 +89,63 @@
      z-index:9;
    }
    .PLnewAvsRight{
-     height: 83px;
+     height: 60px;
      z-index:10;
      background-image:url(${PlAVSRight});
-     width: 444px;
+     width: 550px;
      position: absolute;
-     right: 0;
-     top: -30px;
+     left: 80%;
+     top: 0;
+     background-repeat: no-repeat;
    }
 
-   @media (max-width: 1070px) {
-    .PLnewAvs {
-      padding: 12px 0 3px;
-      height: 33px;
+   @media (max-width: 1700px) {
+    .PLnewAvsRight{
+      left: 90%;
     }
-    .PLnewAvsText{
-      font-size: 12px; 
-   }
 
    .PLnewAvsLeft{
-    left: -183px;
+      right: 90%;
   }
+}
  
-  .PLnewAvsRight{
-    right: -239px;
+   @media (max-width: 1024px) {
+    .PLnewAvs {
+      padding: 0;
+      height: 60px;
  }
-  }
-   @media (max-width: 680px) {
+  
      .PLnewAvsText{
        font-size: 12px;
-       position: absolute;
-       display: block;
-       top: 17px;    
+    padding: 0 6px;
+    position: relative;
+    top: 0;
    }
+
+  .PLnewAvsRight{
+    height: 60px;
+    top: 0;
  }
 
- @media (max-width: 590px) {
-  .PLnewAvsText{
-    top: 12px;    
+  .PLnewAvsLeft{
+    height: 60px;
+    top: 0;
 }
 }
+
  @media (max-width: 500px) {
    .PLnewAvsText{
     display: block;
-    top: 10px; 
-    position: absolute;
-    z-index: 25;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    margin: auto;
-    width: 100%;
-    font-family: 'Open Sans';
-    letter-spacing: 1px;
  }
 
  .PLnewAvsLeft{
-   left: -370px;
+    left: -468px;
  }
 
  .PLnewAvsRight{
-  left: 330px;
+    left: 360px;
 }
-    .PLnewAvsTextMobile {
-      display: block;
-      top: 17px; 
-      position: absolute;
-      z-index: 25;
-      color: #fff;
-      font-size: 12px;
-      font-weight: 700;
-      margin: auto;
-      width: 100%;
-      font-family: 'Open Sans';
-      letter-spacing: 1px;
     }
- }
  `;
  
  const StyledLayout = styled.div`
@@ -175,7 +164,7 @@
    "da-DK",
    "pt-BR",
    "ru-RU",
-   "ko-KR",
+   "ko-KR"
  ];
  
  class Layout extends React.PureComponent {
@@ -297,8 +286,8 @@
          <StyledPL>
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("avsvalentine")} target="_blank">
-                <span className="PLnewAvsText"> <span className="PLnewAvsTextCoupon">{this.props.t("For All AVS4YOU Valentines")}</span> {this.props.t("20% Off on AVS4YOU Suite with")} <span className="PLnewAvsTextCoupon">{this.props.t("Love22")}</span> {this.props.t("coupon!")}</span>
+              <a href={this.props.t("avs pl link")} target="_blank">
+                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")}</span>
               </a>
           <div className="PLnewAvsRight"></div>
          </div>

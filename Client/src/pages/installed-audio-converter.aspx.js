@@ -29,7 +29,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const lang = ['de','en','es','fr','it','jp']
+const lang = ['de','en','es','fr','it','jp','da','ko','nl','pl','pt','ru','zh']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;
@@ -66,7 +66,6 @@ class installedAudioConverter extends React.PureComponent {
   }
 
 render(){
-    console.log(this.props.locale)
     return (
       <Layout 
         headerIsDisabled={true}
@@ -78,8 +77,8 @@ render(){
         metaKeywords=""
       >
         {isSomeLang(this.props.locale)
-          ? <InstalledAudioConverterOtherContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/> 
-          : <InstalledAudioConverterCommonContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/>
+          ? <InstalledAudioConverterCommonContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/> 
+          : <InstalledAudioConverterOtherContent t={this.props.t} hrefUnlim={this.state.hrefUnlim}/>
         }
       </Layout>
     );

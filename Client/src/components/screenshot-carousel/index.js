@@ -309,6 +309,8 @@ class ScreenshotsCarousel extends Component {
                 ref={slider => (this.slider1 = slider)}
                 fade={true}
                 slidesToShow={1}
+                speed={0.5}
+                autoplay={true}
             >
                 {PopupCarouselImages}
             </Slider>

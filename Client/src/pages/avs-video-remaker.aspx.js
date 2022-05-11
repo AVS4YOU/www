@@ -21,6 +21,17 @@ import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
 import AvatarArthur from '../images/avs-video-remaker/arthur_rees.png';
 
+const lang = ['de','en','es','fr','it','jp','ru']
+
+const isSomeLang = (currentLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
+
 class avsVideoRemaker extends React.PureComponent {
 
   constructor(props) {
@@ -35,6 +46,7 @@ class avsVideoRemaker extends React.PureComponent {
   getDevice(device){
     this.setState({ device: device });
   }
+  
 
 render(){
 
@@ -92,7 +104,19 @@ render(){
             >
               <Text className="ListItem">{this.props.t("Cut, delete unwanted parts, change scene sequence in all popular video formats")}</Text>
               <Text className="ListItem">{this.props.t("Save videos without changing the original format")}</Text>
+              {isSomeLang(this.props.locale)
+                ? <Text className="ListItem">{this.props.t("Merge several video files with similar parameters")}</Text>
+                : <p style={{margin:"0"}}></p>
+              }
+              {isSomeLang(this.props.locale)
+                ? <Text className="ListItem">{this.props.t("Edit MP4, M4V or MOV videos recorded with iPhone, iPad or Android smartphones and tablets")}</Text>
+                : <p style={{margin:"0"}}></p>
+              }
               <Text className="ListItem">{this.props.t("Edit AVCHD, MOD, MTSM2TS, TOD, etc video files recorded with camcorders and video cameras")}</Text>
+              {isSomeLang(this.props.locale)
+                ? <Text className="ListItem">{this.props.t("Edit MP4 MOV MKV or AVI video files with modern H265 HEVC codec")}</Text>
+                : <br />
+              }
             </ContentRowItem>
 
             <ContentRowItem 
