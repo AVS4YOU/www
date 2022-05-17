@@ -40,6 +40,7 @@ class SpecialOffer extends React.PureComponent {
 render(){
     return (
       <Layout 
+        headerIsDisabled={true}
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -47,7 +48,8 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
+<div className="header-specail-offer"></div>
 <div className="headerSpecialOffer">
     <div className="line-mobile"></div>
       <div className="content-header">
@@ -61,7 +63,7 @@ render(){
           <div className="text-grab">
           <Text fontSize={64} fontWeight={700} color="#fff" className="bodyGrab">Grab</Text>
             <SaleWrapper className="bodyOff">
-            <Text fontSize={130} fontWeight={700} color="#ffffff" className="precent-off">70</Text> 
+            <Text fontSize={130} fontWeight={700} fontFamily={'Montserrat'} color="#ffffff" className="precent-off">70</Text> 
               <SaleWrapper className="precent">
                 <Text fontSize={46} fontWeight={700} color="#ffffff" className="text-off">%</Text> 
                 <Text fontSize={46} fontWeight={700} color="#ffffff" className="letter-off">ff</Text>
@@ -69,39 +71,34 @@ render(){
             </SaleWrapper> 
             <div className="text-avs">
               <Text fontSize={24} fontWeight={700} color="#fff" className="text-header-avs">on</Text>
-              <Text fontSize={46} fontWeight={700} className="textHeader">AVS4YOU</Text>
+              <Text fontSize={46} fontWeight={700} className="textHeader-summer">AVS4YOU</Text>
             </div>
-            <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader">Multimedia Suite</Text>
+            <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader-summer">Multimedia Suite</Text>
             <div className="button-block">
-              <Button className="headerButton button-mobile" 
-                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
-                      textTransform="uppercase">
-                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
-              </Button>
               <div className="blockButton"></div>
-              <RedButton className="headerButton" 
+              <RedButton className="headerButtonSummer" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 26, 2021</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid during 24 hours</Text>
       </div>
     </div>
   </div>
 </div>
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">AVS4YOU Full Pack</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$59</span>  <span className="text-line-through">$199</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$265</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
-              <Button className="specialButton button-mobile" 
+              <Button className="specialButtonSummer button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
-              <RedButton className="specialButton" 
+              <RedButton className="specialButtonSummer" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
