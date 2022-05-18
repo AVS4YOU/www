@@ -8,6 +8,8 @@ import ImageGQL from "../components/image-gql";
 import "../styles/avs-special-offer.less";
 import PageContentWrapper from '../components/page-content-wrapper';
 import Button from '../components/button';
+import Logo from '../images/common/logo.svg';
+import { Link as GatsbyLink } from 'gatsby';
 
 import ContentRowItem from '../components/content-row-item';
 
@@ -17,6 +19,19 @@ import customersIcon from '../images/avs-special-offer/customers-icon.png'
 import marketIcon from '../images/avs-special-offer/market-icon.png'
 import updatesIcon from '../images/avs-special-offer/updates-icon.png'
 
+
+const LogoWrapper = styled.div`
+    display: table;
+    position: relative;
+    width: 1120px;
+    margin: auto;
+    &>img{
+        width: 69px;
+        height: 60px;
+        margin: auto;
+        margin-left: 16px;
+    }
+`;
 
 const RedButton = styled(Button) `
     min-width: 155px;
@@ -49,16 +64,21 @@ render(){
         metaKeywords=""
       >
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
-<div className="header-specail-offer"></div>
-<div className="headerSpecialOffer">
-    <div className="line-mobile"></div>
+        <div className="header-specail-offer">
+        <GatsbyLink className="headerLogo" to="/">
+              <LogoWrapper href="/">
+                  <img src={Logo} alt="avs4you logo"/>
+              </LogoWrapper>
+          </GatsbyLink>
+        </div>
+<div className="headerSpecialOfferSummer">
       <div className="content-header">
       <div className="img-header">
-      <div className="snowflakes-header"></div>
-      <div className="multimedia-header"></div>
+      <div className="back-summer-header"></div>
+      <div className="multimedia-header-summer"></div>
       </div>
       <div className="text-header">
-      <div className="avs-logo logo-offer"></div>
+      <div className="avs-logo logo-summer-offer"></div>
         <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">Special Offer</Text>
           <div className="text-grab">
           <Text fontSize={64} fontWeight={700} color="#fff" className="bodyGrab">Grab</Text>
