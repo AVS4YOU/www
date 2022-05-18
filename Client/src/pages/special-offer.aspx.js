@@ -77,7 +77,7 @@ render(){
       <div className="back-summer-header"></div>
       <div className="multimedia-header-summer"></div>
       </div>
-      <div className="text-header">
+      <div className="text-header text-header-summer">
       <div className="avs-logo logo-summer-offer"></div>
         <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">Special Offer</Text>
           <div className="text-grab">
@@ -105,6 +105,7 @@ render(){
             <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid during 24 hours</Text>
       </div>
     </div>
+    <div className="multimedia-header-summer-mobile"></div>
   </div>
 </div>
           <div className="bodyWrapper">
@@ -185,20 +186,6 @@ render(){
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Edit audio tags to update metadata and enable tracks grouping</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create your own audiobooks</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make customized ringtones for iPhone</Text>
-                      </ContentRowItem>
-
-                      <ContentRowItem 
-                          disableBG={true}
-                          imgLeft={true}
-                          imageName={"remaker-special-offer.png"}
-                          headerText={this.props.t("AVS Video ReMaker")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
-                      >
-                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>A fast video editor to make edits without changing the original video file format.</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut and delete unnecessary parts</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Change scene sequence in all popular video formats</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Transfer video from camcorders and video cameras to hard drive</Text>
-                          <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create home video DVD or Blu-ray discs</Text>
                       </ContentRowItem>
                   </PageContentWrapper>
 

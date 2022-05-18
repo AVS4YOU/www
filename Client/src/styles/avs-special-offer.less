@@ -23,6 +23,7 @@
     height: 818px;
     position: relative;
     top: -25px;
+    background-position-x: 50%;
 }
 
 .line-mobile {
@@ -91,9 +92,10 @@
         z-index: 2;
         background-repeat: no-repeat;
         position: relative;
-        background-position-y: 50%;
+        background-position: 50%;
         font-family: 'Montserrat', sans-serif;
-        top: -50px;
+        top: -70px;
+        left: 20px;
     }
 
     .textMultiHeader-summer {
@@ -384,12 +386,25 @@
         margin-top: -53px;
     }
 
+    .multimedia-header-summer {
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .back-summer-header {
+        background-position-y: 100% !important;
+    }
+
+    .text-header-summer {
+        margin-top: 100px;
+    }
+
     .content-header {
         position: relative !important;
         padding-top: 30px;
     }
 
-    .textHeader {
+    .textHeader, .textHeader-summer {
         margin-left: 0 !important;
     }
 
@@ -410,6 +425,13 @@
         background-size: 108px;
         background-repeat: no-repeat;
         top: 6px !important;
+        left: -74px !important;
+    }
+
+    .logo-summer-offer {
+        background-size: 108px;
+        background-repeat: no-repeat;
+        top: 43px !important;
         left: -74px !important;
     }
 
@@ -438,19 +460,32 @@
         padding: 10px 0;
     }
 
-    .textMultiHeader {
+    .textMultiHeader, .textMultiHeader-summer {
         font-size: 32px !important;
     }
 }
 
 @media (max-width: 768px) {
 
+    .headerSpecialOfferSummer {
+        background: linear-gradient(111.38deg, #27A9E1 -16.26%, #0194C0 41.72%, #024381 93.97%) !important;
+    }
+
     .headerSpecialOffer {
         background: radial-gradient(117.07% 95.37% at 0% 46.77%, #4E6368 0%, #0A0F11 98.22%) !important;
     }
 
+    .back-summer-header {
+        height: 0px !important;
+    }
+
     .text-header {
         padding: 0 !important;
+    }
+
+    .headerSpecialOfferSummer {
+        top: -1px !important;
+        height: auto !important;
     }
 
     .text-grab {
@@ -466,6 +501,7 @@
 
     .content-header {
         position: relative !important;
+        display: block !important;
     }
 
     .line-mobile {
@@ -502,6 +538,12 @@
         top: 3px !important;
     }
 
+    .logo-summer-offer {
+        left: 10px !important;
+        top: -2px !important;
+        background-size: 100px !important;
+    }
+
     .text-off {
         font-size: 40px !important;
     }
@@ -514,12 +556,16 @@
         font-size: 18px !important;
     }
 
-    .textMultiHeader {
+    .textMultiHeader, .textMultiHeader-summer {
         font-size: 28px !important;      
     }
 
-    .textHeader {
+    .textHeader, .textHeader-summer {
         font-size: 28px !important;
+    }
+
+    .headerButtonSummer {
+        display: none !important;
     }
 
     .text-header-avs {
@@ -608,6 +654,24 @@
         top: 400px !important;
         right: 0px !important;
         width: 367px !important;
+    }
+
+    .multimedia-header-summer {
+        display: none;
+    }
+
+    .multimedia-header-summer-mobile {
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+        background-image: url(../images/avs-special-offer/product-summer.png);
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    .text-header-summer {
+        margin-top: 0px !important;
     }
 
     .precent-off {
