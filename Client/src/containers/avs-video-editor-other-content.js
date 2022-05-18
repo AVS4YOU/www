@@ -31,119 +31,22 @@ import awardRating from '../images/avs-video-editor/award-rating.png'
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
-const StyledCarousel = styled.div`
-.title-image {
-  color: #ffffff;
-}
-.description-image {
-  color: #ffffff;
-}
-.slick-dots li.slick-active button:before{
-  color: #FE9235;
-  opacity: 1;
-}
-.slick-dots li button:before {
-  color: #ffffff;
-}
-.slick-prev, .slick-next, .slick-prev:focus{
-  width:45px;
-  height:45px;
-  background-color: transparent;
-  border-radius: 30px;
-  background-image: url(${LeftArrow});
-  background-repeat: no-repeat;
-  background-position: 45% 50%;
-  z-index: 3;
-  transition: linear 0.2s;
-
-  &:hover{
-      box-shadow: 0 20px 40px rgba(0,0,0,.1);
-      background-color: transparent;
-      background-image: url(${LeftArrow});
-      background-repeat: no-repeat;
-      background-position: 45% 50%;
+const StyledArrow = styled.div`{
+  .headerArrow {
+    background-image: url(${RightArrow});
+    transform: rotate(90deg);
+    height: 45px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    background-position-x: 50%;
   }
 
-  &:before{
-      content: none; 
-  }
-}
-
-.slick-list {
-  pointer-events: none;
-}
-
-.slick-next, .slick-next:focus{
-  background-image: url(${RightArrow});
-  background-position: 55% 50%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-
-  &:hover{
-      background-image: url(${RightArrow});
-      background-position: 55% 50%;
-      background-color: transparent;
-  }
-}
-.popupCarousel{
-  display: none;
-  background-color: transparent;
-}
-
-.visibleSlider {
-  max-width: 95%;
-}
-
-@media (max-width: 1024px) {
-  .slick-list {
-    pointer-events: auto;
-  }
-
-  .headerText {
-    font-size: 68px;
-  }
-
-  .headerDescription {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .title-image {
-    margin-top: 50px;
-    font-size: 32px;
-  }
-
-  .description-image {
-    font-size: 18px;
-  }
-
-  .headerText {
-    font-size: 48px;
-  }
-
-  .headerDescription {
-    font-size: 24px;
-  }
-
-}
-
-@media (max-width: 500px) {
-  .title-image {
-    margin-top: 20px;
-    font-size: 32px;
-  }
-
-  .description-image {
-    margin-bottom: 0px;
-  }
-
-  .headerText {
-    font-size: 32px;
-  }
-
-  .headerDescription {
-    font-size: 18px;
+  @media (max-width: 1024px) {
+    .headerArrow {
+      display: none;
+    }
   }
 }
 `;
@@ -168,7 +71,7 @@ video {
 
 @media (max-width: 1368px) {
   .headerBackground {
-    height: auto !important;
+    max-height: auto !important;
   }
   video {
     height: 100%;
@@ -176,6 +79,12 @@ video {
 
   .visibleSlider {
     margin: 20px auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerBackground {
+    height: 732px !important;
   }
 }
 
@@ -214,6 +123,9 @@ export const AvsVideoEditorOtherContent = (props) => (
         />
       </div>
     </PageContentWrapper>
+    <StyledArrow>
+      <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="headerArrow"></ScrollLink>
+    </StyledArrow>
   </div>
   </StyledVideo>
   <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
