@@ -25,11 +25,12 @@ const LogoWrapper = styled.div`
     position: relative;
     width: 1120px;
     margin: auto;
+    top: 12px;
+    left: 16px;
     &>img{
         width: 69px;
         height: 60px;
         margin: auto;
-        margin-left: 16px;
     }
 `;
 
@@ -65,11 +66,11 @@ render(){
       >
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
         <div className="header-specail-offer">
-        <GatsbyLink className="headerLogo" to="/">
-              <LogoWrapper href="/">
+            <LogoWrapper href="/">
+              <GatsbyLink className="headerLogo" to="/">
                   <img src={Logo} alt="avs4you logo"/>
-              </LogoWrapper>
-          </GatsbyLink>
+                </GatsbyLink>
+            </LogoWrapper>
         </div>
 <div className="headerSpecialOfferSummer">
       <div className="content-header">
