@@ -129,7 +129,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       </div>
     </PageContentWrapper>
     <StyledArrow>
-      <ScrollLink to="overview" spy={true} smooth={true} className="headerArrow"></ScrollLink>
+      <ScrollLink to="overview" spy={true} smooth={true}  offset={-70} duration={500} className="headerArrow"></ScrollLink>
     </StyledArrow>
   </div>
   </StyledVideo>
