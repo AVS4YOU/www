@@ -32,15 +32,20 @@ import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
 const StyledArrow = styled.div`{
+
   .headerArrow {
     background-image: url(${RightArrow});
     transform: rotate(90deg);
-    height: 45px;
     background-repeat: no-repeat;
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
+    width: 45px;
+    max-width: 45px;
     background-position-x: 50%;
+    cursor: pointer;
+    z-index: 0;
+    height: 45px;
+    display: table;
+    margin: auto;
+    margin-top: 200px;
   }
 
   @media (max-width: 1024px) {
@@ -124,7 +129,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       </div>
     </PageContentWrapper>
     <StyledArrow>
-      <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="headerArrow"></ScrollLink>
+      <ScrollLink to="overview" spy={true} smooth={true} className="headerArrow"></ScrollLink>
     </StyledArrow>
   </div>
   </StyledVideo>

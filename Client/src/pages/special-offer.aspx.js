@@ -52,6 +52,7 @@ const SaleWrapper = styled.div`
     }
 `;
 
+
 class SpecialOffer extends React.PureComponent {
 render(){
     return (
@@ -111,7 +112,7 @@ render(){
 </div>
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">AVS4YOU Full Pack</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$265</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span> <span className="text-line-through">$279</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
               <Button className="specialButtonSummer button-mobile" 
@@ -194,11 +195,11 @@ render(){
                     <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">Why Choose AVS4YOU</Text>
                     <div className="block-choose">
                       <div className="list-choose">
-                        <div className="choose-item"><img className="icon-mobile" src={secureIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>{this.props.t("100% Secure")}</Text></div>
-                        <div className="choose-item"><img className="icon-mobile" src={supportIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>{this.props.t("Free support")}</Text></div>
-                        <div className="choose-item"><img className="icon-mobile" src={updatesIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>{this.props.t("Free updates")}</Text></div>
-                        <div className="choose-item"><img className="icon-mobile" src={marketIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>{this.props.t("15+ years on the market")}</Text></div>
-                        <div className="choose-item"><img className="icon-mobile" src={customersIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>{this.props.t("20M happy customers")}</Text></div>
+                        <div className="choose-item"><img className="icon-mobile" src={secureIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>100% Secure</Text></div>
+                        <div className="choose-item"><img className="icon-mobile" src={supportIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>Free support</Text></div>
+                        <div className="choose-item"><img className="icon-mobile" src={updatesIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>Free updates</Text></div>
+                        <div className="choose-item"><img className="icon-mobile" src={marketIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>15+ years on the market</Text></div>
+                        <div className="choose-item"><img className="icon-mobile" src={customersIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>20M happy customers</Text></div>
                       </div>
                       </div>  
                   </div>
