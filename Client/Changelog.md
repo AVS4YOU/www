@@ -3,8 +3,8 @@
 ## 1.0.31
 
 ### Fixes
-* Changed prices and links on `register.aspx`
-* Changed styles on `/avs-video-editor.aspx` and `/special-offer.aspx`
+* Changed links on `register.aspx`
+* Changed styles on `/avs-video-editor.aspx` 
 
 ## 1.0.30
 
