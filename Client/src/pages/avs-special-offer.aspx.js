@@ -107,7 +107,7 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
-            <ImageGQL className="full-pack" imageName="full-pack-special-offer.png"/>
+            <ImageGQL className="full-pack" imageName="pack-special-offer.png"/>
           </div>
           <PageContentWrapper>
                       <ContentRowItem 

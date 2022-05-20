@@ -466,7 +466,7 @@
 	"to find out if you are eligible for a full refund": "for at finde ud af, om du er berettiget til en fuld refundering",
 	"$" : "€",
     "39/00" : "39.00",
-    "$69/00" : "€69.00",
+    "$69/00" : "€49.00",
     "$199/00" : "€199.00",
     "59/00" : "49.00",
 
@@ -1321,7 +1321,7 @@
  "Does 'subscription model' get better conversion results as compared to usual software sale?" : "Får 'abonnementsmodel' bedre konverteringsresultater sammenlignet med almindeligt softwaresalg?",
  "Yes, we launched" : "Ja, vi lancerede",
  "in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before" : "i December 2006 og abonnementsmodellen viste sig at give fremragende resultater flere gange sammenlignet med den almindelige salgsordning, som vi havde brugt før.",
- "Is there a way to simplify my generation of custom affiliate links from AVS4YOU?" : "Er der en måde at forenkle min generation af brugerdefinerede tilknyttede links fra AVS4YOU¬Æ?",
+ "Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?" : "Er der en måde at forenkle min generation af brugerdefinerede tilknyttede links fra AVS4YOU¬Æ?",
  "Yes, please use our" : "Ja, venligst brug vores",
  "Affiliate Links Generator" : "generator til tilknyttede links",
  "tool" : "værktøj",
@@ -1519,8 +1519,8 @@
 	"support avs4you faq" : "https://support.avs4you.com/faq.aspx",
 	"avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php",
 
-	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=EUR&LANG=da&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=USD&DCURRENCY=EUR&LANG=da&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=da&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=da&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=da&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
 

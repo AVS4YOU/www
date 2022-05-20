@@ -190,7 +190,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("Affiliate_Links_Generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank" rel="noreferrer noopener">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
+                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("affiliate_link_generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("affiliate_link_generator")}>{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>

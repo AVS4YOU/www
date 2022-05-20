@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.31
+
+### Fixes
+* Changed links on `register.aspx`
+* Changed styles on `/avs-video-editor.aspx` 
+
 ## 1.0.30
 
 ### New
