@@ -73,14 +73,14 @@ render(){
                 <div className="landing-block"><div className="landing-one-offer-block"><Text className="text-landing-box-gray">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Timelimited offer")}</Text>
-                <Text className="header__old__price">{this.props.t("$199")}</Text>
+                <Text className="header__old__price">{this.props.t("199")}</Text>
                 <table className="header__buy__gray"><Text as="h2" className="header__buy__now">{this.props.t("Buy")}</Text></table>
                 <div className="landing-one-offer-block-cross"></div>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
-                <Text as="h4" className="header__new__price">{this.props.t("$59")}</Text>
+                <Text as="h4" className="header__new__price">{this.props.t("59")}</Text>
                 <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
