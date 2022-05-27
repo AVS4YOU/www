@@ -153,6 +153,7 @@ a:hover {
     left: 600px;
     top: 172px;
     margin-left: 80px;
+    width: 260px;
     }
         .lohbn-regular-price:after {
         content: '';

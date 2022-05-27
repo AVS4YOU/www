@@ -24,10 +24,13 @@ import CreateSlide5 from '../images/avs-video-editor-final/cinema-slider/cards-f
 import CreateSlide6 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame7.svg';
 import CreateSlide7 from '../images/avs-video-editor-final/cinema-slider/cards-frame/Frame8.svg';
 
-
 const MainPageWrapper = styled.div`
   .bodyHeader{
     text-align: center; 
+  }
+
+  .bgOrange {
+    left: -33px !important;
   }
 
   .headerContentWrapper{
@@ -154,17 +157,18 @@ render(){
         metaDescription=""
         metaKeywords=""
       >    
-        <ProductPagesWrapper>  
+        <ProductPagesWrapper> 
+        <MainPageWrapper> 
           <div className="headerBackground">
           <div className="headerBackgroundImage">
               <img className="headerBackgroundImageVES" src={HeaderBackgroundImage} alt=""/>
             </div>
             <PageContentWrapper>
-              <HeaderRowItem 
-               className="flexWrapper"
-               imgLeft={false}
-               imageName="header-back-image-avs.png"      
-              >
+                <HeaderRowItem style={{paddingLeft:"77px"}}
+                className="flexWrapper"
+                imgLeft={false}
+                imageName="header-back-image-avs.png"    
+                >
                 <div className="tableWrapperHeader">
                 <Text align="left" className="headerDescription" as="h5" color="#32393e" fontSize={28} fontWeight={700}>AVS Video Editor</Text>
                   <Text align="left" className="headerText headerTextSoftWare" paddingLeft="15px" lineHeight="45px" color="#32393e" fontSize={45} fontWeight={600} as="h1">{this.props.t("Create impressive videos - no experience required")}</Text>
@@ -348,7 +352,6 @@ render(){
             </GroupCard.GridRow>
             </GroupCard>
           
-        <MainPageWrapper>
         <div className="headerBackground">
         <div className="fonImage">
             <img className="fonImage" src={BackGroundImage} alt=""/>
