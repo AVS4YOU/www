@@ -64,6 +64,7 @@ const StyledPageWrapper = styled.div`
 
   .backgroundWrapper{
     background-color: #FAF7F2;
+    margin-top: 100px;
     padding-bottom: 100px;
   }
 
