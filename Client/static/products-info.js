@@ -8,7 +8,7 @@ let VideoEditor = {
 };
 
 let VideoReMaker = {
-    version: "6.6.2.259",
+    version: "6.7.1.262",
     releaseDD: "24",
     releaseMM: "05",
     releaseYYYY: "2022",
@@ -17,7 +17,7 @@ let VideoReMaker = {
 };
 
 let VideoConverter = {
-    version: "6.7.1.262",
+    version: "12.4.1.695",
     releaseDD: "26",
     releaseMM: "05",
     releaseYYYY: "2022",

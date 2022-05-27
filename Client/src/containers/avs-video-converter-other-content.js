@@ -206,7 +206,7 @@ export const AvsVideoConverterOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.3</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.4</Text>
 
 
   <ScreenshotsCarousel 
