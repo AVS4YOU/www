@@ -172,7 +172,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.6</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.7</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
             imageNamesPopup={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}

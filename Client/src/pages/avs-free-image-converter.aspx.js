@@ -168,7 +168,7 @@ class avsFreeImageConverter extends React.PureComponent {
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 5.5</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
             imageNamesPopup={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
@@ -184,7 +184,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
               <div className="downloadInfoRow">
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Current Version")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">5.4.2.317</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">5.5.1.319</Text>
               </div>
 
               <div className="downloadInfoRow">        

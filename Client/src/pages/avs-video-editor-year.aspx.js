@@ -200,7 +200,7 @@ render(){
                 </div>
                 <Text className="headerDescription" lineHeight="50px" color="#32393e" fontSize={14} fontWeight={600} as="h5">{this.props.t("Platforms Windows 10, 81, 8, 7, XP, 2003, Vista")}</Text>
                 <Text className="headerDescription" color="#32393e" fontSize={14} as="h5">{this.props.t("In stock")}</Text>
-                <Text className="headerDescription" as="h5" color="#32393e" fontSize={35} fontWeight={900}>{this.props.t("$ 39.00")}</Text>
+                <Text className="headerDescription" as="h5" color="#32393e" fontSize={35} fontWeight={900}>{this.props.t("$39/00")}</Text>
                 <div className="buttonsWrapper" style={{display:"flex"}}>
                 <div className="HeaderListItem35">  
                 <Button

@@ -277,7 +277,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.6</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.7</Text>
   <ScreenshotsCarousel
     imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
     imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}

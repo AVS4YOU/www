@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.32
+
+### New
+* Added page `/special-offer.aspx`
+
+### Fixes
+* Fixed version, date, file size
+* Fixed price
+
 ## 1.0.31
 
 ### Fixes
