@@ -8,8 +8,27 @@ import ImageGQL from "../components/image-gql";
 import mailIcon from "../images/partners/email.svg";
 import Form from '../components/form-partners';
 import ScrollUpButton from '../components/scroll-up-button';
+import styled from 'styled-components';
 
+const StyledBlock = styled.div`
+ .common-info-block__headline {
+   text-align: center;
+ }
 
+ .common-info-block__text {
+  text-align: center;
+ }
+
+.common-info-block:before {
+  content: "";
+  width: 100%;
+  height: 75px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+`;
 
 
 class partners extends React.PureComponent {
@@ -46,6 +65,7 @@ render(){
             </div>
           </div>
         </div>
+        <StyledBlock>
         <div className="body-reseller screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Why AVS4YOU Reseller Program")}
@@ -105,6 +125,7 @@ render(){
           </a>
           </div>
         </div>
+        </StyledBlock>
         <div className="form screen-wrapper">
           <img src={mailIcon} alt=""/>
           <div className="reseller-from-wrapper">

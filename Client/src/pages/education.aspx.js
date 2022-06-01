@@ -11,7 +11,20 @@ import Form from '../components/form-education';
 import ContentSelector from '../components/content-selector';
 import ContentRowItem from '../components/content-row-item';
 import ScrollUpButton from '../components/scroll-up-button';
+import styled from 'styled-components';
 
+const StyledBlock = styled.div`
+
+ .tableCell {
+  text-align: center;
+ }
+
+ .itemContent {
+   width: 100%;
+  background-position-x: 50% !important;
+  background-position-y: 35px !important;
+}
+`;
 
 
 class education extends React.PureComponent {
@@ -51,6 +64,7 @@ render(){
                 </div>
             </div>
         </div>
+        <StyledBlock>
         <div className="body-education screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Advantages of AVS4YOU software")}
@@ -101,6 +115,7 @@ render(){
             </div>
           </div>
         </div>
+        </StyledBlock>
         <div className="education-solution screen-wrapper">
             <Text as="h2" className="common__heading">
             {this.props.t("Why AVS4YOU is a perfect solution?")}

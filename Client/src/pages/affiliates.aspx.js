@@ -6,9 +6,29 @@ import "../styles/affiliates.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
 import ReviewScreen from '../components/review-screen';
-import ContentSelector from '../components/content-selector';
 import ScrollUpButton from '../components/scroll-up-button';
 import PanelCollapse from "../components/panel-collapse";
+import styled from 'styled-components';
+
+const StyledBlock = styled.div`
+ .common-info-block__headline {
+   text-align: center;
+ }
+
+ .common-info-block__text {
+  text-align: center;
+ }
+
+.common-info-block:before {
+  content: "";
+  width: 100%;
+  height: 75px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+`;
 
 class Affiliates extends React.PureComponent {
 
@@ -38,6 +58,7 @@ render(){
               </div>
             </div>
         </div>
+        <StyledBlock>
         <div className="body-reasons screen-wrapper">
             <Text as="h2" className="common__heading">
             {this.props.t("More Reasons to Become")} <br />{this.props.t("an AVS4YOU Affiliate")}
@@ -99,6 +120,7 @@ render(){
             </div>
           </div>
         </div>
+        </StyledBlock>
         <div className="choose-program screen-wrapper">
             <div className="choose-program__round-wrapper">
                 <Text as="h3" className="round-and-number">
@@ -190,7 +212,7 @@ render(){
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("Affiliate_Links_Generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a> {this.props.t("tool")} <a href="https://stat.avs4you.com/linkgenerationarea.aspx" target="_blank" rel="noreferrer noopener">{this.props.t("here")}</a>. {this.props.t("It will automatically make correct links")}
+                    <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("affiliate_link_generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a>{this.props.t("tool")}. {this.props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>

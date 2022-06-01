@@ -31,119 +31,27 @@ import awardRating from '../images/avs-video-editor/award-rating.png'
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
-const StyledCarousel = styled.div`
-.title-image {
-  color: #ffffff;
-}
-.description-image {
-  color: #ffffff;
-}
-.slick-dots li.slick-active button:before{
-  color: #FE9235;
-  opacity: 1;
-}
-.slick-dots li button:before {
-  color: #ffffff;
-}
-.slick-prev, .slick-next, .slick-prev:focus{
-  width:45px;
-  height:45px;
-  background-color: transparent;
-  border-radius: 30px;
-  background-image: url(${LeftArrow});
-  background-repeat: no-repeat;
-  background-position: 45% 50%;
-  z-index: 3;
-  transition: linear 0.2s;
+const StyledArrow = styled.div`{
 
-  &:hover{
-      box-shadow: 0 20px 40px rgba(0,0,0,.1);
-      background-color: transparent;
-      background-image: url(${LeftArrow});
-      background-repeat: no-repeat;
-      background-position: 45% 50%;
+  .headerArrow {
+    background-image: url(${RightArrow});
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    width: 45px;
+    max-width: 45px;
+    background-position-x: 50%;
+    cursor: pointer;
+    z-index: 0;
+    height: 45px;
+    display: table;
+    margin: auto;
+    margin-top: 200px;
   }
 
-  &:before{
-      content: none; 
-  }
-}
-
-.slick-list {
-  pointer-events: none;
-}
-
-.slick-next, .slick-next:focus{
-  background-image: url(${RightArrow});
-  background-position: 55% 50%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-
-  &:hover{
-      background-image: url(${RightArrow});
-      background-position: 55% 50%;
-      background-color: transparent;
-  }
-}
-.popupCarousel{
-  display: none;
-  background-color: transparent;
-}
-
-.visibleSlider {
-  max-width: 95%;
-}
-
-@media (max-width: 1024px) {
-  .slick-list {
-    pointer-events: auto;
-  }
-
-  .headerText {
-    font-size: 68px;
-  }
-
-  .headerDescription {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .title-image {
-    margin-top: 50px;
-    font-size: 32px;
-  }
-
-  .description-image {
-    font-size: 18px;
-  }
-
-  .headerText {
-    font-size: 48px;
-  }
-
-  .headerDescription {
-    font-size: 24px;
-  }
-
-}
-
-@media (max-width: 500px) {
-  .title-image {
-    margin-top: 20px;
-    font-size: 32px;
-  }
-
-  .description-image {
-    margin-bottom: 0px;
-  }
-
-  .headerText {
-    font-size: 32px;
-  }
-
-  .headerDescription {
-    font-size: 18px;
+  @media (max-width: 1024px) {
+    .headerArrow {
+      display: none;
+    }
   }
 }
 `;
@@ -168,7 +76,7 @@ video {
 
 @media (max-width: 1368px) {
   .headerBackground {
-    height: auto !important;
+    max-height: auto !important;
   }
   video {
     height: 100%;
@@ -176,6 +84,12 @@ video {
 
   .visibleSlider {
     margin: 20px auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerBackground {
+    height: 732px !important;
   }
 }
 
@@ -202,17 +116,8 @@ export const AvsVideoEditorOtherContent = (props) => (
     </video>
     <PageContentWrapper>
     <div id="headerContentWrapper" className="headerContentWrapper" style={{position: "relative", maxWidth:"1300px"}} >
-    <StyledCarousel>
         <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{props.t("AVS Video Editor")}</Text>
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Powerful video editing software for Windows")}</Text>
-        <ScreenshotsCarousel
-          titleImage={[props.t("Creative video editing"), props.t("Easy fast editing"), props.t("Your story in color"), props.t("Video editor for all needs"), props.t("Video editor for everyone")]}
-          descriptionImage={[props.t("Create great-looking videos with 300"), props.t("Enjoy simple video editing with GPU acceleration"), props.t("Capture best moments and turn them into colorful slideshows"), props.t("Create demos, tutorials, presentations or videos for any special occasion"), props.t("Make your story viral on social and video platforms")]}
-          imageNames={[props.t(" "), props.t(" "), props.t(" "), props.t(" "), props.t(" ")]}
-          imageNamesPopup={[props.t(" "), props.t(" "), props.t(" "), props.t(" "), props.t(" ")]}
-          altText={["slideCarousel1", "slideCarousel2", "slideCarousel3"]}
-        />
-        </StyledCarousel>
         <HeaderDownloadButtons 
           t={props.t}
           mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
@@ -223,6 +128,9 @@ export const AvsVideoEditorOtherContent = (props) => (
         />
       </div>
     </PageContentWrapper>
+    <StyledArrow>
+      <ScrollLink to="overview" spy={true} smooth={true}  offset={-70} duration={500} className="headerArrow"></ScrollLink>
+    </StyledArrow>
   </div>
   </StyledVideo>
   <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
@@ -369,7 +277,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.6</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.7</Text>
   <ScreenshotsCarousel
     imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
     imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}

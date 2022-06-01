@@ -125,6 +125,7 @@ const StyledMenuItem = styled.div`
 
     .menuItemLink{
         text-decoration:none;
+        padding: 20px 0;
     }
 
     .arrowStyle{
