@@ -101,7 +101,7 @@ render(){
               <RedButton className="headerButtonSummer" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
+                      <Link to="/register.aspx?utm_source=programm&utm_medium=banner&utm_campaign=sos&utm_content=buy_now" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
             <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid during 24 hours</Text>
@@ -118,13 +118,13 @@ render(){
               <Button className="specialButtonSummer button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+                      <Link to="/installed-pack.aspx?utm_source=programm&utm_medium=banner&utm_campaign=sos&utm_content=buy_now" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="specialButtonSummer" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
+                      <Link to="/register.aspx?utm_source=programm&utm_medium=banner&utm_campaign=sos&utm_content=buy_now" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
             <ImageGQL className="full-pack" imageName="pack-special-offer.png"/>
