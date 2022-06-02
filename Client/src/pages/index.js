@@ -29,6 +29,7 @@ import awardGetapp from '../images/main-page/awards/award-getapp.png'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftonic from '../images/main-page/awards/award-softonic.png'
 import awardSoft from '../images/main-page/awards/softonic-award.png'
+import awardSafety from '../images/main-page/awards/award-safety.png'
 
 const StyledMainContentWrapper = styled.div`
     display:block;
@@ -215,6 +216,7 @@ const MainPageWrapper = styled.div`
     max-width: 1120px;
     margin: auto;
     text-align: center;
+    display: table;
   }
 
   .awards-item {
@@ -222,15 +224,22 @@ const MainPageWrapper = styled.div`
     width: 192px;
     height: 150px;
     padding: 0 30px;
+    vertical-align: middle;
   }
 
-  .awards-img {
-    height: 124px;    
-    vertical-align: middle;
+  .award-img-center {
+    height: 124px;
+    display: flex;
+    align-items: center;
+  }
+
+  .award-img {
+    height: 124px;
   }
 
   .list-awards {
     margin-bottom: 50px;
+    display: flex;
   }
 
   .awards-text {
@@ -499,12 +508,13 @@ class mainPage extends React.PureComponent {
               <div className="awards-item"><img src={awardClean}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Clean Award</Text></div>
               <div className="awards-item"><img src={awardPick}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Rating: Excellent</Text></div>
               <div className="awards-item"><img src={awardSoftonic}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic clean award</Text></div>
+              <div className="awards-item"><img src={awardSafety}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Safety Award</Text></div>
             </div>
             <div className="list-awards">
-              <div className="awards-item"><img src={awardSoft}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic Rating: Very good</Text></div>
-              <div className="awards-item"><img src={awardChip}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>chip.de First Impression: Very Good</Text></div>
-              <div className="awards-item"><img src={awardGetapp}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>GetApp: Very Good</Text></div>
-              <div className="awards-item"><img src={awardCapterra}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Capterra: Very Good</Text></div>
+              <div className="awards-item"><div className="award-img-center"><img src={awardSoft}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic Rating: Very good</Text></div>
+              <div className="awards-item"><div className="award-img"><img src={awardChip}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>chip.de First Impression: Very Good</Text></div>
+              <div className="awards-item"><div className="award-img"><img src={awardGetapp}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>GetApp: Very Good</Text></div>
+              <div className="awards-item"><div className="award-img-center"><img src={awardCapterra}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Capterra: Very Good</Text></div>
             </div>
         </div>  
 
