@@ -217,20 +217,26 @@ const MainPageWrapper = styled.div`
     margin: auto;
     text-align: center;
     display: table;
+    padding: 0 16px;
   }
 
   .awards-item {
     display: inline-table;
-    width: 192px;
     height: 150px;
-    padding: 0 30px;
+    padding: 10px 30px;
     vertical-align: middle;
+    width: 192px;
+  }
+
+  .awards-item img {
+    background-size: contain;
   }
 
   .award-img-center {
     height: 124px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .award-img {
@@ -239,7 +245,8 @@ const MainPageWrapper = styled.div`
 
   .list-awards {
     margin-bottom: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .awards-text {
@@ -317,6 +324,15 @@ const MainPageWrapper = styled.div`
     .bodyHeader{
       font-size: 28px;
     }
+
+    .awards-item {
+      width: auto !important;
+      padding: 0;
+    }
+
+    .list-awards {
+      justify-content: space-around;
+    }
   }
 
   @media (max-width: 750px) {
@@ -325,6 +341,19 @@ const MainPageWrapper = styled.div`
       padding-top: 50px;
       padding-bottom: 50px;
       font-weight: 700;
+    }
+
+    .awards-text {
+      font-size: 14px !important;
+    }
+
+    .list-awards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .awards-item {
+      padding: 10px;
     }
   }
 
@@ -340,6 +369,11 @@ const MainPageWrapper = styled.div`
 
     .HeaderListItem.mobile{
       font-size: 20px;
+    }
+
+    .list-awards {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 `;
@@ -505,12 +539,10 @@ class mainPage extends React.PureComponent {
         <div className="block-awards">
             <Text className="awards-title" fontSize={28} fontWeight={600} color="#000000">{this.props.t("AVS4YOU Awards and Ratings")}</Text>
             <div className="list-awards">
-              <div className="awards-item"><img src={awardClean}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Clean Award</Text></div>
-              <div className="awards-item"><img src={awardPick}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Rating: Excellent</Text></div>
-              <div className="awards-item"><img src={awardSoftonic}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic clean award</Text></div>
-              <div className="awards-item"><img src={awardSafety}/><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Safety Award</Text></div>
-            </div>
-            <div className="list-awards">
+              <div className="awards-item"><div className="award-img"><img src={awardClean}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Clean Award</Text></div>
+              <div className="awards-item"><div className="award-img"><img src={awardPick}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Informer Rating: Excellent</Text></div>
+              <div className="awards-item"><div className="award-img"><img src={awardSoftonic}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic clean award</Text></div>
+              <div className="awards-item"><div className="award-img"><img src={awardSafety}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Safety Award</Text></div>
               <div className="awards-item"><div className="award-img-center"><img src={awardSoft}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>Softonic Rating: Very good</Text></div>
               <div className="awards-item"><div className="award-img"><img src={awardChip}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>chip.de First Impression: Very Good</Text></div>
               <div className="awards-item"><div className="award-img"><img src={awardGetapp}/></div><Text className="awards-text" color="#555555" fontSize={14} fontWeight={400}>GetApp: Very Good</Text></div>
