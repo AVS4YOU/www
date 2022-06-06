@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.33
+
+### New
+* Added Safety Award on main page
+* Added utm links on `/special-offer`
+
 ## 1.0.32
 
 ### New
