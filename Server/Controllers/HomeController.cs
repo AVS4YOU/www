@@ -7,7 +7,7 @@ using System.Web.Http.Cors;
 
 namespace avs4youAPI.Controllers
 {
-    [EnableCors(origins: "http://localhost:8000, https://teststatic.avs4you.com", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class HomeController : Controller
     {
         public ActionResult Index()
