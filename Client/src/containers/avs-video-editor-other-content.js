@@ -30,8 +30,6 @@ import awardRating from '../images/avs-video-editor/award-rating.png'
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
-
-
 const StyledArrow = styled.div`{
 
   .headerArrow {
