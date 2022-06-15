@@ -31,6 +31,8 @@ import awardRating from '../images/avs-video-editor/award-rating.png'
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
+
+
 const StyledArrow = styled.div`{
 
   .headerArrow {
@@ -110,7 +112,6 @@ export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
     <video autoPlay loop muted style={{position: "absolute"}}>
-    <source src={videoHeader} type='video/webm; codecs="vp8, vorbis"' />
     <source src={videoHeaderMP} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             Your browser does not support HTML5 video.
     </video>
