@@ -118,7 +118,7 @@ render(){
               <Button className="specialButtonSummer button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/installed-pack.aspx?utm_source=programm&utm_medium=banner&utm_campaign=sos&utm_content=buy_now" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="specialButtonSummer" 
