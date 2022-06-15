@@ -128,7 +128,7 @@ copy_sitemap() {
 }
 
 check_deploy() {
-  echo "=== modify cloudfront ==="
+  echo "=== check deploy ==="
 
   curl -Is http://"${name_new_bucket}".s3-website-us-east-1.amazonaws.com \
     | head -n 1 \
@@ -138,11 +138,15 @@ check_deploy() {
     echo "site OK"
   else
     echo "site is not available"
+    echo "=== delete new bucket ==="
+    delete_bucket "${name_new_bucket}"
     exit 1;
   fi
 }
 
 modify_cloud_front() {
+  echo "=== modify cloudfront ==="
+
   local etag
   local quantity
   local id
@@ -175,10 +179,14 @@ modify_cloud_front() {
     --paths "/*"
 }
 
+delete_bucket() {
+  aws s3 rb s3://${1} --force
+}
+
 delete_old_bucket() {
   if [[ "${name_old_bucket}" != "${FIND_NAME_BUCKET}" ]]; then
     echo "=== delete old bucket ==="
-    aws s3 rb s3://${name_old_bucket} --force
+    delete_bucket "${name_old_bucket}"
   fi
 }
 
