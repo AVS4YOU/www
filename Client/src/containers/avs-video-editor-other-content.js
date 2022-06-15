@@ -15,7 +15,6 @@ import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
-import videoHeader from '../images/avs-video-editor/avs_video_editor_page.webm'
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
