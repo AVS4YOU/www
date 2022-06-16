@@ -223,6 +223,10 @@ const StyledVideo = styled.div`
     width: 70%;
   }
 
+  .ListItem {
+    width: 90%;
+  }
+
   .landingImage {
     display: none;
   }
@@ -241,7 +245,7 @@ const StyledVideo = styled.div`
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 160px;
+    top: 150px;
     z-index: 2;
   }
 
@@ -252,9 +256,13 @@ const StyledVideo = styled.div`
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1125px) {
   .headerBlock {
     width: 60%;
+  }
+
+  .headerText {
+    font-size: 48px;
   }
 }
 
