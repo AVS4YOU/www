@@ -439,12 +439,12 @@ class avsVideoEditor extends React.PureComponent {
                             margin="0"
                             textTransform="uppercase"
                           >
-                            Download now
+                            {this.props.t("dwnld")}
                           </Button>
                         </StyledButton>
                     </div>
 
-                    <Text color="#000000" align="left" className="titleDescription" lineHeight="32px" fontSize={18} fontWeight={700} as="h5">{this.props.t("Trusted by 7 000 000 users worldwide")}</Text>
+                    <Text color="#000000" align="left" className="titleDescription" lineHeight="32px" fontSize={18} fontWeight={700} as="h5">{this.props.t("Trusted by 10 000 000 users worldwide")}</Text>
                     <div className="tableUsers">
                       <div className="tableName">
                         <div className="imgWrapper">
