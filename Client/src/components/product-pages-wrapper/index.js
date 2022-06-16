@@ -154,7 +154,7 @@ const StyledPageWrapper = styled.div`
   .requirementsHeader{
     padding-bottom: 10px;
     border-bottom: 1px solid #D1D1D1;
-    max-width: 404px;
+    max-width: 407px;
     margin-bottom: 10px;
   }
 
