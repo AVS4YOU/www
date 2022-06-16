@@ -231,12 +231,6 @@ const StyledVideo = styled.div`
     margin: 34px 0;
   }
 
-  .headerContentWrapper{
-    display: block;
-    padding: 100px 32px 0;
-    margin: 0;
-  }
-
   .landingImageMobile {
     background-image: url(${VELanding});
     display: block;
@@ -247,13 +241,14 @@ const StyledVideo = styled.div`
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 150px;
+    top: 160px;
     z-index: 2;
   }
 
   .headerContentWrapper{
     display: block;
-    padding: 100px 0 0 100px;
+    padding: 100px 0 0 20px;
+    margin: 0;
   }
 }
 
