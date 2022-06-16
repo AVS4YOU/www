@@ -453,7 +453,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Mike W.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video")}.</Text>
                       </div>
                       </div>
 
@@ -465,7 +465,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Dean S.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed")}.</Text>
                       </div>
                       </div>
 
@@ -477,7 +477,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Dann H.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want")}.</Text>
                       </div>
                       </div>
 
@@ -489,7 +489,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Devon R.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done")}.</Text>
                       </div>
                     </div>
                     
