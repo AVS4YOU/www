@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.34
+
+### New
+* Added de, fr translations on `/video-editor.aspx`
+
+### Fixes
+* Fixed pads
+* Fixed video header on `/avs-video-editor.aspx`
+
 ## 1.0.33
 
 ### New
