@@ -88,7 +88,7 @@
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>178839400</File_Size_Bytes>
-      <File_Size_K>174494</File_Size_K>
+      <File_Size_K>174647</File_Size_K>
       <File_Size_MB>170.55</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -106,7 +106,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,ChineseSimplified,Danish,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Windows 11 skin. Optimized presets. Intel hardware acceleration for AV1, H.265/HEVC 10/12 bit, VP9 10 bit video. Enhanced support of MP4/M4V/MOV/M4A/TS/MTS/M2TS files. Support of WebP images. Yellow-Magenta filter effect. Screen Capture with area size presets. Enhanced usability and accessibility.</Program_Change_Info>
+    <Program_Change_Info>Support of AV1 8 bit for NVIDIA 30x, VP9 12 bit for Intel Gen 11/12. Improved dash video/audio and AC-3 audio support. New presets for conversion to MP4/MOV with H.264 Main/High profiles and Intel hardware acceleration. TSV/TRP video support. Duration change for multiple transitions and objects.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>

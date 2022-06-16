@@ -84,7 +84,7 @@
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>109969904</File_Size_Bytes>
-      <File_Size_K>107162</File_Size_K>
+      <File_Size_K>107392</File_Size_K>
       <File_Size_MB>104.88</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Intel hardware acceleration for AV1, H.265/HEVC 10/12 bit, VP9 10 bit video. Enhanced support of MP4/M4V/MOV/TS/MTS/M2TS video files and M4A/M4B/M4R audio files. Optimization and bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Support of AV1 8 bit video for NVIDIA 30x, VP9 12 bit video for Intel Gen 11 &amp; 12. Improved fMP4 and dash video and audio support. Enhanced support of AC-3 audio in MP4/M4V/MOV/M4A/M4B files.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz, 1 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
     <Expire_Info>
