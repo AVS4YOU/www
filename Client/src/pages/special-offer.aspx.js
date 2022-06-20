@@ -61,7 +61,7 @@ render(){
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title=""
+        title="AVS4YOU Special offer"
         metaDescription=""
         metaKeywords=""
       >

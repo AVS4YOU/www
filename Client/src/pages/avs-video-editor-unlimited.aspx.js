@@ -169,7 +169,7 @@ render(){
         getDevice={this.getDevice} 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title=""
+        title="AVS Video Editor Unlimited Subscription"
         metaDescription=""
         metaKeywords=""
       >
