@@ -126,9 +126,6 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-video-remaker.aspx</Application_Info_URL>
@@ -190,6 +187,9 @@ IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCID
 COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
   <AppStore>
     <AppStore_AppID></AppStore_AppID>
     <AppStore_Category></AppStore_Category>
@@ -209,15 +209,15 @@ Any rights not expressly granted herein are reserved.</EULA>
       <Char_Desc_45>Edit videos fast with AVS Video ReMaker.</Char_Desc_45>
       <Char_Desc_80>Edit your video files fast and lossless with AVS Video ReMaker.</Char_Desc_80>
       <Char_Desc_250>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. easily and quickly! Cut, trim, remove unwanted video parts and save your video anew. Create your own DVD/Blu-ray menus. Capture your video from camcorders and video cameras &amp; make screen capturings.</Char_Desc_250>
-      <Char_Desc_450>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. without reconversion with AVS Video ReMaker. Cut, trim, remove unwanted video parts and save your video anew. No quality loss! Create and add DVD/Blu-ray menus. Capture video from camcorders, video cameras and web cameras. AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
+      <Char_Desc_450>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. without reconversion with AVS Video ReMaker. Cut, trim, remove unwanted video parts and save your video anew. No quality loss! Create and add DVD/Blu-ray menus. Capture video from camcorders, video cameras and web cameras. AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime.</Char_Desc_450>
       <Char_Desc_2000>AVS Video ReMaker is an easy to use and full-featured tool for fast and lossless video editing. Edit your MPEG and other video files without reconversion and preserve the original quality. 
 Cut, delete unwanted parts, change scene sequence in MPEG, AVI, DVD, Blu-ray, WMV, etc. with AVS Video ReMaker. Save videos without reconversion. 
-Edit AVI, VOB, MP4, DVD, Blu-ray, WMV, 3GP, FLV, TS, DVR-MS, MOV, MKV, H.263/H.264 codecs, etc. 
+Edit AVI, VOB, MP4, DVD, Blu-ray, WMV, 3GP, FLV, TS, DVR-MS, MOV, MKV, H.265/H.264 codecs, etc. 
 Edit AVCHD, MOD, MTS/M2TS, TOD, etc. video files recorded with camcorders and video cameras. 
 Split video into chapters, select between a number of menu templates. Burn video files on to DVD- or Blu-ray discs with AVS Video ReMaker. 
 Transfer video from camcorders and video cameras to hard drive, edit files and create home video DVDs with AVS Video ReMaker. Capture video from Web cameras and DV cameras. 
 AVS Video ReMaker is a convenient tool for quick and lossless video editing. 
-AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
+AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
   </Program_Descriptions>
 </XML_DIZ_INFO>
