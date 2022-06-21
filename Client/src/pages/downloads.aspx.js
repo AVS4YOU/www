@@ -160,7 +160,7 @@ render(){
         </div>
 
         <div className="screen-wrapper questions-block">
-          <Text className="common__heading" as="h3">{this.props.t("Read first")}</Text>
+          <Text className="common__heading questions-heading" as="h3">{this.props.t("Read first")}</Text>
           <div className="questions-wrapper">
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
               <div className="collapseContent">

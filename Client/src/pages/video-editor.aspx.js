@@ -223,18 +223,16 @@ const StyledVideo = styled.div`
     width: 70%;
   }
 
+  .ListItem {
+    width: 90%;
+  }
+
   .landingImage {
     display: none;
   }
 
   .mobileFormWrapper {
     margin: 34px 0;
-  }
-
-  .headerContentWrapper{
-    display: block;
-    padding: 100px 32px 0;
-    margin: 0;
   }
 
   .landingImageMobile {
@@ -253,13 +251,18 @@ const StyledVideo = styled.div`
 
   .headerContentWrapper{
     display: block;
-    padding: 100px 0 0 100px;
+    padding: 100px 0 0 20px;
+    margin: 0;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1125px) {
   .headerBlock {
     width: 60%;
+  }
+
+  .headerText {
+    font-size: 48px;
   }
 }
 
@@ -407,10 +410,8 @@ class avsVideoEditor extends React.PureComponent {
         getDevice={this.getDevice}
         pageContext={this.props.pageContext}
         t={this.props.t}
-        title={this.props.t("AVS Audio Editor record audio, cut, mix audio files, delete audio parts, edit mp3")}
-        metaDescription={this.props.t("Record audio cut, split, mix audio tracks, delete audio parts apply audio effects and filters save audio to MP3 WAV WMA M4A FLAC")}
-        metaKeywords={this.props.t("avs audio editor, avs music editor, avs audio  creator, audio editor, audio editing software, mp3 editor, music editor, download  music editor, audio editor download, audio edit software, edit mp3, movie maker edit audio, edit audio clips, edit audio windows 7, cool edit audio, record audio,  record voice, mix audio, mix audio software, mix music, cut audio cd, cut audio  clips, cut audio from video, create audiobook, create audio, create audio file,  create audio from video, edit music, edit audio, edit song, edit mp3 songs")}
-      >
+        title={this.props.t("AVS Video Editor - easy video editing software for Windows")}
+       >
         <StyledVideo>
           <ProductPagesWrapper>
             <div className="headerBackground">
@@ -439,12 +440,12 @@ class avsVideoEditor extends React.PureComponent {
                             margin="0"
                             textTransform="uppercase"
                           >
-                            Download now
+                            {this.props.t("dwnld")}
                           </Button>
                         </StyledButton>
                     </div>
 
-                    <Text color="#000000" align="left" className="titleDescription" lineHeight="32px" fontSize={18} fontWeight={700} as="h5">{this.props.t("Trusted by 7 000 000 users worldwide")}</Text>
+                    <Text color="#000000" align="left" className="titleDescription" lineHeight="32px" fontSize={18} fontWeight={700} as="h5">{this.props.t("Trusted by 10 000 000 users worldwide")}</Text>
                     <div className="tableUsers">
                       <div className="tableName">
                         <div className="imgWrapper">
@@ -453,7 +454,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Mike W.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video")}.</Text>
                       </div>
                       </div>
 
@@ -465,7 +466,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Dean S.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed")}.</Text>
                       </div>
                       </div>
 
@@ -477,7 +478,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Dann H.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want")}.</Text>
                       </div>
                       </div>
 
@@ -489,7 +490,7 @@ class avsVideoEditor extends React.PureComponent {
                         <Text color="#737373" style={{paddingLeft:"5px"}} align="left" lineHeight="12px" fontSize={12} fontWeight={400}>{this.props.t("Devon R.")}</Text>
                       </div>
                       <div className="tableText">
-                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done.")}</Text>
+                        <Text color="#333333" align="left" lineHeight="22px" fontSize={14} fontWeight={400}>{this.props.t("I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done")}.</Text>
                       </div>
                     </div>
                     

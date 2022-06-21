@@ -83,7 +83,7 @@
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>178839400</File_Size_Bytes>
-      <File_Size_K>174494</File_Size_K>
+      <File_Size_K>174647</File_Size_K>
       <File_Size_MB>170.55</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,ChineseSimplified,Danish,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Windows 11-Skin. Verbesserte Voreinstellungen. Intel-Hardwarebeschleunigung für AV1, H.265/HEVC 10/12 bit, VP9 10 bit Video. Bessere Unterstützung von MP4/M4V/MOV/TS/MTS/M2TS-Dateien. Unterstützung von WebP-Bildern. Yellow Magenta-Effekt. Voreinstellungen für Bildschirmaufnahme.</Program_Change_Info>
+    <Program_Change_Info>Unterstützung von AV1 8 Bit für NVIDIA 30x, VP9 12 Bit für Intel Gen 11/12. Verbesserte Unterstützung von dash-Video und AC-3-Audio. Neue Voreinstellungen für die Konvertierung in MP4/MOV mit H.264-Codec unter Verwendung der Profile Main/High und Intel-Hardwarebeschleunigung. Unterstützung TSV/TRP.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD Core 2 Duo-kompatibel Prozessor mit 3 GHz oder höher, 2 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -217,7 +217,7 @@ Transfer video from DV/HDV cameras, webcams or VHS cameras and save video on har
 Record media files from your PC screen and create video guides, training videos or demos. Capture memorable events and turn them into amazing slideshows. 
 Save the newly-made video in the desired format on your computer, burn a DVD/Blu-ray disc, adjust video for your iOS and Android devices or publish your creative work in social networks. 
 AVS4YOU tools let you easily convert and edit audio/video files, edit images, burn DVD/Blu-ray discs, create ringtones, upload videos to portable devices, players, smartphones and much more! 
-AVS Video Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime.</Char_Desc_2000>
+AVS Video Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime.</Char_Desc_2000>
     </English>
     <German>
       <Keywords>Video Editor, Video bearbeiten, 2K Quad HD und 4K Ultra HD,DVD brennen, DVD Menü, iPod, Sony PSP, Handy, Effekte, Übergänge, MP4, MPEG, AVI, MOD, MTS, TS, Video schneiden, entfernen, Blu-ray brennen, Aufzeichnung des Bildschirms, Video stabilisieren</Keywords>
@@ -235,7 +235,7 @@ Korrigieren Sie die wackeligen Videoaufnahmen und machen Sie Videos stabil mit A
 Wenden Sie mehr als 300 Videoeffekte und Übergänge einfach an. 
 Importieren Sie vorhandene Videodateien von der Festplatte oder übertragen Sie Videos direkt von DV-Kameras. 
 Laden Sie gerade erstellte Videodateien auf alle populären Videoportale direkt vom Programm aus hoch. Bearbeiten Sie Blu-ray Videos. Fügen Sie Blu-ray Menüs. Schneiden, vereinigen, drehen Sie Blu-ray Videos und brennen Sie sie auf Blu-Ray-Disks. 
-AVS Video Editor ist ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für €39/Jahr oder €49/unbefristet. 
+AVS Video Editor ist ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für €49/Jahr oder €69/unbefristet. 
 Die AVS4YOU-Programme ermöglichen Ihnen Audio-, Bilder-, Videodateien zu rippen, zu konvertieren und zu bearbeiten. Sie können auch DVDs zu brennen, Klingeltöne zu erstellen, Videos auf tragbare Geräte, Player sowie Mobiltelefone zu übertragen und vieles mehr!</Char_Desc_2000>
     </German>
   </Program_Descriptions>
