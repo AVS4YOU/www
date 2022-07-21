@@ -10,7 +10,6 @@ import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 import ContentRowItem from '../components/content-row-item';
 import ContentSelector from '../components/content-selector';
