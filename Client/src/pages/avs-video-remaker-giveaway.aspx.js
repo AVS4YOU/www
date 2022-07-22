@@ -9,7 +9,6 @@ import Button from '../components/button';
 import Form from '../components/form-giveaway';
 import ImageGQL from '../components/image-gql';
 
-import backgroundGiveaway from "../images/giveaway/background-giveaway.svg";
 import backDots from "../images/giveaway/back-dots.svg";
 import orangeLine from "../images/giveaway/orange-line.svg";
 import blueLogo from "../images/giveaway/logo.svg";
