@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.0.35
+
+### Fixes
+* Fixed products version
+* Fixed price for ru location /ru/installed-pack.aspx
+
+## 1.0.34
+
+### New
+* Added de, fr translations on `/video-editor.aspx`
+
+### Fixes
+* Fixed pads
+* Fixed video header on `/avs-video-editor.aspx`
+
+## 1.0.33
+
+### New
+* Added Safety Award on main page
+* Added utm links on `/special-offer`
+
 ## 1.0.32
 
 ### New
