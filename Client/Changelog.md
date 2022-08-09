@@ -6,6 +6,7 @@
 * Fixed products version
 * Fixed price for ru location /ru/installed-pack.aspx
 
+
 ## 1.0.34
 
 ### New

@@ -15,7 +15,6 @@ import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
-import videoHeader from '../images/avs-video-editor/avs_video_editor_page.webm'
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
@@ -110,7 +109,6 @@ export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
     <video autoPlay loop muted style={{position: "absolute"}}>
-    <source src={videoHeader} type='video/webm; codecs="vp8, vorbis"' />
     <source src={videoHeaderMP} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             Your browser does not support HTML5 video.
     </video>

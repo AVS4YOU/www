@@ -83,7 +83,7 @@
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>62945952</File_Size_Bytes>
-      <File_Size_K>61295</File_Size_K>
+      <File_Size_K>61470</File_Size_K>
       <File_Size_MB>60.03</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -95,16 +95,16 @@
     <Program_Version>6.7.1.262</Program_Version>
     <Program_Release_Month>05</Program_Release_Month>
     <Program_Release_Day>24</Program_Release_Day>
-    <Program_Release_Year>2021</Program_Release_Year>
+    <Program_Release_Year>2022</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Cost_Other_Code>USD</Program_Cost_Other_Code>
-    <Program_Cost_Other>59.00</Program_Cost_Other>
+    <Program_Cost_Other>79.00</Program_Cost_Other>
     <Program_Type>Shareware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Windows 11 skin. Intel hardware acceleration for H.265/HEVC 10/12 bit video. Enhanced support of MP4/M4V/MOV/TS/MTS/M2TS video files. Support of WebP images in disc menu. Screen Capture with area size presets. Optimization and bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Improved fMP4 and dash video support. Enhanced support of AC-3 audio in MP4/M4V/MOV. New Fade and Graduate transitions. Optimization and bug fixes.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz, 1 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -126,9 +126,6 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-video-remaker.aspx</Application_Info_URL>
@@ -190,6 +187,9 @@ IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCID
 COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
   <AppStore>
     <AppStore_AppID></AppStore_AppID>
     <AppStore_Category></AppStore_Category>
@@ -209,15 +209,15 @@ Any rights not expressly granted herein are reserved.</EULA>
       <Char_Desc_45>Edit videos fast with AVS Video ReMaker.</Char_Desc_45>
       <Char_Desc_80>Edit your video files fast and lossless with AVS Video ReMaker.</Char_Desc_80>
       <Char_Desc_250>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. easily and quickly! Cut, trim, remove unwanted video parts and save your video anew. Create your own DVD/Blu-ray menus. Capture your video from camcorders and video cameras &amp; make screen capturings.</Char_Desc_250>
-      <Char_Desc_450>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. without reconversion with AVS Video ReMaker. Cut, trim, remove unwanted video parts and save your video anew. No quality loss! Create and add DVD/Blu-ray menus. Capture video from camcorders, video cameras and web cameras. AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
+      <Char_Desc_450>Edit MPEG, AVI, DVD, Blu-ray, HD, WMV, etc. without reconversion with AVS Video ReMaker. Cut, trim, remove unwanted video parts and save your video anew. No quality loss! Create and add DVD/Blu-ray menus. Capture video from camcorders, video cameras and web cameras. AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime.</Char_Desc_450>
       <Char_Desc_2000>AVS Video ReMaker is an easy to use and full-featured tool for fast and lossless video editing. Edit your MPEG and other video files without reconversion and preserve the original quality. 
 Cut, delete unwanted parts, change scene sequence in MPEG, AVI, DVD, Blu-ray, WMV, etc. with AVS Video ReMaker. Save videos without reconversion. 
-Edit AVI, VOB, MP4, DVD, Blu-ray, WMV, 3GP, FLV, TS, DVR-MS, MOV, MKV, H.263/H.264 codecs, etc. 
+Edit AVI, VOB, MP4, DVD, Blu-ray, WMV, 3GP, FLV, TS, DVR-MS, MOV, MKV, H.265/H.264 codecs, etc. 
 Edit AVCHD, MOD, MTS/M2TS, TOD, etc. video files recorded with camcorders and video cameras. 
 Split video into chapters, select between a number of menu templates. Burn video files on to DVD- or Blu-ray discs with AVS Video ReMaker. 
 Transfer video from camcorders and video cameras to hard drive, edit files and create home video DVDs with AVS Video ReMaker. Capture video from Web cameras and DV cameras. 
 AVS Video ReMaker is a convenient tool for quick and lossless video editing. 
-AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
+AVS Video ReMaker is a part of AVS4YOU.com package. Register once at avs4you.com and use all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
   </Program_Descriptions>
 </XML_DIZ_INFO>
