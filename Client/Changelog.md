@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.35
+
+### Fixes
+* Fixed products version
+
 ## 1.0.34
 
 ### New
