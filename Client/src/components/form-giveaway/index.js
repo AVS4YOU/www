@@ -205,6 +205,14 @@ class FormPartners extends React.Component {
                 MailPatternName: "ru-reseller.html",
                 MailType: "reseller"
             });
+            
+            this.sendData({
+                name: this.state.name.value,
+                email: this.state.email.value,
+                
+            });
+            console.log(this.state.email.value);
+            console.log(this.state.name.value);
 
         } else {
             console.log("form invalid")
@@ -424,6 +432,37 @@ class FormPartners extends React.Component {
         }
     }
 
+    sendData = async (data) => {
+
+        let url = "http://localhost:3002/users/";
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(data),
+
+            });
+
+            let responseTest = await response.text();
+
+            if (false) { //responseTest.indexOf("Error") > -1
+                console.log(responseTest)
+            } else {
+                this.setState({
+                    formSended: true
+                })
+                console.log("Email sended")
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
 
     
     render() {
@@ -496,7 +535,7 @@ class FormPartners extends React.Component {
 
                                 inputName="name"
                                 inputLabel={this.props.nameAuthor}
-
+                                
                                 value={this.state.name.value}
                                 inputClassName={this.state.name.inputClassName}
                                 errorText={this.nameErrorText}
@@ -514,7 +553,7 @@ class FormPartners extends React.Component {
 
                                 inputName="email"
                                 inputLabel={this.props.emailAddressText}
-
+                                
                                 value={this.state.email.value}
                                 inputClassName={this.state.email.inputClassName}
                                 errorText={this.emailErrorText}
