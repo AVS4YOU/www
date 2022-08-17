@@ -434,7 +434,7 @@ class FormPartners extends React.Component {
 
     sendData = async (data) => {
 
-        let url = "http://localhost:3002/users/";
+        let url = "http://54.156.143.89:3002/users/";
 
         try {
             const response = await fetch(url, {
@@ -442,7 +442,7 @@ class FormPartners extends React.Component {
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8'
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(data), 
 
             });
 
