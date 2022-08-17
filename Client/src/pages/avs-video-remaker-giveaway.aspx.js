@@ -189,7 +189,7 @@ class avsVideoRemakerGiveaway extends React.PureComponent {
     this.setState({ device: device });
   }
 
-  render() {
+  render() { 
 
     return (
       <Layout
