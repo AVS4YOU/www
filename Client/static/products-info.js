@@ -21,7 +21,7 @@ let VideoConverter = {
     releaseDD: "28",
     releaseMM: "07",
     releaseYYYY: "2022",
-    size: "80.4",
+    size: "80.40",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
