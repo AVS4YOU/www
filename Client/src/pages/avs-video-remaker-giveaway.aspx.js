@@ -189,7 +189,7 @@ class avsVideoRemakerGiveaway extends React.PureComponent {
     this.setState({ device: device });
   }
 
-  render() {
+  render() { 
 
     return (
       <Layout
@@ -213,6 +213,7 @@ class avsVideoRemakerGiveaway extends React.PureComponent {
                     emailAddressText={this.props.t("Email address")}
                     buttonTextSend={this.props.t("Get Free License")}
                   />
+                  
               </div> 
               <div className="imageBackground">
                   <div className="headerRight">
