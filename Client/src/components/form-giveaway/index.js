@@ -434,7 +434,7 @@ class FormPartners extends React.Component {
 
     sendData = async (data) => {
 
-        let url = "https://api-post-form-data.avs4you.com:3002/users/";
+        let url = "https://api-post-form-data.avs4you.com/users/";
 
         try {
             const response = await fetch(url, {
