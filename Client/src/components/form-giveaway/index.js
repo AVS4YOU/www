@@ -8,11 +8,12 @@ import InputCheckbox from '../input-checkbox';
 import InfoPopup from '../info-popup';
 import {VideoReMaker} from '../../../static/products-info';
 
-import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
+import {RecaptchaKeys} from '../../../static/static-data';
 
 import iconKnowledge from '../../images/giveaway/icon-books.svg'
 import iconTips from '../../images/giveaway/icon-tips.svg'
 import iconQuestion from '../../images/giveaway/icon-question.svg'
+import iconNotice from '../../images/giveaway/notice.svg'
 
 const StyledForm = styled.div`
     padding: 40px;
@@ -83,6 +84,16 @@ const StyledForm = styled.div`
         &:before{
             content: none;
         }
+    }
+    
+    .notice{
+        display: grid;
+        grid-gap: 14px;
+        grid-template-columns: 12px 1fr;
+        align-items: center;
+        padding-left: 12px;
+        margin-top: -15px;
+
     }
 
     .getCouponButton {
@@ -183,6 +194,7 @@ class FormPartners extends React.Component {
             checkBoxClassName: "",
             formSended: false,
             recaptchaValue: "",
+            errorNotice: true,
         };
 
         this.recaptchaRef = React.createRef();
@@ -353,6 +365,9 @@ class FormPartners extends React.Component {
         this.setState({
             recaptchaValue: this.recaptchaRef.current.getValue()
         })
+        this.setState({
+            errorNotice: false
+        }) 
     }
 
     onChangeCheckbox = (e) => {
@@ -391,8 +406,21 @@ class FormPartners extends React.Component {
         }
     };
 
+    showNotice = () => {
+        if (this.state.recaptchaValue.length > 0) {
+            this.setState({
+                errorNotice: false
+            })            
+        } else {
+            this.setState({
+                errorNotice: false
+            })            
+        }
+    }
+
     onClick = () => {
         this.request();
+        this.showNotice();
     }
 
 
@@ -540,6 +568,11 @@ class FormPartners extends React.Component {
                                 sitekey={RecaptchaKeys.public}
                             />
                         </div>
+                        {this.state.errorNotice ? null :
+                        <div className="errorBlock notice"><img width="15px" src={iconNotice}/><Text fontSize={13} fontWeight={500}>reCAPTCHA is required</Text>
+                        </div> 
+                        }
+                        
 
                         <div className="checkBoxWrapper">
                     <InputCheckbox
