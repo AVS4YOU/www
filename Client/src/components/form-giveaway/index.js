@@ -8,11 +8,12 @@ import InputCheckbox from '../input-checkbox';
 import InfoPopup from '../info-popup';
 import {VideoReMaker} from '../../../static/products-info';
 
-import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
+import {RecaptchaKeys} from '../../../static/static-data';
 
 import iconKnowledge from '../../images/giveaway/icon-books.svg'
 import iconTips from '../../images/giveaway/icon-tips.svg'
 import iconQuestion from '../../images/giveaway/icon-question.svg'
+import iconNotice from '../../images/giveaway/notice.svg'
 
 const StyledForm = styled.div`
     padding: 40px;
@@ -83,6 +84,16 @@ const StyledForm = styled.div`
         &:before{
             content: none;
         }
+    }
+    
+    .notice{
+        display: grid;
+        grid-gap: 14px;
+        grid-template-columns: 12px 1fr;
+        align-items: center;
+        padding-left: 12px;
+        margin-top: -15px;
+
     }
 
     .getCouponButton {
@@ -183,6 +194,7 @@ class FormPartners extends React.Component {
             checkBoxClassName: "",
             formSended: false,
             recaptchaValue: "",
+            errorNotice: true,
         };
 
         this.recaptchaRef = React.createRef();
@@ -198,21 +210,13 @@ class FormPartners extends React.Component {
     request = () => {
         if (this.verifyData()) {
 
-            this.sendForm({
-                UserEmail: this.state.email.value,
-                UserName: this.state.name.value,
-                RecaptchaValue: this.state.recaptchaValue,
-                MailPatternName: "ru-reseller.html",
-                MailType: "reseller"
-            });
             
             this.sendData({
                 name: this.state.name.value,
                 email: this.state.email.value,
                 
             });
-            console.log(this.state.email.value);
-            console.log(this.state.name.value);
+            
 
         } else {
             console.log("form invalid")
@@ -361,6 +365,9 @@ class FormPartners extends React.Component {
         this.setState({
             recaptchaValue: this.recaptchaRef.current.getValue()
         })
+        this.setState({
+            errorNotice: false
+        }) 
     }
 
     onChangeCheckbox = (e) => {
@@ -399,38 +406,24 @@ class FormPartners extends React.Component {
         }
     };
 
-    onClick = () => {
-        this.request();
-    }
-
-    sendForm = async (data) => {
-
-        let url = AjaxUrls.domain + "api/email";
-
-        try {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data),
-            });
-
-            let responseTest = await response.text();
-
-            if (false) { //responseTest.indexOf("Error") > -1
-                console.log(responseTest)
-            } else {
-                this.setState({
-                    formSended: true
-                })
-                console.log("Email sended")
-            }
-
-        } catch (error) {
-            console.log(error)
+    showNotice = () => {
+        if (this.state.recaptchaValue.length > 0) {
+            this.setState({
+                errorNotice: false
+            })            
+        } else {
+            this.setState({
+                errorNotice: false
+            })            
         }
     }
+
+    onClick = () => {
+        this.request();
+        this.showNotice();
+    }
+
+
 
     sendData = async (data) => {
 
@@ -575,6 +568,11 @@ class FormPartners extends React.Component {
                                 sitekey={RecaptchaKeys.public}
                             />
                         </div>
+                        {this.state.errorNotice ? null :
+                        <div className="errorBlock notice"><img width="15px" src={iconNotice}/><Text fontSize={13} fontWeight={500}>reCAPTCHA is required</Text>
+                        </div> 
+                        }
+                        
 
                         <div className="checkBoxWrapper">
                     <InputCheckbox
