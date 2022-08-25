@@ -366,7 +366,7 @@ class FormPartners extends React.Component {
             recaptchaValue: this.recaptchaRef.current.getValue()
         })
         this.setState({
-            errorNotice: false
+            errorNotice: true
         }) 
     }
 
