@@ -409,7 +409,7 @@ class FormPartners extends React.Component {
     showNotice = () => {
         if (this.state.recaptchaValue.length > 0) {
             this.setState({
-                errorNotice: false
+                errorNotice: true
             })            
         } else {
             this.setState({
