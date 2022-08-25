@@ -198,21 +198,13 @@ class FormPartners extends React.Component {
     request = () => {
         if (this.verifyData()) {
 
-            this.sendForm({
-                UserEmail: this.state.email.value,
-                UserName: this.state.name.value,
-                RecaptchaValue: this.state.recaptchaValue,
-                MailPatternName: "ru-reseller.html",
-                MailType: "reseller"
-            });
             
             this.sendData({
                 name: this.state.name.value,
                 email: this.state.email.value,
                 
             });
-            console.log(this.state.email.value);
-            console.log(this.state.name.value);
+            
 
         } else {
             console.log("form invalid")
@@ -403,34 +395,7 @@ class FormPartners extends React.Component {
         this.request();
     }
 
-    sendForm = async (data) => {
 
-        let url = AjaxUrls.domain + "api/email";
-
-        try {
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data),
-            });
-
-            let responseTest = await response.text();
-
-            if (false) { //responseTest.indexOf("Error") > -1
-                console.log(responseTest)
-            } else {
-                this.setState({
-                    formSended: true
-                })
-                console.log("Email sended")
-            }
-
-        } catch (error) {
-            console.log(error)
-        }
-    }
 
     sendData = async (data) => {
 
