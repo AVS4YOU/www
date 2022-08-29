@@ -71,7 +71,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Video Remaker")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {VideoReMaker.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {VideoReMaker.releaseDD}/{VideoReMaker.releaseMM}/{VideoReMaker.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoReMaker.releaseYYYY}-{VideoReMaker.releaseMM}-{VideoReMaker.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
@@ -87,7 +87,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Video Editor")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {VideoEditor.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {VideoEditor.releaseDD}/{VideoEditor.releaseMM}/{VideoEditor.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoEditor.releaseYYYY}-{VideoEditor.releaseMM}-{VideoEditor.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
@@ -103,7 +103,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Video Converter")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {VideoConverter.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {VideoConverter.releaseDD}/{VideoConverter.releaseMM}/{VideoConverter.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {VideoConverter.releaseYYYY}-{VideoConverter.releaseMM}-{VideoConverter.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
@@ -115,7 +115,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Media Player")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {MediaPlayer.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {MediaPlayer.releaseDD}/{MediaPlayer.releaseMM}/{MediaPlayer.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {MediaPlayer.releaseYYYY}-{MediaPlayer.releaseMM}-{MediaPlayer.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
@@ -133,7 +133,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Audio Editor")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {AudioEditor.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {AudioEditor.releaseDD}/{AudioEditor.releaseMM}/{AudioEditor.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {AudioEditor.releaseYYYY}-{AudioEditor.releaseMM}-{AudioEditor.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
@@ -150,7 +150,7 @@ render(){
               <Text className="product-name" as="h5">{this.props.t("AVS Audio Converter")}</Text>
               <div className="tech-params">
                 <Text as="p">{this.props.t("Current Version")} {AudioConverter.version}</Text>
-                <Text as="p">{this.props.t("Release Date")} {AudioConverter.releaseDD}/{AudioConverter.releaseMM}/{AudioConverter.releaseYYYY}</Text>
+                <Text as="p">{this.props.t("Release Date")} {AudioConverter.releaseYYYY}-{AudioConverter.releaseMM}-{AudioConverter.releaseDD}</Text>
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
