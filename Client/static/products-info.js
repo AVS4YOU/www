@@ -1,7 +1,7 @@
 let VideoEditor = {
-    version: "9.7.2.397",
-    releaseDD: "28",
-    releaseMM: "07",
+    version: "9.7.3.399",
+    releaseDD: "08",
+    releaseMM: "09",
     releaseYYYY: "2022",
     size: "170.58",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
