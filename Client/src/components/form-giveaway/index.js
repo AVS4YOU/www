@@ -483,7 +483,7 @@ class FormPartners extends React.Component {
                     </div>
                     <Button
                             className="getCouponButton"
-                            href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                            href="https://www.avs4you.com/downloads/GOTD/AVSVideoReMaker_GOTD_2022.09.zip"
                             backgroundColor="orange"
                             padding="13px 0"
                             fontSize={18}
