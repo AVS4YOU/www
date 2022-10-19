@@ -45,7 +45,7 @@ render(){
             {this.props.t("Company")}
           </Text>
           <Text className="body-company__text">
-            <b>{this.props.t("Founded in 2004")}</b>{this.props.t(",")} {this.props.t("Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances")}
+            {this.props.t("We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers")}
           </Text>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
