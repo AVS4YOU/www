@@ -6,29 +6,36 @@
         padding-top: 120px;
 
         &.first{
-            padding-top:40px;
-            padding-bottom:120px;
-            background-color:#F9F9F9;
+            position: relative;
+            padding-top: 104px;
+            padding-bottom: 118px;
+            background: url(../images/register/halloween/register-pc-1.png) no-repeat top left -140px / 595px 496px,
+                        url(../images/register/halloween/register-pc-2.png) no-repeat bottom left -62px / 620px 630px,
+                        url(../images/register/halloween/register-pc-3.png) no-repeat top 169px right 49px / 346px 197px,
+                        url(../images/register/halloween/register-pc-4.png) no-repeat bottom right / 744px 734px,
+                        url(../images/register/halloween/register-pc-bg.jpg) repeat-x top center / auto 100%;
         }
     }
 
     .sale-text{
         display: table;
         margin: auto;
-        margin-top: 20px;
 
         &>h1{
             color:#F67607;
-            font-size:52px;
-            font-weight: 600;
+            font-size: 52px;
+            line-height: 71px;
+            font-weight: 700;
         }
     }
 
     .get-tools-text{
-        color:#32393E;
+        color: #ffffff;
         text-align:center;
-        font-size: 24px;
-        margin-top: 10px;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 600;
+        margin-top: 22px;
     }
 
     .product-boxes-image{
@@ -38,23 +45,26 @@
     }
 
     .buy-block-wrapper{
-        display: table;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
+        gap: 65px;
+        padding: 0 15px;
         border-spacing: 90px 0px;
-        max-width: 1130px;
+        max-width: 975px;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 87px;
 
         .buy-block{
             display: inline-block;
-            padding: 40px 0;
+            padding: 34px 0 40px;
             background-color: #ffffff;
-            box-shadow: 3px 3px 24px #e3e3e3;
             border-radius: 10px;
-            min-width: 440px;
+            width: 100%;
+            max-width: 100%;
             
             &.unlimited-block{
                 padding: 0;
-                margin-left: 65px;
 
                 .unlimited-block-content{
                     border: 1px solid #FB8A29;
@@ -62,9 +72,8 @@
                     border-radius: 10px;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
-                    padding-top: 42px;
-                    padding-bottom:40px;
-                    
+                    padding-top: 34px;
+                    padding-bottom: 39px;
                 }
 
                 .popular-banner{
@@ -76,6 +85,7 @@
 
                     p{
                         font-size: 16px;
+                        line-height: 22px;
                         text-align: center;
                         color:#ffffff;
                     }
@@ -85,62 +95,65 @@
 
         .subscription-time-text{
             font-size: 40px;
-            font-weight: bold;
+            line-height: 54px;
+            font-weight: 600;
             text-align: center;
         }
 
         .access-sub-text{
             font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
             text-align: center;
-            font-weight: 500;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
         }
 
         .access-limit{
+            margin-bottom: 33px;
+            padding: 17px 16px 14px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
             text-align:center;
             background-color:#F9F9F9;
-            padding: 16px;
-            font-size: 17px;
-            font-weight: 600;
-            margin-bottom: 25px;
         }
 
         .sub-now-text{
-            font-size: 18px;
+            font-size: 20px;
+            line-height: 27px;
             color: #333333;
             text-align: center;
-            font-weight: 600;
+            font-weight: 400;
         }
 
         .price-block{
             background-color: #F9F9F9;
-            margin: auto;
-            margin-top: 16px;
-            margin-bottom: 24px;
+            margin: 15px auto 24px;
             box-sizing: border-box;
             text-align: center;
             display: block;
             max-width: 274px;
-            padding: 16px 0px;
+            padding: 17px 8px 13px;
             border-radius: 10px;
 
             .prev-price-text{
                 font-size: 16px;
+                line-height: 22px;
                 text-decoration: line-through;
                 text-align: center;
                 font-weight: 600;
-                margin-top: 5px;
             }
     
             .current-price-text{
                 font-size: 48px;
-                font-weight: bold;
+                line-height: 64px;
+                font-weight: 600;
                 text-align: center;
-                margin-bottom: 5px;
                 color:#F59541;
 
                 span{
                     font-size: 24px;
+                    line-height: 33px;
                     vertical-align: super;
                 }
             }
@@ -148,12 +161,13 @@
 
         .limited-offer-text{
             font-size: 16px;
+            line-height: 22px;
             color: #555555;
             text-align: center;
-            font-weight: 600;
+            font-weight: 400;
 
             &.last{
-                margin-bottom:25px;
+                margin-bottom: 34px;
             }
         }
 
@@ -161,9 +175,11 @@
             display: block;
             margin: auto;
             text-align: center;
-            max-width: 170px;
+            max-width: 227px;
 
-            p{
+            p {
+                line-height: 25px;
+                font-weight: 700;
                 text-transform: uppercase;
             }
         }
@@ -172,7 +188,7 @@
     .availableCarts{
         max-width: 470px;
         margin:auto;
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     .why-choose-wrapper{
@@ -275,42 +291,94 @@
     }
 }
 
+@media (max-width: 2000px) {
+    .register{
+        .screen-wrapper{
+            &.first {
+                background: url(../images/register/halloween/register-pc-1.png) no-repeat top left -118px / 454px 390px,
+                            url(../images/register/halloween/register-pc-2.png) no-repeat bottom left -40px / 402px 409px,
+                            url(../images/register/halloween/register-pc-3.png) no-repeat top 169px right 49px / 270px 153px,
+                            url(../images/register/halloween/register-pc-4.png) no-repeat bottom right / 430px 436px,
+                            url(../images/register/halloween/register-pc-bg.jpg) repeat-x top center / auto 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1480px) {
+    .register{
+        .screen-wrapper{
+            &.first {
+                background: url(../images/register/halloween/register-pc-1.png) no-repeat top left -118px / 367px 315px,
+                            url(../images/register/halloween/register-pc-2.png) no-repeat bottom left -40px / 276px 280px,
+                            url(../images/register/halloween/register-pc-3.png) no-repeat top 169px right 49px / 226px 129px,
+                            url(../images/register/halloween/register-pc-4.png) no-repeat bottom right / 280px 276px,
+                            url(../images/register/halloween/register-pc-bg.jpg) repeat-x top center / auto 100%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .register { 
-        .buy-block-wrapper{
-            display:block;
+        .screen-wrapper{
+            &.first {
+                padding-top: 53px;
+                padding-bottom: 196px;
+                background: url(../images/register/halloween/register-tablet-1.png) no-repeat top left / 225px 246px,
+                            url(../images/register/halloween/register-tablet-2.png) no-repeat bottom left / 513px 773px,
+                            url(../images/register/halloween/register-tablet-3.png) no-repeat top 178px right 11px / 152px 53px,
+                            url(../images/register/halloween/register-tablet-4.png) no-repeat bottom right / 253px 357px,
+                            url(../images/register/halloween/register-tablet-bg.jpg) repeat-x top center / auto 100%;
+            }
+        }
+
+        .sale-text{
+            text-align: center;
+
+            & > h1 {
+                font-size: 48px;
+                line-height: 65px;
+            }
+        }
+
+        .get-tools-text {
+            margin-top: 16px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        .mobile-br {
+            display: block;
+        }
+
+        .buy-block-wrapper {
+            margin-top: 68px;
+            gap: 28px;
 
             .buy-block{
-                display: block;
-                max-width: 600px;
-                margin: auto;
-
-                &.unlimited-block{
-                    margin: auto; 
-                }
-
-                &:first-child{
-                    margin-bottom: 40px;
-                }
+                margin-top: auto;
             }
+        }
+
+        .availableCarts {
+            margin-top: 60px;
         }
     }
 }
 
 @media (max-width: 1100px) {
     .register{ 
+        .buy-block-wrapper{
+            .access-limit {
+                padding: 17px 80px 14px;
+            }
+        }
+
         .slick-slide{
             .imgLeft{
                 padding-top:0;
             }
-        }
-
-        .sale-text > h1{
-            font-size: 34px;
-        }
-
-        .buy-block-wrapper{
-            grid-gap: 25px;
         }
     }
 }
@@ -326,22 +394,28 @@
             padding: 0 10px;
         }
 
-        .screen-wrapper{
+        .screen-wrapper {
             padding: 10px;
             padding-top: 35px;
 
             &.first{
-                padding-top:35px;
-                padding-bottom:60px;
+                padding-top: 53px;
+                padding-bottom: 190px;
+                background: url(../images/register/halloween/register-mobile-1.png) no-repeat top left / 319px 912px,
+                            url(../images/register/halloween/register-mobile-2.png) no-repeat bottom left / 167px 165px,
+                            url(../images/register/halloween/register-mobile-3.png) no-repeat bottom right / 279px 314px,
+                            url(../images/register/halloween/register-mobile-bg.jpg) repeat-x top center / auto 100%;
             }
         }
 
-        .availableCarts{
-            display:none;
-        }
+        .buy-block-wrapper {
+            .limited-offer-text{
+                font-weight: 500;
+            }
 
-        .buy-block-wrapper .limited-offer-text{
-            font-weight: 500;
+            .access-limit {
+                padding: 17px 16px 14px;
+            }
         }
 
         .why-choose-wrapper{ 
@@ -404,20 +478,23 @@
         }
 
         .sale-text > h1{
-            font-size: 36px;
+            font-size: 30px;
+            line-height: 41px;
             text-align: center;
             font-weight: 700;
         }
 
         .get-tools-text{
-            font-size: 16px;
+            line-height: 22px;
         }
 
-        .buy-block-wrapper{
-            margin-top:40px;
+        .buy-block-wrapper {
+            grid-template-columns: initial;
+            margin-top: 24px;
+            padding: 0;
 
             .buy-block{
-                min-width:0;
+                padding: 24px 0;
             }
 
             .current-price-text{
@@ -426,13 +503,59 @@
     
             .subscription-time-text{
                 font-size: 28px;
+                line-height: 38px;
             }
-    
-            .prev-price-text,
-            .limited-offer-text,
-            .sub-now-text,
-            .access-sub-text{
+
+            .access-sub-text {
+                margin-bottom: 13px;
+                line-height: 22px;
+            }
+
+            .access-limit {
+                margin-bottom: 32px;
+                padding: 10px 8px 9px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .sub-now-text {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            .price-block {
+                padding: 16px 0 15px;
+                margin: 12px auto 32px;
+
+                .prev-price-text {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+
+                .current-price-text {
+                    font-size: 40px;
+                    line-height: 54px;
+                    font-weight: 400;
+                }
+            }
+
+            .limited-offer-text {
                 font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+
+                &.last {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .buy-block-button {
+                max-width: 202px;
+
+                p {
+                    font-weight: 600;
+                }
             }
         }
 

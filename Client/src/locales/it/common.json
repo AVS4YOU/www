@@ -547,6 +547,7 @@
     "Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development" : "Online Media Technologies Ltd. è la proprietaria di AVS4YOU.com, una società leader mondiale nello sviluppo di software multimediali",
     "Founded in 2004" : "Fondata nel 2004",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances" : "Online Media Technologies Ltd. è una società informatica specializzata nello sviluppo di soluzioni audio e video per utenti finali e sviluppatori professionisti. I nostri programmi pluripremiati hanno guadagnato reputazione tra milioni di utenti nel mondo. Stando a stretto contatto con le ultime tendenze del mondo multimediale, abbiamo creato dei software che permettono di lavorare con audio e video in modo fluido ed efficiente, sempre al passo con le innovazioni.",
+    "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "Siamo una società informatica specializzata nello sviluppo di soluzioni audio e video per utenti finali e sviluppatori professionisti.",
     "Staff members" : "Membri dello staff",
     "Millions" : "Milioni",
     "Of happy users" : "di utenti soddisfatti",
@@ -1537,8 +1538,8 @@
 	"header_support_avs4you_faq" : "https://support.avs4you.com/it/faq.aspx",
 	"avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php",
 
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=it&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
 
@@ -1669,8 +1670,12 @@
     "colorCoupon" : "sull'abbonamento illimitato AVS4YOU con il codice coupon",
     "nameCoupon" : "Flower22",
     "endingBanner" : "!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=Flower22&CLEAN_CART=ALL",
-    
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=Treat22&CLEAN_CART=ALL",
+    "Halloween Treat!": "Dolcetto di Halloween!",
+    "Save 20% Off with a coupon code": "Risparmia il 20% di sconto con un codice coupon",
+    "Treat22": "Treat22",
+    "Treat22_2": "",
+
     "LinkDownload" : "https://www.onlyoffice.com/it/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVS22XSM&CLEAN_CART=ALL"

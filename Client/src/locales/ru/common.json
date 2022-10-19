@@ -562,6 +562,7 @@
   "Founded in 2004": "Компания была основана в 2004 году.",
   "," : " ",
   "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances": "Online Media Technologies Ltd. - это высокотехнологичная IT-компания, которая специализируется на разработке инновационных видео- и аудиорешений для конечных пользователей и профессиональных разработчиков. Наши продукты заслужили высокую репутацию среди миллионов пользователей по всему миру. Работая с учетом последних тенденций в мире мультимедиа, мы создаем программные инструменты, которые делают вашу работу с видео и аудио плавной и эффективной, а также позволяют вам идти в ногу с передовыми достижениями в области высоких технологий.",
+  "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "Мы - высокотехнологичная IT-компания, которая специализируется на разработке инновационных видео- и аудиорешений для конечных пользователей и профессиональных разработчиков.",
   "Staff members": "Наша команда",
   "Millions": "Миллионы",
   "Of happy users": "счастливых пользователей",
@@ -1581,8 +1582,8 @@
 	"header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/index.aspx",
 	"header_support_avs4you_faq" : "https://support.avs4you.com/faq.aspx",
 	
-  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+  "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+  "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=RUB&DCURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
   "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANG=ru&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
 	"onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/avs-video-converter/",
@@ -1711,8 +1712,9 @@
     "colorCoupon" : "купоном",
     "nameCoupon" : "Flower22",
     "endingBanner" : "на безлимитную подписку AVS4YOU!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=Flower22&CLEAN_CART=ALL",
-    
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=Treat22&CLEAN_CART=ALL",
+    "Treat22_2": "",
+
     "LinkDownload" : "https://www.onlyoffice.com/ru/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL"
