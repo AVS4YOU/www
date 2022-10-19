@@ -342,9 +342,8 @@ render(){
             </script>}
         </Helmet>
         <div className="screen-wrapper first">
-        <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
           <div className="sale-text">
-            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`${mounth[currentMounth]}`)} {this.props.t("only!")}</Text>
+            <Text as="h1">{this.props.t("70% OFF!")} <br className="mobile-br"/> {this.props.t("In")} {this.props.t(`Halloween`)} {this.props.t("only!")}</Text>
           </div>
         <Text className="get-tools-text" as="h5">{this.props.t("AVS4YOU Multimedia Suite for Windows")}</Text>
           <div className="buy-block-wrapper">
@@ -400,7 +399,7 @@ render(){
             <ImageGQL imageName="register-available-carts.png"/>
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
-         </div>
+        </div>
         <div className="screen-wrapper">
           <Text as="h2" className="common__heading">
           {this.props.t("Why choose AVS4YOU?")}
