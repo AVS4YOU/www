@@ -559,6 +559,7 @@
     "Founded in 2004":"会社 2004",
     "Company":"創業",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances":"Online Media Technologies Ltd. は、特にエンドユーザー、専門開発者向けの画期的な動画、音声ソリューションを開発する IT ハイテク技術会社です。当社の賞受賞製品は世界中から数百万人を超えるユーザーに高く支持されています。マルチメディア産業での最新のトレンドを扱い、当社ではデジタルビデオや音声を使用した作業をスムーズにできるソフトウェアツールを開発しています",
+    "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "弊社は、特にエンドユーザー、専門開発者向けの画期的な動画、音声ソリューションを開発する IT ハイテク技術会社です。",
     "Staff members":"スタッフメンバー",
     "Millions":"数百万の",
     "Of happy users":"ポジティブユーザー",
@@ -1615,8 +1616,8 @@
 	"header_support_avs4you_faq" : "https://support.avs4you.com/jp/faq.aspx",
 
    
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
     
     "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
@@ -1726,8 +1727,12 @@
     "nameCoupon" : "Flower22",
     "colorCoupon" : "割引クーポン",
     "endingBanner" : "で新しいスタートを得る",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Flower22&CLEAN_CART=ALL",
-      
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Treat22&CLEAN_CART=ALL",
+    "Halloween Treat!": "ハロウィン・トリート！",
+    "Save 20% Off with a coupon code": "クーポンで20％割引",
+    "Treat22": "",
+    "Treat22_2": "Treat 22",
+
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL"
