@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.36
+
+### New
+* Added event Halloween Treat!
+* Styled register.aspx page for Halloween!
+### Fixes
+* Fixed footer text
+* Update buy now links
+
 ## 1.0.35
 
 ### New
