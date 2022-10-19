@@ -17,135 +17,138 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/easter-left.svg";
- import PlAVSRight from "../images/pl/easter-right.svg"; 
+ import PlAVSBg from "../images/pl/halloween-bg.png";
+ import PlAVSLeft from "../images/pl/halloween-left.png";
+ import PlAVSRight from "../images/pl/halloween-right.png";
+
  const StyledPL =styled.div`
- position: relative;
- text-align: center;
- span {
-   text-align: center;
- }
+  position: relative;
+  text-align: center;
 
- .PLnewAvs{
-    display: none;
-    font-size: 20px;
-    background-color: #486D08;
+  .PLnewAvs {
     width: 100%;
-    height: 60px;
- }
-   .PLnewAvsText{
-     position: static;
-     z-index: 25;
-     color: #fff;
-     font-size: 18px;
-     font-weight: 600;
-     top: 13px;
-     margin: auto;
-     width: 100%;
-     font-family: 'Open Sans';
-     letter-spacing: 1px;
-    }
+    height: 64px;
+    background-image: url(${PlAVSBg});
+    background-color: #0C2941;
+    background-repeat: repeat;
+    background-position: center;
 
- .PLnewAvs a {
-      text-decoration: none !important;
-      position: relative;
-      z-index: 11;
-      height: 60px;
+    a {
       display: flex;
-      align-items: center;
       justify-content: center;
-      width: 100vw;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 25;
+      text-decoration: none;
+    }
+  }
+
+  .PLnewAvsText {
+    display: block;
+    padding: 4px 8px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .PLnewAvsTextAccent {
+    color: #f59541;
+  }
+
+  .PLnewAvsLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 488px;
+    height: 64px;
+    z-index: 10;
+    background-image:url(${PlAVSLeft});
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+
+  .PLnewAvsRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 64px;
+    width: 528px;
+    z-index: 10;
+    background-image: url(${PlAVSRight});
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+
+  @media (max-width: 2000px) {
+    .PLnewAvsRight {
+      left: 87%;
     }
 
-.PLnewAvsTextCoupon{
-    color: #ffbd59;
-    font-weight: 700 !important;
- }
-
-  .PLnewAvsCoupon {
-    color: #486D08;
-    background-color: #ffbd59;
-    padding: 1px 10px;
-    font-weight: 700 !important;
+    .PLnewAvsLeft {
+      left: initial;
+      right: 87%;
+    }
   }
- 
-   .PLAvs {
-     position: absolute;
-     width: 900px;
-   }
-   .PLnewAvsLeft{
-     height: 60px;
-     z-index:10;
-     background-image:url(${PlAVSLeft});
-     width: 550px;
-     position: absolute;
-     right: 80%;
-     top: 0;
-     background-repeat: no-repeat;
-   }
-   .PLnewAvsCenter{
-     height: 48px;
-     margin: auto;
-     z-index:9;
-   }
-   .PLnewAvsRight{
-     height: 60px;
-     z-index:10;
-     background-image:url(${PlAVSRight});
-     width: 550px;
-     position: absolute;
-     left: 80%;
-     top: 0;
-     background-repeat: no-repeat;
-   }
 
-   @media (max-width: 1700px) {
-    .PLnewAvsRight{
-      left: 90%;
+  @media (max-width: 1230px) {
+    .PLnewAvsRight {
+      left: 93%;
     }
 
-   .PLnewAvsLeft{
-      right: 90%;
+    .PLnewAvsLeft {
+      left: initial;
+      right: 93%;
+    }
   }
-}
  
-   @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
-      height: 60px;
- }
-  
-     .PLnewAvsText{
-       font-size: 12px;
-    padding: 0 6px;
-    position: relative;
-    top: 0;
-   }
-
-  .PLnewAvsRight{
-    height: 60px;
-    top: 0;
- }
-
-  .PLnewAvsLeft{
-    height: 60px;
-    top: 0;
-}
-}
-
- @media (max-width: 500px) {
-   .PLnewAvsText{
-    display: block;
- }
-
- .PLnewAvsLeft{
-    left: -468px;
- }
-
- .PLnewAvsRight{
-    left: 360px;
-}
+      height: 64px;
     }
+  
+    .PLnewAvsText {
+      position: relative;
+      top: 0;
+      font-size: 12px;
+    }
+
+    .PLnewAvsRight {
+      height: 64px;
+      top: 0;
+      left: 85%;
+    }
+
+    .PLnewAvsLeft {
+      height: 64px;
+      top: 0;
+      right: 85%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .PLnewAvsText {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .PLnewAvsText {
+      max-width: 208px;
+    }
+
+    .PLnewAvsLeft {
+      right: 84%;
+    }
+
+    .PLnewAvsRight {
+      left: 84%;
+    }
+  }
  `;
  
  const StyledLayout = styled.div`
@@ -287,7 +290,7 @@
          <div className="PLnewAvs">
           <div className="PLnewAvsLeft"></div>
               <a href={this.props.t("avs pl link")} target="_blank">
-                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")}</span>
+                <span className="PLnewAvsText"><span className="PLnewAvsTextAccent"> {this.props.t("Halloween Treat!")} </span> <span className="PLnewAvsTextAccent"> {this.props.t("Treat22_2")}</span> {this.props.t("Save 20% Off with a coupon code")} <span className="PLnewAvsTextAccent"> {this.props.t("Treat22")}</span></span>
               </a>
           <div className="PLnewAvsRight"></div>
          </div>
