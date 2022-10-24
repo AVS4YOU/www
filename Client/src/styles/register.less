@@ -45,7 +45,9 @@
     }
 
     .buy-block-wrapper{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 65px 1fr;       
         grid-template-columns: repeat(2, 1fr);
         align-items: end;
         gap: 65px;
@@ -54,6 +56,12 @@
         max-width: 975px;
         margin: auto;
         margin-top: 87px;
+
+        .buy-block:nth-of-type(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        }
+          
 
         .buy-block{
             display: inline-block;
@@ -65,6 +73,8 @@
             
             &.unlimited-block{
                 padding: 0;
+                -ms-grid-row: 1;
+                -ms-grid-column: 3;
 
                 .unlimited-block-content{
                     border: 1px solid #FB8A29;
