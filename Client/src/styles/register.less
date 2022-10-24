@@ -45,36 +45,23 @@
     }
 
     .buy-block-wrapper{
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 65px 1fr;       
-        grid-template-columns: repeat(2, 1fr);
-        align-items: end;
-        gap: 65px;
-        padding: 0 15px;
+        display: table;
         border-spacing: 90px 0px;
-        max-width: 975px;
+        max-width: 1130px;
         margin: auto;
-        margin-top: 87px;
-
-        .buy-block:nth-of-type(1) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 1;
-        }
-          
+        margin-top: 80px;
 
         .buy-block{
             display: inline-block;
-            padding: 34px 0 40px;
+            padding: 40px 0;
             background-color: #ffffff;
+            box-shadow: 3px 3px 24px #e3e3e3;
             border-radius: 10px;
-            width: 100%;
-            max-width: 100%;
-            
+            min-width: 440px;
+
             &.unlimited-block{
                 padding: 0;
-                -ms-grid-row: 1;
-                -ms-grid-column: 3;
+                margin-left: 65px;
 
                 .unlimited-block-content{
                     border: 1px solid #FB8A29;
@@ -82,8 +69,9 @@
                     border-radius: 10px;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
-                    padding-top: 34px;
-                    padding-bottom: 39px;
+                    padding-top: 42px;
+                    padding-bottom:40px;
+
                 }
 
                 .popular-banner{
@@ -95,7 +83,6 @@
 
                     p{
                         font-size: 16px;
-                        line-height: 22px;
                         text-align: center;
                         color:#ffffff;
                     }
@@ -105,65 +92,62 @@
 
         .subscription-time-text{
             font-size: 40px;
-            line-height: 54px;
-            font-weight: 600;
+            font-weight: bold;
             text-align: center;
         }
 
         .access-sub-text{
             font-size: 18px;
-            line-height: 25px;
-            font-weight: 400;
             text-align: center;
-            margin-bottom: 22px;
+            font-weight: 500;
+            margin-bottom: 25px;
         }
 
         .access-limit{
-            margin-bottom: 33px;
-            padding: 17px 16px 14px;
-            font-size: 18px;
-            line-height: 24px;
-            font-weight: 400;
             text-align:center;
             background-color:#F9F9F9;
+            padding: 16px;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 25px;
         }
 
         .sub-now-text{
-            font-size: 20px;
-            line-height: 27px;
+            font-size: 18px;
             color: #333333;
             text-align: center;
-            font-weight: 400;
+            font-weight: 600;
         }
 
         .price-block{
             background-color: #F9F9F9;
-            margin: 15px auto 24px;
+            margin: auto;
+            margin-top: 16px;
+            margin-bottom: 24px;
             box-sizing: border-box;
             text-align: center;
             display: block;
             max-width: 274px;
-            padding: 17px 8px 13px;
+            padding: 16px 0px;
             border-radius: 10px;
 
             .prev-price-text{
                 font-size: 16px;
-                line-height: 22px;
                 text-decoration: line-through;
                 text-align: center;
                 font-weight: 600;
+                margin-top: 5px;
             }
-    
+
             .current-price-text{
                 font-size: 48px;
-                line-height: 64px;
-                font-weight: 600;
+                font-weight: bold;
                 text-align: center;
+                margin-bottom: 5px;
                 color:#F59541;
 
                 span{
                     font-size: 24px;
-                    line-height: 33px;
                     vertical-align: super;
                 }
             }
@@ -171,13 +155,12 @@
 
         .limited-offer-text{
             font-size: 16px;
-            line-height: 22px;
             color: #555555;
             text-align: center;
-            font-weight: 400;
+            font-weight: 600;
 
             &.last{
-                margin-bottom: 34px;
+                margin-bottom:25px;
             }
         }
 
@@ -185,20 +168,17 @@
             display: block;
             margin: auto;
             text-align: center;
-            max-width: 227px;
+            max-width: 170px;
 
-            p {
-                line-height: 25px;
-                font-weight: 700;
+            p{
                 text-transform: uppercase;
             }
         }
     }
-
     .availableCarts{
         max-width: 470px;
         margin:auto;
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     .why-choose-wrapper{
@@ -209,27 +189,23 @@
         margin-top: 100px;
         margin-bottom: 130px;
         border-spacing: 15px 0;
-
         .first-tr{
             .why-choose-item{
                 padding-bottom: 80px;
             }
         }
-
         .why-choose-item{
             max-width: 165px;
             margin:auto;
             margin-top: 0;
             display: table-cell;
         }
-
         .icon{
             max-width: 86px;
             margin:auto;
             margin-bottom:10px;
             display: block;
         }
-
         .text{
             color:#000000;
             font-size: 24px;
@@ -240,24 +216,20 @@
                 color:#1E72D2;
         }
     }
-
     .questions-wrapper{
         background-color: #F9F9F9;
         padding-top:110px;
         padding-bottom:130px;
         
     }
-
     .panelCollapse{
         box-shadow: none;
         border-radius: 0;
         border-bottom: 1px solid #E4E4E4;
-
         &:first-child{
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
-
         &:last-child{
             margin-bottom:0px;
             border:none;
@@ -265,13 +237,11 @@
             border-bottom-right-radius: 5px;
         }
     }
-
     .questions-block{
         max-width: 944px;
         margin: auto;
         margin-top: 90px;
         box-shadow: 3px 3px 24px rgb(240, 240, 240);
-
         .panelName{
             padding: 30px 70px;
             padding-left: 40px;
@@ -280,7 +250,6 @@
             font-weight: 600;
             color:#000000;
             cursor: pointer;
-
             &:before{
                 width: 16px;
                 height: 24px;
@@ -288,12 +257,10 @@
                 right: 25px;
             }
         }
-
         .collapseContent{
             padding: 35px 40px;
             padding-top: 0px;
         }
-
         .hiddenText{
             color:#666666;
             font-size: 16px;
@@ -363,11 +330,20 @@
         }
 
         .buy-block-wrapper {
+            display:block;
             margin-top: 68px;
             gap: 28px;
 
             .buy-block{
-                margin-top: auto;
+                display: block;
+                max-width: 600px;
+                margin: auto;
+                &.unlimited-block{
+                    margin: auto; 
+                }
+                &:first-child{
+                    margin-bottom: 40px;
+                }
             }
         }
 
