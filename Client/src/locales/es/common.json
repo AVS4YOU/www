@@ -493,7 +493,6 @@
     "jpn" : ".",
     "jpAffiliate" : ".",
 
-
     "*****************************Buy Now page********************************" : "*****************************Página de cómpralo ya********************************",
     "AVS4YOU: Professional Multimedia Tools":"AVS4YOU: herramientas multimedia profesionales",
     "AVS4YOU Multimedia Suite for Windows":"Suite multimedia AVS4YOU para Windows",
@@ -554,6 +553,7 @@
     "Company":"Empresa",
     "Founded in 2004":"Fundada en 2004",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances":"Online Media Technologies Ltd. es una empresa de TI de alta tecnología especializada en desarrollar soluciones innovadoras de vídeo y audio para usuarios finales y desarrolladores profesionales. Nuestros productos galardonados se han ganado una reputación excelente entre millones de usuarios de todo el mundo. Trabajamos en contacto con las últimas tendencias del mundo multimedia, lo que nos permite crear herramientas de software para que trabajar con vídeo y audio digital te resulte sencillo y efectivo, y puedas mantenerte a la vanguardia de los últimos avances tecnológicos.",
+    "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "Somos una empresa de TI de alta tecnología especializada en desarrollar soluciones innovadoras de vídeo y audio para usuarios finales y desarrolladores profesionales. Nuestros productos galardonados se han ganado una reputación excelente entre millones de usuarios de todo el mundo. Trabajamos en contacto con las últimas tendencias del mundo multimedia, lo que nos permite crear herramientas de software para que trabajar con vídeo y audio digital te resulte sencillo y efectivo, y puedas mantenerte a la vanguardia de los últimos avances tecnológicos.",
     "Staff members":"Miembros del equipo",
     "Millions":"Millones",
     "Of happy users":"de usuarios satisfechos",
@@ -1585,8 +1585,8 @@
     "header_onlinehelp_avs4you" : "https://onlinehelp.avs4you.com/es/index.aspx",
     "header_support_avs4you_faq" : "https://support.avs4you.com/es/faq.aspx",
     "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php?lang=es",
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
     "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=es&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
   "*****************************SCREENSHOT********************************" : "*****************************SCREENSHOT********************************",
@@ -1709,8 +1709,12 @@
     "colorCoupon" : "con el código cupón",
     "nameCoupon" : "Flower22",
     "endingBanner" : "en la suscripción ilimitada de AVS4YOU!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Flower22&CLEAN_CART=ALL",
-    
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Treat22&CLEAN_CART=ALL",
+    "Halloween Treat!": "¡Golosinas de Halloween!",
+    "Save 20% Off with a coupon code": "Ahorre 20% de descuento con un código de cupón",
+    "Treat22": "Treat22",
+    "Treat22_2": "",
+
     "LinkDownload" : "https://www.onlyoffice.com/es/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL"

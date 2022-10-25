@@ -586,6 +586,7 @@
     "Company":"Société",
     "Founded in 2004":"Fondée à 2004",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances":"Online Media Technologies Ltd. est une société de haute technologie informatique spécialisée dans le développement de solutions vidéo et audio innovantes pour les utilisateurs finaux et les développeurs professionnels. Nos produits primés ont acquis une grande réputation auprès de millions d'utilisateurs dans le monde entier. En phase avec les dernières tendances du monde multimédia, nous créons des outils logiciels qui rendent votre travail en matière de vidéo et d'audio numériques fluide et efficace et vous permettent de rester à la pointe des hautes avancées technologiques.",
+    "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "Nous sommes une société de haute technologie informatique spécialisée dans le développement de solutions vidéo et audio innovantes pour les utilisateurs finaux et les développeurs professionnels. Nos produits primés ont acquis une grande réputation auprès de millions d'utilisateurs dans le monde entier. En phase avec les dernières tendances du monde multimédia, nous créons des outils logiciels qui rendent votre travail en matière de vidéo et d'audio numériques fluide et efficace et vous permettent de rester à la pointe des hautes avancées technologiques.",
     "Staff members":"Les membres du personnel",
     "Millions":"Des millions",
     "Of happy users":"d'utilisateurs satisfaits",
@@ -1616,8 +1617,8 @@
 	"header_support_avs4you_faq" : "https://support.avs4you.com/fr/faq.aspx",
     "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php?lang=fr",
 
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=1&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45TPjHU=&CLEAN_CART=ALL",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=1&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45TPjHU=&CLEAN_CART=ALL",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 	"onlinehelpHref" : "https://onlinehelp.avs4you.com/index.aspx/",
 	"guidesHref" : "https://www.avs4you.com/guides/index.aspx",
@@ -1750,8 +1751,12 @@
     "colorCoupon" : "avec le code promo",
     "nameCoupon" : "Flower22",
     "endingBanner" : "sur l'abonnement illimité AVS4YOU !",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Flower22&CLEAN_CART=ALL",
-     
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=Treat22&CLEAN_CART=ALL",
+    "Halloween Treat!": "Friandises pour Halloween !",
+    "Save 20% Off with a coupon code": "Obtenez 20 % de réduction avec us code de coupon",
+    "Treat22": "Treat22",
+    "Treat22_2": "",
+    
     "LinkDownload" : "https://www.onlyoffice.com/fr/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=AVS22XSM&CLEAN_CART=ALL"

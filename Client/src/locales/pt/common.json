@@ -426,6 +426,7 @@
     "Online Media Technologies Ltd. is the home of AVS4YOU.com, a global leader in multimedia software development": "A Online Media Technologies Ltd. é a casa do AVS4YOU.com, líder global no desenvolvimento de software multimídia",
     "Founded in 2004": "Fundada em 2004",
     "Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances": "a Online Media Technologies Ltd. é uma empresa de alta tecnologia de TI especializada no desenvolvimento de soluções inovadoras de vídeo e áudio para usuários finais e desenvolvedores profissionais. Nossos produtos são premiados e conquistaram uma ótima reputação entre milhões de usuários em todo o mundo. Trabalhando em contato com as últimas tendências do mundo multimídia, criamos ferramentas de software que tornam seu trabalho com vídeo e áudio digital suave e eficaz, permitindo que você se mantenha na vanguarda dos elevados avanços tecnológicos.",
+    "We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers": "Somos uma empresa de alta tecnologia de TI especializada no desenvolvimento de soluções inovadoras de vídeo e áudio para usuários finais e desenvolvedores profissionais. Nossos produtos são premiados e conquistaram uma ótima reputação entre milhões de usuários em todo o mundo. Trabalhando em contato com as últimas tendências do mundo multimídia, criamos ferramentas de software que tornam seu trabalho com vídeo e áudio digital suave e eficaz, permitindo que você se mantenha na vanguarda dos elevados avanços tecnológicos.",
     "Staff members": "funcionários",
     "Millions": "Milhões",
     "Of happy users": "de usuários satisfeitos",
@@ -1335,8 +1336,8 @@
 	"support avs4you faq" : "https://support.avs4you.com/faq.aspx",
     "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php",
 
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
     "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=pt&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
 	"onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/avs-video-converter/",
@@ -1466,8 +1467,9 @@
     "colorCoupon" : "coupon",
     "nameCoupon" : "Flower22",
     "endingBanner" : "on AVS4YOU Unlimited Subscription!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=pt&COUPON=Flower22&CLEAN_CART=ALL",
-    
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt&COUPON=Treat22&CLEAN_CART=ALL",
+    "Treat22_2": "",
+
     "LinkDownload" : "https://www.onlyoffice.com/pt/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&COUPON=AVS22XSM&CLEAN_CART=ALL"

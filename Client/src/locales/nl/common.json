@@ -1362,8 +1362,8 @@
 	"support avs4you faq" : "https://support.avs4you.com/faq.aspx",
     "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php",
 
-	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
-	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",
+	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
+	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLWw45a5hLk=",
     "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,ru,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 
 	"onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/avs-video-converter/",
@@ -1491,8 +1491,9 @@
     "colorCoupon" : "coupon",
     "nameCoupon" : "Flower22",
     "endingBanner" : "on AVS4YOU Unlimited Subscription!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=Flower22&CLEAN_CART=ALL",
-    
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=Treat22&CLEAN_CART=ALL",
+    "Treat22_2": "",
+
     "LinkDownload" : "https://www.onlyoffice.com/nl/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&COUPON=AVS22XSM&CLEAN_CART=ALL"
