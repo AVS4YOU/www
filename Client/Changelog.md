@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.37
+
+### New
+* Deleted event Halloween Treat!
+* Changed layout on `/register.aspx`
+* Added coupon banner for zh
+### Fixes
+* Fixed address, phone, map on `/about-us.aspx`
+
 ## 1.0.36
 
 ### New
