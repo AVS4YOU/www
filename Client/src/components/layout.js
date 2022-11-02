@@ -88,7 +88,7 @@
     }
 
     .PLnewAvsLeft {
-      left: initial;
+      left: auto;
       right: 76%;
     }
   }
@@ -99,7 +99,6 @@
     }
 
     .PLnewAvsLeft {
-      left: initial;
       right: 78%;
     }
   }
@@ -206,7 +205,8 @@
           cookies.set('SRC', parsed.SRC, { path: '/' });
         }
 
-        this.zhPathLanguage = window.location.pathname.includes("/zh");
+        const pageName = window.location.pathname;
+        this.couponBannerZhPath = pageName.includes("zh/register") || pageName.includes("zh/avs-video-editor");
    }
  
    componentWillUnmount() {
@@ -287,7 +287,7 @@
          </Helmet>
 
           {
-            this.zhPathLanguage && (
+            this.couponBannerZhPath &&
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
@@ -297,7 +297,6 @@
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
-            )
           }
 
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
