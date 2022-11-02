@@ -8,6 +8,7 @@
 * Added coupon banner for zh
 ### Fixes
 * Fixed address, phone, map on `/about-us.aspx`
+* Fixed translation on `/fr/register.aspx`
 
 ## 1.0.36
 
