@@ -430,6 +430,7 @@
 	"Get 5 professional multimedia programs in 1 package + Free upgrades + Free support" : "在一个软件包中获得5个专业多媒体程序+免费升级+免费支持",
 	"70% OFF!": "三折优惠!",
 	"In": "仅在",
+	"saleTextSign": "",
 	"only!": "份!",
 	"1 year": "1年",
 	"Unlimited": "无限",
@@ -1621,7 +1622,7 @@
  "discountCoupon" : "用八折优惠券",
  "nameCoupon" : "Flower22",
  "endingBanner" : "获得AVS4YOU无限期订阅!",
- "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zh&COUPON=Treat22&CLEAN_CART=ALL",
+ "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zy&ORDERSTYLE=nLWw45SpmLs=&COUPON=ASingle11&CLEAN_CART=ALL",
  "Treat22_2": "",
 
 "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",

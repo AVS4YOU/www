@@ -17,9 +17,8 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSBg from "../images/pl/halloween-bg.png";
- import PlAVSLeft from "../images/pl/halloween-left.png";
- import PlAVSRight from "../images/pl/halloween-right.png";
+ import PlAVSLeft from "../images/pl/asingle-left.svg";
+ import PlAVSRight from "../images/pl/asingle-right.svg";
 
  const StyledPL =styled.div`
   position: relative;
@@ -28,10 +27,7 @@
   .PLnewAvs {
     width: 100%;
     height: 64px;
-    background-image: url(${PlAVSBg});
-    background-color: #0C2941;
-    background-repeat: repeat;
-    background-position: center;
+    background-color: #FE9235;
 
     a {
       display: flex;
@@ -48,13 +44,14 @@
     display: block;
     padding: 4px 8px;
     font-family: "Open Sans";
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 700;
+    line-height: 27px;
     color: #ffffff;
   }
 
   .PLnewAvsTextAccent {
-    color: #f59541;
+    font-weight: 600;
   }
 
   .PLnewAvsLeft {
@@ -67,6 +64,7 @@
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     pointer-events: none;
   }
 
@@ -80,76 +78,75 @@
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     pointer-events: none;
   }
 
   @media (max-width: 2000px) {
     .PLnewAvsRight {
-      left: 87%;
+      left: 74%;
     }
 
     .PLnewAvsLeft {
-      left: initial;
-      right: 87%;
+      left: auto;
+      right: 76%;
     }
   }
 
   @media (max-width: 1230px) {
     .PLnewAvsRight {
-      left: 93%;
+      left: 78%;
     }
 
     .PLnewAvsLeft {
-      left: initial;
-      right: 93%;
+      right: 78%;
     }
   }
  
   @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
-      height: 64px;
+      height: 60px;
     }
   
-    .PLnewAvsText {
+    .PLnewAvsText{
+      font-size: 12px;
+      padding: 0 6px;
       position: relative;
       top: 0;
-      font-size: 12px;
     }
 
     .PLnewAvsRight {
-      height: 64px;
       top: 0;
-      left: 85%;
+      left: 70%;
+      height: 60px;
     }
 
     .PLnewAvsLeft {
-      height: 64px;
       top: 0;
-      right: 85%;
+      right: 70%;
+      height: 60px;
     }
-  }
 
-  @media (max-width: 768px) {
-    .PLnewAvsText {
-      max-width: 300px;
+    .PLnewAvsTextMobileBlock {
+      display: block;
     }
   }
 
   @media (max-width: 500px) {
-    .PLnewAvsText {
-      max-width: 208px;
+    .PLnewAvsText{
+      display: block;
     }
 
     .PLnewAvsLeft {
-      right: 84%;
+      right: 80%;
     }
 
     .PLnewAvsRight {
-      left: 84%;
+      left: 80%;
     }
   }
- `;
+`;
  
  const StyledLayout = styled.div`
    min-width: 300px;
@@ -207,6 +204,9 @@
         if (parsed.SRC) {
           cookies.set('SRC', parsed.SRC, { path: '/' });
         }
+
+        const pageName = window.location.pathname;
+        this.couponBannerZhPath = pageName.includes("zh/register") || pageName.includes("zh/avs-video-editor");
    }
  
    componentWillUnmount() {
@@ -285,17 +285,20 @@
  
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
- 
-         <StyledPL>
-         <div className="PLnewAvs">
-          <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("avs pl link")} target="_blank">
-                <span className="PLnewAvsText"><span className="PLnewAvsTextAccent"> {this.props.t("Halloween Treat!")} </span> <span className="PLnewAvsTextAccent"> {this.props.t("Treat22_2")}</span> {this.props.t("Save 20% Off with a coupon code")} <span className="PLnewAvsTextAccent"> {this.props.t("Treat22")}</span></span>
-              </a>
-          <div className="PLnewAvsRight"></div>
-         </div>
-         </StyledPL>
-         
+
+          {
+            this.couponBannerZhPath &&
+            <StyledPL>
+              <div className="PLnewAvs">
+                <div className="PLnewAvsLeft"></div>
+                  <a href={this.props.t("avs pl link")} target="_blank">
+                    <span className="PLnewAvsText">双11来了，使用<span className="PLnewAvsTextAccent">【ASingle11】</span><span class="PLnewAvsTextMobileBlock">代码获得无限订阅五折优惠</span></span>
+                  </a>
+                <div className="PLnewAvsRight"></div>
+              </div>
+            </StyledPL>
+          }
+
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
          <StyledLayout className={this.props.className}>
            <main>{this.props.children}</main>
