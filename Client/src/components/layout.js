@@ -31,6 +31,8 @@
     height: 64px;
     background-color: #000000;
     background-image:url(${PlAVSBack});
+    background-repeat: no-repeat;
+    background-position: 50%;
 
     a {
       display: flex;
@@ -119,18 +121,25 @@
     }
   }
 
-  @media (max-width: 1230px) {
+  @media (max-width: 1700px) {
     .PLnewAvsRight {
-      left: 78%;
+      left: 93%;
     }
 
     .PLnewAvsLeft {
-      right: 78%;
+      right: 93%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .PLnewAvsText {
+      font-size: 18px;
     }
   }
  
   @media (max-width: 1024px) {
     .PLnewAvs {
+      display: none;
       padding: 0;
       height: 60px;
     }
