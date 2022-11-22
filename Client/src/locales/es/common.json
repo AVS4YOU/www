@@ -1705,16 +1705,13 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "¡Aproveche",
-    "discountCoupon" : "un descuento del 20%",
+    "beginningBanner" : "¡Oferta de Black Friday! ¡Ahorre ",
+    "discountCoupon" : "un 25 % de descuento en la suite AVS4YOU con el cupón",
     "colorCoupon" : "con el código cupón",
     "nameCoupon" : "Flower22",
-    "endingBanner" : "en la suscripción ilimitada de AVS4YOU!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=Treat22&CLEAN_CART=ALL",
-    "Halloween Treat!": "¡Golosinas de Halloween!",
-    "Save 20% Off with a coupon code": "Ahorre 20% de descuento con un código de cupón",
-    "Treat22": "Treat22",
-    "Treat22_2": "",
+    "endingBanner" : "!",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&ORDERSTYLE=nLWw45SpmLs=&COUPON=Friday22&CLEAN_CART=ALL",
+
 
     "LinkDownload" : "https://www.onlyoffice.com/es/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL",

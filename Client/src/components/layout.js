@@ -17,8 +17,10 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/asingle-left.svg";
- import PlAVSRight from "../images/pl/asingle-right.svg";
+ import PlAVSLeft from "../images/pl/left-black-friday-banner.svg";
+ import PlAVSRight from "../images/pl/right-black-friday-banner.svg";
+ import PlAVSBack from "../images/pl/background-black-friday-banner.svg";
+ import couponBF from '../images/pl/coupon_black-friday.svg'
 
  const StyledPL =styled.div`
   position: relative;
@@ -27,7 +29,8 @@
   .PLnewAvs {
     width: 100%;
     height: 64px;
-    background-color: #FE9235;
+    background-color: #000000;
+    background-image:url(${PlAVSBack});
 
     a {
       display: flex;
@@ -58,7 +61,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 488px;
+    width: 39px;
     height: 64px;
     z-index: 10;
     background-image:url(${PlAVSLeft});
@@ -66,6 +69,15 @@
     background-size: cover;
     background-position: center;
     pointer-events: none;
+
+    &:before {
+      content: "";
+      background-color: #FF0000;
+      width: 500px;
+      position: absolute;
+      height: 64px;
+      right: 39px;
+    }
   }
 
   .PLnewAvsRight {
@@ -73,23 +85,37 @@
     right: 0;
     top: 0;
     height: 64px;
-    width: 528px;
+    width: 39px;
     z-index: 10;
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     pointer-events: none;
+
+    &:after {
+      content: "";
+      background-color: #FF0000;
+      width: 500px;
+      position: absolute;
+      height: 64px;
+      left: 39px;
+    }
+  }
+
+  .imgCoupon {
+    vertical-align: middle;
+    padding-top: 5px;
   }
 
   @media (max-width: 2000px) {
     .PLnewAvsRight {
-      left: 74%;
+      left: 80%;
     }
 
     .PLnewAvsLeft {
       left: auto;
-      right: 76%;
+      right: 80%;
     }
   }
 
@@ -286,18 +312,17 @@
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
 
-          {
-            this.couponBannerZhPath &&
+
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
                   <a href={this.props.t("avs pl link")} target="_blank">
-                    <span className="PLnewAvsText">双11来了，使用<span className="PLnewAvsTextAccent">【ASingle11】</span><span class="PLnewAvsTextMobileBlock">代码获得无限订阅五折优惠</span></span>
+                    <span className="PLnewAvsText">{this.props.t("beginningBanner")} <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span><img className="imgCoupon" src={couponBF}/><span class="PLnewAvsTextMobileBlock">{this.props.t("endingBanner")}</span></span>
                   </a>
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
-          }
+          
 
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
          <StyledLayout className={this.props.className}>
