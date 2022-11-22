@@ -56,7 +56,7 @@
   }
 
   .PLnewAvsTextAccent {
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .PLnewAvsLeft {
@@ -320,7 +320,6 @@
  
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
-
 
             <StyledPL>
               <div className="PLnewAvs">
