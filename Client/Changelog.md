@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.38
+
+### New
+* Added event Black Friday 2022
+
 ## 1.0.37
 
 ### New
