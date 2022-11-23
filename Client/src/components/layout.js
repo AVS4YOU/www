@@ -61,7 +61,6 @@
 
   .PLnewAvsLeft {
     position: absolute;
-    left: 0;
     top: 0;
     width: 39px;
     height: 64px;
@@ -71,11 +70,12 @@
     background-size: cover;
     background-position: center;
     pointer-events: none;
+    right: 80%;
 
     &:before {
       content: "";
       background-color: #FF0000;
-      width: 500px;
+      width: 20vw;
       position: absolute;
       height: 64px;
       right: 39px;
@@ -84,7 +84,6 @@
 
   .PLnewAvsRight {
     position: absolute;
-    right: 0;
     top: 0;
     height: 64px;
     width: 39px;
@@ -94,11 +93,12 @@
     background-size: cover;
     background-position: center;
     pointer-events: none;
+    left: 80%;
 
     &:after {
       content: "";
       background-color: #FF0000;
-      width: 500px;
+      width: 20vw;
       position: absolute;
       height: 64px;
       left: 39px;
@@ -108,17 +108,6 @@
   .imgCoupon {
     vertical-align: middle;
     padding-top: 5px;
-  }
-
-  @media (max-width: 2000px) {
-    .PLnewAvsRight {
-      left: 80%;
-    }
-
-    .PLnewAvsLeft {
-      left: auto;
-      right: 80%;
-    }
   }
 
   @media (max-width: 1700px) {
@@ -330,6 +319,7 @@
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
+
           
 
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
