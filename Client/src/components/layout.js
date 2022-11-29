@@ -27,6 +27,7 @@
   text-align: center;
 
   .PLnewAvs {
+    display: none;
     width: 100%;
     height: 64px;
     background-color: #000000;
