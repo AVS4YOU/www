@@ -1618,12 +1618,12 @@
 
  "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
- "beginningBanner" : "黑色星期五促销来了! ",
- "discountCoupon" : "使用",
- "nameCoupon" : "Flower22",
- "endingBanner" : " 优惠券购买AVS4YOU套装，可节省25%的费用!",
- "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=zh&ORDERSTYLE=nLWw45SpmLs=&COUPON=Friday22&CLEAN_CART=ALL",
-
+ "beginningBanner" : "了解",
+ "discountCoupon" : " AVS4YOU ",
+ "textBanner" : "和其合作伙伴的礼物。享受高",
+ "nameCoupon" : "达99%的折扣",
+ "endingBanner" : "!",
+ "avs pl link" : "",
 
 "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
 "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

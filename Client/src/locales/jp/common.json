@@ -1736,12 +1736,12 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "ブラックフライデー割引！",
-    "discountCoupon" : " ",
-    "nameCoupon" : "Flower22",
-    "colorCoupon" : "割引クーポン",
-    "endingBanner" : "ーポンでAVS4YOUスイートに25％割引！",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ja&ORDERSTYLE=nLWw45SpmLs=&COUPON=Friday22&CLEAN_CART=ALL",
+    "beginningBanner" : " ",
+    "discountCoupon" : "AVS4YOU",
+    "textBanner" : "とパートナーから素晴らしいギフトを受ける。",
+    "nameCoupon" : "99%までに割",
+    "endingBanner" : "引を楽しんで！",
+    "avs pl link" : "",
 
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",

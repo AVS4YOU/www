@@ -17,21 +17,23 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/left-black-friday-banner.svg";
- import PlAVSRight from "../images/pl/right-black-friday-banner.svg";
- import PlAVSBack from "../images/pl/background-black-friday-banner.svg";
- import couponBF from '../images/pl/coupon_black-friday.svg'
+
+ import PlAVSLeft from "../images/pl/left-side-bg.svg";
+ import PlAVSRight from "../images/pl/right-side-bg.svg";
+ import couponGift from '../images/pl/coupon-gift.svg';
+ import calendarOne from '../images/pl/calendar-1.svg';
+ import calendarLast from '../images/pl/calendar-25.svg';
+ import imgGif from '../images/pl/gif-coupon.gif';
 
  const StyledPL =styled.div`
   position: relative;
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 64px;
-    background-color: #000000;
-    background-image:url(${PlAVSBack});
+    background-color: #007435;
     background-repeat: no-repeat;
     background-position: 50%;
 
@@ -57,68 +59,57 @@
   }
 
   .PLnewAvsTextAccent {
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  .PlAvsDiscount {
+    color: #FFE34F;
+    text-transform: uppercase;
+    border: 1px dashed #FF4738;
+    border-radius: 5px;
+    padding: 8px;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    width: 39px;
+    width: 470px;
     height: 64px;
     z-index: 10;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     pointer-events: none;
-    right: 80%;
-
-    &:before {
-      content: "";
-      background-color: #FF0000;
-      width: 20vw;
-      position: absolute;
-      height: 64px;
-      right: 39px;
-    }
   }
 
   .PLnewAvsRight {
     position: absolute;
     top: 0;
     height: 64px;
-    width: 39px;
+    width: 470px;
     z-index: 10;
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     pointer-events: none;
-    left: 80%;
-
-    &:after {
-      content: "";
-      background-color: #FF0000;
-      width: 20vw;
-      position: absolute;
-      height: 64px;
-      left: 39px;
-    }
+    right: 0;
   }
 
   .imgCoupon {
     vertical-align: middle;
-    padding-top: 5px;
   }
 
-  @media (max-width: 1700px) {
-    .PLnewAvsRight {
-      left: 93%;
-    }
+  .imgGifLeft {
+    position: absolute;
+    top: -42px;
+    left: 7%;
+    transform: scale(-1, 1);
+  }
 
-    .PLnewAvsLeft {
-      right: 93%;
-    }
+  .imgGifRight {
+    position: absolute;
+    top: -42px;
+    right: 7%;
   }
 
   @media (max-width: 1200px) {
@@ -314,9 +305,13 @@
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
+                <img className="calendarOne" src={calendarOne}/>
+                <img className="imgGifLeft" src={imgGif}/>
                   <a href={this.props.t("avs pl link")} target="_blank">
-                    <span className="PLnewAvsText">{this.props.t("beginningBanner")} <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span><img className="imgCoupon" src={couponBF}/><span class="PLnewAvsTextMobileBlock">{this.props.t("endingBanner")}</span></span>
+                  <img className="imgCoupon" src={couponGift}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span>
                   </a>
+                  <img className="imgGifRight" src={imgGif}/>
+                  <img className="calendarLast" src={calendarLast}/>
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
