@@ -345,7 +345,7 @@ constructor(props) {
             </h1>
             <div className="advent_header_sub">
               Enjoy amazing gifts and non-stop discounts each day up to{" "}
-              <b>99% Off!</b>
+              <b>70% Off!</b>
             </div>
           </div>
 
@@ -430,8 +430,7 @@ constructor(props) {
               date={new Date(2022, 11, 9)}
               validDate="The offer is valid till December 10, 2022"
               popupTitle="A special deal from our partner HookSounds"
-              popupDiscount="15% Off on HookSounds Premium and Business Licenses
-              Enrich your audio collection with original tracks and sound effects."
+              popupDiscount="15% Off on HookSounds Premium and Business Licenses. Enrich your audio collection with original tracks and sound effects."
               popupCoupon="AVS4YOU15"
               hrefButton="https://www.hooksounds.com/premium/"
               popupSub="*Just use this coupon while purchasing"
@@ -531,7 +530,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3317}
               date={new Date(2022, 11, 19)}
-              validDate="The offer is valid till December 19, 2022"
+              validDate="The offer is valid till December 20, 2022"
               popupTitle="30% Off on AVS Video Editor!"
               popupCoupon="Snow30"
               popupSub="*Just use this coupon while purchasing"
@@ -541,7 +540,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3501}
               date={new Date(2022, 11, 20)}
-              validDate="The offer is valid till December 20, 2022"
+              validDate="The offer is valid till December 21, 2022"
               popupTitle="Redeem a 45% coupon code on AVS4YOU Unlimited Subscription"
               popupCoupon="Candle45"
               popupSub="*Just use this coupon while purchasing"
@@ -551,7 +550,7 @@ constructor(props) {
               <CalendarItem
               imageCoordinate={-3685}
               date={new Date(2022, 11, 21)}
-              validDate="The offer is valid till December 21, 2022"
+              validDate="The offer is valid till December 22, 2022"
               popupTitle="Enjoy a 40% promo code on AVS4YOU 1 Year Subscription!"
               popupCoupon="AVS40Frost"
               popupSub="*Just use this coupon while purchasing"
@@ -561,7 +560,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3870}
               date={new Date(2022, 11, 22)}
-              validDate="The offer is valid thru December 22, 2022"
+              validDate="The offer is valid thru December 23, 2022"
               popupTitle="50% Off on AVS4YOU bestseller - AVS Video Editor!"
               popupCoupon="Snow50"
               popupSub="*Just use this coupon while purchasing"
