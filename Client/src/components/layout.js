@@ -17,7 +17,6 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
-
  import PlAVSLeft from "../images/pl/left-side-bg.svg";
  import PlAVSRight from "../images/pl/right-side-bg.svg";
  import couponGift from '../images/pl/coupon-gift.svg';
