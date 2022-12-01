@@ -138,6 +138,13 @@ const ModalStyle = styled.div`
   }
 `;
 
+const StyledLastCalendar = styled.div` {
+    .popupTitle {
+      margin-top: 130px;
+    }
+  }
+`;
+
 const streamUrl = AudioCalendar;
 
 const CustomPlayer = withSoundCloudAudio(props => {
@@ -345,7 +352,7 @@ constructor(props) {
             </h1>
             <div className="advent_header_sub">
               Enjoy amazing gifts and non-stop discounts each day up to{" "}
-              <b>99% Off!</b>
+              <b>70% Off!</b>
             </div>
           </div>
 
@@ -358,8 +365,8 @@ constructor(props) {
               popupTitle="Wishing You a Happy first Sunday of Advent!"
               popupDiscount="Claim a $20 gift card for reviewing AVS Audio Editor on Capterra"
               popupCoupon="Review AVS4YOU"
-                hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
-                textButton="Review AVS4YOU"
+              hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
+              textButton="Review AVS4YOU"
             />
             <CalendarItem
               imageCoordinate={-184}
@@ -419,19 +426,21 @@ constructor(props) {
               imageCoordinate={-1290}
               date={new Date(2022, 11, 8)}
               validDate="The offer is valid till December 9, 2022"
-              popupTitle="Share our Advent calendar on Twitter or Facebook
-              and get a free license key for
+              popupTitle="Share our Advent calendar on Twitter or Facebook"
+              popupDiscount="and get a free license key for
               AVS Video ReMaker 1 Year Subscription."
+              linkTwitter="https://twitter.com/AVS4YOU"
+              linkFacebook="https://business.facebook.com/avs4you/?ref=page_internal"
               popupSub="*Send us the link to your post in social networks
-              To get your free license key"
+              to get your free license key"
             />
             <CalendarItem
               imageCoordinate={-1474}
               date={new Date(2022, 11, 9)}
               validDate="The offer is valid till December 10, 2022"
               popupTitle="A special deal from our partner HookSounds"
-              popupDiscount="15% Off on HookSounds Premium and Business Licenses
-              Enrich your audio collection with original tracks and sound effects."
+              popupDiscount="15% Off on HookSounds Premium and Business Licenses."
+              popupDiscountTwo="Enrich your audio collection with original tracks and sound effects."
               popupCoupon="AVS4YOU15"
               hrefButton="https://www.hooksounds.com/premium/"
               popupSub="*Just use this coupon while purchasing"
@@ -443,8 +452,8 @@ constructor(props) {
               validDate="The offer is valid thru December 11, 2022"
               popupTitle="Get free ONLYOFFICE Desktop Editors!"
               popupDiscount="Work with all types of documents, spreadsheets 
-              & presentations, forms and PDF files
-               on Windows, Mac and Linux."
+              and presentations, forms and PDF files
+              on Windows, Mac and Linux."
               hrefButton="https://www.onlyoffice.com/download-desktop.aspx"
               textButton="Download now"
             />
@@ -462,10 +471,13 @@ constructor(props) {
               imageCoordinate={-2027}
               date={new Date(2022, 11, 12)}
               validDate="The offer is valid till December 13, 2022"
-              popupTitle="Tag your video created with AVS4YOU with a link 
+              popupTitle="Tag your video created with AVS4YOU"
+              popupDiscount="with a link 
               to our website in the description and 
               get a free license key for AVS Video Editor"
-              popupSub="*Send us a link at sales@avs4you.com"
+              textBefore="*Send us a link at"
+              linkText="sales@avs4you.com"
+              linkHref="mailto:sales@avs4you.com" 
             />
             <CalendarItem
               imageCoordinate={-2212}
@@ -492,8 +504,8 @@ constructor(props) {
               imageCoordinate={-2580}
               date={new Date(2022, 11, 15)}
               validDate="The offer is valid till December 16, 2022"
-              popupTitle="Get a free personal online office to
-              share and collaborate on docs everywhere!"
+              popupTitle="Get a free personal online office"
+              popupDiscount="Share and collaborate on docs everywhere!"
               hrefButton="https://personal.onlyoffice.com/"
               textButton="Try now"
             />
@@ -531,7 +543,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3317}
               date={new Date(2022, 11, 19)}
-              validDate="The offer is valid till December 19, 2022"
+              validDate="The offer is valid till December 20, 2022"
               popupTitle="30% Off on AVS Video Editor!"
               popupCoupon="Snow30"
               popupSub="*Just use this coupon while purchasing"
@@ -541,7 +553,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3501}
               date={new Date(2022, 11, 20)}
-              validDate="The offer is valid till December 20, 2022"
+              validDate="The offer is valid till December 21, 2022"
               popupTitle="Redeem a 45% coupon code on AVS4YOU Unlimited Subscription"
               popupCoupon="Candle45"
               popupSub="*Just use this coupon while purchasing"
@@ -551,7 +563,7 @@ constructor(props) {
               <CalendarItem
               imageCoordinate={-3685}
               date={new Date(2022, 11, 21)}
-              validDate="The offer is valid till December 21, 2022"
+              validDate="The offer is valid till December 22, 2022"
               popupTitle="Enjoy a 40% promo code on AVS4YOU 1 Year Subscription!"
               popupCoupon="AVS40Frost"
               popupSub="*Just use this coupon while purchasing"
@@ -561,7 +573,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3870}
               date={new Date(2022, 11, 22)}
-              validDate="The offer is valid thru December 22, 2022"
+              validDate="The offer is valid thru December 23, 2022"
               popupTitle="50% Off on AVS4YOU bestseller - AVS Video Editor!"
               popupCoupon="Snow50"
               popupSub="*Just use this coupon while purchasing"
@@ -571,7 +583,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-4054}
               date={new Date(2022, 11, 23)}
-              validDate=""
+              validDate="The offer is valid thru December 24, 2022"
               popupTitle="What a lucky day for everyone!"
               popupDiscount="60% Off on AVS4YOU Unlimited Subscription"
               popupCoupon="Lucky23"
@@ -579,6 +591,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Lucky23&CLEAN_CART=ALL"
               textButton="Shop now"
             />
+            <StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-4238}
               date={new Date(2022, 11, 24)}
@@ -587,6 +600,7 @@ constructor(props) {
               popupDiscount="AVS4YOU wishes you and your family a happy and prosperous 2023 year!
               May your home be blessed with Christmas joy, peace and love!"
             />
+            </StyledLastCalendar>
           </div>
 
           <div className="advent_footer_block">
