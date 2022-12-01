@@ -11,6 +11,8 @@ readonly uniq_number=$(date +"%Y%m%d%H%M%S")
 readonly name_new_bucket="${FIND_NAME_BUCKET}.${uniq_number}"
 name_old_bucket=''
 
+node -v 
+
 export AWS_ACCESS_KEY_ID="$1"
 export AWS_SECRET_ACCESS_KEY="$2"
 export AWS_DEFAULT_REGION="$REGION"

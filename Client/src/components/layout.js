@@ -17,21 +17,23 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/left-black-friday-banner.svg";
- import PlAVSRight from "../images/pl/right-black-friday-banner.svg";
- import PlAVSBack from "../images/pl/background-black-friday-banner.svg";
- import couponBF from '../images/pl/coupon_black-friday.svg'
+ import PlAVSLeft from "../images/pl/left-side-bg.svg";
+ import PlAVSRight from "../images/pl/right-side-bg.svg";
+ import couponGift from '../images/pl/coupon-gift.svg';
+ import calendarOne from '../images/pl/calendar-1.svg';
+ import calendarLast from '../images/pl/calendar-25.svg';
+ import imgGif from '../images/pl/gif-coupon.gif';
+ import plAvsBgMobile from '../images/pl/mobile-bg.svg'
 
  const StyledPL =styled.div`
   position: relative;
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 64px;
-    background-color: #000000;
-    background-image:url(${PlAVSBack});
+    background-color: #007435;
     background-repeat: no-repeat;
     background-position: 50%;
 
@@ -54,82 +56,95 @@
     font-size: 20px;
     line-height: 27px;
     color: #ffffff;
+    width: auto;
   }
 
   .PLnewAvsTextAccent {
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  .PlAvsDiscount {
+    color: #FFE34F;
+    text-transform: uppercase;
+    border: 1px dashed #FF4738;
+    border-radius: 5px;
+    padding: 8px;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    width: 39px;
+    left: 76px;
+    width: 437px;
     height: 64px;
     z-index: 10;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     pointer-events: none;
-    right: 80%;
-
-    &:before {
-      content: "";
-      background-color: #FF0000;
-      width: 20vw;
-      position: absolute;
-      height: 64px;
-      right: 39px;
-    }
+    z-index: 0;
   }
 
   .PLnewAvsRight {
     position: absolute;
     top: 0;
     height: 64px;
-    width: 39px;
+    width: 115px;
     z-index: 10;
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     pointer-events: none;
-    left: 80%;
-
-    &:after {
-      content: "";
-      background-color: #FF0000;
-      width: 20vw;
-      position: absolute;
-      height: 64px;
-      left: 39px;
-    }
+    right: 0;
+    z-index: 0;
   }
 
   .imgCoupon {
     vertical-align: middle;
-    padding-top: 5px;
+    padding-right: 10px;
   }
 
-  @media (max-width: 1700px) {
-    .PLnewAvsRight {
-      left: 93%;
-    }
-
-    .PLnewAvsLeft {
-      right: 93%;
-    }
+  .imgGifLeft {
+    position: absolute;
+    top: -42px;
+    left: 6%;
+    transform: scale(-1, 1);
   }
 
-  @media (max-width: 1200px) {
+  .imgGifRight {
+    position: absolute;
+    top: -42px;
+    right: 6%;
+  }
+
+  @media (max-width: 1800px) {
+    .imgCoupon {
+      display: none;
+    }
+
     .PLnewAvsText {
-      font-size: 18px;
+      font-size: 17px;
+      width: 550px;
+    }
+
+    .PlAvsDiscount {
+      padding: 3px;
+    }
+
+    .imgGifLeft {
+      width: 185px;
+      top: -34px;
+    }
+
+    .imgGifRight {
+      width: 185px;
+      top: -34px;
     }
   }
  
   @media (max-width: 1024px) {
     .PLnewAvs {
-      display: none;
+      display: flex;
       padding: 0;
       height: 60px;
     }
@@ -139,36 +154,88 @@
       padding: 0 6px;
       position: relative;
       top: 0;
+      width: 400px;
     }
 
     .PLnewAvsRight {
       top: 0;
-      left: 70%;
-      height: 60px;
+      right: 0;
+      background-size: 200px;
+      width: 200px;
     }
 
     .PLnewAvsLeft {
       top: 0;
-      right: 70%;
-      height: 60px;
+      left: 0;
+      background-size: 200px;
     }
 
     .PLnewAvsTextMobileBlock {
       display: block;
     }
+
+    .imgGifLeft {
+      width: 120px;
+      top: -23px;
+      left: 0;
+    }
+  
+    .imgGifRight {
+      display: none;
+      width: 100px;
+      top: 0px;
+      right: 0;
+    }
+
+    .calendarOne {
+      display: none;
+    }
+
+    .calendarLast {
+    position: absolute;
+    right: 0;
+    }
   }
 
   @media (max-width: 500px) {
+    .PLnewAvs {
+      background-image:url(${plAvsBgMobile});
+      height: 76px;
+    }
+
+    .PlAvsDiscount {
+      border: none;
+      padding: 0px;
+    }
+
     .PLnewAvsText{
       display: block;
+      width: 230px;
+      line-height: 20px;
     }
 
     .PLnewAvsLeft {
-      right: 80%;
+      display: none;
     }
 
     .PLnewAvsRight {
-      left: 80%;
+      display: none;
+    }
+
+    .imgGifLeft {
+      top: 0;
+      left: -15px !important;
+    }
+
+    .calendarLast {
+      margin-top: 10px;
+    }
+
+    .imgGifLeft {
+      width: 100px;
+      transform: -90deg;
+      transform: rotate(-90deg);
+      left: 0;
     }
   }
 `;
@@ -314,9 +381,13 @@
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
+                <img className="calendarOne" src={calendarOne}/>
+                <img className="imgGifLeft" src={imgGif}/>
                   <a href={this.props.t("avs pl link")} target="_blank">
-                    <span className="PLnewAvsText">{this.props.t("beginningBanner")} <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span><img className="imgCoupon" src={couponBF}/><span class="PLnewAvsTextMobileBlock">{this.props.t("endingBanner")}</span></span>
+                  <img className="imgCoupon" src={couponGift}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span>
                   </a>
+                  <img className="imgGifRight" src={imgGif}/>
+                  <img className="calendarLast" src={calendarLast}/>
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>

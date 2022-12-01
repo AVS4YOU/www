@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-i18next-ssr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby boilerplate to support server-side i18n page generation with i18next, react-18next and i18next",
   "main": "index.js",
   "scripts": {
