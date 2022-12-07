@@ -128,7 +128,7 @@
     height: 64px;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
 
     .gifContainer {
       height: 60px;
