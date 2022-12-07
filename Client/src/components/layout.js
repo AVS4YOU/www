@@ -105,10 +105,13 @@
 
   .imgGifLeft {
     transform: scale(-1, 1);
+    position: relative;
+    top: -40px;
   }
 
   .imgGifRight {
-    margin-left: 0;
+    top: -40px;
+    position: relative;
   }
 
   .calendarOne {
@@ -121,6 +124,8 @@
 
   .gifContainer {
     width: calc(250px + 3vw);
+    overflow: hidden;
+    height: 64px;
   }
 
   @media (max-width: 1200px) {
@@ -195,7 +200,7 @@
   @media (max-width: 768px) {
 
     .PLnewAvsText{
-      font-size: 12px;
+      font-size: 14px;
       line-height: 20px;
     }
 
