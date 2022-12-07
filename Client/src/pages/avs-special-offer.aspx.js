@@ -47,7 +47,8 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
-
+        
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
 <div className="headerSpecialOffer">
     <div className="line-mobile"></div>
       <div className="content-header">
