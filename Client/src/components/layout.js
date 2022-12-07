@@ -125,7 +125,7 @@
   .gifContainer {
     width: calc(250px + 3vw);
     overflow: hidden;
-    height: 64px;
+    height: 62px;
   }
 
   @media (max-width: 1350px) {
