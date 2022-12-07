@@ -19,7 +19,7 @@ import updatesIcon from '../images/avs-special-offer/updates-icon.png'
 
 
 const RedButton = styled(Button) `
-    min-width: 155px;
+    min-width: 205px;
     background-color: #CC0909;
     text-align: center;
 
