@@ -129,12 +129,19 @@
   }
 
   @media (max-width: 1200px) {
+
+    .gifContainer {
+      height: 60px;
+    }
+
     .imgGifLeft {
+      top: -20px;
       width: 150px;
       transform: rotate(8deg);
     }
 
     .imgGifRight {
+      top: -20px;
       width: 150px;
       transform: rotate(317deg);
     }
@@ -191,10 +198,6 @@
       position: absolute;
       right: 30px;
     }
-
-    .imgGifLeft {
-      position: absolute;
-    }
   }
 
   @media (max-width: 768px) {
@@ -238,16 +241,12 @@
     }
 
     .imgGifLeft {
-      top: 0;
-      left: -15px !important;
-    }
-
-    .imgGifLeft {
       width: 100px;
       transform: -90deg;
       transform: rotate(-90deg);
-      position: absolute;
-      left: 0;
+      position: relative;
+      left: -65px;
+      top: 0;
     }
 
     .imgCoupon {
@@ -256,6 +255,10 @@
 
     .calendarLast {
       right: 0px;
+    }
+
+    .gifContainer {
+      height: 76px;
     }
   }
 `;
