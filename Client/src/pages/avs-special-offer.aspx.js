@@ -43,7 +43,7 @@ render(){
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title=""
+        title="AVS4YOU Special offer"
         metaDescription=""
         metaKeywords=""
       >
@@ -85,14 +85,14 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 26, 2021</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 31, 2022</Text>
       </div>
     </div>
   </div>
 </div>
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">AVS4YOU Full Pack</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$59</span>  <span className="text-line-through">$199</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$279</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
               <Button className="specialButton button-mobile" 
