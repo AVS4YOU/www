@@ -19,7 +19,7 @@ import updatesIcon from '../images/avs-special-offer/updates-icon.png'
 
 
 const RedButton = styled(Button) `
-    min-width: 155px;
+    min-width: 205px;
     background-color: #CC0909;
     text-align: center;
 
@@ -43,11 +43,12 @@ render(){
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
-        title=""
+        title="AVS4YOU Special offer"
         metaDescription=""
         metaKeywords=""
       >
 
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
 <div className="headerSpecialOffer">
     <div className="line-mobile"></div>
       <div className="content-header">
@@ -76,7 +77,7 @@ render(){
               <Button className="headerButton button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="headerButton" 
@@ -85,20 +86,20 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 26, 2021</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">The offer is valid till December 31, 2022</Text>
       </div>
     </div>
   </div>
 </div>
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">AVS4YOU Full Pack</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$59</span>  <span className="text-line-through">$199</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$279</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
               <Button className="specialButton button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/installed-pack.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="specialButton" 

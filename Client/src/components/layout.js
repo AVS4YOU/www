@@ -32,7 +32,7 @@
   .PLnewAvs {
     display: flex;
     width: 100%;
-    height: 64px;
+    height: 62px;
     background-color: #007435;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -43,7 +43,7 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      z-index: 25;
+      z-index: 9;
       text-decoration: none;
     }
   }
@@ -66,17 +66,14 @@
   .PlAvsDiscount {
     color: #FFE34F;
     text-transform: uppercase;
-    border: 1px dashed #FF4738;
-    border-radius: 5px;
-    padding: 8px;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
     left: 76px;
-    width: 437px;
-    height: 64px;
+    width: 428px;
+    height: 62px;
     z-index: 10;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
@@ -88,7 +85,7 @@
   .PLnewAvsRight {
     position: absolute;
     top: 0;
-    height: 64px;
+    height: 62px;
     width: 115px;
     z-index: 10;
     background-image: url(${PlAVSRight});
@@ -102,46 +99,54 @@
   .imgCoupon {
     vertical-align: middle;
     padding-right: 10px;
+    width: 45px;
+    height: 55px;
   }
 
   .imgGifLeft {
-    position: absolute;
-    top: -42px;
-    left: 6%;
     transform: scale(-1, 1);
+    position: relative;
+    top: -40px;
   }
 
   .imgGifRight {
-    position: absolute;
-    top: -42px;
-    right: 6%;
+    top: -40px;
+    position: relative;
   }
 
-  @media (max-width: 1800px) {
-    .imgCoupon {
-      display: none;
-    }
+  .calendarOne {
+    width: 55px;
+  }
 
-    .PLnewAvsText {
-      font-size: 17px;
-      width: 550px;
-    }
+  .calendarLast {
+    width: 55px;
+  }
 
-    .PlAvsDiscount {
-      padding: 3px;
+  .gifContainer {
+    width: calc(250px + 3vw);
+    overflow: hidden;
+    height: 62px;
+  }
+
+  @media (max-width: 1350px) {
+
+    .gifContainer {
+      height: 60px;
     }
 
     .imgGifLeft {
-      width: 185px;
-      top: -34px;
+      top: -20px;
+      width: 150px;
+      transform: rotate(8deg);
     }
 
     .imgGifRight {
-      width: 185px;
-      top: -34px;
+      top: -20px;
+      width: 150px;
+      transform: rotate(317deg);
     }
   }
- 
+
   @media (max-width: 1024px) {
     .PLnewAvs {
       display: flex;
@@ -150,11 +155,9 @@
     }
   
     .PLnewAvsText{
-      font-size: 12px;
-      padding: 0 6px;
+      font-size: 16px;
       position: relative;
       top: 0;
-      width: 400px;
     }
 
     .PLnewAvsRight {
@@ -175,7 +178,7 @@
     }
 
     .imgGifLeft {
-      width: 120px;
+      width: 145px;
       top: -23px;
       left: 0;
     }
@@ -192,12 +195,24 @@
     }
 
     .calendarLast {
-    position: absolute;
-    right: 0;
+      position: absolute;
+      right: 30px;
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
+
+    .PLnewAvsText{
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .imgCoupon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 588px) {
     .PLnewAvs {
       background-image:url(${plAvsBgMobile});
       height: 76px;
@@ -212,6 +227,9 @@
       display: block;
       width: 230px;
       line-height: 20px;
+      position: absolute;
+      top: 5px;
+      font-size: 12px;
     }
 
     .PLnewAvsLeft {
@@ -223,19 +241,24 @@
     }
 
     .imgGifLeft {
-      top: 0;
-      left: -15px !important;
-    }
-
-    .calendarLast {
-      margin-top: 10px;
-    }
-
-    .imgGifLeft {
       width: 100px;
       transform: -90deg;
       transform: rotate(-90deg);
-      left: 0;
+      position: relative;
+      left: -65px;
+      top: 0;
+    }
+
+    .imgCoupon {
+      display: none;
+    }
+
+    .calendarLast {
+      right: 0px;
+    }
+
+    .gifContainer {
+      height: 76px;
     }
   }
 `;
@@ -381,18 +404,17 @@
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
-                <img className="calendarOne" src={calendarOne}/>
-                <img className="imgGifLeft" src={imgGif}/>
                   <a href={this.props.t("avs pl link")} target="_blank">
+                  <img className="calendarOne" src={calendarOne}/>
+                  <div className="gifContainer"><img className="imgGifLeft" src={imgGif}/></div>
                   <img className="imgCoupon" src={couponGift}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span>
-                  </a>
-                  <img className="imgGifRight" src={imgGif}/>
+                  <div className="gifContainer"><img className="imgGifRight" src={imgGif}/></div>
                   <img className="calendarLast" src={calendarLast}/>
+                  </a>
                 <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
-
-          
+        
 
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
          <StyledLayout className={this.props.className}>

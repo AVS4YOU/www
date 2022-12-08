@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.41
+
+### Fixes
+* Fixed dates and prices on `/avs-special-offer.aspx`
+* Fixed banner "24 days of Magic Christmas"
+
 ## 1.0.40
 
 ### New
