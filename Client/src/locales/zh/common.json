@@ -12,7 +12,7 @@
 
 
 	"get $5 coupon code": "GET $5 COUPON CODE",
-	"download now": "download now",
+	"download now": "即刻下载",
     "GET $5 COUPON CODE" : "GET $5 COUPON CODE",
 
 
@@ -90,7 +90,7 @@
 	"Convert all key video formats and file sizes": "Convert all key video formats and file sizes",
 	"Smart conversion presets": "Smart conversion presets",
 	"GPU conversion acceleration": "GPU conversion acceleration",
-	"AVS Video Editor": "AVS Video Editor",
+	"AVS Video Editor": "AVS 视频编辑器",
 	"Edit all key video formats": "Edit all key video formats",
 	"Cut, trim, join video files": "Cut, trim, join video files",
 	"Apply effects and transitions": "Apply effects and transitions",
