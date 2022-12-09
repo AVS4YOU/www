@@ -17,6 +17,10 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
+ import Button from '../components/button';
+ import Text from '../components/text';
+ import Link from '../components/link';
+
  import PlAVSLeft from "../images/pl/left-side-bg.svg";
  import PlAVSRight from "../images/pl/right-side-bg.svg";
  import couponGift from '../images/pl/coupon-gift.svg';
@@ -24,6 +28,8 @@
  import calendarLast from '../images/pl/calendar-25.svg';
  import imgGif from '../images/pl/gif-coupon.gif';
  import plAvsBgMobile from '../images/pl/mobile-bg.svg'
+ import bgPopup from '../images/pl/bg-popup.png'
+ import popupCalendar from '../images/pl/calendar-popup.png'
 
  const StyledPL =styled.div`
   position: relative;
@@ -262,6 +268,104 @@
     }
   }
 `;
+const PopupBackground = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  z-index: 100;
+`;
+
+const StyledPopup = styled.div`
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  position: fixed;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 650px;
+
+  .popupAvs {
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 650px;
+    background-image:url(${bgPopup});
+    background-repeat: no-repeat;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    .closeButton {
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+      padding: 12px;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background: #05272D;
+        top: 19px;
+        right: 10px;    
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .popupText {
+    height: 360px;
+    width: 650px;
+    background-image:url(${popupCalendar});
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .popupTitle {
+    color: #E93631;
+    padding-top: 95px;
+    margin-left: 52px;
+  }
+
+  .popupCoupon {
+    margin-left: 52px;
+  }
+
+  .popupButton {
+    margin-left: 52px;
+    background-color: #03633F;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 40px;
+
+    p {
+      padding: 12px 50px;
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 400;
+      }
+    }
+  }
+`;
  
  const StyledLayout = styled.div`
    min-width: 300px;
@@ -288,7 +392,8 @@
      super(props);
      this.state = {
        isTablet: false,
-       isMobile: false
+       isMobile: false,
+       showBanner: false
      }
  
      const OriginalPath = this.props.pageContext.originalPath;
@@ -309,7 +414,13 @@
          } else {
            this.props.getDevice("Desktop");
          }
-       }
+      }
+
+      setTimeout(() => {
+        this.setState({
+          showBanner: true,
+        })
+      }, 15000);
        
        window.addEventListener('resize', this.updateWindowDimensions);
 
@@ -333,6 +444,13 @@
            isTablet: window.innerWidth < 1050,
            isMobile: window.innerWidth < 750
        })
+   }
+
+   onClosePopup = (e) => {
+    e.stopPropagation();
+    this.setState({
+      showBanner: false,
+    })
    }
  
    componentDidUpdate(){
@@ -401,6 +519,26 @@
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
 
+         {this.state.showBanner && 
+         <>
+            <PopupBackground onClick={this.onClosePopup} />
+            <StyledPopup>
+              <div className="popupAvs">
+                <div className="closeButton" onClick={this.onClosePopup}></div>
+                <div className="popupText">
+                  <Text fontSize={40} fontWeight={600} className="popupTitle" as="h1">{this.props.t("Advent Calendar")}</Text>
+                  <Text fontSize={24} fontWeight={400} className="popupCoupon" as="h2">{this.props.t("Up to")}<b>{this.props.t("70")}</b>{this.props.t("discounts")}</Text>
+                  <Button className="popupButton" 
+                          secondaryText={this.props.secondaryText && this.props.secondaryText} 
+                          textTransform="uppercase">
+                          <Link to="/advent-calendar.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("Check It Out")}</Link>
+                  </Button>
+                </div>
+              </div>
+            </StyledPopup>
+          </>
+          }
+
             <StyledPL>
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
@@ -415,7 +553,6 @@
               </div>
             </StyledPL>
         
-
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
          <StyledLayout className={this.props.className}>
            <main>{this.props.children}</main>
