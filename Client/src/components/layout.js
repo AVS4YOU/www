@@ -342,6 +342,7 @@ const StyledPopup = styled.div`
     color: #E93631;
     padding-top: 95px;
     margin-left: 52px;
+    max-width: 260px;
   }
 
   .popupCoupon {
