@@ -94,7 +94,7 @@ render(){
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">{this.props.t("AVS4YOU Full Pack")}</Text>
             <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$279</span></Text>
-            <Text fontSize={24} fontWeight={400} className="mainBodyComment">{this.props.t("A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!")}</Text>
+            <Text fontSize={24} fontWeight={400} className="mainBodyComment">{this.props.t("A complete set of programs for working with video files slideshows and soundtracks Manage your video audio collections improve their quality and create stunning video projects")}</Text>
             <div className="special-buttons">
               <Button className="specialButton button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
