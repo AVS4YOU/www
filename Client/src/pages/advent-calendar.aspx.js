@@ -494,7 +494,7 @@ constructor(props) {
               popupDiscount="Get a 50% discount on ONLYOFFICE Home Server."
               popupCoupon="Home50"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton=""
+              hrefButton="https://www.onlyoffice.com/docs-enterprise-prices.aspx"
               textButton="Shop now"
             />
             <CalendarItem
