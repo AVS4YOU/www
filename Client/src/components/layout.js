@@ -434,7 +434,7 @@ const StyledPopup = styled.div`
         this.setState({
           showBanner: true,
         })
-      }, 100);
+      }, 10000);
     }
        
        window.addEventListener('resize', this.updateWindowDimensions);
