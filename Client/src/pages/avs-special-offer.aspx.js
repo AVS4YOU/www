@@ -68,6 +68,7 @@ render(){
                 <Text fontSize={46} fontWeight={700} color="#ffffff" className="letter-off">{this.props.t("ff")}</Text>
               </SaleWrapper>
             </SaleWrapper> 
+            <Text fontSize={24} fontWeight={700} color="#fff" className="text-de-special">{this.props.t("Rabatt auf die Multimedia Apps")}</Text>
             <div className="text-avs">
               <Text fontSize={24} fontWeight={700} color="#fff" className="text-header-avs">{this.props.t("on")}</Text>
               <Text fontSize={46} fontWeight={700} className="textHeader">AVS4YOU</Text>
@@ -93,7 +94,7 @@ render(){
 </div>
           <div className="bodyWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader" as="h1">{this.props.t("AVS4YOU Full Pack")}</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-red">$79</span>  <span className="text-line-through">$279</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">{this.props.t("Get 70% OFF on AVS4YOU Full Pack")} <span className="text-red">{this.props.t("59")}</span>  <span className="text-line-through">{this.props.t("199")}</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">{this.props.t("A complete set of programs for working with video files slideshows and soundtracks Manage your video audio collections improve their quality and create stunning video projects")}</Text>
             <div className="special-buttons">
               <Button className="specialButton button-mobile" 
@@ -108,7 +109,7 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
-            <ImageGQL className="full-pack" imageName="pack-special-offer.png"/>
+            <ImageGQL className="full-pack" imageName={this.props.t("packSpecialOffer")}/>
           </div>
           <PageContentWrapper>
                       <ContentRowItem 
@@ -116,7 +117,7 @@ render(){
                           imgLeft={true}
                           imageName={"video-editor-special-offer.png"}
                           headerText={this.props.t("AVS Video Editor")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Powerful video editing program for Windows with basic and pro editing tools")}.</Text>
                           <Text  className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Make stunning videos with music and effects")}</Text>
@@ -131,9 +132,9 @@ render(){
                           imgLeft={false}
                           imageName={"audio-editor-special-offer.png"}
                           headerText={this.props.t("AVS Audio Editor")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"   
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"   
                       >
-                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Professional level audio editing and recording software")}.</Text>
+                        <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Professional level audio editing and recording software")}</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Record audio from microphone, Line In, Vinyl records")}</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Create an amazing audio mix")}</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Improve your sound quality")}</Text>
@@ -146,7 +147,7 @@ render(){
                           imgLeft={true}
                           imageName={"video-converter-special-offer.png"}
                           headerText={this.props.t("AVS Video Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"  
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"  
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("All-in-one video converter with basic editing features")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Convert and compress all key video formats")}</Text>
@@ -161,7 +162,7 @@ render(){
                           imgLeft={false}
                           imageName={"audio-converter-special-offer.png"}
                           headerText={this.props.t("AVS Audio Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"  
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"  
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Feature-rich audio conversion program for Windows")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc")}.</Text>
@@ -176,7 +177,7 @@ render(){
                           imgLeft={true}
                           imageName={"remaker-special-offer.png"}
                           headerText={this.props.t("AVS Video ReMaker")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("A fast video editor to make edits without changing the original video file format")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Cut and delete unnecessary parts")}</Text>
