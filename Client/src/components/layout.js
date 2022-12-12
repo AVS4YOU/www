@@ -542,11 +542,13 @@ const StyledPopup = styled.div`
                 <div className="popupText">
                   <Text fontSize={40} fontWeight={600} className="popupTitle" as="h1">{this.props.t("Advent Calendar")}</Text>
                   <Text fontSize={24} fontWeight={400} className="popupCoupon" as="h2">{this.props.t("Up to")}<b>{this.props.t("70")}</b>{this.props.t("discounts")}</Text>
+                  <a href="https://www.avs4you.com/advent-calendar.aspx" target="_blank" rel="noreferrer noopener">
                   <Button className="popupButton" 
                           secondaryText={this.props.secondaryText && this.props.secondaryText} 
                           textTransform="uppercase">
-                          <Link to="/advent-calendar.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("Check It Out")}</Link>
+                          {this.props.t("Check It Out")}
                   </Button>
+                  </a>
                 </div>
               </div>
             </StyledPopup>
