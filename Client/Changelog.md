@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.42
+
+### New
+* Added popup "24 days of Magic Christmas"
+* Added zh translations on `/avs-video-editor.aspx`
+* Added de, fr translation on `/avs-special-offer.aspx`
+* Added check of reCAPTCHA on `/education.aspx`, `/partners.aspx`, `/support.aspx`
+
 ## 1.0.41
 
 ### Fixes

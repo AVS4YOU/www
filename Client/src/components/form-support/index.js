@@ -7,6 +7,7 @@ import Button from '../button';
 import CloseIcon from '../../images/common/icons/close-popup.svg';
 import InfoPopupForm from '../info-popup-form';
 import ReCAPTCHA from "react-google-recaptcha";
+import iconNotice from '../../images/giveaway/notice.svg'
 
 import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
 
@@ -139,6 +140,16 @@ const StyledForm = styled.div`
         font-weight:600;
     }
 
+    .notice{
+        display: grid;
+        grid-gap: 14px;
+        grid-template-columns: 12px 1fr;
+        align-items: center;
+        padding-left: 12px;
+        margin-top: -15px;
+        padding-bottom: 20px;
+    }
+
     .inputsWrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -213,7 +224,9 @@ class FormSupport extends React.Component {
             fileInputsId: ["file0"],
             showAddFile: true,
 
-            formSended: false
+            formSended: false,
+            recaptchaValue: "",
+            errorNotice: true,
         };
 
         this.recaptchaRef = React.createRef();
@@ -287,6 +300,8 @@ class FormSupport extends React.Component {
 
     validate = (inputName, value) => {
         switch (inputName) {
+            case "checkbox":
+                return value ? ErrorStatus.NoError : ErrorStatus.Empty;
             case "name":
                 return this.isEmpty(value) ? ErrorStatus.Empty : ErrorStatus.NoError;
             case "email":
@@ -412,6 +427,9 @@ class FormSupport extends React.Component {
         this.setState({
             recaptchaValue: this.recaptchaRef.current.getValue()
         })
+        this.setState({
+            errorNotice: true
+        }) 
     }
 
     onChangeFileUpload = (e) => {
@@ -475,8 +493,21 @@ class FormSupport extends React.Component {
         }
     };
 
+    showNotice = () => {
+        if (this.state.recaptchaValue.length > 0) {
+            this.setState({
+                errorNotice: true
+            })            
+        } else {
+            this.setState({
+                errorNotice: false
+            })            
+        }
+    }
+
     onClick = () => {
         this.request();
+        this.showNotice();
     };
 
     sendFile = async (formData) => {
@@ -647,6 +678,10 @@ class FormSupport extends React.Component {
                                 sitekey={RecaptchaKeys.public}
                             />
                         </div>
+                        {this.state.errorNotice ? null :
+                        <div className="errorBlock notice"><img width="15px" src={iconNotice}/><Text fontSize={13} fontWeight={500}>reCAPTCHA is required</Text>
+                        </div> 
+                        }
                         <Button
                             tabIndex="0"
                             className="getCouponButton"
