@@ -180,7 +180,7 @@
 	"Occupation": "Occupation",
 	"Institution": "Institution",
 	"Number of subscriptions": "Number of subscriptions",
-	"(no Mac OS/ Linux support)" : "(no Mac OS/ Linux support)",
+	"(no Mac OS/ Linux support)" : "（不支持Mac OS 或 Linux）",
     "4 GB or higher" : "4 GB 或更高",
     "3 GB or higher" : "3 GB or higher",
     "1 GB or higher" : "1 GB or higher",
@@ -1585,6 +1585,7 @@
  "Trustpilot" : " ",
  "AVS Video Editor 97" : "AVS 视频编辑器 v9.7",
  "20 000 000" : "2000",
+ "Windows 10, 8.1, 8, 7, XP, 2003, Vista no Mac OS Linux support": "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)",
 
  "*****************************LANDING********************************" : "*****************************LANDING********************************",
  "AVShead" : "AVS4YOU",
