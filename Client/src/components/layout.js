@@ -274,6 +274,10 @@ const PopupBackground = styled.div`
   height: 100%;
   background-color: rgba(0,0,0,0.35);
   z-index: 100;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 const StyledPopup = styled.div`
