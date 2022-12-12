@@ -336,11 +336,12 @@ const StyledPopup = styled.div`
     background-image:url(${popupCalendar});
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   .popupTitle {
     color: #E93631;
-    padding-top: 95px;
     margin-left: 52px;
     max-width: 350px;
   }
@@ -365,6 +366,9 @@ const StyledPopup = styled.div`
         font-weight: 400;
       }
     }
+  }
+  @media (max-width: 650px) {
+    display: none;
   }
 `;
  
@@ -421,7 +425,7 @@ const StyledPopup = styled.div`
         this.setState({
           showBanner: true,
         })
-      }, 15000);
+      }, 10000);
        
        window.addEventListener('resize', this.updateWindowDimensions);
 
