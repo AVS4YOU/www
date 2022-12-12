@@ -410,10 +410,13 @@ const StyledPopup = styled.div`
      this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
      this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
    }
- 
+
    componentDidMount() {
        this.updateWindowDimensions();
- 
+
+       const pageName = window.location.pathname;
+       this.showPageBanner = !pageName.includes("/advent-calendar.aspx") && !pageName.includes("/video-editing-software.aspx") && !pageName.includes("/avs-special-offer.aspx") && !pageName.includes("/precise-video-cutting-tools.aspx") && !pageName.includes("/video-editor.aspx") && !pageName.includes("/avs-video-screen-recorder.aspx");
+       this.bannerIsShowed = sessionStorage.getItem('bannerIsShowed');
        if(this.props.getDevice){
  
          if(this.state.isMobile === true) {
@@ -425,11 +428,14 @@ const StyledPopup = styled.div`
          }
       }
 
+      if(this.showPageBanner && !this.bannerIsShowed) {
       setTimeout(() => {
+        sessionStorage.setItem('bannerIsShowed', 'true');
         this.setState({
           showBanner: true,
         })
-      }, 10000);
+      }, 100);
+    }
        
        window.addEventListener('resize', this.updateWindowDimensions);
 
@@ -440,8 +446,7 @@ const StyledPopup = styled.div`
           cookies.set('SRC', parsed.SRC, { path: '/' });
         }
 
-        const pageName = window.location.pathname;
-        this.couponBannerZhPath = pageName.includes("zh/register") || pageName.includes("zh/avs-video-editor");
+
    }
  
    componentWillUnmount() {
