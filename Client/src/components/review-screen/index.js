@@ -123,7 +123,7 @@ const ReviewsScreen = props => {
                         <img src={Star} alt="star"/>
                         <img src={Star} alt="star"/>
                     </div>
-                    <Text className="text" fontSize={20} fontWeight={600}>{t("Over")} <b className="orange">20,000,000</b> {t("of satisfied clients!")}</Text>
+                    <Text className="text" fontSize={20} fontWeight={600}>{t("Over")} <b className="orange">{t("20 000 000")}</b> {t("of satisfied clients!")}</Text>
                     <img className="revPeople" src={RevPeople} alt="People"/>
                     <Text className="text" color="#505B63" fontSize={18}>659133 {t("Reviews")}</Text>
                 </div>
