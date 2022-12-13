@@ -22,17 +22,8 @@
   "get $5 coupon code": "ПОЛУЧИТЕ КУПОН НА $5",
   "GET $5 COUPON CODE" : "ПОЛУЧИТЕ КУПОН НА $5",
   "download now": "Установить сейчас",
-
-
-  "************************FORM GET COUPON***************************": "************************FORM GET COUPON***************************",
-
-
-  "Enjoy AVS4YOU amazing gifts and discounts each day up to" : "Наслаждайтесь удивительными AVS4YOU подарками и скидками до",
-	"99% OFF" : "99%",
-	"multi lang" : "каждый день!",
-  "Black Friday Sale 25 Off on" : "Распродажа «Черная пятница» - купон BLF21 с 25% скидкой на пакет",
-  "suite with BLF21 Coupon" : "",
-  "BlackFridayLink" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=BLF21&CLEAN_CART=ALL",
+  "Get coupon": "Получить купон",
+  "I agree that my personal data may be collected, used and processed in accordance with the privacy policy": "Я согласен (-сна), что мои персональные данные собираются, обрабатываются и используются в соответствии с политикой конфиденциальности.",
 
 
   "************************HEADER***************************": "************************HEADER***************************",
