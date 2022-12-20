@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.40
+
+### New
+* Added banner "24 days of Magic Christmas"
+
+### Fixes
+* Fixed coupons on `/advent-calendar.aspx`
+
 ## 1.0.39
 
 ### New
