@@ -384,7 +384,6 @@ constructor(props) {
               validDate="The offer is valid thru December 5, 2022" 
               popupTitle="Get a giveaway from WiseCleaner!"
               popupDiscount="All-in-one Windows PC Cleaning and Speed up Tool"
-              popupSub="*Just use this coupon while purchasing"
               hrefButton="https://downloads.wisecleaner.com/giveaways/WiseCare365_6.3.9.617_AVS4YOU.exe"
               textButton="Free Download"
               />
@@ -412,7 +411,7 @@ constructor(props) {
               validDate="The offer is valid till December 8, 2022"
               popupTitle="70% Off on AVS4YOU 1 Year Subscription"
               popupCoupon="Annual70"
-              popupSub="*Just use this 100% coupon to get your key"
+              popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Annual70&CLEAN_CART=ALL"
               textButton="Shop now"
             />
@@ -466,9 +465,7 @@ constructor(props) {
               popupTitle="Tag your video created with AVS4YOU with a link 
               to our website in the description and 
               get a free license key for AVS Video Editor"
-              popupSub="**Send us a link at sales@avs4you.com"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Clock12&CLEAN_CART=ALL"
-              textButton="Shop now"
+              popupSub="*Send us a link at sales@avs4you.com"
             />
             <CalendarItem
               imageCoordinate={-2212}
