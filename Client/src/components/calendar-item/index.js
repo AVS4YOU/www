@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Text from "../text";
 import PropTypes from "prop-types";
 import spriteImage from "../../images/advent-calendar/calendar.svg";
-import { Button } from "react-scroll";
 
 import {
   TwitterShareButton,
@@ -198,7 +197,8 @@ const StyledCalendarItem = styled.div`
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 210px;
+    max-width: 300px;
+    text-align: center;
 
     a{
       padding-left: 3px; 
@@ -318,9 +318,7 @@ class CalendarItem extends React.Component {
     return(
       <>
         <div className="subText">
-        <Text fontSize="11">{textBefore}</Text>
-        <a href={linkHref}>{linkText}</a>
-        <Text fontSize="11">{textAfter}</Text>
+        <Text fontSize="11">{textBefore} <a href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )

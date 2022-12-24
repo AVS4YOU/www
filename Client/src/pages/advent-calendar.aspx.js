@@ -314,11 +314,12 @@ constructor(props) {
 
 
                     <button 
-                        onClick={() =>  navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
+                        onClick={() => navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
                         style={{
                           paddingBottom: "15px",
                           border: "none",
                           backgroundColor: "#ffffff",
+                          paddingLeft: "0",
                         }}
                         className="Demo__some-network__share-button"
                       >
@@ -361,7 +362,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={0}
               date={new Date(2022, 11, 1)}
-              validDate="The offer is valid till December 24, 2022"
+              validDate="The offer is valid till December 2, 2022"
               popupTitle="Wishing You a Happy first Sunday of Advent!"
               popupDiscount="Claim a $20 gift card for reviewing AVS Audio Editor on Capterra"
               popupCoupon="Review AVS4YOU"
@@ -429,8 +430,8 @@ constructor(props) {
               popupTitle="Share our Advent calendar on Twitter or Facebook"
               popupDiscount="and get a free license key for
               AVS Video ReMaker 1 Year Subscription."
-              linkTwitter="https://twitter.com/AVS4YOU"
-              linkFacebook="https://business.facebook.com/avs4you/?ref=page_internal"
+              linkTwitter={shareUrl}
+              linkFacebook={shareUrl}
               popupSub="*Send us the link to your post in social networks
               to get your free license key"
             />
@@ -478,6 +479,8 @@ constructor(props) {
               textBefore="*Send us a link at"
               linkText="sales@avs4you.com"
               linkHref="mailto:sales@avs4you.com" 
+              textAfter="to your post in social networks
+              and get your free license key"
             />
             <CalendarItem
               imageCoordinate={-2212}
@@ -608,7 +611,7 @@ constructor(props) {
               <div className="afb_logo_link"></div>
             </div>
             <div className="afb_copyright">
-              Online Media Technologies Ltd., UK 2020 All rights reserved.
+            Ascensio System SIA 2022 All rights reserved.
             </div>
           </div>
         </div>
