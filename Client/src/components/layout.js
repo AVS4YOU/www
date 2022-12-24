@@ -74,26 +74,29 @@
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    width: 470px;
+    left: 76px;
+    width: 437px;
     height: 64px;
     z-index: 10;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-size: cover;
     pointer-events: none;
+    z-index: 0;
   }
 
   .PLnewAvsRight {
     position: absolute;
     top: 0;
     height: 64px;
-    width: 470px;
+    width: 115px;
     z-index: 10;
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-size: cover;
     pointer-events: none;
     right: 0;
+    z-index: 0;
   }
 
   .imgCoupon {
