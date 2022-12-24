@@ -432,8 +432,11 @@ constructor(props) {
               AVS Video ReMaker 1 Year Subscription."
               linkTwitter={shareUrl}
               linkFacebook={shareUrl}
-              popupSub="*Send us the link to your post in social networks
-              to get your free license key"
+              textBefore="*Send us the link to"
+              linkText="sales@avs4you.com"
+              linkHref="mailto:sales@avs4you.com" 
+              textAfter="to your post in social networks
+              and get your free license key"
             />
             <CalendarItem
               imageCoordinate={-1474}
@@ -476,11 +479,12 @@ constructor(props) {
               popupDiscount="with a link 
               to our website in the description and 
               get a free license key for AVS Video Editor"
-              textBefore="*Send us a link at"
+              hrefButton="mailto:sales@avs4you.com"
+              textButton="Contact us"
+              textBefore="*Send us a link to"
               linkText="sales@avs4you.com"
               linkHref="mailto:sales@avs4you.com" 
-              textAfter="to your post in social networks
-              and get your free license key"
+              textAfter=" "
             />
             <CalendarItem
               imageCoordinate={-2212}
