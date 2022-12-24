@@ -190,7 +190,7 @@ const StyledCalendarItem = styled.div`
   }
 
   .subText{
-    display: flex;
+    display: block;
     font-size: 11px;
     top: 0;
     bottom: 0;
