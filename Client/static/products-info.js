@@ -44,7 +44,7 @@ let AudioEditor = {
 };
 
 let AudioConverter = {
-    version: "10.3.1.633",
+    version: "10.3.2.634",
     releaseDD: "22",
     releaseMM: "12",
     releaseYYYY: "2022",
