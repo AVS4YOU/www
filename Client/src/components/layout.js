@@ -36,7 +36,7 @@
   text-align: center;
 
   .PLnewAvs {
-    display: flex;
+    display: none;
     width: 100%;
     height: 62px;
     background-color: #007435;
@@ -279,102 +279,6 @@ const PopupBackground = styled.div`
     display: none;
   }
 `;
-
-const StyledPopup = styled.div`
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 101;
-  position: fixed;
-  z-index: 101;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  width: 650px;
-
-  .popupAvs {
-    background-color: #FFFFFF;
-    height: 400px;
-    width: 650px;
-    background-image:url(${bgPopup});
-    background-repeat: no-repeat;
-    
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-    .closeButton {
-      width: 16px;
-      height: 16px;
-      margin-left: auto;
-      padding: 12px;
-
-      &:before, &:after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 3px;
-        background: #05272D;
-        top: 19px;
-        right: 10px;    
-      }
-
-      &:before {
-        transform: rotate(45deg);
-      }
-
-      &:after {
-        transform: rotate(-45deg);
-      }
-    }
-  }
-
-  .popupText {
-    height: 360px;
-    width: 650px;
-    background-image:url(${popupCalendar});
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .popupTitle {
-    color: #E93631;
-    margin-left: 52px;
-    max-width: 350px;
-  }
-
-  .popupCoupon {
-    margin-left: 52px;
-  }
-
-  .popupButton {
-    margin-left: 52px;
-    background-color: #03633F;
-    padding: 0;
-    border-radius: 0;
-    margin-top: 40px;
-
-    p {
-      padding: 12px 50px;
-
-      a {
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: 400;
-      }
-    }
-  }
-  @media (max-width: 650px) {
-    display: none;
-  }
-`;
  
  const StyledLayout = styled.div`
    min-width: 300px;
@@ -415,8 +319,6 @@ const StyledPopup = styled.div`
        this.updateWindowDimensions();
 
        const pageName = window.location.pathname;
-       this.showPageBanner = !pageName.includes("/advent-calendar.aspx") && !pageName.includes("/video-editing-software.aspx") && !pageName.includes("/avs-special-offer.aspx") && !pageName.includes("/precise-video-cutting-tools.aspx") && !pageName.includes("/video-editor.aspx") && !pageName.includes("/avs-video-screen-recorder.aspx");
-       this.bannerIsShowed = sessionStorage.getItem('bannerIsShowed');
        if(this.props.getDevice){
  
          if(this.state.isMobile === true) {
@@ -427,15 +329,6 @@ const StyledPopup = styled.div`
            this.props.getDevice("Desktop");
          }
       }
-
-      if(this.showPageBanner && !this.bannerIsShowed) {
-      setTimeout(() => {
-        sessionStorage.setItem('bannerIsShowed', 'true');
-        this.setState({
-          showBanner: true,
-        })
-      }, 10000);
-    }
        
        window.addEventListener('resize', this.updateWindowDimensions);
 
@@ -532,27 +425,6 @@ const StyledPopup = styled.div`
  
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
-
-         {this.state.showBanner && 
-         <>
-            <PopupBackground onClick={this.onClosePopup} />
-            <StyledPopup>
-              <div className="popupAvs">
-                <div className="closeButton" onClick={this.onClosePopup}></div>
-                <div className="popupText">
-                  <Text fontSize={40} fontWeight={600} className="popupTitle" as="h1">{this.props.t("Advent Calendar")}</Text>
-                  <Text fontSize={24} fontWeight={400} className="popupCoupon" as="h2">{this.props.t("Up to")}<b>{this.props.t("70")}</b>{this.props.t("discounts")}</Text>
-                  <Button className="popupButton" 
-                          textTransform="uppercase"
-                          href="https://www.avs4you.com/advent-calendar.aspx"
-                          target="_blank">
-                          {this.props.t("Check It Out")}
-                  </Button>
-                </div>
-              </div>
-            </StyledPopup>
-          </>
-          }
 
             <StyledPL>
               <div className="PLnewAvs">
