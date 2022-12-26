@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.43
+
+### Fixes
+* Deleted event "24 days of Magic Christmas"
+* Updated versions, dates and file sizes products
+
 ## 1.0.42
 
 ### New
