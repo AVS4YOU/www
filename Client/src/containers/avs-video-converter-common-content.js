@@ -122,6 +122,7 @@ export const AvsVideoConverterCommonContent = (props) => (
       <Text className="ListItem"><span>{props.t("Convert videos for popular social platforms")}</span>{props.t("Use ready presets with most appropriate settings to convert video for YouTube, Facebook, Vimeo, DailyMotion, Telly, Flickr, Dropbox")}</Text>
     </ContentRowItem>
   </PageContentWrapper>
+  
   <div id="reviews" className="backgroundWrapper">
   <ReviewScreen 
       reviewsData={
@@ -153,7 +154,7 @@ export const AvsVideoConverterCommonContent = (props) => (
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>
   </div>
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.4</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.5</Text>
 
 
   <ScreenshotsCarousel 
