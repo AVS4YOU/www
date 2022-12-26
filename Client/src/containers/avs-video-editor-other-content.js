@@ -26,7 +26,6 @@ import awardGetapp from '../images/main-page/awards/award-getapp.png'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
-import awardGetApp from '../images/avs-video-editor/award-getapp.svg'
 
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
@@ -222,8 +221,6 @@ export const AvsVideoEditorOtherContent = (props) => (
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
-      <div className="awards-product" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardGetApp}/></div>
-      <div className="awards-product" style={{verticalAlign:"middle"}}><link href="https://en.freedownloadmanager.org/styles/r3.css" rel="stylesheet"/> <div id="fdm_aw_circ" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.rg-rl').href);return 0;}"> <a id="circ_link" class="rg-rl" href="https://en.freedownloadmanager.org/Windows-PC/AVS-Video-Editor.html" title="AVS Video Editor at Free Download Manager" target="_blank">AVS Video Editor</a> <div id="circ_fdm"> <span>Recommended on</span> <a href="https://en.freedownloadmanager.org/" target="_blank">FDM</a> </div> </div> </div>
     </div>
 </div> 
   
