@@ -155,7 +155,6 @@
 
   @media (max-width: 1024px) {
     .PLnewAvs {
-      display: flex;
       padding: 0;
       height: 60px;
     }
@@ -219,10 +218,6 @@
   }
 
   @media (max-width: 588px) {
-    .PLnewAvs {
-      background-image:url(${plAvsBgMobile});
-      height: 76px;
-    }
 
     .PlAvsDiscount {
       border: none;
@@ -266,17 +261,6 @@
     .gifContainer {
       height: 76px;
     }
-  }
-`;
-const PopupBackground = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.35);
-  z-index: 100;
-
-  @media (max-width: 650px) {
-    display: none;
   }
 `;
  
