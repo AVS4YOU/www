@@ -32,6 +32,7 @@ import awardFilebuzz from '../images/avs-free-video-converter/award-filebuzz.png
 import awardFilecluster from '../images/avs-free-video-converter/award-filecluster.png'
 import awardTops from '../images/avs-free-video-converter/award-topshareware.png'
 import awardTucows from '../images/avs-free-video-converter/award-tucows.png'
+import awardFDM from '../images/avs-free-video-converter/award-FDM_Video-Converter.png'
 
 const StyledContent = styled.div`
 .ListItem {
@@ -151,6 +152,7 @@ export const AvsVideoConverterOtherContent = (props) => (
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardSoft}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardCritical}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+      <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardFDM}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardChip}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardDownload}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardFilebuzz}/></div>
