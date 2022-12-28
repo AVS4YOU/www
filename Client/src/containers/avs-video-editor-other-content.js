@@ -6,6 +6,7 @@ import PanelCollapse from "../components/panel-collapse";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
+import ReviewScreenNew from '../components/review-screen-new';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
@@ -105,6 +106,17 @@ video {
   }
 }
 `;
+
+const lang = ['de','es','fr','it','jp','ru']
+
+const isEngLang = (currentLang) => {
+    let isEngLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isEngLang = true;
+    }
+
+    return isEngLang;
+}
 
 
 export const AvsVideoEditorOtherContent = (props) => (
@@ -383,30 +395,38 @@ export const AvsVideoEditorOtherContent = (props) => (
     </PageContentWrapper>
   </div>
   <div id="reviews" className="backgroundWrapper" style={{marginTop:"0px"}}>
-    <ReviewScreen 
-      reviewsData={
-        [
-          {
-            name: "Chen Wang",
-            avatar: AvatarChenWang,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
-          },
-          {
-            name: "Linda K.",
-            avatar: AvatarLinda,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
-          },
-          {
-            name: "Marc N.",
-            avatar: AvatarMarc,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
+    
+  {isEngLang (props.locale)
+          ? <ReviewScreen 
+          reviewsData={
+            [
+              {
+                name: "Chen Wang",
+                avatar: AvatarChenWang,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
+              },
+              {
+                name: "Linda K.",
+                avatar: AvatarLinda,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
+              },
+              {
+                name: "Marc N.",
+                avatar: AvatarMarc,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
+              }
+            ]
           }
-        ]
+        />
+          : 
+          <ReviewScreenNew>
+
+          </ReviewScreenNew> 
       }
-    />
+        
     <Button className="trustButton" style={{margin: "auto", display: "table"}}
             href="https://www.trustpilot.com/review/www.avs4you.com" 
             color="#fff">
