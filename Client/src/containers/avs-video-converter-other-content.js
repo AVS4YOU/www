@@ -32,7 +32,7 @@ import awardFilebuzz from '../images/avs-free-video-converter/award-filebuzz.png
 import awardFilecluster from '../images/avs-free-video-converter/award-filecluster.png'
 import awardTops from '../images/avs-free-video-converter/award-topshareware.png'
 import awardTucows from '../images/avs-free-video-converter/award-tucows.png'
-import awardFDM from '../images/avs-free-video-converter/award-FDM_Video-Converter.png'
+import awardFDM from '../images/avs-free-video-converter/award-fdm-video-converter.png'
 
 const StyledContent = styled.div`
 .ListItem {

@@ -27,7 +27,7 @@ import awardGetapp from '../images/main-page/awards/award-getapp.png'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
-import awardFDM from '../images/avs-video-editor/award-FDM_Video-Editor.png'
+import awardFDM from '../images/avs-video-editor/award-fdm-video-editor.png'
 import awardGetApp from '../images/avs-video-editor/award-getapp.svg'
 
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
