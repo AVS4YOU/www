@@ -66,11 +66,6 @@ const StyledScreen = styled.div`
             margin: auto;
         }
     }
-    @media (max-width: 1500px) {
-        .carouselWrapper{
-            width: 55%;
-        }
-    }
 
     @media (max-width: 1024px) {
         display: block;
