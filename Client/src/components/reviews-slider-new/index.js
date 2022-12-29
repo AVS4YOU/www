@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from 'styled-components';
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
+import isDesktop from "../layout"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,6 +32,10 @@ const StyledCarouselWrapper = styled.div`
     padding-bottom: 20px;
   }
 
+  .slick-next:before, .slick-prev {
+    filter: brightness(0.5);
+  }
+
   @media (max-width: 750px) {
     .slick-list{
       padding-bottom: 10;
@@ -57,6 +62,7 @@ const StyledIframe = styled.iframe`
     border: none;
 `;
 
+
 const ReviewSliderNew = props => {
 
   const [isVideoEditor, setIsVideoEditor] = useState(false);
@@ -75,7 +81,7 @@ const ReviewSliderNew = props => {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
 
       responsive: [
         {
@@ -83,7 +89,8 @@ const ReviewSliderNew = props => {
             settings: {
             swipeToSlide: true,
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false,
           }
         },
         {
@@ -91,7 +98,8 @@ const ReviewSliderNew = props => {
             settings: {
             swipeToSlide: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false,
           }
         }
       ],
