@@ -9,7 +9,7 @@ import Star from '../../images/main-page/icons/star.svg';
 import RevPeople from '../../images/main-page/icons/reviews-people.png'
 import { useTranslation } from "react-i18next";
 
-import Quote from '../../images/common/review-carousel/quote.svg'
+import Quote from '../../images/common/review-carousel/quote-orange.svg'
 
 const StyledScreen = styled.div`
     padding-top: 100px;
@@ -24,10 +24,36 @@ const StyledScreen = styled.div`
     .carouselWrapper{
         width: 100%;
         display: inline-block;
+        position: relative;
+    }
+
+    .carouselReview {
+        position: relative;
+        z-index: 2;
+    }
+
+    .carouselBlock {
         background-image: url(${Quote});
         background-repeat: no-repeat;
         background-size: 122px;
-        background-position: -20px -20px;
+        width: 122px;
+        height: 122px;
+        position: absolute;
+        left: -20px;
+        top: -40px;
+    }
+
+    .carouselBlockBottom {
+        background-image: url(${Quote});
+        background-repeat: no-repeat;
+        background-size: 122px;
+        width: 122px;
+        height: 122px;
+        position: absolute;
+        right: -20px;
+        bottom: -30px;
+        z-index: 0;
+        transform: rotate(180deg);
     }
 
     .container{
@@ -67,6 +93,20 @@ const StyledScreen = styled.div`
         }
     }
 
+    @media (max-width: 1500px) {
+        .carouselBlockBottom {          
+            right: -20px;
+            bottom: 0px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .carouselBlockBottom {          
+            right: -20px;
+            bottom: 30px;
+        }
+    }
+
     @media (max-width: 1024px) {
         display: block;
         max-width: 600px;
@@ -82,6 +122,11 @@ const StyledScreen = styled.div`
             display: block;
             width: 100%;
             margin-top: 70px;
+        }
+
+        .carouselBlockBottom {          
+            right: -20px;
+            bottom: 0px;
         }
     }
 
@@ -99,6 +144,10 @@ const StyledScreen = styled.div`
             max-width: 150px;
             margin: auto;
             display: block;
+        }
+
+        .carouselBlockBottom {
+            display: none;
         }
     }
 `;
@@ -123,7 +172,9 @@ const ReviewsScreenNew = props => {
                     <Text className="text" color="#505B63" fontSize={18}>659133 {t("Reviews")}</Text>
                 </div>
                 <div className="carouselWrapper">
-                    <ReviewsSliderNew />
+                    <div className='carouselBlock'></div>
+                    <div className='carouselBlockBottom'></div>
+                    <ReviewsSliderNew className='carouselReview'/>
                 </div>
             </StyledScreen>
         </PageContentWrapper>
