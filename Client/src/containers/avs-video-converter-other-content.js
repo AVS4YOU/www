@@ -156,9 +156,6 @@ export const AvsVideoConverterOtherContent = (props) => (
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardChip}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardDownload}/></div>
       <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardFilebuzz}/></div>
-      <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardFilecluster}/></div>
-      <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardTops}/></div>
-      <div className="awards-product-converter" style={{verticalAlign:"middle"}}><img src={awardTucows}/></div>
     </div>
 </div> 
 
