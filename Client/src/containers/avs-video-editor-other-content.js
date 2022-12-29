@@ -422,9 +422,7 @@ export const AvsVideoEditorOtherContent = (props) => (
           }
         />
           : 
-          <ReviewScreenNew>
-
-          </ReviewScreenNew> 
+          <ReviewScreenNew />
       }
         
     <Button className="trustButton" style={{margin: "auto", display: "table"}}
