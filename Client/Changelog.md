@@ -3,8 +3,8 @@
 ## 1.0.44
 
 ### New
-* Added new awards on `avs-video-editor.aspx` and `/avs-free-video-converter.aspx`
-* Added new review carousel on `avs-video-editor.aspx` for en 
+* Added new awards on `/avs-video-editor.aspx` and `/avs-free-video-converter.aspx`
+* Added new review carousel on `/avs-video-editor.aspx` and `/avs-audio-editor.aspx` for en 
 
 ### Fixes
 * Fixed prices on `/installed-audio-converter.aspx`, `/installed-audio-editor.aspx`, `/installed-video-converter.aspx`, `/installed-video-editor.aspx`, `/installed-video-remaker.aspx`, `/installed-pack.aspx`
