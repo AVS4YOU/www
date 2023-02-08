@@ -17,29 +17,20 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import Button from '../components/button';
- import Text from '../components/text';
- import Link from '../components/link';
 
  import PlAVSLeft from "../images/pl/left-side-bg.svg";
  import PlAVSRight from "../images/pl/right-side-bg.svg";
- import couponGift from '../images/pl/coupon-gift.svg';
- import calendarOne from '../images/pl/calendar-1.svg';
- import calendarLast from '../images/pl/calendar-25.svg';
- import imgGif from '../images/pl/gif-coupon.gif';
- import plAvsBgMobile from '../images/pl/mobile-bg.svg'
- import bgPopup from '../images/pl/bg-popup.png'
- import popupCalendar from '../images/pl/calendar-popup.png'
+ import whiteHeart from "../images/pl/white-heart.svg";
 
  const StyledPL =styled.div`
   position: relative;
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
     height: 62px;
-    background-color: #007435;
+    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%);
     background-repeat: no-repeat;
     background-position: 50%;
 
@@ -57,9 +48,9 @@
   .PLnewAvsText {
     display: block;
     padding: 4px 8px;
-    font-family: "Open Sans";
-    font-weight: 500;
-    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
     line-height: 27px;
     color: #ffffff;
     width: auto;
@@ -70,20 +61,19 @@
   }
 
   .PlAvsDiscount {
-    color: #FFE34F;
-    text-transform: uppercase;
+    border: 1px dashed #FFFFFF;
+    padding: 3px 15px;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    left: 76px;
-    width: 428px;
+    left: 370px;
+    width: 790px;
     height: 62px;
-    z-index: 10;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position-y: 50%;
     pointer-events: none;
     z-index: 0;
   }
@@ -92,65 +82,13 @@
     position: absolute;
     top: 0;
     height: 62px;
-    width: 115px;
-    z-index: 10;
+    width: 470px;
     background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position-y: 50%;
     pointer-events: none;
-    right: 0;
+    right: 370px;
     z-index: 0;
-  }
-
-  .imgCoupon {
-    vertical-align: middle;
-    padding-right: 10px;
-    width: 45px;
-    height: 55px;
-  }
-
-  .imgGifLeft {
-    transform: scale(-1, 1);
-    position: relative;
-    top: -40px;
-  }
-
-  .imgGifRight {
-    top: -40px;
-    position: relative;
-  }
-
-  .calendarOne {
-    width: 55px;
-  }
-
-  .calendarLast {
-    width: 55px;
-  }
-
-  .gifContainer {
-    width: calc(250px + 3vw);
-    overflow: hidden;
-    height: 62px;
-  }
-
-  @media (max-width: 1350px) {
-
-    .gifContainer {
-      height: 60px;
-    }
-
-    .imgGifLeft {
-      top: -20px;
-      width: 150px;
-      transform: rotate(8deg);
-    }
-
-    .imgGifRight {
-      top: -20px;
-      width: 150px;
-      transform: rotate(317deg);
-    }
   }
 
   @media (max-width: 1024px) {
@@ -181,28 +119,6 @@
     .PLnewAvsTextMobileBlock {
       display: block;
     }
-
-    .imgGifLeft {
-      width: 145px;
-      top: -23px;
-      left: 0;
-    }
-  
-    .imgGifRight {
-      display: none;
-      width: 100px;
-      top: 0px;
-      right: 0;
-    }
-
-    .calendarOne {
-      display: none;
-    }
-
-    .calendarLast {
-      position: absolute;
-      right: 30px;
-    }
   }
 
   @media (max-width: 768px) {
@@ -210,10 +126,6 @@
     .PLnewAvsText{
       font-size: 14px;
       line-height: 20px;
-    }
-
-    .imgCoupon {
-      display: none;
     }
   }
 
@@ -239,27 +151,6 @@
 
     .PLnewAvsRight {
       display: none;
-    }
-
-    .imgGifLeft {
-      width: 100px;
-      transform: -90deg;
-      transform: rotate(-90deg);
-      position: relative;
-      left: -65px;
-      top: 0;
-    }
-
-    .imgCoupon {
-      display: none;
-    }
-
-    .calendarLast {
-      right: 0px;
-    }
-
-    .gifContainer {
-      height: 76px;
     }
   }
 `;
@@ -414,11 +305,7 @@
               <div className="PLnewAvs">
                 <div className="PLnewAvsLeft"></div>
                   <a href={this.props.t("avs pl link")} target="_blank">
-                  <img className="calendarOne" src={calendarOne}/>
-                  <div className="gifContainer"><img className="imgGifLeft" src={imgGif}/></div>
-                  <img className="imgCoupon" src={couponGift}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span>
-                  <div className="gifContainer"><img className="imgGifRight" src={imgGif}/></div>
-                  <img className="calendarLast" src={calendarLast}/>
+                  <img className="imgCoupon" src={whiteHeart}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img className="imgCoupon" src={whiteHeart}/>
                   </a>
                 <div className="PLnewAvsRight"></div>
               </div>

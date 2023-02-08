@@ -1793,18 +1793,12 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Découvrez les cadeaux exceptionnels fournis par",
-    "discountCoupon" : " AVS4YOU ",
-    "textBanner" : "et ses partenaires. Profitez de ",
-    "nameCoupon" : "remises jusqu'à 70%",
-    "endingBanner" : "!",
-    "avs pl link" : "https://www.avs4you.com/advent-calendar.aspx",
-
-    "Advent Calendar" : "Calendrier de l'Avent",
-    "Up to" : "Réductions jusqu'à",
-    "70" : " 70% ",
-    "discounts" : "!",
-    "Check It Out" : "Découvrez-le",
+    "beginningBanner" : "Profitez de l'offre de la Saint Valentin",
+    "discountCoupon" : " - 25% de réduction sur la suite AVS4YOU ",
+    "textBanner" : "avec le coupon ",
+    "nameCoupon" : "AVSLove23",
+    "endingBanner" : " !",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=fr&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSLove23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/fr/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&COUPON=AVS22XSM&CLEAN_CART=ALL",
