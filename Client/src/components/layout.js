@@ -108,6 +108,10 @@
       padding: 0;
       height: 62px;
     }
+
+    .PLnewAvsLeft {
+      width: 540px;
+    }
   }
 
   @media (max-width: 600px) {
@@ -119,10 +123,6 @@
   }
 
   @media (max-width: 400px) {
-
-    .PLnewAvsLeft {
-      width: 540px;
-    }
 
     .PlAvsDiscount {
       padding: 1px 10px;
