@@ -9,6 +9,10 @@
             padding-top:40px;
             padding-bottom:120px;
             background-color:#F9F9F9;
+            background-image: url(../images/register/register-page-bg.svg);
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-size: 1400px;
         }
     }
 
@@ -19,7 +23,7 @@
         text-align: center;
 
         &>h1{
-            color:#F67607;
+            color:#EF4949;
             font-size:52px;
             font-weight: 600;
         }
@@ -58,18 +62,19 @@
                 margin-left: 65px;
 
                 .unlimited-block-content{
-                    border: 1px solid #FB8A29;
+                    border: 1px solid #EF4949;
                     border-top: none;
                     border-radius: 10px;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
                     padding-top: 42px;
                     padding-bottom:40px;
+                    position: relative;
                     
                 }
 
                 .popular-banner{
-                    background-color: #FB8A29;
+                    background-color: #EF4949;
                     padding: 10px;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
@@ -113,6 +118,33 @@
             font-weight: 600;
         }
 
+        .heart-sub {
+            background-position-x: 10%;
+            background-image: url(../images/register/heart-3.svg);
+            background-repeat: no-repeat;
+        }
+
+        .heart-offer {
+            position: absolute;
+            background-image: url(../images/register/heart-2.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 18px;
+            right: -95px;
+            bottom: -40px;
+        }
+
+        .heart-unlimited {
+            position: absolute;
+            background-image: url(../images/register/heart-1.svg);
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 43px;
+            right: -27px;
+            background-size: 46px;
+            top: 55px;
+        }
+
         .price-block{
             background-color: #F9F9F9;
             margin: auto;
@@ -124,6 +156,7 @@
             max-width: 274px;
             padding: 16px 0px;
             border-radius: 10px;
+            position: relative;
 
             .prev-price-text{
                 font-size: 16px;
@@ -138,7 +171,7 @@
                 font-weight: bold;
                 text-align: center;
                 margin-bottom: 5px;
-                color:#F59541;
+                color:#EF4949;
 
                 span{
                     font-size: 24px;
@@ -163,6 +196,7 @@
             margin: auto;
             text-align: center;
             max-width: 170px;
+            background-color: #EF4949;
 
             p{
                 text-transform: uppercase;
@@ -318,6 +352,19 @@
 
 @media (max-width: 750px) {
     .register{ 
+
+        .heart-sub {
+            display: none;
+        }
+
+        .heart-offer {
+            display: none;
+        }
+
+        .heart-unlimited {
+            display: none;
+        }
+
         .featuresItem{
             padding: 0 10px;
             box-sizing: border-box;
@@ -334,6 +381,7 @@
             &.first{
                 padding-top:35px;
                 padding-bottom:60px;
+                background-size: auto;
             }
         }
 

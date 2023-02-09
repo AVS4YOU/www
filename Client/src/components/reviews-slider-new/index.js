@@ -85,7 +85,7 @@ const ReviewSliderNew = props => {
 
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1025,
             settings: {
             swipeToSlide: true,
             slidesToShow: 2,

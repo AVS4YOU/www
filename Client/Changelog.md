@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.45
+
+### New
+* Added banner "St. Valentine's Day"
+* Changed styles on `register.aspx`, `register-ac.aspx`, `register-vc.aspx` 
+
 ## 1.0.44
 
 ### New
