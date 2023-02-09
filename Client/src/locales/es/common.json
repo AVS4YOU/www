@@ -1750,8 +1750,8 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Aproveche la oferta del Día de San Valentín: ¡",
-    "discountCoupon" : "25 % de descuento en el paquete AVS4YOU ",
+    "beginningBanner" : "¡Aproveche la oferta del Día de San Valentín",
+    "discountCoupon" : " - 25 % de descuento en el paquete AVS4YOU ",
     "textBanner" : "con el cupón ",
     "nameCoupon" : "AVSLove23",
     "endingBanner" : " !",
