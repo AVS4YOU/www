@@ -42,6 +42,8 @@
       height: 100%;
       z-index: 9;
       text-decoration: none;
+      height: 62px;
+      position: absolute;
     }
   }
 
@@ -50,7 +52,7 @@
     padding: 4px 8px;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27px;
     color: #ffffff;
     width: auto;
@@ -63,13 +65,23 @@
   .PlAvsDiscount {
     border: 1px dashed #FFFFFF;
     padding: 3px 15px;
+    word-break: keep-all;
+  }
+
+  .bgPlAvs {
+    width: 1200px;
+    position: absolute;
+    height: 62px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    left: 370px;
-    width: 790px;
+    left: 0;
+    width: 590px;
     height: 62px;
     background-image:url(${PlAVSLeft});
     background-repeat: no-repeat;
@@ -87,70 +99,33 @@
     background-repeat: no-repeat;
     background-position-y: 50%;
     pointer-events: none;
-    right: 370px;
+    right: 0;
     z-index: 0;
   }
 
   @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
-      height: 60px;
-    }
-  
-    .PLnewAvsText{
-      font-size: 16px;
-      position: relative;
-      top: 0;
-    }
-
-    .PLnewAvsRight {
-      top: 0;
-      right: 0;
-      background-size: 200px;
-      width: 200px;
-    }
-
-    .PLnewAvsLeft {
-      top: 0;
-      left: 0;
-      background-size: 200px;
-    }
-
-    .PLnewAvsTextMobileBlock {
-      display: block;
+      height: 62px;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
 
     .PLnewAvsText{
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
     }
   }
 
-  @media (max-width: 588px) {
+  @media (max-width: 400px) {
+
+    .PLnewAvsLeft {
+      width: 540px;
+    }
 
     .PlAvsDiscount {
-      border: none;
-      padding: 0px;
-    }
-
-    .PLnewAvsText{
-      display: block;
-      width: 230px;
-      line-height: 20px;
-      position: absolute;
-      top: 5px;
-      font-size: 12px;
-    }
-
-    .PLnewAvsLeft {
-      display: none;
-    }
-
-    .PLnewAvsRight {
-      display: none;
+      padding: 1px 10px;
     }
   }
 `;
@@ -303,11 +278,10 @@
 
             <StyledPL>
               <div className="PLnewAvs">
-                <div className="PLnewAvsLeft"></div>
+              <div className="bgPlAvs"><div className="PLnewAvsLeft"></div><div className="PLnewAvsRight"></div></div>
                   <a href={this.props.t("avs pl link")} target="_blank">
-                  <img className="imgCoupon" src={whiteHeart}/><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img className="imgCoupon" src={whiteHeart}/>
+                  <img className="imgCoupon" src={whiteHeart} style={{paddingLeft:"16px"}} /><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img className="imgCoupon" src={whiteHeart} style={{paddingRight:"16px"}}/>
                   </a>
-                <div className="PLnewAvsRight"></div>
               </div>
             </StyledPL>
         
