@@ -50,7 +50,7 @@
   .PLnewAvsText {
     display: block;
     padding: 4px 8px;
-    font-family: 'Inter';
+    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 27px;
@@ -66,10 +66,11 @@
     border: 1px dashed #FFFFFF;
     padding: 3px 15px;
     word-break: keep-all;
+    font-weight: 700;
   }
 
   .bgPlAvs {
-    width: 1200px;
+    width: 1160px;
     position: absolute;
     height: 62px;
     top: 0;
@@ -118,7 +119,6 @@
 
     .PLnewAvsText{
       font-size: 12px;
-      line-height: 20px;
     }
   }
 
@@ -126,6 +126,10 @@
 
     .PlAvsDiscount {
       padding: 1px 10px;
+    }
+
+    .PLnewAvsText{
+      line-height: 18px;
     }
   }
 `;
