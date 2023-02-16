@@ -4,6 +4,13 @@ import Text from "../text";
 import PropTypes from "prop-types";
 import spriteImage from "../../images/advent-calendar/calendar.svg";
 
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from "react-share";
+
 const months = [
   "January",
   "February",
@@ -18,6 +25,7 @@ const months = [
   "November",
   "December",
 ];
+
 
 const StyledCalendarItem = styled.div`
   display: block;
@@ -47,6 +55,13 @@ const StyledCalendarItem = styled.div`
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
   }
 
+  .socialLinks {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .closeButton {
     border-radius: 50%;
     width: 30px;
@@ -67,6 +82,10 @@ const StyledCalendarItem = styled.div`
       z-index: 1;
       color: #185674;
     }
+  }
+
+  .twitterIconPopup {
+    display: block;
   }
 
   .popupBlock {
@@ -171,18 +190,21 @@ const StyledCalendarItem = styled.div`
   }
 
   .subText{
-    display: flex;
+    display: block;
     font-size: 11px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 332px;
+    max-width: 300px;
+    text-align: center;
 
     a{
       padding-left: 3px; 
       padding-right: 3px;
+      color: #333333;
+      text-decoration: underline;
     }
   }
 
@@ -208,6 +230,8 @@ const StyledCalendarItem = styled.div`
   }
 }
 `;
+
+
 
 class CalendarItem extends React.Component {
   constructor(props) {
@@ -294,9 +318,7 @@ class CalendarItem extends React.Component {
     return(
       <>
         <div className="subText">
-        <Text fontSize="11">{textBefore}</Text>
-        <a href={linkHref}>{linkText}</a>
-        <Text fontSize="11">{textAfter}</Text>
+        <Text fontSize="11">{textBefore} <a href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )
@@ -323,8 +345,25 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderSocialLinks = (linkFacebook, linkTwitter) => {
+    return (
+      <div className="socialLinks">
+        <TwitterShareButton
+          url={linkTwitter}
+        >
+          <TwitterIcon size={50} round />
+        </TwitterShareButton>
+        <FacebookShareButton
+        url={linkFacebook}
+        >
+          <FacebookIcon size={50} round />
+        </FacebookShareButton>
+    </div>
+    )
+  }
+
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -351,6 +390,8 @@ class CalendarItem extends React.Component {
               <Text className="popupTitle">{popupTitle}</Text>
               {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
               <Text className="popupDiscount">{popupDiscount}</Text>
+              <Text className="popupDiscount">{popupDiscountTwo}</Text>
+              {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook)}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}

@@ -45,7 +45,7 @@ render(){
             {this.props.t("Company")}
           </Text>
           <Text className="body-company__text">
-            <b>{this.props.t("Founded in 2004")}</b>{this.props.t(",")} {this.props.t("Online Media Technologies Ltd is an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers Our award-winning products have earned high reputation among millions of users worldwide Working in touch with the latest trends in multimedia world we create software tools that make your work with digital video and audio smooth and effective and let you remain on the cutting edge of high technological advances")}
+            {this.props.t("We are an IT high-tech company that specializes in developing innovative video and audio solutions for end-users and professional developers")}
           </Text>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
         </div>
@@ -110,20 +110,18 @@ render(){
         <div className="map-body">
           <div className="map-body__contacts-wrapper">
             <div className="map-body__block">
-            
               <Text as="h4" className="map-body__heading">{this.props.t("We are here")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("Suite 12, 2nd Floor, Queens House")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("180 Tottenham Court Road")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("London W1T 7PD")}</Text>
-              <Text as="p" className="map-body__text">{this.props.t("United Kingdom")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("20A-6 Ernesta Birznieka-Upish street,")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("Riga, Latvia, EU,")}</Text>
+              <Text as="p" className="map-body__text">{this.props.t("LV-1050")}</Text>
             </div>
             <div className="map-body__block">
               <Text as="h4" className="map-body__heading">{this.props.t("Contacts")}</Text>
-              <Text as="p" className="map-body__text"><a href="tel:+442081443359">(+44) 20 7097 8969</a> ({this.props.t("no phone support")})</Text>
+              <Text as="p" className="map-body__text"><a href="tel:+37163399867">+371 63399867</a> ({this.props.t("no phone support")})</Text>
             </div>
           </div>
           <div className="map-body__adaptive-map">
-            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2569405901709!2d-0.13665574168987776!3d51.52213386381332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b29329cc78f%3A0xe28600fd84cdb10!2zU3VpdGUgMTIsIDJuZCBGbG9vciwgMTgwIFRvdHRlbmhhbSBDb3VydCBSZCwgRml0enJvdmlhLCBMb25kb24gVzFUIDdOWiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1606730021347!5m2!1sru!2sru" width="100%" height="100%" frameBorder="0" allowFullScreen=""  />
+            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2176.0128857323316!2d24.1223318!3d56.9485805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece2cdaca8445%3A0xd9527599f613e84d!2sErnesta%20Birznieka-Up%C4%AB%C5%A1a%20iela%206-20a%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1050%2C%20Latvia!5e0!3m2!1sen!2suk!4v1649396808841!5m2!1sen!2suk" width="100%" height="100%" frameBorder="0" allowFullScreen="" />
           </div>
         </div>
         <div className="contact-body">

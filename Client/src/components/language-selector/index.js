@@ -189,6 +189,7 @@ const availableLocales = [
 
 const pagesForChinese = [
     'register.aspx',
+    'avs-video-editor.aspx'
 ]
 
 class LanguageSelector extends React.PureComponent {

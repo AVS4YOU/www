@@ -43,8 +43,8 @@ render(){
         metaKeywords={this.props.t("video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow")}
       >
          {isSomeLang(this.props.locale)
-          ? <AvsVideoEditorOtherContent t={this.props.t} /> 
-          : <AvsVideoEditorCommonContent t={this.props.t} />
+          ? <AvsVideoEditorOtherContent t={this.props.t} locale={this.props.locale}/> 
+          : <AvsVideoEditorCommonContent t={this.props.t} locale={this.props.locale}/>
         }
       </Layout>
     );

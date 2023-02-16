@@ -17,136 +17,122 @@
  import { withPrefix } from "gatsby";
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
- import PlAVSLeft from "../images/pl/easter-left.svg";
- import PlAVSRight from "../images/pl/easter-right.svg"; 
+
+ import PlAVSLeft from "../images/pl/left-side-bg.svg";
+ import PlAVSRight from "../images/pl/right-side-bg.svg";
+ import whiteHeart from "../images/pl/white-heart.svg";
+
  const StyledPL =styled.div`
- position: relative;
- text-align: center;
- span {
-   text-align: center;
- }
+  position: relative;
+  text-align: center;
 
- .PLnewAvs{
+  .PLnewAvs {
     display: none;
-    font-size: 20px;
-    background-color: #486D08;
     width: 100%;
-    height: 60px;
- }
-   .PLnewAvsText{
-     position: static;
-     z-index: 25;
-     color: #fff;
-     font-size: 18px;
-     font-weight: 600;
-     top: 13px;
-     margin: auto;
-     width: 100%;
-     font-family: 'Open Sans';
-     letter-spacing: 1px;
-    }
+    height: 62px;
+    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%);
+    background-repeat: no-repeat;
+    background-position: 50%;
 
- .PLnewAvs a {
-      text-decoration: none !important;
-      position: relative;
-      z-index: 11;
-      height: 60px;
+    a {
       display: flex;
-      align-items: center;
       justify-content: center;
-      width: 100vw;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      text-decoration: none;
+      height: 62px;
+      position: absolute;
     }
-
-.PLnewAvsTextCoupon{
-    color: #ffbd59;
-    font-weight: 700 !important;
- }
-
-  .PLnewAvsCoupon {
-    color: #486D08;
-    background-color: #ffbd59;
-    padding: 1px 10px;
-    font-weight: 700 !important;
   }
- 
-   .PLAvs {
-     position: absolute;
-     width: 900px;
-   }
-   .PLnewAvsLeft{
-     height: 60px;
-     z-index:10;
-     background-image:url(${PlAVSLeft});
-     width: 550px;
-     position: absolute;
-     right: 80%;
-     top: 0;
-     background-repeat: no-repeat;
-   }
-   .PLnewAvsCenter{
-     height: 48px;
-     margin: auto;
-     z-index:9;
-   }
-   .PLnewAvsRight{
-     height: 60px;
-     z-index:10;
-     background-image:url(${PlAVSRight});
-     width: 550px;
-     position: absolute;
-     left: 80%;
-     top: 0;
-     background-repeat: no-repeat;
-   }
 
-   @media (max-width: 1700px) {
-    .PLnewAvsRight{
-      left: 90%;
-    }
-
-   .PLnewAvsLeft{
-      right: 90%;
+  .PLnewAvsText {
+    display: block;
+    padding: 4px 8px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+    width: auto;
   }
-}
- 
-   @media (max-width: 1024px) {
+
+  .PLnewAvsTextAccent {
+    font-weight: 700;
+  }
+
+  .PlAvsDiscount {
+    border: 1px dashed #FFFFFF;
+    padding: 3px 15px;
+    word-break: keep-all;
+    font-weight: 700;
+  }
+
+  .bgPlAvs {
+    width: 1160px;
+    position: absolute;
+    height: 62px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+  }
+
+  .PLnewAvsLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 590px;
+    height: 62px;
+    background-image:url(${PlAVSLeft});
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .PLnewAvsRight {
+    position: absolute;
+    top: 0;
+    height: 62px;
+    width: 470px;
+    background-image: url(${PlAVSRight});
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    pointer-events: none;
+    right: 0;
+    z-index: 0;
+  }
+
+  @media (max-width: 1024px) {
     .PLnewAvs {
       padding: 0;
-      height: 60px;
- }
-  
-     .PLnewAvsText{
-       font-size: 12px;
-    padding: 0 6px;
-    position: relative;
-    top: 0;
-   }
-
-  .PLnewAvsRight{
-    height: 60px;
-    top: 0;
- }
-
-  .PLnewAvsLeft{
-    height: 60px;
-    top: 0;
-}
-}
-
- @media (max-width: 500px) {
-   .PLnewAvsText{
-    display: block;
- }
-
- .PLnewAvsLeft{
-    left: -468px;
- }
-
- .PLnewAvsRight{
-    left: 360px;
-}
+      height: 62px;
     }
- `;
+
+    .PLnewAvsLeft {
+      width: 540px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .PLnewAvsText{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    .PlAvsDiscount {
+      padding: 1px 10px;
+    }
+
+    .PLnewAvsText{
+      line-height: 18px;
+    }
+  }
+`;
  
  const StyledLayout = styled.div`
    min-width: 300px;
@@ -173,7 +159,8 @@
      super(props);
      this.state = {
        isTablet: false,
-       isMobile: false
+       isMobile: false,
+       showBanner: false
      }
  
      const OriginalPath = this.props.pageContext.originalPath;
@@ -181,10 +168,11 @@
      this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
      this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
    }
- 
+
    componentDidMount() {
        this.updateWindowDimensions();
- 
+
+       const pageName = window.location.pathname;
        if(this.props.getDevice){
  
          if(this.state.isMobile === true) {
@@ -194,7 +182,7 @@
          } else {
            this.props.getDevice("Desktop");
          }
-       }
+      }
        
        window.addEventListener('resize', this.updateWindowDimensions);
 
@@ -204,6 +192,8 @@
         if (parsed.SRC) {
           cookies.set('SRC', parsed.SRC, { path: '/' });
         }
+
+
    }
  
    componentWillUnmount() {
@@ -215,6 +205,13 @@
            isTablet: window.innerWidth < 1050,
            isMobile: window.innerWidth < 750
        })
+   }
+
+   onClosePopup = (e) => {
+    e.stopPropagation();
+    this.setState({
+      showBanner: false,
+    })
    }
  
    componentDidUpdate(){
@@ -282,17 +279,16 @@
  
            <script src={withPrefix('impact-write-cookie.js')} type="text/javascript" />
          </Helmet>
- 
-         <StyledPL>
-         <div className="PLnewAvs">
-          <div className="PLnewAvsLeft"></div>
-              <a href={this.props.t("avs pl link")} target="_blank">
-                <span className="PLnewAvsText"> {this.props.t("beginningBanner")} <span className="PLnewAvsTextCoupon">{this.props.t("discountCoupon")}</span> {this.props.t("colorCoupon")} <span className="PLnewAvsCoupon">{this.props.t("nameCoupon")}</span> {this.props.t("endingBanner")}</span>
-              </a>
-          <div className="PLnewAvsRight"></div>
-         </div>
-         </StyledPL>
-         
+
+            <StyledPL>
+              <div className="PLnewAvs">
+              <div className="bgPlAvs"><div className="PLnewAvsLeft"></div><div className="PLnewAvsRight"></div></div>
+                  <a href={this.props.t("avs pl link")} target="_blank">
+                  <img className="imgCoupon" src={whiteHeart} style={{paddingLeft:"16px"}} /><span className="PLnewAvsText">{this.props.t("beginningBanner")}<span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img className="imgCoupon" src={whiteHeart} style={{paddingRight:"16px"}}/>
+                  </a>
+              </div>
+            </StyledPL>
+        
          {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales} locale={this.props.pageContext.locale} t={this.props.t}/>}
          <StyledLayout className={this.props.className}>
            <main>{this.props.children}</main>

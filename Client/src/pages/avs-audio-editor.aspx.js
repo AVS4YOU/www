@@ -7,6 +7,7 @@ import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
+import ReviewScreenNew from '../components/review-screen-new';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
@@ -21,7 +22,16 @@ import AvatarDavid from '../images/avs-audio-editor/david.png';
 import AvatarFrank from '../images/avs-audio-editor/frank.png';
 import AvatarJohn from '../images/avs-audio-editor/john.png';
 
+const lang = ['de','es','fr','it','jp','ru']
 
+const isEngLang = (currentLang) => {
+    let isEngLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isEngLang = true;
+    }
+
+    return isEngLang;
+}
 
 class avsAudioEditor extends React.PureComponent {
 
@@ -131,7 +141,8 @@ render(){
 
           </PageContentWrapper>
           <div id="reviews" className="backgroundWrapper">
-            <ReviewScreen 
+          {isEngLang (this.props.locale)
+          ? <ReviewScreen 
               reviewsData={
                 [
                   {
@@ -155,6 +166,9 @@ render(){
                 ]
               }
             />
+            :
+            <ReviewScreenNew />
+            }
             <Button className="trustButton" style={{margin: "auto", display: "table"}}
                     href="https://www.trustpilot.com/review/www.avs4you.com" 
                     color="#fff">

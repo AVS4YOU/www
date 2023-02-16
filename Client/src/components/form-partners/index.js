@@ -5,6 +5,7 @@ import Input from '../input';
 import Button from '../button';
 import InfoPopupForm from '../info-popup-form';
 import ReCAPTCHA from "react-google-recaptcha";
+import iconNotice from '../../images/giveaway/notice.svg'
 
 import {RecaptchaKeys, AjaxUrls} from '../../../static/static-data';
 
@@ -17,6 +18,16 @@ const StyledForm = styled.div`
     margin: auto;
     margin-top: 30px;
     display: block;
+
+    .notice{
+        display: grid;
+        grid-gap: 14px;
+        grid-template-columns: 12px 1fr;
+        align-items: center;
+        padding-left: 12px;
+        margin-top: -15px;
+        padding-bottom: 20px;
+    }
 
     .formHeader{
         color:#161922;
@@ -101,8 +112,12 @@ class FormPartners extends React.Component {
 
             subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
 
+            checkbox: { value: false, status: ErrorStatus.NoError },
+
+            checkBoxClassName: "",
             formSended: false,
             recaptchaValue: "",
+            errorNotice: true,
         };
 
         this.recaptchaRef = React.createRef();
@@ -233,6 +248,15 @@ class FormPartners extends React.Component {
         }
     }
 
+    OnChangeRecaptcha = () => {
+        this.setState({
+            recaptchaValue: this.recaptchaRef.current.getValue()
+        })
+        this.setState({
+            errorNotice: true
+        }) 
+    }
+
     setFocusInput = (inputName, className) => {
         const field = this.state[inputName];
 
@@ -295,8 +319,21 @@ class FormPartners extends React.Component {
         }
     };
 
+    showNotice = () => {
+        if (this.state.recaptchaValue.length > 0) {
+            this.setState({
+                errorNotice: true
+            })            
+        } else {
+            this.setState({
+                errorNotice: false
+            })            
+        }
+    }
+
     onClick = () => {
         this.request();
+        this.showNotice();
     }
 
     sendForm = async (data) => {
@@ -423,6 +460,10 @@ class FormPartners extends React.Component {
                                 sitekey={RecaptchaKeys.public}
                             />
                         </div>
+                        {this.state.errorNotice ? null :
+                        <div className="errorBlock notice"><img width="15px" src={iconNotice}/><Text fontSize={13} fontWeight={500}>reCAPTCHA is required</Text>
+                        </div> 
+                        }
 
                         <Button
                             tabIndex="0"

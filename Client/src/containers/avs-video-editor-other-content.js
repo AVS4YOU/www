@@ -6,6 +6,7 @@ import PanelCollapse from "../components/panel-collapse";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
+import ReviewScreenNew from '../components/review-screen-new';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
@@ -15,7 +16,6 @@ import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
-import videoHeader from '../images/avs-video-editor/avs_video_editor_page.webm'
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
@@ -27,6 +27,8 @@ import awardGetapp from '../images/main-page/awards/award-getapp.png'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
+import awardFDM from '../images/avs-video-editor/award-fdm-video-editor.png'
+import awardGetApp from '../images/avs-video-editor/award-getapp.svg'
 
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
@@ -105,12 +107,22 @@ video {
 }
 `;
 
+const lang = ['de','es','fr','it','jp','ru']
+
+const isEngLang = (currentLang) => {
+    let isEngLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isEngLang = true;
+    }
+
+    return isEngLang;
+}
+
 
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>
     <video autoPlay loop muted style={{position: "absolute"}}>
-    <source src={videoHeader} type='video/webm; codecs="vp8, vorbis"' />
     <source src={videoHeaderMP} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             Your browser does not support HTML5 video.
     </video>
@@ -223,6 +235,8 @@ export const AvsVideoEditorOtherContent = (props) => (
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardFDM}/></div>
+      <div className="awards-product" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardGetApp}/></div>
     </div>
 </div> 
   
@@ -277,7 +291,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.7</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.8</Text>
   <ScreenshotsCarousel
     imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
     imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
@@ -381,30 +395,36 @@ export const AvsVideoEditorOtherContent = (props) => (
     </PageContentWrapper>
   </div>
   <div id="reviews" className="backgroundWrapper" style={{marginTop:"0px"}}>
-    <ReviewScreen 
-      reviewsData={
-        [
-          {
-            name: "Chen Wang",
-            avatar: AvatarChenWang,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
-          },
-          {
-            name: "Linda K.",
-            avatar: AvatarLinda,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
-          },
-          {
-            name: "Marc N.",
-            avatar: AvatarMarc,
-            revHeader: props.t("Our customers say"),
-            revText: props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
+    
+  {isEngLang (props.locale)
+          ? <ReviewScreen 
+          reviewsData={
+            [
+              {
+                name: "Chen Wang",
+                avatar: AvatarChenWang,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("For the price this is certainly great value for money I mostly use AVS Video Editor and Video Converter and I find them to be both excellent easy to use with quality results")
+              },
+              {
+                name: "Linda K.",
+                avatar: AvatarLinda,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("I love all the programs I use the registry cleaner weekly and the video converter almost daily You can not get a better deal for just the registry cleaner alone The audio and video converter programs are easy to work")
+              },
+              {
+                name: "Marc N.",
+                avatar: AvatarMarc,
+                revHeader: props.t("Our customers say"),
+                revText: props.t("Ive used several AVS products for years and they have never fallen short on what I needed them to do")
+              }
+            ]
           }
-        ]
+        />
+          : 
+          <ReviewScreenNew />
       }
-    />
+        
     <Button className="trustButton" style={{margin: "auto", display: "table"}}
             href="https://www.trustpilot.com/review/www.avs4you.com" 
             color="#fff">

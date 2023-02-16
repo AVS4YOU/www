@@ -1,5 +1,106 @@
 # Changelog
 
+## 1.0.46
+
+### New
+* Deleted event "St. Valentine's Day" 
+
+## 1.0.45
+
+### New
+* Added banner "St. Valentine's Day"
+* Changed styles on `register.aspx`, `register-ac.aspx`, `register-vc.aspx` 
+
+## 1.0.44
+
+### New
+* Added new awards on `/avs-video-editor.aspx` and `/avs-free-video-converter.aspx`
+* Added new review carousel on `/avs-video-editor.aspx` and `/avs-audio-editor.aspx` for en 
+
+### Fixes
+* Fixed prices on `/installed-audio-converter.aspx`, `/installed-audio-editor.aspx`, `/installed-video-converter.aspx`, `/installed-video-editor.aspx`, `/installed-video-remaker.aspx`, `/installed-pack.aspx`
+
+## 1.0.43
+
+### Fixes
+* Deleted event "24 days of Magic Christmas"
+* Updated versions, dates and file sizes products
+
+## 1.0.42
+
+### New
+* Added popup "24 days of Magic Christmas"
+* Added zh translations on `/avs-video-editor.aspx`
+* Added de, fr translation on `/avs-special-offer.aspx`
+* Added check of reCAPTCHA on `/education.aspx`, `/partners.aspx`, `/support.aspx`
+
+## 1.0.41
+
+### Fixes
+* Fixed dates and prices on `/avs-special-offer.aspx`
+* Fixed banner "24 days of Magic Christmas"
+
+## 1.0.40
+
+### New
+* Added banner "24 days of Magic Christmas"
+
+### Fixes
+* Fixed coupons on `/advent-calendar.aspx`
+
+## 1.0.39
+
+### New
+* Deleted event Black Friday 2022
+
+## 1.0.38
+
+### New
+* Added event Black Friday 2022
+
+## 1.0.37
+
+### New
+* Deleted event Halloween Treat!
+* Changed layout on `/register.aspx`
+* Added coupon banner for zh
+### Fixes
+* Fixed address, phone, map on `/about-us.aspx`
+* Fixed translation on `/fr/register.aspx`
+
+## 1.0.36
+
+### New
+* Added event Halloween Treat!
+* Styled register.aspx page for Halloween!
+### Fixes
+* Fixed footer text
+* Update buy now links
+
+## 1.0.35
+
+### New
+* Added page `/avs-video-remaker-giveaway.aspx`
+### Fixes
+* Fixed products version
+* Fixed price for ru location /ru/installed-pack.aspx
+
+
+## 1.0.34
+
+### New
+* Added de, fr translations on `/video-editor.aspx`
+
+### Fixes
+* Fixed pads
+* Fixed video header on `/avs-video-editor.aspx`
+
+## 1.0.33
+
+### New
+* Added Safety Award on main page
+* Added utm links on `/special-offer`
+
 ## 1.0.32
 
 ### New
