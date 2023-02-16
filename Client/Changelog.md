@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.46
+
+### New
+* Deleted event "St. Valentine's Day" 
+
 ## 1.0.45
 
 ### New

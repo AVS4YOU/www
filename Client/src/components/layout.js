@@ -27,7 +27,7 @@
   text-align: center;
 
   .PLnewAvs {
-    display: block;
+    display: none;
     width: 100%;
     height: 62px;
     background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%);

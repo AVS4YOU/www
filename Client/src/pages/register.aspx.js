@@ -352,11 +352,10 @@ render(){
               <Text className="subscription-time-text" as="h3">{this.props.t("1 year")}</Text>
               <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
               <Text className="access-limit">{this.props.t("1 year access_rc")}</Text>
-              <Text className="sub-now-text heart-sub">{this.props.t("Subscribe now for")}</Text>
+              <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
               <div className="price-block">
                 <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
                 <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
-                <div className="heart-offer"></div>
               </div>
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
               <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
@@ -375,7 +374,6 @@ render(){
                 <Text as="p">{this.props.t("Most popular")}</Text>
               </div>
               <div className="unlimited-block-content">
-              <div className="heart-unlimited"></div>
                 <Text className="subscription-time-text" as="h3">{this.props.t("Unlimited_rc")}</Text>
                 <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
                 <Text className="access-limit">{this.props.t("Unlimited access_rc")}</Text>
