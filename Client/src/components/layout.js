@@ -18,6 +18,8 @@
  import Cookies from 'universal-cookie';
  import CookieMessage from "../components/cookie-message";
 
+ import CookieEaster from '../components/easter/cookie';
+
  import PlAVSLeft from "../images/pl/left-side-bg.svg";
  import PlAVSRight from "../images/pl/right-side-bg.svg";
  import whiteHeart from "../images/pl/white-heart.svg";
@@ -293,6 +295,9 @@
          <StyledLayout className={this.props.className}>
            <main>{this.props.children}</main>
          </StyledLayout>
+
+         <CookieEaster />
+
          <CookieMessage />
          {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
        </PageContext.Provider>
