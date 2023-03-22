@@ -192,7 +192,7 @@ render(){
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("May I use AVS4YOU  trademarks in PPC campaigns")}>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("May I use AVS4YOU trademarks in PPC campaigns")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Affiliates may use AVS4YOU brand keywords in their PPC campaigns")} <a href="mailto:sales@avs4you.com" target="_blank" rel="noreferrer noopener">sales@avs4you.com</a>{this.props.t("jpAffiliate")}
                     </Text>

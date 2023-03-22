@@ -286,6 +286,7 @@
     .common__heading {
         max-width: 700px;
         margin: auto;
+        color: #000000;
     }
     .common__heading-quest{
         padding-top: 60px;
@@ -325,7 +326,14 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1024px) {
+.affiliates .questions-block {
+    padding: 0 16px !important;
+    margin-top: 62px !important;
+}
+}
+
+@media (max-width: 821px) {
     .affiliates{ 
         .screen-wrapper.choose-program{
             padding: 70px 30px;
@@ -413,13 +421,17 @@
             }
 
             .common-info-block{
-                width: 45%;
                 margin: 10px;
                 margin-bottom: 30px;
                 max-width: none;
             }
         }
     }
+
+    .affiliates .body-reasons .body-reasons__wrapper {
+        display: block;
+    }
+
     .questions-wrapper{
         padding-top: 64px;
         padding-bottom: 64px;
@@ -446,13 +458,14 @@
             padding-top:0;
         }
     }
+
+    .affiliates .choose-program .common__heading {
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 620px) {
     .affiliates{ 
-        .questions-wrapper{
-            display: none;
-        }
 
         .headerBackgroundImage{
             right: -560px;
@@ -490,7 +503,7 @@
                 }
 
                 &>div{
-                display:none;
+                    display:none;
                 }
             }
 
@@ -543,7 +556,7 @@
             }
 
             .choose-program__content-text{
-                font-size:14px;
+                font-size:18px;
             }
 
             .choose-program__item{
@@ -558,7 +571,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     .affiliates{ 
         .header .header__background-gradient{
             background: rgb(0,0,0);
@@ -596,6 +609,7 @@
             }
             .common__heading{
                 padding: 0 15px;
+                font-size: 16px;
             }
         }
 
@@ -626,10 +640,43 @@
         .body-reasons{ 
 
             .common-info-block{
-                width: 100%;
-                padding-left: 0;
-                padding-right: 0;
+                margin: 0;
+                margin-bottom: 40px;
             }
         }
+    }
+
+    .affiliates .body-reasons .common-info-block .common-info-block__headline {
+        font-size: 16px;
+        padding-bottom: 16px;
+        font-weight: 700;
+    }
+
+    .affiliates .body-reasons .common-info-block .common-info-block__text {
+        font-size: 14px;
+    }
+
+    .common-info-block:before {
+        height: 50px !important;
+    }
+
+    .affiliates .common-info-block {
+        padding: 0px 10px 10px 75px;
+    }
+
+    .affiliates .common__heading-quest {
+        padding-top: 0 !important;
+    }
+
+    .affiliates .how-to-started-block {
+        display: block;
+    }
+
+    .affiliates .choose-program .choose-program__round-wrapper {
+        margin: auto;
+    }
+
+    .affiliates .choose-program .choose-program__content-text {
+        text-align: center;
     }
 }
