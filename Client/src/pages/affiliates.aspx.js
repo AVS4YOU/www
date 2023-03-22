@@ -44,7 +44,7 @@ render(){
         metaKeywords=""
       >
         <div className="header">
-            <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.jpg" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.png" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
               <div className="header__body">
                 <div className="header__body-wrapper">
@@ -52,7 +52,7 @@ render(){
                     <div></div>
                   </Text>
                   <Text as="h1" className="header__heading">{this.props.t("Affiliate Program")}</Text>
-                  <Text as="h3" className="header__subtitle">{this.props.t("Generate maximum sales with AVS4YOU top tools")}</Text>
+                  <Text as="h3" className="header__subtitle">{this.props.t("Grow your own business by establishing an additional source of revenue with top AVS4YOU tools")}</Text>
                   <Button className="header__button" textClassName="header__button-text" href={this.props.t("avangatenetwork-affiliates-sign-up")}>{this.props.t("Sign up now")}</Button>
                 </div>
               </div>
@@ -61,26 +61,17 @@ render(){
         <StyledBlock>
         <div className="body-reasons screen-wrapper">
             <Text as="h2" className="common__heading">
-            {this.props.t("More Reasons to Become")} <br />{this.props.t("an AVS4YOU Affiliate")}
+            {this.props.t("Reasons to Join AVS4YOU Affiliate Program")} 
             </Text>
           <div className="body-reasons__wrapper">
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
-              {this.props.t("50% initial commission")}
+              {this.props.t("Pro multimedia tools in 1 suite")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors")}
+                {this.props.t("AVS4YOU suite is a set of 5 professional programs for working with audio, video and image data")}
               </Text>
               <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
-            </div>
-
-            <div className="common-info-block">
-              <Text as="h4" className="common-info-block__headline">
-              {this.props.t("Absolutely fee to join")} 
-              </Text>
-              <Text className="common-info-block__text">
-                {this.props.t("It is easy and free to join our affiliate program You have to register in one of the suggested affiliate systems or find and join AVS4YOU in your existing affiliate account")}
-              </Text>
             </div>
 
             <div className="common-info-block">
@@ -88,102 +79,86 @@ render(){
               {this.props.t("High conversion rates")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("AVS4YOU offers a set of professional programs, a perfect fit for both novices in multimedia processing and experts AVS4YOU suite is feature rich and allows to perform all multimedia tasks efficiently")}
+                {this.props.t("AVS4YOU offers a 50 commission from the start a very competitive offer on the multimedia market")}
               </Text>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
-              {this.props.t("Accurate performance tracking")}
+              {this.props.t("Absolutely fee to join")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Monitor traffic and sales in real time, enjoy powerful reporting and analytics")}
+                {this.props.t("There are neither fees nor special conditions for joining our affiliate program")}
               </Text>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
-              {this.props.t("Seasonal exclusive offers")} 
+              {this.props.t("Easy to promote")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("With special deals you can gain even more than 50% on AVS4YOU products boosting your sales to the full")}
+                {this.props.t("We provide you with all marketing materials such as banners")}
               </Text>
             </div>
 
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
-              {this.props.t("Use of trademarks in PPC campaigns")}
+              {this.props.t("Comprehensive reporting")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Affiliates may use AVS4YOU brand keywords in their PPC campaigns For the use of trademarks in the ad titles it is obligatory to receive a written consent Please submit your request at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>.
+                {this.props.t("Monitor your activity clicks sales earnings per click in real time")}
+              </Text>
+            </div>
+
+            <div className="common-info-block">
+              <Text as="h4" className="common-info-block__headline">
+              {this.props.t("Secure payout")}
+              </Text>
+              <Text className="common-info-block__text">
+                {this.props.t("All commisions are paid by 2Checkout")}
               </Text>
             </div>
           </div>
         </div>
         </StyledBlock>
         <div className="choose-program screen-wrapper">
-            <div className="choose-program__round-wrapper">
-                <Text as="h3" className="round-and-number">
-                    01
-                </Text>
-            </div>
-            <Text as="h2" className="common__heading" style={{paddingBottom:"0px"}}>
-            {this.props.t("Join Avangate Affiliate Network")}
+        <Text as="h2" className="common__heading">
+            {this.props.t("How to Get Started")} 
             </Text>
-            <div className="choose-program__wrapper" style={{padding:"0px 30px 10px"}}>
-                <div className="choose-program__item">
-                  <Text className="choose-program__list">
-                    {this.props.t("Register as an affiliate in your preferred affiliate program All new affiliates are automatically approved, so you can start making money right away instead of wasting time on asking for permission to sell products")}
-                  </Text>
-                  <Text className="choose-program__list">
-                   {this.props.t("Click here to find the relevant step-by-step information on how to find AVS4YOU in Avangate and MyCommerce in case you already have an account in one of these systems")}
-                  </Text>
-                  <div className="choose-program__buttons-wrapper">
-                    <Button href="https://store.avs4you.com/affiliates/sign-up.php?_ga=2.228913500.1512074311.1585894590-289270669.1583430629" textClassName="choose-program__button-text" className="choose-program__button-blue">
-                    {this.props.t("Sign up")}
-                    </Button>
-                    <Button href="https://secure.avangate.com/affiliates/" textClassName="choose-program__button-text" className="choose-program__button-transparent">
-                      {this.props.t("Log in")}
-                    </Button>
-                  </div>
+          <div className="how-to-started-block">
+            <div className="choose-program__wrapper">
+                <div className="choose-program__round-wrapper">
+                    <Text as="h3" className="round-and-number">
+                        01
+                    </Text>
                 </div>
-             </div>
-            <div className="choose-program__wrapper">
-              <div className="choose-program__round-wrapper">
-                  <Text as="h3" className="round-and-number">
-                      02
-                  </Text>
+                <Text className="choose-program__content-text">
+                    {this.props.t("Sign up in the Avangate Affiliate Network or log in if you already have an account")}
+                </Text>
               </div>
-              <Text as="h2" className="common__heading">
-              {this.props.t("Place links to your website")}
-              </Text>
-              <Text className="choose-program__content-text">
-                {this.props.t("Please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("affiliate_link_generator")}>{this.props.t("link generator")}</a> {this.props.t("to build correct links and place them on your website, blog or channel You can generate a direct download link or a custom link")}
-              </Text>
-            </div>
-
-            <div className="choose-program__wrapper">
-              <div className="choose-program__round-wrapper">
-                  <Text as="h3" className="round-and-number">
-                      03
-                  </Text>
+              <div className="choose-program__wrapper">
+                <div className="choose-program__round-wrapper">
+                    <Text as="h3" className="round-and-number">
+                        02
+                    </Text>
+                </div>
+                <Text className="choose-program__content-text">
+                  {this.props.t("Generate your affiliate links and place them on your website, blog or YT channel")}
+                </Text>
               </div>
-              <Text as="h2" className="common__heading">
-              {this.props.t("Control your sales")}
-              </Text>
-              <Text className="choose-program__content-text">
-                {this.props.t("Our cookie tracking system redirects customers to the checkout page of your affiliate system with your affiliate ID So you can easily control your sales the usual way via your Avangate, MyCommerce ShareIt control panel")}
-              </Text>
-              <Text className="choose-program__contact-us">
-              {this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a>
-              </Text>
-            </div>
 
+              <div className="choose-program__wrapper">
+                <div className="choose-program__round-wrapper">
+                    <Text as="h3" className="round-and-number">
+                        03
+                    </Text>
+                </div>
+                <Text className="choose-program__content-text">
+                  {this.props.t("Receive a 50% commission from every sale and get your monthly payout")}
+                </Text>
+              </div>
+          </div>
         </div>
-        <div className="review-wrapper">
-            <ReviewScreen />
-        </div>
-
         <div>
           <div className="questions-wrapper">
 
@@ -192,33 +167,21 @@ render(){
             </Text>
 
             <div className="questions-block">
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("Is it free to participate in your affiliate program?")}>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("You offer one-year and unlimited software subscriptions for users Are they the only options")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, the participation is absolutely free")}
+                    <Text className="hiddenText">{this.props.t("Yes, we offer affiliates to sell 2 types of subscriptions")}
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("You offer one-year and unlimited software subscriptions for users Are they the only options?")}>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("Does subscription model get better conversion results as compared to usual software sale")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, we offer affiliates to sell 2 types of subscriptions to all our products this selling scheme is very attractive to users and time-proved as effective in terms of conversion")}
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("Does 'subscription model' get better conversion results as compared to usual software sale?")}>
-                <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, we launched")} <a href="https://www.avs4you.com/" rel="noreferrer noopener" target="_blank">AVS4YOU.com</a> {this.props.t("in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before")}
+                    <Text className="hiddenText">{this.props.t("Yes, we launched AVS4YOU.com in 2006")}
                     </Text>
                 </div>
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={this.props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{this.props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={this.props.t("affiliate_link_generator")} toLink="=">{this.props.t("Affiliate Links Generator")}</a>{this.props.t("tool")}. {this.props.t("It will automatically make correct links")}
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("How do I get money?")}>
-                <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT")}
                     </Text>
                 </div>
               </PanelCollapse>
@@ -229,21 +192,9 @@ render(){
                     </Text>
                 </div>
               </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("I don't believe in cookie principle Is your system based solely on cookies or I can get software custom builds?")}>
+              <PanelCollapse className="panelCollapse" panelName={this.props.t("May I use AVS4YOU  trademarks in PPC campaigns")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Upon request to")} <a href="mailto:affiliates@avs4you.com" target="_blank" rel="noreferrer noopener">affiliates@avs4you.com</a> {this.props.t("we can make custom builds for you In this case the link from software will contain your affiliate ID However, we do recommend to use cookies additionally")}
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I use your graphics/text in my custom builds/websites?")}>
-                <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Yes, you may use our graphics/product description fully or in parts, as you like Upon request we will create custom banners for you Drop us a line")} <a href="mailto:affiliates@avs4you.com" target="_blank" rel="noreferrer noopener">affiliates@avs4you.com</a>{this.props.t("jpAffiliate")}
-                    </Text>
-                </div>
-              </PanelCollapse>
-              <PanelCollapse className="panelCollapse" panelName={this.props.t("How long do you allow cookies to be stored on a customer's PC?")}>
-                <div className="collapseContent">
-                    <Text className="hiddenText">{this.props.t("Cookies are installed onto a customer's PC automatically once he/she followed a link or banner from your website Cookies are valid for 30 days in Avangate affiliate network and 45 days in MyCommerce-Share-IT It means that you get guaranteed commission if the same customer purchases our software within this period")}
+                    <Text className="hiddenText">{this.props.t("Affiliates may use AVS4YOU brand keywords in their PPC campaigns")} <a href="mailto:sales@avs4you.com" target="_blank" rel="noreferrer noopener">sales@avs4you.com</a>{this.props.t("jpAffiliate")}
                     </Text>
                 </div>
               </PanelCollapse>

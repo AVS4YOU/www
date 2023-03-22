@@ -66,6 +66,13 @@
 
     .screen-wrapper{
         padding: 120px 30px;
+        width: 100%;
+    }
+
+    .how-to-started-block {
+        display: flex;
+        margin: auto;
+        max-width: 1120px;
     }
 
     .choose-program{
@@ -77,7 +84,6 @@
 
         .choose-program__round-wrapper{
             display:table;
-            margin:auto;
         }
 
         .choose-program__content-wrapper{
@@ -86,8 +92,8 @@
         }
 
         .choose-program__content-text{
-            font-size:24px;
-            text-align: center;
+            font-size:18px;
+            color: #555555;
         }
 
         .choose-program__contact-us{
@@ -98,8 +104,7 @@
         }
 
         .choose-program__wrapper{
-            padding: 100px 30px 10px;
-            max-width: 1000px;
+            padding: 0px 40px 10px;
             box-sizing: border-box;
             margin:auto;
 
@@ -174,42 +179,53 @@
 
         .body-reasons__wrapper{
             padding-top: 80px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            display: -ms-flex;
-            -ms-justify-content: center;
-            -ms-flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         .common-info-block{
-            width: 30%;
-            margin: 34px;
+            width: auto;
+            max-width: 100%;
+            margin: 24px;
             margin-bottom: 30px;
-            max-width: 285px;
+
+
+            .common-info-block__headline {
+                text-align: left;
+                font-size: 24px;
+            }
+             .common-info-block__text {
+                text-align: left;
+                font-size: 18px;
+                color: #555555;
+            }
+
+            &::before {
+                background-position-x: 0%;
+            }
 
             &:nth-child(1):before{
-                background-image: url(../images/affiliates/commission.svg);
+                background-image: url(../images/affiliates/trademarks.svg);
             }
 
             &:nth-child(2):before{
-                background-image: url(../images/affiliates/free-join.svg);
+                background-image: url(../images/affiliates/profit.svg);
             }
 
             &:nth-child(3):before{
-                background-image: url(../images/affiliates/conversion.svg);
-            }
-
-            &:nth-child(4):before{
-                background-image: url(../images/affiliates/tracking.svg);
-            }
-
-            &:nth-child(5):before{
                 background-image: url(../images/affiliates/offers.svg);
             }
 
+            &:nth-child(4):before{
+                background-image: url(../images/affiliates/promote.svg);
+            }
+
+            &:nth-child(5):before{
+                background-image: url(../images/affiliates/tracking.svg);
+            }
+
             &:nth-child(6):before{
-                background-image: url(../images/affiliates/trademarks.svg);
+                background-image: url(../images/affiliates/commission.svg);
             }
         }
 
@@ -240,7 +256,10 @@
 
     }
     
+    .common-info-block {
+        padding: 0px 10px 10px 100px;
 
+    }
 
     .panelCollapse{
         box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
@@ -260,8 +279,13 @@
         }
     }
     .questions-wrapper{
-        background-color: #FFF9F1;
-        padding-bottom: 70px;
+        background-color: #FFFFFF;
+        padding-bottom: 112px;
+        padding-top: 62px;
+    }
+    .common__heading {
+        max-width: 700px;
+        margin: auto;
     }
     .common__heading-quest{
         padding-top: 60px;
