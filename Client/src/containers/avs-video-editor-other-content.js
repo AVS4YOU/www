@@ -33,6 +33,167 @@ import awardGetApp from '../images/avs-video-editor/award-getapp.svg'
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
+import ModalEgg from '../components/easter/index';
+import Egg from '../images/easter-event/mini_egg2.png';
+import CloseEgg from '../images/easter-event/close_egg.png';
+import EggM  from '../images/easter-event/egg2.png';
+import Eggm from '../images/easter-event/mobile_egg.png';
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+
+const EggEventS = styled.div`
+a: hover{
+  text-decoration: none;
+}
+.ModalEventEgg{
+  width: 448px;
+  height: 565px;
+  background-image: url(${EggM});
+  .EventEggContent{
+    padding-top: 175px;
+    padding-left: 25px;
+    text-align: center;
+  }
+  .ModalShaerTexth1{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 34px;
+    text-align: center;
+    color: #1E5839;
+    padding-top: 15px;
+  }
+  .ModalShaerTexth2{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center; 
+    color: #000000;
+    padding-top: 5px;
+  }
+  .ModalShaerTextCoupon{
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1E5839;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    span{
+      border: 2px dashed #1E5839;
+      box-sizing: border-box;
+      padding: 4px 20px;
+    }
+  }
+  .ModalShaerTexth4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .ModalShaerClose{
+    font-family: Myriad Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FEFFFD;
+    background: #1E5839;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    cursor:pointer;
+    margin-top: 40px;
+  }
+}
+.ModalShaerClose{
+  background: none;
+  border: none;
+ .CloseEggButton{
+  margin-left: 450px;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+  .ModalEventEgg{
+    width: 300px;
+    height: 380px;
+    background-image: url(${Eggm});
+    .EventEggContent{
+      padding-top: 85px;
+      padding-left: 10px;
+      text-align: center;
+    }
+    .ModalShaerTexth1{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    .ModalShaerTexth2{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 17px;
+    }
+    .ModalShaerTextCoupon{
+      font-size: 14px;
+      line-height: 19px;
+    }
+    .ModalShaerTexth4{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 15px;
+      text-align: center;
+    }
+    .ModalShaerClose{
+      margin-top: 0px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .ModalShaerClose{
+    background: none;
+    border: none;
+   .CloseEggButton{
+    margin-left: 250px;
+   }
+  }
+}
+
+`;
+
+
 const StyledArrow = styled.div`{
 
   .headerArrow {
@@ -107,6 +268,7 @@ video {
 }
 `;
 
+
 const lang = ['de','es','fr','it','jp','ru']
 
 const isEngLang = (currentLang) => {
@@ -177,7 +339,46 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
       </a>
     </ContentRowItem>
-   
+
+
+    {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+            <div className="eggsEventRight"><img src={Egg} onClick={() => props.openModal()}></img></div>
+            : <div className="eggsEventRight"></div>}
+            <ModalEgg
+                    isModalOpen={props.isModalOpen}
+                    closeModal={props.closeModal}
+                  >
+                    <EggEventS>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={props.closeModal}
+                    >
+                      <img className="CloseEggButton" 
+                        src={CloseEgg}
+                        alt="Close"
+                        style={{
+                          width: "28px"
+                        }}/>
+                    </button>
+                    <div className="ModalEventEgg">
+                   
+                    <div className="EventEggContent">                    
+                        <Text className="ModalShaerTexth1">{props.t("PWell done!")}<br />{props.t("PTake a 20% off")}</Text>
+                        <Text className="ModalShaerTexth2">{props.t("Pon AVS4YOU Unlimited")}<br />{props.t("PSubscription")}</Text>
+                        <Text className="ModalShaerTextCoupon"><span>{props.t("Sunny30")}</span></Text>
+                        <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
+                        <a href={props.hrefButton}>
+                        <button
+                          className="ModalShaerClose"                  
+                          >
+                            {props.t("SHOP NOW")}
+                          </button>
+                          </a> 
+                      </div>    
+                      </div>                
+                      </EggEventS>
+                  </ModalEgg> 
+
     <ContentRowItem 
         imgLeft={false}
         imageName={props.t("video editor slider4 jpg")}

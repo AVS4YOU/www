@@ -60,8 +60,8 @@ render(){
         metaKeywords={this.props.t("free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion")}
       >
         {isSomeLang(this.props.locale)
-          ? <AvsVideoConverterOtherContent t={this.props.t} /> 
-          : <AvsVideoConverterCommonContent t={this.props.t} />
+          ? <AvsVideoConverterOtherContent t={this.props.t} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton}/> 
+          : <AvsVideoConverterCommonContent t={this.props.t} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton}/>
         }
       </Layout>
     );
