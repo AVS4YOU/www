@@ -1520,75 +1520,47 @@
   
 
     "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
-    "Surf the website and find" : "Webサイトを閲覧して、イースター卵を九個を拾って、最大の",
-    "9 EASTER EGGS" : "75%OFF",
-    "with discounts up to" : "の割引を受ける！",
-    "75% OFF!" : " ",
+    "Surf the website and find" : "イースターエッグハントに参加して、最大",
+    "9 EASTER EGGS" : "99%",
+    "with discounts up to" : "の驚くべき割引で",
+    "75% OFF!" : "5エッグを見つけましょう!",
     "Surf better to find a" : " ",
-    "75% discount" : "75%",
+    "75% discount" : "100%",
     "Good luck!" : "の割引を取得するには、サイトをよく閲覧しなさい。頑張って!!",
     "Hunt now!" : "イースターハントに今すぐ参加!",
     "SHOP NOW" : "購入",
     "*Just use this coupon while purchasing" : "*購入中にこのクーポンコードを使用してください",
     
-    "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Glory20&CLEAN_CART=ALL",
-    "PWell done!" : "よくできました！",
-    "PTake a 20% off" : "AVS4YOU無期限サブスクリプションに",
-    "Pon AVS4YOU Unlimited": "20％OFF",
-    "PSubscription" : " ",
-    
-    
-    "hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Egg30&CLEAN_CART=ALL",
-    "MPRedeem a 30%" : "AVS Video Editor",
-    "MPdiscount coupon" : "に30％割引クーポンを利用します",
-    "MPon AVS Video Editor" : " ",
-    
-    
-    "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Sunny50&CLEAN_CART=ALL",
-    "VCEnjoy this spring with" : "この春を",
-    "VCa 50% discount" : "50％割引とお楽しみ",
-    "VCon AVS Video ReMaker" : "AVS Video Remaker",
-    "VCUnlimited Subscription" : "無期限サブスクリプション",
-    
-    
-    "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Treasure75&CLEAN_CART=ALL",
-    "VCABingo!" : "ビンゴ！",
-    "VCAYou have found our treasure egg!!!" : "宝の卵はこちら!!!",
-    "VCAGet 75% Off on AVS Video ReMaker" : "AVS Video Remaker",
-    "VCA1 Year Subscription" : "1年サブスクリプションに75％OFF",
+    "hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Sunny30&CLEAN_CART=ALL",
+    "PWell done!" : "AVS4YOU",
+    "Pon AVS4YOU Unlimited": "無期限サブスクリプションに30％",
+    "PSubscription" : "割引を受ける",
     "VVVCGet 25% off" : " ",
-    
-    "hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Lucky30&CLEAN_CART=ALL",
-    "VAEGet a lucky" : "AVS4YOU",
-    "VAE30% coupon" : "1年サブスクリプション",
-    "VAEon AVS4YOU 1 Year" : "に幸運な30％",
-    "VAESubscription" : "クーポン",
-    
-    
-    "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Spring50&CLEAN_CART=ALL",
-    "DWNWow!" : "すごい!",
-    "DWNSave a 50% off" : "AVS Video Editorに50%OFF",
-    "DWNon AVS Video Editor" : " ",
-    
-    "VACAVS Video ReMaker" : " ",
-    "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Winner35&CLEAN_CART=ALL",
-    "ABSCongrats!" : "おめでとう!",
-    "ABSYou win a 35% discount" : "35%割引",
-    "ABSon AVS4YOU Unlimited" : "AVS4YOU",
-    "ABSSubscription" : "無期限サブスクリプション",
-    
-    
-    "hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Bunny40&CLEAN_CART=ALL",
-    "EDTake advantage" : "AVS4YOU",
-    "EDof 40% Off" : "1年サブスクリプションに40%OFF",
-    "EDon AVS4YOU 1 Year" : " ",
-    "EDSubscription" : " ",
-    
-    
-    "hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=Partner25&CLEAN_CART=ALL",
-    "Get 25% off" : "AVS4YOU",
-    "on AVS4YOU Unlimited" : "無期限サブスクリプションに",
-    "Subscription" : "25% OFF",
+        
+    "hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Eggstra&CLEAN_CART=ALL",
+    "VCEnjoy this spring with" : "AVS4YOU",
+    "VCon AVS Video ReMaker" : "１年サブスクリプションに35％",
+    "VCUnlimited Subscription" : "割引を楽しんで",
+
+
+    "hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSBunny&CLEAN_CART=ALL",
+    "VCABingo!" : "ビンゴ!",
+    "VCAYou have found our treasure egg!!!" : "その卵は宝だ!!!",
+    "VCAGet 75% Off on AVS Video ReMaker" : "AVS Video Remaker１年サブスクリプシ",
+    "VCA1 Year Subscription" : "ョンを無料に取得してください! ",
+
+
+    "hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Glory40&CLEAN_CART=ALL",
+    "DWNWow!" : "すごい！",
+    "DWNSave a 50% off" : "AVS Video Editorに40％",
+    "DWNon AVS Video Editor" : "割引を取得してください",
+
+
+    "hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Lucky50&CLEAN_CART=ALL",
+    "ABSCongrats!" : "おめでとう！50％割引で",
+    "ABSYou win a 35% discount" : "AVS Video Remaker",
+    "ABSon AVS4YOU Unlimited" : "無期限サブスクリプ",
+    "ABSSubscription" : "ションを受ける！",
 
     "*****************************LINK********************************" : "*****************************LINK********************************",
     "https//storeavs4youcom/order/checkoutphp?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,ru,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1",

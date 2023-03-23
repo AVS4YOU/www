@@ -261,7 +261,7 @@ a: hover{
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{props.t("PWell done!")}<br />{props.t("PTake a 20% off")}</Text>
+                        <Text className="ModalShaerTexth1">{props.t("PWell done!")}</Text>
                         <Text className="ModalShaerTexth2">{props.t("Pon AVS4YOU Unlimited")}<br />{props.t("PSubscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{props.t("Sunny30")}</span></Text>
                         <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>

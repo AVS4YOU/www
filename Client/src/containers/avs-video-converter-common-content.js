@@ -307,7 +307,7 @@ export const AvsVideoConverterCommonContent = (props) => (
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{props.t("VCEnjoy this spring with")}<br />{props.t("VCa 50% discount")}</Text>
+                        <Text className="ModalShaerTexth1">{props.t("VCEnjoy this spring with")}</Text>
                         <Text className="ModalShaerTexth2">{props.t("VCon AVS Video ReMaker")}<br />{props.t("VCUnlimited Subscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{props.t("Eggstra")}</span></Text>
                         <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
