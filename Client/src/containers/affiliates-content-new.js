@@ -191,9 +191,9 @@ const StyledBlock = styled.div`
 `;
 
 export const AffiliatesNew = (props) => (
-  <ProductPagesWrapper className="affiliates-new">
+  <div className="affiliates-new">
         <div className="header">
-            <ImageGQL className="headerBackgroundImage" imageName="affiliates-header.png" style={{position: "absolute"}}/>
+            <ImageGQL className="headerBackgroundImage" imageName="affiliates-header-new.png" style={{position: "absolute"}}/>
             <div className="header__background-gradient">
               <div className="header__body">
                 <div className="header__body-wrapper">
@@ -387,6 +387,6 @@ export const AffiliatesNew = (props) => (
 
           </div>
         </div>
-        </ProductPagesWrapper>
+        </div>
     );
   
