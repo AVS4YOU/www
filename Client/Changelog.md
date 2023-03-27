@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.47
+
+### New
+* Added event "Easter Hunt 2023" 
+* Fixed styles for /affiliates.aspx
+
 ## 1.0.46
 
 ### New

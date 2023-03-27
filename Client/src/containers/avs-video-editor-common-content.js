@@ -238,44 +238,6 @@ a: hover{
                 <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
               </a>
             </ContentRowItem>
-
-            {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEventRight"><img src={Egg} onClick={() => props.openModal()}></img></div>
-            : <div className="eggsEventRight"></div>}
-            <ModalEgg
-                    isModalOpen={props.isModalOpen}
-                    closeModal={props.closeModal}
-                  >
-                    <EggEventS>
-                    <button
-                    className="ModalShaerClose"
-                      onClick={props.closeModal}
-                    >
-                      <img className="CloseEggButton" 
-                        src={CloseEgg}
-                        alt="Close"
-                        style={{
-                          width: "28px"
-                        }}/>
-                    </button>
-                    <div className="ModalEventEgg">
-                   
-                    <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{props.t("PWell done!")}</Text>
-                        <Text className="ModalShaerTexth2">{props.t("Pon AVS4YOU Unlimited")}<br />{props.t("PSubscription")}</Text>
-                        <Text className="ModalShaerTextCoupon"><span>{props.t("Sunny30")}</span></Text>
-                        <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={props.hrefButton}>
-                        <button
-                          className="ModalShaerClose"                  
-                          >
-                            {props.t("SHOP NOW")}
-                          </button>
-                          </a> 
-                      </div>    
-                      </div>                
-                      </EggEventS>
-                  </ModalEgg> 
            
             <ContentRowItem 
                 imgLeft={false}

@@ -128,7 +128,7 @@ const CookieMessange = props => {
         {(getCookieConsentValue("AVSEasterEvents") === "true")
         ? <CookieStyleN> 
          <div className="alert-warning" style={{bottom: `${styleww}`}}>
-          <div className="textcapitalize" style={{width:"100%",marginTop: "30px",textAlign:"center"}}>
+          <div className="textcapitalize" style={{width:"100%",marginTop: "35px",textAlign:"center"}}>
             <span className="CookieText">{t("Surf better to find a")}<span className="cookiePL" style={{color: "#F4D272"}}>{t("75% discount")}</span>{t("Good luck!")}</span>
           </div>
         </div>
@@ -145,6 +145,7 @@ const CookieMessange = props => {
                 contentClasses="text-capitalize"
                 buttonWrapperClasses="btnWrapperClasses" 
                 location="none"
+                style={{bottom: `${styleww}`}}
                 onAccept= {() => {
                     window.location.reload(true);
                 }}               
