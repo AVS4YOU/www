@@ -212,7 +212,7 @@ class Affiliates extends React.PureComponent {
       device: "",
       isModalOpen: false,
       isInnerModalOpen: false,
-      hrefButton: this.props.t("hrefButtonEasterButtonAudioEditor")
+      hrefButton: this.props.t("hrefButtonEasterButtonAffiliates")
      };
 
     this.getDevice = this.getDevice.bind(this);

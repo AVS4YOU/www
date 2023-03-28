@@ -36,7 +36,7 @@ import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 import ModalEgg from '../components/easter/index';
 import Egg from '../images/easter-event/mini_egg2.png';
 import CloseEgg from '../images/easter-event/close_egg.png';
-import EggM  from '../images/easter-event/egg2.png';
+import EggM  from '../images/easter-event/egg.png';
 import Eggm from '../images/easter-event/mobile_egg.png';
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 
