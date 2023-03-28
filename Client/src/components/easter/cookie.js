@@ -119,13 +119,26 @@ const CookieStyle = styled.div`
     }
 `;
 
+const lang = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (currentLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
+
 const CookieMessange = props => {
 
     const { t } = useTranslation('common');
     const styleww = (getCookieConsentValue("AVSUsersCookieMessages") === "true") ? '0px': '48px'
     return(
         <div>
-        {(getCookieConsentValue("AVSEasterEvents") === "true")
+        {isSomeLang(props?.layoutProps?.pageContext?.locale) ?
+        <div>
+        {(getCookieConsentValue("AVSEasterEvents")  === "true")
         ? <CookieStyleN> 
          <div className="alert-warning" style={{bottom: `${styleww}`}}>
           <div className="textcapitalize" style={{width:"100%",marginTop: "35px",textAlign:"center"}}>
@@ -155,6 +168,9 @@ const CookieMessange = props => {
         </CookieStyle>
         }
         </div>
+        : <div style={{display:"none"}}></div>
+    }
+    </div>
     )
 }
 

@@ -199,6 +199,16 @@ const StyledContent = styled.div`
 }
 `;
 
+const langBanner = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (curLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<langBanner.length; i++) {
+        if(langBanner[i] === curLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
 
 export const AvsVideoConverterOtherContent = (props) => (
   <ProductPagesWrapper imageName="blue_background_main.jpg">
@@ -467,7 +477,7 @@ export const AvsVideoConverterOtherContent = (props) => (
 
   <div id="reviews" className="backgroundWrapper" style={{marginTop: "0px;"}}>
 
-  {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+  {isSomeLang (props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEventRight"><img src={Egg} onClick={() => props.openModal()}></img></div>
             : <div className="eggsEventRight"></div>}
             <ModalEgg

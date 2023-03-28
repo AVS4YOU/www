@@ -190,6 +190,17 @@ const StyledBlock = styled.div`
 }
 `;
 
+const lang = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (currentLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
+
 export const AffiliatesPage = (props) => (
   <ProductPagesWrapper>
         <div className="header">
@@ -335,7 +346,7 @@ export const AffiliatesPage = (props) => (
 
         <div>
           <div className="questions-wrapper">
-          {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+          {isSomeLang(props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEvent"><img src={Egg} onClick={() => props.openModal()}></img></div>
             : <div className="eggsEvent"></div>}
             <ModalEgg

@@ -296,7 +296,7 @@
            <main>{this.props.children}</main>
          </StyledLayout>
 
-         <CookieEaster />
+         <CookieEaster layoutProps={this.props}/>
 
          <CookieMessage />
          {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}

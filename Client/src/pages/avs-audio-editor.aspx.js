@@ -194,6 +194,17 @@ const isEngLang = (currentLang) => {
     return isEngLang;
 }
 
+const langBanner = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (curLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<langBanner.length; i++) {
+        if(langBanner[i] === curLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
+
 class avsAudioEditor extends React.PureComponent {
 
   constructor(props) {
@@ -243,7 +254,7 @@ render(){
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
 
-            {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+            {isSomeLang (this.props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEvent" style={{paddingTop:"65px"}}><img src={Egg} onClick={() => this.openModal()}></img></div>
             : <div className="eggsEvent"></div>}
             <ModalEgg
