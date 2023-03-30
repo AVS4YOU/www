@@ -26,7 +26,7 @@ a: hover{
   height: 565px;
   background-image: url(${EggM});
   .EventEggContent{
-    padding-top: 175px;
+    padding-top: 150px;
     padding-left: 25px;
     text-align: center;
   }
@@ -123,7 +123,7 @@ a: hover{
     background-repeat: no-repeat;
     background-image: url(${Eggm});
     .EventEggContent{
-      padding-top: 85px;
+      padding-top: 110px;
       padding-left: 10px;
       text-align: center;
     }
@@ -292,6 +292,7 @@ export const AffiliatesNew = (props) => (
                           width: "28px"
                         }}/>
                     </button>
+                    <a href={props.hrefButton}>
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
@@ -299,15 +300,14 @@ export const AffiliatesNew = (props) => (
                         <Text className="ModalShaerTexth2">{props.t("ABSon AVS4YOU Unlimited")}<br />{props.t("ABSSubscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{props.t("Lucky50")}</span></Text>
                         <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={props.hrefButton}>
                         <button
                           className="ModalShaerClose"                  
                           >
                             {props.t("SHOP NOW")}
                           </button>
-                          </a> 
                       </div>    
-                      </div>                
+                      </div> 
+                      </a>               
                       </EggEventS>
                   </ModalEgg> 
         </div>

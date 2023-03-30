@@ -125,7 +125,7 @@ a: hover{
     background-repeat: no-repeat;
     background-image: url(${Eggm});
     .EventEggContent{
-      padding-top: 85px;
+      padding-top: 100px;
       padding-left: 10px;
       text-align: center;
     }
@@ -365,6 +365,7 @@ render(){
                           width: "28px"
                         }}/>
                     </button>
+                    <a href={this.state.hrefButton}>
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
@@ -372,15 +373,14 @@ render(){
                         <Text className="ModalShaerTexth2">{this.props.t("DWNon AVS Video Editor")}<br /></Text>
                         <Text className="ModalShaerTextCoupon"><span>{this.props.t("Glory40")}</span></Text>
                         <Text className="ModalShaerTexth4">{this.props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={this.state.hrefButton}>
                         <button
                           className="ModalShaerClose"                  
                           >
                             {this.props.t("SHOP NOW")}
                           </button>
-                          </a> 
                       </div>    
-                      </div>                
+                      </div>    
+                      </a>            
                       </EggEventS>
                   </ModalEgg> 
 

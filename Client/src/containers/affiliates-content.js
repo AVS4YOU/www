@@ -26,7 +26,7 @@ a: hover{
   height: 565px;
   background-image: url(${EggM});
   .EventEggContent{
-    padding-top: 160px;
+    padding-top: 150px;
     padding-left: 25px;
     text-align: center;
   }
@@ -124,7 +124,7 @@ a: hover{
     background-repeat: no-repeat;
     background-image: url(${Eggm});
     .EventEggContent{
-      padding-top: 85px;
+      padding-top: 110px;
       padding-left: 10px;
       text-align: center;
     }
@@ -289,7 +289,7 @@ export const AffiliatesPage = (props) => (
           {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEventLeft"><img src={Egg} onClick={() => props.openModal()}></img></div>
             : <div className="eggsEventLeft"></div>}
-            <ModalEgg
+              <ModalEgg
                     isModalOpen={props.isModalOpen}
                     closeModal={props.closeModal}
                   >
@@ -305,6 +305,7 @@ export const AffiliatesPage = (props) => (
                           width: "28px"
                         }}/>
                     </button>
+                    <a href={props.hrefButton}>
                     <div className="ModalEventEgg">
                    
                     <div className="EventEggContent">                    
@@ -312,17 +313,19 @@ export const AffiliatesPage = (props) => (
                         <Text className="ModalShaerTexth2">{props.t("ABSon AVS4YOU Unlimited")}<br />{props.t("ABSSubscription")}</Text>
                         <Text className="ModalShaerTextCoupon"><span>{props.t("Lucky50")}</span></Text>
                         <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={props.hrefButton}>
+                        
                         <button
                           className="ModalShaerClose"                  
                           >
                             {props.t("SHOP NOW")}
                           </button>
-                          </a> 
+                          
                       </div>    
-                      </div>                
+                      </div>
+                      </a>                
                       </EggEventS>
                   </ModalEgg> 
+                  
         </div>
         </StyledBlock>
         <div className="choose-program screen-wrapper">
