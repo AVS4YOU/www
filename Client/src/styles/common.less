@@ -28,6 +28,11 @@ main {
 
     .eggsEvent{
         position:absolute;
+        padding-top: 65px;
+    }
+    .eggsEventLeft {
+        position:absolute;
+        bottom: -35px;
     }
     .eggsEventRight{
         position:absolute;
@@ -231,7 +236,7 @@ main {
         font-size: 56px;
         position: relative;
         font-weight: bold;
-        z-index:1;
+        z-index:0;
 
         &:before{
             content: '';
@@ -416,6 +421,15 @@ main {
 
 @media (max-width: 620px) {
     main{
+
+        .eggsEvent{
+            left: -80px;
+            padding-top: 180px;
+        }
+        .eggsEventLeft{
+            left: -15%;
+        }
+
         .common-info-block{
             max-width: 500px;
             width: 100%;

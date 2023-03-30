@@ -39,7 +39,7 @@ a: hover{
   height: 565px;
   background-image: url(${EggM});
   .EventEggContent{
-    padding-top: 175px;
+    padding-top: 160px;
     padding-left: 25px;
     text-align: center;
   }
@@ -134,6 +134,12 @@ a: hover{
     width: 300px;
     height: 380px;
     background-image: url(${Eggm});
+    background-repeat: no-repeat;
+
+    .eggsEvent {
+      padding-top: 180px;
+      left: -60px;
+     }
     .EventEggContent{
       padding-top: 85px;
       padding-left: 10px;
@@ -255,7 +261,7 @@ render(){
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
 
             {isSomeLang (this.props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEvent" style={{paddingTop:"65px"}}><img src={Egg} onClick={() => this.openModal()}></img></div>
+            <div className="eggsEvent"><img src={Egg} onClick={() => this.openModal()}></img></div>
             : <div className="eggsEvent"></div>}
             <ModalEgg
                     isModalOpen={this.state.isModalOpen}

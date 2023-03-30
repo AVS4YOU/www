@@ -144,6 +144,7 @@ a: hover{
     width: 300px;
     height: 380px;
     background-image: url(${Eggm});
+    background-repeat: no-repeat;
     .EventEggContent{
       padding-top: 85px;
       padding-left: 10px;

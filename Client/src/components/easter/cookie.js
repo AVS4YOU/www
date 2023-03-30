@@ -44,14 +44,13 @@ const CookieStyleN = styled.div`
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 620px) {
         .CookieText{
             font-size: 12px;
         }
       
-        .text-capitalize{
-            margin: 15px;
-            position: relative;
+        .textcapitalize {
+            margin-top: 32px !important;
         }
     }
 `;

@@ -144,6 +144,7 @@ a: hover{
     width: 300px;
     height: 380px;
     background-image: url(${Eggm});
+    background-repeat: no-repeat;
     .EventEggContent{
       padding-top: 85px;
       padding-left: 10px;
@@ -475,7 +476,7 @@ export const AvsVideoConverterOtherContent = (props) => (
     </PageContentWrapper>
   </div>
 
-  <div id="reviews" className="backgroundWrapper" style={{marginTop: "0px;"}}>
+  <div id="reviews" className="backgroundWrap" style={{marginTop: "0px;"}}>
 
   {isSomeLang (props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEventRight"><img src={Egg} onClick={() => props.openModal()}></img></div>

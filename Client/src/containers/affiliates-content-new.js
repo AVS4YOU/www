@@ -120,6 +120,7 @@ a: hover{
   .ModalEventEgg{
     width: 300px;
     height: 380px;
+    background-repeat: no-repeat;
     background-image: url(${Eggm});
     .EventEggContent{
       padding-top: 85px;
@@ -179,6 +180,10 @@ const StyledBlock = styled.div`
   text-align: center;
  }
 
+ .body-reasons {
+  position: relative;
+ }
+ 
 .common-info-block:before {
   content: "";
   width: 100%;
@@ -268,6 +273,43 @@ export const AffiliatesNew = (props) => (
               </Text>
             </div>
           </div>
+          {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
+            <div className="eggsEventLeft"><img src={Egg} onClick={() => props.openModal()}></img></div>
+            : <div className="eggsEventLeft"></div>}
+            <ModalEgg
+                    isModalOpen={props.isModalOpen}
+                    closeModal={props.closeModal}
+                  >
+                    <EggEventS>
+                    <button
+                    className="ModalShaerClose"
+                      onClick={props.closeModal}
+                    >
+                      <img className="CloseEggButton" 
+                        src={CloseEgg}
+                        alt="Close"
+                        style={{
+                          width: "28px"
+                        }}/>
+                    </button>
+                    <div className="ModalEventEgg">
+                   
+                    <div className="EventEggContent">                    
+                        <Text className="ModalShaerTexth1">{props.t("ABSCongrats!")}<br />{props.t("ABSYou win a 35% discount")}</Text>
+                        <Text className="ModalShaerTexth2">{props.t("ABSon AVS4YOU Unlimited")}<br />{props.t("ABSSubscription")}</Text>
+                        <Text className="ModalShaerTextCoupon"><span>{props.t("Lucky50")}</span></Text>
+                        <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
+                        <a href={props.hrefButton}>
+                        <button
+                          className="ModalShaerClose"                  
+                          >
+                            {props.t("SHOP NOW")}
+                          </button>
+                          </a> 
+                      </div>    
+                      </div>                
+                      </EggEventS>
+                  </ModalEgg> 
         </div>
         </StyledBlock>
         <div className="choose-program screen-wrapper">
@@ -310,43 +352,7 @@ export const AffiliatesNew = (props) => (
         </div>
         <div>
           <div className="questions-wrapper">
-          {(getCookieConsentValue("AVSEasterEvents") == "true") ? 
-            <div className="eggsEvent"><img src={Egg} onClick={() => props.openModal()}></img></div>
-            : <div className="eggsEvent"></div>}
-            <ModalEgg
-                    isModalOpen={props.isModalOpen}
-                    closeModal={props.closeModal}
-                  >
-                    <EggEventS>
-                    <button
-                    className="ModalShaerClose"
-                      onClick={props.closeModal}
-                    >
-                      <img className="CloseEggButton" 
-                        src={CloseEgg}
-                        alt="Close"
-                        style={{
-                          width: "28px"
-                        }}/>
-                    </button>
-                    <div className="ModalEventEgg">
-                   
-                    <div className="EventEggContent">                    
-                        <Text className="ModalShaerTexth1">{props.t("ABSCongrats!")}<br />{props.t("ABSYou win a 35% discount")}</Text>
-                        <Text className="ModalShaerTexth2">{props.t("ABSon AVS4YOU Unlimited")}<br />{props.t("ABSSubscription")}</Text>
-                        <Text className="ModalShaerTextCoupon"><span>{props.t("Lucky50")}</span></Text>
-                        <Text className="ModalShaerTexth4">{props.t("*Just use this coupon while purchasing")}</Text>
-                        <a href={props.hrefButton}>
-                        <button
-                          className="ModalShaerClose"                  
-                          >
-                            {props.t("SHOP NOW")}
-                          </button>
-                          </a> 
-                      </div>    
-                      </div>                
-                      </EggEventS>
-                  </ModalEgg> 
+
             <Text as="h2" className="common__heading common__heading-quest">
             {props.t("Frequently asked questions")}
             </Text>
@@ -360,7 +366,7 @@ export const AffiliatesNew = (props) => (
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={props.t("Does subscription model get better conversion results as compared to usual software sale")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{props.t("Yes, we launched AVS4YOU.com in 2006")}
+                    <Text className="hiddenText">{props.t("Yes we launched AVS4YOU.com in 2006")}
                     </Text>
                 </div>
               </PanelCollapse>

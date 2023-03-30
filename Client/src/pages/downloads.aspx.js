@@ -122,6 +122,7 @@ a: hover{
   .ModalEventEgg{
     width: 300px;
     height: 380px;
+    background-repeat: no-repeat;
     background-image: url(${Eggm});
     .EventEggContent{
       padding-top: 85px;
