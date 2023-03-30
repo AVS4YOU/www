@@ -366,7 +366,7 @@ export const AffiliatesNew = (props) => (
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={props.t("Does subscription model get better conversion results as compared to usual software sale")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{props.t("Yes we launched AVS4YOU.com in 2006")}
+                    <Text className="hiddenText">{props.t("Yes we launched in")}
                     </Text>
                 </div>
               </PanelCollapse>
