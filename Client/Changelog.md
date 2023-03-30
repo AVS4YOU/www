@@ -3,8 +3,8 @@
 ## 1.0.47
 
 ### New
-* Added event "Easter Hunt 2023" 
-* Fixed styles for /affiliates.aspx
+* Added event "Easter Hunt 2023" for en/de/fr/es/it/jp
+* Added new styles for /affiliates.aspx for en
 
 ## 1.0.46
 
