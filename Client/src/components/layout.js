@@ -135,6 +135,12 @@
     }
   }
 `;
+
+const StyledCookie =styled.div`
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+`;
  
  const StyledLayout = styled.div`
    min-width: 300px;
@@ -296,9 +302,10 @@
            <main>{this.props.children}</main>
          </StyledLayout>
 
-         <CookieEaster layoutProps={this.props}/>
-
-         <CookieMessage />
+        <StyledCookie>
+          <CookieEaster layoutProps={this.props}/>
+          <CookieMessage />
+        </StyledCookie>
          {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
        </PageContext.Provider>
      )

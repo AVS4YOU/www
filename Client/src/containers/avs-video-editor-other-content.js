@@ -140,56 +140,7 @@ a: hover{
 }
 
 @media only screen and (max-width: 600px) {
-  .ModalEventEgg{
-    width: 300px;
-    height: 380px;
-    background-image: url(${Eggm});
-    background-repeat: no-repeat;
-    .EventEggContent{
-      padding-top: 100px;
-      padding-left: 10px;
-      text-align: center;
-    }
-    .ModalShaerTexth1{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 22px;
-    }
-    .ModalShaerTexth2{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 17px;
-    }
-    .ModalShaerTextCoupon{
-      font-size: 14px;
-      line-height: 19px;
-    }
-    .ModalShaerTexth4{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 11px;
-      line-height: 15px;
-      text-align: center;
-    }
-    .ModalShaerClose{
-      margin-top: 0px;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
-  .ModalShaerClose{
-    background: none;
-    border: none;
-   .CloseEggButton{
-    margin-left: 250px;
-   }
-  }
+  display: none;
 }
 
 `;
@@ -350,7 +301,6 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
       </a>
     </ContentRowItem>
-
 
     {isSomeLang(props.locale) && (getCookieConsentValue("AVSEasterEvents") == "true") ? 
             <div className="eggsEventRight"><img src={Egg} onClick={() => props.openModal()}></img></div>

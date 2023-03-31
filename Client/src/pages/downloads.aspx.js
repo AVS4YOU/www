@@ -43,6 +43,7 @@ a: hover{
     text-align: center;
     color: #1E5839;
     padding-top: 15px;
+    max-width: 345px;
   }
   .ModalShaerTexth2{
     margin-left: auto;
@@ -119,58 +120,8 @@ a: hover{
 }
 
 @media only screen and (max-width: 600px) {
-  .ModalEventEgg{
-    width: 300px;
-    height: 380px;
-    background-repeat: no-repeat;
-    background-image: url(${Eggm});
-    .EventEggContent{
-      padding-top: 100px;
-      padding-left: 10px;
-      text-align: center;
-    }
-    .ModalShaerTexth1{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 22px;
-    }
-    .ModalShaerTexth2{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 17px;
-    }
-    .ModalShaerTextCoupon{
-      font-size: 14px;
-      line-height: 19px;
-    }
-    .ModalShaerTexth4{
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 11px;
-      line-height: 15px;
-      text-align: center;
-    }
-    .ModalShaerClose{
-      margin-top: 0px;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
-  .ModalShaerClose{
-    background: none;
-    border: none;
-   .CloseEggButton{
-    margin-left: 250px;
-   }
-  }
+  display: none;
 }
-
 `;
 
 const langBanner = ['de','en','es','fr','it','jp']
