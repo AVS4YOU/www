@@ -54,7 +54,7 @@ a: hover{
     text-align: center;
     color: #1E5839;
     padding-top: 15px;
-    max-width: 345px;
+    max-width: 370px;
   }
   .ModalShaerTexth2{
     margin-left: auto;
