@@ -22,23 +22,36 @@ import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
 
 
-
-
-
 class avsAudioConverter extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonAudioConverter")
     };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this); 
   }
 
   getDevice(device){
     this.setState({ device: device });
   }
+    closeModal() {
+      this.setState({
+        isModalOpen: false
+      });
+    }
+  
+    openModal() {
+      this.setState({
+        isModalOpen: true
+      });
+    }
 
 render(){
 

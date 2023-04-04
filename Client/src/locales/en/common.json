@@ -594,9 +594,9 @@
 	"affiliates": "affiliates",
 	"AVS4YOU affiliate program earn money with Links": "AVS4YOU affiliate program: earn money with Links",
 	"Earn 50% commission on every sale!": "Earn 50% commission on every sale!",
-	"Generate maximum sales with AVS4YOU top tools": "Generate maximum sales with AVS4YOU top tools",
+	"Grow your own business by establishing an additional source of revenue with top AVS4YOU tools": "Grow your own business by establishing an additional source of revenue with top AVS4YOU tools.",
 	"Sign up now": "Sign up now",
-	"More Reasons to Become an AVS4YOU Affiliate": "More Reasons to Become an AVS4YOU Affiliate",
+	"Reasons to Join AVS4YOU Affiliate Program": "Reasons to Join AVS4YOU Affiliate Program",
 	"50% initial commission": "50% initial commission",
 	"AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors": "AVS4YOU offers one of the highest affiliate commission rates in comparison with other multimedia software competitors.",
 	"Absolutely fee to join": "Absolutely free to join",
@@ -631,7 +631,7 @@
     "Does 'subscription model' get better conversion results as compared to usual software sale?" : "Does 'subscription model' get better conversion results as compared to usual software sale?",
     "Yes, we launched" : "Yes, we launched",
     "in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before" : "in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before.",
-    "Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?" : "Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?",
+    "Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?" : "3. Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?",
     "Yes, please use our" : "Yes, please use our",
     "Affiliate Links Generator" : "Affiliate Links Generator",
     "tool" : " tool",
@@ -639,7 +639,7 @@
     "It will automatically make correct links" : "It will automatically make correct links.",
     "How do I get money?" : "How do I get money?",
     "You control sales and get money through your exisitng vendor panel It is either Avangate or MyCommerce- ShareIT" : "You control sales and get money through your exisitng vendor panel It is either Avangate.",
-    "How can I make sure your system really works and where can I get statistics for clicks to you from my links?" : "How can I make sure your system really works and where can I get statistics for clicks to you from my links?",
+    "How can I make sure your system really works and where can I get statistics for clicks to you from my links?" : "4. How can I make sure your system really works and where can I get statistics for clicks to you from my links?",
     "Once you're registered with us, you get login and password to access our" : "Once you're registered with us, you get login and password to access our ",
     "control panel" : "control panel",
     "There you'll be able to see statistics number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information" : "There you'll be able to see statistics number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information.",
@@ -654,6 +654,27 @@
 	"subscription_rc" : "subscription",
     "Unlimited_rc" : "Unlimited",
 
+	"You offer one-year and unlimited software subscriptions for users Are they the only options" : "1. You offer one-year and unlimited software subscriptions for users Are they the only options?",
+	"Yes, we offer affiliates to sell 2 types of subscriptions" : "Yes, we offer affiliates to sell 2 types of subscriptions to all our products this selling scheme is very attractive to users and time-proved as effective in terms of conversion.",
+	"Does subscription model get better conversion results as compared to usual software sale" : "2. Does 'subscription model' get better conversion results as compared to usual software sale?",
+	"Yes we launched in" : "Yes, we launched AVS4YOU.com in 2006, December and subscription model proved to bring excellent results several times better as compared to usuall selling scheme we had used before.",
+	"May I use AVS4YOU trademarks in PPC campaigns" : "5. May I use AVS4YOU trademarks in PPC campaigns?",
+	"Affiliates may use AVS4YOU brand keywords in their PPC campaigns" : "Affiliates may use AVS4YOU brand keywords in their PPC campaigns. For the use of trademarks in the ad titles it is obligatory to receive a written consent. Please send your request at",
+
+	"Sign up in the Avangate Affiliate Network or log in if you already have an account" : "Sign up in the Avangate Affiliate Network or log in if you already have an account.",
+	"Generate your affiliate links and place them on your website, blog or YT channel" : "Generate your affiliate links and place them on your website, blog or YT channel.",
+	"Receive a 50% commission from every sale and get your monthly payout" : "Receive a 50% commission from every sale and get your monthly payout.",
+
+	"Pro multimedia tools in 1 suite" : "Pro multimedia tools in 1 suite",
+	"AVS4YOU suite is a set of 5 professional programs for working with audio, video and image data" : "AVS4YOU suite is a set of 5 professional programs for working with audio, video and image data. We provide free customer support for our customers and partners.",
+	"AVS4YOU offers a 50 commission from the start a very competitive offer on the multimedia market" : "AVS4YOU offers a 50% commission from the start, a very competitive offer on the multimedia market. Your commission rate grows along with the number of generated sales.",
+	"There are neither fees nor special conditions for joining our affiliate program" : "There are neither fees nor special conditions for joining our affiliate program.",
+	"Easy to promote" : "Easy to promote",
+	"We provide you with all marketing materials such as banners" : "We provide you with all marketing materials such as banners, product descriptions, images, and logos for AVS4YOU promotion.",
+	"Comprehensive reporting" : "Comprehensive reporting",
+	"Monitor your activity clicks sales earnings per click in real time" : "Monitor your activity: clicks, sales, earnings per click in real time. Enjoy extensive reporting and analytics.",
+	"Secure payout" : "Secure payout",
+	"All commisions are paid by 2Checkout" : "All commisions are paid by 2Checkout, a secure and worldwide known e-commerce platform.",
 
 	"*****************************Free AVS Disc Creator********************************": "*****************************Free AVS Disc Creator********************************",
 	"AVS Free Disc Creator is a free CD DVD burning software": "AVS Free Disc Creator is a free CD /DVD burning software.",
@@ -762,13 +783,6 @@
 	"Edit, delete or add new files to the ready disc images": "Edit, delete or add new files to the ready disc images.",
 
 
-
-
-
-
-
-
-
 	"*****************************Free AVS Registry Cleaner********************************": "*****************************Free AVS Registry Cleaner********************************",
 	"Repair Windows registry with AVS Free Registry Cleaner": "Repair Windows registry with AVS Free Registry Cleaner.",
 	"AVS Registry Cleaner": "AVS Registry Cleaner",
@@ -785,10 +799,6 @@
 	"Strong program compatibility": "Strong program compatibility.",
 	"AVS Registry Cleaner is compatible with office-, graphics-, anti-virus- and other software installed on your PC": "AVS Registry Cleaner is compatible with office-, graphics-, anti-virus- and other software installed on your PC.",
 	"AVS Registry Cleaner runs under the latest version of Microsoft Windows 10881 including 64bit version": "AVS Registry Cleaner runs under the latest version of Microsoft Windows 10/8/8.1 including 64-bit version.",
-
-
-
-
 
 	"*****************************AVS4YOU for Education********************************": "*****************************AVS4YOU for Education********************************",
 	"AVS4YOU special Offer for educational institutions": "AVS4YOU special Offer for educational institutions",
@@ -1453,77 +1463,47 @@
    
 
 "*****************************EasterHunt********************************" : "*****************************EasterHunt********************************",
-"Surf the website and find" : "Surf the website and find ",
-"9 EASTER EGGS" : "9 EASTER EGGS",
-"with discounts up to" : " with discounts up to ",
-"75% OFF!" : "75% OFF!",
+"Surf the website and find" : "Join Easter Egg Hunt to find ",
+"9 EASTER EGGS" : "5 eggs",
+"with discounts up to" : " with amazing discounts up to ",
+"75% OFF!" : "99%!",
 "Surf better to find a" : "Surf better to find a ",
-"75% discount" : "75% discount",
+"75% discount" : "100% discount",
 "Good luck!" : ". Good luck!",
 "Hunt now!" : "Hunt now!",
 "SHOP NOW" : "SHOP NOW",
 "*Just use this coupon while purchasing" : "*Just use this coupon while purchasing",
 
-"hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Glory20&CLEAN_CART=ALL",
-"PWell done!" : "Well done!",
-"PTake a 20% off" : "Take a 20% off",
-"Pon AVS4YOU Unlimited": "on AVS4YOU Unlimited",
-"PSubscription" : "Subscription",
+"hrefButtonEasterButtonVideoEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Sunny30&CLEAN_CART=ALL",
+"PWell done!" : "Save 30% off",
+"Pon AVS4YOU Unlimited": "on AVS4YOU",
+"PSubscription" : "Unlimited Subscription",
 "VVVCGet 25% off" : " ",
 
-"hrefButtonEasterButtonMediaPlayer" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Egg30&CLEAN_CART=ALL",
-"MPRedeem a 30%" : "Redeem a 30%",
-"MPdiscount coupon" : "discount coupon",
-"MPon AVS Video Editor" : "on AVS Video Editor",
-"VACAVS Video ReMaker" : " ",
-
-"hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Sunny50&CLEAN_CART=ALL",
-"VCEnjoy this spring with" : "Enjoy this spring with",
-"VCa 50% discount" : "a 50% discount",
-"VCon AVS Video ReMaker" : "on AVS Video ReMaker",
-"VCUnlimited Subscription" : "Unlimited Subscription",
+"hrefButtonEasterButtonVideoConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Eggstra&CLEAN_CART=ALL",
+"VCEnjoy this spring with" : "Enjoy a 35% discount",
+"VCon AVS Video ReMaker" : "on AVS4YOU",
+"VCUnlimited Subscription" : "1 Year Subscription",
 
 
-"hrefButtonEasterButtonAudioConverter" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Treasure75&CLEAN_CART=ALL",
-"VCABingo!" : "Bingo!",
-"VCAYou have found our treasure egg!!!" : "You have found our treasure egg!!!",
-"VCAGet 75% Off on AVS Video ReMaker" : "Get 75% Off on AVS Video ReMaker",
-"VCA1 Year Subscription" : "1 Year Subscription",
+"hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSBunny&CLEAN_CART=ALL",
+"VAEGet a lucky" : "Bingo!",
+"VAE30% coupon" : "You have found our treasure egg!!!",
+"VAEon AVS4YOU 1 Year" : "Get AVS Video ReMaker",
+"VAESubscription" : "1 Year Subscription for free!",
 
 
-"hrefButtonEasterButtonAudioEditor" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Lucky30&CLEAN_CART=ALL",
-"VAEGet a lucky" : "Get a lucky",
-"VAE30% coupon" : "30% coupon",
-"VAEon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
-"VAESubscription" : "Subscription",
-
-
-"hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Spring50&CLEAN_CART=ALL",
-"DWNWow!" : "Wow!",
-"DWNSave a 50% off" : "Save a 50% off",
+"hrefButtonEasterButtonDownloads" : "https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Glory40&CLEAN_CART=ALL",
+"DWNWow!" : "Well done!",
+"DWNSave a 50% off" : "Get a 40% off",
 "DWNon AVS Video Editor" : "on AVS Video Editor",
 
 
-"hrefButtonEasterButtonAbouUS" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Winner35&CLEAN_CART=ALL",
+"hrefButtonEasterButtonAffiliates" : "https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Lucky50&CLEAN_CART=ALL",
 "ABSCongrats!" : "Congrats!",
-"ABSYou win a 35% discount" : "You win a 35% discount",
-"ABSon AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
-"ABSSubscription" : "Subscription",
-
-
-"hrefButtonEasterButtonEducation" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Bunny40&CLEAN_CART=ALL",
-"EDTake advantage" : "Take advantage",
-"EDof 40% Off" : "of 40% Off",
-"EDon AVS4YOU 1 Year" : "on AVS4YOU 1 Year",
-"EDSubscription" : "Subscription",
-
-
-"hrefButtonEasterButtonPartners" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=Partner25&CLEAN_CART=ALL",
-"Get 25% off" : "Get 25% off",
-"on AVS4YOU Unlimited" : "on AVS4YOU Unlimited",
-"Subscription" : "Subscription",
-
-
+"ABSYou win a 35% discount" : "You have won a 50% discount",
+"ABSon AVS4YOU Unlimited" : "on Video ReMaker",
+"ABSSubscription" : "Unlimited Subscription",
 
 
 

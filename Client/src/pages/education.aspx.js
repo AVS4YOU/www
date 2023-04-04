@@ -214,8 +214,8 @@ render(){
                  formAgreeLink = {this.props.t("Terms of Service")}                 
             />
             <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
-          </div>
-         </div>
+            </div>
+        </div>
       </Layout>
     );
   }

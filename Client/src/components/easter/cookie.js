@@ -15,18 +15,17 @@ const CookieStyleN = styled.div`
     .alert-warning{
         /*background-color: #1E5839;*/
         background-image: url(${Pl});
-        background-size: cover;
         height: 70px;
         color: white;
         display: flex;
         flex-wrap: wrap;
         left: 0px;
-        position: fixed;
         width: 100%;
         z-index: 999;
         bottom: 0px;
         margin-left: auto;
         margin-right: auto;
+        background-position-x: 65%;
     }
    
     .textcapitalize{
@@ -36,7 +35,6 @@ const CookieStyleN = styled.div`
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        background-size: cover;
 
         
         .cookiePL{
@@ -45,15 +43,8 @@ const CookieStyleN = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-        .CookieText{
-            font-size: 12px;
-        }
-      
-        .text-capitalize{
-            margin: 15px;
-            position: relative;
-        }
-    }
+        display: none;
+}
 `;
 const CookieStyle = styled.div`
 
@@ -67,17 +58,16 @@ const CookieStyle = styled.div`
         align-items: baseline;
         /*background: #32393E;*/
         background-image: url(${Pl});
-        background-size: cover;
         height: 70px;
         color: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         left: 0px;
-        position: fixed;
         width: 100%;
         z-index: 999;
-        bottom: ${(getCookieConsentValue("AVSUsersCookieMessages") === "true") ? '0px': '48px'}
+        
+        background-position-x: 65%;
     }
     .btn-primary{
         background: #F4D272;
@@ -103,32 +93,33 @@ const CookieStyle = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-        .CookieText{
-            font-size: 12px;
-        }
-        .btnWrapperClasses{
-            position: relative;
-            margin-right: auto;
-            top: 10px;
-        }
-        .text-capitalize{
-            margin: 15px;
-            position: relative;
-            width: 60%;
-        }
+            display: none;
     }
 `;
+
+const lang = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (currentLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<lang.length; i++) {
+        if(lang[i] === currentLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
 
 const CookieMessange = props => {
 
     const { t } = useTranslation('common');
-    const styleww = (getCookieConsentValue("AVSUsersCookieMessages") === "true") ? '0px': '48px'
+    
     return(
         <div>
-        {(getCookieConsentValue("AVSEasterEvents") === "true")
+        {isSomeLang(props?.layoutProps?.pageContext?.locale) ?
+        <div>
+        {(getCookieConsentValue("AVSEasterEvents")  === "true")
         ? <CookieStyleN> 
-         <div className="alert-warning" style={{bottom: `${styleww}`}}>
-          <div className="textcapitalize" style={{width:"100%",marginTop: "30px",textAlign:"center"}}>
+         <div className="alert-warning">
+          <div className="textcapitalize" style={{width:"100%",marginTop: "35px",textAlign:"center"}}>
             <span className="CookieText">{t("Surf better to find a")}<span className="cookiePL" style={{color: "#F4D272"}}>{t("75% discount")}</span>{t("Good luck!")}</span>
           </div>
         </div>
@@ -154,6 +145,9 @@ const CookieMessange = props => {
         </CookieStyle>
         }
         </div>
+        : <div style={{display:"none"}}></div>
+    }
+    </div>
     )
 }
 

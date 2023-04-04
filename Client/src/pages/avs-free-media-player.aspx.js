@@ -24,7 +24,6 @@ import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../images/common/review-carousel/quote_1.png';
 
 
-
 const TableWrapper = styled.table`
   margin:auto;
   span {
@@ -47,7 +46,6 @@ class avsFreeMediaPlayer extends React.PureComponent {
    };
 
     this.getDevice = this.getDevice.bind(this);
-
   }
 
   getDevice(device){
@@ -203,6 +201,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
+
             <PageContentWrapper>
               <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
               <div className="specificationGrid">

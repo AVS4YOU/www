@@ -25,6 +25,25 @@ main {
     .header__button_pad{
         margin-top: 40px;
     }
+
+    .eggsEvent{
+        position:absolute;
+        padding-top: 65px;
+    }
+    .eggsEventLeft {
+        position:absolute;
+        bottom: -35px;
+    }
+    .eggsEventRight{
+        position: relative;
+        padding-right: 5%;
+        height: 25px;
+        text-align: right;
+    }
+    .eggsEventRightN{
+        position:absolute;
+        padding-left: 55%;
+    }
     
     .textcapitalize {
         text-align: center;
@@ -219,7 +238,7 @@ main {
         font-size: 56px;
         position: relative;
         font-weight: bold;
-        z-index:1;
+        z-index:0;
 
         &:before{
             content: '';
@@ -404,6 +423,17 @@ main {
 
 @media (max-width: 620px) {
     main{
+
+        .eggsEvent{
+            display: none;
+        }
+        .eggsEventLeft{
+            display: none;
+        }
+        .eggsEventRight{
+            display: none;
+        }
+
         .common-info-block{
             max-width: 500px;
             width: 100%;
