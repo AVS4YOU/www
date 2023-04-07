@@ -20,12 +20,13 @@ const CookieStyle = styled.div`
         align-items: baseline;
         background: #32393E;
         color: white;
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         left: 0px;
+        position: fixed;
         width: 100%;
         z-index: 999;
+        bottom: 0px;
     }
     .btn-primary{
         background: #676767;

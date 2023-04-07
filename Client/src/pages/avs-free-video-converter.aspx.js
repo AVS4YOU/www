@@ -23,30 +23,13 @@ class avsFreeVideoConverter extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
-      isModalOpen: false,
-      isInnerModalOpen: false,
-      hrefButton: this.props.t("hrefButtonEasterButtonVideoConverter")
     };
 
     this.getDevice = this.getDevice.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.openModal = this.openModal.bind(this); 
   }
 
   getDevice(device){
     this.setState({ device: device });
-  }
-
-  closeModal() {
-    this.setState({
-      isModalOpen: false
-    });
-  }
-
-  openModal() {
-    this.setState({
-      isModalOpen: true
-    });
   }
 
 render(){
@@ -60,8 +43,8 @@ render(){
         metaKeywords={this.props.t("free video converter, video to mp3, video converter, video download converter, video converter to mp4, avs video converter, avs4you, avs, avs converter, avs4u, video converter tool, video converter software, mp4 to mp3 converter, mp4 to avi converter, mp4 to 3gp converter, mp4 video converter, convert dvd, convert avi, convert mp4, convert wmv, convert mov, video file converter, dvd converter, convert mp4 to dvd, avi converter, video converting, video conversion")}
       >
         {isSomeLang(this.props.locale)
-          ? <AvsVideoConverterOtherContent t={this.props.t} locale={this.props.locale} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton}/> 
-          : <AvsVideoConverterCommonContent t={this.props.t} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton}/>
+          ? <AvsVideoConverterOtherContent t={this.props.t} locale={this.props.locale} /> 
+          : <AvsVideoConverterCommonContent t={this.props.t} />
         }
       </Layout>
     );
