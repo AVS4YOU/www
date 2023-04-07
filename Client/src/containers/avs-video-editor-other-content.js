@@ -119,17 +119,6 @@ const isEngLang = (currentLang) => {
     return isEngLang;
 }
 
-const langBanner = ['de','en','es','fr','it','jp']
-
-const isSomeLang = (curLang) => {
-    let isSomeLang = false;
-    for(let i = 0; i<langBanner.length; i++) {
-        if(langBanner[i] === curLang) isSomeLang = true;
-    }
-
-    return isSomeLang;
-}
-
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
   <StyledVideo><div className="headerBackground" style={{height: "900px"}}>

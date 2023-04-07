@@ -20,6 +20,7 @@ const CookieStyle = styled.div`
         align-items: baseline;
         background: #32393E;
         color: white;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         left: 0px;

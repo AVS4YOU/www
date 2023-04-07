@@ -35,17 +35,6 @@ const StyledBlock = styled.div`
 }
 `;
 
-const lang = ['de','en','es','fr','it','jp']
-
-const isSomeLang = (currentLang) => {
-    let isSomeLang = false;
-    for(let i = 0; i<lang.length; i++) {
-        if(lang[i] === currentLang) isSomeLang = true;
-    }
-
-    return isSomeLang;
-}
-
 export const AffiliatesPage = (props) => (
   <ProductPagesWrapper>
         <div className="header">
