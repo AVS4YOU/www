@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.48
+
+### New
+* Deleted event "Easter Hunt 2023" 
+
 ## 1.0.47
 
 ### New

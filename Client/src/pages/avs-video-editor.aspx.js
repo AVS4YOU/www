@@ -23,30 +23,13 @@ class AvsVideoEditor extends React.PureComponent {
     super(props);
     this.state = {
       device: "",
-      isModalOpen: false,
-      isInnerModalOpen: false,
-      hrefButton: this.props.t("hrefButtonEasterButtonVideoEditor")
       };
 
     this.getDevice = this.getDevice.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.openModal = this.openModal.bind(this);
     }
 
   getDevice(device){
     this.setState({ device: device });
-  }
-
-    closeModal() {
-    this.setState({
-      isModalOpen: false
-    });
-  }
-
-  openModal() {
-    this.setState({
-      isModalOpen: true
-    });
   }
 
 render(){
@@ -61,8 +44,8 @@ render(){
         metaKeywords={this.props.t("video editor, video editing software, video editing, download video editor, avs video editor, avs editor, avs movie editor, video editing tips,  windows movie maker, video editor app, edit video, edit video on iphone, cut video, download edit video, video edit software, mp4 editor, movie maker software, create video slideshow")}
       >
          {isSomeLang(this.props.locale)
-          ? <AvsVideoEditorOtherContent t={this.props.t} locale={this.props.locale} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton} /> 
-          : <AvsVideoEditorCommonContent t={this.props.t} locale={this.props.locale} openModal={this.openModal} closeModal={this.closeModal} isModalOpen={this.state.isModalOpen} hrefButton={this.state.hrefButton} />
+          ? <AvsVideoEditorOtherContent t={this.props.t} locale={this.props.locale} /> 
+          : <AvsVideoEditorCommonContent t={this.props.t} locale={this.props.locale} />
         }
       </Layout>
     );
