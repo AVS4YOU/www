@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.49
+
+### Fixes
+* Fixed products version 
+
 ## 1.0.48
 
 ### New
