@@ -4,7 +4,7 @@
 
 ### Fixes
 * Fixed products version 
-* Added new award GetApp 2023
+* Added award GetApp 2023
 
 ## 1.0.48
 
