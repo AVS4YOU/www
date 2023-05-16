@@ -135,9 +135,7 @@ check_deploy() {
   echo "=== check deploy ==="
 
   
-  curl -Is http://"${name_new_bucket}".s3-website-us-east-1.amazonaws.com \ 
-    | head -n 1 \
-    | grep 200
+  curl -Is http://"${name_new_bucket}".s3-website-us-east-1.amazonaws.com | head -n 1 | grep 200
     
   if [[ $? -eq 0 ]]; then
     echo "site OK"
