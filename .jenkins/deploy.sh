@@ -90,6 +90,8 @@ create_new_bucket() {
   aws s3api put-bucket-policy \
     --bucket ${name_new_bucket} \
     --policy file://bucket_policy.json
+  aws s3api put-public-access-block --bucket ${name_new_bucket} --public-access-block-configuration \
+   "BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"
   aws s3api put-bucket-acl \
     --bucket ${name_new_bucket} \
     --access-control-policy file://bucket_acl.json
