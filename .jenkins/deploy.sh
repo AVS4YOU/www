@@ -87,13 +87,13 @@ create_new_bucket() {
     --error-document error.html
   aws s3api put-public-access-block --bucket ${name_new_bucket} --public-access-block-configuration \
    "BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false"
-  aws s3api put-bucket-ownership-controls --bucket ${name_new_bucket} --ownership-controls Enabled={Rules=[{ObjectOwnership="BucketOwnerPreferred"}]}
-  aws s3api put-bucket-acl --bucket ${name_new_bucket} --grant-write-acp uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers
+  aws s3api put-bucket-ownership-controls --bucket ${name_new_bucket} --ownership-controls Rules=[{ObjectOwnership="ObjectWriter"}]
+  #aws s3api put-bucket-acl --bucket ${name_new_bucket} --grant-write-acp uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers
 
   aws s3api put-bucket-policy \
     --bucket ${name_new_bucket} \
     --policy file://bucket_policy.json
-  aws s3api put-bucket-acl --bucket ${name_new_bucket} --acl bucket-owner-full-control
+  #aws s3api put-bucket-acl --bucket ${name_new_bucket} --acl bucket-owner-full-control
   aws s3api put-bucket-acl \
     --bucket ${name_new_bucket} \
     --access-control-policy file://bucket_acl.json
