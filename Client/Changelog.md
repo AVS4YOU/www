@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.49
+
+### Fixes
+* Fixed products version 
+* Added award GetApp 2023
+
 ## 1.0.48
 
 ### New
