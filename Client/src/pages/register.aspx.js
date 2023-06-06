@@ -100,26 +100,6 @@ render(){
        metaKeywords=""
       >
         <Helmet>
-          
-        {<script type='text/javascript'>{`
-    (function (document, src, libName, config) {
-      var script = document.createElement('script');
-      script.src = src;
-      script.async = true;
-      var firstScriptElement = document.getElementsByTagName('script')[0];
-      script.onload = function () {
-          for (var namespace in config) {
-              if (config.hasOwnProperty(namespace)) {
-                  window[libName].setup.setConfig(namespace, config[namespace]);
-              }
-          }
-          window[libName].register();
-      };
-
-      firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
-      })(document, 'https://secure.2checkout.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"checkout"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"ONLMETEC-inline-one-step"}});
-              `}
-          </script>}
 
           {<script type='text/javascript'>{`
                   window._vwo_code = window._vwo_code || (function(){
@@ -344,23 +324,25 @@ render(){
               margin-top: 15px;
             }
           }`}</style>}
-          {<script>{`
+        {<script type='text/javascript'>{`
           (function (document, src, libName, config) {
-            var script             = document.createElement('script');
-            script.src             = src;
-            script.async           = true;
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = true;
             var firstScriptElement = document.getElementsByTagName('script')[0];
-            script.onload          = function () {
-            for (var namespace in config) {
-            if (config.hasOwnProperty(namespace)) {
-              window[libName].setup.setConfig(namespace, config[namespace]);
-              }
-            }
-            window[libName].register();
+            script.onload = function () {
+                for (var namespace in config) {
+                    if (config.hasOwnProperty(namespace)) {
+                        window[libName].setup.setConfig(namespace, config[namespace]);
+                    }
+                }
+                window[libName].register();
             };
+
             firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
-            })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"immediate"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
-            `}</script>}
+            })(document, 'https://secure.2checkout.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"checkout"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"ONLMETEC-inline-one-step"}});
+                    `}
+          </script>}
         </Helmet>
         
         <div className="screen-wrapper first">
