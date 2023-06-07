@@ -71,6 +71,26 @@ constructor(props){
   };
 }
 
+ onRegisterClick() {
+  window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
+  window.TwoCoInlineCart.config.app.iframeLoad = 'checkout';
+  window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
+  window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
+
+  window.TwoCoInlineCart.register();
+  window.TwoCoInlineCart.products.add({
+    code: "604132"
+  });
+  
+  window.TwoCoInlineCart.billing.setData({
+    name: '', 
+    email: '', 
+    country: '',
+  });
+  window.TwoCoInlineCart.cart.setAutoAdvance(true);
+  window.TwoCoInlineCart.cart.checkout();
+}
+
 componentDidMount(){
   const cookies = new Cookies();
 
@@ -87,6 +107,8 @@ componentDidMount(){
   this.setState({
    documentLoaded: true
  })
+
+ 
 }
 
 render(){
@@ -324,25 +346,7 @@ render(){
               margin-top: 15px;
             }
           }`}</style>}
-        {<script type='text/javascript'>{`
-          (function (document, src, libName, config) {
-            var script = document.createElement('script');
-            script.src = src;
-            script.async = true;
-            var firstScriptElement = document.getElementsByTagName('script')[0];
-            script.onload = function () {
-                for (var namespace in config) {
-                    if (config.hasOwnProperty(namespace)) {
-                        window[libName].setup.setConfig(namespace, config[namespace]);
-                    }
-                }
-                window[libName].register();
-            };
-
-            firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
-            })(document, 'https://secure.2checkout.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"checkout"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"ONLMETEC-inline-one-step"}});
-                    `}
-          </script>}
+          {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
         </Helmet>
         
         <div className="screen-wrapper first">
@@ -389,7 +393,8 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button                
-                href={this.state.hrefUnlim}
+                  //href={this.state.hrefUnlim}
+                  onClick={this.onRegisterClick}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
