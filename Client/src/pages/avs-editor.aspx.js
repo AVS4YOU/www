@@ -16,10 +16,10 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
-import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
 import ImageGQL from '../components/image-gql';
-import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
+import { Link as GatsbyLink } from 'gatsby';
+import Logo from '../images/common/logo.svg';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -35,6 +35,17 @@ import awardGetApp from '../images/avs-video-editor/award-getapp.png'
 
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
+
+const LogoWrapper = styled.div`
+    width: 69px;
+    height: 60px;
+    display: table;
+    &>img{
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+    }
+`;
 
 const StyledArrow = styled.div`{
 
@@ -57,55 +68,6 @@ const StyledArrow = styled.div`{
     .headerArrow {
       display: none;
     }
-  }
-}
-`;
-
-const StyledVideo = styled.div`
-
-.headerBackground {
-  overflow: hidden;
-}
-
-video {
-  object-fit: fill;
-  height: auto;
-  width: 100%;
-}
-
-@media (max-width: 1920px) {
-  video {
-    width: auto;
-  }
-}
-
-@media (max-width: 1368px) {
-  .headerBackground {
-    max-height: auto !important;
-  }
-  video {
-    height: 100%;
-  }
-
-  .visibleSlider {
-    margin: 20px auto;
-  }
-}
-
-@media (max-width: 1024px) {
-  .headerBackground {
-    height: 732px !important;
-  }
-}
-
-@media (max-width: 500px) {
-  .headerBackground {
-    height: auto !important;
-    padding-bottom: 50px;
-  }
-  video {
-    height: 100%;
-    left: -50%;
   }
 }
 `;
@@ -152,6 +114,13 @@ render(){
               <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="blue_background_main.jpg" style={{position: "absolute"}}/>
             <PageContentWrapper>
+            <div className="avs-logo">
+          <GatsbyLink className="headerLogo" to="/">
+              <LogoWrapper href="/">
+                  <img src={Logo} alt="avs4you logo"/>
+              </LogoWrapper>
+          </GatsbyLink>
+          </div>
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
@@ -449,12 +418,6 @@ render(){
                     : 
                     <ReviewScreenNew />
                 }
-                  
-              <Button className="trustButton" style={{margin: "auto", display: "table"}}
-                      href="https://www.trustpilot.com/review/www.avs4you.com" 
-                      color="#fff">
-                      {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
-              </Button>
             </div>
           </ProductPagesWrapper>
       </Layout>
