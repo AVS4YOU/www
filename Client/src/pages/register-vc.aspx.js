@@ -349,6 +349,28 @@ render(){
             }
           }`}</style>}
          {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
+         {<script language="JavaScript">
+          {`var vId = 'ONLMETEC';
+            var scriptSRC = '/check_affiliate_v2.js';
+            var protocol = window.location.protocol;
+            if (protocol.indexOf("https") === 0) document.write(unescape("%3Cscript src='https://secure.2Checkout.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
+            else document.write(unescape("%3Cscript src='http://content.2Checkout.com" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script language="JavaScript">
+            var avgParams = _checkAvgParams();
+            var alreadyChecked = false;
+            if (avgParams != null) {
+            _AVGSetCookie('_avgCheck', avgParams);
+            alreadyChecked = true;
+            }
+            var avgProds = _avgProds(_AVGGetCookie('_avgCheck'), alreadyChecked, vId); //redirect
+            var AVG_AFF = false;var AVG_PRODS = new Array();
+            if (avgProds != "-") {
+            AVG_AFF = true;
+            if(avgProds != 'all') {AVG_PRODS = avgProds.split(',');}
+            }
+            `}
+        </script>}
         </Helmet>
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
