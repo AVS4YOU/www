@@ -350,24 +350,26 @@ render(){
           }`}</style>}
          {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
          {<script language="JavaScript">
-          {`var vId = 'ONLMETEC';
+          {`var vId = 'ltu04g==';
             var scriptSRC = '/check_affiliate_v2.js';
+
             var protocol = window.location.protocol;
-            if (protocol.indexOf("https") === 0) document.write(unescape("%3Cscript src='https://secure.2Checkout.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
-            else document.write(unescape("%3Cscript src='http://content.2Checkout.com" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-            <script language="JavaScript">
-            var avgParams = _checkAvgParams();
-            var alreadyChecked = false;
-            if (avgParams != null) {
-            _AVGSetCookie('_avgCheck', avgParams);
-            alreadyChecked = true;
-            }
-            var avgProds = _avgProds(_AVGGetCookie('_avgCheck'), alreadyChecked, vId); //redirect
-            var AVG_AFF = false;var AVG_PRODS = new Array();
-            if (avgProds != "-") {
-            AVG_AFF = true;
-            if(avgProds != 'all') {AVG_PRODS = avgProds.split(',');}
+            if (protocol.indexOf("https") === 0) document.write(unescape("%3Cscript src='https://secure.avangate.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
+            else document.write(unescape("%3Cscript src='http://content.avangate.com" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
+            `}
+          </script>}
+          {<script language="JavaScript">
+            {`var avgParams = _checkAvgParams();
+              var alreadyChecked = false;
+              if (avgParams != null) {
+              _AVGSetCookie('_avgCheck', avgParams);
+              alreadyChecked = true;
+              }
+              var avgProds = _avgProds(_AVGGetCookie('_avgCheck'), alreadyChecked, vId); //redirect
+              var AVG_AFF = false;var AVG_PRODS = new Array();
+              if (avgProds != "-") {
+              AVG_AFF = true;
+              if(avgProds != 'all') {AVG_PRODS = avgProds.split(',');}
             }
             `}
         </script>}
