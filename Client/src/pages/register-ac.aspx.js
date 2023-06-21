@@ -110,6 +110,35 @@ componentDidMount(){
   this.setState({
    documentLoaded: true
  })
+
+ const avgParams = window._checkAvgParams();
+ console.log('avgParams: ', avgParams)
+ const vId = 'ltu04g==';
+ 
+ let alreadyChecked = false;
+ if (avgParams != null) {
+     window._AVGSetCookie('_avgCheck', avgParams);
+     alreadyChecked = true;
+ }
+
+ const avgCookie = window._AVGGetCookie('_avgCheck')
+ console.log('avgCookie: ', avgCookie)
+ this.setState({
+   avgCookie: avgCookie
+ })
+
+ if (avgCookie) {
+   let avgProds = window._avgProds(window._AVGGetCookie('_avgCheck'), alreadyChecked, vId);
+   let AVG_AFF = false;
+   const AVG_PRODS = new Array();
+   if (avgProds != "-") {
+     AVG_AFF = true;
+     if(avgProds != 'all') {
+       AVG_PRODS = avgProds.split(',')
+       console.log('AVG_PRODS: ', AVG_PRODS)
+     }
+   }
+ }
 }
 
 render(){
@@ -349,30 +378,14 @@ render(){
             }
           }`}</style>}
         {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
-        {<script language="JavaScript">
-          {`var vId = 'ltu04g==';
+        {<script type='text/javascript'>
+          {`
             var scriptSRC = '/check_affiliate_v2.js';
 
             var protocol = window.location.protocol;
-            if (protocol.indexOf("https") === 0) document.write(unescape("%3Cscript src='https://secure.avangate.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
-            else document.write(unescape("%3Cscript src='http://content.avangate.com" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='https://secure.avangate.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
             `}
           </script>}
-          {<script language="JavaScript">
-            {`var avgParams = _checkAvgParams();
-              var alreadyChecked = false;
-              if (avgParams != null) {
-              _AVGSetCookie('_avgCheck', avgParams);
-              alreadyChecked = true;
-              }
-              var avgProds = _avgProds(_AVGGetCookie('_avgCheck'), alreadyChecked, vId); //redirect
-              var AVG_AFF = false;var AVG_PRODS = new Array();
-              if (avgProds != "-") {
-              AVG_AFF = true;
-              if(avgProds != 'all') {AVG_PRODS = avgProds.split(',');}
-            }
-            `}
-        </script>}
         </Helmet>
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
@@ -416,15 +429,26 @@ render(){
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
-                <Button
-                  //href={this.state.hrefUnlim}
+                {this.state.avgCookie ? 
+                 <Button                
+                 href={this.state.hrefUnlim}
+                 backgroundColor="orange"
+                 color="#ffffff"
+                 className="buy-block-button"
+                 id="unlimited_button"
+               >
+                 {this.props.t("Buy now")}
+               </Button>
+                :
+                <Button                
                   onClick={this.onRegisterClick}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
+                  id="unlimited_button"
                 >
                   {this.props.t("Buy now")}
-                </Button>
+                </Button>}
               </div>
             </div>
           </div>
