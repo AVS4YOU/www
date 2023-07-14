@@ -1,0 +1,6 @@
+export * from './checked'
+export * from './capterra'
+export * from './star'
+export *  from './fiveStars'
+export * from './quote'
+export * from './capterra2'
