@@ -1,2 +1,5 @@
 export * from './hero-section'
 export * from './trust-section'
+export * from './features-section'
+export * from './get-started-section'
+export * from './specs-section'
