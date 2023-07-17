@@ -5,7 +5,6 @@
 ### New
 * Added InLine 2Сheckout at register page
 * Added landing page /avs-editor.aspx
-* Added affiliate checker
 
 ## 1.0.49
 
