@@ -19,11 +19,11 @@
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.2",
     "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^4.4.0",
-    "gatsby-transformer-sharp": "^2.3.16",
+    "gatsby-transformer-sharp": "^3.0.0",
     "i18next": "^15.0.6",
     "less": "^3.10.3",
     "prop-types": "^15.7.2",
@@ -59,7 +59,7 @@
     "babel-loader": "^8.0.6",
     "gatsby": "^2.25.0",
     "react": "next",
-    "react-dom": "next"
+    "react-dom": "npm:@hot-loader/react-dom"
   },
   "private": false,
   "repository": {
