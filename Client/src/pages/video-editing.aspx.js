@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Layout from "../components/layout";
 import withI18next from "../components/withI18next";
-import {FeaturesSection, GetStartedSection, HeroSection, SpecsSection, TrustSection} from "../screens/video-editing";
+import {FeaturesSection, GetStartedSection, HeroSection, SpecsSection, TrustSection, MakeVideoSection} from "../screens/video-editing";
 
 class VideoEditing extends React.PureComponent {
 
@@ -31,6 +31,7 @@ class VideoEditing extends React.PureComponent {
                 <HeroSection />
                 <TrustSection />
                 <FeaturesSection />
+                <MakeVideoSection />
                 <SpecsSection />
                 <GetStartedSection />
             </Layout>
