@@ -73,21 +73,25 @@ constructor(props){
 
  onRegisterClick() {
   window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
-  window.TwoCoInlineCart.config.app.iframeLoad = 'checkout';
+  window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
   window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
   window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
-
   window.TwoCoInlineCart.register();
-  window.TwoCoInlineCart.products.add({
-    code: "604132"
-  });
+
+  window.TwoCoInlineCart.setup.setIframeLoad(); 
   
   window.TwoCoInlineCart.billing.setData({
     name: '', 
     email: '', 
     country: '',
   });
-  window.TwoCoInlineCart.cart.setAutoAdvance(true);
+
+  window.TwoCoInlineCart.products.removeAll(); 
+
+  window.TwoCoInlineCart.products.add({
+    code: "604132"
+  });
+  
   window.TwoCoInlineCart.cart.checkout();
 }
 
