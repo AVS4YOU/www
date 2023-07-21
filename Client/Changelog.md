@@ -7,7 +7,7 @@
 * Added landing page /avs-editor.aspx
 
 ### Fixes
-* Fixed company name
+* Fixed Сompany name
 * Fixed pads
 
 ## 1.0.49
