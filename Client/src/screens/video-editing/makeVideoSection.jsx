@@ -13,6 +13,7 @@ const MakeVideoSectionStyled = styled.section`
   }
   
   @media screen and (max-width: 786px) {
+    padding: 48px 0;
     .make-video-section__header {
       margin-bottom: 32px;
     }
@@ -28,10 +29,7 @@ const MakeVideoSectionStyled = styled.section`
 const MakeVideoSectionContainer = styled.div`
   max-width: 1386px;
   margin: 0 auto;
-  
-  @media screen and (max-width: 500px) {
-    padding: 0 16px;
-  }
+  padding: 0 16px;
 `
 
 export const MakeVideoSection = () => {
