@@ -136,7 +136,7 @@ class Privacy extends React.PureComponent {
           </div>
 
           <Text className="body-privacy__text">
-            {this.props.t("Ascensio System SIA may share non-personal, summary information regarding AVS4YOU users with partners or other third parties However, we will not share any individual customer information outside of the contracted partners and third parties without first receiving user's prior written approval In short, Ascensio System SIAdoes not sell user’s Personal Data")}
+            {this.props.t("Ascensio System SIA may share non-personal, summary information regarding AVS4YOU users with partners or other third parties However, we will not share any individual customer information outside of the contracted partners and third parties without first receiving user's prior written approval In short, Ascensio System SIA does not sell user’s Personal Data")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("Ascensio System SIA may send you tips on using AVS4YOU, notify you of and get your feedback on upcoming releases or new services offered only if you subscribed to our mailing lists Users are able to unsubscribe from the mailing list any time after receiving the first informational message using link contained within informational message or by using appropriate Account settings option")}
