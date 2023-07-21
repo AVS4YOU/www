@@ -79,9 +79,8 @@ onRegisterClick() {
   window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
   window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
   window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
+  window.TwoCoInlineCart.setup.setIframeLoad('immediate'); 
   window.TwoCoInlineCart.register();
-
-  window.TwoCoInlineCart.setup.setIframeLoad(); 
   
   window.TwoCoInlineCart.billing.setData({
     name: '', 
