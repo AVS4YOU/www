@@ -6,6 +6,10 @@
 * Added InLine 2Сheckout at register page
 * Added landing page /avs-editor.aspx
 
+### Fixes
+* Fixed company name
+* Fixed pads
+
 ## 1.0.49
 
 ### Fixes
