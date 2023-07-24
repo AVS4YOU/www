@@ -78,7 +78,7 @@ export const TrustSectionCarousel = () => {
         slidesToScroll: 1,
         infinite: false,
         dots: true,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,

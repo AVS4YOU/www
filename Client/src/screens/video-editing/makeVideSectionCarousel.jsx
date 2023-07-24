@@ -31,98 +31,105 @@ const MakeVideSectionCarouselStyled = styled.div`
     box-sizing: border-box;
   }
 
-  .slider1 {
-    max-width: 1386px;
-  }
-
   .slick-initialized .slick-slide.slick-current {
     z-index: 3 !important;
+  }
+
+  .slider1 {
+
   }
 
   .slider2 {
     .slick-dots li {
       width: 25px;
+
       button {
         margin: 0 auto;
       }
+
       button:before {
         font-size: 15px;
         color: #9A9997;
       }
+
       &.slick-active button:before {
         color: #FE9235;
       }
     }
+
     .slick-list {
-      padding: 48px 0;
-    }
-
-    .slick-slide {
-      &:not(:last-child) {
-        padding-right: 30px;
-      }
-
-      &.slick-current a {
-        background-color: #FFF;
-        filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
-      }
+      padding: 40px 0 48px 0;
     }
   }
 
-  @media screen and (min-width: 1400px) {
+  .slick-current a {
+    background-color: #FFF;
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+  }
+
+  @media screen and (min-width: 1386px) {
     .slider2 {
-      width: 1400px;
-
-      .slick-list {
-        padding: 48px 30px;
-      }
-
       .slick-slide {
-        display: block;
-        width: 150px !important;
-
-        &:not(:last-child) {
-          padding-right: 30px;
+        &:last-child a {
+          margin-right: 38px;
         }
 
-        &.slick-current a {
-          background-color: #FFF;
-          filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+        &:first-child a {
+          margin-left: 38px;
         }
       }
     }
   }
 
-
-  @media screen and (max-width: 1400px) {
-    .slider2 {
+  @media screen and (max-width: 1386px) {
+    .visibleSlider {
       max-width: 100%;
-      margin: 0 auto;
-      
-      .slick-list {
-        padding: 48px 30px;
-      }
     }
   }
+
 
   @media screen and (max-width: 1200px) {
     .slider1 {
       .slick-list {
-        padding-bottom: 177px;
+        padding-bottom: 150px;
+      }
+      
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .slider2 {
+      max-width: 700px;
+      margin: 0 auto;
+
+      .slick-list {
+        padding: 33px 0 48px 0;
       }
     }
 
+    .slick-current a {
+      margin-left: 38px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
     .slider2 {
+      max-width: 100%;
+
       .slick-list {
-        padding: 33px 30px 48px 30px;
+        padding: 35px 0 40px 0;
+      }
+
+      .slick-slide a {
+        margin: 0 auto;
       }
     }
   }
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 500px) {
     .slider1 {
       .slick-list {
-        padding-bottom: 190px;
+        padding-bottom: 200px;
       }
     }
   }
@@ -133,56 +140,14 @@ const MakeVideSectionCarouselItem = styled.div`
 `
 
 const MakeVideSectionCarouselImg = styled.img`
-  margin: 0 150px 0 auto;
+  margin: 0 210px 0 auto;
 
   @media screen and (max-width: 1200px) {
     margin: 0 auto;
   }
-  
+
   @media screen and (max-width: 700px) {
     width: 100%;
-  }
-`
-
-const MakeVideSectionCarouselBox = styled.div`
-  position: absolute;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.56);
-  box-shadow: 0 0 8px 0 #FFF inset, 0 8px 24px 0 rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(4px);
-  padding: 30px 32px 15px 33px;
-  color: #000;
-  max-width: 348px;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-
-  top: 58px;
-  left: calc(50% - 420px);
-
-  @media screen and (max-width: 1400px) {
-    left: auto;
-    right: 750px;
-  }
-
-  @media screen and (max-width: 1200px) {
-    right: calc(50% - 174px);
-    top: 260px;
-  }
-  
-  @media screen and (max-width: 700px) {
-    gap: 12px;
-    
-    bottom: -150px;
-    top: auto;
-  }
-  
-  @media screen and (max-width: 400px) {
-    width: 90%;
-    right: 15px;
   }
 `
 
@@ -192,7 +157,7 @@ const MakeVideSectionCarouselTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  
+
   @media screen and (max-width: 700px) {
     font-size: 16px;
   }
@@ -204,7 +169,7 @@ const MakeVideSectionCarouselDesc = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-
+  color: #000;
   max-width: 284px;
 
   @media screen and (max-width: 700px) {
@@ -212,9 +177,12 @@ const MakeVideSectionCarouselDesc = styled.p`
   }
 `
 
+const CarouselPageWrapper = styled.div`
+  
+`
+
 const CarouselPageStyled = styled.a`
-  width: 128px !important;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   padding: 15px;
   gap: 16px;
@@ -223,13 +191,15 @@ const CarouselPageStyled = styled.a`
   color: #000;
   min-height: 98px;
   border-radius: 5px;
+  margin: 0 14px;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
   }
-
-  @media screen and (max-width: 1400px) {
-    width: 100% !important;
+  
+  @media screen and (max-width: 700px) {
+    max-width: 120px;
   }
 `
 
@@ -242,60 +212,104 @@ const CarouselPageText = styled.p`
   line-height: normal;
 `
 
+const MakeVideSectionCarouselBox = styled.div`
+  position: absolute;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 0px 8px 0px #FFF inset, 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+  padding: 30px 32px 15px 33px;
+  color: #000;
+  max-width: 348px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+
+  top: 58px;
+  left: calc(50% - 470px);
+
+  @media screen and (max-width: 1400px) {
+    left: auto;
+    right: 815px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    right: calc(50% - 174px);
+    top: 260px;
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 12px;
+
+    bottom: -95px;
+    top: auto;
+  }
+  
+  @media screen and (max-width: 500px) {
+    bottom: -160px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: calc(100% - 30px);
+    right: 15px;
+    left: 15px;
+  }
+`
+
 const ArrowStyled = styled.a`
   width: max-content;
   height: max-content;
   z-index: 10;
-  
+
   &:before {
     content: none;
   }
+
   &.slick-prev {
     top: calc(50% + 142px);
-    left: calc(50% - 400px);
+    left: calc(50% - 465px);
+
     svg {
       transform: rotate(180deg);
     }
   }
-  
+
   &.slick-next {
     top: calc(50% + 150px);
-    left: calc(50% - 240px);
+    left: calc(50% - 305px);
   }
-
+  
   @media screen and (max-width: 1400px) {
-    &.slick-next {
-      left: calc(50% - 300px);
-    }
-
     &.slick-prev {
-      left: calc(50% - 460px);
+      left: auto;
+      right: 1050px;
     }
-  }
 
-  @media screen and (max-width: 1200px) {
     &.slick-next {
-      top: calc(50% + 260px);
-      left: calc(50% + 50px);
-    }
-
-    &.slick-prev {
-      top: calc(50% + 252px);
-      left: calc(50% - 130px);
+      left: auto;
+      right: 900px;
     }
   }
   
-  @media screen and (max-width: 700px) {
-    &.slick-next {
-      top: auto;
-      bottom: -68px;
-    }
-
+  @media screen and (max-width: 1200px) {
     &.slick-prev {
       top: auto;
       bottom: -60px;
+      right: auto;
+      left: calc(50% - 130px);
+    }
+
+    &.slick-next {
+      top: auto;
+      bottom: -66px;
+      right: auto;
+      left: calc(50% + 37px);
     }
   }
+  
 `
 const CarouselIndex = styled.div`
   position: absolute;
@@ -308,37 +322,29 @@ const CarouselIndex = styled.div`
   font-weight: 400;
   line-height: 24px;
 
-  top: calc(50% + 16px);
-  left: calc(50% - 315px);
-  
+  bottom: 46px;
+  left: calc(50% - 380px);
+
   .carousel-index-bold {
     margin: 0;
     font-weight: 700;
   }
-  
+
   @media screen and (max-width: 1400px) {
-    left: calc(50% - 375px);
+    right: 980px;
+    left: auto;
   }
 
   @media screen and (max-width: 1200px) {
-    top: calc(50% + 130px);
+    right: auto;
     left: calc(50% - 40px);
-  }
-  
-  @media screen and (max-width: 700px) {
-    top: auto;
-    bottom: 205px;
-  }
-
-  @media screen and (max-width: 660px) {
-    bottom: 220px;
-  }
-  
-  @media screen and (max-width: 350px) {
-    bottom: 235px;
+    bottom: 0px;
   }
 `
 
+const SliderWrapper = styled.div`
+  position: relative;
+`
 
 
 const data = [
@@ -417,10 +423,10 @@ export const MakeVideSectionCarousel = () => {
         arrows: true,
         infinite: true,
         nextArrow: (
-            <Arrow />
+            <Arrow/>
         ),
         prevArrow: (
-            <Arrow />
+            <Arrow/>
         ),
         asNavFor: slider2,
         ref: (slider) => {
@@ -448,19 +454,19 @@ export const MakeVideSectionCarousel = () => {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 7,
+                    slidesToShow: 8,
                 }
             },
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 7,
                 }
             },
             {
                 breakpoint: 1000,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 6,
                 }
             },
             {
@@ -470,13 +476,13 @@ export const MakeVideSectionCarousel = () => {
                 }
             },
             {
-                breakpoint: 700,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 400,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -486,36 +492,40 @@ export const MakeVideSectionCarousel = () => {
 
     return (
         <MakeVideSectionCarouselStyled>
-            <Carousel {...settings1}>
-                {
-                    data.map(item => (
-                        <MakeVideSectionCarouselItem key={item.text}>
-                            <MakeVideSectionCarouselImg src={item.image}/>
-                            <MakeVideSectionCarouselBox>
-                                {item.icon}
-                                <MakeVideSectionCarouselTitle>{item.text}</MakeVideSectionCarouselTitle>
-                                <MakeVideSectionCarouselDesc>{item.desc}</MakeVideSectionCarouselDesc>
-                            </MakeVideSectionCarouselBox>
-                        </MakeVideSectionCarouselItem>
-                    ))
-                }
-            </Carousel>
+            <SliderWrapper>
+                <Carousel {...settings1}>
+                    {
+                        data.map(item => (
+                            <MakeVideSectionCarouselItem key={item.text}>
+                                <MakeVideSectionCarouselImg src={item.image}/>
+                                <MakeVideSectionCarouselBox>
+                                    {item.icon}
+                                    <MakeVideSectionCarouselTitle>{item.text}</MakeVideSectionCarouselTitle>
+                                    <MakeVideSectionCarouselDesc>{item.desc}</MakeVideSectionCarouselDesc>
+                                </MakeVideSectionCarouselBox>
+                            </MakeVideSectionCarouselItem>
+                        ))
+                    }
+                </Carousel>
+                <CarouselIndex>
+                    <p className="carousel-index-bold">{sliderIndex}</p>
+                    out of {data.length}
+                </CarouselIndex>
+            </SliderWrapper>
             <Carousel {...settings2}>
                 {
                     data.map(item => (
-                        <CarouselPageStyled>
-                            {
-                                item.icon
-                            }
-                            <CarouselPageText>{item.text}</CarouselPageText>
-                        </CarouselPageStyled>
+                        <CarouselPageWrapper>
+                            <CarouselPageStyled>
+                                {
+                                    item.icon
+                                }
+                                <CarouselPageText>{item.text}</CarouselPageText>
+                            </CarouselPageStyled>
+                        </CarouselPageWrapper>
                     ))
                 }
             </Carousel>
-            <CarouselIndex>
-                <p className="carousel-index-bold">{sliderIndex}</p>
-                out of {data.length}
-            </CarouselIndex>
         </MakeVideSectionCarouselStyled>
     )
 }

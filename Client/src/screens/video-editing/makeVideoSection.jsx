@@ -29,7 +29,6 @@ const MakeVideoSectionStyled = styled.section`
 const MakeVideoSectionContainer = styled.div`
   max-width: 1386px;
   margin: 0 auto;
-  padding: 0 16px;
 `
 
 export const MakeVideoSection = () => {

@@ -56,7 +56,7 @@ export const TrustSection = () => {
                         <Star/>
                         <Star/>
                     </TrustSectionStars>
-                    <div>
+                    <div style={{textAlign: 'center'}}>
                         <Text
                             display="inline"
                             fontSize={24}

@@ -18,6 +18,7 @@ const SpecsSectionStyled = styled.div`
     margin-top: 48px;
     padding-bottom: 32px;
   }
+
   .slick-dots li {
     width: 25px;
 
@@ -49,7 +50,7 @@ const SpecsSectionStyled = styled.div`
       max-width: calc(100% - 40px);
     }
   }
-  
+
   @media screen and (max-width: 800px) {
     padding: 48px 0 90px 0;
   }
