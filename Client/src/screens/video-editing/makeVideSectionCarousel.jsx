@@ -445,6 +445,7 @@ export const MakeVideSectionCarousel = () => {
         asNavFor: slider1,
         swipeToSlide: true,
         focusOnSelect: true,
+        speed: 100,
         ref: (slider) => {
             setSlider2(slider)
             return slider

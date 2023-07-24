@@ -109,12 +109,23 @@ const ArrowStyled = styled.a`
   }
   &.slick-next {
     transform: translate(10px, 0px);
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    top: 0;
+    right: -33px;
   }
   &.slick-prev {
     transform: translate(-10px, -10px);
-    svg {
-      transform: rotate(180deg);
-    }
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    top: 0;
+    left: -33px;
+
+      svg {
+        transform: rotate(180deg);
+      }
   }
 `
 
