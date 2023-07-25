@@ -39,7 +39,7 @@ const TrustSectionContainer = styled.div`
 
   @media screen and (max-width: 700px) {
     gap: 16px;
-    padding: 48px 16px;
+    padding: 48px 16px 68px;
     
     .trust-section__title {
       font-size: 16px;

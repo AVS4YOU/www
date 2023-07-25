@@ -102,6 +102,8 @@ const HeroSectionStyled = styled.section`
   }
   
   @media screen and (max-width: 1050px) {
+    background-size: 1400px 800px;
+    background-position: -348px -153px;
     .hero-section__container {
       grid-template-columns: 1fr;
       padding: 56px 40px 84px 40px;

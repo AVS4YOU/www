@@ -6,7 +6,7 @@ import Image2 from '../../images/video-editing/pic1.1.png'
 import Image1 from '../../images/video-editing/pic1.2.png'
 import Image3 from '../../images/video-editing/pic1.3.png'
 import Elements from '../../images/video-editing/carousel-elements.png'
-import {ChevronRight} from "../../images/video-editing/icons";
+import {ChevronLeftDisabled, ChevronRight} from "../../images/video-editing/icons";
 
 
 const CreatorsSectionCarouselStyled = styled.div`
@@ -39,7 +39,7 @@ const CreatorsSectionCarouselStyled = styled.div`
 
   .slider2 {
     max-width: 100%;
-    
+
     .slick-current .creators-section__item-mask {
       opacity: 0;
     }
@@ -49,9 +49,15 @@ const CreatorsSectionCarouselStyled = styled.div`
     z-index: 3 !important;
   }
   
+  @media screen and (max-width: 800px) {
+    .slider1 {
+      margin-bottom: 90px;
+  }
+
   @media screen and (max-width: 600px) {
     .slider1 {
       max-width: 100%;
+      margin-bottom: 60px;
     }
   }
 `
@@ -63,7 +69,7 @@ const CreatorsSectionCarouselWrapper = styled.div`
   background-repeat: no-repeat, no-repeat;
   background-position: center calc(100% - 17px), center 17px;
   background-size: auto 15px;
-  
+
   @media screen and (min-width: 1900px) {
     background-size: 100% 15px;
   }
@@ -80,7 +86,7 @@ const CreatorsSectionCarouselWrapper = styled.div`
 `
 
 const CreatorsSectionCarouselItem = styled.div`
-    
+
 `
 
 const CreatorsSectionCarouselItemTitle = styled.h3`
@@ -91,26 +97,25 @@ const CreatorsSectionCarouselItemTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  
+
   @media screen and (max-width: 500px) {
     font-size: 16px;
   }
 `
 
 const CreatorsSectionCarouselItemDesc = styled.p`
-  margin: 0;
   color: #000;
   text-align: center;
-  font-family: 'Montserrat'; 
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  max-width: calc(100% - 70px);
+  margin: 0 auto;
 
   @media screen and (max-width: 600px) {
     font-size: 14px;
-    max-width: calc(100% - 100px);
-    margin: 0 auto;
   }
 `
 
@@ -118,24 +123,61 @@ const ArrowStyled = styled.a`
   width: max-content;
   height: max-content;
   z-index: 10;
-  
+
   &:before {
     content: none;
   }
+
   &.slick-next {
-    transform: translate(40px, -32px);
-  }
-  &.slick-prev {
-    transform: translate(-40px, -45px);
-    svg {
-      transform: rotate(180deg);
+
+    svg:first-child {
+      display: block;
+      transform: translate(40px, -32px);
+    }
+
+    svg:last-child {
+      display: none;
+      transform: rotate(-180deg) translate(-20px, 34px);
+    }
+
+    &.slick-disabled {
+      svg:first-child {
+        display: none;
+      }
+
+      svg:last-child {
+        display: block;
+      }
     }
   }
-  
+
+  &.slick-prev {
+    svg:first-child {
+      display: block;
+      transform: rotate(180deg) translate(25px,36px);
+    }
+
+    svg:last-child {
+      display: none;
+      transform: translate(-2px,-31px);
+    }
+
+    &.slick-disabled {
+      svg:first-child {
+        display: none;
+      }
+
+      svg:last-child {
+        display: block;
+      }
+    }
+  }
+
   @media screen and (max-width: 600px) {
     &.slick-next {
       transform: translate(-10px, -32px);
     }
+
     &.slick-prev {
       transform: translate(10px, -45px);
     }
@@ -165,7 +207,8 @@ const CreatorsSectionCarouselImageMask = styled.div`
 const Arrow = (props) => {
     return (
         <ArrowStyled {...props}>
-            <ChevronRight />
+            <ChevronRight/>
+            <ChevronLeftDisabled />
         </ArrowStyled>
     )
 }
@@ -195,17 +238,26 @@ export const CreatorsSectionCarousel = () => {
         dots: true,
         className: 'visibleSlider slider1',
         arrows: true,
+        infinite: false,
         nextArrow: (
-            <Arrow />
+            <Arrow/>
         ),
         prevArrow: (
-            <Arrow />
+            <Arrow/>
         ),
         asNavFor: slider2,
         ref: (slider) => {
             setSlider1(slider)
             return slider
         },
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     }
     const settings2 = {
         className: 'visibleSlider slider2',
@@ -213,6 +265,7 @@ export const CreatorsSectionCarousel = () => {
         arrows: false,
         asNavFor: slider1,
         centerMode: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: "33%",
@@ -255,8 +308,8 @@ export const CreatorsSectionCarousel = () => {
                         data.map(item => (
                             <>
                                 <CreatorsSectionCarouselImageWrapper>
-                                    <CreatorsSectionCarouselImage src={item.image} />
-                                    <CreatorsSectionCarouselImageMask className="creators-section__item-mask" />
+                                    <CreatorsSectionCarouselImage src={item.image}/>
+                                    <CreatorsSectionCarouselImageMask className="creators-section__item-mask"/>
                                 </CreatorsSectionCarouselImageWrapper>
                             </>
                         ))

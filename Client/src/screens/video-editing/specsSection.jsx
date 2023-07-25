@@ -166,13 +166,13 @@ export const SpecsSection = () => {
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 720,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -190,7 +190,7 @@ export const SpecsSection = () => {
                 <Carousel {...settings}>
                     <SpecsSectionItemWrapper>
                         <SpecsSectionItem>
-                            <Standard/>
+                            <Standard style={{flexShrink: 0}}/>
                             <SpecsSectionItemTitle as="h3">
                                 Standard/HDV video file
                             </SpecsSectionItemTitle>
@@ -201,7 +201,7 @@ export const SpecsSection = () => {
                     </SpecsSectionItemWrapper>
                     <SpecsSectionItemWrapper>
                         <SpecsSectionItem>
-                            <Disc/>
+                            <Disc style={{flexShrink: 0}}/>
                             <SpecsSectionItemTitle as="h3">
                                 Save to Disc
                             </SpecsSectionItemTitle>
@@ -212,7 +212,7 @@ export const SpecsSection = () => {
                     </SpecsSectionItemWrapper>
                     <SpecsSectionItemWrapper>
                         <SpecsSectionItem>
-                            <Device/>
+                            <Device style={{flexShrink: 0}}/>
                             <SpecsSectionItemTitle as="h3">
                                 Devices
                             </SpecsSectionItemTitle>
@@ -223,7 +223,7 @@ export const SpecsSection = () => {
                     </SpecsSectionItemWrapper>
                     <SpecsSectionItemWrapper>
                         <SpecsSectionItem>
-                            <Screen/>
+                            <Screen style={{flexShrink: 0}}/>
                             <SpecsSectionItemTitle as="h3">
                                 Save for Web
                             </SpecsSectionItemTitle>

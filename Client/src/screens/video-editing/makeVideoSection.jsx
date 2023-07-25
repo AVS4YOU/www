@@ -11,12 +11,20 @@ const MakeVideoSectionStyled = styled.section`
   .make-video-section__header {
     margin-bottom: 75px;
   }
+
+  @media screen and (max-width: 1400px) {
+    padding-bottom: 112px;
+  }
   
   @media screen and (max-width: 786px) {
-    padding: 48px 0;
+    padding: 48px 0 90px 0;
     .make-video-section__header {
       margin-bottom: 32px;
     }
+  }
+  
+  @media screen and (max-width: 500px) {
+    padding-bottom: 52px;
   }
 
   @media screen and (max-width: 320px) {
