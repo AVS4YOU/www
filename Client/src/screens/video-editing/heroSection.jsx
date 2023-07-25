@@ -385,7 +385,6 @@ export const HeroSection = () => {
                         </Text>
                         <Link to="/video-maker.aspx">
                             <Text
-                                as="a"
                                 color="#FFF"
                                 fontSize={16}
                                 fontWeight={400}
