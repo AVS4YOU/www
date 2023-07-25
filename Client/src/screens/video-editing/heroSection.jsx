@@ -5,6 +5,7 @@ import backgroundGradient from '../../images/video-editing/background-gradient.p
 import heroPic from '../../images/video-editing/main-img.png'
 import shadowGradient from '../../images/video-editing/shadow-gradient.png'
 import {Capterra, Checked, FiveStars, Star} from '../../images/video-editing/icons'
+import {Link} from "gatsby";
 
 const data = [
     'Record video and capture screen',
@@ -380,17 +381,18 @@ export const HeroSection = () => {
                         >
                             How to create a video collage?
                         </Text>
-                        <Text
-                            as="a"
-                            color="#FFF"
-                            fontSize={16}
-                            fontWeight={400}
-                            lineHeight="24px"
-                            style={{fontStyle: 'italic', textDecoration: 'underline'}}
-                            href="https://www.avs4you.com/video-maker.aspx"
-                        >
-                            All news
-                        </Text>
+                        <Link to="/video-maker.aspx">
+                            <Text
+                                as="a"
+                                color="#FFF"
+                                fontSize={16}
+                                fontWeight={400}
+                                lineHeight="24px"
+                                style={{fontStyle: 'italic', textDecoration: 'underline'}}
+                            >
+                                All news
+                            </Text>
+                        </Link>
                     </HeroSectionCard>
                 </HeroSectionBox>
             </HeroSectionContainer>

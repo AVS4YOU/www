@@ -10,6 +10,14 @@ const CreatorsSectionStyled = styled.section`
   .creators-section__header {
     padding-bottom: 72px;
   }
+  
+  @media screen and (max-width: 800px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 48px 16px 0;
+  }
 `
 
 export const CreatorsSection = () => {
