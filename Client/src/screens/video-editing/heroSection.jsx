@@ -21,6 +21,10 @@ const HeroSectionStyled = styled.section`
   background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box;
+  
+  * {
+    box-sizing: border-box;
+  }
 
   .hero-section__title {
     margin-bottom: 24px;
@@ -99,12 +103,19 @@ const HeroSectionStyled = styled.section`
   @media screen and (max-width: 1050px) {
     .hero-section__container {
       grid-template-columns: 1fr;
-      padding-top: 56px;
-      padding-bottom: 84px;
+      padding: 56px 40px 84px 40px;
+    }
+
+    .hero-section__pic {
+      background-position-y: -200px;
     }
     
     .hero-section__title {
       margin-bottom: 16px;
+    }
+    
+    .hero-section__desc {
+      font-weight: 400;
     }
 
     .hero-section__left-box {
@@ -128,15 +139,16 @@ const HeroSectionStyled = styled.section`
     }
   }
   
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 470px) {
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
     .hero-section__container {
-      padding-left: 16.5px;
-      padding-right: 16.5px;
-      padding-bottom: 64px;
+      padding: 56px 16.6px 64px;
     }
     
     .hero-section__left-box {
-      align-items: center;
+      align-items: stretch;
       text-align: center;
     }
     
@@ -146,11 +158,12 @@ const HeroSectionStyled = styled.section`
 
     .hero-section__desc {
       font-size: 16px;
-      width: 100%;
+      max-width: 100%;
     }
     
     .hero-section__button {
-      width: 100%;
+      font-size: 16px;
+      padding: 14px 32px;
     }
     
     .hero-section__item-label {
@@ -199,10 +212,10 @@ const HeroSectionPic = styled.span`
 `
 
 const HeroSectionContainer = styled.div`
-  max-width: 1472px;
+  max-width: 1452px;
   margin: 0 auto;
   
-  padding: 174px 20px 137px 20px;
+  padding: 174px 29px 137px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 `
@@ -220,6 +233,10 @@ const HeroSectionList = styled.ul`
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
   row-gap: 16px;
+
+  @media screen and (max-width: 470px) {
+    padding-left: 15px;
+  }
 `
 
 const HerSectionListItem = styled.li`
@@ -241,7 +258,7 @@ const HerSectionGradient = styled.span`
   right: 0;
 `
 
-const HeroSectionButton = styled.button`
+const HeroSectionButton = styled.a`
   padding: 16px 32px;
   border-radius: 3px;
   background: #157BF2;
@@ -250,9 +267,14 @@ const HeroSectionButton = styled.button`
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   color: #fff;
   cursor: pointer;
+  
+  &:hover {
+    text-decoration: none;
+  }
   
   &:active {
     opacity: 0.8;
@@ -305,7 +327,7 @@ export const HeroSection = () => {
                             ))
                         }
                     </HeroSectionList>
-                    <HeroSectionButton className="hero-section__button">Download now</HeroSectionButton>
+                    <HeroSectionButton className="hero-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download now</HeroSectionButton>
                 </HeroSectionBox>
                 <HeroSectionBox className="hero-section__right-box">
                     <HeroSectionCard className="hero-section__card">
@@ -365,6 +387,7 @@ export const HeroSection = () => {
                             fontWeight={400}
                             lineHeight="24px"
                             style={{fontStyle: 'italic', textDecoration: 'underline'}}
+                            href="https://www.avs4you.com/video-maker.aspx"
                         >
                             All news
                         </Text>

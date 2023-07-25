@@ -1,4 +1,4 @@
-import React, {useMemo} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import Carousel from "react-slick";
 import styled from "styled-components";
 import {Quote} from "../../images/video-editing/icons";
@@ -6,17 +6,18 @@ import {Quote} from "../../images/video-editing/icons";
 const TrustSectionCarouselStyled = styled.div`
   position: relative;
   padding: 47px 22px 18px 22px;
+  width: 100%;
 
   .quote {
     position: absolute;
 
     &:nth-child(1) {
-      left: 0;
+      left: 35px;
       top: 0;
     }
 
     &:nth-child(2) {
-      right: 25px;
+      right: 40px;
       bottom: 3px;
       transform: rotate(180deg);
     }
@@ -25,37 +26,36 @@ const TrustSectionCarouselStyled = styled.div`
   .slick-list {
     padding-bottom: 36px;
   }
-  
+
   .slick-dots li {
     width: 25px;
+
     button {
       margin: 0 auto;
     }
+
     button:before {
       font-size: 15px;
       color: #9A9997;
     }
+
     &.slick-active button:before {
       color: #FE9235;
     }
   }
 
   .visibleSlider {
-    max-width: 1122px;
+    max-width: 100%;
+    margin: 0 25px;
   }
 
-  .slick-initialized .slick-slide.slick-current {
-    z-index: 3 !important;
-  }
-  
   @media screen and (max-width: 1200px) {
-    .visibleSlider {
-      max-width: 546px;
-    }
+    max-width: 620px;
   }
 
   @media screen and (max-width: 700px) {
     padding: 0;
+    max-width: 100%;
     .quote {
       display: none;
     }
@@ -68,8 +68,8 @@ const TrustSectionCarouselItem = styled.div`
 
 export const TrustSectionCarousel = () => {
     const style = {
-        height: '242px',
-        width: '256px',
+        height: '235px',
+        width: '250px',
         overflow: 'hidden',
     }
     const settings = {
@@ -81,7 +81,7 @@ export const TrustSectionCarousel = () => {
         arrows: true,
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1202,
                 settings: {
                     slidesToShow: 2,
                 }

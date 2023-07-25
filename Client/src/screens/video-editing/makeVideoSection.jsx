@@ -5,7 +5,7 @@ import {MakeVideSectionCarousel} from "./makeVideSectionCarousel";
 
 const MakeVideoSectionStyled = styled.section`
   background: #FFF;
-  padding: 112px 0;
+  padding: 112px 0 54px 0;
   box-sizing: border-box;
   
   .make-video-section__header {

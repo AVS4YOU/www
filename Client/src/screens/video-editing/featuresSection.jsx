@@ -36,27 +36,39 @@ const FeaturesSectionStyled = styled.section`
     
     .features-section__title {
       font-size: 24px;
-    }
-
-    .features-section__item-desc {
-      font-size: 14px;
+      text-align: center;
     }
     
     .features-section__container {
       gap: 40px;
     }
   }
+  
+  @media screen and (max-width: 400px) {
+    .features-section__list {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
 `
 
 const FeaturesSectionContainer = styled.div`
-  max-width: 1392px;
+  max-width: 1352px;
   margin: 0 auto;
-  padding: 112px 20px;
+  padding: 112px 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 72px;
+
+  @media screen and (max-width: 800px) {
+    padding: 80px 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 48px 25px;
+  }
 `
 
 const FeaturesSectionList = styled.ul`
@@ -81,6 +93,12 @@ const FeaturesSectionItem = styled.li`
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .features-section__item-desc {
+      font-size: 14px;
+    }
   }
 `
 

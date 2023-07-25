@@ -52,7 +52,7 @@ class VideoEditing extends React.PureComponent {
             </Layout>
         );
     }
-};
+}
 export default withI18next({
     ns: "common"
 })(VideoEditing);

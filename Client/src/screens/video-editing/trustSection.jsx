@@ -7,9 +7,13 @@ import './fonts.css'
 import {TrustSectionCarousel} from "./trustSectionCarousel";
 
 
+
 const TrustSectionStyled = styled.section`
   background-color: #32393E;
-  box-sizing: border-box;
+  
+  * {
+    box-sizing: border-box;
+  }
 
   @media screen and (max-width: 1050px) {
     .trust-section__title {
@@ -20,13 +24,32 @@ const TrustSectionStyled = styled.section`
 
 const TrustSectionContainer = styled.div`
   max-width: 1162px;
-  padding: 112px 20px;
+  padding: 112px 0;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  
+  @media screen and (max-width: 800px) {
+    gap: 0;
+    padding: 80px 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    gap: 16px;
+    padding: 48px 16px;
+    
+    .trust-section__title {
+      font-size: 16px;
+    }
+
+    .trust-section__reviews {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
 `
 
 const TrustSectionUsers = styled.div`
@@ -34,6 +57,15 @@ const TrustSectionUsers = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 13px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 0;
+    gap: 16px;
+  }
 `
 
 const TrustSectionStars = styled.div`
@@ -41,7 +73,16 @@ const TrustSectionStars = styled.div`
   align-items: center;
   gap: 10px;
 `
-const TrustSectionImg = styled.img``
+const TrustSectionImg = styled.img`
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 2px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 0;
+  }
+`
 
 
 export const TrustSection = () => {

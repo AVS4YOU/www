@@ -71,11 +71,13 @@ const MakeVideSectionCarouselStyled = styled.div`
     .slider2 {
       .slick-slide {
         &:last-child a {
-          margin-right: 38px;
+          margin-right: 46px;
+          margin-left: 0;
         }
 
         &:first-child a {
-          margin-left: 38px;
+          margin-left: 46px;
+          margin-right: 0;
         }
       }
     }

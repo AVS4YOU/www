@@ -21,9 +21,14 @@ const GetStartedSectionStyled = styled.div`
     text-align: center;
   }
   
+  @media screen and (max-width: 800px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  
   @media screen and (max-width: 700px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 80px 20px 64px;
     .get-started-section__title {
       font-size: 24px;
     }

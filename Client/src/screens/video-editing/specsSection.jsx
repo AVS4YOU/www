@@ -37,7 +37,7 @@ const SpecsSectionStyled = styled.div`
   }
 
   .slick-slide {
-    height: 330px;
+    height: 290px;
 
     & > div {
       height: 100%;
@@ -88,6 +88,11 @@ const SpecsSectionItemTitle = styled(Text)`
   font-weight: 700;
   line-height: 30px;
   margin: 32px 0 16px 0;
+  
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    margin: 16px 0 8px 0;
+  }
 `
 
 const SpecsSectionItemDesc = styled(Text)`
@@ -97,6 +102,10 @@ const SpecsSectionItemDesc = styled(Text)`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `
 
 const ArrowStyled = styled.a`
