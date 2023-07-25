@@ -50,7 +50,7 @@ class VideoEditing extends React.PureComponent {
                 <SpecsSection/>
                 <GetStartedSection/>
             </Layout>
-        );
+        )
     }
 }
 export default withI18next({
