@@ -41,7 +41,7 @@ const GetStartedSectionStyled = styled.div`
   }
 `
 
-const GetStartedSectionButton = styled.button`
+const GetStartedSectionButton = styled.a`
   padding: 16px 32px;
   border-radius: 3px;
   background: #FFF;
@@ -52,6 +52,10 @@ const GetStartedSectionButton = styled.button`
   line-height: normal;
   border: none;
   cursor: pointer;
+  
+  &:hover {
+    text-decoration: none;
+  }
   
   &:active {
     opacity: 0.8;
@@ -64,7 +68,7 @@ export const GetStartedSection = () => {
             <Text className="get-started-section__title">
                 Ready to make your own video?
             </Text>
-            <GetStartedSectionButton className="get-started-section__button">
+            <GetStartedSectionButton className="get-started-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                 Get started!
             </GetStartedSectionButton>
         </GetStartedSectionStyled>
