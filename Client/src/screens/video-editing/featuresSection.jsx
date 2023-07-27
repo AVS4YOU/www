@@ -98,6 +98,7 @@ const FeaturesSectionItem = styled.li`
   @media screen and (max-width: 700px) {
     .features-section__item-desc {
       font-size: 14px;
+      line-height: normal;
     }
   }
 `

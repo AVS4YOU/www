@@ -12,6 +12,10 @@ const GetStartedSectionStyled = styled.div`
   align-items: center;
   gap: 32px;
   
+  * {
+    box-sizing: border-box;
+  }
+  
   .get-started-section__title {
     margin: 0;
     font-size: 32px;
@@ -52,7 +56,7 @@ const GetStartedSectionButton = styled.a`
   font-weight: 600;
   line-height: normal;
   border: none;
-  cursor: pointer;
+  text-align: center;
   
   &:hover {
     text-decoration: none;

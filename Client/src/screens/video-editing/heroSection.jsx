@@ -65,6 +65,13 @@ const HeroSectionStyled = styled.section`
       background-position-y: -330px;
     }
   }
+  
+  @media screen and (max-width: 1500px) {
+    .hero-section__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
 
 
   @media screen and (max-width: 1400px) {

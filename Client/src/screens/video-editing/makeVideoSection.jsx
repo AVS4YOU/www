@@ -24,7 +24,7 @@ const MakeVideoSectionStyled = styled.section`
   }
   
   @media screen and (max-width: 500px) {
-    padding-bottom: 52px;
+    padding-bottom: 60px;
   }
 
   @media screen and (max-width: 320px) {

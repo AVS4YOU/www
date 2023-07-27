@@ -18,6 +18,10 @@ const SpecsSectionStyled = styled.div`
     margin-top: 48px;
     padding-bottom: 32px;
   }
+  
+  .slick-list {
+    //margin: 0 20px;
+  }
 
   .slick-dots li {
     width: 25px;
@@ -44,10 +48,10 @@ const SpecsSectionStyled = styled.div`
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1280px) {
     padding: 86px 0 122px 0;
     .visibleSlider {
-      max-width: calc(100% - 40px);
+      max-width: calc(100% - 80px);
     }
   }
 

@@ -48,16 +48,18 @@ const CreatorsSectionCarouselStyled = styled.div`
   .slick-initialized .slick-slide.slick-current {
     z-index: 3 !important;
   }
-  
+
   @media screen and (max-width: 800px) {
     .slider1 {
       margin-bottom: 90px;
+      padding-bottom: 32px;
+    }
   }
-
   @media screen and (max-width: 600px) {
     .slider1 {
       max-width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 55px;
+      padding-bottom: 36px;
     }
   }
 `
@@ -100,6 +102,7 @@ const CreatorsSectionCarouselItemTitle = styled.h3`
 
   @media screen and (max-width: 500px) {
     font-size: 16px;
+    line-height: 30px;
   }
 `
 
@@ -116,6 +119,7 @@ const CreatorsSectionCarouselItemDesc = styled.p`
 
   @media screen and (max-width: 600px) {
     font-size: 14px;
+    line-height: normal;
   }
 `
 
@@ -238,7 +242,7 @@ export const CreatorsSectionCarousel = () => {
         dots: true,
         className: 'visibleSlider slider1',
         arrows: true,
-        infinite: false,
+        infinite: true,
         nextArrow: (
             <Arrow/>
         ),
@@ -265,7 +269,7 @@ export const CreatorsSectionCarousel = () => {
         arrows: false,
         asNavFor: slider1,
         centerMode: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: "33%",

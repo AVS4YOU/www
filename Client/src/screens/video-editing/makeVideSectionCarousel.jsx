@@ -48,7 +48,7 @@ const MakeVideSectionCarouselStyled = styled.div`
       }
 
       button:before {
-        font-size: 15px;
+        font-size: 11px;
         color: #9A9997;
       }
 
@@ -105,7 +105,7 @@ const MakeVideSectionCarouselStyled = styled.div`
       margin: 0 auto;
 
       .slick-list {
-        padding: 33px 0 48px 0;
+        padding: 33px 0 40px 0;
       }
     }
 
@@ -119,7 +119,7 @@ const MakeVideSectionCarouselStyled = styled.div`
       max-width: 100%;
 
       .slick-list {
-        padding: 35px 0 40px 0;
+        padding: 35px 0;
       }
 
       .slick-slide a {
@@ -176,6 +176,7 @@ const MakeVideSectionCarouselDesc = styled.p`
 
   @media screen and (max-width: 700px) {
     font-size: 14px;
+    line-height: normal;
   }
 `
 
