@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>49886344</File_Size_Bytes>
-      <File_Size_K>48717</File_Size_K>
-      <File_Size_MB>47.58</File_Size_MB>
+      <File_Size_Bytes>49872536</File_Size_Bytes>
+      <File_Size_K>48703</File_Size_K>
+      <File_Size_MB>47.56</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Audio Editor</Program_Name>
-    <Program_Version>10.4.1.570</Program_Version>
-    <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
+    <Program_Version>10.4.1.571</Program_Version>
+    <Program_Release_Month>07</Program_Release_Month>
+    <Program_Release_Day>27</Program_Release_Day>
     <Program_Release_Year>2023</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Type>Shareware</Program_Type>

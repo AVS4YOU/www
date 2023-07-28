@@ -82,8 +82,8 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>51968208</File_Size_Bytes>
-      <File_Size_K>50750</File_Size_K>
+      <File_Size_Bytes>51972480</File_Size_Bytes>
+      <File_Size_K>50754</File_Size_K>
       <File_Size_MB>49.56</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Audio Converter</Program_Name>
-    <Program_Version>10.4.1.636</Program_Version>
-    <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
+    <Program_Version>10.4.2.637</Program_Version>
+    <Program_Release_Month>07</Program_Release_Month>
+    <Program_Release_Day>27</Program_Release_Day>
     <Program_Release_Year>2023</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>

@@ -87,7 +87,7 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>178911056</File_Size_Bytes>
+      <File_Size_Bytes>178910544</File_Size_Bytes>
       <File_Size_K>174717</File_Size_K>
       <File_Size_MB>170.62</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
@@ -96,9 +96,9 @@
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Video Editor</Program_Name>
-    <Program_Version>9.9.1.407</Program_Version>
-    <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
+    <Program_Version>9.9.1.408</Program_Version>
+    <Program_Release_Month>07</Program_Release_Month>
+    <Program_Release_Day>27</Program_Release_Day>
     <Program_Release_Year>2023</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Cost_Other_Code>USD</Program_Cost_Other_Code>
