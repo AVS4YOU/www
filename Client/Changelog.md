@@ -9,6 +9,7 @@
 ### Fixes
 * Fixed Company name
 * Fixed pads
+* Changed products info
 
 ## 1.0.49
 
