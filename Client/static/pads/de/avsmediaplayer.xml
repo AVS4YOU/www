@@ -117,7 +117,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Verbesserte Unterstützung von MP4/MOV/M4V-Videodateien mit MJPEG-B Videocodec und Opus Audiocodec. Korrekte Ausrichtung von gespiegelten und gedrehten JPEG-Fotos. Behebung kritischer Sicherheitslücken. Optimierung des Codes für schnellere Leistung.</Program_Change_Info>
+    <Program_Change_Info>Ein neues Schema für die Ausführung von Intel Decodern mit Hardwarebeschleunigung. Unterstützung für Hardware-Dekodierung auf den integrierten Intel Iris Xe- und diskreten Intel Arc-Grafikkarten. Verbesserte Unterstützung von Untertiteln (SRT, SRT mit EBU-TT, SSA, ASS, SUB, MOI).</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
     <Expire_Info>

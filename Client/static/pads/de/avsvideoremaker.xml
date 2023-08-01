@@ -83,7 +83,7 @@
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
       <File_Size_Bytes>63006024</File_Size_Bytes>
-      <File_Size_K>63006</File_Size_K>
+      <File_Size_K>61529</File_Size_K>
       <File_Size_MB>60.09</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -103,7 +103,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Korrekte Erkennung von geschützten MP4/MOV/M4V-Dateien. Korrekte Unterstützung von gedrehten MP4/MOV/M4V/3GP-Videos (90, 180, 270 Grad). Öffnen von gespiegelten und gedrehten JPEG-Fotos von verschiedenen Kameras ohne zusätzliche Manipulationen. Optimierung des Codes für schnellere Leistung.</Program_Change_Info>
+    <Program_Change_Info>Ein neues Schema für die Ausführung von Intel Decodern mit Hardwarebeschleunigung. Unterstützung für Hardware-Dekodierung auf den integrierten Intel Iris Xe- und diskreten Intel Arc-Grafikkarten.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
