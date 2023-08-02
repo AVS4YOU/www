@@ -732,7 +732,7 @@ render(){
               {this.props.t("Send form")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("After that download our")}<a target="_blank" rel="noreferrer noopener" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/refund.pdf" className="hrefMoneyback">{this.props.t("refund form")}</a>{this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")}<a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a>{this.props.t("as an attachment")}
+                {this.props.t("After that download our")}<a target="_blank" rel="noreferrer noopener" href={this.props.t("refund")} className="hrefMoneyback">{this.props.t("refund form")}</a>{this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")}<a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx" className="hrefMoneyback">{this.props.t("support form")}</a>{this.props.t("as an attachment")}
               </Text>
             </div>
 
