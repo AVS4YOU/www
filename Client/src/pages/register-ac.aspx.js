@@ -76,21 +76,24 @@ class RegisterVc extends React.PureComponent {
 
 onRegisterClick() {
   window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
-  window.TwoCoInlineCart.config.app.iframeLoad = 'checkout';
+  window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
   window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
   window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
-
+  window.TwoCoInlineCart.setup.setIframeLoad('immediate'); 
   window.TwoCoInlineCart.register();
-  window.TwoCoInlineCart.products.add({
-    code: "604132"
-  });
   
   window.TwoCoInlineCart.billing.setData({
     name: '', 
     email: '', 
     country: '',
   });
-  window.TwoCoInlineCart.cart.setAutoAdvance(true);
+
+  window.TwoCoInlineCart.products.removeAll(); 
+
+  window.TwoCoInlineCart.products.add({
+    code: "604132"
+  });
+  
   window.TwoCoInlineCart.cart.checkout();
 }
 
@@ -110,35 +113,6 @@ componentDidMount(){
   this.setState({
    documentLoaded: true
  })
-
- const avgParams = window._checkAvgParams();
- console.log('avgParams: ', avgParams)
- const vId = 'ltu04g==';
- 
- let alreadyChecked = false;
- if (avgParams != null) {
-     window._AVGSetCookie('_avgCheck', avgParams);
-     alreadyChecked = true;
- }
-
- const avgCookie = window._AVGGetCookie('_avgCheck')
- console.log('avgCookie: ', avgCookie)
- this.setState({
-   avgCookie: avgCookie
- })
-
- if (avgCookie) {
-   let avgProds = window._avgProds(window._AVGGetCookie('_avgCheck'), alreadyChecked, vId);
-   let AVG_AFF = false;
-   const AVG_PRODS = new Array();
-   if (avgProds != "-") {
-     AVG_AFF = true;
-     if(avgProds != 'all') {
-       AVG_PRODS = avgProds.split(',')
-       console.log('AVG_PRODS: ', AVG_PRODS)
-     }
-   }
- }
 }
 
 render(){
@@ -378,14 +352,6 @@ render(){
             }
           }`}</style>}
         {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
-        {<script type='text/javascript'>
-          {`
-            var scriptSRC = '/check_affiliate_v2.js';
-
-            var protocol = window.location.protocol;
-            document.write(unescape("%3Cscript src='https://secure.avangate.com/content" + scriptSRC + "' type='text/javascript'%3E%3C/script%3E"));
-            `}
-          </script>}
         </Helmet>
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
@@ -429,17 +395,6 @@ render(){
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
-                {this.state.avgCookie ? 
-                 <Button                
-                 href={this.state.hrefUnlim}
-                 backgroundColor="orange"
-                 color="#ffffff"
-                 className="buy-block-button"
-                 id="unlimited_button"
-               >
-                 {this.props.t("Buy now")}
-               </Button>
-                :
                 <Button                
                   onClick={this.onRegisterClick}
                   backgroundColor="orange"
@@ -448,7 +403,7 @@ render(){
                   id="unlimited_button"
                 >
                   {this.props.t("Buy now")}
-                </Button>}
+                </Button>
               </div>
             </div>
           </div>

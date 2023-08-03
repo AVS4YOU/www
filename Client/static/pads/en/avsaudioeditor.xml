@@ -2,7 +2,7 @@
 <XML_DIZ_INFO>
   <MASTER_PAD_VERSION_INFO>
     <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
-    <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.802</MASTER_PAD_EDITOR>
     <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
@@ -22,13 +22,13 @@
     <Backlink></Backlink>
   </RoboSoft>
   <Company_Info>
-    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
-    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
-    <Address_2>180 Tottenham Court Road</Address_2>
-    <City_Town>London</City_Town>
+    <Company_Name>Ascensio System SIA</Company_Name>
+    <Address_1>20A-6 Ernesta Birznieka-Upish street</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Riga</City_Town>
     <State_Province></State_Province>
-    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
-    <Country>United Kingdom</Country>
+    <Zip_Postal_Code>LV-1050</Zip_Postal_Code>
+    <Country>Latvia</Country>
     <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Irina</Contact_First_Name>
@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>49850672</File_Size_Bytes>
-      <File_Size_K>48682</File_Size_K>
-      <File_Size_MB>47.54</File_Size_MB>
+      <File_Size_Bytes>49872536</File_Size_Bytes>
+      <File_Size_K>48703</File_Size_K>
+      <File_Size_MB>47.56</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,17 +92,17 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Audio Editor</Program_Name>
-    <Program_Version>10.3.1.566</Program_Version>
-    <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>24</Program_Release_Day>
-    <Program_Release_Year>2022</Program_Release_Year>
+    <Program_Version>10.4.2.571</Program_Version>
+    <Program_Release_Month>07</Program_Release_Month>
+    <Program_Release_Day>27</Program_Release_Day>
+    <Program_Release_Year>2023</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Type>Shareware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Improved fMP4 and dash video and audio support. Enhanced support of AC-3 audio in MP4/M4V/MOV/M4A/M4B files. New settings for video in Options window. Optimization and bug fixes.</Program_Change_Info>
+    <Program_Change_Info>Import audio from MP4/MOV/M4V video files with Opus audio codec. Correct recognition of protected MP4/MOV/M4V video and M4A/M4B audio files. Correct M4A/M4B metatags creation. Correct support of rotated MP4/MOV/M4V/3GP video. Open mirrored and rotated JPEG photos the correct orientation.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz, 1 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Music Composers</Program_Category_Class>
     <Expire_Info>
@@ -146,48 +146,60 @@
   </Web_Info>
   <Permissions>
     <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com.</Distribution_Permissions>
-    <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ONLINE MEDIA TECHNOLOGIES LTD.
+    <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ASCENSIO SYSTEM SIA
 
-IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Online Media Technologies Ltd for the applicable Software Products of Online Media Technologies Ltd. Do not copy, install, or use the Software Products provided under this license agreement ("Agreement"), until you have carefully read the following terms and conditions.
+IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Ascensio System SIA for the applicable Software Products of Ascensio System SIA. Do not copy, install, or use the Software Products provided under this license agreement ('Agreement'), until you have carefully read the following terms and conditions.
 
-Any reproduction or redistribution of Software Products or any of its components not in accordance with the End-User License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties. 
+Any reproduction or redistribution of Software Products or any of its components not in accordance with the End-User License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties.
 
-Definitions: Software Products shall mean and include AVS4YOU Software. 
+Definitions: Software Products shall mean and include AVS4YOU Software.
 
-AVS4YOU Software shall mean all of the contents of the files (provided either by electronic download, on physical media or any other method of distribution), disk(s), CD-ROM(s) or other media with which this Agreement is provided) which may be found at www.avs4you.com. 
+AVS4YOU Software shall mean all of the contents of the files (provided either by electronic download, on physical media or any other method of distribution), disk(s), CD-ROM(s) or other media with which this Agreement is provided) which may be found at www.avs4you.com.
 
-AVS4YOU Software is licensed on a per computer basis. Each license purchased is bound to one particular computer and allows using AVS4YOU Software on that single computer. If you install and use or reinstall AVS4YOU software on any other computers you will have to purchase an additional license for each computer. If you change a computer, you will have to purchase an additional license. All updates and upgrades for AVS4YOU Software are free for a user throughout the period of AVS4YOU license validity. 
+AVS4YOU Software is licensed on a per computer basis. Each license purchased is bound to one particular computer and allows using AVS4YOU Software on that single computer. If you install and use or reinstall AVS4YOU software on any other computers you will have to purchase an additional license for each computer. If you change a computer, you will have to purchase an additional license. All updates and upgrades for AVS4YOU Software are $0 for a user throughout the period of AVS4YOU license validity.
 
-Your rights and obligations with respect to the use of AVS4YOU Software or any of its components are as follows: 
+Your rights and obligations with respect to the use of AVS4YOU Software or any of its components are as follows.
 
-You may: 
-1. Install and use one copy of AVS4YOU Software or any of its components and all upgrades and updates on a single computer for any period for which you have purchased a subscription (typically 1 year or Unlimited). 
-2. Make one copy of AVS4YOU Software or any of its components for archival purposes on a storage device or media. 
-3. Use AVS4YOU Software on a network, provided that you have a licensed copy of AVS4YOU Software for each computer that can access AVS4YOU Software over that network for any period for which you have purchased a subscription (typically 1 year or Unlimited). A license for AVS4YOU Software may not be shared or used concurrently on different computers. 
-4. Receive support by e-mail to answer questions and solve problems referred to AVS4YOU Software for any period for which you have purchased a subscription (typically 1 year or Unlimited). 
+You may
 
-You may not: 
-1. Use, copy, modify, or transfer copies of AVS4YOU Software except as provided for in this License. 
-2. Remove any proprietary notices or labels from AVS4YOU Software. 
-3. Reverse engineer, decompile, disassemble or make derivative works based on AVS4YOU Software (except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation). 
-4. Rent, lease, sublicense or assign AVS4YOU Software or any copy thereof, including any related documentation. 
-5. Separate AVS4YOU Software component parts for use on more than one computer. 
-6. Distribute the license key in any way. 
-7. Make any attempt to discover the source code of AVS4YOU Software. 
+Install and use one copy of AVS4YOU Software or any of its components and all upgrades and updates on a single computer for any period for which you have purchased a subscription (typically 1 year or Unlimited).
 
+Make one copy of AVS4YOU Software or any of its components for archival purposes on a storage device or media.
 
-NO WARRANTIES. 
+Use AVS4YOU Software on a network, provided that you have a licensed copy of AVS4YOU Software for each computer that can access AVS4YOU Software over that network for any period for which you have purchased a subscription (typically 1 year or Unlimited). A license for AVS4YOU Software may not be shared or used concurrently on different computers.A license for AVS4YOU Software may not be shared or used concurrently on different computers.
 
-Online Media Technologies Ltd. expressly disclaims any warranty for AVS4YOU Software. 
+Receive support by e-mail to answer questions and solve problems referred to AVS4YOU Software for any period for which you have purchased a subscription (typically 1 year or Unlimited).
 
-AVS4YOU SOFTWARE AND ANY RELATED DOCUMENTATION is PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. 
+You may not
 
-THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WITH YOU. 
+Use, copy, modify, or transfer copies of AVS4YOU Software except as provided for in this License.
 
-NO LIABILITY FOR CONSEQUENTIAL DAMAGES. 
-IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE. 
+Remove any proprietary notices or labels from AVS4YOU Software.
 
-COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
+Reverse engineer, decompile, disassemble or make derivative works based on AVS4YOU Software (except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation).
+
+Rent, lease, sublicense or assign AVS4YOU Software or any copy thereof, including any related documentation.
+
+Separate AVS4YOU Software component parts for use on more than one computer.
+
+Distribute the license key in any way.
+
+Make any attempt to discover the source code of AVS4YOU Software.
+
+NO WARRANTIES.
+
+Ascensio System SIA expressly disclaims any warranty for AVS4YOU Software.
+
+AVS4YOU SOFTWARE AND ANY RELATED DOCUMENTATION is PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT.
+
+THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WITH YOU.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES.
+
+IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
+
+COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
+
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
   <AppStore>
@@ -290,7 +302,7 @@ Mezcle audio y varias pistas de audio. Grabe los datos de audio de varias entrad
 Exporte audio desde video. Edite pistas de audio y guárdelas en cualquier formato de audio. Utilice edición por lotes para aplicar determinadas configuraciones a varios archivos de una sola vez. 
 Suavice silbidos no deseados con filtros de reducción de ruido. Edite pista de audio y cree su propio tono de llamada para iPhone. 
 Trabaje más rápido: componga un panel de Favoritos con las funciones más utilizadas. 
-AVS Audio Editor es una parte del paquete AVS4YOU. Regístrese una vez en avs4you.com y trabaje con todas las herramientas del paquete AVS4YOU.com. Suscríbase por € 49/año o € 69/por vida. 
+AVS Audio Editor es una parte del paquete AVS4YOU. Regístrese una vez en avs4you.com y trabaje con todas las herramientas del paquete AVS4YOU.com. Suscríbase por € 39/año o € 49/por vida. 
 ¡Las herramientas AVS4YOU le permiten extraer, convertir y editar fácilmente archivos de audio/video, grabar DVDs, crear tonos de llamada, subir vídeos a dispositivos portátiles, reproductores, teléfonos y mucho más.</Char_Desc_2000>
     </Spanish>
   </Program_Descriptions>
