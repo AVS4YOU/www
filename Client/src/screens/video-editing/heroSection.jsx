@@ -46,7 +46,7 @@ const HeroSectionStyled = styled.section`
     display: flex;
     align-items: center;
     gap: 99px;
-    justify-content: right;
+    justify-content: left;
   }
 
   .hero-section__card {
@@ -54,9 +54,9 @@ const HeroSectionStyled = styled.section`
       margin: 70px 0 auto 0;
     }
 
-    &:last-child {
+    /* &:last-child {
       margin: 380px 0 auto 0;
-    }
+    } */
   }
   
   @media screen and (max-width: 1700px) {
@@ -375,7 +375,7 @@ export const HeroSection = () => {
                             11 - 50 Employees
                         </Text>
                     </HeroSectionCard>
-                    <HeroSectionCard className="hero-section__card">
+                    {/* <HeroSectionCard className="hero-section__card">
                         <HeroSectionBox className="hero-section__card-title" style={{marginBottom: '8px'}}>
                             <HeroSectionBox className="hero-section__card-button">
                                 <Text fontSize={14} fontWeight={700} lineHeight="24px">Our Blog</Text>
@@ -401,7 +401,7 @@ export const HeroSection = () => {
                                 All news
                             </Text>
                         </Link>
-                    </HeroSectionCard>
+                    </HeroSectionCard> */}
                 </HeroSectionBox>
             </HeroSectionContainer>
         </HeroSectionStyled>
