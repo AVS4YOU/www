@@ -9,9 +9,6 @@ import ScrollUpButton from '../components/scroll-up-button';
 
 
 
-
-
-
 class aboutUs extends React.PureComponent {
   constructor(props) {
     super(props);

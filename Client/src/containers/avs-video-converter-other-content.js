@@ -40,7 +40,6 @@ const StyledContent = styled.div`
 }
 `;
 
-
 export const AvsVideoConverterOtherContent = (props) => (
   <ProductPagesWrapper imageName="blue_background_main.jpg">
   <div className="headerBackground">
@@ -205,7 +204,7 @@ export const AvsVideoConverterOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.5</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.6</Text>
 
 
   <ScreenshotsCarousel 
@@ -306,7 +305,8 @@ export const AvsVideoConverterOtherContent = (props) => (
     </PageContentWrapper>
   </div>
 
-  <div id="reviews" className="backgroundWrapper" style={{marginTop: "0px;"}}>
+  <div id="reviews" className="backgroundWrap" style={{marginTop: "0px;"}}>
+
   <ReviewScreen 
       reviewsData={
         [

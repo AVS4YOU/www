@@ -28,7 +28,7 @@ import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
 import awardFDM from '../images/avs-video-editor/award-fdm-video-editor.png'
-import awardGetApp from '../images/avs-video-editor/award-getapp.svg'
+import awardGetApp from '../images/avs-video-editor/award-getapp.png'
 
 import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
@@ -107,6 +107,7 @@ video {
 }
 `;
 
+
 const lang = ['de','es','fr','it','jp','ru']
 
 const isEngLang = (currentLang) => {
@@ -117,7 +118,6 @@ const isEngLang = (currentLang) => {
 
     return isEngLang;
 }
-
 
 export const AvsVideoEditorOtherContent = (props) => (
   <ProductPagesWrapper>
@@ -177,7 +177,7 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
       </a>
     </ContentRowItem>
-   
+
     <ContentRowItem 
         imgLeft={false}
         imageName={props.t("video editor slider4 jpg")}
@@ -291,7 +291,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Editor 9.8</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97")}</Text>
   <ScreenshotsCarousel
     imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
     imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}

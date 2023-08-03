@@ -71,6 +71,29 @@ constructor(props){
   };
 }
 
+ onRegisterClick() {
+  window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
+  window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
+  window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
+  window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
+  window.TwoCoInlineCart.setup.setIframeLoad('immediate'); 
+  window.TwoCoInlineCart.register();
+  
+  window.TwoCoInlineCart.billing.setData({
+    name: '', 
+    email: '', 
+    country: '',
+  });
+
+  window.TwoCoInlineCart.products.removeAll(); 
+
+  window.TwoCoInlineCart.products.add({
+    code: "604132"
+  });
+  
+  window.TwoCoInlineCart.cart.checkout();
+}
+
 componentDidMount(){
   const cookies = new Cookies();
 
@@ -89,6 +112,8 @@ componentDidMount(){
  })
 }
 
+
+
 render(){
     return (
       <Layout 
@@ -100,6 +125,21 @@ render(){
        metaKeywords=""
       >
         <Helmet>
+
+          {<script type='text/javascript'>{`
+                  window._vwo_code = window._vwo_code || (function(){
+                  var account_id=279977,
+                  settings_tolerance=5000,
+                  library_tolerance=5000,
+                  use_existing_jquery=false,
+                  is_spa=1,
+                  hide_element='body',
+
+                  /* DO NOT EDIT BELOW THIS LINE */
+                  f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+                  window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+              `}
+          </script>}
           {/*<script src={withPrefix('avangate-affiliates-run.js')} type="text/javascript" /> */}
           {this.state.documentLoaded && <script src={withPrefix('impact-affiliates-run.js')} type="text/javascript" />}
           {/*this.state.documentLoaded && <script src={withPrefix('modal-register.js')} type="text/javascript" />*/}
@@ -309,38 +349,9 @@ render(){
               margin-top: 15px;
             }
           }`}</style>}
-          {<script>{`
-          (function (document, src, libName, config) {
-            var script             = document.createElement('script');
-            script.src             = src;
-            script.async           = true;
-            var firstScriptElement = document.getElementsByTagName('script')[0];
-            script.onload          = function () {
-            for (var namespace in config) {
-            if (config.hasOwnProperty(namespace)) {
-              window[libName].setup.setConfig(namespace, config[namespace]);
-              }
-            }
-            window[libName].register();
-            };
-            firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
-            })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"immediate"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
-            `}</script>}
-          {<script>
-            {`
-                window._vwo_code = window._vwo_code || (function(){
-                  var account_id=279977,
-                  settings_tolerance=2000,
-                  library_tolerance=2500,
-                  use_existing_jquery=false,
-                  is_spa=1,
-                  hide_element='body',
-                  /* DO NOT EDIT BELOW THIS LINE */
-                  f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-                  window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
-            `}
-            </script>}
+          {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
         </Helmet>
+        
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
           <div className="sale-text">
@@ -385,7 +396,7 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button                
-                href={this.state.hrefUnlim}
+                  onClick={this.onRegisterClick}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"

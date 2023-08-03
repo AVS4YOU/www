@@ -33,20 +33,48 @@ const isEngLang = (currentLang) => {
     return isEngLang;
 }
 
+const langBanner = ['de','en','es','fr','it','jp']
+
+const isSomeLang = (curLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<langBanner.length; i++) {
+        if(langBanner[i] === curLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
+
 class avsAudioEditor extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonAudioEditor")
      };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this); 
 
   }
 
   getDevice(device){
     this.setState({ device: device });
+  }
+
+  closeModal() {
+    this.setState({
+      isModalOpen: false
+    });
+  }
+
+  openModal() {
+    this.setState({
+      isModalOpen: true
+    });
   }
 
 
@@ -64,6 +92,7 @@ render(){
         <ProductPagesWrapper>
           <div className="headerBackground">
             <ImageGQL className="headerBackgroundImage" imageName="pink_background_main.jpg" style={{position: "absolute"}}/>
+                  
             <PageContentWrapper>
               <div id="headerContentWrapper" className="headerContentWrapper" >           
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Audio Editor")}</Text>
@@ -175,7 +204,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.3</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.4</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg") ]}
             imageNamesPopup={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}

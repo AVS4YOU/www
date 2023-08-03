@@ -24,7 +24,6 @@ import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../images/common/review-carousel/quote_1.png';
 
 
-
 const TableWrapper = styled.table`
   margin:auto;
   span {
@@ -47,7 +46,6 @@ class avsFreeMediaPlayer extends React.PureComponent {
    };
 
     this.getDevice = this.getDevice.bind(this);
-
   }
 
   getDevice(device){
@@ -173,7 +171,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Media Player 5.5</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Media Player 5.6</Text>
           <ScreenshotsCarousel
             imageNames={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
             imageNamesPopup={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
@@ -203,6 +201,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
+
             <PageContentWrapper>
               <Text className="headerSpecification" color="#000000" fontSize={32} align="center" fontWeight={600}>{this.props.t("Technical specification")}</Text>
               <div className="specificationGrid">

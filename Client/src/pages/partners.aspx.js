@@ -10,6 +10,7 @@ import Form from '../components/form-partners';
 import ScrollUpButton from '../components/scroll-up-button';
 import styled from 'styled-components';
 
+
 const StyledBlock = styled.div`
  .common-info-block__headline {
    text-align: center;
@@ -107,7 +108,7 @@ render(){
                 {this.props.t("There is no need to place links on the website Request a quote whenever your customer needs AVS4YOU multimedia suite")}
               </Text>
             </div>
-
+            
             <div className="common-info-block">
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("Flexible Discounts")} 

@@ -22,23 +22,36 @@ import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
 
 
-
-
-
 class avsAudioConverter extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonAudioConverter")
     };
 
     this.getDevice = this.getDevice.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this); 
   }
 
   getDevice(device){
     this.setState({ device: device });
   }
+    closeModal() {
+      this.setState({
+        isModalOpen: false
+      });
+    }
+  
+    openModal() {
+      this.setState({
+        isModalOpen: true
+      });
+    }
 
 render(){
 
@@ -149,7 +162,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.3</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.4</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}

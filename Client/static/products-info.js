@@ -1,54 +1,54 @@
 let VideoEditor = {
-    version: "9.8.1.401",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "170.58",
+    version: "9.9.2.408",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "170.62",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
-    version: "6.7.3.266",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "60.06",
+    version: "6.8.2.269",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "60.09",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
-    version: "12.5.1.698",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "80.41",
+    version: "12.6.2.701",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "80.43",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
-    version: "5.5.3.152",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "104.97",
+    version: "5.6.2.155",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "105.01",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
-    version: "10.3.2.567",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "47.59",
+    version: "10.4.2.571",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "47.56",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
-    version: "10.3.2.634",
-    releaseDD: "22",
-    releaseMM: "12",
-    releaseYYYY: "2022",
-    size: "49.55",
+    version: "10.4.2.637",
+    releaseDD: "27",
+    releaseMM: "07",
+    releaseYYYY: "2023",
+    size: "49.56",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 

@@ -68,6 +68,12 @@ const StyledPageWrapper = styled.div`
     padding-bottom: 100px;
   }
 
+  .backgroundWrap{
+    background-color: #FAF7F2;
+    margin-top: 0px;
+    padding-bottom: 100px;
+  }
+
   .carouselHeader{
       padding-top: 100px;
       font-weight:600;

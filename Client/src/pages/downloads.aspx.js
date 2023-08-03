@@ -12,20 +12,46 @@ import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 
+const langBanner = ['de','en','es','fr','it','jp']
 
+const isSomeLang = (curLang) => {
+    let isSomeLang = false;
+    for(let i = 0; i<langBanner.length; i++) {
+        if(langBanner[i] === curLang) isSomeLang = true;
+    }
+
+    return isSomeLang;
+}
 
 class Download extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       device: "",
+      isModalOpen: false,
+      isInnerModalOpen: false,
+      hrefButton: this.props.t("hrefButtonEasterButtonDownloads")
      };
 
     this.getDevice = this.getDevice.bind(this); 
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
   }
 
   getDevice(device){
     this.setState({ device: device });
+  }
+
+  closeModal() {
+    this.setState({
+      isModalOpen: false
+    });
+  }
+
+  openModal() {
+    this.setState({
+      isModalOpen: true
+    });
   }
 
 render(){

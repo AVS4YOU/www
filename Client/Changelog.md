@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.0.50
+
+### New
+* Added InLine 2Сheckout at register page
+* Added landing page /avs-editor.aspx
+
+### Fixes
+* Fixed Company name
+* Fixed pads
+* Changed products info
+
+## 1.0.49
+
+### Fixes
+* Fixed products version 
+* Added award GetApp 2023
+
+## 1.0.48
+
+### New
+* Deleted event "Easter Hunt 2023" 
+
+## 1.0.47
+
+### New
+* Added event "Easter Hunt 2023" for en/de/fr/es/it/jp
+* Added new styles for /affiliates.aspx for en
+
 ## 1.0.46
 
 ### New
