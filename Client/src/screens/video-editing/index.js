@@ -1,0 +1,7 @@
+export * from './heroSection'
+export * from './trustSection'
+export * from './featuresSection'
+export * from './getStartedSection'
+export * from './specsSection'
+export * from './makeVideoSection'
+export * from './creatorsSection'
