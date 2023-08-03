@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.50
+
+### New
+* Added InLine 2Сheckout at register page
+* Added landing page /avs-editor.aspx
+
+### Fixes
+* Fixed Company name
+* Fixed pads
+* Changed products info
+
 ## 1.0.49
 
 ### Fixes

@@ -74,6 +74,29 @@ class RegisterVc extends React.PureComponent {
   };
 }
 
+onRegisterClick() {
+  window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
+  window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
+  window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
+  window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
+  window.TwoCoInlineCart.setup.setIframeLoad('immediate'); 
+  window.TwoCoInlineCart.register();
+  
+  window.TwoCoInlineCart.billing.setData({
+    name: '', 
+    email: '', 
+    country: '',
+  });
+
+  window.TwoCoInlineCart.products.removeAll(); 
+
+  window.TwoCoInlineCart.products.add({
+    code: "604132"
+  });
+  
+  window.TwoCoInlineCart.cart.checkout();
+}
+
 componentDidMount(){
   const cookies = new Cookies();
 
@@ -103,6 +126,7 @@ render(){
        metaKeywords=""
       >
         <Helmet>
+          
         {<script type='text/javascript'>{`
                   window._vwo_code = window._vwo_code || (function(){
                   var account_id=279977,
@@ -327,23 +351,7 @@ render(){
               margin-top: 15px;
             }
           }`}</style>}
-          {<script>{`
-          (function (document, src, libName, config) {
-            var script             = document.createElement('script');
-            script.src             = src;
-            script.async           = true;
-            var firstScriptElement = document.getElementsByTagName('script')[0];
-            script.onload          = function () {
-            for (var namespace in config) {
-            if (config.hasOwnProperty(namespace)) {
-              window[libName].setup.setConfig(namespace, config[namespace]);
-              }
-            }
-            window[libName].register();
-            };
-            firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
-            })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"ONLMETEC","iframeLoad":"immediate"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
-            `}</script>}
+        {<script type='text/javascript' src='https://secure.2checkout.com/checkout/client/twoCoInlineCart.js' onLoad={this.handleScriptLoad} />}
         </Helmet>
         <div className="screen-wrapper first">
         <Text className="get-tools-text" as="h5" style={{marginTop:"5px"}}>{this.props.t("Get 5 professional multimedia programs in 1 package + Free upgrades + Free support")}</Text>
@@ -387,11 +395,12 @@ render(){
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
-                <Button
-                  href={this.state.hrefUnlim}
+                <Button                
+                  onClick={this.onRegisterClick}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
+                  id="unlimited_button"
                 >
                   {this.props.t("Buy now")}
                 </Button>

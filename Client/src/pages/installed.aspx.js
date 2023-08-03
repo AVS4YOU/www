@@ -839,7 +839,7 @@ render(){
                     <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
                     <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
-                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Online Media Technologies Ltd, UK")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
+                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Ascensio System SIA")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
             </div>
         </div>
         </div>

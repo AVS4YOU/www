@@ -2,7 +2,7 @@
 <XML_DIZ_INFO>
   <MASTER_PAD_VERSION_INFO>
     <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
-    <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.802</MASTER_PAD_EDITOR>
     <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
@@ -22,13 +22,13 @@
     <Backlink></Backlink>
   </RoboSoft>
   <Company_Info>
-    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
-    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
-    <Address_2>180 Tottenham Court Road</Address_2>
-    <City_Town>London</City_Town>
+    <Company_Name>Ascensio System SIA</Company_Name>
+    <Address_1>20A-6 Ernesta Birznieka-Upish street</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Riga</City_Town>
     <State_Province></State_Province>
-    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
-    <Country>United Kingdom</Country>
+    <Zip_Postal_Code>LV-1050</Zip_Postal_Code>
+    <Country>Latvia</Country>
     <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Irina</Contact_First_Name>
@@ -83,26 +83,26 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>36874384</File_Size_Bytes>
-      <File_Size_K>36001</File_Size_K>
-      <File_Size_MB>35.17</File_Size_MB>
+      <File_Size_Bytes>36937760</File_Size_Bytes>
+      <File_Size_K>36072</File_Size_K>
+      <File_Size_MB>35.23</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Image Converter</Program_Name>
-    <Program_Version>5.5.1.319</Program_Version>
+    <Program_Version>5.6.1.324</Program_Version>
     <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>24</Program_Release_Day>
-    <Program_Release_Year>2024</Program_Release_Year>
+    <Program_Release_Day>04</Program_Release_Day>
+    <Program_Release_Year>2023</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Windows 11 skin. Support of WebP images. Optimized support of HEIF-HEIC images. Yellow-Magenta filter effect.</Program_Change_Info>
+    <Program_Change_Info>Open mirrored and rotated JPEG photos from different cameras with the correct orientation. Critical vulnerabilities fix. Code optimization for faster performance.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz or higher, 2 GB RAM or higher</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Expire_Info>
@@ -132,13 +132,13 @@
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-free-image-converter.aspx</Application_Info_URL>
-      <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>https://www.avs4you.com/pads/screenshots/avsimageconverter.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>https://www.avs4you.com/pads/icons/avsimageconverter.gif</Application_Icon_URL>
-      <Application_XML_File_URL>https://www.avs4you.com/pads/en/avsimageconverter.xml</Application_XML_File_URL>
+      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/avsimageconverter.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsimageconverter.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsimageconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>https://downloads.avs4you.com/distributives/AVSImageConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>http://download.avs4you.com/distributives/AVSImageConverter.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
@@ -146,48 +146,60 @@
   </Web_Info>
   <Permissions>
     <Distribution_Permissions>This product can be freely distributed through the Internet. To publish it on a CD, please contact info@avs4you.com.</Distribution_Permissions>
-    <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ONLINE MEDIA TECHNOLOGIES LTD.
+    <EULA>END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ASCENSIO SYSTEM SIA
 
-IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Online Media Technologies Ltd for the applicable Software Products of Online Media Technologies Ltd. Do not copy, install, or use the Software Products provided under this license agreement ("Agreement"), until you have carefully read the following terms and conditions.
+IMPORTANT-READ CAREFULLY: This End-User License Agreement is a legal Agreement between you and Ascensio System SIA for the applicable Software Products of Ascensio System SIA. Do not copy, install, or use the Software Products provided under this license agreement ('Agreement'), until you have carefully read the following terms and conditions.
 
-Any reproduction or redistribution of Software Products or any of its components not in accordance with the End-User License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties. 
+Any reproduction or redistribution of Software Products or any of its components not in accordance with the End-User License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties.
 
-Definitions: Software Products shall mean and include AVS4YOU Software. 
+Definitions: Software Products shall mean and include AVS4YOU Software.
 
-AVS4YOU Software shall mean all of the contents of the files (provided either by electronic download, on physical media or any other method of distribution), disk(s), CD-ROM(s) or other media with which this Agreement is provided) which may be found at www.avs4you.com. 
+AVS4YOU Software shall mean all of the contents of the files (provided either by electronic download, on physical media or any other method of distribution), disk(s), CD-ROM(s) or other media with which this Agreement is provided) which may be found at www.avs4you.com.
 
-AVS4YOU Software is licensed on a per computer basis. Each license purchased is bound to one particular computer and allows using AVS4YOU Software on that single computer. If you install and use or reinstall AVS4YOU software on any other computers you will have to purchase an additional license for each computer. If you change a computer, you will have to purchase an additional license. All updates and upgrades for AVS4YOU Software are free for a user throughout the period of AVS4YOU license validity. 
+AVS4YOU Software is licensed on a per computer basis. Each license purchased is bound to one particular computer and allows using AVS4YOU Software on that single computer. If you install and use or reinstall AVS4YOU software on any other computers you will have to purchase an additional license for each computer. If you change a computer, you will have to purchase an additional license. All updates and upgrades for AVS4YOU Software are $0 for a user throughout the period of AVS4YOU license validity.
 
-Your rights and obligations with respect to the use of AVS4YOU Software or any of its components are as follows: 
+Your rights and obligations with respect to the use of AVS4YOU Software or any of its components are as follows.
 
-You may: 
-1. Install and use one copy of AVS4YOU Software or any of its components and all upgrades and updates on a single computer for any period for which you have purchased a subscription (typically 1 year or Unlimited). 
-2. Make one copy of AVS4YOU Software or any of its components for archival purposes on a storage device or media. 
-3. Use AVS4YOU Software on a network, provided that you have a licensed copy of AVS4YOU Software for each computer that can access AVS4YOU Software over that network for any period for which you have purchased a subscription (typically 1 year or Unlimited). A license for AVS4YOU Software may not be shared or used concurrently on different computers. 
-4. Receive support by e-mail to answer questions and solve problems referred to AVS4YOU Software for any period for which you have purchased a subscription (typically 1 year or Unlimited). 
+You may
 
-You may not: 
-1. Use, copy, modify, or transfer copies of AVS4YOU Software except as provided for in this License. 
-2. Remove any proprietary notices or labels from AVS4YOU Software. 
-3. Reverse engineer, decompile, disassemble or make derivative works based on AVS4YOU Software (except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation). 
-4. Rent, lease, sublicense or assign AVS4YOU Software or any copy thereof, including any related documentation. 
-5. Separate AVS4YOU Software component parts for use on more than one computer. 
-6. Distribute the license key in any way. 
-7. Make any attempt to discover the source code of AVS4YOU Software. 
+Install and use one copy of AVS4YOU Software or any of its components and all upgrades and updates on a single computer for any period for which you have purchased a subscription (typically 1 year or Unlimited).
 
+Make one copy of AVS4YOU Software or any of its components for archival purposes on a storage device or media.
 
-NO WARRANTIES. 
+Use AVS4YOU Software on a network, provided that you have a licensed copy of AVS4YOU Software for each computer that can access AVS4YOU Software over that network for any period for which you have purchased a subscription (typically 1 year or Unlimited). A license for AVS4YOU Software may not be shared or used concurrently on different computers.A license for AVS4YOU Software may not be shared or used concurrently on different computers.
 
-Online Media Technologies Ltd. expressly disclaims any warranty for AVS4YOU Software. 
+Receive support by e-mail to answer questions and solve problems referred to AVS4YOU Software for any period for which you have purchased a subscription (typically 1 year or Unlimited).
 
-AVS4YOU SOFTWARE AND ANY RELATED DOCUMENTATION is PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. 
+You may not
 
-THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WITH YOU. 
+Use, copy, modify, or transfer copies of AVS4YOU Software except as provided for in this License.
 
-NO LIABILITY FOR CONSEQUENTIAL DAMAGES. 
-IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE. 
+Remove any proprietary notices or labels from AVS4YOU Software.
 
-COPYRIGHT NOTICE. Copyright(C) 2022 Online Media Technologies Ltd. All rights reserved. 
+Reverse engineer, decompile, disassemble or make derivative works based on AVS4YOU Software (except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation).
+
+Rent, lease, sublicense or assign AVS4YOU Software or any copy thereof, including any related documentation.
+
+Separate AVS4YOU Software component parts for use on more than one computer.
+
+Distribute the license key in any way.
+
+Make any attempt to discover the source code of AVS4YOU Software.
+
+NO WARRANTIES.
+
+Ascensio System SIA expressly disclaims any warranty for AVS4YOU Software.
+
+AVS4YOU SOFTWARE AND ANY RELATED DOCUMENTATION is PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT.
+
+THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF AVS4YOU SOFTWARE REMAINS WITH YOU.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES.
+
+IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
+
+COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
+
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
   <AppStore>
@@ -205,11 +217,11 @@ Any rights not expressly granted herein are reserved.</EULA>
   </AppStore>
   <Program_Descriptions>
     <English>
-      <Keywords>image converter, photo converter, convert photo, convert file to jpg, convert jpg pdf, resize image, free image resizer, convert image, picture converter, image size converter, jpeg to png converter, watermark pictures, create pdf from jpg</Keywords>
+      <Keywords>image converter, foto converter, convert photo, convert file to jpg, convert jpg pdf, batch resize, convert image, picture converter, JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, animated GIF/PNG, watermark pictures, create pdf from jpg</Keywords>
       <Char_Desc_45>Convert tons of images at one go!</Char_Desc_45>
       <Char_Desc_80>Fine tune images! Convert them to all key formats, set your logo, apply effects.</Char_Desc_80>
       <Char_Desc_250>Convert and save tons of images between such formats as JPEG, PDF, RAW, TIFF, GIF. Use Batch mode to speed up the conversion process. Apply correction settings to improve images quality. Select among various effects and watermark converted images.</Char_Desc_250>
-      <Char_Desc_450>Convert images between all key formats such as JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, animated GIF/PNG, etc. Automatically resize your photos to popular printing formats. Automate routine work using ready conversion templates. Protect your images with personal watermark. AVS Image Converter is a part of the AVS4YOU package. Register once and use all tools from www.AVS4YOU.com. Subscribe for $49/year or $79/lifetime.</Char_Desc_450>
+      <Char_Desc_450>Convert images between all key formats such as JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, animated GIF/PNG, etc. Automatically resize your photos to popular printing formats. Automate routine work using ready conversion templates. Protect your images with personal watermark. AVS Image Converter is a part of the AVS4YOU package. Register once and use all tools from www.AVS4YOU.com. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
       <Char_Desc_2000>Convert your pictures, improve their quality and look, apply various effects, copyright converted images. It is easy and fast with AVS Image Converter. 
 Convert tons of images to all key formats in one go! Work with such formats as JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, animated GIF/PNG, etc. 
 Convert and save your images in PDF-format. Apply auto-correction settings to improve images parameters such as brightness and contrast. 
@@ -217,7 +229,7 @@ Automatically resize your photos to popular printing formats with AVS Image Conv
 Prepare your images for future slideshows that you can upload to popular websites. Select between various effects - make your pictures look like black-and-white pics, or old faded photographs. 
 Select a logo or write a phrase and apply it to all converted pictures as a personal watermark. Work with piles of images more efficiently thanks to a command line mode. 
 Set such everyday tasks as conversion between various formats, resizing, watermarking pictures using customized presets. 
-AVS Image Converter is a part of the AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime. 
+AVS Image Converter is a part of the AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime. 
 AVS4YOU tools let you easily rip, convert and edit audio/video files, edit images, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
     <German>
@@ -225,7 +237,7 @@ AVS4YOU tools let you easily rip, convert and edit audio/video files, edit image
       <Char_Desc_250>Konvertieren und speichern Sie Bilder in alle gängigen Formate wie JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000 usw. Verwenden Sie den Batch-Modus. Wenden Sie Optionen zur Bildkorrektur an, wenden Sie mehrere Effekte und eigenes Wasserzeichen an.</Char_Desc_250>
       <Char_Desc_45>Mehrere Bilddateien auf einmal umwandeln!</Char_Desc_45>
       <Char_Desc_80>Ihre Bilder abstimmen, Logo &amp; Effekte anwenden! In mehrere Formate umwandeln.</Char_Desc_80>
-      <Char_Desc_450>Bilder in alle gängigen Formate wie JPEG, JPEG2000, PDF, RAW, GIF, animierte GIF &amp; PNG, Vektorformate wie ITHMB, SFW, WB1, PDD usw. umwandeln. Wenden Sie Bildkorrektur an, um Ihre Fotos zu verbessern. Ändern Sie die Größe Ihrer Bilder für gängige Druckformate. Wenden Sie Effekte an. Wählen Sie eigene Wasserzeichen. Erwerben Sie käuflich ein Abonnement für €49/Jahr oder €69/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket.</Char_Desc_450>
+      <Char_Desc_450>Bilder in alle gängigen Formate wie JPEG, JPEG2000, PDF, RAW, GIF, animierte GIF &amp; PNG, Vektorformate wie ITHMB, SFW, WB1, PDD usw. umwandeln. Wenden Sie Bildkorrektur an, um Ihre Fotos zu verbessern. Ändern Sie die Größe Ihrer Bilder für gängige Druckformate. Wenden Sie Effekte an. Wählen Sie eigene Wasserzeichen. Erwerben Sie käuflich ein Abonnement für €29/Jahr oder €39/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket.</Char_Desc_450>
       <Char_Desc_2000>Konvertieren und speichern Sie Bilder in alle gängigen Formate wie JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, animiertes GIF/PNG usw. mit dem AVS Image Converter. 
 Ändern Sie die Größe Ihrer Bilder für gängige Druckformate mit dem AVS Image Converter. Bereiten Sie Ihre Fotos für eine zukünftige Fotoshow vor, die man später auf populäre Websites hochladen kann. 
 Wandeln Sie Ihre Bilddateien um, verbessern Sie ihre Ansicht, wenden Sie mehrere Effekte an. Es ist schnell und einfach mit AVS Image Converter. 
@@ -233,7 +245,7 @@ Konvertieren und speichern Sie Ihre Bilder in PDF-Format.
 Wenden Sie Optionen zur automatischen Bildkorrektur an, um solche Parameter wie Helligkeit und Kontrast in Ihren Fotos zu verbessern. Wenden Sie Effekte an - verwenden Sie den Schwarz-Weiß-Effekt oder "Altes Foto" Effekt, etc. 
 Wählen Sie ein Logo und wenden Sie es bzw. ihn auf alle umgewandelten Fotos als eigenes Wasserzeichen an. 
 Verwenden Sie den Kommandozeilen Modus. Dank dem Kommandozeilen Modus können Sie effektiver mit einer Menge Bilder arbeiten. Planen Sie solche tägliche Aufgaben ein wie Konvertierung zwischen verschiedenen Formaten, Größenanpassung, Wasserzeichenmarkierung Ihrer Bilder mit Hilfe von benutzerdefinierten Voreinstellungen. 
-AVS Image Converter ist ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für €49/Jahr oder €69/unbefristet. 
+AVS Image Converter ist ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für €29/Jahr oder €39/unbefristet. 
 Mit AVS4YOU-Tools können Sie Audio- und Videodateien rippen, konvertieren und editieren, DVDs brennen, Klingeltöne erstellen, Videos auf tragbare Geräte übertragen und vieles mehr!</Char_Desc_2000>
     </German>
     <French>
@@ -241,14 +253,14 @@ Mit AVS4YOU-Tools können Sie Audio- und Videodateien rippen, konvertieren und e
       <Char_Desc_45>Convertissez des images en une seule fois</Char_Desc_45>
       <Char_Desc_80>Convertissez plusieurs formats, ajoutez le logo, appliquez des effets.</Char_Desc_80>
       <Char_Desc_250>Convertissez entre différents formats: JPEG,PDF,RAW,TIFF,GIF.Le traitement par lots permet d'accélérer la conversion. Appliquez une correction aux images pour améliorer leur qualité. Choisissez différents effets,ajoutez un filigrane aux images.</Char_Desc_250>
-      <Char_Desc_450>Convertissez les images entre: JPEG,PDF,RAW,TIFF,TGA,GIF,JPEG 2000,GIF/PNG animé, etc. Redimensionnez et adaptez vos photos aux formats d'impression. Automatisez votre travail en utilisant les modèles de conversion. Protégez vos images par un filigrane personnel. AVS Image Converter fait partie de l'ensemble des logiciels AVS4YOU. Inscrivez-vous pour €49/abonnement à 1 an ou €69/abonnement illimité et utilisez les logiciels du site avs4you.com.</Char_Desc_450>
+      <Char_Desc_450>Convertissez les images entre: JPEG,PDF,RAW,TIFF,TGA,GIF,JPEG 2000,GIF/PNG animé, etc. Redimensionnez et adaptez vos photos aux formats d'impression. Automatisez votre travail en utilisant les modèles de conversion. Protégez vos images par un filigrane personnel. AVS Image Converter fait partie de l'ensemble des logiciels AVS4YOU. Inscrivez-vous pour €29/abonnement à 1 an ou €39/abonnement illimité et utilisez les logiciels du site avs4you.com.</Char_Desc_450>
       <Char_Desc_2000>Convertissez et améliorez la qualité de vos photos, appliquez plusieurs effets, ajoutez des filigranes sur les images. Avec AVS Image Converter c'est facile et rapide. 
 Convertissez plusieurs images de principaux formats en une seule fois ! Traitez JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, GIF/PNG animée, etc. 
 Convertissez et enregistrez vos images au format PDF. 
 Appliquez une correction automatique pour améliorer la qualité d'image. 
 Redimensionnez automatiquement et adaptez vos photos aux formats d'impression populaires avec AVS Image Converter. Traitez vos images pour la création des diaporamas que vous pouvez télécharger sur des sites populaires. Appliquez un des effets prédéfinis sur une image pour lui donner l'aspect d'une photo ancienne ou la présenter en noir et blanc. 
 Sélectionnez un logo ou écrivez une phrase et l'appliquer à toutes les images converties en tant que filigrane personnel. Travaillez avec un tas d'images plus effectivement grâce à la ligne de commande. Créez des tâches quotidiennes comme la conversion entre de différents formats, la superposition du filigrane, le changement de la taille. 
-AVS Image Converter fait partie de l'ensemble des logiciels AVS4YOU. Inscrivez-vous pour €49/abonnement à 1 an ou €69/abonnement illimité et utilisez les logiciels du site avs4you.com. 
+AVS Image Converter fait partie de l'ensemble des logiciels AVS4YOU. Inscrivez-vous pour €29/abonnement à 1 an ou €39/abonnement illimité et utilisez les logiciels du site avs4you.com. 
 Les logiciels AVS4YOU permettent d'extraire, de convertir, d'éditer les fichiers audio/vidéo, de modifiez des images, de graver DVD, de créer des sonneries, de télécharger des vidéos sur les appareils portables, lecteurs, téléphones et encore plus!</Char_Desc_2000>
     </French>
     <Russian>
@@ -256,7 +268,7 @@ Les logiciels AVS4YOU permettent d'extraire, de convertir, d'éditer les fichier
       <Char_Desc_45>Конвертируйте изображения в различные форматы</Char_Desc_45>
       <Char_Desc_80>Конвертируйте изображения в разные форматы,добавляйте логотип,применяйте эффекты</Char_Desc_80>
       <Char_Desc_250>Конвертируйте изображения между такими форматами как JPEG, PDF, RAW, TIFF, и др. Используйте пакетный режим для ускорения процесса конвертации. Вы можете выбрать различные эффекты для редактирвания изображений.</Char_Desc_250>
-      <Char_Desc_450>Конвертируйте изображения между всеми ключевыми форматами, такими как JPEG, PDF, RAW, TIFF, GIF, и др. Автоматически изменяйте размер фотографий. Используйте режим командной строки для автоматизации процесса конвертации. Вы можете защитить Ваши изображения водяным знаком. AVS Audio Converter является частью пакета AVS4YOU.com. На сайте www.avs4you.com Вы можете приобрести подписку на 1 года за 2499 руб. или безлимитную подписку за 4999 руб.</Char_Desc_450>
+      <Char_Desc_450>Конвертируйте изображения между всеми ключевыми форматами, такими как JPEG, PDF, RAW, TIFF, GIF, и др. Автоматически изменяйте размер фотографий. Используйте режим командной строки для автоматизации процесса конвертации. Вы можете защитить Ваши изображения водяным знаком. AVS Audio Converter является частью пакета AVS4YOU.com. На сайте www.avs4you.com Вы можете приобрести подписку на 1 года за 799 руб. или безлимитную подписку за 1299 руб.</Char_Desc_450>
       <Char_Desc_2000>С помощью AVS Image Converter Вы можете конвертировать Ваши фотографии, улучшать их качество, применять различные эффекты. 
 Конвертируйте изображения между всеми ключевыми форматами, такими как JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, анимированные GIF/PNG и другие с помощью программы AVS Image Converter. 
 Конвертируйте и сохраняйте изображения в pdf-формате. Применяйте параметры автоматической коррекции для улучшения Вашего изображения, таких как яркость и контрастность. 
@@ -264,7 +276,7 @@ Les logiciels AVS4YOU permettent d'extraire, de convertir, d'éditer les fichier
 Применяйте эффект старения фотографий или придайте изображениям "классический" вид, используя черно-белый эффект, с помощью программы AVS Image Converter. 
 Защитите Ваши изображения водяным знаком: выберите логотип или напишите фразу и примените их ко всем конвертируемым изображениям как персональный водяной знак. 
 С помощью AVS Image Converter Вы можете автоматизировать рутинную работу, используя режим командной строки. 
-AVS Image Converter является частью пакета AVS4YOU.com. На сайте www.avs4you.com Вы можете приобрести одногодичную подписку за 2499 руб. или безлимитную подписку за 4999 руб. 
+AVS Image Converter является частью пакета AVS4YOU.com. На сайте www.avs4you.com Вы можете приобрести одногодичную подписку за 799 руб. или безлимитную подписку за 1299 руб. 
 AVS4YOU продукты позволяют легко конвертировать и редактировать аудио/видео файлы, редактировать изображения, записывать DVD, создавать рингтоны, загружать видео на портативные устройства, плееры, телефоны и многое другое!</Char_Desc_2000>
     </Russian>
     <Spanish>
@@ -272,7 +284,7 @@ AVS4YOU продукты позволяют легко конвертирова�
       <Char_Desc_45>¡Convierta muchas imágenes de una sola vez!</Char_Desc_45>
       <Char_Desc_80>Convierta imágenes a formatos populares, establezca logotipo, aplique efectos.</Char_Desc_80>
       <Char_Desc_250>Convierta y guarde imágenes entre formatos como JPEG, PDF, RAW, TIFF, GIF. Utilice modo por lotes para acelerar conversión. Aplique ajustes de corrección para mejorar la calidad. Seleccione entre varios efectos y ponga marca de agua sobre imágenes.</Char_Desc_250>
-      <Char_Desc_450>Convierta imágenes entre formatos populares como JPEG, PDF, RAW, TIFF, RAS, GIF, GIF/PNG animado. Redimensione automáticamente fotos a los formatos de impresión más populares. Automatice trabajo de rutina utilizando plantillas de conversión. Proteja imágenes con marca de agua personal. AVS Image Converter es una parte del paquete AVS4YOU. Regístrese una vez y utilice todas las herramientas de www.AVS4YOU.com. Suscríbase por €49/año o €69/por vida</Char_Desc_450>
+      <Char_Desc_450>Convierta imágenes entre formatos populares como JPEG, PDF, RAW, TIFF, RAS, GIF, GIF/PNG animado. Redimensione automáticamente fotos a los formatos de impresión más populares. Automatice trabajo de rutina utilizando plantillas de conversión. Proteja imágenes con marca de agua personal. AVS Image Converter es una parte del paquete AVS4YOU. Regístrese una vez y utilice todas las herramientas de www.AVS4YOU.com. Suscríbase por €29/año o €39/por vida</Char_Desc_450>
       <Char_Desc_2000>Convierta sus imágenes, mejore su calidad y mire, aplique diversos efectos,proteja imágenes convertidas. 
 Es fácil y rápido con AVS Image Converter. 
 ¡Convierta toneladas de imágenes a todos los formatos popularesde de una sola vez! Trabaje con formatos como JPEG, PDF, RAW, TIFF, TGA, RAS, GIF, JPEG 2000, GIF / PNG animado, etc. 
@@ -283,7 +295,7 @@ Prepare sus imágenes para futuras presentaciones de diapositivas que puede subi
 Seleccione entre varios efectos: haga que sus fotos se vean como fotografías en blanco y negro o fotografías viejas. 
 Seleccione un logotipo o escriba una frase y aplíquela a todas las imágenes convertidas como una marca de agua personal. Trabaje con pilas de imágenes de manera más eficiente gracias a un modo de línea de comandos. 
 Establezca tales tareas cotidianas como la conversión entre varios formatos, el cambio de tamaño, las imágenes de marca de agua utilizando preajustes personalizados. 
-AVS Image Converter es una parte del paquete AVS4YOU.com. Regístrese una vez en avs4you.com y trabaje con todas las herramientas del paquete AVS4YOU.com. Suscríbase por €49/año o €69/por vida. ¡Las herramientas de AVS4YOU le permiten fácilmente copiar, convertir y editar archivos de audio/video, editar imágenes, grabar DVDs, crear tonos de llamada, subir videos a dispositivos portátiles, reproductores, teléfonos y mucho más!</Char_Desc_2000>
+AVS Image Converter es una parte del paquete AVS4YOU.com. Regístrese una vez en avs4you.com y trabaje con todas las herramientas del paquete AVS4YOU.com. Suscríbase por €29/año o €39/por vida. ¡Las herramientas de AVS4YOU le permiten fácilmente copiar, convertir y editar archivos de audio/video, editar imágenes, grabar DVDs, crear tonos de llamada, subir videos a dispositivos portátiles, reproductores, teléfonos y mucho más!</Char_Desc_2000>
     </Spanish>
   </Program_Descriptions>
 </XML_DIZ_INFO>

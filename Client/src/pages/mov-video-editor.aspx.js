@@ -148,7 +148,7 @@ render(){
                     <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><Link to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright"><Link to="/">{this.props.t("Online Media Technologies Ltd, UK")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
+                <div className="vph_copyright"><Link to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
             </div>
             <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>

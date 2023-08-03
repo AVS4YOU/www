@@ -23,9 +23,9 @@ class Privacy extends React.PureComponent {
       >
 
         <div className="body-privacy">
-          <Text className="subHeader">{this.props.t("END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ONLINE MEDIA TECHNOLOGIES LTD")}</Text>
+          <Text className="subHeader">{this.props.t("END-USER LICENSE AGREEMENT FOR SOFTWARE PRODUCTS OF ASCENSIO SYSTEM SIA")}</Text>
           <Text className="body-privacy__text">
-            {this.props.t("IMPORTANT READ CAREFULLY This End-User License Agreement is a legal Agreement between you and Online Media Technologies Ltd for the applicable Software Products of Online Media Technologies Ltd Do not copy, install, or use the Software Products provided under this license agreement Agreement, until you have carefully read the following terms and conditions")}
+            {this.props.t("IMPORTANT READ CAREFULLY This End-User License Agreement is a legal Agreement between you and Ascensio System SIA for the applicable Software Products of Ascensio System SIA Do not copy, install, or use the Software Products provided under this license agreement Agreement, until you have carefully read the following terms and conditions")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("Any reproduction or redistribution of Software Products or any of its components not in accordance with the End User License Agreement is expressly prohibited by law, and may result in severe civil and criminal penalties")}
@@ -72,7 +72,7 @@ class Privacy extends React.PureComponent {
           {this.props.t("NO WARRANTIES")}
           </Text>
           <Text className="body-privacy__text">
-          {this.props.t("Online Media Technologies Ltd expressly disclaims any warranty for AVS4YOU Software")}
+          {this.props.t("Ascensio System SIA expressly disclaims any warranty for AVS4YOU Software")}
           </Text>
           <Text className="body-privacy__text">
           {this.props.t("AVS4YOU SOFTWARE AND ANY RELATED DOCUMENTATION is PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT")}
@@ -86,9 +86,9 @@ class Privacy extends React.PureComponent {
           </Text>
 
           <Text className="body-privacy__text">
-          {this.props.t("IN NO EVENT SHALL ONLINE MEDIA TECHNOLOGIES LTD BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INEducation, OR ANY OTHER PECUNIARY LOSS ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE")}</Text>
+          {this.props.t("IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INEducation, OR ANY OTHER PECUNIARY LOSS ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE")}</Text>
           <Text className="body-privacy__text">
-          {this.props.t("COPYRIGHT NOTICE Copyright")} {currentYear} {this.props.t("ONLINE MEDIA TECHNOLOGIES LTD, ALL RIGHTS RESERVED")}
+          {this.props.t("COPYRIGHT NOTICE Copyright")} {currentYear} {this.props.t("ASCENSIO SYSTEM SIA ALL RIGHTS RESERVED")}
           </Text>
           <Text className="body-privacy__text">
           {this.props.t("Any rights not expressly granted herein are reserved")}

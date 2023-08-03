@@ -24,13 +24,13 @@ class Privacy extends React.PureComponent {
           {this.props.t("Privacy Policy")}
           </Text>
           <Text className="body-privacy__text">
-          {this.props.t("Online Media Technologies Ltd has created this statement to let you know about our firm commitment to your privacy and full compliance of AVS4YOU Website and Software with General Data Protection Regulation (GDPR)")}
+          {this.props.t("Ascensio System SIA has created this statement to let you know about our firm commitment to your privacy and full compliance of AVS4YOU Website and Software with General Data Protection Regulation (GDPR)")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("The following Privacy Policy discloses our approach in gathering and processing Personal Data for Online Media Technologies Ltd website")} <Link to="/">www.avs4you.com</Link>, {this.props.t("related websites, services and AVS4YOU software")}
+            {this.props.t("The following Privacy Policy discloses our approach in gathering and processing Personal Data for Ascensio System SIA website")} <Link to="/">www.avs4you.com</Link>, {this.props.t("related websites, services and AVS4YOU software")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("Any data collected through avs4youcom,")} <a href="https://forum.avs4you.com" target="_blank" rel="noreferrer noopener">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Online Media Technologies Ltd which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
+            {this.props.t("Any data collected through avs4youcom,")} <a href="https://forum.avs4you.com" target="_blank" rel="noreferrer noopener">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Ascensio System SIA which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("By using AVS4YOU Website or Software (hereinafter also referred to as AVS4YOU) you explicitly consent to such use of your Personal Data and agree to the terms of this Privacy Policy")}
@@ -54,7 +54,7 @@ class Privacy extends React.PureComponent {
           </Text>
           <Text className="subHeader">{this.props.t("What Personal Data we collect")}</Text>
           <Text className="body-privacy__text">
-            {this.props.t("Online Media Technologies Ltd collects Personal Data (hereinafter also Data) in case you choose to register with AVS4YOU service")}
+            {this.props.t("Ascensio System SIA collects Personal Data (hereinafter also Data) in case you choose to register with AVS4YOU service")}
           </Text>
           <Text className="body-privacy__text paragraph">
             {this.props.t("We ask users to provide following Data")}
@@ -136,10 +136,10 @@ class Privacy extends React.PureComponent {
           </div>
 
           <Text className="body-privacy__text">
-            {this.props.t("Online Media Technologies Ltd may share non-personal, summary information regarding AVS4YOU users with partners or other third parties However, we will not share any individual customer information outside of the contracted partners and third parties without first receiving user's prior written approval In short, Online Media Technologies Ltd does not sell user’s Personal Data")}
+            {this.props.t("Ascensio System SIA may share non-personal, summary information regarding AVS4YOU users with partners or other third parties However, we will not share any individual customer information outside of the contracted partners and third parties without first receiving user's prior written approval In short, Ascensio System SIA does not sell user’s Personal Data")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("Online Media Technologies Ltd may send you tips on using AVS4YOU, notify you of and get your feedback on upcoming releases or new services offered only if you subscribed to our mailing lists Users are able to unsubscribe from the mailing list any time after receiving the first informational message using link contained within informational message or by using appropriate Account settings option")}
+            {this.props.t("Ascensio System SIA may send you tips on using AVS4YOU, notify you of and get your feedback on upcoming releases or new services offered only if you subscribed to our mailing lists Users are able to unsubscribe from the mailing list any time after receiving the first informational message using link contained within informational message or by using appropriate Account settings option")}
           </Text>
 
 
@@ -177,7 +177,7 @@ class Privacy extends React.PureComponent {
           <Text className="subHeader">{this.props.t("Underage")}</Text>
 
           <Text className="body-privacy__text">
-            {this.props.t("Online Media Technologies Ltd does not intentionally collect Personal Data from persons, who are minors under their applicable local legislation If you are under 16, you will need consent from your parent(s) or other legal guardian(s) before submitting any Personal Data to Online Media Technologies Ltd via AVS4YOU website or software, with the exception if such activities are allowed by applicable law of your country If we become aware that a person under 16 has provided us with personal information without appropriate aforementioned consent, we will take steps to delete such information")}
+            {this.props.t("Ascensio System SIA does not intentionally collect Personal Data from persons, who are minors under their applicable local legislation If you are under 16, you will need consent from your parent(s) or other legal guardian(s) before submitting any Personal Data to Ascensio System SIA via AVS4YOU website or software, with the exception if such activities are allowed by applicable law of your country If we become aware that a person under 16 has provided us with personal information without appropriate aforementioned consent, we will take steps to delete such information")}
           </Text>
 
 
@@ -185,7 +185,7 @@ class Privacy extends React.PureComponent {
           <Text className="subHeader">{this.props.t("Links to Other Sites")}</Text>
 
           <Text className="body-privacy__text">
-            {this.props.t("AVS4YOU Website may contain links to other sites Please be aware that Online Media Technologies Ltd is not responsible for the privacy practices or the content of such websites as well as any information they might collect, even though our name or logo may appear on those sites We encourage you to be aware when you leave our site and to read the privacy statements of each and every website that you visit, as the Privacy Policy of those sites may differ from ours Our privacy statement applies solely to AVS4YOU Website and Software")}
+            {this.props.t("AVS4YOU Website may contain links to other sites Please be aware that Ascensio System SIA is not responsible for the privacy practices or the content of such websites as well as any information they might collect, even though our name or logo may appear on those sites We encourage you to be aware when you leave our site and to read the privacy statements of each and every website that you visit, as the Privacy Policy of those sites may differ from ours Our privacy statement applies solely to AVS4YOU Website and Software")}
           </Text>
 
 
@@ -257,7 +257,7 @@ class Privacy extends React.PureComponent {
 
 
           <Text className="subHeader">{this.props.t("Privacy Policy Updates")}</Text>
-          <Text className="body-privacy__text">{this.props.t("Online Media Technologies Ltd may update this Privacy Policy from time to time We encourage you to review this privacy statement for any changes occasionally If any changes are made to the way in which we treat your Personal Data, we will inform you about such changes via email or by posting a note on our website")}</Text>
+          <Text className="body-privacy__text">{this.props.t("Ascensio System SIA may update this Privacy Policy from time to time We encourage you to review this privacy statement for any changes occasionally If any changes are made to the way in which we treat your Personal Data, we will inform you about such changes via email or by posting a note on our website")}</Text>
 
 
           <Text className="subHeader">{this.props.t("Further Questions")}</Text>
