@@ -225,7 +225,7 @@ const HeroSectionContainer = styled.div`
   max-width: 1452px;
   margin: 0 auto;
   
-  padding: 174px 29px 137px 20px;
+  padding: 174px 29px 174px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 `
