@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {SectionTitle} from "./sectionTitle";
-import {MakeVideSectionCarousel} from "./makeVideSectionCarousel";
+import SectionTitle from "../sectionTitle";
+import {MakeVideSectionCarousel} from "../makeVideSectionCarousel";
 
 const MakeVideoSectionStyled = styled.section`
   background: #FFF;

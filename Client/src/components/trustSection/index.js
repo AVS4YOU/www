@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {Capterra2, Star, Quote} from "../../images/video-editing/icons";
 import users from '../../images/video-editing/users.png'
-import Text from "../../components/text";
-import './fonts.css'
-import {TrustSectionCarousel} from "./trustSectionCarousel";
+import Text from "../text";
+import '../../screens//video-editing/fonts.css'
+import {TrustSectionCarousel} from "../trustSectionCarousel";
 
 
 

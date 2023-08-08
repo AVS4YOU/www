@@ -1,15 +1,14 @@
 import React, {useState} from "react";
 import Layout from "../components/layout";
 import withI18next from "../components/withI18next";
-import {
-    FeaturesSection,
-    GetStartedSection,
-    HeroSection,
-    SpecsSection,
-    TrustSection,
-    MakeVideoSection,
-    CreatorsSection
-} from "../screens/video-editing";
+
+import {FeaturesSection} from "../components/featuresSection";
+import {GetStartedSection} from "../components/getStartedSection";
+import {HeroSection} from "../components/heroSection";
+import {SpecsSection} from "../components/specsSection";
+import {TrustSection} from "../components/trustSection";
+import {MakeVideoSection} from "../components/makeVideoSection";
+import {CreatorsSection} from "../components/creatorsSection";
 
 class VideoEditing extends React.PureComponent {
 

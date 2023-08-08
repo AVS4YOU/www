@@ -1,8 +1,8 @@
 import React from "react";
-import Text from "../../components/text";
+import Text from "../text";
 import styled from "styled-components";
 import {ChevronRight, Device, Disc, Screen, Standard} from "../../images/video-editing/icons";
-import {SectionTitle} from "./sectionTitle";
+import {SectionTitle} from "../sectionTitle";
 import Carousel from 'react-slick'
 
 const SpecsSectionStyled = styled.div`

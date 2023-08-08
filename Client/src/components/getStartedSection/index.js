@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../../components/text";
+import Text from "../text";
 import { Link } from "gatsby";
 
 const GetStartedSectionStyled = styled.div`

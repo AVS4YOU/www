@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../../components/text";
+import Text from "../text";
 import backgroundGradient from '../../images/video-editing/background-gradient.png'
 import heroPic from '../../images/video-editing/main-img.png'
 import shadowGradient from '../../images/video-editing/shadow-gradient.png'

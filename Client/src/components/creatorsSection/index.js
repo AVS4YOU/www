@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {SectionTitle} from "./sectionTitle";
-import {CreatorsSectionCarousel} from "./creatorsSectionCarousel";
+import SectionTitle from "../sectionTitle";
+import {CreatorsSectionCarousel} from "../creatorsSectionCarousel";
 
 const CreatorsSectionStyled = styled.section`
   background-color: #F9F9F9;
