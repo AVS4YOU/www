@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SectionTitle from "../sectionTitle";
+import {SectionTitle} from "../sectionTitle";
 import {CreatorsSectionCarousel} from "../creatorsSectionCarousel";
 
 const CreatorsSectionStyled = styled.section`
