@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Carousel from 'react-slick'
 import styled from "styled-components";
+import {ChevronLeftDisabled, ChevronRight} from "../../images/video-editing/icons";
 
 import Transitions from '../../images/video-editing/transitions.png'
 import Transformation from '../../images/video-editing/transformation.png'
@@ -410,7 +411,7 @@ const data = [
 export const Arrow = (props) => {
     return (
         <ArrowStyled {...props}>
-            
+            <ChevronRight/>
         </ArrowStyled>
     )
 }
