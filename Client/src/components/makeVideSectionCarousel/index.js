@@ -503,7 +503,8 @@ export const MakeVideSectionCarousel = () => {
                         data.map(item => (
                             <MakeVideSectionCarouselItem key={item.text}>
                                 <MakeVideSectionCarouselImg src={item.image}/>
-                                <MakeVideSectionCarouselBox src={item.icon}>
+                                <MakeVideSectionCarouselBox>
+                                  <img src={item.icon} style={{width: "56px"}}></img>
                                     <MakeVideSectionCarouselTitle>{item.text}</MakeVideSectionCarouselTitle>
                                     <MakeVideSectionCarouselDesc>{item.desc}</MakeVideSectionCarouselDesc>
                                 </MakeVideSectionCarouselBox>
@@ -520,7 +521,8 @@ export const MakeVideSectionCarousel = () => {
                 {
                     data.map(item => (
                         <CarouselPageWrapper>
-                            <CarouselPageStyled src={item.icon}>
+                            <CarouselPageStyled>
+                            <img src={item.icon} style={{width: "56px"}}></img>
                                 <CarouselPageText>{item.text}</CarouselPageText>
                             </CarouselPageStyled>
                         </CarouselPageWrapper>
