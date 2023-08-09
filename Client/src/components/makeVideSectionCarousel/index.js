@@ -5,7 +5,7 @@ import {ChevronLeftDisabled, ChevronRight} from "../../images/video-editing/icon
 
 import Transitions from '../../images/video-editing/transitions.png'
 import Transformation from '../../images/video-editing/transformation.png'
-import TextGraphics from '../../images/video-editing/textGraphics.png'
+import TextGraphics from '../../images/video-editing/text-graphics.png'
 import VideoOverlay from '../../images/video-editing/video-overlay.png'
 import VideoStabilization from '../../images/video-editing/video-stabilization.png'
 import ChromaKey from '../../images/video-editing/chroma-key.png'

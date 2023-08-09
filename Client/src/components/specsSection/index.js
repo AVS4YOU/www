@@ -9,10 +9,6 @@ const SpecsSectionStyled = styled.div`
   padding: 112px 20px;
   background-color: #32393E;
 
-  * {
-    box-sizing: border-box;
-  }
-
   .visibleSlider {
     max-width: 1240px;
     margin-top: 48px;
@@ -41,7 +37,6 @@ const SpecsSectionStyled = styled.div`
   }
 
   .slick-slide {
-    height: 290px;
 
     & > div {
       height: 100%;
@@ -80,8 +75,12 @@ const SpecsSectionItem = styled.div`
   align-items: center;
   padding: 32px;
   border: 1px solid #555;
-  height: 100%;
+  height: 264px;
   margin: 0 30px;
+
+  @media screen and (max-width: 600px) {
+    height: 216px;
+  }
 `
 
 const SpecsSectionItemTitle = styled(Text)`
