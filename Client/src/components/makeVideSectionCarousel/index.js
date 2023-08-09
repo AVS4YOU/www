@@ -12,17 +12,17 @@ import ColourCorrectionKey from '../../images/video-editing/colour-correction-ke
 import FreezeFrame from '../../images/video-editing/freeze-frame.png'
 import PlaybackSpeed from '../../images/video-editing/playback-speed.png'
 
-import {
-    Transitions as TransitionsIcon,
-    Transformation as TransformationIcon,
-    TextGraphics as TextGraphicsIcon,
-    VideoOverlay as VideoOverlayIcon,
-    VideoStabilization as VideoStabilizationIcon,
-    ChromaKey as ChromaKeyIcon,
-    ColourCorrectionKey as ColourCorrectionKeyIcon,
-    FreezeFrame as FreezeFrameIcon,
-    PlaybackSpeed as PlaybackSpeedIcon, ChevronRight
-} from '../../images/video-editing/icons'
+import TransitionsIcon from '../../images/video-editing/icons/transitions.png'
+import TransformationIcon from '../../images/video-editing/icons/transformation.png'
+import TextGraphicsIcon from '../../images/video-editing/icons/textGraphics.png'
+import VideoOverlayIcon from '../../images/video-editing/icons/videoOverlay.png'
+import VideoStabilizationIcon from '../../images/video-editing/icons/videoStabilization.png'
+import ChromaKeyIcon from '../../images/video-editing/icons/chromaKey.png'
+import ColourCorrectionKeyIcon from '../../images/video-editing/icons/colourCorrectionKey.png'
+import FreezeFrameIcon from '../../images/video-editing/icons/freeze.png'
+import PlaybackSpeedIcon from '../../images/video-editing/icons/playbackSpeed.png'
+
+
 
 const MakeVideSectionCarouselStyled = styled.div`
   position: relative;
@@ -353,55 +353,55 @@ const SliderWrapper = styled.div`
 const data = [
     {
         image: Transitions,
-        icon: <TransitionsIcon/>,
+        icon: TransitionsIcon,
         text: 'Transitions',
         desc: 'Add transitions to create visual effects between clips.'
     },
     {
         image: Transformation,
-        icon: <TransformationIcon/>,
+        icon: TransformationIcon,
         text: 'Transformation',
         desc: 'Rotation, shift, mirror or zoom. Reproduce the entire image or a part of it.'
     },
     {
         image: TextGraphics,
-        icon: <TextGraphicsIcon/>,
+        icon: TextGraphicsIcon,
         text: 'Text & Graphics',
         desc: 'Add static and animated captions and shapes.',
     },
     {
         image: VideoOverlay,
-        icon: <VideoOverlayIcon/>,
+        icon: VideoOverlayIcon,
         text: 'Video Overlay',
         desc: 'Make a picture in picture effect easily.'
     },
     {
         image: VideoStabilization,
-        icon: <VideoStabilizationIcon/>,
+        icon: VideoStabilizationIcon,
         text: 'Video Stabilization',
         desc: 'Fix shaky footages with video stabilization.',
     },
     {
         image: ChromaKey,
-        icon: <ChromaKeyIcon/>,
+        icon: ChromaKeyIcon,
         text: 'Chroma Key',
         desc: 'Change your background with Chroma Key effect.',
     },
     {
         image: ColourCorrectionKey,
-        icon: <ColourCorrectionKeyIcon/>,
+        icon: ColourCorrectionKeyIcon,
         text: 'Colour Correction Key',
         desc: 'Make adjustments automatically or apply one of the colour effect.',
     },
     {
         image: FreezeFrame,
-        icon: <FreezeFrameIcon/>,
+        icon: FreezeFrameIcon,
         text: 'Freeze Frame',
         desc: 'Make a still shot from your video clip.',
     },
     {
         image: PlaybackSpeed,
-        icon: <PlaybackSpeedIcon/>,
+        icon: PlaybackSpeedIcon,
         text: 'Playback Speed',
         desc: 'Correct too slow or too fast episodes speeding up or slowing down your clips.',
     },
@@ -410,7 +410,7 @@ const data = [
 export const Arrow = (props) => {
     return (
         <ArrowStyled {...props}>
-            <ChevronRight/>
+            
         </ArrowStyled>
     )
 }
@@ -502,8 +502,7 @@ export const MakeVideSectionCarousel = () => {
                         data.map(item => (
                             <MakeVideSectionCarouselItem key={item.text}>
                                 <MakeVideSectionCarouselImg src={item.image}/>
-                                <MakeVideSectionCarouselBox>
-                                    {item.icon}
+                                <MakeVideSectionCarouselBox src={item.icon}>
                                     <MakeVideSectionCarouselTitle>{item.text}</MakeVideSectionCarouselTitle>
                                     <MakeVideSectionCarouselDesc>{item.desc}</MakeVideSectionCarouselDesc>
                                 </MakeVideSectionCarouselBox>
@@ -520,10 +519,7 @@ export const MakeVideSectionCarousel = () => {
                 {
                     data.map(item => (
                         <CarouselPageWrapper>
-                            <CarouselPageStyled>
-                                {
-                                    item.icon
-                                }
+                            <CarouselPageStyled src={item.icon}>
                                 <CarouselPageText>{item.text}</CarouselPageText>
                             </CarouselPageStyled>
                         </CarouselPageWrapper>
