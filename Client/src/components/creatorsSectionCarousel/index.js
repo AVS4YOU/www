@@ -40,7 +40,7 @@ const CreatorsSectionCarouselStyled = styled.div`
   .slider2 {
     max-width: 100%;
 
-    .slick-current .creators-section__item-mask {
+    .slick-center .creators-section__item-mask {
       opacity: 0;
     }
   }
