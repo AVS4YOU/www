@@ -41,23 +41,6 @@ const HeroSectionStyled = styled.section`
     align-items: flex-start;
     gap: 48px
   }
-
-  .hero-section__right-box {
-    display: flex;
-    align-items: center;
-    gap: 99px;
-    justify-content: left;
-  }
-
-  .hero-section__card {
-    &:first-child {
-      margin: 70px 0 auto 0;
-    }
-
-    /* &:last-child {
-      margin: 380px 0 auto 0;
-    } */
-  }
   
   @media screen and (max-width: 1700px) {
     .hero-section__pic {
@@ -75,13 +58,6 @@ const HeroSectionStyled = styled.section`
 
 
   @media screen and (max-width: 1400px) {
-    .hero-section__container {
-      gap: 10px;
-    }
-    
-    .hero-section__right-box {
-      gap: 50px;
-    }
     
     .hero-section__list {
       grid-template-columns: 1fr;
@@ -94,9 +70,6 @@ const HeroSectionStyled = styled.section`
   }
   
   @media screen and (max-width: 1200px) {
-    .hero-section__right-box {
-      gap: 30px;
-    }
     
     .hero-section__title {
       font-size: 48px;
@@ -112,7 +85,6 @@ const HeroSectionStyled = styled.section`
     background-size: 1400px 800px;
     background-position: -348px -153px;
     .hero-section__container {
-      grid-template-columns: 1fr;
       padding: 56px 40px 84px 40px;
     }
 
@@ -130,10 +102,6 @@ const HeroSectionStyled = styled.section`
 
     .hero-section__left-box {
       gap: 32px;
-    }
-    
-    .hero-section__right-box {
-      display: none;
     }
     
     .hero-section__gradient {
@@ -182,32 +150,6 @@ const HeroSectionStyled = styled.section`
     }
   }
 `
-
-const HeroSectionCard = styled.div`
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.32);
-  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.16) inset, 0 0 24px 0 rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(16px);
-  width: max-content;
-  padding: 20px 32px;
-  color: #32393E;
-
-  .hero-section__card-title {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .hero-section__card-button {
-    padding: 6px 12px;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 24px;
-  }
-`
-
 const HeroSectionPic = styled.span`
   background-image: url("${heroPic}");
   position: absolute;
@@ -226,8 +168,6 @@ const HeroSectionContainer = styled.div`
   margin: 0 auto;
   
   padding: 174px 29px 174px 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 `
 
 const HeroSectionBox = styled.div`
@@ -338,70 +278,6 @@ export const HeroSection = () => {
                         }
                     </HeroSectionList>
                     <HeroSectionButton className="hero-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download now</HeroSectionButton>
-                </HeroSectionBox>
-                <HeroSectionBox className="hero-section__right-box">
-                    <HeroSectionCard className="hero-section__card">
-                        <HeroSectionBox className="hero-section__card-title" style={{marginBottom: '4px'}}>
-                            <Capterra />
-                            <HeroSectionBox className="hero-section__card-button">
-                                <Star />
-                                <FiveStars />
-                            </HeroSectionBox>
-                        </HeroSectionBox>
-                        <HeroSectionBox style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px'}}>
-                            <Text
-                                fontSize={16}
-                                fontWeight={700}
-                                lineHeight="30px"
-                                color="#32393E"
-                            >
-                                Gregg B.
-                            </Text>
-                            <Text
-                                fontSize={16}
-                                fontWeight={400}
-                                lineHeight="24px"
-                                color="#32393E"
-                            >
-                                Manager
-                            </Text>
-                        </HeroSectionBox>
-                        <Text
-                            fontSize={16}
-                            fontWeight={400}
-                            lineHeight="24px"
-                            color="#32393E"
-                        >
-                            11 - 50 Employees
-                        </Text>
-                    </HeroSectionCard>
-                    {/* <HeroSectionCard className="hero-section__card">
-                        <HeroSectionBox className="hero-section__card-title" style={{marginBottom: '8px'}}>
-                            <HeroSectionBox className="hero-section__card-button">
-                                <Text fontSize={14} fontWeight={700} lineHeight="24px">Our Blog</Text>
-                            </HeroSectionBox>
-                        </HeroSectionBox>
-                        <Text
-                            fontSize={16}
-                            fontWeight={700}
-                            lineHeight="30px"
-                            color="#32393E"
-                            style={{marginBottom: '8px'}}
-                        >
-                            How to create a video collage?
-                        </Text>
-                        <Link to="/video-maker.aspx">
-                            <Text
-                                color="#FFF"
-                                fontSize={16}
-                                fontWeight={400}
-                                lineHeight="24px"
-                                style={{fontStyle: 'italic', textDecoration: 'underline'}}
-                            >
-                                All news
-                            </Text>
-                        </Link>
-                    </HeroSectionCard> */}
                 </HeroSectionBox>
             </HeroSectionContainer>
         </HeroSectionStyled>
