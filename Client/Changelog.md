@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.51
+
+### New
+* Added page /video-editing.aspx
+
 ## 1.0.50
 
 ### New
