@@ -90,9 +90,21 @@ constructor(props){
   window.TwoCoInlineCart.products.add({
     code: "604132"
   });
+
+  //Set sale source in the InLine Cart
+  const cookies = new Cookies();
+  const SRCParam = cookies.get('SRC')  
+  window.TwoCoInlineCart.cart.setSource(SRCParam);    
+
+  //Set test orders in InLine Cart
+  window.TwoCoInlineCart.cart.setTest(true);
   
   window.TwoCoInlineCart.cart.checkout();
+  
+  
 }
+
+
 
 componentDidMount(){
   const cookies = new Cookies();
@@ -395,7 +407,7 @@ render(){
                 </div>
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
-                <Button                
+                <Button                                
                   onClick={this.onRegisterClick}
                   backgroundColor="orange"
                   color="#ffffff"
