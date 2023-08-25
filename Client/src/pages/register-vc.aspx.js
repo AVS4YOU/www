@@ -93,6 +93,14 @@ onRegisterClick() {
   window.TwoCoInlineCart.products.add({
     code: "604132"
   });
+
+  //Set sale source in the InLine Cart
+  const cookies = new Cookies();
+  const SRCParam = cookies.get('SRC')  
+  window.TwoCoInlineCart.cart.setSource(SRCParam);    
+
+  //Set test orders in InLine Cart
+  window.TwoCoInlineCart.cart.setTest(true);
   
   window.TwoCoInlineCart.cart.checkout();
 }
