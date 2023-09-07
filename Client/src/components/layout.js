@@ -14,13 +14,14 @@ import "../styles/common.less"
 import Footer from "./footer";
 import {PageContext} from '../context/page-context';
 import {Helmet} from "react-helmet";
-import {withPrefix} from "gatsby";
+import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 
 import PlAVSLeft from "../images/pl/left-side-bg.svg";
 import PlAVSRight from "../images/pl/right-side-bg.svg";
 import whiteHeart from "../images/pl/white-heart.svg";
+import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
   position: relative;
@@ -148,6 +149,84 @@ const BannerWrapper = styled.div`
   justify-content: center;
 `
 
+const BannerWrapperContent = styled.div`
+  padding: 13px 20px 24px 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 387px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+`
+
+const BannerWrapperCloseButton = styled.button`
+  margin: 0 0 7px auto;
+  padding: 0;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`
+
+const BannerWrapperToday = styled.p`
+  margin: 7px 0 2px 0;
+  height: 38px;
+  color: #F07D1A;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+`
+
+const BannerWrapperLinkWrapper = styled.span`
+  display: flex;
+  justify-content: center;
+
+  a {
+    background: #F07D1A;
+    width: 176px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 7.5px 0;
+  }
+`
+
+const BannerWrapperBox = styled.div`
+  height: 134px;
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  color: #232730;
+  margin-bottom: 12px;
+`
+
+const BannerWrapperSale = styled.h4`
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+`
+
+const BannerWrapperSaleDesc = styled.p`
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+`
+
 const languageCodes = [
     "en-US",
     "de-DE",
@@ -171,7 +250,6 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
-            isOpen: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -179,6 +257,7 @@ class Layout extends React.PureComponent {
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onBeforeunload = this.onBeforeunload.bind(this)
+        this.onClosePopup = this.onClosePopup.bind(this)
     }
 
     componentDidMount() {
@@ -239,7 +318,7 @@ class Layout extends React.PureComponent {
         event.preventDefault()
         event.returnValue = ''
         this.setState({
-            isOpen: true
+            showBanner: true
         })
     }
 
@@ -340,9 +419,23 @@ class Layout extends React.PureComponent {
                     <main>{this.props.children}</main>
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.isOpen &&
-                    <BannerWrapper>
-                        Xikmat
+                {this.state.showBanner &&
+                    <BannerWrapper onClick={this.onClosePopup}>
+                        <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
+                            <BannerWrapperCloseButton onClick={this.onClosePopup}>
+                                <XClose />
+                            </BannerWrapperCloseButton>
+                            <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
+                            <BannerWrapperBox>
+                                <BannerWrapperSale>70% Off</BannerWrapperSale>
+                                <BannerWrapperSaleDesc>
+                                    5 tools in 1 package + Unlimited access
+                                </BannerWrapperSaleDesc>
+                            </BannerWrapperBox>
+                            <BannerWrapperLinkWrapper>
+                                <Link to="register.aspx">Get It Now</Link>
+                            </BannerWrapperLinkWrapper>
+                        </BannerWrapperContent>
                     </BannerWrapper>
                 }
                 {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
