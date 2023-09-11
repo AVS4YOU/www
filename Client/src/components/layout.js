@@ -443,13 +443,13 @@ class Layout extends React.PureComponent {
                                 </BannerWrapperCloseButton>
                                 <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
                                 <BannerWrapperBox>
-                                    <BannerWrapperSale>70% Off</BannerWrapperSale>
+                                    <BannerWrapperSale>{this.props.t("70% OFF")}</BannerWrapperSale>
                                     <BannerWrapperSaleDesc>
-                                        5 tools in 1 package + Unlimited access
+                                        {this.props.t("5 tools in 1 package")}
                                     </BannerWrapperSaleDesc>
                                 </BannerWrapperBox>
                                 <BannerWrapperLinkWrapper>
-                                    <Link to="/register.aspx">Get It Now</Link>
+                                    <Link to="/register.aspx">{this.props.t("Get It Now")}</Link>
                                 </BannerWrapperLinkWrapper>
                             </BannerPaddingBox>
                             <BannerImg src={banner}/>
