@@ -21,6 +21,7 @@ import CookieMessage from "../components/cookie-message";
 import PlAVSLeft from "../images/pl/left-side-bg.svg";
 import PlAVSRight from "../images/pl/right-side-bg.svg";
 import whiteHeart from "../images/pl/white-heart.svg";
+import banner from '../images/banner.jpg'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
@@ -149,14 +150,20 @@ const BannerWrapper = styled.div`
   justify-content: center;
 `
 
-const BannerWrapperContent = styled.div`
-  padding: 13px 20px 24px 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
-
+const BannerPaddingBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 13px 20px 24px 20px;
+`
+
+const BannerWrapperContent = styled.div`
+  background: #FFF;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+
+
   max-width: 387px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -429,19 +436,22 @@ class Layout extends React.PureComponent {
                 {this.state.showBanner &&
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
-                            <BannerWrapperCloseButton onClick={this.onClosePopup}>
-                                <XClose/>
-                            </BannerWrapperCloseButton>
-                            <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
-                            <BannerWrapperBox>
-                                <BannerWrapperSale>70% Off</BannerWrapperSale>
-                                <BannerWrapperSaleDesc>
-                                    5 tools in 1 package + Unlimited access
-                                </BannerWrapperSaleDesc>
-                            </BannerWrapperBox>
-                            <BannerWrapperLinkWrapper>
-                                <Link to="register.aspx">Get It Now</Link>
-                            </BannerWrapperLinkWrapper>
+                            <BannerPaddingBox>
+                                <BannerWrapperCloseButton onClick={this.onClosePopup}>
+                                    <XClose/>
+                                </BannerWrapperCloseButton>
+                                <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
+                                <BannerWrapperBox>
+                                    <BannerWrapperSale>70% Off</BannerWrapperSale>
+                                    <BannerWrapperSaleDesc>
+                                        5 tools in 1 package + Unlimited access
+                                    </BannerWrapperSaleDesc>
+                                </BannerWrapperBox>
+                                <BannerWrapperLinkWrapper>
+                                    <Link to="/register.aspx">Get It Now</Link>
+                                </BannerWrapperLinkWrapper>
+                            </BannerPaddingBox>
+                            <img src={banner}/>
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }
