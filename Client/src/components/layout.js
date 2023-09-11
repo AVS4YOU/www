@@ -21,7 +21,7 @@ import CookieMessage from "../components/cookie-message";
 import PlAVSLeft from "../images/pl/left-side-bg.svg";
 import PlAVSRight from "../images/pl/right-side-bg.svg";
 import whiteHeart from "../images/pl/white-heart.svg";
-import banner from '../images/banner.jpg'
+import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
@@ -32,16 +32,13 @@ const StyledPL = styled.div`
     display: none;
     width: 100%;
     height: 62px;
-    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%);
-    background-repeat: no-repeat;
-    background-position: 50%;
+    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%) no-repeat 50%;
 
     a {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 100%;
       z-index: 9;
       text-decoration: none;
       height: 62px;
@@ -232,6 +229,10 @@ const BannerWrapperSaleDesc = styled.p`
   font-weight: 600;
   line-height: normal;
   text-align: center;
+`
+
+const BannerImg = styled.img`
+    margin-bottom: -3px;
 `
 
 const languageCodes = [
@@ -451,7 +452,7 @@ class Layout extends React.PureComponent {
                                     <Link to="/register.aspx">Get It Now</Link>
                                 </BannerWrapperLinkWrapper>
                             </BannerPaddingBox>
-                            <img src={banner}/>
+                            <BannerImg src={banner}/>
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }

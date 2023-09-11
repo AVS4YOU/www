@@ -4,8 +4,7 @@ import Text from "../text";
 import backgroundGradient from '../../images/video-editing/background-gradient.png'
 import heroPic from '../../images/video-editing/main-img.png'
 import shadowGradient from '../../images/video-editing/shadow-gradient.png'
-import {Capterra, Checked, FiveStars, Star} from '../../images/video-editing/icons'
-import {Link} from "gatsby";
+import {Checked } from '../../images/video-editing/icons'
 
 const data = [
     'Record video and capture screen',

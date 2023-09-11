@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Text from "../text";
 import {Illustration1, Illustration2, Illustration3, Illustration4} from "../../images/video-editing/illustrations";
 
-const Box = styled.div``
-
 const FeaturesSectionStyled = styled.section`
   background: #F9F9F9;
 

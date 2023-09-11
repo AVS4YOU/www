@@ -1,7 +1,5 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import Layout from "../components/layout";
 import "../styles/affiliates.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";

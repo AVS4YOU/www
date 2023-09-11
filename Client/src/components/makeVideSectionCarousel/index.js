@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Carousel from 'react-slick'
 import styled from "styled-components";
-import {ChevronLeftDisabled, ChevronRight} from "../../images/video-editing/icons";
+import {ChevronRight} from "../../images/video-editing/icons";
 
 import Transitions from '../../images/video-editing/transitions.png'
 import Transformation from '../../images/video-editing/transformation.png'
@@ -220,7 +220,7 @@ const MakeVideSectionCarouselBox = styled.div`
   position: absolute;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.56);
-  box-shadow: 0px 0px 8px 0px #FFF inset, 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 8px 0 #FFF inset, 0 8px 24px 0 rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(4px);
   padding: 30px 32px 15px 33px;
   color: #000;
@@ -342,7 +342,7 @@ const CarouselIndex = styled.div`
   @media screen and (max-width: 1200px) {
     right: auto;
     left: calc(50% - 40px);
-    bottom: 0px;
+    bottom: 0;
   }
 `
 

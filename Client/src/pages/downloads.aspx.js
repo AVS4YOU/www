@@ -12,16 +12,6 @@ import DownloadScrollButton from "../components/download-scroll-button";
 import {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 
-const langBanner = ['de','en','es','fr','it','jp']
-
-const isSomeLang = (curLang) => {
-    let isSomeLang = false;
-    for(let i = 0; i<langBanner.length; i++) {
-        if(langBanner[i] === curLang) isSomeLang = true;
-    }
-
-    return isSomeLang;
-}
 
 class Download extends React.PureComponent {
   constructor(props) {
