@@ -153,7 +153,7 @@ const BannerWrapperContent = styled.div`
   padding: 13px 20px 24px 20px;
   background: #FFF;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,22 +256,23 @@ class Layout extends React.PureComponent {
 
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        this.onBeforeunload = this.onBeforeunload.bind(this)
+        this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
+        this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
     componentDidMount() {
         this.updateWindowDimensions();
-        const pages = sessionStorage.getItem('pages')
+        const pages = JSON.parse(sessionStorage.getItem('pages'))
         if (window.location.pathname === '/register.aspx') {
-            sessionStorage.setItem('pages', 'visited')
+            this.setItemToSessionStorage({label: 'pages', value: 'visited'})
         } else if (pages && pages !== 'visited') {
-            const paresPages = [...JSON.parse(pages), window.location.pathname]
+            const paresPages = [...pages, window.location.pathname]
             const newPages = [...new Set(paresPages)]
-            sessionStorage.setItem('pages', JSON.stringify(newPages))
+            this.setItemToSessionStorage({label: 'pages', value: newPages})
         } else if (pages !== 'visited') {
             const newPages = [window.location.pathname]
-            sessionStorage.setItem('pages', JSON.stringify(newPages))
+            this.setItemToSessionStorage({label: 'pages', value: newPages})
         }
         if (this.props.getDevice) {
 
@@ -284,9 +285,9 @@ class Layout extends React.PureComponent {
             }
         }
 
-        window.addEventListener('resize', this.updateWindowDimensions);
+        document.body.addEventListener('resize', this.updateWindowDimensions);
 
-        window.addEventListener('beforeunload', this.onBeforeunload)
+        document.body.addEventListener('mouseleave', this.onMouseLeave)
 
         const queryString = require('query-string');
         const parsed = queryString.parse(document.location.search);
@@ -300,7 +301,7 @@ class Layout extends React.PureComponent {
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateWindowDimensions);
-        window.removeEventListener('beforeunload', this.onBeforeunload)
+        window.removeEventListener('mouseleave', this.onMouseLeave)
     }
 
     updateWindowDimensions() {
@@ -310,10 +311,11 @@ class Layout extends React.PureComponent {
         })
     }
 
-    onBeforeunload(event) {
-        const pages = sessionStorage.getItem('pages')
+    onMouseLeave(event) {
+        const pages = JSON.parse(sessionStorage.getItem('pages'))
 
-        if (pages === 'visited' || pages === null || (Array.isArray(JSON.parse(pages)) && pages.length < 3)) return
+        if (pages === null || pages === 'visited') return
+        if (Array.isArray(pages) && pages.length < 3) return;
 
         event.preventDefault()
         event.returnValue = ''
@@ -322,11 +324,16 @@ class Layout extends React.PureComponent {
         })
     }
 
+    setItemToSessionStorage = ({label, value}) => {
+        sessionStorage.setItem(String(label), JSON.stringify(value))
+    }
+
     onClosePopup = (e) => {
         e.stopPropagation();
         this.setState({
             showBanner: false,
         })
+        this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
     componentDidUpdate() {
@@ -423,7 +430,7 @@ class Layout extends React.PureComponent {
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
                             <BannerWrapperCloseButton onClick={this.onClosePopup}>
-                                <XClose />
+                                <XClose/>
                             </BannerWrapperCloseButton>
                             <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
                             <BannerWrapperBox>
