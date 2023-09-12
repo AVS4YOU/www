@@ -17,6 +17,7 @@ import {Helmet} from "react-helmet";
 import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
+import CustomLink from '../components/link';
 
 import PlAVSLeft from "../images/pl/left-side-bg.svg";
 import PlAVSRight from "../images/pl/right-side-bg.svg";
@@ -185,6 +186,7 @@ const BannerWrapperToday = styled.p`
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 `
 
 const BannerWrapperLinkWrapper = styled.span`
@@ -441,15 +443,15 @@ class Layout extends React.PureComponent {
                                 <BannerWrapperCloseButton onClick={this.onClosePopup}>
                                     <XClose/>
                                 </BannerWrapperCloseButton>
-                                <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
+                                <BannerWrapperToday>{this.props.t('Only today')}</BannerWrapperToday>
                                 <BannerWrapperBox>
-                                    <BannerWrapperSale>{this.props.t("70% OFF")}</BannerWrapperSale>
+                                    <BannerWrapperSale>{this.props.t("70% OFF!")}</BannerWrapperSale>
                                     <BannerWrapperSaleDesc>
                                         {this.props.t("5 tools in 1 package")}
                                     </BannerWrapperSaleDesc>
                                 </BannerWrapperBox>
                                 <BannerWrapperLinkWrapper>
-                                    <Link to="/register.aspx">{this.props.t("Get It Now")}</Link>
+                                    <CustomLink  to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
                                 </BannerWrapperLinkWrapper>
                             </BannerPaddingBox>
                             <BannerImg src={banner}/>
