@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components';
-import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types";
-import isDesktop from "../layout"
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const StyledCarouselWrapper = styled.div`
 .slick-slider .slick-track,
     .slick-slider .slick-list {
@@ -38,7 +35,7 @@ const StyledCarouselWrapper = styled.div`
 
   @media (max-width: 750px) {
     .slick-list{
-      padding-bottom: 10;
+      padding-bottom: 10px;
     }
   }
 

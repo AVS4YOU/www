@@ -1,12 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
-
-import Egg  from '../../images/easter-event/egg.png';
-import Egg1 from '../../images/easter-event/egg1.png';
-import Egg2 from '../../images/easter-event/egg2.png';
-import Egg3 from '../../images/easter-event/egg3.png';
-import Egg4 from '../../images/easter-event/egg4.png';
 
 
 

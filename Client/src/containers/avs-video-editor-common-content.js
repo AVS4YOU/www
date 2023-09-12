@@ -1,9 +1,7 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
-import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';
@@ -16,7 +14,6 @@ import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
-import styled from 'styled-components';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';

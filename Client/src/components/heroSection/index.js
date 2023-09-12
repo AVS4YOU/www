@@ -4,8 +4,7 @@ import Text from "../text";
 import backgroundGradient from '../../images/video-editing/background-gradient.png'
 import heroPic from '../../images/video-editing/main-img.png'
 import shadowGradient from '../../images/video-editing/shadow-gradient.png'
-import {Capterra, Checked, FiveStars, Star} from '../../images/video-editing/icons'
-import {Link} from "gatsby";
+import {Checked } from '../../images/video-editing/icons'
 
 const data = [
     'Record video and capture screen',
@@ -209,10 +208,10 @@ const HerSectionGradient = styled.span`
 `
 
 const HeroSectionButton = styled.a`
-  padding: 16px 32px;
+  padding: 24px;
   border-radius: 3px;
   background: #157BF2;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -221,6 +220,8 @@ const HeroSectionButton = styled.a`
   border: none;
   color: #fff;
   cursor: pointer;
+  width: 506px;
+  text-align: center;
   
   &:hover {
     text-decoration: none;
@@ -228,6 +229,18 @@ const HeroSectionButton = styled.a`
   
   &:active {
     opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 1050px) {
+    padding: 20px;
+    font-size: 20px;
+    max-width: 383px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 470px) {
+    padding: 14px 32px;
+    font-size: 16px;
   }
 `
 

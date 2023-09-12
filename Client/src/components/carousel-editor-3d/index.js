@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,36 +20,30 @@ import Imgbtn6 from "../../images/avs-audio-editor-3d/group_6.svg";
 import Imgbtn7 from "../../images/avs-audio-editor-3d/group_7.svg";
 import Imgbtn8 from "../../images/avs-audio-editor-3d/group_8.svg";
 
-const Carousel = (props) => {
+const ItemButton = [
+    { src: Imgbtn8, text: "Normalize" },
+    { src: Imgbtn1, text: "Amplify" },
+    { src: Imgbtn2, text: "Fade In/ Fade Out" },
+    { src: Imgbtn3, text: "Equalizer" },
+    { src: Imgbtn4, text: "Delay" },
+    { src: Imgbtn5, text: "Time Stretch/ Pitch Shift Effects" },
+    { src: Imgbtn6, text: "Remove noise" },
+    { src: Imgbtn7, text: "Special effects" }
+];
 
-    const [slideState, setSlideState] = useState({
-        activeSlide: 0,
-        activeSlide2: 0
-    });
+const Slide = [
+    { header: "Normalize", text: "Align the volume of an audio track in accordance with the selected level.", src: Img1 },
+    { header: "Amplify", text: "Increase or decrease the sound volume by adjusting its amplitude.", src: Img2 },
+    { header: "Fade In/Fade Out", text: "Use this effect to gradually increase and decrease the sound volume.", src: Img3 },
+    { header: "Equalizer", text: "Manipulate the frequency of your mix so that everything is balanced and clear.", src: Img4 },
+    { header: "Delay Effects", text: "Add an echo to your audio, create the pulsating sound or change the voice of an audio track to make it sound more natural.", src: Img5 },
+    { header: "Time Stretch/Pitch Shift Effects", text: "Increase or decrease the speed and the tone of your audio or play your audio backwards with Reverse effect.", src: Img6 },
+    { header: "Remove noise", text: "Remove irritating sounds like roaring, hissing, crackling, etc. from your audio tracks making the sound clearer.", src: Img7 },
+    { header: "Special effects", text: "Generate tones, silence, noise, instruments or rhythm track.", src: Img8 },
+];
 
 
-    const ItemButton = [
-        { src: Imgbtn8, text: "Normalize" },
-        { src: Imgbtn1, text: "Amplify" },
-        { src: Imgbtn2, text: "Fade In/ Fade Out" },
-        { src: Imgbtn3, text: "Equalizer" },
-        { src: Imgbtn4, text: "Delay" },
-        { src: Imgbtn5, text: "Time Stretch/ Pitch Shift Effects" },
-        { src: Imgbtn6, text: "Remove noise" },
-        { src: Imgbtn7, text: "Special effects" }
-    ];
-    
-    const Slide = [
-        { header: "Normalize", text: "Align the volume of an audio track in accordance with the selected level.", src: Img1 },
-        { header: "Amplify", text: "Increase or decrease the sound volume by adjusting its amplitude.", src: Img2 },
-        { header: "Fade In/Fade Out", text: "Use this effect to gradually increase and decrease the sound volume.", src: Img3 },
-        { header: "Equalizer", text: "Manipulate the frequency of your mix so that everything is balanced and clear.", src: Img4 },
-        { header: "Delay Effects", text: "Add an echo to your audio, create the pulsating sound or change the voice of an audio track to make it sound more natural.", src: Img5 },
-        { header: "Time Stretch/Pitch Shift Effects", text: "Increase or decrease the speed and the tone of your audio or play your audio backwards with Reverse effect.", src: Img6 },
-        { header: "Remove noise", text: "Remove irritating sounds like roaring, hissing, crackling, etc. from your audio tracks making the sound clearer.", src: Img7 },
-        { header: "Special effects", text: "Generate tones, silence, noise, instruments or rhythm track.", src: Img8 },
-    ];
-
+const Carousel = () => {
     const settings = {
         infinity: true,
         fade: true,

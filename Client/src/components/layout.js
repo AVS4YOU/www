@@ -17,10 +17,12 @@ import {Helmet} from "react-helmet";
 import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
+import CustomLink from '../components/link';
 
 import PlAVSLeft from "../images/pl/left-side-bg.svg";
 import PlAVSRight from "../images/pl/right-side-bg.svg";
 import whiteHeart from "../images/pl/white-heart.svg";
+import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
@@ -31,16 +33,13 @@ const StyledPL = styled.div`
     display: none;
     width: 100%;
     height: 62px;
-    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%);
-    background-repeat: no-repeat;
-    background-position: 50%;
+    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%) no-repeat 50%;
 
     a {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 100%;
       z-index: 9;
       text-decoration: none;
       height: 62px;
@@ -149,14 +148,20 @@ const BannerWrapper = styled.div`
   justify-content: center;
 `
 
-const BannerWrapperContent = styled.div`
-  padding: 13px 20px 24px 20px;
-  background: #FFF;
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
-  
+const BannerPaddingBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 13px 20px 24px 20px;
+`
+
+const BannerWrapperContent = styled.div`
+  background: #FFF;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+
+
   max-width: 387px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -181,6 +186,7 @@ const BannerWrapperToday = styled.p`
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 `
 
 const BannerWrapperLinkWrapper = styled.span`
@@ -227,6 +233,10 @@ const BannerWrapperSaleDesc = styled.p`
   text-align: center;
 `
 
+const BannerImg = styled.img`
+    margin-bottom: -3px;
+`
+
 const languageCodes = [
     "en-US",
     "de-DE",
@@ -256,22 +266,23 @@ class Layout extends React.PureComponent {
 
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        this.onBeforeunload = this.onBeforeunload.bind(this)
+        this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
+        this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
     componentDidMount() {
         this.updateWindowDimensions();
-        const pages = sessionStorage.getItem('pages')
+        const pages = JSON.parse(sessionStorage.getItem('pages'))
         if (window.location.pathname === '/register.aspx') {
-            sessionStorage.setItem('pages', 'visited')
+            this.setItemToSessionStorage({label: 'pages', value: 'visited'})
         } else if (pages && pages !== 'visited') {
-            const paresPages = [...JSON.parse(pages), window.location.pathname]
+            const paresPages = [...pages, window.location.pathname]
             const newPages = [...new Set(paresPages)]
-            sessionStorage.setItem('pages', JSON.stringify(newPages))
+            this.setItemToSessionStorage({label: 'pages', value: newPages})
         } else if (pages !== 'visited') {
             const newPages = [window.location.pathname]
-            sessionStorage.setItem('pages', JSON.stringify(newPages))
+            this.setItemToSessionStorage({label: 'pages', value: newPages})
         }
         if (this.props.getDevice) {
 
@@ -284,9 +295,9 @@ class Layout extends React.PureComponent {
             }
         }
 
-        window.addEventListener('resize', this.updateWindowDimensions);
+        document.body.addEventListener('resize', this.updateWindowDimensions);
 
-        window.addEventListener('beforeunload', this.onBeforeunload)
+        document.body.addEventListener('mouseleave', this.onMouseLeave)
 
         const queryString = require('query-string');
         const parsed = queryString.parse(document.location.search);
@@ -300,7 +311,7 @@ class Layout extends React.PureComponent {
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateWindowDimensions);
-        window.removeEventListener('beforeunload', this.onBeforeunload)
+        window.removeEventListener('mouseleave', this.onMouseLeave)
     }
 
     updateWindowDimensions() {
@@ -310,10 +321,11 @@ class Layout extends React.PureComponent {
         })
     }
 
-    onBeforeunload(event) {
-        const pages = sessionStorage.getItem('pages')
+    onMouseLeave(event) {
+        const pages = JSON.parse(sessionStorage.getItem('pages'))
 
-        if (pages === 'visited' || pages === null || (Array.isArray(JSON.parse(pages)) && pages.length < 3)) return
+        if (pages === null || pages === 'visited') return
+        if (Array.isArray(pages) && pages.length < 3) return;
 
         event.preventDefault()
         event.returnValue = ''
@@ -322,11 +334,16 @@ class Layout extends React.PureComponent {
         })
     }
 
+    setItemToSessionStorage = ({label, value}) => {
+        sessionStorage.setItem(String(label), JSON.stringify(value))
+    }
+
     onClosePopup = (e) => {
         e.stopPropagation();
         this.setState({
             showBanner: false,
         })
+        this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
     componentDidUpdate() {
@@ -422,19 +439,22 @@ class Layout extends React.PureComponent {
                 {this.state.showBanner &&
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
-                            <BannerWrapperCloseButton onClick={this.onClosePopup}>
-                                <XClose />
-                            </BannerWrapperCloseButton>
-                            <BannerWrapperToday>ONLY TODAY!</BannerWrapperToday>
-                            <BannerWrapperBox>
-                                <BannerWrapperSale>70% Off</BannerWrapperSale>
-                                <BannerWrapperSaleDesc>
-                                    5 tools in 1 package + Unlimited access
-                                </BannerWrapperSaleDesc>
-                            </BannerWrapperBox>
-                            <BannerWrapperLinkWrapper>
-                                <Link to="register.aspx">Get It Now</Link>
-                            </BannerWrapperLinkWrapper>
+                            <BannerPaddingBox>
+                                <BannerWrapperCloseButton onClick={this.onClosePopup}>
+                                    <XClose/>
+                                </BannerWrapperCloseButton>
+                                <BannerWrapperToday>{this.props.t('Only today')}</BannerWrapperToday>
+                                <BannerWrapperBox>
+                                    <BannerWrapperSale>{this.props.t("70% OFF!")}</BannerWrapperSale>
+                                    <BannerWrapperSaleDesc>
+                                        {this.props.t("5 tools in 1 package")}
+                                    </BannerWrapperSaleDesc>
+                                </BannerWrapperBox>
+                                <BannerWrapperLinkWrapper>
+                                    <CustomLink  to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
+                                </BannerWrapperLinkWrapper>
+                            </BannerPaddingBox>
+                            <BannerImg src={banner}/>
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }

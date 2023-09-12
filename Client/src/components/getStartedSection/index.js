@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Text from "../text";
-import { Link } from "gatsby";
 
 const GetStartedSectionStyled = styled.div`
   padding: 112px 0;
