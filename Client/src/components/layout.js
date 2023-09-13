@@ -157,7 +157,7 @@ const BannerPaddingBox = styled.div`
 
 const BannerWrapperContent = styled.div`
   background: #FFF;
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 
@@ -165,6 +165,10 @@ const BannerWrapperContent = styled.div`
   max-width: 387px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+
+  @media screen and (max-width: 450px) {
+    width: calc(100% - 40px);
+  }
 `
 
 const BannerWrapperCloseButton = styled.button`
@@ -206,12 +210,16 @@ const BannerWrapperLinkWrapper = styled.span`
 `
 
 const BannerWrapperBox = styled.div`
-  height: 134px;
+  min-height: 134px;
   max-width: 256px;
   display: flex;
   flex-direction: column;
   color: #232730;
   margin-bottom: 12px;
+  
+  @media screen and (max-width: 600px) {
+    min-height: 90px;
+  }
 `
 
 const BannerWrapperSale = styled.h4`
@@ -222,6 +230,10 @@ const BannerWrapperSale = styled.h4`
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+  }
 `
 
 const BannerWrapperSaleDesc = styled.p`
@@ -324,7 +336,7 @@ class Layout extends React.PureComponent {
     onMouseLeave(event) {
         const pages = JSON.parse(sessionStorage.getItem('pages'))
 
-        if (pages === null || pages === 'visited') return
+        if (pages === null || pages === 'visited' || this.state.isMobile) return
         if (Array.isArray(pages) && pages.length < 3) return;
 
         event.preventDefault()
