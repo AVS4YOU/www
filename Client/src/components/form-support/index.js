@@ -225,7 +225,6 @@ class FormSupport extends React.Component {
             showAddFile: true,
 
             formSended: false,
-            recaptchaValue: "",
             errorNotice: true,
         };
 

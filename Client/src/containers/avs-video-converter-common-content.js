@@ -1,10 +1,8 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
 import FreeFlag from '../components/free-flag';
-import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
 import ReviewScreen from '../components/review-screen';

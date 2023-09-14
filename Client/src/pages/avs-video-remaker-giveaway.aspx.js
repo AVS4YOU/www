@@ -5,7 +5,6 @@ import Layout from "../components/layout";
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import styled from 'styled-components';
 import { Link as GatsbyLink } from 'gatsby';
-import Button from '../components/button';
 import Form from '../components/form-giveaway';
 import ImageGQL from '../components/image-gql';
 

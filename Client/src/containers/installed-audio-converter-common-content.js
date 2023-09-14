@@ -3,7 +3,6 @@ import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
 import "../styles/installed-audio-converter.less";
 import BenefitsCarousel from '../components/benefits-carousel';
-import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
 import styled from 'styled-components';
 

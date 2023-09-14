@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Layout from "../components/layout";
 import withI18next from "../components/withI18next";
 

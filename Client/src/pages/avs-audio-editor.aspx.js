@@ -33,16 +33,6 @@ const isEngLang = (currentLang) => {
     return isEngLang;
 }
 
-const langBanner = ['de','en','es','fr','it','jp']
-
-const isSomeLang = (curLang) => {
-    let isSomeLang = false;
-    for(let i = 0; i<langBanner.length; i++) {
-        if(langBanner[i] === curLang) isSomeLang = true;
-    }
-
-    return isSomeLang;
-}
 
 class avsAudioEditor extends React.PureComponent {
 
@@ -296,5 +286,6 @@ render(){
       </Layout>
     );
   }
-};
+}
+
 export default withI18next({ ns: "common" })(avsAudioEditor);
