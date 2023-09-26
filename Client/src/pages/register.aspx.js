@@ -71,37 +71,6 @@ constructor(props){
   };
 }
 
- onRegisterClick() {
-  window.TwoCoInlineCart.config.app.merchant = 'ONLMETEC';
-  window.TwoCoInlineCart.config.app.iframeLoad = 'immediate';
-  window.TwoCoInlineCart.config.cart.host = 'https:\/\/secure.2checkout.com';
-  window.TwoCoInlineCart.config.cart.customization = 'ONLMETEC-inline-one-step';
-  window.TwoCoInlineCart.setup.setIframeLoad('immediate'); 
-  window.TwoCoInlineCart.register();
-  
-  window.TwoCoInlineCart.billing.setData({
-    name: '', 
-    email: '', 
-    country: '',
-  });
-
-  window.TwoCoInlineCart.products.removeAll(); 
-
-  window.TwoCoInlineCart.products.add({
-    code: "604132"
-  });
-
-  //Set sale source in the InLine Cart
-  const cookies = new Cookies();
-  const SRCParam = cookies.get('SRC')  
-  window.TwoCoInlineCart.cart.setSource(SRCParam);
-  
-  window.TwoCoInlineCart.cart.checkout();
-  
-  
-}
-
-
 
 componentDidMount(){
   const cookies = new Cookies();
@@ -120,7 +89,6 @@ componentDidMount(){
    documentLoaded: true
  })
 }
-
 
 
 render(){
@@ -405,7 +373,7 @@ render(){
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button                                
-                  onClick={this.onRegisterClick}
+                  href={this.state.hrefUnlim}
                   backgroundColor="orange"
                   color="#ffffff"
                   className="buy-block-button"
