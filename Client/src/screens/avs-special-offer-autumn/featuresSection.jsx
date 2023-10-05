@@ -40,15 +40,18 @@ const FeaturesSectionStyled = styled.section`
 `
 
 const FeaturesSectionContainer = styled.div`
-  padding: 0 20px;
+  padding: 0 20px 116px 20px;
   max-width: 1600px;
   margin: 0 auto;
+
+  @media screen and (max-width: 800px){
+    padding-bottom: 64px;
+  }
 `
 
 const FeaturesSectionContent = styled.div`
   position: relative;
   padding-bottom: 107px;
-  margin-bottom: 116px;
   
   @media screen and (max-width: 800px){
     padding-bottom: 29px;

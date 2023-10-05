@@ -120,6 +120,17 @@ const HeroSectionProducts = styled.img`
   height: 714px;
   top: 26px;
   pointer-events: none;
+  
+  @media screen and (max-width: 1880px) {
+    width: calc(100% - 900px);
+    height: auto;
+    left: 30px;
+    top: calc(50% - 100px);
+  }
+  //
+  //@media screen and (max-width: 1650px) {
+  //  width: 600px;
+  //}
 `
 
 export const HeroSection = () => {
