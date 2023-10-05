@@ -43,7 +43,7 @@ export const AffiliatesNew = (props) => (
                   </Text>
                   <Text as="h1" className="header__heading">{props.t("Affiliate Program")}</Text>
                   <Text as="h3" className="header__subtitle">{props.t("Grow your own business by establishing an additional source of revenue with top AVS4YOU tools")}</Text>
-                  <Button className="header__button" textClassName="header__button-text" href={props.t("avangatenetwork-affiliates-sign-up")}>{props.t("Sign up now")}</Button>
+                  <Button id="sign-up-now_affiliates" className="header__button" textClassName="header__button-text" href={props.t("avangatenetwork-affiliates-sign-up")}>{props.t("Sign up now")}</Button>
                 </div>
               </div>
             </div>
@@ -172,20 +172,20 @@ export const AffiliatesNew = (props) => (
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={props.t("Is there a way to simplify my generation of custom affiliate links from AVS4YOU®?")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{props.t("Yes, please use our")} <a target="_blank" rel="noreferrer noopener" href={props.t("affiliate_link_generator")} toLink="=">{props.t("Affiliate Links Generator")}</a>{props.t("tool")}. {props.t("It will automatically make correct links")}
+                    <Text className="hiddenText">{props.t("Yes, please use our")} <a id="affiliate-links-generator_affiliates" target="_blank" rel="noreferrer noopener" href={props.t("affiliate_link_generator")} toLink="=">{props.t("Affiliate Links Generator")}</a>{props.t("tool")}. {props.t("It will automatically make correct links")}
                     </Text>
                 </div>
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={props.t("How can I make sure your system really works and where can I get statistics for clicks to you from my links?")}>
                 <div className="collapseContent">
                     <Text className="hiddenText">{props.t("Once you're registered with us, you get login and password to access our")} 
-                    <a href="https://stat.avs4you.com/" target="_blank" rel="noreferrer noopener">{props.t("control panel")}</a>: {props.t("There you'll be able to see statistics number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information")}
+                    <a id="control-panel_affiliates" href="https://stat.avs4you.com/" target="_blank" rel="noreferrer noopener">{props.t("control panel")}</a>: {props.t("There you'll be able to see statistics number of clicks to our download, registration and other AVS4YOU® website pages You can compare your own statistics with the statistics from our control panel to see that we provide clear correct information")}
                     </Text>
                 </div>
               </PanelCollapse>
               <PanelCollapse className="panelCollapse" panelName={props.t("May I use AVS4YOU trademarks in PPC campaigns")}>
                 <div className="collapseContent">
-                    <Text className="hiddenText">{props.t("Affiliates may use AVS4YOU brand keywords in their PPC campaigns")} <a href="mailto:sales@avs4you.com" target="_blank" rel="noreferrer noopener">sales@avs4you.com</a>{props.t("jpAffiliate")}
+                    <Text className="hiddenText">{props.t("Affiliates may use AVS4YOU brand keywords in their PPC campaigns")} <a id="email-sales_affiliates" href="mailto:sales@avs4you.com" target="_blank" rel="noreferrer noopener">sales@avs4you.com</a>{props.t("jpAffiliate")}
                     </Text>
                 </div>
               </PanelCollapse>

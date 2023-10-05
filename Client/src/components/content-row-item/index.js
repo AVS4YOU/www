@@ -80,7 +80,7 @@ const RowContent = styled.div`
         position: relative;
         display: table-cell;
         width: 60%;
-        vertical-align: middle
+        vertical-align: middle;
 
         .rowImage{
             margin-left: auto;
@@ -353,9 +353,7 @@ const HeaderMobile = (props) =>
 
 const TextContent = (props, touchDevice) =>
 {
-
     const { t } = useTranslation('common');
-
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
@@ -378,12 +376,12 @@ const TextContent = (props, touchDevice) =>
                                 <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
                                 : <Button className="secondaryButton mobileSended" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
                             */}
-                        </div>  
+                        </div>
                     :
                         <div className="buttonsWrapper">
-                            {props.blueButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
-                            {props.translateButtonLink && <Button className="mainButton" fontSize={18} padding="9px 35px" href={props.translateButtonLink}>Download now</Button>}
-                            {props.smallButtonLink && <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
+                            {props.blueButtonLink && <Button id={props.blueButtonLinkId} className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
+                            {props.translateButtonLink && <Button id={props.translateButtonLinkId} className="mainButton" fontSize={18} padding="9px 35px" href={props.translateButtonLink}>Download now</Button>}
+                            {props.smallButtonLink && <Button id={props.smallButtonLinkId} className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
                         </div>  
                 }
   

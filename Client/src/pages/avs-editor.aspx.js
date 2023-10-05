@@ -98,7 +98,8 @@ render(){
               <div id="headerContentWrapper" className="headerContentWrapper" >
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
-                <HeaderDownloadButtons 
+                <HeaderDownloadButtons
+                  id="download-now_avs-editor"
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                   secondaryText="Windows 11/10/8/7/Vista/XP"

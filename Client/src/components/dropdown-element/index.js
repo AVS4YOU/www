@@ -34,11 +34,11 @@ const StyledDropdownElement = styled.div`
  
 const DropdownElement = props => {
     return(
-        <StyledDropdownElement {...props}> 
+        <StyledDropdownElement {...props} id={undefined}>
             {props.path 
             
             ?
-                <Link to={props.path} langChange={props.langChange}>
+                <Link to={props.path} langChange={props.langChange} id={props.id}>
                     {props.headerText !== undefined ? <Text className={props.headerTextClass} as="span" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                     {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
                 </Link>
@@ -47,7 +47,7 @@ const DropdownElement = props => {
 
             props.href &&
 
-                <a href={props.href}>
+                <a href={props.href} id={props.id}>
                     {props.headerText !== undefined ? <Text className={props.headerTextClass} as="span" lineHeight="1.5" fontWeight={600} fontSize={16}>{props.headerText}</Text> : ""}
                     {props.descriptionText !== undefined && !props.isMobile ? <Text fontSize={14} color="#666">{props.descriptionText}</Text> : ""}
                 </a>
