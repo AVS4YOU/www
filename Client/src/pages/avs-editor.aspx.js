@@ -99,7 +99,7 @@ render(){
                 <Text color="#ffffff" align="center" className="headerText" lineHeight="65px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
                 <HeaderDownloadButtons
-                  id="download-now_avs-editor"
+                  id="download-now1_avs-editor"
                   t={this.props.t}
                   mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                   secondaryText="Windows 11/10/8/7/Vista/XP"
@@ -142,7 +142,7 @@ render(){
                 <Text className="ListItem">{this.props.t("Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc")}</Text>
                 <Text className="ListItem">{this.props.t("Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU")}</Text>
                 <Text className="ListItem">{this.props.t("Use new automatic presets for powerful computers")}</Text>
-                <a target="_blank" rel="noreferrer noopener" href={this.props.t("avs-video-editor-onlinehelp-avs4you")}>
+                <a id="formats_avs-editor" target="_blank" rel="noreferrer noopener" href={this.props.t("avs-video-editor-onlinehelp-avs4you")}>
                   <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{this.props.t("See a full list of all supported formats")}</Text>
                 </a>
               </ContentRowItem>
@@ -194,7 +194,7 @@ render(){
                 <Text className="ListItem">{this.props.t("Publish your creative work in social networks")}</Text>
               </ContentRowItem>
             </PageContentWrapper>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+            <DownloadScrollButton id="download-now2_avs-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             
             <div className="block-awards">
               <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{this.props.t("Reviewed and highly rated by")}</Text>
