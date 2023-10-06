@@ -24,7 +24,7 @@ const list = [
         icon: icon3,
     },
     {
-        title: '15+ years on the market',
+        title: '20+ years on the market',
         icon: icon4,
     },
     {
