@@ -23,7 +23,7 @@ const list = [
     {
         img: product1,
         title: 'AVS Video Editor',
-        desc: 'Powerful video editing program for Windows with basic and pro editing tools.',
+        desc: 'Powerful video editing program for Windows with basic and pro editing tools',
         list: [
             'Make stunning videos with music and effects',
             'Record video or capture screen',
@@ -36,7 +36,7 @@ const list = [
     {
         img: product2,
         title: 'AVS Audio Editor',
-        desc: 'Professional level audio editing and recording software.',
+        desc: 'Professional level audio editing and recording software',
         list: [
             'Record audio from microphone, Line In, Vinyl records',
             'Create an amazing audio mix',
@@ -49,7 +49,7 @@ const list = [
     {
         img: product3,
         title: 'AVS Video Converter',
-        desc: 'All-in-one video converter with basic editing features.',
+        desc: 'All-in-one video converter with basic editing features',
         list: [
             'Convert and compress all key video formats',
             'Use ready conversion presets for modern gadgets',
@@ -62,12 +62,12 @@ const list = [
     {
         img: product4,
         title: 'AVS Audio Converter',
-        desc: 'Feature-rich audio conversion program for Windows.',
+        desc: 'Feature-rich audio conversion program for Windows',
         list: [
-            'Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc.',
-            'Grab audio from CD disks to store soundtracks on your pc',
+            'Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc',
+            'Grab audio from CD disks to store soundtracks on your PC',
             'Edit audio tags to update metadata and enable tracks grouping',
-            'Create your own audiobooks.',
+            'Create your own audiobooks',
             'Make customized ringtones for iPhone'
         ],
         href: "https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
@@ -75,12 +75,12 @@ const list = [
     {
         img: product5,
         title: 'AVS Video ReMaker',
-        desc: 'A fast video editor to make edits without changing the original video file format.',
+        desc: 'A fast video editor to make edits without changing the original video file format',
         list: [
-            'Cut and delete unnecessary parts.',
-            'Change scene sequence in all popular video formats.',
+            'Cut and delete unnecessary parts',
+            'Change scene sequence in all popular video formats',
             'Transfer video from camcorders and video cameras to hard drive',
-            'Create home video DVDs or Blu-ray discs.',
+            'Create home video DVDs or Blu-ray discs',
         ],
         href: "https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
     },
@@ -351,30 +351,13 @@ const ProductsHeadingButton1 = styled.a`
   line-height: 38px; /* 190% */
   text-transform: uppercase;
   text-decoration: none;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   
   &:hover {
     text-decoration: none;
   }
 `
 
-const ProductsHeadingButton2 = styled.a`
-  text-decoration: none;
-  border-radius: 5px;
-  background: #A8240F;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  padding: 10px 72px;
-  color: #FFF;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 190% */
-  text-transform: uppercase;
-
-  &:hover {
-    text-decoration: none;
-  }
-`
 
 const ProductsImg = styled.img`
     
@@ -514,7 +497,7 @@ export const ProductsSection = () => {
                     </ProductsHeadingAbout>
                     <ProductsHeadingButtonsWrapper>
                         <ProductsHeadingButton1 href="https://downloads.avs4you.com/distributives/AVSInstallPack.exe">Download now</ProductsHeadingButton1>
-                        <Link className="buy-now" id="buy-now2_special-offer-autumn" to="/register.apsx">
+                        <Link className="buy-now" id="buy-now2_special-offer-autumn" to="/register.aspx">
                             Buy NOW
                         </Link>
                     </ProductsHeadingButtonsWrapper>
