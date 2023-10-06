@@ -505,8 +505,8 @@ export const ProductsSection = () => {
                             Get 70% OFF on AVS4YOU Full Pack
                         </ProductsHeadingDesc1>
                         <ProductsHeadingDesc2>$</ProductsHeadingDesc2>
-                        <ProductsHeadingDesc3>59</ProductsHeadingDesc3>
-                        <ProductsHeadingDesc4>$199</ProductsHeadingDesc4>
+                        <ProductsHeadingDesc3>279</ProductsHeadingDesc3>
+                        <ProductsHeadingDesc4>$79</ProductsHeadingDesc4>
                     </ProductsHeadingDescWrapper>
                     <ProductsHeadingAbout>
                         A complete set of programs for working with video files, slideshows and soundtracks. Manage your
