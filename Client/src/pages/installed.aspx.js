@@ -759,12 +759,12 @@ render(){
          <div id="centerall">   
         <div className="landing-first-block">
             <div className="landing-first-block-narrow">
-                <Link className="lfb-logo" to="/"></Link>
+                <Link id="main_installed" className="lfb-logo" to="/"></Link>
                 <div className="lfb-language">
                     <ul className="top-menu">
-                        <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                        <li><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
-                        <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
+                        <li><Link id="buy-now_installed" to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                        <li><a id="support_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
+                        <li><Link id="privacy_installed" to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
                 <div className="lfb-header-title">
@@ -831,13 +831,13 @@ render(){
         <div className="landing-footer">
             <div className="landing-footer-narrow">
                 <ul>
-                    <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
-                    <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
-                    <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
-                    <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>
-                    <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
-                    <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
+                    <li><Link id="buy-now2_installed" to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><a id="support2_installed" target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
+                    <li><Link id="affiliates_installed" to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
+                    <li><Link id="education_installed" to="/education.aspx">{this.props.t("Education")}</Link></li>
+                    <li><Link id="partners_installed" to="/partners.aspx">{this.props.t("Partners")}</Link></li>
+                    <li><Link id="eula_installed" to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
+                    <li><Link id="privacy_installed" to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
                 <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Ascensio System SIA")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
             </div>

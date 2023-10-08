@@ -201,7 +201,7 @@ class avsVideoRemakerGiveaway extends React.PureComponent {
         <StyledVideo>
           <ProductPagesWrapper>
             <div className="headerBackground">
-            <GatsbyLink className="avs-logo" to="/"></GatsbyLink>
+            <GatsbyLink id="home_avs-video-remaker-giveaway" className="avs-logo" to="/"></GatsbyLink>
             <div className="headerMobile">
                     <Text className="headerText" color="#181C47" fontSize={54} fontWeight={900}>AVS Video ReMaker</Text>
                     <Text className="headerTextLine" color="#181C47" fontSize={54} fontWeight={900}>Giveaway</Text>

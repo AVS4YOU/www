@@ -73,6 +73,7 @@ render(){
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
+                  id="downloiad-now1_avs-video-remaker"
                 />
               </div> 
             </PageContentWrapper>
@@ -167,6 +168,7 @@ render(){
               }
             />
             <Button className="trustButton" style={{margin: "auto", display: "table"}}
+                    id="review_avs-video-remaker"
                     href="https://www.trustpilot.com/review/www.avs4you.com" 
                     color="#fff">
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
@@ -196,9 +198,9 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+            <DownloadScrollButton id="downloiad-now2_avs-video-remaker" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-video-remaker" to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">

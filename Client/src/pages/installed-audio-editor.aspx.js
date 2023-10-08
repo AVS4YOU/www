@@ -65,18 +65,18 @@ render(){
           <ImageGQL className="headerBackgroundImage" imageName="installed-audio-converter-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
             <div className="avs-logo">
-          <GatsbyLink className="headerLogo" to="/">
+          <GatsbyLink className="headerLogo" to="/" id="main_installed-audio-editor">
               <LogoWrapper href="/">
                   <img src={Logo} alt="avs4you logo"/>
               </LogoWrapper>
           </GatsbyLink>
           </div>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Audio Editor")} <br /> {this.props.t("AVS audio editor")}</Text>
-             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
+             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a id="exclusive-offer_installed-audio-editor" href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
               <Text as="h3" className="header__subtitle installed" style={{maxWidth:700 + 'px'}}>{this.props.t("Save 70 on the full version and edit your audio without limitations")}</Text>
               <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
               <Text as="h4" className="header__new__price">{this.props.t("590")}</Text></table>
-              <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
+              <table className="header__buy"><Text as="h2" className="header__buy__now"><a id="buy-now_installed-audio-editor" href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
             </div>
         </div>
         <div className="body-company">
@@ -112,7 +112,7 @@ render(){
 
             <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+              <div className="download-product"><a id="download-now-ac_installed-audio-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Audio Converter
                 </Text>
@@ -123,7 +123,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+              <div className="download-product"><a id="download-now-ve_installed-audio-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video Editor
                 </Text>
@@ -134,7 +134,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+              <div className="download-product"><a id="download-now-vc_installed-audio-editor" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video Converter
                 </Text>
@@ -145,7 +145,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+              <div className="download-product"><a id="download-now-vr_installed-audio-editor" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video ReMaker
                 </Text>
@@ -159,10 +159,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-audio-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/audio.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="knowledge"><div className="knowledgeIcon"><a id="knowledge-center_installed-audio-editor" href="https://onlinehelp.avs4you.com/avs-audio-editor/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a id="tips-tricks_installed-audio-editor" href="https://www.avs4you.com/guides/audio.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
 <div className="questionIcon">{this.props.t("Got a question")}
-<br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<br/>{this.props.t("Contact our")} <a id="support-team_installed-audio-editor" href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

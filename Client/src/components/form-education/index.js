@@ -767,7 +767,7 @@ class FormEducation extends React.Component {
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                        {this.props.formAgreeTermsWrapper} <Link to="/privacy.aspx" target="_blank">{this.props.formAgreeLink}</Link>.
+                        {this.props.formAgreeTermsWrapper} <Link id={this.props.id} to="/privacy.aspx" target="_blank">{this.props.formAgreeLink}</Link>.
                             </Text>
                         </div>
                     </div>

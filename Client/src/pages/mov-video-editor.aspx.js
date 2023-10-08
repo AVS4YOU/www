@@ -41,7 +41,7 @@ render(){
         <div className="rotating_image rimage_4"></div><div className="rotating_image rimage_5"></div><div className="rotating_image rimage_1" ></div><div className="rotating_image rimage_2"></div><div className="rotating_image rimage_3"></div></div>
         <div className="vel_content">
             <div className="vel_page_header">
-                <div className="vph_logo"><Link to="/"></Link></div>
+                <div className="vph_logo"><Link id="home_mov-video-editor" to="/"></Link></div>
                 <div className="vph_menu">
                 </div>
                 <div className="language_inside">
@@ -53,11 +53,11 @@ render(){
                 <div className="vel_description">{this.props.t("Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
-                        <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download now")}</a>
+                        <a className="button download" id="download-now_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download now")}</a>
                         <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
                     </div>
                     <div className="vel_top_buy">
-                        <a className="button buynow" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy now")}</a>
+                        <a className="button buynow" id="buy-now_mov-video-editor" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy now")}</a>
                     </div>
                 </div>
             </div>
@@ -129,32 +129,32 @@ render(){
             </div>
             <div className="vel_bottom_buttons">
                 <div className="vel_bottom_download">
-                    <a className="button download" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
+                    <a className="button download" id="download-ve_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
-                    <a className="button buynow" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy")}</a>
+                    <a className="button buynow" id="buy_mov-video-editor" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy")}</a>
                 </div>
             </div>
         </div>
     </div>
     <div className="vel_footer">
         <div className="vel_page_footer">
-            <div className="vph_logo"><Link to="/"></Link></div>
+            <div className="vph_logo"><Link id="home1_mov-video-editor" to="/"></Link></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
                     <li><Link to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
                     <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
-                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
-                    <li><Link to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>
+                    <li><a target="_blank" rel="noreferrer noopener" id="help_mov-video-editor" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
+                    <li><a target="_blank" rel="noreferrer noopener" id="support_mov-video-editor" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
+                    <li><Link id="contact-us_mov-video-editor" to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>
                 </ul>
-                <div className="vph_copyright"><Link to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
+                <div className="vph_copyright"><Link id="home2_mov-video-editor" to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
             </div>
             <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" href="https://www.youtube.com/user/avs4you"> </a>
-            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" href="https://www.facebook.com/avs4you"> </a>
-            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" href="https://www.twitter.com/avs4you"> </a>
-            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" id="youtube_mov-video-editor" href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" id="facebook_mov-video-editor" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" id="twitter_mov-video-editor" href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" id="pinterest_mov-video-editor" href="https://pinterest.com/avs4you/"> </a>
         </div>
         </div>
     </div>

@@ -414,7 +414,7 @@ class mainPage extends React.PureComponent {
               <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
 
               <HeaderDownloadButtons
-                  id="donwload-now_main-header"
+                  id="download-now_main-header"
                 t={this.props.t}
                 mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
                 scrollTo="mainBodyHeader"
@@ -442,7 +442,7 @@ class mainPage extends React.PureComponent {
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-vc"
+                          blueButtonLinkId="download-now_main-avs-vc"
                           smallButtonLinkId="learn-more_main-avs-vc"
                           scrollTo="headerCoupon"
                       >
@@ -458,7 +458,7 @@ class mainPage extends React.PureComponent {
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
                           smallButtonLink="/avs-video-editor.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-ve"
+                          blueButtonLinkId="download-now_main-avs-ve"
                           smallButtonLinkId="learn-more_main-avs-ve"
                           scrollTo="headerCoupon"    
                       >
@@ -477,7 +477,7 @@ class mainPage extends React.PureComponent {
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
                           smallButtonLink="/avs-video-remaker.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-vr"
+                          blueButtonLinkId="download-now_main-avs-vr"
                           smallButtonLinkId="learn-more_main-avs-vr"
                           scrollTo="headerCoupon"   
                       >
@@ -495,7 +495,7 @@ class mainPage extends React.PureComponent {
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
                           smallButtonLink="/avs-free-media-player.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-mp"
+                          blueButtonLinkId="download-now_main-avs-mp"
                           smallButtonLinkId="learn-more_main-avs-mp"
                           scrollTo="headerCoupon"   
                       >
@@ -515,7 +515,7 @@ class mainPage extends React.PureComponent {
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                           smallButtonLink="/avs-audio-editor.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-ae"
+                          blueButtonLinkId="download-now_main-avs-ae"
                           smallButtonLinkId="learn-more_main-avs-ae"
                           scrollTo="headerCoupon"    
                       >
@@ -533,7 +533,7 @@ class mainPage extends React.PureComponent {
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
                           smallButtonLink="/avs-free-audio-converter.aspx"
-                          blueButtonLinkId="donwload-now_main-avs-ac"
+                          blueButtonLinkId="download-now_main-avs-ac"
                           smallButtonLinkId="learn-more_main-avs-ac"
                           scrollTo="headerCoupon"   
                       >
