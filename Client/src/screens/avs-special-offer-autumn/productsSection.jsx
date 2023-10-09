@@ -88,6 +88,7 @@ const list = [
 
 const ProductsLeaf = styled.img`
   position: absolute;
+  pointer-events: none;
 
   &.leaf10 {
     top: 375px;
@@ -176,6 +177,16 @@ const ProductsLeaf = styled.img`
       top: auto;
       bottom: 720px;
       right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    &.leaf10-copy {
+      bottom: 190px;
+    }
+
+    &.leaf3-copy {
+      bottom: 320px;
     }
   }
 `
@@ -348,6 +359,14 @@ const ProductsItem = styled.li`
   &:nth-child(2n) {
     flex-direction: row-reverse;
   }
+  
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+    &:nth-child(2n) {
+      flex-direction: column;
+    }
+  }
 `
 
 const ProductsItemBox = styled.div`
@@ -357,6 +376,7 @@ const ProductsItemBox = styled.div`
   gap: 32px;
   
   min-width: 420px;
+
 `
 
 const ProductsItemTitle = styled.h3`
@@ -453,7 +473,7 @@ export const ProductsSection = () => {
                     <ProductsHeadingTitle>AVS4YOU Full Pack</ProductsHeadingTitle>
                     <ProductsHeadingDescWrapper>
                         <ProductsHeadingDesc1>
-                            Get 70% OFF on AVS4YOU Full Pack
+                            Get 70% OFF on AVS4YOU Full Pack for
                         </ProductsHeadingDesc1>
                         <ProductsHeadingDesc2>$79</ProductsHeadingDesc2>
                         <ProductsHeadingDesc3>$279</ProductsHeadingDesc3>

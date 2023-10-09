@@ -100,6 +100,43 @@ const SpecialOfferLeaf = styled.img`
       right: 50px;
     }
   }
+  
+  @media screen and (max-width: 1600px) {
+    &.leaf3 {
+      left: 80px;
+    }
+    
+    &.leaf4 {
+      left: 80px;
+    }
+    
+    &.leaf5 {
+      left: 55px;
+      top: 485px;
+      right: auto;
+    }
+
+    &.leaf7 {
+      right: 45px;
+    }
+    
+    &.leaf8 {
+      left: auto;
+      right: 60px;
+      top: 700px;
+    }
+
+    &.leaf9 {
+      top: 650px;
+      left: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    &.leaf7, &.leaf10 {
+      display: none;
+    }
+  }
 `
 
 const HeroSectionStyled = styled.section`
@@ -128,9 +165,17 @@ const HeroSectionContent = styled.div`
 
   display: flex;
   justify-content: right;
+  
+  @media screen and (max-width: 1600px) {
+    justify-content: center;
+  }
 `
 
 const HeroSectionBox = styled.div`
+
+  @media screen and (max-width: 1600px) {
+    padding-bottom: 450px;
+  }
 `
 
 const HeroSectionDesc1 = styled.span`
@@ -173,6 +218,10 @@ const HeroSectionSale = styled.div`
     &:hover {
       text-decoration: none;
     }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    padding: 52px 65px 73px 65px;
   }
 `
 
@@ -224,6 +273,13 @@ const HeroSectionProducts = styled.img`
 
   @media screen and (max-width: 1650px) {
     width: 650px;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    right: calc(50% - 325px);
+    left: auto;
+    top: auto;
+    bottom: 50px;
   }
 `
 
