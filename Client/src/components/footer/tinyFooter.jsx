@@ -38,6 +38,15 @@ const FooterNavList = styled.ul`
     font-weight: 400;
     line-height: normal;
   }
+  
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+      color: #FFF;
+    }
+  }
 `
 
 const FooterSocialsList = styled.ul`
@@ -94,7 +103,6 @@ export const TinyFooter = (props) => {
                     <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                 </Link>
                 <FooterSocialsList>
-                    <Text fontSize={14} color="#8e999f">{props.t("Follow Us:")}</Text>
                     <FooterSocialsItem>
                         <a className="footerSocial" href="https://www.facebook.com/avs4you">
                             <img src={facebook} className="footerSocialIcon" alt="facebook"/>
