@@ -353,6 +353,7 @@ render(){
                 color="#ffffff"
                 href={this.state.hrefOneYear}
                 className="buy-block-button"
+                id="1year_register-ac"
               >
                 {this.props.t("Buy now")}
               </Button>
@@ -414,7 +415,7 @@ render(){
               <div className="why-choose-item">
                 <img src={GuaranteeIcon} className="icon" alt="Guarantee Icon"/>
                 <Text className="text" id="text_link">
-                  <Link to="/moneyback.aspx">
+                  <Link to="/moneyback.aspx" id="moneyback_register-ac">
                     {this.props.t("30-day Money-back guarantee")}
                   </Link>
                 </Text>
@@ -488,7 +489,7 @@ render(){
             </PanelCollapse>
             <PanelCollapse className="panelCollapse" panelName={this.props.t("I want a refund How can I get my money back")}>
               <div className="collapseContent">
-                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a href={this.props.t("support avs4you com")} target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
+                  <Text className="hiddenText">{this.props.t("If you experience technical or other problems that cannot be solved, you can get a complete refund of your purchase price within 30 days")} <a id="refund_register-ac" href={this.props.t("support avs4you com")} target="_blank" rel="noreferrer noopener">{this.props.t("Check our Refund Policy")}</a> {this.props.t("to find out if you are eligible for a full refund")}
                   </Text>
               </div>
             </PanelCollapse>

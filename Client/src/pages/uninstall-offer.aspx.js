@@ -56,13 +56,13 @@ render(){
                 <div className="after-text-box"></div>
                 <Text className="text-info-landing-box-gray">{this.props.t("Time-limited offer")}</Text>
                 <Text className="header__old__price">{this.props.t("$59/00")}</Text>
-                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
+                <table className="header__buy__gray"><Text as="h2" className="header__buy__now"><a id="buy_uninstall-offer" href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Buy")}</a></Text></table>
                 </div>
                 <div className="landing-two-offer-block"><Text as="h3" className="text-landing-box">{this.props.t("AVS4YOU Unlimited Subscription")}</Text>
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("29/00")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy"><Text as="h2" className="header__buy__now"><a id="get-it-now1_uninstall-offer" href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
             </div>
         </div>
 
@@ -102,12 +102,12 @@ render(){
             </div>
             <div className="ub-box">
                 <div class="money-back-guarant"></div>
-                <Link to="/moneyback.aspx">
+                <Link to="/moneyback.aspx" id="moneyback_uninstall-offer">
                   {this.props.t("30- day Money-back guarantee")}
                 </Link>
             </div>
             </div>
-            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
+            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a id="get-it-now2_uninstall-offer" href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
         </div>
 
         <Text as="h2" className="common__heading__with">
@@ -130,10 +130,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href={this.props.t("header_onlinehelp_avs4you")} style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href={this.props.t("header_avs4you_guides")} style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="knowledge"><div className="knowledgeIcon"><a id="knowledge-center_uninstall-offer" href={this.props.t("header_onlinehelp_avs4you")} style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a id="tips-tricks_uninstall-offer" href={this.props.t("header_avs4you_guides")} style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
 <div className="questionIcon">{this.props.t("Got a question")}
-<br/>{this.props.t("Contact our")} <a href={this.props.t("header_support_avs4you")} style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<br/>{this.props.t("Contact our")} <a id="support-team_uninstall-offer" href={this.props.t("header_support_avs4you")} style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

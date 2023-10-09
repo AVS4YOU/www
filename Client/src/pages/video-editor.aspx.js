@@ -439,6 +439,7 @@ class avsVideoEditor extends React.PureComponent {
                             mainPadding="12px 37px"
                             margin="0"
                             textTransform="uppercase"
+                                  id="download-now_video-editor"
                           >
                             {this.props.t("dwnld")}
                           </Button>

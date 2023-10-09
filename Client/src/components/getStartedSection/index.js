@@ -72,7 +72,7 @@ export const GetStartedSection = () => {
             <Text className="get-started-section__title">
                 Ready to make your own video?
             </Text>
-            <GetStartedSectionButton className="get-started-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
+            <GetStartedSectionButton id="get-started_video-editing" className="get-started-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                 Get started!
             </GetStartedSectionButton>
         </GetStartedSectionStyled>

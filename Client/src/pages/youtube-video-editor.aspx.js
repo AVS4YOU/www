@@ -89,8 +89,8 @@ render(){
     > 
           <header className="Youtubeheader">
     <div className="lfb_header">
-        <Link className="lfb_logo" to="/" target="_blank" rel="noreferrer noopener"></Link><ul className="topmainmenu max-width-1">
-            <li className="topmenuoption"><Link to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
+        <Link className="lfb_logo" id="home1_youtube-video-editor" to="/" target="_blank" rel="noreferrer noopener"></Link><ul className="topmainmenu max-width-1">
+            <li className="topmenuoption"><Link id="home2_youtube-video-editor" to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
             <ScrollLink to="to_easy_steps" spy={true} smooth={true}>
             <li className="topmenuoption to_easy_steps">Steps</li>
             </ScrollLink>
@@ -100,7 +100,7 @@ render(){
             <ScrollLink to="to_testimonials" spy={true} smooth={true}>
             <li className="topmenuoption to_testimonials">Testimonials</li>
             </ScrollLink>
-            <li className="topmenuoption with_link"><a className="lfb_download_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
+            <li className="topmenuoption with_link"><a className="lfb_download_btn" id="download1_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
             <li className="aclose">×</li>
         </ul>
     </div>
@@ -115,7 +115,7 @@ render(){
     <div className="lfb_ht_subheader">
       Easily create professional-looking clips or vlogs
     </div>
-    <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+    <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download2_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
   </div>
   <div className="lfb_head_img"><ImageGQL imageName="main_picture-youtube.png" alt="Professional-looking clips or vlogs" /></div>
 </div>
@@ -167,7 +167,7 @@ render(){
             <div className="lfb_reas_t">Create video with different frame sizes: HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</div>
         </div>
         </div>
-        <div className="lfb_txt_div lfb_reas_btn"><a className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+        <div className="lfb_txt_div lfb_reas_btn"><a className="lfb_download_btn lfb_tm_btn" id="download3_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
     </div>
 </div>
 
@@ -220,7 +220,7 @@ render(){
     <div className="lfb_psln">
         <div className="lfb_ps_h">Perfect solution for video bloggers</div>
         <div className="lfb_ps_sh">Create your first video right now!</div>
-        <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+        <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download4_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
     </div>
 </div>
 
@@ -234,19 +234,19 @@ render(){
         <div className="vph_logo"><Link to="/" target="_blank" rel="noreferrer noopener"></Link></div>
         <div className="vph_menu_footer">
             <ul>
-                <li><Link to="/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</Link></li>
-                <li><Link to="/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</Link></li>
-                <li><a href="https://www.avs4you.com/Guides/index.aspx" target="_blank" rel="noreferrer noopener">Help</a></li>
-                <li><a href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
-                <li><Link to="/about-us.aspx#contact-us" target="_blank" rel="noreferrer noopener">Contact us</Link></li>
+                <li><Link id="downloads_youtube-video-editor" to="/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</Link></li>
+                <li><Link id="buy-now_youtube-video-editor" to="/register.aspx" target="_blank" rel="noreferrer noopener">Buy now</Link></li>
+                <li><a id="help_youtube-video-editor" href="https://www.avs4you.com/Guides/index.aspx" target="_blank" rel="noreferrer noopener">Help</a></li>
+                <li><a id="support_youtube-video-editor" href="https://support.avs4you.com/login.aspx" target="_blank" rel="noreferrer noopener">Support</a></li>
+                <li><Link id="contact-us_youtube-video-editor" to="/about-us.aspx#contact-us" target="_blank" rel="noreferrer noopener">Contact us</Link></li>
             </ul>
-            <div className="vph_copyright"><Link to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
+            <div className="vph_copyright"><Link id="home3_youtube-video-editor" to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</div>
         </div>
         <div className="lfn-social">
-            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube"   href="https://www.youtube.com/user/avs4you"> </a>
-            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook"  href="https://www.facebook.com/avs4you"> </a>
-            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter"   href="https://www.twitter.com/avs4you"> </a>
-            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" href="https://pinterest.com/avs4you/"> </a>
+            <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" id="youtube_youtube-video-editor" href="https://www.youtube.com/user/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" id="facebook_youtube-video-editor" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" id="twitter_youtube-video-editor"  href="https://www.twitter.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" id="pinterset_youtube-video-editor" href="https://pinterest.com/avs4you/"> </a>
         </div>
     </div>
 </div>
