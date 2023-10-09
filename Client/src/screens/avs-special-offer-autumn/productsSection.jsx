@@ -241,6 +241,7 @@ const ProductsHeadingDesc1 = styled.p`
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
+  margin: 0;
 `
 
 const ProductsHeadingDesc2 = styled.p`
@@ -248,56 +249,23 @@ const ProductsHeadingDesc2 = styled.p`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-decoration: line-through;
-  position: relative;
-  margin-left: 8px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--1, linear-gradient(180deg, #EA1313 0%, #AF0B0E 65.1%)); /* или другой цвет, который вы хотите использовать для перечеркивания */
-    top: 50%;
-    transform: translateY(-50%);
-  }
-`
-
-const ProductsHeadingDesc3 = styled.p`
-  background: var(--1, linear-gradient(180deg, #EA1313 0%, #AF0B0E 65.1%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
-  position: relative;
+  margin-left: 8px;
   margin-right: 8px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--1, linear-gradient(180deg, #EA1313 0%, #AF0B0E 65.1%)); /* или другой цвет, который вы хотите использовать для перечеркивания */
-    top: 50%;
-    transform: translateY(-50%);
-  }
 `
 
-const ProductsHeadingDesc4 = styled.p`
+const ProductsHeadingDesc3 = styled.p`
   color: #32393E;
+  font-family: Montserrat, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: 38px;
+  text-decoration: line-through;
 `
 
 const ProductsHeadingAbout = styled.p`
@@ -487,9 +455,8 @@ export const ProductsSection = () => {
                         <ProductsHeadingDesc1>
                             Get 70% OFF on AVS4YOU Full Pack
                         </ProductsHeadingDesc1>
-                        <ProductsHeadingDesc2>$</ProductsHeadingDesc2>
-                        <ProductsHeadingDesc3>199</ProductsHeadingDesc3>
-                        <ProductsHeadingDesc4>$59</ProductsHeadingDesc4>
+                        <ProductsHeadingDesc2>$79</ProductsHeadingDesc2>
+                        <ProductsHeadingDesc3>$279</ProductsHeadingDesc3>
                     </ProductsHeadingDescWrapper>
                     <ProductsHeadingAbout>
                         A complete set of programs for working with video files, slideshows and soundtracks. Manage your
