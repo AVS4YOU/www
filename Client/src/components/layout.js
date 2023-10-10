@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import "./layout.css";
 import "../styles/common.less"
 import Footer from "./footer";
+import {TinyFooter} from "./footer/tinyFooter";
 import {PageContext} from '../context/page-context';
 import {Helmet} from "react-helmet";
 import {withPrefix, Link} from "gatsby";
@@ -470,7 +471,7 @@ class Layout extends React.PureComponent {
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }
-                {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
+                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter t={this.props.t} /> :<Footer t={this.props.t}/>)}
             </PageContext.Provider>
         )
     }

@@ -1,6 +1,9 @@
 # Changelog
 
 ## 1.0.52
+* Added page /avs-special-offer-autumn.aspx
+
+## 1.0.52
 * Added banner
 * Changed styles for "Download now" button in /video-editing.aspx
 
