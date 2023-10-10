@@ -173,9 +173,9 @@ const HeroSectionContent = styled.div`
 
 const HeroSectionBox = styled.div`
 
-  @media screen and (max-width: 1600px) {
-    padding-bottom: 450px;
-  }
+  //@media screen and (max-width: 1600px) {
+  //  padding-bottom: 450px;
+  //}
 `
 
 const HeroSectionDesc1 = styled.span`
@@ -269,6 +269,10 @@ const HeroSectionProducts = styled.img`
     height: auto;
     left: 30px;
     top: 100px;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    display: none;
   }
 
   @media screen and (max-width: 1650px) {
