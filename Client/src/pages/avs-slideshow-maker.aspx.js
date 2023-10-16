@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import withI18next from "../components/withI18next";
-import {HeroSection, ReviewsSection, StepsSection, SpecsSection, PowerSection} from "../screens/avs-slideshow-maker";
+import {HeroSection, ReviewsSection, StepsSection, SpecsSection, PowerSection, FeaturesSection} from "../screens/avs-slideshow-maker";
 
 
 class AvsSlideshowMaker extends React.PureComponent {
@@ -32,6 +32,7 @@ class AvsSlideshowMaker extends React.PureComponent {
             >
                 <HeroSection t={this.props.t} />
                 <StepsSection t={this.props.t} />
+                <FeaturesSection t={this.props.t} />
                 <SpecsSection t={this.props.t} />
                 <PowerSection t={this.props.t} />
                 <ReviewsSection t={this.props.t} />
