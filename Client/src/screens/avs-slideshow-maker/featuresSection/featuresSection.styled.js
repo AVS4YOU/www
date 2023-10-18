@@ -11,7 +11,7 @@ export const FeaturesSectionStyled = styled.section`
     padding: 80px 40px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     padding: 48px 16px;
   }
 `

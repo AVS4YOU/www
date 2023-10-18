@@ -11,11 +11,31 @@ export const FeaturesSectionCarouselWrapper = styled.div`
 
 export const FeaturesSectionLgCarouselWrapper = styled.div`
   width: 100%;
+  position: relative;
   
   @media screen and (max-width: 830px) {
     .slick-list {
       overflow: visible;
     }
+  }
+  
+  .slick-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    z-index: 10;
+    
+    bottom: -30px;
+    box-shadow: 1px -1px 8px 0px rgba(34,60,80,0.2);
+    top: auto;
+  }
+  
+  .slick-prev {
+    left: calc(50% - 90px);
+  }
+  
+  .slick-next {
+    right: calc(50% - 90px);
   }
 `
 export const FeaturesSectionLgCarouselItem = styled.div`
@@ -33,7 +53,7 @@ export const FeaturesSectionLgCarouselItemBox = styled.div`
   
   @media screen and (max-width: 830px) {
     flex-direction: column;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 `
 
@@ -61,7 +81,7 @@ export const FeaturesSectionLgCarouselItemCard = styled.div`
     margin-top: -130px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     width: calc(100% - 60px);
     margin-top: -20px;
   }
@@ -76,7 +96,7 @@ export const FeaturesSectionLgCarouselItemImg = styled.img`
     width: calc(100% - 80px);
   }
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     width: calc(100% - 30px);
   }
 `
@@ -99,6 +119,34 @@ export const FeaturesSectionLgCarouselItemDesc = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+`
+
+export const FeaturesSectionLgCarouselControl = styled.div`
+  position: absolute;
+  bottom: -7px;
+  color: #555;
+  left: calc(50% - 33px);
+  
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
+
+export const FeaturesSectionLgCarouselControlCount = styled.span`
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+`
+
+export const FeaturesSectionLgCarouselControlDesc = styled.p`
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 `
 
 export const FeaturesSectionSmCarouselWrapper = styled.div`

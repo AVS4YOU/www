@@ -16,6 +16,7 @@ import {
     FeaturesSectionLgCarouselItemCard,
     FeaturesSectionLgCarouselItemTitle,
     FeaturesSectionLgCarouselItemDesc,
+    FeaturesSectionLgCarouselControl, FeaturesSectionLgCarouselControlCount, FeaturesSectionLgCarouselControlDesc,
 } from "./featuresSectionCarousel.styled";
 import {
     SliderLeftArrow,
@@ -25,16 +26,31 @@ import {
 export const FeaturesSectionCarousel = ({t}) => {
     const [sliderLg, setSliderLg] = useState(null)
     const [sliderSm, setSliderSm] = useState(null)
+    const [slideIndex, setSlideIndex] = useState(1)
+
+    console.log(slideIndex)
 
     const settingsLg = {
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: false,
         arrows: false,
         asNavFor: sliderSm,
+        nextArrow: <SliderRightArrow />,
+        prevArrow: <SliderLeftArrow />,
+        beforeChange: (curr, next) => setSlideIndex(next + 1),
         ref: (slider) => {
             setSliderLg(slider)
             return slider
         },
+        responsive: [
+            {
+                breakpoint: 830,
+                settings: {
+                    arrows: true,
+                }
+            }
+        ]
     }
 
     const settingsSm = {
@@ -94,6 +110,12 @@ export const FeaturesSectionCarousel = ({t}) => {
                         ))
                     }
                 </Slider>
+                <FeaturesSectionLgCarouselControl>
+                    <FeaturesSectionLgCarouselControlCount>{slideIndex}</FeaturesSectionLgCarouselControlCount>
+                    <FeaturesSectionLgCarouselControlDesc>
+                        {t("out of")} {features.length}
+                    </FeaturesSectionLgCarouselControlDesc>
+                </FeaturesSectionLgCarouselControl>
             </FeaturesSectionLgCarouselWrapper>
             <FeaturesSectionSmCarouselWrapper>
                 <Slider {...settingsSm}>
