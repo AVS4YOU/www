@@ -23,6 +23,10 @@ const StyledTable = styled.div`
         width: 50%;
     }
 
+    .flexWrapper {
+      padding: 0 20px;
+    }
+
     h3 {
         color: #6332A0;
         font-weight: 700;
@@ -36,6 +40,7 @@ const StyledTable = styled.div`
 
     .ListTitle {
         padding: 32px 0;
+        line-height: 32px;
     }
 
     p {
@@ -54,20 +59,27 @@ const StyledTable = styled.div`
     .mainButton {
         border-radius: 5px;
         background: radial-gradient(65.92% 91.38% at 50% 50%, #A45AFF 0%, #943FFE 20.83%, #8D3DF0 57.29%, #542D85 93.23%);
-        padding: 0;
+        background-color: #943FFE;
+        padding: 20px 25px !important;
 
         p {
             color: #FFF;
             text-transform: uppercase;
-            font-weight: 700;
-            font-size: 20px;
-            padding: 20px 32px;
+            font-weight: 500;
+            font-size: 18px;
+            width: 209px;
+            text-align: center;
+
+            a {
+              padding: 13px 25px!important;
+            }
         }
 
         &:hover {
-            border-radius: 5px;
-            background: linear-gradient(to bottom right, #542D85 10%, #8D3DF0 23%, #943FFE 34%, #A45AFF 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #542D85 10%, #8D3DF0 23%, #943FFE 34%, #A45AFF 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #542D85 10%, #8D3DF0 23%, #943FFE 34%, #A45AFF 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #542D85 10%, #8D3DF0 23%, #943FFE 34%, #A45AFF 50%) top right / 50% 50% no-repeat;
-        }
+          border-radius: 5px;
+          background: #943FFE;
+          transition: background 2s;
+      }
     }
     @media (max-width: 1024px) {
         .ListTitle {
