@@ -116,14 +116,12 @@ const StyledPL = styled.div`
     .PLnewAvsText {
       font-size: 12px;
     }
-  }
-  @media (max-width: 450px) {
     .PlAvsDiscount {
       padding: 1px 10px;
-    }
-    .PlAvsDiscount {
       margin-left: 10px;
     }
+  }
+  @media (max-width: 450px) {
 
     .PLnewAvsText {
       line-height: 18px;
