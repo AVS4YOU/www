@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.53
+* Added banner "Halloween treat!"
+* Added landing page /avs-special-offer-halloween.aspx
+
 ## 1.0.52
 * Added page /avs-special-offer-autumn.aspx
 

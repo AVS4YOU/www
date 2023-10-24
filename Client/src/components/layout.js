@@ -20,9 +20,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSLeft from "../images/pl/left-side-bg.svg";
-import PlAVSRight from "../images/pl/right-side-bg.svg";
-import whiteHeart from "../images/pl/white-heart.svg";
+import PlAVSLeft from "../images/pl/halloween-banner.png";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -31,10 +29,10 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
-    height: 62px;
-    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%) no-repeat 50%;
+    height: 59px;
+    background: #151225;
 
     a {
       display: flex;
@@ -43,7 +41,7 @@ const StyledPL = styled.div`
       width: 100%;
       z-index: 9;
       text-decoration: none;
-      height: 62px;
+      height: 59px;
       position: absolute;
     }
   }
@@ -53,7 +51,7 @@ const StyledPL = styled.div`
     padding: 4px 8px;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 27px;
     color: #ffffff;
     width: auto;
@@ -64,27 +62,28 @@ const StyledPL = styled.div`
   }
 
   .PlAvsDiscount {
-    border: 1px dashed #FFFFFF;
-    padding: 3px 15px;
+    background: #F5C867;
+    padding: 5px 24px;
     word-break: keep-all;
-    font-weight: 700;
+    font-weight: 600;
+    color: #151225;
+    margin-left: 16px;
   }
 
   .bgPlAvs {
     width: 1160px;
     position: absolute;
-    height: 62px;
+    height: 59px;
     top: 0;
-    left: 50%;
-    margin-left: -600px;
+    left: 5%;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
     left: 0;
-    width: 590px;
-    height: 62px;
+    width: 1096px;
+    height: 59px;
     background-image: url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -97,7 +96,6 @@ const StyledPL = styled.div`
     top: 0;
     height: 62px;
     width: 470px;
-    background-image: url(${PlAVSRight});
     background-repeat: no-repeat;
     background-position-y: 50%;
     pointer-events: none;
@@ -105,25 +103,26 @@ const StyledPL = styled.div`
     z-index: 0;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1650px) {
     .PLnewAvs {
       padding: 0;
-      height: 62px;
+      height: 59px;
     }
 
     .PLnewAvsLeft {
-      width: 540px;
+      left: -395px;
     }
   }
   @media (max-width: 600px) {
     .PLnewAvsText {
       font-size: 12px;
     }
-  }
-  @media (max-width: 400px) {
     .PlAvsDiscount {
       padding: 1px 10px;
+      margin-left: 10px;
     }
+  }
+  @media (max-width: 450px) {
 
     .PLnewAvsText {
       line-height: 18px;
@@ -434,11 +433,8 @@ class Layout extends React.PureComponent {
                             <div className="PLnewAvsRight"></div>
                         </div>
                         <a href={this.props.t("avs pl link")} target="_blank">
-                            <img className="imgCoupon" src={whiteHeart} style={{paddingLeft: "16px"}}/><span
-                            className="PLnewAvsText">{this.props.t("beginningBanner")}<span
-                            className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span
-                            className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img
-                            className="imgCoupon" src={whiteHeart} style={{paddingRight: "16px"}}/>
+                          <span className="PLnewAvsText">{this.props.t("beginningBanner")}
+                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span></span>
                         </a>
                     </div>
                 </StyledPL>
