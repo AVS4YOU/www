@@ -311,7 +311,7 @@
         .style-button {
             text-decoration: none;
             color: #fff;
-            padding: 13px 25px!important;
+            padding: 20px 79px!important;
         }
     
         .mainHeaderComment {
@@ -511,24 +511,37 @@
 
             .button-block {
                 text-align: center;
-                margin-right: 255px;
+                margin-right: 265px;
             }
 
             .headerButtonHalloween {
                 position: absolute;
                 bottom: -30px;
+                padding: 0 !important;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    height: 58px;
+                }
             }
         }
 
         .violet {
+            padding: 20px 0px !important;
             border-radius: 5px;
             background: radial-gradient(65.92% 91.38% at 50% 50%, #A45AFF 0%, #943FFE 20.83%, #8D3DF0 57.29%, #542D85 93.23%);
             background-color: #943FFE;
+            max-width: 242px;
 
             &:hover {
                 border-radius: 5px;
                 background: #943FFE;
                 transition: background 2s;
+            }
+
+            a {
+                padding: 20px 43px!important;
             }
         }
 
@@ -877,10 +890,6 @@
     
     @media (max-width: 768px) {
 
-        .special-offer .button-block {
-            margin-right: 205px !important;
-        }
-
         .special-offer .headerSpecialOfferHalloween .content-header {
             background-position-x: 0%, 105%, -15%, 135%;
         } 
@@ -910,17 +919,6 @@
 
         .special-offer .text-header-halloween .headerButtonHalloween {
             bottom: -22px;
-        }
-
-        .specialButtonHalloween, .headerButtonHalloween {
-            min-width: 150px !important;
-            padding: 11px 25px !important;
-            p {
-                font-size: 0px;
-            }
-            a {
-                font-size: 14px !important;
-            }
         }
 
         .special-offer .halloween-choose {
