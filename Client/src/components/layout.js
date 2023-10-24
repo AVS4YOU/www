@@ -62,7 +62,7 @@ const StyledPL = styled.div`
 
   .PlAvsDiscount {
     background: #F5C867;
-    padding: 3px 15px;
+    padding: 5px 24px;
     word-break: keep-all;
     font-weight: 600;
     color: #151225;
@@ -117,7 +117,7 @@ const StyledPL = styled.div`
       font-size: 12px;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .PlAvsDiscount {
       padding: 1px 10px;
     }
