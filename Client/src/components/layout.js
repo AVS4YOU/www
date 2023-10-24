@@ -50,7 +50,7 @@ const StyledPL = styled.div`
     padding: 4px 8px;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 27px;
     color: #ffffff;
     width: auto;
@@ -66,6 +66,7 @@ const StyledPL = styled.div`
     word-break: keep-all;
     font-weight: 600;
     color: #151225;
+    margin-left: 16px;
   }
 
   .bgPlAvs {
@@ -101,14 +102,14 @@ const StyledPL = styled.div`
     z-index: 0;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1650px) {
     .PLnewAvs {
       padding: 0;
-      height: 62px;
+      height: 59px;
     }
 
     .PLnewAvsLeft {
-      width: 540px;
+      left: -395px;
     }
   }
   @media (max-width: 600px) {
@@ -119,6 +120,9 @@ const StyledPL = styled.div`
   @media (max-width: 400px) {
     .PlAvsDiscount {
       padding: 1px 10px;
+    }
+    .PlAvsDiscount {
+      margin-left: 10px;
     }
 
     .PLnewAvsText {
