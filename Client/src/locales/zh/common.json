@@ -1646,12 +1646,12 @@
 
  "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
- "beginningBanner" : "情人节优惠：使用 ",
- "discountCoupon" : "",
- "textBanner" : "",
- "nameCoupon" : "AVSLove23",
- "endingBanner" : " 促销码购买 AVS4YOU 套装，享受 25% 的折扣！",
- "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=zh&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSLove23&CLEAN_CART=ALL",
+ "beginningBanner" : "Halloween treat!",
+ "discountCoupon" : "Get 25% Off",
+ "textBanner" : "on AVS4YOU Unlimited Subscription.",
+ "nameCoupon" : "Get It!",
+ "endingBanner" : " coupon!",
+ "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zh&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
 "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
 "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
