@@ -203,7 +203,7 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </BuyButton>
             </div>
-            <ImageGQL className="full-pack" imageName="pack-special-offer-halloween.png"/>
+            <ImageGQL className="full-pack" imageName="pack-so-halloween.png"/>
           </div>
           <PageContentWrapper className="tableProduct">
                 <StyledTable>
