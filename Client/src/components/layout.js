@@ -81,7 +81,7 @@ const StyledPL = styled.div`
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -90px;
     width: 1096px;
     height: 59px;
     background-image: url(${PlAVSLeft});
@@ -101,6 +101,12 @@ const StyledPL = styled.div`
     pointer-events: none;
     right: 0;
     z-index: 0;
+  }
+
+  @media (min-width: 1919px) {
+    .PLnewAvsLeft {
+      left: 0px;
+    }
   }
 
   @media (max-width: 1650px) {
