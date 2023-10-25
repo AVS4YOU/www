@@ -23,12 +23,16 @@ const FooterBox = styled.div`
 
 const FooterNavList = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 88px;
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 634px;
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 32px;
 
   .footer-link-text {
     color: #FFF;
@@ -53,18 +57,20 @@ const FooterSocialsList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px;
+  gap: 30px;
   
   display: flex;
   justify-content: center;
   align-items: center;
 `
 
-const FooterSocialsItem = styled.li``
+const FooterSocialsItem = styled.li`
+`
 
 const FooterDesc = styled.p`
   color: #666;
   text-align: center;
+  font-family: 'Open Sans',sans-serif,Arial;
   
   font-size: 14px;
   font-style: normal;
