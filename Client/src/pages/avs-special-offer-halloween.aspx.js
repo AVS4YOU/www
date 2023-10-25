@@ -133,6 +133,7 @@ render(){
     return (
       <Layout 
         headerIsDisabled={true}
+        isTinyFooter
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
