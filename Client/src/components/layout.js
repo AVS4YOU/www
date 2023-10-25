@@ -426,7 +426,7 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                <StyledPL>
+                {!this.props.headerIsDisabled ? <StyledPL>
                     <div className="PLnewAvs">
                         <div className="bgPlAvs">
                             <div className="PLnewAvsLeft"></div>
@@ -437,7 +437,7 @@ class Layout extends React.PureComponent {
                             <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span></span>
                         </a>
                     </div>
-                </StyledPL>
+                </StyledPL> : <div></div>}
 
                 {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
@@ -460,7 +460,7 @@ class Layout extends React.PureComponent {
                                     </BannerWrapperSaleDesc>
                                 </BannerWrapperBox>
                                 <BannerWrapperLinkWrapper>
-                                    <CustomLink  to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
+                                    <CustomLink id="get-it-now_popup" to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
                                 </BannerWrapperLinkWrapper>
                             </BannerPaddingBox>
                             <BannerImg src={banner}/>

@@ -105,7 +105,10 @@ const StyledTable = styled.div`
 `;
 
 const BuyButton = styled(Button) `
-    min-width: 192px;
+padding: 20px 0px;
+.style-button {
+    padding: 0px;
+    max-width: 242px;
     text-align: center;
     border-radius: 5px;
     background: var(--Halloween, radial-gradient(63.83% 93.1% at 50% 20.69%, #FF8C01 49.04%, #FB7601 70.27%, #F13F01 100%));
@@ -113,7 +116,6 @@ const BuyButton = styled(Button) `
     &:hover {
         border-radius: 5px;
         background: radial-gradient(94.56% 137.93% at 50% 20.69%, #FF8C01 49.04%, #FB7601 70.27%, #F13F01 100%);
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     }
 `;
 
@@ -130,7 +132,7 @@ class SpecialOfferHalloween extends React.PureComponent {
 render(){
     return (
       <Layout 
-        headerIsDisabled={false}
+        headerIsDisabled={true}
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -185,7 +187,7 @@ render(){
 </div>
           <div className="bodyWrapper halloweenWrapper">
             <Text fontSize={46} fontWeight={800} className="bodyHeader-halloween" as="h1">AVS4YOU Full Pack</Text>
-            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack <span className="text-orange">$79</span> <span className="text-line-through">$199</span></Text>
+            <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack for <span className="text-orange">$79</span> <span className="text-line-through">$279</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
               <Button className="specialButtonHalloween violet button-mobile" 
