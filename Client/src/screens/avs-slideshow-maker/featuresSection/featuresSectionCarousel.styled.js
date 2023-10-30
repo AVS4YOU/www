@@ -127,9 +127,13 @@ export const FeaturesSectionLgCarouselControl = styled.div`
   color: #555;
   left: calc(50% - 33px);
   
-  display: flex;
   align-items: center;
   gap: 5px;
+  display: none;
+  
+  @media screen and (max-width: 830px) {
+    display: flex;
+  }
 `
 
 export const FeaturesSectionLgCarouselControlCount = styled.span`
