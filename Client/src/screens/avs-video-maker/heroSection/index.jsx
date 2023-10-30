@@ -10,7 +10,15 @@ import {
     HeroSectionCollageImg,
 } from './heroSection.styled'
 import img1 from '../../../images/avs-video-maker/hero1.png'
-import img12x from '../../../images/avs-video-maker/hero3@2x.png'
+import img12x from '../../../images/avs-video-maker/hero1@2x.png'
+import img2 from '../../../images/avs-video-maker/hero2.png'
+import img22x from '../../../images/avs-video-maker/hero2@2x.png'
+import img3 from '../../../images/avs-video-maker/hero3.png'
+import img32x from '../../../images/avs-video-maker/hero3@2x.png'
+import img4 from '../../../images/avs-video-maker/hero4.png'
+import img42x from '../../../images/avs-video-maker/hero4@2x.png'
+import img5 from '../../../images/avs-video-maker/hero5.png'
+import img52x from '../../../images/avs-video-maker/hero5@2x.png'
 
 export const HeroSection = ({t}) => {
     return (
@@ -33,11 +41,14 @@ export const HeroSection = ({t}) => {
                     </HeroSectionContentLink>
                 </HeroSectionContent>
                 <HeroSectionCollage>
-                    <HeroSectionCollageBox>
-                        <HeroSectionCollageImg src={img1} srcSet={`${img1} 1x, ${img12x} 2x`} />
+                    <HeroSectionCollageBox className="collage-box1">
+                        <HeroSectionCollageImg className="collage1" srcSet={`${img12x} 2x`} src={img1} />
+                        <HeroSectionCollageImg className="collage2" srcSet={`${img22x} 2x`} src={img2} />
+                        <HeroSectionCollageImg className="collage3" srcSet={`${img32x} 2x`} src={img3} />
                     </HeroSectionCollageBox>
-                    <HeroSectionCollageBox>
-
+                    <HeroSectionCollageBox className="collage-box2">
+                        <HeroSectionCollageImg className="collage4" srcSet={`${img42x} 2x`} src={img4} />
+                        <HeroSectionCollageImg className="collage5" srcSet={`${img52x} 2x`} src={img5} />
                     </HeroSectionCollageBox>
                 </HeroSectionCollage>
             </HeroSectionContainer>
