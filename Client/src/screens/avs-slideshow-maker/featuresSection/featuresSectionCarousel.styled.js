@@ -130,6 +130,10 @@ export const FeaturesSectionLgCarouselControl = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
+
+  p, span {
+    display: none;
+  }
 `
 
 export const FeaturesSectionLgCarouselControlCount = styled.span`
