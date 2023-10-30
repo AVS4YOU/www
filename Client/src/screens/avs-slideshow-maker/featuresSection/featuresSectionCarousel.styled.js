@@ -118,7 +118,7 @@ export const FeaturesSectionLgCarouselItemDesc = styled.p`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 `
 
 export const FeaturesSectionLgCarouselControl = styled.div`
