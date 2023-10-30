@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
 import {HeroSection, ProductsSection, FeaturesSection} from "../screens/avs-special-offer-autumn";
