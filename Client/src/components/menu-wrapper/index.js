@@ -215,7 +215,7 @@ class MenuWrapper extends React.PureComponent {
     render(){
         return(
             <StyledMenuWrapper isTransparentHeader={this.props.isTransparentHeader} className={this.state.offAnimate && "offAnimate"}>
-                <StyledMenuGrid>
+                <StyledMenuGrid className="header-wrapper">
                 <LogoWrapper>
                     <LinkL className="avs4youLogoTable" to="/" >
                             <img src={Logo} alt="avs4you logo"/>
