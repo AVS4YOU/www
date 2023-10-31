@@ -10,6 +10,7 @@ const MakeVideoSectionStyled = styled.section`
   
   .make-video-section__header {
     margin-bottom: 75px;
+    max-width: 464px;
   }
 
   @media screen and (max-width: 1400px) {

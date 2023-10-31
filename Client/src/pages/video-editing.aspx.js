@@ -28,6 +28,8 @@ class VideoEditing extends React.PureComponent {
     render() {
         return (
             <Layout
+                headerIsDisabled={true}
+                isTinyFooter
                 getDevice={this.getDevice}
                 pageContext={this.props.pageContext}
                 t={this.props.t}

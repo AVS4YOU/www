@@ -1715,12 +1715,12 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Получите",
-    "discountCoupon" : " скидку 25% на пакет программ AVS4YOU ",
-    "textBanner" : "с купоном ",
-    "nameCoupon" : "AVSLove23",
-    "endingBanner" : " в День святого Валентина!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ru&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSLove23&CLEAN_CART=ALL",
+    "beginningBanner" : "Хэллоуин распродажа!",
+    "discountCoupon" : " Получите 25% скидку ",
+    "textBanner" : "на безлимитную подписку AVS4YOU.",
+    "nameCoupon" : "Получить сейчас",
+    "endingBanner" : " coupon!",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/ru/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL",
