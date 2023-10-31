@@ -6,6 +6,7 @@ import bg2x from '../../../images/avs-video-maker/hero-bg@2x.png'
 export const HeroSectionStyled = styled.section`
   padding: 64px 131px 0 131px;
   background-color: #32393E;
+  border-radius: 0 0 50px 50px;
   
   @media screen and (max-width: 1650px) {
     padding: 0;
@@ -42,6 +43,14 @@ export const HeroSectionContent = styled.div`
     padding: 187px 0 370px 40px;
     max-width: 417px;
   }
+  
+  @media screen and (max-width: 700px) {
+    max-width: 100%;
+    padding: 80px 34px 178px 34px;
+    box-sizing: border-box;
+    align-items: center;
+    background: rgba(50, 57, 62, 0.40);
+  }
 `
 
 export const HeroSectionContentTitle = styled.h1`
@@ -57,6 +66,11 @@ export const HeroSectionContentTitle = styled.h1`
     font-weight: 600;
     margin: 0 0 16px;
   }
+  
+  @media screen and (max-width: 700px) {
+    font-size: 32px;
+    text-align: center;
+  }
 `
 
 export const HeroSectionContentSubtitle = styled.p`
@@ -71,6 +85,11 @@ export const HeroSectionContentSubtitle = styled.p`
     margin: 0 0 64px;
     font-size: 18px;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 16px;
+    text-align: center;
   }
 `
 
@@ -107,6 +126,7 @@ export const HeroSectionContentLink = styled.a`
   }
 
   @media screen and (max-width: 1400px) {
+    padding: 12px 24.5px;
     span:first-child {
       font-size: 20px;
     }
@@ -117,6 +137,15 @@ export const HeroSectionContentLink = styled.a`
     }
   }
   
+  @media screen and (max-width: 700px) {
+    span:first-child {
+      font-size: 16px;
+    }
+
+    span:last-child {
+      font-size: 10px;
+    }
+  }
 `
 
 export const HeroSectionCollage = styled.div`

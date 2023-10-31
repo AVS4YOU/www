@@ -1,29 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {createGlobalStyle} from "styled-components";
 
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
-import {HeroSection} from '../screens/avs-video-maker'
-
-const GlobalStyles = createGlobalStyle`
-  .header-wrapper {
-    padding: 0 40px;
-  }
-
-  .mobileBlock {
-    right: 40px !important;
-  }
-
-  @media screen and (max-width: 400px) {
-    .mobileBlock {
-      right: 16px !important;
-    }
-
-    .header-wrapper {
-      padding: 0 16px;
-    }
-  }
-`
+import {HeroSection, ReviewsSection, GlobalStyles, AvsVideoMakerContainer} from '../screens/avs-video-maker'
 
 
 const AvsVideoMaker = (props) => {
@@ -54,6 +33,9 @@ const AvsVideoMaker = (props) => {
                   rel="stylesheet"></link>
             <GlobalStyles/>
             <HeroSection t={props.t}/>
+            <AvsVideoMakerContainer>
+                <ReviewsSection t={props.t} />
+            </AvsVideoMakerContainer>
         </Layout>
     );
 };
