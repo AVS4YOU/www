@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import withI18next from "../components/withI18next";
 import {HeroSection, ReviewsSection, StepsSection, SpecsSection, PowerSection, FeaturesSection} from "../screens/avs-slideshow-maker";
 
-
 class AvsSlideshowMaker extends React.PureComponent {
 
     constructor(props) {

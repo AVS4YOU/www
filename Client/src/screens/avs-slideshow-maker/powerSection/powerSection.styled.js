@@ -150,7 +150,10 @@ export const PowerSectionMiniCarouselItemDesc = styled.p`
   }
 `
 
-export const PowerSectionLargeCarouselWrapper = styled.div``
+export const PowerSectionLargeCarouselWrapper = styled.div`
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+  padding: 24px 0;
+`
 
 export const PowerSectionLargeCarouselItem = styled.div`
   padding: 0 16px;
@@ -162,7 +165,6 @@ export const PowerSectionLargeCarouselItem = styled.div`
 
 export const PowerSectionLargeCarouselItemImg = styled.img`
   width: 100%;
-  max-height: 488px;
   object-fit: cover;
   
   @media screen and (max-width: 1000px) {
@@ -179,6 +181,7 @@ export const PowerSectionLink = styled.a`
   background: #157BF2;
   padding: 16px 32px;
   color: #FFF;
+  text-decoration: none;
   
   font-size: 18px;
   font-style: normal;
@@ -187,6 +190,10 @@ export const PowerSectionLink = styled.a`
   width: max-content;
   margin: 0 auto;
   display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
   
   @media screen and (max-width: 400px) {
     width: calc(100% - 32px);

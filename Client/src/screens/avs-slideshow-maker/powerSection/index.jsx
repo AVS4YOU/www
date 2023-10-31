@@ -32,7 +32,6 @@ const ReviewsCarouselArrow = (props) => {
     )
 }
 
-
 const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarousel}) => {
 
     const onRef = (carousel) => {
@@ -41,11 +40,19 @@ const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarous
     }
 
     const beforeChange = (current, next) => {
-        // largeCarousel.slickGoTo(20)
+        if (next === 0) {
+            largeCarousel.slickGoTo(1)
+        }
+        if (next === 1) {
+            largeCarousel.slickGoTo(4)
+        }
+        if (next === 2) {
+            largeCarousel.slickGoTo(7)
+        }
     }
 
     const settings = {
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -83,8 +90,8 @@ const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarous
 
 const PowerSectionLargeCarousel = ({largeCarousel, setLargeCarousel, miniCarousel}) => {
 
-    const beforeChange = (current, next) => {
-        // miniCarousel.slickGoTo(Math.floor((next + 1) / 3))
+   const beforeChange = (current, next) => {
+        miniCarousel.slickGoTo(Math.floor((next) / 3))
     }
 
     const onRef = (carousel) => {
@@ -96,36 +103,15 @@ const PowerSectionLargeCarousel = ({largeCarousel, setLargeCarousel, miniCarouse
         dots: false,
         arrows: false,
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: "300px",
         initialSlide: 1,
+        centerMode: true,
         beforeChange,
-        responsive: [
-            {
-                breakpoint: 1000,
-                settings: {
-                    centerPadding: "200px",
-                }
-            },
-            {
-                breakpoint: 700,
-                settings: {
-                    centerPadding: "100px"
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    centerPadding: "50px"
-                }
-            }
-        ]
     }
     return (
         <PowerSectionLargeCarouselWrapper>
-            <Slider {...settings} ref={onRef}>
+            <Slider className="imgCarousel" {...settings} ref={onRef}>
                 {
                     powers.map((power) => power.img.map(img => (
                         <PowerSectionLargeCarouselItem key={img.id}>
@@ -158,7 +144,7 @@ export const PowerSection = ({t}) => {
                 setLargeCarousel={setLargeCarousel}
                 largeCarousel={largeCarousel}
             />
-            <PowerSectionLink>{t("Try AVS Slideshow Maker")}</PowerSectionLink>
+            <PowerSectionLink href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{t("Try AVS Slideshow Maker")}</PowerSectionLink>
         </PowerSectionStyled>
     )
 }

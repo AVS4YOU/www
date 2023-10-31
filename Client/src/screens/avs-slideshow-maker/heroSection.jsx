@@ -243,7 +243,7 @@ export const HeroSection = ({t}) => {
                     <HeroSectionSubtitle>
                         {t("Easily turn your photos into amazing video slideshows with music")}
                     </HeroSectionSubtitle>
-                    <HeroSectionButton id="download-now_avs-slideshow-maker">{t("Download now")}</HeroSectionButton>
+                    <HeroSectionButton href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" id="download-now_avs-slideshow-maker">{t("Download now")}</HeroSectionButton>
                 </HeroSectionContent>
                 <HeroSectionComposition>
                     <img className="img-main" srcSet={`${imgMain2x} 2x`} src={imgMain}/>

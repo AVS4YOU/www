@@ -134,6 +134,11 @@ export const FeaturesSectionLgCarouselControl = styled.div`
   p, span {
     display: none;
   }
+  @media screen and (max-width: 830px) {
+    p, span {
+      display: block;
+    }
+  }
 `
 
 export const FeaturesSectionLgCarouselControlCount = styled.span`
