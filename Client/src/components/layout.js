@@ -453,7 +453,7 @@ class Layout extends React.PureComponent {
                 <CookieMessage/>
                 {this.state.showBanner &&
                     <BannerWrapper onClick={this.onClosePopup}>
-                        <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
+                        <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
                                 <BannerWrapperCloseButton onClick={this.onClosePopup}>
                                     <XClose/>
