@@ -6,8 +6,13 @@ export const ReviewsSectionStyled = styled.section`
   background: #32393E;
   box-sizing: border-box;
   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  
   .slick-review {
-    width: 350px;
+    width: 93%;
     margin: 0 auto;
     border-radius: 20px;
     border: 1px solid var(--text-grey-xs, #BBB);
@@ -19,4 +24,42 @@ export const ReviewsSectionTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+`
+
+export const ReviewsSectionTitle = styled.h2`
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`
+
+export const ReviewsSectionTitleBlock = styled.span`
+  color: #FE9235;
+  margin: 0 8px;
+`
+
+export const ReviewsSectionStars = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+`
+
+export const ReviewsSectionUsers = styled.img``
+
+export const ReviewsSectionCount = styled.p`
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+  span {
+    margin-right: 6px;
+  }
 `
