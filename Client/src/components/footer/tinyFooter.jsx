@@ -11,7 +11,7 @@ import pinterest from "../../images/common/social/pinterest.svg";
 const FooterWrapper = styled.footer`
   background: #32393E;
   padding: 48px 0;
-  border-top: 1px solid #555;
+  border-top: ${props => props.hideLine ? 'none' : '1px solid #555'};
 `
 
 const FooterBox = styled.div`
@@ -80,7 +80,7 @@ const FooterDesc = styled.p`
 
 export const TinyFooter = (props) => {
     return (
-        <FooterWrapper>
+        <FooterWrapper hideLine={props.hideLine}>
             <FooterBox>
                 <FooterNavList>
                     <Link to="/about-us.aspx">
