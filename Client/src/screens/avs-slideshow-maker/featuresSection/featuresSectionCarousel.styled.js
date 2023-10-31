@@ -127,17 +127,13 @@ export const FeaturesSectionLgCarouselControl = styled.div`
   color: #555;
   left: calc(50% - 33px);
   
-  display: flex;
   align-items: center;
   gap: 5px;
-
-  p, span {
-    display: none;
-  }
+  display: none;
+  
   @media screen and (max-width: 830px) {
-    p, span {
-      display: block;
-    }
+    display: flex;
+  }
   }
 `
 
