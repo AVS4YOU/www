@@ -2,6 +2,7 @@ import React from "react"
 
 import ReviewsCarousel from "../../../components/reviewsCarousel";
 import {
+    ReviewsSectionCarouselWrapper,
     ReviewsSectionCount,
     ReviewsSectionStars,
     ReviewsSectionStyled,
@@ -17,6 +18,21 @@ import users from '../../../images/video-editing/users.png'
 export const ReviewsSection = ({t}) => {
     const setting = {
         arrows: false,
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     }
     return (
         <ReviewsSectionStyled>
@@ -39,7 +55,9 @@ export const ReviewsSection = ({t}) => {
                 <span>421937</span>
                 {t('Reviews')}
             </ReviewsSectionCount>
-            <ReviewsCarousel settings={setting} reviews={reviews}/>
+            <ReviewsSectionCarouselWrapper>
+                <ReviewsCarousel settings={setting} reviews={reviews}/>
+            </ReviewsSectionCarouselWrapper>
         </ReviewsSectionStyled>
     )
 }

@@ -11,7 +11,6 @@ const reviews = [
                     frameBorder={0}
                     style={{
                         width: '100%',
-                        height: '340px',
                         overflow: 'hidden'
                     }}
                     scrolling="yes"
@@ -30,7 +29,6 @@ const reviews = [
                     frameBorder={0}
                     style={{
                         width: '100%',
-                        height: '340px',
                         overflow: 'hidden'
                     }}
                     scrolling="yes"
@@ -49,7 +47,6 @@ const reviews = [
                     frameBorder={0}
                     style={{
                         width: '100%',
-                        height: '340px',
                         overflow: 'hidden'
                     }}
                     scrolling="yes"
@@ -68,7 +65,6 @@ const reviews = [
                     frameBorder={0}
                     style={{
                         width: '100%',
-                        height: '340px',
                         overflow: 'hidden'
                     }}
                     scrolling="yes"
