@@ -27,9 +27,15 @@ export const ReviewsSection = ({t}) => {
                 }
             },
             {
-                breakpoint: 1050,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
         ]

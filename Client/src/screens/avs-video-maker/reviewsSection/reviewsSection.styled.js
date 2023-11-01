@@ -4,7 +4,6 @@ export const ReviewsSectionStyled = styled.section`
   padding: 122px 134px 116px 136px;
   border-radius: 50px;
   background: #32393E;
-  //box-sizing: border-box;
   
   display: flex;
   flex-direction: column;
@@ -14,6 +13,13 @@ export const ReviewsSectionStyled = styled.section`
   @media screen and (max-width: 900px) {
     padding: 80px 56px;
   }
+  
+  @media screen and (max-width: 500px) {
+    padding: 48px 16px 36px 16px;
+  }
+  * {
+    box-sizing: border-box;
+  }
 `
 
 export const ReviewsSectionTitleWrapper = styled.div`
@@ -21,6 +27,10 @@ export const ReviewsSectionTitleWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  
+  @media screen and (max-width: 400px) {
+    gap: 16px;
+  }
 `
 
 export const ReviewsSectionTitle = styled.h2`
@@ -31,6 +41,16 @@ export const ReviewsSectionTitle = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
+  
+  @media screen and (max-width: 700px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 `
 
 export const ReviewsSectionTitleBlock = styled.span`
@@ -58,6 +78,10 @@ export const ReviewsSectionCount = styled.p`
   span {
     margin-right: 6px;
   }
+  
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+  }
 `
 
 export const ReviewsSectionCarouselWrapper = styled.div`
@@ -65,7 +89,7 @@ export const ReviewsSectionCarouselWrapper = styled.div`
 
   .slick-review {
     width: 93%;
-    height: 260px;
+    height: 230px;
     margin: 0 auto;
     border-radius: 20px;
     border: 1px solid var(--text-grey-xs, #BBB);
@@ -75,24 +99,55 @@ export const ReviewsSectionCarouselWrapper = styled.div`
 
   @media screen and (max-width: 1400px) {
     .slick-review {
-      height: 320px;
+      height: 290px;
     }
   }
 
   @media screen and (max-width: 1300px) {
     .slick-review {
-      height: 290px;
+      height: 260px;
     }
   }
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1200px) {
     .slick-review {
-      height: 250px;
+      height: 225px;
     }
   }
   
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     max-width: 570px;
     margin: 0 auto;
+    
+    .slick-review {
+      border-radius: 0;
+    }
   }
+  
+  @media screen and (max-width: 700px) {
+    max-width: 450px;
+    
+    .slick-review {
+      height: 170px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    max-width: 300px;
+    
+    .slick-review {
+      width: 100%;
+      height: 270px;
+    }
+    .quotes {
+      display: none;
+    }
+    
+    .carousel-wrapper {
+      padding-top: 18px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
 `

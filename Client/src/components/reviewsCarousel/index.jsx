@@ -37,7 +37,7 @@ const ReviewsCarousel = (props) => {
     }
 
     return (
-        <ReviewsCarouselWrapper>
+        <ReviewsCarouselWrapper className="carousel-wrapper">
             <Quotes className="quotes-left quotes"/>
             <ReviewsCarouselBox className="carousel-box">
                 <Slider {...sliderSettings}>
