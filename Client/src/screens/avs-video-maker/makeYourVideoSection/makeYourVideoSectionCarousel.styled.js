@@ -215,6 +215,7 @@ export const MakeYourVideoSectionSmCarouselWrapper = styled.div`
 
 export const MakeYourVideoSectionSmCarouselItem = styled.div`
   height: 123px;
+  cursor: pointer;
   
   @media screen and (max-width: 830px) {
     height: 135px;
