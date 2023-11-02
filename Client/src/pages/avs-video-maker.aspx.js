@@ -2,7 +2,13 @@ import React, {useEffect, useState} from "react";
 
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
-import {HeroSection, ReviewsSection, GlobalStyles, AvsVideoMakerContainer} from '../screens/avs-video-maker'
+import {
+    HeroSection,
+    ReviewsSection,
+    SpecsSection,
+    GlobalStyles,
+    AvsVideoMakerContainer
+} from '../screens/avs-video-maker'
 
 
 const AvsVideoMaker = (props) => {
@@ -36,6 +42,7 @@ const AvsVideoMaker = (props) => {
             <AvsVideoMakerContainer>
                 <ReviewsSection t={props.t} />
             </AvsVideoMakerContainer>
+            <SpecsSection t={props.t} />
         </Layout>
     );
 };
