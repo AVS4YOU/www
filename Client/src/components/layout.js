@@ -432,19 +432,6 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                {!this.props.headerIsDisabled ? <StyledPL>
-                    <div className="PLnewAvs">
-                        <div className="bgPlAvs">
-                            <div className="PLnewAvsLeft"></div>
-                            <div className="PLnewAvsRight"></div>
-                        </div>
-                        <a href={this.props.t("avs pl link")} target="_blank">
-                          <span className="PLnewAvsText">{this.props.t("beginningBanner")}
-                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span></span>
-                        </a>
-                    </div>
-                </StyledPL> : <div></div>}
-
                 {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
