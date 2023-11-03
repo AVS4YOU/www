@@ -7,7 +7,7 @@ import {
     HeroSectionContentSubtitle,
     HeroSectionContentTitle,
     HeroSectionStyled,
-    HeroSectionCollageImg,
+    HeroSectionCollageImg, HeroSectionLinkWrapper,
 } from './heroSection.styled'
 import img1 from '../../../images/avs-video-maker/hero1.png'
 import img12x from '../../../images/avs-video-maker/hero1@2x.png'
@@ -19,6 +19,8 @@ import img4 from '../../../images/avs-video-maker/hero4.png'
 import img42x from '../../../images/avs-video-maker/hero4@2x.png'
 import img5 from '../../../images/avs-video-maker/hero5.png'
 import img52x from '../../../images/avs-video-maker/hero5@2x.png'
+import Link from "../../../components/link";
+import logo from '../../../images/common/logo.svg'
 
 export const HeroSection = ({t}) => {
     return (
@@ -52,6 +54,11 @@ export const HeroSection = ({t}) => {
                     </HeroSectionCollageBox>
                 </HeroSectionCollage>
             </HeroSectionContainer>
+            <HeroSectionLinkWrapper>
+                <Link to="/">
+                    <img src={logo} />
+                </Link>
+            </HeroSectionLinkWrapper>
         </HeroSectionStyled>
     )
 }

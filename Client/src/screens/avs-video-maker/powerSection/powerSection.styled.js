@@ -24,7 +24,7 @@ export const PowerSectionStyled = styled.section`
   }
 
   @media screen and (max-width: 400px) {
-    padding: 48px 0;
+    padding: 48px 0 0;
     gap: 32px;
     border-radius: 20px;
   }

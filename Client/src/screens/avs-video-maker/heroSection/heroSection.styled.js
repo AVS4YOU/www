@@ -9,11 +9,29 @@ export const HeroSectionStyled = styled.section`
   border-radius: 0 0 50px 50px;
   
   @media screen and (max-width: 1650px) {
+    padding: 64px 0 0 0;
+  }
+  
+  @media screen and (max-width: 800px) {
     padding: 0;
   }
   
   @media screen and (max-width: 700px) {
     border-radius: 0;
+  }
+`
+
+export const HeroSectionLinkWrapper = styled.span`
+  position: absolute;
+  top: 0;
+  left: calc(50% - 610px);
+  
+  @media screen and (max-width: 1650px) {
+    left: 90px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 `
 
@@ -30,6 +48,10 @@ export const HeroSectionContainer = styled.div`
   
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url("${bg2x}");
+  }
+  
+  @media screen and (max-width: 700px) {
+    border-radius: 0;
   }
 `
 
