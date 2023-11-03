@@ -7,6 +7,9 @@ import {
     ReviewsSection,
     SpecsSection,
     MakeYourVideoSection,
+    PowerSection,
+    GetStartedSection,
+    StepsSection,
     GlobalStyles,
     AvsVideoMakerContainer
 } from '../screens/avs-video-maker'
@@ -42,9 +45,12 @@ const AvsVideoMaker = (props) => {
             <HeroSection t={props.t}/>
             <AvsVideoMakerContainer>
                 <ReviewsSection t={props.t} />
+                <PowerSection t={props.t} />
+                <StepsSection t={props.t} />
                 <MakeYourVideoSection t={props.t} />
             </AvsVideoMakerContainer>
             <SpecsSection t={props.t} />
+            <GetStartedSection t={props.t} />
         </Layout>
     );
 };

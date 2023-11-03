@@ -21,6 +21,10 @@ export const MakeYourVideoSectionStyled = styled.section`
   @media screen and (max-width: 600px) {
     padding: 48px 16px 40px 16px;
   }
+
+  @media screen and (max-width: 400px) {
+    border-radius: 20px;
+  }
 `
 
 export const MakeYourVideoSectionContainer = styled.div`

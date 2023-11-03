@@ -11,6 +11,10 @@ export const HeroSectionStyled = styled.section`
   @media screen and (max-width: 1650px) {
     padding: 0;
   }
+  
+  @media screen and (max-width: 700px) {
+    border-radius: 0;
+  }
 `
 
 export const HeroSectionContainer = styled.div`
