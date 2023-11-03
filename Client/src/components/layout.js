@@ -445,7 +445,7 @@ class Layout extends React.PureComponent {
                     </div>
                 </StyledPL> : <div></div>}
 
-                {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales}
+                {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
                     <main>{this.props.children}</main>
