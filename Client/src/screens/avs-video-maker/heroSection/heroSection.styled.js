@@ -23,15 +23,19 @@ export const HeroSectionStyled = styled.section`
 
 export const HeroSectionLinkWrapper = styled.span`
   position: absolute;
-  top: 0;
+  top: 10px;
   left: calc(50% - 610px);
   
   @media screen and (max-width: 1650px) {
-    left: 90px;
+    left: 113px;
   }
   
   @media screen and (max-width: 800px) {
     display: none;
+  }
+  
+  a {
+    display: block;
   }
 `
 
@@ -119,57 +123,59 @@ export const HeroSectionContentSubtitle = styled.p`
   }
 `
 
-export const HeroSectionContentLink = styled.a`
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  width: max-content;
-  gap: 4px;
-  padding: 16px 72px;
-  border-radius: 5px;
-  border: 1px solid #B25831;
-  color: #fff;
-  background: #DE6A31;
-  text-align: center;
-  &:hover {
+export const HeroSectionContentLink = styled.span`
+  a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
-  }
-  
-  span:first-child {
-    color: #FFF;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-  
-  span:last-child {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
-  @media screen and (max-width: 1400px) {
-    padding: 12px 24.5px;
-    span:first-child {
-      font-size: 20px;
+    width: max-content;
+    gap: 4px;
+    padding: 16px 72px;
+    border-radius: 5px;
+    border: 1px solid #B25831;
+    color: #fff;
+    background: #DE6A31;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
     }
 
-    span:last-child {
-      font-size: 14px;
+    span:first-child {
+      color: #FFF;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
       line-height: normal;
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    span:first-child {
-      font-size: 16px;
+      text-transform: uppercase;
     }
 
     span:last-child {
-      font-size: 10px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 1400px) {
+      padding: 12px 24.5px;
+      span:first-child {
+        font-size: 20px;
+      }
+
+      span:last-child {
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      span:first-child {
+        font-size: 16px;
+      }
+
+      span:last-child {
+        font-size: 10px;
+      }
     }
   }
 `

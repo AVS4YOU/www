@@ -13,7 +13,7 @@ const reviews = [
                         width: '100%',
                         overflow: 'hidden'
                     }}
-                    scrolling="yes"
+                    scrolling="no"
                     height="100%"
                 />
             </div>
@@ -31,7 +31,7 @@ const reviews = [
                         width: '100%',
                         overflow: 'hidden'
                     }}
-                    scrolling="yes"
+                    scrolling="no"
                     height="100%"
                 />
             </div>
@@ -49,7 +49,7 @@ const reviews = [
                         width: '100%',
                         overflow: 'hidden'
                     }}
-                    scrolling="yes"
+                    scrolling="no"
                     height="100%"
                 />
             </div>
@@ -67,7 +67,7 @@ const reviews = [
                         width: '100%',
                         overflow: 'hidden'
                     }}
-                    scrolling="yes"
+                    scrolling="no"
                     height="100%"
                 />
             </div>

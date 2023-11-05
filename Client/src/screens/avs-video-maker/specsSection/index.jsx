@@ -3,9 +3,10 @@ import Carousel from 'react-slick'
 
 import {SliderRightArrow} from "../../../images/icons";
 import {
-    ArrowStyled,
+    ArrowStyled, SpecsSectionCarouselWrapper,
     SpecsSectionContainer,
-    SpecsSectionItem, SpecsSectionItemDesc,
+    SpecsSectionItem,
+    SpecsSectionItemDesc,
     SpecsSectionItemTitle,
     SpecsSectionItemWrapper,
     SpecsSectionStyled
@@ -69,25 +70,27 @@ export const SpecsSection = ({t}) => {
                     desc={t(`Save the ready video project onto your computer hard disk drive, upload it to modern gadgets, share
                     online on popular web hostings or replenish your video collection with a new DVD/Blu-ray disc.`)}
                 />
-                <Carousel {...settings}>
-                    {
-                        specs.map(spec => (
-                            <SpecsSectionItemWrapper key={spec.id}>
-                                <SpecsSectionItem>
-                                    {
-                                        spec.icon
-                                    }
-                                    <SpecsSectionItemTitle as="h3">
-                                        {t(spec.title)}
-                                    </SpecsSectionItemTitle>
-                                    <SpecsSectionItemDesc>
-                                        {t(spec.desc)}
-                                    </SpecsSectionItemDesc>
-                                </SpecsSectionItem>
-                            </SpecsSectionItemWrapper>
-                        ))
-                    }
-                </Carousel>
+                <SpecsSectionCarouselWrapper>
+                    <Carousel {...settings}>
+                        {
+                            specs.map(spec => (
+                                <SpecsSectionItemWrapper key={spec.id}>
+                                    <SpecsSectionItem>
+                                        {
+                                            spec.icon
+                                        }
+                                        <SpecsSectionItemTitle as="h3">
+                                            {t(spec.title)}
+                                        </SpecsSectionItemTitle>
+                                        <SpecsSectionItemDesc>
+                                            {t(spec.desc)}
+                                        </SpecsSectionItemDesc>
+                                    </SpecsSectionItem>
+                                </SpecsSectionItemWrapper>
+                            ))
+                        }
+                    </Carousel>
+                </SpecsSectionCarouselWrapper>
             </SpecsSectionContainer>
         </SpecsSectionStyled>
     )

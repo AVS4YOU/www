@@ -3,7 +3,7 @@ import bg from '../../../images/avs-video-maker/power-section-bg.png'
 
 export const StepsSectionStyled = styled.section`
   background-image: url("${bg}");
-  background-size: 110%;
+  background-size: 200%;
   padding: 112px 122px 53px 90px;
   border-radius: 50px;
   

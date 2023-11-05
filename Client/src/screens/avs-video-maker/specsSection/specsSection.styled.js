@@ -5,14 +5,39 @@ export const SpecsSectionStyled = styled.div`
   padding: 167px 46px;
   background-color: #32393E;
 
-  .visibleSlider {
-    max-width: 1240px;
-    margin-top: 48px;
-    padding-bottom: 32px;
+  @media screen and (max-width: 1280px) {
+    padding: 86px 46px 122px 46px;
   }
 
-  .slick-list {
-    //margin: 0 20px;
+  @media screen and (max-width: 800px) {
+    padding: 86px 46px 78px 46px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    padding: 48px 16px 40px 16px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+`
+
+export const SpecsSectionContainer = styled.div`
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+`
+
+export const SpecsSectionCarouselWrapper = styled.div`
+  width: 100%;
+  .visibleSlider {
+    padding-bottom: 32px;
+    width: 100%;
   }
 
   .slick-dots li {
@@ -38,36 +63,14 @@ export const SpecsSectionStyled = styled.div`
       height: 100%;
     }
   }
-
-  @media screen and (max-width: 1280px) {
-    padding: 86px 46px 122px 46px;
-    .visibleSlider {
-      max-width: calc(100% - 80px);
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    padding: 86px 46px 78px 46px;
-    .visibleSlider {
-      max-width: calc(100% - 80px);
-    }
-  }
   
-  @media screen and (max-width: 500px) {
-    padding: 48px 16px 40px 16px;
+  @media screen and (max-width: 400px) {
     .visibleSlider {
-      max-width: calc(100% - 32px);
+      margin-top: 48px;
+      padding-bottom: 24px;
+      width: 100%;
     }
   }
-`
-
-export const SpecsSectionContainer = styled.div`
-  max-width: 1240px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 export const SpecsSectionItemWrapper = styled.div`
@@ -80,7 +83,7 @@ export const SpecsSectionItem = styled.div`
   align-items: center;
   padding: 32px;
   border: 1px solid #555;
-  height: 264px;
+  height: 290px;
   margin: 0 30px;
 
   @media screen and (max-width: 600px) {
@@ -120,6 +123,7 @@ export const ArrowStyled = styled.a`
   width: max-content;
   height: max-content;
   z-index: 10;
+  position: absolute;
 
   &:before {
     content: none;
