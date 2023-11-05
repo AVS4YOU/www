@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from 'react-slick'
 
-import {SliderRightArrow} from "../../../images/icons";
+import {SliderLeftArrow, SliderRightArrow} from "../../../images/icons";
 import {
-    ArrowStyled, SpecsSectionCarouselWrapper,
+    SpecsSectionCarouselWrapper,
     SpecsSectionContainer,
     SpecsSectionItem,
     SpecsSectionItemDesc,
@@ -15,10 +15,16 @@ import {SectionTitle} from "../../../components/sectionTitle";
 import specs from "./specsSection.data";
 
 const Arrow = (props) => {
+    const {dir, ...otherProps} = props;
+
+    if (dir === 'right') {
+        return (
+            <SliderRightArrow {...otherProps} isDisabled={props.className.includes('disabled')}/>
+        )
+    }
+
     return (
-        <ArrowStyled {...props}>
-            <SliderRightArrow/>
-        </ArrowStyled>
+        <SliderLeftArrow {...otherProps} isDisabled={props.className.includes('disabled')}/>
     )
 }
 
@@ -27,12 +33,11 @@ export const SpecsSection = ({t}) => {
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        className: 'visibleSlider',
         nextArrow: (
-            <Arrow/>
+            <Arrow dir="right"/>
         ),
         prevArrow: (
-            <Arrow/>
+            <Arrow dir="left"/>
         ),
         responsive: [
             {

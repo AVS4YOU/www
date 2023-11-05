@@ -5,7 +5,7 @@ export const SpecsSectionStyled = styled.div`
   padding: 167px 46px;
   background-color: #32393E;
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 800px) {
     padding: 86px 46px 122px 46px;
   }
 
@@ -24,51 +24,100 @@ export const SpecsSectionStyled = styled.div`
 
 export const SpecsSectionContainer = styled.div`
   max-width: 1240px;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 48px;
+  
+  @media screen and (max-width: 500px) {
+    gap: 24px;
+  }
 `
 
 export const SpecsSectionCarouselWrapper = styled.div`
-  width: 100%;
-  .visibleSlider {
-    padding-bottom: 32px;
-    width: 100%;
+  .slick-slider {
+    display: grid;
+    grid-template-areas: 'list';
   }
 
-  .slick-dots li {
-    width: 25px;
+  .slick-list {
+    grid-area: list;
+    margin: 0 -28px 0; // your slide margin
+  }
 
-    button {
-      margin: 0 auto;
+  .slick-arrow {
+    position: relative;
+    z-index: 1;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    transform: none;
+    top: auto;
+  }
+
+  .slick-next {
+    right: 0;
+    grid-area: next-arrow;
+  }
+
+  .slick-prev {
+    left: 0;
+    grid-area: prev-arrow;
+  }
+
+  .slick-dots {
+    position: static;
+    bottom: 0;
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    grid-area: dots;
+
+    li {
+      width: auto;
+      height: auto;
+
+      button {
+        &:before {
+          content: none;
+        }
+
+        background: #9A9997;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+      }
     }
 
-    button:before {
-      font-size: 11px;
-      color: #9A9997;
-    }
-
-    &.slick-active button:before {
-      color: #FE9235;
+    .slick-active button {
+      background: #FE9235;
     }
   }
 
-  .slick-slide {
-
-    & > div {
-      height: 100%;
+  @media screen and (max-width: 1400px) {
+    .slick-list {
+      margin: 0 -16px; // your slide margin
     }
+
+    .slick-slider {
+      grid-template-areas: 'prev-arrow list next-arrow' 'dots dots dots';
+      align-items: center;
+      column-gap: 16px; // gap between slider and its arrows
+      row-gap: 28px; // gap between slider and its dots
+    }
+    
   }
-  
-  @media screen and (max-width: 400px) {
-    .visibleSlider {
-      margin-top: 48px;
-      padding-bottom: 24px;
-      width: 100%;
+  @media screen and (max-width: 500px) {
+    .slick-slider {
+      margin: 0 32px;
+    }
+    .slick-slider {
+      grid-template-areas: 'list' 'dots';
+      align-items: center;
+      column-gap: 0; // gap between slider and its arrows
+      row-gap: 24px; // gap between slider and its dots
     }
   }
 `
@@ -84,10 +133,14 @@ export const SpecsSectionItem = styled.div`
   padding: 32px;
   border: 1px solid #555;
   height: 290px;
-  margin: 0 30px;
+  margin: 0 28px;
+  
+  @media screen and (max-width: 1400px) {
+    margin: 0 16px;
+  }
+  
+  @media screen and (max-width: 800px) {
 
-  @media screen and (max-width: 600px) {
-    height: 216px;
   }
 `
 
@@ -116,36 +169,5 @@ export const SpecsSectionItemDesc = styled(Text)`
 
   @media screen and (max-width: 600px) {
     font-size: 14px;
-  }
-`
-
-export const ArrowStyled = styled.a`
-  width: max-content;
-  height: max-content;
-  z-index: 10;
-  position: absolute;
-
-  &:before {
-    content: none;
-  }
-  &.slick-next {
-    transform: translate(10px, 0px);
-    height: 100%;
-    display: flex !important;
-    align-items: center;
-    top: 0;
-    right: -33px;
-  }
-  &.slick-prev {
-    transform: translate(-10px, -10px);
-    height: 100%;
-    display: flex !important;
-    align-items: center;
-    top: 0;
-    left: -33px;
-
-    svg {
-      transform: rotate(180deg);
-    }
   }
 `
