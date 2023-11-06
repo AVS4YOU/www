@@ -181,6 +181,7 @@ export const HeroSectionContentLink = styled.span`
     @media screen and (max-width: 700px) {
       span:first-child {
         font-size: 16px;
+        
       }
 
       span:last-child {
