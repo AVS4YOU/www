@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {
     HeroSectionCollage, HeroSectionCollageBox,
     HeroSectionContainer,
@@ -22,7 +22,16 @@ import img52x from '../../../images/avs-video-maker/hero5@2x.png'
 import Link from "../../../components/link";
 import logo from '../../../images/common/logo.svg'
 
+import video1 from '../../../images/avs-video-maker/hero1.mp4'
+import video2 from '../../../images/avs-video-maker/hero2.mp4'
+import video3 from '../../../images/avs-video-maker/hero3.mp4'
+import video4 from '../../../images/avs-video-maker/hero4.mp4'
+import video5 from '../../../images/avs-video-maker/hero5.mp4'
+import video6 from '../../../images/avs-video-maker/hero6.mp4'
+import video7 from '../../../images/avs-video-maker/hero7.mp4'
+
 export const HeroSection = ({t}) => {
+
     return (
         <HeroSectionStyled>
             <HeroSectionContainer>
@@ -38,7 +47,7 @@ export const HeroSection = ({t}) => {
                             <span>
                                 {t('Download Video Maker')}
                             </span>
-                                <span>
+                            <span>
                                 {t('Windows 11/10/8/7/Vista/XP')}
                             </span>
                         </Link>
@@ -46,13 +55,57 @@ export const HeroSection = ({t}) => {
                 </HeroSectionContent>
                 <HeroSectionCollage>
                     <HeroSectionCollageBox className="collage-box1">
-                        <HeroSectionCollageImg className="collage1" srcSet={`${img12x} 2x`} src={img1}/>
-                        <HeroSectionCollageImg className="collage2" srcSet={`${img22x} 2x`} src={img2}/>
-                        <HeroSectionCollageImg className="collage3" srcSet={`${img32x} 2x`} src={img3}/>
+                        <HeroSectionCollageImg
+                            className="collage1"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video1}/>
+                        </HeroSectionCollageImg>
+                        <HeroSectionCollageImg
+                            className="collage2"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video2}/>
+                        </HeroSectionCollageImg>
+                        <HeroSectionCollageImg
+                            className="collage3"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video3}/>
+                        </HeroSectionCollageImg>
                     </HeroSectionCollageBox>
                     <HeroSectionCollageBox className="collage-box2">
-                        <HeroSectionCollageImg className="collage4" srcSet={`${img42x} 2x`} src={img4}/>
-                        <HeroSectionCollageImg className="collage5" srcSet={`${img52x} 2x`} src={img5}/>
+                        <HeroSectionCollageImg
+                            className="collage4"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video4}/>
+                        </HeroSectionCollageImg>
+                        <HeroSectionCollageImg
+                            className="collage5"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video5}/>
+                        </HeroSectionCollageImg>
+                        <HeroSectionCollageImg
+                            className="collage6"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video6}/>
+                        </HeroSectionCollageImg>
+                        <HeroSectionCollageImg
+                            className="collage7"
+                            autoplay muted loop
+                            ref={(ref) => ref?.play()}
+                        >
+                            <source src={video7}/>
+                        </HeroSectionCollageImg>
                     </HeroSectionCollageBox>
                 </HeroSectionCollage>
             </HeroSectionContainer>
