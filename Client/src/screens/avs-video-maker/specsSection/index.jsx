@@ -1,11 +1,12 @@
 import React from "react";
 import Carousel from 'react-slick'
 
-import {SliderRightArrow} from "../../../images/icons";
+import {SliderLeftArrow, SliderRightArrow} from "../../../images/icons";
 import {
-    ArrowStyled,
+    SpecsSectionCarouselWrapper,
     SpecsSectionContainer,
-    SpecsSectionItem, SpecsSectionItemDesc,
+    SpecsSectionItem,
+    SpecsSectionItemDesc,
     SpecsSectionItemTitle,
     SpecsSectionItemWrapper,
     SpecsSectionStyled
@@ -14,10 +15,16 @@ import {SectionTitle} from "../../../components/sectionTitle";
 import specs from "./specsSection.data";
 
 const Arrow = (props) => {
+    const {dir, ...otherProps} = props;
+
+    if (dir === 'right') {
+        return (
+            <SliderRightArrow {...otherProps} isDisabled={props.className.includes('disabled')}/>
+        )
+    }
+
     return (
-        <ArrowStyled {...props}>
-            <SliderRightArrow/>
-        </ArrowStyled>
+        <SliderLeftArrow {...otherProps} isDisabled={props.className.includes('disabled')}/>
     )
 }
 
@@ -26,12 +33,11 @@ export const SpecsSection = ({t}) => {
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        className: 'visibleSlider',
         nextArrow: (
-            <Arrow/>
+            <Arrow dir="right"/>
         ),
         prevArrow: (
-            <Arrow/>
+            <Arrow dir="left"/>
         ),
         responsive: [
             {
@@ -69,25 +75,27 @@ export const SpecsSection = ({t}) => {
                     desc={t(`Save the ready video project onto your computer hard disk drive, upload it to modern gadgets, share
                     online on popular web hostings or replenish your video collection with a new DVD/Blu-ray disc.`)}
                 />
-                <Carousel {...settings}>
-                    {
-                        specs.map(spec => (
-                            <SpecsSectionItemWrapper key={spec.id}>
-                                <SpecsSectionItem>
-                                    {
-                                        spec.icon
-                                    }
-                                    <SpecsSectionItemTitle as="h3">
-                                        {t(spec.title)}
-                                    </SpecsSectionItemTitle>
-                                    <SpecsSectionItemDesc>
-                                        {t(spec.desc)}
-                                    </SpecsSectionItemDesc>
-                                </SpecsSectionItem>
-                            </SpecsSectionItemWrapper>
-                        ))
-                    }
-                </Carousel>
+                <SpecsSectionCarouselWrapper>
+                    <Carousel {...settings}>
+                        {
+                            specs.map(spec => (
+                                <SpecsSectionItemWrapper key={spec.id}>
+                                    <SpecsSectionItem>
+                                        {
+                                            spec.icon
+                                        }
+                                        <SpecsSectionItemTitle as="h3">
+                                            {t(spec.title)}
+                                        </SpecsSectionItemTitle>
+                                        <SpecsSectionItemDesc>
+                                            {t(spec.desc)}
+                                        </SpecsSectionItemDesc>
+                                    </SpecsSectionItem>
+                                </SpecsSectionItemWrapper>
+                            ))
+                        }
+                    </Carousel>
+                </SpecsSectionCarouselWrapper>
             </SpecsSectionContainer>
         </SpecsSectionStyled>
     )

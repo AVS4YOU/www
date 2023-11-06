@@ -34,29 +34,31 @@ export const HeroSection = ({t}) => {
                         {t('Create engaging content effortlessly with no editing experience.')}
                     </HeroSectionContentSubtitle>
                     <HeroSectionContentLink>
-                        <span>
-                            {t('Download Video Maker')}
-                        </span>
-                        <span>
-                            {t('Windows 11/10/8/7/Vista/XP')}
-                        </span>
+                        <Link to="/downloads.aspx">
+                            <span>
+                                {t('Download Video Maker')}
+                            </span>
+                                <span>
+                                {t('Windows 11/10/8/7/Vista/XP')}
+                            </span>
+                        </Link>
                     </HeroSectionContentLink>
                 </HeroSectionContent>
                 <HeroSectionCollage>
                     <HeroSectionCollageBox className="collage-box1">
-                        <HeroSectionCollageImg className="collage1" srcSet={`${img12x} 2x`} src={img1} />
-                        <HeroSectionCollageImg className="collage2" srcSet={`${img22x} 2x`} src={img2} />
-                        <HeroSectionCollageImg className="collage3" srcSet={`${img32x} 2x`} src={img3} />
+                        <HeroSectionCollageImg className="collage1" srcSet={`${img12x} 2x`} src={img1}/>
+                        <HeroSectionCollageImg className="collage2" srcSet={`${img22x} 2x`} src={img2}/>
+                        <HeroSectionCollageImg className="collage3" srcSet={`${img32x} 2x`} src={img3}/>
                     </HeroSectionCollageBox>
                     <HeroSectionCollageBox className="collage-box2">
-                        <HeroSectionCollageImg className="collage4" srcSet={`${img42x} 2x`} src={img4} />
-                        <HeroSectionCollageImg className="collage5" srcSet={`${img52x} 2x`} src={img5} />
+                        <HeroSectionCollageImg className="collage4" srcSet={`${img42x} 2x`} src={img4}/>
+                        <HeroSectionCollageImg className="collage5" srcSet={`${img52x} 2x`} src={img5}/>
                     </HeroSectionCollageBox>
                 </HeroSectionCollage>
             </HeroSectionContainer>
             <HeroSectionLinkWrapper>
                 <Link to="/">
-                    <img src={logo} />
+                    <img src={logo}/>
                 </Link>
             </HeroSectionLinkWrapper>
         </HeroSectionStyled>
