@@ -1,5 +1,11 @@
 # Changelog
 
+# 1.0.55
+* Added page /avs-video-maker.aspx
+
+## 1.0.54
+* Removed banner "Halloween treat!"
+
 ## 1.0.53
 * Added banner "Halloween treat!"
 * Added landing page /avs-special-offer-halloween.aspx
