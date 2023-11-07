@@ -1,4 +1,6 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
+import { Link } from 'gatsby'
+
 import {
     HeroSectionCollage, HeroSectionCollageBox,
     HeroSectionContainer,
@@ -9,17 +11,6 @@ import {
     HeroSectionStyled,
     HeroSectionCollageImg, HeroSectionLinkWrapper,
 } from './heroSection.styled'
-import img1 from '../../../images/avs-video-maker/hero1.png'
-import img12x from '../../../images/avs-video-maker/hero1@2x.png'
-import img2 from '../../../images/avs-video-maker/hero2.png'
-import img22x from '../../../images/avs-video-maker/hero2@2x.png'
-import img3 from '../../../images/avs-video-maker/hero3.png'
-import img32x from '../../../images/avs-video-maker/hero3@2x.png'
-import img4 from '../../../images/avs-video-maker/hero4.png'
-import img42x from '../../../images/avs-video-maker/hero4@2x.png'
-import img5 from '../../../images/avs-video-maker/hero5.png'
-import img52x from '../../../images/avs-video-maker/hero5@2x.png'
-import Link from "../../../components/link";
 import logo from '../../../images/common/logo.svg'
 
 import video1 from '../../../images/avs-video-maker/hero1.mp4'
@@ -43,7 +34,7 @@ export const HeroSection = ({t}) => {
                         {t('Create engaging content effortlessly with no editing experience.')}
                     </HeroSectionContentSubtitle>
                     <HeroSectionContentLink>
-                        <Link to="/downloads.aspx">
+                        <Link to="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                             <span>
                                 {t('Download Video Maker')}
                             </span>
