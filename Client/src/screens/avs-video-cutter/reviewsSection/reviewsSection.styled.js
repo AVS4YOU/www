@@ -111,31 +111,24 @@ export const ReviewsSectionCarouselWrapper = styled.div`
   .slick-list {
     margin: 0 -15px;
   }
+  
+  .slick-dots {
+    bottom: -43px;
+  }
 
   @media screen and (max-width: 1400px) {
+    max-width: 950px;
+    margin: 0 auto;
     .slick-review {
-      height: 320px;
-    }
-  }
-
-  @media screen and (max-width: 1300px) {
-    .slick-review {
-      height: 260px;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    .slick-review {
-      height: 225px;
+      height: 270px;
     }
   }
   
   @media screen and (max-width: 1100px) {
     max-width: 570px;
-    margin: 0 auto;
     
     .slick-review {
-      border-radius: 0;
+      height: 235px;
     }
   }
   
