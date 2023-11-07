@@ -1,32 +1,37 @@
 # Changelog
 
-# 1.0.55
-* Added page /avs-video-maker.aspx
+## 1.0.55
+### New
+* Added landing page `avs-video-maker.aspx`
+* Added landing page `avs-slideshow-maker.aspx`
 
 ## 1.0.54
+### New
 * Removed banner "Halloween treat!"
 
 ## 1.0.53
+### New
 * Added banner "Halloween treat!"
-* Added landing page /avs-special-offer-halloween.aspx
+* Added landing page `avs-special-offer-halloween.aspx`
 
 ## 1.0.52
-* Added page /avs-special-offer-autumn.aspx
-
-## 1.0.52
+### New
 * Added banner
-* Changed styles for "Download now" button in /video-editing.aspx
+* Added page `avs-special-offer-autumn.aspx`
+
+### Fixes
+* Changed styles for "Download now" button in `video-editing.aspx`
 
 ## 1.0.51
 
 ### New
-* Added page /video-editing.aspx
+* Added landing page `video-editing.aspx`
 
 ## 1.0.50
 
 ### New
 * Added InLine 2Сheckout at register page
-* Added landing page /avs-editor.aspx
+* Added landing page `avs-editor.aspx`
 
 ### Fixes
 * Fixed Company name
@@ -48,7 +53,7 @@
 
 ### New
 * Added event "Easter Hunt 2023" for en/de/fr/es/it/jp
-* Added new styles for /affiliates.aspx for en
+* Added new styles for `affiliates.aspx` for en
 
 ## 1.0.46
 

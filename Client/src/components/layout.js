@@ -325,6 +325,7 @@ class Layout extends React.PureComponent {
         }
 
 
+
     }
 
     componentWillUnmount() {
@@ -387,7 +388,6 @@ class Layout extends React.PureComponent {
                     {this.props.metaDescription && <meta name="description" content={this.props.metaDescription}/>}
                     {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords}/>}
                     {this.props.pageContext.originalPath}
-
                     <link rel="canonical"
                           href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? "" : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
@@ -453,7 +453,7 @@ class Layout extends React.PureComponent {
                 <CookieMessage/>
                 {this.state.showBanner &&
                     <BannerWrapper onClick={this.onClosePopup}>
-                        <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
+                        <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
                                 <BannerWrapperCloseButton onClick={this.onClosePopup}>
                                     <XClose/>
@@ -473,7 +473,7 @@ class Layout extends React.PureComponent {
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }
-                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter t={this.props.t} /> :<Footer t={this.props.t}/>)}
+                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer t={this.props.t}/>)}
             </PageContext.Provider>
         )
     }

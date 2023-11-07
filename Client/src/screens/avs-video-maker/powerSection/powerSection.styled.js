@@ -173,10 +173,9 @@ export const PowerSectionMiniCarouselItemDesc = styled.p`
 `
 
 export const PowerSectionLargeCarouselWrapper = styled.div`
-  width: calc(100% + 32px);
-  margin-left: -16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+  padding: 24px 0;
 `
-
 export const PowerSectionLargeCarouselItem = styled.div`
   padding: 0 16px;
   display: flex !important;
