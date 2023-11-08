@@ -3,7 +3,7 @@ import bg from '../../../images/avs-video-maker/power-section-bg.png'
 
 export const StepsSectionStyled = styled.section`
   background-image: url("${bg}");
-  background-size: 200%;
+  background-size: cover;
   padding: 112px 122px 53px 90px;
   border-radius: 50px;
   
@@ -239,20 +239,22 @@ export const StepsSectionStepsItemMobileSubtitle = styled.p`
 
 export const StepsSectionStepsItemCardWrapper = styled.div`
   position: relative;
+  flex-grow: 1;
+  width: 100%;
 `
 
 export const StepsSectionStepsItemCard = styled.div`
   display: flex;
   width: 100%;
   height: 404px;
-  max-width: 940px;
+  max-width: 990px;
 
   position: absolute;
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms ease-in-out;
   top: 0;
-  right: 0;
+  left: 0;
 
   &.active {
     position: static;
@@ -339,11 +341,12 @@ export const StepsSectionStepsItemCard = styled.div`
   }
 `
 
-export const StepsSectionStepsItemCardImg = styled.img`
+export const StepsSectionStepsItemCardImg = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  flex-grow: 1;
 `
 
 export const StepsSectionStepsItemCardElem = styled.img`

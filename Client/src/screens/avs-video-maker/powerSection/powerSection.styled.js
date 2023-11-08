@@ -173,8 +173,6 @@ export const PowerSectionMiniCarouselItemDesc = styled.p`
 `
 
 export const PowerSectionLargeCarouselWrapper = styled.div`
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
-  padding: 24px 0;
 `
 export const PowerSectionLargeCarouselItem = styled.div`
   padding: 0 16px;
@@ -194,4 +192,3 @@ export const PowerSectionLargeCarouselItemImg = styled.img`
     border-radius: 20px;
   }
 `
-

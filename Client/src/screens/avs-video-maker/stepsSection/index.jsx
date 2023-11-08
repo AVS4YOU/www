@@ -17,6 +17,7 @@ import {
     StepsSectionStepsControlWrapper, StepsSectionStepsItemMobileSubtitle,
 } from './stepsSection.styled'
 import steps from "./stepsSection.data";
+import poster6 from "../../../images/avs-video-maker/hero6.png";
 
 const StepsSectionSteps = ({t}) => {
     const [activeStepIndex, setActiveStepIndex] = useState(0)
@@ -56,10 +57,13 @@ const StepsSectionSteps = ({t}) => {
                             key={step.id}
                         >
                             <StepsSectionStepsItemCardImg
-                                srcSet={`${step.img2x}`}
-                                src={step.img}
+                                autoplay muted loop
+                                ref={(ref) => ref?.play()}
+                                poster={step.poster}
                                 className="img"
-                            />
+                            >
+                                <source src={step.video}/>
+                            </StepsSectionStepsItemCardImg>
                             <StepsSectionStepsItemCardElem
                                 srcSet={`${step.elem2x}`}
                                 src={step.elem}

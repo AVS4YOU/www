@@ -13,7 +13,6 @@ import {
     PowerSectionLargeCarouselWrapper,
     PowerSectionLargeCarouselItem,
     PowerSectionLargeCarouselItemImg,
-    PowerSectionLink,
 } from './powerSection.styled'
 import {SliderLeftArrow, SliderRightArrow} from "../../../images/icons";
 import powers from './powerSection.data'
@@ -107,7 +106,7 @@ const PowerSectionLargeCarousel = ({largeCarousel, setLargeCarousel, miniCarouse
         slidesToScroll: 1,
         initialSlide: 1,
         centerMode: true,
-        initialSlide: 1,        beforeChange,
+        beforeChange,
                 }
     return (
         <PowerSectionLargeCarouselWrapper>
@@ -144,7 +143,6 @@ export const PowerSection = ({t}) => {
                 setLargeCarousel={setLargeCarousel}
                 largeCarousel={largeCarousel}
             />
-            <PowerSectionLink href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{t("Try AVS Slideshow Maker")}</PowerSectionLink>     
         </PowerSectionStyled>
     )
 }
