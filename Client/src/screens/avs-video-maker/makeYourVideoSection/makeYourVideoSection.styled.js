@@ -60,6 +60,7 @@ export const MakeYourVideoSectionTitle = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  font-family: "Montserrat", sans-serif;
 
   @media screen and (max-width: 400px) {
     font-size: 24px;

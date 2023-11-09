@@ -93,6 +93,7 @@ export const MakeYourVideoSectionLgCarouselItemCard = styled.div`
 export const MakeYourVideoSectionLgCarouselItemImg = styled.img`
   margin-left: auto;
   width: 688px;
+  border-radius: 8px;
   
   @media screen and (max-width: 830px) {
     margin: 0 auto;
@@ -229,11 +230,18 @@ export const MakeYourVideoSectionSmCarouselItemBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
   
   svg {
     width: 56px;
     height: 56px;
     flex-shrink: 0;
+  }
+  
+  &:hover {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 16px;
+    background: #FFF;
   }
 `
 
