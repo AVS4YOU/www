@@ -4,16 +4,16 @@ export const ReviewsSectionStyled = styled.section`
   padding: 122px 96px 112px 96px;
   background: #32393E;
   
-  @media screen and (max-width: 900px) {
-    padding: 80px 56px;
+  @media screen and (max-width: 800px) {
+    padding: 80px 96px;
   }
   
-  @media screen and (max-width: 500px) {
-    padding: 48px 16px 36px 16px;
+  @media screen and (max-width: 750px) {
+    padding: 80px 40px;
   }
   
   @media screen and (max-width: 400px) {
-    border-radius: 20px;
+    padding: 48px 16px;
   }
   * {
     box-sizing: border-box;
@@ -28,6 +28,10 @@ export const ReviewsSectionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  
+  @media screen and (max-width: 800px) and (min-width: 401px) {
+    gap: 0;
+  }
 `
 
 export const ReviewsSectionTitleWrapper = styled.div`
@@ -36,6 +40,10 @@ export const ReviewsSectionTitleWrapper = styled.div`
   align-items: center;
   gap: 24px;
   
+  @media screen and (max-width: 800px) {
+    gap: 23px;
+  }
+  
   @media screen and (max-width: 400px) {
     gap: 16px;
   }
@@ -43,7 +51,6 @@ export const ReviewsSectionTitleWrapper = styled.div`
 
 export const ReviewsSectionTitle = styled.h2`
   margin: 0;
-  font-family: "Montserrat", sans-serif;
   color: #FFF;
   font-size: 24px;
   font-style: normal;
@@ -73,7 +80,11 @@ export const ReviewsSectionStars = styled.div`
   gap: 6px;
 `
 
-export const ReviewsSectionUsers = styled.img``
+export const ReviewsSectionUsers = styled.img`
+  @media only screen and (max-width: 800px) and (min-width: 401px) {
+    margin: 13px 0 2px 0;
+  }
+`
 
 export const ReviewsSectionCount = styled.p`
   margin: 0;
@@ -136,26 +147,25 @@ export const ReviewsSectionCarouselWrapper = styled.div`
     max-width: 450px;
     
     .slick-review {
-      height: 170px;
+      height: 180px;
     }
   }
   
   @media screen and (max-width: 650px) {
-    max-width: 300px;
+    max-width: 256px;
     
     .slick-review {
       width: 100%;
-      height: 270px;
+      height: 240px;
     }
     .quotes {
       display: none;
     }
     
     .carousel-wrapper {
-      padding-top: 18px;
+      padding-top: 24px;
       padding-right: 0;
       padding-left: 0;
     }
   }
-  
 `

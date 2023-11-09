@@ -5,7 +5,9 @@ import Layout from "../components/layout";
 import {
     GuideSection,
     HeroSection,
+    UsageSection,
     ReviewsSection,
+    FeaturesSection,
 } from '../screens/avs-video-cutter'
 
 
@@ -23,6 +25,8 @@ const AvsVideoCutter = (props) => {
         >
             <HeroSection t={props.t}/>
             <GuideSection t={props.t} />
+            <FeaturesSection t={props.t} />
+            <UsageSection t={props.t} />
             <ReviewsSection t={props.t} />
         </Layout>
     );
