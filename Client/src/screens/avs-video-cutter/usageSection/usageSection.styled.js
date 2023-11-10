@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const UsageSectionStyled = styled.section`
   padding: 112px 40px;
+  background: var(--bg-light-grey-xs, #F9F9F9);
 
   @media screen and (max-width: 800px) {
     padding: 88px 40px 88px 40px;
