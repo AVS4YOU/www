@@ -19,6 +19,7 @@ export const StepsSectionStyled = styled.section`
   
   @media screen and (max-width: 1000px) {
     padding: 48px 40px;
+    gap: 60px;
   }
   
   @media screen and (max-width: 650px) {
@@ -57,10 +58,17 @@ export const StepsSectionStepsStyled = styled.div`
     flex-direction: column-reverse;
     gap: 48px;
   }
+  
+  @media screen and (max-width: 650px) {
+    gap: 24px;
+  }
+  
 `
 
 export const StepsSectionStepsControlWrapper = styled.div`
-    
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 `
 
 export const StepsSectionStepsControl = styled.ol`
@@ -97,6 +105,11 @@ export const StepsSectionStepsControl = styled.ol`
   
   @media screen and (max-width: 650px) {
     padding-bottom: 16px;
+    gap: 0;
+    justify-content: space-between;
+    min-width: auto;
+    max-width: 256px;
+    margin: 0 auto;
     &:before {
       height: 2px;
       width: 100%;
@@ -133,6 +146,7 @@ export const StepsSectionStepsItem = styled.li`
   }
 
   @media screen and (max-width: 1000px) {
+    width: 100%;
     &.active {
       &:before {
         left: auto;
@@ -185,6 +199,8 @@ export const StepsSectionStepsItemTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  opacity: 0.6;
   
   @media screen and (max-width: 650px) {
     display: none;
