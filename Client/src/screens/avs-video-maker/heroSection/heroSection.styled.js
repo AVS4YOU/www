@@ -23,6 +23,7 @@ export const HeroSectionStyled = styled.section`
   
   @media screen and (max-width: 800px) {
     padding: 0;
+    border-radius: 0;
   }
   
   @media screen and (max-width: 700px) {
@@ -62,6 +63,10 @@ export const HeroSectionContainer = styled.div`
   
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url("${bg2x}");
+  }
+  
+  @media screen and (max-width: 800px) {
+    border-radius: 50px 50px 0 0;
   }
   
   @media screen and (max-width: 700px) {

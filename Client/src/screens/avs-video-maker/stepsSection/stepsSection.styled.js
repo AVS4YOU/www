@@ -4,6 +4,7 @@ import bg from '../../../images/avs-video-maker/power-section-bg.png'
 export const StepsSectionStyled = styled.section`
   background-image: url("${bg}");
   background-size: cover;
+  background-position: center;
   padding: 112px 122px 53px 90px;
   border-radius: 50px;
   
@@ -25,7 +26,7 @@ export const StepsSectionStyled = styled.section`
     gap: 48px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     border-radius: 20px;
   }
 `

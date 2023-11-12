@@ -20,10 +20,11 @@ export const MakeYourVideoSectionStyled = styled.section`
 
   @media screen and (max-width: 600px) {
     padding: 48px 16px 40px 16px;
+    border-radius: 20px;
   }
 
   @media screen and (max-width: 400px) {
-    border-radius: 20px;
+    padding: 48px 0 40px;
   }
 `
 
@@ -37,7 +38,11 @@ export const MakeYourVideoSectionContainer = styled.div`
   gap: 72px;
 
   @media screen and (max-width: 800px) {
-    gap: 32px;
+    gap: 34px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    gap: 30px;
   }
 `
 
@@ -49,18 +54,28 @@ export const MakeYourVideoSectionTitleWrapper = styled.div`
   text-align: center;
 
   @media screen and (max-width: 800px) {
+    gap: 29px;
+  }
+  
+  @media screen and (max-width: 400px) {
     gap: 24px;
+    padding: 0 16px;
   }
 `
 
 export const MakeYourVideoSectionTitle = styled.h2`
   margin: 0;
-  color: #000;
-  font-size: 32px;
+  color: var(--text-black, #000);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: "Montserrat", sans-serif;
+  
+  @media screen and (max-width: 800px) {
+    font-size: 32px;
+  }
 
   @media screen and (max-width: 400px) {
     font-size: 24px;
@@ -76,6 +91,6 @@ export const MakeYourVideoSectionDesc = styled.p`
   line-height: normal;
 
   @media screen and (max-width: 400px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `

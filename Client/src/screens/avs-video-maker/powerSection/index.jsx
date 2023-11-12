@@ -39,6 +39,7 @@ const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarous
     }
 
     const beforeChange = (current, next) => {
+        console.log(next)
         if (next === 0) {
             largeCarousel.slickGoTo(1)
         }
@@ -47,6 +48,10 @@ const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarous
         }
         if (next === 2) {
             largeCarousel.slickGoTo(7)
+        }
+
+        if(next === 3) {
+            largeCarousel.slickGoTo(10)
         }
     }
 
@@ -87,7 +92,7 @@ const PowerSectionMiniCarousel = ({t, largeCarousel, setMiniCarousel, miniCarous
     )
 }
 
-const PowerSectionLargeCarousel = ({largeCarousel, setLargeCarousel, miniCarousel}) => {
+const PowerSectionLargeCarousel = ({setLargeCarousel, miniCarousel}) => {
 
    const beforeChange = (current, next) => {
         miniCarousel.slickGoTo(Math.floor((next) / 3))
@@ -106,8 +111,19 @@ const PowerSectionLargeCarousel = ({largeCarousel, setLargeCarousel, miniCarouse
         slidesToScroll: 1,
         initialSlide: 1,
         centerMode: true,
+        centerPadding: '0px',
         beforeChange,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    initialSlide: 0,
                 }
+            }
+        ]
+    }
     return (
         <PowerSectionLargeCarouselWrapper>
             <Slider className="imgCarousel" {...settings} ref={onRef}>
@@ -141,7 +157,6 @@ export const PowerSection = ({t}) => {
             <PowerSectionLargeCarousel
                 miniCarousel={miniCarousel}
                 setLargeCarousel={setLargeCarousel}
-                largeCarousel={largeCarousel}
             />
         </PowerSectionStyled>
     )
