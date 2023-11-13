@@ -42,7 +42,13 @@ const ReviewsCarousel = (props) => {
             <ReviewsCarouselBox className="carousel-box">
                 <Slider {...sliderSettings}>
                     {
-                        reviews.map(review => <ReviewsCarouselItem key={review.id}>{review.iframe}</ReviewsCarouselItem>)
+                        reviews.map(review => <ReviewsCarouselItem
+                                key={review.id}
+                                className="carousel-item"
+                            >
+                            {review.iframe}
+                            </ReviewsCarouselItem>
+                        )
                     }
                 </Slider>
             </ReviewsCarouselBox>
