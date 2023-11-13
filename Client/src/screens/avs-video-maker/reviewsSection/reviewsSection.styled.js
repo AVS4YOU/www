@@ -14,12 +14,12 @@ export const ReviewsSectionStyled = styled.section`
     padding: 80px 56px;
   }
   
-  @media screen and (max-width: 500px) {
-    padding: 48px 16px 36px 16px;
+  @media screen and (max-width: 600px) {
+    border-radius: 20px;
   }
   
-  @media screen and (max-width: 400px) {
-    border-radius: 20px;
+  @media screen and (max-width: 500px) {
+    padding: 48px 16px 36px 16px;
   }
   * {
     box-sizing: border-box;

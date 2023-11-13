@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'gatsby'
 
 import {
     GetStartedSectionContainer,
@@ -6,7 +7,6 @@ import {
     GetStartedSectionStyled,
     GetStartedSectionTitle
 } from "./getStartedSection.styled";
-import Link from "../../../components/link";
 
 export const GetStartedSection = ({t}) => {
     return (
@@ -16,7 +16,7 @@ export const GetStartedSection = ({t}) => {
                     {t('Ready to make your own video?')}
                 </GetStartedSectionTitle>
                 <GetStartedSectionLink>
-                    <Link to="/donwloads.aspx">
+                    <Link to="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                         {t('Get started!')}
                     </Link>
                 </GetStartedSectionLink>

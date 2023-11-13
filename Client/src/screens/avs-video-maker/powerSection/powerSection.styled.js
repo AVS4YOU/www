@@ -6,11 +6,11 @@ export const PowerSectionStyled = styled.section`
 
   display: flex;
   flex-direction: column;
-  gap: 37px;
+  gap: 78px;
   width: 100%;
   background-image: url("${bg}");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   border-radius: 50px;
   overflow: hidden;
@@ -22,41 +22,45 @@ export const PowerSectionStyled = styled.section`
   @media screen and (max-width: 800px) {
     padding: 48px 0 0 0;
   }
+  
+  @media screen and (max-width: 600px) {
+    border-radius: 20px;
+  }
 
   @media screen and (max-width: 400px) {
     padding: 48px 0 0;
     gap: 32px;
-    border-radius: 20px;
   }
 `
 
 export const PowerSectionContainer = styled.div`
-  max-width: 700px;
+  max-width: 764px;
+  padding: 0 32px;
   margin: 0 auto;
   width: 100%;
 
   display: flex;
   flex-direction: column;
-  gap: 78px;
-  padding-bottom: 40px;
+  gap: 72px;
 
   @media screen and (max-width: 600px) {
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 100%;
     gap: 32px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    padding: 0 16px;
   }
 `
 
 export const PowerSectionTitle = styled.h2`
   color: var(--text-black, #000);
+  margin: 0;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0;
   
   @media screen and (max-width: 800px) {
     font-size: 32px;
@@ -69,17 +73,35 @@ export const PowerSectionTitle = styled.h2`
 
 export const PowerSectionMiniCarouselWrapper = styled.div`
   .slick-slider {
-    margin: 0 90px;
+    display: grid;
+    grid-template-areas: "prev-arrow list next-arrow" "dots dots dots";
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 32px;
   }
+  
+  .slick-list {
+    grid-area: list;
+  }
+
   .slick-dots {
-    bottom: -40px;
+    bottom: auto;
+    position: static;
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    grid-area: dots;
+    transform: none;
+
     li {
       width: max-content;
       height: max-content;
+
       button {
         &:before {
           content: none;
         }
+
         background: #9A9997;
         height: 10px;
         width: 10px;
@@ -90,38 +112,49 @@ export const PowerSectionMiniCarouselWrapper = styled.div`
     .slick-active button {
       background: #FE9235;
     }
-
-    li:not(:last-child) {
-      margin-right: 7px;
-    }
   }
 
   .slick-arrow {
     width: 38px;
     height: 38px;
-    box-shadow: 0px 3px 8px 0px rgba(34,60,80,0.2);
+    box-shadow: 0px 3px 8px 0px rgba(34, 60, 80, 0.2);
     border-radius: 50%;
+    position: static;
+    transform: none;
 
     &.slick-disabled {
       box-shadow: none;
-      
+
       circle {
         stroke: none;
       }
     }
+    
     &.slick-next {
-      right: -70px;
+      grid-area: next-arrow;
     }
-
+    
     &.slick-prev {
-      left: -70px;
+      grid-area: prev-arrow;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .slick-slider {
+      row-gap: 44px;
     }
   }
   
   @media screen and (max-width: 600px) {
-    width: 100%;
     .slick-slider {
-      margin: 0;
+      grid-template-areas: "list" "dots";
+      padding: 0 16px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .slick-slider {
+      row-gap: 40px;
     }
   }
 `
@@ -133,6 +166,8 @@ export const PowerSectionMiniCarouselItemBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-black, #000);
   
   @media screen and (max-width: 800px) {
     gap: 16px;
@@ -140,9 +175,7 @@ export const PowerSectionMiniCarouselItemBox = styled.div`
 `
 
 export const PowerSectionMiniCarouselItemTitle = styled.h3`
-  color: var(--text-black, #000);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -157,9 +190,7 @@ export const PowerSectionMiniCarouselItemTitle = styled.h3`
 `
 
 export const PowerSectionMiniCarouselItemDesc = styled.p`
-  color: var(--text-black, #000);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -173,14 +204,23 @@ export const PowerSectionMiniCarouselItemDesc = styled.p`
 `
 
 export const PowerSectionLargeCarouselWrapper = styled.div`
-  width: calc(100% + 32px);
-  margin-left: -16px;
+  .slick-list {
+    margin: 0 -16px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .slick-list {
+      margin: 0;
+    }
+  }
 `
-
 export const PowerSectionLargeCarouselItem = styled.div`
   padding: 0 16px;
   display: flex !important;
   
+  @media screen and (max-width: 600px) {
+    padding: 0 42px;
+  }
 `
 
 export const PowerSectionLargeCarouselItemImg = styled.img`
@@ -190,9 +230,8 @@ export const PowerSectionLargeCarouselItemImg = styled.img`
   overflow: hidden;
   height: 488px;
   
-  @media screen and (max-width: 1000px) {
-    max-height: 208px;
+  @media screen and (max-width: 800px) {
+    height: 312px;
     border-radius: 20px;
   }
 `
-

@@ -9,23 +9,23 @@ import {
     FeaturesVideoStabilization
 } from '../../../images/icons'
 
-import img1x1 from '../../../images/avs-video-maker/makeVideoSlide1.png'
-import img1x2 from '../../../images/avs-video-maker/makeVideoSlide1@2x.png'
+import img1x1 from '../../../images/avs-video-maker/make-video-slide1.png'
+import img1x2 from '../../../images/avs-video-maker/make-video-slide1@2x.png'
 
-import img2x1 from '../../../images/avs-video-maker/makeVideoSlide2.png'
-import img2x2 from '../../../images/avs-video-maker/makeVideoSlide2@2x.png'
+import img2x1 from '../../../images/avs-video-maker/make-video-slide2.png'
+import img2x2 from '../../../images/avs-video-maker/make-video-slide2@2x.png'
 
-import img3x1 from '../../../images/avs-video-maker/makeVideoSlide3.png'
-import img3x2 from '../../../images/avs-video-maker/makeVideoSlide3@2x.png'
+import img3x1 from '../../../images/avs-video-maker/make-video-slide3.png'
+import img3x2 from '../../../images/avs-video-maker/make-video-slide3@2x.png'
 
-import img4x1 from '../../../images/avs-video-maker/makeVideoSlide4.png'
-import img4x2 from '../../../images/avs-video-maker/makeVideoSlide4@2x.png'
+import img4x1 from '../../../images/avs-video-maker/make-video-slide4.png'
+import img4x2 from '../../../images/avs-video-maker/make-video-slide4@2x.png'
 
-import img5x1 from '../../../images/avs-video-maker/makeVideoSlide5.png'
-import img5x2 from '../../../images/avs-video-maker/makeVideoSlide5@2x.png'
+import img5x1 from '../../../images/avs-video-maker/make-video-slide5.png'
+import img5x2 from '../../../images/avs-video-maker/make-video-slide5@2x.png'
 
-import img6x1 from '../../../images/avs-video-maker/makeVideoSlide6.png'
-import img6x2 from '../../../images/avs-video-maker/makeVideoSlide6@2x.png'
+import img6x1 from '../../../images/avs-video-maker/make-video-slide6.png'
+import img6x2 from '../../../images/avs-video-maker/make-video-slide6@2x.png'
 
 const features = [
     {

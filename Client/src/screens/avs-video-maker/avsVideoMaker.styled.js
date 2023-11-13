@@ -29,7 +29,8 @@ export const AvsVideoMakerContainer = styled.div`
   flex-direction: column;
   gap: 32px;
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     padding: 16px;
+    gap: 16px;
   }
 `
