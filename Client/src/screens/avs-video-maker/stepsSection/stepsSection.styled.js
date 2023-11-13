@@ -3,7 +3,8 @@ import bg from '../../../images/avs-video-maker/power-section-bg.png'
 
 export const StepsSectionStyled = styled.section`
   background-image: url("${bg}");
-  background-size: 200%;
+  background-size: cover;
+  background-position: center;
   padding: 112px 122px 53px 90px;
   border-radius: 50px;
   
@@ -18,6 +19,7 @@ export const StepsSectionStyled = styled.section`
   
   @media screen and (max-width: 1000px) {
     padding: 48px 40px;
+    gap: 60px;
   }
   
   @media screen and (max-width: 650px) {
@@ -25,7 +27,7 @@ export const StepsSectionStyled = styled.section`
     gap: 48px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     border-radius: 20px;
   }
 `
@@ -56,10 +58,17 @@ export const StepsSectionStepsStyled = styled.div`
     flex-direction: column-reverse;
     gap: 48px;
   }
+  
+  @media screen and (max-width: 650px) {
+    gap: 24px;
+  }
+  
 `
 
 export const StepsSectionStepsControlWrapper = styled.div`
-    
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 `
 
 export const StepsSectionStepsControl = styled.ol`
@@ -96,6 +105,11 @@ export const StepsSectionStepsControl = styled.ol`
   
   @media screen and (max-width: 650px) {
     padding-bottom: 16px;
+    gap: 0;
+    justify-content: space-between;
+    min-width: auto;
+    max-width: 256px;
+    margin: 0 auto;
     &:before {
       height: 2px;
       width: 100%;
@@ -132,6 +146,7 @@ export const StepsSectionStepsItem = styled.li`
   }
 
   @media screen and (max-width: 1000px) {
+    width: 100%;
     &.active {
       &:before {
         left: auto;
@@ -184,6 +199,8 @@ export const StepsSectionStepsItemTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  opacity: 0.6;
   
   @media screen and (max-width: 650px) {
     display: none;
@@ -239,20 +256,22 @@ export const StepsSectionStepsItemMobileSubtitle = styled.p`
 
 export const StepsSectionStepsItemCardWrapper = styled.div`
   position: relative;
+  flex-grow: 1;
+  width: 100%;
 `
 
 export const StepsSectionStepsItemCard = styled.div`
   display: flex;
   width: 100%;
   height: 404px;
-  max-width: 940px;
+  max-width: 990px;
 
   position: absolute;
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms ease-in-out;
   top: 0;
-  right: 0;
+  left: 0;
 
   &.active {
     position: static;
@@ -339,11 +358,12 @@ export const StepsSectionStepsItemCard = styled.div`
   }
 `
 
-export const StepsSectionStepsItemCardImg = styled.img`
+export const StepsSectionStepsItemCardImg = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  flex-grow: 1;
 `
 
 export const StepsSectionStepsItemCardElem = styled.img`
