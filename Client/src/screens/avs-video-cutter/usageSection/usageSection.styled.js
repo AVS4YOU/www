@@ -96,7 +96,7 @@ export const UsageSectionList = styled.ul`
   
   @media screen and (max-width: 700px) {
     flex-direction: column;
-    gap: 40px;/
+    gap: 40px;
     padding: 0 20px;
   }
 
@@ -121,12 +121,6 @@ export const UsageSectionItem = styled.li`
   
   @media screen and (max-width: 700px) {
     max-width: 400px;
-  }
-  
-  @media screen and (max-width: 400px) {
-    svg {
-      width: 160px;
-    }
   }
 `
 
@@ -154,4 +148,9 @@ export const UsageSectionItemDesc = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+    line-height: normal;
+  }
 `
