@@ -28,9 +28,9 @@ export const UsageSection = ({t}) => {
                         ))
                     }
                 </UsageSectionList>
-                <Link to="/downloads.aspx" className="download-link">
+                <a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="download-link">
                     {t('Download now')}
-                </Link>
+                </a>
             </UsageSectionContainer>
         </UsageSectionStyled>
     )
