@@ -39,9 +39,9 @@ export const HeroSection = ({t}) => {
                             ))
                         }
                     </HeroSectionList>
-                    <Link to="/downloads.aspx" className="main-link">
+                    <a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="main-link">
                         {t('Download now')}
-                    </Link>
+                    </a>
                 </HeroSectionContent>
                 <HeroSectionMainImg src={mainPic} srcSet={`${mainPic2x} 2x`}/>
             </HeroSectionContainer>
