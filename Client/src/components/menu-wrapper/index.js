@@ -9,7 +9,7 @@ import LinkL from '../link';
 const StyledMenuWrapper = styled.div`
     width: 100%;
     height:60px;
-    background-color: #32393e;
+    background-color: ${({isTransparentHeader}) => isTransparentHeader ? 'transparent' : '#32393e'};
     position:relative;
     z-index: 10;
 
@@ -214,8 +214,8 @@ class MenuWrapper extends React.PureComponent {
     }
     render(){
         return(
-            <StyledMenuWrapper className={this.state.offAnimate && "offAnimate"}>
-                <StyledMenuGrid>
+            <StyledMenuWrapper isTransparentHeader={this.props.isTransparentHeader} className={this.state.offAnimate && "offAnimate"}>
+                <StyledMenuGrid className="header-wrapper">
                 <LogoWrapper>
                     <LinkL className="avs4youLogoTable" to="/" >
                             <img src={Logo} alt="avs4you logo"/>

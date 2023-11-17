@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "classnames": "^2.3.2",
     "gatsby-i18n": "^1.1.5",
     "gatsby-image": "^2.2.42",
     "gatsby-plugin-client-side-redirect": "^1.1.0",
