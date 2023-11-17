@@ -19,8 +19,12 @@ import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
+import BlackFriday from "../components/black-friday";
 
-import PlAVSLeft from "../images/pl/halloween-banner.png";
+import PlAVSbg from "../images/black-friday/bg-banner.png";
+import PlAVSLeft from "../images/black-friday/left-banner.png";
+import PlAVSRight from "../images/black-friday/right-banner.png";
+import PlAVSgif from "../images/black-friday/banner-bf-gif.gif";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -29,10 +33,11 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
     height: 59px;
-    background: #151225;
+    background-color: #0a0f11;
+    background-image: url(${PlAVSbg});
 
     a {
       display: flex;
@@ -47,7 +52,9 @@ const StyledPL = styled.div`
   }
 
   .PLnewAvsText {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 4px 8px;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -62,28 +69,33 @@ const StyledPL = styled.div`
   }
 
   .PlAvsDiscount {
-    background: #F5C867;
-    padding: 5px 24px;
+    background: #A60101;
+    width: 170px;
+    height: 43px;
     word-break: keep-all;
     font-weight: 600;
-    color: #151225;
-    margin-left: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .bgPlAvs {
-    width: 1160px;
+    width: 100%;
     position: absolute;
-    height: 59px;
+    height: 64px;
     top: 0;
-    left: 5%;
   }
 
   .PLnewAvsLeft {
     position: absolute;
     top: 0;
-    left: -90px;
-    width: 1096px;
-    height: 59px;
+    left: 0px;
+    width: 600px;
+    height: 64px;
     background-image: url(${PlAVSLeft});
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -94,19 +106,32 @@ const StyledPL = styled.div`
   .PLnewAvsRight {
     position: absolute;
     top: 0;
-    height: 62px;
-    width: 470px;
+    height: 64px;
+    width: 600px;
     background-repeat: no-repeat;
+    background-image: url(${PlAVSRight});
     background-position-y: 50%;
     pointer-events: none;
     right: 0;
     z-index: 0;
   }
 
-  @media (min-width: 1919px) {
-    .PLnewAvsLeft {
-      left: 0px;
-    }
+  .PlAvsSpin {
+    position: relative;
+    width: 183px;
+    height: 55px;
+  }
+
+  .PlAvsgif {
+    background-image: url(${PlAVSgif});
+    background-size: 183px 55px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 183px;
+    height: 55px;
+    position: absolute;
+    left: 0;
   }
 
   @media (max-width: 1650px) {
@@ -432,6 +457,8 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
+               
+
                 {!this.props.headerIsDisabled ? <StyledPL>
                     <div className="PLnewAvs">
                         <div className="bgPlAvs">
@@ -440,10 +467,12 @@ class Layout extends React.PureComponent {
                         </div>
                         <a href={this.props.t("avs pl link")} target="_blank">
                           <span className="PLnewAvsText">{this.props.t("beginningBanner")}
-                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span></span>
+                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<div className="PlAvsSpin"><span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span><div className="PlAvsgif"></div></div></span>
                         </a>
                     </div>
                 </StyledPL> : <div></div>}
+
+                
 
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
