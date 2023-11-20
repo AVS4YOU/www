@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.56
+### New
+* Added banner 'Black Friday'
+
 ## 1.0.55
 ### New
 * Added landing page `avs-video-maker.aspx`
