@@ -226,11 +226,22 @@ const mainStyle = {
 	}
 };
 
-const prizes = [
-  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
-  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
-  '20%', '30%', '40%', '50%',
-]
+const prizes = ['10%', '15%', '20%', '30%', '40%', '45%', '50%',
+'20%', '30%', '35%', '40%', '45%', '50%', 
+'100%'] 
+
+const CouponNames = {
+  '10%': 'Unlim10',
+  '15%':'Unlim15',
+  '20%': ['Unlim20', 'AnYear20'],
+  '30%': ['AVUnlim30', 'ANYeR30'],
+  '35%': 'AnAVS35',
+  '40%': ['AVUnlim30', 'Av40Sub'],
+  '45%': ['Un45AV', '45AVAsUb'],
+  '50%': ['50UnlAS', '50AnlAV'],
+  '100%':'VRcoup23',
+}
+
 
 const styles = {
   //justifyContent:"center",
@@ -253,7 +264,7 @@ const options = {
       fontWeight:"bold",
       fontFamily:"Microsoft YaHei"
   },
-  speed : 100,
+  speed : 5000,
   duration: 5000,
   onStart(){
     return true
@@ -308,61 +319,74 @@ class blackFriday extends React.PureComponent {
 
 
   render(){
-  return (
-    <Layout 
-            footerIsDisabled={true}
-            pageContext={this.props.pageContext} 
-            t={this.props.t}
-            title={this.props.t("AVS4YOU Black Friday Sale")}
-            metaDescription={this.props.t("")}
-            metaKeywords={this.props.t("")}
-    >
-      <BlackFridayStyle>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
-      <div className="header">
-            <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
-              <div className="header__body header__body_bg">
-                <div className="header__body-wrapper">
-                <img className="wheelAVSbg" src={wheelAVSbg}/>
-                  <Wheelstyle>
-                  <img className="wheelAVScircle" src={wheelAVScircle}/>
-                  <img className="wheelAVSpointer" src={wheelAVSpointer}/>
-                  <div className="wheelAVSram">
-                  <div className="WheelAVS" style={styles}>
-                      <ReactTurntable {...options}
-                      onComplete={(prize) => this.setState({
-                        winPrize: prize
-                      })}
-                      hiddenButton
-                      getTurntable={turntable => (this.turntable = turntable)}                     
-                     />
-                  </div>
-                  </div>
-                  <img className="wheelAVSfoot" src ={wheelAVSfoot}/>
-                  </Wheelstyle>
+    const getCouponName = (winPrize) => {
+      if (!winPrize) return null
+      let couponName = ''
+      if ( typeof CouponNames[this.state?.winPrize] !== 'string' ) {
+        const randomNumber = Math.random();
+        couponName = (randomNumber > 0.5) ? CouponNames[this.state?.winPrize][1] : CouponNames[this.state?.winPrize][0]
+        return couponName
+      }
+      return CouponNames[this.state?.winPrize]
+    }
+    const couponName = getCouponName(this.state.winPrize)
 
-                <div className="bf_container">                
-                  <div className="header_img">
-                    <img className="wheelAVSlogo" src={wheelAVSlogo}/>
-                    <img className="logoAVS" src={logoAVS} />
-                    <img className="wheelAVSrectangle" src={wheelAVSrectangle}/>
-                  </div>
-                    <div className="block_content">
-                    <Text fontFamily={'Montserrat'} className="got">You’ve got a <span>{this.state.winPrize}</span> discount</Text>
+    return (
+      <Layout 
+              footerIsDisabled={true}
+              pageContext={this.props.pageContext} 
+              t={this.props.t}
+              title={this.props.t("AVS4YOU Black Friday Sale")}
+              metaDescription={this.props.t("")}
+              metaKeywords={this.props.t("")}
+      >
+        <BlackFridayStyle>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
+        <div className="header">
+              <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
+                <div className="header__body header__body_bg">
+                  <div className="header__body-wrapper">
+                  <img className="wheelAVSbg" src={wheelAVSbg}/>
+                    <Wheelstyle>
+                    <img className="wheelAVScircle" src={wheelAVScircle}/>
+                    <img className="wheelAVSpointer" src={wheelAVSpointer}/>
+                    <div className="wheelAVSram">
+                    <div className="WheelAVS" style={styles}>
+                        <ReactTurntable {...options}
+                        onComplete={(prize) => this.setState({
+                          winPrize: prize
+                        })}
+                        hiddenButton
+                        getTurntable={turntable => (this.turntable = turntable)}                     
+                      />
+                    </div>
+                    </div>
+                    <img className="wheelAVSfoot" src ={wheelAVSfoot}/>
+                    </Wheelstyle>
+
+                  <div className="bf_container">                
+                    <div className="header_img">
+                      <img className="wheelAVSlogo" src={wheelAVSlogo}/>
+                      <img className="logoAVS" src={logoAVS} />
+                      <img className="wheelAVSrectangle" src={wheelAVSrectangle}/>
+                    </div>
+                      <div className="block_content">
+                      {couponName && <Text fontFamily={'Montserrat'} className="got">You’ve got a <span>{this.state?.winPrize}</span> discount</Text>}
+                      {couponName && <Text fontFamily={'Montserrat'} className="got"><span>{couponName}</span></Text>}
                       <Text  fontFamily={'Montserrat'} as="h3" className="header__subtitle">{this.props.t("Spin the wheel to get a discount coupon up")}</Text>
-                      <Text  fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("to 99% off on AVS4YOU products.")}</Text>
-                      <div className="button-start"><Button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start")} </Button></div>
-                      <Text className="overwey">{this.props.t("*Please, note that you may try your luck only once a day.")}</Text>
-                      
+                        <Text  fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("to 99% off on AVS4YOU products.")}</Text>
+                        <div className="button-start"><Button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start")} </Button></div>
+                        <Text className="overwey">{this.props.t("*Please, note that you may try your luck only once a day.")}</Text>
+                        
+                    </div>
                   </div>
-                </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-            </BlackFridayStyle>
-    </Layout>
-  );
+              </BlackFridayStyle>
+      </Layout>
+    );
   }
 };
 export default withI18next({ ns: "common" })(blackFriday);
