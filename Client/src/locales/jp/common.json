@@ -1754,14 +1754,26 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Halloween提案！AVS4YOU無期限サブスクリプションに",
-    "discountCoupon" : "25%",
-    "textBanner" : "割引を受ける。",
-    "nameCoupon" : "今すぐ購入",
-    "endingBanner" : " クーポンを使用して、AVS4YOUソフトを25％で購入！",
+    "beginningBanner" : "",
+    "discountCoupon" : "ホッと取り引き！",
+    "textBanner" : "AVS4YOUソフトウェアに最大100%割引！",
+    "nameCoupon" : "ルーレットを回す",
+    "endingBanner" : "",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL"
-    }
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
+	
+	"*****************************BF********************************" : "*****************************BF********************************",
+
+	"Spin the wheel to get a discount coupon up" : "AVS4YOUソフトに最大99％割引を受けるよ",
+    "to 99 off on AVS4YOU products"  : "うに、ホイールをスピン回してください。",
+	"Start Now" : "スピン",
+	"Please note that you may try your luck only once a day" : "＊ご注意ください、運を試すのは1日1回だけです。",
+	"Congratulations" : "おめでとう！",
+	"Youve got a" : "に",
+	"discount on" : "割引を獲得しました",
+    "discount before" : "！",
+	"Redeem your coupon" : "クーポンを使用"
+	}
