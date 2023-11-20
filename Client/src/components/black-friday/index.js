@@ -1,19 +1,25 @@
 import React from "react";
 import withI18next from "../withI18next";
+import Layout from "../layout";
 import Text from '../text';
 import ImageGQL from '../image-gql';
-// @ts-ignore
+//import Music from '../components/music';
 import ReactTurntable from "react-turntable";
 import styled from 'styled-components';
-import Modal from '../modal';
+import Button from '../button';
 
 
-import logoAVS from '../../images/black-friday/AVS_Black_friday.svg';
+import logoAVS from '../../images/black-friday/bf.png';
 import wheelAVS from '../../images/black-friday/bg_wheel.png';
 import wheelAVSpointer from '../../images/black-friday/pointer.png';
 import wheelAVScircle from '../../images/black-friday/bf_vector.png';
 import wheelAVSfoot from '../../images/black-friday/foot.svg';
-import goldenArrowBf from '../../images/black-friday/bf_golden_arrow.svg';
+import wheelAVSbg from '../../images/black-friday/circle_bg.png';
+import wheelAVSlogo from '../../images/black-friday/logo_avs_bf.png';
+import wheelAVSrectangle from '../../images/black-friday/rectangle_bg.png';
+import closeBFbanner from '../../images/black-friday/close-banner-bf.png';
+import closeBFbannerHover from '../../images/black-friday/close-banner-bf-hover.png';
+import congratsBg from '../../images/black-friday/congratulations.png';
 
 const Wheelstyle = styled.div`
 float: left;
@@ -73,11 +79,23 @@ vertical-align: top;
 
 .bf_container{
   display: grid;
+  justify-items: center;
+  position: relative;
+}
+
+.header {
+  height: 938px;
+}
+
+.on_complite {
+  position: static;
+  width: 500px;
+  margin-top: -323px;
+  z-index: 100;
 }
 
 .block_content{
   padding-top: 25px;
-  padding-left: 135px;
   .golden_arrow_bf{
     max-width: 515px;
   }
@@ -97,6 +115,21 @@ vertical-align: top;
     color: #fff;
     font-weight: bold;
     line-height: 25px;
+    padding: 0px 0 20px;
+    text-align: center;
+    font-family: Montserrat;
+    max-width: 640px;
+  }
+
+  .header_subtitle {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 0px 0 40px;
+    text-align: center;
+    font-family: Montserrat;
+    max-width: 640px;
   }
 
   .secondtext_bf{
@@ -113,23 +146,139 @@ vertical-align: top;
     font-weight: normal;
     line-height: 24px;
     padding-top: 35px;
+    text-align: center;
+  }
+}
+
+.header_congrats {
+  color: #D9C475;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.got {
+  color: #F2F2F2;
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 16px;
+  font-weight: 400;
+
+  span {
+    color: #D9C475;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+
+.coupon {
+  color: #F3F3F3;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+
+.button-start {
+  width: 100%;
+}
+
+.wheelAVSbg {
+  position: absolute;
+  top: 0;
+  right: 34%;
+}
+
+.programName {
+  color: #D9C475;
+  font-family: Montserrat;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.header_img {
+  position: relative;
+  height: 370px;
+  width: 625px;
+
+  .closeBanner {
+    background-image: url(${closeBFbanner});
+    transition: background-image 1s;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    right: 0px;
+    top: -70px;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      background-image: url(${closeBFbannerHover});
+      transition: background-image 0.5s;
+    }
+  }
+
+  .wheelAVSrectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .wheelAVSlogo {
+    position: absolute;
+    top: -30px;
+    left: 255px;
+  }
+
+  .logoAVS {
+    position: absolute;
+    top: 75px;
+    left: 100px;
+  }
+
+  .congratsBg {
+    top: -140px;
+    position: absolute;
+    right: -330px;
+    z-index: 0;
   }
 }
 
 .Button_BF_Wheel{
-  width: 240px;
-  height: 56px;
+  width: 366px;
+  margin: auto;
+  display: table;
 
   color: #eeeeee;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
 
   background-color: #CC0909;
+  transition: background-color 1s;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 5px;
+
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.Button_BF_Wheel:hover {
+  background-color: #FF0000;
+  transition: background-color 1s;
 }
 `;
 
@@ -138,10 +287,6 @@ const modalStyle = {
 		backgroundColor: "rgba(0, 0, 0,0.5)"
 	}
 };
-
-const StyleModal = styled.div`
-z-index: 50;
-`;
 
 const mainStyle = {
 	app: {
@@ -159,32 +304,103 @@ const mainStyle = {
 	}
 };
 
-const prizes = [
-  '15%', '45%', '35%', '25%', '100%', '10%', '20%', '30%',
-  '40%', '50%', '15%', '25%', '35%', '45%', '100%', '10%',
-  '20%', '30%', '40%', '50%',
-]
+const prizes = ['10%', '15%', '20%', '30%', '40%', '45%', '50%',
+'20%', '30%', '35%', '40%', '45%', '50%', 
+'100%'] 
 
-const codeBF = [
-  '1%', '2%', '3%', '4%', '5%', '6%', '7%', '8%',
-  '9%', 'a%', 'q%', 'w%', 'e%', 'r%', 't%', 'y%',
-  'f%', 'v%', 'z%', 'x%',
-]
-class BlackFriday extends React.PureComponent {
+const CouponNames = {
+  '10%': 'Unlim10',
+  '15%':'Unlim15',
+  '20%': ['Unlim20', 'AnYear20'],
+  '30%': ['AVUnlim30', 'ANYeR30'],
+  '35%': 'AnAVS35',
+  '40%': ['AU40lim', 'Av40Sub'],
+  '45%': ['Un45AV', '45AVAsUb'],
+  '50%': ['50UnlAS', '50AnlAV'],
+  '100%':'VRcoup23',
+}
+
+const ProgramNames = {
+  'Unlim10': 'AVS4YOU Unlimited Subscription',
+  'Unlim15': 'AVS4YOU Unlimited Subscription',
+  'Unlim20': 'AVS4YOU Unlimited Subscription', 
+  'AnYear20': 'AVS4YOU 1 Year Subscription',
+  'AVUnlim30': 'AVS4YOU Unlimited Subscription',  
+  'ANYeR30': 'AVS4YOU 1 Year Subscription',
+  'AnAVS35': 'AVS4YOU 1 Year Subscription',
+  'AU40lim': 'AVS4YOU Unlimited Subscription', 
+  'Av40Sub': 'AVS4YOU 1 Year Subscription',
+  'Un45AV': 'AVS4YOU Unlimited Subscription', 
+  '45AVAsUb': 'AVS4YOU 1 Year Subscription',
+  '50UnlAS': 'AVS4YOU Unlimited Subscription', 
+  '50AnlAV': 'AVS4YOU 1 Year Subscription',
+  'VRcoup23': 'AVS Video ReMaker 1 Year Subscription',
+}
+
+const RedeemNames = {
+  'Unlim10': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Unlim10&CLEAN_CART=ALL',
+  'Unlim15': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Unlim15&CLEAN_CART=ALL',
+  'Unlim20': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Unlim20&CLEAN_CART=ALL', 
+  'AnYear20': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AnYear20&CLEAN_CART=ALL',
+  'AVUnlim30': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVUnlim30&CLEAN_CART=ALL',  
+  'ANYeR30': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=ANYeR30&CLEAN_CART=ALL',
+  'AnAVS35': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AnAVS3&CLEAN_CART=ALL',
+  'AU40lim': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AU40lim&CLEAN_CART=ALL', 
+  'Av40Sub': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Av40Sub&CLEAN_CART=ALL',
+  'Un45AV': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Un45AV&CLEAN_CART=ALL', 
+  '45AVAsUb': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=45AVAsUb&CLEAN_CART=ALL',
+  '50UnlAS': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=50UnlAS&CLEAN_CART=ALL', 
+  '50AnlAV': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=50AnlAV&CLEAN_CART=ALL',
+  'VRcoup23': 'https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=VRcoup23&CLEAN_CART=ALL',
+}
+
+const styles = {
+  //justifyContent:"center",
+  //alignContent:"center",
+  //float: "left",
+  //display:"flex"
+  paddingLeft: "15px",
+}
+
+const options = {
+  prizes,
+  width: 500,
+  height: 550,
+  primaryColor: "#B50000",
+  secondaryColor: "#E6E6E6",
+  fontStyle:{
+      color: "#000",
+      size:"28px",
+      fontVertical:true,
+      fontWeight:"bold",
+      fontFamily:"Microsoft YaHei"
+  },
+  speed : 5000,
+  duration: 5000,
+  onStart(){
+    return true
+  },
+  onStop(){
+    return true
+  }
+ }
+
+export class BlackFriday extends React.PureComponent {
   turntable = null
-
 
   constructor(props) {
     super(props);
     this.state = {
       device: "",
       isModalOpen: false,
-			isInnerModalOpen: false
+			isInnerModalOpen: false,
+      winPrize: null,
     };
 
     this.getDevice = this.getDevice.bind(this);
     this.closeModal = this.closeModal.bind(this);
 		this.openModal = this.openModal.bind(this);
+    this.setPrize = this.setPrize.bind(this);
   }
 
 
@@ -206,132 +422,87 @@ class BlackFriday extends React.PureComponent {
 		});
 	}
 
+  setPrize(prize) {
+		this.setState({
+			winPrize: prize
+		});
+	}
+
 
   render(){
-    const styles = {
-      //justifyContent:"center",
-      //alignContent:"center",
-      //float: "left",
-      //display:"flex"
-      paddingLeft: "15px",
+    const getCouponName = (winPrize) => {
+      if (!winPrize) return null
+      let couponName = ''
+      if ( typeof CouponNames[this.state?.winPrize] !== 'string' ) {
+        const randomNumber = Math.random();
+        couponName = (randomNumber > 0.5) ? CouponNames[this.state?.winPrize][1] : CouponNames[this.state?.winPrize][0]
+        return couponName
+      }
+      return CouponNames[this.state?.winPrize]
     }
+    const couponName = getCouponName(this.state.winPrize);
+    const programName = ProgramNames[couponName];
+    const redeemName = RedeemNames[couponName];
 
+    return (
+        <BlackFridayStyle>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
+        <div className="header">
+              <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
+                <div className="header__body header__body_bg">
+                  <div className="header__body-wrapper">
+                  <img className="wheelAVSbg" src={wheelAVSbg}/>
+                    <Wheelstyle>
+                    <img className="wheelAVScircle" src={wheelAVScircle}/>
+                    <img className="wheelAVSpointer" src={wheelAVSpointer}/>
+                    <div className="wheelAVSram">
+                    <div className="WheelAVS" style={styles}>
+                        <ReactTurntable {...options}
+                        onComplete={(prize) => this.setState({
+                          winPrize: prize
+                        })}
+                        hiddenButton
+                        getTurntable={turntable => (this.turntable = turntable)}                     
+                      />
+                    </div>
+                    </div>
+                    <img className="wheelAVSfoot" src ={wheelAVSfoot}/>
+                    </Wheelstyle>
 
-    let arm;
-
-
-    const options = {
-      prizes,
-      width: 500,
-      height: 550,
-      primaryColor: "#ba0000",
-      secondaryColor: "#eeeeee",
-      fontStyle:{
-          color:"#fff",
-          size:"14px",
-          fontVertical:true,
-          fontWeight:"bold",
-          fontFamily:"Microsoft YaHei"
-      },
-      speed : 1000,
-      duration: 1000,
-      onStart(){
-        //If you want before the rotate do some...
-        console.log('start...');
-        //If you want stop rotate you can return false
-        return true
-      },
-     onComplete(codeBF) {
-      //this.openModal;
-      arm = codeBF; 
-      console.log(codeBF)
-      return arm; 
-     // console.log(arm)
-      /*return (  <StyleModal >
-        <Modal
-          isModalOpen={true}
-          
-        >
-          <button
-            style={{
-              margin: 0,
-              width: "auto",
-              marginTop: 10
-            }}
-          >
-            Close
-          </button>
-        </Modal>
-      </StyleModal>);*/
-        //return arm;
-        //alert(codeBF)
-     }
-    }
-    console.log(arm);
-  return (
-
-      <BlackFridayStyle>
-      <div className="header">
-            <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
-              <div className="header__body header__body_bg">
-                <div className="header__body-wrapper">
-                  <Wheelstyle>
-                  <img className="wheelAVScircle"  src ={wheelAVScircle}/>
-                  <img className="wheelAVSpointer"  src ={wheelAVSpointer}/>
-                  <div className="wheelAVSram">
-                  <div className="WheelAVS"  style={styles}>
-                      <ReactTurntable {...options}
-                      hiddenButton
-                      getTurntable={turntable => (this.turntable = turntable)}
-                      
-                     />
-                       
+                  {couponName ? <div className="bf_container">                
+                    <div className="header_img">
+                      <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
+                      <img className="congratsBg" src={congratsBg}/>
+                    </div>
+                      <div className="block_content on_complite">
+                      <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
+                      {couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{programName}</span>{this.props.t("discount before")}</Text>}
+                      {couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{couponName}</span></Text>}
+                      <div className="button-coupon"><Button className="Button_BF_Wheel" href={redeemName}> {this.props.t("Redeem your coupon")} </Button></div>
+                    </div>
                   </div>
+                  : 
+                  <div className="bf_container">           
+                    <div className="header_img">
+                      <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
+                      <img className="wheelAVSlogo" src={wheelAVSlogo}/>
+                      <img className="logoAVS" src={logoAVS} />
+                      <img className="wheelAVSrectangle" src={wheelAVSrectangle}/>
+                    </div>
+                      <div className="block_content">
+                      <Text  fontFamily={'Montserrat'} as="h3" className="header__subtitle">{this.props.t("Spin the wheel to get a discount coupon up")}</Text>
+                        <Text  fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("to 99 off on AVS4YOU products")}</Text>
+                        <div className="button-start"><Button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start Now")} </Button></div>
+                        <Text className="overwey">{this.props.t("Please note that you may try your luck only once a day")}</Text>
+                        
+                    </div> 
                   </div>
-                  <img className="wheelAVSfoot"  src ={wheelAVSfoot}/>
-                  </Wheelstyle>
-
-                <div className="bf_container">
-                
-                <img className="logoAVS" src={logoAVS} />
-                <div className="block_content">
-                    <img className="golden_arrow_bf_first" src={goldenArrowBf}></img>
-                    <Text className="header_bf">{this.props.t("5 Day Lottery")}</Text>
-                    <img className="golden_arrow_bf" src={goldenArrowBf}></img>
-                    <Text as="h3" className="header__subtitle">{this.props.t("Try your luck in Black Friday Lottery!")}</Text>
-                    <Text as="h3" className="header__subtitle" style={{paddingTop:"10px"}}>{this.props.t("Huge discounts only 5 days!")}</Text>
-                    <Text className="secondtext_bf">{this.props.t("Make the most of AVS4YOU lottery and pick a discount coupon up to 99% off.")}</Text>
-                    <Text as="h3" className="header__subtitle" style={{paddingBottom:"45px"}}>
-                        {this.props.t("Good luck!")}
-                    </Text>
-                    <button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start")} </button>
-                    <Text className="overwey">{this.props.t("*Please, note that you may try your luck only once a day.")}</Text>
-                </div>
-                <StyleModal >
-                  <Modal
-                    isModalOpen={this.state.isModalOpen}
-                    closeModal={this.closeModal}
-                  >
-                    <button
-                      style={{
-                        margin: 0,
-                        width: "auto",
-                        marginTop: 10
-                      }}
-                      onClick={this.closeModal}
-                    >
-                      Close
-                    </button>
-                  </Modal>
-			</StyleModal>
-            </div>
+                  }
+                  </div>
                 </div>
               </div>
-            </div>
-            </BlackFridayStyle>
-
-  );
+              </BlackFridayStyle>
+    );
   }
 };
-export default withI18next({ ns: "common" })(BlackFriday);
 

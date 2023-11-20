@@ -19,7 +19,7 @@ import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
-import BlackFriday from "../components/black-friday";
+import {BlackFriday} from "../components/black-friday";
 
 import PlAVSbg from "../images/black-friday/bg-banner.png";
 import PlAVSLeft from "../images/black-friday/left-banner.png";
@@ -35,41 +35,41 @@ const StyledPL = styled.div`
   .PLnewAvs {
     display: block;
     width: 100%;
-    height: 59px;
+    height: 60px;
     background-color: #0a0f11;
     background-image: url(${PlAVSbg});
+    cursor: pointer;
 
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-block;
       width: 100%;
       z-index: 9;
       text-decoration: none;
-      height: 59px;
-      position: absolute;
+      max-width: 730px;
+      margin: auto;
     }
   }
 
   .PLnewAvsText {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     gap: 5px;
-    padding: 4px 8px;
+    padding: 0px 8px;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 15px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 20px;
     color: #ffffff;
     width: auto;
   }
 
   .PLnewAvsTextAccent {
     font-weight: 700;
+    color: #ECBB47;
   }
 
   .PlAvsDiscount {
     background: #A60101;
+    font-family: 'Open Sans';
     width: 170px;
     height: 43px;
     word-break: keep-all;
@@ -78,20 +78,22 @@ const StyledPL = styled.div`
     position: absolute;
     left: 6px;
     top: 5px;
-    display: flex;
+    line-height: 40px;
+    display: inline-block;
     align-items: center;
     justify-content: center;
   }
 
   .bgPlAvs {
     width: 100%;
-    position: absolute;
-    height: 64px;
+    position: relative;
+    height: 60px;
     top: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .PLnewAvsLeft {
-    position: absolute;
     top: 0;
     left: 0px;
     width: 600px;
@@ -101,10 +103,10 @@ const StyledPL = styled.div`
     background-position-y: 50%;
     pointer-events: none;
     z-index: 0;
+    background-position-x: 100%;
   }
 
   .PLnewAvsRight {
-    position: absolute;
     top: 0;
     height: 64px;
     width: 600px;
@@ -117,9 +119,11 @@ const StyledPL = styled.div`
   }
 
   .PlAvsSpin {
-    position: relative;
+    position: absolute;
     width: 183px;
     height: 55px;
+    display: inline-block;
+    top: 3px;
   }
 
   .PlAvsgif {
@@ -134,27 +138,43 @@ const StyledPL = styled.div`
     left: 0;
   }
 
-  @media (max-width: 1650px) {
+  @media (max-width: 670px) {
     .PLnewAvs {
-      padding: 0;
-      height: 59px;
-    }
-
-    .PLnewAvsLeft {
-      left: -395px;
-    }
-  }
-  @media (max-width: 600px) {
+      display: none;
+      }
     .PLnewAvsText {
       font-size: 12px;
+      line-height: 14px;
+      padding: 3px 8px;
     }
+
     .PlAvsDiscount {
-      padding: 1px 10px;
-      margin-left: 10px;
+      font-size: 12px;
+      width: 143px;
+      height: 20px;
+      line-height: 20px;
+      left: 20px;
+    }
+
+    .PlAvsgif {
+      width: 150px;
+      height: 45px;
+      background-size: 150px 45px;
+      display: none;
+    }
+
+    .PlAvsSpin {
+      position: relative;
+      width: 183px;
+      top: -8px;
+      height: 20px;
+    }
+
+    .PLnewAvsLeft, .PLnewAvsRight {
+      max-width: 55px;
     }
   }
   @media (max-width: 450px) {
-
     .PLnewAvsText {
       line-height: 18px;
     }
@@ -303,6 +323,7 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
+            showBlackFriday: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -311,6 +332,8 @@ class Layout extends React.PureComponent {
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
+        this.onOpenBanner = this.onOpenBanner.bind(this)
+        this.onCloseBanner = this.onCloseBanner.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
@@ -390,6 +413,20 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
+    onOpenBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: true
+      })
+    }
+
+    onCloseBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: false
+      })
+    }
+
     componentDidUpdate() {
 
         if (this.props.getDevice) {
@@ -460,15 +497,16 @@ class Layout extends React.PureComponent {
                
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                    <div className="PLnewAvs">
+                    <div className="PLnewAvs" onClick={this.onOpenBanner}>
                         <div className="bgPlAvs">
-                            <div className="PLnewAvsLeft"></div>
-                            <div className="PLnewAvsRight"></div>
-                        </div>
-                        <a href={this.props.t("avs pl link")} target="_blank">
+                        <div className="PLnewAvsLeft"></div>
+                        <a target="_blank">
                           <span className="PLnewAvsText">{this.props.t("beginningBanner")}
-                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<div className="PlAvsSpin"><span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span><div className="PlAvsgif"></div></div></span>
+                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}</span>
+                            <div className="PlAvsSpin"><span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span><div className="PlAvsgif"></div></div>
                         </a>
+                        <div className="PLnewAvsRight"></div>
+                        </div>
                     </div>
                 </StyledPL> : <div></div>}
 
@@ -477,7 +515,8 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                    <main>{this.props.children}</main>
+                  {this.state.showBlackFriday ? <main><BlackFriday t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
+                    
                 </StyledLayout>
                 <CookieMessage/>
                 {this.state.showBanner &&
