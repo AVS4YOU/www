@@ -39,6 +39,7 @@ const StyledPL = styled.div`
     background-color: #0a0f11;
     background-image: url(${PlAVSbg});
     cursor: pointer;
+    background-position-x: 50%;
 
     a {
       display: inline-block;
@@ -78,7 +79,7 @@ const StyledPL = styled.div`
     position: absolute;
     left: 6px;
     top: 5px;
-    line-height: 40px;
+    line-height: 44px;
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -138,7 +139,7 @@ const StyledPL = styled.div`
     left: 0;
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 750px) {
     .PLnewAvs {
       display: none;
       }
@@ -515,11 +516,11 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                  {this.state.showBlackFriday ? <main><BlackFriday t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
+                  {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
                     
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner &&
+                {this.state.showBanner && !this.state.showBlackFriday &&
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
