@@ -86,17 +86,29 @@ vertical-align: top;
   display: grid;
   justify-items: center;
   position: relative;
+  height: 433px;
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 1;
 }
 
-.header {
-  height: 938px;
+.wheelStyle {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.header__body-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .on_complite {
-  position: static;
+  position: absolute;
   width: 540px;
-  margin-top: -323px;
+  height: 100%;
   z-index: 100;
+  display: grid;
+  align-content: center;
 }
 
 .afh_music_block,
@@ -125,7 +137,6 @@ vertical-align: top;
 }
 
 .block_content{
-  padding-top: 25px;
   .golden_arrow_bf{
     max-width: 515px;
   }
@@ -148,18 +159,18 @@ vertical-align: top;
     padding: 0px 0 20px;
     text-align: center;
     font-family: Montserrat;
-    max-width: 700px;
+    min-width: 700px;
   }
 
   .header_subtitle {
     font-size: 32px;
     color: #fff;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 40px;
     padding: 0px 0 40px;
     text-align: center;
     font-family: Montserrat;
-    max-width: 700px;
+    min-width: 700px;
   }
 
   .secondtext_bf{
@@ -221,8 +232,9 @@ vertical-align: top;
 
 .wheelAVSbg {
   position: absolute;
-  top: 0;
-  right: 34%;
+  top: -197px;
+  left: -325px;
+  z-index: 0;
 }
 
 .programName {
@@ -310,6 +322,38 @@ vertical-align: top;
   background-color: #FF0000;
   transition: background-color 1s;
 }
+
+@media (max-width: 1370px) {
+
+  .header__body-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .header__body {
+    padding-top: 50px !important;
+  }
+
+  .wheelStyle {
+    margin: auto;
+    top: 100px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .bf_container {
+    margin-top: 100px;
+    height: 545px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .on_complite_container {
+    height: 433px;
+  }
+
+  .wheelAVSbg {
+    display: none;
+  }
 `;
 
 const streamUrl = AudioCasino;
@@ -432,7 +476,7 @@ const options = {
       fontWeight:"bold",
       fontFamily:"Microsoft YaHei"
   },
-  speed : 5000,
+  speed: 1000,
   duration: 5000,
   onStart(){
     return true
@@ -508,25 +552,9 @@ export class BlackFriday extends React.PureComponent {
               <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
                 <div className="header__body header__body_bg">
                   <div className="header__body-wrapper">
-                  <img className="wheelAVSbg" src={wheelAVSbg}/>
-                    <Wheelstyle>
-                    <img className="wheelAVScircle" src={wheelAVScircle}/>
-                    <img className="wheelAVSpointer" src={wheelAVSpointer}/>
-                    <div className="wheelAVSram">
-                    <div className="WheelAVS" style={styles}>
-                        <ReactTurntable {...options}
-                        onComplete={(prize) => this.setState({
-                          winPrize: prize
-                        })}
-                        hiddenButton
-                        getTurntable={turntable => (this.turntable = turntable)}                     
-                      />
-                    </div>
-                    </div>
-                    <img className="wheelAVSfoot" src ={wheelAVSfoot}/>
-                    </Wheelstyle>
+                  
 
-                  {couponName ? <div className="bf_container">                
+                  {couponName ? <div className="bf_container on_complite_container">                
                     <div className="header_img">
                       <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
                       <CustomPlayer
@@ -541,7 +569,7 @@ export class BlackFriday extends React.PureComponent {
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
                       {couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
                       {couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{couponName}</span></Text>}
-                      <div className="button-coupon"><Button className="Button_BF_Wheel" href={redeemName}> {this.props.t("Redeem your coupon")} </Button></div>
+                      <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={redeemName}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
                   </div>
                   : 
@@ -561,12 +589,29 @@ export class BlackFriday extends React.PureComponent {
                       <div className="block_content">
                       <Text  fontFamily={'Montserrat'} as="h3" className="header__subtitle">{this.props.t("Spin the wheel to get a discount coupon up")}</Text>
                         <Text  fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("to 99 off on AVS4YOU products")}</Text>
-                        <div className="button-start"><Button className="Button_BF_Wheel" onClick={() => this.turntable.start()}> {this.props.t("Start Now")} </Button></div>
+                        <div className="button-start"><Button className="Button_BF_Wheel" id="black_friday_start" onClick={() => this.turntable.start()}> {this.props.t("Start Now")} </Button></div>
                         <Text className="overwey">{this.props.t("Please note that you may try your luck only once a day")}</Text>
                         
                     </div> 
                   </div>
                   }
+                  <Wheelstyle className="wheelStyle">
+                  <img className="wheelAVSbg" src={wheelAVSbg}/>
+                    <img className="wheelAVScircle" src={wheelAVScircle}/>
+                    <img className="wheelAVSpointer" src={wheelAVSpointer}/>
+                    <div className="wheelAVSram">
+                    <div className="WheelAVS" style={styles}>
+                        <ReactTurntable {...options}
+                        onComplete={(prize) => this.setState({
+                          winPrize: prize
+                        })}
+                        hiddenButton
+                        getTurntable={turntable => (this.turntable = turntable)}                     
+                      />
+                    </div>
+                    </div>
+                    <img className="wheelAVSfoot" src ={wheelAVSfoot}/>
+                    </Wheelstyle>
                   </div>
                 </div>
               </div>
