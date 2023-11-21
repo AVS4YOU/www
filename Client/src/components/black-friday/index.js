@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
 import withI18next from "../withI18next";
 import Layout from "../layout";
 import Text from '../text';
 import ImageGQL from '../image-gql';
-//import Music from '../components/music';
 import ReactTurntable from "react-turntable";
 import styled from 'styled-components';
 import Button from '../button';
@@ -20,6 +19,12 @@ import wheelAVSrectangle from '../../images/black-friday/rectangle_bg.png';
 import closeBFbanner from '../../images/black-friday/close-banner-bf.png';
 import closeBFbannerHover from '../../images/black-friday/close-banner-bf-hover.png';
 import congratsBg from '../../images/black-friday/congratulations.png';
+
+import onMusicButtom from "../../images/black-friday/on_bf.png";
+import offMusicButtom from "../../images/black-friday/off_bf.png";
+import offMusicButtomHover from "../../images/black-friday/off_bf_hover.png";
+import AudioCasino from "../../images/black-friday/operation_casino.mp3";
+import { withSoundCloudAudio } from 'react-soundplayer/addons';
 
 const Wheelstyle = styled.div`
 float: left;
@@ -89,9 +94,34 @@ vertical-align: top;
 
 .on_complite {
   position: static;
-  width: 500px;
+  width: 540px;
   margin-top: -323px;
   z-index: 100;
+}
+
+.afh_music_block,
+.afh_share_block {
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  top: -70px;
+  right: 61px;
+  z-index: 1;
+
+  .afh_music {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px;
+    transition: 0.5s;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
 }
 
 .block_content{
@@ -118,7 +148,7 @@ vertical-align: top;
     padding: 0px 0 20px;
     text-align: center;
     font-family: Montserrat;
-    max-width: 640px;
+    max-width: 700px;
   }
 
   .header_subtitle {
@@ -129,7 +159,7 @@ vertical-align: top;
     padding: 0px 0 40px;
     text-align: center;
     font-family: Montserrat;
-    max-width: 640px;
+    max-width: 700px;
   }
 
   .secondtext_bf{
@@ -282,36 +312,62 @@ vertical-align: top;
 }
 `;
 
-const modalStyle = {
-	overlay: {
-		backgroundColor: "rgba(0, 0, 0,0.5)"
-	}
-};
+const streamUrl = AudioCasino;
 
-const mainStyle = {
-	app: {
-		margin: "120px 0"
-	},
-	button: {
-		backgroundColor: "#408cec",
-		border: 0,
-		padding: "12px 20px",
-		color: "#fff",
-		margin: "0 auto",
-		width: 150,
-		display: "block",
-		borderRadius: 3
-	}
-};
+const CustomPlayer = withSoundCloudAudio(props => {
+  const { soundCloudAudio, playing } = props;
 
-const prizes = ['10%', '15%', '20%', '30%', '40%', '45%', '50%',
-'20%', '30%', '35%', '40%', '45%', '50%', 
+  const play = () => {
+    if (playing) {
+      soundCloudAudio.pause();
+    } else {
+      soundCloudAudio.play();
+    }
+  };
+
+  const [autoPlay, setAutoPlay] = useState(true);
+
+	const prevUrl = usePrevious(streamUrl);
+
+	useEffect(() => {
+		if(autoPlay){
+			soundCloudAudio.play({streamUrl});
+			setAutoPlay(false);
+		} 
+		if(prevUrl !== streamUrl) {
+			setAutoPlay(true);
+		}
+	//},[streamUrl])
+  },[setAutoPlay, prevUrl, autoPlay, soundCloudAudio])
+  return (
+    <div>
+    <div className="afh_music_block" onClick={() => play()} aria-hidden="true">
+      <button className="afh_music" >
+        {playing 
+          ? <img src={onMusicButtom} alt="Music Off"/>         
+          : <img src={offMusicButtom} alt="Music On"/> 
+        }
+      </button>
+    </div>
+    </div>
+  );
+  function usePrevious(value) {
+		const ref = useRef();
+		useEffect(() => {
+		  ref.current = value;
+		});
+		return ref.current;
+	}
+});
+
+const prizes = ['10$', '15$', '20$', '30%', '40%', '45%', '50%',
+'20$', '30%', '35%', '40%', '45%', '50%', 
 '100%'] 
 
 const CouponNames = {
-  '10%': 'Unlim10',
-  '15%':'Unlim15',
-  '20%': ['Unlim20', 'AnYear20'],
+  '10$': 'Unlim10',
+  '15$':'Unlim15',
+  '20$': ['Unlim20', 'AnYear20'],
   '30%': ['AVUnlim30', 'ANYeR30'],
   '35%': 'AnAVS35',
   '40%': ['AU40lim', 'Av40Sub'],
@@ -321,18 +377,18 @@ const CouponNames = {
 }
 
 const ProgramNames = {
-  'Unlim10': 'AVS4YOU Unlimited Subscription',
-  'Unlim15': 'AVS4YOU Unlimited Subscription',
-  'Unlim20': 'AVS4YOU Unlimited Subscription', 
+  'Unlim10': 'AVS4YOU Unlimited',
+  'Unlim15': 'AVS4YOU Unlimited',
+  'Unlim20': 'AVS4YOU Unlimited', 
   'AnYear20': 'AVS4YOU 1 Year Subscription',
-  'AVUnlim30': 'AVS4YOU Unlimited Subscription',  
+  'AVUnlim30': 'AVS4YOU Unlimited',  
   'ANYeR30': 'AVS4YOU 1 Year Subscription',
   'AnAVS35': 'AVS4YOU 1 Year Subscription',
-  'AU40lim': 'AVS4YOU Unlimited Subscription', 
+  'AU40lim': 'AVS4YOU Unlimited', 
   'Av40Sub': 'AVS4YOU 1 Year Subscription',
-  'Un45AV': 'AVS4YOU Unlimited Subscription', 
+  'Un45AV': 'AVS4YOU Unlimited', 
   '45AVAsUb': 'AVS4YOU 1 Year Subscription',
-  '50UnlAS': 'AVS4YOU Unlimited Subscription', 
+  '50UnlAS': 'AVS4YOU Unlimited', 
   '50AnlAV': 'AVS4YOU 1 Year Subscription',
   'VRcoup23': 'AVS Video ReMaker 1 Year Subscription',
 }
@@ -344,7 +400,7 @@ const RedeemNames = {
   'AnYear20': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AnYear20&CLEAN_CART=ALL',
   'AVUnlim30': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVUnlim30&CLEAN_CART=ALL',  
   'ANYeR30': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=ANYeR30&CLEAN_CART=ALL',
-  'AnAVS35': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AnAVS3&CLEAN_CART=ALL',
+  'AnAVS35': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AnAVS35&CLEAN_CART=ALL',
   'AU40lim': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AU40lim&CLEAN_CART=ALL', 
   'Av40Sub': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Av40Sub&CLEAN_CART=ALL',
   'Un45AV': 'https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Un45AV&CLEAN_CART=ALL', 
@@ -353,6 +409,7 @@ const RedeemNames = {
   '50AnlAV': 'https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=50AnlAV&CLEAN_CART=ALL',
   'VRcoup23': 'https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=VRcoup23&CLEAN_CART=ALL',
 }
+
 
 const styles = {
   //justifyContent:"center",
@@ -472,11 +529,17 @@ export class BlackFriday extends React.PureComponent {
                   {couponName ? <div className="bf_container">                
                     <div className="header_img">
                       <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
+                      <CustomPlayer
+                        streamUrl={AudioCasino}
+                        playing={true}
+                        preloadType="auto" 
+                        className="afh_music"
+                        />  
                       <img className="congratsBg" src={congratsBg}/>
                     </div>
                       <div className="block_content on_complite">
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
-                      {couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{programName}</span>{this.props.t("discount before")}</Text>}
+                      {couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
                       {couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{couponName}</span></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" href={redeemName}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
@@ -484,6 +547,12 @@ export class BlackFriday extends React.PureComponent {
                   : 
                   <div className="bf_container">           
                     <div className="header_img">
+                    <CustomPlayer
+                      streamUrl={AudioCasino}
+                      playing={true}
+                      preloadType="auto" 
+                      className="afh_music"
+                      />  
                       <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
                       <img className="wheelAVSlogo" src={wheelAVSlogo}/>
                       <img className="logoAVS" src={logoAVS} />

@@ -1786,7 +1786,8 @@
 	
 	"*****************************BF********************************" : "*****************************BF********************************",
 
-    "AVS4YOU 1 Year Subscription" : "AVS4YOU 1-Jahres-Abonnement",
+    "AVS4YOU 1 Year Subscription" : "AVS4YOU 1-Jahres-Abonnement erhalten",
+    "AVS4YOU Unlimited" : "unbefristete AVS4YOU-Abonnement",
     "AVS Video ReMaker 1 Year Subscription" : "AVS Video ReMaker 1-Jahres-Abonnement",
 	"Spin the wheel to get a discount coupon up" : "Drehen Sie das Rad, um einen Rabattgutschein bis",
 	"to 99 off on AVS4YOU products" : "zu 99% auf AVS4YOU-Produkte zu erhalten!",
@@ -1795,6 +1796,6 @@
 	"Congratulations" : "Herzlichen Glückwunsch!",
 	"Youve got a" : "Sie haben einen ",
 	"discount on" : " Rabatt auf das ",
-    "discount before" : " erhalten!",
+    "discount before" : "!",
 	"Redeem your coupon" : "Lösen Sie Ihren Gutscheincode ein"
 	}

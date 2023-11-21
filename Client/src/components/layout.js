@@ -78,7 +78,7 @@ const StyledPL = styled.div`
     position: absolute;
     left: 6px;
     top: 5px;
-    line-height: 40px;
+    line-height: 44px;
     display: inline-block;
     align-items: center;
     justify-content: center;
