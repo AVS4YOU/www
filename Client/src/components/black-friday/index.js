@@ -52,14 +52,14 @@ position: relative;
 .wheelAVSpointer{
   position: absolute;
   top: 235px;
-  left: 250px;
+  left: 252px;
   z-index: 15;
 }
 
 .wheelAVScircle{
   position: absolute;
   top: 255px;
-  left: 235px;
+  left: 237px;
   z-index: 20;
 }
 
@@ -87,10 +87,9 @@ vertical-align: top;
 }
 
 .music-block {
-  height: 38px;
-  width: 625px;
-  position: absolute;
-  right: 30px;
+    width: 100%;
+    position: absolute;
+    right: 0;
 
   .afh_music_block,
   .afh_share_block {
@@ -101,7 +100,8 @@ vertical-align: top;
     cursor: pointer;
     position: absolute;
     top: -70px;
-    right: 100px;
+    right: 0;
+    margin-right: 100px;
     z-index: 2;
   
     .afh_music {
@@ -116,6 +116,11 @@ vertical-align: top;
       padding: 0;
     }
   }
+}
+
+.header__body {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .bf_container{
@@ -258,31 +263,28 @@ vertical-align: top;
   line-height: 130%;
 }
 
+.closeBanner {
+  background-image: url(${closeBFbanner});
+  transition: background-image 1s;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 0px;
+  top: -70px;
+  cursor: pointer;
+  z-index: 2;
+  margin-right: 35px;
+
+  &:hover {
+    background-image: url(${closeBFbannerHover});
+    transition: background-image 0.5s;
+  }
+}
+
 .header_img {
   position: relative;
   height: 370px;
   width: 625px;
-
-  .closeBanner {
-    background-image: url(${closeBFbanner});
-    transition: background-image 1s;
-    position: absolute;
-    height: 45px;
-    width: 45px;
-    right: 0px;
-    top: -70px;
-    cursor: pointer;
-    z-index: 1;
-
-    &:hover {
-      background-image: url(${closeBFbannerHover});
-      transition: background-image 0.5s;
-    }
-  }
-
-  .on_complite_close {
-    right: 15px;
-  }
 
   .wheelAVSrectangle {
     position: absolute;
@@ -339,21 +341,29 @@ vertical-align: top;
   transition: background-color 1s;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1300px) {
 
   .music-block {
     top: 68px;
-    width: 100%;
+    width: 600px;
     position: relative;
     height: 38px;
+    display: table;
+    margin: auto;
 
     .afh_music_block {
-      width: 100%;
+      width: 38px;
       position: absolute;
       top: 0;
-      right: -265px;
+      right: 0;
       z-index: 2;
       display: grid;
+      margin-right: 60px;
+    }
+
+    .closeBanner {
+      margin-right: 0px;
+      top: 0;
     }
   }
 
@@ -391,6 +401,13 @@ vertical-align: top;
     display: none;
   }
 `;
+
+function getCookie(name) {
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 
 function setCookie(name, value, options = {}) {
 
@@ -514,7 +531,6 @@ const RedeemNames = {
   'VRcoup23': 'https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=VRcoup23&CLEAN_CART=ALL',
 }
 
-
 const styles = {
   //justifyContent:"center",
   //alignContent:"center",
@@ -568,6 +584,7 @@ export class BlackFriday extends React.PureComponent {
 			isInnerModalOpen: false,
       winPrize: null,
       couponName: null,
+
     };
 
     this.getDevice = this.getDevice.bind(this);
@@ -603,8 +620,25 @@ export class BlackFriday extends React.PureComponent {
 	}
 
   componentWillUpdate(nextProps, nextState) {
-    if (nextState.couponName) {
-      setCookie('couponName', nextState.couponName)
+    if (nextState.couponName && nextState.winPrize && !getCookie('couponName')) {
+      const day = new Date().getDate();
+      const mounth = new Date().getMonth();
+      const year = new Date().getFullYear();
+      const date = new Date(`${year}-${mounth+1}-${day+1}`);
+      setCookie('couponName', nextState.couponName, {'expires': date})
+      setCookie('winPrize', nextState.winPrize, {'expires': date})
+    }
+  }
+
+  componentDidMount() {
+    const couponName = getCookie('couponName');
+    const winPrize = getCookie('winPrize')
+    
+    if (couponName && winPrize) {
+      this.setState({
+        winPrize: winPrize,
+        couponName: couponName
+      });
     }
   }
 
@@ -623,11 +657,11 @@ export class BlackFriday extends React.PureComponent {
                     playing={true}
                     preloadType="auto" 
                     className="afh_music"
-                  /></div>
+                  />
+                  <div className="closeBanner on_complite_close" onClick={this.props.onCloseBanner}></div></div>
                   <div className="header__body-wrapper">
                   {this.state.couponName ? <div className="bf_container on_complite_container">                
                     <div className="header_img">
-                      <div className="closeBanner on_complite_close" onClick={this.props.onCloseBanner}></div>
                       <img className="congratsBg" src={congratsBg}/>
                     </div>
                       <div className="block_content on_complite">
@@ -640,7 +674,6 @@ export class BlackFriday extends React.PureComponent {
                   : 
                   <div className="bf_container">           
                     <div className="header_img">
-                      <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
                       <img className="wheelAVSlogo" src={wheelAVSlogo}/>
                       <img className="logoAVS" src={logoAVS} />
                       <img className="wheelAVSrectangle" src={wheelAVSrectangle}/>
