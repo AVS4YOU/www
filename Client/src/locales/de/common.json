@@ -1773,14 +1773,29 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Geschenk zum Halloween!",
-    "discountCoupon" : " Erhalten Sie 25% Rabatt auf ",
-    "textBanner" : "das unbefristete AVS4YOU-Abonnement.",
-    "nameCoupon" : "Kaufen",
-    "endingBanner" : " !",
+    "beginningBanner" : "",
+    "discountCoupon" : "Hot Deal! ",
+    "textBanner" : "Bis zu 100% Rabatt auf AVS4YOU-Software!",
+    "nameCoupon" : "Drehen Sie das Rad",
+    "endingBanner" : "",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=AVSTreat23&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/de/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=AVS22XSM&CLEAN_CART=ALL"
-    }
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&COUPON=AVS22XSM&CLEAN_CART=ALL",
+	
+	"*****************************BF********************************" : "*****************************BF********************************",
+
+    "AVS4YOU 1 Year Subscription" : "AVS4YOU 1-Jahres-Abonnement erhalten",
+    "AVS4YOU Unlimited" : "unbefristete AVS4YOU-Abonnement",
+    "AVS Video ReMaker 1 Year Subscription" : "AVS Video ReMaker 1-Jahres-Abonnement",
+	"Spin the wheel to get a discount coupon up" : "Drehen Sie das Rad, um einen Rabattgutschein bis",
+	"to 99 off on AVS4YOU products" : "zu 99% auf AVS4YOU-Produkte zu erhalten!",
+	"Start Now" : "Rad drehen",
+	"Please note that you may try your luck only once a day" : "*Bitte beachten Sie, dass Sie Ihr Glück nur einmal pro Tag versuchen können.",
+	"Congratulations" : "Wunderbar!",
+	"Youve got a" : "Sie haben einen ",
+	"discount on" : " Rabatt auf das ",
+    "discount before" : "!",
+	"Redeem your coupon" : "Code einlösen"
+	}

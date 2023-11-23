@@ -1715,14 +1715,29 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Хэллоуин распродажа!",
-    "discountCoupon" : " Получите 25% скидку ",
-    "textBanner" : "на безлимитную подписку AVS4YOU.",
-    "nameCoupon" : "Получить сейчас",
-    "endingBanner" : " coupon!",
+    "beginningBanner" : "",
+    "discountCoupon" : "Распродажа! ",
+    "textBanner" : "Скидки до 100% на программы AVS4YOU!",
+    "nameCoupon" : "Вращайте барабан",
+    "endingBanner" : "",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/ru/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL"
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=RUB&LANGUAGES=ru&COUPON=AVS22XSM&CLEAN_CART=ALL",
+	
+    "*****************************BF********************************" : "*****************************BF********************************",
+  
+    "AVS4YOU 1 Year Subscription" : "одногодичную подписку AVS4YOU",
+    "AVS4YOU Unlimited" : "безлимитную подписку AVS4YOU",
+    "AVS Video ReMaker 1 Year Subscription" : "одногодичную подписку AVS Video ReMaker",
+    "Spin the wheel to get a discount coupon up" : "Вращайте колесо, чтобы получить купон на скидку",
+    "to 99 off on AVS4YOU products"  : "до 99 % на программы AVS4YOU!",
+    "Start Now" : "Крутите скорее",
+    "Please note that you may try your luck only once a day" : "*Обратите внимание, что крутить колесо можно только один раз в день.",
+    "Congratulations" : "Поздравляем!",
+    "Youve got a" : "Вы получили скидку ",
+    "discount on" : " на ",
+    "discount before" : "!",
+    "Redeem your coupon" : "Активируйте купон"
     }
