@@ -2,7 +2,7 @@ import React from "react";
 
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
-import {FeaturesSection} from "../screens/avs-video-editor-imovie/featuresSection";
+import {FeaturesSection} from "../screens/avs-video-editor-imovie";
 
 const AvsVideoEditorImovie = ({pageContext, t}) => {
     return (
