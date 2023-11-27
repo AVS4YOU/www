@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.57 (27.11.2023)
+### New
+* Deleted banner 'Black Friday'
+
+### Fixes
+* Fixed buttons on pages `installed.aspx`, `installed-audio-converter.aspx`,`installed-audio-editor.aspx`, `installed-pack.aspx`, `installed-video-converter.aspx`, `installed-video-editor.aspx`, `installed-video-remaker.aspx`
+
 ## 1.0.56
 ### New
 * Added banner 'Black Friday'
