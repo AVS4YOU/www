@@ -19,7 +19,6 @@ import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
-import {BlackFriday} from "../components/black-friday";
 
 import PlAVSbg from "../images/black-friday/bg-banner.png";
 import PlAVSLeft from "../images/black-friday/left-banner.png";
@@ -33,7 +32,7 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: block;
+    display: none;
     width: 100%;
     height: 60px;
     background-color: #0a0f11;
@@ -333,8 +332,6 @@ class Layout extends React.PureComponent {
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
-        this.onOpenBanner = this.onOpenBanner.bind(this)
-        this.onCloseBanner = this.onCloseBanner.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
@@ -414,20 +411,6 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
-    onOpenBanner = (e) => {
-      e.stopPropagation();
-      this.setState({
-        showBlackFriday: true
-      })
-    }
-
-    onCloseBanner = (e) => {
-      e.stopPropagation();
-      this.setState({
-        showBlackFriday: false
-      })
-    }
-
     componentDidUpdate() {
 
         if (this.props.getDevice) {
@@ -498,7 +481,7 @@ class Layout extends React.PureComponent {
                
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                    <div className="PLnewAvs" onClick={this.onOpenBanner}>
+                    <div className="PLnewAvs">
                         <div className="bgPlAvs">
                         <div className="PLnewAvsLeft"></div>
                         <a target="_blank">
@@ -516,11 +499,11 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                  {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
+                <main>{this.props.children}</main>
                     
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner && !this.state.showBlackFriday &&
+                {this.state.showBanner &&
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
