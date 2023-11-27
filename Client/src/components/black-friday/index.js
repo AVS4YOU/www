@@ -41,7 +41,7 @@ position: relative;
   background-image: url(${wheelAVS});
   background-size: 546px 845px;
     float: left;
-    height: 900px;
+    height: 730px;
     position: relative;
     width: 600px;
     z-index: 2;
@@ -52,14 +52,14 @@ position: relative;
 .wheelAVSpointer{
   position: absolute;
   top: 235px;
-  left: 250px;
+  left: 252px;
   z-index: 15;
 }
 
 .wheelAVScircle{
   position: absolute;
   top: 255px;
-  left: 235px;
+  left: 237px;
   z-index: 20;
 }
 
@@ -82,6 +82,47 @@ font-family: Tahoma;
 color: #fff;
 vertical-align: top;
 
+.header__body_bg {
+  position: relative;
+}
+
+.music-block {
+    width: 100%;
+    position: absolute;
+    right: 0;
+
+  .afh_music_block,
+  .afh_share_block {
+    height: 38px;
+    width: 38px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: -70px;
+    right: 0;
+    margin-right: 100px;
+    z-index: 2;
+  
+    .afh_music {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 30px;
+      transition: 0.5s;
+      height: 100%;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+.header__body {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 .bf_container{
   display: grid;
   justify-items: center;
@@ -100,6 +141,7 @@ vertical-align: top;
 .header__body-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
 .on_complite {
@@ -109,31 +151,6 @@ vertical-align: top;
   z-index: 100;
   display: grid;
   align-content: center;
-}
-
-.afh_music_block,
-.afh_share_block {
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-  float: right;
-  cursor: pointer;
-  position: absolute;
-  top: -70px;
-  right: 61px;
-  z-index: 1;
-
-  .afh_music {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 30px;
-    transition: 0.5s;
-    height: 100%;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-  }
 }
 
 .block_content{
@@ -246,27 +263,28 @@ vertical-align: top;
   line-height: 130%;
 }
 
+.closeBanner {
+  background-image: url(${closeBFbanner});
+  transition: background-image 1s;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 0px;
+  top: -70px;
+  cursor: pointer;
+  z-index: 2;
+  margin-right: 35px;
+
+  &:hover {
+    background-image: url(${closeBFbannerHover});
+    transition: background-image 0.5s;
+  }
+}
+
 .header_img {
   position: relative;
   height: 370px;
   width: 625px;
-
-  .closeBanner {
-    background-image: url(${closeBFbanner});
-    transition: background-image 1s;
-    position: absolute;
-    height: 45px;
-    width: 45px;
-    right: 0px;
-    top: -70px;
-    cursor: pointer;
-    z-index: 1;
-
-    &:hover {
-      background-image: url(${closeBFbannerHover});
-      transition: background-image 0.5s;
-    }
-  }
 
   .wheelAVSrectangle {
     position: absolute;
@@ -323,10 +341,38 @@ vertical-align: top;
   transition: background-color 1s;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1300px) {
+
+  .music-block {
+    top: 68px;
+    width: 600px;
+    position: relative;
+    height: 38px;
+    display: table;
+    margin: auto;
+
+    .afh_music_block {
+      width: 38px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      display: grid;
+      margin-right: 60px;
+    }
+
+    .closeBanner {
+      margin-right: 0px;
+      top: 0;
+    }
+  }
 
   .header__body-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .on_complite_close {
+    right: 0 !important;
   }
 
   .header__body {
@@ -355,6 +401,37 @@ vertical-align: top;
     display: none;
   }
 `;
+
+function getCookie(name) {
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function setCookie(name, value, options = {}) {
+
+  options = {
+    path: '/',
+    ...options
+  };
+
+  if (options.expires instanceof Date) {
+    options.expires = options.expires.toUTCString();
+  }
+
+  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+  for (let optionKey in options) {
+    updatedCookie += "; " + optionKey;
+    let optionValue = options[optionKey];
+    if (optionValue !== true) {
+      updatedCookie += "=" + optionValue;
+    }
+  }
+
+  document.cookie = updatedCookie;
+}
 
 const streamUrl = AudioCasino;
 
@@ -454,7 +531,6 @@ const RedeemNames = {
   'VRcoup23': 'https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=VRcoup23&CLEAN_CART=ALL',
 }
 
-
 const styles = {
   //justifyContent:"center",
   //alignContent:"center",
@@ -486,6 +562,17 @@ const options = {
   }
  }
 
+ const getCouponName = (winPrize) => {
+  if (!winPrize) return null
+  let couponName = ''
+  if ( typeof CouponNames[winPrize] !== 'string' ) {
+    const randomNumber = Math.random();
+    couponName = (randomNumber > 0.5) ? CouponNames[winPrize][1] : CouponNames[winPrize][0]
+    return couponName
+  }
+  return CouponNames[winPrize]
+}
+
 export class BlackFriday extends React.PureComponent {
   turntable = null
 
@@ -496,6 +583,8 @@ export class BlackFriday extends React.PureComponent {
       isModalOpen: false,
 			isInnerModalOpen: false,
       winPrize: null,
+      couponName: null,
+
     };
 
     this.getDevice = this.getDevice.bind(this);
@@ -525,25 +614,37 @@ export class BlackFriday extends React.PureComponent {
 
   setPrize(prize) {
 		this.setState({
-			winPrize: prize
+			winPrize: prize,
+      couponName: getCouponName(prize)
 		});
 	}
 
+  componentWillUpdate(nextProps, nextState) {
+    if (nextState.couponName && nextState.winPrize && !getCookie('couponName')) {
+      const day = new Date().getDate();
+      const mounth = new Date().getMonth();
+      const year = new Date().getFullYear();
+      const date = new Date(`${year}-${mounth+1}-${day+1}`);
+      setCookie('couponName', nextState.couponName, {'expires': date})
+      setCookie('winPrize', nextState.winPrize, {'expires': date})
+    }
+  }
+
+  componentDidMount() {
+    const couponName = getCookie('couponName');
+    const winPrize = getCookie('winPrize')
+    
+    if (couponName && winPrize) {
+      this.setState({
+        winPrize: winPrize,
+        couponName: couponName
+      });
+    }
+  }
 
   render(){
-    const getCouponName = (winPrize) => {
-      if (!winPrize) return null
-      let couponName = ''
-      if ( typeof CouponNames[this.state?.winPrize] !== 'string' ) {
-        const randomNumber = Math.random();
-        couponName = (randomNumber > 0.5) ? CouponNames[this.state?.winPrize][1] : CouponNames[this.state?.winPrize][0]
-        return couponName
-      }
-      return CouponNames[this.state?.winPrize]
-    }
-    const couponName = getCouponName(this.state.winPrize);
-    const programName = ProgramNames[couponName];
-    const redeemName = RedeemNames[couponName];
+    const programName = ProgramNames[this.state.couponName];
+    const redeemName = RedeemNames[this.state.couponName];
 
     return (
         <BlackFridayStyle>
@@ -551,37 +652,28 @@ export class BlackFriday extends React.PureComponent {
         <div className="header">
               <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
                 <div className="header__body header__body_bg">
+                <div className="music-block"><CustomPlayer
+                    streamUrl={AudioCasino}
+                    playing={true}
+                    preloadType="auto" 
+                    className="afh_music"
+                  />
+                  <div className="closeBanner on_complite_close" onClick={this.props.onCloseBanner}></div></div>
                   <div className="header__body-wrapper">
-                  
-
-                  {couponName ? <div className="bf_container on_complite_container">                
+                  {this.state.couponName ? <div className="bf_container on_complite_container">                
                     <div className="header_img">
-                      <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
-                      <CustomPlayer
-                        streamUrl={AudioCasino}
-                        playing={true}
-                        preloadType="auto" 
-                        className="afh_music"
-                        />  
                       <img className="congratsBg" src={congratsBg}/>
                     </div>
                       <div className="block_content on_complite">
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
-                      {couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
-                      {couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{couponName}</span></Text>}
+                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
+                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{this.state.couponName}</span></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={redeemName}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
                   </div>
                   : 
                   <div className="bf_container">           
                     <div className="header_img">
-                    <CustomPlayer
-                      streamUrl={AudioCasino}
-                      playing={true}
-                      preloadType="auto" 
-                      className="afh_music"
-                      />  
-                      <div className="closeBanner" onClick={this.props.onCloseBanner}></div>
                       <img className="wheelAVSlogo" src={wheelAVSlogo}/>
                       <img className="logoAVS" src={logoAVS} />
                       <img className="wheelAVSrectangle" src={wheelAVSrectangle}/>
@@ -602,9 +694,7 @@ export class BlackFriday extends React.PureComponent {
                     <div className="wheelAVSram">
                     <div className="WheelAVS" style={styles}>
                         <ReactTurntable {...options}
-                        onComplete={(prize) => this.setState({
-                          winPrize: prize
-                        })}
+                        onComplete={this.setPrize}
                         hiddenButton
                         getTurntable={turntable => (this.turntable = turntable)}                     
                       />
