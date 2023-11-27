@@ -1,14 +1,10 @@
 import React from "react";
-import withI18next from "../components/withI18next";
 import Text from '../components/text';
-import Layout from "../components/layout";
 import "../styles/affiliates.less";
 import Button from "../components/button";
 import ImageGQL from "../components/image-gql";
-import ReviewScreen from '../components/review-screen';
 import ScrollUpButton from '../components/scroll-up-button';
 import PanelCollapse from "../components/panel-collapse";
-import ProductPagesWrapper from '../components/product-pages-wrapper';
 import styled from 'styled-components';
 
 const StyledBlock = styled.div`

@@ -15,7 +15,6 @@ import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
 import {MediaPlayer} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
-import styled from 'styled-components';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 
@@ -23,18 +22,6 @@ import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
 import AvatarWilliamHolmes from '../images/common/review-carousel/quote_1.png';
 
-
-const TableWrapper = styled.table`
-  margin:auto;
-  span {
-    left: -47px;
-  }
-  @media (max-width: 750px) {
-    span {
-      left: auto;
-    }
-  }
-`;
 
 
 class avsFreeMediaPlayer extends React.PureComponent {

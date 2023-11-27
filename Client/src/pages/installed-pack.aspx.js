@@ -9,6 +9,7 @@ import BenefitsCarousel from '../components/benefits-carousel';
 import { Link as GatsbyLink } from 'gatsby';
 import styled from 'styled-components';
 import Cookies from 'universal-cookie';
+import bg from '../images/installed-pack/button.png'
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const regExp = /=regnow:(.*):/;
@@ -24,6 +25,29 @@ const LogoWrapper = styled.div`
     }
 `;
 
+const GetItNowLink = styled.a`
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  
+  text-transform: none;
+  line-height: normal;
+  background: url(${bg}) no-repeat;
+  background-color: transparent;
+  background-position: 50% 0;
+  color: #fff;
+  
+  box-sizing: border-box;
+  
+  width: 215px;
+  display: block;
+  margin: 40px auto 0;
+  
+  &:hover {
+    text-decoration: none;
+  }
+`
+
 class installedPack extends React.PureComponent {
 
   constructor(props) {
@@ -31,7 +55,7 @@ class installedPack extends React.PureComponent {
     this.cookies = new Cookies();
 
     this.affiliateID = "";
-    this.siteTrasingCookie = this.cookies.get("Site_Tracing"); 
+    this.siteTrasingCookie = this.cookies.get("Site_Tracing");
 
     if(this.siteTrasingCookie){
         this.affiliateID = this.siteTrasingCookie.match(regExp)[1];
@@ -51,10 +75,10 @@ class installedPack extends React.PureComponent {
 
 render(){
     return (
-      <Layout 
+      <Layout
         headerIsDisabled={true}
-        className="installed-pack-page" 
-        pageContext={this.props.pageContext} 
+        className="installed-pack-page"
+        pageContext={this.props.pageContext}
         t={this.props.t}
         title={this.props.t("AVS4YOU best software for processing video audio image")}
         metaDescription=""
@@ -81,7 +105,12 @@ render(){
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("59")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                    <table style={{margin: '0 auto'}}>
+                        <GetItNowLink href={this.props.t(`${this.state.hrefUnlim}`)}>
+                            {this.props.t("Get It Now")}
+                        </GetItNowLink>
+                    </table>
+                </div></div>
             </div>
         </div>
         <div className="body-company">
@@ -167,7 +196,7 @@ render(){
 
         </div>
 
-        <div className="resourcesTable" style={{margin: "auto"}}> 
+        <div className="resourcesTable" style={{margin: "auto"}}>
 <div className="helpful">{this.props.t("Helpful resources")}</div>
 <div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/index.aspx" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
 <div className="tipsIcon"><a href="https://www.avs4you.com/guides/index.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>

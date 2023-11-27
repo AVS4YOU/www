@@ -250,7 +250,6 @@ class FormEducation extends React.Component {
             occupation: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             institution: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
             subscriptions: { value: "", status: ErrorStatus.NoError, inputClassName: "" },
-            recaptchaValue: "",
 
             file: {},
             fileInputsId: ["file0"],

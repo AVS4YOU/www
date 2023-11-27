@@ -3,11 +3,11 @@ import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuWrapper from '../menu-wrapper'
 
-const Header = ({availableLocales, locale, t}) => {
+const Header = ({availableLocales, locale, t, isTransparentHeader}) => {
 
     return (
 
-        <MenuWrapper availableLocales={availableLocales} locale={locale} t={t} style={{ height: 60}}>
+        <MenuWrapper isTransparentHeader={isTransparentHeader} availableLocales={availableLocales} locale={locale} t={t} style={{ height: 60}}>
             <MenuItem menuItemText={t("Video software")}>
                 <DropdownElement path="/avs-video-editor.aspx" headerText="AVS Video Editor" descriptionText={t("Easily edit and create videos")}/>
                 <DropdownElement path="/avs-free-video-converter.aspx" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>

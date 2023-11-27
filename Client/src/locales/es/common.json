@@ -4,7 +4,7 @@
   
     "/": "/",
     "CurrentLanguage": "Español",
-  
+    "Only today": "Sólo hoy",
   
   
   
@@ -1724,14 +1724,29 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "¡Aproveche la oferta del Día de San Valentín",
-    "discountCoupon" : " - 25 % de descuento en el paquete AVS4YOU ",
-    "textBanner" : "con el cupón ",
-    "nameCoupon" : "AVSLove23",
-    "endingBanner" : " !",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSLove23&CLEAN_CART=ALL",
+    "beginningBanner" : "",
+    "discountCoupon" : "¡Rebajas! ",
+    "textBanner" : "¡Hasta 100% de descuento en los programas AVS4YOU!",
+    "nameCoupon" : "Gira la rueda",
+    "endingBanner" : "",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/es/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL"
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&COUPON=AVS22XSM&CLEAN_CART=ALL",
+	
+    "*****************************BF********************************" : "*****************************BF********************************",
+  
+    "AVS4YOU 1 Year Subscription" : "la suscripción de 1 año AVS4YOU",
+    "AVS4YOU Unlimited" : "la suscripción ilimitada AVS4YOU",
+    "AVS Video ReMaker 1 Year Subscription" : "la suscripción de 1 año de AVS Video ReMaker",
+    "Spin the wheel to get a discount coupon up" : "¡Gire la rueda para ganar hasta un 99%",
+    "to 99 off on AVS4YOU products"  : "de descuento en los programas AVS4YOU!",
+    "Start Now" : "Empezar ahora",
+    "Please note that you may try your luck only once a day" : "*Tenga en cuenta que solo se puede probar suerte una vez al día.",
+    "Congratulations" : "¡Felicidades!",
+    "Youve got a" : "¡Su descuento es ",
+    "discount on" : " en ",
+    "discount before" : "!",
+    "Redeem your coupon" : " Canjear el cupón"
     }

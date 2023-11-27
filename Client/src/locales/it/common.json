@@ -2,6 +2,7 @@
     "************************COMMON***************************" : "************************COMMON***************************",
     "/" : "/",
     "CurrentLanguage" : "Italiano",
+    "Only today": "Solo oggi",
 
     "************************HEADER DOWNLOAD BUTTONS***************************" : "************************HEADER DOWNLOAD BUTTONS***************************",
     "get $5 coupon code" : "OTTIENI UN COUPON DI $5",
@@ -1625,18 +1626,18 @@
     "Multiplatform (Windows, Mac, Linux)" : "Multipiattaforma (Windows, Mac, Linux)",
     "Edit and create documents, spreadsheets and presentations" : "Modifica e crea documenti, fogli di calcolo e presentazioni",
 
-    "Simple Video Editor for Windows" : "Simple Video Editor for Windows",
-    "Cut, trim, crop, merge, rotate video files" : "Cut, trim, crop, merge, rotate video files",
-    "Capture screen, record video from webcams" : "Capture screen, record video from webcams",
-    "Super fast with GPU acceleration" : "Super fast with GPU acceleration",
-    "150+ Supported formats" : "150+ Supported formats",
-    "300+ Effects and transitions" : "300+ Effects and transitions",
-    "dwnld" : "Download now",
-    "Trusted by 10 000 000 users worldwide" : "Trusted by 7 000 000 users worldwide",
-    "I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video" : "I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video",
-    "I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed" : "I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed",
-    "AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want" : "AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want",
-    "I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done" : "I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done",
+    "Simple Video Editor for Windows" : "Montaggio video per Windows",
+    "Cut, trim, crop, merge, rotate video files" : "Modifica, taglia, ritaglia, unisci, ruota i file video.",
+    "Capture screen, record video from webcams" : "Cattura lo schermo, registra video dalle webcam.",
+    "Super fast with GPU acceleration" : "Super veloce con l’accelerazione GPU",
+    "150+ Supported formats" : "150+ formati supportatis",
+    "300+ Effects and transitions" : "300+ effetti e transizioni",
+    "dwnld" : "SCARICA ORA",
+    "Trusted by 10 000 000 users worldwide" : "Scelto da 10.000.000 di utenti felici in tutto il mondo",
+    "I like AVS Video Editor because of the simplicity of making seamless videos from a variety of formats into one cohesive video" : "Mi piace AVS Video Editor per la semplicità di creare video da una varietà di formati in un unico video coerente.",
+    "I enjoy how easy it is to manipulate the video to fit the screen by rotating-zooming-trimming and changing the speed" : "Mi piace quanto sia facile modificare il video per adattarlo allo schermo ruotando, zoomando, tagliando e regolando la velocità.",
+    "AVS4You is the easiest and fastest way that will provide a more professional presentation of what I want" : "AVS4YOU è il modo più semplice e veloce che fornirà una presentazione più professionale di ciò che voglio.",
+    "I will recommend AVS to everyone I know because it's reliable and easy to understand and get the work done" : "Consiglierò AVS a tutti quelli che conosco perché è affidabile e facile da usare e porta a termine il lavoro.",
 	
 	"*****************************SPECIAL-OFFER********************************" : "*****************************SPECIAL-OFFER********************************",
     "packSpecialOffer": "pack-special-offer.png",	
@@ -1683,14 +1684,29 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Approfitta dell'offerta di San Valentino",
-    "discountCoupon" : " - 25% di sconto sul pacchetto AVS4YOU ",
-    "textBanner" : "con il coupon ",
-    "nameCoupon" : "AVSLove23",
-    "endingBanner" : " !",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=it&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSLove23&CLEAN_CART=ALL",
+    "beginningBanner" : "",
+    "discountCoupon" : "Grandi saldi! ",
+    "textBanner" : "Fino al 100% di sconto sui programmi AVS4YOU!",
+    "nameCoupon" : "Gira la ruota",
+    "endingBanner" : "",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVSTreat23&CLEAN_CART=ALL",
 
     "LinkDownload" : "https://www.onlyoffice.com/it/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVS22XSM&CLEAN_CART=ALL"
-    }
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&COUPON=AVS22XSM&CLEAN_CART=ALL",
+	
+	"*****************************BF********************************" : "*****************************BF********************************",
+
+    "AVS4YOU 1 Year Subscription" : "sull'abbonamento AVS4YOU di 1 anno",
+    "AVS4YOU Unlimited" : "sull'abbonamento illimitato AVS4YOU",
+    "AVS Video ReMaker 1 Year Subscription" : "abbonamento di 1 anno di AVS Video Remaker",
+	"Spin the wheel to get a discount coupon up" : "Gira la ruota per ottenere uno sconto fino",
+    "to 99 off on AVS4YOU products" : "al 99% sui programmi AVS4YOU!",
+	"Start Now" : "Inizia ora",
+	"Please note that you may try your luck only once a day" : "*Per favore, nota che puoi tentare la fortuna solo una volta al giorno.",
+	"Congratulations" : "Congratulazioni!",
+	"Youve got a" : "Il tuo sconto è ",
+	"discount on" : " ",
+    "discount before" : "!",
+	"Redeem your coupon" : "Riscatta il tuo coupon"
+	}

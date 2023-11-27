@@ -15,7 +15,6 @@ import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import {VideoEditor} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
-import Button from '../components/button';
 import styled from 'styled-components';
 import ImageGQL from '../components/image-gql';
 import { Link as GatsbyLink } from 'gatsby';
@@ -33,7 +32,6 @@ import awardRating from '../images/avs-video-editor/award-rating.png'
 import awardFDM from '../images/avs-video-editor/award-fdm-video-editor.png'
 import awardGetApp from '../images/avs-video-editor/award-getapp.png'
 
-import LeftArrow from '../images/common/icons/slider_arrow_left.svg';
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
 const LogoWrapper = styled.div`
@@ -47,30 +45,6 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const StyledArrow = styled.div`{
-
-  .headerArrow {
-    background-image: url(${RightArrow});
-    transform: rotate(90deg);
-    background-repeat: no-repeat;
-    width: 45px;
-    max-width: 45px;
-    background-position-x: 50%;
-    cursor: pointer;
-    z-index: 0;
-    height: 45px;
-    display: table;
-    margin: auto;
-    margin-top: 200px;
-  }
-
-  @media (max-width: 1024px) {
-    .headerArrow {
-      display: none;
-    }
-  }
-}
-`;
 
 const lang = ['de','es','fr','it','jp','ru']
 
