@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import withI18next from "../components/withI18next";
 import Text from '../components/text';
 import ImageGQL from "../components/image-gql";
@@ -9,6 +10,27 @@ import Cookies from 'universal-cookie';
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
 const regExp = /=regnow:(.*):/;
+
+const GetItNowLink = styled.a`
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background: #fb8a29;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 0;
+  display: block;
+  
+  &:hover {
+    text-decoration: none;
+  }
+`
 
 
 class uninstallOffer extends React.PureComponent {
@@ -62,7 +84,11 @@ render(){
                 <div className="after-text-box"></div>
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24-hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("29/00")}</Text>
-                <table className="header__buy"><Text as="h2" className="header__buy__now"><a href={this.props.t(`${this.state.hrefGetIt}`)} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table></div></div>
+                <table className="header__buy" style={{backgroundColor: 'transparent', padding: 0}}>
+                    <GetItNowLink href={this.props.t(`${this.state.hrefGetIt}`)}>{this.props.t("Get It Now")}</GetItNowLink>
+                </table>
+                </div>
+                </div>
             </div>
         </div>
 
@@ -107,7 +133,9 @@ render(){
                 </Link>
             </div>
             </div>
-            <table className="header__buy__orange"><Text as="h2" className="header__buy__orange__now"><a href={this.props.t("getItHref")} style={{color: "#fff"}}>{this.props.t("Get It Now")}</a></Text></table>
+            <table className="header__buy__orange" style={{padding: 0, backgroundColor: 'transparent', width: '234px'}}>
+                <GetItNowLink href={this.props.t("getItHref")} style={{padding: '18px'}}>{this.props.t("Get It Now")}</GetItNowLink>
+            </table>
         </div>
 
         <Text as="h2" className="common__heading__with">
