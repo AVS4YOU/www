@@ -5,7 +5,7 @@
 * Deleted banner 'Black Friday'
 
 ### Fixes
-* Fixed buttons on pages `installed.aspx`, `installed-audio-converter.aspx`,`installed-audio-editor.aspx`, `installed-pack.aspx`, `installed-video-converter.aspx`, `installed-video-editor.aspx`, `installed-video-remaker.aspx`
+* Fixed buttons on pages `installed.aspx`, `installed-audio-converter.aspx`,`installed-audio-editor.aspx`, `installed-pack.aspx`, `installed-video-converter.aspx`, `installed-video-editor.aspx`, `installed-video-remaker.aspx`, `uninstall-offer.aspx`
 
 ## 1.0.56
 ### New
