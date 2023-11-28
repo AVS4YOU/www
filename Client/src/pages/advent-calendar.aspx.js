@@ -348,264 +348,259 @@ constructor(props) {
           </div>
           <div className="advent_heading">
             <h1>
-              The exciting 24 days of <br /> Magic Christmas Countdown with
+              The exciting 25 days of <br /> Magic Christmas Countdown with
               AVS4YOU!
             </h1>
             <div className="advent_header_sub">
-              Enjoy amazing gifts and non-stop discounts each day up to{" "}
-              <b>70% Off!</b>
+              Don’t miss out amazing gifts and generous discounts up to{" "}
+              <b>99% Off!</b>
             </div>
           </div>
 
 
           <div className="adventCalendarContainer">
             <CalendarItem
-              imageCoordinate={0}
-              date={new Date(2022, 11, 1)}
-              validDate="The offer is valid till December 2, 2022"
-              popupTitle="Wishing You a Happy first Sunday of Advent!"
-              popupDiscount="Claim a $20 gift card for reviewing AVS Audio Editor on Capterra"
-              popupCoupon="Review AVS4YOU"
-              hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
-              textButton="Review AVS4YOU"
-            />
-            <CalendarItem
-              imageCoordinate={-184}
-              date={new Date(2022, 11, 2)}
-              validDate="The offer is valid till December 3, 2022"
-              popupTitle="20% Off on AVS4YOU Unlimited Subscription"
-              popupCoupon="Unlim20"
-              popupSub="*Just use this coupon while purchasing"
-              className="CalendarItem"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Unlim20&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem imageCoordinate={-369} date={new Date(2022, 11, 3)}
-              validDate="The offer is valid till December 4, 2022"
-              popupTitle="30% promo code on 1 Year Subscription"
-              popupCoupon="Annual30"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Annual30&CLEAN_CART=ALL"
-              textButton="Shop now"
-              />
-            <CalendarItem imageCoordinate={-553} date={new Date(2022, 11, 4)}
-              validDate="The offer is valid thru December 5, 2022" 
-              popupTitle="Get a giveaway from WiseCleaner!"
-              popupDiscount="All-in-one Windows PC Cleaning and Speed up Tool"
-              hrefButton="https://downloads.wisecleaner.com/giveaways/WiseCare365_6.3.9.617_AVS4YOU.exe"
-              textButton="Free Download"
-              />
-            <CalendarItem imageCoordinate={-737} date={new Date(2022, 11, 5)} 
-              validDate="The offer is valid till December 6, 2022"
-              popupTitle="25% Off on AVS4YOU Unlimited Subscription!"
-              popupCoupon="Warm25"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Warm25&CLEAN_CART=ALL"
-              textButton="Shop now"
-              />
-            <CalendarItem
-              imageCoordinate={-922}
-              date={new Date(2022, 11, 6)}
-              validDate="The offer is valid till December 7, 2022"
-              popupTitle="40% Off on AVS4YOU Unlimited Subscription"
-              popupCoupon="Magic40"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Magic40&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-           <CalendarItem
-              imageCoordinate={-1106}
-              date={new Date(2022, 11, 7)}
-              validDate="The offer is valid till December 8, 2022"
-              popupTitle="70% Off on AVS4YOU 1 Year Subscription"
-              popupCoupon="Annual70"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Annual70&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-1290}
-              date={new Date(2022, 11, 8)}
-              validDate="The offer is valid till December 9, 2022"
-              popupTitle="Share our Advent calendar on Twitter or Facebook"
-              popupDiscount="and get a free license key for
-              AVS Video ReMaker 1 Year Subscription."
+              imageCoordinate={-3}
+              date={new Date(2023, 11, 1)}
+              validDate="The offer is valid till December 2, 2023"
+              popupTitle="Share our calendar in social networks &"
+              popupDiscount="get a free license key for AVS Video ReMaker 1 Year Subscription"
               linkTwitter={shareUrl}
               linkFacebook={shareUrl}
-              textBefore="*Send us the link to"
-              linkText="sales@avs4you.com"
-              linkHref="mailto:sales@avs4you.com" 
-              textAfter="to your post in social networks
-              and get your free license key"
+              popupSub="*Send us the link to your post in social networks to get your free license key"
             />
             <CalendarItem
-              imageCoordinate={-1474}
-              date={new Date(2022, 11, 9)}
-              validDate="The offer is valid till December 10, 2022"
-              popupTitle="A special deal from our partner HookSounds"
-              popupDiscount="15% Off on HookSounds Premium and Business Licenses."
-              popupDiscountTwo="Enrich your audio collection with original tracks and sound effects."
-              popupCoupon="AVS4YOU15"
-              hrefButton="https://www.hooksounds.com/premium/"
+              imageCoordinate={-186}
+              date={new Date(2023, 11, 2)}
+              validDate="The offer is valid till December 3, 2023"
+              popupTitle="Securely collaborate on docs online"
+              popupDiscount="in ONLYOFFICE DocSpace."
+              hrefButton="https://www.onlyoffice.com/docspace.aspx"
+              textButton="Create your free account"
+            />
+            <CalendarItem imageCoordinate={-370} date={new Date(2023, 11, 3)}
+              validDate="The offer is valid till December 4, 2023"
+              popupTitle="Wishing You a Happy First Sunday of Advent!"
+              popupDiscount="$20 Off on AVS4YOU Unlimited Subscription"
+              popupCoupon="Creativity20"
               popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Creativity20&CLEAN_CART=ALL"
+              textButton="Shop now"
+              />
+            <CalendarItem imageCoordinate={-553} date={new Date(2023, 11, 4)}
+              validDate="The offer is valid thru December 5, 2023" 
+              popupTitle="Enjoy a $15 Off on AVS4YOU 1 Year Subscription!"
+              popupCoupon="Snow15Flake"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Snow15Flake&CLEAN_CART=ALL"
+              textButton="Shop now"
+              />
+            <CalendarItem imageCoordinate={-736} date={new Date(2023, 11, 5)} 
+              validDate="The offer is valid till December 6, 2023"
+              popupTitle="25% Off on AVS Video Editor, our bestseller!"
+              popupCoupon="2SnowFr3ost"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=2SnowFr3ost&CLEAN_CART=ALL"
+              textButton="Shop now"
+              />
+            <CalendarItem
+              imageCoordinate={-919}
+              date={new Date(2023, 11, 6)}
+              validDate="The offer is valid till December 7, 2023"
+              popupTitle="Get a giveaway from WiseCleaner!"
+              popupDiscount="All-in-One Windows PC Cleaning and Speed up Tool"
+              hrefButton="https://downloads.wisecleaner.com/giveaways/WiseCare365_6.6.2.632_avs4you.exe"
+              textButton="Free Download"
+            />
+           <CalendarItem
+              imageCoordinate={-1103}
+              date={new Date(2023, 11, 7)}
+              validDate="The offer is valid till December 8, 2023"
+              popupTitle="Save 50% on AVS Video ReMaker Unlimited Subscription!"
+              popupCoupon="Remaker50"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Remaker50&CLEAN_CART=ALL"
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-1659}
-              date={new Date(2022, 11, 10)}
-              validDate="The offer is valid thru December 11, 2022"
-              popupTitle="Get free ONLYOFFICE Desktop Editors!"
-              popupDiscount="Work with all types of documents, spreadsheets 
-              and presentations, forms and PDF files
-              on Windows, Mac and Linux."
+              imageCoordinate={-1286}
+              date={new Date(2023, 11, 8)}
+              validDate="The offer is valid till December 9, 2023"
+              popupTitle="20% Off on AVS4YOU 1 Year Subscription"
+              popupCoupon="20Winter"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=20Winter&CLEAN_CART=ALL"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-1469}
+              date={new Date(2023, 11, 9)}
+              validDate="The offer is valid till December 10, 2023"
+              popupTitle="Redeem a 30% coupon code on AVS Video Editor!"
+              popupCoupon="AVSEditor30"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSEditor30&CLEAN_CART=ALL"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-1653}
+              date={new Date(2023, 11, 10)}
+              validDate="The offer is valid thru December 11, 2023"
+              popupTitle="Happy 2nd Advent Sunday!"
+              popupDiscount="Claim a $20 gift card for reviewing AVS Audio Editor on Capterra"
+              hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
+              textButton="Get my gift"
+            />
+            <CalendarItem
+              imageCoordinate={-1836}
+              date={new Date(2023, 11, 11)}
+              validDate="The offer is valid till December 12, 2023"
+              popupTitle="Get ONLYOFFICE Desktop Editors for free!"
+              popupDiscount="Work with all types of documents on any platform you like."
+              popupDiscountTwo="Edit PDF files, create fillable forms and more."
               hrefButton="https://www.onlyoffice.com/download-desktop.aspx"
               textButton="Download now"
             />
             <CalendarItem
-              imageCoordinate={-1843}
-              date={new Date(2022, 11, 11)}
-              validDate="The offer is valid till December 12, 2022"
-              popupTitle="45% Off on AVS4YOU 1 Year Subscription"
-              popupCoupon="45Winter"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=45Winter&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-2027}
-              date={new Date(2022, 11, 12)}
-              validDate="The offer is valid till December 13, 2022"
-              popupTitle="Tag your video created with AVS4YOU"
-              popupDiscount="with a link 
-              to our website in the description and 
-              get a free license key for AVS Video Editor"
-              hrefButton="mailto:sales@avs4you.com"
-              textButton="Contact us"
-              textBefore="*Send us a link to"
-              linkText="sales@avs4you.com"
-              linkHref="mailto:sales@avs4you.com" 
-              textAfter=" "
-            />
-            <CalendarItem
-              imageCoordinate={-2212}
-              date={new Date(2022, 11, 13)}
-              validDate="The offer is valid till December 14, 2022"
-              popupTitle="Need a secure document office for your private project?"
-              popupDiscount="Get a 50% discount on ONLYOFFICE Home Server."
-              popupCoupon="Home50"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://www.onlyoffice.com/docs-enterprise-prices.aspx"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-2396}
-              date={new Date(2022, 11, 14)}
-              validDate="The offer is valid till December 15, 2022"
-              popupTitle="Enjoy a 35% discount on AVS4YOU Unlimited Subscription!"
-              popupCoupon="AVS35Unlim"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVS35Unlim&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-2580}
-              date={new Date(2022, 11, 15)}
-              validDate="The offer is valid till December 16, 2022"
-              popupTitle="Get a free personal online office"
-              popupDiscount="Share and collaborate on docs everywhere!"
-              hrefButton="https://personal.onlyoffice.com/"
-              textButton="Try now"
-            />
-            <CalendarItem
-              imageCoordinate={-2764}
-              date={new Date(2022, 11, 16)}
-              validDate="The offer is valid tilll December 17, 2022"
-              popupTitle="35% Off on AVS4YOU Annual Subscription"
-              popupCoupon="AVSClock"
-              popupSub="*Just use this 100% coupon to get your key"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVSClock&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-2948}
-              date={new Date(2022, 11, 17)}
-              validDate="The offer is valid thru December 18, 2022"
+              imageCoordinate={-2019}
+              date={new Date(2023, 11, 12)}
+              validDate="The offer is valid till December 13, 2023"
               popupTitle="Looking for an original gift for someone special?"
               popupDiscount="Buy AVS4YOU Unlimited Subscription with a 50% discount!"
               popupCoupon="Gift50"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4579203&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Gift50&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift50&CLEAN_CART=ALL"
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-3133}
-              date={new Date(2022, 11, 18)}
-              validDate="The offer is valid till December 19, 2022"
-              popupTitle="Save 50% on AVS Video ReMaker Unlimited Subscription!"
-              popupCoupon="Remaker50"
+              imageCoordinate={-2202}
+              date={new Date(2023, 11, 13)}
+              validDate="The offer is valid till December 14, 2023"
+              popupTitle="40% Off on AVS Video Editor"
+              popupCoupon="AI40cicle"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Remaker50&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AI40cicle&CLEAN_CART=ALL"
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-3317}
-              date={new Date(2022, 11, 19)}
-              validDate="The offer is valid till December 20, 2022"
-              popupTitle="30% Off on AVS Video Editor!"
-              popupCoupon="Snow30"
+              imageCoordinate={-2386}
+              date={new Date(2023, 11, 14)}
+              validDate="The offer is valid till December 15, 2023"
+              popupTitle="Save 25% on AVS4YOU 1 Year Subscription"
+              popupCoupon="Light25"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Snow30&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Light25&CLEAN_CART=ALL"
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-3501}
-              date={new Date(2022, 11, 20)}
-              validDate="The offer is valid till December 21, 2022"
-              popupTitle="Redeem a 45% coupon code on AVS4YOU Unlimited Subscription"
-              popupCoupon="Candle45"
+              imageCoordinate={-2569}
+              date={new Date(2023, 11, 15)}
+              validDate="The offer is valid till December 16, 2023"
+              popupTitle="A special deal from our partner HookSounds"
+              popupDiscount="15% Off on HookSounds Premium and Business Licenses."
+              popupDiscountTwo="Enrich your audio collection with original tracks and sound effects."
+              popupCoupon="AVS4YOU15"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Candle45&CLEAN_CART=ALL"
+              hrefButton="https://www.hooksounds.com/licensing/?utm_source=coupon&utm_medium=email&utm_campaign=happychristmasavs"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-2752}
+              date={new Date(2023, 11, 16)}
+              validDate="The offer is valid tilll December 17, 2023"
+              popupTitle="Enjoy a 45% discount on AVS4YOU Unlimited Subscription!"
+              popupCoupon="AVS45Unlim"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVS45Unlim&CLEAN_CART=ALL"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-2935}
+              date={new Date(2023, 11, 17)}
+              validDate="The offer is valid thru December 18, 2023"
+              popupTitle="Happy 3rd Sunday of Advent!"
+              popupDiscount="Get AVS Video ReMaker 1 Year Subscription for free"
+              popupCoupon="ABall17S"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=ABall17S&CLEAN_CART=ALL"
+              textButton="Get It Now"
+            />
+            <CalendarItem
+              imageCoordinate={-3119}
+              date={new Date(2023, 11, 18)}
+              validDate="The offer is valid till December 19, 2023"
+              popupTitle="Hurry up to grab $20 Off on AVS4YOU 1 Year Subscription!"
+              popupCoupon="Gift20"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift20&CLEAN_CART=ALL"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-3302}
+              date={new Date(2023, 11, 19)}
+              validDate="The offer is valid till December 20, 2023"
+              popupTitle="Surprise! Send a Christmas greeting card"
+              popupDiscount="to your dearest and nearest"
+              hrefButton=""
+              textButton="Get It Now"
+            />
+            <CalendarItem
+              imageCoordinate={-3485}
+              date={new Date(2023, 11, 20)}
+              validDate="The offer is valid till December 21, 2023"
+              popupTitle="Redeem 40% Off coupon on AV4YOU Unlimited Subscription"
+              popupCoupon="Candle40"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Candle40&CLEAN_CART=ALL"
               textButton="Shop now"
             />
               <CalendarItem
-              imageCoordinate={-3685}
-              date={new Date(2022, 11, 21)}
-              validDate="The offer is valid till December 22, 2022"
-              popupTitle="Enjoy a 40% promo code on AVS4YOU 1 Year Subscription!"
-              popupCoupon="AVS40Frost"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=AVS40Frost&CLEAN_CART=ALL"
-              textButton="Shop now"
+              imageCoordinate={-3668}
+              date={new Date(2023, 11, 21)}
+              validDate="The offer is valid till December 22, 2023"
+              popupTitle="Time to decorate your computer!"
+              popupDiscount="Get a festive screensaver for your pc."
+              hrefButton=""
+              textButton="Download Now"
             />
             <CalendarItem
-              imageCoordinate={-3870}
-              date={new Date(2022, 11, 22)}
-              validDate="The offer is valid thru December 23, 2022"
-              popupTitle="50% Off on AVS4YOU bestseller - AVS Video Editor!"
-              popupCoupon="Snow50"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Snow50&CLEAN_CART=ALL"
-              textButton="Shop now"
-            />
-            <CalendarItem
-              imageCoordinate={-4054}
-              date={new Date(2022, 11, 23)}
-              validDate="The offer is valid thru December 24, 2022"
+              imageCoordinate={-3852}
+              date={new Date(2023, 11, 22)}
+              validDate="The offer is valid till December 23, 2023"
               popupTitle="What a lucky day for everyone!"
-              popupDiscount="60% Off on AVS4YOU Unlimited Subscription"
-              popupCoupon="Lucky23"
+              popupDiscount="50% Off on AVS4YOU Unlimited Subscription"
+              popupCoupon="A8LuckyYou"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLWw45a5hLk=&COUPON=Lucky23&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=A8LuckyYou&CLEAN_CART=ALL"
+              textButton="Shop now"
+            />
+            <CalendarItem
+              imageCoordinate={-4035}
+              date={new Date(2023, 11, 23)}
+              validDate="The offer is valid till December 24, 2023"
+              popupTitle="Enjoy our Christmas Calendar crafted specially for you!"
+              hrefButton=""
+              textButton="Download Now"
+            />
+            <CalendarItem
+              imageCoordinate={-4218}
+              date={new Date(2023, 11, 24)}
+              validDate="The offer is valid till December 25, 2023"
+              popupTitle="Exclusive Deal!"
+              popupDiscount="Only today 55% Off on AVS4YOU Unlimited Subscription"
+              popupCoupon="Christmas23"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Christmas23&CLEAN_CART=ALL"
               textButton="Shop now"
             />
             <StyledLastCalendar>
             <CalendarItem
-              imageCoordinate={-4238}
-              date={new Date(2022, 11, 24)}
+              imageCoordinate={-4402}
+              date={new Date(2023, 11, 25)}
               validDate=""
               popupTitle="Merry Christmas!"
-              popupDiscount="AVS4YOU wishes you and your family a happy and prosperous 2023 year!
-              May your home be blessed with Christmas joy, peace and love!"
+              popupDiscount="AVS4YOU wishes you and your family a happy and prosperous 2024 year!"
+              popupDiscountTwo="May your home be blessed with Christmas joy, peace and love!"
             />
             </StyledLastCalendar>
           </div>
@@ -615,7 +610,7 @@ constructor(props) {
               <div className="afb_logo_link"></div>
             </div>
             <div className="afb_copyright">
-            Ascensio System SIA 2022 All rights reserved.
+            Ascensio System SIA 2023 All rights reserved.
             </div>
           </div>
         </div>
