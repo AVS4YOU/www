@@ -40,6 +40,8 @@ class SpecialOffer extends React.PureComponent {
 render(){
     return (
       <Layout 
+        headerIsDisabled={true}
+        isTinyFooter
         className="special-offer" 
         pageContext={this.props.pageContext} 
         t={this.props.t}
@@ -75,7 +77,7 @@ render(){
             </div>
             <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader">{this.props.t("Multimedia Suite")}</Text>
             <div className="button-block">
-              <Button className="headerButton button-mobile" 
+              <Button className="headerButton button-mobile headerDownloadNow" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
                       <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("download now")}</Link>
@@ -87,7 +89,7 @@ render(){
                       <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2022")}</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2023")}</Text>
       </div>
     </div>
   </div>
