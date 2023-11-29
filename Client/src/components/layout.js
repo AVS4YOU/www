@@ -21,9 +21,14 @@ import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
 import PlAVSbg from "../images/black-friday/bg-banner.png";
-import PlAVSLeft from "../images/black-friday/left-banner.png";
-import PlAVSRight from "../images/black-friday/right-banner.png";
-import PlAVSgif from "../images/black-friday/banner-bf-gif.gif";
+import PlAVSLeftBg from "../images/pl/left-banner-bg.png";
+import PlAVSRightBg from "../images/pl/right-banner-bg.png";
+import PlAVSLeft from "../images/pl/left-banner.png";
+import PlAVSRight from "../images/pl/right-banner.png";
+import PlAVSgif from "../images/pl/99.png";
+import PlAVSDiscount from "../images/pl/discount.png";
+import PlAVSDiscountEu from "../images/pl/eu_discount.png";
+import PlAVSDiscountJa from "../images/pl/ja_discount.png";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -32,11 +37,12 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
     height: 60px;
     background-color: #0a0f11;
-    background-image: url(${PlAVSbg});
+    //background-image: url(${PlAVSbg});
+    background: radial-gradient(67.97% 40476.56% at 51.51% 32.03%, #0B1FD2 0%, #0B1D4C 100%);
     cursor: pointer;
     background-position-x: 50%;
 
@@ -53,35 +59,58 @@ const StyledPL = styled.div`
   .PLnewAvsText {
     display: inline-block;
     gap: 5px;
-    padding: 0px 8px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
     color: #ffffff;
     width: auto;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
 
   .PLnewAvsTextAccent {
     font-weight: 700;
-    color: #ECBB47;
+    position: relative;
+    top: -2px;
   }
 
   .PlAvsDiscount {
-    background: #A60101;
+    background-image: url(${PlAVSDiscount});
     font-family: 'Open Sans';
-    width: 170px;
-    height: 43px;
+    width: 348px;
+    height: 70px;
     word-break: keep-all;
     font-weight: 600;
     color: #FFFFFF;
-    position: absolute;
-    left: 6px;
-    top: 5px;
-    line-height: 44px;
+    //position: absolute;
+    left: -20px;
+    line-height: 52px;
     display: inline-block;
     align-items: center;
     justify-content: center;
+    background-position: 0px;
+    background-size: 348px 88px;
+    position: relative;
+    top: -2px;
+    z-index: 1;
+  }
+
+  .es, .fr, .it, .ru {
+    background-image: url(${PlAVSDiscountEu});
+    width: 380px;
+    background-size: 380px 88px;
+  }
+
+  .jp {
+    background-image: url(${PlAVSDiscountJa});
+    width: 460px;
+    background-size: 460px 88px;
   }
 
   .bgPlAvs {
@@ -93,12 +122,27 @@ const StyledPL = styled.div`
     justify-content: space-between;
   }
 
+  .giftsOne {
+    background-image: url(${PlAVSLeft});
+    width: 304px;
+    height: 64px;
+    background-position-x: 100%;
+  }
+
+  .giftsTwo {
+    background-image: url(${PlAVSRight});
+    width: 304px;
+    height: 64px;
+    z-index: 1;
+  }
+
   .PLnewAvsLeft {
     top: 0;
     left: 0px;
-    width: 600px;
+    width: 100%;
+    max-width: 700px;
     height: 64px;
-    background-image: url(${PlAVSLeft});
+    background-image:url(${PlAVSLeftBg});
     background-repeat: no-repeat;
     background-position-y: 50%;
     pointer-events: none;
@@ -109,18 +153,19 @@ const StyledPL = styled.div`
   .PLnewAvsRight {
     top: 0;
     height: 64px;
-    width: 600px;
+    width: 688px;
     background-repeat: no-repeat;
-    background-image: url(${PlAVSRight});
+    background-image: url(${PlAVSRightBg});
     background-position-y: 50%;
     pointer-events: none;
     right: 0;
     z-index: 0;
+    background-position-x: 0%;
   }
 
   .PlAvsSpin {
-    position: absolute;
-    width: 183px;
+    //position: absolute;
+    //width: 183px;
     height: 55px;
     display: inline-block;
     top: 3px;
@@ -128,17 +173,41 @@ const StyledPL = styled.div`
 
   .PlAvsgif {
     background-image: url(${PlAVSgif});
-    background-size: 183px 55px;
+    background-size: 82px 40px;
     background-position: 50%;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 183px;
-    height: 55px;
-    position: absolute;
+    width: 82px;
+    height: 40px;
     left: 0;
+    margin-top: -3px;
+    min-width: 80px;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 1024px) {
+    .giftsOne {
+      display: none;
+    }
+  
+    .giftsTwo {
+      display: none;
+    }
+
+    .PLnewAvsText {
+      padding: 5px 20px;
+    }
+
+    .PLnewAvsText {
+      font-size: 16px;
+      top: 0;
+    }
+
+    .PLnewAvsTextAccent {
+      top: -4px;
+    }
+  }
+
+  @media (max-width: 763px) {
     .PLnewAvs {
       display: none;
       }
@@ -323,7 +392,6 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
-            showBlackFriday: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -481,17 +549,20 @@ class Layout extends React.PureComponent {
                
 
                 {!this.props.headerIsDisabled ? <StyledPL>
+                  <Link to="/advent-calendar.aspx">
                     <div className="PLnewAvs">
                         <div className="bgPlAvs">
                         <div className="PLnewAvsLeft"></div>
-                        <a target="_blank">
-                          <span className="PLnewAvsText">{this.props.t("beginningBanner")}
-                            <span className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}</span>
-                            <div className="PlAvsSpin"><span className="PlAvsDiscount">{this.props.t("nameCoupon")}</span><div className="PlAvsgif"></div></div>
-                        </a>
+                          <span className="PLnewAvsText"><div className='giftsOne'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
+                            {this.props.t("discountCoupon")}<div className="PlAvsgif"></div><span className="PLnewAvsTextAccent">{this.props.t("textBanner")}</span>
+                            <div className="PlAvsSpin">
+                              <span className={`PlAvsDiscount ${this.props.pageContext.locale}`}>{this.props.t("nameCoupon")}</span>
+                            </div><div className='giftsTwo'></div>
+                          </span>
                         <div className="PLnewAvsRight"></div>
                         </div>
                     </div>
+                  </Link>
                 </StyledPL> : <div></div>}
 
                 
