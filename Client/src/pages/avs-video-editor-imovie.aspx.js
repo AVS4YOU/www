@@ -2,7 +2,7 @@ import React from "react";
 
 import withI18next from "../components/withI18next";
 import Layout from "../components/layout";
-import {FeaturesSection} from "../screens/avs-video-editor-imovie";
+import {FeaturesSection, ReviewsSection, HeroSection} from "../screens/avs-video-editor-imovie";
 
 const AvsVideoEditorImovie = ({pageContext, t}) => {
     return (
@@ -15,7 +15,9 @@ const AvsVideoEditorImovie = ({pageContext, t}) => {
             metaKeywords=""
             isTinyFooter
         >
-            <FeaturesSection t={t} />
+            <HeroSection t={t}/>
+            <FeaturesSection t={t}/>
+            <ReviewsSection t={t}/>
         </Layout>
     )
 }
