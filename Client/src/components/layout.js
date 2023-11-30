@@ -256,6 +256,10 @@ const StyledPL = styled.div`
       top: -4px;
       text-align: left;
     }
+
+    .en, .de, .ko, .pl, .da, .nl, .pt {
+      width: 330px;
+    }
   }
 
   @media (max-width: 763px) {
