@@ -25,6 +25,12 @@ import PlAVSLeftBg from "../images/pl/left-banner-bg.png";
 import PlAVSRightBg from "../images/pl/right-banner-bg.png";
 import PlAVSLeft from "../images/pl/left-banner.png";
 import PlAVSRight from "../images/pl/right-banner.png";
+import PlAVS1 from "../images/pl/1.png";
+import PlAVS2 from "../images/pl/2.png";
+import PlAVS3 from "../images/pl/3.png";
+import PlAVS23 from "../images/pl/23.png";
+import PlAVS24 from "../images/pl/24.png";
+import PlAVS25 from "../images/pl/25.png";
 import PlAVSgif from "../images/pl/99.png";
 import PlAVSDiscount from "../images/pl/discount.png";
 import PlAVSDiscountEu from "../images/pl/eu_discount.png";
@@ -184,12 +190,56 @@ const StyledPL = styled.div`
     min-width: 80px;
   }
 
-  @media (max-width: 1024px) {
-    .giftsOne {
+  @media (max-width: 1640px) {
+    .giftsOne, .giftsTwo {
       display: none;
     }
-  
-    .giftsTwo {
+
+    .one {
+      background-image: url(${PlAVS1});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .two {
+      background-image: url(${PlAVS2});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .three {
+      background-image: url(${PlAVS3});
+      width: 90px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .four {
+      background-image: url(${PlAVS23});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .five {
+      background-image: url(${PlAVS24});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .six {
+      background-image: url(${PlAVS25});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .one, .two, .three, .four, .five, .six {
       display: none;
     }
 
@@ -553,11 +603,11 @@ class Layout extends React.PureComponent {
                     <div className="PLnewAvs">
                         <div className="bgPlAvs">
                         <div className="PLnewAvsLeft"></div>
-                          <span className="PLnewAvsText"><div className='giftsOne'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
+                          <span className="PLnewAvsText"><div className='giftsOne'></div><div className='one'></div><div className='two'></div><div className='three'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
                             {this.props.t("discountCoupon")}<div className="PlAvsgif"></div><span className="PLnewAvsTextAccent">{this.props.t("textBanner")}</span>
                             <div className="PlAvsSpin">
                               <span className={`PlAvsDiscount ${this.props.pageContext.locale}`}>{this.props.t("nameCoupon")}</span>
-                            </div><div className='giftsTwo'></div>
+                            </div><div className='giftsTwo'></div><div className='four'></div><div className='five'></div><div className='six'></div>
                           </span>
                         <div className="PLnewAvsRight"></div>
                         </div>
@@ -574,7 +624,7 @@ class Layout extends React.PureComponent {
                     
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner &&
+                {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
