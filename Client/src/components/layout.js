@@ -238,6 +238,12 @@ const StyledPL = styled.div`
     }
   }
 
+  @media (max-width: 1370px) {
+    .four, .five, .six {
+      display: none;
+    }
+  }
+
   @media (max-width: 1300px) {
     .one, .two, .three, .four, .five, .six {
       display: none;
