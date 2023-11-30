@@ -145,6 +145,13 @@ const StyledLastCalendar = styled.div` {
   }
 `;
 
+const StyledBottomCalendar = styled.div` {
+  .popupTitle {
+    margin-top: 80px;
+  }
+}
+`;
+
 const streamUrl = AudioCalendar;
 
 const CustomPlayer = withSoundCloudAudio(props => {
@@ -444,7 +451,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSEditor30&CLEAN_CART=ALL"
               textButton="Shop now"
             />
-            <StyledLastCalendar>
+            <StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-1653}
               date={new Date(2023, 11, 10)}
@@ -454,7 +461,7 @@ constructor(props) {
               hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
               textButton="Get my gift"
             />
-            </StyledLastCalendar>
+            </StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-1836}
               date={new Date(2023, 11, 11)}
@@ -560,7 +567,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Candle40&CLEAN_CART=ALL"
               textButton="Shop now"
             />
-            <StyledLastCalendar>
+            <StyledBottomCalendar>
               <CalendarItem
               imageCoordinate={-3668}
               date={new Date(2023, 11, 21)}
@@ -570,7 +577,7 @@ constructor(props) {
               hrefButton="0"
               textButton="Download Now"
             />
-            </StyledLastCalendar>
+            </StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-3852}
               date={new Date(2023, 11, 22)}
@@ -582,7 +589,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=A8LuckyYou&CLEAN_CART=ALL"
               textButton="Shop now"
             />
-            <StyledLastCalendar>
+            <StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-4035}
               date={new Date(2023, 11, 23)}
@@ -591,7 +598,7 @@ constructor(props) {
               hrefButton="0"
               textButton="Download Now"
             />
-            </StyledLastCalendar>
+            </StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-4218}
               date={new Date(2023, 11, 24)}

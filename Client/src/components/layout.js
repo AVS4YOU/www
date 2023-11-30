@@ -253,7 +253,7 @@ const StyledPL = styled.div`
     }
 
     .PLnewAvsTextAccent {
-      top: -4px;
+      top: -3px;
       text-align: left;
     }
 
