@@ -4,7 +4,7 @@ import {
     HeroSectionStyled,
     HeroSectionContainer,
     HeroSectionTitle,
-    HeroSectionDesc, HeroSectionLink,
+    HeroSectionDesc, HeroSectionLink, HeroSectionBackgroundVideo,
 } from './heroSection.styled'
 
 export const HeroSection = ({t}) => {
@@ -23,6 +23,7 @@ export const HeroSection = ({t}) => {
                     <span>{t('Windows 11/10/8/7/Vista/XP')}</span>
                 </HeroSectionLink>
             </HeroSectionContainer>
+            <HeroSectionBackgroundVideo autoPlay loop muted src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/november2023/production_id4990248.mp4" />
         </HeroSectionStyled>
     )
 }

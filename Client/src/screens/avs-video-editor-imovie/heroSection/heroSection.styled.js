@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeroSectionStyled = styled.section`
   padding: 273px 104px 338px 104px;
+  position: relative;
   
   background-color: gray;
   
@@ -28,6 +29,8 @@ export const HeroSectionContainer = styled.div`
   align-items: center;
   color: #FFF;
   text-align: center;
+  position: relative;
+  z-index: 1;
 `
 
 export const HeroSectionTitle = styled.h1`
@@ -98,4 +101,13 @@ export const HeroSectionLink = styled.a`
   @media screen and (max-width: 400px) {
     width: 100%;
   }
+`
+
+export const HeroSectionBackgroundVideo = styled.video`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 `

@@ -2,7 +2,7 @@ import React from "react";
 
 import {
     ReviewsSectionStyled,
-    ReviewsSectionContainer,
+    ReviewsSectionContainer, ReviewsSectionDesc,
 } from './reviewsSection.styled'
 import {
     ReviewsSectionCarouselWrapper,
@@ -47,6 +47,7 @@ export const ReviewsSection = ({t}) => {
     return (
         <ReviewsSectionStyled>
             <ReviewsSectionContainer>
+                <ReviewsSectionDesc>{t('Our customers say')}</ReviewsSectionDesc>
                 <ReviewsSectionTitleWrapper>
                     <ReviewsSectionStars>
                         <Star/>

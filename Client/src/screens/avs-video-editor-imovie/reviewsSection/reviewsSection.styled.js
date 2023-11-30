@@ -49,6 +49,22 @@ export const ReviewsSectionTitleWrapper = styled.div`
     gap: 16px;
   }
 `
+export const ReviewsSectionDesc = styled.p`
+  margin: 0 0 40px 0;
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+  @media screen and (max-width: 800px) {
+    margin-bottom: 56px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    margin-bottom: 24px;
+  }
+`
 
 export const ReviewsSectionTitle = styled.h2`
   margin: 0;
