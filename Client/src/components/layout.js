@@ -248,7 +248,7 @@ const StyledPL = styled.div`
     }
 
     .PLnewAvsText {
-      font-size: 15px;
+      font-size: 16px;
       top: 0;
     }
 
@@ -274,6 +274,7 @@ const StyledPL = styled.div`
       height: 20px;
       line-height: 20px;
       left: 20px;
+      width: 330px;
     }
 
     .PlAvsgif {
