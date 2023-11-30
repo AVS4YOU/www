@@ -149,6 +149,14 @@ const StyledBottomCalendar = styled.div` {
   .popupTitle {
     margin-top: 80px;
   }
+
+  .popupDiscount {
+    margin: 30px auto 0px auto;
+  }
+
+  .shopButton {
+    margin-top: 0px;
+  }
 }
 `;
 
@@ -412,6 +420,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=2SnowFr3ost&CLEAN_CART=ALL"
               textButton="Shop now"
               />
+            <StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-919}
               date={new Date(2023, 11, 6)}
@@ -421,6 +430,7 @@ constructor(props) {
               hrefButton="https://downloads.wisecleaner.com/giveaways/WiseCare365_6.6.2.632_avs4you.exe"
               textButton="Free Download"
             />
+          </StyledBottomCalendar>
            <CalendarItem
               imageCoordinate={-1103}
               date={new Date(2023, 11, 7)}
@@ -546,7 +556,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift20&CLEAN_CART=ALL"
               textButton="Shop now"
             />
-            <StyledLastCalendar>
+            <StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-3302}
               date={new Date(2023, 11, 19)}
@@ -556,7 +566,7 @@ constructor(props) {
               hrefButton="0"
               textButton="Get It Now"
             />
-            </StyledLastCalendar>
+            </StyledBottomCalendar>
             <CalendarItem
               imageCoordinate={-3485}
               date={new Date(2023, 11, 20)}
