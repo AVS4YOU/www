@@ -178,7 +178,7 @@ const CustomPlayer = withSoundCloudAudio(props => {
       <button className="afh_music" >
         {playing 
           ? <img src={MusicOff} alt="Music Off"/>         
-          : <img src={MusicOn} alt="Music On"/> 
+          : <div className="music-off"><img className="music-off" src={MusicOn} alt="Music On"/></div>
         }
       </button>
     </div>
@@ -367,14 +367,16 @@ constructor(props) {
               popupDiscount="get a free license key for AVS Video ReMaker 1 Year Subscription"
               linkTwitter={shareUrl}
               linkFacebook={shareUrl}
-              popupSub="*Send us the link to your post in social networks to get your free license key"
+              textBefore="*Send us the link to your post in social networks at"
+              linkText="sales@avs4you.com"
+              linkHref="mailto:sales@avs4you.com"
+              textAfter="to get your free license key"
             />
             <CalendarItem
               imageCoordinate={-186}
               date={new Date(2023, 11, 2)}
               validDate="The offer is valid till December 3, 2023"
-              popupTitle="Securely collaborate on docs online"
-              popupDiscount="in ONLYOFFICE DocSpace."
+              popupTitle="Securely collaborate on docs online in ONLYOFFICE DocSpace."
               hrefButton="https://www.onlyoffice.com/docspace.aspx"
               textButton="Create your free account"
             />
@@ -442,6 +444,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSEditor30&CLEAN_CART=ALL"
               textButton="Shop now"
             />
+            <StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-1653}
               date={new Date(2023, 11, 10)}
@@ -451,6 +454,7 @@ constructor(props) {
               hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
               textButton="Get my gift"
             />
+            </StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-1836}
               date={new Date(2023, 11, 11)}
@@ -535,15 +539,17 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift20&CLEAN_CART=ALL"
               textButton="Shop now"
             />
+            <StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-3302}
               date={new Date(2023, 11, 19)}
               validDate="The offer is valid till December 20, 2023"
-              popupTitle="Surprise! Send a Christmas greeting card"
-              popupDiscount="to your dearest and nearest"
-              hrefButton=""
+              popupTitle="Surprise!"
+              popupDiscount="Send a Christmas greeting card to your dearest and nearest"
+              hrefButton="0"
               textButton="Get It Now"
             />
+            </StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-3485}
               date={new Date(2023, 11, 20)}
@@ -554,15 +560,17 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Candle40&CLEAN_CART=ALL"
               textButton="Shop now"
             />
+            <StyledLastCalendar>
               <CalendarItem
               imageCoordinate={-3668}
               date={new Date(2023, 11, 21)}
               validDate="The offer is valid till December 22, 2023"
               popupTitle="Time to decorate your computer!"
               popupDiscount="Get a festive screensaver for your pc."
-              hrefButton=""
+              hrefButton="0"
               textButton="Download Now"
             />
+            </StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-3852}
               date={new Date(2023, 11, 22)}
@@ -574,14 +582,16 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=A8LuckyYou&CLEAN_CART=ALL"
               textButton="Shop now"
             />
+            <StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-4035}
               date={new Date(2023, 11, 23)}
               validDate="The offer is valid till December 24, 2023"
               popupTitle="Enjoy our Christmas Calendar crafted specially for you!"
-              hrefButton=""
+              hrefButton="0"
               textButton="Download Now"
             />
+            </StyledLastCalendar>
             <CalendarItem
               imageCoordinate={-4218}
               date={new Date(2023, 11, 24)}

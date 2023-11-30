@@ -255,6 +255,27 @@
     }
   }
 
+  .afh_music_block .afh_music {
+    cursor: pointer;
+    
+    .music-off {
+      &::before {
+        border-bottom: 3px solid rgba(206, 206, 206, 1);
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 20px;
+        background-color: transparent;
+        transform: rotate(35deg);
+        content: "";
+        left: 10px;
+        top: 7px;
+        z-index: 1;
+        transition: 0.5s;
+      }
+    }
+  }
+
   .afh_logo_link {
     display: inline-block;
     width: 180px;
