@@ -248,12 +248,13 @@ const StyledPL = styled.div`
     }
 
     .PLnewAvsText {
-      font-size: 16px;
+      font-size: 15px;
       top: 0;
     }
 
     .PLnewAvsTextAccent {
       top: -4px;
+      text-align: left;
     }
   }
 
