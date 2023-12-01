@@ -93,6 +93,10 @@ export const HeroSectionLink = styled.a`
     line-height: 24px;
   }
   
+  &:hover {
+    text-decoration: none;
+  }
+  
   @media screen and (max-width: 500px) {
     padding: 16px;
     font-size: 16px;
