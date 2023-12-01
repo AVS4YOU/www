@@ -32,7 +32,7 @@ const StyledCalendarItem = styled.div`
 
   .calendarImage {
     background-color: transparent;
-    width: 168px;
+    width: 167px;
     height: 168px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
