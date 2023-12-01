@@ -18,7 +18,7 @@ export const HeroSection = ({t}) => {
                     {t(`Use AVS Video Editor! It is all-in-one video recorder, 
                     video editor and slideshow maker. Create breathtaking movies with text, music and effects without expertise.`)}
                 </HeroSectionDesc>
-                <HeroSectionLink>
+                <HeroSectionLink href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                     {t('Download AVS Video Editor')}
                     <span>{t('Windows 11/10/8/7/Vista/XP')}</span>
                 </HeroSectionLink>
