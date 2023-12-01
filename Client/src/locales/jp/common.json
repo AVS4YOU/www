@@ -1754,29 +1754,14 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "",
-    "discountCoupon" : "ホッと取り引き！",
-    "textBanner" : "AVS4YOUソフトウェアに最大100%割引！",
-    "nameCoupon" : "ルーレットを回す",
+    "beginningBanner" : "最大",
+    "discountCoupon" : " ",
+    "textBanner" : "割引とギフトを取得に頑張って！",
+    "nameCoupon" : "アドベントカレンダーをチエックしてください",
     "endingBanner" : "",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVSTreat23&CLEAN_CART=ALL",
-
-    "LinkDownload" : "https://www.onlyoffice.com/ja/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
-    "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&COUPON=AVS22XSM&CLEAN_CART=ALL",
-	
-	"*****************************BF********************************" : "*****************************BF********************************",
-
-    "AVS4YOU 1 Year Subscription" : "AVS4YOU１年サブスクリプション",
-    "AVS4YOU Unlimited" : "AVS4YOU無期限サブスクリプション",
-    "AVS Video ReMaker 1 Year Subscription" : "AVS Video Remaker１年サブスクリプション",
-	"Spin the wheel to get a discount coupon up" : "AVS4YOUソフトに最大99％割引を受けるよ",
-    "to 99 off on AVS4YOU products"  : "うに、ホイールをスピン回してください！",
-	"Start Now" : "スピン",
-	"Please note that you may try your luck only once a day" : "＊ご注意ください、運を試すのは1日1回だけです。",
-	"Congratulations" : "おめでとう！",
-	"Youve got a" : "",
-	"discount on" : "割引を獲得しました",
-    "discount before" : "！",
-	"Redeem your coupon" : "クーポンを使用"
-	}
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSTreat23&CLEAN_CART=ALL",
+    
+    "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
+    "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL"
+    }

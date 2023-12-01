@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.58 (29.11.2023)
+### New
+* Added banner 'Advent Calendar'
+* Added new coupons on page `advent-calendar.aspx`
+
+### Fixes
+* Fixed date on page `avs-special-offer.aspx`
+
 ## 1.0.57 (27.11.2023)
 ### New
 * Deleted banner 'Black Friday'
