@@ -777,6 +777,7 @@ render(){
                 <div className="lfb-offer">
                     <a id="landingPage_landingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1"                 
                     href={this.props.t(`${this.state.hrefUnlim}`)}
+                       style={{paddingTop: '16px'}}
                     ><span>{this.props.t("Exclusive Offer Only Today ")}</span></a>
                 </div>                                    
                 </span>
@@ -789,9 +790,9 @@ render(){
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
                     <p className="lohbn-regular-price">{this.props.t("Regularly")} <span className="lohbn-rp"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("199 ")}</span></p>
-                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3"                 
+                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3"
                     href={this.state.hrefUnlim}
-                    ><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>
+                    ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '7px'}}       >{this.props.t("Buy now!")}</b></a></span>
                 </div>
             </div>
         </div>
@@ -802,11 +803,11 @@ render(){
                 
                 <StyledSlider>
                     <ul className="slick-dots" id="slick-steps">
-                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(0)}><div className="landing-soft-feature1"><Text className="landing-soft-feature-text">{this.props.t("Upload media files")}</Text></div></li>
-                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(1)}><div className="landing-soft-feature2"><Text className="landing-soft-feature-text">{this.props.t("Cut or trim videos")}</Text></div></li>
-                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(2)}><div className="landing-soft-feature3"><Text className="landing-soft-feature-text">{this.props.t("Apply effects and transitions")}</Text></div></li>
-                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(3)}><div className="landing-soft-feature4"><Text className="landing-soft-feature-text">{this.props.t("Add background audio and text")}</Text></div></li>
-                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(4)}><div className="landing-soft-feature5"><Text className="landing-soft-feature-text">{this.props.t("Save your movie and share")}</Text></div></li>
+                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(0)}><div className="landing-soft-feature1"><Text className="landing-soft-feature-text" style={{height: 'calc(100% - 24px)', paddingTop: '24px'}}>{this.props.t("Upload media files")}</Text></div></li>
+                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(1)}><div className="landing-soft-feature2"><Text className="landing-soft-feature-text" style={{height: 'calc(100% - 24px)', paddingTop: '24px'}}>{this.props.t("Cut or trim videos")}</Text></div></li>
+                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(2)}><div className="landing-soft-feature3"><Text className="landing-soft-feature-text" style={{height: 'calc(100% - 24px)', paddingTop: '24px'}}>{this.props.t("Apply effects and transitions")}</Text></div></li>
+                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(3)}><div className="landing-soft-feature4"><Text className="landing-soft-feature-text" style={{height: 'calc(100% - 24px)', paddingTop: '24px'}}>{this.props.t("Add background audio and text")}</Text></div></li>
+                        <li aria-hidden="true" onClick={() => this.slider.slickGoTo(4)}><div className="landing-soft-feature5"><Text className="landing-soft-feature-text" style={{height: 'calc(100% - 24px)', paddingTop: '24px'}}>{this.props.t("Save your movie and share")}</Text></div></li>
                     </ul>
                     <Slider ref={slider => (this.slider = slider)} {...settings}>  
                         {Slides()}
@@ -825,7 +826,7 @@ render(){
                 </div>
                 <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3"                 
                 href={this.state.hrefUnlim}
-                ><b className="lohbn-buy-button buy-button-bottom">{this.props.t("Buy now!")}</b></a></span>            
+                ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '8'}}>{this.props.t("Buy now!")}</b></a></span>
             </div>
         </div>
         <div className="landing-footer">

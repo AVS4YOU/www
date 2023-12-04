@@ -32,7 +32,7 @@ const StyledCalendarItem = styled.div`
 
   .calendarImage {
     background-color: transparent;
-    width: 168px;
+    width: 167px;
     height: 168px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ const StyledCalendarItem = styled.div`
     z-index: 2;
     background-image: url(${spriteImage});
     background-repeat: no-repeat;
-    background-size: 4407px auto;
+    background-size: auto 168px;
     background-position-x: ${(props) =>
       props.imageCoordinate ? props.imageCoordinate : 0}px;
     background-position-y: 0px;

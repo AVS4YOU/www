@@ -7,7 +7,7 @@ import "../styles/installed-video-remaker.less";
 import BenefitsCarousel from '../components/benefits-carousel';
 import { Link as GatsbyLink } from 'gatsby';
 import Logo from '../images/common/logo.svg';
-import styled from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 import Cookies from 'universal-cookie';
 
 const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&PRODUCT[300919255]=1";
@@ -23,6 +23,58 @@ const LogoWrapper = styled.div`
         margin: auto;
     }
 `;
+const FixStyles = createGlobalStyle`
+    .fix-style1 {
+      padding-top: 0 !important;
+    }
+`
+
+const InstalledAudioConverterLink = styled.a`
+  background-color: #38add8;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 18px;
+  margin: auto;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  
+  &:hover {
+    text-decoration: none;
+  }
+`
+
+const InstalledAudioConverterButNow = styled.a`
+  background-color: #38add8;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 50px 12px;
+  border-radius: 5px;
+  margin: auto;
+  letter-spacing: 1.5px;
+
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  &:hover {
+    text-decoration: none;
+  }
+`
+
+const InstalledAudioConverterDownloadNow = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #38add8;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+`
 
 class installedVideoRemaker extends React.PureComponent {
 
@@ -60,11 +112,12 @@ render(){
         metaDescription=""
         metaKeywords=""
       >
+        <FixStyles />
         <div className="header">
           <ImageGQL className="headerBackgroundImage" imageName="installed-video-editor-header.jpg" style={{position: "absolute"}}/>
             <div className="header__body">  
             <div className="avs-logo">
-          <GatsbyLink className="headerLogo" to="/" id="home_installed-video-remaker">
+          <GatsbyLink className="headerLogo" to="/">
               <LogoWrapper href="/">
                   <img src={Logo} alt="avs4you logo"/>
               </LogoWrapper>
@@ -72,11 +125,19 @@ render(){
           </div>
             <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
               <Text as="h1" className="header__heading installed">{this.props.t("Thank you for installing AVS Video ReMaker")} <br /> {this.props.t("AVS video remaker")}</Text>
-             <table className="header__heading exclusive"><Text as="h2" className="header__heading exclusive"><a id="exclusive-offer_installed-video-remaker" href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Exclusive Offer Only Today")}</a></Text></table>
+              <table style={{margin: '0 auto'}}>
+                <InstalledAudioConverterLink href={this.props.t(`${this.state.hrefUnlim}`)}>
+                  {this.props.t("Exclusive Offer Only Today")}
+                </InstalledAudioConverterLink>
+              </table>
               <Text as="h3" className="header__subtitle installed" style={{maxWidth:700 + 'px'}}>{this.props.t("Save 70 on the full version and edit your video without limitations")}</Text>
               <table className="header__price__block"><Text as="h4" className="header__price">{this.props.t("199")}</Text>
               <Text as="h4" className="header__new__price">{this.props.t("590")}</Text></table>
-              <table className="header__buy"><Text as="h2" className="header__buy__now"><a id="buy-now_installed-video-remaker" href={this.props.t(`${this.state.hrefUnlim}`)} style={{color: "#fff"}}>{this.props.t("Buy now")}</a></Text></table>
+              <table style={{margin: '0 auto'}}>
+                <InstalledAudioConverterButNow href={this.props.t(`${this.state.hrefUnlim}`)}>
+                  {this.props.t("Buy now")}
+                </InstalledAudioConverterButNow>
+              </table>
             </div>
         </div>
         <div className="body-company">
@@ -112,7 +173,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a id="download-now-vc_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video Converter
                 </Text>
@@ -123,7 +184,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a id="download-now-ve_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+              <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video Editor
                 </Text>
@@ -134,7 +195,7 @@ render(){
 
               <div className="common-info-block">
                 <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product"><a id="download-now-ae_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Audio Editor
                 </Text>
@@ -145,7 +206,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-              <div className="download-product"><a id="download-now-ac_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" style={{color: "#fff"}}>{this.props.t("Download now")}</a></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Audio Converter
                 </Text>
@@ -159,10 +220,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}> 
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a id="knowledge-center_installed-video-remaker" href="https://onlinehelp.avs4you.com/avs-video-remaker/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a id="tips-tricks_installed-video-remaker" href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/avs-video-remaker/" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a href="https://www.avs4you.com/guides/video.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
 <div className="questionIcon">{this.props.t("Got a question")}
-<br/>{this.props.t("Contact our")} <a id="support-team_installed-video-remaker" href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

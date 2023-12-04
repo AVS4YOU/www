@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import "./layout.css";
 import "../styles/common.less"
 import Footer from "./footer";
+import {TinyFooter} from "./footer/tinyFooter";
 import {PageContext} from '../context/page-context';
 import {Helmet} from "react-helmet";
 import {withPrefix, Link} from "gatsby";
@@ -19,9 +20,21 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSLeft from "../images/pl/left-side-bg.svg";
-import PlAVSRight from "../images/pl/right-side-bg.svg";
-import whiteHeart from "../images/pl/white-heart.svg";
+import PlAVSbg from "../images/black-friday/bg-banner.png";
+import PlAVSLeftBg from "../images/pl/left-banner-bg.png";
+import PlAVSRightBg from "../images/pl/right-banner-bg.png";
+import PlAVSLeft from "../images/pl/left-banner.png";
+import PlAVSRight from "../images/pl/right-banner.png";
+import PlAVS1 from "../images/pl/1.png";
+import PlAVS2 from "../images/pl/2.png";
+import PlAVS3 from "../images/pl/3.png";
+import PlAVS23 from "../images/pl/23.png";
+import PlAVS24 from "../images/pl/24.png";
+import PlAVS25 from "../images/pl/25.png";
+import PlAVSgif from "../images/pl/99.png";
+import PlAVSDiscount from "../images/pl/discount.png";
+import PlAVSDiscountEu from "../images/pl/eu_discount.png";
+import PlAVSDiscountJa from "../images/pl/ja_discount.png";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -30,100 +43,269 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
-    height: 62px;
-    background: radial-gradient(88.92% 88.92% at 50% 50%, #FF6060 0%, #E33737 100%) no-repeat 50%;
+    height: 60px;
+    background-color: #0a0f11;
+    //background-image: url(${PlAVSbg});
+    background: radial-gradient(67.97% 40476.56% at 51.51% 32.03%, #0B1FD2 0%, #0B1D4C 100%);
+    cursor: pointer;
+    background-position-x: 50%;
 
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-block;
       width: 100%;
       z-index: 9;
       text-decoration: none;
-      height: 62px;
-      position: absolute;
+      max-width: 730px;
+      margin: auto;
     }
   }
 
   .PLnewAvsText {
-    display: block;
-    padding: 4px 8px;
+    display: inline-block;
+    gap: 5px;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 20px;
     color: #ffffff;
     width: auto;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
 
   .PLnewAvsTextAccent {
     font-weight: 700;
+    position: relative;
+    top: -2px;
   }
 
   .PlAvsDiscount {
-    border: 1px dashed #FFFFFF;
-    padding: 3px 15px;
+    background-image: url(${PlAVSDiscount});
+    font-family: 'Open Sans';
+    width: 348px;
+    height: 70px;
     word-break: keep-all;
-    font-weight: 700;
+    font-weight: 600;
+    color: #FFFFFF;
+    //position: absolute;
+    left: -20px;
+    line-height: 52px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-position: 0px;
+    background-size: 348px 88px;
+    position: relative;
+    top: -2px;
+    z-index: 1;
+  }
+
+  .es, .fr, .it, .ru {
+    background-image: url(${PlAVSDiscountEu});
+    width: 380px;
+    background-size: 380px 88px;
+  }
+
+  .jp {
+    background-image: url(${PlAVSDiscountJa});
+    width: 460px;
+    background-size: 460px 88px;
   }
 
   .bgPlAvs {
-    width: 1160px;
-    position: absolute;
-    height: 62px;
+    width: 100%;
+    position: relative;
+    height: 60px;
     top: 0;
-    left: 50%;
-    margin-left: -600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .giftsOne {
+    background-image: url(${PlAVSLeft});
+    width: 304px;
+    height: 64px;
+    background-position-x: 100%;
+  }
+
+  .giftsTwo {
+    background-image: url(${PlAVSRight});
+    width: 304px;
+    height: 64px;
+    z-index: 1;
   }
 
   .PLnewAvsLeft {
-    position: absolute;
     top: 0;
-    left: 0;
-    width: 590px;
-    height: 62px;
-    background-image: url(${PlAVSLeft});
+    left: 0px;
+    width: 100%;
+    max-width: 700px;
+    height: 64px;
+    background-image:url(${PlAVSLeftBg});
     background-repeat: no-repeat;
     background-position-y: 50%;
     pointer-events: none;
     z-index: 0;
+    background-position-x: 100%;
   }
 
   .PLnewAvsRight {
-    position: absolute;
     top: 0;
-    height: 62px;
-    width: 470px;
-    background-image: url(${PlAVSRight});
+    height: 64px;
+    width: 688px;
     background-repeat: no-repeat;
+    background-image: url(${PlAVSRightBg});
     background-position-y: 50%;
     pointer-events: none;
     right: 0;
     z-index: 0;
+    background-position-x: 0%;
   }
 
-  @media (max-width: 1024px) {
+  .PlAvsSpin {
+    //position: absolute;
+    //width: 183px;
+    height: 55px;
+    display: inline-block;
+    top: 3px;
+  }
+
+  .PlAvsgif {
+    background-image: url(${PlAVSgif});
+    background-size: 82px 40px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 82px;
+    height: 40px;
+    left: 0;
+    margin-top: -3px;
+    min-width: 80px;
+  }
+
+  @media (max-width: 1640px) {
+    .giftsOne, .giftsTwo {
+      display: none;
+    }
+
+    .one {
+      background-image: url(${PlAVS1});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .two {
+      background-image: url(${PlAVS2});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .three {
+      background-image: url(${PlAVS3});
+      width: 90px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .four {
+      background-image: url(${PlAVS23});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .five {
+      background-image: url(${PlAVS24});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+
+    .six {
+      background-image: url(${PlAVS25});
+      width: 80px;
+      height: 64px;
+      background-position-x: 50%;
+    }
+  }
+
+  @media (max-width: 1370px) {
+    .four, .five, .six {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .one, .two, .three, .four, .five, .six {
+      display: none;
+    }
+
+    .PLnewAvsText {
+      padding: 5px 20px;
+    }
+
+    .PLnewAvsText {
+      font-size: 16px;
+      top: 0;
+    }
+
+    .PLnewAvsTextAccent {
+      top: -3px;
+      text-align: left;
+    }
+
+    .en, .de, .ko, .pl, .da, .nl, .pt {
+      width: 330px;
+    }
+  }
+
+  @media (max-width: 763px) {
     .PLnewAvs {
-      padding: 0;
-      height: 62px;
-    }
-
-    .PLnewAvsLeft {
-      width: 540px;
-    }
-  }
-  @media (max-width: 600px) {
+      display: none;
+      }
     .PLnewAvsText {
       font-size: 12px;
-    }
-  }
-  @media (max-width: 400px) {
-    .PlAvsDiscount {
-      padding: 1px 10px;
+      line-height: 14px;
+      padding: 3px 8px;
     }
 
+    .PlAvsDiscount {
+      font-size: 12px;
+      width: 143px;
+      height: 20px;
+      line-height: 20px;
+      left: 20px;
+      width: 330px;
+    }
+
+    .PlAvsgif {
+      width: 150px;
+      height: 45px;
+      background-size: 150px 45px;
+      display: none;
+    }
+
+    .PlAvsSpin {
+      position: relative;
+      width: 183px;
+      top: -8px;
+      height: 20px;
+    }
+
+    .PLnewAvsLeft, .PLnewAvsRight {
+      max-width: 55px;
+    }
+  }
+  @media (max-width: 450px) {
     .PLnewAvsText {
       line-height: 18px;
     }
@@ -319,6 +501,7 @@ class Layout extends React.PureComponent {
         }
 
 
+
     }
 
     componentWillUnmount() {
@@ -381,7 +564,6 @@ class Layout extends React.PureComponent {
                     {this.props.metaDescription && <meta name="description" content={this.props.metaDescription}/>}
                     {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords}/>}
                     {this.props.pageContext.originalPath}
-
                     <link rel="canonical"
                           href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? "" : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
@@ -426,31 +608,37 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                <StyledPL>
+               
+
+                {!this.props.headerIsDisabled ? <StyledPL>
+                  <Link to="/advent-calendar.aspx">
                     <div className="PLnewAvs">
                         <div className="bgPlAvs">
-                            <div className="PLnewAvsLeft"></div>
-                            <div className="PLnewAvsRight"></div>
+                        <div className="PLnewAvsLeft"></div>
+                          <span className="PLnewAvsText"><div className='giftsOne'></div><div className='one'></div><div className='two'></div><div className='three'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
+                            {this.props.t("discountCoupon")}<div className="PlAvsgif"></div><span className="PLnewAvsTextAccent">{this.props.t("textBanner")}</span>
+                            <div className="PlAvsSpin">
+                              <span className={`PlAvsDiscount ${this.props.pageContext.locale}`}>{this.props.t("nameCoupon")}</span>
+                            </div><div className='giftsTwo'></div><div className='four'></div><div className='five'></div><div className='six'></div>
+                          </span>
+                        <div className="PLnewAvsRight"></div>
                         </div>
-                        <a href={this.props.t("avs pl link")} target="_blank">
-                            <img className="imgCoupon" src={whiteHeart} style={{paddingLeft: "16px"}}/><span
-                            className="PLnewAvsText">{this.props.t("beginningBanner")}<span
-                            className="PLnewAvsTextAccent">{this.props.t("discountCoupon")}</span>{this.props.t("textBanner")}<span
-                            className="PlAvsDiscount">{this.props.t("nameCoupon")}</span>{this.props.t("endingBanner")}</span><img
-                            className="imgCoupon" src={whiteHeart} style={{paddingRight: "16px"}}/>
-                        </a>
                     </div>
-                </StyledPL>
+                  </Link>
+                </StyledPL> : <div></div>}
 
-                {!this.props.headerIsDisabled && <Header availableLocales={this.props.pageContext.availableLocales}
+                
+
+                {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                    <main>{this.props.children}</main>
+                <main>{this.props.children}</main>
+                    
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner &&
+                {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
                     <BannerWrapper onClick={this.onClosePopup}>
-                        <BannerWrapperContent onClick={(event) => event.stopPropagation()}>
+                        <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
                                 <BannerWrapperCloseButton onClick={this.onClosePopup}>
                                     <XClose/>
@@ -463,14 +651,14 @@ class Layout extends React.PureComponent {
                                     </BannerWrapperSaleDesc>
                                 </BannerWrapperBox>
                                 <BannerWrapperLinkWrapper>
-                                    <CustomLink  to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
+                                    <CustomLink id="get-it-now_popup" to="/register.aspx">{this.props.t("Get It Now")}</CustomLink>
                                 </BannerWrapperLinkWrapper>
                             </BannerPaddingBox>
                             <BannerImg src={banner}/>
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }
-                {!this.props.footerIsDisabled && <Footer t={this.props.t}/>}
+                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer t={this.props.t}/>)}
             </PageContext.Provider>
         )
     }
