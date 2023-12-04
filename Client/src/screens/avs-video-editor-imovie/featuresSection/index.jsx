@@ -19,7 +19,7 @@ export const FeaturesSection = ({t}) => {
         <FeaturesSectionStyled>
             <FeaturesSectionContainer>
                 <FeaturesSectionTitle>
-                    {t('Why')} <FeaturesSectionTitleElement>{t('AVS Video Editor')}</FeaturesSectionTitleElement> is a good alternative to iMovie for pc?
+                    {t('Why')} <FeaturesSectionTitleElement>{t('AVS Video Editor')}</FeaturesSectionTitleElement> is a good alternative to iMovie for PC?
                 </FeaturesSectionTitle>
                 <FeaturesSectionList>
                     {
