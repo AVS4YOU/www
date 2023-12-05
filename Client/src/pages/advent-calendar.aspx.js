@@ -375,7 +375,7 @@ constructor(props) {
 
           <div className="adventCalendarContainer">
             <CalendarItem
-              imageCoordinate={-3}
+              imageCoordinate={0}
               date={new Date(2023, 11, 1)}
               validDate="The offer is valid till December 2, 2023"
               popupTitle="Share our calendar in social networks &"
@@ -388,14 +388,14 @@ constructor(props) {
               textAfter="to get your free license key"
             />
             <CalendarItem
-              imageCoordinate={-189}
+              imageCoordinate={-185}
               date={new Date(2023, 11, 2)}
               validDate="The offer is valid till December 3, 2023"
               popupTitle="Securely collaborate on docs online in ONLYOFFICE DocSpace."
               hrefButton="https://www.onlyoffice.com/docspace.aspx"
               textButton="Create your free account"
             />
-            <CalendarItem imageCoordinate={-373} date={new Date(2023, 11, 3)}
+            <CalendarItem imageCoordinate={-370} date={new Date(2023, 11, 3)}
               validDate="The offer is valid till December 4, 2023"
               popupTitle="Wishing You a Happy First Sunday of Advent!"
               popupDiscount="$20 Off on AVS4YOU Unlimited Subscription"
@@ -404,7 +404,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Creativity20&CLEAN_CART=ALL"
               textButton="Shop now"
               />
-            <CalendarItem imageCoordinate={-557} date={new Date(2023, 11, 4)}
+            <CalendarItem imageCoordinate={-555} date={new Date(2023, 11, 4)}
               validDate="The offer is valid thru December 5, 2023" 
               popupTitle="Enjoy a $15 Off on AVS4YOU 1 Year Subscription!"
               popupCoupon="Snow15Flake"
@@ -412,7 +412,7 @@ constructor(props) {
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Snow15Flake&CLEAN_CART=ALL"
               textButton="Shop now"
               />
-            <CalendarItem imageCoordinate={-742} date={new Date(2023, 11, 5)} 
+            <CalendarItem imageCoordinate={-740} date={new Date(2023, 11, 5)}
               validDate="The offer is valid till December 6, 2023"
               popupTitle="25% Off on AVS Video Editor, our bestseller!"
               popupCoupon="2SnowFr3ost"
@@ -422,7 +422,7 @@ constructor(props) {
               />
             <StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-926}
+              imageCoordinate={-925}
               date={new Date(2023, 11, 6)}
               validDate="The offer is valid till December 7, 2023"
               popupTitle="Get a giveaway from WiseCleaner!"
@@ -452,7 +452,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-1479}
+              imageCoordinate={-1480}
               date={new Date(2023, 11, 9)}
               validDate="The offer is valid till December 10, 2023"
               popupTitle="Redeem a 30% coupon code on AVS Video Editor!"
@@ -463,7 +463,7 @@ constructor(props) {
             />
             <StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-1663}
+              imageCoordinate={-1665}
               date={new Date(2023, 11, 10)}
               validDate="The offer is valid thru December 11, 2023"
               popupTitle="Happy 2nd Advent Sunday!"
@@ -473,7 +473,7 @@ constructor(props) {
             />
             </StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-1846}
+              imageCoordinate={-1850}
               date={new Date(2023, 11, 11)}
               validDate="The offer is valid till December 12, 2023"
               popupTitle="Get ONLYOFFICE Desktop Editors for free!"
@@ -483,7 +483,7 @@ constructor(props) {
               textButton="Download now"
             />
             <CalendarItem
-              imageCoordinate={-2032}
+              imageCoordinate={-2035}
               date={new Date(2023, 11, 12)}
               validDate="The offer is valid till December 13, 2023"
               popupTitle="Looking for an original gift for someone special?"
@@ -494,7 +494,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-2216}
+              imageCoordinate={-2220}
               date={new Date(2023, 11, 13)}
               validDate="The offer is valid till December 14, 2023"
               popupTitle="40% Off on AVS Video Editor"
@@ -504,7 +504,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-2401}
+              imageCoordinate={-2405}
               date={new Date(2023, 11, 14)}
               validDate="The offer is valid till December 15, 2023"
               popupTitle="Save 25% on AVS4YOU 1 Year Subscription"
@@ -514,7 +514,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-2585}
+              imageCoordinate={-2590}
               date={new Date(2023, 11, 15)}
               validDate="The offer is valid till December 16, 2023"
               popupTitle="A special deal from our partner HookSounds"
@@ -526,7 +526,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-2768}
+              imageCoordinate={-2775}
               date={new Date(2023, 11, 16)}
               validDate="The offer is valid tilll December 17, 2023"
               popupTitle="Enjoy a 45% discount on AVS4YOU Unlimited Subscription!"
@@ -536,7 +536,7 @@ constructor(props) {
               textButton="Shop now"
             />
             <CalendarItem
-              imageCoordinate={-2953}
+              imageCoordinate={-2960}
               date={new Date(2023, 11, 17)}
               validDate="The offer is valid thru December 18, 2023"
               popupTitle="Happy 3rd Sunday of Advent!"
@@ -547,7 +547,7 @@ constructor(props) {
               textButton="Get It Now"
             />
             <CalendarItem
-              imageCoordinate={-3138}
+              imageCoordinate={-3145}
               date={new Date(2023, 11, 18)}
               validDate="The offer is valid till December 19, 2023"
               popupTitle="Hurry up to grab $20 Off on AVS4YOU 1 Year Subscription!"
@@ -558,7 +558,7 @@ constructor(props) {
             />
             <StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-3322}
+              imageCoordinate={-3330}
               date={new Date(2023, 11, 19)}
               validDate="The offer is valid till December 20, 2023"
               popupTitle="Surprise!"
@@ -568,7 +568,7 @@ constructor(props) {
             />
             </StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-3507}
+              imageCoordinate={-3515}
               date={new Date(2023, 11, 20)}
               validDate="The offer is valid till December 21, 2023"
               popupTitle="Redeem 40% Off coupon on AV4YOU Unlimited Subscription"
@@ -579,7 +579,7 @@ constructor(props) {
             />
             <StyledBottomCalendar>
               <CalendarItem
-              imageCoordinate={-3691}
+              imageCoordinate={-3700}
               date={new Date(2023, 11, 21)}
               validDate="The offer is valid till December 22, 2023"
               popupTitle="Time to decorate your computer!"
@@ -589,7 +589,7 @@ constructor(props) {
             />
             </StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-3876}
+              imageCoordinate={-3885}
               date={new Date(2023, 11, 22)}
               validDate="The offer is valid till December 23, 2023"
               popupTitle="What a lucky day for everyone!"
@@ -601,7 +601,7 @@ constructor(props) {
             />
             <StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-4059}
+              imageCoordinate={-4070}
               date={new Date(2023, 11, 23)}
               validDate="The offer is valid till December 24, 2023"
               popupTitle="Enjoy our Christmas Calendar crafted specially for you!"
@@ -610,7 +610,7 @@ constructor(props) {
             />
             </StyledBottomCalendar>
             <CalendarItem
-              imageCoordinate={-4244}
+              imageCoordinate={-4255}
               date={new Date(2023, 11, 24)}
               validDate="The offer is valid till December 25, 2023"
               popupTitle="Exclusive Deal!"
@@ -622,7 +622,7 @@ constructor(props) {
             />
             <StyledLastCalendar>
             <CalendarItem
-              imageCoordinate={-4429}
+              imageCoordinate={-4440}
               date={new Date(2023, 11, 25)}
               validDate=""
               popupTitle="Merry Christmas!"
