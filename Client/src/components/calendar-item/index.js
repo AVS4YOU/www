@@ -47,10 +47,10 @@ const StyledCalendarItem = styled.div`
     z-index: 2;
     background-image: url(${spriteImage});
     background-repeat: no-repeat;
-    background-size: 4609px 171px;
+    background-size: 4669px 172px;
     background-position-x: ${(props) =>
       props.imageCoordinate ? props.imageCoordinate : 0}px;
-    background-position-y: -1px;
+    background-position-y: -1.5px;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
   }
