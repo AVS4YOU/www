@@ -14,6 +14,8 @@ const AvsVideoEditorImovie = ({pageContext, t}) => {
             metaDescription=""
             metaKeywords=""
             isTinyFooter
+            showBanner={false}
+            headerIsDisabled={true}
         >
             <HeroSection t={t}/>
             <FeaturesSection t={t}/>
