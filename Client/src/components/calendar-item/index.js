@@ -32,8 +32,8 @@ const StyledCalendarItem = styled.div`
 
   .calendarImage {
     background-color: transparent;
-    width: 167px;
-    height: 168px;
+    width: 100%;
+    height: 169px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transform-style: preserve-3d;
@@ -47,10 +47,10 @@ const StyledCalendarItem = styled.div`
     z-index: 2;
     background-image: url(${spriteImage});
     background-repeat: no-repeat;
-    background-size: auto 168px;
+    background-size: 4669px 172px;
     background-position-x: ${(props) =>
       props.imageCoordinate ? props.imageCoordinate : 0}px;
-    background-position-y: 0px;
+    background-position-y: -1.5px;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
   }
