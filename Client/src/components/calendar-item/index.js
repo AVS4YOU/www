@@ -39,7 +39,7 @@ const StyledCalendarItem = styled.div`
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: left center;
-    transform-origin: left center;
+    transform-origin: left center;s
     -webkit-transition: -webkit-transform 0.75s ease;
     transition: -webkit-transform 0.75s ease;
     transition: transform 0.75s ease;
