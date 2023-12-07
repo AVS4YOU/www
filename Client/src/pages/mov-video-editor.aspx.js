@@ -142,8 +142,8 @@ render(){
             <div className="vph_logo"><Link id="home1_mov-video-editor" to="/"></Link></div>
             <div className="vph_menu vph_menu_footer">
                 <ul>
-                    <li><Link to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
-                    <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><Link id="footer-downloads_mov-video-editor" to="/downloads.aspx">{this.props.t("Downloads")}</Link></li>
+                    <li><Link id="footer-buy-now_mov-video-editor" to="/register.aspx">{this.props.t("Buy now")}</Link></li>
                     <li><a target="_blank" rel="noreferrer noopener" id="help_mov-video-editor" href="https://www.avs4you.com/guides/index.aspx">{this.props.t("Help")}</a></li>
                     <li><a target="_blank" rel="noreferrer noopener" id="support_mov-video-editor" href="https://support.avs4you.com/login.aspx">{this.props.t("Support")}</a></li>
                     <li><Link id="contact-us_mov-video-editor" to="/about-us.aspx#contact-us">{this.props.t("Contact us")}</Link></li>

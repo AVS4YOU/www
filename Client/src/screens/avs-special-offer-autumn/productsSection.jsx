@@ -31,7 +31,8 @@ const list = [
             'Enhance the quality of your video',
             'Create engaging video projects, tutorials and demos'
         ],
-        href: "https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+        href: "https://downloads.avs4you.com/distributives/AVSVideoEditor.exe",
+        id: 'download-avs-video-editor_avs-special-offer-autumn'
     },
     {
         img: product2,
@@ -44,7 +45,8 @@ const list = [
             'Remove noise, apply 20+ special effects and filters',
             'Multitrack audio editing'
         ],
-        href: "https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+        href: "https://downloads.avs4you.com/distributives/AVSAudioEditor.exe",
+        id: 'download-avs-audio-editor_avs-special-offer-autumn'
     },
     {
         img: product3,
@@ -57,7 +59,8 @@ const list = [
             'Export audio from video in MP3/WAV',
             'Adjust aspect ratio, apply effects'
         ],
-        href: "https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+        href: "https://downloads.avs4you.com/distributives/AVSVideoConverter.exe",
+        id: 'download-avs-video-converter_avs-special-offer-autumn'
     },
     {
         img: product4,
@@ -70,7 +73,8 @@ const list = [
             'Create your own audiobooks',
             'Make customized ringtones for iPhone'
         ],
-        href: "https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+        href: "https://downloads.avs4you.com/distributives/AVSAudioConverter.exe",
+        id: 'download-avs-audio-converter_avs-special-offer-autumn'
     },
     {
         img: product5,
@@ -82,7 +86,8 @@ const list = [
             'Transfer video from camcorders and video cameras to hard drive',
             'Create home video DVDs or Blu-ray discs',
         ],
-        href: "https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+        href: "https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe",
+        id: 'download-avs-video-remaker_avs-special-offer-autumn'
     },
 ]
 
@@ -483,7 +488,7 @@ export const ProductsSection = () => {
                         video/audio collections, improve their quality and create stunning video projects!
                     </ProductsHeadingAbout>
                     <ProductsHeadingButtonsWrapper>
-                        <ProductsHeadingButton1 href="https://downloads.avs4you.com/distributives/AVSInstallPack.exe">Download now</ProductsHeadingButton1>
+                        <ProductsHeadingButton1 id="download-now_special-offer-autumn" href="https://downloads.avs4you.com/distributives/AVSInstallPack.exe">Download now</ProductsHeadingButton1>
                         <Link className="buy-now" id="buy-now2_special-offer-autumn" to="/register.aspx">
                             Buy NOW
                         </Link>
@@ -503,7 +508,7 @@ export const ProductsSection = () => {
                                             item.list.map(name => <ProductsItemListItem>{name}</ProductsItemListItem>)
                                         }
                                     </ProductsItemList>
-                                    <ProductsItemLink href={item.href}>Download now</ProductsItemLink>
+                                    <ProductsItemLink id={item.id} href={item.href}>Download now</ProductsItemLink>
                                 </ProductsItemBox>
                             </ProductsItem>
                         ))

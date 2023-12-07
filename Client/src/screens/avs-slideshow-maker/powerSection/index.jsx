@@ -144,7 +144,7 @@ export const PowerSection = ({t}) => {
                 setLargeCarousel={setLargeCarousel}
                 largeCarousel={largeCarousel}
             />
-            <PowerSectionLink href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{t("Try AVS Slideshow Maker")}</PowerSectionLink>
+            <PowerSectionLink id="power-section-try_avs-slideshow-maker" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{t("Try AVS Slideshow Maker")}</PowerSectionLink>
         </PowerSectionStyled>
     )
 }

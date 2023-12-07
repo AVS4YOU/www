@@ -231,7 +231,7 @@ render(){
                     
 <div className="vel_footer">
     <div className="vel_page_footer">
-        <div className="vph_logo"><Link to="/" target="_blank" rel="noreferrer noopener"></Link></div>
+        <div className="vph_logo"><Link id="footer-home_youtube-video-editor" to="/" target="_blank" rel="noreferrer noopener"></Link></div>
         <div className="vph_menu_footer">
             <ul>
                 <li><Link id="downloads_youtube-video-editor" to="/downloads.aspx" target="_blank" rel="noreferrer noopener">Downloads</Link></li>

@@ -224,7 +224,7 @@ render(){
                 </PanelCollapse>
                 <PanelCollapse className="panelCollapse" panelName={this.props.t("Do you have a free video editor")}>
                   <div className="collapseContent">
-                      <Text className="hiddenText">{this.props.t("AVS Video Editor allows users to edit video for free but a logo is inserted in the newly created files")} <a href={this.props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a> {this.props.t("japanTextVideoeditor")}</Text>
+                      <Text className="hiddenText">{this.props.t("AVS Video Editor allows users to edit video for free but a logo is inserted in the newly created files")} <a id="register-link_avs-editor" href={this.props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a> {this.props.t("japanTextVideoeditor")}</Text>
                   </div>
                 </PanelCollapse>
                 <PanelCollapse className="panelCollapse" panelName={this.props.t("Can I edit video on all of my devices")}>

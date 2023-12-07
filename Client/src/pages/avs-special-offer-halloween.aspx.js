@@ -178,7 +178,7 @@ render(){
               <BuyButton className="headerButtonHalloween" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
+                      <Link id="buy-now1_avs-special-offer-halloween" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </BuyButton>
             </div>
             <div className="multimedia-header-halloween-mobile"></div>
@@ -194,13 +194,13 @@ render(){
               <Button className="specialButtonHalloween violet button-mobile" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
+                      <Link id="download-now_avs-special-offer-halloween" to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
               </Button>
               <div className="blockButton"></div>
               <BuyButton className="specialButtonHalloween" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
+                      <Link id="buy-now2_avs-special-offer-halloween" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </BuyButton>
             </div>
             <ImageGQL className="full-pack" imageName="pack-so-halloween.png"/>
@@ -213,6 +213,7 @@ render(){
                           imageName={"video-editor-so-halloween.png"}
                           headerText={this.props.t("AVS Video Editor")}
                           translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          translateButtonLinkId="download-avs-special-offer-halloween_avs-special-offer-halloween"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Powerful video editing program for Windows with basic and pro editing tools.</Text>
                           <Text  className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make stunning videos with music and effects</Text>
@@ -227,7 +228,8 @@ render(){
                           imgLeft={false}
                           imageName={"audio-editor-so-halloween.png"}
                           headerText={this.props.t("AVS Audio Editor")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"   
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          translateButtonLinkId="download-avs-audio-editor_avs-special-offer-halloween"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Professional level audio editing and recording software.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Record audio from microphone, Line In, Vinyl records</Text>
@@ -242,7 +244,8 @@ render(){
                           imgLeft={true}
                           imageName={"video-converter-so-halloween.png"}
                           headerText={this.props.t("AVS Video Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"  
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                          translateButtonLinkId="download-avs-video-converter_avs-special-offer-halloween"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>All-in-one video converter with basic editing features.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert and compress all key video formats</Text>
@@ -257,7 +260,8 @@ render(){
                           imgLeft={false}
                           imageName={"audio-converter-so-halloween.png"}
                           headerText={this.props.t("AVS Audio Converter")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"  
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                          translateButtonLinkId="download-avs-audio-converter_avs-special-offer-halloween"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>Feature-rich audio conversion program for Windows.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc.</Text>
@@ -272,7 +276,8 @@ render(){
                           imgLeft={true}
                           imageName={"video-remaker-so-halloween.png"}
                           headerText={this.props.t("AVS Video ReMaker")}
-                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"  
+                          translateButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                          translateButtonLinkId="download-avs-video-remaker_avs-special-offer-halloween"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>A fast video editor to make edits without changing the original video file format.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Cut and delete unnecessary parts</Text>
