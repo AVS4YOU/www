@@ -21,7 +21,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const DownloadScrollButton = (props) => {
-
+    console.log(props.id)
     const [touchDevice, setTouchDevice] = useState(false);
 
     useEffect(() => {
@@ -37,11 +37,11 @@ const DownloadScrollButton = (props) => {
 
             ?
                 !formSended &&
-                    <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500}>
+                    <Link className="scrollLink" to={props.to} spy={true} smooth={true} offset={0} duration={500} id={props.id}>
                         <Button as="div" className="mainButton" color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textGetCoupon}</Button>
                     </Link>
             :
-                <Button className="desktopButton" href={props.href} color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textDownload}</Button>
+                <Button id={props.id} className="desktopButton" href={props.href} color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textDownload}</Button>
             }   
         </ButtonWrapper>
     )

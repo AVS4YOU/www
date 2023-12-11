@@ -297,11 +297,13 @@ class avsAudioEditor extends React.PureComponent {
                     </span>
                     <div>
                       <Button
+                        id="buy1_audio-editor"
                         className="ButtonAudio3dBuy"
                         padding={"18px 72px"}
                         href={this.props.t("defaultHrefUnlim")}
                         fontSize={16}>BUY</Button>
                       <Button
+                        id="download-now1_audio-editor"
                         className="ButtonAudio3dDwn"
                         padding={"18px 25px"}
                         href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"}
@@ -399,8 +401,8 @@ class avsAudioEditor extends React.PureComponent {
 
                   <Text color="#0943B4" align="left" className="headerText" id="IdheaderText" lineHeight="45px" fontSize={34} fontWeight={700} as="h1">{this.props.t("Become an expert in Audio Editing right now")}</Text>
                   <div className="buyAudio3DFlexN">
-                    <Button padding={"18px 72px"} href={this.props.t("defaultHrefUnlim")} fontSize={16} className="buttonBuy">BUY</Button>
-                    <Button padding={"18px 25px"} href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"} className="buttonDownload" backgroundColor={"#fff"} color={"#232C33"} border="1px solid #232C33" background="#ffffff" style={{ marginLeft: "60px" }} fontSize={16}>Download now</Button>
+                    <Button id="buy2_audio-editor" padding={"18px 72px"} href={this.props.t("defaultHrefUnlim")} fontSize={16} className="buttonBuy">BUY</Button>
+                    <Button id="download-now2_audio-editor" padding={"18px 25px"} href={"https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"} className="buttonDownload" backgroundColor={"#fff"} color={"#232C33"} border="1px solid #232C33" background="#ffffff" style={{ marginLeft: "60px" }} fontSize={16}>Download now</Button>
                   </div>
                   <Text color="#232C33" align="left" className="headerText" id="IdheaderText" lineHeight="26px" fontSize={14} fontWeight={400} style={{ marginTop: "20px" }} >{this.props.t("For Windows 10, 8.1, 8, 7 / XP, 2003 / Vista")}</Text>
 

@@ -16,7 +16,7 @@ export const GetStartedSection = ({t}) => {
                     {t('Ready to make your own video?')}
                 </GetStartedSectionTitle>
                 <GetStartedSectionLink>
-                    <Link to="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
+                    <Link id="get-started_avs-video-maker" to="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                         {t('Get started!')}
                     </Link>
                 </GetStartedSectionLink>

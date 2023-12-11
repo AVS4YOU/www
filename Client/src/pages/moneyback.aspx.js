@@ -718,7 +718,7 @@ render(){
               {this.props.t("Download application")}
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("Please")} <a target="_blank" rel="noreferrer noopener" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'")}
+                {this.props.t("Please")} <a target="_blank" rel="noreferrer noopener" id="download_moneyback" href="https://onlinehelpstaticcontents.avs4you.com/downloads/documents/avslicenseremoval.exe" className="hrefMoneyback">{this.props.t("download")}</a> {this.props.t("a small application here and run it on the computer where the AVS4YOU programs have been installed This program will delete all the registration information from the computer and the AVS4YOU programs status will turn to 'Non-activated'")}
               </Text>
             </div>
 
@@ -732,7 +732,7 @@ render(){
               {this.props.t("Send form")} 
               </Text>
               <Text className="common-info-block__text">
-                {this.props.t("After that download our")}<a target="_blank" rel="noreferrer noopener" href={this.props.t("refund")} className="hrefMoneyback">{this.props.t("refund form")}</a>{this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")}<a target="_blank" rel="noreferrer noopener" href={this.props.t("about-us-support-avs4you-login")} className="hrefMoneyback">{this.props.t("support form")}</a>{this.props.t("as an attachment")}
+                {this.props.t("After that download our")}<a target="_blank" rel="noreferrer noopener" id="refund-form_moneyback" href={this.props.t("refund")} className="hrefMoneyback">{this.props.t("refund form")}</a>{this.props.t("and print it When you correctly fill in and sign this document, send it to the + 44 207 182 6722 fax number Its electronic copy can also be sent via")}<a target="_blank" rel="noreferrer noopener" id="support-form_moneyback" href={this.props.t("about-us-support-avs4you-login")} className="hrefMoneyback">{this.props.t("support form")}</a>{this.props.t("as an attachment")}
               </Text>
             </div>
 

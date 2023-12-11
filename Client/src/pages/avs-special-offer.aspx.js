@@ -80,13 +80,15 @@ render(){
               <Button className="headerButton button-mobile headerDownloadNow" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("download now")}</Link>
+                      <Link
+                          id="download-now1_avs-special-offer"
+                          to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("download now")}</Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="headerButton" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
+                      <Link id="buy-now1_avs-special-offer" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
             <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2023")}</Text>
@@ -99,16 +101,16 @@ render(){
             <Text fontSize={36} fontWeight={700} className="mainBodyTitle">{this.props.t("Get 70% OFF on AVS4YOU Full Pack")} <span className="text-red">{this.props.t("59")}</span>  <span className="text-line-through">{this.props.t("199")}</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">{this.props.t("A complete set of programs for working with video files slideshows and soundtracks Manage your video audio collections improve their quality and create stunning video projects")}</Text>
             <div className="special-buttons">
-              <Button className="specialButton button-mobile" 
+              <Button className="specialButton button-mobile"
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("download now")}</Link>
+                      <Link id="download-now2_avs-special-offer" to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("download now")}</Link>
               </Button>
               <div className="blockButton"></div>
               <RedButton className="specialButton" 
                       secondaryText={this.props.secondaryText && this.props.secondaryText} 
                       textTransform="uppercase">
-                      <Link to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
+                      <Link id="buy-now2_avs-special-offer" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
             <ImageGQL className="full-pack" imageName={this.props.t("packSpecialOffer")}/>
@@ -120,6 +122,7 @@ render(){
                           imageName={"video-editor-special-offer.png"}
                           headerText={this.props.t("AVS Video Editor")}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          blueButtonLinkId="download-ve_avs-special-offer"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Powerful video editing program for Windows with basic and pro editing tools")}.</Text>
                           <Text  className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Make stunning videos with music and effects")}</Text>
@@ -134,7 +137,8 @@ render(){
                           imgLeft={false}
                           imageName={"audio-editor-special-offer.png"}
                           headerText={this.props.t("AVS Audio Editor")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"   
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          blueButtonLinkId="download-ae_avs-special-offer"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Professional level audio editing and recording software")}</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Record audio from microphone, Line In, Vinyl records")}</Text>
@@ -149,7 +153,8 @@ render(){
                           imgLeft={true}
                           imageName={"video-converter-special-offer.png"}
                           headerText={this.props.t("AVS Video Converter")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"  
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                          blueButtonLinkId="download-vc_avs-special-offer"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("All-in-one video converter with basic editing features")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Convert and compress all key video formats")}</Text>
@@ -164,7 +169,8 @@ render(){
                           imgLeft={false}
                           imageName={"audio-converter-special-offer.png"}
                           headerText={this.props.t("AVS Audio Converter")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"  
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                          blueButtonLinkId="download-ac_avs-special-offer"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("Feature-rich audio conversion program for Windows")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Convert audio files to MP3, WAV, WMA, M4A, FLAC, OGG, etc")}.</Text>
@@ -179,7 +185,8 @@ render(){
                           imgLeft={true}
                           imageName={"remaker-special-offer.png"}
                           headerText={this.props.t("AVS Video ReMaker")}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                          blueButtonLinkId="download-vr_avs-special-offer"
                       >
                         <Text  className="ListTitle" color="#555555" fontWeight={600} fontSize={24}>{this.props.t("A fast video editor to make edits without changing the original video file format")}.</Text>
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>{this.props.t("Cut and delete unnecessary parts")}</Text>

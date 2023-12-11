@@ -420,7 +420,7 @@ class avsVideoEditor extends React.PureComponent {
                 <div id="IDheaderContentWrapper" className="headerContentWrapper" >
                   <div className="textLanding">
                   <div className="headerBlock">
-                  <GatsbyLink className="avs-logo" to="/"></GatsbyLink>
+                  <GatsbyLink id="home_video-editor" className="avs-logo" to="/"></GatsbyLink>
                   <Text color="#000000" align="left" className="headerText" id="IdheaderText" lineHeight="76px" fontSize={68} fontWeight={600} as="h1">{this.props.t("AVS Video Editor")}</Text>
                   <Text color="#000000" align="left" className="headerDescription" lineHeight="32px" fontSize={24} fontWeight={400} as="h5">{this.props.t("Simple Video Editor for Windows")}</Text>
 
@@ -439,6 +439,7 @@ class avsVideoEditor extends React.PureComponent {
                             mainPadding="12px 37px"
                             margin="0"
                             textTransform="uppercase"
+                                  id="download-now_video-editor"
                           >
                             {this.props.t("dwnld")}
                           </Button>

@@ -39,7 +39,7 @@ export const HeroSection = ({t}) => {
                             ))
                         }
                     </HeroSectionList>
-                    <a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="main-link">
+                    <a id="download-now1_avs-video-cutter" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="main-link">
                         {t('Download now')}
                     </a>
                 </HeroSectionContent>

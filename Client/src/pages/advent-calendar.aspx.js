@@ -277,7 +277,7 @@ constructor(props) {
           <div className="advent_header_top">
             <div className="aht_narrow">
               <div className="afh_logo">
-                <Link className="afh_logo_link" to="/"></Link>
+                <Link id="home_advent-calendar" className="afh_logo_link" to="/"></Link>
               </div>
               <div className="afh_share_block">
             <div className="share">

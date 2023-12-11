@@ -413,7 +413,8 @@ class mainPage extends React.PureComponent {
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
               <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
 
-              <HeaderDownloadButtons 
+              <HeaderDownloadButtons
+                  id="download-now_main-header"
                 t={this.props.t}
                 mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
                 scrollTo="mainBodyHeader"
@@ -441,6 +442,8 @@ class mainPage extends React.PureComponent {
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
+                          blueButtonLinkId="download-now_main-avs-vc"
+                          smallButtonLinkId="learn-more_main-avs-vc"
                           scrollTo="headerCoupon"
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Convert all key video formats and file sizes")}</Text>
@@ -454,7 +457,9 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                          smallButtonLink="/avs-video-editor.aspx"  
+                          smallButtonLink="/avs-video-editor.aspx"
+                          blueButtonLinkId="download-now_main-avs-ve"
+                          smallButtonLinkId="learn-more_main-avs-ve"
                           scrollTo="headerCoupon"    
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Edit all key video formats")}</Text>
@@ -471,7 +476,9 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
-                          smallButtonLink="/avs-video-remaker.aspx"   
+                          smallButtonLink="/avs-video-remaker.aspx"
+                          blueButtonLinkId="download-now_main-avs-vr"
+                          smallButtonLinkId="learn-more_main-avs-vr"
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Edit video files without reconversion")}</Text>
@@ -487,7 +494,9 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
-                          smallButtonLink="/avs-free-media-player.aspx"   
+                          smallButtonLink="/avs-free-media-player.aspx"
+                          blueButtonLinkId="download-now_main-avs-mp"
+                          smallButtonLinkId="learn-more_main-avs-mp"
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Open and watch videos in all popular formats")}</Text>
@@ -505,7 +514,9 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                          smallButtonLink="/avs-audio-editor.aspx"  
+                          smallButtonLink="/avs-audio-editor.aspx"
+                          blueButtonLinkId="download-now_main-avs-ae"
+                          smallButtonLinkId="learn-more_main-avs-ae"
                           scrollTo="headerCoupon"    
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Record audio data")}</Text>
@@ -521,7 +532,9 @@ class mainPage extends React.PureComponent {
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
                           blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
-                          smallButtonLink="/avs-free-audio-converter.aspx"   
+                          smallButtonLink="/avs-free-audio-converter.aspx"
+                          blueButtonLinkId="download-now_main-avs-ac"
+                          smallButtonLinkId="learn-more_main-avs-ac"
                           scrollTo="headerCoupon"   
                       >
                           <Text className="ListItem" color="#555555" fontWeight={500}>{this.props.t("Convert all key audio formats")}</Text>
@@ -551,7 +564,8 @@ class mainPage extends React.PureComponent {
 
         <div className="background-color">
           <ReviewScreen t={this.props.t} revHeader={this.props.t("Our customers say")} />
-          <Button className="trustButton" 
+          <Button className="trustButton"
+                  id="review-us-on-trustpilot_main"
                     href="https://www.trustpilot.com/review/www.avs4you.com"
                     color="#fff">
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot

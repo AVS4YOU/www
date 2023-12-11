@@ -689,12 +689,13 @@ class FormSupport extends React.Component {
                             padding="13px 24px"
                             fontSize={14}
                             textTransform="uppercase"
+                            id={this.props.formButtonId}
                         >
                             Send your request
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                                By clicking this button, you agree to our <Link to="/privacy.aspx" target="_blank">Terms of Service</Link>.
+                                By clicking this button, you agree to our <Link id="privacy_form" to="/privacy.aspx" target="_blank">Terms of Service</Link>.
                             </Text>
                         </div>
                     </div>
