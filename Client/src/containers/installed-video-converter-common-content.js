@@ -79,7 +79,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
                 <ImageGQL className="headerBackgroundImage" imageName="installed-video-converter-header.jpg" style={{position: "absolute"}}/>
                   <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
                   <div className="avs-logo">
-                  <GatsbyLink className="headerLogo" to="/">
+                  <GatsbyLink className="headerLogo" to="/" id="main_installed-video-converter">
                       <LogoWrapper href="/">
                           <img src={Logo} alt="avs4you logo"/>
                       </LogoWrapper>

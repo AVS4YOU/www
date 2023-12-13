@@ -78,19 +78,19 @@ class avsFreeDiscCreator extends React.PureComponent {
                     </div>
                     <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain"/>
                     <div className="scrollLinksWrapper">
-                        <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500}
+                        <ScrollLink id="scroll-to-overview_avs-free-disc-creator" to="overview" spy={true} smooth={true} offset={-70} duration={500}
                                     className="scrollToButton overview">
                             <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600}
+                        <ScrollLink id="scroll-to-reviews_avs-free-disc-creator" to="reviews" spy={true} smooth={true} offset={0} duration={600}
                                     className="scrollToButton reviews">
                             <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700}
+                        <ScrollLink id="scroll-to-screenshots-carousel_avs-free-disc-creator" to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700}
                                     className="scrollToButton screentour">
                             <Text color="#666666" align="center">{this.props.t("Screentour")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700}
+                        <ScrollLink id="scroll-to-download-button_avs-free-disc-creator" to="downloadButton" spy={true} smooth={true} offset={0} duration={700}
                                     className="scrollToButton download">
                             <Text color="#666666" align="center">{this.props.t("Download")}</Text>
                         </ScrollLink>

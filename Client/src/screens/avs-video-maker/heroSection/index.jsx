@@ -121,7 +121,7 @@ export const HeroSection = ({t}) => {
                 </HeroSectionCollage>
             </HeroSectionContainer>
             <HeroSectionLinkWrapper>
-                <Link to="/">
+                <Link id="main_avs-video-maker" to="/">
                     <img src={logo}/>
                 </Link>
             </HeroSectionLinkWrapper>

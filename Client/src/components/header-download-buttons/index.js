@@ -191,7 +191,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                         </Button>
                         {this.props.secondaryHref && <Button className="secondaryButton" href={this.props.secondaryHref} textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>}
                         {this.props.scrollTo && 
-                            <Link to={this.props.scrollTo} spy={true} smooth={true} offset={20} duration={500} className="secondaryButton">
+                            <Link id={this.props.secondButtonId} to={this.props.scrollTo} spy={true} smooth={true} offset={20} duration={500} className="secondaryButton">
                                 <Text textTransform="uppercase" color="#ffffff">{this.props.t("learn more")}</Text>
                             </Link>
                         }

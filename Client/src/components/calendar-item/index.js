@@ -314,11 +314,11 @@ class CalendarItem extends React.Component {
   };
 
   
-  renderTextWithLink = (textBefore, linkText, linkHref, textAfter) => {
+  renderTextWithLink = (textBefore, linkText, linkHref, textAfter, linkId) => {
     return(
       <>
         <div className="subText">
-        <Text fontSize="11">{textBefore} <a href={linkHref}>{linkText}</a> {textAfter}</Text>
+        <Text fontSize="11">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )
@@ -335,25 +335,27 @@ class CalendarItem extends React.Component {
     )
   }
 
-  renderButton = (textButton, hrefButton) => {
+  renderButton = (textButton, hrefButton, idButton) => {
     return(
       <>
         <button className="shopButton">
-        <a href={hrefButton}>{textButton}</a>
+        <a id={idButton} href={hrefButton}>{textButton}</a>
         </button>
       </>
     )
   }
 
-  renderSocialLinks = (linkFacebook, linkTwitter) => {
+  renderSocialLinks = (linkFacebook, linkTwitter, {linkFacebookId, linkTwitterId}) => {
     return (
       <div className="socialLinks">
         <TwitterShareButton
+            id={linkTwitterId}
           url={linkTwitter}
         >
           <TwitterIcon size={50} round />
         </TwitterShareButton>
         <FacebookShareButton
+            id={linkFacebookId}
         url={linkFacebook}
         >
           <FacebookIcon size={50} round />
@@ -363,7 +365,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -391,11 +393,11 @@ class CalendarItem extends React.Component {
               {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
               <Text className="popupDiscount">{popupDiscount}</Text>
               <Text className="popupDiscount">{popupDiscountTwo}</Text>
-              {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook)}
+              {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
-              {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}
-              {textButton && hrefButton && this.renderButton(textButton, hrefButton)}
+              {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
+              {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>

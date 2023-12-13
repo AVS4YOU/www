@@ -412,13 +412,13 @@ class mainPage extends React.PureComponent {
             <div id="headerCoupon" className="headerContentWrapper" >
               <Text color="#ffffff" className="headerText" lineHeight="65px" fontSize={55} fontWeight={600} as="h1"><b className="avs4you">{this.props.t("avs4you")}</b> — {this.props.t("Ultimate multimedia editing family")}</Text>
               <Text color="#ffffff" className="headerDescription" as="h5" fontSize={24} style={{maxWidth:"700px"}}>{this.props.t("Produce spectacular video, audio content and even more, without any limitations")}</Text>
-
               <HeaderDownloadButtons
                   id="download-now_main-header"
                 t={this.props.t}
                 mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
                 scrollTo="mainBodyHeader"
                 className="headerDownloadButtons"
+                  secondButtonId="learn-more_main"
               />
             </div>
           </PageContentWrapper>
@@ -431,6 +431,7 @@ class mainPage extends React.PureComponent {
               
               <ContentSelector
                   className="content-wrapper"
+                  buttonIds={['video-tab_main', 'audio-tab_main']}
                   buttonNames={[this.props.t("Video"),this.props.t("Audio")]}
                   disableArrows={true}
               >

@@ -383,8 +383,11 @@ constructor(props) {
               popupDiscount="get a free license key for AVS Video ReMaker 1 Year Subscription"
               linkTwitter={shareUrl}
               linkFacebook={shareUrl}
+              linkTwitterId="first-twitter_advent-calendar"
+              linkFacebookId="first-facebook_advent-calendar"
               textBefore="*Send us the link to your post in social networks at"
               linkText="sales@avs4you.com"
+              linkId="first-sales_advent-calendar"
               linkHref="mailto:sales@avs4you.com"
               textAfter="to get your free license key"
             />
@@ -395,6 +398,7 @@ constructor(props) {
               popupTitle="Securely collaborate on docs online in ONLYOFFICE DocSpace."
               hrefButton="https://www.onlyoffice.com/docspace.aspx"
               textButton="Create your free account"
+              idButton="second-text_advent-calendar"
             />
             <CalendarItem imageCoordinate={-376} date={new Date(2023, 11, 3)}
               validDate="The offer is valid till December 4, 2023"
@@ -404,6 +408,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Creativity20&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="third-text_advent-calendar"
               />
             <CalendarItem imageCoordinate={-563} date={new Date(2023, 11, 4)}
               validDate="The offer is valid thru December 5, 2023" 
@@ -412,6 +417,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Snow15Flake&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="fourth-text_advent-calendar"
               />
             <CalendarItem imageCoordinate={-750} date={new Date(2023, 11, 5)}
               validDate="The offer is valid till December 6, 2023"
@@ -420,6 +426,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=2SnowFr3ost&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="fifth-text_advent-calendar"
               />
             <StyledBottomCalendar>
             <CalendarItem
@@ -430,6 +437,7 @@ constructor(props) {
               popupDiscount="All-in-One Windows PC Cleaning and Speed up Tool"
               hrefButton="https://downloads.wisecleaner.com/giveaways/WiseCare365_6.6.2.632_avs4you.exe"
               textButton="Free Download"
+              idButton="sixth-text_advent-calendar"
             />
           </StyledBottomCalendar>
            <CalendarItem
@@ -441,6 +449,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26242281&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Remaker50&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="seventh-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-1313}
@@ -451,6 +460,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=20Winter&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="eighth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-1500}
@@ -461,6 +471,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVSEditor30&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="nineth-text_advent-calendar"
             />
             <StyledBottomCalendar>
             <CalendarItem
@@ -471,6 +482,7 @@ constructor(props) {
               popupDiscount="Claim a $20 gift card for reviewing AVS Audio Editor on Capterra"
               hrefButton="https://reviews.capterra.com/new/238864/b1abebca-fb1f-452f-bf39-7ba70b1e1ffb?lang=en"
               textButton="Get my gift"
+              idButton="tenth-text_advent-calendar"
             />
             </StyledBottomCalendar>
             <CalendarItem
@@ -482,6 +494,7 @@ constructor(props) {
               popupDiscountTwo="Edit PDF files, create fillable forms and more."
               hrefButton="https://www.onlyoffice.com/download-desktop.aspx"
               textButton="Download now"
+              idButton="eleventh-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2062}
@@ -493,6 +506,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4579203&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift50&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="twelveth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2250}
@@ -503,6 +517,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AI40cicle&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="thirteenth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2437}
@@ -513,6 +528,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Light25&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="fourteenth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2625}
@@ -525,6 +541,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://www.hooksounds.com/licensing/?utm_source=coupon&utm_medium=email&utm_campaign=happychristmasavs"
               textButton="Shop now"
+              idButton="fifteenth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2812}
@@ -535,6 +552,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=AVS45Unlim&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="sixteenth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-2999}
@@ -546,6 +564,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=ABall17S&CLEAN_CART=ALL"
               textButton="Get It Now"
+              idButton="seventeenth-text_advent-calendar"
             />
             <CalendarItem
               imageCoordinate={-3187}
@@ -556,6 +575,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Gift20&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="eighteenth-text_advent-calendar"
             />
             <StyledBottomCalendar>
             <CalendarItem
@@ -566,6 +586,7 @@ constructor(props) {
               popupDiscount="Send a Christmas greeting card to your dearest and nearest"
               hrefButton="0"
               textButton="Get It Now"
+              idButton="nineteenth-text_advent-calendar"
             />
             </StyledBottomCalendar>
             <CalendarItem
@@ -577,6 +598,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Candle40&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="twentyth-text_advent-calendar"
             />
             <StyledBottomCalendar>
               <CalendarItem
@@ -587,6 +609,7 @@ constructor(props) {
               popupDiscount="Get a festive screensaver for your pc."
               hrefButton="0"
               textButton="Download Now"
+              idButton="twenty-first-text_advent-calendar"
             />
             </StyledBottomCalendar>
             <CalendarItem
@@ -599,6 +622,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=A8LuckyYou&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="twenty-second-text_advent-calendar"
             />
             <StyledBottomCalendar>
             <CalendarItem
@@ -608,6 +632,7 @@ constructor(props) {
               popupTitle="Enjoy our Christmas Calendar crafted specially for you!"
               hrefButton="0"
               textButton="Download Now"
+              idButton="twenty-third-text_advent-calendar"
             />
             </StyledBottomCalendar>
             <CalendarItem
@@ -620,6 +645,7 @@ constructor(props) {
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&COUPON=Christmas23&CLEAN_CART=ALL"
               textButton="Shop now"
+              idButton="twenty-fourth-text_advent-calendar"
             />
             <StyledLastCalendar>
             <CalendarItem

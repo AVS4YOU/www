@@ -88,7 +88,7 @@ render(){
           <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
             <div className="avs-logo">
-          <GatsbyLink className="headerLogo" to="/">
+          <GatsbyLink className="headerLogo" to="/" id="main_installed-pack">
               <LogoWrapper href="/">
               </LogoWrapper>
           </GatsbyLink>
