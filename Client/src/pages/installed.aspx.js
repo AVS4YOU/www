@@ -775,7 +775,7 @@ render(){
                 </div>
                 <span>
                 <div className="lfb-offer">
-                    <a id="landingPage_landingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1"                 
+                    <a id="landingPage_lndingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1 exclusive-offer-only-today_installed"
                     href={this.props.t(`${this.state.hrefUnlim}`)}
                        style={{paddingTop: '16px'}}
                     ><span>{this.props.t("Exclusive Offer Only Today ")}</span></a>
@@ -790,7 +790,7 @@ render(){
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
                     <p className="lohbn-regular-price">{this.props.t("Regularly")} <span className="lohbn-rp"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("199 ")}</span></p>
-                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3"
+                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3 buy-now-main_installed"
                     href={this.state.hrefUnlim}
                     ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '7px'}}       >{this.props.t("Buy now!")}</b></a></span>
                 </div>
@@ -819,12 +819,12 @@ render(){
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
-                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
-                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><a id="how-to-use-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
+                    <div className="llbn-ht-block llbnht-block2"><a id="impressive-slideshow-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><a id="featured-guides-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
+                    <div className="llbn-ht-block llbnht-block4"><a id="help-center-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
                 </div>
-                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3"                 
+                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3 buy-now-second_installed"
                 href={this.state.hrefUnlim}
                 ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '8'}}>{this.props.t("Buy now!")}</b></a></span>
             </div>

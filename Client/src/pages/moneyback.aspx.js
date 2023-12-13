@@ -675,7 +675,7 @@ render(){
                   <Text as="h1" className="header__heading">{this.props.t("30 Days")}<span className="colorMoneyback" color="#F59541">{this.props.t("Moneyback")}</span>{this.props.t("Guarantee")}</Text>
                   <Text as="h3" className="header__subtitle">{this.props.t("In case you are not satisfied with the software bought from the wwwavs4youcom web site, you can have your money back within 30 days since the purchase")}</Text>
                
-                  <ScrollLink to="choose-program__info" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
+                  <ScrollLink id="scroll-to-down_moneyback" to="choose-program__info" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
                   <Button className="header__button" textClassName="header__button-text" href="">{this.props.t("Learn more")}</Button>
                 </ScrollLink>
                 </div>

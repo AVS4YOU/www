@@ -170,7 +170,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </FooterGridContainer>
-                <Text className="rights"><Link to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</Text>
+                <Text className="rights"><Link id="desc-link-to-main_footer" to="/">{this.props.t("Ascensio System SIA")}</Link> {currentYear} {this.props.t("All rights reserved")}</Text>
             </StyledFooter>
         )
     }

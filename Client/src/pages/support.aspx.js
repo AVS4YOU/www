@@ -42,7 +42,7 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("AVS4YOU Support")} 
               </Text>
-              <ScrollLink className="common-info-block__link" to="support-form-wrapper" spy={true} smooth={true} offset={-70} duration={500}>
+              <ScrollLink id="scroll-to-support-form_support" className="common-info-block__link" to="support-form-wrapper" spy={true} smooth={true} offset={-70} duration={500}>
                 <Text className="common-info-block__text">{this.props.t("Support form")}</Text>
               </ScrollLink>
               <a className="common-info-block__link" id="read-this-first_support" href="https://support.avs4you.com/FirstTime.aspx">

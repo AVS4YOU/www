@@ -78,19 +78,19 @@ class avsFreePhotoEditor extends React.PureComponent {
                     </div>
                     <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain"/>
                     <div className="scrollLinksWrapper">
-                        <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500}
+                        <ScrollLink id="scroll-to-overview_avs-free-photo-editor" to="overview" spy={true} smooth={true} offset={-70} duration={500}
                                     className="scrollToButton overview">
                             <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600}
+                        <ScrollLink id="scroll-to-reviews_avs-free-photo-editor" to="reviews" spy={true} smooth={true} offset={0} duration={600}
                                     className="scrollToButton reviews">
                             <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700}
+                        <ScrollLink id="scroll-to-screenshots-carousel_avs-free-photo-editor" to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700}
                                     className="scrollToButton screentour">
                             <Text color="#666666" align="center">{this.props.t("Screentour")}</Text>
                         </ScrollLink>
-                        <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700}
+                        <ScrollLink id="scroll-to-download-button_avs-free-photo-editor" to="downloadButton" spy={true} smooth={true} offset={0} duration={700}
                                     className="scrollToButton download">
                             <Text color="#666666" align="center">{this.props.t("Download")}</Text>
                         </ScrollLink>
@@ -133,7 +133,7 @@ class avsFreePhotoEditor extends React.PureComponent {
                         >
                             <Text
                                 className="ListItem">{this.props.t("Edit photos to all key formats JPEG, JPG, BMP, PNG, GIF, etc")}
-                                <a href="https://onlinehelp.avs4you.com/avs-photo-editor/working/addingpreviewing/supportedformats.aspx"
+                                <a id="see-full-list_avs-free-photo-editor" href="https://onlinehelp.avs4you.com/avs-photo-editor/working/addingpreviewing/supportedformats.aspx"
                                    target="_blank"
                                    rel="noreferrer noopener">{this.props.t("See a full list of supported image formats")}</a></Text>
                             <Text

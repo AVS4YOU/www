@@ -120,7 +120,7 @@ render(){
             <div className="header__body">  <ImageGQL className="installedSuper" imageName="installed-video-editor-super.png" style={{margin: "auto"}}/>
             <div className="avs-logo">
           <GatsbyLink className="headerLogo" to="/" id="home_installed-audio-editor">
-              <LogoWrapper href="/">
+              <LogoWrapper id="main_installed-audio-editor" href="/">
                   <img src={Logo} alt="avs4you logo"/>
               </LogoWrapper>
           </GatsbyLink>

@@ -105,7 +105,8 @@ const StyledTable = styled.div`
 `;
 
 const BuyButton = styled(Button) `
-padding: 20px 0px;
+padding: 5px 0;
+    display: inline-block;
 .style-button {
     padding: 0px;
     max-width: 242px;
@@ -119,6 +120,14 @@ padding: 20px 0px;
     }
 `;
 
+const DownloadNowButton = styled(Button)`
+    width: max-content;
+    .style-button {
+        height: max-content;
+    }
+    
+`
+
 const SaleWrapper = styled.div`
     display: flex;
 
@@ -131,11 +140,11 @@ const SaleWrapper = styled.div`
 class SpecialOfferHalloween extends React.PureComponent {
 render(){
     return (
-      <Layout 
+      <Layout
         headerIsDisabled={true}
         isTinyFooter
-        className="special-offer" 
-        pageContext={this.props.pageContext} 
+        className="special-offer"
+        pageContext={this.props.pageContext}
         t={this.props.t}
         title="AVS4YOU Special offer"
         metaDescription=""
@@ -161,12 +170,12 @@ render(){
           <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">Special Offer</Text>
             <SaleWrapper className="bodyOff">
             <Text fontSize={64} fontWeight={700} color="#fff" className="bodyGrab">Grab</Text>
-            <Text fontSize={130} fontWeight={700} fontFamily={'Montserrat'} color="#ffffff" className="precent-off">70</Text> 
+            <Text fontSize={130} fontWeight={700} fontFamily={'Montserrat'} color="#ffffff" className="precent-off">70</Text>
               <SaleWrapper className="precent">
-                <Text fontSize={46} fontWeight={700} color="#ffffff" className="text-off">%</Text> 
+                <Text fontSize={46} fontWeight={700} color="#ffffff" className="text-off">%</Text>
                 <Text fontSize={46} fontWeight={700} color="#ffffff" className="letter-off">ff</Text>
               </SaleWrapper>
-            </SaleWrapper> 
+            </SaleWrapper>
             <div className="text-avs">
               <Text fontSize={24} fontWeight={700} color="#fff" className="text-header-avs">on</Text>
               <Text fontSize={46} fontWeight={700} className="textHeader-halloween">AVS4YOU</Text>
@@ -175,8 +184,8 @@ render(){
             <Text fontSize={46} fontWeight={700} color="#fff" className="textMultiHeader-halloween">Multimedia Suite</Text>
             <div className="button-block">
               <div className="blockButton"></div>
-              <BuyButton className="headerButtonHalloween" 
-                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
+              <BuyButton className="headerButtonHalloween"
+                      secondaryText={this.props.secondaryText && this.props.secondaryText}
                       textTransform="uppercase">
                       <Link id="buy-now1_avs-special-offer-halloween" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </BuyButton>
@@ -191,14 +200,16 @@ render(){
             <Text fontSize={36} fontWeight={700} className="mainBodyTitle">Get 70% OFF on AVS4YOU Full Pack for <span className="text-orange">$79</span> <span className="text-line-through">$279</span></Text>
             <Text fontSize={24} fontWeight={400} className="mainBodyComment">A complete set of programs for working with video files, slideshows and soundtracks. Manage your video/audio collections, improve their quality and create stunning video projects!</Text>
             <div className="special-buttons">
-              <Button className="specialButtonHalloween violet button-mobile" 
-                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
+              <DownloadNowButton className="specialButtonHalloween violet button-mobile"
+                      secondaryText={this.props.secondaryText && this.props.secondaryText}
+                      // as="div"
                       textTransform="uppercase">
                       <Link id="download-now_avs-special-offer-halloween" to="https://downloads.avs4you.com/distributives/AVSInstallPack.exe" target="_blank" rel="noreferrer noopener" className="style-button"> download now </Link>
-              </Button>
+              </DownloadNowButton>
               <div className="blockButton"></div>
-              <BuyButton className="specialButtonHalloween" 
-                      secondaryText={this.props.secondaryText && this.props.secondaryText} 
+              <BuyButton className="specialButtonHalloween"
+                         // as="div"
+                      secondaryText={this.props.secondaryText && this.props.secondaryText}
                       textTransform="uppercase">
                       <Link id="buy-now2_avs-special-offer-halloween" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button"> buy now </Link>
               </BuyButton>
@@ -207,7 +218,7 @@ render(){
           </div>
           <PageContentWrapper className="tableProduct">
                 <StyledTable>
-                      <ContentRowItem 
+                      <ContentRowItem
                           disableBG={true}
                           imgLeft={true}
                           imageName={"video-editor-so-halloween.png"}
@@ -223,7 +234,7 @@ render(){
                           <Text  className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Create engaging video projects, tutorials and demos</Text>
                       </ContentRowItem>
 
-                      <ContentRowItem 
+                      <ContentRowItem
                           disableBG={true}
                           imgLeft={false}
                           imageName={"audio-editor-so-halloween.png"}
@@ -239,7 +250,7 @@ render(){
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Multitrack audio editing</Text>
                       </ContentRowItem>
 
-                      <ContentRowItem 
+                      <ContentRowItem
                           disableBG={true}
                           imgLeft={true}
                           imageName={"video-converter-so-halloween.png"}
@@ -255,7 +266,7 @@ render(){
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Adjust aspect ratio, apply effects</Text>
                       </ContentRowItem>
 
-                      <ContentRowItem 
+                      <ContentRowItem
                           disableBG={true}
                           imgLeft={false}
                           imageName={"audio-converter-so-halloween.png"}
@@ -271,7 +282,7 @@ render(){
                           <Text className="ListItem" color="#555555" fontWeight={400} fontSize={19}>Make customized ringtones for iPhone</Text>
                       </ContentRowItem>
 
-                      <ContentRowItem 
+                      <ContentRowItem
                           disableBG={true}
                           imgLeft={true}
                           imageName={"video-remaker-so-halloween.png"}
@@ -298,7 +309,7 @@ render(){
                         <div className="choose-item"><img className="icon-mobile" src={marketIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>15+ years on the market</Text></div>
                         <div className="choose-item"><img className="icon-mobile" src={customersIcon}/><Text className="awards-text" color="#555555" fontSize={24} fontWeight={600}>20M happy customers</Text></div>
                       </div>
-                      </div>  
+                      </div>
                   </div>
       </Layout>
     );

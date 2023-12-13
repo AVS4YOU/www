@@ -762,6 +762,7 @@ class FormEducation extends React.Component {
                             padding="13px 24px"
                             fontSize={14}
                             textTransform="uppercase"
+                            id={this.props.formButtonId}
                         >
                             {this.props.formButton}
                         </Button>

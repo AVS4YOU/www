@@ -211,6 +211,7 @@ class avsVideoRemakerGiveaway extends React.PureComponent {
                     nameAuthor={this.props.t("Name")}
                     emailAddressText={this.props.t("Email address")}
                     buttonTextSend={this.props.t("Get Free License")}
+                    buttonTextSendId="get-free-license_avs-video-remaker-giveaway"
                   />
                   
               </div> 
