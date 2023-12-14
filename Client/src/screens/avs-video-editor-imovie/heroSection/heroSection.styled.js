@@ -27,17 +27,21 @@ export const HeroSectionStyled = styled.section`
 `
 
 export const HeroSectionContainer = styled.div`
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #FFF;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+    max-width: 700px;
+    width: 100%;
+    //margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 500px) {
+        align-items: stretch;
+        text-align: center;
+    }
 `
 
 export const HeroSectionTitle = styled.h1`
@@ -63,7 +67,6 @@ export const HeroSectionTitle = styled.h1`
 
 export const HeroSectionDesc = styled.p`
   margin: 0 0 56px 0;
-  text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -77,39 +80,40 @@ export const HeroSectionDesc = styled.p`
 `
 
 export const HeroSectionLink = styled.a`
-  color: inherit;
-  padding: 16px 45px;
-  border-radius: 5px;
-  background: var(--Orange, #FE9235);
-  
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  
-  span {
-    font-size: 16px;
+    color: inherit;
+    padding: 16px 45px;
+    border-radius: 5px;
+    background: var(--Orange, #FE9235);
+    max-width: 456px;
+
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  &:hover {
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 500px) {
-    padding: 16px;
-    font-size: 16px;
-  }
-  
-  @media screen and (max-width: 400px) {
-    width: 100%;
-  }
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 `

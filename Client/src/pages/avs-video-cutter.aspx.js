@@ -22,6 +22,7 @@ const AvsVideoCutter = (props) => {
             metaDescription=""
             metaKeywords=""
             isTinyFooter
+            headerIsDisabled
         >
             <HeroSection t={props.t}/>
             <GuideSection t={props.t} />
