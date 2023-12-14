@@ -1,22 +1,29 @@
 import styled from "styled-components";
 
+import bg from '../../../images/avs-video-editor-imovie/hero-section-bg.png'
+
 export const HeroSectionStyled = styled.section`
-  padding: 273px 104px 338px 104px;
-  position: relative;
-  
-  background-color: gray;
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  @media screen and (max-width: 800px) {
-    padding: 144px 104px 208px 104px;
-  }
-  
-  @media screen and (max-width: 700px) {
-    padding: 78px 16px 135px 16px;
-  }
+    padding: 273px 104px 338px 104px;
+    position: relative;
+
+    background-color: gray;
+
+    background-image: url("${bg}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 144px 104px 208px 104px;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 78px 16px 135px 16px;
+    }
 `
 
 export const HeroSectionContainer = styled.div`
@@ -105,13 +112,4 @@ export const HeroSectionLink = styled.a`
   @media screen and (max-width: 400px) {
     width: 100%;
   }
-`
-
-export const HeroSectionBackgroundVideo = styled.video`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
 `
