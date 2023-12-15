@@ -199,12 +199,8 @@ export const HeroSectionContentLink = styled.span`
 export const HeroSectionVideo = styled.video`
     position: absolute;
     top: 0;
-    right: 0;
+    right: -122px;
     height: 100%;
-    
-    @media screen and (max-width: 1500px) {
-        right: -122px;
-    }
     
     @media screen and (max-width: 1200px) {
         right: -510px;
