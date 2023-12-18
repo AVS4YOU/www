@@ -1,36 +1,47 @@
 import styled from "styled-components";
 
+import bg from '../../../images/avs-video-editor-imovie/hero-section-bg.png'
+
 export const HeroSectionStyled = styled.section`
-  padding: 273px 104px 338px 104px;
-  position: relative;
-  
-  background-color: gray;
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  @media screen and (max-width: 800px) {
-    padding: 144px 104px 208px 104px;
-  }
-  
-  @media screen and (max-width: 700px) {
-    padding: 78px 16px 135px 16px;
-  }
+    padding: 273px 104px 338px 104px;
+    position: relative;
+
+    background-color: gray;
+
+    background-image: url("${bg}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 144px 104px 208px 104px;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 78px 16px 135px 16px;
+    }
 `
 
 export const HeroSectionContainer = styled.div`
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #FFF;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+    max-width: 700px;
+    width: 100%;
+    //margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 500px) {
+        align-items: stretch;
+        text-align: center;
+    }
 `
 
 export const HeroSectionTitle = styled.h1`
@@ -56,7 +67,6 @@ export const HeroSectionTitle = styled.h1`
 
 export const HeroSectionDesc = styled.p`
   margin: 0 0 56px 0;
-  text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -70,48 +80,40 @@ export const HeroSectionDesc = styled.p`
 `
 
 export const HeroSectionLink = styled.a`
-  color: inherit;
-  padding: 16px 45px;
-  border-radius: 5px;
-  background: var(--Orange, #FE9235);
-  
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  
-  span {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  &:hover {
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 500px) {
-    padding: 16px;
-    font-size: 16px;
-  }
-  
-  @media screen and (max-width: 400px) {
-    width: 100%;
-  }
-`
+    color: inherit;
+    padding: 16px 45px;
+    border-radius: 5px;
+    background: var(--Orange, #FE9235);
+    max-width: 456px;
 
-export const HeroSectionBackgroundVideo = styled.video`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
 `

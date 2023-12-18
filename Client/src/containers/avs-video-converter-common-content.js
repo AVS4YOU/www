@@ -37,6 +37,7 @@ export const AvsVideoConverterCommonContent = (props) => (
           backgroundColor="orange"
           mainPadding="12px 37px"
           margin="auto"
+          id="download-now1_avs-free-video-converter"
         />
       </div> 
     </PageContentWrapper>
@@ -70,7 +71,7 @@ export const AvsVideoConverterCommonContent = (props) => (
       <Text className="ListItem">{props.t("Encode HD Video, AVI, MP4, DVD, VOB, WMV, Blu-ray, MPEG, MKV, FLV, H 264 codec, H 265 reading only and etc")}</Text>
       <Text className="ListItem">{props.t("Convert HD-camera recordings AVCHD, MPEG-2 HD, AVI HD, TOD/MOD, M2TS/MTS, etc")}</Text>
       <Text className="ListItem">{props.t("Convert HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K video using ultra new presets and enjoy high quality video playback")}</Text>
-      <a target="_blank" rel="noreferrer noopener"  href={props.t("avs-free-video-converter-onlinehelp-avs4you")}>
+      <a target="_blank" rel="noreferrer noopener"  href={props.t("avs-free-video-converter-onlinehelp-avs4you")} id="supported-formats_avs-free-video-converter">
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
       </a>
     </ContentRowItem>
@@ -147,6 +148,7 @@ export const AvsVideoConverterCommonContent = (props) => (
       }
     />
     <Button className="trustButton" style={{margin: "auto", display: "table"}}
+            id="review_avs-free-video-converter"
             href="https://www.trustpilot.com/review/www.avs4you.com" 
             color="#fff">
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
@@ -180,9 +182,9 @@ export const AvsVideoConverterCommonContent = (props) => (
         <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
       </div>
     </div>
-    <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
+    <DownloadScrollButton id="download-now2_avs-free-video-converter" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
     <div className="licenseText">
-      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
+      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-free-video-converter" to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
     </div>
   </PageContentWrapper>
   <div className="technicalSpecificationWrapper">

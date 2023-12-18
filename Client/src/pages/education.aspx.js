@@ -142,7 +142,7 @@ render(){
                     headerText={this.props.t("Make a big saving on the software")}
                     free={false}   
                 >
-                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Get an extra 30% discount by sending your request at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a>. 
+                  <Text className="education__ListItem" color="#555555" fontWeight={500}>{this.props.t("Get an extra 30% discount by sending your request at")} <a id="sales1_education" href="mailto:sales@avs4you.com">sales@avs4you.com</a>.
                   {this.props.t("A copy of school ID for pupils and a confirmation of official enrolment for college students serve as sufficient proof")}</Text>
                 </ContentRowItem>
               </div>
@@ -183,6 +183,7 @@ render(){
                     href={this.props.t("https_onlinehelpstaticcontents_avs4you_com/downloads/schools/avs4you_price_list_for_schoolspdf")}
                     textTransform="uppercase"
                     t={this.props.t}
+                    id="download-education-price-list_education"
                   >
                       {this.props.t("Download education price list")}
                   </Button>
@@ -210,10 +211,12 @@ render(){
                  formNumberOfSub = {this.props.t("Number of subscriptions")}
                  formComment = {this.props.t("Give us a brief description of your specific needs")}
                  formButton = {this.props.t("Send your request")}
+                 formButtonId="send-your-request_education"
                  formAgreeTermsWrapper = {this.props.t("By clicking this button, you agree to our")}
-                 formAgreeLink = {this.props.t("Terms of Service")}                 
+                 formAgreeLink = {this.props.t("Terms of Service")}
+                 id="terms_education"
             />
-            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
+            <Text className="contact-us-text">{this.props.t("For more details and discount requests, please write at")} <a id="sales2_education" href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
             </div>
         </div>
       </Layout>

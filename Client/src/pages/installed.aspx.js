@@ -759,12 +759,12 @@ render(){
          <div id="centerall">   
         <div className="landing-first-block">
             <div className="landing-first-block-narrow">
-                <Link className="lfb-logo" to="/"></Link>
+                <Link id="main_installed" className="lfb-logo" to="/"></Link>
                 <div className="lfb-language">
                     <ul className="top-menu">
-                        <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                        <li><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
-                        <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
+                        <li><Link id="buy-now_installed" to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                        <li><a id="support_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-support-avs4you-login")} >{this.props.t("Support")}</a></li>
+                        <li><Link id="privacy_installed" to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                     </ul>
                 </div>
                 <div className="lfb-header-title">
@@ -775,7 +775,7 @@ render(){
                 </div>
                 <span>
                 <div className="lfb-offer">
-                    <a id="landingPage_landingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1"                 
+                    <a id="landingPage_lndingInside_ctl03_ctl00_AVSPaySystemDispatcherControl1 exclusive-offer-only-today_installed"
                     href={this.props.t(`${this.state.hrefUnlim}`)}
                        style={{paddingTop: '16px'}}
                     ><span>{this.props.t("Exclusive Offer Only Today ")}</span></a>
@@ -790,7 +790,7 @@ render(){
                     <p className="lohbn-text">{this.props.t("Save 70% on the full version and ")} <br />{this.props.t("get extra 10 multimedia programs as a gift!")}</p>
                     <p className="lohbn-price"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("59 ")}<span className="price-currency"></span></p>
                     <p className="lohbn-regular-price">{this.props.t("Regularly")} <span className="lohbn-rp"><span className="price-currency">{this.props.t("$")}</span>{this.props.t("199 ")}</span></p>
-                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3"
+                    <span><a id="landingPage_landingInside_ctl01_ctl00_psdc3 buy-now-main_installed"
                     href={this.state.hrefUnlim}
                     ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '7px'}}       >{this.props.t("Buy now!")}</b></a></span>
                 </div>
@@ -819,12 +819,12 @@ render(){
         <div className="landing-last-block">
             <div className="landing-last-block-narrow">
                 <div className="llbn-howto-blocks">
-                    <div className="llbn-ht-block llbnht-block1"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
-                    <div className="llbn-ht-block llbnht-block2"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
-                    <div className="llbn-ht-block llbnht-block3"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
-                    <div className="llbn-ht-block llbnht-block4"><a target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
+                    <div className="llbn-ht-block llbnht-block1"><a id="how-to-use-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-use-the-chromakey-effect-in-avs-video-editor")} >{this.props.t("How to use the")} <b>{this.props.t("Chroma Key effect")}</b></a></div>
+                    <div className="llbn-ht-block llbnht-block2"><a id="impressive-slideshow-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-create-video-slideshow")} >{this.props.t("How to create an")} <b>{this.props.t("impressive slideshow")}</b></a>{this.props.t("im AVS Video Editor?")}</div>
+                    <div className="llbn-ht-block llbnht-block3"><a id="featured-guides-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-avs4you-guides-how-to-start-working-with-video-editor")} >{this.props.t("lang Featured guides")}<b>{this.props.t("Featured guides")}</b> {this.props.t("to work with AVS Video Editor efficiently effortlessly")}</a></div>
+                    <div className="llbn-ht-block llbnht-block4"><a id="help-center-item_installed" target="_blank" rel="noreferrer noopener" href={this.props.t("installed-onlinehelp-avs4you-avs-video-editor")} >{this.props.t("Any questions on how to buy, activate, or use the program? Visit online")} <b>{this.props.t("Help Center")}</b></a>{this.props.t("lang Help Center")}</div>
                 </div>
-                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3"                 
+                <span><a id="landingPage_landingInside_ctl02_ctl00_psdc3 buy-now-second_installed"
                 href={this.state.hrefUnlim}
                 ><b className="lohbn-buy-button buy-button-bottom" style={{paddingTop: '8'}}>{this.props.t("Buy now!")}</b></a></span>
             </div>
@@ -832,15 +832,15 @@ render(){
         <div className="landing-footer">
             <div className="landing-footer-narrow">
                 <ul>
-                    <li><Link to="/register.aspx">{this.props.t("Buy now")}</Link></li>
-                    <li><a target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
-                    <li><Link to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
-                    <li><Link to="/education.aspx">{this.props.t("Education")}</Link></li>
-                    <li><Link to="/partners.aspx">{this.props.t("Partners")}</Link></li>
-                    <li><Link to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
-                    <li><Link to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
+                    <li><Link id="buy-now2_installed" to="/register.aspx">{this.props.t("Buy now")}</Link></li>
+                    <li><a id="support2_installed" target="_blank" rel="noreferrer noopener" href="https://support.avs4you.com/">{this.props.t("Support")}</a></li>
+                    <li><Link id="affiliates_installed" to="/affiliates.aspx">{this.props.t("Affiliates")}</Link></li>
+                    <li><Link id="education_installed" to="/education.aspx">{this.props.t("Education")}</Link></li>
+                    <li><Link id="partners_installed" to="/partners.aspx">{this.props.t("Partners")}</Link></li>
+                    <li><Link id="eula_installed" to="/license-agreement.aspx">{this.props.t("EULA")}</Link></li>
+                    <li><Link id="privacy_installed" to="/privacy.aspx">{this.props.t("Privacy")}</Link></li>
                 </ul>
-                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Ascensio System SIA")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
+                <div className="lfn-copyright" style={{paddingLeft: "15px;"}}><Link id="home-footer_installed" to="/" ><Text color="#fff" fontSize={16}>{this.props.t("Ascensio System SIA")}</Text></Link>&nbsp;&nbsp;&nbsp;<Text color="#fff" fontSize={16}> {currentYear} {this.props.t("All rights reserved")}</Text></div>
             </div>
         </div>
         </div>

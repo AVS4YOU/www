@@ -42,13 +42,13 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("AVS4YOU Support")} 
               </Text>
-              <ScrollLink className="common-info-block__link" to="support-form-wrapper" spy={true} smooth={true} offset={-70} duration={500}>
+              <ScrollLink id="scroll-to-support-form_support" className="common-info-block__link" to="support-form-wrapper" spy={true} smooth={true} offset={-70} duration={500}>
                 <Text className="common-info-block__text">{this.props.t("Support form")}</Text>
               </ScrollLink>
-              <a className="common-info-block__link" href="https://support.avs4you.com/FirstTime.aspx">
+              <a className="common-info-block__link" id="read-this-first_support" href="https://support.avs4you.com/FirstTime.aspx">
                 <Text className="common-info-block__text">{this.props.t("Read this first")}</Text>
               </a>
-              <a className="common-info-block__link" href="https://support.avs4you.com/refund.aspx">
+              <a className="common-info-block__link" id="refund-policy_support" href="https://support.avs4you.com/refund.aspx">
                 <Text className="common-info-block__text">{this.props.t("Refund policy")}</Text>
               </a>
               <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
@@ -58,16 +58,16 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("FAQ")} 
               </Text>
-              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#general">
+              <a className="common-info-block__link" id="general-questions_support" href="https://support.avs4you.com/faq.aspx#general">
                 <Text className="common-info-block__text">{this.props.t("General Questions")}</Text>
               </a>
-              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#license">
+              <a className="common-info-block__link" id="license-retrieval-questions_support" href="https://support.avs4you.com/faq.aspx#license">
                 <Text className="common-info-block__text">{this.props.t("License Retrieval Questions")}</Text>
               </a>
-              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#support">
+              <a className="common-info-block__link" id="online-support_support" href="https://support.avs4you.com/faq.aspx#support">
                 <Text className="common-info-block__text">{this.props.t("Online Support System Questions")}</Text>
               </a>
-              <a className="common-info-block__link" href="https://support.avs4you.com/faq.aspx#subscription">
+              <a className="common-info-block__link" id="subscription-questions_support" href="https://support.avs4you.com/faq.aspx#subscription">
                 <Text className="common-info-block__text">{this.props.t("Subscription Questions")}</Text>
               </a>
             </div>
@@ -76,13 +76,13 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("Knowledge Center")}
               </Text>
-              <a className="common-info-block__link" href="http://videoguides.avs4you.com/index.aspx">
+              <a className="common-info-block__link" id="video-how-to_support" href="http://videoguides.avs4you.com/index.aspx">
                 <Text className="common-info-block__text">{this.props.t("Video how-to")}</Text>
               </a>
-              <a className="common-info-block__link" href="http://www.avs4you.com/Guides/index.aspx">
+              <a className="common-info-block__link" id="user-guides_support" href="http://www.avs4you.com/Guides/index.aspx">
                 <Text className="common-info-block__text">{this.props.t("User Guides")}</Text>
               </a>
-              <a className="common-info-block__link" href="http://onlinehelp.avs4you.com/index.aspx">
+              <a className="common-info-block__link" id="online-help_support" href="http://onlinehelp.avs4you.com/index.aspx">
                 <Text className="common-info-block__text">{this.props.t("Online Help")}</Text>
               </a>
             </div>
@@ -91,19 +91,19 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("Download now")}
               </Text>
-              <Link className="common-info-block__link" to="/avs-free-video-converter.aspx">
+              <Link className="common-info-block__link" id="download-vc_support" to="/avs-free-video-converter.aspx">
                 <Text className="common-info-block__text">{this.props.t("AVS Video Converter")}</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-video-editor.aspx">
+              <Link className="common-info-block__link" id="download-ve_support" to="/avs-video-editor.aspx">
                 <Text className="common-info-block__text">{this.props.t("AVS Video Editor")}</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-video-remaker.aspx">
+              <Link className="common-info-block__link" id="download-vr_support" to="/avs-video-remaker.aspx">
                 <Text className="common-info-block__text">{this.props.t("AVS Video Remaker")}</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-audio-editor.aspx">
+              <Link className="common-info-block__link" id="download-ae_support" to="/avs-audio-editor.aspx">
                 <Text className="common-info-block__text">{this.props.t("AVS Audio Editor")}</Text>
               </Link>
-              <Link className="common-info-block__link" to="/avs-audio-converter.aspx">
+              <Link className="common-info-block__link" id="download-ac_support" to="/avs-audio-converter.aspx">
                 <Text className="common-info-block__text">{this.props.t("AVS Audio Converter")}</Text>
               </Link>
             </div>
@@ -112,7 +112,7 @@ render(){
               <Text as="h4" className="common-info-block__headline">
               {this.props.t("AVS4YOU License")}
               </Text>
-              <a className="common-info-block__link" href="http://reg.avs4you.com/quickretrieval.aspx">
+              <a className="common-info-block__link" id="license-retrieval_support" href="http://reg.avs4you.com/quickretrieval.aspx">
                 <Text className="common-info-block__text">{this.props.t("License retrieval")}</Text>
               </a>
             </div>
@@ -124,8 +124,8 @@ render(){
           {this.props.t("If you have not found the necessary information, please send a request")}
           </Text>
           <div id="support-form-wrapper" className="reseller-from-wrapper">
-            <Form />
-            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
+            <Form formButtonId="submit_support" />
+            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU Affiliate program, please contact us at")} <a id="affiliates_support" href="mailto:affiliates@avs4you.com">affiliates@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>

@@ -190,6 +190,7 @@ render(){
                     fontSize={18} 
                     padding="16.5px 35px"
                     textTransform="uppercase"
+                    id="download-now1_video-editing-software"
                     href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
@@ -366,6 +367,7 @@ render(){
                     padding="16px 43px"
                     style={{backgroundColor:"#FC4B15"}}
                     textTransform="uppercase"
+                    id="download-now2_video-editing-software"
                     href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
                       {this.props.t("Download now")}</Button>
                     </div>

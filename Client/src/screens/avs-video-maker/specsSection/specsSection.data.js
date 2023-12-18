@@ -10,7 +10,7 @@ const specs = [
     },
     {
         id: 2,
-        title: "Save to Disc",
+        title: "Save to Device",
         desc: "Apple iPhone, iPad, Samsung, Sony PSP, BlackBerry",
         icon: <Device/>
     },

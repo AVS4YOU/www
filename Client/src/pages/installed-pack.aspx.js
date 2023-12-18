@@ -88,7 +88,7 @@ render(){
           <ImageGQL className="headerBackgroundImage" imageName="installed-pack-header.jpg" style={{position: "absolute", height: "665px"}}/>
             <div className="header__body">
             <div className="avs-logo">
-          <GatsbyLink className="headerLogo" to="/">
+          <GatsbyLink className="headerLogo" to="/" id="main_installed-pack">
               <LogoWrapper href="/">
               </LogoWrapper>
           </GatsbyLink>
@@ -106,7 +106,7 @@ render(){
                 <Text as="h4" className="text-info-landing-box">{this.props.t("24hour exclusive offer")}</Text>
                 <Text as="h4" className="header__new__price">{this.props.t("59")}</Text>
                     <table style={{margin: '0 auto'}}>
-                        <GetItNowLink href={this.props.t(`${this.state.hrefUnlim}`)}>
+                        <GetItNowLink id="get-it-now_installed-pack" href={this.props.t(`${this.state.hrefUnlim}`)}>
                             {this.props.t("Get It Now")}
                         </GetItNowLink>
                     </table>
@@ -198,10 +198,10 @@ render(){
 
         <div className="resourcesTable" style={{margin: "auto"}}>
 <div className="helpful">{this.props.t("Helpful resources")}</div>
-<div className="knowledge"><div className="knowledgeIcon"><a href="https://onlinehelp.avs4you.com/index.aspx" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
-<div className="tipsIcon"><a href="https://www.avs4you.com/guides/index.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
+<div className="knowledge"><div className="knowledgeIcon"><a id="knowledge-center_installed-pack" href="https://onlinehelp.avs4you.com/index.aspx" style={{color: "#393939"}}>{this.props.t("Knowledge center")}</a></div>
+<div className="tipsIcon"><a id="tips_installed-packr" href="https://www.avs4you.com/guides/index.aspx" style={{color: "#393939"}}>{this.props.t("Tips tricks")}</a></div>
 <div className="questionIcon">{this.props.t("Got a question")}
-<br/>{this.props.t("Contact our")} <a href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
+<br/>{this.props.t("Contact our")} <a id="support-team_installed-pack" href="https://support.avs4you.com/login.aspx?_ga=2.17915129.1345987683.1595154508-193195073.1594635509" style={{color: "#393939"}}>{this.props.t("support team")}</a> </div>
 </div>
 </div>
 </Layout>

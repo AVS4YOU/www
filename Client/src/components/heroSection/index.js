@@ -290,7 +290,7 @@ export const HeroSection = () => {
                             ))
                         }
                     </HeroSectionList>
-                    <HeroSectionButton className="hero-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download now</HeroSectionButton>
+                    <HeroSectionButton id="download-now_video-editing" className="hero-section__button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download now</HeroSectionButton>
                 </HeroSectionBox>
             </HeroSectionContainer>
         </HeroSectionStyled>

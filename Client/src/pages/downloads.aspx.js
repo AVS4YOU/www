@@ -68,6 +68,7 @@ render(){
                       mainPadding="18px 50px"
                       margin="auto"
                       className="headerDownloadButtons"
+                      id="download-now_downloads"
                     />
                 </div>
             </div>
@@ -91,7 +92,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-vr_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -107,7 +108,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ve_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -123,7 +124,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-vc_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
             
             <div className="product-box">
@@ -135,7 +136,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-mp_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -153,7 +154,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ae_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -170,7 +171,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ac_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -181,12 +182,12 @@ render(){
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to download and install the AVS4YOU software on your PC")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link to="/"><Text as="span">www.avs4you.com</Text></Link>{this.props.t("jpn")}</Text>   
+                  <Text>{this.props.t("The best and the safest way to download and install our software is to do it via our official website")} <Link id="how-download-register_downloads" to="/"><Text as="span">www.avs4you.com</Text></Link>{this.props.t("jpn")}</Text>
                 </div>
                 <div className="info-block">
                   <Text>{this.props.t("Read this step-by-step guide how to download and install AVS4YOU programs using AVS Video Converter as an example")}</Text>
                 </div>
-                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downolads-avs4you-guides")}>
+                <a target="_blank" rel="noreferrer noopener" id="how-download-read-more_downloads" href={this.props.t("downolads-avs4you-guides")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -197,12 +198,12 @@ render(){
             <PanelCollapse className="panelCollapse" panelName={this.props.t("How to activate the AVS4YOU software?")}>
               <div className="collapseContent">
                 <div className="info-block">
-                  <Text>{this.props.t("It is necessary to purchase an AVS4YOU subscription at")} <Link to="/register.aspx"><Text as="span">www.avs4you.com </Text></Link>{this.props.t("in order to activate AVS4YOU software and remove the watermark and other limitations Once your order is processed you will get a unique license key via e-mail to activate the software")}</Text>   
+                  <Text>{this.props.t("It is necessary to purchase an AVS4YOU subscription at")} <Link id="how-activate-register_downloads" to="/register.aspx"><Text as="span">www.avs4you.com </Text></Link>{this.props.t("in order to activate AVS4YOU software and remove the watermark and other limitations Once your order is processed you will get a unique license key via e-mail to activate the software")}</Text>
                 </div>
                 <div className="info-block">
                   <Text>{this.props.t("Here is a step-by-step guide which will help you activate AVS4YOU programs without any problems")}</Text>
                 </div>
-                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-activate-the-avs4you-software")}>
+                <a target="_blank" rel="noreferrer noopener" id="how-activate-read-more_downloads" href={this.props.t("downloads-avs4you-guides-how-to-activate-the-avs4you-software")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -218,7 +219,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("Below we ll describe how to reinstall the AVS4YOU software smoothly")}</Text>
                 </div>
-                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
+                <a target="_blank" rel="noreferrer noopener" id="how-reinstall-read-more_downloads" href={this.props.t("downloads-avs4you-guides-how-to-reinstall-avs4you-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>
@@ -235,7 +236,7 @@ render(){
                 <div className="info-block">
                   <Text>{this.props.t("In case you need to uninstall the AVS4YOU programs follow this detailed guide Please note that it is recommended to uninstall a program before updating it to prevent a possible version conflict")}</Text>   
                 </div>
-                <a target="_blank" rel="noreferrer noopener" href={this.props.t("downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs")}>
+                <a target="_blank" rel="noreferrer noopener" id="how-uninstall-read-more_downloads" href={this.props.t("downloads-avs4you-guides-How-to-uninstall-AVS4YOU-programs")}>
                 <div className="info-block">
                   <Text as="span">{this.props.t("Read more")} &#8594;</Text>
                 </div>

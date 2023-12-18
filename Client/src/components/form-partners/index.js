@@ -473,6 +473,7 @@ class FormPartners extends React.Component {
                             padding="13px 24px"
                             fontSize={14}
                             textTransform="uppercase"
+                            id={this.props.buttonId}
                         >
                             {this.props.buttonTextSend}
                         </Button>

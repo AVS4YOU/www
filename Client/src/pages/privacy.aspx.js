@@ -27,10 +27,10 @@ class Privacy extends React.PureComponent {
           {this.props.t("Ascensio System SIA has created this statement to let you know about our firm commitment to your privacy and full compliance of AVS4YOU Website and Software with General Data Protection Regulation (GDPR)")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("The following Privacy Policy discloses our approach in gathering and processing Personal Data for Ascensio System SIA website")} <Link to="/">www.avs4you.com</Link>, {this.props.t("related websites, services and AVS4YOU software")}
+            {this.props.t("The following Privacy Policy discloses our approach in gathering and processing Personal Data for Ascensio System SIA website")} <Link id="home_privacy" to="/">www.avs4you.com</Link>, {this.props.t("related websites, services and AVS4YOU software")}
           </Text>
           <Text className="body-privacy__text">
-            {this.props.t("Any data collected through avs4youcom,")} <a href="https://forum.avs4you.com" target="_blank" rel="noreferrer noopener">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Ascensio System SIA which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
+            {this.props.t("Any data collected through avs4youcom,")} <a id="forum_privacy" href="https://forum.avs4you.com" target="_blank" rel="noreferrer noopener">{this.props.t("forum.avs4you.com")}</a> {this.props.t("or")} www.avs4you.com, {this.props.t("and other subdomains of the domain avs4youcom collectively the AVS4YOU Website or AVS Video Editor, AVS Video Converter, AVS Video ReMaker, AVS Audio Editor, AVS Audio Converter, AVS Image Converter, AVS Document Converter, AVS Media Player, AVS Registry Cleaner, AVS Disc Creator, AVS Photo Editor collectively the AVS4YOU Software will be collected by Ascensio System SIA which is a company formed in London, UK with its principal place of business located at 85 Great Portland, London W1W 7LT, United Kingdom")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("By using AVS4YOU Website or Software (hereinafter also referred to as AVS4YOU) you explicitly consent to such use of your Personal Data and agree to the terms of this Privacy Policy")}
@@ -147,7 +147,7 @@ class Privacy extends React.PureComponent {
           <Text className="subHeader">{this.props.t("How long Data is used")}</Text>
 
           <Text className="body-privacy__text">{this.props.t("We retain your Data for as long as is necessary to provide the service to you and others, and to comply with our legal obligations Your Data is stored and processed only when your account is active until you delete or deactivate it")}</Text>
-          <Text className="body-privacy__text">{this.props.t("You are entitled to delete Your own Account To do so please contact us by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("using e-mail address you entered during registration Upon receiving this request Your Account will be completely deleted in 30 days")}</Text>
+          <Text className="body-privacy__text">{this.props.t("You are entitled to delete Your own Account To do so please contact us by sending e-mail at")} <a id="info1_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("using e-mail address you entered during registration Upon receiving this request Your Account will be completely deleted in 30 days")}</Text>
 
 
 
@@ -157,16 +157,16 @@ class Privacy extends React.PureComponent {
           <Text className="body-privacy__text">{this.props.t("You have various rights to control use and processing of your Personal Data and other information This means that you are entitled to request us to take certain actions at any time and free of charge")}
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Data portability right")}</b> {this.props.t("You have the right to request a digital copy of your Data in a structured, commonly used and machine-readable format to be able to move from one service to another This can be achieved by emailing us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("and we will provide you with an electronic file containing your Data")}
+            <b>{this.props.t("Data portability right")}</b> {this.props.t("You have the right to request a digital copy of your Data in a structured, commonly used and machine-readable format to be able to move from one service to another This can be achieved by emailing us at")} <a id="info2_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("and we will provide you with an electronic file containing your Data")}
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>
+            <b>{this.props.t("Right to rectification")}</b> {this.props.t("You have the right to obtain the rectification of inaccurate Data You entitled to have incomplete Personal Data completed In order to do so, please use appropriate settings to edit and complete your incomplete Personal Data if you find it necessary or provide us with a supplementary statement by sending e-mail at")} <a id="info3_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a>
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Right to restriction of processing")}</b> {this.props.t("You also have the right to request that we cease to process or use your Data in any way If you choose to do so, your Data will become unavailable for everyone, but it won't be deleted, so you can restore it at any time To achieve this goal, please email us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.
+            <b>{this.props.t("Right to restriction of processing")}</b> {this.props.t("You also have the right to request that we cease to process or use your Data in any way If you choose to do so, your Data will become unavailable for everyone, but it won't be deleted, so you can restore it at any time To achieve this goal, please email us at")} <a id="info4_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a>.
           </Text>
           <Text className="body-privacy__text">
-              <b>{this.props.t("Right to erasure ('Right to be forgotten')")} </b> {this.props.t("You are eligible to delete certain Data from our site and services Please contact us by sending e-mail at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("to do so Please note, if you choose to delete your Data, it will become unavailable and will be completely deleted in 60 days upon your delete request")}
+              <b>{this.props.t("Right to erasure ('Right to be forgotten')")} </b> {this.props.t("You are eligible to delete certain Data from our site and services Please contact us by sending e-mail at")} <a id="info5_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a> {this.props.t("to do so Please note, if you choose to delete your Data, it will become unavailable and will be completely deleted in 60 days upon your delete request")}
           </Text>
           <Text className="body-privacy__text">
             {this.props.t("Please, be aware, that sometimes we have to store some Data for a longer period of time either due to technical limitations or to comply with the law")}
@@ -233,10 +233,10 @@ class Privacy extends React.PureComponent {
 
           <Text className="body-privacy__text">{this.props.t("We use third-party service providers to provide hosting and analytics")}</Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link")} <a href="https://aws.amazon.com/privacy" target="_blank" rel="noreferrer noopener">https://aws.amazon.com/privacy</a>
+          <b>{this.props.t("AWS Amazon file hosting")}</b> {this.props.t("We use AWS cloud storage to store user files including Data, which is located in North Virginia, United States To learn how Amazon treats your privacy, please see the following link")} <a id="amazon_privacy"  href="https://aws.amazon.com/privacy" target="_blank" rel="noreferrer noopener">https://aws.amazon.com/privacy</a>
           </Text>
           <Text className="body-privacy__text">
-          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy")} <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer noopener">https://policies.google.com/privacy?hl=en</a>
+          <b>{this.props.t("Google Analytics")}</b> {this.props.t("We also use Google Analytics to track what is used the most, to understand our users needs and to make our site and service better Please visit the link to understand Google's approach to privacy")} <a id="policies_privacy" href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer noopener">https://policies.google.com/privacy?hl=en</a>
           </Text>
           <Text className="body-privacy__text">
           <b>{this.props.t("Google Ads & Google Merchant Center")}</b>{this.props.t("We use the services of Google Ads and Google Merchant Center to draw attention to our offers by means of advertising materials and advertising campaigns on external websites In terms of the advertising campaign data we pursue thereby the aim of showing you interest-based advertisements and of making a fair calculation of advertising costs")}
@@ -245,10 +245,10 @@ class Privacy extends React.PureComponent {
           <b>{this.props.t("Google Tag Manager")}</b> {this.props.t("We use Google Tag Manager, a tag management system that allows us to quickly and easily update tracking codes and related code fragments known as 'tags' on our website and mobile website")}
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Bing Ads")}</b> {this.props.t("We use Bing Ads pixel and conversion tracking codes to measure the effectiveness of our advertising campaigns These tags do not collect any personal information Please follow this link to opt out of Microsoft Advertising optimization program")} <a href="https://about.ads.microsoft.com/en-us/resources/policies/opt-out-of-the-microsoft-advertising-optimization-program" target="_blank" rel="noreferrer noopener">https://about.ads.microsoft.com/en-us/resources/policies/opt-out-of-the-microsoft-advertising-optimization-program</a>.
+            <b>{this.props.t("Bing Ads")}</b> {this.props.t("We use Bing Ads pixel and conversion tracking codes to measure the effectiveness of our advertising campaigns These tags do not collect any personal information Please follow this link to opt out of Microsoft Advertising optimization program")} <a id="ads_privacy" href="https://about.ads.microsoft.com/en-us/resources/policies/opt-out-of-the-microsoft-advertising-optimization-program" target="_blank" rel="noreferrer noopener">https://about.ads.microsoft.com/en-us/resources/policies/opt-out-of-the-microsoft-advertising-optimization-program</a>.
           </Text>
           <Text className="body-privacy__text">
-            <b>{this.props.t("Yahoo Japan")}</b> {this.props.t("Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to")} <a href="https://privacy.yahoo.co.jp/en_index.html" target="_blank" rel="noreferrer noopener">https://privacy.yahoo.co.jp/en_index.html</a>.
+            <b>{this.props.t("Yahoo Japan")}</b> {this.props.t("Yahoo Japan conversion tracking codes are used to analyze the effectiveness of our advertising campaigns Users may adjust their privacy settings on how their data is used for advertising purposes For more information please go to")} <a id="privacy-yahoo_privacy" href="https://privacy.yahoo.co.jp/en_index.html" target="_blank" rel="noreferrer noopener">https://privacy.yahoo.co.jp/en_index.html</a>.
           </Text>
           <Text className="body-privacy__text">
             <b>{this.props.t("YandexMetrica")}</b> {this.props.t("We use YandexMetrica with a view of improving the usability of the website It collects standard Internet log info and website navigation details in an anonymous form This information gives us a better understanding of the way users interact with our website and the actions they perform, thereby, helping us identify design flaws and fix them")}
@@ -261,11 +261,11 @@ class Privacy extends React.PureComponent {
 
 
           <Text className="subHeader">{this.props.t("Further Questions")}</Text>
-          <Text className="body-privacy__text">{this.props.t("If you have any questions about our Privacy Policy, feel free to email us at")} <a href="mailto:info@avs4you.com">info@avs4you.com</a>.</Text>
+          <Text className="body-privacy__text">{this.props.t("If you have any questions about our Privacy Policy, feel free to email us at")} <a id="info5_privacy" href="mailto:info@avs4you.com">info@avs4you.com</a>.</Text>
 
 
           <Text className="subHeader">{this.props.t("Data Protection Officer")}</Text>
-          <Text className="body-privacy__text">{this.props.t("You can contact Data Protection Officer by emailing")} <a href="mailto:dpo@avs4you.com">dpo@avs4you.com</a>.</Text>
+          <Text className="body-privacy__text">{this.props.t("You can contact Data Protection Officer by emailing")} <a id="dpo_privacy" href="mailto:dpo@avs4you.com">dpo@avs4you.com</a>.</Text>
 
         </div>
       </Layout>
