@@ -345,6 +345,16 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButtonSave = (textButton, hrefButtonSave) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a href={hrefButtonSave} target="_blank" download="avs_postcard_2024.jpg">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
   renderSocialLinks = (linkFacebook, linkTwitter) => {
     return (
       <div className="socialLinks">
@@ -363,7 +373,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, hrefButtonSave  } = this.props;
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -396,6 +406,7 @@ class CalendarItem extends React.Component {
               <Text className="popupSub">{popupSub}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}
               {textButton && hrefButton && this.renderButton(textButton, hrefButton)}
+              {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave)}
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>

@@ -9,6 +9,7 @@ import CalendarItem from "../components/calendar-item";
 import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CancelModal from '../images/advent-calendar/cancel.svg';
+import PostcardLink from '../images/advent-calendar/avs_postcard.jpg';
 
 import {
   TwitterShareButton,
@@ -564,7 +565,7 @@ constructor(props) {
               validDate="The offer is valid till December 20, 2023"
               popupTitle="Surprise!"
               popupDiscount="Send a Christmas greeting card to your dearest and nearest"
-              hrefButton="0"
+              hrefButtonSave={PostcardLink}
               textButton="Get It Now"
             />
             </StyledBottomCalendar>
