@@ -18,6 +18,8 @@ import {
 const AvsVideoMaker = (props) => {
     const [isActive, setIsActive] = useState(true)
 
+    console.log(isActive)
+
     const onResize = () => {
         setIsActive(window.innerWidth > 800)
     }

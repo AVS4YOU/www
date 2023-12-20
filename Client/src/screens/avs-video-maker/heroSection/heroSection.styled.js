@@ -196,81 +196,40 @@ export const HeroSectionContentLink = styled.span`
   }
 `
 
-export const HeroSectionCollageBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-
-  animation-name: ${collage};
-  animation-duration: 5s;
-  animation-fill-mode: revert;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-  &.collage-box1 {
-    margin-top: 447px;
-
-    video:first-child {
-      border-radius: 0 0 20px 20px;
-    }
-
-    video:last-child {
-      border-radius: 20px 20px 0 0;
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    &.collage-box1 {
-      padding-right: 19px;
-    }
-
-    &.collage-box2 {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    animation-name: none;
-    &.collage-box1 {
-      margin-top: 0;
-      padding-right: 0;
-    }
-
-    .collage1 {
-      display: none;
+export const HeroSectionVideo = styled.video`
+    position: absolute;
+    top: 0;
+    right: -122px;
+    height: 100%;
+    
+    @media screen and (max-width: 1200px) {
+        right: -510px;
     }
     
-    .collage2 {
-      border-radius: 0;
-      width: 100%;
+    @media screen and (max-width: 700px) {
+        width: 1240px;
+        height: auto;
+        right: calc(50% - 350px);
     }
-
-    .collage3 {
-      display: none;
+    
+    @media screen and (max-width: 500px) {
+        display: none;
     }
-  }
 `
 
-export const HeroSectionCollage = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  
-  display: flex;
-  gap: 33px;
-`
-
-export const HeroSectionCollageImg = styled.video`
-  height: 600px;
-  width: 390px;
-  object-fit: cover;
-  object-position: center;
-  
-  border-radius: 20px;
-  
-  @media screen and (max-width: 1800px) {
-    width: 340px;
-    object-fit: cover;
-  }
+export const HeroSectionMobileVideo = styled.video`
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    
+    display: none;
+    
+    @media screen and (max-width: 500px) {
+        display: block;
+    }
+    
+    @media screen and (max-width: 410px) {
+        right: -80px;
+    }
 `

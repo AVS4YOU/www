@@ -81,7 +81,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
                   </div>
                   <Text as="h1" className="header__heading installed">{props.t("Thank you for installing AVS Audio Converter")} <br /> {props.t("AVS audio converter")}</Text>
                 <table style={{margin: '0 auto'}}>
-                        <InstalledAudioConverterLink href={props.t(`${props.hrefUnlim}`)}>
+                        <InstalledAudioConverterLink id="exclusive-offer-only-today_installed-audio-converter" href={props.t(`${props.hrefUnlim}`)}>
                             {props.t("Exclusive Offer Only Today")}
                         </InstalledAudioConverterLink>
                 </table>
@@ -90,7 +90,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
                   <table className="header__price__block"><Text as="h4" className="header__price">{props.t("199")}</Text>
                   <Text as="h4" className="header__new__price">{props.t("590")}</Text></table>
                   <table style={{margin: '0 auto'}}>
-                          <InstalledAudioConverterButNow href={props.t(`${props.hrefUnlim}`)}>
+                          <InstalledAudioConverterButNow id="buy-now_installed-audio-converter" href={props.t(`${props.hrefUnlim}`)}>
                               {props.t("Buy now")}
                           </InstalledAudioConverterButNow>
                   </table>
@@ -133,7 +133,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
 
                 <div className="common-info-block">
                   <div className="gift">{props.t("Gift")}</div>
-                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vc_installed-audio-converter" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                     <Text as="h4" className="common-info-block__headline">
                     AVS Video Converter
                     </Text>
@@ -145,7 +145,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
                   <div className="common-info-block">
                   <div className="gift">{props.t("Gift")}</div>
                       <FixStyles />
-                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ve_installed-audio-converter" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                     <Text as="h4" className="common-info-block__headline">
                     AVS Video Editor
                     </Text>
@@ -156,7 +156,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
 
                   <div className="common-info-block">
                     <div className="gift">{props.t("Gift")}</div>
-                    <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                    <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ae_installed-audio-converter" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                     <Text as="h4" className="common-info-block__headline">
                     AVS Audio Editor
                     </Text>
@@ -167,7 +167,7 @@ export const InstalledAudioConverterCommonContent = (props) => (
 
                   <div className="common-info-block">
                   <div className="gift">{props.t("Gift")}</div>
-                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                  <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-vr_installed-audio-converter" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" style={{color: "#fff"}}>{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                     <Text as="h4" className="common-info-block__headline">
                     AVS Video ReMaker
                     </Text>
@@ -181,10 +181,10 @@ export const InstalledAudioConverterCommonContent = (props) => (
 
             <div className="resourcesTable" style={{margin: "auto"}}>
     <div className="helpful">{props.t("Helpful resources")}</div>
-    <div className="knowledge"><div className="knowledgeIcon"><a href={props.t("onlinehelpAudioHref")} style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
-    <div className="tipsIcon"><a href={props.t("supportAudioHref")} style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
+    <div className="knowledge"><div className="knowledgeIcon"><a id="knowledge-center_installed-audio-converter" href={props.t("onlinehelpAudioHref")} style={{color: "#393939"}}>{props.t("Knowledge center")}</a></div>
+    <div className="tipsIcon"><a id="tips_installed-audio-converter" href={props.t("supportAudioHref")} style={{color: "#393939"}}>{props.t("Tips tricks")}</a></div>
     <div className="questionIcon">{props.t("Got a question")}
-    <br/>{props.t("Contact our")} <a href={props.t("guidesAudioHref")} style={{color: "#393939"}}>{props.t("support team")}</a> </div>
+    <br/>{props.t("Contact our")} <a id="support-team_installed-audio-converter" href={props.t("guidesAudioHref")} style={{color: "#393939"}}>{props.t("support team")}</a> </div>
     </div>
     </div>
   </div>

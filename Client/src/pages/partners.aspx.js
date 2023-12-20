@@ -119,7 +119,7 @@ render(){
             </div>
           </div>
           <div className="body-reseller__button-wrapper">
-          <a target="_blank" rel="noreferrer noopener" href={this.props.t("partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners")} >
+          <a id="download-reseller_partners" target="_blank" rel="noreferrer noopener" href={this.props.t("partners-onlinehelpstaticcontents-avs4you-downloads-reseller-partners")} >
             <Button className="body-reseller__button" textClassName="body-reseller__button-text">
                 {this.props.t("Download reseller prose list")}
             </Button>
@@ -137,8 +137,9 @@ render(){
               numberOfSubscriptions={this.props.t("Number of subscriptions")}
               comment={this.props.t("Give us a brief description of your specific needs")}
               buttonTextSend={this.props.t("Send your request")}
+              buttonId="send-your-request_partners"
             />
-            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU partnership program, please contact us at")} <a href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
+            <Text className="contact-us-text">{this.props.t("If you have any questions about AVS4YOU partnership program, please contact us at")} <a id="sales_partners" href="mailto:sales@avs4you.com">sales@avs4you.com</a></Text>
           </div>
         </div>
       </Layout>

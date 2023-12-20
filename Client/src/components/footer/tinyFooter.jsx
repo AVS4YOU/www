@@ -89,49 +89,49 @@ export const TinyFooter = (props) => {
         <FooterWrapper hideLine={props.hideLine}>
             <FooterBox>
                 <FooterNavList>
-                    <Link to="/about-us.aspx">
+                    <Link to="/about-us.aspx" id="about-us_footer">
                         <Text className="footer-link-text">{props.t("About AVS4YOU")}</Text>
                     </Link>
-                    <Link to="/about-us.aspx#contact-us">
+                    <Link to="/about-us.aspx#contact-us" id="about-us-contact_footer">
                         <Text className="footer-link-text">{props.t("Contact us")}</Text>
                     </Link>
-                    <Link to="/privacy.aspx">
+                    <Link to="/privacy.aspx" id="privacy_footer">
                         <Text className="footer-link-text">{props.t("Privacy")}</Text>
                     </Link>
-                    <Link to="/license-agreement.aspx">
+                    <Link to="/license-agreement.aspx" id="license-agreement_footer">
                         <Text className="footer-link-text">{props.t("EULA")}</Text>
                     </Link>
-                    <a href="https://www.avs4you.com/blog/" target="_blank" rel="noreferrer noopener">
+                    <a href="https://www.avs4you.com/blog/" id="blog_footer" target="_blank" rel="noreferrer noopener">
                         <Text className="footer-link-text">{props.t("Blog")}</Text>
                     </a>
                 </FooterNavList>
-                <Link className="footerLogoLink" to="/">
+                <Link className="footerLogoLink" to="/" id="home_footer">
                     <img src={Logo} className="footerLogo" alt="avs4you logo"/>
                 </Link>
                 <FooterSocialsList>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://www.facebook.com/avs4you">
+                        <a className="footerSocial" href="https://www.facebook.com/avs4you" id="facebook_footer">
                             <img src={facebook} className="footerSocialIcon" alt="facebook"/>
                         </a>
                     </FooterSocialsItem>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://www.youtube.com/user/avs4you">
+                        <a className="footerSocial" href="https://www.youtube.com/user/avs4you" id="youtube_footer">
                             <img src={youtube} className="footerSocialIcon" alt="youtube"/>
                         </a>
                     </FooterSocialsItem>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://www.twitter.com/avs4you">
+                        <a className="footerSocial" href="https://www.twitter.com/avs4you" id="twitter_footer">
                             <img src={twitter} className="footerSocialIcon" alt="twitter"/>
                         </a>
                     </FooterSocialsItem>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://pinterest.com/avs4you/">
+                        <a className="footerSocial" href="https://pinterest.com/avs4you/" id="pinterest_footer">
                             <img src={pinterest} className="footerSocialIcon" alt="pinterest"/>
                         </a>
                     </FooterSocialsItem>
                 </FooterSocialsList>
             </FooterBox>
-            <FooterDesc><a href="/">Ascensio System SIA</a> 2023 All rights reserved.</FooterDesc>
+            <FooterDesc><a id="home2_footer" href="/">Ascensio System SIA</a> 2023 All rights reserved.</FooterDesc>
         </FooterWrapper>
     )
 }

@@ -28,7 +28,7 @@ export const UsageSection = ({t}) => {
                         ))
                     }
                 </UsageSectionList>
-                <a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="download-link">
+                <a id="download-now2_avs-video-cutter" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" className="download-link">
                     {t('Download now')}
                 </a>
             </UsageSectionContainer>

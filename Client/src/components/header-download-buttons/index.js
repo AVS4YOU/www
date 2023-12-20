@@ -141,7 +141,7 @@ class HeaderDownloadButtons extends React.PureComponent {
 
     render(){
         return(
-            <StyledHeaderDownloadButtons {...this.props} touchDevice={this.state.touchDevice} className={this.props.className}>
+            <StyledHeaderDownloadButtons {...this.props} touchDevice={this.state.touchDevice} className={this.props.className} id={undefined}>
                 {this.state.touchDevice ? 
 
                     this.state.formSended 
@@ -179,8 +179,9 @@ class HeaderDownloadButtons extends React.PureComponent {
                     :
        
                     <div className="headerButtonsWrapper">
-                        <Button className="mainButton" 
-                            href={this.props.mainHref} 
+                        <Button className="mainButton"
+                            id={this.props.id}
+                            href={this.props.mainHref}
                             color="#fff" 
                             padding={this.props.mainPadding && this.props.mainPadding} 
                             backgroundColor={this.props.backgroundColor && this.props.backgroundColor}
@@ -190,7 +191,7 @@ class HeaderDownloadButtons extends React.PureComponent {
                         </Button>
                         {this.props.secondaryHref && <Button className="secondaryButton" href={this.props.secondaryHref} textTransform="uppercase" background={false}>{this.props.t("learn more")}</Button>}
                         {this.props.scrollTo && 
-                            <Link to={this.props.scrollTo} spy={true} smooth={true} offset={20} duration={500} className="secondaryButton">
+                            <Link id={this.props.secondButtonId} to={this.props.scrollTo} spy={true} smooth={true} offset={20} duration={500} className="secondaryButton">
                                 <Text textTransform="uppercase" color="#ffffff">{this.props.t("learn more")}</Text>
                             </Link>
                         }

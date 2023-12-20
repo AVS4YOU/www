@@ -136,26 +136,27 @@ export const AvsVideoEditorOtherContent = (props) => (
           backgroundColor="orange"
           mainPadding="12px 37px"
           margin="auto"
+          id="download-now1_avs-video-editor"
         />
       </div>
     </PageContentWrapper>
     <StyledArrow>
-      <ScrollLink to="overview" spy={true} smooth={true}  offset={-70} duration={500} className="headerArrow"></ScrollLink>
+      <ScrollLink id="scroll-to-main_avs-video-editor" to="overview" spy={true} smooth={true}  offset={-70} duration={500} className="headerArrow"></ScrollLink>
     </StyledArrow>
   </div>
   </StyledVideo>
   <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
   <div className="scrollLinksWrapper">
-    <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
+    <ScrollLink id="scroll-to-overview_avs-video-editor" to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
       <Text color="#666666" align="center">{props.t("Overview")}</Text>
     </ScrollLink>
-    <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
+    <ScrollLink id="scroll-to-reviews_avs-video-editor" to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
       <Text color="#666666" align="center">{props.t("Reviews")}</Text>
     </ScrollLink>
-    <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
+    <ScrollLink id="scroll-to-screenshots-carousel_avs-video-editor" to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
       <Text color="#666666" align="center">{props.t("Screentour")}</Text>
     </ScrollLink>
-    <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
+    <ScrollLink id="scroll-to-download-button_avs-video-editor" to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
       <Text color="#666666" align="center">{props.t("Download")}</Text>
     </ScrollLink>
   </div>
@@ -172,7 +173,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       <Text className="ListItem">{props.t("Open, modify and save video using popular codeсs H 264, H 265  reading only , MPEG-4, etc")}</Text>
       <Text className="ListItem">{props.t("Speed up HD video editing due to the integrated video cache technology and hardware acceleration for video decoding by means of video cards GPU")}</Text>
       <Text className="ListItem">{props.t("Use new automatic presets for powerful computers")}</Text>
-      <a target="_blank" rel="noreferrer noopener" href={props.t("avs-video-editor-onlinehelp-avs4you")}>
+      <a id="supported-formats_avs-video-editor" target="_blank" rel="noreferrer noopener" href={props.t("avs-video-editor-onlinehelp-avs4you")}>
         <Text className="ListItem LinkItem" color="#1E72D2" fontWeight={500} fontSize={20}>{props.t("See a full list of all supported formats")}</Text>
       </a>
     </ContentRowItem>
@@ -224,8 +225,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       <Text className="ListItem">{props.t("Publish your creative work in social networks")}</Text>
     </ContentRowItem>
   </PageContentWrapper>
-  <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
-  
+  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
   <div className="block-awards">
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
@@ -254,7 +254,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Do you have a free video editor")}>
         <div className="collapseContent">
-            <Text className="hiddenText">{props.t("AVS Video Editor allows users to edit video for free but a logo is inserted in the newly created files")} <a href={props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a> {props.t("japanTextVideoeditor")}</Text>
+            <Text className="hiddenText">{props.t("AVS Video Editor allows users to edit video for free but a logo is inserted in the newly created files")} <a id="register_avs-video-editor" href={props.t("hrefRegister")}>https://www.avs4you.com/register.aspx</a> {props.t("japanTextVideoeditor")}</Text>
         </div>
       </PanelCollapse>
       <PanelCollapse className="panelCollapse" panelName={props.t("Can I edit video on all of my devices")}>
@@ -313,9 +313,9 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
       </div>
     </div>
-    <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
+    <DownloadScrollButton id="download-now3_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
     <div className="licenseText">
-      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
+      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-video-editor" to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
     </div>
   </PageContentWrapper>
   <div className="technicalSpecificationWrapper" style={{backgroundColor:"#F9F9F9"}}>
@@ -425,7 +425,8 @@ export const AvsVideoEditorOtherContent = (props) => (
       }
         
     <Button className="trustButton" style={{margin: "auto", display: "table"}}
-            href="https://www.trustpilot.com/review/www.avs4you.com" 
+            href="https://www.trustpilot.com/review/www.avs4you.com"
+            id="review_avs-video-editor"
             color="#fff">
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>

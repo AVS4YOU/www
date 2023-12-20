@@ -123,6 +123,7 @@ class ContentSelector extends React.Component {
             <StyledContentSelector>
                 <div className={"content-wrapper " + this.props.className }>
                 <CategorySelectorComponent
+                    buttonIds={this.props.buttonIds ?? []}
                     buttonNames={this.props.buttonNames}
                     currentContentIndex={this.state.currentContentIndex}
                     onClick={this.onClickSelectorButton}

@@ -79,6 +79,7 @@ render(){
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
+                  id="download-now1_avs-free-audio-converter"
                 />
               </div> 
             </PageContentWrapper>
@@ -87,16 +88,16 @@ render(){
           </div>
           <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
           <div className="scrollLinksWrapper">
-            <ScrollLink to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
+            <ScrollLink id="scroll-to-overview_avs-free-audio-converter" to="overview" spy={true} smooth={true} offset={-70} duration={500} className="scrollToButton overview">
               <Text color="#666666" align="center">{this.props.t("Overview")}</Text>
             </ScrollLink>
-            <ScrollLink to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
+            <ScrollLink id="scroll-to-reviews_avs-free-audio-converter" to="reviews" spy={true} smooth={true} offset={0} duration={600} className="scrollToButton reviews">
               <Text color="#666666" align="center">{this.props.t("Reviews")}</Text>
             </ScrollLink>
-            <ScrollLink to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
+            <ScrollLink id="scroll-to-screenshots-carousel_avs-free-audio-converter" to="screenshotsCarousel" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton screentour">
               <Text color="#666666" align="center">{this.props.t("Screentour")}</Text>
             </ScrollLink>
-            <ScrollLink to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download"> 
+            <ScrollLink id="scroll-to-download-button_avs-free-audio-converter" to="downloadButton" spy={true} smooth={true} offset={0} duration={700} className="scrollToButton download">
               <Text color="#666666" align="center">{this.props.t("Download")}</Text>
             </ScrollLink>
           </div>
@@ -157,7 +158,8 @@ render(){
               }
             />
             <Button className="trustButton" style={{margin: "auto", display: "table"}}
-                    href="https://www.trustpilot.com/review/www.avs4you.com" 
+                    href="https://www.trustpilot.com/review/www.avs4you.com"
+                    id="review_avs-free-audio-converter"
                     color="#fff">
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
@@ -186,9 +188,9 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+            <DownloadScrollButton id="download-now2_avs-free-audio-converter" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
             <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
+              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-free-audio-converter" to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
             </div>
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">

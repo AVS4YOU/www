@@ -184,10 +184,10 @@ class MenuItem extends React.PureComponent  {
 
     render(){
         return(
-            <StyledMenuItem onClick={this.toggleSubmenu} {...this.props}> 
+            <StyledMenuItem onClick={this.toggleSubmenu} {...this.props} id={undefined}>
             {this.props.path 
                 ?
-                    <Link className="menuItemLink" to={this.props.path} langChange={this.props.langChange}>
+                    <Link className="menuItemLink" to={this.props.path} langChange={this.props.langChange} id={this.props.id}>
                         <Text className={this.props.isDropdown ? "arrowStyle textStyles" : "textStyles"} 
                             arrow={this.props.isDropdown ? true : false}
                             arrowDeg={this.props.isDropdown && 225}

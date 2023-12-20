@@ -762,12 +762,13 @@ class FormEducation extends React.Component {
                             padding="13px 24px"
                             fontSize={14}
                             textTransform="uppercase"
+                            id={this.props.formButtonId}
                         >
                             {this.props.formButton}
                         </Button>
                         <div className="agreeTermsWrapper">
                             <Text className="smallText">
-                        {this.props.formAgreeTermsWrapper} <Link to="/privacy.aspx" target="_blank">{this.props.formAgreeLink}</Link>.
+                        {this.props.formAgreeTermsWrapper} <Link id={this.props.id} to="/privacy.aspx" target="_blank">{this.props.formAgreeLink}</Link>.
                             </Text>
                         </div>
                     </div>

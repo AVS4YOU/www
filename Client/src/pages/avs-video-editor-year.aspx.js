@@ -208,6 +208,7 @@ render(){
                     fontSize={18}
                     padding="16.5px 92.5px"
                     textTransform="uppercase"
+                    id="buy_avs-video-editor-year"
                     href={this.props.t("defaultHrefOneYear")}>
                       {this.props.t("Buy")}</Button>
                 </div>
@@ -217,6 +218,7 @@ render(){
                     fontSize={18}
                     padding="15px 28.5px"
                     textTransform="uppercase"
+                    id="download-now1_avs-video-editor-year"
                     href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                      {this.props.t("Download now")}</Button>
                 </div>
@@ -395,6 +397,7 @@ render(){
                     padding="16px 43px"
                     style={{backgroundColor:"#FC4B15"}}
                     textTransform="uppercase"
+                    id="download-now2_avs-video-editor-year"
                     href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
                       {this.props.t("Download now")}</Button>
                     </div>

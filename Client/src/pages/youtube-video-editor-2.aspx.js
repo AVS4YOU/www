@@ -50,16 +50,16 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     
 <header className="Youtubeheader">
     <div className="lfb_header">
-    <Link className="lfb_logo" to="/" target="_blank" rel="noreferrer noopener"></Link>
+    <Link id="home1_youtube-video-editor-2" className="lfb_logo" to="/" target="_blank" rel="noreferrer noopener"></Link>
         <ul className="topmainmenu max-width-1">
-            <li className="topmenuoption"><Link to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
+            <li className="topmenuoption"><Link id="home2_youtube-video-editor-2" to="/" target="_blank" rel="noreferrer noopener">Main</Link></li>
             <ScrollLink to="to_easy_steps" spy={true} smooth={true}>
             <li className="topmenuoption to_easy_steps">Steps</li>
             </ScrollLink>
             <ScrollLink to="to_testimonials" spy={true} smooth={true}>
             <li className="topmenuoption to_testimonials">Testimonials</li>
             </ScrollLink>
-            <li className="topmenuoption with_link"><a className="lfb_download_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
+            <li className="topmenuoption with_link"><a id="download1_youtube-video-editor-2" className="lfb_download_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
             <li className="aclose">×</li>
         </ul>
     </div>
@@ -74,7 +74,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     <div className="lfb_ht_subheader">
       Easily create professional-looking clips or vlogs
     </div>
-    <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+    <div className="lfb_txt_div"><a id="download2_youtube-video-editor-2" className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
   </div>
   <div className="lfb_head_img"><ImageGQL imageName="main_picture-youtube.png" alt="Professional-looking clips or vlogs" /></div>
 </div>
@@ -132,7 +132,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
         <div className="lfb_s_text">
             <div className="lfb_st_h">Launch your project to the orbit</div>
             <div className="lfb_st_sh">Save your project choosing one of specially designed templates depending on the desired quality of the output video.</div>
-            <div className="lfb_st_btn"><a href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+            <div className="lfb_st_btn"><a id="download3_youtube-video-editor-2" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
         </div>
     </div>
 </div>

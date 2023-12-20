@@ -32,8 +32,8 @@ const StyledCalendarItem = styled.div`
 
   .calendarImage {
     background-color: transparent;
-    width: 168px;
-    height: 168px;
+    width: 100%;
+    height: 169px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transform-style: preserve-3d;
@@ -47,10 +47,10 @@ const StyledCalendarItem = styled.div`
     z-index: 2;
     background-image: url(${spriteImage});
     background-repeat: no-repeat;
-    background-size: 4407px auto;
+    background-size: 4669px 172px;
     background-position-x: ${(props) =>
       props.imageCoordinate ? props.imageCoordinate : 0}px;
-    background-position-y: 0px;
+    background-position-y: -1.5px;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
   }
@@ -314,11 +314,11 @@ class CalendarItem extends React.Component {
   };
 
   
-  renderTextWithLink = (textBefore, linkText, linkHref, textAfter) => {
+  renderTextWithLink = (textBefore, linkText, linkHref, textAfter, linkId) => {
     return(
       <>
         <div className="subText">
-        <Text fontSize="11">{textBefore} <a href={linkHref}>{linkText}</a> {textAfter}</Text>
+        <Text fontSize="11">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )
@@ -335,25 +335,37 @@ class CalendarItem extends React.Component {
     )
   }
 
-  renderButton = (textButton, hrefButton) => {
+  renderButton = (textButton, hrefButton, idButton) => {
     return(
       <>
         <button className="shopButton">
-        <a href={hrefButton}>{textButton}</a>
+        <a id={idButton} href={hrefButton}>{textButton}</a>
         </button>
       </>
     )
   }
 
-  renderSocialLinks = (linkFacebook, linkTwitter) => {
+  renderButtonSave = (textButton, hrefButtonSave, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonSave} target="_blank" download="avs_postcard_2024.jpg">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
+  renderSocialLinks = (linkFacebook, linkTwitter, {linkFacebookId, linkTwitterId}) => {
     return (
       <div className="socialLinks">
         <TwitterShareButton
+            id={linkTwitterId}
           url={linkTwitter}
         >
           <TwitterIcon size={50} round />
         </TwitterShareButton>
         <FacebookShareButton
+            id={linkFacebookId}
         url={linkFacebook}
         >
           <FacebookIcon size={50} round />
@@ -363,8 +375,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton  } = this.props;
-    const { popupOpened, isExpired, futureCoupon } = this.state;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave } = this.props;    const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
       <div className="CalendarItem">
@@ -391,11 +402,12 @@ class CalendarItem extends React.Component {
               {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
               <Text className="popupDiscount">{popupDiscount}</Text>
               <Text className="popupDiscount">{popupDiscountTwo}</Text>
-              {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook)}
+              {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
               <Text className="popupSub">{popupSub}</Text>
-              {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter)}
-              {textButton && hrefButton && this.renderButton(textButton, hrefButton)}
+              {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
+              {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
+              {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>
