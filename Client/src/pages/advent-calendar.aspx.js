@@ -10,6 +10,7 @@ import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CancelModal from '../images/advent-calendar/cancel.svg';
 import PostcardLink from '../images/advent-calendar/avs_postcard.jpg';
+import Postcard from '../images/advent-calendar/avs_2024.png';
 
 import {
   TwitterShareButton,
@@ -608,7 +609,7 @@ constructor(props) {
               validDate="The offer is valid till December 22, 2023"
               popupTitle="Time to decorate your computer!"
               popupDiscount="Get a festive screensaver for your pc."
-              hrefButton="0"
+              hrefButtonSave={Postcard}
               textButton="Download Now"
               idButton="twenty-first-text_advent-calendar"
             />
