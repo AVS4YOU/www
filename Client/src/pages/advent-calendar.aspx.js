@@ -608,7 +608,8 @@ constructor(props) {
               date={new Date(2023, 11, 21)}
               validDate="The offer is valid till December 22, 2023"
               popupTitle="Time to decorate your computer!"
-              popupDiscount="Get a festive screensaver for your pc."
+              popupDiscount="Get AVS4YOU festive wallpaper"
+              popupDiscountEnter="for your PC."
               hrefButtonSave={Postcard}
               textButton="Download Now"
               idButton="twenty-first-text_advent-calendar"

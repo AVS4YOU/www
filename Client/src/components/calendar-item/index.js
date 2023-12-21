@@ -375,7 +375,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave } = this.props;    const { popupOpened, isExpired, futureCoupon } = this.state;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave } = this.props;    const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
       <div className="CalendarItem">
@@ -400,7 +400,7 @@ class CalendarItem extends React.Component {
               <Text>{popupHeader}</Text>
               <Text className="popupTitle">{popupTitle}</Text>
               {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
-              <Text className="popupDiscount">{popupDiscount}</Text>
+              <Text className="popupDiscount">{popupDiscount}<p style={{marginTop: "0", height: "0"}} >{popupDiscountEnter}</p></Text>
               <Text className="popupDiscount">{popupDiscountTwo}</Text>
               {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
