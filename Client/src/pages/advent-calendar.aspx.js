@@ -11,6 +11,7 @@ import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CancelModal from '../images/advent-calendar/cancel.svg';
 import PostcardLink from '../images/advent-calendar/avs_postcard.jpg';
 import Postcard from '../images/advent-calendar/avs_2024.png';
+import AvsPdf from '../images/advent-calendar/calendar_2024.pdf';
 
 import {
   TwitterShareButton,
@@ -633,7 +634,7 @@ constructor(props) {
               date={new Date(2023, 11, 23)}
               validDate="The offer is valid till December 24, 2023"
               popupTitle="Enjoy our Christmas Calendar crafted specially for you!"
-              hrefButton="0"
+              hrefButtonPdf={AvsPdf}
               textButton="Download Now"
               idButton="twenty-third-text_advent-calendar"
             />
