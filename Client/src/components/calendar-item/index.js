@@ -212,10 +212,7 @@ const StyledCalendarItem = styled.div`
     background-color: #00786b;
     text-decoration: none;
     border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     text-transform: uppercase;
     display: block;
     margin: auto;
@@ -224,8 +221,7 @@ const StyledCalendarItem = styled.div`
     a{
       color: #fff;
       text-decoration: none;
-      padding: 2em;     
-      margin: -2em; 
+      padding: 30px;  
     }
   }
 }
@@ -355,6 +351,16 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButtonPdf = (textButton, hrefButtonPdf, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonPdf} download="avs_2024.pdf" target="_blank" rel="noopener">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
   renderSocialLinks = (linkFacebook, linkTwitter, {linkFacebookId, linkTwitterId}) => {
     return (
       <div className="socialLinks">
@@ -375,7 +381,8 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave } = this.props;    const { popupOpened, isExpired, futureCoupon } = this.state;
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf } = this.props;    
+    const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
       <div className="CalendarItem">
@@ -408,6 +415,7 @@ class CalendarItem extends React.Component {
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
               {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
               {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
+              {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>
