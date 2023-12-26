@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.59 (18.12.2023)
+### New
+* Added landing page `avs-video-cutter.aspx`
+* Added landing page `avs-video-maker-imovie.aspx`
+### Fixes
+* Added id attribute for links and buttons
+
 ## 1.0.58 (29.11.2023)
 ### New
 * Added banner 'Advent Calendar'
