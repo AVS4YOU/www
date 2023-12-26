@@ -43,7 +43,7 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: block;
+    display: none;
     width: 100%;
     height: 60px;
     background-color: #0a0f11;
