@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.60 (26.12.2023)
+### New
+* Deleted banner 'Advent Calendar'
+
 ## 1.0.59 (18.12.2023)
 ### New
 * Added landing page `avs-video-cutter.aspx`
