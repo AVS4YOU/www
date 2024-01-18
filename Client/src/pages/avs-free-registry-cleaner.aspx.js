@@ -172,14 +172,14 @@ class avsFreeRegistryCleaner extends React.PureComponent {
                             <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                   align="right">{this.props.t("File Size")}</Text>
                             <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                  align="left">8.23 MB</Text>
+                                  align="left">9.23 MB</Text>
                         </div>
 
                         <div className="downloadInfoRow">
                             <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                   align="right">{this.props.t("Current Version")}</Text>
                             <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                  align="left">4.1.7.293</Text>
+                                  align="left">4.2.1.294</Text>
                         </div>
 
                         <div className="downloadInfoRow">
@@ -281,7 +281,7 @@ class avsFreeRegistryCleaner extends React.PureComponent {
                                     <Text className="pcComponents" as="span" color="#000000" fontSize={16}
                                           fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                     <Text as="span" color="#000000" fontSize={16} fontWeight={500}
-                                          align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
+                                          align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
                                 </div>
                                 <div className="systemWrapper">
                                     <Text className="pcComponents" as="span" color="#000000" fontSize={16}
