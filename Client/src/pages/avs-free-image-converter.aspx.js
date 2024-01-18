@@ -192,7 +192,7 @@ class avsFreeImageConverter extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 5.6</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 6.0</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
                         imageNamesPopup={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
@@ -205,14 +205,14 @@ class avsFreeImageConverter extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("File Size")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">35.23 MB</Text>
+                                      align="left">37.94 MB</Text>
                             </div>
 
                             <div className="downloadInfoRow">
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Current Version")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">5.6.1.324</Text>
+                                      align="left">6.0.1.332</Text>
                             </div>
 
                             <div className="downloadInfoRow">
