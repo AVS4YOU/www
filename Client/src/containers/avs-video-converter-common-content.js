@@ -154,7 +154,7 @@ export const AvsVideoConverterCommonContent = (props) => (
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>
   </div>
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 12.6</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 13.0</Text>
 
 
   <ScreenshotsCarousel 

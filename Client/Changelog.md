@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.61 (18.01.2024)
+### New
+* Changed products info (version, date, file size) for release 
+
 ## 1.0.60 (26.12.2023)
 ### New
 * Deleted banner 'Advent Calendar'
