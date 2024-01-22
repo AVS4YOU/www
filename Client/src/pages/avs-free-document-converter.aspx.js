@@ -233,7 +233,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
                                               fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                         <Text as="span" color="#000000" fontSize={16} fontWeight={500}
-                                              align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
+                                              align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                                     </div>
                                     <div className="systemWrapper">
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
@@ -300,7 +300,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
                                               fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                         <Text as="span" color="#000000" fontSize={16} fontWeight={500}
-                                              align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher")}</Text>
+                                              align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                                     </div>
                                     <div className="systemWrapper">
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}

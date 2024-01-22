@@ -143,6 +143,8 @@
 	"MINIMUM SYSTEM REQUIREMENTS": "최소 시스템 요구 사항",
 	"Processor": "프로세서:",
 	"AMD / Intel Core 2 Duo compatible at 3 GHz or higher": "듀얼 코어(Intel Core 2 Duo 또는 AMD 동급)",
+	"AMD Intel Core 2 Duo compatible at 3 GHz or higher":"듀얼 코어(Intel Core 2 Duo 또는 AMD 동급)",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"듀얼 코어(Intel Core 2 Duo 또는 AMD 동급)",
 	"RAM": "RAM:",
 	"2 GB or higher": "2 GB 이상",
 	"Sound": "사운드:",

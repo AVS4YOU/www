@@ -136,6 +136,8 @@
   "MINIMUM SYSTEM REQUIREMENTS": "МИНИМАЛЬНЫЕ СИСТЕМНЫЕ ТРЕБОВАНИЯ",
   "Processor": "Процессор:",
   "AMD / Intel Core 2 Duo compatible at 3 GHz or higher": "Dual core (Intel Core 2 Duo или эквивалентный процессор AMD)",
+  "AMD Intel Core 2 Duo compatible at 3 GHz or higher":"Dual core (Intel Core 2 Duo или эквивалентный процессор AMD)",
+  "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"Dual core (Intel Core 2 Duo или эквивалентный процессор AMD)",
   "RAM": "ОЗУ:",
   "2 GB or higher": "2 ГБ или выше",
   "Sound": "Звук:",

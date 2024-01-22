@@ -141,6 +141,8 @@
 	"MINIMUM SYSTEM REQUIREMENTS": "最低系统要求",
 	"Processor": "处理器:",
 	"AMD / Intel Core 2 Duo compatible at 3 GHz or higher": "AMD / 英特尔酷睿 2 双核处理器，兼容3 GHz 或更高",
+	"AMD Intel Core 2 Duo compatible at 3 GHz or higher":"AMD / 英特尔酷睿 2 双核处理器，兼容3 GHz 或更高",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"AMD / 英特尔酷睿 2 双核处理器，兼容2.4 GHz 或更高",
 	"RAM": "内存:",
 	"2 GB or higher": "2 GB 或更高",
 	"Sound": "音效:",
