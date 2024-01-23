@@ -204,7 +204,8 @@
     "Windows 10/Windows 8x/Windows 7 compatible video card" : "Windows 11/Windows 10/Windows 8.x/Windows 7 互換のビデオカード",
     "Learn more" : "詳細情報",
     "Quad core (Intel Core i5 series or AMD equivalent)" : "クアッドコア(Intel Core i5 モデルかAMDの相当)",
-    "AMD Intel Core 2 Quad compatible at 24 GHz or higher" : "デュアルコア(Intel Core i3 モデルかAMDの相当)",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher" : "AMD / Intel Core 2 Quad 互換プロセッサ 2.4 GHz 以上",
+    "AMD Intel Core 2 Quad compatible at 3 GHz or higher":"AMD / Intel Core 2 Quad 互換プロセッサ 3 GHz 以上",
 
 
 
