@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.62 (05.02.2024)
+### New
+* Changed products info (version, date, file size)
+
 ## 1.0.61 (18.01.2024)
 ### New
 * Changed products info (version, date, file size) for release 

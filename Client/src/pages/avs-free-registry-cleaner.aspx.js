@@ -172,14 +172,14 @@ class avsFreeRegistryCleaner extends React.PureComponent {
                             <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                   align="right">{this.props.t("File Size")}</Text>
                             <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                  align="left">9.23 MB</Text>
+                                  align="left">9.22 MB</Text>
                         </div>
 
                         <div className="downloadInfoRow">
                             <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                   align="right">{this.props.t("Current Version")}</Text>
                             <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                  align="left">4.2.1.294</Text>
+                                  align="left">4.2.2.295</Text>
                         </div>
 
                         <div className="downloadInfoRow">

@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>49872536</File_Size_Bytes>
-      <File_Size_K>48703</File_Size_K>
-      <File_Size_MB>47.56</File_Size_MB>
+      <File_Size_Bytes>51036320</File_Size_Bytes>
+      <File_Size_K>49840</File_Size_K>
+      <File_Size_MB>48.67</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,17 +92,17 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Audio Editor</Program_Name>
-    <Program_Version>10.4.2.571</Program_Version>
-    <Program_Release_Month>07</Program_Release_Month>
-    <Program_Release_Day>27</Program_Release_Day>
-    <Program_Release_Year>2023</Program_Release_Year>
+    <Program_Version>10.4.3.574</Program_Version>
+    <Program_Release_Month>01</Program_Release_Month>
+    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Type>Shareware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
-    <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Importieren Sie Audio aus MP4/MOV/M4V-Videodateien mit Opus-Audiocodec. Korrekte Erkennung von geschützten MP4/MOV/M4V Video- und M4A/M4B Audiodateien. Korrekte Erstellung von M4A/M4B-Metatags. Korrekte Unterstützung von gedrehten MP4/MOV/M4V/3GP-Videos (90, 180, 270 Grad).</Program_Change_Info>
+    <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
+    <Program_Change_Info>Verbesserte Intel Media-Dekodierungsalgorithmen. Verbesserte Unterstützung von MP4/MOV/M4V-Videodateien und M4A/M4B/MP3-Audiodateien. Verbesserte Erstellung von M4A-Audiodateien und M4B-Hörbüchern. Fehlerkorrekturen und Verbesserungen der Benutzeroberfläche.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte.</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Music Composers</Program_Category_Class>
     <Expire_Info>
