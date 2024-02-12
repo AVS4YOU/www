@@ -20,21 +20,9 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSbg from "../images/black-friday/bg-banner.png";
-import PlAVSLeftBg from "../images/pl/left-banner-bg.png";
-import PlAVSRightBg from "../images/pl/right-banner-bg.png";
-import PlAVSLeft from "../images/pl/left-banner.png";
-import PlAVSRight from "../images/pl/right-banner.png";
-import PlAVS1 from "../images/pl/1.png";
-import PlAVS2 from "../images/pl/2.png";
-import PlAVS3 from "../images/pl/3.png";
-import PlAVS23 from "../images/pl/23.png";
-import PlAVS24 from "../images/pl/24.png";
-import PlAVS25 from "../images/pl/25.png";
-import PlAVSgif from "../images/pl/99.png";
-import PlAVSDiscount from "../images/pl/discount.png";
-import PlAVSDiscountEu from "../images/pl/eu_discount.png";
-import PlAVSDiscountJa from "../images/pl/ja_discount.png";
+import PlAVSbg from "../images/valentine/pl-bg.png";
+import PlAVSbgSmall from "../images/valentine/pl-bg-small.png";
+import elem from "../images/valentine/pl-element.png"
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -43,273 +31,78 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    //display: none;
     width: 100%;
-    height: 60px;
-    background-color: #0a0f11;
-    //background-image: url(${PlAVSbg});
-    background: radial-gradient(67.97% 40476.56% at 51.51% 32.03%, #0B1FD2 0%, #0B1D4C 100%);
+    height: 56px;
+    background-image: url(${PlAVSbg});
     cursor: pointer;
     background-position-x: 50%;
-
-    a {
-      display: inline-block;
-      width: 100%;
-      z-index: 9;
-      text-decoration: none;
-      max-width: 730px;
-      margin: auto;
-    }
+      font-family: Inter, sans-serif;
   }
-
-  .PLnewAvsText {
-    display: inline-block;
-    gap: 5px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #ffffff;
-    width: auto;
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .PLnewAvsTextAccent {
-    font-weight: 700;
-    position: relative;
-    top: -2px;
-  }
-
-  .PlAvsDiscount {
-    background-image: url(${PlAVSDiscount});
-    font-family: 'Open Sans';
-    width: 348px;
-    height: 70px;
-    word-break: keep-all;
-    font-weight: 600;
-    color: #FFFFFF;
-    //position: absolute;
-    left: -20px;
-    line-height: 52px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-position: 0px;
-    background-size: 348px 88px;
-    position: relative;
-    top: -2px;
-    z-index: 1;
-  }
-
-  .es, .fr, .it, .ru {
-    background-image: url(${PlAVSDiscountEu});
-    width: 380px;
-    background-size: 380px 88px;
-  }
-
-  .jp {
-    background-image: url(${PlAVSDiscountJa});
-    width: 460px;
-    background-size: 460px 88px;
-  }
-
-  .bgPlAvs {
-    width: 100%;
-    position: relative;
-    height: 60px;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .giftsOne {
-    background-image: url(${PlAVSLeft});
-    width: 304px;
-    height: 64px;
-    background-position-x: 100%;
-  }
-
-  .giftsTwo {
-    background-image: url(${PlAVSRight});
-    width: 304px;
-    height: 64px;
-    z-index: 1;
-  }
-
-  .PLnewAvsLeft {
-    top: 0;
-    left: 0px;
-    width: 100%;
-    max-width: 700px;
-    height: 64px;
-    background-image:url(${PlAVSLeftBg});
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    pointer-events: none;
-    z-index: 0;
-    background-position-x: 100%;
-  }
-
-  .PLnewAvsRight {
-    top: 0;
-    height: 64px;
-    width: 688px;
-    background-repeat: no-repeat;
-    background-image: url(${PlAVSRightBg});
-    background-position-y: 50%;
-    pointer-events: none;
-    right: 0;
-    z-index: 0;
-    background-position-x: 0%;
-  }
-
-  .PlAvsSpin {
-    //position: absolute;
-    //width: 183px;
-    height: 55px;
-    display: inline-block;
-    top: 3px;
-  }
-
-  .PlAvsgif {
-    background-image: url(${PlAVSgif});
-    background-size: 82px 40px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 82px;
-    height: 40px;
-    left: 0;
-    margin-top: -3px;
-    min-width: 80px;
-  }
-
-  @media (max-width: 1640px) {
-    .giftsOne, .giftsTwo {
-      display: none;
+    
+    .PL-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        color: #FFFFFF;
+    }
+    
+    .PL-desc1 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .PL-desc2 {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .PL-desc3 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        background-image: url("${elem}");
+        background-size: contain;
+        padding: 3px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .PLnewAvs {
+            background-image: url("${PlAVSbgSmall}");
+            background-size: cover;
+        }
+        .PL-box {
+            flex-wrap: wrap;
+            row-gap: 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        .grow {
+            width: 100%;
+            flex-grow: 1;
+        }
     }
 
-    .one {
-      background-image: url(${PlAVS1});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    @media screen and (max-width: 500px) {
+        .PLnewAvs {
+            display: none;
+        }
     }
-
-    .two {
-      background-image: url(${PlAVS2});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
-    }
-
-    .three {
-      background-image: url(${PlAVS3});
-      width: 90px;
-      height: 64px;
-      background-position-x: 50%;
-    }
-
-    .four {
-      background-image: url(${PlAVS23});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
-    }
-
-    .five {
-      background-image: url(${PlAVS24});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
-    }
-
-    .six {
-      background-image: url(${PlAVS25});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
-    }
-  }
-
-  @media (max-width: 1370px) {
-    .four, .five, .six {
-      display: none;
-    }
-  }
-
-  @media (max-width: 1300px) {
-    .one, .two, .three, .four, .five, .six {
-      display: none;
-    }
-
-    .PLnewAvsText {
-      padding: 5px 20px;
-    }
-
-    .PLnewAvsText {
-      font-size: 16px;
-      top: 0;
-    }
-
-    .PLnewAvsTextAccent {
-      top: -3px;
-      text-align: left;
-    }
-
-    .en, .de, .ko, .pl, .da, .nl, .pt {
-      width: 330px;
-    }
-  }
-
-  @media (max-width: 763px) {
-    .PLnewAvs {
-      display: none;
-      }
-    .PLnewAvsText {
-      font-size: 12px;
-      line-height: 14px;
-      padding: 3px 8px;
-    }
-
-    .PlAvsDiscount {
-      font-size: 12px;
-      width: 143px;
-      height: 20px;
-      line-height: 20px;
-      left: 20px;
-      width: 330px;
-    }
-
-    .PlAvsgif {
-      width: 150px;
-      height: 45px;
-      background-size: 150px 45px;
-      display: none;
-    }
-
-    .PlAvsSpin {
-      position: relative;
-      width: 183px;
-      top: -8px;
-      height: 20px;
-    }
-
-    .PLnewAvsLeft, .PLnewAvsRight {
-      max-width: 55px;
-    }
-  }
-  @media (max-width: 450px) {
-    .PLnewAvsText {
-      line-height: 18px;
-    }
-  }
 `;
 
 const StyledLayout = styled.div`
@@ -611,20 +404,16 @@ class Layout extends React.PureComponent {
                
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <Link to="/advent-calendar.aspx">
+                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className="PLnewAvs">
-                        <div className="bgPlAvs">
-                        <div className="PLnewAvsLeft"></div>
-                          <span className="PLnewAvsText"><div className='giftsOne'></div><div className='one'></div><div className='two'></div><div className='three'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
-                            {this.props.t("discountCoupon")}<div className="PlAvsgif"></div><span className="PLnewAvsTextAccent">{this.props.t("textBanner")}</span>
-                            <div className="PlAvsSpin">
-                              <span className={`PlAvsDiscount ${this.props.pageContext.locale}`}>{this.props.t("nameCoupon")}</span>
-                            </div><div className='giftsTwo'></div><div className='four'></div><div className='five'></div><div className='six'></div>
-                          </span>
-                        <div className="PLnewAvsRight"></div>
+                        <div className="PL-box">
+                            <p className="PL-desc1 grow">{this.props.t("Be AVS4YOU Valentine!")}</p>
+                            <p className="PL-desc2">{this.props.t("Get 25 % Off on AVS4YOU Suite")}</p>
+                            <p className="PL-desc3">{this.props.t("ALove24")}</p>
+                            <p className="PL-desc1">{this.props.t("сoupon!")}</p>
                         </div>
                     </div>
-                  </Link>
+                  </a>
                 </StyledPL> : <div></div>}
 
                 
