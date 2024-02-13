@@ -156,6 +156,7 @@ render(){
         title={this.props.t("AVS Video Editor - easy video editing software for Windows.")}
         metaDescription=""
         metaKeywords=""
+        headerIsDisabled
       >    
         <ProductPagesWrapper> 
         <MainPageWrapper> 
