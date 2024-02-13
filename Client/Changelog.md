@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.63 (13.02.2024)
+### New
+* Added banner 'Valentine's Day'
+
 ## 1.0.62 (05.02.2024)
 ### New
 * Changed products info (version, date, file size)
