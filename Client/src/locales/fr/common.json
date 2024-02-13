@@ -1765,9 +1765,11 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "Be AVS4YOU Valentine!": "Be AVS4YOU Valentine!",
-    "Get 25 % Off on AVS4YOU Suite": "25% de réduction sur la Suite AVS4YOU",
-    "сoupon!": "сoupon!",
+    "beginningBanner": "pour nos Valentins et Valentines !",
+    "discountCoupon": "25% de réduction sur la Suite AVS4YOU",
+    "textBanner": "avec le coupon",
+    "nameCoupon": "ALove24",
+    "endingBanner": "",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=fr&ORDERSTYLE=nLWw45a5hLk=&COUPON=ALove24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",

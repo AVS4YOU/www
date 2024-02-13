@@ -41,14 +41,15 @@ const StyledPL = styled.div`
   }
     
     .PL-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 7px;
-        width: 100%;
-        margin: 0 auto;
         height: 100%;
         color: #FFFFFF;
+        
+        display: grid;
+        grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        width: max-content;
+        gap: 7px;
+        margin: 0 auto;
+        align-items: center;
     }
     
     .PL-desc1 {
@@ -77,24 +78,177 @@ const StyledPL = styled.div`
         text-align: center;
         margin: 0;
         background-image: url("${elem}");
-        background-size: contain;
+        background-size: 100%;
         padding: 3px 8px;
         background-repeat: no-repeat;
+        width: max-content;
+    }
+
+    .fr {
+        background-position-y: -9px;
+        background-size: auto 68px;
+        .PL-box {
+            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
+
+            .endingBanner {
+                display: none;
+            } 
+        }  
+        
+        @media screen and (max-width: 800px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
+            }
+        }
     }
     
-    @media screen and (max-width: 700px) {
-        .PLnewAvs {
-            background-image: url("${PlAVSbgSmall}");
-            background-size: cover;
-        }
+    .de {
+        background-position-y: -14px;
+        background-size: auto 78px;
         .PL-box {
-            flex-wrap: wrap;
-            row-gap: 0;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon";
+
+            .endingBanner {
+                display: none;
+            }
         }
-        .grow {
-            width: 100%;
-            flex-grow: 1;
+
+        @media screen and (max-width: 900px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "beginningBanner beginningBanner beginningBanner" "discountCoupon textBanner nameCoupon";
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            height: 65px;
+            .PL-box {
+                grid-template-areas: "beginningBanner beginningBanner" "discountCoupon discountCoupon" "textBanner nameCoupon";
+            }
+        }
+    }
+
+    .es {
+        background-position-y: -7px;
+        background-size: auto 64px;
+        .PL-box {
+            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
+
+            .endingBanner {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
+            }
+        }
+    }
+
+    .it {
+        background-position-y: -7px;
+        background-size: auto 64px;
+        .PL-box {
+            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
+
+            .endingBanner {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
+            }
+        }
+    }
+
+    .jp {
+        background-position-y: -14px;
+        background-size: auto 74px;
+        .PL-box {
+            grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon";
+
+            .endingBanner {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "beginningBanner beginningBanner beginningBanner" "nameCoupon textBanner discountCoupon";
+            }
+        }
+    }
+
+    .ru {
+        background-position-y: -11px;
+        background-size: auto 72px;
+        .PL-box {
+            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
+
+            .endingBanner {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            background-image: url("${PlAVSbgSmall}");
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+
+            .PL-box {
+                row-gap: 0;
+                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
+            }
+        }
+    }
+    
+    .beginningBanner {
+        grid-area: beginningBanner;
+    }
+    
+    .discountCoupon {
+        grid-area: discountCoupon;
+    }
+    
+    .textBanner {
+        grid-area: textBanner;
+    }
+    
+    .nameCoupon {
+        grid-area: nameCoupon;
+    }
+    
+    .endingBanner {
+        grid-area: endingBanner;
+    }
+    
+    
+    
+    @media screen and (max-width: 700px) {
+        .PL-box {
+            grid-template-areas: "beginningBanner beginningBanner beginningBanner beginningBanner" "discountCoupon textBanner nameCoupon endingBanner";
+            row-gap: 0;
         }
     }
 
@@ -405,12 +559,13 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled ? <StyledPL>
                   <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
-                    <div className="PLnewAvs">
+                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                         <div className="PL-box">
-                            <p className="PL-desc1 grow">{this.props.t("Be AVS4YOU Valentine!")}</p>
-                            <p className="PL-desc2">{this.props.t("Get 25 % Off on AVS4YOU Suite")}</p>
-                            <p className="PL-desc3">{this.props.t("ALove24")}</p>
-                            <p className="PL-desc1">{this.props.t("сoupon!")}</p>
+                            <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
+                            <p className="PL-desc2 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc1 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc3 nameCoupon">{this.props.t("nameCoupon")}</p>
+                            <p className="PL-desc1 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     </div>
                   </a>
