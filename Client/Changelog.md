@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.64 (19.02.2024)
+### New
+* Removed banner 'Valentine's Day'
+
 ## 1.0.63 (13.02.2024)
 ### New
 * Added banner 'Valentine's Day'
