@@ -31,7 +31,7 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    //display: none;
+    display: none;
     width: 100%;
     height: 56px;
     background-image: url(${PlAVSbg});
