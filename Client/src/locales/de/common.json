@@ -1773,12 +1773,12 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner": "Seien Sie AVS4YOU-Valentine!",
-    "discountCoupon": "Sichern Sie sich 25 % Rabatt auf die AVS4YOU Suite",
-    "textBanner": "mit dem Gutscheincode",
-    "nameCoupon": "ALove24",
-    "endingBanner": "",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=de&ORDERSTYLE=nLWw45a5hLk=&COUPON=ALove24&CLEAN_CART=ALL",
+    "beginningBanner": "Eggstra Sonderangebot ",
+    "discountCoupon": "- 25% Rabatt auf",
+    "textBanner": " AVS4YOU Suite mit dem Gutschein ",
+    "nameCoupon": "Eggstra24",
+    "endingBanner": " !",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=de&ORDERSTYLE=nLWw45a5hLk=&COUPON=Eggstra24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

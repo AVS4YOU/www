@@ -20,9 +20,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSbg from "../images/valentine/pl-bg.png";
-import PlAVSbgSmall from "../images/valentine/pl-bg-small.png";
-import elem from "../images/valentine/pl-element.png"
+import PlAVSbg from "../images/pl/pl-bg.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -31,19 +29,20 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
     height: 56px;
     background-image: url(${PlAVSbg});
+    background-color: #1e5839;
+    background-repeat: no-repeat;
     cursor: pointer;
-    background-position-x: 50%;
-      font-family: Inter, sans-serif;
+    background-position: 50%;
+    font-family: Inter, sans-serif;
   }
     
     .PL-box {
         height: 100%;
-        color: #FFFFFF;
-        
+        color: #FFFFFF; 
         display: grid;
         grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
         width: max-content;
@@ -77,149 +76,58 @@ const StyledPL = styled.div`
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        background-image: url("${elem}");
         background-size: 100%;
         padding: 3px 8px;
         background-repeat: no-repeat;
         width: max-content;
+        border: 1px dashed #f4d272;
     }
 
     .fr {
-        background-position-y: -9px;
-        background-size: auto 68px;
         .PL-box {
-            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
-
-            .endingBanner {
-                display: none;
-            } 
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
         }  
-        
-        @media screen and (max-width: 800px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-            
-            .PL-box {
-                row-gap: 0;
-                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
-            }
-        }
     }
     
     .de {
-        background-position-y: -14px;
-        background-size: auto 78px;
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon";
-
-            .endingBanner {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 900px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-
-            .PL-box {
-                row-gap: 0;
-                grid-template-areas: "beginningBanner beginningBanner beginningBanner" "discountCoupon textBanner nameCoupon";
-            }
-        }
-        
-        @media screen and (max-width: 700px) {
-            height: 65px;
-            .PL-box {
-                grid-template-areas: "beginningBanner beginningBanner" "discountCoupon discountCoupon" "textBanner nameCoupon";
-            }
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
         }
     }
 
     .es {
-        background-position-y: -7px;
-        background-size: auto 64px;
         .PL-box {
-            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
 
-            .endingBanner {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-
-            .PL-box {
-                row-gap: 0;
-                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
+            .PL-desc2 {
+                margin-left: -6px;
             }
         }
     }
 
     .it {
-        background-position-y: -7px;
-        background-size: auto 64px;
         .PL-box {
-            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
-
-            .endingBanner {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-
-            .PL-box {
-                row-gap: 0;
-                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
-            }
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
         }
     }
 
     .jp {
-        background-position-y: -14px;
-        background-size: auto 74px;
         .PL-box {
-            grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon";
-
-            .endingBanner {
-                display: none;
-            }
+            grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon endingBanner";
         }
 
-        @media screen and (max-width: 900px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-
+        @media screen and (max-width: 800px) {
             .PL-box {
+                display: grid;
                 row-gap: 0;
-                grid-template-areas: "beginningBanner beginningBanner beginningBanner" "nameCoupon textBanner discountCoupon";
+                grid-template-areas: "beginningBanner beginningBanner beginningBanner beginningBanner" "nameCoupon textBanner discountCoupon endingBanner";
             }
         }
     }
 
     .ru {
-        background-position-y: -11px;
-        background-size: auto 72px;
         .PL-box {
-            grid-template-areas: "discountCoupon textBanner nameCoupon beginningBanner";
-
-            .endingBanner {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 900px) {
-            background-image: url("${PlAVSbgSmall}");
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-
-            .PL-box {
-                row-gap: 0;
-                grid-template-areas: "discountCoupon discountCoupon discountCoupon" "textBanner nameCoupon beginningBanner";
-            }
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
         }
     }
     
@@ -243,12 +151,15 @@ const StyledPL = styled.div`
         grid-area: endingBanner;
     }
     
-    
-    
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
         .PL-box {
-            grid-template-areas: "beginningBanner beginningBanner beginningBanner beginningBanner" "discountCoupon textBanner nameCoupon endingBanner";
-            row-gap: 0;
+            display: inline-flex;
+            max-width: fit-content;
+            padding: 0 16px;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
         }
     }
 
