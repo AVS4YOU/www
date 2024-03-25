@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.66 (25.03.2024)
+### New
+* Added banner 'Easter 2024'
+
 ## 1.0.64 (19.02.2024)
 ### New
 * Removed banner 'Valentine's Day'

@@ -31,7 +31,7 @@ const StyledPL = styled.div`
   .PLnewAvs {
     display: block;
     width: 100%;
-    height: 56px;
+    height: 60px;
     background-image: url(${PlAVSbg});
     background-color: #1e5839;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@ const StyledPL = styled.div`
         text-align: center;
         margin: 0;
         background-size: 100%;
-        padding: 3px 8px;
+        padding: 3px 8px 5px;
         background-repeat: no-repeat;
         width: max-content;
         border: 1px dashed #f4d272;
