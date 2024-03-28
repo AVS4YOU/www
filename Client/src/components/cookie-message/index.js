@@ -21,8 +21,8 @@ const CookieStyle = styled.div`
         background: #32393E;
         color: white;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        justify-content: center;
         left: 0px;
         position: fixed;
         width: 100%;
@@ -40,13 +40,13 @@ const CookieStyle = styled.div`
     }
     .btnWrapperClasses{
         position: relative;
-        margin-right: auto;
+        margin-right: 16px;
         color: #fff;
     }
     .text-capitalize{
         margin: 15px;
         position: relative;
-        margin-left: auto;
+        padding-left: 16px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -58,7 +58,6 @@ const CookieStyle = styled.div`
         }
         .btnWrapperClasses{
             position: relative;
-            margin-right: auto;
             top: 10px;
         }
         .text-capitalize{
