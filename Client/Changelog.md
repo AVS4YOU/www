@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.66 (25.03.2024)
+## 1.0.66 (04.04.2024)
+### New
+* Removed banner 'Easter 2024'
+
+## 1.0.65 (25.03.2024)
 ### New
 * Added banner 'Easter 2024'
 
