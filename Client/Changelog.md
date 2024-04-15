@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.67 (15.04.2024)
+### New
+* Added award 'Netzwelt' in `/de/avs-video-editor.aspx`
+
 ## 1.0.66 (04.04.2024)
 ### New
 * Removed banner 'Easter 2024'
