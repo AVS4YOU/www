@@ -24,6 +24,7 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
 import awardCapterra from '../images/main-page/awards/award-capterra.png'
 import awardGetapp from '../images/main-page/awards/award-getapp.png'
+import awardNetzwelt from '../images/avs-video-editor/award-netzwelt.jpg'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
@@ -116,6 +117,17 @@ const isEngLang = (currentLang) => {
     }
 
     return isEngLang;
+}
+
+const language = ['de']
+
+const isDeLang = (currentLanguage) => {
+    let isDeLang = false;
+    for(let i = 0; i<language.length; i++) {
+        if(lang[i] === currentLanguage) isDeLang = true;
+    }
+
+    return isDeLang;
 }
 
 export const AvsVideoEditorOtherContent = (props) => (
@@ -231,7 +243,14 @@ export const AvsVideoEditorOtherContent = (props) => (
     <div className="list-awards listAwards">
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardCapterra}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+      
+      {isDeLang (props.locale)
+          ?
+     <div className="awards-product" style={{verticalAlign:"middle"}}><a href="https://www.netzwelt.de/download/11230-free-video-dub.html"><img style={{maxWidth:"140px"}} src={awardNetzwelt}/></a></div>
+      :
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
+      }
+
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardFDM}/></div>
