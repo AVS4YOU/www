@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Button from '../button';
-import Link from '../link';
+import AvsLink from '../link';
+import { Link } from "react-scroll";
 import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
 import Text from '../text';
@@ -45,7 +46,7 @@ const DownloadScrollButton = (props) => {
                     <Button id={props.id} className="desktopButton" href={props.href} color="#fff" textTransform={props.textTransform} backgroundColor="blue">{props.textDownload}</Button>
                     {props.idLink && props.toLink &&
                     <div className="licenseText">
-                        <Text align="center" color="#110C0C" fontSize={13}>{props.textClicking} <Link id={props.idLink} to={props.toLink}>{props.textLink}</Link></Text>
+                        <Text align="center" color="#110C0C" fontSize={13}>{props.textClicking} <AvsLink id={props.idLink} to={props.toLink}>{props.textLink}</AvsLink></Text>
                     </div>
                     }
                 </div>
