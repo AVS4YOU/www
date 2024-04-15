@@ -190,16 +190,16 @@ class avsFreeRegistryCleaner extends React.PureComponent {
                                 XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                         </div>
                     </div>
-                    <DownloadScrollButton className="buttonWrapper"
-                                          id="download-now2_avs-free-registry-cleaner"
-                                          href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe"
-                                          to="headerContentWrapper"/>
-                    <div className="licenseText">
-                        <Text align="center" color="#110C0C"
-                              fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                            id="license-agreement_avs-free-registry-cleaner"
-                            to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                    </div>
+                    <DownloadScrollButton 
+                        className="buttonWrapper"
+                        id="download-now2_avs-free-registry-cleaner"
+                        href="https://downloads.avs4you.com/distributives/AVSRegistryCleaner.exe"
+                        to="headerContentWrapper"
+                        idLink="license-agreement_avs-free-registry-cleaner" 
+                        toLink="/license-agreement.aspx"
+                        textClicking={this.props.t("By clicking the Download button you agree to")}
+                        textLink={this.props.t("our End User License Agreement")}
+                    />
                 </PageContentWrapper>
                 <div className="technicalSpecificationWrapper">
                     <PageContentWrapper>

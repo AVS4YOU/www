@@ -42,6 +42,7 @@ const StyledPageWrapper = styled.div`
     margin:auto;
     padding-top: 65px;
     display: table;
+    text-align: center;
   }
 
   .headerImage{
@@ -140,7 +141,6 @@ const StyledPageWrapper = styled.div`
 
   .licenseText{
     padding-top: 25px;
-    padding-bottom: 100px;
 
     a{
       color: #1296E6;

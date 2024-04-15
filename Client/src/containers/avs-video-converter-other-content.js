@@ -310,14 +310,14 @@ export const AvsVideoConverterOtherContent = (props) => (
             <DownloadScrollButton
                 id="download-now2_avs-free-video-converter"
                 className="buttonWrapper"
-                                  href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                                  to="headerContentWrapper" textDownload={props.t("download now")}/>
-            <div className="licenseText">
-                <Text align="center" color="#110C0C"
-                      fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link
-                    id="license-agreement_avs-free-video-converter"
-                    to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
-            </div>
+                href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                to="headerContentWrapper" 
+                textDownload={props.t("download now")}
+                textClicking={props.t("By clicking the Download button you agree to")}
+                textLink={props.t("our End User License Agreement")}
+                idLink="license-agreement_avs-free-video-converter" 
+                toLink="/license-agreement.aspx"
+            />
         </PageContentWrapper>
         <div className="technicalSpecificationWrapper" style={{backgroundColor: "#f9f9f9"}}>
             <PageContentWrapper>

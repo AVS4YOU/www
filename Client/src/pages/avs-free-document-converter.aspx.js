@@ -210,15 +210,17 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-free-document-converter" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license-agreement_avs-free-document-converter"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-free-document-converter" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license-agreement_avs-free-document-converter" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>

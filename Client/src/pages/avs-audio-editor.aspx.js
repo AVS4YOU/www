@@ -248,15 +248,17 @@ class avsAudioEditor extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-audio-editor" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license_avs-audio-editor"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-audio-editor" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license_avs-audio-editor" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>
