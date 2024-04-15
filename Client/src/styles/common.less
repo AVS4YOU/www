@@ -361,7 +361,7 @@ main {
   }
 }
 
-@media (max-width: 750px){
+@media (max-width: 768px){
     main{
         .ScrollTopWrapper{
             .ScrollTopMain{
@@ -406,6 +406,21 @@ main {
                 }
             }  
         }
+    }
+
+    .listAwards {
+        display: inline-block;
+    }
+
+    .awards-product, .awards-product-converter, .awards-product a {
+        display: inline-block;
+        padding: 10px 0px;
+        vertical-align: middle;
+        width: 130px;
+      &>img {
+          background-size: contain;
+          width: 60%;
+      }
     }
 }
 
@@ -486,20 +501,5 @@ main {
     }
     .header__button-text{
         font-size: 14px;
-    }
-
-    .listAwards {
-        display: inline-block;
-    }
-
-    .awards-product, .awards-product-converter {
-        display: inline-block;
-        padding: 10px 10px;
-        vertical-align: middle;
-        width: 130px;
-      &>img {
-          background-size: contain;
-          width: 60%;
-      }
     }
 }
