@@ -324,7 +324,7 @@ main {
   }
 
   .awardsProductPage {
-    padding: 160px 0 80px;
+    padding: 60px 0 80px;
   }
 
   .listAwards, .listAwardsConverter {
@@ -334,6 +334,13 @@ main {
       justify-content: center;
   }
 
+  .awards-product a {
+    padding: 0;
+  &>img {
+      background-size: contain;
+      width: 100%;
+  }
+}
   .awards-product, .awards-product-converter {
       padding: 0 20px;
     &>img {
@@ -399,6 +406,21 @@ main {
                 }
             }  
         }
+    }
+
+    .listAwards {
+        display: inline-block;
+    }
+
+    .awards-product, .awards-product-converter, .awards-product a {
+        display: inline-block;
+        padding: 10px 0px;
+        vertical-align: middle;
+        width: 130px;
+      &>img {
+          background-size: contain;
+          width: 60%;
+      }
     }
 }
 
@@ -479,20 +501,5 @@ main {
     }
     .header__button-text{
         font-size: 14px;
-    }
-
-    .listAwards {
-        display: inline-block;
-    }
-
-    .awards-product, .awards-product-converter {
-        display: inline-block;
-        padding: 10px 10px;
-        vertical-align: middle;
-        width: 130px;
-      &>img {
-          background-size: contain;
-          width: 60%;
-      }
     }
 }

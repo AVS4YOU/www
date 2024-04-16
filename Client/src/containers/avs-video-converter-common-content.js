@@ -182,10 +182,18 @@ export const AvsVideoConverterCommonContent = (props) => (
         <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
       </div>
     </div>
-    <DownloadScrollButton id="download-now2_avs-free-video-converter" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
-    <div className="licenseText">
-      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-free-video-converter" to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
-    </div>
+    <DownloadScrollButton 
+      id="download-now2_avs-free-video-converter" 
+      className="buttonWrapper" 
+      href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" 
+      to="headerContentWrapper" 
+      textDownload={props.t("download now")}
+      textGetCoupon={props.t("get 5 coupon code")}
+      textClicking={props.t("By clicking the Download button you agree to")}
+      textLink={props.t("our End User License Agreement")}
+      idLink="license-agreement_avs-free-video-converter" 
+      toLink="/license-agreement.aspx"
+    />
   </PageContentWrapper>
   <div className="technicalSpecificationWrapper">
     <PageContentWrapper>

@@ -208,16 +208,18 @@ class avsFreePhotoEditor extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton className="buttonWrapper"
-                                              id="download-now2_avs-free-photo-editor"
-                                              href="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe"
-                                              to="headerContentWrapper"/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license-agreement_avs-free-photo-editor"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            className="buttonWrapper"
+                            id="download-now2_avs-free-photo-editor"
+                            href="https://downloads.avs4you.com/distributives/AVSPhotoEditor.exe"
+                            to="headerContentWrapper"
+                            idLink="license-agreement_avs-free-photo-editor" 
+                            toLink="/license-agreement.aspx"
+                            textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>

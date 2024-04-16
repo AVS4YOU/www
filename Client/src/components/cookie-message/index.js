@@ -17,7 +17,7 @@ const CookieStyle = styled.div`
         font-size: 14px;
     }
     .alert-warning{
-        align-items: baseline;
+        align-items: center;
         background: #32393E;
         color: white;
         display: flex;
@@ -28,6 +28,7 @@ const CookieStyle = styled.div`
         width: 100%;
         z-index: 999;
         bottom: 0px;
+        padding: 7px 0;
     }
     .btn-primary{
         background: #676767;
@@ -44,9 +45,8 @@ const CookieStyle = styled.div`
         color: #fff;
     }
     .text-capitalize{
-        margin: 15px;
         position: relative;
-        padding-left: 16px;
+        padding: 0 16px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -58,12 +58,9 @@ const CookieStyle = styled.div`
         }
         .btnWrapperClasses{
             position: relative;
-            top: 10px;
         }
         .text-capitalize{
-            margin: 15px;
             position: relative;
-            width: 60%;
         }
     }
 `;

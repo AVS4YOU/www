@@ -40,8 +40,9 @@ const StyledPageWrapper = styled.div`
 
   .buttonWrapper{
     margin:auto;
-    padding-top: 65px;
+    padding: 65px 0 100px;
     display: table;
+    text-align: center;
   }
 
   .headerImage{
@@ -140,7 +141,6 @@ const StyledPageWrapper = styled.div`
 
   .licenseText{
     padding-top: 25px;
-    padding-bottom: 100px;
 
     a{
       color: #1296E6;
@@ -248,7 +248,7 @@ const StyledPageWrapper = styled.div`
     }
 
     .buttonWrapper{
-      padding-top: 50px;
+      padding: 50px 0;
     }
 
     .headerText{

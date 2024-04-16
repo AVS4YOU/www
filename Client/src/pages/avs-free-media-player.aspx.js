@@ -206,15 +206,18 @@ class avsFreeMediaPlayer extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-free-media-player" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license-agreement_avs-free-media-player"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-free-media-player" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license-agreement_avs-free-media-player" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
 
