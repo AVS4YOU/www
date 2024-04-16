@@ -11,6 +11,7 @@ import UAParser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
 import LinkProducts from '../link';
 import { useTranslation } from 'react-i18next';
+import FreeFlag from '../../components/free-flag';
 
 const formSended = new Cookies().get("formSended");
 
@@ -162,6 +163,20 @@ const RowContent = styled.div`
         display: inline-flex;
         align-items: center;
         font-weight: 600;
+        gap: 20px;
+
+        .firstFlagPartWrapper {
+            .firstFlagPart {
+                border-width: 13px 10px 13px 0;
+            }
+            .flagContent {
+                padding: 4px 17px 4px 20px;
+            }
+        }
+
+        .secondFlagPart {
+            display: none;
+        }
     }
 
     .buttonsWrapper{
@@ -359,7 +374,7 @@ const TextContent = (props, touchDevice) =>
             <div className="tableWrapper">
                 <Text className="HeaderListItem" as={props.asType} color="#000000" fontSize={28}>
                     {props.headerText} 
-                    {props.free && <Text as="span" className="flagBackground">{t("Free")}</Text>}
+                    {props.free && <FreeFlag>{t("Free")}</FreeFlag>}
                 </Text>
                 {props.children}
 
