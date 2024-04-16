@@ -40,7 +40,7 @@ const StyledPageWrapper = styled.div`
 
   .buttonWrapper{
     margin:auto;
-    padding-top: 65px;
+    padding: 65px 0 100px;
     display: table;
     text-align: center;
   }
@@ -248,7 +248,7 @@ const StyledPageWrapper = styled.div`
     }
 
     .buttonWrapper{
-      padding-top: 50px;
+      padding: 50px 0;
     }
 
     .headerText{
