@@ -181,6 +181,7 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
               href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
               to="headerContentWrapper" 
               textDownload={props.t("download now")}
+              textGetCoupon={props.t("get 5 coupon code")}
               textClicking={props.t("By clicking the Download button you agree to")}
               textLink={props.t("our End User License Agreement")}
               idLink="license-agreement_avs-video-editor" 

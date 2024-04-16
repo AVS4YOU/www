@@ -28,7 +28,7 @@ const CookieStyle = styled.div`
         width: 100%;
         z-index: 999;
         bottom: 0px;
-        padding: 15px 0;
+        padding: 7px 0;
     }
     .btn-primary{
         background: #676767;

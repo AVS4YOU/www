@@ -188,6 +188,7 @@ export const AvsVideoConverterCommonContent = (props) => (
       href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" 
       to="headerContentWrapper" 
       textDownload={props.t("download now")}
+      textGetCoupon={props.t("get 5 coupon code")}
       textClicking={props.t("By clicking the Download button you agree to")}
       textLink={props.t("our End User License Agreement")}
       idLink="license-agreement_avs-free-video-converter" 

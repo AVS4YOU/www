@@ -92,7 +92,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoReMaker.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-vr_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-vr_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -108,7 +108,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-ve_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ve_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -124,7 +124,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {VideoConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-vc_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-vc_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" to="headerContentWrapper"/>
             </div>
             
             <div className="product-box">
@@ -136,7 +136,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {MediaPlayer.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-mp_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-mp_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>
@@ -154,7 +154,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioEditor.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-ae_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ae_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" to="headerContentWrapper"/>
             </div>
 
             <div className="product-box">
@@ -171,7 +171,7 @@ render(){
                 <Text as="p">{this.props.t("File Size")} {AudioConverter.size} MB</Text>
                 <Text as="p">{this.props.t("Platforms")} Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
-              <DownloadScrollButton id="download-now-ac_downloads" textDownload={this.props.t("Download_dwn")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
+              <DownloadScrollButton id="download-now-ac_downloads" textDownload={this.props.t("Download_dwn")} textGetCoupon={this.props.t("get 5 coupon code")} className="product-button" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper"/>
             </div>
           </AdaptiveCarousel>
         </div>

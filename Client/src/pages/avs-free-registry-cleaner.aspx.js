@@ -198,6 +198,7 @@ class avsFreeRegistryCleaner extends React.PureComponent {
                         idLink="license-agreement_avs-free-registry-cleaner" 
                         toLink="/license-agreement.aspx"
                         textDownload={this.props.t("download now")}
+                        textGetCoupon={this.props.t("get 5 coupon code")}
                         textClicking={this.props.t("By clicking the Download button you agree to")}
                         textLink={this.props.t("our End User License Agreement")}
                     />

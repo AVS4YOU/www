@@ -194,7 +194,7 @@ render(){
                 <Text className="ListItem">{this.props.t("Publish your creative work in social networks")}</Text>
               </ContentRowItem>
             </PageContentWrapper>
-            <DownloadScrollButton id="download-now2_avs-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
+            <DownloadScrollButton id="download-now2_avs-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")} textGetCoupon={this.props.t("get 5 coupon code")}/>
             
             <div className="block-awards">
               <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{this.props.t("Reviewed and highly rated by")}</Text>
@@ -289,6 +289,7 @@ render(){
                 href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
                 to="headerContentWrapper" 
                 textDownload={this.props.t("download now")}
+                textGetCoupon={this.props.t("get 5 coupon code")}
                 textClicking={this.props.t("By clicking the Download button you agree to")}
                 textLink={this.props.t("our End User License Agreement")}
                 idLink="license-agreement_avs-editor" 

@@ -254,6 +254,7 @@ class avsAudioEditor extends React.PureComponent {
                             href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
                             to="headerContentWrapper" 
                             textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
                             textClicking={this.props.t("By clicking the Download button you agree to")}
                             textLink={this.props.t("our End User License Agreement")}
                             idLink="license_avs-audio-editor" 

@@ -212,6 +212,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                             href="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
                             to="headerContentWrapper" 
                             textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
                             textClicking={this.props.t("By clicking the Download button you agree to")}
                             textLink={this.props.t("our End User License Agreement")}
                             idLink="license-agreement_avs-free-media-player" 

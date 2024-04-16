@@ -237,7 +237,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       <Text className="ListItem">{props.t("Publish your creative work in social networks")}</Text>
     </ContentRowItem>
   </PageContentWrapper>
-  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
+  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
   <div className="block-awards">
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
@@ -338,6 +338,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
       to="headerContentWrapper" 
       textDownload={props.t("download now")} 
+      textGetCoupon={props.t("get 5 coupon code")}
       textClicking={props.t("By clicking the Download button you agree to")}
       textLink={props.t("our End User License Agreement")}
       idLink="license-agreement_avs-video-editor" 
