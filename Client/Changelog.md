@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.68 (03.06.2024)
+### New
+* Changed products info (version, date, file size)
+* Added video on first screen `/avs-video-editor-imovie.aspx`
+
 ## 1.0.67 (15.04.2024)
 ### New
 * Added award 'Netzwelt' in `/de/avs-video-editor.aspx`

@@ -190,14 +190,14 @@ class avsFreePhotoEditor extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("File Size")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">26.77 MB</Text>
+                                      align="left">26.24 MB</Text>
                             </div>
 
                             <div className="downloadInfoRow">
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Current Version")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">3.3.3.174</Text>
+                                      align="left">3.3.4.175</Text>
                             </div>
 
                             <div className="downloadInfoRow">

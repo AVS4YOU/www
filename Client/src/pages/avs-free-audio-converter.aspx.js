@@ -164,7 +164,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.4</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.5</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
