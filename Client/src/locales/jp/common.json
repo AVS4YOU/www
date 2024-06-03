@@ -13,7 +13,7 @@
   
     "get $5 coupon code": "5ドルクーポンコードを取得",
     "download now": "今すぐダウンロード",
-  
+    "get 5 coupon code": "5ドルクーポンコードを取得",
     "GET $5 COUPON CODE" : "5ドルクーポンコードを取得",
 
   
@@ -204,7 +204,7 @@
     "Windows 10/Windows 8x/Windows 7 compatible video card" : "Windows 11/Windows 10/Windows 8.x/Windows 7 互換のビデオカード",
     "Learn more" : "詳細情報",
     "Quad core (Intel Core i5 series or AMD equivalent)" : "クアッドコア(Intel Core i5 モデルかAMDの相当)",
-    "AMD Intel Core 2 Quad compatible at 24 GHz or higher" : "デュアルコア(Intel Core i3 モデルかAMDの相当)",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher" : "2.4 GHz 以上に対応するAMD / Intel Core 2 Quad",
 
 
 
@@ -1661,7 +1661,7 @@
     "AVS4YOU Awards and Ratings" : "AVS4YOUの賞とレーティング",
     "Review us on" : "レビューする",
     "20 000 000" : "20,000,000",
-    "AVS Video Editor 97" : "AVS Video Editor 9.9",
+    "AVS Video Editor 97" : "AVS Video Editor 10.0",
 
     "*****************************LANDING********************************" : "*****************************LANDING********************************",
     "AVShead" : "AVS4YOU",
@@ -1754,12 +1754,12 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "最大",
-    "discountCoupon" : " ",
-    "textBanner" : "割引とギフトを取得に頑張って！",
-    "nameCoupon" : "アドベントカレンダーをチエックしてください",
-    "endingBanner" : "",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSTreat23&CLEAN_CART=ALL",
+    "beginningBanner": "エッグストラスペシャル－",
+    "discountCoupon": "25％",
+    "textBanner": "クーポンでAVS4YOUスイートに",
+    "nameCoupon": "Eggstra24",
+    "endingBanner": "％オフ！",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ja&ORDERSTYLE=nLWw45a5hLk=&COUPON=Eggstra24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

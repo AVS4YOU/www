@@ -17,17 +17,18 @@ const CookieStyle = styled.div`
         font-size: 14px;
     }
     .alert-warning{
-        align-items: baseline;
+        align-items: center;
         background: #32393E;
         color: white;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        justify-content: center;
         left: 0px;
         position: fixed;
         width: 100%;
         z-index: 999;
         bottom: 0px;
+        padding: 7px 0;
     }
     .btn-primary{
         background: #676767;
@@ -40,13 +41,12 @@ const CookieStyle = styled.div`
     }
     .btnWrapperClasses{
         position: relative;
-        margin-right: auto;
+        margin-right: 16px;
         color: #fff;
     }
     .text-capitalize{
-        margin: 15px;
         position: relative;
-        margin-left: auto;
+        padding: 0 16px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -58,13 +58,9 @@ const CookieStyle = styled.div`
         }
         .btnWrapperClasses{
             position: relative;
-            margin-right: auto;
-            top: 10px;
         }
         .text-capitalize{
-            margin: 15px;
             position: relative;
-            width: 60%;
         }
     }
 `;

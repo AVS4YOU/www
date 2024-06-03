@@ -12,6 +12,7 @@
   
   
     "get $5 coupon code": "obtener código de descuento de 5 $",
+    "get 5 coupon code": "OBTENER CÓDIGO DE DESCUENTO DE 5 $",
     "download now": "descargar ahora",
     "GET $5 COUPON CODE" : "obtener código de descuento de 5 $",
 
@@ -147,8 +148,8 @@
     "Technical specification":"Especificación técnica",
     "MINIMUM SYSTEM REQUIREMENTS":"REQUISITOS MÍNIMOS DEL SISTEMA",
     "Processor":"Procesador:",
-    "AMD Intel Core 2 Duo compatible at 3 GHz or higher":"AMD/Intel Core 2 Duo compatible con 3 GHz o superior",
-    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"AMD/Intel Core 2 Duo compatible con 2.4 GHz o superior",
+    "AMD Intel Core 2 Duo compatible at 3 GHz or higher":"AMD / Intel Core 2 Duo compatible con 3 GHz o superior",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"AMD / Intel Core 2 Quad compatible con 2.4 GHz o superior",
     "RAM":"RAM:",
     "2 GB or higher":"2 GB o superior",
     "Sound":"Sonido:",
@@ -1631,7 +1632,7 @@
   "AVS4YOU Awards and Ratings" : "Premios y valoraciones de AVS4YOU",
   "Review us on" : "Reseña AVS4YOU en",
   "20 000 000" : "20,000,000",
-  "AVS Video Editor 97" : "AVS Video Editor 9.9",
+  "AVS Video Editor 97" : "AVS Video Editor 10.0",
 
   "*****************************LANDING********************************" : "*****************************LANDING********************************",
     "AVShead" : "AVS4YOU",
@@ -1724,12 +1725,12 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "¡Aproveche regalos increíbles y descuentos hasta",
-    "discountCoupon" : " ",
-    "textBanner" : "!",
-    "nameCoupon" : "Ver el calendario de Adviento",
-    "endingBanner" : "",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSTreat23&CLEAN_CART=ALL",
+    "beginningBanner": "Oferta especial de Pascua: ¡",
+    "discountCoupon": "25 % de descuento",
+    "textBanner": "en la suite AVS4YOU con el cupón",
+    "nameCoupon": "Eggstra24",
+    "endingBanner": "!",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&ORDERSTYLE=nLWw45a5hLk=&COUPON=Eggstra24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

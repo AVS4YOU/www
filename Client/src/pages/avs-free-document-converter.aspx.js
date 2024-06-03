@@ -192,14 +192,14 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("File Size")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">28.83 MB</Text>
+                                      align="left">30.07 MB</Text>
                             </div>
 
                             <div className="downloadInfoRow">
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Current Version")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">4.2.6.271</Text>
+                                      align="left">4.3.2.273</Text>
                             </div>
 
                             <div className="downloadInfoRow">
@@ -210,15 +210,18 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-free-document-converter" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license-agreement_avs-free-document-converter"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-free-document-converter" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSDocumentConverter.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license-agreement_avs-free-document-converter" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>
@@ -233,7 +236,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
                                               fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                         <Text as="span" color="#000000" fontSize={16} fontWeight={500}
-                                              align="left">{this.props.t("AMD / Intel Core 2 Duo compatible at 3 GHz or higher")}</Text>
+                                              align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                                     </div>
                                     <div className="systemWrapper">
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
@@ -300,7 +303,7 @@ class avsFreeDocumentConverter extends React.PureComponent {
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
                                               fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                         <Text as="span" color="#000000" fontSize={16} fontWeight={500}
-                                              align="left">{this.props.t("AMD / Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
+                                              align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                                     </div>
                                     <div className="systemWrapper">
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}

@@ -12,6 +12,7 @@
 
 
 	"get $5 coupon code": "GET $5 COUPON CODE",
+	"get 5 coupon code": "GET $5 COUPON CODE",
 	"download now": "download now",
     "GET $5 COUPON CODE" : "GET $5 COUPON CODE",
 
@@ -141,6 +142,8 @@
 	"MINIMUM SYSTEM REQUIREMENTS": "MINIMUM SYSTEM REQUIREMENTS",
 	"Processor": "Processor:",
 	"AMD / Intel Core 2 Duo compatible at 3 GHz or higher": "Dual core (Intel Core 2 Duo or AMD equivalent)",
+	"AMD Intel Core 2 Duo compatible at 3 GHz or higher":"AMD / Intel Core 2 Duo compatible at 3 GHz or higher",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"AMD / Intel Core 2 Quad compatible at 2.4 GHz or higher",
 	"RAM": "RAM:",
 	"2 GB or higher": "2 GB or higher",
 	"Sound": "Sound:",
@@ -1615,7 +1618,7 @@
  "lohbn-image-block-en-webp" : "en.webp",
  "en" : "en",
  "20 000 000" : "20,000,000",
- "AVS Video Editor 97" : "AVS Video Editor 9.9",
+ "AVS Video Editor 97" : "AVS Video Editor 10.0",
 
  "*****************************LANDING********************************" : "*****************************LANDING********************************",
  "AVShead" : "AVS4YOU",
@@ -1709,12 +1712,12 @@
 
  "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-"beginningBanner" : "Get incredible gifts and discounts up to",
-"discountCoupon" : " ",
-"textBanner" : "off!",
-"nameCoupon" : "Check Advent Calendar",
-"endingBanner" : "",
-"avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSTreat23&CLEAN_CART=ALL",
+"beginningBanner" : "Eggstra Special",
+"discountCoupon" : " - 25% Off ",
+"textBanner" : "on AVS4YOU Suite with ",
+"nameCoupon" : "Eggstra24",
+"endingBanner" : " сoupon!",
+"avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&ORDERSTYLE=nLWw45a5hLk=&COUPON=Eggstra24&CLEAN_CART=ALL",
 
 "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
 "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

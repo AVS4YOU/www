@@ -217,7 +217,7 @@ class avsAudioEditor extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.4</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 10.5</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
                         imageNamesPopup={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
@@ -248,15 +248,18 @@ class avsAudioEditor extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-audio-editor" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license_avs-audio-editor"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-audio-editor" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license_avs-audio-editor" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>

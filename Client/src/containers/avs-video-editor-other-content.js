@@ -24,6 +24,7 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
 import awardCapterra from '../images/main-page/awards/award-capterra.png'
 import awardGetapp from '../images/main-page/awards/award-getapp.png'
+import awardNetzwelt from '../images/avs-video-editor/award-netzwelt.jpg'
 import awardPick from '../images/main-page/awards/award-epick.png'
 import awardSoftChecker from '../images/avs-video-editor/award-softchecker.svg'
 import awardRating from '../images/avs-video-editor/award-rating.png'
@@ -116,6 +117,17 @@ const isEngLang = (currentLang) => {
     }
 
     return isEngLang;
+}
+
+const language = ['de']
+
+const isDeLang = (currentLanguage) => {
+    let isDeLang = false;
+    for(let i = 0; i<language.length; i++) {
+        if(lang[i] === currentLanguage) isDeLang = true;
+    }
+
+    return isDeLang;
 }
 
 export const AvsVideoEditorOtherContent = (props) => (
@@ -225,13 +237,20 @@ export const AvsVideoEditorOtherContent = (props) => (
       <Text className="ListItem">{props.t("Publish your creative work in social networks")}</Text>
     </ContentRowItem>
   </PageContentWrapper>
-  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
+  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
   <div className="block-awards">
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardCapterra}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardSoftChecker}/></div>
+      
+      {isDeLang (props.locale)
+          ?
+     <div className="awards-product" style={{verticalAlign:"middle"}}><a href="https://www.netzwelt.de/download/11230-free-video-dub.html"><img style={{maxWidth:"140px"}} src={awardNetzwelt}/></a></div>
+      :
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardGetapp}/></div>
+      }
+
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardPick}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img src={awardRating}/></div>
       <div className="awards-product" style={{verticalAlign:"middle"}}><img style={{maxWidth:"130px"}} src={awardFDM}/></div>
@@ -313,10 +332,18 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
       </div>
     </div>
-    <DownloadScrollButton id="download-now3_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")}/>
-    <div className="licenseText">
-      <Text align="center" color="#110C0C" fontSize={13}>{props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-video-editor" to="/license-agreement.aspx">{props.t("our End User License Agreement")}</Link></Text>
-    </div>
+    <DownloadScrollButton 
+      id="download-now3_avs-video-editor" 
+      className="buttonWrapper" 
+      href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
+      to="headerContentWrapper" 
+      textDownload={props.t("download now")} 
+      textGetCoupon={props.t("get 5 coupon code")}
+      textClicking={props.t("By clicking the Download button you agree to")}
+      textLink={props.t("our End User License Agreement")}
+      idLink="license-agreement_avs-video-editor" 
+      toLink="/license-agreement.aspx"
+    />
   </PageContentWrapper>
   <div className="technicalSpecificationWrapper" style={{backgroundColor:"#F9F9F9"}}>
     <PageContentWrapper>

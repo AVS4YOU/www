@@ -4,6 +4,7 @@
     "CurrentLanguage": "Nederland",
     "************************HEADER DOWNLOAD BUTTONS***************************" : "************************HEADER DOWNLOAD BUTTONS***************************",
     "get $5 coupon code": "ontvang een $5 couponcode",
+    "get 5 coupon code": "ONTVANG EEN $5 COUPONCODE",
     "download now": "Download nu",
     "GET $5 COUPON CODE" : "ontvang een $5 couponcode",
     "Only today": "Alleen vandaag",
@@ -116,6 +117,8 @@
     "MINIMUM SYSTEM REQUIREMENTS": "MINIMALE SYSTEEMVEREISTEN",
     "Processor": "Processor:",
     "AMD / Intel Core 2 Duo compatible at 3 GHz or higher": "Dual core (Intel Core 2 Duo of AMD vergelijkbaar)",
+    "AMD Intel Core 2 Duo compatible at 3 GHz or higher":"Intel Core 2 Duo of AMD vergelijkbaar",
+    "AMD Intel Core 2 Quad compatible at 24 GHz or higher":"Intel Core 2 Quad of AMD vergelijkbaar",
     "RAM": "RAM:",
     "2 GB or higher": "2 GB of meer",
     "Sound": "Geluid",
@@ -1413,7 +1416,7 @@
  "lohbn-image-block-en-webp" : "en.webp",
  "en" : "nl",
  "20 000 000" : "20,000,000",
- "AVS Video Editor 97" : "AVS Video Editor 9.9",
+ "AVS Video Editor 97" : "AVS Video Editor 10.0",
 
  "*****************************LANDING********************************" : "*****************************LANDING********************************",
     "AVShead" : "AVS4YOU",
@@ -1506,14 +1509,14 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Get incredible gifts and discounts up to",
-    "discountCoupon" : " ",
-    "textBanner" : "off!",
-    "nameCoupon" : "Check Advent Calendar",
-    "endingBanner" : "",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVSTreat23&CLEAN_CART=ALL",
+    "beginningBanner" : "Eggstra Special",
+    "discountCoupon" : " - 25% Off ",
+    "textBanner" : "on AVS4YOU Suite with ",
+    "nameCoupon" : "Eggstra24",
+    "endingBanner" : " сoupon!",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=nl&ORDERSTYLE=nLWw45a5hLk=&COUPON=Eggstra24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
     "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL"
-    }
+}

@@ -197,14 +197,14 @@ class avsFreeDiscCreator extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("File Size")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">113.33 MB</Text>
+                                      align="left">114.04 MB</Text>
                             </div>
 
                             <div className="downloadInfoRow">
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Current Version")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">6.2.4.564</Text>
+                                      align="left">6.3.3.567</Text>
                             </div>
 
                             <div className="downloadInfoRow">
@@ -215,15 +215,18 @@ class avsFreeDiscCreator extends React.PureComponent {
                                     XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
                             </div>
                         </div>
-                        <DownloadScrollButton id="download-now2_avs-free-disc-creator" className="buttonWrapper"
-                                              href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe"
-                                              to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-                        <div className="licenseText">
-                            <Text align="center" color="#110C0C"
-                                  fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link
-                                id="license-agreement_avs-free-disc-creator"
-                                to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-                        </div>
+                        <DownloadScrollButton 
+                            id="download-now2_avs-free-disc-creator" 
+                            className="buttonWrapper"
+                            href="https://downloads.avs4you.com/distributives/AVSDiscCreator.exe"
+                            to="headerContentWrapper" 
+                            textDownload={this.props.t("download now")}
+                            textGetCoupon={this.props.t("get 5 coupon code")}
+                            textClicking={this.props.t("By clicking the Download button you agree to")}
+                            textLink={this.props.t("our End User License Agreement")}
+                            idLink="license-agreement_avs-free-disc-creator" 
+                            toLink="/license-agreement.aspx"
+                        />
                     </PageContentWrapper>
                     <div className="technicalSpecificationWrapper">
                         <PageContentWrapper>
@@ -303,7 +306,7 @@ class avsFreeDiscCreator extends React.PureComponent {
                                     </div>
                                     <div className="systemWrapper">
                                         <Text className="pcComponents" as="span" color="#000000" fontSize={16}
-                                              fontWeight={700} align="right">{this.props.t("Processor")}:</Text>
+                                              fontWeight={700} align="right">{this.props.t("Processor")}</Text>
                                         <Text as="span" color="#000000" fontSize={16} fontWeight={500}
                                               align="left">{this.props.t("AMD Intel Core 2 Quad compatible at 24 GHz or higher")}</Text>
                                     </div>

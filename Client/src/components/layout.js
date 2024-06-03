@@ -20,21 +20,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSbg from "../images/black-friday/bg-banner.png";
-import PlAVSLeftBg from "../images/pl/left-banner-bg.png";
-import PlAVSRightBg from "../images/pl/right-banner-bg.png";
-import PlAVSLeft from "../images/pl/left-banner.png";
-import PlAVSRight from "../images/pl/right-banner.png";
-import PlAVS1 from "../images/pl/1.png";
-import PlAVS2 from "../images/pl/2.png";
-import PlAVS3 from "../images/pl/3.png";
-import PlAVS23 from "../images/pl/23.png";
-import PlAVS24 from "../images/pl/24.png";
-import PlAVS25 from "../images/pl/25.png";
-import PlAVSgif from "../images/pl/99.png";
-import PlAVSDiscount from "../images/pl/discount.png";
-import PlAVSDiscountEu from "../images/pl/eu_discount.png";
-import PlAVSDiscountJa from "../images/pl/ja_discount.png";
+import PlAVSbg from "../images/pl/pl-bg.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -43,273 +29,145 @@ const StyledPL = styled.div`
   text-align: center;
 
   .PLnewAvs {
-    display: block;
+    display: none;
     width: 100%;
     height: 60px;
-    background-color: #0a0f11;
-    //background-image: url(${PlAVSbg});
-    background: radial-gradient(67.97% 40476.56% at 51.51% 32.03%, #0B1FD2 0%, #0B1D4C 100%);
+    background-image: url(${PlAVSbg});
+    background-color: #1e5839;
+    background-repeat: no-repeat;
     cursor: pointer;
-    background-position-x: 50%;
-
-    a {
-      display: inline-block;
-      width: 100%;
-      z-index: 9;
-      text-decoration: none;
-      max-width: 730px;
-      margin: auto;
-    }
-  }
-
-  .PLnewAvsText {
-    display: inline-block;
-    gap: 5px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #ffffff;
-    width: auto;
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .PLnewAvsTextAccent {
-    font-weight: 700;
-    position: relative;
-    top: -2px;
-  }
-
-  .PlAvsDiscount {
-    background-image: url(${PlAVSDiscount});
-    font-family: 'Open Sans';
-    width: 348px;
-    height: 70px;
-    word-break: keep-all;
-    font-weight: 600;
-    color: #FFFFFF;
-    //position: absolute;
-    left: -20px;
-    line-height: 52px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-position: 0px;
-    background-size: 348px 88px;
-    position: relative;
-    top: -2px;
-    z-index: 1;
-  }
-
-  .es, .fr, .it, .ru {
-    background-image: url(${PlAVSDiscountEu});
-    width: 380px;
-    background-size: 380px 88px;
-  }
-
-  .jp {
-    background-image: url(${PlAVSDiscountJa});
-    width: 460px;
-    background-size: 460px 88px;
-  }
-
-  .bgPlAvs {
-    width: 100%;
-    position: relative;
-    height: 60px;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .giftsOne {
-    background-image: url(${PlAVSLeft});
-    width: 304px;
-    height: 64px;
-    background-position-x: 100%;
-  }
-
-  .giftsTwo {
-    background-image: url(${PlAVSRight});
-    width: 304px;
-    height: 64px;
-    z-index: 1;
-  }
-
-  .PLnewAvsLeft {
-    top: 0;
-    left: 0px;
-    width: 100%;
-    max-width: 700px;
-    height: 64px;
-    background-image:url(${PlAVSLeftBg});
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    pointer-events: none;
-    z-index: 0;
-    background-position-x: 100%;
-  }
-
-  .PLnewAvsRight {
-    top: 0;
-    height: 64px;
-    width: 688px;
-    background-repeat: no-repeat;
-    background-image: url(${PlAVSRightBg});
-    background-position-y: 50%;
-    pointer-events: none;
-    right: 0;
-    z-index: 0;
-    background-position-x: 0%;
-  }
-
-  .PlAvsSpin {
-    //position: absolute;
-    //width: 183px;
-    height: 55px;
-    display: inline-block;
-    top: 3px;
-  }
-
-  .PlAvsgif {
-    background-image: url(${PlAVSgif});
-    background-size: 82px 40px;
     background-position: 50%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 82px;
-    height: 40px;
-    left: 0;
-    margin-top: -3px;
-    min-width: 80px;
+    font-family: Inter, sans-serif;
   }
-
-  @media (max-width: 1640px) {
-    .giftsOne, .giftsTwo {
-      display: none;
+    
+    .PL-box {
+        height: 100%;
+        color: #FFFFFF; 
+        display: grid;
+        grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        width: max-content;
+        gap: 7px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .PL-desc1 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .PL-desc2 {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .PL-desc3 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        background-size: 100%;
+        padding: 3px 8px 5px;
+        background-repeat: no-repeat;
+        width: max-content;
+        border: 1px dashed #f4d272;
     }
 
-    .one {
-      background-image: url(${PlAVS1});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    .fr {
+        .PL-box {
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        }  
+    }
+    
+    .de {
+        .PL-box {
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        }
     }
 
-    .two {
-      background-image: url(${PlAVS2});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    .es {
+        .PL-box {
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+
+            .PL-desc2 {
+                margin-left: -6px;
+            }
+        }
     }
 
-    .three {
-      background-image: url(${PlAVS3});
-      width: 90px;
-      height: 64px;
-      background-position-x: 50%;
+    .it {
+        .PL-box {
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        }
     }
 
-    .four {
-      background-image: url(${PlAVS23});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    .jp {
+        .PL-box {
+            grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon endingBanner";
+        }
+
+        @media screen and (max-width: 800px) {
+            .PL-box {
+                display: grid;
+                row-gap: 0;
+                grid-template-areas: "beginningBanner beginningBanner beginningBanner beginningBanner" "nameCoupon textBanner discountCoupon endingBanner";
+            }
+        }
     }
 
-    .five {
-      background-image: url(${PlAVS24});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    .ru {
+        .PL-box {
+            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        }
+    }
+    
+    .beginningBanner {
+        grid-area: beginningBanner;
+    }
+    
+    .discountCoupon {
+        grid-area: discountCoupon;
+    }
+    
+    .textBanner {
+        grid-area: textBanner;
+    }
+    
+    .nameCoupon {
+        grid-area: nameCoupon;
+    }
+    
+    .endingBanner {
+        grid-area: endingBanner;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .PL-box {
+            display: inline-flex;
+            max-width: fit-content;
+            padding: 0 16px;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 
-    .six {
-      background-image: url(${PlAVS25});
-      width: 80px;
-      height: 64px;
-      background-position-x: 50%;
+    @media screen and (max-width: 500px) {
+        .PLnewAvs {
+            display: none;
+        }
     }
-  }
-
-  @media (max-width: 1370px) {
-    .four, .five, .six {
-      display: none;
-    }
-  }
-
-  @media (max-width: 1300px) {
-    .one, .two, .three, .four, .five, .six {
-      display: none;
-    }
-
-    .PLnewAvsText {
-      padding: 5px 20px;
-    }
-
-    .PLnewAvsText {
-      font-size: 16px;
-      top: 0;
-    }
-
-    .PLnewAvsTextAccent {
-      top: -3px;
-      text-align: left;
-    }
-
-    .en, .de, .ko, .pl, .da, .nl, .pt {
-      width: 330px;
-    }
-  }
-
-  @media (max-width: 763px) {
-    .PLnewAvs {
-      display: none;
-      }
-    .PLnewAvsText {
-      font-size: 12px;
-      line-height: 14px;
-      padding: 3px 8px;
-    }
-
-    .PlAvsDiscount {
-      font-size: 12px;
-      width: 143px;
-      height: 20px;
-      line-height: 20px;
-      left: 20px;
-      width: 330px;
-    }
-
-    .PlAvsgif {
-      width: 150px;
-      height: 45px;
-      background-size: 150px 45px;
-      display: none;
-    }
-
-    .PlAvsSpin {
-      position: relative;
-      width: 183px;
-      top: -8px;
-      height: 20px;
-    }
-
-    .PLnewAvsLeft, .PLnewAvsRight {
-      max-width: 55px;
-    }
-  }
-  @media (max-width: 450px) {
-    .PLnewAvsText {
-      line-height: 18px;
-    }
-  }
 `;
 
 const StyledLayout = styled.div`
@@ -611,20 +469,17 @@ class Layout extends React.PureComponent {
                
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <Link to="/advent-calendar.aspx">
-                    <div className="PLnewAvs">
-                        <div className="bgPlAvs">
-                        <div className="PLnewAvsLeft"></div>
-                          <span className="PLnewAvsText"><div className='giftsOne'></div><div className='one'></div><div className='two'></div><div className='three'></div><span className="PLnewAvsTextAccent">{this.props.t("beginningBanner")}</span>
-                            {this.props.t("discountCoupon")}<div className="PlAvsgif"></div><span className="PLnewAvsTextAccent">{this.props.t("textBanner")}</span>
-                            <div className="PlAvsSpin">
-                              <span className={`PlAvsDiscount ${this.props.pageContext.locale}`}>{this.props.t("nameCoupon")}</span>
-                            </div><div className='giftsTwo'></div><div className='four'></div><div className='five'></div><div className='six'></div>
-                          </span>
-                        <div className="PLnewAvsRight"></div>
+                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
+                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
+                        <div className="PL-box">
+                            <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
+                            <p className="PL-desc2 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc1 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc3 nameCoupon">{this.props.t("nameCoupon")}</p>
+                            <p className="PL-desc1 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     </div>
-                  </Link>
+                  </a>
                 </StyledPL> : <div></div>}
 
                 

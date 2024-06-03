@@ -10,12 +10,6 @@ const StyledWrapper = styled.div`
         padding: 0 20px;
     }
 
-    @media (max-width: 1050px) {
-        .desktopButton{
-            display:none;
-        }
-    }
-
     @media (max-width: 350px) {
         padding: 0 10px;
     }

@@ -174,7 +174,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 6.8</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 7.0</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
             imageNamesPopup={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
@@ -198,10 +198,18 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton id="downloiad-now2_avs-video-remaker" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-            <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-video-remaker" to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-            </div>
+            <DownloadScrollButton 
+              id="downloiad-now2_avs-video-remaker" 
+              className="buttonWrapper" 
+              href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+              to="headerContentWrapper" 
+              textDownload={this.props.t("download now")}
+              textGetCoupon={this.props.t("get 5 coupon code")}
+              textClicking={this.props.t("By clicking the Download button you agree to")}
+              textLink={this.props.t("our End User License Agreement")}
+              idLink="license-agreement_avs-video-remaker" 
+              toLink="/license-agreement.aspx"
+            />
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>

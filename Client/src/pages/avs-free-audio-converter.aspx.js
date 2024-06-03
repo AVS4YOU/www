@@ -164,7 +164,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.4</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 10.5</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
@@ -188,10 +188,18 @@ render(){
                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
               </div>
             </div>
-            <DownloadScrollButton id="download-now2_avs-free-audio-converter" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" to="headerContentWrapper" textDownload={this.props.t("download now")}/>
-            <div className="licenseText">
-              <Text align="center" color="#110C0C" fontSize={13}>{this.props.t("By clicking the Download button you agree to")} <Link id="license-agreement_avs-free-audio-converter" to="/license-agreement.aspx">{this.props.t("our End User License Agreement")}</Link></Text>
-            </div>
+            <DownloadScrollButton 
+              id="download-now2_avs-free-audio-converter" 
+              className="buttonWrapper"
+              href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" 
+              to="headerContentWrapper" 
+              textDownload={this.props.t("download now")}
+              textGetCoupon={this.props.t("get 5 coupon code")}
+              textClicking={this.props.t("By clicking the Download button you agree to")}
+              textLink={this.props.t("our End User License Agreement")}
+              idLink="license-agreement_avs-free-audio-converter" 
+              toLink="/license-agreement.aspx"
+            />
           </PageContentWrapper>
           <div className="technicalSpecificationWrapper">
             <PageContentWrapper>

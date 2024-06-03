@@ -1,5 +1,42 @@
 # Changelog
 
+## 1.0.68 (03.06.2024)
+### New
+* Changed products info (version, date, file size)
+* Added video on first screen `/avs-video-editor-imovie.aspx`
+
+## 1.0.67 (15.04.2024)
+### New
+* Added award 'Netzwelt' in `/de/avs-video-editor.aspx`
+
+## 1.0.66 (04.04.2024)
+### New
+* Removed banner 'Easter 2024'
+
+## 1.0.65 (25.03.2024)
+### New
+* Added banner 'Easter 2024'
+
+## 1.0.64 (19.02.2024)
+### New
+* Removed banner 'Valentine's Day'
+
+## 1.0.63 (13.02.2024)
+### New
+* Added banner 'Valentine's Day'
+
+## 1.0.62 (05.02.2024)
+### New
+* Changed products info (version, date, file size)
+
+## 1.0.61 (18.01.2024)
+### New
+* Changed products info (version, date, file size) for release 
+
+## 1.0.60 (26.12.2023)
+### New
+* Deleted banner 'Advent Calendar'
+
 ## 1.0.59 (18.12.2023)
 ### New
 * Added landing page `avs-video-cutter.aspx`
