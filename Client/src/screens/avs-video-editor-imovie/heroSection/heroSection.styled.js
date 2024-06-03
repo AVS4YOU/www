@@ -1,46 +1,77 @@
 import styled from "styled-components";
 
-import bg from '../../../images/avs-video-editor-imovie/hero-section-bg.png'
-
 export const HeroSectionStyled = styled.section`
-    padding: 273px 104px 338px 104px;
     position: relative;
-
-    background-color: gray;
-
-    background-image: url("${bg}");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 1080px;
+    max-height: 1080px;
+    overflow: hidden;
 
-    * {
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 1920px) {
+      video {
+        width: auto;
+      }
+  }
+
+    @media screen and (max-width: 1024px) {
+      max-height: 960px;
+      height: 960px;
+
+      video {
+        height: 100%;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    video {
+      left: -50%;
+    }
+}
+
+  @media screen and (max-width: 500px) {
+        max-height: 580px;
+        height: 580px;
+  }
+
+  * {
         box-sizing: border-box;
-    }
-
-    @media screen and (max-width: 800px) {
-        padding: 144px 104px 208px 104px;
-    }
-
-    @media screen and (max-width: 700px) {
-        padding: 78px 16px 135px 16px;
-    }
+  }
 `
 
 export const HeroSectionContainer = styled.div`
     max-width: 700px;
     width: 100%;
-    //margin: 0 auto;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
 
     color: #FFF;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    text-align: center;
+    align-items: center;
+    top: 273px;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 1024px) {
+      max-height: 960px;
+      top: 174px;
+      padding: 0 104px;
+  }
 
     @media screen and (max-width: 500px) {
-        align-items: stretch;
-        text-align: center;
+        max-height: 580px;
+        top: 134px;
+        padding: 0 16px;
     }
 `
 
