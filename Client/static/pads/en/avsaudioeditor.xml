@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>51036320</File_Size_Bytes>
-      <File_Size_K>49840</File_Size_K>
-      <File_Size_MB>48.67</File_Size_MB>
+      <File_Size_Bytes>50550456</File_Size_Bytes>
+      <File_Size_K>49365</File_Size_K>
+      <File_Size_MB>48.21</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Audio Editor</Program_Name>
-    <Program_Version>10.4.3.574</Program_Version>
-    <Program_Release_Month>01</Program_Release_Month>
-    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Version>10.5.1.577</Program_Version>
+    <Program_Release_Month>05</Program_Release_Month>
+    <Program_Release_Day>30</Program_Release_Day>
     <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>49</Program_Cost_Dollars>
     <Program_Type>Shareware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Enhanced Intel Media decoding algorithms. Enhanced support of MP4/MOV/M4V video files and M4A/M4B/MP3 audio files. Improved creation of M4A audio files and M4B audiobooks. Bug fixes and UI improvements.</Program_Change_Info>
+    <Program_Change_Info>Support of AMD AMF hardware-decoder for H.264/AVC, H.265/HEVC, VP9, AV1 codecs. Partial support of 5K/6K/8K video. Better stability on multi-core processors. Enhanced support of MP4/M4V/MOV/F4V/3GP video and M4A/M4B audio. Bug fixes.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz, 1 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Music Composers</Program_Category_Class>
     <Expire_Info>

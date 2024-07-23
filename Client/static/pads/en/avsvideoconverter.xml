@@ -87,18 +87,18 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>86726672</File_Size_Bytes>
-      <File_Size_K>84694</File_Size_K>
-      <File_Size_MB>82.71</File_Size_MB>
+      <File_Size_Bytes>85483408</File_Size_Bytes>
+      <File_Size_K>83479</File_Size_K>
+      <File_Size_MB>81.52</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>13.0.1.718</Program_Version>
-    <Program_Release_Month>01</Program_Release_Month>
-    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Version>13.0.3.722</Program_Version>
+    <Program_Release_Month>05</Program_Release_Month>
+    <Program_Release_Day>30</Program_Release_Day>
     <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -106,7 +106,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,ChineseSimplified,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Unicode version. Enhanced Intel Media decoding and encoding algorithms. Improved “normal quality” presets for MP4/MOV/MKV SD video and DVD presets for MP4/MOV. Enhanced support of MP4/MOV/M4V video and M4A/M4B/MP3 audio. Critical bugfixes.</Program_Change_Info>
+    <Program_Change_Info>Support of AMD AMF hardware-decoder for H.264/AVC, H.265/HEVC, VP9, AV1 codecs. Partial support of 5K/6K/8K video. Better stability on multi-core processors. Support of new GPU architectures for NVIDIA decoder. Bug fixes.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -130,18 +130,6 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-    <General>
-      <DP_Pad_Enabled>TRUE</DP_Pad_Enabled>
-      <DP_AtFormFill_Enabled>TRUE</DP_AtFormFill_Enabled>
-      <DP_Distributive_Enabled>FALSE</DP_Distributive_Enabled>
-      <DP_Script_Base_URL>http://repository.appvisor.com/</DP_Script_Base_URL>
-      <DP_Pad_Mask>AVSVideoConverter.xml</DP_Pad_Mask>
-      <DP_Distributive_Primary_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</DP_Distributive_Primary_URL>
-      <DP_Distributive_Mask>AVSVideoConverter.exe</DP_Distributive_Mask>
-    </General>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-free-video-converter.aspx</Application_Info_URL>
@@ -215,6 +203,18 @@ COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+    <General>
+      <DP_Pad_Enabled>TRUE</DP_Pad_Enabled>
+      <DP_AtFormFill_Enabled>TRUE</DP_AtFormFill_Enabled>
+      <DP_Distributive_Enabled>FALSE</DP_Distributive_Enabled>
+      <DP_Script_Base_URL>http://repository.appvisor.com/</DP_Script_Base_URL>
+      <DP_Pad_Mask>AVSVideoConverter.xml</DP_Pad_Mask>
+      <DP_Distributive_Primary_URL>http://download.avs4you.com/distributives/AVSVideoConverter.exe</DP_Distributive_Primary_URL>
+      <DP_Distributive_Mask>AVSVideoConverter.exe</DP_Distributive_Mask>
+    </General>
+  </Dynamic_PAD>
   <AppStore>
     <AppStore_AppID></AppStore_AppID>
     <AppStore_Category></AppStore_Category>
