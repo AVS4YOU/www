@@ -7,7 +7,7 @@
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
-    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_UIN>CMP-01761D85448</Company_UIN>
     <Company_Description></Company_Description>
     <Product_UIN>APP-008B1325726</Product_UIN>
     <Search_String>AVS Video Editor</Search_String>
@@ -22,13 +22,13 @@
     <Backlink></Backlink>
   </RoboSoft>
   <Company_Info>
-    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
-    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
-    <Address_2>180 Tottenham Court Road</Address_2>
-    <City_Town>London</City_Town>
+    <Company_Name>Ascensio System SIA</Company_Name>
+    <Address_1>20A-6 Ernesta Birznieka-Upish street</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Riga</City_Town>
     <State_Province></State_Province>
-    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
-    <Country>United Kingdom</Country>
+    <Zip_Postal_Code>LV-1050</Zip_Postal_Code>
+    <Country>Latvia</Country>
     <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Irina</Contact_First_Name>
@@ -198,7 +198,7 @@ KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 
 IN KEINEM FALL HAFTET ASCENSIO SYSTEM SIA FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE ODER FOLGESCHÄDEN JEGLICHER ART (EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF SCHÄDEN DURCH ENTGANGENE GEWINNE, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER ANDERE VERMÖGENSSCHÄDEN), DIE SICH AUS DER NUTZUNG ODER DER UNFÄHIGKEIT ZUR NUTZUNG DER AVS4YOU SOFTWARE ERGEBEN.
 
-URHEBERRECHTSHINWEIS. Urheberrecht © 2023 Ascensio System SIA, Alle Rechte vorbehalten.
+URHEBERRECHTSHINWEIS. Urheberrecht © 2024 Ascensio System SIA, Alle Rechte vorbehalten.
 
 Alle hier nicht ausdrücklich gewährten Rechte sind vorbehalten.</EULA>
   </Permissions>

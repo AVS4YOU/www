@@ -7,7 +7,7 @@
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
-    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_UIN>CMP-01761D85448</Company_UIN>
     <Company_Description></Company_Description>
     <Product_UIN>APP-00850F35B87</Product_UIN>
     <Search_String>AVS Video Converter</Search_String>
@@ -22,13 +22,13 @@
     <Backlink></Backlink>
   </RoboSoft>
   <Company_Info>
-    <Company_Name>Online Media Technologies Ltd., UK</Company_Name>
-    <Address_1>Suite 12, 2nd Floor, Queens House</Address_1>
-    <Address_2>180 Tottenham Court Road</Address_2>
-    <City_Town>London</City_Town>
+    <Company_Name>Ascensio System SIA</Company_Name>
+    <Address_1>20A-6 Ernesta Birznieka-Upish street</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Riga</City_Town>
     <State_Province></State_Province>
-    <Zip_Postal_Code>W1T 7PD</Zip_Postal_Code>
-    <Country>United Kingdom</Country>
+    <Zip_Postal_Code>LV-1050</Zip_Postal_Code>
+    <Country>Latvia</Country>
     <Company_WebSite_URL>http://www.avs4you.com</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Irina</Contact_First_Name>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Chinese,Danish,Dutch,French,German,Italian,Japanese,Korean,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Unterstützung von AMD AMF Hardware-Decoder für H.264/AVC, H.265/HEVC, VP9, AV1 Codecs. Teilweise Unterstützung von 5K/6K/8K Video. Bessere Stabilität auf Multi-Core-Prozessoren. Unterstützung der neuen GPU-Architekturen für NVIDIA-Decoder. Fehlerbehebungen</Program_Change_Info>
+    <Program_Change_Info>Unterstützung von AMD AMF Hardware-Decoder für H.264/AVC, H.265/HEVC, VP9, AV1 Codecs. Teilweise Unterstützung von 5K/6K/8K Video. Bessere Stabilität auf Multi-Core-Prozessoren. Unterstützung der neuen GPU-Architekturen für NVIDIA-Decoder. Fehlerbehebungen.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD Core 2 Duo-kompatibel Prozessor mit 3 GHz oder höher, 2 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <Expire_Info>
@@ -198,7 +198,7 @@ KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 
 IN KEINEM FALL HAFTET ASCENSIO SYSTEM SIA FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE ODER FOLGESCHÄDEN JEGLICHER ART (EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF SCHÄDEN DURCH ENTGANGENE GEWINNE, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER ANDERE VERMÖGENSSCHÄDEN), DIE SICH AUS DER NUTZUNG ODER DER UNFÄHIGKEIT ZUR NUTZUNG DER AVS4YOU SOFTWARE ERGEBEN.
 
-URHEBERRECHTSHINWEIS. Urheberrecht © 2023 Ascensio System SIA, Alle Rechte vorbehalten.
+URHEBERRECHTSHINWEIS. Urheberrecht © 2024 Ascensio System SIA, Alle Rechte vorbehalten.
 
 Alle hier nicht ausdrücklich gewährten Rechte sind vorbehalten.</EULA>
   </Permissions>
