@@ -32,7 +32,7 @@ const StyledPL = styled.div`
   background: linear-gradient(#04636C, #0E8E96);
 
   .PLnewAvs {
-    display: block;
+    display: inline-flex;
     width: 100%;
     height: 60px;
     background-image: url(${PlAVSbgLeft}), url(${PlAVSbgRight});
@@ -40,6 +40,8 @@ const StyledPL = styled.div`
     cursor: pointer;
     background-position-x: 0%, 100%;
     font-family: Inter, sans-serif;
+    align-items: center;
+    justify-content: center;
   }
     
     .PL-box {
@@ -49,22 +51,16 @@ const StyledPL = styled.div`
         grid-template-areas: "beginningBanner discountCoupon endingBanner";
         width: max-content;
         gap: 7px;
-        margin: 0 auto;
         align-items: center;
+        margin: 0 24px;
+    }
 
-        &:before {
-            content: "";
-            background-image: url(${PlAVSimg});
-            width: 72px;
-            height: 33px;
-        }
-
-        &:after {
-            content: "";
-            background-image: url(${PlAVSimg});
-            width: 72px;
-            height: 33px;
-        }
+    .plImg {
+        background-image: url(${PlAVSimg});
+        min-width: 72px;
+        height: 33px;
+        margin: 0 8px 0;
+        background-repeat: no-repeat;
     }
     
     .PL-desc1 {
@@ -94,7 +90,7 @@ const StyledPL = styled.div`
         text-align: center;
         margin: 0;
         background-size: 100%;
-        padding: 5px 8px 6px;
+        padding: 5px 14px 6px;
         background-repeat: no-repeat;
         width: max-content;
         background: #EE9E26;
@@ -132,14 +128,6 @@ const StyledPL = styled.div`
         .PL-box {
             grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon endingBanner";
         }
-
-        @media screen and (max-width: 800px) {
-            .PL-box {
-                display: grid;
-                row-gap: 0;
-                grid-template-areas: "beginningBanner beginningBanner beginningBanner beginningBanner" "nameCoupon textBanner discountCoupon endingBanner";
-            }
-        }
     }
 
     .ru {
@@ -168,7 +156,12 @@ const StyledPL = styled.div`
         grid-area: endingBanner;
     }
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1080px) {
+        .PLnewAvs {
+            display: flex;
+            align-items: center;
+        }
+
         .PL-box {
             display: inline-flex;
             max-width: fit-content;
@@ -177,10 +170,19 @@ const StyledPL = styled.div`
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
+            gap: 0 7px;
+
+            .PL-desc1, .PL-desc2, .PL-desc3 {
+                font-size: 16px;
+            }
+
+            .PL-desc3 {
+                padding: 3px 10px 4px;
+            }
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         .PLnewAvs {
             display: none;
         }
@@ -488,11 +490,13 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled ? <StyledPL>
                   <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
+                    <div className="plImg"></div>
                         <div className="PL-box">
                             <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
                             <p className="PL-desc2 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
+                    <div className="plImg"></div>
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
