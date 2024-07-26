@@ -115,10 +115,6 @@ const StyledPL = styled.div`
     .es {
         .PL-box {
             grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
-
-            .PL-desc2 {
-                margin-left: -6px;
-            }
         }
     }
 
