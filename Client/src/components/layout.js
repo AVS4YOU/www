@@ -57,7 +57,7 @@ const StyledPL = styled.div`
 
     .plImg {
         background-image: url(${PlAVSimg});
-        min-width: 72px;
+        min-width: 73px;
         height: 33px;
         margin: 0 8px 0;
         background-repeat: no-repeat;
@@ -94,6 +94,10 @@ const StyledPL = styled.div`
         background-repeat: no-repeat;
         width: max-content;
         background: #EE9E26;
+    }
+
+    .textBanner {
+        display: none;
     }
 
     .fr {
@@ -133,6 +137,10 @@ const StyledPL = styled.div`
     .ru {
         .PL-box {
             grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        }
+
+        .textBanner {
+            display: block;
         }
     }
     
@@ -494,6 +502,7 @@ class Layout extends React.PureComponent {
                         <div className="PL-box">
                             <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc1 textBanner">{this.props.t("textBanner")}</p>
                             <p className="PL-desc2 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     <div className="plImg"></div>

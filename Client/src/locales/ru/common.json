@@ -1719,8 +1719,8 @@
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
     "beginningBanner": "Олимпийское предложение",
-    "discountCoupon": "— 25% скидка на пакет программ AVS4YOU. ",
-    "textBanner": "",
+    "discountCoupon": "— ",
+    "textBanner": "25% скидка на пакет программ AVS4YOU. ",
     "nameCoupon": "",
     "endingBanner": "Купить сейчас!",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ru&ORDERSTYLE=nLWw45a5hLk=&COUPON=OlyGmaR24&CLEAN_CART=ALL",
