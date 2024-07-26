@@ -7,7 +7,7 @@
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
-    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_UIN>CMP-01761D85448</Company_UIN>
     <Company_Description></Company_Description>
     <Product_UIN>APP-00A61219310</Product_UIN>
     <Search_String>AVS Media Player</Search_String>
@@ -98,18 +98,18 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>113526256</File_Size_Bytes>
-      <File_Size_K>110865</File_Size_K>
-      <File_Size_MB>108.27</File_Size_MB>
+      <File_Size_Bytes>111746952</File_Size_Bytes>
+      <File_Size_K>109127</File_Size_K>
+      <File_Size_MB>106.57</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Media Player</Program_Name>
-    <Program_Version>5.6.3.157</Program_Version>
-    <Program_Release_Month>01</Program_Release_Month>
-    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Version>5.7.1.159</Program_Version>
+    <Program_Release_Month>05</Program_Release_Month>
+    <Program_Release_Day>30</Program_Release_Day>
     <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -117,7 +117,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Verbesserte Intel Media-Dekodierungsalgorithmen. Verbesserte Unterstützung von MP4/MOV/M4V Videodateien und M4A/M4B/MP3 Audiodateien. Fehlerkorrekturen und Verbesserungen der Benutzeroberfläche.</Program_Change_Info>
+    <Program_Change_Info>Unterstützung von AMD AMF Hardware-Decoder für H.264/AVC, H.265/HEVC, VP9, AV1 Codecs. Verbesserte Videodekodierung mit VP9-Codec. Bessere Stabilität auf Multi-Core-Prozessoren. Verbesserte Unterstützung von MP4/M4V/MOV/F4V/3GP Video und M4A/M4B Audio.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD-kompatibel Prozessor mit 1.86 GHz oder höher, 1 GB oder höher RAM, Soundkarte</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
     <Expire_Info>
@@ -213,7 +213,7 @@ KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 
 IN KEINEM FALL HAFTET ASCENSIO SYSTEM SIA FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE ODER FOLGESCHÄDEN JEGLICHER ART (EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF SCHÄDEN DURCH ENTGANGENE GEWINNE, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER ANDERE VERMÖGENSSCHÄDEN), DIE SICH AUS DER NUTZUNG ODER DER UNFÄHIGKEIT ZUR NUTZUNG DER AVS4YOU SOFTWARE ERGEBEN.
 
-URHEBERRECHTSHINWEIS. Urheberrecht © 2023 Ascensio System SIA, Alle Rechte vorbehalten.
+URHEBERRECHTSHINWEIS. Urheberrecht © 2024 Ascensio System SIA, Alle Rechte vorbehalten.
 
 Alle hier nicht ausdrücklich gewährten Rechte sind vorbehalten.</EULA>
   </Permissions>

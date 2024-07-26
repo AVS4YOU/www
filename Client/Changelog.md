@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.69 (23.07.2024)
+### New
+* Updated pads files
+* Added banner 'Olympic deal'
+
 ## 1.0.68 (03.06.2024)
 ### New
 * Changed products info (version, date, file size)

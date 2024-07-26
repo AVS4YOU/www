@@ -39,9 +39,9 @@
       <Author_Email>submit@avs4you.com</Author_Email>
     </Contact_Info>
     <Support_Info>
-      <Sales_Email>submit@avs4you.com</Sales_Email>
-      <Support_Email>submit@avs4you.com</Support_Email>
-      <General_Email>submit@avs4you.com</General_Email>
+      <Sales_Email>sales@avs4you.com</Sales_Email>
+      <Support_Email>support@avs4you.com</Support_Email>
+      <General_Email>info@avs4you.com</General_Email>
       <Sales_Phone></Sales_Phone>
       <Support_Phone></Support_Phone>
       <General_Phone></General_Phone>
@@ -83,27 +83,27 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>26933336</File_Size_Bytes>
-      <File_Size_K>26302</File_Size_K>
-      <File_Size_MB>25.69</File_Size_MB>
+      <File_Size_Bytes>27518432</File_Size_Bytes>
+      <File_Size_K>26873</File_Size_K>
+      <File_Size_MB>26.24</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Photo Editor</Program_Name>
-    <Program_Version>3.3.1.172</Program_Version>
+    <Program_Version>3.3.4.175</Program_Version>
     <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
-    <Program_Release_Year>2023</Program_Release_Year>
+    <Program_Release_Day>30</Program_Release_Day>
+    <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Open HEIF-HEIC and WEBP files. Open mirrored and rotated JPEG photos from different cameras with the correct orientation. Code optimization for faster performance.</Program_Change_Info>
-    <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz, 2 GB RAM</Program_System_Requirements>
+    <Program_Change_Info>Enhanced support of HEIF/HEIC images.</Program_Change_Info>
+    <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz or higher, 2 GB RAM or higher</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Editors</Program_Category_Class>
     <Expire_Info>
       <Has_Expire_Info>N</Has_Expire_Info>
@@ -126,16 +126,13 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/avs-free-photo-editor.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/register.aspx</Application_Order_URL>
-      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/avsphotoeditor.jpg</Application_Screenshot_URL>
-      <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsphotoeditor.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://www.avs4you.com/pads/en/avsphotoeditor.xml</Application_XML_File_URL>
+      <Application_Order_URL>https://www.avs4you.com/register.aspx</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.avs4you.com/pads/screenshots/AVSPhotoEditor.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.avs4you.com/pads/icons/AVSPhotoEditor.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.avs4you.com/pads/en/AVSPhotoEditor.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
       <Primary_Download_URL>http://download.avs4you.com/distributives/AVSPhotoEditor.exe</Primary_Download_URL>
@@ -198,10 +195,13 @@ NO LIABILITY FOR CONSEQUENTIAL DAMAGES.
 
 IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
 
-COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
+COPYRIGHT NOTICE. Copyright © 2024 Ascensio System SIA, All rights reserved.
 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
   <AppStore>
     <AppStore_AppID></AppStore_AppID>
     <AppStore_Category></AppStore_Category>
@@ -221,14 +221,14 @@ Any rights not expressly granted herein are reserved.</EULA>
       <Char_Desc_45>Improve and edit your photos easily.</Char_Desc_45>
       <Char_Desc_80>Fix your photos, reduce image noise, apply effects, correct tints and colors.</Char_Desc_80>
       <Char_Desc_250>Edit your photos, crop and rotate them. Use editing tools to fix photos - adjust color balance, brightness and contrast. Apply pre-made effects and remove tiny defects using the Retouch tool. Edit various image formats such as JPEG, BMP, GIF, etc.</Char_Desc_250>
-      <Char_Desc_450>Edit your photos and improve their look. Rotate,crop pictures without quality loss. Remove red eye effect, adjust color balance, brightness,contrast and saturation. Apply premade templates to make your pictures look like old faded photographs.Open and easily edit such formats as JPEG, BMP, TIFF, PNG, etc. AVS Photo Editor is a part of AVS4YOU package.Register once and use all tools from the www.AVS4YOU.com. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
+      <Char_Desc_450>Edit your photos and improve their look. Rotate,crop pictures without quality loss. Remove red eye effect, adjust color balance, brightness,contrast and saturation. Apply premade templates to make your pictures look like old faded photographs.Open and easily edit such formats as JPEG, BMP, TIFF, PNG, etc. AVS Photo Editor is a part of AVS4YOU package.Register once and use all tools from the www.AVS4YOU.com. Subscribe for $49/year or $79/lifetime.</Char_Desc_450>
       <Char_Desc_2000>Edit your pictures and improve their look with AVS Photo Editor. 
 Rotate, crop pictures without quality loss with AVS Photo Editor. Play with colors, shades and tints to completely change pictures style. 
 Remove red eye effect, adjust color balance, brightness, contrast and saturation. Amend object shapes and improve tiny imperfections in pictures. 
 Open and easily edit such formats as JPEG, BMP, TIFF, PNG, GIF, etc. with AVS Photo Editor. 
 Reduce image noises and use the Deblur tool feature to sharpen or soften object shapes. 
 Select between a set of pre-made effects to make your pictures look like old faded photographs or create stylish monochrome black-and-white pictures. 
-AVS Photo Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, edit images, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
+AVS Photo Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, edit images, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
   </Program_Descriptions>
 </XML_DIZ_INFO>

@@ -7,17 +7,17 @@
     <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
-    <Company_UIN>CMP-005B0BB0661</Company_UIN>
+    <Company_UIN>CMP-01761D85448</Company_UIN>
     <Company_Description></Company_Description>
-    <Product_UIN>APP-009A1DFACC4</Product_UIN>
-    <Search_String>AVS Photo Editor</Search_String>
-    <Search_String_Unique>AVS Photo Editor</Search_String_Unique>
+    <Product_UIN>APP-018719EE543</Product_UIN>
     <Publish_on_CD>FALSE</Publish_on_CD>
     <RSProductType></RSProductType>
+    <Search_String></Search_String>
     <Press_Release_Search_String></Press_Release_Search_String>
     <NewsFeed_Search_String></NewsFeed_Search_String>
     <Search_Engine_Search_String></Search_Engine_Search_String>
     <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Search_String_Unique></Search_String_Unique>
     <Comments_For_Reviewer></Comments_For_Reviewer>
     <Backlink></Backlink>
   </RoboSoft>
@@ -34,9 +34,9 @@
       <Contact_First_Name>Irina</Contact_First_Name>
       <Contact_Last_Name>Sanaeva</Contact_Last_Name>
       <Contact_Email>submit@avs4you.com</Contact_Email>
-      <Author_First_Name>Irina</Author_First_Name>
-      <Author_Last_Name>Sanaeva</Author_Last_Name>
-      <Author_Email>submit@avs4you.com</Author_Email>
+      <Author_First_Name></Author_First_Name>
+      <Author_Last_Name></Author_Last_Name>
+      <Author_Email></Author_Email>
     </Contact_Info>
     <Support_Info>
       <Sales_Email>submit@avs4you.com</Sales_Email>
@@ -58,51 +58,36 @@
     <ASP_Member>Y</ASP_Member>
     <ASP_Member_Number>06467</ASP_Member_Number>
   </ASP>
-  <NewsFeed>
-    <NewsFeed_FORM>Y</NewsFeed_FORM>
-    <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
-    <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
-    <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
-    <NewsFeed_Language>English</NewsFeed_Language>
-    <NewsFeed_Purpose>News</NewsFeed_Purpose>
-    <NewsFeed_Author_Email>submit@avs4you.com</NewsFeed_Author_Email>
-    <NewsFeed_Author_First_Name>Irina</NewsFeed_Author_First_Name>
-    <NewsFeed_Author_Last_Name>Sanaeva</NewsFeed_Author_Last_Name>
-    <NewsFeed_DESCRIPTION>This PAD extension allows you to add your RSS and Atom news feeds info into your PAD file. This info can be used by RSS feed submission software or by feed directories themselves.</NewsFeed_DESCRIPTION>
-    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
-    <NewsFeed_Site_Name></NewsFeed_Site_Name>
-    <NewsFeed_Site_URL></NewsFeed_Site_URL>
-    <NewsFeed_Title></NewsFeed_Title>
-    <NewsFeed_Description_70></NewsFeed_Description_70>
-    <NewsFeed_Description_250></NewsFeed_Description_250>
-  </NewsFeed>
   <PAD_Certification_Promotion>
     <Apply_For_Certification>N</Apply_For_Certification>
   </PAD_Certification_Promotion>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
   <Program_Info>
-    <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>26933336</File_Size_Bytes>
-      <File_Size_K>26302</File_Size_K>
-      <File_Size_MB>25.69</File_Size_MB>
+      <File_Size_Bytes>27518432</File_Size_Bytes>
+      <File_Size_K>26873</File_Size_K>
+      <File_Size_MB>26.24</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
+    <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>AVS Photo Editor</Program_Name>
-    <Program_Version>3.3.1.172</Program_Version>
+    <Program_Version>3.3.4.175</Program_Version>
     <Program_Release_Month>05</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
-    <Program_Release_Year>2023</Program_Release_Year>
-    <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
+    <Program_Release_Day>30</Program_Release_Day>
+    <Program_Release_Year>2024</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
-    <Program_Language>English,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Öffnen Sie HEIF, HEIC- und WEBP-Dateien. Öffnen von gespiegelten und gedrehten JPEG-Fotos von verschiedenen Kameras mit der korrekten Ausrichtung. Unterstützung der Online-Hilfe im Browser. Bugfixes und Verbesserungen der Benutzerfreundlichkeit. Optimierung des Codes für schnellere Leistung.</Program_Change_Info>
+    <Program_Language>English,French,German,Italian,Japanese,Spanish</Program_Language>
+    <Program_Change_Info>Verbesserte Unterstützung von HEIF/HEIC-Bildern.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo-kompatibel Prozessor mit 3 GHz oder höher, 2 GB oder höher RAM</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Editors</Program_Category_Class>
     <Expire_Info>
@@ -114,8 +99,8 @@
       <Expire_Day></Expire_Day>
       <Expire_Year></Expire_Year>
     </Expire_Info>
-    <Program_Categories>Photo Editors,Viewer,Graphic,Apps</Program_Categories>
-    <Limitations>Unbeschränkt</Limitations>
+    <Program_Categories>Photo editors,Photo viewer,Editors,Graphic,Apps</Program_Categories>
+    <Limitations>No limitations</Limitations>
     <Program_Cost_Other_Code></Program_Cost_Other_Code>
     <Program_Cost_Other></Program_Cost_Other>
     <Awards></Awards>
@@ -126,16 +111,13 @@
     <FacebookProductPage></FacebookProductPage>
     <GooglePlusProductPage></GooglePlusProductPage>
   </Program_Info>
-  <Dynamic_PAD>
-    <Dynamic_Distributive>N</Dynamic_Distributive>
-  </Dynamic_PAD>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://www.avs4you.com/de/avs-free-photo-editor.aspx</Application_Info_URL>
-      <Application_Order_URL>http://www.avs4you.com/de/register.aspx</Application_Order_URL>
       <Application_Screenshot_URL>http://www.avs4you.com/pads/de/screenshots/avsphotoeditor.jpg</Application_Screenshot_URL>
       <Application_Icon_URL>http://www.avs4you.com/pads/icons/avsphotoeditor.gif</Application_Icon_URL>
       <Application_XML_File_URL>http://www.avs4you.com/pads/de/avsphotoeditor.xml</Application_XML_File_URL>
+      <Application_Order_URL></Application_Order_URL>
     </Application_URLs>
     <Download_URLs>
       <Primary_Download_URL>http://download.avs4you.com/distributives/AVSPhotoEditor.exe</Primary_Download_URL>
@@ -198,7 +180,7 @@ KEINE HAFTUNG FÜR FOLGESCHÄDEN.
 
 IN KEINEM FALL HAFTET ASCENSIO SYSTEM SIA FÜR SPEZIELLE, ZUFÄLLIGE, INDIREKTE ODER FOLGESCHÄDEN JEGLICHER ART (EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF SCHÄDEN DURCH ENTGANGENE GEWINNE, GESCHÄFTSUNTERBRECHUNG, VERLUST VON GESCHÄFTSINFORMATIONEN ODER ANDERE VERMÖGENSSCHÄDEN), DIE SICH AUS DER NUTZUNG ODER DER UNFÄHIGKEIT ZUR NUTZUNG DER AVS4YOU SOFTWARE ERGEBEN.
 
-URHEBERRECHTSHINWEIS. Urheberrecht © 2023 Ascensio System SIA, Alle Rechte vorbehalten.
+URHEBERRECHTSHINWEIS. Urheberrecht © 2024 Ascensio System SIA, Alle Rechte vorbehalten.
 
 Alle hier nicht ausdrücklich gewährten Rechte sind vorbehalten.</EULA>
   </Permissions>
@@ -221,21 +203,15 @@ Alle hier nicht ausdrücklich gewährten Rechte sind vorbehalten.</EULA>
       <Char_Desc_45>Improve and edit your photos quality easily.</Char_Desc_45>
       <Char_Desc_80>Fix your photos, reduce image noise, apply effects, correct tints and colors.</Char_Desc_80>
       <Char_Desc_250>Edit your photos, crop and rotate them. Use editing tools to fix photos - adjust color balance, brightness and contrast. Apply pre-made effects and remove tiny defects using the Retouch tool. Edit various image formats such as JPEG, BMP, GIF, etc.</Char_Desc_250>
-      <Char_Desc_450>Edit your photos and improve their look. Rotate,crop pictures without quality loss. Remove red eye effect, adjust color balance, brightness,contrast and saturation. Apply premade templates to make your pictures look like old faded photographs.Open and easily edit such formats as JPEG, BMP, TIFF, PNG, etc. AVS Photo Editor is a part of AVS4YOU package.Register once and use all tools from the www.AVS4YOU.com. Subscribe for $39/year or $59/lifetime.</Char_Desc_450>
-      <Char_Desc_2000>Edit your pictures and improve their look with AVS Photo Editor. Rotate, crop pictures without quality loss with AVS Photo Editor. Play with colors, shades and tints to completely change pictures style. Remove red eye effect, adjust color balance, brightness, contrast and saturation. Amend object shapes and improve tiny imperfections in pictures. Open and easily edit such formats as JPEG, BMP, TIFF, PNG, GIF, etc. with AVS Photo Editor. Reduce image noises and use the Deblur tool feature to sharpen or soften object shapes. Select between a set of pre-made effects to make your pictures look like old faded photographs or create stylish monochrome black-and-white pictures. AVS Photo Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $39/year or $59/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, edit images, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
+      <Char_Desc_450>Edit your photos and improve their look. Rotate,crop pictures without quality loss. Remove red eye effect, adjust color balance, brightness,contrast and saturation. Apply premade templates to make your pictures look like old faded photographs.Open and easily edit such formats as JPEG, BMP, TIFF, PNG, etc. AVS Photo Editor is a part of AVS4YOU package.Register once and use all tools from the www.AVS4YOU.com. Subscribe for $49/year or $79/lifetime.</Char_Desc_450>
+      <Char_Desc_2000>Edit your pictures and improve their look with AVS Photo Editor. Rotate, crop pictures without quality loss with AVS Photo Editor. Play with colors, shades and tints to completely change pictures style. Remove red eye effect, adjust color balance, brightness, contrast and saturation. Amend object shapes and improve tiny imperfections in pictures. Open and easily edit such formats as JPEG, BMP, TIFF, PNG, GIF, etc. with AVS Photo Editor. Reduce image noises and use the Deblur tool feature to sharpen or soften object shapes. Select between a set of pre-made effects to make your pictures look like old faded photographs or create stylish monochrome black-and-white pictures. AVS Photo Editor is a part of AVS4YOU.com package. Register once at avs4you.com and work with all tools from the AVS4YOU.com package. Subscribe for $49/year or $79/lifetime. AVS4YOU tools let you easily rip, convert and edit audio/video files, edit images, burn DVDs, create ringtones, upload videos to portable devices, players, phones and much more!</Char_Desc_2000>
     </English>
     <German>
       <Char_Desc_45>Lassen Sie Ihre Fotos perfekt aussehen.</Char_Desc_45>
       <Char_Desc_80>Fotos bearbeiten und verbessern, Bildräusche vermindern, Effekte anwenden.</Char_Desc_80>
       <Char_Desc_250>Fotos bearbeiten und umdrehen. Verbessern Sie Ihre Fotos - Entfernen Sie den Rote-Augen-Effekt, stellen Sie Farbbalance, Helligkeit, Kontrast ein. Wenden Sie fertige Voreinstellungen an. Bearbeiten Sie solche Bildformate wie JPEG, BMP, TIFF, GIF usw.</Char_Desc_250>
-      <Char_Desc_450>Fotos bearbeiten und verbessern. Drehen Sie sie um, korregieren, Größe ändern. Entfernen Sie den Rote-Augen-Effekt. Stellen Sie Farbbalance, Helligkeit, Kontrast und Sättigung ein. Wenden Sie fertige Voreinstellungen an. Bearbeiten Sie solche Bildformate wie JPEG, BMP, TIFF, PNG, GIF usw. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket.</Char_Desc_450>
-      <Char_Desc_2000>Bearbeiten Sie Ihre Fotos und lassen Sie sie perfekt aussehen. 
-Rotieren und schneiden Sie Ihre Bilder ohne Qualitätsverlust mit dem AVS Photo Editor zu. Spielen Sie mit Farben und Farbtönen, um den Bildstil komplett zu verändern. 
-Entfernen Sie kleinere Defekte wie Rote-Augen-Effekt und mangelhafte Bereiche auf Ihren Fotos. Stellen Sie die Farbbalance, Helligkeit, Sättigung und den Kontrast ein. Verbessern Sie die Objektkonturen und kleinere Mängel auf Ihren Fotos mit dem AVS Photo Editor. 
-Öffnen und bearbeiten Sie solche Bildformate wie JPEG, BMP, TIFF, PNG, GIF usw. 
-Vermindern Sie Bildrausch, um die Umrisse dargestellter Objekte weicher zu machen oder zu schärfen. 
-Wenden Sie fertige Voreinstellungen an, um Ihre Bilder z.B. wie ein altes Foto aussehen zu lassen. Oder machen Sie Ihre Bilder schwarz-weiß. 
-AVS Photo Editor st ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für $39/Jahr oder $59/unbefristet. Die AVS4YOU-Programme ermöglichen Ihnen Audio-, Bilder-, Videodateien zu rippen, zu konvertieren und zu bearbeiten. Sie können auch DVDs zu brennen, Klingeltöne zu erstellen, Videos auf tragbare Geräte, Player sowie Mobiltelefone zu übertragen und vieles mehr!</Char_Desc_2000>
+      <Char_Desc_450>Fotos bearbeiten und verbessern. Drehen Sie sie um, korregieren, Größe ändern. Entfernen Sie den Rote-Augen-Effekt. Stellen Sie Farbbalance, Helligkeit, Kontrast und Sättigung ein. Wenden Sie fertige Voreinstellungen an. Bearbeiten Sie solche Bildformate wie JPEG, BMP, TIFF, PNG, GIF usw. Erwerben Sie käuflich ein Abonnement für $49/Jahr oder $79/unbefristet und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket.</Char_Desc_450>
+      <Char_Desc_2000>Bearbeiten Sie Ihre Fotos und lassen Sie sie perfekt aussehen. Rotieren und schneiden Sie Ihre Bilder ohne Qualitätsverlust mit dem AVS Photo Editor zu. Spielen Sie mit Farben und Farbtönen, um den Bildstil komplett zu verändern. Entfernen Sie kleinere Defekte wie Rote-Augen-Effekt und mangelhafte Bereiche auf Ihren Fotos. Stellen Sie die Farbbalance, Helligkeit, Sättigung und den Kontrast ein. Verbessern Sie die Objektkonturen und kleinere Mängel auf Ihren Fotos mit dem AVS Photo Editor. Öffnen und bearbeiten Sie solche Bildformate wie JPEG, BMP, TIFF, PNG, GIF usw. Vermindern Sie Bildrausch, um die Umrisse dargestellter Objekte weicher zu machen oder zu schärfen. Wenden Sie fertige Voreinstellungen an, um Ihre Bilder z.B. wie ein altes Foto aussehen zu lassen. Oder machen Sie Ihre Bilder schwarz-weiß. AVS Photo Editor st ein Bestandteil des AVS4YOU.com-Pakets. Registrieren Sie sich einmal auf der Website avs4you.com und benutzen Sie alle Anwendungen aus dem AVS4YOU.com-Paket. Erwerben Sie käuflich ein Abonnement für $49/Jahr oder $79/unbefristet. Die AVS4YOU-Programme ermöglichen Ihnen Audio-, Bilder-, Videodateien zu rippen, zu konvertieren und zu bearbeiten. Sie können auch DVDs zu brennen, Klingeltöne zu erstellen, Videos auf tragbare Geräte, Player sowie Mobiltelefone zu übertragen und vieles mehr!</Char_Desc_2000>
       <Keywords>Photo Editor, Foto, Bild bearbeiten, Foto bearbeiten, fotobearbeitung, bildbearbeitung, bildbearbeitungsprogramm, Bilder drehen, bilder zuschneiden, Größe ändern, umdrehen, Retusche, jpeg, bmp, png, gif, tiff, Foto-Effekte, bilder verkleinern</Keywords>
     </German>
   </Program_Descriptions>

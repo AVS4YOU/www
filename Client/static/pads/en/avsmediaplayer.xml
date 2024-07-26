@@ -83,18 +83,18 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>113526256</File_Size_Bytes>
-      <File_Size_K>110865</File_Size_K>
-      <File_Size_MB>108.27</File_Size_MB>
+      <File_Size_Bytes>111746952</File_Size_Bytes>
+      <File_Size_K>109127</File_Size_K>
+      <File_Size_MB>106.57</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Media Player</Program_Name>
-    <Program_Version>5.6.3.157</Program_Version>
-    <Program_Release_Month>01</Program_Release_Month>
-    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Version>5.7.1.159</Program_Version>
+    <Program_Release_Month>05</Program_Release_Month>
+    <Program_Release_Day>30</Program_Release_Day>
     <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Danish,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Enhanced Intel Media decoding algorithms. Enhanced support of MP4/MOV/M4V video files and M4A/M4B/MP3 audio files. Bug fixes and UI improvements.</Program_Change_Info>
+    <Program_Change_Info>Unicode version. Support of AMD AMF hardware-decoder for H.264/AVC, H.265/HEVC, VP9, AV1 codecs. Support of 5K/6K/8K video. Enhanced support of MP4/M4V/MOV/F4V/3GP video. Better stability on multi-core processors. Bug fixes.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz, 1 GB RAM, sound card, DirectX 9.0c</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
     <Expire_Info>
@@ -198,7 +198,7 @@ NO LIABILITY FOR CONSEQUENTIAL DAMAGES.
 
 IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
 
-COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
+COPYRIGHT NOTICE. Copyright © 2024 Ascensio System SIA, All rights reserved.
 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>

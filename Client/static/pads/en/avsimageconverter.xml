@@ -83,18 +83,18 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>39783328</File_Size_Bytes>
-      <File_Size_K>38850</File_Size_K>
-      <File_Size_MB>37.94</File_Size_MB>
+      <File_Size_Bytes>38094248</File_Size_Bytes>
+      <File_Size_K>37201</File_Size_K>
+      <File_Size_MB>36.33</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Image Converter</Program_Name>
-    <Program_Version>6.0.1.333</Program_Version>
-    <Program_Release_Month>01</Program_Release_Month>
-    <Program_Release_Day>17</Program_Release_Day>
+    <Program_Version>6.0.3.336</Program_Version>
+    <Program_Release_Month>05</Program_Release_Month>
+    <Program_Release_Day>30</Program_Release_Day>
     <Program_Release_Year>2024</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -102,7 +102,7 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Russian,Spanish</Program_Language>
-    <Program_Change_Info>Unicode version. Bug fixes &amp; UI improvements.</Program_Change_Info>
+    <Program_Change_Info>Enhanced support of HEIF/HEIC images. Bug fixes.</Program_Change_Info>
     <Program_System_Requirements>AMD/Intel Core 2 Duo compatible CPU at 3 GHz or higher, 2 GB RAM or higher</Program_System_Requirements>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Expire_Info>
@@ -198,7 +198,7 @@ NO LIABILITY FOR CONSEQUENTIAL DAMAGES.
 
 IN NO EVENT SHALL ASCENSIO SYSTEM SIA BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OR OF INABILITY TO USE AVS4YOU SOFTWARE.
 
-COPYRIGHT NOTICE. Copyright © 2023 Ascensio System SIA, All rights reserved.
+COPYRIGHT NOTICE. Copyright © 2024 Ascensio System SIA, All rights reserved.
 
 Any rights not expressly granted herein are reserved.</EULA>
   </Permissions>
