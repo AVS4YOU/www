@@ -20,67 +20,84 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
-import PlAVSbg from "../images/pl/pl-bg.svg";
+import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
+import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
+import PlAVSimg from "../images/pl/pl-img.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
+  background: linear-gradient(#04636C, #0E8E96);
 
   .PLnewAvs {
-    display: none;
+    display: block;
     width: 100%;
     height: 60px;
-    background-image: url(${PlAVSbg});
-    background-color: #1e5839;
+    background-image: url(${PlAVSbgLeft}), url(${PlAVSbgRight});
     background-repeat: no-repeat;
     cursor: pointer;
-    background-position: 50%;
+    background-position-x: 0%, 100%;
     font-family: Inter, sans-serif;
   }
     
     .PL-box {
         height: 100%;
         color: #FFFFFF; 
-        display: grid;
-        grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+        display: inline-flex;
+        grid-template-areas: "beginningBanner discountCoupon endingBanner";
         width: max-content;
         gap: 7px;
         margin: 0 auto;
         align-items: center;
+
+        &:before {
+            content: "";
+            background-image: url(${PlAVSimg});
+            width: 72px;
+            height: 33px;
+        }
+
+        &:after {
+            content: "";
+            background-image: url(${PlAVSimg});
+            width: 72px;
+            height: 33px;
+        }
     }
     
     .PL-desc1 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
     }
     
     .PL-desc2 {
-        font-size: 14px;
-        font-weight: 800;
-        line-height: 17px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
+        color: #EE9E26;
     }
     
     .PL-desc3 {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
         background-size: 100%;
-        padding: 3px 8px 5px;
+        padding: 5px 8px 6px;
         background-repeat: no-repeat;
         width: max-content;
-        border: 1px dashed #f4d272;
+        background: #EE9E26;
     }
 
     .fr {
@@ -472,11 +489,9 @@ class Layout extends React.PureComponent {
                   <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                         <div className="PL-box">
-                            <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
-                            <p className="PL-desc2 discountCoupon">{this.props.t("discountCoupon")}</p>
-                            <p className="PL-desc1 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc3 nameCoupon">{this.props.t("nameCoupon")}</p>
-                            <p className="PL-desc1 endingBanner">{this.props.t("endingBanner")}</p>
+                            <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
+                            <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc2 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     </div>
                   </a>
