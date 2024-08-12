@@ -162,7 +162,7 @@ const StyledPL = styled.div`
     
     @media screen and (max-width: 1080px) {
         .PLnewAvs {
-            display: flex;
+            display: none;
             align-items: center;
         }
 
