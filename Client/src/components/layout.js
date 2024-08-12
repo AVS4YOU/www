@@ -32,7 +32,7 @@ const StyledPL = styled.div`
   background: linear-gradient(#04636C, #0E8E96);
 
   .PLnewAvs {
-    display: inline-flex;
+    display: none;
     width: 100%;
     height: 60px;
     background-image: url(${PlAVSbgLeft}), url(${PlAVSbgRight});
