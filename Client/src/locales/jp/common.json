@@ -1754,12 +1754,13 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner": "オリンピック割引",
-    "discountCoupon": "- AVS4YOUスイートに25% OFF。",
-    "textBanner": "",
-    "nameCoupon": "",
-    "endingBanner": "チャンスを逃さないでください！",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ja&ORDERSTYLE=nLWw45a5hLk=&COUPON=OlyGmaR24&CLEAN_CART=ALL",
+    "beginningBanner" : "",
+    "colorBanner" : "フレンチ・デイズ・セール！",
+    "textBanner" : "AVS4YOUスイートが25％オフ、クーポンコード",
+    "discountCoupon" : "FRDays24",
+    "textBannerContinue" : "",
+    "endingBanner" : "を使用して今すぐゲット！",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ja&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

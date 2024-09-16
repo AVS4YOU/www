@@ -22,117 +22,147 @@ import CustomLink from '../components/link';
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
-import PlAVSimg from "../images/pl/pl-img.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: linear-gradient(#04636C, #0E8E96);
+  background: #FFFFFF;
 
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
-    background-image: url(${PlAVSbgLeft}), url(${PlAVSbgRight});
     background-repeat: no-repeat;
     cursor: pointer;
-    background-position-x: 0%, 100%;
     font-family: Inter, sans-serif;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .bgLeft {
+    width: 100%;
+    height: 60px;
+    background-image: url(${PlAVSbgLeft});
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    max-width: 575px;
+  }
+  
+  .bgRight {
+    width: 100%;
+    height: 60px;
+    background-image: url(${PlAVSbgRight});
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    max-width: 575px;
   }
     
     .PL-box {
         height: 100%;
-        color: #FFFFFF; 
+        color: #3349B5; 
         display: inline-flex;
-        grid-template-areas: "beginningBanner discountCoupon endingBanner";
+        grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
         gap: 7px;
         align-items: center;
         margin: 0 24px;
-    }
-
-    .plImg {
-        background-image: url(${PlAVSimg});
-        min-width: 73px;
-        height: 33px;
-        margin: 0 8px 0;
-        background-repeat: no-repeat;
+        min-width: max-content;
     }
     
     .PL-desc1 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 24px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
     }
     
     .PL-desc2 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 24px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #EE9E26;
+        color: #FB5363;
     }
     
     .PL-desc3 {
-        font-size: 18px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .PL-desc4 {
+        font-size: 15px;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
         background-size: 100%;
-        padding: 5px 14px 6px;
+        padding: 1px 6px 1px;
         background-repeat: no-repeat;
         width: max-content;
-        background: #EE9E26;
+        background: #FFFFFF;
+        color: #FB5363;
+        border: 1px dashed #FB5363;
     }
 
-    .textBanner {
-        display: none;
+    .PL-desc5 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        background-size: 100%;
+        padding: 4px 10px 4px;
+        background-repeat: no-repeat;
+        width: max-content;
+        background: #FB5363;
+        color: #FFFFFF;
     }
 
     .fr {
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }  
     }
     
     .de {
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
 
     .es {
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
 
     .it {
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
 
     .jp {
         .PL-box {
-            grid-template-areas: "beginningBanner nameCoupon textBanner discountCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
 
     .ru {
         .PL-box {
-            grid-template-areas: "beginningBanner discountCoupon textBanner nameCoupon endingBanner";
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
 
         .textBanner {
@@ -143,6 +173,14 @@ const StyledPL = styled.div`
     .beginningBanner {
         grid-area: beginningBanner;
     }
+
+    .textBannerContinue {
+        grid-area: textBannerContinue;
+    }
+
+    .colorBanner {
+        grid-area: colorBanner;
+    }
     
     .discountCoupon {
         grid-area: discountCoupon;
@@ -150,10 +188,6 @@ const StyledPL = styled.div`
     
     .textBanner {
         grid-area: textBanner;
-    }
-    
-    .nameCoupon {
-        grid-area: nameCoupon;
     }
     
     .endingBanner {
@@ -494,14 +528,16 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled ? <StyledPL>
                   <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
-                    <div className="plImg"></div>
+                    <div className='bgLeft'></div>
                         <div className="PL-box">
-                            <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
-                            <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
-                            <p className="PL-desc1 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc2 endingBanner">{this.props.t("endingBanner")}</p>
+                            <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
+                            <p className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
+                            <p className="PL-desc5 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
-                    <div className="plImg"></div>
+                    <div className='bgRight'></div>
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
