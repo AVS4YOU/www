@@ -1770,7 +1770,7 @@
     "colorBanner" : "Soldes des Journées Françaises !",
     "textBanner" : "25% de réduction sur la suite AVS4YOU avec le coupon",
     "discountCoupon" : "FRDays24",
-    "textBannerContinue" : ".",
+    "textBannerContinue" : "",
     "endingBanner" : "Attrapez-la maintenant !",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=fr&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
     

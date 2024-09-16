@@ -1778,7 +1778,7 @@
     "colorBanner" : "Verkauf zu französischen Tagen!",
     "textBanner" : "25% Rabatt auf die AVS4YOU-Suite mit dem Gutschein",
     "discountCoupon" : "FRDays24",
-    "textBannerContinue" : ".",
+    "textBannerContinue" : "",
     "endingBanner" :  "Erhalten Sie jetzt!",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=de&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
     

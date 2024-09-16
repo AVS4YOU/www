@@ -1722,7 +1722,7 @@
     "colorBanner" : "Распродажа!",
     "textBanner" : "Вопользуйтесь скидкой 25% на пакет программ AVS4YOU с купоном",
     "discountCoupon" : "FRDays24",
-    "textBannerContinue" : ".",
+    "textBannerContinue" : "",
     "endingBanner" : "Купить сейчас!",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=ru&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
     

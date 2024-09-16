@@ -48,6 +48,7 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 100%;
     max-width: 575px;
+    background-size: 580px;
   }
   
   .bgRight {
@@ -57,6 +58,7 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 0%;
     max-width: 575px;
+    background-size: 580px;
   }
     
     .PL-box {

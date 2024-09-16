@@ -1727,9 +1727,9 @@
 
     "beginningBanner" : "",
     "colorBanner" : "¡Oferta especial!",
-    "textBanner" : "25 % de descuento en la suite AVS4YOU con el cupón",
+    "textBanner" : "25% de descuento en la suite AVS4YOU con el cupón",
     "discountCoupon" : "FRDays24",
-    "textBannerContinue" : ".",
+    "textBannerContinue" : "",
     "endingBanner" : "¡Comprar ahora!",
     "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
     
