@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.72 (02.10.2024)
+### New
+* Removed banner 'French Days Sale'
+
 ## 1.0.71 (16.09.2024)
 ### New
 * Added banner 'French Days Sale'
