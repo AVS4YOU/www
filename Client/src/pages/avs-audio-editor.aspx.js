@@ -22,7 +22,7 @@ import AvatarDavid from '../images/avs-audio-editor/david.png';
 import AvatarFrank from '../images/avs-audio-editor/frank.png';
 import AvatarJohn from '../images/avs-audio-editor/john.png';
 
-const lang = ['de', 'es', 'fr', 'it', 'jp', 'ru']
+const lang = ['de', 'es', 'fr', 'it', 'jp']
 
 const isEngLang = (currentLang) => {
     let isEngLang = false;

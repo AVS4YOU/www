@@ -161,16 +161,6 @@ const StyledPL = styled.div`
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
-
-    .ru {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .textBanner {
-            display: block;
-        }
-    }
     
     .beginningBanner {
         grid-area: beginningBanner;
@@ -359,7 +349,6 @@ const languageCodes = [
     "pl-PL",
     "da-DK",
     "pt-BR",
-    "ru-RU",
     "ko-KR"
 ];
 
