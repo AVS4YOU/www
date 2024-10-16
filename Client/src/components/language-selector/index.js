@@ -107,10 +107,6 @@ const StyledLanguageSelector = styled.div`
       background-image: url(${JpIcon});
     }
 
-    &.ru:before {
-      background-image: url(${RuIcon});
-    }
-
     &.pl:before {
       background-image: url(${PlIcon});
     }
@@ -204,7 +200,6 @@ const availableLocales = [
     {value: "es", text: "Español"},
     {value: "it", text: "Italiano"},
     {value: "jp", text: "日本語"},
-    {value: "ru", text: "Русский"},
     {value: "pl", text: "Polski"},
     {value: "ko", text: "한국어"},
     {value: "da", text: "Dansk"},

@@ -108,7 +108,7 @@ video {
 `;
 
 
-const lang = ['de','es','fr','it','jp','ru']
+const lang = ['de','es','fr','it','jp']
 
 const isEngLang = (currentLang) => {
     let isEngLang = false;

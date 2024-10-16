@@ -21,7 +21,7 @@ import AvatarRobin from '../images/avs-video-remaker/robin_kidderminster.png';
 import AvatarMichael from '../images/avs-video-remaker/michael_bryant.png';
 import AvatarArthur from '../images/avs-video-remaker/arthur_rees.png';
 
-const lang = ['de','en','es','fr','it','jp','ru']
+const lang = ['de','en','es','fr','it','jp']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;
