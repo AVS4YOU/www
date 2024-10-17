@@ -139,12 +139,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/privacy.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -793,97 +787,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/license-agreement.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-media-player.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/privacy.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/about-us.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-video-remaker.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-audio-editor.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/education.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-video-editor.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/register.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-video-converter.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/affiliates.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/downloads.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/index.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/pt/license-agreement.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/partners.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-audio-converter.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2035,12 +1939,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/delete-part-of-video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/jp/guides/delete-part-of-video.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2107,12 +2005,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-portable-players.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/jp/guides/convert-video-portable-players.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2120,12 +2012,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/apply-effect-to-video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/apply-effect-to-video.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2215,12 +2101,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-freeze-a-frame-in-a-video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/fr/guides/convert-video-psp-mp4-format.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2251,12 +2131,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-psp-mp4-format.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/it/guides/convert-video-mp4-3gp-mobile-format.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2282,12 +2156,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/jp/guides/convert-video-mp4-3gp-mobile-format.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-mp4-3gp-mobile-format.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2353,12 +2221,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-pal-ntsc.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/jp/guides/convert-pal-ntsc.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2408,12 +2270,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/how-to-improve-too-dark-video-using-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-improve-too-dark-video-using-avs-video-editor.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2617,12 +2473,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-remove-interlacing-artifacts-from-a-video-using-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/es/guides/how-to-convert-doc-docx-to-pdf.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2654,12 +2504,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/how-to-add-credits-at-the-end-of-the-movie.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-add-credits-at-the-end-of-the-movie.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2881,18 +2725,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/reduce-video-file-size.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/command-line.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/de/guides/command-line.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -2906,12 +2738,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/es/guides/how-to-use-command-line-with-avs-audio-converter.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-use-command-line-with-avs-audio-converter.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -2960,12 +2786,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/jp/guides/video-to-webm.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/video-to-webm.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -3037,12 +2857,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-uninstall-avs4you-programs.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/it/guides/how-to-uninstall-avs4you-programs.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3050,12 +2864,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/jp/guides/extract-audio-from-video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/extract-audio-from-video.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -3163,12 +2971,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/export-image-from-video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/jp/guides/export-image-from-video.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3188,12 +2990,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/it/guides/how-to-convert-a-dozen-of-video-files-at-one-go.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-convert-a-dozen-of-video-files-at-one-go.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -3313,12 +3109,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/make-mpeg-compatible-cd-divx-xvid.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/it/guides/make-mpeg-compatible-cd-divx-xvid.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3373,12 +3163,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/multi-pass-conversion.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/de/guides/multi-pass-conversion.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3398,12 +3182,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/how-to-add-title-after-the-selected-clip-in-the-timeline.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-add-title-after-the-selected-clip-in-the-timeline.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -3446,12 +3224,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/it/guides/how-to-start-working-with-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-start-working-with-video-editor.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -3565,12 +3337,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-avi-dvd.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/jp/guides/convert-avi-dvd.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3661,12 +3427,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-subtitles.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/es/guides/convert-video-subtitles.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -3704,12 +3464,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/convert-video-to-avi-mpeg-mov-divx.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-to-avi-mpeg-mov-divx.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -4117,24 +3871,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/guides/split-dvd-into-chapters.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-save-the-project-and-video-in-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-hd.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/de/guides/how-to-convert-documents.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
@@ -4142,90 +3878,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/de/guides/convert-hd.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/create-video-slideshow.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/moneyback.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/video.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/burn-video-to-dvd.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-correct-color-in-your-video-using-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-dvd-episodes-separate-files.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-apply-video-effects-in-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-formats.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-restore-blurred-video-using-avs-video-editor.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-reinstall-avs4you-programs.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-download-and-install-the-avs4you-software-on-your-pc.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-video-mp4-format.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/convert-bluray.aspx</loc>
-    <lastmod>2021-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/guides/how-to-activate-the-avs4you-software.aspx</loc>
     <lastmod>2021-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -4585,12 +4237,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/avs-free-image-converter.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/es/avs-free-image-converter.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -4622,12 +4268,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/ko/avs-free-image-converter.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-photo-editor.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4748,12 +4388,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/da/avs-free-document-converter.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-document-converter.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4993,12 +4627,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.avs4you.com/ru/avs-free-registry-cleaner.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.avs4you.com/nl/avs-free-disc-creator.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -5018,12 +4646,6 @@
   </url>
   <url>
     <loc>https://www.avs4you.com/jp/avs-free-disc-creator.aspx</loc>
-    <lastmod>2021-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.avs4you.com/ru/avs-free-disc-creator.aspx</loc>
     <lastmod>2021-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
