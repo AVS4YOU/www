@@ -352,6 +352,19 @@ const languageCodes = [
     "ko-KR"
 ];
 
+const redirectFromRuSegment = (url) => {
+    if (url.includes('/ru/')) {
+        window.location.href = url.replace('/ru/', '/');
+        return
+    }
+
+    if (url.includes('/ru')) {
+        window.location.href = url.replace('/ru', '/');
+    }
+
+    return;
+}
+
 class Layout extends React.PureComponent {
 
     constructor(props) {
@@ -372,6 +385,8 @@ class Layout extends React.PureComponent {
     }
 
     componentDidMount() {
+        const href = window.location.href;
+        redirectFromRuSegment(href);
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
         if (window.location.pathname === '/register.aspx') {
@@ -513,8 +528,6 @@ class Layout extends React.PureComponent {
 
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
-
-               
 
                 {!this.props.headerIsDisabled ? <StyledPL>
                   <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
