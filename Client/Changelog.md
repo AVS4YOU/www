@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.73 (21.11.2024)
+### New
+* Added event 'Black Friday 2024'
+
 ## 1.0.72 (02.10.2024)
 ### New
 * Removed banner 'French Days Sale'
