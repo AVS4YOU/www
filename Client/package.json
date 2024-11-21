@@ -61,7 +61,7 @@
     "babel-loader": "^8.0.6",
     "gatsby": "^2.25.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.14.0"
   },
   "private": false,
   "repository": {

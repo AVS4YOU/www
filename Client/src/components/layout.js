@@ -19,6 +19,8 @@ import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
+import {BlackFriday} from "../components/black-friday";
+import i18next from 'i18next';
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
@@ -28,10 +30,10 @@ import {XClose} from "../images/icons/xClose";
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #FFFFFF;
+  background: #1F0404;
 
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
@@ -48,7 +50,6 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 100%;
     max-width: 575px;
-    background-size: 585px;
   }
   
   .bgRight {
@@ -58,12 +59,11 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 0%;
     max-width: 575px;
-    background-size: 585px;
   }
     
     .PL-box {
         height: 100%;
-        color: #3349B5; 
+        color: #FFFFFF; 
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
@@ -74,8 +74,8 @@ const StyledPL = styled.div`
     }
     
     .PL-desc1 {
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 500;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
@@ -83,18 +83,17 @@ const StyledPL = styled.div`
     }
     
     .PL-desc2 {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 700;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #FB5363;
     }
     
     .PL-desc3 {
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 500;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
@@ -159,6 +158,16 @@ const StyledPL = styled.div`
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+    }
+
+    .ru {
+        .PL-box {
+            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+
+        .textBanner {
+            display: block;
         }
     }
     
@@ -360,6 +369,7 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
+            showBlackFriday: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -368,6 +378,8 @@ class Layout extends React.PureComponent {
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
+        this.onOpenBanner = this.onOpenBanner.bind(this)
+        this.onCloseBanner = this.onCloseBanner.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
@@ -447,6 +459,20 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
+    onOpenBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: true
+      })
+    }
+
+    onCloseBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: false
+      })
+    }
+
     componentDidUpdate() {
 
         if (this.props.getDevice) {
@@ -515,16 +541,13 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
+                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
                             <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 discountCoupon">{this.props.t("discountCoupon")}</p>
-                            <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
-                            <p className="PL-desc5 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     <div className='bgRight'></div>
                     </div>
@@ -536,11 +559,11 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                <main>{this.props.children}</main>
+                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday i18n={i18next} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
                     
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
+                {this.state.showBanner && !this.state.showBlackFriday && 
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>

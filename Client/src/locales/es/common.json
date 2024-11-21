@@ -1725,15 +1725,43 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "",
-    "colorBanner" : "¡Oferta especial!",
-    "textBanner" : "25% de descuento en la suite AVS4YOU con el cupón",
-    "discountCoupon" : "FRDays24",
+    "beginningBanner" : "Oferta especial de Black Friday:",
+    "colorBanner" : "¡Gira para ganar hasta un 100 % de descuento!",
+    "textBanner" : "",
+    "discountCoupon" : "",
     "textBannerContinue" : "",
-    "endingBanner" : "¡Comprar ahora!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&ORDERSTYLE=nLWw45a5hLk=&COUPON=FRDays24&CLEAN_CART=ALL",
+    "endingBanner" :  "",
+    "avs pl link" : "",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
-    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL"
-    }
+    "LinkUnlimited" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
+
+  "*****************************BF********************************" : "*****************************BF********************************",
+
+  "Black Friday" : "Black Friday",
+  "Lucky Wheel" : "Lucky Wheel",
+  "Spin the wheel to get a discount coupon up" : "¡Gire la rueda para ganar hasta un ",
+  "99% off"  : "99% de descuento",
+  "onwheel" : " en los programas ",
+  "AVS4YOU"  : "AVS4YOU",
+  "products"  : "!",
+  "Get started now" : "Empezar ahora",
+  "Please note that you may try your luck only once a day" : "*Tenga en cuenta que solo se puede probar suerte una vez al día.",
+  "Congratulations" : "¡Felicidades!",
+  "Youve got a" : "¡Su descuento es ",
+  "discount on" : " en ",
+  "discount before" : "!",
+  "Redeem your coupon" : "Canjear el cupón",
+  "Unlim10" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=Unlim10&CLEAN_CART=ALL",
+  "10AyeL" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=10AyeL&CLEAN_CART=ALL",
+  "Unlim15" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=Unlim15&CLEAN_CART=ALL", 
+  "Unlim20" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=Unlim20&CLEAN_CART=ALL",
+  "AnYear20" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=AnYear20&CLEAN_CART=ALL",  
+  "AVUnlim30" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=AVUnlim30&CLEAN_CART=ALL",
+  "ANYeR30" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=ANYeR30&CLEAN_CART=ALL",
+  "AU40lim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=AU40lim&CLEAN_CART=ALL", 
+  "Av40Sub" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=Av40Sub&CLEAN_CART=ALL",
+  "Un5AVsur" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=Un5AVsur&CLEAN_CART=ALL", 
+  "BRy25Amak" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=es&COUPON=BRy25Amak&CLEAN_CART=ALL"
+  }
