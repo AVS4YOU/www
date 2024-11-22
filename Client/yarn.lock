@@ -1495,6 +1495,11 @@
     ts-node "^9"
     tslib "^2"
 
+"@fontsource/montserrat@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.1.0.tgz#3a73a60be1ecd247ff879287f63acda43962cece"
+  integrity sha512-HB4+rWP9Y8g6T9RGRVJk2SvAJtx2eBAXuivvPOqQdD806/9WESUfucfH9LqFj3bGgdhNCfh0Rv0NGuwEmBLRiw==
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"

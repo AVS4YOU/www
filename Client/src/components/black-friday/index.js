@@ -1,11 +1,10 @@
 import React, {useState, useEffect, useRef} from "react";
-import withI18next from "../withI18next";
-import Layout from "../layout";
 import Text from '../text';
 import ImageGQL from '../image-gql';
 import styled from 'styled-components';
 import Button from '../button';
 import ReactTurntable from "react-turntable";
+import "@fontsource/montserrat/800.css";
 
 import wheelAVS from '../../images/black-friday/bg_wheel.png';
 import wheelAVScircle from '../../images/black-friday/bf_vector.png';
@@ -20,9 +19,6 @@ import offMusicButtom from "../../images/black-friday/off_bf.png";
 import AudioCasino from "../../images/black-friday/operation_casino.mp3";
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
 
-import redSector from "../../images/black-friday/red.png";
-import whiteSector from "../../images/black-friday/white.png";
-
 const Wheelstyle = styled.div`
 float: left;
 margin: 25px;
@@ -33,6 +29,7 @@ position: relative;
 
 .WheelAVS{
     position: absolute;
+    z-index: 1;
 }
 
 .wheelAVSram{
@@ -52,7 +49,7 @@ position: relative;
 
 .wheelAVScircle{
   position: absolute;
-  top: 225px;
+  top: 220px;
   left: 195px;
   z-index: 20;
 }
@@ -170,6 +167,7 @@ vertical-align: top;
     line-height: 100px;
     text-transform: uppercase;
     white-space: nowrap;
+    font-family: Montserrat;
   }
 
   .header___subtitle {
@@ -180,6 +178,7 @@ vertical-align: top;
     text-transform: uppercase;
     padding-bottom: 32px;
     white-space: nowrap;
+    font-family: Montserrat;
   }
 
   .header__subtitle{
@@ -200,6 +199,7 @@ vertical-align: top;
     padding: 0px 0 40px;
     text-align: center;
     font-family: Montserrat;
+    max-width: 656px;
   }
 
   .secondtext_bf{
@@ -230,7 +230,7 @@ vertical-align: top;
   padding-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 100px;
+  line-height: ${(props) => (props.locale === "de" ? '64px' : '100px')};
 }
 
 .got {
@@ -302,9 +302,9 @@ vertical-align: top;
 
   .congratsBg {
     position: absolute;
-    top: -50%;
+    top: -80%;
     z-index: -1;
-    left: -30%;
+    left: -40%;
   }
 
 .header_img {
@@ -402,9 +402,12 @@ vertical-align: top;
     height: 433px;
   }
 
-  .header_subtitle {
-    max-width: 880px;
+  .block_content .header_subtitle {
     padding: 0px 40px 40px;
+  }
+
+  .header_img {
+    padding-bottom: 0;
   }
 
   .congratsBg {
@@ -544,17 +547,13 @@ const options = {
   width: 500,
   height: 550,
   primaryColor: "#9f0900",
-  secondaryColor: "#FFFFFF",
-  images: [ 
-    "https://forumupload.ru/uploads/001a/48/60/1337/661753.png", 
-    "https://forumupload.ru/uploads/001a/48/60/1337/64409.png" 
-  ],
+  secondaryColor: "#000000",
   fontStyle:{
-      color: "#000",
       size:"28px",
       fontVertical:true,
       fontWeight:"bold",
-      fontFamily:"Microsoft YaHei"
+      fontFamily:"Montserrat",
+      color: "#FFFFFF",
   },
   speed: 1000,
   duration: 5000,
@@ -649,9 +648,10 @@ export class BlackFriday extends React.PureComponent {
   render(){
     const programName = ProgramNames[this.state.couponName];
     const redeemName = RedeemNames[this.state.couponName];
+    const { locale } = this.props;
 
     return (
-        <BlackFridayStyle>
+        <BlackFridayStyle locale={locale}>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet"></link>
         <div className="header">
               <ImageGQL className="headerBackgroundImage" imageName="bg_bf_wheel.png" style={{position: "absolute"}}/>
@@ -668,7 +668,7 @@ export class BlackFriday extends React.PureComponent {
                       <div className="block_content on_complite">
                       <img className="congratsBg" src={congratsBg}/>
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
-                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
+                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize === "Surprise" ? "50%" : this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
                       {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{this.state.couponName}</span></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={this.props.t(redeemName)}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
@@ -694,19 +694,16 @@ export class BlackFriday extends React.PureComponent {
                     <div className="wheelAVSram"></div>
                     <div className="WheelAVS" style={styles}>
                         <ReactTurntable {...options}
-
                         onComplete={this.setPrize}
                         hiddenButton
                         getTurntable={turntable => (this.turntable = turntable)}                     
                       />
-
                     </div>
-                    
-                    </Wheelstyle>
+                  </Wheelstyle>
                   </div>
-                </div>
               </div>
-              </BlackFridayStyle>
+          </div>
+        </BlackFridayStyle>
     );
   }
 };

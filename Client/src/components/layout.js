@@ -559,7 +559,7 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday i18n={i18next} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
+                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
                     
                 </StyledLayout>
                 <CookieMessage/>
