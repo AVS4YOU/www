@@ -497,14 +497,14 @@ const CustomPlayer = withSoundCloudAudio(props => {
 	}
 });
 
-const prizes = ['10%', '15%', '20%', '30%', '15%', '40%', '20%', '10%', 'Surprise', '100%'] 
+const prizes = ['10%', '20%', '30%', '15%', '20%', '30%', '40%', '10%', 'Surprise', '100%'] 
 
 const CouponNames = {
   '10%': ['Unlim10', '10AyeL'],
   '15%':'Unlim15',
   '20%': ['Unlim20', 'AnYear20'],
   '30%': ['AVUnlim30', 'ANYeR30'],
-  '40%': ['AU40lim', 'Av40Sub'],
+  '40%': 'AU40lim',
   'Surprise':'Un5AVsur',
   '100%':'BRy25Amak',
 }
@@ -518,7 +518,6 @@ const ProgramNames = {
   'AVUnlim30': 'AVS4YOU Unlimited',  
   'ANYeR30': 'AVS4YOU 1 Year Subscription',
   'AU40lim': 'AVS4YOU Unlimited', 
-  'Av40Sub': 'AVS4YOU 1 Year Subscription',
   'Un5AVsur': 'AVS4YOU Unlimited', 
   'BRy25Amak': 'AVS Video ReMaker 1 Year Subscription',
 }
@@ -532,7 +531,6 @@ const RedeemNames = {
   'AVUnlim30': 'AVUnlim30',
   'ANYeR30': 'ANYeR30',
   'AU40lim': 'AU40lim', 
-  'Av40Sub': 'Av40Sub',
   'Un5AVsur': 'Un5AVsur', 
   'BRy25Amak': 'BRy25Amak',
 }
