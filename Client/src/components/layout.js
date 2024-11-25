@@ -20,7 +20,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
-import i18next from 'i18next';
+import "@fontsource/montserrat/800.css";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";

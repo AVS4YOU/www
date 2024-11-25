@@ -30,6 +30,7 @@ position: relative;
 .WheelAVS{
     position: absolute;
     z-index: 1;
+    font-family: Montserrat;
 }
 
 .wheelAVSram{
@@ -200,6 +201,7 @@ vertical-align: top;
     text-align: center;
     font-family: Montserrat;
     max-width: 656px;
+    margin: auto;
   }
 
   .secondtext_bf{
@@ -508,16 +510,16 @@ const CouponNames = {
 }
 
 const ProgramNames = {
-  'Unlim10': 'AVS4YOU Unlimited Subscription',
+  'Unlim10': 'AVS4YOU Unlimited',
   '10AyeL': 'AVS4YOU 1 Year Subscription',
-  'Unlim15': 'AVS4YOU Unlimited Subscription',
-  'Unlim20': 'AVS4YOU Unlimited Subscription', 
+  'Unlim15': 'AVS4YOU Unlimited',
+  'Unlim20': 'AVS4YOU Unlimited', 
   'AnYear20': 'AVS4YOU 1 Year Subscription',
-  'AVUnlim30': 'AVS4YOU Unlimited Subscription',  
+  'AVUnlim30': 'AVS4YOU Unlimited',  
   'ANYeR30': 'AVS4YOU 1 Year Subscription',
-  'AU40lim': 'AVS4YOU Unlimited Subscription', 
+  'AU40lim': 'AVS4YOU Unlimited', 
   'Av40Sub': 'AVS4YOU 1 Year Subscription',
-  'Un5AVsur': 'AVS4YOU Unlimited Subscription', 
+  'Un5AVsur': 'AVS4YOU Unlimited', 
   'BRy25Amak': 'AVS Video ReMaker 1 Year Subscription',
 }
 
@@ -540,6 +542,7 @@ const styles = {
   //alignContent:"center",
   //float: "left",
   //display:"flex"
+  fontFamily: "Montserrat"
 }
 
 const options = {
@@ -551,8 +554,8 @@ const options = {
   fontStyle:{
       size:"28px",
       fontVertical:true,
-      fontWeight:"bold",
-      fontFamily:"Montserrat",
+      fontWeight:"800",
+      fontFamily: "Montserrat, sans-serif",
       color: "#FFFFFF",
   },
   speed: 1000,
