@@ -4,7 +4,7 @@
 ### New
 * Added event 'Black Friday 2024'
 
-## 1.0.72 (02.10.2024)
+## 1.0.72 (02.10.2024) 
 ### New
 * Removed banner 'French Days Sale'
 
