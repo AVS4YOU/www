@@ -1725,11 +1725,11 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Oferta especial de Black Friday:",
-    "colorBanner" : "¡Gira para ganar hasta un 100% de descuento!",
-    "textBanner" : "",
+    "beginningBanner" : "¡Descubra una nueva sorpresa cada día con nuestro ",
+    "colorBanner" : "Calendario de Adviento",
+    "textBanner" : "! Disfrute de hasta un ",
     "discountCoupon" : "",
-    "textBannerContinue" : "",
+    "textBannerContinue" : "100 % de descuento",
     "endingBanner" :  "",
     "avs pl link" : "",
     

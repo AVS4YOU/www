@@ -32,22 +32,24 @@
 
   .popupBlock {
     &.topTree{
-    background-image: url(../images/advent-calendar/top.png);
+    background-image: url(../images/advent-calendar/bg-popup.png);
     background-repeat: no-repeat;
-    background-size: 200%;
-    background-position-x: -337px;
+    background-size: 100%;
+    background-position-x: 0;
     z-index: 20;
 }
 }
 
 .bottomTree{
-  background-image: url(../images/advent-calendar/bottom.png);
   background-repeat: no-repeat;
-  background-size: 285%;
-  background-position-y: 323px;
-  background-position-x: -452px;
-  height: 483px;
   z-index: 20;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: table;
+  margin: auto;
 }
 
   .advent_header_top {

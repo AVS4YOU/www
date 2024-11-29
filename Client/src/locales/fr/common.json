@@ -1766,11 +1766,11 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Offre spéciale du vendredi noir :",
-    "colorBanner" : "Jusqu'à 100% de réduction !",
-    "textBanner" : "Tournez pour gagner",
+    "beginningBanner" : "Déballez une nouvelle surprise chaque jour avec notre ",
+    "colorBanner" : "calendrier de l'Avent ",
+    "textBanner" : "! Profitez de jusqu'à ",
     "discountCoupon" : "",
-    "textBannerContinue" : "",
+    "textBannerContinue" : "100% de réduction",
     "endingBanner" :  "",
     "avs pl link" : "",
     

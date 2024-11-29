@@ -1523,11 +1523,11 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Black Friday Special:",
-    "colorBanner" : "Up to 100% Off!",
-    "textBanner" : "Spin to win",
+    "beginningBanner" : "Unwrap a new surprise every day with our ",
+    "colorBanner" : "Advent Calendar",
+    "textBanner" : "! Enjoy up to ",
     "discountCoupon" : "",
-    "textBannerContinue" : "",
+    "textBannerContinue" : "100% Off",
     "endingBanner" :  "",
     "avs pl link" : "",
     

@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from "prop-types";
 import Header from "./header";
@@ -19,8 +12,6 @@ import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
-import {BlackFriday} from "../components/black-friday";
-import "@fontsource/montserrat/800.css";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
@@ -30,19 +21,17 @@ import {XClose} from "../images/icons/xClose";
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #1F0404;
-
+  background: #003942;
   .PLnewAvs {
     display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
     cursor: pointer;
-    font-family: Inter, sans-serif;
+    font-family: Open Sans, sans-serif;
     align-items: center;
     justify-content: space-between;
   }
-
   .bgLeft {
     width: 100%;
     height: 60px;
@@ -50,6 +39,7 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 100%;
     max-width: 575px;
+    background-size: 585px;
   }
   
   .bgRight {
@@ -59,6 +49,7 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     background-position-x: 0%;
     max-width: 575px;
+    background-size: 585px;
   }
     
     .PL-box {
@@ -75,8 +66,8 @@ const StyledPL = styled.div`
     
     .PL-desc1 {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 20px;
+        font-weight: 600;
+        line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
@@ -85,7 +76,7 @@ const StyledPL = styled.div`
     .PL-desc2 {
         font-size: 20px;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
@@ -93,29 +84,21 @@ const StyledPL = styled.div`
     
     .PL-desc3 {
         font-size: 20px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-    }
-
-    .PL-desc4 {
-        font-size: 15px;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        background-size: 100%;
-        padding: 1px 6px 1px;
-        background-repeat: no-repeat;
-        width: max-content;
-        background: #FFFFFF;
-        color: #FB5363;
-        border: 1px dashed #FB5363;
     }
-
+    .PL-desc4 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        color: #65BC6A;
+    }
     .PL-desc5 {
         font-size: 15px;
         font-weight: 600;
@@ -130,7 +113,6 @@ const StyledPL = styled.div`
         background: #FB5363;
         color: #FFFFFF;
     }
-
     .fr {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
@@ -142,43 +124,28 @@ const StyledPL = styled.div`
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
-
     .es {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
-
     .it {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
     }
-
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-    }
-
-    .ru {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .textBanner {
-            display: block;
         }
     }
     
     .beginningBanner {
         grid-area: beginningBanner;
     }
-
     .textBannerContinue {
         grid-area: textBannerContinue;
     }
-
     .colorBanner {
         grid-area: colorBanner;
     }
@@ -200,7 +167,6 @@ const StyledPL = styled.div`
             display: none;
             align-items: center;
         }
-
         .PL-box {
             display: inline-flex;
             max-width: fit-content;
@@ -210,17 +176,14 @@ const StyledPL = styled.div`
             flex-direction: row;
             justify-content: center;
             gap: 0 7px;
-
             .PL-desc1, .PL-desc2, .PL-desc3 {
                 font-size: 16px;
             }
-
             .PL-desc3 {
                 padding: 3px 10px 4px;
             }
         }
     }
-
     @media screen and (max-width: 768px) {
         .PLnewAvs {
             display: none;
@@ -240,7 +203,6 @@ const BannerWrapper = styled.div`
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,12 +220,9 @@ const BannerWrapperContent = styled.div`
   box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-
-
   max-width: 387px;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-
   @media screen and (max-width: 450px) {
     width: calc(100% - 40px);
   }
@@ -294,7 +253,6 @@ const BannerWrapperToday = styled.p`
 const BannerWrapperLinkWrapper = styled.span`
   display: flex;
   justify-content: center;
-
   a {
     background: #F07D1A;
     width: 176px;
@@ -369,7 +327,6 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
-            showBlackFriday: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -378,8 +335,6 @@ class Layout extends React.PureComponent {
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
-        this.onOpenBanner = this.onOpenBanner.bind(this)
-        this.onCloseBanner = this.onCloseBanner.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
@@ -459,20 +414,6 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
-    onOpenBanner = (e) => {
-      e.stopPropagation();
-      this.setState({
-        showBlackFriday: true
-      })
-    }
-
-    onCloseBanner = (e) => {
-      e.stopPropagation();
-      this.setState({
-        showBlackFriday: false
-      })
-    }
-
     componentDidUpdate() {
 
         if (this.props.getDevice) {
@@ -541,29 +482,30 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
+                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
                             <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 textBannerContinue">{this.props.t("textBannerContinue")}</p>
                         </div>
                     <div className='bgRight'></div>
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
 
-                
+
 
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
-                    
+                <main>{this.props.children}</main>
+
                 </StyledLayout>
                 <CookieMessage/>
-                {this.state.showBanner && !this.state.showBlackFriday && 
+                {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
                             <BannerPaddingBox>
