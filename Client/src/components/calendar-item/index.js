@@ -155,7 +155,7 @@ const StyledCalendarItem = styled.div`
     font-size: 22px;
     color: #32393E;
     margin: auto;
-    width: 420px;
+    max-width: 420px;
     text-align: center;
     font-weight: 600;
     line-height: 1;
@@ -167,7 +167,7 @@ const StyledCalendarItem = styled.div`
         font-size: 16px;
         color: #32393E;
         margin: auto;
-        width: 420px;
+        max-width: 420px;
         text-align: center;
         font-weight: 400;
         line-height: 22px;
@@ -181,7 +181,7 @@ const StyledCalendarItem = styled.div`
     font-size: 16px;
     color: #32393E;
     margin: auto;
-    width: 420px;
+    max-width: 420px;
     text-align: center;
     font-weight: 400;
     line-height: 22px;
@@ -206,7 +206,7 @@ const StyledCalendarItem = styled.div`
   .popupSub{
     font-size: 12px;
     margin: auto;
-    width: 420px;
+    max-width: 420px;
     text-align: center;
     margin-top: 20px;
     line-height: 1;
