@@ -627,7 +627,7 @@ constructor(props) {
               date={new Date(2024, 11, 23)}
               validDate="The offer is valid till December 24, 2024"
               popupDiscount={<>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></>}
-              hrefButtonPdf={AvsPdf}
+              hrefButtonSave={PostcardLink}
               textButton="Download Now"
               idButton="twenty-third-text_advent-calendar"
             />

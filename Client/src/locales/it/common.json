@@ -1685,9 +1685,9 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Scopri una nuova sorpresa ogni giorno con il nostro",
+    "beginningBanner" : "Scopri una nuova sorpresa ogni giorno con il nostro ",
     "colorBanner" : "Calendario dell'Avvento!",
-    "textBanner" : "Approfitta di",
+    "textBanner" : " Approfitta di ",
     "discountCoupon" : "",
     "textBannerContinue" : "sconti fino al 100%",
     "endingBanner" :  "",

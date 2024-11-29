@@ -162,8 +162,20 @@ const StyledPL = styled.div`
     .endingBanner {
         grid-area: endingBanner;
     }
+
+    .PL-box-mobile {
+        display: none;
+    }
     
     @media screen and (max-width: 1023px) {
+        .PL-box {
+            display: none;
+        }
+
+        .PL-box-mobile {
+            display: inline-block;
+        }
+
         .bgLeft {
             background-image: none;
             width:80px;
@@ -188,12 +200,46 @@ const StyledPL = styled.div`
             font-size: 14px;
             font-weight: 700;
             line-height: 19px;
+            color: #FFFFFF;
         }
         
         .PL-desc3 {
             font-size: 14px;
             font-weight: 600;
             line-height: 19px;
+            color: #FFFFFF;
+        }
+        .PL-desc4 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .PL-box-mobile {
+            text-align: left;
+            padding-left: 22px;
+        }
+
+        .bgLeft {
+            width:0px;
+            max-width: 0px;
+        }
+    
+        .PL-desc2 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+        
+        .PL-desc3 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            color: #FFFFFF;
         }
         .PL-desc4 {
             font-size: 14px;
@@ -503,6 +549,11 @@ class Layout extends React.PureComponent {
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
                             <p className="PL-desc4 textBannerContinue">{this.props.t("textBannerContinue")}</p>
                         </div>
+                        <p className="PL-box-mobile">
+                            <span className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</span>
+                            <span className="PL-desc3 textBanner">{this.props.t("textBanner")}</span>
+                            <span className="PL-desc4 textBannerContinue">{this.props.t("textBannerContinue")}</span>
+                        </p>
                     <div className='bgRight'></div>
                     </div>
                   </Link>
