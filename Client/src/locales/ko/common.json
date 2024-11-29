@@ -1660,9 +1660,9 @@
 	
 	"*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-	"beginningBanner" : "Unwrap a new surprise every day with our ",
-	"colorBanner" : "Advent Calendar",
-	"textBanner" : "! Enjoy up to ",
+	"beginningBanner" : "Unwrap a new surprise every day with our",
+	"colorBanner" : "Advent Calendar!",
+	"textBanner" : "Enjoy up to",
 	"discountCoupon" : "",
 	"textBannerContinue" : "100% Off",
 	"endingBanner" :  "",

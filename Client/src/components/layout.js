@@ -15,6 +15,7 @@ import CustomLink from '../components/link';
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
+import PlAVSbgMobile from "../images/pl/pl-bg-mobile.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -162,31 +163,42 @@ const StyledPL = styled.div`
         grid-area: endingBanner;
     }
     
-    @media screen and (max-width: 1080px) {
-        .PLnewAvs {
-            display: none;
-            align-items: center;
+    @media screen and (max-width: 1023px) {
+        .bgLeft {
+            background-image: none;
+            width:80px;
+            max-width: 80px;
         }
-        .PL-box {
-            display: inline-flex;
-            max-width: fit-content;
-            padding: 0 16px;
-            align-content: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            gap: 0 7px;
-            .PL-desc1, .PL-desc2, .PL-desc3 {
-                font-size: 16px;
-            }
-            .PL-desc3 {
-                padding: 3px 10px 4px;
-            }
+  
+        .bgRight {
+            width: 100%;
+            height: 60px;
+            background-image: url(${PlAVSbgMobile});
+            background-repeat: no-repeat;
+            background-position-x: 0%;
+            max-width: 80px;
+            background-size: 80px;
         }
-    }
-    @media screen and (max-width: 768px) {
-        .PLnewAvs {
+
+        .PL-desc1 {
             display: none;
+        }
+    
+        .PL-desc2 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+        }
+        
+        .PL-desc3 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+        }
+        .PL-desc4 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
         }
     }
 `;
@@ -482,7 +494,7 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
+                  <Link to="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
@@ -493,7 +505,7 @@ class Layout extends React.PureComponent {
                         </div>
                     <div className='bgRight'></div>
                     </div>
-                  </a>
+                  </Link>
                 </StyledPL> : <div></div>}
 
 

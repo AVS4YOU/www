@@ -550,7 +550,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-2812}
               date={new Date(2024, 11, 16)}
-              validDate="The offer is valid tilll December 17, 2024"
+              validDate="The offer is valid till December 17, 2024"
               popupDiscount={<>Enjoy a <b style={{color: "#E73A37", fontSize:"32px"}}>45%</b> <b style={{color: "#E73A37"}}>DISCOUNT</b> <br /> on AVS4YOU <b>1 Year Subscription!</b></>}
               popupCoupon="AVS45Sub"
               popupSub="*Just use this coupon while purchasing"

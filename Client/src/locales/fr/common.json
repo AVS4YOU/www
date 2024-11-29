@@ -1766,9 +1766,9 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Déballez une nouvelle surprise chaque jour avec notre ",
-    "colorBanner" : "calendrier de l'Avent ",
-    "textBanner" : "! Profitez de jusqu'à ",
+    "beginningBanner" : "Déballez une nouvelle surprise chaque jour avec notre",
+    "colorBanner" : "calendrier de l'Avent !",
+    "textBanner" : "Profitez de jusqu'à",
     "discountCoupon" : "",
     "textBannerContinue" : "100% de réduction",
     "endingBanner" :  "",

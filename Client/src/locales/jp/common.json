@@ -1754,11 +1754,11 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "アドベントカレンダーで毎日新しいギフトを受ける！最大100％オフ",
-    "colorBanner" : "",
-    "textBanner" : "",
+    "beginningBanner" : "ーで毎日新しいギフトを受ける",
+    "colorBanner" : "アドベントカレンダ",
+    "textBanner" : "！最大",
     "discountCoupon" : "",
-    "textBannerContinue" : "",
+    "textBannerContinue" : "100％オフ",
     "endingBanner" :  "",
     "avs pl link" : "",
     
