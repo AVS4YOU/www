@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.74 (29.11.2024)
+### New
+* Added event 'Advent Calendar 2025'
+
 ## 1.0.73 (21.11.2024)
 ### New
 * Added event 'Black Friday 2024'
