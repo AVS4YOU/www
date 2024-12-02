@@ -43,13 +43,11 @@
 .bottomTree{
   background-repeat: no-repeat;
   z-index: 20;
-  bottom: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: table;
+  display: table-cell;
   margin: auto;
+  vertical-align: middle;
+  height: 500px;
+  width: 500px;
 }
 
   .advent_header_top {
@@ -763,7 +761,11 @@
     .acgc_subbutton_note {
       &.acgc_ho_ho_ho {
         font-size: 28px;
-      }
+      }display: table-cell;
+      margin: auto;
+      vertical-align: middle;
+      height: 500px;
+      width: 500px;
     }
     #particles-js {
       background-size: 50%;
