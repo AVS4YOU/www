@@ -55,6 +55,7 @@ const StyledCalendarItem = styled.div`
     background-position-y: -1.5px;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
+    cursor: pointer;
   }
 
   .socialLinks {
