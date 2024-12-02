@@ -296,7 +296,7 @@ constructor(props) {
                 <input type="checkbox" id="toggle" className="share__toggle" hidden />
                     <img src={shareSVGAVS} alt=""/>
                 </label>
-                </MenuWrstyle>
+            </MenuWrstyle>
                 <Modal
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
