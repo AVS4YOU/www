@@ -4,15 +4,13 @@ import Text from "../text";
 import PropTypes from "prop-types";
 import spriteImage from "../../images/advent-calendar/calendar.svg";
 import "@fontsource/montserrat/600.css";
-import iconTwitter from "../../images/advent-calendar/twitter.svg";
+import iconTwitter from "../../images/advent-calendar/x.svg";
 import iconFacebook from "../../images/advent-calendar/facebook.svg";
 import CopyLink from '../../images/advent-calendar/link_copy.svg';
 
 import {
   TwitterShareButton,
   FacebookShareButton,
-  FacebookIcon,
-  TwitterIcon,
 } from "react-share";
 
 const months = [
@@ -452,7 +450,9 @@ class CalendarItem extends React.Component {
             style={{
             border: "none",
             backgroundColor: "#ffffff",
-            paddingLeft: "0",
+            padding: "0",
+            width: "56px",
+            height: "56px",
           }}
             className="Demo__some-network__share-button"
                       >

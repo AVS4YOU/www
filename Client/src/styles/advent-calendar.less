@@ -776,7 +776,7 @@
 
         grid-gap: 22px;
         margin: auto;
-        width: 570px;
+        width: 100%;;
       }
   }
   @media screen and (max-width: 549px) {
@@ -784,19 +784,6 @@
       width: auto;
       max-width: 381px;
     }
-
-    .popupBlock.topTree {
-      background-size: 167%;
-      background-position-x: 50%;
-    }
-
-    .adventCalendarContainer .bottomTree {
-      position: relative;
-      display: block;
-      top: 10%;
-
-    }
-
   }
   @media screen and (max-width: 489px) {
     .acgc_close_button {
@@ -810,6 +797,12 @@
 
     .popupSub, .popupDiscount {
       max-width: 250px;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .adventCalendarContainer {
+      display: grid;
+      grid-template-columns: 169px 169px;
     }
   }
   @media screen and (max-width: 439px) {
@@ -899,6 +892,17 @@
 
     .bottomTree{
       height: 0;
+    }
+
+    .popupBlock.topTree {
+      background-size: 167%;
+      background-position-x: 50%;
+    }
+
+    .adventCalendarContainer .bottomTree {
+      position: relative;
+      display: block;
+      top: 10%;
     }
 
     .subText{
