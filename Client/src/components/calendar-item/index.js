@@ -3,12 +3,14 @@ import styled from "styled-components";
 import Text from "../text";
 import PropTypes from "prop-types";
 import spriteImage from "../../images/advent-calendar/calendar.svg";
+import "@fontsource/montserrat/600.css";
+import iconTwitter from "../../images/advent-calendar/x.svg";
+import iconFacebook from "../../images/advent-calendar/facebook.svg";
+import CopyLink from '../../images/advent-calendar/link_copy.svg';
 
 import {
   TwitterShareButton,
   FacebookShareButton,
-  FacebookIcon,
-  TwitterIcon,
 } from "react-share";
 
 const months = [
@@ -53,13 +55,15 @@ const StyledCalendarItem = styled.div`
     background-position-y: -1.5px;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
+    cursor: pointer;
   }
 
   .socialLinks {
-    width: 150px;
+    width: 200px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    gap: 16px;
   }
 
   .closeButton {
@@ -112,71 +116,100 @@ const StyledCalendarItem = styled.div`
   }
 
   .popupHeader{
-    font-size: 12px;
+    font-size: 14px;
     margin: auto;
-    background-color: #00786b;
-    width: 300px;
-    height: 20px;
     text-align: center;
-    color: #fff;
     font-weight: 600;
-    padding-top: 4px;
-    margin-top: 17px;
+    margin-top: 20px;
   }
 
   .popupTitle {
-    font-size: 30px;
-    color: #ca2a28;
+    font-size: 32px;
+    color: #32393E;
     margin: auto;
-    max-width: 300px;
+    max-width: 380px;
     text-align: center;
-    font-weight: 600;
-    margin-top: 40px;
+    font-weight: 700;
     line-height: 1;
+    font-family: Montserrat;
+    letter-spacing: -0.02em;
+    line-height: 31px;
   }
 
   .titleText {
-    font-size: 18px;
-    color: #ca2a28;
+    font-size: 22px;
+    color: #32393E;
     margin: auto;
     max-width: 300px;
     text-align: center;
     font-weight: 600;
     line-height: 1;
     margin-top: 15px;
+    font-family: Montserrat;
+    letter-spacing: -0.02em;
+    line-height: 31px;
   }
 
   .popupDiscount{
-    font-size: 18px;
+    font-size: 22px;
+    color: #32393E;
     margin: auto;
-    width: 350px;
+    max-width: 420px;
     text-align: center;
     font-weight: 600;
-    margin-top: 15px;
     line-height: 1;
+    font-family: Montserrat;
+    letter-spacing: -0.02em;
+    line-height: 28px;
+
+      .popupDiscountEnter{
+        font-size: 16px;
+        color: #32393E;
+        margin: auto;
+        max-width: 420px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 22px;
+        font-family: Open Sans;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+  }
+
+  .popupDiscountTwo {
+    font-size: 16px;
+    color: #32393E;
+    margin: auto;
+    max-width: 420px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Open Sans;
+    letter-spacing: 0;
+    line-height: 22px;
   }
 
   .popupCoupon{
-    font-size: 26px;
+    font-size: 18px;
     margin: auto;
-    max-width: 300px;
-    outline: 2px dashed #ca2a28;
+    max-width: 220px;
+    outline: 3px dotted #00786B;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 1;
-    padding: 10px;
-    font-weight: 700;
-    background-color: #fff;
+    padding: 10px 0;
+    font-weight: 400;
+    background-color: rgba(0, 120, 107, 0.05);
   }
 
   .popupSub{
     font-size: 12px;
     margin: auto;
-    width: 350px;
+    max-width: 420px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .textBefore{
@@ -191,19 +224,19 @@ const StyledCalendarItem = styled.div`
 
   .subText{
     display: block;
-    font-size: 11px;
+    font-size: 12px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 300px;
+    max-width: 320px;
     text-align: center;
 
     a{
       padding-left: 3px; 
       padding-right: 3px;
-      color: #333333;
+      color: #ca2a28;
       text-decoration: underline;
     }
   }
@@ -212,16 +245,31 @@ const StyledCalendarItem = styled.div`
     background-color: #00786b;
     text-decoration: none;
     border: none;
-    padding: 10px 0;
     text-transform: uppercase;
     display: block;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 5px;
+    min-width: 226px;
+    height: 56px;
+    font-family: Open Sans;
+    border-radius: 3px;
+    padding: 0;
 
     a{
       color: #fff;
       text-decoration: none;
-      padding: 30px;  
+      padding: 19px 38px;
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+    }
+
+    &.letter {
+      height: 44px;
+
+      a{
+        padding: 12px 38px;
+      }
     }
   }
 }
@@ -314,7 +362,7 @@ class CalendarItem extends React.Component {
     return(
       <>
         <div className="subText">
-        <Text fontSize="11">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
+        <Text fontSize="12">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )
@@ -345,7 +393,27 @@ class CalendarItem extends React.Component {
     return(
       <>
         <button className="shopButton">
-        <a id={idButton} href={hrefButtonSave} target="_blank" download="avs_2024.png">{textButton}</a>
+        <a id={idButton} href={hrefButtonSave} target="_blank" download="avs_card_2025.zip">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
+  renderButtonSaveLetter = (textButton, hrefButtonSaveLetter, idButton) => {
+    return(
+      <>
+        <button className="shopButton letter">
+        <a id={idButton} href={hrefButtonSaveLetter} target="_blank" download="avs_letter_2025.zip">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
+  renderButtonSaveWall = (textButton, hrefButtonSaveWall, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonSaveWall} target="_blank" download="avs_wallpaper_2025.zip">{textButton}</a>
         </button>
       </>
     )
@@ -366,22 +434,55 @@ class CalendarItem extends React.Component {
       <div className="socialLinks">
         <TwitterShareButton
             id={linkTwitterId}
-          url={linkTwitter}
+            url={linkTwitter}
+            style={{
+              backgroundImage:`url(${iconTwitter})`,
+              backgroundRepeat: "no-repeat",
+              minWidth: "56px",
+              height: "56px",
+              backgroundSize: "56px"
+            }}
         >
-          <TwitterIcon size={50} round />
         </TwitterShareButton>
         <FacebookShareButton
-            id={linkFacebookId}
-        url={linkFacebook}
+          id={linkFacebookId}
+          url={linkFacebook}
+          style={{
+            backgroundImage:`url(${iconFacebook})`,
+            backgroundRepeat: "no-repeat",
+            minWidth: "56px",
+            height: "56px",
+            backgroundSize: "56px"
+          }}
         >
-          <FacebookIcon size={50} round />
         </FacebookShareButton>
+        <button 
+            onClick={() => navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
+            style={{
+            border: "none",
+            backgroundColor: "#ffffff",
+            padding: "0",
+            width: "56px",
+            height: "56px",
+          }}
+            className="Demo__some-network__share-button"
+                      >
+            <img className=".Demo__some-network__image_copylink" 
+              size={56} 
+              round 
+              src={CopyLink}
+              alt=""
+              style={{
+              width: "56px",
+              cursor:"pointer"
+            }}/>
+          </button>
     </div>
     )
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf } = this.props;    
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall } = this.props;    
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -397,25 +498,26 @@ class CalendarItem extends React.Component {
         {popupOpened && (
           <>
             <div className="popupBlock topTree">
-            <div className="bottomTree">
             <div onClick={this.onClosePopup} className="closeButton" aria-hidden="true"></div>
-              <Text className="popupHeader">
-                {isExpired
-                  ? "OFFER EXPIRED"
-                  : this.props.validDate}
-              </Text>
+            <div className="bottomTree">
               <Text>{popupHeader}</Text>
               <Text className="popupTitle">{popupTitle}</Text>
               {this.renderTextWithLinkTitle(textBeforeTitle, linkTextTitle, linkHrefTitle)}
-              <Text className="popupDiscount">{popupDiscount}<p style={{marginTop: "0", height: "0"}} >{popupDiscountEnter}</p></Text>
-              <Text className="popupDiscount">{popupDiscountTwo}</Text>
+              <Text className="popupDiscount">{popupDiscount}<p className="popupDiscountEnter">{popupDiscountEnter}</p></Text>
               {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
-              <Text className="popupSub">{popupSub}</Text>
+              <Text className="popupDiscountTwo">{popupDiscountTwo}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
               {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
               {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
+              {textButton && hrefButtonSaveLetter && this.renderButtonSaveLetter(textButton, hrefButtonSaveLetter, idButton)}
+              {textButton && hrefButtonSaveWall && this.renderButtonSaveWall(textButton, hrefButtonSaveWall, idButton)}
               {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
+              <Text className="popupSub">{popupSub}</Text>
+              <>{this.props.validDate !== "25" && (
+              <Text className="popupHeader">
+                  {isExpired ? "OFFER EXPIRED" : this.props.validDate}
+              </Text>) }</>
               </div>
               </div>
             <div onClick={this.onClosePopup} className="closeBackground" aria-hidden="true"></div>

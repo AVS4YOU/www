@@ -1660,13 +1660,13 @@
 	
 	"*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Black Friday Special:",
-    "colorBanner" : "Up to 100% Off!",
-    "textBanner" : "Spin to win",
-    "discountCoupon" : "",
-    "textBannerContinue" : "",
-    "endingBanner" :  "",
-    "avs pl link" : "",
+	"beginningBanner" : "Unwrap a new surprise every day with our ",
+	"colorBanner" : "Advent Calendar!",
+	"textBanner" : " Enjoy up to ",
+	"discountCoupon" : "",
+	"textBannerContinue" : "100% Off",
+	"endingBanner" :  "",
+	"avs pl link" : "",
 	
 	"LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
 	"Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",

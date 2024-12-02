@@ -32,22 +32,22 @@
 
   .popupBlock {
     &.topTree{
-    background-image: url(../images/advent-calendar/top.png);
+    background-image: url(../images/advent-calendar/bg-popup.png);
     background-repeat: no-repeat;
-    background-size: 200%;
-    background-position-x: -337px;
+    background-size: 100%;
+    background-position-x: 0;
     z-index: 20;
 }
 }
 
 .bottomTree{
-  background-image: url(../images/advent-calendar/bottom.png);
   background-repeat: no-repeat;
-  background-size: 285%;
-  background-position-y: 323px;
-  background-position-x: -452px;
-  height: 483px;
   z-index: 20;
+  display: table-cell;
+  margin: auto;
+  vertical-align: middle;
+  height: 500px;
+  width: 500px;
 }
 
   .advent_header_top {
@@ -761,7 +761,11 @@
     .acgc_subbutton_note {
       &.acgc_ho_ho_ho {
         font-size: 28px;
-      }
+      }display: table-cell;
+      margin: auto;
+      vertical-align: middle;
+      height: 500px;
+      width: 500px;
     }
     #particles-js {
       background-size: 50%;
@@ -774,7 +778,7 @@
 
         grid-gap: 22px;
         margin: auto;
-        width: 570px;
+        width: 100%;;
       }
   }
   @media screen and (max-width: 549px) {
@@ -791,11 +795,16 @@
 
     #particles-js {
       background-size: 35%;
-      margin-top: -20px;
     }
 
     .popupSub, .popupDiscount {
       max-width: 250px;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .adventCalendarContainer {
+      display: grid;
+      grid-template-columns: 169px 169px;
     }
   }
   @media screen and (max-width: 439px) {
@@ -883,8 +892,15 @@
       width: 250px;
     }
 
-    .bottomTree{
-      height: 0;
+    .popupBlock.topTree {
+      background-size: 167%;
+      background-position-x: 50%;
+    }
+
+    .adventCalendarContainer .bottomTree {
+      position: relative;
+      display: block;
+      top: 10%;
     }
 
     .subText{

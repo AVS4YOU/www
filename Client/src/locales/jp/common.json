@@ -1754,11 +1754,11 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "ブラックフライデーの提案：",
-    "colorBanner" : "100％ㅡまでに最大の割引！",
-    "textBanner" : "スピンして勝つ",
+    "beginningBanner" : "ーで毎日新しいギフトを受ける",
+    "colorBanner" : "アドベントカレンダ",
+    "textBanner" : "！最大",
     "discountCoupon" : "",
-    "textBannerContinue" : "",
+    "textBannerContinue" : "100％オフ",
     "endingBanner" :  "",
     "avs pl link" : "",
     
