@@ -23,7 +23,7 @@ import MusicOn from "../images/advent-calendar/music.svg";
 import MusicOff from "../images/advent-calendar/music.svg";
 import AudioCalendar from "../images/advent-calendar/christmas.wav";
 import shareSVGAVS from "../images/advent-calendar/share.svg";
-import iconTwitter from "../images/advent-calendar/twitter.svg";
+import iconTwitter from "../images/advent-calendar/x.svg";
 import iconFacebook from "../images/advent-calendar/facebook.svg";
 
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
@@ -612,7 +612,7 @@ constructor(props) {
               date={new Date(2024, 11, 22)}
               validDate="The offer is valid till December 23, 2024"
               popupDiscount={<>What a <b style={{color: "#E73A37"}}>LUCKY DAY</b> <br /> <b>for everyone!</b></>}
-              popupDiscountTwo={<><br />50% Off on AVS4YOU Unlimited Subscription</>}
+              popupDiscountTwo={<><br /><b style={{color: "#E73A37"}}>50% Off</b> on AVS4YOU Unlimited Subscription</>}
               popupCoupon="A8LuckyYou"
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=A8LuckyYou&CLEAN_CART=ALL"
@@ -633,7 +633,7 @@ constructor(props) {
               date={new Date(2024, 11, 24)}
               validDate="The offer is valid till December 25, 2024"
               popupDiscount={<><b style={{color: "#E73A37"}}>EXCLUSIVE</b> <b>Deal!</b></>}
-              popupDiscountTwo={<><br />Only today 55% Off on AVS4YOU <br /> Unlimited Subscription</>}
+              popupDiscountTwo={<><br />Only today <b style={{color: "#E73A37"}}>55% Off</b> on AVS4YOU <br /> Unlimited Subscription</>}
               popupCoupon="25Christmas"
               popupSub="*Just use this coupon while purchasing"
               hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=25Christmas&CLEAN_CART=ALL"
