@@ -10,6 +10,7 @@ import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CardImg from '../images/advent-calendar/avs_card.png';
 import LetterImg from '../images/advent-calendar/letter_img.png';
+import PdfCalendar from '../images/advent-calendar/avs_calendar_2025.pdf';
 
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
@@ -31,6 +32,7 @@ import { withSoundCloudAudio } from 'react-soundplayer/addons';
 const PostcardLink = '/avs_card_2025.zip';
 const PostcardLinkLetter = '/avs_letter_2025.zip';
 const PostcardLinkWallpaper = '/avs_wallpaper_2025.zip';
+const PresentationTemplate = '/christmas_template.pptx';
 
 const MenuWrstyle = styled.div`
 
@@ -603,7 +605,7 @@ constructor(props) {
               validDate="25"
               popupDiscount={<><b>Want a</b> <b style={{color: "#E73A37"}}>beautiful</b> <b>CHRISTMAS PRESENTATION?</b></>}
               popupDiscountEnter={<><br />Get a ready <b>Christmas template</b> <br /> to craft your own one</>}
-              hrefButtonSave={PostcardLink}
+              hrefButtonSavePresentation={PresentationTemplate}
               textButton="Download Now"
               idButton="twenty-first-text_advent-calendar"
             />
@@ -624,7 +626,7 @@ constructor(props) {
               date={new Date(2024, 11, 23)}
               validDate="25"
               popupDiscount={<>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></>}
-              hrefButtonSave={PostcardLink}
+              hrefButtonPdf={PdfCalendar}
               textButton="Download Now"
               idButton="twenty-third-text_advent-calendar"
             />
