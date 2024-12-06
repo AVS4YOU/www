@@ -516,6 +516,7 @@ class CalendarItem extends React.Component {
               <Text className="popupDiscount">{popupDiscount}<p className="popupDiscountEnter">{popupDiscountEnter}</p></Text>
               {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
+              {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
               <Text className="popupDiscountTwo">{popupDiscountTwo}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
               {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
@@ -523,7 +524,6 @@ class CalendarItem extends React.Component {
               {textButton && hrefButtonSaveLetter && this.renderButtonSaveLetter(textButton, hrefButtonSaveLetter, idButton)}
               {textButton && hrefButtonSaveWall && this.renderButtonSaveWall(textButton, hrefButtonSaveWall, idButton)}
               {textButton && hrefButtonSavePresentation && this.renderButtonSavePresentation(textButton, hrefButtonSavePresentation, idButton)}
-              {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
               <Text className="popupSub">{popupSub}</Text>
               <>{this.props.validDate !== "25" && (
               <Text className="popupHeader">

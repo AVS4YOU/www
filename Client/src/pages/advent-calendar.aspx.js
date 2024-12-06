@@ -10,6 +10,7 @@ import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CardImg from '../images/advent-calendar/avs_card.png';
 import LetterImg from '../images/advent-calendar/letter_img.png';
+import CalendarImg from '../images/advent-calendar/calendar_img.png';
 import PdfCalendar from '../images/advent-calendar/avs_calendar_2025.pdf';
 
 import "@fontsource/montserrat/600.css";
@@ -625,7 +626,7 @@ constructor(props) {
               imageCoordinate={-4124}
               date={new Date(2024, 11, 23)}
               validDate="25"
-              popupDiscount={<>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></>}
+              popupDiscount={<><span style={{paddingBottom: "10px", display: "block"}}>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></span> <img src={CalendarImg} /></>}
               hrefButtonPdf={PdfCalendar}
               textButton="Download Now"
               idButton="twenty-third-text_advent-calendar"
