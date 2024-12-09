@@ -419,11 +419,21 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButtonSavePresentation = (textButton, hrefButtonSavePresentation, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonSavePresentation} target="_blank" download="christmas_template.pptx">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+  
   renderButtonPdf = (textButton, hrefButtonPdf, idButton) => {
     return(
       <>
         <button className="shopButton">
-        <a id={idButton} href={hrefButtonPdf} download="avs_2024.pdf" target="_blank" rel="noopener">{textButton}</a>
+        <a id={idButton} href={hrefButtonPdf} download="avs_calendar_2025.pdf" target="_blank" rel="noopener">{textButton}</a>
         </button>
       </>
     )
@@ -482,7 +492,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall } = this.props;    
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall, hrefButtonSavePresentation } = this.props;    
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -506,13 +516,14 @@ class CalendarItem extends React.Component {
               <Text className="popupDiscount">{popupDiscount}<p className="popupDiscountEnter">{popupDiscountEnter}</p></Text>
               {linkTwitter && linkFacebook && this.renderSocialLinks(linkTwitter, linkFacebook, {linkFacebookId, linkTwitterId})}
               {popupCoupon && <Text className="popupCoupon">{popupCoupon}</Text>}
+              {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
               <Text className="popupDiscountTwo">{popupDiscountTwo}</Text>
               {this.renderTextWithLink(textBefore, linkText, linkHref, textAfter, linkId)}
               {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
               {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
               {textButton && hrefButtonSaveLetter && this.renderButtonSaveLetter(textButton, hrefButtonSaveLetter, idButton)}
               {textButton && hrefButtonSaveWall && this.renderButtonSaveWall(textButton, hrefButtonSaveWall, idButton)}
-              {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
+              {textButton && hrefButtonSavePresentation && this.renderButtonSavePresentation(textButton, hrefButtonSavePresentation, idButton)}
               <Text className="popupSub">{popupSub}</Text>
               <>{this.props.validDate !== "25" && (
               <Text className="popupHeader">
