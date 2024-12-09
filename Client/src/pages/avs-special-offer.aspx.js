@@ -35,6 +35,20 @@ const SaleWrapper = styled.div`
       align-items: baseline;
     }
 `;
+const lang = ['de','es','fr','it','jp']
+const language = ['de']
+
+const isDeLang = (currentLanguage) => {
+    let isDeLang = false;
+    for(let i = 0; i<language.length; i++) {
+        if(lang[i] === currentLanguage) isDeLang = true;
+    }
+
+    return isDeLang;
+}
+
+const date = new Date();
+const currentYear = date.getFullYear();
 
 class SpecialOffer extends React.PureComponent {
 render(){
@@ -58,7 +72,7 @@ render(){
       <div className="snowflakes-header"></div>
       <div className="multimedia-header"></div>
       </div>
-      <div className="text-header">
+      <div className={isDeLang (this.props.locale) ? "text-header de-header" :  "text-header"}>
       <div className="avs-logo logo-offer"></div>
         <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">{this.props.t("Special Offer")}</Text>
           <div className="text-grab">
@@ -91,7 +105,7 @@ render(){
                       <Link id="buy-now1_avs-special-offer" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2023")}</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2022")}{currentYear}</Text>
       </div>
     </div>
   </div>
