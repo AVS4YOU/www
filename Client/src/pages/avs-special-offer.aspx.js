@@ -36,6 +36,9 @@ const SaleWrapper = styled.div`
     }
 `;
 
+const date = new Date();
+const currentYear = date.getFullYear();
+
 class SpecialOffer extends React.PureComponent {
 render(){
     return (
@@ -91,7 +94,7 @@ render(){
                       <Link id="buy-now1_avs-special-offer" to="/register.aspx" target="_blank" rel="noreferrer noopener" className="style-button">{this.props.t("buy now")}</Link>
               </RedButton>
             </div>
-            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2023")}</Text>
+            <Text fontSize={16} fontWeight={400} color="#fff" className="mainHeaderComment">{this.props.t("The offer is valid till December 31, 2022")}{currentYear}</Text>
       </div>
     </div>
   </div>
