@@ -35,6 +35,17 @@ const SaleWrapper = styled.div`
       align-items: baseline;
     }
 `;
+const lang = ['de','es','fr','it','jp']
+const language = ['de']
+
+const isDeLang = (currentLanguage) => {
+    let isDeLang = false;
+    for(let i = 0; i<language.length; i++) {
+        if(lang[i] === currentLanguage) isDeLang = true;
+    }
+
+    return isDeLang;
+}
 
 const date = new Date();
 const currentYear = date.getFullYear();
@@ -61,7 +72,7 @@ render(){
       <div className="snowflakes-header"></div>
       <div className="multimedia-header"></div>
       </div>
-      <div className="text-header">
+      <div className={isDeLang (this.props.locale) ? "text-header de-header" :  "text-header"}>
       <div className="avs-logo logo-offer"></div>
         <Text fontSize={34} fontWeight={700} color="#fff" className="textSpecial">{this.props.t("Special Offer")}</Text>
           <div className="text-grab">
