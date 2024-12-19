@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.75 (19.12.2024)
+### New
+* Removed banner 'Advent Calendar 2025'
+
 ## 1.0.74 (29.11.2024)
 ### New
 * Added event 'Advent Calendar 2025'
