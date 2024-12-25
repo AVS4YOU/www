@@ -408,6 +408,16 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButtonSaveWall = (textButton, hrefButtonSaveWall, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonSaveWall} target="_blank" download="avs_wallpaper_2025.zip">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
   renderButtonPdf = (textButton, hrefButtonPdf, idButton) => {
     return(
       <>
@@ -471,7 +481,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter } = this.props;    
+    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall } = this.props;    
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -500,6 +510,7 @@ class CalendarItem extends React.Component {
               {textButton && hrefButton && this.renderButton(textButton, hrefButton, idButton)}
               {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
               {textButton && hrefButtonSaveLetter && this.renderButtonSaveLetter(textButton, hrefButtonSaveLetter, idButton)}
+              {textButton && hrefButtonSaveWall && this.renderButtonSaveWall(textButton, hrefButtonSaveWall, idButton)}
               {textButton && hrefButtonPdf && this.renderButtonPdf(textButton, hrefButtonPdf, idButton)}
               <Text className="popupSub">{popupSub}</Text>
               <>{this.props.validDate !== "25" && (

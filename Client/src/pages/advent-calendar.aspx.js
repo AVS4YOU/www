@@ -315,7 +315,7 @@ constructor(props) {
                       }}
                       className="Demo__some-network__share-button"
                     >
-                      <Text className="ModalShaerText" style={{margin: "9px 36px 9px 48px", fontSize:"14px"}}>x.com</Text>
+                      <Text className="ModalShaerText" style={{margin: "9px 36px 9px 48px", fontSize:"14px"}}>X.com</Text>
                     </TwitterShareButton>
 
                     <FacebookShareButton
@@ -332,7 +332,7 @@ constructor(props) {
                       className="Demo__some-network__share-button"
                     >
                       
-                      <Text className="ModalShaerText" style={{margin: "9px 15px 9px 48px", fontSize:"14px"}}>facebook</Text>
+                      <Text className="ModalShaerText" style={{margin: "9px 15px 9px 48px", fontSize:"14px"}}>Facebook</Text>
                     </FacebookShareButton>
 
                     <button 
@@ -582,7 +582,7 @@ constructor(props) {
               validDate="25"
               popupDiscount={<><b>Time to</b> <b style={{color: "#E73A37"}}>decorate</b> <b>your computer!</b></>}
               popupDiscountEnter={<><br />Get AVS4YOU festive wallpaper for your PC</>}
-              hrefButtonSave={PostcardLinkWallpaper}
+              hrefButtonSaveWall={PostcardLinkWallpaper}
               textButton="Download Now"
               idButton="nineteenth-text_advent-calendar"
             />
@@ -593,7 +593,7 @@ constructor(props) {
               popupDiscount={<>Redeem <b style={{color: "#E73A37", fontSize:"32px"}}>35%</b> <b style={{color: "#E73A37"}}>OFF</b> <b>COUPON</b> <br /> on AVS4YOU <b>Unlimited Subscription</b></>}
               popupCoupon="Candle35"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avsFl4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Candle35&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Candle35&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="twentyth-text_advent-calendar"
             />
