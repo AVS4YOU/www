@@ -17,7 +17,6 @@ export default class Modal extends React.Component {
 		super(props);
 
 		this.outerStyle = {
-			position: "fixed",
 			top: 0,
 			left: 0,
 			width: "100%",
@@ -28,18 +27,19 @@ export default class Modal extends React.Component {
 
 		// default style
 		this.stylemodal = {
-			position: "relative",
-            width: "250px",
-            height: "300px",
-            top: "200px",
-			padding: "35px 15px",
+			position: "absolute",
+            width: "185px",
+            height: "auto",
+            top: "68px",
+			right: "0",
+			padding: "20px 0",
 			boxSizing: "border-box",
-			backgroundColor: "#fff",
-			margin: "40px auto",
-			borderRadius: 3,
+			backgroundColor: "#E5EBEC",
+			borderRadius: 8,
 			zIndex: 2,
 			textAlign: "left",
 			boxShadow: "0 20px 30px rgba(0, 0, 0, 0.2)",
+			border: "1px solid #809CA0",
 			...this.props.stylemodal
 		};
 
@@ -51,7 +51,7 @@ export default class Modal extends React.Component {
 			right: 0,
 			width: "100%",
 			height: "100%",
-			backgroundColor: "rgba(0,0,0,0.5)",
+			backgroundColor: "transparent",
 			...this.props.styleoverlay
 		};
 	}

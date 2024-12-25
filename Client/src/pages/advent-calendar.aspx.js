@@ -8,10 +8,9 @@ import styled from 'styled-components';
 import CalendarItem from "../components/calendar-item";
 import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
-import CancelModal from '../images/advent-calendar/cancel.svg';
 import CardImg from '../images/advent-calendar/avs_card.png';
-import LetterImg from '../images/advent-calendar/LetterImg.png';
-import AvsPdf from '../images/advent-calendar/calendar_2024.pdf';
+import LetterImg from '../images/advent-calendar/letter_img.png';
+
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 
@@ -31,6 +30,7 @@ import { withSoundCloudAudio } from 'react-soundplayer/addons';
 
 const PostcardLink = '/static/avs_card_2025.zip';
 const PostcardLinkLetter = '/static/avs_letter_2025.zip';
+const PostcardLinkWallpaper = '/static/avs_wallpaper_2025.zip';
 
 const MenuWrstyle = styled.div`
 
@@ -119,9 +119,6 @@ const ModalStyle = styled.div`
     background: none;
   }
   
-  .ModalShaerText{
-    margin: 15px 15px 15px 74px;
-  }
   .Demo__some-network {
     vertical-align: top;
     display: inline-block;
@@ -135,11 +132,16 @@ const ModalStyle = styled.div`
     white-space: nowrap;
     overflow: visible;
     cursor: pointer;
-    padding-bottom: 15px;
+    padding: 0;
+  }
+
+  .Demo__some-network__share-button:hover {
+    background-color: #ffffff !important;
   }
   
   .Demo__some-network__share-button:hover:not(:active) {
     opacity: 0.75;
+    background-color: #fff;
   }
   .Demo__some-network__image_copylink
   {
@@ -288,7 +290,7 @@ constructor(props) {
                 <Link id="home_advent-calendar" className="afh_logo_link" to="/"></Link>
               </div>
               <div className="afh_share_block">
-            <div className="share">
+            <div className="share" style={{position: "relative"}}>
             <MenuWrstyle>
                 <label for="toggle" className="share__button" onClick={() => this.openModal()} aria-hidden="true">
                 <input type="checkbox" id="toggle" className="share__toggle" hidden />
@@ -299,66 +301,61 @@ constructor(props) {
                     isModalOpen={this.state.isModalOpen}
                     closeModal={this.closeModal}
                   >
-                    <ModalStyle>
-                    <button
-                    className="ModalShaerClose"
-                      onClick={this.closeModal}
-                    >
-                      <img className=".Demo__some-network__image_copylink" 
-                        src={CancelModal}
-                        alt="Cancel"
-                        style={{
-                          width: "32px"
-                        }}/>
-                    </button>
-                    
-                    <FacebookShareButton
-                      url={shareUrl}
-                      quote={title}
-                      style={{
-                        paddingBottom: "15px",
-                        backgroundImage:`url(${iconFacebook})`,
-                        backgroundRepeat: "no-repeat"
-                      }}
-                      className="Demo__some-network__share-button"
-                    >
-                      
-                      <Text className="ModalShaerText">Share</Text>
-                    </FacebookShareButton>
-
+                    <ModalStyle>      
                     <TwitterShareButton
                       url={shareUrl}
                       title={title}
                       style={{
-                        paddingBottom: "15px",
+                        padding: "12px 0",
                         backgroundImage:`url(${iconTwitter})`,
-                        backgroundRepeat: "no-repeat"
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "40px",
+                        backgroundPosition: "24px 12px",
+                        width: "183px"
                       }}
                       className="Demo__some-network__share-button"
                     >
-                      <Text className="ModalShaerText">Tweet</Text>
+                      <Text className="ModalShaerText" style={{margin: "9px 36px 9px 48px", fontSize:"14px"}}>x.com</Text>
                     </TwitterShareButton>
 
+                    <FacebookShareButton
+                      url={shareUrl}
+                      quote={title}
+                      style={{
+                        padding: "12px 0",
+                        backgroundImage:`url(${iconFacebook})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "40px",
+                        backgroundPosition: "24px 12px",
+                        width: "183px"
+                      }}
+                      className="Demo__some-network__share-button"
+                    >
+                      
+                      <Text className="ModalShaerText" style={{margin: "9px 15px 9px 48px", fontSize:"14px"}}>facebook</Text>
+                    </FacebookShareButton>
 
                     <button 
                         onClick={() => navigator.clipboard.writeText("http://avs4you.com/advent-calendar.aspx")}
                         style={{
-                          paddingBottom: "15px",
+                          padding: "12px 0",
                           border: "none",
-                          backgroundColor: "#ffffff",
+                          backgroundColor: "#E5EBEC",
                           paddingLeft: "0",
+                          backgroundPosition: "24px 12px",
+                          width: "183px",
                         }}
                         className="Demo__some-network__share-button"
                       >
                         <img className=".Demo__some-network__image_copylink" 
-                        size={56} 
+                        size={40} 
                         round 
                         src={CopyLink}
                         alt=""
                         style={{
-                          width: "56px"
+                          width: "40px"
                         }}/>
-                        <Text className="ModalShaerText" style={{margin:"15px"}}>Copy the link</Text>
+                        <Text className="ModalShaerText" style={{margin:"9px 0 9px 12px", fontSize:"14px"}}>Copy the link</Text>
                       </button>
                     </ModalStyle>
                   </Modal>          
@@ -380,7 +377,7 @@ constructor(props) {
             </h1>
             <div className="advent_header_sub">
               Don’t miss out amazing gifts and generous discounts up to{" "}
-              <b>99% Off!</b>
+              <b>100% Off!</b>
             </div>
           </div>
 
@@ -484,7 +481,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-1687}
               date={new Date(2024, 11, 10)}
-              validDate="The offer is valid thru December 11, 2024"
+              validDate="25"
               popupDiscount={<>Write a <b style={{color: "#E73A37"}}>LETTER to SANTA</b> <br /> and make a <b>wish list</b></>}
               popupDiscountTwo={<><br /> <img src={LetterImg} /><br /> Download a nice letter template</>}
               hrefButtonSaveLetter={PostcardLinkLetter}
@@ -561,7 +558,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-2999}
               date={new Date(2024, 11, 17)}
-              validDate="The offer is valid thru December 18, 2024"
+              validDate="25"
               popupDiscount={<>Ready to make <br /> <b style={{color: "#E73A37"}}>CHRISTMAS CARDS?</b></>}
               popupDiscountTwo={<><br /> <img src={CardImg} /><br /><br />Send a Christmas greeting card <br /> to your dearest and nearest</>}
               hrefButtonSave={PostcardLink}
@@ -582,10 +579,10 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-3374}
               date={new Date(2024, 11, 19)}
-              validDate="The offer is valid till December 20, 2024"
+              validDate="25"
               popupDiscount={<><b>Time to</b> <b style={{color: "#E73A37"}}>decorate</b> <b>your computer!</b></>}
               popupDiscountEnter={<><br />Get AVS4YOU festive wallpaper for your PC</>}
-              hrefButtonSave={PostcardLink}
+              hrefButtonSave={PostcardLinkWallpaper}
               textButton="Download Now"
               idButton="nineteenth-text_advent-calendar"
             />
@@ -596,14 +593,14 @@ constructor(props) {
               popupDiscount={<>Redeem <b style={{color: "#E73A37", fontSize:"32px"}}>35%</b> <b style={{color: "#E73A37"}}>OFF</b> <b>COUPON</b> <br /> on AVS4YOU <b>Unlimited Subscription</b></>}
               popupCoupon="Candle35"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Candle35&CLEAN_CART=ALL"
+              hrefButton="https://store.avsFl4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Candle35&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="twentyth-text_advent-calendar"
             />
               <CalendarItem
               imageCoordinate={-3749}
               date={new Date(2024, 11, 21)}
-              validDate="The offer is valid till December 22, 2024"
+              validDate="25"
               popupDiscount={<><b>Want a</b> <b style={{color: "#E73A37"}}>beautiful</b> <b>CHRISTMAS PRESENTATION?</b></>}
               popupDiscountEnter={<><br />Get a ready <b>Christmas template</b> <br /> to craft your own one</>}
               hrefButtonSave={PostcardLink}
@@ -625,7 +622,7 @@ constructor(props) {
             <CalendarItem
               imageCoordinate={-4124}
               date={new Date(2024, 11, 23)}
-              validDate="The offer is valid till December 24, 2024"
+              validDate="25"
               popupDiscount={<>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></>}
               hrefButtonSave={PostcardLink}
               textButton="Download Now"
@@ -648,7 +645,7 @@ constructor(props) {
               date={new Date(2024, 11, 25)}
               validDate="25"
               popupDiscount={<><b style={{color: "#E73A37"}}>MERRY CHRISTMAS</b> <br /> and <b>happy holiday season!</b></>}
-              popupDiscountEnter={<><br />AVS4YOU wishes you positive beginnings <br /> and new video projects in 2025. We look forward <br /> to another great year with you!</>}
+              popupDiscountEnter={<><br />AVS4YOU wishes you positive beginnings <br /> and new video projects in 2025. <br /><br /> We look forward to another great year with you!</>}
             />
           </div>
 
