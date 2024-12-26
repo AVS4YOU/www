@@ -10,7 +10,7 @@ import Modal from '../components/modal';
 import CopyLink from '../images/advent-calendar/link_copy.svg';
 import CardImg from '../images/advent-calendar/avs_card.png';
 import LetterImg from '../images/advent-calendar/letter_img.png';
-import CalendarImg from '../images/advent-calendar/calendar_img.png';
+import CalendarImg from '../images/advent-calendar/img_calendar.png';
 import PdfCalendar from '../images/advent-calendar/avs_calendar_2025.pdf';
 
 import "@fontsource/montserrat/600.css";
