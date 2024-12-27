@@ -23,8 +23,9 @@ const StyledPL = styled.div`
   position: relative;
   text-align: center;
   background: #003942;
+  
   .PLnewAvs {
-    display: flex;
+    display: none;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
