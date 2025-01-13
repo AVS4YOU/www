@@ -113,7 +113,7 @@ export const TinyFooter = (props) => {
                 </Link>
                 <FooterSocialsList>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://www.facebook.com/avs4you" id="facebook_footer">
+                        <a className="footerSocial" href="https://www.facebook.com/people/Avs4you-Software/61567521382681/" id="facebook_footer">
                             <img src={facebook} className="footerSocialIcon" alt="facebook"/>
                         </a>
                     </FooterSocialsItem>
