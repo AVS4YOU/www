@@ -422,9 +422,6 @@ class Layout extends React.PureComponent {
         if (parsed.SRC) {
             cookies.set('SRC', parsed.SRC, {path: '/'});
         }
-
-
-
     }
 
     componentWillUnmount() {
@@ -527,6 +524,14 @@ class Layout extends React.PureComponent {
             (window,document,"script","//bat.bing.com/bat.js","uetq");
             `}
                     </script>
+
+            <script type="text/javascript">{`
+            usi_installed = 0; USI_installCode = function() { if (usi_installed == 0) { usi_installed = 1; var USI_headID = document.getElementsByTagName("head")[0]; var USI_installID = document.createElement('script'); USI_installID.type = 'text/javascript'; USI_installID.src = 'https://www.upsellit.com/launch/avs4you.jsp'; USI_headID.appendChild(USI_installID); } }; if (typeof(document.readyState) != "undefined" && document.readyState === "complete") { USI_installCode(); } else if (window.addEventListener){ window.addEventListener('load', USI_installCode, true); } else if (window.attachEvent) { window.attachEvent('onload', USI_installCode); } else { USI_installCode(); } setTimeout("USI_installCode()", 10000);
+            `}</script>
+
+            <script type="text/javascript"> 
+            {`USI_orderID = 'InsertOrderID'; USI_orderAmt = 'InsertOrderSubtotal'; USI_currency = 'InsertCurrency'; var USI_headID = document.getElementsByTagName("head")[0]; var USI_dynScript = document.createElement("script"); USI_dynScript.setAttribute('type','text/javascript'); USI_dynScript.src = 'https://www.upsellit.com/launch/avs4you_pixel.jsp'; USI_headID.appendChild(USI_dynScript); 
+            `}</script>
 
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>

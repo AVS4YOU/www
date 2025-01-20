@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.76 (20.01.2025)
+### New
+* Added Upsellit tag
+### Fixes
+* Fixed Facebook link on site
+
 ## 1.0.75 (19.12.2024)
 ### New
 * Removed event 'Advent Calendar 2025'

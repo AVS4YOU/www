@@ -155,7 +155,7 @@ class Footer extends React.Component{
                         <div>
                             <Text fontSize={14} color="#8e999f">{this.props.t("Follow Us:")}</Text>
 
-                            <a className="footerSocial" href="https://www.facebook.com/avs4you" id="facebook_footer">
+                            <a className="footerSocial" href="https://www.facebook.com/people/Avs4you-Software/61567521382681/" id="facebook_footer">
                                 <img src={facebook} className="footerSocialIcon" alt="facebook"/>
                             </a>
                             <a className="footerSocial" href="https://www.youtube.com/user/avs4you" id="youtube_footer">
