@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.77 (06.02.2025)
+### New
+* Added Blog on header
+### Fixes
+* Fixed blog link for footer
+
 ## 1.0.76 (20.01.2025)
 ### New
 * Added Upsellit tag
