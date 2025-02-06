@@ -159,6 +159,7 @@ const StyledMenuItem = styled.div`
 
     @media (max-width: 1400px) {
         ${MediaWidthStyle}
+        padding: 0 9px;
     }
 
     @media (max-width: 1050px) {
