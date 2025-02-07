@@ -2,6 +2,8 @@
 
 ## 1.0.77 (06.02.2025)
 ### New
+* Changed products info (version, date, file size)
+* Updated pads files
 * Added Blog on header
 
 ### Fixes
