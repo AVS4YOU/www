@@ -1,55 +1,64 @@
 let VideoEditor = {
-    version: "10.0.2.422",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "172.27",
+    version: "11.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "179.7",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
-    version: "7.0.2.283",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "61.84",
+    version: "8.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "69.4",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
-    version: "13.0.4.723",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "81.56",
+    version: "14.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "84.8",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
-    version: "5.7.2.160",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "106.59",
+    version: "6.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "111",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
-    version: "10.5.2.579",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "48.24",
+    version: "11.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "50.9",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
-    version: "10.5.2.644",
-    releaseDD: "06",
-    releaseMM: "08",
-    releaseYYYY: "2024",
-    size: "50.22",
+    version: "11.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "54.9",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
-export {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter};
+let AVSImageConverter = {
+    version: "7.0.1.172",
+    releaseDD: "31",
+    releaseMM: "01",
+    releaseYYYY: "2025",
+    size: "41",
+    platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
+};
+
+export {VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter, AVSImageConverter};

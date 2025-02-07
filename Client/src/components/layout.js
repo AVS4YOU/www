@@ -587,7 +587,7 @@ class Layout extends React.PureComponent {
                         </BannerWrapperContent>
                     </BannerWrapper>
                 }
-                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer t={this.props.t}/>)}
+                {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer locale={this.props.pageContext.locale} t={this.props.t}/>)}
             </PageContext.Provider>
         )
     }

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.77 (06.02.2025)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+* Added Blog on header
+
+### Fixes
+* Fixed blog link for footer
+
 ## 1.0.76 (20.01.2025)
 ### New
 * Added Upsellit tag
