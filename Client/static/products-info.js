@@ -1,5 +1,5 @@
 let VideoEditor = {
-    version: "11.0.1.172",
+    version: "11.1.1.1111",
     releaseDD: "31",
     releaseMM: "01",
     releaseYYYY: "2025",
@@ -8,7 +8,7 @@ let VideoEditor = {
 };
 
 let VideoReMaker = {
-    version: "8.0.1.172",
+    version: "1.1.1.1111",
     releaseDD: "31",
     releaseMM: "01",
     releaseYYYY: "2025",
