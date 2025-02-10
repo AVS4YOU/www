@@ -481,6 +481,9 @@ class Layout extends React.PureComponent {
                 <Helmet>
                     <title>{this.props.title}</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+                    <meta httpEquiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+                    <meta httpEquiv="Pragma" content="no-cache" />
+                    <meta httpEquiv="Expires" content="0" />
                     {this.props.metaDescription && <meta name="description" content={this.props.metaDescription}/>}
                     {this.props.metaKeywords && <meta name="keywords" content={this.props.metaKeywords}/>}
                     {this.props.pageContext.originalPath}
