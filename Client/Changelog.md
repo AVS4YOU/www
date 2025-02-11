@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.78 (11.02.2025)
+### New
+* Added banner 'St. Valentine 2025'
+
 ## 1.0.77 (06.02.2025)
 ### New
 * Changed products info (version, date, file size)
