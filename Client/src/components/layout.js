@@ -14,7 +14,9 @@ import CookieMessage from "../components/cookie-message";
 import CustomLink from '../components/link';
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
+import PlAVSLeft from "../images/pl/pl-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
+import PlAVSRight from "../images/pl/pl-right.svg";
 import PlAVSbgMobile from "../images/pl/pl-bg-mobile.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
@@ -22,10 +24,10 @@ import {XClose} from "../images/icons/xClose";
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #003942;
+  background: #FDD3D9;
   
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
@@ -40,8 +42,22 @@ const StyledPL = styled.div`
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
     background-position-x: 100%;
-    max-width: 575px;
-    background-size: 585px;
+    max-width: 428px;
+    background-size: 428px;
+    position: relative;
+
+    &:after {
+        content: "";
+        background-image: url(${PlAVSLeft});
+        height: 60px;
+        display: block;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        min-width: 101px;
+        left: 105px;
+    }
   }
   
   .bgRight {
@@ -50,13 +66,27 @@ const StyledPL = styled.div`
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
     background-position-x: 0%;
-    max-width: 575px;
-    background-size: 585px;
+    max-width: 428px;
+    background-size: 428px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background-image: url(${PlAVSRight});
+        height: 60px;
+        display: block;
+        background-position: 0%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        min-width: 101px;
+        rigth: 100px;
+    }
   }
     
     .PL-box {
         height: 100%;
-        color: #FFFFFF; 
+        color: #32393e; 
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
@@ -73,6 +103,7 @@ const StyledPL = styled.div`
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
+        color: #E86074; 
     }
     
     .PL-desc2 {
@@ -94,12 +125,15 @@ const StyledPL = styled.div`
     }
     .PL-desc4 {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #65BC6A;
+        color: #FFFFFF;
+        background-color: #E86074;
+        padding: 8px 10px;
+        border-radius: 8px;
     }
     .PL-desc5 {
         font-size: 15px;
@@ -170,26 +204,31 @@ const StyledPL = styled.div`
 
     @media screen and (max-width: 1200px) {
 
+        .PL-box {
+            gap: 5px;
+        }
+
         .PL-desc1 {
             font-size: 14px;
             font-weight: 600;
             line-height: 19px;
-            color: #FFFFFF;
+            width: max-content;
         }
     
         .PL-desc2 {
             font-size: 14px;
             font-weight: 700;
             line-height: 19px;
-            color: #FFFFFF;
+            width: max-content;
         }
         
         .PL-desc3 {
             font-size: 14px;
             font-weight: 600;
             line-height: 19px;
-            color: #FFFFFF;
+            width: max-content;
         }
+
         .PL-desc4 {
             font-size: 14px;
             font-weight: 700;
@@ -197,42 +236,53 @@ const StyledPL = styled.div`
         }
     }
     
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 830px) {
+        .PLnewAvs{
+            gap: 10px;
+        }
+
         .PL-box {
             display: none;
         }
 
         .PL-box-mobile {
             display: inline-block;
+            text-align: left;
+            color: #32393e; 
+            line-height: 16px;
+
+            span {
+                font-size: 12px;
+            }
         }
 
         .bgLeft {
             background-image: none;
-            width:80px;
+            width:20px;
             max-width: 80px;
+            
+            &:after {
+                display: none;
+            }
+        }
+
+        .PL-desc4 {
+            display: none;
         }
   
         .bgRight {
             width: 100%;
-            height: 60px;
+            height: 64px;
             background-image: url(${PlAVSbgMobile});
             background-repeat: no-repeat;
             background-position-x: 0%;
-            max-width: 80px;
-            background-size: 80px;
+            max-width: 108px;
+            background-size: 108px;
         }
 
-        .PL-desc1 {
-            display: none;
-        }
     }
 
     @media screen and (max-width: 400px) {
-
-        .PL-box-mobile {
-            text-align: left;
-            padding-left: 22px;
-        }
 
         .bgLeft {
             width:0px;
@@ -540,23 +590,28 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <Link to="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
+                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
-                            <p className="PL-desc1 beginningBanner">{this.props.t("beginningBanner")}</p>
-                            <p className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
+                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 textBannerContinue">{this.props.t("textBannerContinue")}</p>
+                            <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
+                            <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
+                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                         <p className="PL-box-mobile">
-                            <span className="PL-desc2 colorBanner">{this.props.t("colorBanner")}</span>
+                            <span className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</span>
+                            <span className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</span>
                             <span className="PL-desc3 textBanner">{this.props.t("textBanner")}</span>
-                            <span className="PL-desc4 textBannerContinue">{this.props.t("textBannerContinue")}</span>
+                            <span className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</span>
+                            <span className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</span>
+                            <span className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</span>
                         </p>
                     <div className='bgRight'></div>
                     </div>
-                  </Link>
+                  </a>
                 </StyledPL> : <div></div>}
 
 
