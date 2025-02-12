@@ -17,7 +17,6 @@ import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSLeft from "../images/pl/pl-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
 import PlAVSRight from "../images/pl/pl-right.svg";
-import PlAVSbgMobile from "../images/pl/pl-bg-mobile.svg";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
@@ -62,10 +61,10 @@ const StyledPL = styled.div`
   
   .bgRight {
     width: 100%;
-    height: 60px;
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
-    background-position-x: 0%;
+    height: 63px;
+    background-position: 0% 100%;
     max-width: 428px;
     background-size: 428px;
     position: relative;
@@ -205,88 +204,44 @@ const StyledPL = styled.div`
     @media screen and (max-width: 1200px) {
 
         .PL-box {
-            gap: 5px;
+            gap: 3px;
         }
 
         .PL-desc1 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             line-height: 19px;
             width: max-content;
         }
     
         .PL-desc2 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             line-height: 19px;
             width: max-content;
         }
         
         .PL-desc3 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             line-height: 19px;
             width: max-content;
         }
 
         .PL-desc4 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             line-height: 19px;
         }
     }
     
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 768px) {
         .PLnewAvs{
-            gap: 10px;
+            display: none;
         }
 
         .PL-box {
             display: none;
-        }
-
-        .PL-box-mobile {
-            display: inline-block;
-            text-align: left;
-            color: #32393e; 
-            line-height: 16px;
-
-            span {
-                font-size: 12px;
-            }
-        }
-
-        .bgLeft {
-            background-image: none;
-            width:20px;
-            max-width: 80px;
-            
-            &:after {
-                display: none;
-            }
-        }
-
-        .PL-desc4 {
-            display: none;
-        }
-  
-        .bgRight {
-            width: 100%;
-            height: 64px;
-            background-image: url(${PlAVSbgMobile});
-            background-repeat: no-repeat;
-            background-position-x: 0%;
-            max-width: 108px;
-            background-size: 108px;
-        }
-
-    }
-
-    @media screen and (max-width: 400px) {
-
-        .bgLeft {
-            width:0px;
-            max-width: 0px;
         }
     }
 `;
@@ -578,14 +533,6 @@ class Layout extends React.PureComponent {
             `}
                     </script>
 
-            <script type="text/javascript">{`
-            usi_installed = 0; USI_installCode = function() { if (usi_installed == 0) { usi_installed = 1; var USI_headID = document.getElementsByTagName("head")[0]; var USI_installID = document.createElement('script'); USI_installID.type = 'text/javascript'; USI_installID.src = 'https://www.upsellit.com/launch/avs4you.jsp'; USI_headID.appendChild(USI_installID); } }; if (typeof(document.readyState) != "undefined" && document.readyState === "complete") { USI_installCode(); } else if (window.addEventListener){ window.addEventListener('load', USI_installCode, true); } else if (window.attachEvent) { window.attachEvent('onload', USI_installCode); } else { USI_installCode(); } setTimeout("USI_installCode()", 10000);
-            `}</script>
-
-            <script type="text/javascript"> 
-            {`USI_orderID = 'InsertOrderID'; USI_orderAmt = 'InsertOrderSubtotal'; USI_currency = 'InsertCurrency'; var USI_headID = document.getElementsByTagName("head")[0]; var USI_dynScript = document.createElement("script"); USI_dynScript.setAttribute('type','text/javascript'); USI_dynScript.src = 'https://www.upsellit.com/launch/avs4you_pixel.jsp'; USI_headID.appendChild(USI_dynScript); 
-            `}</script>
-
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
@@ -601,14 +548,6 @@ class Layout extends React.PureComponent {
                             <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
                             <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
-                        <p className="PL-box-mobile">
-                            <span className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</span>
-                            <span className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</span>
-                            <span className="PL-desc3 textBanner">{this.props.t("textBanner")}</span>
-                            <span className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</span>
-                            <span className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</span>
-                            <span className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</span>
-                        </p>
                     <div className='bgRight'></div>
                     </div>
                   </a>
