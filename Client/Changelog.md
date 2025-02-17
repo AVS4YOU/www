@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.79 (17.02.2025)
+### New
+* Removed banner 'St. Valentine 2025'
+
 ## 1.0.78 (11.02.2025)
 ### New
 * Added banner 'St. Valentine 2025'
