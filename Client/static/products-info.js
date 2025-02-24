@@ -1,63 +1,63 @@
 let VideoEditor = {
-    version: "11.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "11.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "179.7",
+    size: "179.76",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
-    version: "8.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "8.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "69.4",
+    size: "69.41",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
-    version: "14.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "14.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "84.8",
+    size: "84.83",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
-    version: "6.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "6.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "111",
+    size: "110.99",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
-    version: "11.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "11.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "50.9",
+    size: "50.86",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
-    version: "11.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "11.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "54.9",
+    size: "54.89",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AVSImageConverter = {
-    version: "7.0.1.172",
-    releaseDD: "31",
-    releaseMM: "01",
+    version: "7.0.2.21",
+    releaseDD: "20",
+    releaseMM: "02",
     releaseYYYY: "2025",
-    size: "41",
+    size: "41.04",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
