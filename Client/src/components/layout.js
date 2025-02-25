@@ -417,6 +417,12 @@ class Layout extends React.PureComponent {
             }
         }
 
+        if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
+            this.script = document.createElement('script');
+            this.script.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
+            document.body.appendChild(this.script);
+        }
+
         document.body.addEventListener('resize', this.updateWindowDimensions);
 
         document.body.addEventListener('mouseleave', this.onMouseLeave)
@@ -432,6 +438,9 @@ class Layout extends React.PureComponent {
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateWindowDimensions);
         window.removeEventListener('mouseleave', this.onMouseLeave)
+        if (this.script) {
+            document.body.removeChild(this.script);
+        }
     }
 
     updateWindowDimensions() {

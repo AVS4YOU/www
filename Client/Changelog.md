@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.80 (25.02.2025)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
+### Fixes
+* Fixed links for Unlimited and 1 year subscription
+
 ## 1.0.79 (17.02.2025)
 ### New
 * Removed banner 'St. Valentine 2025'
