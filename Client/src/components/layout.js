@@ -421,6 +421,7 @@ class Layout extends React.PureComponent {
             if (!document.querySelector('.rf-popup-script')) {
                 const popupScript = document.createElement('script');
                 popupScript.className = 'rf-popup-script';
+                popupScript.id = 'rf-script';
                 popupScript.setAttribute('data-code', 'cd5TPKTj');
                 popupScript.src = 'https://referral-factory.com/assets/js/popup.js?code=cd5TPKTj';
                 document.body.appendChild(popupScript);
