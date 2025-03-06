@@ -418,9 +418,19 @@ class Layout extends React.PureComponent {
         }
 
         if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
-            this.script = document.createElement('script');
-            this.script.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
-            document.body.appendChild(this.script);
+            if (!document.querySelector('.rf-popup-script')) {
+                const popupScript = document.createElement('script');
+                popupScript.className = 'rf-popup-script';
+                popupScript.id = 'rf-script';
+                popupScript.setAttribute('data-code', 'cd5TPKTj');
+                popupScript.src = 'https://referral-factory.com/assets/js/popup.js?code=cd5TPKTj';
+                document.body.appendChild(popupScript);
+            }
+        } else if (window.location.pathname === "/register.aspx") {
+            const existingScript = document.querySelector('.rf-popup-script');
+            if (existingScript) {
+                document.body.removeChild(existingScript);
+            }
         }
 
         document.body.addEventListener('resize', this.updateWindowDimensions);
