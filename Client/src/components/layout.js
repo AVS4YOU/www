@@ -416,20 +416,48 @@ class Layout extends React.PureComponent {
                 this.props.getDevice("Desktop");
             }
         }
+        if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
+            const observer = new MutationObserver((mutations) => {
+                const scrollTopElement = document.querySelector('.ScrollTopMain');
+                if (scrollTopElement) {
+                    scrollTopElement.style.cssText = 'bottom: 100px';
+                    observer.disconnect();
+                }
+            });
+            
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        }
 
         if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
-            if (!document.querySelector('.rf-popup-script')) {
+            if (!document.querySelector('#rf-script')) {
                 const popupScript = document.createElement('script');
-                popupScript.className = 'rf-popup-script';
                 popupScript.id = 'rf-script';
-                popupScript.setAttribute('data-code', 'cd5TPKTj');
-                popupScript.src = 'https://referral-factory.com/assets/js/popup.js?code=cd5TPKTj';
+                popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
                 document.body.appendChild(popupScript);
             }
+
+            const style = document.createElement('style');
+                style.innerHTML = `
+                    @media screen and (max-width: 768px) {
+                        .rf-widget-launch {
+                            right: 15px !important;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
         } else if (window.location.pathname === "/register.aspx") {
-            const existingScript = document.querySelector('.rf-popup-script');
+            const existingScript = document.querySelector('#rf-script');
+            const existingWidget = document.querySelector('.rf-widget-launch');
+        
             if (existingScript) {
                 document.body.removeChild(existingScript);
+            }
+        
+            if (existingWidget) {
+                existingWidget.remove(); 
             }
         }
 
