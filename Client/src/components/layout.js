@@ -11,6 +11,7 @@ import {Helmet} from "react-helmet";
 import {withPrefix, Link} from "gatsby";
 import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
+import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
@@ -382,6 +383,7 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
+            cookiesIsAccepted: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -394,6 +396,7 @@ class Layout extends React.PureComponent {
     }
 
     componentDidMount() {
+
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
         if (window.location.pathname === '/register.aspx') {
@@ -423,6 +426,11 @@ class Layout extends React.PureComponent {
                     scrollTopElement.style.cssText = 'bottom: 100px';
                     observer.disconnect();
                 }
+
+                if (scrollTopElement && !getCookieConsentValue("AVSUsersCookieMessages")) {
+                    scrollTopElement.style.cssText = 'bottom: 130px';
+                    observer.disconnect();
+                }
             });
             
             observer.observe(document.body, {
@@ -438,15 +446,32 @@ class Layout extends React.PureComponent {
                 popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
                 document.body.appendChild(popupScript);
             }
+            
+            if (!getCookieConsentValue("AVSUsersCookieMessages")) {
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    .rf-widget-launch {
+                        bottom: 70px !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            } else {
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    .rf-widget-launch {
+                        bottom: 30px !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
 
             const style = document.createElement('style');
                 style.innerHTML = `
-                    @media screen and (max-width: 768px) {
-                        .rf-widget-launch {
-                            right: 15px !important;
-                        }
+                @media screen and (max-width: 768px) {
+                    .rf-widget-launch {
+                        right: 15px !important;
                     }
-                `;
+                }`;
                 document.head.appendChild(style);
         } else if (window.location.pathname === "/register.aspx") {
             const existingScript = document.querySelector('#rf-script');
@@ -488,6 +513,12 @@ class Layout extends React.PureComponent {
         })
     }
 
+    onAcceptClick = () => {
+        this.setState({
+            cookiesIsAccepted: true
+        })
+    }
+
     onMouseLeave(event) {
         const pages = JSON.parse(sessionStorage.getItem('pages'))
 
@@ -514,6 +545,20 @@ class Layout extends React.PureComponent {
     }
 
     componentDidUpdate() {
+        if (this.state.cookiesIsAccepted) {
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .rf-widget-launch {
+                    bottom: 30px !important;
+                }
+            `;
+            document.head.appendChild(style);
+
+            const scrollTopElement = document.querySelector('.ScrollTopMain');
+            if (scrollTopElement) {
+                scrollTopElement.style.cssText = 'bottom: 100px';
+            }
+        }
 
         if (this.props.getDevice) {
 
@@ -608,7 +653,7 @@ class Layout extends React.PureComponent {
                 <main>{this.props.children}</main>
 
                 </StyledLayout>
-                <CookieMessage/>
+                <CookieMessage onAcceptClick={this.onAcceptClick} />
                 {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>

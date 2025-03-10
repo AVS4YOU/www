@@ -68,6 +68,9 @@ const CookieStyle = styled.div`
 const CookieMessange = props => {
 
     const { t } = useTranslation('common');
+    const onAccept = () => {
+        props.onAcceptClick()
+    }
 
     return(
         <CookieStyle>
@@ -80,6 +83,7 @@ const CookieMessange = props => {
                 containerClasses="alert-warning"
                 contentClasses="text-capitalize"
                 buttonWrapperClasses="btnWrapperClasses"
+                onAccept={onAccept}
                 >
                 <span className="CookieText">{t("This site uses cookies By continuing to browse the site you agree to our")}
                 <Link to="/privacy.aspx">{t("privacy policy")}</Link>{t("pointeCookie")}</span>
