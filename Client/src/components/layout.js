@@ -419,7 +419,21 @@ class Layout extends React.PureComponent {
                 this.props.getDevice("Desktop");
             }
         }
-        if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
+
+        const excludedPaths = [
+            "/register.aspx",
+            "/uninstall-offer.aspx",
+            "/video-editor.aspx",
+            "/video-editing-software.aspx",
+            "/special-offer.aspx",
+            "/avs-video-editor-year.aspx",
+            "/avs-video-editor-unlimited.aspx",
+            "/avs-video-remaker-giveaway.aspx",
+            "/avs-editor.aspx",
+            "/avs-special-offer.aspx"
+          ];
+
+        if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
             const observer = new MutationObserver((mutations) => {
                 const scrollTopElement = document.querySelector('.ScrollTopMain');
                 if (scrollTopElement) {
@@ -439,7 +453,7 @@ class Layout extends React.PureComponent {
             });
         }
 
-        if (this.props.pageContext.locale === 'en' && window.location.pathname !== "/register.aspx") {
+        if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
             if (!document.querySelector('#rf-script')) {
                 const popupScript = document.createElement('script');
                 popupScript.id = 'rf-script';
@@ -473,7 +487,7 @@ class Layout extends React.PureComponent {
                     }
                 }`;
                 document.head.appendChild(style);
-        } else if (window.location.pathname === "/register.aspx") {
+        } else if (excludedPaths.some(path => path === window.location.pathname)) {
             const existingScript = document.querySelector('#rf-script');
             const existingWidget = document.querySelector('.rf-widget-launch');
         
