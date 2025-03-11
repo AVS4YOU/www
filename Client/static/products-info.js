@@ -53,8 +53,8 @@ let AudioConverter = {
 };
 
 let AVSImageConverter = {
-    version: "7.0.2.21",
-    releaseDD: "20",
+    version: "7.0.2.22",
+    releaseDD: "21",
     releaseMM: "02",
     releaseYYYY: "2025",
     size: "41.04",
