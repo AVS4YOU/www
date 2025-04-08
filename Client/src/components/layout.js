@@ -41,8 +41,8 @@ const StyledPL = styled.div`
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    background-position-x: 0%;
-    max-width: 524px;
+    background-position-x: 100%;
+    max-width: 490px;
     background-size: auto 60px;
     position: relative;
   }
@@ -52,8 +52,8 @@ const StyledPL = styled.div`
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
     height: 63px;
-    background-position: 100% 100%;
-    max-width: 524px;
+    background-position: 0% 100%;
+    max-width: 490px;
     background-size: auto 60px;
     position: relative;
   }
