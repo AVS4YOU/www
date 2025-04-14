@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.81 (08.04.2025)
+### New
+* Added banner 'Easter 2025'
+
 ## 1.0.80 (25.02.2025)
 ### New
 * Changed products info (version, date, file size)

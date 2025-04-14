@@ -24,10 +24,10 @@ import {XClose} from "../images/icons/xClose";
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #FDD3D9;
+  background: #EDF9FF;
   
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
@@ -42,22 +42,9 @@ const StyledPL = styled.div`
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
     background-position-x: 100%;
-    max-width: 428px;
-    background-size: 428px;
+    max-width: 490px;
+    background-size: auto 60px;
     position: relative;
-
-    &:after {
-        content: "";
-        background-image: url(${PlAVSLeft});
-        height: 60px;
-        display: block;
-        background-position: 100%;
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 100%;
-        min-width: 101px;
-        left: 105px;
-    }
   }
   
   .bgRight {
@@ -66,27 +53,14 @@ const StyledPL = styled.div`
     background-repeat: no-repeat;
     height: 63px;
     background-position: 0% 100%;
-    max-width: 428px;
-    background-size: 428px;
+    max-width: 490px;
+    background-size: auto 60px;
     position: relative;
-
-    &:before {
-        content: "";
-        background-image: url(${PlAVSRight});
-        height: 60px;
-        display: block;
-        background-position: 0%;
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 100%;
-        min-width: 101px;
-        rigth: 100px;
-    }
   }
     
     .PL-box {
         height: 100%;
-        color: #32393e; 
+        color: #32393E; 
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
@@ -98,12 +72,12 @@ const StyledPL = styled.div`
     
     .PL-desc1 {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #E86074; 
+        color: #FE9235; 
     }
     
     .PL-desc2 {
@@ -131,7 +105,7 @@ const StyledPL = styled.div`
         text-align: center;
         margin: 0;
         color: #FFFFFF;
-        background-color: #E86074;
+        background-color: #FE9235;
         padding: 8px 10px;
         border-radius: 8px;
     }

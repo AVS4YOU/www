@@ -1685,13 +1685,13 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Offerta di San Valentino! Ottieni il ",
-    "colorBanner" : "25% di sconto",
-    "textBanner" : " con il coupon ",
-    "discountCoupon" : "AVSLove.",
+    "beginningBanner" : "Ottieni ",
+    "colorBanner" : "una delizia pasquale: sconto del 25%",
+    "textBanner" : " sulla suite multimediale AVS4YOU!",
+    "discountCoupon" : "",
     "textBannerContinue" : "",
     "endingBanner" :  "Ottienilo ora!",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=it&COUPON=AVSLove&CLEAN_CART=ALL",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=it&COUPON=Delight25&CLEAN_CART=ALL",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
