@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.82 (24.04.2025)
+### New
+* Removed banner 'Easter 2025'
+
 ## 1.0.81 (08.04.2025)
 ### New
 * Added banner 'Easter 2025'
