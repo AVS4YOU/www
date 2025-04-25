@@ -27,7 +27,7 @@ const StyledPL = styled.div`
   background: #EDF9FF;
   
   .PLnewAvs {
-    display: flex;
+    display: none;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
