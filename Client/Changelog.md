@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.83 (16.05.2025)
+### New
+* Updated buy links on '/register.aspx' (en)
+
 ## 1.0.82 (24.04.2025)
 ### New
 * Removed banner 'Easter 2025'
