@@ -1,9 +1,8 @@
 # Changelog
 
-## 1.0.85 (19.09.2025)
+## 1.0.85 (19.06.2025)
 ### New
 * Restore buy links on '/register.aspx' (all languages)
-
 
 ## 1.0.84 (27.05.2025)
 ### New
