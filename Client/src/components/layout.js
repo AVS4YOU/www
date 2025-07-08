@@ -14,35 +14,36 @@ import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
 
-import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
-import PlAVSLeft from "../images/pl/pl-left.svg";
-import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
-import PlAVSRight from "../images/pl/pl-right.svg";
+import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
+import PlAVSbgRight from "../images/pl/pl-bg-right.png";
+import PlAVSbg from "../images/pl/bg.png";
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #EDF9FF;
+  background: #159024;
   
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-image: url(${PlAVSbg});
+    background-position: 43% 100%;
   }
   .bgLeft {
     width: 100%;
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    background-position-x: 100%;
-    max-width: 490px;
+    background-position-x: 0%;
+    max-width: 239px;
     background-size: auto 60px;
     position: relative;
   }
@@ -51,37 +52,36 @@ const StyledPL = styled.div`
     width: 100%;
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
-    height: 63px;
+    height: 60px;
     background-position: 0% 100%;
-    max-width: 490px;
+    max-width: 239px;
     background-size: auto 60px;
     position: relative;
   }
     
     .PL-box {
         height: 100%;
-        color: #32393E; 
+        color: #FFFFFF; 
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
         gap: 7px;
         align-items: center;
-        margin: 0 24px;
         min-width: max-content;
     }
     
     .PL-desc1 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #FE9235; 
+        color: #ffdd9e; 
     }
     
     .PL-desc2 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
@@ -90,7 +90,7 @@ const StyledPL = styled.div`
     }
     
     .PL-desc3 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
@@ -98,16 +98,16 @@ const StyledPL = styled.div`
         margin: 0;
     }
     .PL-desc4 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
         color: #FFFFFF;
-        background-color: #FE9235;
-        padding: 8px 10px;
-        border-radius: 8px;
+        background-color: #ED3737;
+        padding: 4px 16px;
+        border-radius: 0px;
     }
     .PL-desc5 {
         font-size: 15px;
