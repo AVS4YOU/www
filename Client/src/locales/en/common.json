@@ -1712,9 +1712,9 @@
 
  "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
- "beginningBanner" : "Hot summer deal! Grab up to ",
+ "beginningBanner" : "Hot summer deal! Grab up to",
  "colorBanner" : "30% off",
- "textBanner" : " AVS4YOU packages.",
+ "textBanner" : "AVS4YOU packages.",
  "discountCoupon" : "",
  "textBannerContinue" : "",
  "endingBanner" :  "Grab now!",

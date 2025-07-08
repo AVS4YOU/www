@@ -65,7 +65,7 @@ const StyledPL = styled.div`
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
-        gap: 7px;
+        gap: 5px;
         align-items: center;
         min-width: max-content;
     }
@@ -97,6 +97,7 @@ const StyledPL = styled.div`
         text-align: center;
         margin: 0;
     }
+
     .PL-desc4 {
         font-size: 15px;
         font-weight: 600;
@@ -108,6 +109,7 @@ const StyledPL = styled.div`
         background-color: #ED3737;
         padding: 4px 16px;
         border-radius: 0px;
+        margin-left: 10px;
     }
     .PL-desc5 {
         font-size: 15px;
@@ -137,11 +139,21 @@ const StyledPL = styled.div`
     .es {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+            gap: 0px;
+
+            .PL-desc1 {
+                margin-left: 5px;
+            }
         }
     }
     .it {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+            gap: 0px;
+
+            .PL-desc1 {
+                margin-left: 5px;
+            }
         }
     }
     .jp {
@@ -624,8 +636,6 @@ class Layout extends React.PureComponent {
                             <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
-                            <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
                             <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     <div className='bgRight'></div>

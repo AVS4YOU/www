@@ -1766,9 +1766,9 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Offre d'été ! Profitez de jusqu'à ",
+    "beginningBanner" : "Offre d'été ! Profitez de jusqu'à",
     "colorBanner" : "30% de réduction",
-    "textBanner" : " sur les packs AVS4YOU.",
+    "textBanner" : "sur les packs AVS4YOU.",
     "discountCoupon" : "",
     "textBannerContinue" : "",
     "endingBanner" :  "Profitez-en maintenant !",
