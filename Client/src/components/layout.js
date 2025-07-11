@@ -245,7 +245,7 @@ const BannerWrapper = styled.div`
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 1000000;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -354,13 +354,16 @@ const BannerImg = styled.img`
 
 const SummerBannerWrapper = styled.div`
   position: fixed;
-  z-index: 10;
+  z-index: 9;
   top: 0;
   bottom: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: max-content;
+  top: 50%;
+  transform: translateY(-50%);
 
   > div {
     max-width: 231px;
