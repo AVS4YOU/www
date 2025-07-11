@@ -321,6 +321,7 @@ const StyledHero = styled.div`
             width: 94px;
             height: 36px;
             margin-top: 25px;
+            margin-left: 8px;
           }
         }
       }
@@ -380,7 +381,7 @@ const StyledHero = styled.div`
         transform: translateX(-50%);
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 16px;
 
         border-radius: 69px;
         background: #D4F1FF;
@@ -622,7 +623,7 @@ render(){
                     </BuyButton>
                 </div>
                 <div className="enjoy">
-                  <Text fontSize={42} fontWeight={700} as="h3">Enjoy</Text> <Text fontSize={42} fontWeight={700} as="h4">30% off</Text>  <Text fontSize={42} fontWeight={700} as="h3">on our bestseller</Text>
+                  <Text fontSize={42} fontWeight={700} as="h3">Enjoy</Text><Text fontSize={42} fontWeight={700} as="h4">30% off</Text><Text fontSize={42} fontWeight={700} as="h3">on our bestseller</Text>
                 </div>
               </StyledHero>
 
