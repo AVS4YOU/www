@@ -391,10 +391,14 @@ const TextContent = (props, touchDevice) =>
                                 <Button className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
                                 : <Button className="secondaryButton mobileSended" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>
                             */}
+                            {props.buyButtonLink && <Button id={props.buyButtonLinkId} className="mainButton" fontSize={16} padding="11px 72px" href={props.buyButtonLink}>Buy now</Button>}
+                            {props.getButtonLink && <Button id={props.getButtonLinkId} className="mainButton" fontSize={12} padding="14px 72px" href={props.buyButtonLink}>Get It Now</Button>}
                         </div>
                     :
                         <div className="buttonsWrapper">
                             {props.blueButtonLink && <Button id={props.blueButtonLinkId} className="mainButton" fontSize={18} padding="9px 35px" href={props.blueButtonLink}>{t("Download now")}</Button>}
+                            {props.buyButtonLink && <Button id={props.buyButtonLinkId} className="mainButton" fontSize={18} padding="13px 44px" href={props.buyButtonLink}>Buy now</Button>}
+                            {props.getButtonLink && <Button id={props.getButtonLinkId} className="mainButton" fontSize={18} padding="18px 72px" href={props.buyButtonLink}>Get It Now</Button>}
                             {props.translateButtonLink && <Button id={props.translateButtonLinkId} className="mainButton" fontSize={18} padding="9px 35px" href={props.translateButtonLink}>Download now</Button>}
                             {props.smallButtonLink && <Button id={props.smallButtonLinkId} className="secondaryButton" color="#333333" background={false}><LinkProducts to={props.smallButtonLink}>{t("Learn more")}</LinkProducts></Button>}
                         </div>  
@@ -448,6 +452,8 @@ ContentRowItem.propTypes = {
     headerText: PropTypes.string,
     free: PropTypes.bool,
     blueButtonLink: PropTypes.string,
+    buyButtonLink: PropTypes.string,
+    getButtonLink: PropTypes.string,
     translateButtonLink: PropTypes.string,
     smallButtonLink: PropTypes.string
 };
