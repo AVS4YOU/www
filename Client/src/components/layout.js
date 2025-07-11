@@ -515,6 +515,14 @@ const SummerBannerWrapperLinkWrapper = styled.span`
     font-family: "Kumbh Sans";
     line-height: normal;
   }
+
+  .image_link { 
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
 `
 
 const SummerBannerWrapperBox = styled.div`
@@ -665,6 +673,14 @@ const SummerBannerButton = styled.img`
     border-top: 2px solid #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
     border-right: 2px solid #FFFFFF;
+
+    &.fr, &.de {
+        padding: 21px 12px;
+    }
+
+    &.jp {
+        padding: 14px 12px;
+    }
 `
 
 const languageCodes = [
@@ -930,10 +946,10 @@ class Layout extends React.PureComponent {
                     <link rel="canonical"
                           href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? "" : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
                     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
 
                     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap"></link>
-                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet" media="all" onload="this.media='all'"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
                     {languageCodes.map((languageCode) => {
                         let language = languageCode.split("-")[0];
@@ -1052,7 +1068,7 @@ class Layout extends React.PureComponent {
                                 </SummerBannerWrapperBox>
                                 <SummerBannerWrapperLinkWrapper>
                                     <CustomLink id="summer_banner" to="/summer-sale.aspx">{this.props.t("GRAB THE DEAL")}</CustomLink>
-                                    <SummerBannerButton src={bannerButton}/>
+                                    <Link className="image_link" to="/summer-sale.aspx"><SummerBannerButton className={`${this.props.pageContext.locale}`} src={bannerButton}/></Link>
                                 </SummerBannerWrapperLinkWrapper>
                             </SummerBannerPaddingBox>
                         </SummerBannerWrapperContent>
