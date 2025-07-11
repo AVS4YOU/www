@@ -1,16 +1,22 @@
 # Changelog
 
+## 1.0.86 (11.07.2025)
+### New
+* Updated buy links on `/register.aspx` (all languages)
+* Added banners 'Summer Sale 2025'
+* Added page `/summer-sale.aspx`
+
 ## 1.0.85 (19.06.2025)
 ### New
-* Restore buy links on '/register.aspx' (all languages)
+* Restore buy links on `/register.aspx` (all languages)
 
 ## 1.0.84 (27.05.2025)
 ### New
-* Updated buy links on '/register.aspx' (all languages)
+* Updated buy links on `/register.aspx` (all languages)
 
 ## 1.0.83 (16.05.2025)
 ### New
-* Updated buy links on '/register.aspx' (en)
+* Updated buy links on `/register.aspx` (en)
 
 ## 1.0.82 (24.04.2025)
 ### New
