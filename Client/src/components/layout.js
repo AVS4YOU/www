@@ -13,36 +13,41 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
+import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
-import PlAVSLeft from "../images/pl/pl-left.svg";
-import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
-import PlAVSRight from "../images/pl/pl-right.svg";
+import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
+import PlAVSbgRight from "../images/pl/pl-bg-right.png";
+import PlAVSbg from "../images/pl/bg.png";
+import bannerAVSbg from "../images/pl/bg_banner.png";
+import bannerImg from '../images/pl/img_banner.png'
+import bannerButton from '../images/pl/button_banner.svg'
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
   position: relative;
   text-align: center;
-  background: #EDF9FF;
+  background: #159024;
   
   .PLnewAvs {
-    display: none;
+    display: flex;
     width: 100%;
     height: 60px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-image: url(${PlAVSbg});
+    background-position: 43% 100%;
   }
   .bgLeft {
     width: 100%;
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    background-position-x: 100%;
-    max-width: 490px;
+    background-position-x: 0%;
+    max-width: 239px;
     background-size: auto 60px;
     position: relative;
   }
@@ -51,37 +56,36 @@ const StyledPL = styled.div`
     width: 100%;
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
-    height: 63px;
+    height: 60px;
     background-position: 0% 100%;
-    max-width: 490px;
+    max-width: 239px;
     background-size: auto 60px;
     position: relative;
   }
     
     .PL-box {
         height: 100%;
-        color: #32393E; 
+        color: #FFFFFF; 
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
-        gap: 7px;
+        gap: 5px;
         align-items: center;
-        margin: 0 24px;
         min-width: max-content;
     }
     
     .PL-desc1 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #FE9235; 
+        color: #ffdd9e; 
     }
     
     .PL-desc2 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0em;
@@ -90,24 +94,26 @@ const StyledPL = styled.div`
     }
     
     .PL-desc3 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
     }
+
     .PL-desc4 {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
         color: #FFFFFF;
-        background-color: #FE9235;
-        padding: 8px 10px;
-        border-radius: 8px;
+        background-color: #ED3737;
+        padding: 4px 16px;
+        border-radius: 0px;
+        margin-left: 10px;
     }
     .PL-desc5 {
         font-size: 15px;
@@ -137,11 +143,21 @@ const StyledPL = styled.div`
     .es {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+            gap: 0px;
+
+            .PL-desc1 {
+                margin-left: 5px;
+            }
         }
     }
     .it {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+            gap: 0px;
+
+            .PL-desc1 {
+                margin-left: 5px;
+            }
         }
     }
     .jp {
@@ -229,7 +245,7 @@ const BannerWrapper = styled.div`
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 1000000;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -283,6 +299,7 @@ const BannerWrapperToday = styled.p`
 const BannerWrapperLinkWrapper = styled.span`
   display: flex;
   justify-content: center;
+
   a {
     background: #F07D1A;
     width: 176px;
@@ -335,6 +352,340 @@ const BannerImg = styled.img`
     margin-bottom: -3px;
 `
 
+const SummerBannerWrapper = styled.div`
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: max-content;
+  top: 50%;
+  transform: translateY(-50%);
+
+  > div {
+    max-width: 231px;
+    max-height: 572px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1023px) {
+    > div {
+        display: none;
+    }
+`
+
+const SummerBannerPaddingBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 20px 40px 20px;
+  background-image: url(${bannerAVSbg});
+  max-width: 231px;
+  max-height: 572px;
+`
+
+const SummerBannerWrapperContent = styled.div`
+  background: #FFF;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  max-width: 387px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+`
+
+const SummerBannerWrapperCloseButton = styled.button`
+  margin: 0 0 7px auto;
+  padding: 0;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`
+
+const SummerBannerWrapperToday = styled.p`
+  background-color: #ED3737;
+  padding: 16px;
+  margin: 0;
+
+  &.de {
+    padding: 16px 11px;
+  }
+
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+
+    &.hot {
+        font-size: 53px;
+        line-height: 48px;
+        margin-top: 16px;
+    }
+        
+    &.summer {
+        font-size: 25px;
+    }
+
+    &.deal {
+        font-size: 35px;
+        line-height: 36px;
+    }
+}
+
+&.de h1 {
+    &.hot {
+        font-size: 44px;
+        margin: 24px 0 5px;
+    }
+
+    &.summer {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+&.fr h1 {
+    &.hot {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+        
+    &.summer {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+&.es h1 {
+    &.hot {
+        margin-top: 30px;
+        font-size: 34px;
+    }
+        
+    &.summer {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+&.it h1 {
+  &.hot {
+    margin-top: 36px;
+    font-size: 34px;
+  }
+    
+  &.summer {
+    font-size: 29px;
+    margin-bottom: 10px;
+  }
+}
+
+&.jp h1 {
+    &.hot {
+        margin-top: 30px;
+        font-size: 41px;
+    }
+        
+    &.summer {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+`
+
+const SummerBannerWrapperLinkWrapper = styled.span`
+  display: flex;
+  justify-content: center;
+
+  a {
+    background: #ED3737;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 11px;
+    border: 2px solid #FFFFFF;
+    font-family: "Kumbh Sans";
+    line-height: normal;
+  }
+
+  .image_link { 
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+`
+
+const SummerBannerWrapperBox = styled.div`
+  min-height: 134px;
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  color: #232730;
+  margin-bottom: 12px;
+
+  .sconti {
+    display: none;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Kumbh Sans", sans-serif;
+  }
+  
+  &.jp .sconti, &.it .sconti {
+    display: block;
+  }
+
+  &.jp .sconti {
+    font-family: "Inria Sans";
+    margin-top: 59px;
+    line-height: 10px;
+  }
+
+  &.it .sconti {
+    margin-top: 15px;
+  }
+`
+
+const SummerBannerWrapperSale = styled.h4`
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  margin-top: 40px;
+
+  &.de {
+    margin-top: 30px;
+  }
+
+  &.es {
+    margin-top: 35px;
+  }
+
+  &.fr {
+    margin-top: 24px;
+  }
+
+  &.jp, &.it {
+    margin-top: 0px;
+  }
+
+  &.it {
+    margin-top: -10px;
+  }
+
+  h1 {
+    font-weight: 700;
+    line-height: normal;
+    color: #FFFFFF;
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: left;
+
+    &.off {
+        font-size: 25px;
+    }
+
+    &.percent {
+        font-size: 56px;
+        line-height: 48px;
+    }
+  }
+
+  &.de h1.off {
+    font-size: 17px;
+  }
+
+  &.it h1.percent {
+    margin-top: 30px;
+  }
+
+  &.fr h1, &.es h1 {
+    &.off {
+        font-size: 16px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    &.percent {
+        font-size: 56px;
+    }
+  }
+`
+
+const SummerBannerWrapperSaleDesc = styled.p`
+    margin: -10px 0 0;
+
+    h3, h5 {
+        font-family: "Inria Sans";
+        font-weight: 700;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    h5 {
+        padding: 48px 0 20px;
+    }
+
+    &.fr h3, &.es h3, &.it h3 {
+        font-size: 22px;
+    }
+
+    &.de h5 {
+        padding: 18px 0 25px;
+    }
+
+    &.fr h5 {
+        padding: 30px 0 22px;
+    }
+
+    &.es h5 {
+        padding: 35px 0 20px;
+    }
+
+    &.it h5 {
+        padding: 34px 0 20px;
+    }
+
+    &.jp h5 {
+        padding: 25px 0 35px;
+    }
+`
+
+const SummerBannerImg = styled.img`
+    position: absolute;
+`
+
+const SummerBannerButton = styled.img`
+    background: #ED3737;
+    font-weight: 400;
+    padding: 12px 12px;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+
+    &.fr, &.de {
+        padding: 21px 12px;
+    }
+
+    &.jp {
+        padding: 14px 12px;
+    }
+`
+
 const languageCodes = [
     "en-US",
     "de-DE",
@@ -357,6 +708,7 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
+            showSummerBanner: true,
             cookiesIsAccepted: false,
         }
 
@@ -365,6 +717,7 @@ class Layout extends React.PureComponent {
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
+        this.onCloseBanner = this.onCloseBanner.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
@@ -476,6 +829,11 @@ class Layout extends React.PureComponent {
 
         document.body.addEventListener('resize', this.updateWindowDimensions);
 
+        const summerBannerClosed = sessionStorage.getItem('summer_banner_closed') === 'true';
+        this.setState({
+            showSummerBanner: !summerBannerClosed,
+        });
+
         document.body.addEventListener('mouseleave', this.onMouseLeave)
 
         const queryString = require('query-string');
@@ -524,12 +882,28 @@ class Layout extends React.PureComponent {
         sessionStorage.setItem(String(label), JSON.stringify(value))
     }
 
+    setItemToSessionStorage(key, value) {
+    try {
+        sessionStorage.setItem(key, JSON.stringify(value));
+    } catch (e) {
+        console.warn("SessionStorage error:", e);
+        }
+    }
+
     onClosePopup = (e) => {
         e.stopPropagation();
         this.setState({
             showBanner: false,
         })
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
+    }
+
+    onCloseBanner = (e) => {
+        e.stopPropagation();
+        sessionStorage.setItem('summer_banner_closed', 'true');
+        this.setState({
+            showSummerBanner: false,
+        });
     }
 
     componentDidUpdate() {
@@ -574,6 +948,11 @@ class Layout extends React.PureComponent {
                     {this.props.pageContext.originalPath}
                     <link rel="canonical"
                           href={"https://www.avs4you.com/" + (this.props.pageContext.locale === "en" ? "" : "" + (this.props.pageContext.locale + "/")) + this.pageName}></link>
+                    <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+
+                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
                     {languageCodes.map((languageCode) => {
                         let language = languageCode.split("-")[0];
@@ -617,15 +996,13 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a href={this.props.t("avs pl link")} style={{textDecoration: 'none'}}>
+                  <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
                             <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                             <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc1 discountCoupon">{this.props.t("discountCoupon")}</p>
-                            <p className="PL-desc3 textBannerContinue">{this.props.t("textBannerContinue")}</p>
                             <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
                     <div className='bgRight'></div>
@@ -663,6 +1040,42 @@ class Layout extends React.PureComponent {
                             <BannerImg src={banner}/>
                         </BannerWrapperContent>
                     </BannerWrapper>
+                }
+
+                {this.state.showSummerBanner && !this.props.headerIsDisabled &&
+                    <SummerBannerWrapper>
+                        <SummerBannerWrapperContent onClick={(event) => event.stopPropagation()}>
+                            <SummerBannerImg src={bannerImg}/>
+                            <SummerBannerPaddingBox>
+                                <SummerBannerWrapperCloseButton onClick={this.onCloseBanner}>
+                                    <XClose/>
+                                </SummerBannerWrapperCloseButton>
+                                <SummerBannerWrapperToday className={`${this.props.pageContext.locale}`}>
+                                    <Text as="h1" className="hot">{this.props.t("Hot")}</Text>
+                                    <Text as="h1" className="summer">{this.props.t("Summer")}</Text>
+                                    <Text as="h1" className="deal">{this.props.t("Deal")}</Text>
+                                </SummerBannerWrapperToday>
+                                <SummerBannerWrapperBox className={`${this.props.pageContext.locale}`}>
+                                    <Text as="h4" fontSize={21} className="sconti">{this.props.t("Sconti del")}</Text>
+                                    <SummerBannerWrapperSale className={`${this.props.pageContext.locale}`}>
+                                        <Text as="h1" fontSize={100}>{this.props.t("30")}</Text>
+                                        <div>
+                                            <Text as="h1" className="percent">{this.props.t("%")}</Text>
+                                            <Text as="h1" className="off">{this.props.t("OFF")}</Text>
+                                        </div>
+                                    </SummerBannerWrapperSale>
+                                    <SummerBannerWrapperSaleDesc className={`${this.props.pageContext.locale}`}>
+                                        <Text as="h3" fontSize={25}>{this.props.t("AVS4YOU tools")}</Text>
+                                        <Text as="h5" fontSize={17}>{this.props.t("Only in july")}</Text>
+                                    </SummerBannerWrapperSaleDesc>
+                                </SummerBannerWrapperBox>
+                                <SummerBannerWrapperLinkWrapper>
+                                    <CustomLink id="summer_banner" to="/summer-sale.aspx">{this.props.t("GRAB THE DEAL")}</CustomLink>
+                                    <Link className="image_link" to="/summer-sale.aspx"><SummerBannerButton className={`${this.props.pageContext.locale}`} src={bannerButton}/></Link>
+                                </SummerBannerWrapperLinkWrapper>
+                            </SummerBannerPaddingBox>
+                        </SummerBannerWrapperContent>
+                    </SummerBannerWrapper>
                 }
                 {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer locale={this.props.pageContext.locale} t={this.props.t}/>)}
             </PageContext.Provider>

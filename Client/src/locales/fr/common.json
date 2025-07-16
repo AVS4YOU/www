@@ -1591,8 +1591,8 @@
 	"header_support_avs4you_faq" : "https://support.avs4you.com/fr/faq.aspx",
     "avangatenetwork-affiliates-sign-up" : "https://www.avangatenetwork.com/affiliates/sign-up.php?lang=fr",
 
-    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW05JSpnHM=",
-    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=1&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW05JSpnHM=",
+    "defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
+    "defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
 	"getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=fr&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
 	"onlinehelpHref" : "https://onlinehelp.avs4you.com/index.aspx/",
 	"guidesHref" : "https://www.avs4you.com/guides/index.aspx",
@@ -1766,13 +1766,21 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "",
-    "colorBanner" : "Un délice de Pâques - 25 % de réduction",
-    "textBanner" : " sur la Suite multimédia AVS4YOU !",
+    "beginningBanner" : "Offre d'été ! Profitez de jusqu'à",
+    "colorBanner" : "30% de réduction",
+    "textBanner" : "sur les packs AVS4YOU.",
     "discountCoupon" : "",
     "textBannerContinue" : "",
-    "endingBanner" :  "Profitez-en dès maintenant !",
-    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=fr&COUPON=Delight25&CLEAN_CART=ALL",
+    "endingBanner" :  "Profitez-en maintenant !",
+    "avs pl link" : "",
+    
+    "Hot" : "Offre",
+    "Summer" : "d'été !",
+    "Deal" : "",
+    "OFF" : "de réduction",
+    "AVS4YOU tools" : "sur les programmes AVS4YOU",
+    "Only in july" : "Seulement en juillet !",
+    "GRAB THE DEAL" : "Profitez-en maintenant !",
     
     "LinkDownload" : "https://www.onlyoffice.com/download-desktop.aspx?utm_source=email&utm_medium=email&utm_campaign=avs-promo",
     "Link1year" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&COUPON=AVS22XSM&CLEAN_CART=ALL",
