@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.87 (18.07.2025)
+### Fixes
+* Fixed "Lifetime license" to "Unlimited license" on `/summer-sale.aspx`
+
 ## 1.0.86 (11.07.2025)
 ### New
 * Updated buy links on `/register.aspx` (all languages)
