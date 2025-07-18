@@ -604,7 +604,7 @@ render(){
         pageContext={this.props.pageContext}
         t={this.props.t}
         title="AVS4YOU Summer Sale"
-        metaDescription=""
+        metaDescription="Make your summer projects shine with AVS4YOU. Choose your favourite bundle and save up to 30% on our bestsellers."
         metaKeywords=""
       >
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet"></link>
@@ -638,7 +638,7 @@ render(){
                           getButtonLinkId="get-it-now-ve_summer-sale"
                       >
                         <div className="blockList oneBlock">
-                          <Text className="blue dark" color="#444444" fontSize={16} fontWeight={700}>Lifetime license</Text>
+                          <Text className="blue dark" color="#444444" fontSize={16} fontWeight={700}>Unlimited license</Text>
                         </div>
                           <Text className="ListItem one" color="#555555" fontWeight={400}>Make stunning videos with music and effects</Text>
                           <Text className="ListItem one" color="#555555" fontWeight={400}>Record video or capture screen</Text>
@@ -662,7 +662,7 @@ render(){
                       >
                         <div className="blockList">
                           <Text className="red" color="#444444" fontSize={16} fontWeight={700}>Most popular</Text>
-                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Lifetime license</Text>
+                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Unlimited license</Text>
                         </div>
                           <Text className="ListItem" color="#555555" fontWeight={700} fontSize={24}>AVS Video Editor </Text>
                           <Text color="#555555" fontWeight={400} fontSize={22}>All-in-one video editing and recording software! Craft stunning videos with precision and style without special skills. Record, capture screen, trim, merge, apply effects, add audio and text overlays.</Text>
@@ -684,7 +684,7 @@ render(){
                       >
                         <div className="blockList">
                           <Text className="red" color="#444444" fontSize={16} fontWeight={700}>Video Suite</Text>
-                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Lifetime license</Text>
+                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Unlimited license</Text>
                         </div>
                           <Text className="ListItem" color="#555555" fontWeight={700} fontSize={24}>AVS Video Converter</Text>
                           <Text color="#555555" fontWeight={400} fontSize={22}>Convert, compress, resize, basic editing, over 100 formats, including 5K/6K/8K videos. Fast batch processing.</Text>
@@ -706,7 +706,7 @@ render(){
                       >
                         <div className="blockList">
                           <Text className="red" color="#444444" fontSize={16} fontWeight={700}>Audio Suite</Text>
-                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Lifetime license</Text>
+                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Unlimited license</Text>
                         </div>
                           <Text className="ListItem" color="#555555" fontWeight={700} fontSize={24}>AVS Audio Editor</Text>
                           <Text color="#555555" fontWeight={400} fontSize={22}>Record audio from any input source, create audio mixes, remove noise, polish your recordings with special effects and filters, and more.</Text>
@@ -728,7 +728,7 @@ render(){
                       >
                         <div className="blockList oneBlock">
                           <Text className="red" color="#444444" fontSize={16} fontWeight={700}>Ultimate converter bundle</Text>
-                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Lifetime license</Text>
+                          <Text className="blue" color="#444444" fontSize={16} fontWeight={700}>Unlimited license</Text>
                         </div>
                         <Text color="#555555" fontWeight={400} fontSize={22}>All you need to make your audio and video files compatible with mobile devices, gadgets, popular video platforms and social media.</Text>
                         <div className="priceList">
