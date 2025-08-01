@@ -7,6 +7,7 @@ const pageID = [
     '/powerful-video-maker.aspx',
     '/precise-video-cutting-tools.aspx',
     '/installed.aspx',
+    '/summer-sale.aspx',
 ];
 
 let policeDisallow = [];

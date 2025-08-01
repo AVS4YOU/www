@@ -25,10 +25,11 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-  position: relative;
-  text-align: center;
-  background: #159024;
-  
+display: none;
+position: relative;
+text-align: center;
+background: #159024;
+
   .PLnewAvs {
     display: flex;
     width: 100%;
@@ -1042,7 +1043,7 @@ class Layout extends React.PureComponent {
                     </BannerWrapper>
                 }
 
-                {this.state.showSummerBanner && !this.props.headerIsDisabled &&
+                {/* {this.state.showSummerBanner && !this.props.headerIsDisabled &&
                     <SummerBannerWrapper>
                         <SummerBannerWrapperContent onClick={(event) => event.stopPropagation()}>
                             <SummerBannerImg src={bannerImg}/>
@@ -1076,7 +1077,7 @@ class Layout extends React.PureComponent {
                             </SummerBannerPaddingBox>
                         </SummerBannerWrapperContent>
                     </SummerBannerWrapper>
-                }
+                } */}
                 {!this.props.footerIsDisabled && (this.props.isTinyFooter ? <TinyFooter hideLine={this.pageName === 'avs-slideshow-maker.aspx'} t={this.props.t} /> :<Footer locale={this.props.pageContext.locale} t={this.props.t}/>)}
             </PageContext.Provider>
         )
