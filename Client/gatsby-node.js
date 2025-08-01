@@ -140,12 +140,3 @@ exports.onCreatePage = async props => {
     });
   }
 };
-
-exports.createPages = async ({ actions }) => {
-  const { createRedirect } = actions
-
-  createRedirect({
-    fromPath: `/summer-sale.aspx`,
-    toPath: `/`,
-  })
-}
