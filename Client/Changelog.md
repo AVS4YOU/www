@@ -3,7 +3,7 @@
 ## 1.0.87 (11.07.2025)
 ### New
 * remove banners 'Summer Sale 2025'
-* hide page `/summer-sale.aspx`
+* add Disallow for page `/summer-sale.aspx`
 * Changed products info (version, date, file size)
 * Updated pads files
 
