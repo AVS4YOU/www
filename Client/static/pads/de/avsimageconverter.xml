@@ -83,8 +83,8 @@
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>54272648</File_Size_Bytes>
-      <File_Size_K>54272</File_Size_K>
+      <File_Size_Bytes>54273720</File_Size_Bytes>
+      <File_Size_K>54273</File_Size_K>
       <File_Size_MB>51.76</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -92,9 +92,9 @@
       <Filename_Long></Filename_Long>
     </File_Info>
     <Program_Name>AVS Image Converter</Program_Name>
-    <Program_Version>7.1.1.181</Program_Version>
-    <Program_Release_Month>07</Program_Release_Month>
-    <Program_Release_Day>30</Program_Release_Day>
+    <Program_Version>7.1.2.42</Program_Version>
+    <Program_Release_Month>09</Program_Release_Month>
+    <Program_Release_Day>10</Program_Release_Day>
     <Program_Release_Year>2025</Program_Release_Year>
     <Program_Cost_Dollars>0.00</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
