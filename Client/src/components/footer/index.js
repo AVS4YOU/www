@@ -88,6 +88,7 @@ const StyledFooter = styled.footer`
 
 const date = new Date();
 const currentYear = date.getFullYear();
+const supportedLocales = ['de', 'es', 'it'];
 
 class Footer extends React.Component{
 
@@ -144,7 +145,7 @@ class Footer extends React.Component{
                         <Link to="/license-agreement.aspx" id="eula_footer">
                             <Text className="footer-link-text">{this.props.t("EULA")}</Text>
                         </Link>
-                        <a href="https://www.avs4you.com/blog/" id="blog_footer" target="_blank" rel="noreferrer noopener">
+                        <a href={`https://www.avs4you.com/blog/${supportedLocales.includes(this.props.locale) ? this.props.locale : ''}`} id="blog_footer" target="_blank" rel="noreferrer noopener">
                             <Text className="footer-link-text">{this.props.t("Blog")}</Text>
                         </a>
                     </FooterItem>
@@ -155,7 +156,7 @@ class Footer extends React.Component{
                         <div>
                             <Text fontSize={14} color="#8e999f">{this.props.t("Follow Us:")}</Text>
 
-                            <a className="footerSocial" href="https://www.facebook.com/avs4you" id="facebook_footer">
+                            <a className="footerSocial" href="https://www.facebook.com/people/Avs4you-Software/61567521382681/" id="facebook_footer">
                                 <img src={facebook} className="footerSocialIcon" alt="facebook"/>
                             </a>
                             <a className="footerSocial" href="https://www.youtube.com/user/avs4you" id="youtube_footer">

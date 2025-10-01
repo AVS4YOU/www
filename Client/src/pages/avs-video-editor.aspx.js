@@ -6,7 +6,7 @@ import { AvsVideoEditorCommonContent } from '../containers/avs-video-editor-comm
 import { AvsVideoEditorOtherContent } from '../containers/avs-video-editor-other-content';
 
 
-const lang = ['de','en','es','fr','it','jp','ru']
+const lang = ['de','en','es','fr','it','jp']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;

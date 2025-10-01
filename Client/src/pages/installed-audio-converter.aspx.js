@@ -11,7 +11,7 @@ const shareItHrefUnlim = "https://order.shareit.com/cart/add?vendorid=200281390&
 const regExp = /=regnow:(.*):/;
 
 
-const lang = ['de','en','es','fr','it','jp','da','ko','nl','pl','pt','ru','zh']
+const lang = ['de','en','es','fr','it','jp','da','ko','nl','pl','pt','zh']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;

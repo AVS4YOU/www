@@ -84,6 +84,9 @@ const FooterDesc = styled.p`
   }
 `
 
+const date = new Date();
+const currentYear = date.getFullYear();
+
 export const TinyFooter = (props) => {
     return (
         <FooterWrapper hideLine={props.hideLine}>
@@ -110,7 +113,7 @@ export const TinyFooter = (props) => {
                 </Link>
                 <FooterSocialsList>
                     <FooterSocialsItem>
-                        <a className="footerSocial" href="https://www.facebook.com/avs4you" id="facebook_footer">
+                        <a className="footerSocial" href="https://www.facebook.com/people/Avs4you-Software/61567521382681/" id="facebook_footer">
                             <img src={facebook} className="footerSocialIcon" alt="facebook"/>
                         </a>
                     </FooterSocialsItem>
@@ -131,7 +134,7 @@ export const TinyFooter = (props) => {
                     </FooterSocialsItem>
                 </FooterSocialsList>
             </FooterBox>
-            <FooterDesc><a id="home2_footer" href="/">Ascensio System SIA</a> 2023 All rights reserved.</FooterDesc>
+            <FooterDesc><a id="home2_footer" href="/">{props.t("Ascensio System SIA")}</a> {currentYear} {props.t("All rights reserved")}</FooterDesc>
         </FooterWrapper>
     )
 }

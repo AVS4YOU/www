@@ -10,7 +10,6 @@ const excludeSitemap = [
     '/nl/advent-calendar.aspx',
     '/pl/advent-calendar.aspx',
     '/pt/advent-calendar.aspx',
-    '/ru/advent-calendar.aspx',
 ];
 module.exports = {
     sitemapSize: 5000,

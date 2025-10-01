@@ -6,7 +6,7 @@ import "../styles/avs-video-converter.less";
 import { AvsVideoConverterCommonContent } from '../containers/avs-video-converter-common-content';
 import { AvsVideoConverterOtherContent } from '../containers/avs-video-converter-other-content';
 
-const lang = ['de','en','es','fr','it','jp','ru']
+const lang = ['de','en','es','fr','it','jp']
 
 const isSomeLang = (currentLang) => {
     let isSomeLang = false;

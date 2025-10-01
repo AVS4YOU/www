@@ -1,5 +1,5 @@
 const userAgentID = ['Googlebot', 'Yandex', '*'];
-const langID = ['en', 'da', 'de', 'es', 'fr', 'it', 'jp', 'ko', 'nl', 'pl', 'pt', 'ru'];
+const langID = ['en', 'da', 'de', 'es', 'fr', 'it', 'jp', 'ko', 'nl', 'pl', 'pt'];
 const disFolderId = ['/*?', '/static', '/page-data'];
 const pageID = [
     '/advent-calendar.aspx',
@@ -7,6 +7,7 @@ const pageID = [
     '/powerful-video-maker.aspx',
     '/precise-video-cutting-tools.aspx',
     '/installed.aspx',
+    '/summer-sale.aspx',
 ];
 
 let policeDisallow = [];

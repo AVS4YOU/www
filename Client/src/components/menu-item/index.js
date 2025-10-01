@@ -17,12 +17,12 @@ const MediaWidthStyle = css`
         font-weight: 500;
         font-size: 12px;
     }
-    @media (max-width: 1195px){
+    @media (max-width: 1255px){
         .textStyles{
             font-size: 11px;
         }
     }
-    @media (max-width: 1124px){
+    @media (max-width: 1182px){
         .textStyles{
             font-size: 9px;
         }
@@ -157,8 +157,9 @@ const StyledMenuItem = styled.div`
         visibility: visible;
     }
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1450px) {
         ${MediaWidthStyle}
+        padding: 0 9px;
     }
 
     @media (max-width: 1050px) {

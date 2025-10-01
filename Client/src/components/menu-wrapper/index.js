@@ -94,6 +94,10 @@ const MenuItemsWrapper = styled.div`
     margin: auto;
     display: table;
 
+    a {
+        text-decoration: none;
+    }
+
     @media (max-width: 1050px) {
         padding: 0;
         background-color: #fff;

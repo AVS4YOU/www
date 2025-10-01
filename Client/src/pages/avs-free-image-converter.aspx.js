@@ -16,6 +16,7 @@ import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
+import {AVSImageConverter} from '../../static/products-info';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
@@ -192,7 +193,7 @@ class avsFreeImageConverter extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 6.0</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 7.1</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
                         imageNamesPopup={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
@@ -205,14 +206,14 @@ class avsFreeImageConverter extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("File Size")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">36.33 MB</Text>
+                                      align="left">{AVSImageConverter.size} MB</Text>
                             </div>
 
                             <div className="downloadInfoRow">
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Current Version")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">6.0.3.336</Text>
+                                      align="left">{AVSImageConverter.version}</Text>
                             </div>
 
                             <div className="downloadInfoRow">

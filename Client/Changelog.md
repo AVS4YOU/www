@@ -3,6 +3,104 @@
 ## 1.0.89 (01.10.2024)
 ### New
 * Changed prices for jp locale in `register.aspx`
+## 1.0.88 (17.09.2025)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
+## 1.0.87 (01.08.2025)
+### New
+* remove banners 'Summer Sale 2025'
+* add Disallow for page `/summer-sale.aspx`
+* Changed products info (version, date, file size)
+* Updated pads files
+
+## 1.0.86 (11.07.2025)
+### New
+* Updated buy links on `/register.aspx` (all languages)
+* Added banners 'Summer Sale 2025'
+* Added page `/summer-sale.aspx`
+
+## 1.0.85 (19.06.2025)
+### New
+* Restore buy links on `/register.aspx` (all languages)
+
+## 1.0.84 (27.05.2025)
+### New
+* Updated buy links on `/register.aspx` (all languages)
+
+## 1.0.83 (16.05.2025)
+### New
+* Updated buy links on `/register.aspx` (en)
+
+## 1.0.82 (24.04.2025)
+### New
+* Removed banner 'Easter 2025'
+
+## 1.0.81 (08.04.2025)
+### New
+* Added banner 'Easter 2025'
+
+## 1.0.80 (25.02.2025)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
+### Fixes
+* Fixed links for Unlimited and 1 year subscription
+
+## 1.0.79 (17.02.2025)
+### New
+* Removed banner 'St. Valentine 2025'
+
+## 1.0.78 (11.02.2025)
+### New
+* Added banner 'St. Valentine 2025'
+
+## 1.0.77 (06.02.2025)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+* Added Blog on header
+
+### Fixes
+* Fixed blog link for footer
+
+## 1.0.76 (20.01.2025)
+### New
+* Added Upsellit tag
+### Fixes
+* Fixed Facebook link on site
+
+## 1.0.75 (19.12.2024)
+### New
+* Removed event 'Advent Calendar 2025'
+
+## 1.0.74 (29.11.2024)
+### New
+* Added event 'Advent Calendar 2025'
+
+## 1.0.73 (21.11.2024)
+### New
+* Added event 'Black Friday 2024'
+
+## 1.0.72 (02.10.2024) 
+### New
+* Removed banner 'French Days Sale'
+
+## 1.0.71 (16.09.2024)
+### New
+* Added banner 'French Days Sale'
+
+## 1.0.70 (12.08.2024)
+### New
+* Changed products info (version, date, file size)
+* Removed banner 'Olympic deal'
+
+## 1.0.69 (23.07.2024)
+### New
+* Updated pads files
+* Added banner 'Olympic deal'
 
 ## 1.0.68 (03.06.2024)
 ### New

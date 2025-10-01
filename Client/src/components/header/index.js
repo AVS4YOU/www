@@ -3,6 +3,8 @@ import DropdownElement from '../dropdown-element'
 import MenuItem from '../menu-item'
 import MenuWrapper from '../menu-wrapper'
 
+const supportedLocales = ['de', 'es', 'it'];
+
 const Header = ({availableLocales, locale, t, isTransparentHeader}) => {
 
     return (
@@ -31,6 +33,7 @@ const Header = ({availableLocales, locale, t, isTransparentHeader}) => {
                 <DropdownElement id="knowledge-center_header" href={t("header_onlinehelp_avs4you")} headerText={t("Knowledge center")}/>
                 <DropdownElement id="faq_header" href={t("header_support_avs4you_faq")} headerText={t("FAQ")}/>
             </MenuItem>
+            <a href={`https://www.avs4you.com/blog/${supportedLocales.includes(locale) ? locale : ''}`}><MenuItem id="blog_header" menuItemText={t("Blog")} isDropdown={false}></MenuItem></a> 
         </MenuWrapper>
     )
 }

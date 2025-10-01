@@ -193,7 +193,6 @@ const zh_mounth = [
   let IT_MText = "prezzo valido fino al " + getLastDayOfMonth(currentYear, currentMounth) + " " + it_mounth[currentMounth] + " "  +  currentYear;
   let JP_MText = "価格は" + currentYear + "年" + jp_mounth[currentMounth] + "" + getLastDayOfMonth(currentYear, currentMounth) + "日までに有効です";
   let ES_MText = "válida hasta el " + getLastDayOfMonth(currentYear, currentMounth) + " de " + es_mounth[currentMounth] + " de "  +  currentYear;
-  let RU_MText = "до "  + getLastDayOfMonth(currentYear, currentMounth) + " " + ru_mounth[currentMounth] + " "  +  currentYear;
   let PL_MText = "ważna do "  + getLastDayOfMonth(currentYear, currentMounth) + " " + pl_mounth[currentMounth] + " "  +  currentYear;
   let KR_MText = currentYear + "년 " + kr_mounth[currentMounth] + "월 " + getLastDayOfMonth(currentYear, currentMounth) + "일까지 유효합니다";
   let DK_MText = "er tilgængelige indtil "  + getLastDayOfMonth(currentYear, currentMounth) + ". " + dk_mounth[currentMounth] + ", "  +  currentYear;
@@ -214,7 +213,6 @@ function AvsLinkHref(props){
                 pageContext.locale === "it" ? IT_MText : 
                 pageContext.locale === "jp" ? JP_MText : 
                 pageContext.locale === "es" ? ES_MText :
-                pageContext.locale === "ru" ? RU_MText :
                 pageContext.locale === "pl" ? PL_MText :
                 pageContext.locale === "ko" ? KR_MText :
                 pageContext.locale === "da" ? DK_MText :

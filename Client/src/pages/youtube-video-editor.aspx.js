@@ -244,7 +244,7 @@ render(){
         </div>
         <div className="lfn-social">
             <a className="lfns-button lfnsb-yt" target="_blank" rel="noreferrer noopener" title="Follow us on YouTube" id="youtube_youtube-video-editor" href="https://www.youtube.com/user/avs4you"> </a>
-            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" id="facebook_youtube-video-editor" href="https://www.facebook.com/avs4you"> </a>
+            <a className="lfns-button lfnsb-fb" target="_blank" rel="noreferrer noopener" title="Follow us on Facebook" id="facebook_youtube-video-editor" href="https://www.facebook.com/people/Avs4you-Software/61567521382681/"> </a>
             <a className="lfns-button lfnsb-tw" target="_blank" rel="noreferrer noopener" title="Follow us on Twitter" id="twitter_youtube-video-editor"  href="https://www.twitter.com/avs4you"> </a>
             <a className="lfns-button lfnsb-pi" target="_blank" rel="noreferrer noopener" title="Follow us on Pinterest" id="pinterset_youtube-video-editor" href="https://pinterest.com/avs4you/"> </a>
         </div>
