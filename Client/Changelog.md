@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.89 (01.10.2024)
+### New
+* Changed prices for jp locale in `register.aspx`
 ## 1.0.88 (17.09.2025)
 ### New
 * Changed products info (version, date, file size)
