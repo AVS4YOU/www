@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.90 (03.10.2024)
+### New
+* Changed prices for jp locale in `uninstall-offer.aspx`
+* Changed prices for jp locale in `installed-video-editor.aspx`
+
 ## 1.0.89 (01.10.2024)
 ### New
 * Changed prices for jp locale in `register.aspx`
