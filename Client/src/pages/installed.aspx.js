@@ -150,7 +150,7 @@ a:hover {
     font-size: 20px;
     color: #1c1c1c;
     position: absolute;
-    left: 600px;
+    left: 640px;
     top: 172px;
     margin-left: 80px;
     width: 260px;
