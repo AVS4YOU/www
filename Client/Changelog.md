@@ -4,6 +4,13 @@
 ### New
 * Changed prices for jp locale in `uninstall-offer.aspx`
 * Changed prices for jp locale in `installed-video-editor.aspx`
+* Changed prices for jp locale in `installed-video-converter.aspx`
+* Changed prices for jp locale in `installed-video-remaker.aspx`
+* Changed prices for jp locale in `installed-audio-editor.aspx`
+* Changed prices for jp locale in `installed-audio-converter.aspx`
+* Changed prices for jp locale in `installed-pack.aspx`
+* Changed products info (version, date, file size)
+* Updated pads files
 
 ## 1.0.89 (01.10.2024)
 ### New
