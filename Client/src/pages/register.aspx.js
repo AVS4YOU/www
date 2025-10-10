@@ -341,10 +341,25 @@ render(){
               <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
               <Text className="access-limit">{this.props.t("1 year access_rc")}</Text>
               <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
-              <div className="price-block">
-                <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
-                <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("39/00")}</Text>
-              </div>
+
+              {this.props.pageContext.locale === 'fr' ? (
+                <div className="price-block french-pricing">
+                  <Text className="monthly-price-text">
+                    <span>{this.props.t("fr year price in month")}</span>
+                  </Text>
+                  <Text className="annual-billing-text">
+                    {this.props.t("fr Facturation annuelle")} <span>{this.props.t("fr year price in year")}</span>
+                  </Text>
+                </div>
+              ) : (
+                <div className="price-block">
+                  <Text className="prev-price-text">{this.props.t("$69/00")}</Text>
+                  <Text className="current-price-text">
+                    <span>{this.props.t("$")}</span>{this.props.t("39/00")}
+                  </Text>
+                </div>
+              )}
+
               <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
               <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
               <Button
@@ -366,10 +381,24 @@ render(){
                 <Text className="access-sub-text">{this.props.t("subscription_rc")}</Text>
                 <Text className="access-limit">{this.props.t("Unlimited access_rc")}</Text>
                 <Text className="sub-now-text">{this.props.t("Subscribe now for")}</Text>
-                <div className="price-block">
-                  <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
-                  <Text className="current-price-text"><span>{this.props.t("$")}</span>{this.props.t("59/00")}</Text>
-                </div>
+
+                {this.props.pageContext.locale === 'fr' ? (
+                  <div className="price-block french-pricing">
+                    <Text className="monthly-price-text">{this.props.t("fr unlimited price in month")}</Text>
+                    <Text className="annual-billing-text">
+                      <span>{this.props.t("fr unlimited price in year")}</span> {this.props.t("fr facturés")}
+                    </Text>
+                    <Text className="payment-type-text">{this.props.t("fr Paiement unique")}</Text>
+                  </div>
+                ) : (
+                  <div className="price-block">
+                    <Text className="prev-price-text">{this.props.t("$199/00")}</Text>
+                    <Text className="current-price-text">
+                      <span>{this.props.t("$")}</span>{this.props.t("59/00")}
+                    </Text>
+                  </div>
+                )}
+
                 <Text className="limited-offer-text">{this.props.t("Time limited offer")}</Text>
                 <LstDay  MText = {"till " + mounth[currentMounth] + " " + getLastDayOfMonth(currentYear, currentMounth) + ", " +  currentYear} />
                 <Button                                
