@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.91 (10.10.2025)
+### New
+* Updated price block layout in `register.aspx` only for fr locale
+
 ## 1.0.90 (03.10.2024)
 ### New
 * Changed prices for jp locale in `uninstall-offer.aspx`
