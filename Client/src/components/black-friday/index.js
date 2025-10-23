@@ -228,6 +228,10 @@ vertical-align: top;
 
 .header_congrats {
   color: #FFFFFF;
+  background: linear-gradient(90deg, #F8D785 0%, #BA8619 44.5%, #E0CA94 80.29%, #805817 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: Montserrat;
   font-size: 48px;
@@ -264,6 +268,16 @@ vertical-align: top;
   padding-bottom: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
+
+  .couponText {
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: none;
+  }
 }
 
 .button-start {
@@ -502,10 +516,10 @@ const CustomPlayer = withSoundCloudAudio(props => {
 	}
 });
 
-const prizes = ['10$', '20%', '30%', '20%', '10%', '10$', '100%', 'Surprise']
+const prizes = ['$10', '20%', '30%', '20%', '10%', '$10', '100%', 'Surprise']
 
 const CouponNames = {
-  '10$': 'AVDC25',
+  '$10': 'AVDC25',
   '10%': ['Unlim10', '10AyeL'],
   '20%': ['Unlim20', 'AnYear20'],
   '30%': ['AVUnlim30', 'ANYeR30'],
@@ -523,7 +537,7 @@ const ProgramNames = {
   'AVUnlim30': 'AVS4YOU Unlimited',  
   'ANYeR30': 'AVS4YOU 1 Year Subscription',
   'AU40lim': 'AVS4YOU Unlimited', 
-  'Un5AVsur': 'AVS4YOU Unlimited', 
+  'Un5AVsur': '50% Unlimited Subscription', 
   'BRy25Amak': 'AVS Video ReMaker 1 Year Subscription',
 }
 
@@ -675,7 +689,7 @@ export class BlackFriday extends React.PureComponent {
                       <img className="congratsBg" src={congratsBg}/>
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
                       {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize === "Surprise" ? "50%" : this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
-                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span>{this.state.couponName}</span></Text>}
+                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span className="couponText">{this.props.t("Use code")}</span> <span>{this.state.couponName}</span> <span className="couponText">{this.props.t("at checkout")}</span></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={this.props.t(redeemName)}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
                   </div>
