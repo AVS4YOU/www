@@ -321,10 +321,12 @@ vertical-align: top;
 }
 
   .congratsBg {
+    height: 931px;
     position: absolute;
-    top: -80%;
+    top: -70%;
     z-index: -1;
-    left: -40%;
+    left: 40%;
+    object-fit: cover;
   }
 
 .header_img {
@@ -431,7 +433,8 @@ vertical-align: top;
   }
 
   .congratsBg {
-    top: -50%;
+    width: 100vw;
+    top: 20%;
     left: 0%;
   }
 }
