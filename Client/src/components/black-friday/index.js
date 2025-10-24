@@ -3,10 +3,9 @@ import Text from '../text';
 import ImageGQL from '../image-gql';
 import styled from 'styled-components';
 import Button from '../button';
-import ReactTurntable from "react-turntable";
-// import "@fontsource/montserrat/800.css";
 
 import wheelAVS from '../../images/black-friday/bg_wheel.png';
+import wheelSectorPriceAVS from '../../images/black-friday/wheel.png';
 import wheelAVScircle from '../../images/black-friday/bf_vector.png';
 import wheelAVSbg from '../../images/black-friday/circle_bg.png';
 import wheelAVSlogo from '../../images/black-friday/logo_avs_bf.svg';
@@ -26,11 +25,25 @@ padding: 10px;
 width: 530px;
 height: 560px;
 position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 
 .WheelAVS{
     position: absolute;
     z-index: 1;
     font-family: Montserrat, sans-serif;
+    width: 90%;
+    height: 90%;
+    transform-origin: center center;
+    top: 45%;
+    left: 47%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 }
 
 .wheelAVSram{
@@ -62,6 +75,7 @@ position: relative;
 }
 `;
 
+// ... (остальные ваши styled-components без изменений)
 const BlackFridayStyle = styled.div`
 background: #000000;
 background-repeat: repeat;
@@ -474,7 +488,8 @@ function setCookie(name, value, options = {}) {
 const streamUrl = AudioCasino;
 
 const CustomPlayer = withSoundCloudAudio(props => {
-  const { soundCloudAudio, playing } = props;
+  const { soundCloudAudio, playing, ...rest } = props;
+  const {useEffect, useRef, useState} = React;
 
   const play = () => {
     if (playing) {
@@ -496,7 +511,6 @@ const CustomPlayer = withSoundCloudAudio(props => {
 		if(prevUrl !== streamUrl) {
 			setAutoPlay(true);
 		}
-	//},[streamUrl])
   },[setAutoPlay, prevUrl, autoPlay, soundCloudAudio])
   return (
     <div>
@@ -519,7 +533,17 @@ const CustomPlayer = withSoundCloudAudio(props => {
 	}
 });
 
-const prizes = ['$10', '20%', '30%', '20%', '10%', '$10', '100%', 'Surprise']
+// You must enter the prize values ​​into the array strictly in order and clockwise relative to the picture of the wheel of fortune
+const prizes = [
+  '$10',
+  'Surprise',
+  '100%',
+  '$10',
+  '10%',
+  '20%',
+  '30%',
+  '20%'
+];
 
 const CouponNames = {
   '$10': 'AVDC25',
@@ -557,38 +581,7 @@ const RedeemNames = {
   'BRy25Amak': 'BRy25Amak',
 }
 
-const styles = {
-  //justifyContent:"center",
-  //alignContent:"center",
-  //float: "left",
-  //display:"flex"
-  fontFamily: "Montserrat, sans-serif"
-}
-
-const options = {
-  prizes,
-  width: 500,
-  height: 550,
-  primaryColor: "#C02025",
-  secondaryColor: "#E8E5E2",
-  fontStyle:{
-      size:"28px",
-      fontVertical:true,
-      fontWeight:"800",
-      fontFamily: "Montserrat, sans-serif",
-      color: "#000",
-  },
-  speed: 1000,
-  duration: 5000,
-  onStart(){
-    return true
-  },
-  onStop(){
-    return true
-  }
- }
-
- const getCouponName = (winPrize) => {
+const getCouponName = (winPrize) => {
   if (!winPrize) return null
   let couponName = ''
   if ( typeof CouponNames[winPrize] !== 'string' ) {
@@ -600,8 +593,6 @@ const options = {
 }
 
 export class BlackFriday extends React.PureComponent {
-  turntable = null
-
   constructor(props) {
     super(props);
     this.state = {
@@ -610,7 +601,8 @@ export class BlackFriday extends React.PureComponent {
 			isInnerModalOpen: false,
       winPrize: null,
       couponName: null,
-
+      rotation: 0,
+      isSpinning: false,
     };
 
     this.getDevice = this.getDevice.bind(this);
@@ -638,6 +630,42 @@ export class BlackFriday extends React.PureComponent {
 		});
 	}
 
+  handleSpin = () => {
+    if (this.state.isSpinning) {
+      return;
+    }
+
+    this.setState({ isSpinning: true, winPrize: null, couponName: null });
+
+    const randomExtraDegrees = Math.floor(Math.random() * 360);
+    const fullSpins = 5;
+    const totalRotation = fullSpins * 360 + randomExtraDegrees;
+
+    const newRotation = this.state.rotation + totalRotation;
+
+    this.setState({ rotation: newRotation });
+
+    const animationDuration = 4000; // 4 seconds
+
+    setTimeout(() => {
+      const sectors = prizes.length;
+      const sectorAngle = 360 / sectors;
+
+      const finalAngle = newRotation % 360;
+      const winningSegmentAngle = (360 - finalAngle) % 360;
+      const halfSector = sectorAngle / 2;
+      const shiftedAngle = (winningSegmentAngle + halfSector) % 360;
+      const winningIndex = Math.floor(shiftedAngle / sectorAngle);
+
+      const winner = prizes[winningIndex];
+
+      this.setPrize(winner);
+      this.setState({ isSpinning: false });
+
+    }, animationDuration);
+  };
+
+
   setPrize(prize) {
 		this.setState({
 			winPrize: prize,
@@ -659,7 +687,7 @@ export class BlackFriday extends React.PureComponent {
   componentDidMount() {
     const couponName = getCookie('couponName');
     const winPrize = getCookie('winPrize')
-    
+
     if (couponName && winPrize) {
       this.setState({
         winPrize: winPrize,
@@ -671,6 +699,7 @@ export class BlackFriday extends React.PureComponent {
   render(){
     const programName = ProgramNames[this.state.couponName];
     const redeemName = RedeemNames[this.state.couponName];
+    const { rotation, isSpinning } = this.state;
     const { locale } = this.props;
 
     return (
@@ -705,23 +734,23 @@ export class BlackFriday extends React.PureComponent {
                       <Text fontFamily={'Montserrat'} as="h1" className="header__title">{this.props.t("Black Friday")}</Text>
                       <Text fontFamily={'Montserrat'} as="h1" className="header___subtitle">{this.props.t("Lucky Wheel")}</Text>
                       <Text fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("Spin the wheel to get a discount coupon up")} <b>{this.props.t("99% off")}</b> {this.props.t("onwheel")} <b>{this.props.t("AVS4YOU")}</b>{this.props.t("products")}</Text>
-                      <div className="button-start"><Button className="Button_BF_Wheel" id="black_friday_start" onClick={() => this.turntable.start()}> {this.props.t("Get started now")} </Button></div>
+                      <div className="button-start"><Button className="Button_BF_Wheel" id="black_friday_start" onClick={this.handleSpin} disabled={isSpinning}> {isSpinning ? this.props.t("Spinning...") : this.props.t("Get started now")} </Button></div>
                       <Text className="overwey">{this.props.t("Please note that you may try your luck only once a day")}</Text>
                         
                     </div> 
                   </div>
                   }
                   <Wheelstyle className="wheelStyle">
-                  <img className="wheelAVSbg" src={wheelAVSbg}/>
+                    <img className="wheelAVSbg" src={wheelAVSbg}/>
                     <img className="wheelAVScircle" src={wheelAVScircle}/>
                     <div className="wheelAVSram"></div>
-                    <div className="WheelAVS" style={styles}>
-                        <ReactTurntable {...options}
 
-                        onComplete={this.setPrize}
-                        hiddenButton
-                        getTurntable={turntable => (this.turntable = turntable)}                     
-                      />
+                    <div className="WheelAVS" style={{
+                        transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
+                        transition: isSpinning ? 'transform 4s cubic-bezier(0.25, 0.1, 0.25, 1)' : 'none',
+                      }}
+                    >
+                      <img src={wheelSectorPriceAVS} alt="Fortune Wheel Sectors"/>
                     </div>
                   </Wheelstyle>
                   </div>
