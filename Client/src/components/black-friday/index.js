@@ -35,17 +35,21 @@ align-items: center;
     font-family: Montserrat, sans-serif;
     top: -5%;
     left: 2%;
+
+    .react-turntable-section-btn {
+      display: none !important;
+    }
 }
 
 .wheelAVSram{
   background-image: url(${wheelAVS});
-    background-size: 880px 880px;
+    background-size: 650px 650px;
     float: left;
-    height: 650px;
+    height: 720px;
     position: relative;
     width: 650px;
     z-index: 2;
-    background-position: -113px -149px;
+    background-position: 2px -2px;
     background-repeat: no-repeat;
     z-index: 2;
     margin-left: -78px;
@@ -54,9 +58,10 @@ align-items: center;
 
 .wheelAVScircle{
   position: absolute;
-  top: 177px;
-  left: 195px;
+  top: 145px;
+  left: 158px;
   z-index: 20;
+  transform: scale(0.5);
 }
 
 .wheelAVSfoot{
@@ -578,10 +583,10 @@ const options = {
   secondaryColor: "#E8E5E2",
   separatorWidth: 6,
   separatorColor: "#000",
-  winningPrimarySectorColor: "#FFC300",
-  winningSecondarySectorColor: "rgba(0, 68, 255, 1)",
-  winningPrimaryFontColor: "#000000",
-  winningSecondaryFontColor: "#fff",
+  winningPrimarySectorColor: "#be2b30ff",
+  winningSecondarySectorColor: "#f8f6f5ff",
+  winningPrimaryFontColor: "#f7c537",
+  winningSecondaryFontColor: "#C02025",
   fontStyle:{
       size:"28px",
       fontVertical:true,
