@@ -702,7 +702,7 @@ export class BlackFriday extends React.PureComponent {
   render(){
     const programName = ProgramNames[this.state.couponName];
     const redeemName = RedeemNames[this.state.couponName];
-    const { isSpinning } = this.state; // rotation удален
+    const { isSpinning } = this.state;
     const { locale } = this.props;
 
     return (
@@ -719,7 +719,7 @@ export class BlackFriday extends React.PureComponent {
                   />
                   <div className="closeBanner on_complite_close" onClick={this.props.onCloseBanner}></div></div>
                   <div className="header__body-wrapper">
-                  {this.state.couponName ? <div className="bf_container on_complite_container">                
+                  {this.state.couponName ? <div key="congrats-view" className="bf_container on_complite_container">                
                       <div className="block_content on_complite">
                       <img className="congratsBg" src={congratsBg}/>
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
@@ -729,7 +729,7 @@ export class BlackFriday extends React.PureComponent {
                     </div>
                   </div>
                   : 
-                  <div className="bf_container">           
+                  <div key="spin-view" className="bf_container">           
                     <div className="header_img">
                       <img className="wheelAVSlogo" src={wheelAVSlogo}/>
                     </div>
