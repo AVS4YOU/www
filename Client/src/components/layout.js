@@ -13,6 +13,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
+import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
@@ -25,7 +26,7 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
 background: #159024;
@@ -376,6 +377,7 @@ const SummerBannerWrapper = styled.div`
     > div {
         display: none;
     }
+}
 `
 
 const SummerBannerPaddingBox = styled.div`
@@ -709,8 +711,9 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
-            showSummerBanner: true,
+            showSummerBanner: false,
             cookiesIsAccepted: false,
+            showBlackFriday: false,
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -718,6 +721,7 @@ class Layout extends React.PureComponent {
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
+        this.onOpenBanner = this.onOpenBanner.bind(this)
         this.onCloseBanner = this.onCloseBanner.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
@@ -899,11 +903,19 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
+    onOpenBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: true
+      })
+    }
+
     onCloseBanner = (e) => {
         e.stopPropagation();
-        sessionStorage.setItem('summer_banner_closed', 'true');
+        // sessionStorage.setItem('summer_banner_closed', 'true');
         this.setState({
-            showSummerBanner: false,
+            // showSummerBanner: false,
+            showBlackFriday: false
         });
     }
 
@@ -997,7 +1009,8 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}>
+                  {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
+                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     <div className='bgLeft'></div>
                         <div className="PL-box">
@@ -1016,7 +1029,8 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                <main>{this.props.children}</main>
+                {/* <main>{this.props.children}</main> */}
+                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
 
                 </StyledLayout>
                 <CookieMessage onAcceptClick={this.onAcceptClick} />
