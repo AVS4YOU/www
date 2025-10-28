@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.92 (28.10.2025)
+### New
+* Added banner 'Halloween 2025'
+
 ## 1.0.91 (10.10.2025)
 ### New
 * Updated price block layout in `register.aspx` only for fr locale
