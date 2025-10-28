@@ -724,6 +724,7 @@ class Layout extends React.PureComponent {
             showSummerBanner: false,
             cookiesIsAccepted: false,
             showBlackFriday: false,
+            userCurrencyEnLocale: 'usd',
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -738,6 +739,7 @@ class Layout extends React.PureComponent {
     }
 
     componentDidMount() {
+        this.detectUserCurrency();
 
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
@@ -929,6 +931,43 @@ class Layout extends React.PureComponent {
         });
     }
 
+    detectUserCurrency = async () => {
+        const cachedCurrency = sessionStorage.getItem('userCurrencyEnLocale');
+        if (cachedCurrency) {
+            this.setState({ userCurrencyEnLocale: cachedCurrency });
+            return;
+        }
+
+        try {
+            const response = await fetch('https://ipapi.co/json/');
+            const data = await response.json();
+            const currency = data.country_code === 'GB' ? 'gbp' : 'usd';
+            console.log('Detected country:', data.country_code, 'Currency:', currency);
+            sessionStorage.setItem('userCurrencyEnLocale', currency);
+
+            this.setState({ userCurrencyEnLocale: currency });
+        } catch (error) {
+            console.error('Error detecting currency:', error);
+            this.setState({ userCurrencyEnLocale: 'usd' });
+        }
+    }
+
+    getPurchaseLink = () => {
+        const locale = this.props.pageContext.locale;
+
+        if (locale === 'en') {
+            const currency = this.state.userCurrencyEnLocale || 'usd';
+
+            console.log('Purchase link currency:', currency);
+
+            return currency === 'gbp'
+                ? this.props.t("avs pl link gbp")
+                : this.props.t("avs pl link");
+        }
+
+        return this.props.t("avs pl link");
+    }
+
     componentDidUpdate() {
         if (this.state.cookiesIsAccepted) {
             const style = document.createElement('style');
@@ -1021,7 +1060,7 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled ? <StyledPL>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-                  <a href={this.props.t("avs pl link")} target="_blank" style={{textDecoration: 'none'}}>
+                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     {/* <div className='bgLeft'></div> */}
                     <div className="PL-box">

@@ -1719,6 +1719,7 @@
  "textBannerContinue" : "",
  "endingBanner" :  "Grab it now!",
  "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
+ "avs pl link gbp": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=GBP&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
 
  "Hot" : "Hot",
  "Summer" : "Summer",
