@@ -13,6 +13,7 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
+import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
@@ -25,22 +26,30 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
-background: #159024;
+background: rgba(21, 18, 37, 1);
 
   .PLnewAvs {
     display: flex;
     width: 100%;
     height: 60px;
-    background-repeat: no-repeat;
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
     justify-content: center;
     background-image: url(${PlAVSbg});
-    background-position: 43% 100%;
+    background-position: 12% 2.5%;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1500px) {
+      background-position: 0% 2.5%;
+    }
+
+    @media (max-width: 1500px) {
+      background-position: -20% 2.5%;
+    }
   }
   .bgLeft {
     width: 100%;
@@ -82,7 +91,8 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #ffdd9e; 
+        color: #FFE091; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
     
     .PL-desc2 {
@@ -101,6 +111,7 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .PL-desc4 {
@@ -110,8 +121,8 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #FFFFFF;
-        background-color: #ED3737;
+        color: #151225;
+        background-color: #F5C867;
         padding: 4px 16px;
         border-radius: 0px;
         margin-left: 10px;
@@ -148,6 +159,7 @@ background: #159024;
 
             .PL-desc1 {
                 margin-left: 5px;
+                margin-right: 5px;
             }
         }
     }
@@ -158,6 +170,7 @@ background: #159024;
 
             .PL-desc1 {
                 margin-left: 5px;
+                margin-right: 5px;
             }
         }
     }
@@ -376,6 +389,7 @@ const SummerBannerWrapper = styled.div`
     > div {
         display: none;
     }
+}
 `
 
 const SummerBannerPaddingBox = styled.div`
@@ -709,8 +723,10 @@ class Layout extends React.PureComponent {
             isTablet: false,
             isMobile: false,
             showBanner: false,
-            showSummerBanner: true,
+            showSummerBanner: false,
             cookiesIsAccepted: false,
+            showBlackFriday: false,
+            userCurrencyEnLocale: 'usd',
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -718,12 +734,14 @@ class Layout extends React.PureComponent {
         this.pageName = OriginalPath ? this.props.pageContext.originalPath.replace(/\//g, '') : "";
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this)
+        this.onOpenBanner = this.onOpenBanner.bind(this)
         this.onCloseBanner = this.onCloseBanner.bind(this)
         this.onClosePopup = this.onClosePopup.bind(this)
         this.setItemToSessionStorage = this.setItemToSessionStorage.bind(this)
     }
 
     componentDidMount() {
+        this.detectUserCurrency();
 
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
@@ -765,12 +783,12 @@ class Layout extends React.PureComponent {
             const observer = new MutationObserver((mutations) => {
                 const scrollTopElement = document.querySelector('.ScrollTopMain');
                 if (scrollTopElement) {
-                    scrollTopElement.style.cssText = 'bottom: 100px';
+                    scrollTopElement.style.cssText = 'bottom: 50px';
                     observer.disconnect();
                 }
 
                 if (scrollTopElement && !getCookieConsentValue("AVSUsersCookieMessages")) {
-                    scrollTopElement.style.cssText = 'bottom: 130px';
+                    scrollTopElement.style.cssText = 'bottom: 80px';
                     observer.disconnect();
                 }
             });
@@ -781,52 +799,52 @@ class Layout extends React.PureComponent {
             });
         }
 
-        if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
-            if (!document.querySelector('#rf-script')) {
-                const popupScript = document.createElement('script');
-                popupScript.id = 'rf-script';
-                popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
-                document.body.appendChild(popupScript);
-            }
+        // if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
+        //     if (!document.querySelector('#rf-script')) {
+        //         const popupScript = document.createElement('script');
+        //         popupScript.id = 'rf-script';
+        //         popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
+        //         document.body.appendChild(popupScript);
+        //     }
             
-            if (!getCookieConsentValue("AVSUsersCookieMessages")) {
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    .rf-widget-launch {
-                        bottom: 70px !important;
-                    }
-                `;
-                document.head.appendChild(style);
-            } else {
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    .rf-widget-launch {
-                        bottom: 30px !important;
-                    }
-                `;
-                document.head.appendChild(style);
-            }
+        //     if (!getCookieConsentValue("AVSUsersCookieMessages")) {
+        //         const style = document.createElement('style');
+        //         style.innerHTML = `
+        //             .rf-widget-launch {
+        //                 bottom: 70px !important;
+        //             }
+        //         `;
+        //         document.head.appendChild(style);
+        //     } else {
+        //         const style = document.createElement('style');
+        //         style.innerHTML = `
+        //             .rf-widget-launch {
+        //                 bottom: 30px !important;
+        //             }
+        //         `;
+        //         document.head.appendChild(style);
+        //     }
 
-            const style = document.createElement('style');
-                style.innerHTML = `
-                @media screen and (max-width: 768px) {
-                    .rf-widget-launch {
-                        right: 15px !important;
-                    }
-                }`;
-                document.head.appendChild(style);
-        } else if (excludedPaths.some(path => path === window.location.pathname)) {
-            const existingScript = document.querySelector('#rf-script');
-            const existingWidget = document.querySelector('.rf-widget-launch');
+        //     const style = document.createElement('style');
+        //         style.innerHTML = `
+        //         @media screen and (max-width: 768px) {
+        //             .rf-widget-launch {
+        //                 right: 15px !important;
+        //             }
+        //         }`;
+        //         document.head.appendChild(style);
+        // } else if (excludedPaths.some(path => path === window.location.pathname)) {
+        //     const existingScript = document.querySelector('#rf-script');
+        //     const existingWidget = document.querySelector('.rf-widget-launch');
         
-            if (existingScript) {
-                document.body.removeChild(existingScript);
-            }
+        //     if (existingScript) {
+        //         document.body.removeChild(existingScript);
+        //     }
         
-            if (existingWidget) {
-                existingWidget.remove(); 
-            }
-        }
+        //     if (existingWidget) {
+        //         existingWidget.remove(); 
+        //     }
+        // }
 
         document.body.addEventListener('resize', this.updateWindowDimensions);
 
@@ -899,12 +917,57 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
+    onOpenBanner = (e) => {
+      e.stopPropagation();
+      this.setState({
+        showBlackFriday: true
+      })
+    }
+
     onCloseBanner = (e) => {
         e.stopPropagation();
-        sessionStorage.setItem('summer_banner_closed', 'true');
+        // sessionStorage.setItem('summer_banner_closed', 'true');
         this.setState({
-            showSummerBanner: false,
+            // showSummerBanner: false,
+            showBlackFriday: false
         });
+    }
+
+    detectUserCurrency = async () => {
+        const cachedCurrency = sessionStorage.getItem('userCurrencyEnLocale');
+        if (cachedCurrency) {
+            this.setState({ userCurrencyEnLocale: cachedCurrency });
+            return;
+        }
+
+        try {
+            const response = await fetch('https://ipapi.co/json/');
+            const data = await response.json();
+            const currency = data.country_code === 'GB' ? 'gbp' : 'usd';
+            console.log('Detected country:', data.country_code, 'Currency:', currency);
+            sessionStorage.setItem('userCurrencyEnLocale', currency);
+
+            this.setState({ userCurrencyEnLocale: currency });
+        } catch (error) {
+            console.error('Error detecting currency:', error);
+            this.setState({ userCurrencyEnLocale: 'usd' });
+        }
+    }
+
+    getPurchaseLink = () => {
+        const locale = this.props.pageContext.locale;
+
+        if (locale === 'en') {
+            const currency = this.state.userCurrencyEnLocale || 'usd';
+
+            console.log('Purchase link currency:', currency);
+
+            return currency === 'gbp'
+                ? this.props.t("avs pl link gbp")
+                : this.props.t("avs pl link");
+        }
+
+        return this.props.t("avs pl link");
     }
 
     componentDidUpdate() {
@@ -919,7 +982,7 @@ class Layout extends React.PureComponent {
 
             const scrollTopElement = document.querySelector('.ScrollTopMain');
             if (scrollTopElement) {
-                scrollTopElement.style.cssText = 'bottom: 100px';
+                scrollTopElement.style.cssText = 'bottom: 40px';
             }
         }
 
@@ -997,16 +1060,18 @@ class Layout extends React.PureComponent {
                 </Helmet>
 
                 {!this.props.headerIsDisabled ? <StyledPL>
-                  <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}>
+                  {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
+                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
+                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
-                    <div className='bgLeft'></div>
-                        <div className="PL-box">
-                            <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                        </div>
-                    <div className='bgRight'></div>
+                    {/* <div className='bgLeft'></div> */}
+                    <div className="PL-box">
+                        <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
+                        <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                        <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                        <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                    </div>
+                    {/* <div className='bgRight'></div> */}
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
@@ -1016,7 +1081,8 @@ class Layout extends React.PureComponent {
                 {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
-                <main>{this.props.children}</main>
+                {/* <main>{this.props.children}</main> */}
+                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
 
                 </StyledLayout>
                 <CookieMessage onAcceptClick={this.onAcceptClick} />

@@ -1685,13 +1685,13 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Sconti estivi fino al",
-    "colorBanner" : "30%",
-    "textBanner" : "! Scopri le offerte AVS4YOU e risparmia ora.",
+    "beginningBanner" : "Una dolce sorpresa per te:",
+    "colorBanner" : "25%",
+    "textBanner" : "di sconto sui software AVS4YOU.",
     "discountCoupon" : "",
     "textBannerContinue" : "",
-    "endingBanner" :  "Acquista subito!",
-    "avs pl link" : "",
+    "endingBanner" :  "Approfittane subito!",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
 
     "Hot" : "Offerte",
     "Summer" : "estivi!",
