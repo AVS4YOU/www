@@ -724,6 +724,7 @@ class Layout extends React.PureComponent {
             showSummerBanner: false,
             cookiesIsAccepted: false,
             showBlackFriday: false,
+            userCurrencyEnLocale: 'usd',
         }
 
         const OriginalPath = this.props.pageContext.originalPath;
@@ -738,6 +739,7 @@ class Layout extends React.PureComponent {
     }
 
     componentDidMount() {
+        this.detectUserCurrency();
 
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
@@ -779,12 +781,12 @@ class Layout extends React.PureComponent {
             const observer = new MutationObserver((mutations) => {
                 const scrollTopElement = document.querySelector('.ScrollTopMain');
                 if (scrollTopElement) {
-                    scrollTopElement.style.cssText = 'bottom: 100px';
+                    scrollTopElement.style.cssText = 'bottom: 50px';
                     observer.disconnect();
                 }
 
                 if (scrollTopElement && !getCookieConsentValue("AVSUsersCookieMessages")) {
-                    scrollTopElement.style.cssText = 'bottom: 130px';
+                    scrollTopElement.style.cssText = 'bottom: 80px';
                     observer.disconnect();
                 }
             });
@@ -795,52 +797,52 @@ class Layout extends React.PureComponent {
             });
         }
 
-        if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
-            if (!document.querySelector('#rf-script')) {
-                const popupScript = document.createElement('script');
-                popupScript.id = 'rf-script';
-                popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
-                document.body.appendChild(popupScript);
-            }
+        // if (this.props.pageContext.locale === 'en' && !excludedPaths.some(path => path === window.location.pathname)) {
+        //     if (!document.querySelector('#rf-script')) {
+        //         const popupScript = document.createElement('script');
+        //         popupScript.id = 'rf-script';
+        //         popupScript.src = 'https://referral-factory.com/assets/js/widget.js?code=cd5TPKTj';
+        //         document.body.appendChild(popupScript);
+        //     }
             
-            if (!getCookieConsentValue("AVSUsersCookieMessages")) {
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    .rf-widget-launch {
-                        bottom: 70px !important;
-                    }
-                `;
-                document.head.appendChild(style);
-            } else {
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    .rf-widget-launch {
-                        bottom: 30px !important;
-                    }
-                `;
-                document.head.appendChild(style);
-            }
+        //     if (!getCookieConsentValue("AVSUsersCookieMessages")) {
+        //         const style = document.createElement('style');
+        //         style.innerHTML = `
+        //             .rf-widget-launch {
+        //                 bottom: 70px !important;
+        //             }
+        //         `;
+        //         document.head.appendChild(style);
+        //     } else {
+        //         const style = document.createElement('style');
+        //         style.innerHTML = `
+        //             .rf-widget-launch {
+        //                 bottom: 30px !important;
+        //             }
+        //         `;
+        //         document.head.appendChild(style);
+        //     }
 
-            const style = document.createElement('style');
-                style.innerHTML = `
-                @media screen and (max-width: 768px) {
-                    .rf-widget-launch {
-                        right: 15px !important;
-                    }
-                }`;
-                document.head.appendChild(style);
-        } else if (excludedPaths.some(path => path === window.location.pathname)) {
-            const existingScript = document.querySelector('#rf-script');
-            const existingWidget = document.querySelector('.rf-widget-launch');
+        //     const style = document.createElement('style');
+        //         style.innerHTML = `
+        //         @media screen and (max-width: 768px) {
+        //             .rf-widget-launch {
+        //                 right: 15px !important;
+        //             }
+        //         }`;
+        //         document.head.appendChild(style);
+        // } else if (excludedPaths.some(path => path === window.location.pathname)) {
+        //     const existingScript = document.querySelector('#rf-script');
+        //     const existingWidget = document.querySelector('.rf-widget-launch');
         
-            if (existingScript) {
-                document.body.removeChild(existingScript);
-            }
+        //     if (existingScript) {
+        //         document.body.removeChild(existingScript);
+        //     }
         
-            if (existingWidget) {
-                existingWidget.remove(); 
-            }
-        }
+        //     if (existingWidget) {
+        //         existingWidget.remove(); 
+        //     }
+        // }
 
         document.body.addEventListener('resize', this.updateWindowDimensions);
 
@@ -929,6 +931,43 @@ class Layout extends React.PureComponent {
         });
     }
 
+    detectUserCurrency = async () => {
+        const cachedCurrency = sessionStorage.getItem('userCurrencyEnLocale');
+        if (cachedCurrency) {
+            this.setState({ userCurrencyEnLocale: cachedCurrency });
+            return;
+        }
+
+        try {
+            const response = await fetch('https://ipapi.co/json/');
+            const data = await response.json();
+            const currency = data.country_code === 'GB' ? 'gbp' : 'usd';
+            console.log('Detected country:', data.country_code, 'Currency:', currency);
+            sessionStorage.setItem('userCurrencyEnLocale', currency);
+
+            this.setState({ userCurrencyEnLocale: currency });
+        } catch (error) {
+            console.error('Error detecting currency:', error);
+            this.setState({ userCurrencyEnLocale: 'usd' });
+        }
+    }
+
+    getPurchaseLink = () => {
+        const locale = this.props.pageContext.locale;
+
+        if (locale === 'en') {
+            const currency = this.state.userCurrencyEnLocale || 'usd';
+
+            console.log('Purchase link currency:', currency);
+
+            return currency === 'gbp'
+                ? this.props.t("avs pl link gbp")
+                : this.props.t("avs pl link");
+        }
+
+        return this.props.t("avs pl link");
+    }
+
     componentDidUpdate() {
         if (this.state.cookiesIsAccepted) {
             const style = document.createElement('style');
@@ -941,7 +980,7 @@ class Layout extends React.PureComponent {
 
             const scrollTopElement = document.querySelector('.ScrollTopMain');
             if (scrollTopElement) {
-                scrollTopElement.style.cssText = 'bottom: 100px';
+                scrollTopElement.style.cssText = 'bottom: 40px';
             }
         }
 
@@ -1020,7 +1059,8 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled ? <StyledPL>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
-                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
+                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
+                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
                     {/* <div className='bgLeft'></div> */}
                     <div className="PL-box">
