@@ -1754,13 +1754,13 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "夏の大特価！AVS4YOU パッケージが最大",
-    "colorBanner" : "30％",
-    "textBanner" : "オフ！",
+    "beginningBanner" : "AVS4YOU ソフトウェアが",
+    "colorBanner" : "25%",
+    "textBanner" : "オフで、甘い割引を手に入れましょう。",
     "discountCoupon" : "",
     "textBannerContinue" : "",
-    "endingBanner" :  "今すぐゲット！",
-    "avs pl link" : "",
+    "endingBanner" :  "今すぐ取得！",
+    "avs pl link" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
     
     "Hot" : "夏の",
     "Summer" : "特別セール！",
