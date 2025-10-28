@@ -29,19 +29,27 @@ const StyledPL = styled.div`
 /* display: none; */
 position: relative;
 text-align: center;
-background: #159024;
+background: rgba(21, 18, 37, 1);
 
   .PLnewAvs {
     display: flex;
     width: 100%;
     height: 60px;
-    background-repeat: no-repeat;
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
     justify-content: center;
     background-image: url(${PlAVSbg});
-    background-position: 43% 100%;
+    background-position: 12% 2.5%;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1500px) {
+      background-position: 0% 2.5%;
+    }
+
+    @media (max-width: 1500px) {
+      background-position: -20% 2.5%;
+    }
   }
   .bgLeft {
     width: 100%;
@@ -83,7 +91,8 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #ffdd9e; 
+        color: #FFE091; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
     
     .PL-desc2 {
@@ -102,6 +111,7 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .PL-desc4 {
@@ -111,8 +121,8 @@ background: #159024;
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
-        color: #FFFFFF;
-        background-color: #ED3737;
+        color: #151225;
+        background-color: #F5C867;
         padding: 4px 16px;
         border-radius: 0px;
         margin-left: 10px;
@@ -1012,14 +1022,14 @@ class Layout extends React.PureComponent {
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
-                    <div className='bgLeft'></div>
-                        <div className="PL-box">
-                            <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                        </div>
-                    <div className='bgRight'></div>
+                    {/* <div className='bgLeft'></div> */}
+                    <div className="PL-box">
+                        <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
+                        <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                        <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                        <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                    </div>
+                    {/* <div className='bgRight'></div> */}
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
