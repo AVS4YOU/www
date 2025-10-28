@@ -159,6 +159,7 @@ background: rgba(21, 18, 37, 1);
 
             .PL-desc1 {
                 margin-left: 5px;
+                margin-right: 5px;
             }
         }
     }
@@ -169,6 +170,7 @@ background: rgba(21, 18, 37, 1);
 
             .PL-desc1 {
                 margin-left: 5px;
+                margin-right: 5px;
             }
         }
     }
