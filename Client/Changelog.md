@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.93 (29.10.2025)
+### New
+* Updated links in `uninstall-offer.aspx`
+
 ## 1.0.92 (28.10.2025)
 ### New
 * Added banner 'Halloween 2025'
