@@ -1342,7 +1342,7 @@
 
 	"defaultHrefUnlim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
 	"defaultHrefOneYear" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
-    "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=nl&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&COUPON=AVSUnGift&CLEAN_CART=ALL",
+    "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSUnGift&SRC=Uninstall_nl&CLEAN_CART=ALL",
 
 	"onlinehelpVideoHref" : "https://onlinehelp.avs4you.com/avs-video-converter/",
 	"onlinehelpAudioHref" : "https://onlinehelp.avs4you.com/avs-audio-converter/",
