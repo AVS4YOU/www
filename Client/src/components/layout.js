@@ -26,7 +26,7 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-/* display: none; */
+display: none;
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);
@@ -1059,22 +1059,28 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                {!this.props.headerIsDisabled ? <StyledPL>
+                {/* {!this.props.headerIsDisabled ? <StyledPL> */}
+
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
-                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
+
+                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
+                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}> */}
+
                     {/* <div className='bgLeft'></div> */}
-                    <div className="PL-box">
+
+                    {/* <div className="PL-box">
                         <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                         <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                         <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
                         <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                    </div>
+                    </div> */}
+
                     {/* <div className='bgRight'></div> */}
-                    </div>
+
+                    {/* </div>
                   </a>
-                </StyledPL> : <div></div>}
+                </StyledPL> : <div></div>} */}
 
 
 
