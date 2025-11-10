@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.94 (10.11.2025)
+### New
+* Added banner 'Black Friday 2025'
+
 ## 1.0.94 (31.10.2025)
 ### New
 * Removed banner 'Halloween 2025'
