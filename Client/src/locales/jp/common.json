@@ -1754,9 +1754,9 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "AVS4YOU ソフトウェアが",
-    "colorBanner" : "25%",
-    "textBanner" : "オフで、甘い割引を手に入れましょう。",
+    "beginningBanner" : "ブラックフライデー のセール！スピンして最大 100% 割引を勝つ！",
+    "colorBanner" : "",
+    "textBanner" : "",
     "discountCoupon" : "",
     "textBannerContinue" : "",
     "endingBanner" :  "今すぐ取得！",
@@ -1794,15 +1794,12 @@
     "AVS4YOU Unlimited" : "AVS4YOU無期限サブスクリプション",
     "AVS4YOU 1 Year Subscription" : "AVS4YOUの1年間サブスクリプション",
     "AVS Video ReMaker 1 Year Subscription" : "AVS Video ReMakerの1年間サブスクリプション",
-    "Unlim10" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=Unlim10&CLEAN_CART=ALL",
-    "10AyeL" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=10AyeL&CLEAN_CART=ALL",
-    "Unlim15" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=Unlim15&CLEAN_CART=ALL", 
-    "Unlim20" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=Unlim20&CLEAN_CART=ALL",
-    "AnYear20" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=AnYear20&CLEAN_CART=ALL",  
-    "AVUnlim30" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=AVUnlim30&CLEAN_CART=ALL",
-    "ANYeR30" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=ANYeR30&CLEAN_CART=ALL",
-    "AU40lim" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=AU40lim&CLEAN_CART=ALL", 
-    "Av40Sub" : "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=Av40Sub&CLEAN_CART=ALL",
-    "Un5AVsur" : "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=Un5AVsur&CLEAN_CART=ALL", 
-    "BRy25Amak" : "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&COUPON=BRy25Amak&CLEAN_CART=ALL"
+    "Unlim10": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Unlim10&CLEAN_CART=ALL",
+    "10BlackF": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=10BlackF&CLEAN_CART=ALL",
+    "Friday10": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Friday10&CLEAN_CART=ALL",
+    "AVSYear20": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSYear20&CLEAN_CART=ALL",
+    "BFunlim20": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=BFunlim20&CLEAN_CART=ALL",
+    "AVUnlim30": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVUnlim30&CLEAN_CART=ALL",
+    "ALuck50": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=ALuck50&CLEAN_CART=ALL",
+    "BRe8maker": "https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=jp&ORDERSTYLE=nLW0m5S5iLk=&COUPON=BRe8maker&CLEAN_CART=ALL"
     }

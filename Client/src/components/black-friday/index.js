@@ -533,47 +533,42 @@ const prizes = [
   'Surprise',
   '100%',
   '$10',
-  '10%',
-  '20%',
-  '30%',
-  '20%'
+  '10%', 
+  '20%', 
+  '20%', 
+  '30%'
 ];
 
 const CouponNames = {
-  '$10': 'AVDC25',
-  '10%': ['Unlim10', '10AyeL'],
-  '20%': ['Unlim20', 'AnYear20'],
-  '30%': ['AVUnlim30', 'ANYeR30'],
-  '40%': 'AU40lim',
-  'Surprise':'Un5AVsur',
-  '100%':'BRy25Amak',
-}
+  '$10': ["Unlim10", "Friday10"],
+  "10%": "10BlackF",
+  "20%": ["BFunlim20", "AVSYear20"],
+  "30%": "AVUnlim30",
+  Surprise: "ALuck50",
+  "100%": "BRe8maker",
+};
 
 const ProgramNames = {
-  'AVDC25': 'AVS4YOU Unlimited',
-  'Unlim10': 'AVS4YOU Unlimited',
-  '10AyeL': 'AVS4YOU 1 Year Subscription',
-  'Unlim20': 'AVS4YOU Unlimited', 
-  'AnYear20': 'AVS4YOU 1 Year Subscription',
-  'AVUnlim30': 'AVS4YOU Unlimited',  
-  'ANYeR30': 'AVS4YOU 1 Year Subscription',
-  'AU40lim': 'AVS4YOU Unlimited', 
-  'Un5AVsur': '50% Unlimited Subscription', 
-  'BRy25Amak': 'AVS Video ReMaker 1 Year Subscription',
-}
+  Unlim10: "AVS4YOU Unlimited",
+  Friday10: "AVS4YOU 1 Year Subscription",
+  "10BlackF": "AVS4YOU 1 Year Subscription",
+  BFunlim20: "AVS4YOU Unlimited",
+  AVSYear20: "AVS4YOU 1 Year Subscription",
+  AVUnlim30: "AVS4YOU Unlimited",
+  ALuck50: "50% Unlimited Subscription",
+  BRe8maker: "AVS Video ReMaker 1 Year Subscription",
+};
 
 const RedeemNames = {
-  'AVDC25': 'AVDC25',
-  'Unlim10': 'Unlim10',
-  '10AyeL': '10AyeL',
-  'Unlim20': 'Unlim20',
-  'AnYear20': 'AnYear20',  
-  'AVUnlim30': 'AVUnlim30',
-  'ANYeR30': 'ANYeR30',
-  'AU40lim': 'AU40lim', 
-  'Un5AVsur': 'Un5AVsur', 
-  'BRy25Amak': 'BRy25Amak',
-}
+  Unlim10: "Unlim10",
+  Friday10: "Friday10",
+  "10BlackF": "10BlackF",
+  BFunlim20: "BFunlim20",
+  AVSYear20: "AVSYear20",
+  AVUnlim30: "AVUnlim30",
+  ALuck50: "ALuck50",
+  BRe8maker: "BRe8maker",
+};
 
 const options = {
   prizes,
