@@ -1,8 +1,19 @@
 # Changelog
 
-## 1.0.94 (10.11.2025)
+## 1.0.95 (11.11.2025)
 ### New
-* Added banner 'Black Friday 2025'
+* Added banner 'Black Friday 2025' with Black Friday Lucky Wheel
+  - Added 8 prize options: \$10, 10%, 20%, 30%, 100%, and Surprise (50%)
+  - Integrated coupon system with the following codes:
+    - `Unlim10`, `Friday10` - \$10 discount
+    - `10BlackF` - 10% discount
+    - `BFunlim20`, `AVSYear20` - 20% discount
+    - `AVUnlim30` - 30% discount
+    - `ALuck50` - 50% Unlimited Subscription (Surprise prize)
+    - `BRe8maker` - 100% AVS Video ReMaker 1 Year Subscription
+  - Added cookie-based limitation (one spin per day per user)
+  - Implemented audio player with casino music (`operation_casino.mp3`)
+  - Created congratulations screen with coupon display and redeem button
 
 ## 1.0.94 (31.10.2025)
 ### New
