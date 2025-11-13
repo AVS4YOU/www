@@ -1773,7 +1773,7 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Mega Soldes Black Friday !  Faites tourner la roue pour gagner jusqu'à 100% de réduction !",
+    "beginningBanner" : "Mega Soldes Black Friday! Faites tourner la roue pour gagner jusqu'à 100% de réduction!",
     "colorBanner" : "",
     "textBanner" : "",
     "discountCoupon" : "",
@@ -1808,6 +1808,7 @@
     "Youve got a" : "Vous recevez une remise de ",
     "discount on" : " sur ",
     "discount before" : "!",
+    "CouponName": "Utilisez le code <1>{{coupon}}</1> lors du paiement",
     "Redeem your coupon" : "Utilisez votre coupon",
     "AVS4YOU Unlimited" : "AVS4YOU Abonnement illimité",
     "AVS4YOU 1 Year Subscription" : "AVS4YOU Abonnement pour 1 an",

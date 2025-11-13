@@ -1790,6 +1790,7 @@
     "Youve got a" : "",
 	"discount on" : "割引を獲得しました",
     "discount before" : "!",
+    "CouponName": "お会計時にコード <1>{{coupon}}</1> をご利用ください",
     "Redeem your coupon" : "クーポンを使用",
     "AVS4YOU Unlimited" : "AVS4YOU無期限サブスクリプション",
     "AVS4YOU 1 Year Subscription" : "AVS4YOUの1年間サブスクリプション",
