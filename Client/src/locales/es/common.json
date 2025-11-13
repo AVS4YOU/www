@@ -1725,7 +1725,7 @@
 	
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "¡Rebajas del Black Friday! ¡Gira y gana hasta un 100 % de descuento!",
+    "beginningBanner" : "¡Rebajas del Black Friday! ¡Gira y gana hasta un 100% de descuento!",
     "colorBanner" : "",
     "textBanner" : "",
     "discountCoupon" : "",
@@ -1760,6 +1760,7 @@
   "Youve got a" : "¡Su descuento es ",
   "discount on" : " en ",
   "discount before" : "!",
+  "CouponName": "Utiliza el código <1>{{coupon}}</1> al pagar",
   "Redeem your coupon" : "Canjear el cupón",
   "AVS4YOU Unlimited" : "la suscripción ilimitada AVS4YOU",
   "AVS4YOU 1 Year Subscription" : "la suscripción de 1 año AVS4YOU",

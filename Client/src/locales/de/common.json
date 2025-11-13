@@ -1774,7 +1774,7 @@
 
     "*****************************EVENTS********************************" : "*****************************EVENTS********************************",
 
-    "beginningBanner" : "Sonderangebot zum Black Friday! Drehen Sie und gewinnen Sie bis zu 100 % Rabatt!",
+    "beginningBanner" : "Sonderangebot zum Black Friday! Drehen Sie und gewinnen Sie bis zu 100% Rabatt!",
     "colorBanner" : "",
     "textBanner" : "",
     "discountCoupon" : "",
@@ -1809,6 +1809,7 @@
 "Youve got a" : "Sie haben einen ",
 "discount on" : "  Rabatt auf das ",
 "discount before" : "!",
+"CouponName": "Verwenden Sie den Code <1>{{coupon}}</1> beim Kauf",
 "Redeem your coupon" : "Lösen Sie Ihren Gutscheincode ein",
 "AVS4YOU Unlimited" : "Unbefristete AVS4YOU-Abonnement",
 "AVS4YOU 1 Year Subscription" : "AVS4YOU 1-Jahres-Abonnement",

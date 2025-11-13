@@ -17,17 +17,22 @@ import onMusicButtom from "../../images/black-friday/on_bf.png";
 import offMusicButtom from "../../images/black-friday/off_bf.png";
 import AudioCasino from "../../images/black-friday/operation_casino.mp3";
 import { withSoundCloudAudio } from 'react-soundplayer/addons';
+import { Trans } from "react-i18next";
 
 const Wheelstyle = styled.div`
 float: left;
 margin: 25px;
 padding: 10px;
-width: 530px;
+width: 560px;
 height: 560px;
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media (max-width: 1400px) {
+  width: 580px;
+}
 
 .WheelAVS{
     position: absolute;
@@ -35,6 +40,10 @@ align-items: center;
     font-family: Montserrat, sans-serif;
     top: -5%;
     left: 2%;
+
+    @media (max-width: 1400px) {
+      left: 11.5%;
+    }
 
     .react-turntable-section-btn {
       display: none !important;
@@ -54,6 +63,10 @@ align-items: center;
     z-index: 2;
     margin-left: -78px;
     margin-top: -16px;
+
+    @media (max-width: 1400px) {
+      margin-left: -20px;
+    }
 }
 
 .wheelAVScircle{
@@ -62,6 +75,10 @@ align-items: center;
   left: 158px;
   z-index: 20;
   transform: scale(0.5);
+
+  @media (max-width: 1400px) {
+    left: 220px;
+  }
 }
 
 .wheelAVSfoot{
@@ -146,7 +163,7 @@ vertical-align: top;
 }
 
 .on_complite {
-  width: 540px;
+  width: 542px;
   height: 100%;
   z-index: 100;
   display: grid;
@@ -267,25 +284,26 @@ vertical-align: top;
 }
 
 .coupon {
-  color: #F3F3F3;
+  color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 24px;
   padding-bottom: 32px;
-  line-height: 39px;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: none;
   letter-spacing: 0.05em;
+  font-family: Montserrat;
+  font-style: normal;
 
-  .couponText {
-    color: rgba(255, 255, 255, 0.95);
+
+  span {
+    color: #F3F3F3;
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
     padding-bottom: 32px;
-    font-weight: 400;
-    line-height: 34px;
-    text-transform: none;
+    line-height: 39px;
   }
 }
 
@@ -300,6 +318,11 @@ vertical-align: top;
   left: -180px;
   z-index: 0;
   width: 880px;
+
+  @media (max-width: 1400px) {
+    top: -194px;
+    left: -142px;
+  }
 }
 
 .programName {
@@ -417,7 +440,7 @@ vertical-align: top;
 
   .wheelStyle {
     margin: auto;
-    top: 100px;
+    top: ${(props) => (props.locale === 'fr' || props.locale === 'de' || props.locale === 'es' ? '150px' : '100px')};
     grid-column: 1;
     grid-row: 2;
   }
@@ -615,6 +638,7 @@ export class BlackFriday extends React.PureComponent {
   constructor(props) {
     super(props);
     this.turntableRef = createRef();
+    this.wheelRef = createRef();
     this.state = {
       device: "",
       isModalOpen: false,
@@ -648,6 +672,26 @@ export class BlackFriday extends React.PureComponent {
 			isModalOpen: true
 		});
 	}
+
+   smoothScrollTo = (targetPosition, duration = 800) => {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+    const animation = (currentTime) => {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = this.easeInOutQuad(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+    requestAnimationFrame(animation);
+    };
+    easeInOutQuad = (t, b, c, d) => {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  };
 
   handleSpin = () => {
     if (this.state.isSpinning) {
@@ -683,6 +727,9 @@ export class BlackFriday extends React.PureComponent {
   }
 
   componentDidMount() {
+    if (window.innerWidth <= 1400) {
+      this.smoothScrollTo(230, 800);
+    }
     const couponName = getCookie('couponName');
     const winPrize = getCookie('winPrize')
 
@@ -692,6 +739,10 @@ export class BlackFriday extends React.PureComponent {
         couponName: couponName
       });
     }
+  }
+
+  componentWillUnmount() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   render(){
@@ -719,7 +770,9 @@ export class BlackFriday extends React.PureComponent {
                       <img className="congratsBg" src={congratsBg}/>
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
                       {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize === "Surprise" ? "50%" : this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
-                      {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span className="couponText">{this.props.t("Use code")}</span> <span>{this.state.couponName}</span> <span className="couponText">{this.props.t("at checkout")}</span></Text>}
+                      {/* {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span className="couponText">{this.props.t("Use code")}</span> <span>{this.state.couponName}</span> <span className="couponText">{this.props.t("at checkout")}</span></Text>} */}
+                      {/* {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon">{this.props.t("Use code {{coupon}} at checkout", { coupon: this.state.couponName })}</Text>} */}
+                       {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><Trans i18nKey="CouponName" values={{ coupon: this.state.couponName }}><span className="couponText"></span><span></span></Trans></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={this.props.t(redeemName)}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
                   </div>
@@ -743,7 +796,7 @@ export class BlackFriday extends React.PureComponent {
                     <img className="wheelAVScircle" src={wheelAVScircle}/>
                     <div className="wheelAVSram"></div>
 
-                    <div className="WheelAVS">
+                    <div className="WheelAVS" ref={this.wheelRef}>
                       <ReactTurntable
                           ref={this.turntableRef}
                           {...options}

@@ -1721,6 +1721,7 @@
     "Youve got a" : "Il tuo sconto è ",
     "discount on" : " sull’ ",
     "discount before" : "!",
+    "CouponName": "Utilizza il codice <1>{{coupon}}</1> al pagamento",
     "Redeem your coupon" : "Riscatta il tuo coupon",
     "AVS4YOU Unlimited" : "abbonamento illimitato AVS4YOU",
     "AVS4YOU 1 Year Subscription" : "abbonamento AVS4YOU di 1 anno",

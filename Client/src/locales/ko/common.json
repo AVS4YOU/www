@@ -1695,6 +1695,7 @@
 	"Youve got a" : "You've unlocked ",
 	"discount on" : " off ",
 	"discount before" : "!",
+	"CouponName": "Use code <1>{{coupon}}</1> at checkout",
 	"Redeem your coupon" : "Redeem now!",
 	"AVS4YOU Unlimited" : "AVS4YOU Unlimited Subscription",
   "50% Unlimited Subscription": "50% Unlimited Subscription",
