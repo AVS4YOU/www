@@ -770,8 +770,6 @@ export class BlackFriday extends React.PureComponent {
                       <img className="congratsBg" src={congratsBg}/>
                       <Text fontFamily={'Montserrat'} as="h1" className="header_congrats">{this.props.t("Congratulations")}</Text>
                       {this.state.couponName && <Text fontFamily={'Montserrat'} className="got">{this.props.t("Youve got a")}<span>{this.state?.winPrize === "Surprise" ? "50%" : this.state?.winPrize}</span>{this.props.t("discount on")}<br /><span className="programName">{this.props.t(programName)}{this.props.t("discount before")}</span></Text>}
-                      {/* {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><span className="couponText">{this.props.t("Use code")}</span> <span>{this.state.couponName}</span> <span className="couponText">{this.props.t("at checkout")}</span></Text>} */}
-                      {/* {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon">{this.props.t("Use code {{coupon}} at checkout", { coupon: this.state.couponName })}</Text>} */}
                        {this.state.couponName && <Text fontFamily={'Montserrat'} className="coupon"><Trans i18nKey="CouponName" values={{ coupon: this.state.couponName }}><span className="couponText"></span><span></span></Trans></Text>}
                       <div className="button-coupon"><Button className="Button_BF_Wheel" id="black_friday_redeem" href={this.props.t(redeemName)}> {this.props.t("Redeem your coupon")} </Button></div>
                     </div>
