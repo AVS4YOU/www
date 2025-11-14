@@ -42,7 +42,23 @@ align-items: center;
     left: 2%;
 
     @media (max-width: 1400px) {
-      left: 11.5%;
+      left: 43px;
+      top: 24px;
+
+      @media (max-width: 900px) {
+        left: 36px;
+        top: 20px;
+      }
+
+      canvas {
+        height: 392px;
+        width: 355px;
+
+        @media (max-width: 900px) {
+          height: 340px;
+          width: 310px;
+        }
+      }
     }
 
     .react-turntable-section-btn {
@@ -65,7 +81,18 @@ align-items: center;
     margin-top: -16px;
 
     @media (max-width: 1400px) {
-      margin-left: -20px;
+      width: 440px;
+      height: 440px;
+      background-size: 462px;
+      margin: 0;
+      background-position: center;
+    }
+
+     @media (max-width: 900px) {
+      width: 380px;
+      height: 380px;
+      background-size: 400px;
+      background-position: 100% center;
     }
 }
 
@@ -77,7 +104,15 @@ align-items: center;
   transform: scale(0.5);
 
   @media (max-width: 1400px) {
-    left: 220px;
+    width: 80px;
+    left: 182px;
+    top: 178px;
+  }
+
+  @media (max-width: 900px) {
+    width: 60px;
+    left: 162px;
+    top: 160px;
   }
 }
 
@@ -102,12 +137,24 @@ vertical-align: top;
 
 .header__body_bg {
   position: relative;
+
+  @media (max-width: 1400px) {
+    padding: 90px 0 130px !important;
+  }
+
+  @media (max-width: 900px) {
+    padding: 60px 0 100px !important;
+  }
 }
 
 .music-block {
     width: 100%;
     position: absolute;
     right: 0;
+
+    @media (max-width: 900px) {
+      top: 0 !important;
+    }
 
   .afh_music_block,
   .afh_share_block {
@@ -148,11 +195,33 @@ vertical-align: top;
   grid-column: 2;
   grid-row: 1;
   z-index: 1;
+
+  @media (max-width: 1400px) {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 900px) {
+    margin-top: 40px;
+  }
 }
 
 .wheelStyle {
   grid-column: 1;
   grid-row: 1;
+
+  @media (max-width: 1400px) {
+    width: 440px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    top: 50px;
+  }
+
+  @media (max-width: 900px) {
+    width: 400px;
+    top: 0;
+  }
 }
 
 .header__body-wrapper {
@@ -160,6 +229,14 @@ vertical-align: top;
   grid-template-columns: 1fr 1fr;
   position: relative;
   align-items: center;
+
+  @media (max-width: 1400px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 0 24px;
+  }
 }
 
 .on_complite {
@@ -168,6 +245,10 @@ vertical-align: top;
   z-index: 100;
   display: grid;
   align-content: center;
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
 }
 
 .block_content{
@@ -199,6 +280,16 @@ vertical-align: top;
     text-transform: uppercase;
     white-space: nowrap;
     font-family: Montserrat;
+
+    @media (max-width: 1400px) {
+      font-size: 48px;
+      line-height: 59px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 
   .header___subtitle {
@@ -210,6 +301,17 @@ vertical-align: top;
     padding-bottom: 32px;
     white-space: nowrap;
     font-family: Montserrat;
+
+    @media (max-width: 1400px) {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 28px;
+      line-height: 35px;
+      white-space: wrap;
+    }
   }
 
   .header__subtitle{
@@ -232,6 +334,19 @@ vertical-align: top;
     font-family: Montserrat;
     max-width: 656px;
     margin: auto;
+    font-weight: 400;
+
+    @media (max-width: 1400px) {
+      font-size: 22px;
+      line-height: 31px;
+      padding: 0 0 32px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 0 0 32px;
+    }
   }
 
   .secondtext_bf{
@@ -249,6 +364,17 @@ vertical-align: top;
     line-height: 24px;
     padding-top: 48px;
     text-align: center;
+
+    @media (max-width: 1400px) {
+      font-size: 15px;
+      line-height: 20px;
+      padding-top: 32px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
 }
 
@@ -267,6 +393,16 @@ vertical-align: top;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: ${(props) => (props.locale === "de" ? '64px' : '100px')};
+
+  @media (max-width: 1400px) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 22px;
+    line-height: 31px;
+  }
 }
 
 .got {
@@ -280,6 +416,16 @@ vertical-align: top;
   span {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.95);
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -305,6 +451,26 @@ vertical-align: top;
     padding-bottom: 32px;
     line-height: 39px;
   }
+
+  @media (max-width: 1400px) {
+    font-size: 22px;
+    line-height: 29px;
+
+    span {
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+    line-height: 25px;
+
+    span {
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
 }
 
 .button-start {
@@ -320,8 +486,15 @@ vertical-align: top;
   width: 880px;
 
   @media (max-width: 1400px) {
-    top: -194px;
-    left: -142px;
+    width: 680px;
+    top: -130px;
+    left: -125px;
+  }
+
+  @media (max-width: 900px) {
+    width: 610px;
+    top: -114px;
+    left: -112px;
   }
 }
 
@@ -359,6 +532,10 @@ vertical-align: top;
     z-index: -1;
     left: 40%;
     object-fit: cover;
+
+    @media (max-width: 1400px) {
+      width: 100vw;
+    }
   }
 
 .header_img {
@@ -367,6 +544,15 @@ vertical-align: top;
 
   .wheelAVSlogo {
     position: relative;
+
+    @media (max-width: 1400px) {
+      width: 97px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 900px) {
+      width: 69px;
+    }
   }
 }
 
@@ -404,11 +590,12 @@ vertical-align: top;
 
   .music-block {
     top: 68px;
-    width: 600px;
+    width: calc(100% - 160px);
     position: relative;
     height: 38px;
     display: table;
     margin: auto;
+    padding: 0 40px;
 
     .afh_music_block {
       width: 38px;
@@ -426,48 +613,16 @@ vertical-align: top;
     }
   }
 
-  .header__body-wrapper {
-    grid-template-columns: 1fr;
-  }
-
   .on_complite_close {
     right: 0 !important;
-  }
-
-  .header__body {
-    padding-top: 50px !important;
-  }
-
-  .wheelStyle {
-    margin: auto;
-    top: ${(props) => (props.locale === 'fr' || props.locale === 'de' || props.locale === 'es' ? '150px' : '100px')};
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .bf_container {
-    margin-top: 100px;
-    height: 545px;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   .on_complite_container {
     height: 433px;
   }
 
-  .block_content .header_subtitle {
-    padding: 0px 40px 40px;
-  }
-
   .header_img {
     padding-bottom: 0;
-  }
-
-  .congratsBg {
-    width: 100vw;
-    top: 20%;
-    left: 0%;
   }
 }
 `;
@@ -638,7 +793,6 @@ export class BlackFriday extends React.PureComponent {
   constructor(props) {
     super(props);
     this.turntableRef = createRef();
-    this.wheelRef = createRef();
     this.state = {
       device: "",
       isModalOpen: false,
@@ -673,25 +827,6 @@ export class BlackFriday extends React.PureComponent {
 		});
 	}
 
-   smoothScrollTo = (targetPosition, duration = 800) => {
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
-    const animation = (currentTime) => {
-    if (startTime === null) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const run = this.easeInOutQuad(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-    };
-    requestAnimationFrame(animation);
-    };
-    easeInOutQuad = (t, b, c, d) => {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  };
 
   handleSpin = () => {
     if (this.state.isSpinning) {
@@ -727,9 +862,6 @@ export class BlackFriday extends React.PureComponent {
   }
 
   componentDidMount() {
-    if (window.innerWidth <= 1400) {
-      this.smoothScrollTo(230, 800);
-    }
     const couponName = getCookie('couponName');
     const winPrize = getCookie('winPrize')
 
@@ -739,10 +871,6 @@ export class BlackFriday extends React.PureComponent {
         couponName: couponName
       });
     }
-  }
-
-  componentWillUnmount() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   render(){
@@ -783,9 +911,8 @@ export class BlackFriday extends React.PureComponent {
                       <Text fontFamily={'Montserrat'} as="h1" className="header__title">{this.props.t("Black Friday")}</Text>
                       <Text fontFamily={'Montserrat'} as="h1" className="header___subtitle">{this.props.t("Lucky Wheel")}</Text>
                       <Text fontFamily={'Montserrat'} as="h3" className="header_subtitle">{this.props.t("Spin the wheel to get a discount coupon up")} <b>{this.props.t("99% off")}</b> {this.props.t("onwheel")} <b>{this.props.t("AVS4YOU")}</b>{this.props.t("products")}</Text>
-                      <div className="button-start"><Button className="Button_BF_Wheel" id="black_friday_start" onClick={this.handleSpin} disabled={isSpinning}> {isSpinning ? this.props.t("Spinning...") : this.props.t("Get started now")} </Button></div>
+                      <div className="button-start"><Button className="Button_BF_Wheel" id="black_friday_start" onClick={this.handleSpin} disabled={isSpinning}> {isSpinning ? this.props.t("Spinning") : this.props.t("Get started now")} </Button></div>
                       <Text className="overwey">{this.props.t("Please note that you may try your luck only once a day")}</Text>
-                        
                     </div> 
                   </div>
                   }
@@ -794,7 +921,7 @@ export class BlackFriday extends React.PureComponent {
                     <img className="wheelAVScircle" src={wheelAVScircle}/>
                     <div className="wheelAVSram"></div>
 
-                    <div className="WheelAVS" ref={this.wheelRef}>
+                    <div className="WheelAVS">
                       <ReactTurntable
                           ref={this.turntableRef}
                           {...options}
