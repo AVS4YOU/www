@@ -5,11 +5,11 @@ import MenuWrapper from '../menu-wrapper'
 
 const supportedLocales = ['de', 'es', 'it'];
 
-const Header = ({availableLocales, locale, t, isTransparentHeader}) => {
+const Header = ({availableLocales, locale, t, isTransparentHeader, customBackgroundColor}) => {
 
     return (
 
-        <MenuWrapper isTransparentHeader={isTransparentHeader} availableLocales={availableLocales} locale={locale} t={t} style={{ height: 60}}>
+        <MenuWrapper customBackgroundColor={customBackgroundColor} isTransparentHeader={isTransparentHeader} availableLocales={availableLocales} locale={locale} t={t} style={{ height: 60}}>
             <MenuItem menuItemText={t("Video software")}>
                 <DropdownElement id="avs-ve_header" path="/avs-video-editor.aspx" headerText="AVS Video Editor" descriptionText={t("Easily edit and create videos")}/>
                 <DropdownElement id="avs-free-vc1_header" path="/avs-free-video-converter.aspx" headerText="AVS Video Converter" descriptionText={t("Convert all key video formats")}/>

@@ -947,7 +947,7 @@ class Layout extends React.PureComponent {
             const response = await fetch('https://ipapi.co/json/');
             const data = await response.json();
             const currency = data.country_code === 'GB' ? 'gbp' : 'usd';
-            console.log('Detected country:', data.country_code, 'Currency:', currency);
+            // console.log('Detected country:', data.country_code, 'Currency:', currency);
             sessionStorage.setItem('userCurrencyEnLocale', currency);
 
             this.setState({ userCurrencyEnLocale: currency });
@@ -1087,7 +1087,7 @@ class Layout extends React.PureComponent {
 
 
 
-                {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
+                {!this.props.headerIsDisabled && <Header customBackgroundColor={this.props.customBackgroundColor} isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
                 {/* <main>{this.props.children}</main> */}

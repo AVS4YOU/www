@@ -267,6 +267,7 @@ constructor(props) {
       <Layout
         headerIsDisabled={false}
         footerIsDisabled={true}
+        customBackgroundColor={"#0D271B"}
         className="advent-calendar"
         pageContext={this.props.pageContext}
         t={this.props.t}
