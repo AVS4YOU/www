@@ -267,6 +267,7 @@ constructor(props) {
       <Layout
         headerIsDisabled={false}
         footerIsDisabled={true}
+        plNewsIsDisabled={true}
         customBackgroundColor={"#0D271B"}
         className="advent-calendar"
         pageContext={this.props.pageContext}
@@ -639,13 +640,13 @@ constructor(props) {
               textButton="Shop now"
               idButton="twenty-fourth-text_advent-calendar"
             />
-            <CalendarItem
+            {/* <CalendarItem
               imageCoordinate={-4499}
               date={new Date(2025, 11, 25)}
               validDate="25"
               popupDiscount={<><b style={{color: "#E73A37"}}>MERRY CHRISTMAS</b> <br /> and <b>happy holiday season!</b></>}
               popupDiscountEnter={<><br />AVS4YOU wishes you positive beginnings <br /> and new video projects in 2025. <br /><br /> We look forward to another great year with you!</>}
-            />
+            /> */}
           </div>
 
           {/* <div className="advent_footer_block">
