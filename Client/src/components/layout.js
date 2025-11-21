@@ -1062,7 +1062,7 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                {!this.props.headerIsDisabled ? <StyledPL>
+                {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>

@@ -265,7 +265,7 @@ constructor(props) {
 
     return (
       <Layout
-        headerIsDisabled={true}
+        headerIsDisabled={false}
         footerIsDisabled={true}
         className="advent-calendar"
         pageContext={this.props.pageContext}
@@ -282,7 +282,7 @@ constructor(props) {
             <div className="social_block_opacity"></div>
             <div className="social_box"></div>
           </div>
-          <div className="advent_header_top">
+          {/* <div className="advent_header_top">
             <div className="aht_narrow">
               <div className="afh_logo">
                 <Link id="home_advent-calendar" className="afh_logo_link" to="/"></Link>
@@ -367,7 +367,7 @@ constructor(props) {
                   className="afh_music"
                   />  
             </div>
-          </div>
+          </div> */}
           <div className="advent_heading">
             <h1>
               The exciting 25 days of <br /> Magic Christmas Countdown with
@@ -383,8 +383,8 @@ constructor(props) {
           <div className="adventCalendarContainer">
             <CalendarItem
               imageCoordinate={-1}
-              date={new Date(2024, 11, 1)}
-              validDate="The offer is valid till December 2, 2024"
+              date={new Date(2025, 11, 1)}
+              validDate="The offer is valid till December 2, 2025"
               popupDiscount={<><b>Wishing You</b> <br /> a <b style={{color: "#E73A37"}}>HAPPY FIRST SUNDAY</b> <b>of Advent!</b></>}
               popupDiscountEnter={<><br />Share our calendar in social networks & <br /> get <b>a free license key</b> for AVS Video ReMaker <br /> 1 Year Subscription<br /><br /></>}
               linkTwitter={shareUrl}
@@ -399,16 +399,16 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-189}
-              date={new Date(2024, 11, 2)}
-              validDate="The offer is valid till December 3, 2024"
+              date={new Date(2025, 11, 2)}
+              validDate="The offer is valid till December 3, 2025"
               popupTitle="ONLYOFFICE Offer"
               popupDiscount={<><b style={{color: "#E73A37"}}>SECURELY COLLABORATE</b> <br /> on docs online <br /> in <b>ONLYOFFICE DocSpace</b></>}
               hrefButton="https://www.onlyoffice.com/docspace.aspx"
               textButton="Create your free account"
               idButton="second-text_advent-calendar"
             />
-            <CalendarItem imageCoordinate={-376} date={new Date(2024, 11, 3)}
-              validDate="The offer is valid till December 4, 2024"
+            <CalendarItem imageCoordinate={-376} date={new Date(2025, 11, 3)}
+              validDate="The offer is valid till December 4, 2025"
               popupDiscount={<><b style={{color: "#E73A37", fontSize:"32px"}}>$20</b> <b style={{color: "#E73A37"}}>OFF</b> on AVS4YOU <br /> <b>Unlimited Subscription</b></>}
               popupCoupon="Creativity20"
               popupSub="*Just use this coupon while purchasing"
@@ -416,7 +416,7 @@ constructor(props) {
               textButton="Shop now"
               idButton="third-text_advent-calendar"
               />
-            <CalendarItem imageCoordinate={-563} date={new Date(2024, 11, 4)}
+            <CalendarItem imageCoordinate={-563} date={new Date(2025, 11, 4)}
               validDate="The offer is valid thru December 5, 2024" 
               popupDiscount={<>Enjoy a <b style={{color: "#E73A37", fontSize:"32px"}}>$15</b> <b style={{color: "#E73A37"}}>OFF</b> on <b>AVS4YOU <br /> 1 Year Subscription!</b></>}
               popupCoupon="Snow15Flake"
@@ -425,8 +425,8 @@ constructor(props) {
               textButton="Shop now"
               idButton="fourth-text_advent-calendar"
               />
-            <CalendarItem imageCoordinate={-750} date={new Date(2024, 11, 5)}
-              validDate="The offer is valid till December 6, 2024"
+            <CalendarItem imageCoordinate={-750} date={new Date(2025, 11, 5)}
+              validDate="The offer is valid till December 6, 2025"
               popupDiscount={<>Partner offer <b style={{color: "#E73A37"}}>GET A GIVEAWAY</b> <br /> from <b style={{fontSize:"32px", lineHeight:"42px"}}>WiseCleaner!</b></>}
               popupDiscountEnter={<><br /> All-in-One Windows PC Cleaning and Speed up Tool <br /> </>}
               hrefButton="https://downloads.wisecleaner.com/giveaways/WRCSetup_avs4you.exe"
@@ -435,8 +435,8 @@ constructor(props) {
               />
             <CalendarItem
               imageCoordinate={-938}
-              date={new Date(2024, 11, 6)}
-              validDate="The offer is valid till December 7, 2024"
+              date={new Date(2025, 11, 6)}
+              validDate="The offer is valid till December 7, 2025"
               popupDiscount={<><b style={{color: "#E73A37", fontSize:"32px"}}>40%</b> <b style={{color: "#E73A37"}}>OFF</b> on AVS4YOU <br /> <b>Unlimited Subscription</b>, <br /> our bestseller!</>}
               popupCoupon="2SnowFr3ost"
               popupSub="*Just use this coupon while purchasing"
@@ -446,8 +446,8 @@ constructor(props) {
             />
            <CalendarItem
               imageCoordinate={-1125}
-              date={new Date(2024, 11, 7)}
-              validDate="The offer is valid till December 8, 2024"
+              date={new Date(2025, 11, 7)}
+              validDate="The offer is valid till December 8, 2025"
               popupDiscount={<><b style={{color: "#E73A37"}}>SAVE</b> <b style={{color: "#E73A37", fontSize:"32px"}}>30%</b> on AVS4YOU <br /> <b>1 Year Subscription!</b></>}
               popupCoupon="30Winter"
               popupSub="*Just use this coupon while purchasing"
@@ -457,8 +457,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-1313}
-              date={new Date(2024, 11, 8)}
-              validDate="The offer is valid till December 9, 2024"
+              date={new Date(2025, 11, 8)}
+              validDate="The offer is valid till December 9, 2025"
               popupDiscount={<>Happy <b style={{color: "#E73A37"}}>2nd</b> <b>ADVENT SUNDAY!</b></>}
               popupDiscountTwo={<><br /> Claim a <b>$10 gift card</b> for reviewing <br /> AVS Audio Editor on Capterra</>}
               hrefButton="https://reviews.capterra.com/products/new/e63ce552-bbf6-4f9b-b96a-f6dce2d8ce61/9749a18b-6915-4b50-8f14-da6deb2b7432?lang=en"
@@ -467,8 +467,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-1500}
-              date={new Date(2024, 11, 9)}
-              validDate="The offer is valid till December 10, 2024"
+              date={new Date(2025, 11, 9)}
+              validDate="The offer is valid till December 10, 2025"
               popupDiscount={<>Redeem a <b style={{color: "#E73A37", fontSize:"32px"}}>40%</b> <b>coupon code</b> <br /> on AVS4YOU <b style={{color: "#E73A37"}}>1 Year Subscription!</b></>}
               popupCoupon="Snow40biTe"
               popupSub="*Just use this coupon while purchasing"
@@ -478,7 +478,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-1687}
-              date={new Date(2024, 11, 10)}
+              date={new Date(2025, 11, 10)}
               validDate="25"
               popupDiscount={<>Write a <b style={{color: "#E73A37"}}>LETTER to SANTA</b> <br /> and make a <b>wish list</b></>}
               popupDiscountTwo={<><br /> <img src={LetterImg} /><br /> Download a nice letter template</>}
@@ -488,8 +488,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-1875}
-              date={new Date(2024, 11, 11)}
-              validDate="The offer is valid till December 12, 2024"
+              date={new Date(2025, 11, 11)}
+              validDate="The offer is valid till December 12, 2025"
               popupDiscount={<>Get <b>ONLYOFFICE Desktop <br /> Editors</b> <b style={{color: "#E73A37"}}>for FREE!</b></>}
               popupDiscountTwo={<><br />Work with all types of documents on any platform <br /> you like. Edit PDF files, create fillable forms and more.</>}
               hrefButton="https://www.onlyoffice.com/download-desktop.aspx"
@@ -498,8 +498,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2062}
-              date={new Date(2024, 11, 12)}
-              validDate="The offer is valid till December 13, 2024"
+              date={new Date(2025, 11, 12)}
+              validDate="The offer is valid till December 13, 2025"
               popupDiscount={<>Looking for an <b style={{color: "#E73A37"}}>ORIGINAL GIFT</b> <br /> for <b>someone special?</b></>}
               popupDiscountTwo={<><br />Buy AVS4YOU Unlimited Subscription <br /> with <b style={{color: "#E73A37"}}>a 50% discount!</b></>}
               popupCoupon="Gift50"
@@ -510,8 +510,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2250}
-              date={new Date(2024, 11, 13)}
-              validDate="The offer is valid till December 14, 2024"
+              date={new Date(2025, 11, 13)}
+              validDate="The offer is valid till December 14, 2025"
               popupDiscount={<><b style={{color: "#E73A37", fontSize:"32px"}}>35%</b> <b style={{color: "#E73A37"}}>OFF</b> on AVS4YOU <br /><b>1 Year Subscription</b></>}
               popupCoupon="AI40cicle"
               popupSub="*Just use this coupon while purchasing"
@@ -521,8 +521,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2437}
-              date={new Date(2024, 11, 14)}
-              validDate="The offer is valid till December 15, 2024"
+              date={new Date(2025, 11, 14)}
+              validDate="The offer is valid till December 15, 2025"
               popupDiscount={<>A special deal from <br /> our partner HookSounds <br /> <b style={{color: "#E73A37", fontSize:"32px", lineHeight:"42px"}}>15%</b> <b style={{color: "#E73A37"}}>OFF</b> <b>on</b> <b style={{color: "#ca2a28"}}>HOOKSOUNDS</b> <br /> <b>Premium and Business Licenses</b></>}
               popupDiscountTwo={<><br />Enhance your videos with HookSounds’ original music and sound effects. Make your videos truly unique with music crafted to stand out!</>}
               popupCoupon="AVS4YOU15"
@@ -533,8 +533,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2625}
-              date={new Date(2024, 11, 15)}
-              validDate="The offer is valid till December 16, 2024"
+              date={new Date(2025, 11, 15)}
+              validDate="The offer is valid till December 16, 2025"
               popupDiscount={<>Happy <b style={{color: "#E73A37"}}>3rd SUNDAY</b> <br /> of <b>Advent!</b></>}
               popupDiscountTwo={<><br /><b>Get AVS Video ReMaker</b> <br /> <b style={{color: "#E73A37"}}>1 Year Subscription for free</b></>}
               popupCoupon="ABall17S"
@@ -544,8 +544,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2812}
-              date={new Date(2024, 11, 16)}
-              validDate="The offer is valid till December 17, 2024"
+              date={new Date(2025, 11, 16)}
+              validDate="The offer is valid till December 17, 2025"
               popupDiscount={<>Enjoy a <b style={{color: "#E73A37", fontSize:"32px"}}>45%</b> <b style={{color: "#E73A37"}}>DISCOUNT</b> <br /> on AVS4YOU <b>1 Year Subscription!</b></>}
               popupCoupon="AVS45Sub"
               popupSub="*Just use this coupon while purchasing"
@@ -555,7 +555,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-2999}
-              date={new Date(2024, 11, 17)}
+              date={new Date(2025, 11, 17)}
               validDate="25"
               popupDiscount={<>Ready to make <br /> <b style={{color: "#E73A37"}}>CHRISTMAS CARDS?</b></>}
               popupDiscountTwo={<><br /> <img src={CardImg} /><br /><br />Send a Christmas greeting card <br /> to your dearest and nearest</>}
@@ -565,8 +565,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-3187}
-              date={new Date(2024, 11, 18)}
-              validDate="The offer is valid till December 19, 2024"
+              date={new Date(2025, 11, 18)}
+              validDate="The offer is valid till December 19, 2025"
               popupDiscount={<><b style={{color: "#E73A37"}}>SAVE</b> <b style={{color: "#E73A37", fontSize:"32px"}}>45%</b> on AVS4YOU <br /> <b>Unlimited Subscription</b></>}
               popupCoupon="Light45"
               popupSub="*Just use this coupon while purchasing"
@@ -576,7 +576,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-3374}
-              date={new Date(2024, 11, 19)}
+              date={new Date(2025, 11, 19)}
               validDate="25"
               popupDiscount={<><b>Time to</b> <b style={{color: "#E73A37"}}>decorate</b> <b>your computer!</b></>}
               popupDiscountEnter={<><br />Get AVS4YOU festive wallpaper for your PC</>}
@@ -586,8 +586,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-3562}
-              date={new Date(2024, 11, 20)}
-              validDate="The offer is valid till December 21, 2024"
+              date={new Date(2025, 11, 20)}
+              validDate="The offer is valid till December 21, 2025"
               popupDiscount={<>Redeem <b style={{color: "#E73A37", fontSize:"32px"}}>35%</b> <b style={{color: "#E73A37"}}>OFF</b> <b>COUPON</b> <br /> on AVS4YOU <b>Unlimited Subscription</b></>}
               popupCoupon="Candle35"
               popupSub="*Just use this coupon while purchasing"
@@ -597,7 +597,7 @@ constructor(props) {
             />
               <CalendarItem
               imageCoordinate={-3749}
-              date={new Date(2024, 11, 21)}
+              date={new Date(2025, 11, 21)}
               validDate="25"
               popupDiscount={<><b>Want a</b> <b style={{color: "#E73A37"}}>beautiful</b> <b>CHRISTMAS PRESENTATION?</b></>}
               popupDiscountEnter={<><br />Get a ready <b>Christmas template</b> <br /> to craft your own one</>}
@@ -607,8 +607,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-3936}
-              date={new Date(2024, 11, 22)}
-              validDate="The offer is valid till December 23, 2024"
+              date={new Date(2025, 11, 22)}
+              validDate="The offer is valid till December 23, 2025"
               popupDiscount={<>What a <b style={{color: "#E73A37"}}>LUCKY DAY</b> <br /> <b>for everyone!</b></>}
               popupDiscountTwo={<><br /><b style={{color: "#E73A37"}}>50% Off</b> on AVS4YOU Unlimited Subscription</>}
               popupCoupon="A8LuckyYou"
@@ -619,7 +619,7 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-4124}
-              date={new Date(2024, 11, 23)}
+              date={new Date(2025, 11, 23)}
               validDate="25"
               popupDiscount={<><span style={{paddingBottom: "10px", display: "block"}}>Enjoy our <b style={{color: "#E73A37"}}>Christmas Calendar</b> <br /> crafted <b>specially for you!</b></span> <img src={CalendarImg} /></>}
               hrefButtonPdf={PdfCalendar}
@@ -628,8 +628,8 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-4311}
-              date={new Date(2024, 11, 24)}
-              validDate="The offer is valid till December 25, 2024"
+              date={new Date(2025, 11, 24)}
+              validDate="The offer is valid till December 25, 2025"
               popupDiscount={<><b style={{color: "#E73A37"}}>EXCLUSIVE</b> <b>Deal!</b></>}
               popupDiscountTwo={<><br />Only today <b style={{color: "#E73A37"}}>55% Off</b> on AVS4YOU <br /> Unlimited Subscription</>}
               popupCoupon="25Christmas"
@@ -640,21 +640,21 @@ constructor(props) {
             />
             <CalendarItem
               imageCoordinate={-4499}
-              date={new Date(2024, 11, 25)}
+              date={new Date(2025, 11, 25)}
               validDate="25"
               popupDiscount={<><b style={{color: "#E73A37"}}>MERRY CHRISTMAS</b> <br /> and <b>happy holiday season!</b></>}
               popupDiscountEnter={<><br />AVS4YOU wishes you positive beginnings <br /> and new video projects in 2025. <br /><br /> We look forward to another great year with you!</>}
             />
           </div>
 
-          <div className="advent_footer_block">
+          {/* <div className="advent_footer_block">
             <div className="afb_logo">
               <div className="afb_logo_link"></div>
             </div>
             <div className="afb_copyright">
             Ascensio System SIA 2024 All rights reserved.
             </div>
-          </div>
+          </div> */}
         </div>
 
       </Layout>
