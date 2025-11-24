@@ -73,6 +73,7 @@ const StyledCalendarItem = styled.div`
     position: absolute;
     right: -30px;
     top: -30px;
+    cursor: pointer;
 
     &::before {
       display: block;
