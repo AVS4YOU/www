@@ -19,24 +19,24 @@ import CalendarVideo_3 from "../images/advent-calendar/calendar-3.mp4";
 import CalendarVideo_4 from "../images/advent-calendar/calendar-4.mp4";
 import CalendarVideo_5 from "../images/advent-calendar/calendar-5.mp4";
 import CalendarVideo_6 from "../images/advent-calendar/calendar-6.mp4";
-// import CalendarVideo_7 from "../images/advent-calendar/calendar-7.mp4";
-// import CalendarVideo_8 from "../images/advent-calendar/calendar-8.mp4";
-// import CalendarVideo_9 from "../images/advent-calendar/calendar-9.mp4";
-// import CalendarVideo_10 from "../images/advent-calendar/calendar-10.mp4";
-// import CalendarVideo_11 from "../images/advent-calendar/calendar-11.mp4";
-// import CalendarVideo_12 from "../images/advent-calendar/calendar-12.mp4";
-// import CalendarVideo_13 from "../images/advent-calendar/calendar-13.mp4";
-// import CalendarVideo_14 from "../images/advent-calendar/calendar-14.mp4";
-// import CalendarVideo_15 from "../images/advent-calendar/calendar-15.mp4";
-// import CalendarVideo_16 from "../images/advent-calendar/calendar-16.mp4";
-// import CalendarVideo_17 from "../images/advent-calendar/calendar-17.mp4";
-// import CalendarVideo_18 from "../images/advent-calendar/calendar-18.mp4";
-// import CalendarVideo_19 from "../images/advent-calendar/calendar-19.mp4";
-// import CalendarVideo_20 from "../images/advent-calendar/calendar-20.mp4";
-// import CalendarVideo_21 from "../images/advent-calendar/calendar-21.mp4";
-// import CalendarVideo_22 from "../images/advent-calendar/calendar-22.mp4";
-// import CalendarVideo_23 from "../images/advent-calendar/calendar-23.mp4";
-// import CalendarVideo_24 from "../images/advent-calendar/calendar-24.mp4";
+import CalendarVideo_7 from "../images/advent-calendar/calendar-7.mp4";
+import CalendarVideo_8 from "../images/advent-calendar/calendar-8.mp4";
+import CalendarVideo_9 from "../images/advent-calendar/calendar-9.mp4";
+import CalendarVideo_10 from "../images/advent-calendar/calendar-10.mp4";
+import CalendarVideo_11 from "../images/advent-calendar/calendar-11.mp4";
+import CalendarVideo_12 from "../images/advent-calendar/calendar-12.mp4";
+import CalendarVideo_13 from "../images/advent-calendar/calendar-13.mp4";
+import CalendarVideo_14 from "../images/advent-calendar/calendar-14.mp4";
+import CalendarVideo_15 from "../images/advent-calendar/calendar-15.mp4";
+import CalendarVideo_16 from "../images/advent-calendar/calendar-16.mp4";
+import CalendarVideo_17 from "../images/advent-calendar/calendar-17.mp4";
+import CalendarVideo_18 from "../images/advent-calendar/calendar-18.mp4";
+import CalendarVideo_19 from "../images/advent-calendar/calendar-19.mp4";
+import CalendarVideo_20 from "../images/advent-calendar/calendar-20.mp4";
+import CalendarVideo_21 from "../images/advent-calendar/calendar-21.mp4";
+import CalendarVideo_22 from "../images/advent-calendar/calendar-22.mp4";
+import CalendarVideo_23 from "../images/advent-calendar/calendar-23.mp4";
+import CalendarVideo_24 from "../images/advent-calendar/calendar-24.mp4";
 
 import { TwitterShareButton, FacebookShareButton } from "react-share";
 
@@ -537,6 +537,7 @@ class adventCalendar extends React.PureComponent {
               idButton="sixth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_7}
               date={new Date(2025, 11, 7)}
               validDate="The offer is valid till December 8, 2025"
               popupDiscount={
@@ -553,6 +554,7 @@ class adventCalendar extends React.PureComponent {
               idButton="seventh-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_8}
               date={new Date(2025, 11, 8)}
               validDate="The offer is valid till December 9, 2025"
               popupDiscount={
@@ -572,6 +574,7 @@ class adventCalendar extends React.PureComponent {
               idButton="eighth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_9}
               date={new Date(2025, 11, 9)}
               validDate="The offer is valid till December 10, 2025"
               popupDiscount={
@@ -589,6 +592,7 @@ class adventCalendar extends React.PureComponent {
               idButton="nineth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_10}
               date={new Date(2025, 11, 10)}
               validDate="25"
               popupDiscount={
@@ -608,6 +612,7 @@ class adventCalendar extends React.PureComponent {
               idButton="tenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_11}
               date={new Date(2025, 11, 11)}
               validDate="The offer is valid till December 12, 2025"
               popupDiscount={
@@ -631,6 +636,7 @@ class adventCalendar extends React.PureComponent {
               idButton="eleventh-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_12}
               date={new Date(2025, 11, 12)}
               validDate="The offer is valid till December 13, 2025"
               popupDiscount={
@@ -654,6 +660,7 @@ class adventCalendar extends React.PureComponent {
               idButton="twelveth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_13}
               date={new Date(2025, 11, 13)}
               validDate="The offer is valid till December 14, 2025"
               popupDiscount={
@@ -670,6 +677,7 @@ class adventCalendar extends React.PureComponent {
               idButton="thirteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_14}
               date={new Date(2025, 11, 14)}
               validDate="The offer is valid till December 15, 2025"
               popupDiscount={
@@ -704,6 +712,7 @@ class adventCalendar extends React.PureComponent {
               idButton="fourteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_15}
               date={new Date(2025, 11, 15)}
               validDate="The offer is valid till December 16, 2025"
               popupDiscount={
@@ -727,6 +736,7 @@ class adventCalendar extends React.PureComponent {
               idButton="fifteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_16}
               date={new Date(2025, 11, 16)}
               validDate="The offer is valid till December 17, 2025"
               popupDiscount={
@@ -744,6 +754,7 @@ class adventCalendar extends React.PureComponent {
               idButton="sixteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_17}
               date={new Date(2025, 11, 17)}
               validDate="25"
               popupDiscount={
@@ -766,6 +777,7 @@ class adventCalendar extends React.PureComponent {
               idButton="seventeenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_18}
               date={new Date(2025, 11, 18)}
               validDate="The offer is valid till December 19, 2025"
               popupDiscount={
@@ -782,6 +794,7 @@ class adventCalendar extends React.PureComponent {
               idButton="eighteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_19}
               date={new Date(2025, 11, 19)}
               validDate="25"
               popupDiscount={
@@ -801,6 +814,7 @@ class adventCalendar extends React.PureComponent {
               idButton="nineteenth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_20}
               date={new Date(2025, 11, 20)}
               validDate="The offer is valid till December 21, 2025"
               popupDiscount={
@@ -818,6 +832,7 @@ class adventCalendar extends React.PureComponent {
               idButton="twentyth-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_21}
               date={new Date(2025, 11, 21)}
               validDate="25"
               popupDiscount={
@@ -838,6 +853,7 @@ class adventCalendar extends React.PureComponent {
               idButton="twenty-first-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_22}
               date={new Date(2025, 11, 22)}
               validDate="The offer is valid till December 23, 2025"
               popupDiscount={
@@ -860,6 +876,7 @@ class adventCalendar extends React.PureComponent {
               idButton="twenty-second-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_23}
               date={new Date(2025, 11, 23)}
               validDate="25"
               popupDiscount={
@@ -877,6 +894,7 @@ class adventCalendar extends React.PureComponent {
               idButton="twenty-third-text_advent-calendar"
             />
             <CalendarItem
+              video={CalendarVideo_24}
               date={new Date(2025, 11, 24)}
               validDate="The offer is valid till December 25, 2025"
               popupDiscount={
