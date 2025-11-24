@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Text from "../text";
 import PropTypes from "prop-types";
-import spriteImage from "../../images/advent-calendar/calendar.svg";
 import iconTwitter from "../../images/advent-calendar/x.svg";
 import iconFacebook from "../../images/advent-calendar/facebook.svg";
 import CopyLink from '../../images/advent-calendar/link_copy.svg';
@@ -37,6 +36,7 @@ const StyledCalendarItem = styled.div`
     height: 169px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    border-radius: 8px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: left center;
@@ -45,16 +45,36 @@ const StyledCalendarItem = styled.div`
     transition: -webkit-transform 0.75s ease;
     transition: transform 0.75s ease;
     transition: transform 0.75s ease, -webkit-transform 0.75s ease;
+    position: relative;
     z-index: 2;
-    background-image: url(${spriteImage});
-    background-repeat: no-repeat;
-    background-size: 4669px 172px;
-    background-position-x: ${(props) =>
-      props.imageCoordinate ? props.imageCoordinate : 0}px;
-    background-position-y: -1.5px;
+    overflow: hidden;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
     cursor: pointer;
+  }
+
+  .calendarImageText {
+    width: 76px;
+    height: 76px;
+    margin: 0;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    line-height: 100%;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .calendarVideo {
+    width: 100%;
+    height: 169px;
+    object-fit: cover;
   }
 
   .socialLinks {
@@ -491,18 +511,24 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { imageCoordinate, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall, hrefButtonSavePresentation } = this.props;    
+    const { video, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall, hrefButtonSavePresentation } = this.props;    
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
       <div className="CalendarItem">
       <StyledCalendarItem
-        imageCoordinate={imageCoordinate}
         isExpired={isExpired}
         futureCoupon={futureCoupon}
         onClick={this.onItemClick}
       >
-        <div className="calendarImage"></div>
+        <div className="calendarImage">
+          <p className="calendarImageText">{this.props.date.getDate()}</p>
+          <video className="calendarVideo" src={video} loop muted onMouseEnter={(event) => event.target.play()} onMouseLeave={(event) => event.target.pause()} onMouseMove={(event) => {
+            if (event.target.paused) {
+              event.target.play();
+            }
+          }} />
+        </div>
 
         {popupOpened && (
           <>
