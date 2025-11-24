@@ -17,7 +17,6 @@ import {
     StepsSectionStepsControlWrapper, StepsSectionStepsItemMobileSubtitle,
 } from './stepsSection.styled'
 import steps from "./stepsSection.data";
-import poster6 from "../../../images/avs-video-maker/hero6.png";
 
 const StepsSectionSteps = ({t}) => {
     const [activeStepIndex, setActiveStepIndex] = useState(0)

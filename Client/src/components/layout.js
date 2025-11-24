@@ -18,7 +18,7 @@ import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
 import PlAVSbgRight from "../images/pl/pl-bg-right.png";
-import PlAVSbg from "../images/pl/bg.png";
+import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
@@ -26,7 +26,7 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-display: none;
+// display: none;
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);
@@ -40,16 +40,17 @@ background: rgba(21, 18, 37, 1);
     align-items: center;
     justify-content: center;
     background-image: url(${PlAVSbg});
-    background-position: 12% 2.5%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: #000000;
 
-    @media (max-width: 1500px) {
+    /* @media (max-width: 1500px) {
       background-position: 0% 2.5%;
     }
 
     @media (max-width: 1500px) {
       background-position: -20% 2.5%;
-    }
+    } */
   }
   .bgLeft {
     width: 100%;
@@ -79,7 +80,7 @@ background: rgba(21, 18, 37, 1);
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
-        gap: 5px;
+        /* gap: 5px; */
         align-items: center;
         min-width: max-content;
     }
@@ -105,16 +106,18 @@ background: rgba(21, 18, 37, 1);
     }
     
     .PL-desc3 {
-        font-size: 15px;
+        font-size: 22px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
-        margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #FF3300;
+        /* margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
     }
 
     .PL-desc4 {
+        display: none;
         font-size: 15px;
         font-weight: 600;
         line-height: 27px;
@@ -240,7 +243,7 @@ background: rgba(21, 18, 37, 1);
         }
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .PLnewAvs{
             display: none;
         }
@@ -1059,28 +1062,28 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                {/* {!this.props.headerIsDisabled ? <StyledPL> */}
+                {!this.props.headerIsDisabled ? <StyledPL>
 
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
-                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
+                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
 
-                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
-                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}> */}
+                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
+                    <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
                     {/* <div className='bgLeft'></div> */}
 
-                    {/* <div className="PL-box">
+                    <div className="PL-box">
                         <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
                         <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                         <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
                         <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                    </div> */}
+                    </div>
 
                     {/* <div className='bgRight'></div> */}
 
-                    {/* </div>
+                    </div>
                   </a>
-                </StyledPL> : <div></div>} */}
+                </StyledPL> : <div></div>}
 
 
 
