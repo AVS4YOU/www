@@ -50,7 +50,8 @@ const StyledCalendarItem = styled.div`
     overflow: hidden;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
-    cursor: pointer;
+    cursor: ${(props) => (props.isExpired || props.futureCoupon ? "default" : "pointer")};
+    pointer-events: ${(props) => (props.isExpired ? "none" : "auto")};
   }
 
   .calendarImageText {
@@ -309,6 +310,7 @@ class CalendarItem extends React.Component {
   componentDidMount () {
     const itemDay = this.props.date.getDate();
     const currentDay = new Date().getDate();
+    // console.log(currentDay);
 
     if (this.state.popupOpened) return;
 
@@ -341,7 +343,7 @@ class CalendarItem extends React.Component {
     if (currentDay > itemDay) {
       //console.log("Истёкший купон");
       this.setState({
-        popupOpened: true,
+        popupOpened: true, // TODO: remove
         isExpired: true,
         futureCoupon: false,
       });

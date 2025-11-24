@@ -399,11 +399,10 @@ class adventCalendar extends React.PureComponent {
           </div> */}
           <div className="advent_heading">
             <h1>
-              The exciting 25 days of <br /> Magic Christmas Countdown with
-              AVS4YOU!
+              Join the 24 Days of <br /> Magic Christmas Countdown with AVS4YOU!
             </h1>
             <div className="advent_header_sub">
-              Don’t miss out amazing gifts and generous discounts up to{" "}
+              Unwrap daily surprises, gifts, and exclusive discounts up to{" "}
               <b>100% Off!</b>
             </div>
           </div>
@@ -415,8 +414,8 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 2, 2025"
               popupDiscount={
                 <>
-                  <b>Wishing You</b> <br /> a{" "}
-                  <b style={{ color: "#E73A37" }}>HAPPY FIRST SUNDAY</b>{" "}
+                  <b>Wishing You</b> <br />{" "}
+                  <b style={{ color: "#E73A37" }}>a HAPPY FIRST SUNDAY</b>{" "}
                   <b>of Advent!</b>
                 </>
               }
