@@ -190,10 +190,8 @@ const StyledCalendarItem = styled.div`
         max-width: 420px;
         text-align: center;
         font-weight: 400;
-        line-height: 22px;
         font-family: Open Sans;
         letter-spacing: 0;
-        line-height: 22px;
     }
   }
 
@@ -214,13 +212,17 @@ const StyledCalendarItem = styled.div`
     font-size: 18px;
     margin: auto;
     max-width: 220px;
-    outline: 3px dotted #00786B;
+    border: 3px dashed #E94D49;
+    border-radius: 8px;
     text-align: center;
     margin-top: 20px;
     line-height: 1;
     padding: 10px 0;
     font-weight: 400;
-    background-color: rgba(0, 120, 107, 0.05);
+    background-color: rgba(233, 77, 73, 0.05);
+    letter-spacing: 2px;
+    color: #32393E;
+    font-weight: 500;
   }
 
   .popupSub{
@@ -251,7 +253,7 @@ const StyledCalendarItem = styled.div`
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 320px;
+    max-width: 420px;
     text-align: center;
 
     a{
@@ -263,9 +265,10 @@ const StyledCalendarItem = styled.div`
   }
 
   .shopButton{
-    background-color: #00786b;
+    background-color: #E94D49;
     text-decoration: none;
     border: none;
+    border-radius: 8px;
     text-transform: uppercase;
     display: block;
     margin: auto;
@@ -273,7 +276,6 @@ const StyledCalendarItem = styled.div`
     min-width: 226px;
     height: 56px;
     font-family: Open Sans;
-    border-radius: 3px;
     padding: 0;
 
     a{
@@ -383,7 +385,7 @@ class CalendarItem extends React.Component {
     return(
       <>
         <div className="subText">
-        <Text fontSize="12">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
+        <Text fontSize="14">{textBefore} <a id={linkId} href={linkHref}>{linkText}</a> {textAfter}</Text>
         </div>
       </>
     )

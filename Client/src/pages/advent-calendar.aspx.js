@@ -10,6 +10,7 @@ import Modal from "../components/modal";
 import CopyLink from "../images/advent-calendar/link_copy.svg";
 import CardImg from "../images/advent-calendar/avs_card.png";
 import LetterImg from "../images/advent-calendar/letter_img.png";
+import PresentaionImg from "../images/advent-calendar/presentations.png";
 import CalendarImg from "../images/advent-calendar/img_calendar.png";
 import PdfCalendar from "../images/advent-calendar/avs_calendar_2025.pdf";
 
@@ -448,10 +449,11 @@ class adventCalendar extends React.PureComponent {
               video={CalendarVideo_2}
               date={new Date(2025, 11, 2)}
               validDate="The offer is valid till December 3, 2025"
-              popupTitle="ONLYOFFICE Offer"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37" }}>SECURELY COLLABORATE</b>{" "}
+                  <b style={{ fontSize: "28px"}}>ONLYOFFICE Offer</b>
+                  <br />
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Securely collaborate</b>{" "}
                   <br /> on docs online <br /> in <b>ONLYOFFICE DocSpace</b>
                 </>
               }
@@ -465,14 +467,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 4, 2025"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>$20</b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> on AVS4YOU <br />{" "}
-                  <b>Unlimited Subscription</b>
+                  <b style={{ fontSize: "24px" }}>Our Top Pick </b>{" "}
+                  <b style={{ color: "#E73A37", fontSize: "24px" }}> for Creators</b>{" "}
+                  <br />
+                  <br />
+                </>
+              }
+              popupDiscountEnter={
+                <>
+                  <b style={{ fontSize: "20px" }}>$20 Off</b>{" "}
+                  <b style={{ fontSize: "20px" }}></b> <span style={{ fontSize: "20px" }}>on AVS4YOU</span> <br />{" "}
+                  <span style={{ fontSize: "20px" }}>Unlimited Subscription</span>
                 </>
               }
               popupCoupon="Creativity20"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Creativity20&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Creativity20&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="third-text_advent-calendar"
             />
@@ -482,12 +492,16 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid thru December 5, 2024"
               popupDiscount={
                 <>
-                  Enjoy a{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>$15</b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> on{" "}
-                  <b>
-                    AVS4YOU <br /> 1 Year Subscription!
-                  </b>
+                  <b style={{ color: "#E73A37", fontSize: "24px" }}>A $15 Treat</b>{" "}
+                  <b style={{ fontSize: "24px" }}>for Your Creativity!</b>{" "}
+                </>
+              }
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Enjoy a</span><b style={{ fontSize: "20px" }}> $15 Off</b>{" "}
+                  <b style={{ fontSize: "20px" }}></b> <span style={{ fontSize: "20px" }}>AVS4YOU</span> <br />{" "}
+                  <span style={{ fontSize: "20px" }}>1 Year Subscription!</span>
                 </>
               }
               popupCoupon="Snow15Flake"
@@ -501,21 +515,23 @@ class adventCalendar extends React.PureComponent {
               date={new Date(2025, 11, 5)}
               validDate="The offer is valid till December 6, 2025"
               popupDiscount={
+              <>
+                <b>Time to Make</b>{" "}
+                <br /> 
+                <b style={{ color: "#E73A37"}}>Your Christmas Wishlist!</b>
+              </>
+              }
+              popupDiscountTwo={
                 <>
-                  Partner offer{" "}
-                  <b style={{ color: "#E73A37" }}>GET A GIVEAWAY</b> <br /> from{" "}
-                  <b style={{ fontSize: "32px", lineHeight: "42px" }}>
-                    WiseCleaner!
-                  </b>
+                  <br /> <img src={LetterImg} />
+                  <br />
+                  Share your holiday dreams with Santa
+                  <br />
+                  using our festive letter template.
                 </>
               }
-              popupDiscountEnter={
-                <>
-                  <br /> All-in-One Windows PC Cleaning and Speed up Tool <br />{" "}
-                </>
-              }
-              hrefButton="https://downloads.wisecleaner.com/giveaways/WRCSetup_avs4you.exe"
-              textButton="Free Download"
+              hrefButtonSaveLetter={PostcardLinkLetter}
+              textButton="Download Your Template"
               idButton="fifth-text_advent-calendar"
             />
             <CalendarItem
@@ -524,14 +540,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 7, 2025"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>40%</b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> on AVS4YOU <br />{" "}
-                  <b>Unlimited Subscription</b>, <br /> our bestseller!
+                  <b style={{ color: "#E73A37", fontSize: "28px" }}>Bestseller</b>{" "}
+                  <b style={{ fontSize: "28px"}}>Deal</b>
                 </>
               }
-              popupCoupon="2SnowFr3ost"
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <b style={{ fontSize: "20px" }}>40% Off</b>{" "}
+                  <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Unlimited Subscription!</span>
+                </>
+              }
+              popupCoupon="SnowFrost40"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=2SnowFr3ost&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=SnowFrost40&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="sixth-text_advent-calendar"
             />
@@ -541,14 +565,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 8, 2025"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37" }}>SAVE</b>{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>30%</b> on
-                  AVS4YOU <br /> <b>1 Year Subscription!</b>
+                  <b style={{ fontSize: "24px" ,color: "#E73A37" }}>Happy</b>{" "}
+                  <b style={{ fontSize: "24px" }}>2nd</b>{" "}
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Advent Sunday!</b>
                 </>
               }
-              popupCoupon="30Winter"
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <b style={{ fontSize: "20px" }}>Save 40%</b><span style={{ fontSize: "20px" }}> on AVS4YOU</span>{" "}
+                  <br />
+                  <span style={{ fontSize: "20px" }}>1 Year Subscription!</span>
+                </>
+              }
+              popupCoupon="40Winter"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=30Winter&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=40Winter&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="seventh-text_advent-calendar"
             />
@@ -558,17 +590,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 9, 2025"
               popupDiscount={
                 <>
-                  Happy <b style={{ color: "#E73A37" }}>2nd</b>{" "}
-                  <b>ADVENT SUNDAY!</b>
+                  <b style={{ fontSize: "28px", color: "#E73A37" }}>Your Exclusive</b>
+                  <br />
+                  <b style={{ fontSize: "28px" }}> Holiday Treat!</b>
                 </>
               }
               popupDiscountTwo={
                 <>
-                  <br /> Claim a <b>$10 gift card</b> for reviewing <br /> AVS
-                  Audio Editor on Capterra
+                  <br /> 
+                  <span style={{ fontSize: "20px" }}>Review AVS Video Editor</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>on Capterra and claim</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>a </span><b style={{ fontSize: "20px" }}> $10 gift card</b>
                 </>
               }
-              hrefButton="https://reviews.capterra.com/products/new/e63ce552-bbf6-4f9b-b96a-f6dce2d8ce61/9749a18b-6915-4b50-8f14-da6deb2b7432?lang=en"
+              hrefButton="https://reviews.capterra.com/products/new/948b5c73-ec8c-452c-bb84-aa99002e28c7/b98ffe20-0713-4874-9ae0-23d5688c70a8?lang=en"
               textButton="Get my gift"
               idButton="eighth-text_advent-calendar"
             />
@@ -578,15 +615,24 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 10, 2025"
               popupDiscount={
                 <>
-                  Redeem a{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>40%</b>{" "}
-                  <b>coupon code</b> <br /> on AVS4YOU{" "}
-                  <b style={{ color: "#E73A37" }}>1 Year Subscription!</b>
+                  <b style={{ color: "#E73A37", fontSize: "28px" }}>Today’s</b>{" "}
+                  <b style={{ fontSize: "28px"}}>Bonus</b>
+                  
                 </>
               }
-              popupCoupon="Snow40biTe"
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <span style={{ fontSize: "20px"}}>Enjoy</span>
+                  <b style={{ fontSize: "20px"}}> 30% Off</b>
+                  <span style={{ fontSize: "20px"}}> AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px"}}>Suite for a Whole Year!</span>
+                </>
+              }
+              popupCoupon="Snow30"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Snow40biTe&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Snow30&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="nineth-text_advent-calendar"
             />
@@ -596,18 +642,23 @@ class adventCalendar extends React.PureComponent {
               validDate="25"
               popupDiscount={
                 <>
-                  Write a <b style={{ color: "#E73A37" }}>LETTER to SANTA</b>{" "}
-                  <br /> and make a <b>wish list</b>
+                  <b style={{ fontSize: "24px" }}>Ready to Create</b> 
+                  <br />
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Christmas Cards?</b>
                 </>
               }
               popupDiscountTwo={
                 <>
-                  <br /> <img src={LetterImg} />
-                  <br /> Download a nice letter template
+                  <br /> <img src={CardImg} />
+                  <br />
+                  <br />
+                  <span>Send heartfelt holiday greetings</span> 
+                  <br /> 
+                  <span>to your loved ones</span>
                 </>
               }
-              hrefButtonSaveLetter={PostcardLinkLetter}
-              textButton="Download"
+              hrefButtonSave={PostcardLink}
+              textButton="Get It Now"
               idButton="tenth-text_advent-calendar"
             />
             <CalendarItem
@@ -616,21 +667,24 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 12, 2025"
               popupDiscount={
                 <>
-                  Get{" "}
-                  <b>
-                    ONLYOFFICE Desktop <br /> Editors
-                  </b>{" "}
-                  <b style={{ color: "#E73A37" }}>for FREE!</b>
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Your All-in-One Free Office Suite</b>
+                  <br />
+                  <b style={{ fontSize: "24px" }}>for Any Platform</b>
                 </>
               }
               popupDiscountTwo={
                 <>
                   <br />
-                  Work with all types of documents on any platform <br /> you
-                  like. Edit PDF files, create fillable forms and more.
+                  Download <b>ONLYOFFICE</b> 
+                  <br />
+                  <b>Desktop Editors</b> to create and edit
+                  <br />
+                  docs, sheets, slides, PDF files,
+                  <br />
+                  create fillable forms, and more
                 </>
               }
-              hrefButton="https://www.onlyoffice.com/download-desktop.aspx"
+              hrefButton="https://www.onlyoffice.com/download-desktop"
               textButton="Download now"
               idButton="eleventh-text_advent-calendar"
             />
@@ -640,21 +694,23 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 13, 2025"
               popupDiscount={
                 <>
-                  Looking for an{" "}
-                  <b style={{ color: "#E73A37" }}>ORIGINAL GIFT</b> <br /> for{" "}
-                  <b>someone special?</b>
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Need the Perfect Gift</b>
+                  <br />
+                  <b style={{ fontSize: "24px" }}> for Someone Special?</b>
                 </>
               }
-              popupDiscountTwo={
+              popupDiscountEnter={
                 <>
                   <br />
-                  Buy AVS4YOU Unlimited Subscription <br /> with{" "}
-                  <b style={{ color: "#E73A37" }}>a 50% discount!</b>
+                  <span style={{ fontSize: "20px" }}>Grab AVS4YOU Unlimited</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Subscription now with</span>{" "}
+                  <b style={{ fontSize: "20px" }}>50% off!</b>
                 </>
               }
               popupCoupon="Gift50"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4579203&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Gift50&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4579203&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Gift50&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="twelveth-text_advent-calendar"
             />
@@ -664,50 +720,50 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 14, 2025"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>35%</b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> on AVS4YOU <br />
-                  <b>1 Year Subscription</b>
+                  <b style={{ fontSize: "24px" }}>Creators’ Favorite —</b>{" "}
+                  <b style={{ color: "#E73A37", fontSize: "24px" }}>35% Off!</b>
                 </>
               }
-              popupCoupon="AI40cicle"
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <b style={{ fontSize: "20px" }}>35% Of</b>{" "}
+                  <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>1 Year Subscription</span>
+                </>
+              }
+              popupCoupon="AI35cicle"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=AI40cicle&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AI35cicle&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="thirteenth-text_advent-calendar"
             />
             <CalendarItem
               video={CalendarVideo_14}
               date={new Date(2025, 11, 14)}
-              validDate="The offer is valid till December 15, 2025"
+              validDate="25"
               popupDiscount={
                 <>
-                  A special deal from <br /> our partner HookSounds <br />{" "}
-                  <b
-                    style={{
-                      color: "#E73A37",
-                      fontSize: "32px",
-                      lineHeight: "42px",
-                    }}
-                  >
-                    15%
-                  </b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> <b>on</b>{" "}
-                  <b style={{ color: "#ca2a28" }}>HOOKSOUNDS</b> <br />{" "}
-                  <b>Premium and Business Licenses</b>
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Happy </b>{" "}
+                  <b style={{ fontSize: "24px" }}>3rd</b>{" "}
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Sunday of Advent!</b>
                 </>
               }
-              popupDiscountTwo={
+               popupDiscountTwo={
                 <>
+                  <br /> <img src={CardImg} />
                   <br />
-                  Enhance your videos with HookSounds’ original music and sound
-                  effects. Make your videos truly unique with music crafted to
-                  stand out!
+                  <br />
+                  Bring the holiday spirit to your phone
+                  <br />
+                  with these charming wallpapers. 
+                  <br />
+                  Switch them every week for a new festive look
                 </>
               }
-              popupCoupon="AVS4YOU15"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://www.hooksounds.com/subscriptions"
-              textButton="Shop now"
+              hrefButtonSaveWall={PostcardLinkWallpaper}
+              textButton="Download Now"
               idButton="fourteenth-text_advent-calendar"
             />
             <CalendarItem
@@ -716,21 +772,21 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 16, 2025"
               popupDiscount={
                 <>
-                  Happy <b style={{ color: "#E73A37" }}>3rd SUNDAY</b> <br /> of{" "}
-                  <b>Advent!</b>
+                  <b style={{ fontSize: "28px", color: "#E73A37" }}>Festive</b>{" "}
+                  <b style={{ fontSize: "28px" }}>Giveaway</b>
                 </>
               }
-              popupDiscountTwo={
+              popupDiscountEnter={
                 <>
                   <br />
-                  <b>Get AVS Video ReMaker</b> <br />{" "}
-                  <b style={{ color: "#E73A37" }}>
-                    1 Year Subscription for free
-                  </b>
+                  <span style={{ fontSize: "20px" }}>Get AVS Video ReMaker</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>1 Year Subscription</span>{" "}
+                  <b style={{ fontSize: "20px" }}>for free</b>
                 </>
               }
               popupCoupon="ABall17S"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=ABall17S&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=26192289&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=ABall17S&CLEAN_CART=ALL"
               textButton="Get It Now"
               idButton="fifteenth-text_advent-calendar"
             />
@@ -740,15 +796,24 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 17, 2025"
               popupDiscount={
                 <>
-                  Enjoy a{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>45%</b>{" "}
-                  <b style={{ color: "#E73A37" }}>DISCOUNT</b> <br /> on AVS4YOU{" "}
-                  <b>1 Year Subscription!</b>
+                  <b style={{ fontSize: "24px" }}> Unlock a Year of Creativity</b>
+                  <br />
+                  <b style={{fontSize: "24px", color: "#E73A37" }}>at 45% Off!</b>
+                </>
+              }
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Enjoy a</span>{" "}
+                  <b style={{ fontSize: "20px" }}>45% discount</b>{" "}
+                  <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>1 Year Subscription!</span>
                 </>
               }
               popupCoupon="AVS45Sub"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=AVS45Sub&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVS45Sub&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="sixteenth-text_advent-calendar"
             />
@@ -758,8 +823,8 @@ class adventCalendar extends React.PureComponent {
               validDate="25"
               popupDiscount={
                 <>
-                  Ready to make <br />{" "}
-                  <b style={{ color: "#E73A37" }}>CHRISTMAS CARDS?</b>
+                  <b style={{ fontSize: "24px", color: "#E73A37"}}>Brighten</b>{" "}
+                  <b style={{ fontSize: "24px" }}>Your Screen!</b>
                 </>
               }
               popupDiscountTwo={
@@ -767,12 +832,13 @@ class adventCalendar extends React.PureComponent {
                   <br /> <img src={CardImg} />
                   <br />
                   <br />
-                  Send a Christmas greeting card <br /> to your dearest and
-                  nearest
+                  Give your computer a holiday makeove 
+                  <br />
+                  with AVS4YOU festive wallpapers
                 </>
               }
               hrefButtonSave={PostcardLink}
-              textButton="Get It Now"
+              textButton="Download Now"
               idButton="seventeenth-text_advent-calendar"
             />
             <CalendarItem
@@ -781,14 +847,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 19, 2025"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37" }}>SAVE</b>{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>45%</b> on
-                  AVS4YOU <br /> <b>Unlimited Subscription</b>
+                  <b style={{ fontSize: "24px" }}>A Must-Have</b>{" "}
+                  <b style={{ fontSize: "24px", color: "#E73A37",  }}>for Creators!</b>
+                </>
+              }
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <b style={{ fontSize: "20px" }}>Save 45%</b>{" "}
+                  <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Unlimited Subscription</span>
                 </>
               }
               popupCoupon="Light45"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Light45&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Light45&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="eighteenth-text_advent-calendar"
             />
@@ -798,14 +872,18 @@ class adventCalendar extends React.PureComponent {
               validDate="25"
               popupDiscount={
                 <>
-                  <b>Time to</b> <b style={{ color: "#E73A37" }}>decorate</b>{" "}
+                  <b>AVS4YOU</b>{" "} 
+                  <b style={{ color: "#E73A37" }}>2026 Calendar</b>
                   <b>your computer!</b>
                 </>
               }
               popupDiscountEnter={
                 <>
+                  <br /> <img src={CardImg} />
                   <br />
-                  Get AVS4YOU festive wallpaper for your PC
+                  <span>Stay organized and inspired in 2026</span>
+                  <br />
+                  <span>with AVS4YOU’s free, stylish calendar</span>
                 </>
               }
               hrefButtonSaveWall={PostcardLinkWallpaper}
@@ -818,15 +896,22 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 21, 2025"
               popupDiscount={
                 <>
-                  Redeem{" "}
-                  <b style={{ color: "#E73A37", fontSize: "32px" }}>35%</b>{" "}
-                  <b style={{ color: "#E73A37" }}>OFF</b> <b>COUPON</b> <br />{" "}
-                  on AVS4YOU <b>Unlimited Subscription</b>
+                  <b style={{ color: "#E73A37", fontSize: "24px" }}>Love</b>{" "}
+                  <b style={{ fontSize: "24px" }}>AVS Video Editor?</b>
                 </>
               }
-              popupCoupon="Candle35"
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Grab your</span>{" "}
+                  <b style={{ fontSize: "20px" }}>50% Off coupon</b>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>for AVS Video Editor!</span>
+                </>
+              }
+              popupCoupon="Candle50"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Candle35&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=4602803&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Candle50&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="twentyth-text_advent-calendar"
             />
@@ -836,18 +921,21 @@ class adventCalendar extends React.PureComponent {
               validDate="25"
               popupDiscount={
                 <>
-                  <b>Want a</b> <b style={{ color: "#E73A37" }}>beautiful</b>{" "}
-                  <b>CHRISTMAS PRESENTATION?</b>
+                  <b style={{ fontSize: "24px" }}>Create</b>{" "}
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>a Stunning</b>{" "}
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Christmas Presentation!</b>
                 </>
               }
               popupDiscountEnter={
                 <>
+                  <br /> <img src={PresentaionImg} alt="image" />
                   <br />
-                  Get a ready <b>Christmas template</b> <br /> to craft your own
-                  one
+                  <span>Get a ready Christmas template</span>
+                  <br />
+                  <span>to craft your own one</span>
                 </>
               }
-              hrefButtonSavePresentation={PresentationTemplate}
+              hrefButtonSavePresentation="https://templates.onlyoffice.com/christmas-presentation-template-2"
               textButton="Download Now"
               idButton="twenty-first-text_advent-calendar"
             />
@@ -857,62 +945,70 @@ class adventCalendar extends React.PureComponent {
               validDate="The offer is valid till December 23, 2025"
               popupDiscount={
                 <>
-                  What a <b style={{ color: "#E73A37" }}>LUCKY DAY</b> <br />{" "}
-                  <b>for everyone!</b>
+                  <b style={{ fontSize: "24px" }}>What a</b>{" "} 
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>a Lucky Day for Everyone!</b>
                 </>
               }
-              popupDiscountTwo={
+              popupDiscountEnter={
                 <>
                   <br />
-                  <b style={{ color: "#E73A37" }}>50% Off</b> on AVS4YOU
-                  Unlimited Subscription
+                  <b style={{ fontSize: "20px" }}>50% Off</b>{" "} 
+                  <span style={{ fontSize: "20px" }}>AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Unlimited Subscription</span>
                 </>
               }
               popupCoupon="A8LuckyYou"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=A8LuckyYou&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=A8LuckyYou&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="twenty-second-text_advent-calendar"
             />
             <CalendarItem
               video={CalendarVideo_23}
               date={new Date(2025, 11, 23)}
-              validDate="25"
+              validDate="The offer is valid till December 24, 2025"
               popupDiscount={
                 <>
-                  <span style={{ paddingBottom: "10px", display: "block" }}>
-                    Enjoy our{" "}
-                    <b style={{ color: "#E73A37" }}>Christmas Calendar</b>{" "}
-                    <br /> crafted <b>specially for you!</b>
-                  </span>{" "}
-                  <img src={CalendarImg} />
+                  <b style={{ fontSize: "24px" }}>Irresistible Savings!</b>
                 </>
               }
-              hrefButtonPdf={PdfCalendar}
+              popupDiscountEnter={
+                <>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Only today</span>{" "}
+                  <b style={{ fontSize: "20px" }}>55% Off</b>{" "}
+                  <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
+                  <br />
+                  <span style={{ fontSize: "20px" }}>Unlimited Subscription</span>
+                </>
+              }
+              popupCoupon="25Christmas"
+              popupSub="*Just use this coupon while purchasing"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=25Christmas&CLEAN_CART=ALL"
               textButton="Download Now"
               idButton="twenty-third-text_advent-calendar"
             />
             <CalendarItem
               video={CalendarVideo_24}
               date={new Date(2025, 11, 24)}
-              validDate="The offer is valid till December 25, 2025"
+              validDate="25"
               popupDiscount={
                 <>
-                  <b style={{ color: "#E73A37" }}>EXCLUSIVE</b> <b>Deal!</b>
+                  <b style={{ fontSize: "24px", color: "#E73A37" }}>Merry Christmas</b> 
+                  <br />
+                  <b style={{ fontSize: "24px" }}>and Happy Holidays!</b>
                 </>
               }
               popupDiscountTwo={
                 <>
                   <br />
-                  Only today <b style={{ color: "#E73A37" }}>55% Off</b> on
-                  AVS4YOU <br /> Unlimited Subscription
+                  <span>AVS4YOU wishes you flawless edits, perfect cuts, crystal-clear audio in all your projects.</span>
+                  <br />
+                  <br />
+                  <span>May your videos shine, your soundtracks sparkle, your creativity flow, and your editing be effortless throughout 2026!</span>
                 </>
               }
-              popupCoupon="25Christmas"
-              popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=25Christmas&CLEAN_CART=ALL"
-              textButton="Shop now"
-              idButton="twenty-fourth-text_advent-calendar"
             />
           </div>
 
