@@ -345,7 +345,7 @@ class CalendarItem extends React.Component {
     if (currentDay > itemDay) {
       //console.log("Истёкший купон");
       this.setState({
-        popupOpened: true, // TODO: remove
+        // popupOpened: true, // enable for test, remove for production
         isExpired: true,
         futureCoupon: false,
       });

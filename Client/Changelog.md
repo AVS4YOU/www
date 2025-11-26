@@ -4,6 +4,7 @@
 ### New
 * Updated links in `uninstall-offer.aspx`
 * Languages dropdown-menu at tablets adaptive fixed 
+* Add `advent-calendar.aspx` page for advent-calendar event 2025
 
 ## 1.0.95 (11.11.2025)
 ### New
