@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.96 (26.11.2025)
+### New
+* Updated links in `uninstall-offer.aspx`
+* Languages dropdown-menu at tablets adaptive fixed 
+
 ## 1.0.95 (11.11.2025)
 ### New
 * Added banner 'Black Friday 2025' with Black Friday Lucky Wheel
