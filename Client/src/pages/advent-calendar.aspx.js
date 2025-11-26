@@ -436,7 +436,7 @@ class adventCalendar extends React.PureComponent {
               linkFacebookId="first-facebook_advent-calendar"
               textBefore={
                 <>
-                  <br />* Send us the link to your post in social networks at
+                  <br />*Send us the link to your post in social networks at
                 </>
               }
               linkText="sales@avs4you.com"
@@ -506,7 +506,7 @@ class adventCalendar extends React.PureComponent {
               }
               popupCoupon="Snow15Flake"
               popupSub="*Just use this coupon while purchasing"
-              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&COUPON=Snow15Flake&CLEAN_CART=ALL"
+              hrefButton="https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Snow15Flake&CLEAN_CART=ALL"
               textButton="Shop now"
               idButton="fourth-text_advent-calendar"
             />
@@ -874,7 +874,6 @@ class adventCalendar extends React.PureComponent {
                 <>
                   <b>AVS4YOU</b>{" "} 
                   <b style={{ color: "#E73A37" }}>2026 Calendar</b>
-                  <b>your computer!</b>
                 </>
               }
               popupDiscountEnter={
