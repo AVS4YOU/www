@@ -140,6 +140,13 @@ const StyledLanguageSelector = styled.div`
     margin-right: 8px;
   }
 
+  @media (max-width: 1450px) and (min-width: 1051px) {
+    .menu-dropdown {
+      right: 0;
+      left: auto;
+    }
+  }
+
   @media (max-width: 1050px) {
     .mobileBlock {
       display: block;
