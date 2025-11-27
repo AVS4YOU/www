@@ -91,9 +91,9 @@ const MenuWrstyle = styled.div`
       height: 50px;
       background-position: 50%;
       color: white;
-      background-color: rgb(20, 45, 51);
+      background-color: #0D271B;
       border-radius: 50px;
-      box-shadow: 0px 0px 0px 1px rgb(20, 45, 51);
+      box-shadow: 0px 0px 0px 1px #0D271B;
       cursor: pointer;
       transition: 0.3s ease;
     }
@@ -312,7 +312,7 @@ class adventCalendar extends React.PureComponent {
             <div className="social_block_opacity"></div>
             <div className="social_box"></div>
           </div>
-          {/* <div className="advent_header_top">
+          <div className="advent_header_top">
             <div className="aht_narrow">
               <div className="afh_logo">
                 <Link id="home_advent-calendar" className="afh_logo_link" to="/"></Link>
@@ -397,7 +397,7 @@ class adventCalendar extends React.PureComponent {
                   className="afh_music"
                   />  
             </div>
-          </div> */}
+          </div>
           <div className="advent_heading">
             <h1>
               Join the 24 Days of <br /> Magic Christmas Countdown with AVS4YOU!
