@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.97 (27.11.2025)
+### New
+* Returned opening of expired cards
+* Corrected popup height of open cards
+* Valid date and texts of cards fixed
+* Returned the music header from 2024 year, header of Layout hidden
+
 ## 1.0.96 (26.11.2025)
 ### New
 * Updated links in `uninstall-offer.aspx`
