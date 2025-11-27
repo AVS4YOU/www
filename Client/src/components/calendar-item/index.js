@@ -50,8 +50,8 @@ const StyledCalendarItem = styled.div`
     overflow: hidden;
     filter: ${(props) => (props.isExpired ? "brightness(0.6)" : "none)")};
     box-shadow: ${(props) => (props.isExpired || props.futureCoupon ? "none" : "0px 0px 25px 0px white")};
-    cursor: ${(props) => (props.isExpired || props.futureCoupon ? "default" : "pointer")};
-    pointer-events: ${(props) => (props.isExpired ? "none" : "auto")};
+    cursor: ${(props) => (props.futureCoupon ? "default" : "pointer")};
+    /* pointer-events: ${(props) => (props.isExpired ? "none" : "auto")}; */
   }
 
   .calendarImageText {
@@ -121,7 +121,7 @@ const StyledCalendarItem = styled.div`
     margin: auto;
     position: fixed;
     width: 500px;
-    height: 500px;
+    height: 600px;
     background-color: ${(props) => (props.isExpired ? "#f2fcf6" : "#ffffff")};
     z-index: 20;
   }
@@ -345,7 +345,7 @@ class CalendarItem extends React.Component {
     if (currentDay > itemDay) {
       //console.log("Истёкший купон");
       this.setState({
-        // popupOpened: true, // enable for test, remove for production
+        popupOpened: true,
         isExpired: true,
         futureCoupon: false,
       });
@@ -527,8 +527,8 @@ class CalendarItem extends React.Component {
       >
         <div className="calendarImage">
           <p className="calendarImageText">{this.props.date.getDate()}</p>
-          <video className="calendarVideo" src={video} loop muted onMouseEnter={(event) => event.target.play()} onMouseLeave={(event) => event.target.pause()} onMouseMove={(event) => {
-            if (event.target.paused) {
+          <video className="calendarVideo" src={video} loop muted onMouseEnter={(event) => !isExpired && event.target.play()} onMouseLeave={(event) => !isExpired && event.target.pause()} onMouseMove={(event) => {
+            if (event.target.paused && !isExpired) {
               event.target.play();
             }
           }} />

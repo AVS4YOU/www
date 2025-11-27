@@ -513,7 +513,7 @@ class adventCalendar extends React.PureComponent {
             <CalendarItem
               video={CalendarVideo_5}
               date={new Date(2025, 11, 5)}
-              validDate="The offer is valid till December 6, 2025"
+              validDate="25"
               popupDiscount={
               <>
                 <b>Time to Make</b>{" "}
@@ -664,7 +664,7 @@ class adventCalendar extends React.PureComponent {
             <CalendarItem
               video={CalendarVideo_11}
               date={new Date(2025, 11, 11)}
-              validDate="The offer is valid till December 12, 2025"
+              validDate="25"
               popupDiscount={
                 <>
                   <b style={{ fontSize: "24px", color: "#E73A37" }}>Your All-in-One Free Office Suite</b>
@@ -727,7 +727,7 @@ class adventCalendar extends React.PureComponent {
               popupDiscountEnter={
                 <>
                   <br />
-                  <b style={{ fontSize: "20px" }}>35% Of</b>{" "}
+                  <b style={{ fontSize: "20px" }}>35% Off</b>{" "}
                   <span style={{ fontSize: "20px" }}>on AVS4YOU</span>
                   <br />
                   <span style={{ fontSize: "20px" }}>1 Year Subscription</span>
@@ -832,7 +832,7 @@ class adventCalendar extends React.PureComponent {
                   <br /> <img src={CardImg} />
                   <br />
                   <br />
-                  Give your computer a holiday makeove 
+                  Give your computer a holiday makeover
                   <br />
                   with AVS4YOU festive wallpapers
                 </>
