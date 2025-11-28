@@ -62,14 +62,16 @@ background: rgba(21, 18, 37, 1);
     background-size: auto 60px;
     position: relative;
 
-    @media (max-width: 1550px) {
-        max-width: 300px;
-        background-size: auto 45px;
+    @media (max-width: 1440px) {
+        background-position-x: -100px;
     }
 
     @media (max-width: 1100px) {
-        max-width: 300px;
-        background-size: auto 30px;
+        background-position-x: -200px;
+    }
+
+    @media (max-width: 900px) {
+        background-position-x: -250px;
     }
   }
   
@@ -84,15 +86,16 @@ background: rgba(21, 18, 37, 1);
     background-size: auto 60px;
     position: relative;
 
-    @media (max-width: 1550px) {
-        max-width: 300px;
-        background-size: auto 45px;
-        background-position: 0 0;
+    @media (max-width: 1440px) {
+        background-position: -100px 0;
     }
 
-     @media (max-width: 1100px) {
-        max-width: 300px;
-        background-size: auto 30px;
+    @media (max-width: 1100px) {
+        background-position: -200px 0;
+    }
+
+    @media (max-width: 900px) {
+        background-position: -250px 0;
     }
   }
     
