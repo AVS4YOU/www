@@ -18,6 +18,7 @@ import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/450x64_Animation-Advent-AVS4YOU-2025.gif";
 import PlAVSbgRight from "../images/pl/450x64_Animation-Advent-AVS4YOU-2025.gif";
+import PlAVSbgRightMobile from "../images/pl/320x64_Advent-AVS4YOU-2025_mobile.gif";
 import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
@@ -51,6 +52,10 @@ background: rgba(21, 18, 37, 1);
     @media (max-width: 1500px) {
       background-position: -20% 2.5%;
     } */
+
+    @media (max-width: 767px) {
+    justify-content: center;
+    }
   }
   .bgLeft {
     width: 100%;
@@ -72,6 +77,10 @@ background: rgba(21, 18, 37, 1);
 
     @media (max-width: 900px) {
         background-position-x: -250px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
     }
   }
   
@@ -97,6 +106,10 @@ background: rgba(21, 18, 37, 1);
     @media (max-width: 900px) {
         background-position: -250px 0;
     }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
   }
     
     .PL-box {
@@ -113,6 +126,42 @@ background: rgba(21, 18, 37, 1);
             
         }
         .span-text-2 {
+            color: #A8E200;
+        }
+        .span-text-3 {
+            margin-right: 5px;
+        }
+        .span-text-4 {
+            color: #A8E200;
+            border: 1px dashed #A8E200;
+            padding: 4px 12px;
+        }
+    }
+
+    .PL-box.mobile {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: flex;
+        }
+
+        .PL-desc3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            padding-left: 12px;
+
+            @media (max-width: 592px) {
+                gap: 8px;
+            }
+        }
+
+        .span-text-1 {
+            display: block;
+        }
+        .span-text-2 {
+            display: block;
             color: #A8E200;
         }
         .span-text-3 {
@@ -289,7 +338,27 @@ background: rgba(21, 18, 37, 1);
     
     @media screen and (max-width: 767px) {
         .PLnewAvs{
-            display: none;
+            /* display: none; */
+
+            .PL-box.mobile {
+                position: relative;
+                z-index: 2;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 156px;
+                height: 60px;
+                background-image: url(${PlAVSbgRightMobile});
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+
+            &.beginningBanner p {
+                z-index: 2;
+            }
         }
 
         .PL-box {
@@ -1125,6 +1194,24 @@ class Layout extends React.PureComponent {
                                 <span className='span-text-3'>{this.props.t("beginningBannerSpanText3")}</span>{" "}
                                 <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
                             </p>
+                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                        </div>
+
+                        <div className="PL-box mobile">
+                            <div className="PL-desc3 beginningBanner">
+                                <p>
+                                    <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
+                                    <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
+                                </p>
+                                <p>
+                                    <span className='span-text-ampersand'>&</span>{" "}
+                                </p>
+                                <p>
+                                    <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                                </p>
+                            </div>
                             <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
                             <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
