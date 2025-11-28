@@ -1681,6 +1681,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "Mega Soldes Black Friday! Faites tourner la roue pour gagner jusqu'à 100% de réduction!",
+  "beginningBannerSpanText1": "Des cadeaux quotidiens pour les créateurs !",
+  "beginningBannerSpanText2": "Découvrez le Calendrier de l'Avent",
+  "beginningBannerSpanText3": "et",
+  "beginningBannerSpanText4": "Économisez jusqu'à 100%",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",

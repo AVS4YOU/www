@@ -1646,6 +1646,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "Mega Saldi del Black Friday! Gira la ruota per vincere fino al 100% di sconto!",
+  "beginningBannerSpanText1": "Regali esclusivi ogni giorno!",
+  "beginningBannerSpanText2": "Scopri il Calendario dell'Avvento",
+  "beginningBannerSpanText3": "e",
+  "beginningBannerSpanText4": "Risparmia fino al 100%",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",

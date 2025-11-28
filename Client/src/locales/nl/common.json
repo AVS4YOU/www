@@ -1502,6 +1502,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "Black Friday Mega Sale! Spin to win up to 100% Off!",
+  "beginningBannerSpanText1": "Daily gifts for creators!",
+  "beginningBannerSpanText2": "Check Advent Calendar",
+  "beginningBannerSpanText3": "and",
+  "beginningBannerSpanText4": "Save up to 100%",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",

@@ -1120,10 +1120,10 @@ class Layout extends React.PureComponent {
                         <div className="PL-box">
                             {/* <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p> */}
                             <p className="PL-desc3 beginningBanner">
-                                <span className='span-text-1'>Daily gifts for creators!</span>{" "}
-                                <span className='span-text-2'>Check Advent Calendar</span>{" "}
-                                <span className='span-text-3'>and</span>{" "}
-                                <span className='span-text-4'>Save up to 100%</span>
+                                <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
+                                <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
+                                <span className='span-text-3'>{this.props.t("beginningBannerSpanText3")}</span>{" "}
+                                <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
                             </p>
                             <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
                             <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
