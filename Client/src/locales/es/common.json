@@ -1634,6 +1634,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "¡Rebajas del Black Friday! ¡Gira y gana hasta un 100% de descuento!",
+  "beginningBannerSpanText1": "¡Ofertas increíbles cada día!",
+  "beginningBannerSpanText2": "No te pierdas el Calendario de Adviento",
+  "beginningBannerSpanText3": "y",
+  "beginningBannerSpanText4": "Ahorra hasta un 100 %",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",

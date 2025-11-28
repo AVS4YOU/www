@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.98 (28.11.2025)
+### New
+* Removed banner 'Black Friday 2025' with Black Friday Lucky Wheel
+* Add banner 'Advent Calendar 2025'
+* Changed products info (version, date, file size)
+* Updated pads files
+
 ## 1.0.97 (27.11.2025)
 ### New
 * Returned opening of expired cards
