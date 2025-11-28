@@ -954,7 +954,7 @@ class adventCalendar extends React.PureComponent {
                   <b style={{ fontSize: "20px" }}>50% Off</b>{" "} 
                   <span style={{ fontSize: "20px" }}>AVS4YOU</span>
                   <br />
-                  <span style={{ fontSize: "20px" }}>Unlimited Subscription</span>
+                  <span style={{ fontSize: "20px" }}>1-Year Subscription</span>
                 </>
               }
               popupCoupon="A8LuckyYou"
