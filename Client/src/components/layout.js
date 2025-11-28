@@ -16,8 +16,8 @@ import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
-import PlAVSbgRight from "../images/pl/pl-bg-right.png";
+import PlAVSbgLeft from "../images/pl/450x64_Animation-Advent-AVS4YOU-2025.gif";
+import PlAVSbgRight from "../images/pl/450x64_Animation-Advent-AVS4YOU-2025.gif";
 import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
@@ -38,11 +38,11 @@ background: rgba(21, 18, 37, 1);
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: center;
-    background-image: url(${PlAVSbg});
+    justify-content: space-between;
+    /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #0D271B;
 
     /* @media (max-width: 1500px) {
       background-position: 0% 2.5%;
@@ -58,20 +58,42 @@ background: rgba(21, 18, 37, 1);
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
     background-position-x: 0%;
-    max-width: 239px;
+    max-width: 450px;
     background-size: auto 60px;
     position: relative;
+
+    @media (max-width: 1550px) {
+        max-width: 300px;
+        background-size: auto 45px;
+    }
+
+    @media (max-width: 1100px) {
+        max-width: 300px;
+        background-size: auto 30px;
+    }
   }
   
   .bgRight {
     width: 100%;
     background-image: url(${PlAVSbgRight});
+    transform: scale(-1, 1);
     background-repeat: no-repeat;
     height: 60px;
     background-position: 0% 100%;
-    max-width: 239px;
+    max-width: 450px;
     background-size: auto 60px;
     position: relative;
+
+    @media (max-width: 1550px) {
+        max-width: 300px;
+        background-size: auto 45px;
+        background-position: 0 0;
+    }
+
+     @media (max-width: 1100px) {
+        max-width: 300px;
+        background-size: auto 30px;
+    }
   }
     
     .PL-box {
@@ -83,6 +105,21 @@ background: rgba(21, 18, 37, 1);
         /* gap: 5px; */
         align-items: center;
         min-width: max-content;
+
+        .span-text-1 {
+            
+        }
+        .span-text-2 {
+            color: #A8E200;
+        }
+        .span-text-3 {
+            margin-right: 5px;
+        }
+        .span-text-4 {
+            color: #A8E200;
+            border: 1px dashed #A8E200;
+            padding: 4px 12px;
+        }
     }
     
     .PL-desc1 {
@@ -111,9 +148,13 @@ background: rgba(21, 18, 37, 1);
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
-        color: #FF3300;
+        /* color: #FF3300; */
         /* margin: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+
+        @media (max-width: 1550px) {
+            font-size: 18px;
+        }
     }
 
     .PL-desc4 {
@@ -1064,22 +1105,29 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
+                  <a href="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
-                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
+                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
 
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
-                    {/* <div className='bgLeft'></div> */}
+                        <div className='bgLeft'></div>
 
-                    <div className="PL-box">
-                        <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
-                        <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                        <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                        <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                    </div>
+                        <div className="PL-box">
+                            {/* <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p> */}
+                            <p className="PL-desc3 beginningBanner">
+                                <span className='span-text-1'>Daily gifts for creators!</span>{" "}
+                                <span className='span-text-2'>Check Advent Calendar</span>{" "}
+                                <span className='span-text-3'>and</span>{" "}
+                                <span className='span-text-4'>Save up to 100%</span>
+                            </p>
+                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                        </div>
 
-                    {/* <div className='bgRight'></div> */}
+                        <div className='bgRight'></div>
 
                     </div>
                   </a>
