@@ -240,12 +240,76 @@ background: rgba(21, 18, 37, 1);
     .fr {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }  
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
+        }
     }
-    
+
     .de {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
         }
     }
     .es {
@@ -256,6 +320,38 @@ background: rgba(21, 18, 37, 1);
             .PL-desc1 {
                 margin-left: 5px;
                 margin-right: 5px;
+            }
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
             }
         }
     }
@@ -269,10 +365,74 @@ background: rgba(21, 18, 37, 1);
                 margin-right: 5px;
             }
         }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
+        }
     }
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
         }
     }
     
@@ -363,6 +523,32 @@ background: rgba(21, 18, 37, 1);
 
         .PL-box {
             display: none;
+        }
+    }
+
+    @media screen and (max-width: 592px) {
+        .PLnewAvs{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+        .PLnewAvs.fr{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+        .PLnewAvs.de{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
         }
     }
 `;
