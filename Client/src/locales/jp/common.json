@@ -1504,7 +1504,7 @@
 
   "defaultHrefUnlim": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
   "defaultHrefOneYear": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=JPY&DCURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
-  "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSUnGift&SRC=Uninstall_jp&CLEAN_CART=ALL",
+  "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANG=ja&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,pt-br,zh&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSUnGift&SRC=Uninstall_jp&CLEAN_CART=ALL",
 
   "*****************************SCREENSHOT********************************": "*****************************SCREENSHOT********************************",
   "slider video converter jpg": "jp_slider_video_converter.jpg",
@@ -1667,6 +1667,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "ブラックフライデー のセール！スピンして最大 100% 割引を勝つ！",
+  "beginningBannerSpanText1": "お客様へのギフト！",
+  "beginningBannerSpanText2": "アドベントカレンダーをチェックして",
+  "beginningBannerSpanText3": "",
+  "beginningBannerSpanText4": "最大100%節約することができます",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",

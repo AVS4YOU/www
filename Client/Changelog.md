@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.0.98 (28.11.2025)
+### New
+* Removed banner 'Black Friday 2025' with Black Friday Lucky Wheel
+* Add banner 'Advent Calendar 2025'
+* Changed products info (version, date, file size)
+* Updated pads files
+
+## 1.0.97 (27.11.2025)
+### New
+* Returned opening of expired cards
+* Corrected popup height of open cards
+* Valid date and texts of cards fixed
+* Returned the music header from 2024 year, header of Layout hidden
+
+## 1.0.96 (26.11.2025)
+### New
+* Updated links in `uninstall-offer.aspx`
+* Languages dropdown-menu at tablets adaptive fixed 
+* Add `advent-calendar.aspx` page for advent-calendar event 2025
+
 ## 1.0.95 (11.11.2025)
 ### New
 * Added banner 'Black Friday 2025' with Black Friday Lucky Wheel

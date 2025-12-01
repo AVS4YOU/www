@@ -16,8 +16,9 @@ import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/pl-bg-left.png";
-import PlAVSbgRight from "../images/pl/pl-bg-right.png";
+import PlAVSbgLeft from "../images/pl/adventcalendarbannerdesktop.gif";
+import PlAVSbgRight from "../images/pl/adventcalendarbannerdesktop.gif";
+import PlAVSbgRightMobile from "../images/pl/adventcalendarbannermobile.gif";
 import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
@@ -38,11 +39,11 @@ background: rgba(21, 18, 37, 1);
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: center;
-    background-image: url(${PlAVSbg});
+    justify-content: space-between;
+    /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #0D271B;
 
     /* @media (max-width: 1500px) {
       background-position: 0% 2.5%;
@@ -51,6 +52,10 @@ background: rgba(21, 18, 37, 1);
     @media (max-width: 1500px) {
       background-position: -20% 2.5%;
     } */
+
+    @media (max-width: 767px) {
+    justify-content: center;
+    }
   }
   .bgLeft {
     width: 100%;
@@ -58,20 +63,53 @@ background: rgba(21, 18, 37, 1);
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
     background-position-x: 0%;
-    max-width: 239px;
+    max-width: 450px;
     background-size: auto 60px;
     position: relative;
+
+    @media (max-width: 1440px) {
+        background-position-x: -100px;
+    }
+
+    @media (max-width: 1100px) {
+        background-position-x: -200px;
+    }
+
+    @media (max-width: 900px) {
+        background-position-x: -250px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
   }
   
   .bgRight {
     width: 100%;
     background-image: url(${PlAVSbgRight});
+    transform: scale(-1, 1);
     background-repeat: no-repeat;
     height: 60px;
     background-position: 0% 100%;
-    max-width: 239px;
+    max-width: 450px;
     background-size: auto 60px;
     position: relative;
+
+    @media (max-width: 1440px) {
+        background-position: -100px 0;
+    }
+
+    @media (max-width: 1100px) {
+        background-position: -200px 0;
+    }
+
+    @media (max-width: 900px) {
+        background-position: -250px 0;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
   }
     
     .PL-box {
@@ -83,6 +121,57 @@ background: rgba(21, 18, 37, 1);
         /* gap: 5px; */
         align-items: center;
         min-width: max-content;
+
+        .span-text-1 {
+            
+        }
+        .span-text-2 {
+            color: #A8E200;
+        }
+        .span-text-3 {
+            margin-right: 5px;
+        }
+        .span-text-4 {
+            color: #A8E200;
+            border: 1px dashed #A8E200;
+            padding: 4px 12px;
+        }
+    }
+
+    .PL-box.mobile {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: flex;
+        }
+
+        .PL-desc3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            padding-left: 12px;
+
+            @media (max-width: 592px) {
+                gap: 8px;
+            }
+        }
+
+        .span-text-1 {
+            display: block;
+        }
+        .span-text-2 {
+            display: block;
+            color: #A8E200;
+        }
+        .span-text-3 {
+            margin-right: 5px;
+        }
+        .span-text-4 {
+            color: #A8E200;
+            border: 1px dashed #A8E200;
+            padding: 4px 12px;
+        }
     }
     
     .PL-desc1 {
@@ -111,9 +200,13 @@ background: rgba(21, 18, 37, 1);
         line-height: 27px;
         letter-spacing: 0em;
         text-align: center;
-        color: #FF3300;
+        /* color: #FF3300; */
         /* margin: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+
+        @media (max-width: 1550px) {
+            font-size: 18px;
+        }
     }
 
     .PL-desc4 {
@@ -147,12 +240,76 @@ background: rgba(21, 18, 37, 1);
     .fr {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }  
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
+        }
     }
-    
+
     .de {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
         }
     }
     .es {
@@ -163,6 +320,38 @@ background: rgba(21, 18, 37, 1);
             .PL-desc1 {
                 margin-left: 5px;
                 margin-right: 5px;
+            }
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
             }
         }
     }
@@ -176,10 +365,74 @@ background: rgba(21, 18, 37, 1);
                 margin-right: 5px;
             }
         }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
+        }
     }
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+        }
+
+        .PL-desc3.beginningBanner {
+            font-size: 1.2vw;
+
+            @media (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+
+        .bgLeft, .bgRight {
+            background-position-x: -100px;
+
+            @media (max-width: 1520px) {
+                background-position-x: -200px;
+            }
+
+            @media (max-width: 1000px) {
+                background-position-x: -250px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .PL-box.mobile .PL-desc3.beginningBanner {
+                font-size: 9px;
+            }
         }
     }
     
@@ -245,11 +498,57 @@ background: rgba(21, 18, 37, 1);
     
     @media screen and (max-width: 767px) {
         .PLnewAvs{
-            display: none;
+            /* display: none; */
+
+            .PL-box.mobile {
+                position: relative;
+                z-index: 2;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 156px;
+                height: 60px;
+                background-image: url(${PlAVSbgRightMobile});
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+
+            &.beginningBanner p {
+                z-index: 2;
+            }
         }
 
         .PL-box {
             display: none;
+        }
+    }
+
+    @media screen and (max-width: 592px) {
+        .PLnewAvs{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+        .PLnewAvs.fr{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+        .PLnewAvs.de{
+
+            &::after {
+                width: 100px;
+                height: 60px;
+            }
         }
     }
 `;
@@ -947,7 +1246,7 @@ class Layout extends React.PureComponent {
             const response = await fetch('https://ipapi.co/json/');
             const data = await response.json();
             const currency = data.country_code === 'GB' ? 'gbp' : 'usd';
-            console.log('Detected country:', data.country_code, 'Currency:', currency);
+            // console.log('Detected country:', data.country_code, 'Currency:', currency);
             sessionStorage.setItem('userCurrencyEnLocale', currency);
 
             this.setState({ userCurrencyEnLocale: currency });
@@ -1062,24 +1361,49 @@ class Layout extends React.PureComponent {
                     <script src={withPrefix('impact-write-cookie.js')} type="text/javascript"/>
                 </Helmet>
 
-                {!this.props.headerIsDisabled ? <StyledPL>
+                {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
+                  <a href="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
-                  <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}>
+                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
 
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
-                    {/* <div className='bgLeft'></div> */}
+                        <div className='bgLeft'></div>
 
-                    <div className="PL-box">
-                        <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p>
-                        <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                        <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                        <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
-                    </div>
+                        <div className="PL-box">
+                            {/* <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p> */}
+                            <p className="PL-desc3 beginningBanner">
+                                <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
+                                <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
+                                <span className='span-text-3'>{this.props.t("beginningBannerSpanText3")}</span>{" "}
+                                <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                            </p>
+                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                        </div>
 
-                    {/* <div className='bgRight'></div> */}
+                        <div className="PL-box mobile">
+                            <div className="PL-desc3 beginningBanner">
+                                <p>
+                                    <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
+                                    <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
+                                </p>
+                                <p>
+                                    <span className='span-text-ampersand'>&</span>{" "}
+                                </p>
+                                <p>
+                                    <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                                </p>
+                            </div>
+                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
+                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
+                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
+                        </div>
+
+                        <div className='bgRight'></div>
 
                     </div>
                   </a>
@@ -1087,7 +1411,7 @@ class Layout extends React.PureComponent {
 
 
 
-                {!this.props.headerIsDisabled && <Header isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
+                {!this.props.headerIsDisabled && <Header customBackgroundColor={this.props.customBackgroundColor} isTransparentHeader={this.props.isTransparentHeader} availableLocales={this.props.pageContext.availableLocales}
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
                 {/* <main>{this.props.children}</main> */}

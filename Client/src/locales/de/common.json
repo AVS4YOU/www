@@ -1516,7 +1516,7 @@
 
   "defaultHrefUnlim": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
   "defaultHrefOneYear": "https://store.avs4you.com/order/checkout.php?PRODS=604110&QTY=1&CURRENCY=EUR&DCURRENCY=EUR&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&DESIGN_TYPE=2&ORDERSTYLE=nLW0m5S5iLk=",
-  "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSUnGift&SRC=Uninstall_de&CLEAN_CART=ALL",
+  "getItHref": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANG=de&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,pt,pt-br,zh&ORDERSTYLE=nLW0m5S5iLk=&COUPON=AVSUnGift&SRC=Uninstall_de&CLEAN_CART=ALL",
 
   "onlinehelpVideoHref": "https://onlinehelp.avs4you.com/de/avs-video-converter/",
   "onlinehelpAudioHref": "https://onlinehelp.avs4you.com/de/avs-audio-converter/",
@@ -1687,6 +1687,10 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "Sonderangebot zum Black Friday! Drehen Sie und gewinnen Sie bis zu 100% Rabatt!",
+  "beginningBannerSpanText1": "Tägliche Geschenke für Creators!",
+  "beginningBannerSpanText2": "Schauen Sie sich den Adventskalender",
+  "beginningBannerSpanText3": "und",
+  "beginningBannerSpanText4": "Sparen Sie bis zu 100 %",
   "colorBanner": "",
   "textBanner": "",
   "discountCoupon": "",
