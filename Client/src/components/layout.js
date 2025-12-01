@@ -16,9 +16,9 @@ import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/adventCalendarBannerDesktop.gif";
-import PlAVSbgRight from "../images/pl/adventCalendarBannerDesktop.gif";
-import PlAVSbgRightMobile from "../images/pl/adventCalendarBannerMobile.gif";
+import PlAVSbgLeft from "../images/pl/adventcalendarbannerdesktop.gif";
+import PlAVSbgRight from "../images/pl/adventcalendarbannerdesktop.gif";
+import PlAVSbgRightMobile from "../images/pl/adventcalendarbannermobile.gif";
 import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
