@@ -51,7 +51,7 @@ import iconFacebook from "../images/advent-calendar/facebook.svg";
 import { withSoundCloudAudio } from "react-soundplayer/addons";
 
 const PostcardLink = "/avs_card_2025.zip";
-const PostcardLinkLetter = "/avs_letter_2025.zip";
+const PostcardLinkLetter = "/avs_letter_2026.zip";
 const PostcardLinkWallpaper = "/avs_wallpaper_2025.zip";
 const PresentationTemplate = "/christmas_template.pptx";
 
