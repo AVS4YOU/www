@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.99 (05.12.2025)
+### New
+* Update zip file for download and image from card of 5 December
+
 ## 1.0.98 (28.11.2025)
 ### New
 * Removed banner 'Black Friday 2025' with Black Friday Lucky Wheel
