@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.100 (09.12.2025)
+### New
+* Update zip file for download and image from card of 10 December
+
 ## 1.0.99 (05.12.2025)
 ### New
 * Update zip file for download and image from card of 5 December
