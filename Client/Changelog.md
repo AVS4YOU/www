@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.101 (12.12.2025)
+### New
+* Update zip file for download and image from card of 14 December
+
 ## 1.0.100 (09.12.2025)
 ### New
 * Update zip file for download and image from card of 10 December
@@ -60,7 +64,7 @@
 ### New
 * Updated price block layout in `register.aspx` only for fr locale
 
-## 1.0.90 (03.10.2024)
+## 1.0.90 (03.10.2025)
 ### New
 * Changed prices for jp locale in `uninstall-offer.aspx`
 * Changed prices for jp locale in `installed-video-editor.aspx`
@@ -72,9 +76,10 @@
 * Changed products info (version, date, file size)
 * Updated pads files
 
-## 1.0.89 (01.10.2024)
+## 1.0.89 (01.10.2025)
 ### New
 * Changed prices for jp locale in `register.aspx`
+
 ## 1.0.88 (17.09.2025)
 ### New
 * Changed products info (version, date, file size)

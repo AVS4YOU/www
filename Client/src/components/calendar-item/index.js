@@ -436,7 +436,7 @@ class CalendarItem extends React.Component {
     return(
       <>
         <button className="shopButton">
-        <a id={idButton} href={hrefButtonSaveWall} target="_blank" download="avs_wallpaper_2025.zip">{textButton}</a>
+        <a id={idButton} href={hrefButtonSaveWall} target="_blank" download="avs_wallpaper_2026.zip">{textButton}</a>
         </button>
       </>
     )
