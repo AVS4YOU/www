@@ -442,6 +442,16 @@ class CalendarItem extends React.Component {
     )
   }
 
+  renderButtonSaveWallDesk = (textButton, hrefButtonSaveWallDesk, idButton) => {
+    return(
+      <>
+        <button className="shopButton">
+        <a id={idButton} href={hrefButtonSaveWallDesk} target="_blank" download="avs_wallpaper_desktop_2026.zip">{textButton}</a>
+        </button>
+      </>
+    )
+  }
+
   renderButtonSavePresentation = (textButton, hrefButtonSavePresentation, idButton) => {
     return(
       <>
@@ -515,7 +525,7 @@ class CalendarItem extends React.Component {
   }
 
   render() {
-    const { video, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall, hrefButtonSavePresentation } = this.props;    
+    const { video, popupHeader, popupTitle, popupCoupon, popupDiscount, popupDiscountEnter, popupDiscountTwo, linkTwitter, linkFacebook, popupSub, textBefore, textAfter, linkText, linkHref, textBeforeTitle, linkTextTitle, linkHrefTitle, hrefButton, textButton, linkId, linkFacebookId, linkTwitterId, idButton, hrefButtonSave, hrefButtonPdf, hrefButtonSaveLetter, hrefButtonSaveWall, hrefButtonSaveWallDesk, hrefButtonSavePresentation } = this.props;    
     const { popupOpened, isExpired, futureCoupon } = this.state;
     //console.log(futureCoupon)
     return (
@@ -552,6 +562,7 @@ class CalendarItem extends React.Component {
               {textButton && hrefButtonSave && this.renderButtonSave(textButton, hrefButtonSave, idButton)}
               {textButton && hrefButtonSaveLetter && this.renderButtonSaveLetter(textButton, hrefButtonSaveLetter, idButton)}
               {textButton && hrefButtonSaveWall && this.renderButtonSaveWall(textButton, hrefButtonSaveWall, idButton)}
+              {textButton && hrefButtonSaveWallDesk && this.renderButtonSaveWallDesk(textButton, hrefButtonSaveWallDesk, idButton)}
               {textButton && hrefButtonSavePresentation && this.renderButtonSavePresentation(textButton, hrefButtonSavePresentation, idButton)}
               <Text className="popupSub">{popupSub}</Text>
               <>{this.props.validDate !== "25" && (

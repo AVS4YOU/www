@@ -10,6 +10,7 @@ import Modal from "../components/modal";
 import CopyLink from "../images/advent-calendar/link_copy.svg";
 import CardImg from "../images/advent-calendar/avs_card.png";
 import CardImgDay14 from "../images/advent-calendar/avs_card_day_14.png";
+import CardImgDay17 from "../images/advent-calendar/avs_card_day_17.png";
 import LetterImg from "../images/advent-calendar/letter_img.png";
 import PresentaionImg from "../images/advent-calendar/presentations.png";
 import CalendarImg from "../images/advent-calendar/img_calendar.png";
@@ -54,6 +55,7 @@ import { withSoundCloudAudio } from "react-soundplayer/addons";
 const PostcardLink = "/avs_card_2026.zip";
 const PostcardLinkLetter = "/avs_letter_2026.zip";
 const PostcardLinkWallpaper = "/avs_wallpaper_2026.zip";
+const PostcardLinkWallpaperDesk = "/avs_wallpaper_desktop_2026.zip";
 const PresentationTemplate = "/christmas_template.pptx";
 
 const MenuWrstyle = styled.div`
@@ -830,7 +832,7 @@ class adventCalendar extends React.PureComponent {
               }
               popupDiscountTwo={
                 <>
-                  <br /> <img src={CardImg} />
+                  <br /> <img src={CardImgDay17} />
                   <br />
                   <br />
                   Give your computer a holiday makeover
@@ -838,7 +840,7 @@ class adventCalendar extends React.PureComponent {
                   with AVS4YOU festive wallpapers
                 </>
               }
-              hrefButtonSave={PostcardLink}
+              hrefButtonSaveWallDesk={PostcardLinkWallpaperDesk}
               textButton="Download Now"
               idButton="seventeenth-text_advent-calendar"
             />
