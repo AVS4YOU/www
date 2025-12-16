@@ -9,6 +9,7 @@ import CalendarItem from "../components/calendar-item";
 import Modal from "../components/modal";
 import CopyLink from "../images/advent-calendar/link_copy.svg";
 import CardImg from "../images/advent-calendar/avs_card.png";
+import CardImgDay14 from "../images/advent-calendar/avs_card_day_14.png";
 import LetterImg from "../images/advent-calendar/letter_img.png";
 import PresentaionImg from "../images/advent-calendar/presentations.png";
 import CalendarImg from "../images/advent-calendar/img_calendar.png";
@@ -52,7 +53,7 @@ import { withSoundCloudAudio } from "react-soundplayer/addons";
 
 const PostcardLink = "/avs_card_2026.zip";
 const PostcardLinkLetter = "/avs_letter_2026.zip";
-const PostcardLinkWallpaper = "/avs_wallpaper_2025.zip";
+const PostcardLinkWallpaper = "/avs_wallpaper_2026.zip";
 const PresentationTemplate = "/christmas_template.pptx";
 
 const MenuWrstyle = styled.div`
@@ -752,7 +753,7 @@ class adventCalendar extends React.PureComponent {
               }
                popupDiscountTwo={
                 <>
-                  <br /> <img src={CardImg} />
+                  <br /> <img src={CardImgDay14} />
                   <br />
                   <br />
                   Bring the holiday spirit to your phone
