@@ -461,12 +461,12 @@ class CalendarItem extends React.Component {
       </>
     )
   }
-  
+
   renderButtonPdf = (textButton, hrefButtonPdf, idButton) => {
     return(
       <>
         <button className="shopButton">
-        <a id={idButton} href={hrefButtonPdf} download="avs_calendar_2025.pdf" target="_blank" rel="noopener">{textButton}</a>
+        <a id={idButton} href={hrefButtonPdf} download="avs_calendar_2026.zip" target="_blank" rel="noopener">{textButton}</a>
         </button>
       </>
     )
