@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.104 (22.12.2025)
+### New
+* Add new file christmas_video_ideas_checklist_2026.pdf in static folder for link
+  
 ## 1.0.103 (18.12.2025)
 ### New
 * Update zip file for download and image from card of 19 December
