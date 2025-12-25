@@ -50,7 +50,7 @@ import iconFacebook from "../images/advent-calendar/facebook.svg";
 
 import { withSoundCloudAudio } from "react-soundplayer/addons";
 
-const PostcardLink = "/avs_card_2025.zip";
+const PostcardLink = "/avs_card_2026.zip";
 const PostcardLinkLetter = "/avs_letter_2026.zip";
 const PostcardLinkWallpaper = "/avs_wallpaper_2025.zip";
 const PresentationTemplate = "/christmas_template.pptx";
@@ -658,7 +658,7 @@ class adventCalendar extends React.PureComponent {
                 </>
               }
               hrefButtonSave={PostcardLink}
-              textButton="Get It Now"
+              textButton="Get Yours Now"
               idButton="tenth-text_advent-calendar"
             />
             <CalendarItem
