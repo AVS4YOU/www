@@ -27,7 +27,7 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 
 const StyledPL = styled.div`
-// display: none;
+display: none;
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);

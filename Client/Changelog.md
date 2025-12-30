@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.105 (30.12.2025)
+### New
+* Removed `advent-calendar.aspx` page
+* Hide banner for `advent-calendar.aspx` page
+
 ## 1.0.104 (22.12.2025)
 ### New
 * Add new file christmas_video_ideas_checklist_2026.pdf in static folder for link
