@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.106 (19.01.2026)
+### New
+* Added X-Frame-Options header to prevent clickjacking attacks
+
 ## 1.0.105 (30.12.2025)
 ### New
 * Removed `advent-calendar.aspx` page
@@ -8,7 +12,7 @@
 ## 1.0.104 (22.12.2025)
 ### New
 * Add new file christmas_video_ideas_checklist_2026.pdf in static folder for link
-  
+
 ## 1.0.103 (18.12.2025)
 ### New
 * Update zip file for download and image from card of 19 December
