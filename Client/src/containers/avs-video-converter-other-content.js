@@ -97,6 +97,15 @@ export const AvsVideoConverterOtherContent = (props) => (
         <PageContentWrapper className="videoConverter">
             <ContentRowItem
                 id="overview"
+                imgLeft={false}
+                asType={props.t("h2")}
+                newText={props.t("New")}
+                imageName={props.t("video converter convert video with ai png")}
+                headerText={props.t("Convert video with AI")}
+            >
+                <Text className="ListItem">{props.t("Go from a text idea to a perfectly formatted video")}</Text>
+            </ContentRowItem>
+            <ContentRowItem
                 imgLeft={true}
                 asType={props.t("h2")}
                 imageName={props.t("video converter convert all key2 jpg")}

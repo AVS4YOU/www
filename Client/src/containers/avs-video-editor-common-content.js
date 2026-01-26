@@ -60,8 +60,19 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
           </div>
 
           <PageContentWrapper>
-            <ContentRowItem 
+            <ContentRowItem
                 id="overview"
+                imgLeft={false}
+                imageName={props.t("generate video with ai png")}
+                headerText={props.t("Generate video with AI")}
+                newText={props.t("New")}
+                aiPluginText={props.t("AI Plugin")}
+            >
+              <Text className="ListItem">{props.t("Generate short video clips")}</Text>
+              <Text className="ListItem">{props.t("Create AI generated scenes")}</Text>
+            </ContentRowItem>
+
+            <ContentRowItem
                 imgLeft={true}
                 imageName={props.t("video editor slider3 jpg")}
                 headerText={props.t("Work with all key formats and HD videos")}    

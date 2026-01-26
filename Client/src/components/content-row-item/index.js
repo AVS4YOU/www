@@ -20,6 +20,17 @@ const RowContent = styled.div`
     display:table;
     width:100%;
 
+    .newText {
+        padding: 4px 10px;
+        color: #fff;
+        background-color: #FE9235;
+        font-weight: 700;
+    }
+
+    .aiPluginText {
+        font-weight: 700;
+    }
+
     .HeaderListItem.mobile, .bgOrange.mobile{
         display:none;
     }
@@ -162,8 +173,8 @@ const RowContent = styled.div`
         padding-bottom: 20px;
         display: inline-flex;
         align-items: center;
-        font-weight: 600;
-        gap: 20px;
+        font-weight: 700;
+        gap: 24px;
 
         .firstFlagPartWrapper {
             .firstFlagPart {
@@ -176,6 +187,19 @@ const RowContent = styled.div`
 
         .secondFlagPart {
             display: none;
+        }
+
+        &-wrapper {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 32px;
+
+        }
+
+        &-wrapper.mobile {
+            justify-content: center;
+            margin-bottom: 8px;
         }
     }
 
@@ -280,6 +304,16 @@ const RowContent = styled.div`
 
     @media (max-width: 780px) {
 
+        .HeaderListItem-wrapper {
+            display: none;
+        }
+
+        .HeaderListItem-wrapper.mobile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
         padding-top: 50px;
 
         &:first-child{
@@ -361,6 +395,10 @@ const HeaderMobile = (props) =>
     const { t } = useTranslation('common');
     return(
         <Text className="HeaderListItem mobile" as="h3" color="#000000" fontSize={28}>
+            <div className="HeaderListItem-wrapper mobile">
+                {props.newText && <Text className="newText mobile" fontSize={18}>{props.newText}</Text>}
+                {props.aiPluginText && <Text className="aiPluginText mobile" fontSize={18}>{props.aiPluginText}</Text>}
+            </div>
             <Text className="mobileFreeInfo" as="span">{props.free && t("Free") + " "}</Text> {props.headerText} 
         </Text>
     )
@@ -372,7 +410,14 @@ const TextContent = (props, touchDevice) =>
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
+                {props.newText && props.aiPluginText && (
+                    <div className="HeaderListItem-wrapper">
+                        {props.newText && <Text className="newText" fontSize={18}>{props.newText}</Text>}
+                        {props.aiPluginText && <Text className="aiPluginText" fontSize={18}>{props.aiPluginText}</Text>}
+                    </div>
+                )}
                 <Text className="HeaderListItem" as={props.asType} color="#000000" fontSize={28}>
+                    {props.newText && !props.aiPluginText && <Text className="newText" fontSize={18}>{props.newText}</Text>}
                     {props.headerText} 
                     {props.free && <FreeFlag>{t("Free")}</FreeFlag>}
                 </Text>
@@ -447,6 +492,8 @@ const ContentRowItem = (props) => {
 }
 
 ContentRowItem.propTypes = {
+    newText: PropTypes.string,
+    aiPluginText: PropTypes.string,
     imgLeft: PropTypes.bool,
     image: PropTypes.string,
     headerText: PropTypes.string,
