@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 import withI18next from "../components/withI18next";
 import Link from '../components/link';
 import {Link as ScrollLink} from "react-scroll";
@@ -99,6 +100,23 @@ class avsFreeImageConverter extends React.PureComponent {
                     <PageContentWrapper>
                         <ContentRowItem
                             id="overview"
+                            imgLeft={false}
+                            imageName={this.props.t("image converter block ai")}
+                            headerText={this.props.t("Use AI-driven effects")}
+                            newText={this.props.t("New")}
+                            showFirstBlockBullets={false}
+                        >
+                            <Text className="ListItem">
+                                <Trans
+                                    i18nKey="Enhance your images with fresh powerful"
+                                    components={[
+                                        <a key="0" target="_blank" href="https://avs4you.github.io" />,
+                                    ]}
+                                />
+                            </Text>
+                        </ContentRowItem>
+
+                        <ContentRowItem
                             imgLeft={true}
                             imageName={this.props.t("image converter block 1")}
                             headerText={this.props.t("Convert from and to popular formats")}
