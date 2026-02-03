@@ -446,14 +446,13 @@ const TextContent = (props, touchDevice) =>
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
-                {props.newText && props.aiPluginText && (
+                {(props.newText || props.aiPluginText) && (
                     <div className="HeaderListItem-wrapper">
                         {props.newText && <Text className="newText" fontSize={18}>{props.newText}</Text>}
                         {props.aiPluginText && <Text className="aiPluginText" fontSize={18}>{props.aiPluginText}</Text>}
                     </div>
                 )}
                 <Text className="HeaderListItem" as={props.asType} color="#000000" fontSize={28}>
-                    {props.newText && !props.aiPluginText && <Text className="newText" fontSize={18}>{props.newText}</Text>}
                     {props.headerText}
                     {props.free && <FreeFlag>{t("Free")}</FreeFlag>}
                 </Text>
