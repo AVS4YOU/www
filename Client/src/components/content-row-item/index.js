@@ -199,6 +199,12 @@ const RowContent = styled.div`
         margin-top: 32px;
     }
 
+    @media (max-width: 768px) {
+        .secondBlockWrapper .HeaderListItem{
+            display: block;
+        }
+    }
+
     .HeaderListItem{
         padding-bottom: 20px;
         display: inline-flex;
