@@ -120,7 +120,7 @@ const RowContent = styled.div`
     }
 
     .ListItem{
-        padding-left: 20px;
+        padding-left: ${props => props.showBullets ? '20px' : '0'};
         padding-bottom: 10px;
         position:relative;
         color:#555555;
@@ -133,14 +133,18 @@ const RowContent = styled.div`
         }
 
         &:before{
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 5px;
-            background-color: #1E72D2;
-            position: absolute;
-            left:0;
-            top: 10px;
+            ${props => props.showBullets ? `
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #1E72D2;
+                position: absolute;
+                left:0;
+                top: 10px;
+            ` : `
+                content: none;
+            `}
         }
 
         &.LinkItem{
@@ -467,7 +471,7 @@ const ContentRowItem = (props) => {
 
     if (props.imgLeft){
         return(
-            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
+            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG} showBullets={props.showBullets}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -477,7 +481,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
+            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG} showBullets={props.showBullets}>
                 {HeaderMobile(props)}
                 <div className="bgOrange mobile">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -502,13 +506,15 @@ ContentRowItem.propTypes = {
     buyButtonLink: PropTypes.string,
     getButtonLink: PropTypes.string,
     translateButtonLink: PropTypes.string,
-    smallButtonLink: PropTypes.string
+    smallButtonLink: PropTypes.string,
+    showBullets: PropTypes.bool
 };
 
 ContentRowItem.defaultProps = {
     free: false,
     asType: "h3",
-    imgLeft: false
+    imgLeft: false,
+    showBullets: true
 };
 
 export default ContentRowItem;
