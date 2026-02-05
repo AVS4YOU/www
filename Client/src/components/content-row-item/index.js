@@ -20,6 +20,17 @@ const RowContent = styled.div`
     display:table;
     width:100%;
 
+    .newText {
+        padding: 4px 10px;
+        color: #fff;
+        background-color: #FE9235;
+        font-weight: 700;
+    }
+
+    .aiPluginText {
+        font-weight: 700;
+    }
+
     .HeaderListItem.mobile, .bgOrange.mobile{
         display:none;
     }
@@ -109,7 +120,6 @@ const RowContent = styled.div`
     }
 
     .ListItem{
-        padding-left: 20px;
         padding-bottom: 10px;
         position:relative;
         color:#555555;
@@ -121,21 +131,10 @@ const RowContent = styled.div`
             font-size:19px;
         }
 
-        &:before{
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 5px;
-            background-color: #1E72D2;
-            position: absolute;
-            left:0;
-            top: 10px;
-        }
-
         &.LinkItem{
             text-decoration:none;
             color: #1E72D2;
-            font-weight: 500;   
+            font-weight: 500;
             font-size: 18px;
 
             &:before{
@@ -158,12 +157,60 @@ const RowContent = styled.div`
         }
     }
 
+    .firstBlockContent .ListItem{
+        padding-left: ${props => props.showFirstBlockBullets ? '20px' : '0'};
+
+        &:before{
+            ${props => props.showFirstBlockBullets ? `
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #1E72D2;
+                position: absolute;
+                left:0;
+                top: 10px;
+            ` : `
+                content: none;
+            `}
+        }
+    }
+
+    .secondBlockContent .ListItem{
+        padding-left: ${props => props.showSecondBlockBullets ? '20px' : '0'};
+
+        &:before{
+            ${props => props.showSecondBlockBullets ? `
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #1E72D2;
+                position: absolute;
+                left:0;
+                top: 10px;
+            ` : `
+                content: none;
+            `}
+        }
+    }
+
+    .secondBlockWrapper{
+        margin-top: 32px;
+    }
+
+    @media (max-width: 768px) {
+        .secondBlockWrapper .HeaderListItem{
+            display: block;
+        }
+    }
+
     .HeaderListItem{
         padding-bottom: 20px;
         display: inline-flex;
         align-items: center;
-        font-weight: 600;
-        gap: 20px;
+        font-weight: 700;
+        gap: 24px;
 
         .firstFlagPartWrapper {
             .firstFlagPart {
@@ -176,6 +223,19 @@ const RowContent = styled.div`
 
         .secondFlagPart {
             display: none;
+        }
+
+        &-wrapper {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 32px;
+
+        }
+
+        &-wrapper.mobile {
+            justify-content: center;
+            margin-bottom: 8px;
         }
     }
 
@@ -280,6 +340,16 @@ const RowContent = styled.div`
 
     @media (max-width: 780px) {
 
+        .HeaderListItem-wrapper {
+            display: none;
+        }
+
+        .HeaderListItem-wrapper.mobile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
         padding-top: 50px;
 
         &:first-child{
@@ -361,6 +431,10 @@ const HeaderMobile = (props) =>
     const { t } = useTranslation('common');
     return(
         <Text className="HeaderListItem mobile" as="h3" color="#000000" fontSize={28}>
+            <div className="HeaderListItem-wrapper mobile">
+                {props.newText && <Text className="newText mobile" fontSize={18}>{props.newText}</Text>}
+                {props.aiPluginText && <Text className="aiPluginText mobile" fontSize={18}>{props.aiPluginText}</Text>}
+            </div>
             <Text className="mobileFreeInfo" as="span">{props.free && t("Free") + " "}</Text> {props.headerText} 
         </Text>
     )
@@ -372,11 +446,30 @@ const TextContent = (props, touchDevice) =>
     return(
         <div className="flexWrapper">
             <div className="tableWrapper">
+                {(props.newText || props.aiPluginText) && (
+                    <div className="HeaderListItem-wrapper">
+                        {props.newText && <Text className="newText" fontSize={18}>{props.newText}</Text>}
+                        {props.aiPluginText && <Text className="aiPluginText" fontSize={18}>{props.aiPluginText}</Text>}
+                    </div>
+                )}
                 <Text className="HeaderListItem" as={props.asType} color="#000000" fontSize={28}>
-                    {props.headerText} 
+                    {props.headerText}
                     {props.free && <FreeFlag>{t("Free")}</FreeFlag>}
                 </Text>
-                {props.children}
+                <div className="firstBlockContent">
+                    {props.children}
+                </div>
+
+                {props.secondHeaderText && (
+                    <div className="secondBlockWrapper">
+                        <Text className="HeaderListItem" as={props.secondAsType || props.asType} color="#000000" fontSize={28}>
+                            {props.secondHeaderText}
+                        </Text>
+                        <div className="secondBlockContent">
+                            {props.secondBlockContent}
+                        </div>
+                    </div>
+                )}
 
                 {touchDevice 
                     ?
@@ -422,7 +515,7 @@ const ContentRowItem = (props) => {
 
     if (props.imgLeft){
         return(
-            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
+            <RowContent className="imgLeft" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG} showFirstBlockBullets={props.showFirstBlockBullets} showSecondBlockBullets={props.showSecondBlockBullets}>
                 {HeaderMobile(props)}
                 <div className="bgBlue">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -432,7 +525,7 @@ const ContentRowItem = (props) => {
         )
     } else {
         return(
-            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG}>
+            <RowContent className="imgRight" id={props.id} touchDevice={touchDevice} disableBG={props.disableBG} showFirstBlockBullets={props.showFirstBlockBullets} showSecondBlockBullets={props.showSecondBlockBullets}>
                 {HeaderMobile(props)}
                 <div className="bgOrange mobile">
                     <ImageGQL className="rowImage" imageName={props.imageName} alt={props.headerText}></ImageGQL>
@@ -447,6 +540,8 @@ const ContentRowItem = (props) => {
 }
 
 ContentRowItem.propTypes = {
+    newText: PropTypes.string,
+    aiPluginText: PropTypes.string,
     imgLeft: PropTypes.bool,
     image: PropTypes.string,
     headerText: PropTypes.string,
@@ -455,13 +550,20 @@ ContentRowItem.propTypes = {
     buyButtonLink: PropTypes.string,
     getButtonLink: PropTypes.string,
     translateButtonLink: PropTypes.string,
-    smallButtonLink: PropTypes.string
+    smallButtonLink: PropTypes.string,
+    showFirstBlockBullets: PropTypes.bool,
+    showSecondBlockBullets: PropTypes.bool,
+    secondHeaderText: PropTypes.string,
+    secondBlockContent: PropTypes.node,
+    secondAsType: PropTypes.string
 };
 
 ContentRowItem.defaultProps = {
     free: false,
     asType: "h3",
-    imgLeft: false
+    imgLeft: false,
+    showFirstBlockBullets: true,
+    showSecondBlockBullets: true
 };
 
 export default ContentRowItem;
