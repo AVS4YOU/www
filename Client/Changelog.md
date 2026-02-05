@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.107 (05.02.2026)
+### New
+* Added new block about ai into `avs-video-editor.aspx`
+* Added new block about ai into `avs-free-video-converter.aspx`
+* Added new block about ai into `avs-free-image-converter.aspx`
+
 ## 1.0.106 (19.01.2026)
 ### New
 * Added X-Frame-Options header to prevent clickjacking attacks
