@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.108 (06.02.2026)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
 ## 1.0.107 (05.02.2026)
 ### New
 * Added new block about ai into `avs-video-editor.aspx`
