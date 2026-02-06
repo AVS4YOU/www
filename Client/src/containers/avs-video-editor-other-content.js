@@ -17,6 +17,7 @@ import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
+import { Trans } from "react-i18next";
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -33,7 +34,7 @@ import awardGetApp from '../images/avs-video-editor/award-getapp.png'
 
 import RightArrow from '../images/common/icons/slider_arrow_right.svg';
 
-const StyledArrow = styled.div`{
+const StyledArrow = styled.div`
 
   .headerArrow {
     background-image: url(${RightArrow});
@@ -55,7 +56,6 @@ const StyledArrow = styled.div`{
       display: none;
     }
   }
-}
 `;
 
 const StyledVideo = styled.div`
@@ -174,8 +174,32 @@ export const AvsVideoEditorOtherContent = (props) => (
   </div>
 
   <PageContentWrapper>
-    <ContentRowItem 
+    <ContentRowItem
         id="overview"
+        imgLeft={false}
+        imageName={props.t("generate video with ai png")}
+        headerText={props.t("Generate video with AI")}
+        newText={props.t("New")}
+        aiPluginText={props.t("AI Plugin")}
+        showFirstBlockBullets={true}
+        secondHeaderText={props.t("Apply AI-driven effects")}
+        showSecondBlockBullets={false}
+        secondBlockContent={
+          <Text className="ListItem">
+            <Trans
+              i18nKey="Expand your creative toolkit with new AI-powered image"
+              components={[
+                <a key="0" target="_blank" href="https://avs4you.github.io" />,
+              ]}
+            />
+          </Text>
+        }
+    >
+      <Text className="ListItem">{props.t("Generate short video clips")}</Text>
+      <Text className="ListItem">{props.t("Create AI generated scenes")}</Text>
+    </ContentRowItem>
+
+    <ContentRowItem 
         imgLeft={true}
         imageName={props.t("video editor slider3 jpg")}
         headerText={props.t("Work with all key formats and HD videos")}    

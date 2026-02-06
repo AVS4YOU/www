@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
@@ -61,8 +62,31 @@ export const AvsVideoConverterCommonContent = (props) => (
   </div>
 
   <PageContentWrapper className="videoConverter">
-    <ContentRowItem 
+    <ContentRowItem
         id="overview"
+        imgLeft={false}
+        asType={props.t("h2")}
+        newText={props.t("New")}
+        imageName={props.t("video converter convert video with ai png")}
+        headerText={props.t("Convert video with AI")}
+        showFirstBlockBullets={false}
+        secondHeaderText={props.t("Add new AI–generated effects")}
+        showSecondBlockBullets={false}
+        secondBlockContent={
+            <Text className="ListItem">
+                <Trans
+                    i18nKey="Add AI-powered image and video effects while preparing your video"
+                    components={[
+                        <a key="0" target="_blank" href="https://avs4you.github.io" />,
+                    ]}
+                />
+            </Text>
+        }
+    >
+        <Text className="ListItem">{props.t("Go from a text idea to a perfectly formatted video")}</Text>
+    </ContentRowItem>
+
+    <ContentRowItem 
         imgLeft={true}
         asType={props.t("h2")}
         imageName={props.t("video converter convert all key2 jpg")}
@@ -154,7 +178,7 @@ export const AvsVideoConverterCommonContent = (props) => (
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>
   </div>
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 14.1</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 26.0</Text>
 
 
   <ScreenshotsCarousel 

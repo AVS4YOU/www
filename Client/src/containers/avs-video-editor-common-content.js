@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 import Link from '../components/link';
 import { Link as ScrollLink } from "react-scroll";
 import Text from '../components/text';
@@ -60,8 +61,32 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
           </div>
 
           <PageContentWrapper>
-            <ContentRowItem 
+            <ContentRowItem
                 id="overview"
+                imgLeft={false}
+                imageName={props.t("generate video with ai png")}
+                headerText={props.t("Generate video with AI")}
+                newText={props.t("New")}
+                aiPluginText={props.t("AI Plugin")}
+                showFirstBlockBullets={true}
+                secondHeaderText={props.t("Apply AI-driven effects")}
+                showSecondBlockBullets={false}
+                secondBlockContent={
+                  <Text className="ListItem">
+                    <Trans
+                      i18nKey="Expand your creative toolkit with new AI-powered image"
+                      components={[
+                        <a key="0" target="_blank" href="https://avs4you.github.io" />,
+                      ]}
+                    />
+                  </Text>
+                }
+            >
+              <Text className="ListItem">{props.t("Generate short video clips")}</Text>
+              <Text className="ListItem">{props.t("Create AI generated scenes")}</Text>
+            </ContentRowItem>
+
+            <ContentRowItem
                 imgLeft={true}
                 imageName={props.t("video editor slider3 jpg")}
                 headerText={props.t("Work with all key formats and HD videos")}    
