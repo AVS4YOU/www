@@ -1,63 +1,63 @@
 let VideoEditor = {
-    version: "11.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "201.45",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "204.82",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoReMaker = {
-    version: "8.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "89.22",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "92.57",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let VideoConverter = {
-    version: "14.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "115.78",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "119.15",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let MediaPlayer = {
-    version: "6.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "151.56",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "154.95",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioEditor = {
-    version: "11.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "79.83",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "83.22",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AudioConverter = {
-    version: "11.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "83.90",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "87.26",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
 let AVSImageConverter = {
-    version: "7.1.4.3",
-    releaseDD: "27",
-    releaseMM: "11",
-    releaseYYYY: "2025",
-    size: "53.43",
+    version: "26.0.1.176",
+    releaseDD: "05",
+    releaseMM: "02",
+    releaseYYYY: "2026",
+    size: "56.81",
     platforms: "Windows 11, 10, 8.1, 8, 7, Vista, XP (no Mac OS/ Linux support)"
 };
 
