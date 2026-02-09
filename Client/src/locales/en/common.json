@@ -1651,9 +1651,10 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "AVS4YOU Valentine Deal! Get <0>25% Off</0> with <0>AVSLove</0> coupon. <1>Get it now!</1>",
-  "beginningBannerMobileHeader": "AVS4YOU Valentine Deal!",
-  "beginningBannerMobileText": "Get <0>25% Off</0> with <0>AVSLove</0> coupon.",
+  "beginningBanner": "Love at first sight - <0>25% Off</0> <1>AVS4YOU software.</1> Don’t miss out!",
+  "beginningBannerMobileHeader": "<0>25% Off</0>",
+  "beginningBannerMobileHeader2": "<1>AVS4YOU software</1>",
+  "beginningBannerMobileText": "Don’t miss out!",
   "beginningBannerSpanText1": "Daily gifts for creators!",
   "beginningBannerSpanText2": "Check Advent Calendar",
   "beginningBannerSpanText3": "and",
@@ -1663,8 +1664,8 @@
   "discountCoupon": "",
   "textBannerContinue": "",
   "endingBanner": "",
-  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
-  "avs pl link gbp": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=GBP&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
+  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Heart25&CLEAN_CART=ALL",
+  "avs pl link gbp": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Heart25&CLEAN_CART=ALL",
 
   "Hot": "Hot",
   "Summer": "Summer",

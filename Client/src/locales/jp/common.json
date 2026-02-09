@@ -1682,7 +1682,10 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "ブラックフライデー のセール！スピンして最大 100% 割引を勝つ！",
+  "beginningBanner": "ひと目惚れの出会い ー <1>AVS4YOUソフトウェアに</1> <0>25％オフ。</0> お見逃しなく！",
+  "beginningBannerMobileHeader": "<1>AVS4YOUソフトウェアに</1>",
+  "beginningBannerMobileHeader2": "<0>25％オフ。</0>",
+  "beginningBannerMobileText": "お見逃しなく！",
   "beginningBannerSpanText1": "お客様へのギフト！",
   "beginningBannerSpanText2": "アドベントカレンダーをチェックして",
   "beginningBannerSpanText3": "",
@@ -1692,7 +1695,7 @@
   "discountCoupon": "",
   "textBannerContinue": "",
   "endingBanner": "今すぐ取得！",
-  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
+  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Heart25&CLEAN_CART=ALL",
 
   "Hot": "夏の",
   "Summer": "特別セール！",

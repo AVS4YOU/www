@@ -1702,7 +1702,10 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "Sonderangebot zum Black Friday! Drehen Sie und gewinnen Sie bis zu 100% Rabatt!",
+  "beginningBanner": "Liebe auf den ersten Blick – <1>erhalten Sie</1> <0>25 %</0> <1>Rabatt auf AVS4YOU!</1>",
+  "beginningBannerMobileHeader": "Liebe auf den ersten Blick –",
+  "beginningBannerMobileHeader2": "<1>erhalten Sie</1> <0>25 % Rabatt</0>",
+  "beginningBannerMobileText": "<1>auf AVS4YOU!</1>",
   "beginningBannerSpanText1": "Tägliche Geschenke für Creators!",
   "beginningBannerSpanText2": "Schauen Sie sich den Adventskalender",
   "beginningBannerSpanText3": "und",
@@ -1712,7 +1715,7 @@
   "discountCoupon": "",
   "textBannerContinue": "",
   "endingBanner": "Erhalten Sie jetzt!",
-  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
+  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Heart25&CLEAN_CART=ALL",
 
   "Hot": "Tolle",
   "Summer": "Sommerangebote!",

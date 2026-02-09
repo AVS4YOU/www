@@ -18,8 +18,8 @@ import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
-import PlAVSbgRightMobile from "../images/pl/pl-bg-left-mobile.svg";
-import PlAVSbg from "../images/pl/black-friday.png";
+import PlAVSbgRightMobile from "../images/pl/pl-bg-right-mobile.svg";
+import PlAVSbg from "../images/pl/pl-bg_en.svg";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
@@ -44,11 +44,15 @@ background: rgba(21, 18, 37, 1);
     /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #FDD3D9;
+    background: linear-gradient(180deg, #B2EDFF 0%, #E9EEEE 50%, #FFE8DE 100%);
 
     @media (max-width: 767px) {
         justify-content: flex-start;
         padding-left: 20px;
+    }
+
+    @media (max-width: 340px) {
+        padding-left: 10px;
     }
   }
   .bgLeft {
@@ -60,11 +64,15 @@ background: rgba(21, 18, 37, 1);
     background-size: cover;
     position: relative;
 
+    @media (max-width: 1440px) {
+        background-position: -100px 0;
+    }
+
     @media (max-width: 767px) {
         display: none;
     }
   }
-  
+
   .bgRight {
     width: 100%;
     background-image: url(${PlAVSbgRight});
@@ -74,12 +82,16 @@ background: rgba(21, 18, 37, 1);
     background-size: cover;
     position: relative;
 
+    @media (max-width: 1440px) {
+    }
+
     @media (max-width: 767px) {
         display: none;
     }
   }
 
     .PL-box {
+        font-family: "Magnolia Script";
         color: #32393E;
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
@@ -92,22 +104,34 @@ background: rgba(21, 18, 37, 1);
         }
 
         .span-text-1 {
-            color: #E86074;
+            font-family: "Poppins";
+            font-weight: 600;
+            color: #CC080B;
         }
 
         .span-text-2 {
-            color: #ffffff;
-            border-radius: 8px;
-            background-color: #E86074;
-            padding: 8px 10px;
+            color: #EE0000;
+            font-family: "Poppins";
         }
     }
 
     .PL-box.mobile {
         display: none;
 
+        br {
+            display: none;
+
+            @media (max-width: 592px) {
+                display: block;
+            }
+        }
+
         @media (max-width: 767px) {
             display: block;
+        }
+
+        @media (max-width: 592px) {
+            text-align: left;
         }
     }
 
@@ -323,7 +347,7 @@ background: rgba(21, 18, 37, 1);
                 content: "";
                 position: absolute;
                 right: 0;
-                width: 108px;
+                width: 154px;
                 height: 60px;
                 background-image: url(${PlAVSbgRightMobile});
                 background-repeat: no-repeat;
@@ -341,28 +365,20 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media screen and (max-width: 592px) {
-        .PLnewAvs{
-
-            &::after {
-                width: 100px;
-                height: 60px;
-            }
-        }
-
         .PLnewAvs.fr{
 
-            &::after {
+            /* &::after {
                 width: 100px;
                 height: 60px;
-            }
+            } */
         }
 
         .PLnewAvs.de{
 
-            &::after {
+            /* &::after {
                 width: 100px;
                 height: 60px;
-            }
+            } */
         }
     }
 `;
@@ -1177,10 +1193,9 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  <a href="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
+                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
                         <div className='bgLeft'></div>
@@ -1198,17 +1213,34 @@ class Layout extends React.PureComponent {
 
                         <div className="PL-box mobile">
                             <div className="PL-desc3 beginningBanner">
-                                <p className="PL-desc3 beginningBanner">
-                                    {this.props.t("beginningBannerMobileHeader")}
-                                </p>
-                                <p className="PL-desc3 beginningBanner">
+                                <span className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileHeader"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
+                                </span>
+                                {" "}
+                                <br />
+                                <span className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileHeader2"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
+                                </span>
+                                {" "}
+                                <br />
+                                <span className="PL-desc3 beginningBanner">
                                     <Trans i18nKey="beginningBannerMobileText"
                                         components={[
                                             <span className="span-text-1" />,
                                             <span className="span-text-2" />
                                         ]}
                                     />
-                                </p>
+                                </span>
                             </div>
                         </div>
 
