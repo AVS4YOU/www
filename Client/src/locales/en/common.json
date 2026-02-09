@@ -1651,7 +1651,9 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "Black Friday Mega Sale! Spin to win up to 100% Off!",
+  "beginningBanner": "AVS4YOU Valentine Deal! Get <0>25% Off</0> with <0>AVSLove</0> coupon. <1>Get it now!</1>",
+  "beginningBannerMobileHeader": "AVS4YOU Valentine Deal!",
+  "beginningBannerMobileText": "Get <0>25% Off</0> with <0>AVSLove</0> coupon.",
   "beginningBannerSpanText1": "Daily gifts for creators!",
   "beginningBannerSpanText2": "Check Advent Calendar",
   "beginningBannerSpanText3": "and",

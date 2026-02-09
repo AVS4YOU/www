@@ -16,18 +16,19 @@ import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/adventcalendarbannerdesktop.gif";
-import PlAVSbgRight from "../images/pl/adventcalendarbannerdesktop.gif";
-import PlAVSbgRightMobile from "../images/pl/adventcalendarbannermobile.gif";
+import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
+import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
+import PlAVSbgRightMobile from "../images/pl/pl-bg-left-mobile.svg";
 import PlAVSbg from "../images/pl/black-friday.png";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
+import { Trans } from 'react-i18next';
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);
@@ -43,18 +44,11 @@ background: rgba(21, 18, 37, 1);
     /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #0D271B;
-
-    /* @media (max-width: 1500px) {
-      background-position: 0% 2.5%;
-    }
-
-    @media (max-width: 1500px) {
-      background-position: -20% 2.5%;
-    } */
+    background-color: #FDD3D9;
 
     @media (max-width: 767px) {
-    justify-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
     }
   }
   .bgLeft {
@@ -62,22 +56,9 @@ background: rgba(21, 18, 37, 1);
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    background-position-x: 0%;
-    max-width: 450px;
-    background-size: auto 60px;
+    max-width: 428px;
+    background-size: cover;
     position: relative;
-
-    @media (max-width: 1440px) {
-        background-position-x: -100px;
-    }
-
-    @media (max-width: 1100px) {
-        background-position-x: -200px;
-    }
-
-    @media (max-width: 900px) {
-        background-position-x: -250px;
-    }
 
     @media (max-width: 767px) {
         display: none;
@@ -87,54 +68,38 @@ background: rgba(21, 18, 37, 1);
   .bgRight {
     width: 100%;
     background-image: url(${PlAVSbgRight});
-    transform: scale(-1, 1);
     background-repeat: no-repeat;
     height: 60px;
-    background-position: 0% 100%;
-    max-width: 450px;
-    background-size: auto 60px;
+    max-width: 428px;
+    background-size: cover;
     position: relative;
-
-    @media (max-width: 1440px) {
-        background-position: -100px 0;
-    }
-
-    @media (max-width: 1100px) {
-        background-position: -200px 0;
-    }
-
-    @media (max-width: 900px) {
-        background-position: -250px 0;
-    }
 
     @media (max-width: 767px) {
         display: none;
     }
   }
-    
+
     .PL-box {
-        height: 100%;
-        color: #FFFFFF; 
+        color: #32393E;
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
-        /* gap: 5px; */
         align-items: center;
         min-width: max-content;
 
+        .PL-desc3.beginningBanner {
+            margin: 0;
+        }
+
         .span-text-1 {
-            
+            color: #E86074;
         }
+
         .span-text-2 {
-            color: #A8E200;
-        }
-        .span-text-3 {
-            margin-right: 5px;
-        }
-        .span-text-4 {
-            color: #A8E200;
-            border: 1px dashed #A8E200;
-            padding: 4px 12px;
+            color: #ffffff;
+            border-radius: 8px;
+            background-color: #E86074;
+            padding: 8px 10px;
         }
     }
 
@@ -142,101 +107,10 @@ background: rgba(21, 18, 37, 1);
         display: none;
 
         @media (max-width: 767px) {
-            display: flex;
-        }
-
-        .PL-desc3 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 18px;
-            padding-left: 12px;
-
-            @media (max-width: 592px) {
-                gap: 8px;
-            }
-        }
-
-        .span-text-1 {
             display: block;
         }
-        .span-text-2 {
-            display: block;
-            color: #A8E200;
-        }
-        .span-text-3 {
-            margin-right: 5px;
-        }
-        .span-text-4 {
-            color: #A8E200;
-            border: 1px dashed #A8E200;
-            padding: 4px 12px;
-        }
-    }
-    
-    .PL-desc1 {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        color: #FFE091; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-    
-    .PL-desc2 {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .PL-desc3 {
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        /* color: #FF3300; */
-        /* margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
-
-        @media (max-width: 1550px) {
-            font-size: 18px;
-        }
     }
 
-    .PL-desc4 {
-        display: none;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        color: #151225;
-        background-color: #F5C867;
-        padding: 4px 16px;
-        border-radius: 0px;
-        margin-left: 10px;
-    }
-    .PL-desc5 {
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        background-size: 100%;
-        padding: 4px 10px 4px;
-        background-repeat: no-repeat;
-        width: max-content;
-        background: #FB5363;
-        color: #FFFFFF;
-    }
     .fr {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
@@ -247,18 +121,6 @@ background: rgba(21, 18, 37, 1);
 
             @media (max-width: 767px) {
                 font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
             }
         }
 
@@ -285,18 +147,6 @@ background: rgba(21, 18, 37, 1);
 
             @media (max-width: 767px) {
                 font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
             }
         }
 
@@ -331,18 +181,6 @@ background: rgba(21, 18, 37, 1);
             }
         }
 
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
         @media (max-width: 520px) {
             .PL-box.mobile .PL-desc3.beginningBanner {
                 font-size: 11px;
@@ -374,18 +212,6 @@ background: rgba(21, 18, 37, 1);
             }
         }
 
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
         @media (max-width: 520px) {
             .PL-box.mobile .PL-desc3.beginningBanner {
                 font-size: 11px;
@@ -408,18 +234,6 @@ background: rgba(21, 18, 37, 1);
 
             @media (max-width: 767px) {
                 font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
             }
         }
 
@@ -509,7 +323,7 @@ background: rgba(21, 18, 37, 1);
                 content: "";
                 position: absolute;
                 right: 0;
-                width: 156px;
+                width: 108px;
                 height: 60px;
                 background-image: url(${PlAVSbgRightMobile});
                 background-repeat: no-repeat;
@@ -1366,41 +1180,36 @@ class Layout extends React.PureComponent {
                   <a href="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
                         <div className='bgLeft'></div>
 
                         <div className="PL-box">
-                            {/* <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p> */}
                             <p className="PL-desc3 beginningBanner">
-                                <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
-                                <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
-                                <span className='span-text-3'>{this.props.t("beginningBannerSpanText3")}</span>{" "}
-                                <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                                <Trans i18nKey="beginningBanner"
+                                    components={[
+                                        <span className="span-text-1" />,
+                                        <span className="span-text-2" />
+                                    ]}
+                                />
                             </p>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
 
                         <div className="PL-box mobile">
                             <div className="PL-desc3 beginningBanner">
-                                <p>
-                                    <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
-                                    <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
+                                <p className="PL-desc3 beginningBanner">
+                                    {this.props.t("beginningBannerMobileHeader")}
                                 </p>
-                                <p>
-                                    <span className='span-text-ampersand'>&</span>{" "}
-                                </p>
-                                <p>
-                                    <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                                <p className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileText"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
                                 </p>
                             </div>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
 
                         <div className='bgRight'></div>
