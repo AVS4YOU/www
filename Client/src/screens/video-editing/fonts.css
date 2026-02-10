@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Magnolia Script';
-    src: url('./fonts/Magnolia-Script.woff2') format('woff2'),
-    url('./fonts/Magnolia-Script.woff2') format('woff2');
+    src: url('./fonts/magnolia-script.woff2') format('woff2'),
+    url('./fonts/magnolia-script.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
-    url('./fonts/Poppins-Regular.woff2') format('woff2');
+    src: url('./fonts/poppins-regular.woff2') format('woff2'),
+    url('./fonts/poppins-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./fonts/Poppins-Semibold.woff2') format('woff2'),
-    url('./fonts/Poppins-Semibold.woff2') format('woff2');
+    src: url('./fonts/poppins-semibold.woff2') format('woff2'),
+    url('./fonts/poppins-semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;

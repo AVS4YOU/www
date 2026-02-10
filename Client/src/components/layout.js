@@ -178,8 +178,12 @@ background: rgba(21, 18, 37, 1);
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
+
+        .PL-desc3.beginningBanner {
+            font-family: "Poppins";
+        }
     }
-    
+
     .beginningBanner {
         grid-area: beginningBanner;
     }
