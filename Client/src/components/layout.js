@@ -40,11 +40,12 @@ background: rgba(21, 18, 37, 1);
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
     background: linear-gradient(180deg, #B2EDFF 0%, #E9EEEE 50%, #FFE8DE 100%);
+    position: relative;
 
     @media (max-width: 767px) {
         justify-content: flex-start;
@@ -62,14 +63,35 @@ background: rgba(21, 18, 37, 1);
     background-repeat: no-repeat;
     max-width: 428px;
     background-size: cover;
-    position: relative;
+    position: absolute;
+    left: 0;
+
+    @media (max-width: 1680px) {
+        background-position: -100px 0;
+    }
 
     @media (max-width: 1440px) {
         background-position: -100px 0;
     }
 
-    @media (max-width: 1000px) {
-        background-position: -200px 0;
+    @media (max-width: 1300px) {
+        background-position: -120px 0;
+    }
+
+    @media (max-width: 1124px) {
+        background-position: -135px 0;
+    }
+
+    @media (max-width: 1024px) {
+        background-position: -205px 0;
+    }
+
+    @media (max-width: 880px) {
+        background-position: -225px 0;
+    }
+
+    @media (max-width: 830px) {
+        background-position: -250px 0;
     }
 
     @media (max-width: 767px) {
@@ -84,7 +106,36 @@ background: rgba(21, 18, 37, 1);
     height: 60px;
     max-width: 428px;
     background-size: cover;
-    position: relative;
+    position: absolute;
+    right: 0;
+
+    @media (max-width: 1680px) {
+        background-position: 100px 0;
+    }
+
+    @media (max-width: 1440px) {
+        background-position: 100px 0;
+    }
+
+    @media (max-width: 1300px) {
+        background-position: 120px 0;
+    }
+
+    @media (max-width: 1124px) {
+        background-position: 135px 0;
+    }
+
+    @media (max-width: 1024px) {
+        background-position: 205px 0;
+    }
+
+    @media (max-width: 880px) {
+        background-position: 225px 0;
+    }
+
+    @media (max-width: 830px) {
+        background-position: 250px 0;
+    }
 
     @media (max-width: 767px) {
         display: none;
@@ -100,6 +151,7 @@ background: rgba(21, 18, 37, 1);
         align-items: center;
         min-width: max-content;
         font-size: 1.4583vw;
+        z-index: 6;
 
         .PL-desc3.beginningBanner {
             margin: 0;
@@ -181,6 +233,14 @@ background: rgba(21, 18, 37, 1);
 
         .PL-desc3.beginningBanner {
             font-family: "Poppins";
+
+            @media (max-width: 1600px) {
+                font-size: 1.2583vw;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -246,7 +306,7 @@ background: rgba(21, 18, 37, 1);
     
     @media screen and (max-width: 767px) {
         .PLnewAvs{
-            /* display: none; */
+            display: none;
 
             .PL-box.mobile {
                 position: relative;
