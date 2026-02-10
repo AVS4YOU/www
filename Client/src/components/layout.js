@@ -68,6 +68,10 @@ background: rgba(21, 18, 37, 1);
         background-position: -100px 0;
     }
 
+    @media (max-width: 1000px) {
+        background-position: -200px 0;
+    }
+
     @media (max-width: 767px) {
         display: none;
     }
@@ -82,9 +86,6 @@ background: rgba(21, 18, 37, 1);
     background-size: cover;
     position: relative;
 
-    @media (max-width: 1440px) {
-    }
-
     @media (max-width: 767px) {
         display: none;
     }
@@ -98,6 +99,7 @@ background: rgba(21, 18, 37, 1);
         width: max-content;
         align-items: center;
         min-width: max-content;
+        font-size: 1.4583vw;
 
         .PL-desc3.beginningBanner {
             margin: 0;
@@ -112,6 +114,10 @@ background: rgba(21, 18, 37, 1);
         .span-text-2 {
             color: #EE0000;
             font-family: "Poppins";
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 18px;
         }
     }
 
@@ -139,51 +145,11 @@ background: rgba(21, 18, 37, 1);
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
-        }
     }
 
     .de {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
         }
     }
     .es {
@@ -194,26 +160,6 @@ background: rgba(21, 18, 37, 1);
             .PL-desc1 {
                 margin-left: 5px;
                 margin-right: 5px;
-            }
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
             }
         }
     }
@@ -227,50 +173,10 @@ background: rgba(21, 18, 37, 1);
                 margin-right: 5px;
             }
         }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
-        }
     }
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
         }
     }
     
@@ -322,7 +228,7 @@ background: rgba(21, 18, 37, 1);
         
         .PL-desc3 {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 19px;
             width: max-content;
         }
