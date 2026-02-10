@@ -66,32 +66,32 @@ background: rgba(21, 18, 37, 1);
     position: absolute;
     left: 0;
 
-    @media (max-width: 1680px) {
+    @media (max-width: 1800px) {
         background-position: -100px 0;
     }
 
     @media (max-width: 1440px) {
-        background-position: -100px 0;
-    }
-
-    @media (max-width: 1300px) {
         background-position: -120px 0;
     }
 
+    @media (max-width: 1300px) {
+        background-position: -150px 0;
+    }
+
     @media (max-width: 1124px) {
-        background-position: -135px 0;
+        background-position: -175px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: -205px 0;
+        background-position: -220px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: -225px 0;
+        background-position: -250px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: -250px 0;
+        background-position: -275px 0;
     }
 
     @media (max-width: 767px) {
@@ -109,32 +109,32 @@ background: rgba(21, 18, 37, 1);
     position: absolute;
     right: 0;
 
-    @media (max-width: 1680px) {
+    @media (max-width: 1800px) {
         background-position: 100px 0;
     }
 
     @media (max-width: 1440px) {
-        background-position: 100px 0;
-    }
-
-    @media (max-width: 1300px) {
         background-position: 120px 0;
     }
 
+    @media (max-width: 1300px) {
+        background-position: 150px 0;
+    }
+
     @media (max-width: 1124px) {
-        background-position: 135px 0;
+        background-position: 175px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: 205px 0;
+        background-position: 220px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: 225px 0;
+        background-position: 250px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: 250px 0;
+        background-position: 275px 0;
     }
 
     @media (max-width: 767px) {
@@ -150,7 +150,7 @@ background: rgba(21, 18, 37, 1);
         width: max-content;
         align-items: center;
         min-width: max-content;
-        font-size: 1.4583vw;
+        font-size: 28px;
         z-index: 6;
 
         .PL-desc3.beginningBanner {
@@ -166,6 +166,10 @@ background: rgba(21, 18, 37, 1);
         .span-text-2 {
             color: #EE0000;
             font-family: "Poppins";
+        }
+
+        @media (max-width: 1920px) {
+            font-size: 1.4583vw;
         }
 
         @media (max-width: 1200px) {
