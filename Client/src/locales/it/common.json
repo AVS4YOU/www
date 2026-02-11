@@ -1661,7 +1661,10 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "Mega Saldi del Black Friday! Gira la ruota per vincere fino al 100% di sconto!",
+  "beginningBanner": "Amore a prima vista: <0>25% di sconto</0> <1>sul software AVS4YOU.</1> Ottienilo ora!",
+  "beginningBannerMobileHeader": "<0>25% di sconto</0>",
+  "beginningBannerMobileHeader2": "<1>sul software AVS4YOU</1>",
+  "beginningBannerMobileText": "Ottienilo ora!",
   "beginningBannerSpanText1": "Regali esclusivi ogni giorno!",
   "beginningBannerSpanText2": "Scopri il Calendario dell'Avvento",
   "beginningBannerSpanText3": "e",
@@ -1671,7 +1674,7 @@
   "discountCoupon": "",
   "textBannerContinue": "",
   "endingBanner": "Approfittane subito!",
-  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Pumpkin25&CLEAN_CART=ALL",
+  "avs pl link": "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Heart25&CLEAN_CART=ALL",
 
   "Hot": "Offerte",
   "Summer": "estivi!",

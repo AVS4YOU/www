@@ -16,18 +16,19 @@ import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
 import Text from "../components/text";
 
-import PlAVSbgLeft from "../images/pl/adventcalendarbannerdesktop.gif";
-import PlAVSbgRight from "../images/pl/adventcalendarbannerdesktop.gif";
-import PlAVSbgRightMobile from "../images/pl/adventcalendarbannermobile.gif";
-import PlAVSbg from "../images/pl/black-friday.png";
+import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
+import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
+import PlAVSbgRightMobile from "../images/pl/pl-bg-right-mobile.svg";
+import PlAVSbg from "../images/pl/pl-bg_en.svg";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
+import { Trans } from 'react-i18next';
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);
@@ -39,22 +40,20 @@ background: rgba(21, 18, 37, 1);
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #0D271B;
-
-    /* @media (max-width: 1500px) {
-      background-position: 0% 2.5%;
-    }
-
-    @media (max-width: 1500px) {
-      background-position: -20% 2.5%;
-    } */
+    background: linear-gradient(180deg, #B2EDFF 0%, #E9EEEE 50%, #FFE8DE 100%);
+    position: relative;
 
     @media (max-width: 767px) {
-    justify-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 340px) {
+        padding-left: 10px;
     }
   }
   .bgLeft {
@@ -62,254 +61,151 @@ background: rgba(21, 18, 37, 1);
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    background-position-x: 0%;
-    max-width: 450px;
-    background-size: auto 60px;
-    position: relative;
+    max-width: 428px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
 
-    @media (max-width: 1440px) {
-        background-position-x: -100px;
-    }
-
-    @media (max-width: 1100px) {
-        background-position-x: -200px;
-    }
-
-    @media (max-width: 900px) {
-        background-position-x: -250px;
-    }
-
-    @media (max-width: 767px) {
-        display: none;
-    }
-  }
-  
-  .bgRight {
-    width: 100%;
-    background-image: url(${PlAVSbgRight});
-    transform: scale(-1, 1);
-    background-repeat: no-repeat;
-    height: 60px;
-    background-position: 0% 100%;
-    max-width: 450px;
-    background-size: auto 60px;
-    position: relative;
-
-    @media (max-width: 1440px) {
+    @media (max-width: 1800px) {
         background-position: -100px 0;
     }
 
-    @media (max-width: 1100px) {
-        background-position: -200px 0;
+    @media (max-width: 1440px) {
+        background-position: -120px 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1300px) {
+        background-position: -150px 0;
+    }
+
+    @media (max-width: 1124px) {
+        background-position: -175px 0;
+    }
+
+    @media (max-width: 1024px) {
+        background-position: -220px 0;
+    }
+
+    @media (max-width: 880px) {
         background-position: -250px 0;
+    }
+
+    @media (max-width: 830px) {
+        background-position: -275px 0;
     }
 
     @media (max-width: 767px) {
         display: none;
     }
   }
-    
+
+  .bgRight {
+    width: 100%;
+    background-image: url(${PlAVSbgRight});
+    background-repeat: no-repeat;
+    height: 60px;
+    max-width: 428px;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+
+    @media (max-width: 1800px) {
+        background-position: 100px 0;
+    }
+
+    @media (max-width: 1440px) {
+        background-position: 120px 0;
+    }
+
+    @media (max-width: 1300px) {
+        background-position: 150px 0;
+    }
+
+    @media (max-width: 1124px) {
+        background-position: 175px 0;
+    }
+
+    @media (max-width: 1024px) {
+        background-position: 220px 0;
+    }
+
+    @media (max-width: 880px) {
+        background-position: 250px 0;
+    }
+
+    @media (max-width: 830px) {
+        background-position: 275px 0;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+  }
+
     .PL-box {
-        height: 100%;
-        color: #FFFFFF; 
+        font-family: "Magnolia Script";
+        color: #32393E;
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
-        /* gap: 5px; */
         align-items: center;
         min-width: max-content;
+        font-size: 28px;
+        z-index: 6;
+
+        .PL-desc3.beginningBanner {
+            margin: 0;
+        }
 
         .span-text-1 {
-            
+            font-family: "Poppins";
+            font-weight: 600;
+            color: #CC080B;
         }
+
         .span-text-2 {
-            color: #A8E200;
+            color: #EE0000;
+            font-family: "Poppins";
         }
-        .span-text-3 {
-            margin-right: 5px;
+
+        @media (max-width: 1920px) {
+            font-size: 1.4583vw;
         }
-        .span-text-4 {
-            color: #A8E200;
-            border: 1px dashed #A8E200;
-            padding: 4px 12px;
+
+        @media (max-width: 1200px) {
+            font-size: 18px;
         }
     }
 
     .PL-box.mobile {
         display: none;
 
-        @media (max-width: 767px) {
-            display: flex;
-        }
-
-        .PL-desc3 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 18px;
-            padding-left: 12px;
+        br {
+            display: none;
 
             @media (max-width: 592px) {
-                gap: 8px;
+                display: block;
             }
         }
 
-        .span-text-1 {
+        @media (max-width: 767px) {
             display: block;
         }
-        .span-text-2 {
-            display: block;
-            color: #A8E200;
-        }
-        .span-text-3 {
-            margin-right: 5px;
-        }
-        .span-text-4 {
-            color: #A8E200;
-            border: 1px dashed #A8E200;
-            padding: 4px 12px;
-        }
-    }
-    
-    .PL-desc1 {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        color: #FFE091; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-    
-    .PL-desc2 {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .PL-desc3 {
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        /* color: #FF3300; */
-        /* margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
 
-        @media (max-width: 1550px) {
-            font-size: 18px;
+        @media (max-width: 592px) {
+            text-align: left;
         }
     }
 
-    .PL-desc4 {
-        display: none;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        color: #151225;
-        background-color: #F5C867;
-        padding: 4px 16px;
-        border-radius: 0px;
-        margin-left: 10px;
-    }
-    .PL-desc5 {
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0;
-        background-size: 100%;
-        padding: 4px 10px 4px;
-        background-repeat: no-repeat;
-        width: max-content;
-        background: #FB5363;
-        color: #FFFFFF;
-    }
     .fr {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
         }
     }
 
     .de {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
         }
     }
     .es {
@@ -320,38 +216,6 @@ background: rgba(21, 18, 37, 1);
             .PL-desc1 {
                 margin-left: 5px;
                 margin-right: 5px;
-            }
-        }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
             }
         }
     }
@@ -365,38 +229,6 @@ background: rgba(21, 18, 37, 1);
                 margin-right: 5px;
             }
         }
-
-        .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
-
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
-            }
-
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
-            }
-        }
     }
     .jp {
         .PL-box {
@@ -404,38 +236,18 @@ background: rgba(21, 18, 37, 1);
         }
 
         .PL-desc3.beginningBanner {
-            font-size: 1.2vw;
+            font-family: "Poppins";
 
-            @media (max-width: 767px) {
-                font-size: 13px;
-            }
-        }
-
-        .bgLeft, .bgRight {
-            background-position-x: -100px;
-
-            @media (max-width: 1520px) {
-                background-position-x: -200px;
+            @media (max-width: 1600px) {
+                font-size: 1.2583vw;
             }
 
-            @media (max-width: 1000px) {
-                background-position-x: -250px;
-            }
-        }
-
-        @media (max-width: 520px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 11px;
-            }
-        }
-
-        @media (max-width: 450px) {
-            .PL-box.mobile .PL-desc3.beginningBanner {
-                font-size: 9px;
+            @media (max-width: 1200px) {
+                font-size: 14px;
             }
         }
     }
-    
+
     .beginningBanner {
         grid-area: beginningBanner;
     }
@@ -484,7 +296,7 @@ background: rgba(21, 18, 37, 1);
         
         .PL-desc3 {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 19px;
             width: max-content;
         }
@@ -498,7 +310,7 @@ background: rgba(21, 18, 37, 1);
     
     @media screen and (max-width: 767px) {
         .PLnewAvs{
-            /* display: none; */
+            display: none;
 
             .PL-box.mobile {
                 position: relative;
@@ -509,7 +321,7 @@ background: rgba(21, 18, 37, 1);
                 content: "";
                 position: absolute;
                 right: 0;
-                width: 156px;
+                width: 154px;
                 height: 60px;
                 background-image: url(${PlAVSbgRightMobile});
                 background-repeat: no-repeat;
@@ -527,28 +339,20 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media screen and (max-width: 592px) {
-        .PLnewAvs{
-
-            &::after {
-                width: 100px;
-                height: 60px;
-            }
-        }
-
         .PLnewAvs.fr{
 
-            &::after {
+            /* &::after {
                 width: 100px;
                 height: 60px;
-            }
+            } */
         }
 
         .PLnewAvs.de{
 
-            &::after {
+            /* &::after {
                 width: 100px;
                 height: 60px;
-            }
+            } */
         }
     }
 `;
@@ -1363,44 +1167,55 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  <a href="/advent-calendar.aspx" style={{textDecoration: 'none'}}>
                   {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-
-                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
+                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
                         <div className='bgLeft'></div>
 
                         <div className="PL-box">
-                            {/* <p className="PL-desc3 beginningBanner">{this.props.t("beginningBanner")}</p> */}
                             <p className="PL-desc3 beginningBanner">
-                                <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
-                                <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
-                                <span className='span-text-3'>{this.props.t("beginningBannerSpanText3")}</span>{" "}
-                                <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
+                                <Trans i18nKey="beginningBanner"
+                                    components={[
+                                        <span className="span-text-1" />,
+                                        <span className="span-text-2" />
+                                    ]}
+                                />
                             </p>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
 
                         <div className="PL-box mobile">
                             <div className="PL-desc3 beginningBanner">
-                                <p>
-                                    <span className='span-text-1'>{this.props.t("beginningBannerSpanText1")}</span>{" "}
-                                    <span className='span-text-2'>{this.props.t("beginningBannerSpanText2")}</span>{" "}
-                                </p>
-                                <p>
-                                    <span className='span-text-ampersand'>&</span>{" "}
-                                </p>
-                                <p>
-                                    <span className='span-text-4'>{this.props.t("beginningBannerSpanText4")}</span>
-                                </p>
+                                <span className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileHeader"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
+                                </span>
+                                {" "}
+                                <br />
+                                <span className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileHeader2"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
+                                </span>
+                                {" "}
+                                <br />
+                                <span className="PL-desc3 beginningBanner">
+                                    <Trans i18nKey="beginningBannerMobileText"
+                                        components={[
+                                            <span className="span-text-1" />,
+                                            <span className="span-text-2" />
+                                        ]}
+                                    />
+                                </span>
                             </div>
-                            <p className="PL-desc1 colorBanner">{this.props.t("colorBanner")}</p>
-                            <p className="PL-desc3 textBanner">{this.props.t("textBanner")}</p>
-                            <p className="PL-desc4 endingBanner">{this.props.t("endingBanner")}</p>
                         </div>
 
                         <div className='bgRight'></div>
