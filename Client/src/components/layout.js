@@ -71,7 +71,7 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1440px) {
-        background-position: -120px 0;
+        background-position: -160px 0;
     }
 
     @media (max-width: 1300px) {
@@ -79,19 +79,19 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1124px) {
-        background-position: -240px 0;
+        background-position: -300px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: -280px 0;
+        background-position: -350px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: -320px 0;
+        background-position: -380px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: -360px 0;
+        background-position: -400px 0;
     }
 
     @media (max-width: 767px) {
@@ -114,7 +114,7 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1440px) {
-        background-position: 120px 0;
+        background-position: 160px 0;
     }
 
     @media (max-width: 1300px) {
@@ -122,19 +122,19 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1124px) {
-        background-position: 240px 0;
+        background-position: 300px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: 280px 0;
+        background-position: 350px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: 320px 0;
+        background-position: 380px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: 360px 0;
+        background-position: 400px 0;
     }
 
     @media (max-width: 767px) {
@@ -145,6 +145,7 @@ background: rgba(21, 18, 37, 1);
     .PL-box {
         font-family: "Montserrat";
         font-weight: 500;
+        text-transform: uppercase;
         color: #FFFFFF;
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
