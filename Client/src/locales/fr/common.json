@@ -1696,7 +1696,7 @@
 
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
-  "beginningBanner": "<0>AI</0>-POWERED",
+  "beginningBanner": "Alimenté par <0>l'IA</0>",
   "beginningBannerMobileHeader": "<0>25 % de réduction</0>",
   "beginningBannerMobileHeader2": "<1>sur le logiciel AVS4YOU</1>",
   "beginningBannerMobileText": "Ne manquez pas !",
