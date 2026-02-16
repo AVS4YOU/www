@@ -44,7 +44,7 @@ background: rgba(21, 18, 37, 1);
     /* background-image: url(${PlAVSbg}); */
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient(180deg, #B2EDFF 0%, #E9EEEE 50%, #FFE8DE 100%);
+    background: radial-gradient(50% 475.32% at 50% 50%, #771DB2 0%, #00059F 73.03%);
     position: relative;
 
     @media (max-width: 767px) {
@@ -61,7 +61,7 @@ background: rgba(21, 18, 37, 1);
     height: 60px;
     background-image: url(${PlAVSbgLeft});
     background-repeat: no-repeat;
-    max-width: 428px;
+    max-width: 637px;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -71,27 +71,27 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1440px) {
-        background-position: -120px 0;
+        background-position: -160px 0;
     }
 
     @media (max-width: 1300px) {
-        background-position: -150px 0;
+        background-position: -190px 0;
     }
 
     @media (max-width: 1124px) {
-        background-position: -175px 0;
+        background-position: -300px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: -220px 0;
+        background-position: -350px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: -250px 0;
+        background-position: -380px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: -275px 0;
+        background-position: -400px 0;
     }
 
     @media (max-width: 767px) {
@@ -104,7 +104,7 @@ background: rgba(21, 18, 37, 1);
     background-image: url(${PlAVSbgRight});
     background-repeat: no-repeat;
     height: 60px;
-    max-width: 428px;
+    max-width: 644px;
     background-size: cover;
     position: absolute;
     right: 0;
@@ -114,27 +114,27 @@ background: rgba(21, 18, 37, 1);
     }
 
     @media (max-width: 1440px) {
-        background-position: 120px 0;
+        background-position: 160px 0;
     }
 
     @media (max-width: 1300px) {
-        background-position: 150px 0;
+        background-position: 190px 0;
     }
 
     @media (max-width: 1124px) {
-        background-position: 175px 0;
+        background-position: 300px 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: 220px 0;
+        background-position: 350px 0;
     }
 
     @media (max-width: 880px) {
-        background-position: 250px 0;
+        background-position: 380px 0;
     }
 
     @media (max-width: 830px) {
-        background-position: 275px 0;
+        background-position: 400px 0;
     }
 
     @media (max-width: 767px) {
@@ -143,14 +143,16 @@ background: rgba(21, 18, 37, 1);
   }
 
     .PL-box {
-        font-family: "Magnolia Script";
-        color: #32393E;
+        font-family: "Montserrat";
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #FFFFFF;
         display: inline-flex;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
         align-items: center;
         min-width: max-content;
-        font-size: 28px;
+        font-size: 40px;
         z-index: 6;
 
         .PL-desc3.beginningBanner {
@@ -158,9 +160,9 @@ background: rgba(21, 18, 37, 1);
         }
 
         .span-text-1 {
-            font-family: "Poppins";
-            font-weight: 600;
-            color: #CC080B;
+            font-family: "Montserrat";
+            font-weight: 800;
+            color: #FFFFFF;
         }
 
         .span-text-2 {
@@ -169,7 +171,7 @@ background: rgba(21, 18, 37, 1);
         }
 
         @media (max-width: 1920px) {
-            font-size: 1.4583vw;
+            font-size: 2.08333333vw;
         }
 
         @media (max-width: 1200px) {
@@ -294,12 +296,12 @@ background: rgba(21, 18, 37, 1);
             width: max-content;
         }
         
-        .PL-desc3 {
+        /* .PL-desc3 {
             font-size: 13px;
             font-weight: 400;
             line-height: 19px;
             width: max-content;
-        }
+        } */
 
         .PL-desc4 {
             font-size: 13px;
@@ -1167,9 +1169,9 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  {/* <a href="/summer-sale.aspx" style={{textDecoration: 'none'}}> */}
+                  <a href="https://avs4you.github.io" style={{textDecoration: 'none'}}>
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
-                  <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}>
+                  {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
                         <div className='bgLeft'></div>
@@ -1185,7 +1187,7 @@ class Layout extends React.PureComponent {
                             </p>
                         </div>
 
-                        <div className="PL-box mobile">
+                        {/* <div className="PL-box mobile">
                             <div className="PL-desc3 beginningBanner">
                                 <span className="PL-desc3 beginningBanner">
                                     <Trans i18nKey="beginningBannerMobileHeader"
@@ -1216,7 +1218,7 @@ class Layout extends React.PureComponent {
                                     />
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className='bgRight'></div>
 
