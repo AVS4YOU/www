@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.110 (16.02.2026)
+### New
+* Removed banner "Valentine's day"
+* Add banner "AI-POWERED"
+
 ## 1.0.109 (10.02.2026)
 ### New
 * Add banner "Valentine's day"
