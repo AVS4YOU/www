@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.111 (20.02.2026)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
 ## 1.0.110 (16.02.2026)
 ### New
 * Removed banner "Valentine's day"
