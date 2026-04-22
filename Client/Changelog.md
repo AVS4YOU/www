@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.112 (22.04.2026)
+### Fixes
+* Update quality of ai-block image at `avs-video-editor.aspx`
+* Update quality of ai-block image at `avs-free-video-converter.aspx`
+* Update quality of ai-block image at `avs-free-image-converter.aspx`
+
 ## 1.0.111 (20.02.2026)
 ### New
 * Changed products info (version, date, file size)
