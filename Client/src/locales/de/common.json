@@ -1703,6 +1703,7 @@
   "*****************************EVENTS********************************": "*****************************EVENTS********************************",
 
   "beginningBanner": "<0>KI</0>-gestützt",
+  "backToSchoolBanner": "<0>Sonderangebot zum Schulanfang:</0> <1>25 % Rabatt auf Ihr kreatives Toolkit!</1>",
   "beginningBannerMobileHeader": "Liebe auf den ersten Blick –",
   "beginningBannerMobileHeader2": "<1>erhalten Sie</1> <0>25 % Rabatt</0>",
   "beginningBannerMobileText": "<1>auf AVS4YOU!</1>",

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.113 (03.09.2026)
+### New
+* Remove banner "AI-POWERED"
+* Add banner "Back to school"
+
 ## 1.0.112 (22.04.2026)
 ### Fixes
 * Update quality of ai-block image at `avs-video-editor.aspx`
