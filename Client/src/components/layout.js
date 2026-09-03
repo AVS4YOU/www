@@ -230,7 +230,7 @@ background: rgba(21, 18, 37, 1);
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-            font-family: "Segoe UI";
+            font-family: "Segoe UI", sans-serif;
             font-weight: 900;
             min-width: 810px;
             justify-content: center;
@@ -246,21 +246,23 @@ background: rgba(21, 18, 37, 1);
             }
 
             .span-text-1, .span-text-2 {
-                font-family: "Segoe UI";
+                font-family: "Segoe UI", sans-serif;
                 font-weight: 900;
             }
         }
 
         .PL-box.mobile {
-            font-family: "Segoe UI";
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 900;
 
             .span-text-1, .span-text-2 {
-                font-family: "Segoe UI";
+                font-family: "Segoe UI", sans-serif;
+                font-weight: 900;
             }
         }
 
         .PL-desc3.beginningBanner {
-            font-family: "Segoe UI";
+            font-family: "Segoe UI", sans-serif;
             font-weight: 900;
 
             @media (max-width: 1200px) {
