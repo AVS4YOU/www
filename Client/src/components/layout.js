@@ -18,14 +18,30 @@ import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
-import PlAVSbgRightMobile from "../images/pl/pl-bg-right-mobile.svg";
 import PlAVSbg from "../images/pl/pl-bg_en.svg";
+import BackToSchoolBgLeaves from "../images/back-to-school/back-to-school-bg-left.svg";
+import BackToSchoolBgMobile from "../images/back-to-school/back-to-school-bg-mobile.svg";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
 import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 import { Trans } from 'react-i18next';
+
+const backToSchoolBannerLinks = {
+    en: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    fr: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    de: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    es: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    it: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    jp: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    nl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    pt: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    pl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=pl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    zh: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zh&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    da: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=da&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+    ko: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=KRW&LANGUAGES=ko&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+};
 
 const StyledPL = styled.div`
 /* display: none; */
@@ -36,123 +52,91 @@ background: rgba(21, 18, 37, 1);
   .PLnewAvs {
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 64px;
     cursor: pointer;
     font-family: Open Sans, sans-serif;
     align-items: center;
     justify-content: center;
-    /* background-image: url(${PlAVSbg}); */
+    gap: 32px;
     background-position: center;
     background-repeat: no-repeat;
-    background: radial-gradient(50% 475.32% at 50% 50%, #771DB2 0%, #00059F 73.03%);
+    background: radial-gradient(29.45% 121.78% at 50% 50%, #FEFEFE 0%, #FFF7F1 100%);
     position: relative;
+    overflow: hidden;
 
-    @media (max-width: 767px) {
-        justify-content: flex-start;
-        padding-left: 20px;
-    }
-
-    @media (max-width: 340px) {
-        padding-left: 10px;
+    @media (max-width: 1024px) {
+        justify-content: space-between;
+        gap: 8px;
+        padding-left: 16px;
+        background: radial-gradient(35.94% 148.6% at 21.72% 50%, #FEFEFE 0%, #FFF7F1 100%);
     }
   }
   .bgLeft {
-    width: 100%;
-    height: 60px;
-    background-image: url(${PlAVSbgLeft});
+    flex-shrink: 0;
+    width: 364px;
+    height: 64px;
+    background-image: url(${BackToSchoolBgLeaves});
     background-repeat: no-repeat;
-    max-width: 637px;
     background-size: cover;
-    position: absolute;
-    left: 0;
 
-    @media (max-width: 1800px) {
-        background-position: -100px 0;
-    }
-
-    @media (max-width: 1440px) {
-        background-position: -160px 0;
-    }
-
-    @media (max-width: 1300px) {
-        background-position: -190px 0;
-    }
-
-    @media (max-width: 1124px) {
-        background-position: -300px 0;
+    @media (min-width: 1600px) {
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: -350px 0;
-    }
-
-    @media (max-width: 880px) {
-        background-position: -380px 0;
-    }
-
-    @media (max-width: 830px) {
-        background-position: -400px 0;
-    }
-
-    @media (max-width: 767px) {
         display: none;
     }
   }
 
   .bgRight {
-    width: 100%;
-    background-image: url(${PlAVSbgRight});
+    flex-shrink: 0;
+    width: 364px;
+    height: 64px;
+    background-image: url(${BackToSchoolBgLeaves});
     background-repeat: no-repeat;
-    height: 60px;
-    max-width: 644px;
     background-size: cover;
-    position: absolute;
-    right: 0;
+    transform: scaleX(-1);
 
-    @media (max-width: 1800px) {
-        background-position: 100px 0;
-    }
-
-    @media (max-width: 1440px) {
-        background-position: 160px 0;
-    }
-
-    @media (max-width: 1300px) {
-        background-position: 190px 0;
-    }
-
-    @media (max-width: 1124px) {
-        background-position: 300px 0;
+    @media (min-width: 1600px) {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     @media (max-width: 1024px) {
-        background-position: 350px 0;
-    }
-
-    @media (max-width: 880px) {
-        background-position: 380px 0;
-    }
-
-    @media (max-width: 830px) {
-        background-position: 400px 0;
-    }
-
-    @media (max-width: 767px) {
         display: none;
     }
   }
 
+  .bgRightMobile {
+    display: none;
+    flex-shrink: 0;
+    width: 100px;
+    height: 64px;
+    background-image: url(${BackToSchoolBgMobile});
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
+  }
+
     .PL-box {
-        font-family: "Montserrat";
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #FFFFFF;
+        font-family: "Permanent Marker";
+        font-weight: 400;
+        text-transform: none;
+        color: #FE9235;
         display: inline-flex;
+        flex-shrink: 0;
+        white-space: nowrap;
         grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
         width: max-content;
         align-items: center;
         min-width: max-content;
-        font-size: 40px;
+        font-size: 28px;
         z-index: 6;
 
         .PL-desc3.beginningBanner {
@@ -160,42 +144,53 @@ background: rgba(21, 18, 37, 1);
         }
 
         .span-text-1 {
-            font-family: "Montserrat";
-            font-weight: 800;
-            color: #FFFFFF;
+            font-family: "Permanent Marker";
+            font-weight: 400;
+            color: #32393E;
         }
 
         .span-text-2 {
-            color: #EE0000;
-            font-family: "Poppins";
-        }
-
-        @media (max-width: 1920px) {
-            font-size: 2.08333333vw;
+            color: #FE9235;
+            font-family: "Permanent Marker";
         }
 
         @media (max-width: 1200px) {
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 1024px) {
+            display: none;
         }
     }
 
     .PL-box.mobile {
         display: none;
+        font-family: "Permanent Marker";
+        font-weight: 400;
+        text-align: left;
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.28px;
+        position: relative;
+        z-index: 6;
 
-        br {
-            display: none;
-
-            @media (max-width: 592px) {
-                display: block;
-            }
+        .span-text-1 {
+            font-family: "Permanent Marker";
+            font-weight: 400;
+            color: #32393E;
         }
 
-        @media (max-width: 767px) {
+        .span-text-2 {
+            color: #FE9235;
+            font-family: "Permanent Marker";
+        }
+
+        @media (max-width: 1024px) {
             display: block;
-        }
-
-        @media (max-width: 592px) {
-            text-align: left;
+            white-space: normal;
         }
     }
 
@@ -235,14 +230,40 @@ background: rgba(21, 18, 37, 1);
     .jp {
         .PL-box {
             grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 900;
+            min-width: 810px;
+            justify-content: center;
+
+            @media (max-width: 1500px) {
+                min-width: unset;
+            }
+            @media (max-width: 1200px) {
+                min-width: 800px;
+            }
+            @media (max-width: 1160px) {
+                min-width: unset;
+            }
+
+            .span-text-1, .span-text-2 {
+                font-family: "Segoe UI", sans-serif;
+                font-weight: 900;
+            }
+        }
+
+        .PL-box.mobile {
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 900;
+
+            .span-text-1, .span-text-2 {
+                font-family: "Segoe UI", sans-serif;
+                font-weight: 900;
+            }
         }
 
         .PL-desc3.beginningBanner {
-            font-family: "Poppins";
-
-            @media (max-width: 1600px) {
-                font-size: 1.2583vw;
-            }
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 900;
 
             @media (max-width: 1200px) {
                 font-size: 14px;
@@ -310,53 +331,6 @@ background: rgba(21, 18, 37, 1);
         }
     }
     
-    @media screen and (max-width: 767px) {
-        .PLnewAvs{
-            display: none;
-
-            .PL-box.mobile {
-                position: relative;
-                z-index: 2;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                right: 0;
-                width: 154px;
-                height: 60px;
-                background-image: url(${PlAVSbgRightMobile});
-                background-repeat: no-repeat;
-                background-position: 0 0;
-            }
-
-            &.beginningBanner p {
-                z-index: 2;
-            }
-        }
-
-        .PL-box {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 592px) {
-        .PLnewAvs.fr{
-
-            /* &::after {
-                width: 100px;
-                height: 60px;
-            } */
-        }
-
-        .PLnewAvs.de{
-
-            /* &::after {
-                width: 100px;
-                height: 60px;
-            } */
-        }
-    }
 `;
 
 const StyledLayout = styled.div`
@@ -1123,8 +1097,8 @@ class Layout extends React.PureComponent {
                     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
 
-                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap"></link>
-                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
+                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Permanent+Marker&display=swap"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Permanent+Marker&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
                     {languageCodes.map((languageCode) => {
                         let language = languageCode.split("-")[0];
@@ -1169,7 +1143,7 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  <a href="https://avs4you.github.io" style={{textDecoration: 'none'}}>
+                  <a href={backToSchoolBannerLinks[this.props.pageContext.locale] || backToSchoolBannerLinks.en} style={{textDecoration: 'none'}}>
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
@@ -1178,7 +1152,7 @@ class Layout extends React.PureComponent {
 
                         <div className="PL-box">
                             <p className="PL-desc3 beginningBanner">
-                                <Trans i18nKey="beginningBanner"
+                                <Trans i18nKey="backToSchoolBanner"
                                     components={[
                                         <span className="span-text-1" />,
                                         <span className="span-text-2" />
@@ -1187,40 +1161,17 @@ class Layout extends React.PureComponent {
                             </p>
                         </div>
 
-                        {/* <div className="PL-box mobile">
-                            <div className="PL-desc3 beginningBanner">
-                                <span className="PL-desc3 beginningBanner">
-                                    <Trans i18nKey="beginningBannerMobileHeader"
-                                        components={[
-                                            <span className="span-text-1" />,
-                                            <span className="span-text-2" />
-                                        ]}
-                                    />
-                                </span>
-                                {" "}
-                                <br />
-                                <span className="PL-desc3 beginningBanner">
-                                    <Trans i18nKey="beginningBannerMobileHeader2"
-                                        components={[
-                                            <span className="span-text-1" />,
-                                            <span className="span-text-2" />
-                                        ]}
-                                    />
-                                </span>
-                                {" "}
-                                <br />
-                                <span className="PL-desc3 beginningBanner">
-                                    <Trans i18nKey="beginningBannerMobileText"
-                                        components={[
-                                            <span className="span-text-1" />,
-                                            <span className="span-text-2" />
-                                        ]}
-                                    />
-                                </span>
-                            </div>
-                        </div> */}
+                        <p className="PL-box mobile">
+                            <Trans i18nKey="backToSchoolBanner"
+                                components={[
+                                    <span className="span-text-1" />,
+                                    <span className="span-text-2" />
+                                ]}
+                            />
+                        </p>
 
                         <div className='bgRight'></div>
+                        <div className='bgRightMobile'></div>
 
                     </div>
                   </a>
