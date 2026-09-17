@@ -44,7 +44,7 @@ const backToSchoolBannerLinks = {
 };
 
 const StyledPL = styled.div`
-/* display: none; */
+display: none;
 position: relative;
 text-align: center;
 background: rgba(21, 18, 37, 1);

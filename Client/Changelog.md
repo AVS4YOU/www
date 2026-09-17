@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.114 (17.09.2026)
+### New
+* Remove banner "Back to school"
+
 ## 1.0.113 (03.09.2026)
 ### New
 * Remove banner "AI-POWERED"
