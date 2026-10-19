@@ -1663,6 +1663,13 @@
 
   "beginningBanner": "Basato <0>sull’IA</0>",
   "backToSchoolBanner": "<0>Offerta Back to School:</0> <1>ottieni il 25% di sconto sul tuo kit creativo!</1>",
+  "halloweenBanner": "Risparmi da brivido: <0>$10 di sconto</0> su AVS4YOU Multimedia Suite!",
+  "halloweenBannerMobileTop": "<0>$10 di sconto</0>",
+  "halloweenBannerMobileBottom": "su AVS4YOU Multimedia Suite!",
+  "halloweenSideTitle": "Nessun trucco, solo\n<0>$10 di sconto!</0>",
+  "halloweenSideText": "Scatena la magia dei video da brivido con AVS4YOU.",
+  "halloweenSideButton": "Approfitta dello sconto",
+  "halloweenSideTab": "$10 di sconto!",
   "beginningBannerMobileHeader": "<0>25% di sconto</0>",
   "beginningBannerMobileHeader2": "<1>sul software AVS4YOU</1>",
   "beginningBannerMobileText": "Ottienilo ora!",

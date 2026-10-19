@@ -1684,6 +1684,13 @@
 
   "beginningBanner": "<0>AI</0>搭載",
   "backToSchoolBanner": "<0>新学期セール：</0> <1>クリエイティブツールキットが25%OFF！</1>",
+  "halloweenBanner": "お得なハロウィーンセール：AVS4YOU Multimedia Suiteが<0>10ドルOFF！</0>",
+  "halloweenBannerMobileTop": "AVS4YOU Multimedia Suiteが",
+  "halloweenBannerMobileBottom": "<0>10ドルOFF！</0>",
+  "halloweenSideTitle": "トリックはなし、\n今なら<0>10ドルOFF！</0>",
+  "halloweenSideText": "AVS4YOUで、不気味な動画マジックを解き放とう。",
+  "halloweenSideButton": "今すぐお得な割引を取得！",
+  "halloweenSideTab": "10ドルOFF！",
   "beginningBannerMobileHeader": "<1>AVS4YOUソフトウェアに</1>",
   "beginningBannerMobileHeader2": "<0>25％オフ。</0>",
   "beginningBannerMobileText": "お見逃しなく！",
