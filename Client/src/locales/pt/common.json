@@ -1494,6 +1494,13 @@
 
   "beginningBanner": "<0>AI</0>-POWERED",
   "backToSchoolBanner": "<0>Back-to-School Sale:</0> <1>Get 25% Off Your Creative Toolkit!</1>",
+  "halloweenBanner": "Spooky Savings: <0>Take $10 Off</0> AVS4YOU Multimedia Suite!",
+  "halloweenBannerMobileTop": "<0>Take $10 Off</0>",
+  "halloweenBannerMobileBottom": "AVS4YOU Multimedia Suite!",
+  "halloweenSideTitle": "No tricks—just <0>$10 off!</0>",
+  "halloweenSideText": "Unleash spooky video magic with AVS4YOU.",
+  "halloweenSideButton": "Claim Your Savings",
+  "halloweenSideTab": "$10 off!",
   "beginningBannerMobileHeader": "<0>25% Off</0>",
   "beginningBannerMobileHeader2": "<1>AVS4YOU software</1>",
   "beginningBannerMobileText": "Don’t miss out!",

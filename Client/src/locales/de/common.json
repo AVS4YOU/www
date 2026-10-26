@@ -1704,6 +1704,13 @@
 
   "beginningBanner": "<0>KI</0>-gestützt",
   "backToSchoolBanner": "<0>Sonderangebot zum Schulanfang:</0> <1>25 % Rabatt auf Ihr kreatives Toolkit!</1>",
+  "halloweenBanner": "Gruselige Rabatte: <0>10 $ Rabatt</0> auf die Multimedia-Suite von AVS4YOU!",
+  "halloweenBannerMobileTop": "<0>10 $ Rabatt</0> auf die",
+  "halloweenBannerMobileBottom": "Multimedia-Suite von AVS4YOU!",
+  "halloweenSideTitle": "Keine Tricks – einfach\n<0>10 $ Rabatt!</0>",
+  "halloweenSideText": "Entfesseln Sie mit AVS4YOU gruselige Videomagie.",
+  "halloweenSideButton": "Sichern Sie sich Ihren Rabatt",
+  "halloweenSideTab": "10 $ Rabatt!",
   "beginningBannerMobileHeader": "Liebe auf den ersten Blick –",
   "beginningBannerMobileHeader2": "<1>erhalten Sie</1> <0>25 % Rabatt</0>",
   "beginningBannerMobileText": "<1>auf AVS4YOU!</1>",

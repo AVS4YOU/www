@@ -14,13 +14,17 @@ import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
 import {BlackFriday} from "../components/black-friday";
+import HalloweenSideBanner from "../components/halloween-side-banner";
 import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
 import PlAVSbg from "../images/pl/pl-bg_en.svg";
-import BackToSchoolBgLeaves from "../images/back-to-school/back-to-school-bg-left.svg";
-import BackToSchoolBgMobile from "../images/back-to-school/back-to-school-bg-mobile.svg";
+import HalloweenBgLeft from "../images/halloween-2026/halloween-bg-left.svg";
+import HalloweenBgRight from "../images/halloween-2026/halloween-bg-right.svg";
+import HalloweenBgRightMobile from "../images/halloween-2026/halloween-bg-right-mobile.svg";
+import HalloweenBgGradient from "../images/halloween-2026/halloween-bg-gradient.svg";
+import HalloweenBgGradientMobile from "../images/halloween-2026/halloween-bg-gradient-mobile.svg";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
@@ -28,309 +32,177 @@ import banner from '../images/banner.png'
 import {XClose} from "../images/icons/xClose";
 import { Trans } from 'react-i18next';
 
-const backToSchoolBannerLinks = {
-    en: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=en&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    fr: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    de: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    es: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    it: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    jp: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&DESIGN_TYPE=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    nl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    pt: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    pl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=pl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    zh: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zh&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    da: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=da&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
-    ko: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=KRW&LANGUAGES=ko&ORDERSTYLE=nLW0m5S5iLk=&COUPON=School25Kit&CLEAN_CART=ALL",
+const halloweenBannerLinks = {
+    en: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    fr: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=fr&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    de: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=de&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    es: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=es&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    it: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=it&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    jp: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=JPY&LANGUAGES=ja&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    nl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=nl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    pt: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=USD&LANGUAGES=pt-br&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    pl: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=pl&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    zh: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=CNY&LANGUAGES=zh&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    da: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=EUR&LANGUAGES=da&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
+    ko: "https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CART=1&CARD=2&SHORT_FORM=1&CURRENCY=KRW&LANGUAGES=ko&ORDERSTYLE=nLW0m5S5iLk=&COUPON=Treat26&CLEAN_CART=ALL",
 };
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
-background: rgba(21, 18, 37, 1);
+background: rgb(43, 6, 78);
 
   .PLnewAvs {
     display: flex;
-    width: 100%;
-    height: 64px;
-    cursor: pointer;
-    font-family: Open Sans, sans-serif;
     align-items: center;
     justify-content: center;
-    gap: 32px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: radial-gradient(29.45% 121.78% at 50% 50%, #FEFEFE 0%, #FFF7F1 100%);
+    gap: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(${HalloweenBgGradient}) center / 100% 100% no-repeat;
+
+    @media (max-width: 1024px) {
+        justify-content: flex-start;
+        padding-left: 16px;
+        background-image: url(${HalloweenBgGradientMobile});
+    }
+  }
+
+  /* The side slots share the free space equally, so the text stays centered.
+     Each decoration sits at the outer edge of its slot and, when the slot gets
+     narrower than the decoration, is cut from the outer side first. */
+  .bgSlot {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 64px;
     overflow: hidden;
 
     @media (max-width: 1024px) {
-        justify-content: space-between;
-        gap: 8px;
-        padding-left: 16px;
-        background: radial-gradient(35.94% 148.6% at 21.72% 50%, #FEFEFE 0%, #FFF7F1 100%);
-    }
-  }
-  .bgLeft {
-    flex-shrink: 0;
-    width: 364px;
-    height: 64px;
-    background-image: url(${BackToSchoolBgLeaves});
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: 1600px) {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    @media (max-width: 1024px) {
         display: none;
     }
+  }
+
+  .bgLeft,
+  .bgRight {
+    width: 364px;
+    height: 64px;
+    background-repeat: no-repeat;
+  }
+
+  .bgLeft {
+    background-image: url(${HalloweenBgLeft});
+    margin-left: min(0px, 100% - 364px);
   }
 
   .bgRight {
-    flex-shrink: 0;
-    width: 364px;
-    height: 64px;
-    background-image: url(${BackToSchoolBgLeaves});
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: scaleX(-1);
-
-    @media (min-width: 1600px) {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    @media (max-width: 1024px) {
-        display: none;
-    }
+    background-image: url(${HalloweenBgRight});
+    margin-left: max(0px, 100% - 364px);
   }
 
   .bgRightMobile {
     display: none;
-    flex-shrink: 0;
-    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
     height: 64px;
-    background-image: url(${BackToSchoolBgMobile});
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(${HalloweenBgRightMobile}) no-repeat;
 
     @media (max-width: 1024px) {
         display: block;
     }
   }
 
-    .PL-box {
-        font-family: "Permanent Marker";
-        font-weight: 400;
-        text-transform: none;
-        color: #FE9235;
-        display: inline-flex;
-        flex-shrink: 0;
-        white-space: nowrap;
-        grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        width: max-content;
-        align-items: center;
-        min-width: max-content;
-        font-size: 28px;
-        z-index: 6;
+  .PL-box {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.375em;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: "Creepster", "Segoe UI", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4.3px rgba(34, 34, 34, 0.25);
+    white-space: nowrap;
 
-        .PL-desc3.beginningBanner {
-            margin: 0;
-        }
-
-        .span-text-1 {
-            font-family: "Permanent Marker";
-            font-weight: 400;
-            color: #32393E;
-        }
-
-        .span-text-2 {
-            color: #FE9235;
-            font-family: "Permanent Marker";
-        }
-
-        @media (max-width: 1200px) {
-            font-size: 16px;
-        }
-
-        @media (max-width: 1024px) {
-            display: none;
-        }
+    @media (max-width: 1440px) {
+        font-size: 24px;
     }
 
-    .PL-box.mobile {
-        display: none;
-        font-family: "Permanent Marker";
-        font-weight: 400;
-        text-align: left;
-        flex: 1 1 auto;
-        min-width: 0;
-        max-width: 100%;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: -0.28px;
-        position: relative;
-        z-index: 6;
-
-        .span-text-1 {
-            font-family: "Permanent Marker";
-            font-weight: 400;
-            color: #32393E;
-        }
-
-        .span-text-2 {
-            color: #FE9235;
-            font-family: "Permanent Marker";
-        }
-
-        @media (max-width: 1024px) {
-            display: block;
-            white-space: normal;
-        }
+    @media (max-width: 1200px) {
+        font-size: 20px;
     }
 
-    .fr {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-    }
-
-    .de {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-        }
-    }
-    .es {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-            gap: 0px;
-
-            .PL-desc1 {
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-        }
-    }
-    .it {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-            gap: 0px;
-
-            .PL-desc1 {
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-        }
-    }
-    .jp {
-        .PL-box {
-            grid-template-areas: "beginningBanner colorBanner textBanner discountCoupon textBannerContinue endingBanner";
-            font-family: "Segoe UI", sans-serif;
-            font-weight: 900;
-            min-width: 810px;
-            justify-content: center;
-
-            @media (max-width: 1500px) {
-                min-width: unset;
-            }
-            @media (max-width: 1200px) {
-                min-width: 800px;
-            }
-            @media (max-width: 1160px) {
-                min-width: unset;
-            }
-
-            .span-text-1, .span-text-2 {
-                font-family: "Segoe UI", sans-serif;
-                font-weight: 900;
-            }
-        }
-
-        .PL-box.mobile {
-            font-family: "Segoe UI", sans-serif;
-            font-weight: 900;
-
-            .span-text-1, .span-text-2 {
-                font-family: "Segoe UI", sans-serif;
-                font-weight: 900;
-            }
-        }
-
-        .PL-desc3.beginningBanner {
-            font-family: "Segoe UI", sans-serif;
-            font-weight: 900;
-
-            @media (max-width: 1200px) {
-                font-size: 14px;
-            }
-        }
-    }
-
-    .beginningBanner {
-        grid-area: beginningBanner;
-    }
-    .textBannerContinue {
-        grid-area: textBannerContinue;
-    }
-    .colorBanner {
-        grid-area: colorBanner;
-    }
-    
-    .discountCoupon {
-        grid-area: discountCoupon;
-    }
-    
-    .textBanner {
-        grid-area: textBanner;
-    }
-    
-    .endingBanner {
-        grid-area: endingBanner;
-    }
-
-    .PL-box-mobile {
+    @media (max-width: 1024px) {
         display: none;
     }
+  }
 
-    @media screen and (max-width: 1200px) {
+  .PL-coupon {
+    padding: 0.125em 0.375em;
+    border-radius: 0.3125em;
+    background: linear-gradient(99.26deg, #FF6D00 1.71%, #FF9E00 53.53%, #FF6D00 101.27%);
+    color: #250543;
+    text-shadow: none;
+  }
 
-        .PL-box {
-            gap: 3px;
-        }
+  .PL-box.mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: left;
 
-        .PL-desc1 {
-            font-size: 13px;
-            font-weight: 600;
-            line-height: 19px;
-            width: max-content;
-        }
-    
-        .PL-desc2 {
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 19px;
-            width: max-content;
-        }
-        
-        /* .PL-desc3 {
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 19px;
-            width: max-content;
-        } */
-
-        .PL-desc4 {
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 19px;
-        }
+    @media (max-width: 1024px) {
+        display: flex;
     }
-    
+
+    .PL-coupon {
+        padding: 2px 8px;
+        border-radius: 4px;
+        line-height: normal;
+        letter-spacing: 0.02em;
+    }
+  }
+
+  .PL-mobile-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+  }
+
+  .en .PL-box.mobile {
+    gap: 2px;
+  }
+
+  /* Japanese glyphs fall back to a heavy system font; Creepster has no bold face, so no faux bold for it. */
+  .jp .PL-box {
+    font-weight: 900;
+    font-synthesis: none;
+  }
+
+  /* The Japanese fallback font has a taller default line; keep the coupon as high as in the design. */
+  .jp .PL-coupon {
+    line-height: 1.16;
+  }
+
+  .jp .PL-box.mobile .PL-coupon {
+    line-height: 16px;
+  }
 `;
 
 const StyledLayout = styled.div`
@@ -1097,8 +969,8 @@ class Layout extends React.PureComponent {
                     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
 
-                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Permanent+Marker&display=swap"></link>
-                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Permanent+Marker&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
+                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&display=swap"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
                     {languageCodes.map((languageCode) => {
                         let language = languageCode.split("-")[0];
@@ -1143,34 +1015,27 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  <a href={backToSchoolBannerLinks[this.props.pageContext.locale] || backToSchoolBannerLinks.en} style={{textDecoration: 'none'}}>
+                  <a href={halloweenBannerLinks[this.props.pageContext.locale] || halloweenBannerLinks.en} style={{textDecoration: 'none'}}>
                   {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
 
-                        <div className='bgLeft'></div>
+                        <div className='bgSlot'><div className='bgLeft'></div></div>
 
-                        <div className="PL-box">
-                            <p className="PL-desc3 beginningBanner">
-                                <Trans i18nKey="backToSchoolBanner"
-                                    components={[
-                                        <span className="span-text-1" />,
-                                        <span className="span-text-2" />
-                                    ]}
-                                />
+                        <p className="PL-box">
+                            <Trans i18nKey="halloweenBanner" components={[<span className="PL-coupon" />]} />
+                        </p>
+
+                        <div className="PL-box mobile">
+                            <p className="PL-mobile-row">
+                                <Trans i18nKey="halloweenBannerMobileTop" components={[<span className="PL-coupon" />]} />
+                            </p>
+                            <p className="PL-mobile-row">
+                                <Trans i18nKey="halloweenBannerMobileBottom" components={[<span className="PL-coupon" />]} />
                             </p>
                         </div>
 
-                        <p className="PL-box mobile">
-                            <Trans i18nKey="backToSchoolBanner"
-                                components={[
-                                    <span className="span-text-1" />,
-                                    <span className="span-text-2" />
-                                ]}
-                            />
-                        </p>
-
-                        <div className='bgRight'></div>
+                        <div className='bgSlot'><div className='bgRight'></div></div>
                         <div className='bgRightMobile'></div>
 
                     </div>
@@ -1187,6 +1052,13 @@ class Layout extends React.PureComponent {
 
                 </StyledLayout>
                 <CookieMessage onAcceptClick={this.onAcceptClick} />
+                {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled &&
+                    <HalloweenSideBanner
+                        locale={this.props.pageContext.locale}
+                        href={halloweenBannerLinks[this.props.pageContext.locale] || halloweenBannerLinks.en}
+                        t={this.props.t}
+                    />
+                }
                 {this.state.showBanner  && !(this.pageName === 'advent-calendar.aspx') && 
                     <BannerWrapper onClick={this.onClosePopup}>
                         <BannerWrapperContent id="banner_popup" onClick={(event) => event.stopPropagation()}>
