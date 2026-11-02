@@ -27,7 +27,7 @@ const LOGO_STRIPS = [
 // The tab always stays flush with the right edge, and the banner opens to its left
 // with a 16px gap, as in the Figma "Banner preview" frame.
 const StyledSideBanner = styled.div`
-/* display: none; */
+display: none;
 position: fixed;
 top: 50%;
 right: 0;

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.116 (02.11.2026)
+### New
+* Remove banner "Halloween 2026"
+* Remove side banner "Halloween 2026"
+
 ## 1.0.115 (16.10.2026)
 ### New
 * Add banner "Halloween 2026"
