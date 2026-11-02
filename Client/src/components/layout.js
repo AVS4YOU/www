@@ -48,7 +48,7 @@ const halloweenBannerLinks = {
 };
 
 const StyledPL = styled.div`
-/* display: none; */
+display: none;
 position: relative;
 text-align: center;
 background: rgb(43, 6, 78);
