@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.117 (09.11.2026)
+### New
+* Changed products info (version, date, file size)
+* Updated pads files
+
 ## 1.0.116 (02.11.2026)
 ### New
 * Remove banner "Halloween 2026"
