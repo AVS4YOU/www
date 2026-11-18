@@ -13,18 +13,12 @@ import Cookies from 'universal-cookie';
 import CookieMessage from "../components/cookie-message";
 import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
-import {BlackFriday} from "../components/black-friday";
 import HalloweenSideBanner from "../components/halloween-side-banner";
 import Text from "../components/text";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
 import PlAVSbg from "../images/pl/pl-bg_en.svg";
-import HalloweenBgLeft from "../images/halloween-2026/halloween-bg-left.svg";
-import HalloweenBgRight from "../images/halloween-2026/halloween-bg-right.svg";
-import HalloweenBgRightMobile from "../images/halloween-2026/halloween-bg-right-mobile.svg";
-import HalloweenBgGradient from "../images/halloween-2026/halloween-bg-gradient.svg";
-import HalloweenBgGradientMobile from "../images/halloween-2026/halloween-bg-gradient-mobile.svg";
 import bannerAVSbg from "../images/pl/bg_banner.png";
 import bannerImg from '../images/pl/img_banner.png'
 import bannerButton from '../images/pl/button_banner.svg'
@@ -48,160 +42,122 @@ const halloweenBannerLinks = {
 };
 
 const StyledPL = styled.div`
-display: none;
+/* display: none; */
 position: relative;
 text-align: center;
-background: rgb(43, 6, 78);
+background: #000000;
+
+  @media (max-width: 749px) {
+    display: none;
+  }
 
   .PLnewAvs {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
     box-sizing: border-box;
     width: 100%;
     height: 64px;
+    padding: 0 24px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: url(${HalloweenBgGradient}) center / 100% 100% no-repeat;
-
-    @media (max-width: 1024px) {
-        justify-content: flex-start;
-        padding-left: 16px;
-        background-image: url(${HalloweenBgGradientMobile});
-    }
-  }
-
-  /* The side slots share the free space equally, so the text stays centered.
-     Each decoration sits at the outer edge of its slot and, when the slot gets
-     narrower than the decoration, is cut from the outer side first. */
-  .bgSlot {
-    flex: 1 1 0;
-    min-width: 0;
-    height: 64px;
-    overflow: hidden;
-
-    @media (max-width: 1024px) {
-        display: none;
-    }
-  }
-
-  .bgLeft,
-  .bgRight {
-    width: 364px;
-    height: 64px;
-    background-repeat: no-repeat;
-  }
-
-  .bgLeft {
-    background-image: url(${HalloweenBgLeft});
-    margin-left: min(0px, 100% - 364px);
-  }
-
-  .bgRight {
-    background-image: url(${HalloweenBgRight});
-    margin-left: max(0px, 100% - 364px);
-  }
-
-  .bgRightMobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 160px;
-    height: 64px;
-    background: url(${HalloweenBgRightMobile}) no-repeat;
-
-    @media (max-width: 1024px) {
-        display: block;
-    }
-  }
-
-  .PL-box {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 0.375em;
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    font-family: "Creepster", "Segoe UI", sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    text-shadow: 0 2px 4.3px rgba(34, 34, 34, 0.25);
+    background:
+        linear-gradient(90deg, rgba(191, 199, 207, 0) 0%, rgba(191, 199, 207, 0.35) 50%, rgba(191, 199, 207, 0) 100%) bottom / 100% 1px no-repeat,
+        #000000;
     white-space: nowrap;
 
-    @media (max-width: 1440px) {
-        font-size: 24px;
+    @media (max-width: 1249px) {
+        gap: 12px;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1049px) {
+        gap: 10px;
+        padding: 0 16px;
+    }
+  }
+
+  .PL-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4em;
+    margin: 0;
+    font-family: "Unbounded", "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @media (max-width: 1249px) {
         font-size: 20px;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1049px) {
+        font-size: 16px;
+    }
+  }
+
+  .PL-accent {
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: #F1F341;
+  }
+
+  .PL-light {
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #F7F8F7;
+
+    /* Narrow screens keep the offer and the button only. */
+    @media (max-width: 959px) {
         display: none;
     }
   }
 
-  .PL-coupon {
-    padding: 0.125em 0.375em;
-    border-radius: 0.3125em;
-    background: linear-gradient(99.26deg, #FF6D00 1.71%, #FF9E00 53.53%, #FF6D00 101.27%);
-    color: #250543;
-    text-shadow: none;
-  }
-
-  .PL-box.mobile {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    text-align: left;
-
-    @media (max-width: 1024px) {
-        display: flex;
-    }
-
-    .PL-coupon {
-        padding: 2px 8px;
-        border-radius: 4px;
-        line-height: normal;
-        letter-spacing: 0.02em;
-    }
-  }
-
-  .PL-mobile-row {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+  .PL-text {
     margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.01em;
+    color: #BBBBBB;
+
+    b {
+        font-weight: 700;
+        color: #F1F341;
+    }
+
+    @media (max-width: 1249px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 1049px) {
+        font-size: 14px;
+    }
   }
 
-  .en .PL-box.mobile {
-    gap: 2px;
+  .PL-button {
+    flex: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #BFC7CF 0%, #E5EBF0 47%, #D0D8DF 100%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #172027;
+    transition: background 0.2s;
+
+    @media (max-width: 1049px) {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
   }
 
-  /* Japanese glyphs fall back to a heavy system font; Creepster has no bold face, so no faux bold for it. */
-  .jp .PL-box {
-    font-weight: 900;
-    font-synthesis: none;
-  }
-
-  /* The Japanese fallback font has a taller default line; keep the coupon as high as in the design. */
-  .jp .PL-coupon {
-    line-height: 1.16;
-  }
-
-  .jp .PL-box.mobile .PL-coupon {
-    line-height: 16px;
+  .PLnewAvs:hover .PL-button {
+    background: linear-gradient(180deg, #CDD4DB 0%, #F2F6F9 47%, #DDE4EA 100%);
   }
 `;
 
@@ -680,6 +636,7 @@ class Layout extends React.PureComponent {
             showSummerBanner: false,
             cookiesIsAccepted: false,
             showBlackFriday: false,
+            BlackFriday: null,
             userCurrencyEnLocale: 'usd',
         }
 
@@ -871,11 +828,24 @@ class Layout extends React.PureComponent {
         this.setItemToSessionStorage({label: 'pages', value: 'visited'})
     }
 
+    // The Black Friday wheel is loaded on demand: its images are too heavy for the bundle of every page.
+    loadBlackFriday = () => import("../components/black-friday")
+
     onOpenBanner = (e) => {
       e.stopPropagation();
-      this.setState({
-        showBlackFriday: true
+      this.loadBlackFriday().then(({BlackFriday}) => {
+        this.setState({
+          BlackFriday,
+          showBlackFriday: true
+        })
       })
+    }
+
+    onBannerKeyDown = (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.onOpenBanner(e);
+      }
     }
 
     onCloseBanner = (e) => {
@@ -953,6 +923,7 @@ class Layout extends React.PureComponent {
     }
 
     render() {
+        const BlackFriday = this.state.BlackFriday;
         return (
             <PageContext.Provider value={this.props.pageContext}>
                 <Helmet>
@@ -969,8 +940,8 @@ class Layout extends React.PureComponent {
                     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
 
-                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&display=swap"></link>
-                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
+                    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&family=Sora:wght@700&family=Unbounded:wght@300;800&display=swap"></link>
+                    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:wght@100..900&family=Creepster&family=Sora:wght@700&family=Unbounded:wght@300;800&display=swap" rel="stylesheet" media="all" onLoad="this.media='all'"></link>
                     <script src="https://secure.avangate.com/content/check_affiliate_v2.js"></script>
                     {languageCodes.map((languageCode) => {
                         let language = languageCode.split("-")[0];
@@ -1015,29 +986,18 @@ class Layout extends React.PureComponent {
 
                 {!this.props.headerIsDisabled && !this.props.plNewsIsDisabled ? <StyledPL>
 
-                  <a href={halloweenBannerLinks[this.props.pageContext.locale] || halloweenBannerLinks.en} style={{textDecoration: 'none'}}>
-                  {/* <a onClick={this.onOpenBanner} style={{textDecoration: 'none'}}> */}
+                  {/* <a href={halloweenBannerLinks[this.props.pageContext.locale] || halloweenBannerLinks.en} style={{textDecoration: 'none'}}> */}
+                  <a onClick={this.onOpenBanner} onKeyDown={this.onBannerKeyDown} onMouseEnter={this.loadBlackFriday} role="button" tabIndex={0} style={{textDecoration: 'none'}}>
                   {/* <a href={this.getPurchaseLink()} target="_blank" style={{textDecoration: 'none'}}> */}
                     <div className={`PLnewAvs ${this.props.pageContext.locale}`}>
-
-                        <div className='bgSlot'><div className='bgLeft'></div></div>
-
-                        <p className="PL-box">
-                            <Trans i18nKey="halloweenBanner" components={[<span className="PL-coupon" />]} />
+                        <p className="PL-title">
+                            <span className="PL-accent">{this.props.t("Black Friday")}</span>
+                            <span className="PL-light">{this.props.t("Wheel of Luck")}</span>
                         </p>
-
-                        <div className="PL-box mobile">
-                            <p className="PL-mobile-row">
-                                <Trans i18nKey="halloweenBannerMobileTop" components={[<span className="PL-coupon" />]} />
-                            </p>
-                            <p className="PL-mobile-row">
-                                <Trans i18nKey="halloweenBannerMobileBottom" components={[<span className="PL-coupon" />]} />
-                            </p>
-                        </div>
-
-                        <div className='bgSlot'><div className='bgRight'></div></div>
-                        <div className='bgRightMobile'></div>
-
+                        <p className="PL-text">
+                            <Trans i18nKey="bfBannerText" components={[<b />]} />
+                        </p>
+                        <span className="PL-button">{this.props.t("Spin the wheel")}</span>
                     </div>
                   </a>
                 </StyledPL> : <div></div>}
@@ -1048,7 +1008,7 @@ class Layout extends React.PureComponent {
                                                          locale={this.props.pageContext.locale} t={this.props.t}/>}
                 <StyledLayout className={this.props.className}>
                 {/* <main>{this.props.children}</main> */}
-                {this.state.showBlackFriday && !this.state.isMobile ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
+                {this.state.showBlackFriday && !this.state.isMobile && BlackFriday ? <main><BlackFriday locale={this.props.pageContext.locale} t={this.props.t} onCloseBanner={this.onCloseBanner}/></main> : <main>{this.props.children}</main>}
 
                 </StyledLayout>
                 <CookieMessage onAcceptClick={this.onAcceptClick} />

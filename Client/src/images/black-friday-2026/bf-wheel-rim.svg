@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Glass wheel / outer reflective graphite rim">
+<path id="Vector" d="M320 630.254C491.348 630.254 630.254 491.348 630.254 320C630.254 148.652 491.348 9.74619 320 9.74619C148.652 9.74619 9.74619 148.652 9.74619 320C9.74619 491.348 148.652 630.254 320 630.254Z" fill="url(#paint0_radial_3522_119)"/>
+<path id="Vector_2" d="M320 605.076C477.443 605.076 605.076 477.443 605.076 320C605.076 162.557 477.443 34.9239 320 34.9239C162.557 34.9239 34.9239 162.557 34.9239 320C34.9239 477.443 162.557 605.076 320 605.076Z" fill="url(#paint1_radial_3522_119)" stroke-width="1.62437" stroke="#34333D"/>
+<path id="Vector_3" d="M320 597.767C473.406 597.767 597.767 473.406 597.767 320C597.767 166.594 473.406 42.2335 320 42.2335C166.594 42.2335 42.2335 166.594 42.2335 320C42.2335 473.406 166.594 597.767 320 597.767Z" fill="#05070A" stroke-width="2.43655" stroke="#1E2530"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3522_119" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 320) scale(310.254)">
+<stop offset="0.72" stop-color="#A745ED" stop-opacity="0"/>
+<stop offset="0.89" stop-color="#B82AED" stop-opacity="0.05"/>
+<stop offset="1" stop-color="#B92CF2" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_3522_119" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(234.477 171.76) scale(467.525)">
+<stop stop-color="#22242D"/>
+<stop offset="0.5" stop-color="#080A0E"/>
+<stop offset="1" stop-color="#11151A"/>
+</radialGradient>
+</defs>
+</svg>

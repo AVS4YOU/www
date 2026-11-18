@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Pointer / single liquid-lemon glass marker">
+<path id="Vector" d="M294.822 29.2386C295.364 23.824 298.613 21.1168 304.569 21.1168H335.431C341.387 21.1168 344.636 23.824 345.178 29.2386L324.061 74.7208C321.354 79.5939 318.646 79.5939 315.939 74.7208L294.822 29.2386Z" stroke-width="15.4315" stroke="#F7FA32" stroke-opacity="0.15"/>
+<path id="Vector_2" d="M294.822 29.2386C295.364 23.824 298.613 21.1168 304.569 21.1168H335.431C341.387 21.1168 344.636 23.824 345.178 29.2386L324.061 74.7208C321.354 79.5939 318.646 79.5939 315.939 74.7208L294.822 29.2386Z" fill="url(#paint0_linear_3522_149)" stroke-width="4.30457" stroke-linejoin="round" stroke="#F8FD41"/>
+<g id="Vector_3">
+<path d="M304.569 26.802H335.431Z" fill="black"/>
+<path d="M304.569 26.802H335.431" stroke-width="1.62437" stroke-linecap="round" stroke="white" stroke-opacity="0.48"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3522_149" x1="288.325" y1="16.2437" x2="349.239" y2="82.8426" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4B4F3A"/>
+<stop offset="0.45" stop-color="#161B0D"/>
+<stop offset="1" stop-color="#080D09"/>
+</linearGradient>
+</defs>
+</svg>
