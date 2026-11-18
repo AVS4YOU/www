@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.118 (18.11.2026)
+### New
+* Add banner "Black Friday 2026" that opens the Black Friday Wheel of Luck (desktop only)
+* Redesign the Black Friday Wheel of Luck
+  - New wheel with 8 prizes: \$10, 25%, 35%, 45% (AVS4YOU Unlimited Subscription), 30%, 40%, 50% (AVS4YOU 1 Year Subscription) and Mystery (100% AVS Video ReMaker 1 Year Subscription)
+  - Coupons: `Unlim10`, `Main25`, `Top35`, `Wheel45`, `ANYeR30`, `Av40Sub`, `50AnlAV`, `Mystery26`
+  - The Mystery prize drops once per 100 spins, the other prizes share the rest equally
+  - Idle rotation, spin animation and sounds (spin, stop click, win bell) with a mute button
+  - Result screens for percent, dollar and Mystery prizes; one spin per visitor per day
+
 ## 1.0.117 (09.11.2026)
 ### New
 * Changed products info (version, date, file size)
