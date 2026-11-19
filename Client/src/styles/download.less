@@ -1,423 +1,783 @@
-.download{
-    
-    .screen-wrapper{
-        padding: 120px 30px;
+@dwn-blue: #157BF2;
+@dwn-text: #1E272E;
+@dwn-grey: #555555;
+@dwn-border: #EEEEEE;
+@dwn-light-blue: #EEF8FF;
+@dwn-orange: #FB8A29;
+@dwn-max: 1520px;
+@dwn-program-col: 640px;
 
-        &.products-wrap{
-            padding: 120px 30px 100px;
-        }
- 
-        &.border-top{
-            border-top:1px solid #F2F2F2;
+.download {
+    font-family: 'Open Sans', sans-serif, Arial;
+    color: @dwn-text;
+
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+    h1, h2, h3, p, ul {
+        margin: 0;
+    }
+
+    // Buttons
+    .dwn-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 57px;
+        padding: 0 32px;
+        border: 1px solid @dwn-blue;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        white-space: nowrap;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+
+        &--blue {
+            background-color: @dwn-blue;
+            color: #fff;
+
+            &:hover {
+                background-color: #0F6AD6;
+                border-color: #0F6AD6;
+            }
         }
 
-        &.questions-block{
-            max-width: 100%;
-            padding: 120px 0;
-            background-color:#F9F9F9;
+        &--border {
+            background-color: #fff;
+            color: @dwn-blue;
+
+            &:hover {
+                background-color: @dwn-blue;
+                color: #fff;
+            }
+        }
+
+        &--white {
+            background-color: #fff;
+            color: @dwn-blue;
+
+            &:hover {
+                background-color: @dwn-light-blue;
+            }
+        }
+
+        &--hero {
+            width: 232px;
+            height: 53px;
+        }
+
+        &--table {
+            width: 160px;
+        }
+
+        .dwn-btn__light {
+            font-weight: 400;
+            margin-right: 5px;
         }
     }
 
-    .questions-heading {
-        max-width: 944px;
-        display: table;
-        margin: auto;
-    }
+    .dwn-badge {
+        display: inline-flex;
+        align-items: center;
+        height: 26px;
+        padding: 0 20px;
+        background-color: @dwn-orange;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+        white-space: nowrap;
 
-    .header{
-
-        .header__background-gradient{
-            background: radial-gradient(closest-side at 17% 52%, #000000CC 0%, #131313AB 162%, #54545400 362%) 0% 0% no-repeat padding-box;
-        }
-
-        .header__subtitle {
-            padding-top:15px;
-            max-width: 760px;
-        }
-
-        .header__button{
-            margin-top: 65px;
-            padding: 18px 50px;
-        }
-    
-        .header__button-text{
-            text-transform: uppercase;
+        &--small {
+            padding: 0 12px;
         }
     }
 
-    .headerDownloadButtons{
-        display: table;
-        margin-left: 0;
+    // Hero
+    .dwn-hero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 599px;
+        padding: 80px 250px;
+        overflow: hidden;
+        background-color: #1E1A16;
     }
 
-    .product-icon{
-        width:64px;
-        height:64px;
-        margin:auto;
-        background-position: 50%;
+    .dwn-hero__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-position: right center !important;
+        }
+    }
+
+    .dwn-hero__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg,
+            rgba(0, 0, 0, .8) 0%,
+            rgba(8, 8, 8, .63) 33%,
+            rgba(10, 10, 10, .56) 45%,
+            rgba(12, 12, 12, .42) 58%,
+            rgba(17, 17, 17, .04) 80%,
+            rgba(19, 19, 19, .01) 100%);
+    }
+
+    .dwn-hero__content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        max-width: 650px;
+    }
+
+    .dwn-hero__title {
+        font-size: 64px;
+        overflow-wrap: anywhere;
+        font-weight: 600;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .dwn-hero__subtitle {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .dwn-hero__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .dwn-hero__coupon .headerButtonsWrapper {
+        padding-top: 0;
+    }
+
+    // Product sections
+    .dwn-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 80px 16px;
+        background-color: #fff;
+    }
+
+    .dwn-section__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .dwn-section__icon {
+        width: 64px;
+        height: 64px;
+        background-position: center;
         background-size: contain;
-        margin-bottom: 25px;
+        background-repeat: no-repeat;
 
-        &.video{
+        &--video {
             background-image: url(../images/download/video-icon.svg);
         }
 
-        &.audio{
+        &--audio {
             background-image: url(../images/download/audio-icon.svg);
         }
-
-        &.free{
-            background-image: url(../images/download/free-icon.svg);
-        }
     }
 
-    .product-heading{
+    .dwn-section__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
         text-align: center;
-        font-size: 46px;
-        font-weight: 600;
     }
 
-    .product-wrapper{
+    .dwn-section__grid {
         display: flex;
-        max-width: 1550px;
-        margin: auto;
-        padding-top: 40px;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px 80px;
+        width: 100%;
+        max-width: @dwn-max;
     }
 
-    .product-box{
-        width: 26%;
-        min-width: 250px;
-        max-width: 300px;
-        padding: 40px; 
-        outline: none;
+    .dwn-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 320px;
+    }
 
-        .mainButton, .desktopButton{
-            padding: 10px 40px;
-        }
-        
-        .achievement{
-            display: block;
-            margin: auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: fit-content;
-            top: -10px;
-    
-            p{
-                display: inline-block;
-                padding: 3px 20px;
-                background-color: #FB8A29;
-                color: #fff;
-                font-size: 14px;
-            }
-        }
-    
-        .product-image{
-            height:182px;
-            width:100%;
-            background-position: 0;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-bottom: 25px;
-            position: relative;
-    
-            &.video-remaker{
-                background-image: url(../images/download/video-remaker.png);
-            }
-            &.video-editor{
-                background-image: url(../images/download/video-editor.png);
-            }
-            &.video-converter{
-                background-image: url(../images/download/video-converter.png);
-            }
+    .dwn-card__media {
+        position: relative;
+        height: 258px;
+        padding-top: 38px;
+    }
 
-            &.audio-editor{
-                background-image: url(../images/download/audio-editor.png);
-            }
-            &.audio-converter{
-                background-image: url(../images/download/audio-converter.png);
-            }
+    .dwn-card__image {
+        width: 220px;
+        height: 220px;
+    }
 
-            &.registry-cleaner{
-                background-image: url(../images/download/registry-cleaner.png);
-            }
-            &.disc-creator{
-                background-image: url(../images/download/disc-creator.png);
-            }
-            &.photo-editor{
-                background-image: url(../images/download/photo-editor.png);
-            }
-            &.image-converter{
-                background-image: url(../images/download/image-converter.png);
-            }
-            &.media-player{
-                background-image: url(../images/download/media-player.png);
-            }
-            &.document-converter{
-                background-image: url(../images/download/document-converter.png);
-            }
-        }
-    
-        .product-name{
-            font-size: 24px;
-            font-weight: 600;
-        }
-    
-        .tech-params{
-            padding-top: 25px;
-            padding-bottom: 20px;
-    
-            p{
-                color:#555555;
-                font-size: 18px;
-                padding-left: 15px;
-                position: relative;
-                padding-bottom: 8px;
-    
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    top: 10px;
-                    left: 0;
-                    background-color: #1E72D2;
-                    border-radius: 4px;
-                }
-            }
-        }
+    .dwn-card__badge-slot {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 30px;
+    }
 
-        .product-button{
+    .dwn-card__details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-            p{
-                text-transform: unset;
-            }
+    .dwn-card__name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .dwn-card__sizes,
+    .dwn-card__meta {
+        font-size: 14px;
+        line-height: normal;
+        color: @dwn-grey;
+    }
+
+    .dwn-card__meta + .dwn-card__meta {
+        margin-top: 8px;
+    }
+
+    .dwn-card__actions {
+        display: flex;
+        gap: 20px;
+
+        .dwn-btn {
+            width: 150px;
         }
     }
 
-    .panelName{
-        padding: 30px 70px;
-        padding-left: 40px;
-        font-size: 20px;
-        text-align: left;
+    // 64-bit / 32-bit hint
+    .dwn-hint-wrapper {
+        padding: 0 16px;
+        background-color: #fff;
+    }
+
+    .dwn-hint {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: @dwn-max;
+        margin: 0 auto;
+        padding: 32px;
+        background-color: @dwn-light-blue;
+    }
+
+    .dwn-hint__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .dwn-hint__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    // Installation options table
+    .dwn-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 60px 16px;
+        background-color: #fff;
+    }
+
+    .dwn-options__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: @dwn-max;
+    }
+
+    .dwn-options__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .dwn-options__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .dwn-options__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            font-size: 16px;
+            line-height: 24px;
+
+            &:before {
+                content: "• ";
+            }
+        }
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    .dwn-table {
+        width: 100%;
+        max-width: @dwn-max;
+    }
+
+    .dwn-table__head,
+    .dwn-table__row {
+        display: grid;
+        grid-template-columns: @dwn-program-col repeat(3, minmax(0, 1fr));
+        border-bottom: 1px solid @dwn-border;
+    }
+
+    .dwn-table__head {
+        min-height: 112px;
+
+        .dwn-table__cell--program {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 32px;
+            font-size: 18px;
+        }
+    }
+
+    .dwn-table__head-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 16px;
+        text-align: center;
+
+        &--active {
+            border-top: 3px solid @dwn-blue;
+        }
+    }
+
+    .dwn-table__head-title {
+        font-size: 18px;
         font-weight: 600;
-        color: #000000;
+        line-height: normal;
+    }
+
+    .dwn-table__head-note {
+        font-size: 16px;
+        line-height: 24px;
+        color: @dwn-grey;
+    }
+
+    .dwn-table__row {
+        min-height: 112px;
+
+        &--package {
+            min-height: 128px;
+            background-color: @dwn-light-blue;
+        }
+    }
+
+    .dwn-table__cell--program {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px 24px 16px 32px;
+    }
+
+    .dwn-table__product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .dwn-table__product-name {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .dwn-table__package-name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .dwn-table__package-note {
+        font-size: 16px;
+        line-height: 24px;
+        color: @dwn-grey;
+    }
+
+    .dwn-table__cell--installer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .dwn-table__cell-label {
+        display: none;
+    }
+
+    .dwn-table__size {
+        font-size: 14px;
+        line-height: normal;
+        color: @dwn-grey;
+    }
+
+    .dwn-table__group {
+        display: flex;
+        align-items: center;
+        min-height: 64px;
+        padding-left: 32px;
+        border-bottom: 1px solid @dwn-border;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    // FAQ
+    .dwn-faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 80px 16px;
+        background-color: #F9F9F9;
+    }
+
+    .dwn-faq__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .dwn-faq__list {
+        width: 100%;
+        max-width: 1120px;
+    }
+
+    .dwn-faq__item {
+        background-color: #fff;
+        border: 1px solid @dwn-border;
+
+        & + .dwn-faq__item {
+            border-top: none;
+        }
+    }
+
+    .dwn-faq__question {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 32px;
+        border: none;
+        background: none;
+        font-family: inherit;
+        text-align: left;
         cursor: pointer;
+        color: @dwn-text;
 
-        &:before{
-            width: 16px;
-            height: 24px;
-            top: 34px;
-            right: 25px;
+        &:hover .dwn-faq__question-text {
+            color: @dwn-blue;
         }
     }
 
-    .panelNameWrapper{
-        cursor:pointer;
-        transition: ease-out 0.5s;
+    .dwn-faq__question-text {
+        flex: 1;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        transition: color .2s ease;
     }
 
-    .questions-wrapper{
-        max-width: 944px;
-        margin: auto;
+    .dwn-faq__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 34px;
+        height: 34px;
+        font-size: 24px;
+        font-weight: 700;
+        color: @dwn-grey;
+    }
 
-        .linksWrapper{
-            p{
-                color: #1E72D2;
-            }
+    .dwn-faq__item.is-open .dwn-faq__question {
+        padding-bottom: 16px;
+    }
 
-            a{
-                display:table;
-                padding-left:15px;
-                padding-bottom:5px;
-                position: relative;   
+    .dwn-faq__answer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 32px 32px;
+        font-size: 14px;
+        line-height: normal;
 
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    top: 10px;
-                    left: 0;
-                    background-color: #1E72D2;
-                    border-radius: 4px;
-                }
-            }
-        }
+        a {
+            color: @dwn-text;
+            text-decoration: none;
 
-        .panelCollapse{
-
-            box-shadow: none;
-            border-radius: 0;
-            border-bottom: 1px solid #E4E4E4;
-
-            &:first-child{
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
-
-            &:last-child{
-                margin-bottom: 0px;
-                border: none;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
+            &:hover {
+                text-decoration: underline;
             }
         }
 
-        .panelContent {
+        .dwn-faq__more {
+            align-self: flex-start;
+            color: @dwn-blue;
+            text-decoration: none;
 
-            .collapseContent{
-                padding: 35px 40px;
-                padding-top: 0px;
-                box-sizing: border-box; 
-
-                .info-block{
-                    padding-bottom: 15px;
-                }
-
-                .info-block:last-child{
-                    padding-bottom: 0;
-                }
-            }
-
-            .info-block{
-                
-                h5{
-                    font-size: 22px;
-                    margin-top: 40px;
-                    margin-bottom: 15px;
-                    font-weight: 700;
-                }
-
-                span{
-                    color:#1E72D2;
-                }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
 }
 
 @media (max-width: 1600px) {
-    .download{ 
-        .product-wrapper{
-            max-width: 1070px;
+    .download {
+        .dwn-hero {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .dwn-section__grid {
+            max-width: 1120px;
+        }
+
+        .dwn-table__head,
+        .dwn-table__row {
+            grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
         }
     }
 }
 
 @media (max-width: 1100px) {
-    .download{ 
-        .header{
-            background-position: calc(100% + 250px);
+    .download {
+        .dwn-hero {
+            padding-left: 40px;
+            padding-right: 40px;
+            min-height: 520px;
         }
 
-        .panelName{
-            font-size: 20px;
+        .dwn-hero__title {
+            font-size: 52px;
+        }
 
+        .dwn-table__head,
+        .dwn-table__row {
+            grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+        }
+
+        .dwn-btn--table {
+            width: 100%;
+            max-width: 160px;
+            padding: 0 12px;
         }
     }
 }
 
-@media (max-width: 750px) {
-    .download{
-        .product-box{
-            display:block !important;
-            margin:auto;
+@media (max-width: 900px) {
+    .download {
+        .dwn-table__head {
+            display: none;
         }
 
-        .panelName{
-            font-size: 18px;
-            padding: 30px 43px;
+        .dwn-table__row {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            padding: 16px 0;
+        }
+
+        .dwn-table__cell--program {
+            grid-column: ~"1 / -1";
+            padding: 0 16px 8px;
+        }
+
+        .dwn-table__cell--installer {
+            justify-content: flex-start;
+            padding: 8px;
+        }
+
+        .dwn-table__cell-label {
+            display: block;
+            min-height: 34px;
+            font-size: 13px;
+            line-height: 17px;
+            text-align: center;
+            color: @dwn-grey;
+        }
+
+        .dwn-table__group {
             padding-left: 16px;
-        }
-
-        .questions-wrapper .panelContent {
-
-            .collapseContent{
-                padding-left: 16px;
-                padding-right:16px;
-            }
         }
     }
 }
 
 @media (max-width: 620px) {
-    .download{ 
-
-        .headerDownloadButtons{
-            margin: auto;
+    .download {
+        .dwn-hero {
+            min-height: 0;
+            padding: 80px 16px 120px;
         }
 
-        .screen-wrapper.questions-block{
-            padding: 64px 0;
+        .dwn-hero__overlay {
+            background: rgba(0, 0, 0, .6);
         }
 
-        .questions-wrapper{
-            margin-top:64px;
+        .dwn-hero__title {
+            font-size: 40px;
         }
 
-        .header{
-            .header__button{
-                margin:auto;
-                margin-top: 50px;
-                padding: 12px 50px;
-                display: table;
+        .dwn-hero__subtitle {
+            font-size: 20px;
+        }
+
+        .dwn-section,
+        .dwn-faq {
+            padding: 56px 16px;
+            gap: 32px;
+        }
+
+        .dwn-section__title,
+        .dwn-options__title,
+        .dwn-faq__title {
+            font-size: 26px;
+        }
+
+        .dwn-card {
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .dwn-hint {
+            padding: 24px 16px;
+        }
+
+        .dwn-hint__title {
+            font-size: 20px;
+        }
+
+        .dwn-options {
+            padding: 48px 16px;
+        }
+
+        .dwn-table__row {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        .dwn-badge {
+            height: auto;
+            min-height: 26px;
+            white-space: normal;
+            line-height: 18px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        .dwn-table__cell--installer {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-areas:
+                "label button"
+                "size button";
+            align-items: center;
+            justify-items: start;
+            column-gap: 12px;
+            row-gap: 2px;
+            padding: 8px 16px;
+
+            .dwn-table__cell-label {
+                grid-area: label;
+                min-height: 0;
+                text-align: left;
             }
 
-            .header__button-text{
-                font-size: 14px;
+            .dwn-table__size {
+                grid-area: size;
             }
 
-            .header__body{
-                padding-top: 100px;
-                padding-bottom: 170px;
+            .dwn-btn {
+                grid-area: button;
+                height: 48px;
+                width: 140px;
+                font-size: 16px;
             }
         }
 
-        .screen-wrapper{
-            padding: 80px 30px;
-            &.products-wrap{
-                padding: 80px 30px;
-            }
+        .dwn-table__group {
+            font-size: 20px;
+        }
+
+        .dwn-faq__question {
+            padding: 20px 16px;
+        }
+
+        .dwn-faq__item.is-open .dwn-faq__question {
+            padding-bottom: 12px;
+        }
+
+        .dwn-faq__question-text {
+            font-size: 18px;
+        }
+
+        .dwn-faq__answer {
+            padding: 0 16px 20px;
         }
     }
 }
 
-@media (max-width: 460px) {
-    .download{ 
-        .header{   
-            .header__background-gradient{
-                background: radial-gradient(closest-side at 52% 52%, #000000CC 0%, #131313AB 173%, #54545400 362%) 0% 0% no-repeat padding-box;
-            }
+@media (max-width: 400px) {
+    .download {
+        .dwn-card__actions .dwn-btn {
+            width: auto;
+            flex: 1;
         }
 
-        .product-box{
-            min-width: 0;
-            max-width: none;
-            padding: 45px 35px;
-            padding-top: 45px;
-            box-sizing: border-box;
-
-            .mainButton, .desktopButton{
-                padding: 10px 24px;
-                display: table;
-                margin: auto;
-            }
-        }
-
-        .screen-wrapper{
-            padding: 50px 15px;
-            &.products-wrap{
-                padding: 50px 0;
-            }
-        }
-
-        .header__body{
-            padding-top: 100px;
-            padding-bottom: 200px;
+        .dwn-hero__buttons .dwn-btn--hero {
+            width: 100%;
         }
     }
 }
