@@ -13,6 +13,12 @@
   - `avs-audio-editor.aspx`: "AI Plugins" block with four plugins and new screenshot instead of "Extend your experience with additional features"
   - `avs-free-audio-converter.aspx`: "Create music with AI" block with new screenshot instead of "Create audio files for any purpose"
 * Hide banner "Black Friday 2026" (the Wheel of Luck is kept)
+* Support three installer sets for release 26.1.1: `_x64` and `_x86` for Windows 7–11, classic installers for Windows XP / Vista
+  - Download buttons on product pages, landing pages and the main page lead to the `_x64` installers; 32-bit Windows gets `_x86`, Windows XP / Vista gets the classic installer (not on `downloads.aspx`, where the visitor picks the installer)
+  - Changed products info: version 26.1.1 and sizes of the new installers, separate version and size of the Windows XP / Vista installers
+  - `downloads.aspx`: version 26.1.1 in product cards, version 26.0.3.6 in the Windows XP / Vista column
+  - Product pages: platforms Windows 11, 10, 8.1, 8, 7 and a link to `downloads.aspx` for Windows XP / Vista
+  - Updated pads files (version, date, file size, x64 download link)
 
 ## 1.0.118 (18.11.2026)
 ### New
