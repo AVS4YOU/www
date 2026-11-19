@@ -7,6 +7,7 @@ import FreeFlag from '../components/free-flag';
 import PageContentWrapper from "../components/page-content-wrapper";
 import PanelCollapse from "../components/panel-collapse";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
@@ -96,29 +97,31 @@ export const AvsVideoConverterOtherContent = (props) => (
         </div>
 
         <PageContentWrapper className="videoConverter">
-            <ContentRowItem
+            <AiPluginsBlock
                 id="overview"
-                imgLeft={false}
-                asType={props.t("h2")}
                 newText={props.t("New")}
-                imageName={props.t("video converter convert video with ai png")}
-                headerText={props.t("Convert video with AI")}
-                showFirstBlockBullets={false}
-                secondHeaderText={props.t("Add new AI–generated effects")}
-                showSecondBlockBullets={false}
-                secondBlockContent={
-                    <Text className="ListItem">
-                        <Trans
-                            i18nKey="Add AI-powered image and video effects while preparing your video"
-                            components={[
-                                <a key="0" target="_blank" href="https://avs4you.github.io" />,
-                            ]}
-                        />
-                    </Text>
+                introInline
+                intro={
+                    <Trans
+                        i18nKey="ai_vc_intro"
+                        components={[
+                            <a key="0" className="aiLink" target="_blank" rel="noreferrer noopener" href="https://avs4you.github.io/" />,
+                        ]}
+                    />
                 }
-            >
-                <Text className="ListItem">{props.t("Go from a text idea to a perfectly formatted video")}</Text>
-            </ContentRowItem>
+                features={[
+                    { title: props.t("ai_text_to_video_title"), text: props.t("ai_vc_text_to_video_text") },
+                    { title: props.t("ai_subtitles_title"), text: props.t("ai_vc_subtitles_text") },
+                    { title: props.t("ai_vc_effects_title"), text: props.t("ai_vc_effects_text") },
+                    { title: props.t("ai_save_online_title"), text: props.t("ai_vc_save_online_text") },
+                ]}
+                featureAs={props.t("h2")}
+                note={props.t("ai_save_online_note")}
+                imageName={props.t("video converter convert video with ai png")}
+                imageAlt={props.t("ai_plugins_title")}
+                marketplaceText={props.t("ai_marketplace")}
+                marketplaceId="plugins-marketplace_avs-free-video-converter"
+            />
             <ContentRowItem
                 imgLeft={true}
                 asType={props.t("h2")}

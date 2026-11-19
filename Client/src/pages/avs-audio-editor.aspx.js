@@ -6,6 +6,7 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ReviewScreenNew from '../components/review-screen-new';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -32,6 +33,10 @@ const isEngLang = (currentLang) => {
 
     return isEngLang;
 }
+
+// languages that have the AI plugins block copy
+const aiLang = ['en', 'de', 'es', 'fr', 'it', 'jp'];
+const isAiLang = (currentLang) => aiLang.includes(currentLang);
 
 
 class avsAudioEditor extends React.PureComponent {
@@ -168,16 +173,32 @@ class avsAudioEditor extends React.PureComponent {
                                 className="ListItem">{this.props.t("Use an equalizer to adjust volume in a desired way")}</Text>
                         </ContentRowItem>
 
-                        <ContentRowItem
-                            imgLeft={false}
-                            imageName={this.props.t("audio editor slider6 jpg")}
-                            headerText={this.props.t("Extend your experience with additional features")}
-                        >
-                            <Text
-                                className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
-                            <Text
-                                className="ListItem">{this.props.t("Create ringtones for iPhones and other smartphones")}</Text>
-                        </ContentRowItem>
+                        {isAiLang(this.props.locale)
+                            ? <AiPluginsBlock
+                                newText={this.props.t("New")}
+                                title={this.props.t("ai_plugins_title")}
+                                intro={this.props.t("ai_ae_intro")}
+                                features={[
+                                    { title: this.props.t("ai_ae_audio_title"), text: this.props.t("ai_ae_audio_text") },
+                                    { title: this.props.t("ai_ae_songs_title"), text: this.props.t("ai_ae_songs_text") },
+                                    { title: this.props.t("ai_ae_stems_title"), text: this.props.t("ai_ae_stems_text") },
+                                    { title: this.props.t("ai_ae_tts_title"), text: this.props.t("ai_ae_tts_text") },
+                                ]}
+                                imageName={this.props.t("ai_ae_image")}
+                                marketplaceText={this.props.t("ai_marketplace")}
+                                marketplaceId="plugins-marketplace_avs-audio-editor"
+                            />
+                            : <ContentRowItem
+                                imgLeft={false}
+                                imageName={this.props.t("audio editor slider6 jpg")}
+                                headerText={this.props.t("Extend your experience with additional features")}
+                            >
+                                <Text
+                                    className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
+                                <Text
+                                    className="ListItem">{this.props.t("Create ringtones for iPhones and other smartphones")}</Text>
+                            </ContentRowItem>
+                        }
 
                     </PageContentWrapper>
                     <div id="reviews" className="backgroundWrapper">

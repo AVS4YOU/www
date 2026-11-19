@@ -17,7 +17,7 @@ import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
-import { Trans } from "react-i18next";
+import AiPluginsBlock from '../components/ai-plugins-block';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -174,30 +174,26 @@ export const AvsVideoEditorOtherContent = (props) => (
   </div>
 
   <PageContentWrapper>
-    <ContentRowItem
+    <AiPluginsBlock
         id="overview"
-        imgLeft={false}
-        imageName={props.t("generate video with ai png")}
-        headerText={props.t("Generate video with AI")}
+        layout="wide"
         newText={props.t("New")}
-        aiPluginText={props.t("AI Plugin")}
-        showFirstBlockBullets={true}
-        secondHeaderText={props.t("Apply AI-driven effects")}
-        showSecondBlockBullets={false}
-        secondBlockContent={
-          <Text className="ListItem">
-            <Trans
-              i18nKey="Expand your creative toolkit with new AI-powered image"
-              components={[
-                <a key="0" target="_blank" href="https://avs4you.github.io" />,
-              ]}
-            />
-          </Text>
-        }
-    >
-      <Text className="ListItem">{props.t("Generate short video clips")}</Text>
-      <Text className="ListItem">{props.t("Create AI generated scenes")}</Text>
-    </ContentRowItem>
+        title={props.t("ai_plugins_title")}
+        intro={props.t("ai_ve_intro")}
+        features={[
+          { title: props.t("ai_text_to_video_title"), text: props.t("ai_ve_text_to_video_text") },
+          { title: props.t("ai_ve_images_title"), text: props.t("ai_ve_images_text") },
+          { title: props.t("ai_ve_music_title"), text: props.t("ai_ve_music_text") },
+          { title: props.t("ai_ve_voiceover_title"), text: props.t("ai_ve_voiceover_text") },
+          { title: props.t("ai_subtitles_title"), text: props.t("ai_ve_subtitles_text") },
+          { title: props.t("ai_save_online_title"), text: props.t("ai_ve_save_online_text") },
+        ]}
+        note={props.t("ai_save_online_note")}
+        imageName="ai_plugins_video_editor.png"
+        marketplaceText={props.t("ai_ve_marketplace")}
+        marketplaceId="plugins-marketplace_avs-video-editor"
+        marketplaceAsLink
+    />
 
     <ContentRowItem 
         imgLeft={true}

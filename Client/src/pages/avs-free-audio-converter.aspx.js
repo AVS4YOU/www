@@ -7,6 +7,7 @@ import FreeFlag from '../components/free-flag';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
@@ -20,6 +21,10 @@ import Star from '../images/main-page/icons/star.svg';
 
 import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
+
+// languages that have the AI plugins block copy
+const aiLang = ['en', 'de', 'es', 'fr', 'it', 'jp'];
+const isAiLang = (currentLang) => aiLang.includes(currentLang);
 
 
 class avsAudioConverter extends React.PureComponent {
@@ -116,16 +121,26 @@ render(){
               <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
-            <ContentRowItem 
-                imgLeft={false}
-                imageName={this.props.t("audio converter slider3 jpg")}
-                headerText={this.props.t("Create audio files for any purpose")}
-            >
-              <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
-              <Text className="ListItem">{this.props.t("Create ringtones Edit an audio file and save it to M4R format for iPhone")}</Text>
-              <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}</Text>
-              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
-            </ContentRowItem>
+            {isAiLang(this.props.locale)
+              ? <AiPluginsBlock
+                  newText={this.props.t("New")}
+                  title={this.props.t("ai_ac_title")}
+                  intro={this.props.t("ai_ac_text")}
+                  imageName="ai_plugins_audio_converter.jpg"
+                  marketplaceText={this.props.t("ai_marketplace")}
+                  marketplaceId="plugins-marketplace_avs-free-audio-converter"
+                />
+              : <ContentRowItem
+                  imgLeft={false}
+                  imageName={this.props.t("audio converter slider3 jpg")}
+                  headerText={this.props.t("Create audio files for any purpose")}
+                >
+                  <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
+                  <Text className="ListItem">{this.props.t("Create ringtones Edit an audio file and save it to M4R format for iPhone")}</Text>
+                  <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}</Text>
+                  <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
+                </ContentRowItem>
+            }
 
             <ContentRowItem 
               imgLeft={true}
