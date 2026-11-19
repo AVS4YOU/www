@@ -42,7 +42,8 @@ const halloweenBannerLinks = {
 };
 
 const StyledPL = styled.div`
-/* display: none; */
+/* Black Friday 2026 banner is hidden for now; remove this line to show it again (it also opens the wheel). */
+display: none;
 position: relative;
 text-align: center;
 background: #000000;
