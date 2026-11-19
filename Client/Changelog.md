@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.119 (19.11.2026)
+### New
+* Update AI plugins block for EN, DE, ES, FR, IT, JP (other languages keep the previous blocks)
+  - `avs-video-editor.aspx`: "AI Plugins" block with six plugins in two columns, new screenshot and "Explore Plugins Marketplace" link
+  - `avs-free-video-converter.aspx`: four plugins with a note on saving online videos and "Explore Plugins Marketplace" button
+  - `avs-audio-editor.aspx`: "AI Plugins" block with four plugins and new screenshot instead of "Extend your experience with additional features"
+  - `avs-free-audio-converter.aspx`: "Create music with AI" block with new screenshot instead of "Create audio files for any purpose"
+* Hide banner "Black Friday 2026" (the Wheel of Luck is kept)
+
 ## 1.0.118 (18.11.2026)
 ### New
 * Add banner "Black Friday 2026" that opens the Black Friday Wheel of Luck (desktop only)
