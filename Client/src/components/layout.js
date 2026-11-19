@@ -15,6 +15,7 @@ import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 import CustomLink from '../components/link';
 import HalloweenSideBanner from "../components/halloween-side-banner";
 import Text from "../components/text";
+import {detectInstallerType, getInstallerLink} from "./download-links";
 
 import PlAVSbgLeft from "../images/pl/pl-bg-left.svg";
 import PlAVSbgRight from "../images/pl/pl-bg-right.svg";
@@ -655,6 +656,13 @@ class Layout extends React.PureComponent {
     componentDidMount() {
         this.detectUserCurrency();
 
+        // Download buttons point to the x64 installers; 32-bit Windows gets x86, XP / Vista gets the classic installer.
+        if (!this.props.installerAutoSelectIsDisabled) {
+            detectInstallerType().then((type) => { this.installerType = type; });
+            document.addEventListener('click', this.onInstallerLinkClick, true);
+            document.addEventListener('auxclick', this.onInstallerLinkClick, true);
+        }
+
         this.updateWindowDimensions();
         const pages = JSON.parse(sessionStorage.getItem('pages'))
         if (window.location.pathname === '/register.aspx') {
@@ -778,8 +786,21 @@ class Layout extends React.PureComponent {
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateWindowDimensions);
         window.removeEventListener('mouseleave', this.onMouseLeave)
+        document.removeEventListener('click', this.onInstallerLinkClick, true);
+        document.removeEventListener('auxclick', this.onInstallerLinkClick, true);
         if (this.script) {
             document.body.removeChild(this.script);
+        }
+    }
+
+    // Swaps the x64 installer link for the one that suits the visitor's Windows right before the browser follows it.
+    onInstallerLinkClick = (e) => {
+        if (!this.installerType || this.installerType === 'x64') return;
+        const link = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!link) return;
+        const href = getInstallerLink(link.href, this.installerType);
+        if (href && href !== link.href) {
+            link.href = href;
         }
     }
 
@@ -1086,6 +1107,8 @@ class Layout extends React.PureComponent {
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
+    // true on pages where the visitor picks the installer explicitly (downloads.aspx)
+    installerAutoSelectIsDisabled: PropTypes.bool,
 }
 
 Layout.defaultProps = {

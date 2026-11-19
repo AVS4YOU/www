@@ -63,8 +63,8 @@ class avsFreeImageConverter extends React.PureComponent {
                                       fontSize={24}>{this.props.t("Compress resize and convert images to JPEG and other key formats")}</Text>
                                 <HeaderDownloadButtons
                                     t={this.props.t}
-                                    mainHref="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
-                                    secondaryText="Windows 11/10/8/7/Vista/XP"
+                                    mainHref="https://downloads.avs4you.com/distributives/AVSImageConverter_x64.exe"
+                                    secondaryText="Windows 11/10/8/7"
                                     backgroundColor="orange"
                                     mainPadding="12px 37px"
                                     margin="auto"
@@ -238,14 +238,18 @@ class avsFreeImageConverter extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Platforms")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">Windows 11, 10, 8.1, 8, 7, Vista,
-                                    XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                                      align="left">Windows 11, 10, 8.1, 8, 7 {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                            </div>
+
+                            <div className="downloadInfoRow">
+                              <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                              <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-image-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
                             </div>
                         </div>
                         <DownloadScrollButton 
                             className="buttonWrapper"
                             id="download-now2_avs-free-image-converter"
-                            href="https://downloads.avs4you.com/distributives/AVSImageConverter.exe"
+                            href="https://downloads.avs4you.com/distributives/AVSImageConverter_x64.exe"
                             to="headerContentWrapper" 
                             textDownload={this.props.t("download now")}
                             textGetCoupon={this.props.t("get 5 coupon code")}

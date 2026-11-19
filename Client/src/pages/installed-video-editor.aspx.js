@@ -173,7 +173,7 @@ render(){
               <FixStyles />
               <div className="common-info-block">
                 <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ae_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ae_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 {this.props.t("AVS Audio Editor name")}
                 </Text>
@@ -184,7 +184,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vc_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vc_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 {this.props.t("AVS Video Converter name")}
                 </Text>
@@ -195,7 +195,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ac_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ac_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 {this.props.t("AVS Audio Converter name")}
                 </Text>
@@ -206,7 +206,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vr_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vr_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 {this.props.t("AVS Video ReMaker name")}
                 </Text>

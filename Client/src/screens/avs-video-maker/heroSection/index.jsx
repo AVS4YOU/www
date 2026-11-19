@@ -28,12 +28,12 @@ export const HeroSection = ({t}) => {
                         {t('Create engaging content effortlessly with no editing experience.')}
                     </HeroSectionContentSubtitle>
                     <HeroSectionContentLink>
-                        <Link id="donwload_avs-video-maker" to="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
+                        <Link id="donwload_avs-video-maker" to="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">
                             <span>
                                 {t('Download Video Maker')}
                             </span>
                             <span>
-                                {t('Windows 11/10/8/7/Vista/XP')}
+                                {t('Windows 11/10/8/7')}
                             </span>
                         </Link>
                     </HeroSectionContentLink>

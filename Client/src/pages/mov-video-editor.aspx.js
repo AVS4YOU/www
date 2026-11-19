@@ -53,7 +53,7 @@ render(){
                 <div className="vel_description">{this.props.t("Create professional looking movies fast and effectively and save them to all popular formats DVD, MPEG, MP4, AVI, MOV, WMV, FLV etc")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
-                        <a className="button download" id="download-now_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download now")}</a>
+                        <a className="button download" id="download-now_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">{this.props.t("Download now")}</a>
                         <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
                     </div>
                     <div className="vel_top_buy">
@@ -129,7 +129,7 @@ render(){
             </div>
             <div className="vel_bottom_buttons">
                 <div className="vel_bottom_download">
-                    <a className="button download" id="download-ve_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
+                    <a className="button download" id="download-ve_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" onclick="evtmng(this)">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
                     <a className="button buynow" id="buy_mov-video-editor" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy")}</a>

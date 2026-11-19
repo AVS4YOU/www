@@ -192,7 +192,7 @@ render(){
                     padding="16.5px 35px"
                     textTransform="uppercase"
                     id="download-now1_video-editing-software"
-                    href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
                 </div>
@@ -369,7 +369,7 @@ render(){
                     style={{backgroundColor:"#FC4B15"}}
                     textTransform="uppercase"
                     id="download-now2_video-editing-software"
-                    href="https://new.avs4you.com/downloads/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
             </div>

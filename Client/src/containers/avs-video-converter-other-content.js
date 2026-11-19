@@ -62,8 +62,8 @@ export const AvsVideoConverterOtherContent = (props) => (
                           fontWeight={400}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
                     <HeaderDownloadButtons
                         t={props.t}
-                        mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                        secondaryText="Windows 11/10/8/7/Vista/XP"
+                        mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
+                        secondaryText="Windows 11/10/8/7"
                         backgroundColor="orange"
                         mainPadding="12px 37px"
                         margin="auto"
@@ -210,7 +210,7 @@ export const AvsVideoConverterOtherContent = (props) => (
 
         <DownloadScrollButton className="buttonWrapper"
                               id="download-now2_avs-free-video-converter"
-                              href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                              href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
                               to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
 
         <div className="block-awards" style={{maxWidth: "100%"}}>
@@ -330,13 +330,18 @@ export const AvsVideoConverterOtherContent = (props) => (
                     <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                           align="right">{props.t("Platforms")}</Text>
                     <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows
-                        11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
+                        11, 10, 8.1, 8, 7 {props.t("(no Mac OS/ Linux support)")}</Text>
+                </div>
+
+                <div className="downloadInfoRow">
+                  <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                  <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-video-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {props.t("dwn_col_xp_note")}</Text>
                 </div>
             </div>
             <DownloadScrollButton
                 id="download-now2_avs-free-video-converter"
                 className="buttonWrapper"
-                href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
                 to="headerContentWrapper" 
                 textDownload={props.t("download now")}
                 textGetCoupon={props.t("get 5 coupon code")}

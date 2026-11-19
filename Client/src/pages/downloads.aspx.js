@@ -8,8 +8,7 @@ import ImageGQL from "../components/image-gql";
 import HeaderDownloadButtons from "../components/header-download-buttons";
 import ScrollUpButton from '../components/scroll-up-button';
 import {InstallPack, VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
-
-const DISTR_URL = "https://downloads.avs4you.com/distributives/";
+import {getDownloadLinks} from "../components/download-links";
 
 const VIDEO_PRODUCTS = [
   {id: "ve", name: "AVS Video Editor", file: "AVSVideoEditor", image: "box-video-editor", info: VideoEditor, badge: "dwn_badge_bestseller"},
@@ -22,12 +21,6 @@ const AUDIO_PRODUCTS = [
   {id: "ae", name: "AVS Audio Editor", file: "AVSAudioEditor", image: "box-audio-editor", info: AudioEditor},
   {id: "ac", name: "AVS Audio Converter", file: "AVSAudioConverter", image: "box-audio-converter", info: AudioConverter, badge: "dwn_badge_free"},
 ];
-
-const getLinks = (file) => ({
-  x64: `${DISTR_URL}${file}_x64.exe`,
-  x86: `${DISTR_URL}${file}_x86.exe`,
-  xp: `${DISTR_URL}${file}.exe`,
-});
 
 class FaqItem extends React.PureComponent {
   constructor(props) {
@@ -76,7 +69,7 @@ class Download extends React.PureComponent {
   renderProductCard(product) {
     const { t } = this.props;
     const { info } = product;
-    const links = getLinks(product.file);
+    const links = getDownloadLinks(product.file);
 
     return (
       <div className="dwn-card" key={product.id}>
@@ -116,20 +109,20 @@ class Download extends React.PureComponent {
     );
   }
 
-  renderInstallerCell(type, href, size, id, label) {
+  renderInstallerCell(type, href, size, id, label, version) {
     const { t } = this.props;
     return (
       <div className={`dwn-table__cell dwn-table__cell--installer dwn-table__cell--${type}`}>
         <span className="dwn-table__cell-label">{label}</span>
         <a className={"dwn-btn dwn-btn--table " + (type === "x64" ? "dwn-btn--blue" : "dwn-btn--border")} id={id} href={href}>{t("dwn_download")}</a>
-        <span className="dwn-table__size">{size} {t("dwn_mb")}</span>
+        <span className="dwn-table__size">{size} {t("dwn_mb")}{version ? ` · ${version}` : ""}</span>
       </div>
     );
   }
 
   renderTableRow(product) {
     const { t } = this.props;
-    const links = getLinks(product.file);
+    const links = getDownloadLinks(product.file);
     return (
       <div className="dwn-table__row" key={product.id}>
         <div className="dwn-table__cell dwn-table__cell--program">
@@ -140,18 +133,19 @@ class Download extends React.PureComponent {
         </div>
         {this.renderInstallerCell("x64", links.x64, product.info.size64, `download-${product.id}-x64_downloads`, "Windows 7–11, 64-bit")}
         {this.renderInstallerCell("x86", links.x86, product.info.size32, `download-${product.id}-x86_downloads`, "Windows 7–10, 32-bit")}
-        {this.renderInstallerCell("xp", links.xp, product.info.size, `download-${product.id}-xp_downloads`, "Windows XP / Vista")}
+        {this.renderInstallerCell("xp", links.xp, product.info.sizeXP, `download-${product.id}-xp_downloads`, "Windows XP / Vista", product.info.versionXP)}
       </div>
     );
   }
 
   render() {
     const { t } = this.props;
-    const packLinks = getLinks("AVSInstallPack");
+    const packLinks = getDownloadLinks("AVSInstallPack");
 
     return (
       <Layout
         className="download"
+        installerAutoSelectIsDisabled
         pageContext={this.props.pageContext}
         t={t}
         title={t("dwn_meta_title")}
@@ -233,7 +227,7 @@ class Download extends React.PureComponent {
               </div>
               {this.renderInstallerCell("x64", packLinks.x64, InstallPack.size64, "download-pack-x64_downloads", "Windows 7–11, 64-bit")}
               {this.renderInstallerCell("x86", packLinks.x86, InstallPack.size32, "download-pack-x86_downloads", "Windows 7–10, 32-bit")}
-              {this.renderInstallerCell("xp", packLinks.xp, InstallPack.size, "download-pack-xp_downloads", "Windows XP / Vista")}
+              {this.renderInstallerCell("xp", packLinks.xp, InstallPack.sizeXP, "download-pack-xp_downloads", "Windows XP / Vista", InstallPack.versionXP)}
             </div>
 
             <div className="dwn-table__group">{t("dwn_video_software")}</div>

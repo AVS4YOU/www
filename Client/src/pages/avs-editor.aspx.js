@@ -101,8 +101,8 @@ render(){
                 <HeaderDownloadButtons
                   id="download-now1_avs-editor"
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                  secondaryText="Windows 11/10/8/7/Vista/XP"
+                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe"
+                  secondaryText="Windows 11/10/8/7"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -194,7 +194,7 @@ render(){
                 <Text className="ListItem">{this.props.t("Publish your creative work in social networks")}</Text>
               </ContentRowItem>
             </PageContentWrapper>
-            <DownloadScrollButton id="download-now2_avs-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={this.props.t("download now")} textGetCoupon={this.props.t("get 5 coupon code")}/>
+            <DownloadScrollButton id="download-now2_avs-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" to="headerContentWrapper" textDownload={this.props.t("download now")} textGetCoupon={this.props.t("get 5 coupon code")}/>
             
             <div className="block-awards">
               <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{this.props.t("Reviewed and highly rated by")}</Text>
@@ -280,13 +280,18 @@ render(){
 
                 <div className="downloadInfoRow">        
                   <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                  <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                  <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                </div>
+
+                <div className="downloadInfoRow">
+                  <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                  <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-editor" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
                 </div>
               </div>
               <DownloadScrollButton 
                 id="download-now3_avs-editor" 
                 className="buttonWrapper" 
-                href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
+                href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" 
                 to="headerContentWrapper" 
                 textDownload={this.props.t("download now")}
                 textGetCoupon={this.props.t("get 5 coupon code")}

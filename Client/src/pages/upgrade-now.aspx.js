@@ -290,7 +290,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-vc_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-vc_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-vc_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -371,7 +371,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ac_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ac_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ac_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -480,7 +480,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ve_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ve_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ve_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -554,7 +554,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ae_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ae_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ae_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -628,7 +628,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-vr_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-vr_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-vr_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -720,7 +720,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-vc_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-vc_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-vc_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -815,7 +815,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ac_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ac_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ac_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -927,7 +927,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ve_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ve_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ve_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -1004,7 +1004,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-ae_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-ae_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-ae_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
@@ -1081,7 +1081,7 @@ render(){
                   </tr>
                   </table>
                   <div className="choose-program__buttons-wrapper">
-                    <Button id="download-now-vr_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
+                    <Button id="download-now-vr_upgrade-now" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe" textClassName="choose-program__button-text" className="choose-program__button-white">
                     {this.props.t("Download now")}
                     </Button>
                     <Button id="upgrade-now-vr_upgrade-now" href="https://store.avs4you.com/order/checkout.php?PRODS=604132&QTY=1&CURRENCY=USD&DCURRENCY=USD&LANG=en&LANGUAGES=en,de,fr,es,it,ja,nl,da,ko,pl,zh&CART=1&CARD=2&CLEAN_CART=ALL&SHORT_FORM=1&AUTO_PREFILL=1&_ga=2.190376299.1567942970.1598170647-942264271.1594810360" textClassName="choose-program__button-text" className="choose-program__button-blue">
