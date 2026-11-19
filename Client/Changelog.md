@@ -2,6 +2,11 @@
 
 ## 1.0.119 (19.11.2026)
 ### New
+* Redesign page `downloads.aspx` and translate it to all languages
+  - Hero with download of the AVS4YOU installation package
+  - Video and audio software cards
+  - Table of installers for 64-bit, 32-bit Windows and Windows XP with a hint on which one to choose
+  - FAQ
 * Update AI plugins block for EN, DE, ES, FR, IT, JP (other languages keep the previous blocks)
   - `avs-video-editor.aspx`: "AI Plugins" block with six plugins in two columns, new screenshot and "Explore Plugins Marketplace" link
   - `avs-free-video-converter.aspx`: four plugins with a note on saving online videos and "Explore Plugins Marketplace" button
