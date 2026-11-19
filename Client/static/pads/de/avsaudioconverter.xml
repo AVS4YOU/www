@@ -82,9 +82,9 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>91510952</File_Size_Bytes>
-      <File_Size_K>89366</File_Size_K>
-      <File_Size_MB>87.27</File_Size_MB>
+      <File_Size_Bytes>103155512</File_Size_Bytes>
+      <File_Size_K>100737</File_Size_K>
+      <File_Size_MB>98.38</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Audio Converter</Program_Name>
-    <Program_Version>26.0.3.6</Program_Version>
+    <Program_Version>26.1.1</Program_Version>
     <Program_Release_Month>11</Program_Release_Month>
-    <Program_Release_Day>03</Program_Release_Day>
+    <Program_Release_Day>19</Program_Release_Day>
     <Program_Release_Year>2026</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -138,7 +138,7 @@
       <Application_XML_File_URL>https://www.avs4you.com/pads/de/avsaudioconverter.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>https://download.avs4you.com/distributives/AVSAudioConverter.exe</Primary_Download_URL>
+      <Primary_Download_URL>https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe</Primary_Download_URL>
       <Secondary_Download_URL></Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
