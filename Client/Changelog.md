@@ -3,11 +3,15 @@
 ## 1.0.120 (20.11.2026)
 ### Fixes
 * Screenshot headings on product pages show the current version (26.1), taken from products info instead of hardcoded 26.0
-* Updated pads files: supported OS Win7 x64, Windows 8, Windows 10, Windows 11 (Windows 2000, XP, Vista, Server 2003 removed)
+* Updated pads files: supported OS is now only Win7 x64, Windows 8, Windows 10, Windows 11 (the x64 installer); file size in KB is rounded as in earlier releases
 * DE: the same "Plugin-Marktplatz entdecken" text on all AI plugins blocks
 * `avs-free-video-converter.aspx`: AI plugin headings are h2 in all languages (FR and IT had h3)
 * `downloads.aspx`: 64-bit / 32-bit labels are translated in all languages
 * `avs-free-image-converter.aspx`: the Windows XP / Vista link leads to the classic AVS Image Converter installer (the program is not listed on `downloads.aspx`)
+* `installed-video-editor.aspx`: the AVS Audio Editor button downloaded AVS Audio Converter; `installed-video-remaker.aspx`: the AVS Video Converter button downloaded AVS Audio Converter
+* `audio-editor.aspx`, `mov-video-editor.aspx`, `powerful-video-maker.aspx`, `precise-video-cutting-tools.aspx`: Windows XP / Vista removed from the platforms under the download buttons
+* JP `avs-video-editor-year.aspx`, `avs-video-editor-unlimited.aspx`: translated platforms text without XP / Vista (the untranslated key was shown)
+* Installer auto-select: browsers that do not report bitness (Chrome / Edge 90–92) fall back to the user agent string
 
 ## 1.0.119 (19.11.2026)
 ### New
@@ -21,7 +25,7 @@
   - `avs-free-video-converter.aspx`: four plugins with a note on saving online videos and "Explore Plugins Marketplace" button
   - `avs-audio-editor.aspx`: "AI Plugins" block with four plugins and new screenshot instead of "Extend your experience with additional features"
   - `avs-free-audio-converter.aspx`: "Create music with AI" block with new screenshot instead of "Create audio files for any purpose"
-* Hide banner "Black Friday 2026" (the Wheel of Luck is kept)
+* Hide banner "Black Friday 2026" (the code of the banner and the Wheel of Luck is kept; the wheel opens only from the banner, so it is not available while the banner is hidden)
 * Support three installer sets for release 26.1.1: `_x64` and `_x86` for Windows 7–11, classic installers for Windows XP / Vista
   - Download buttons on product pages, landing pages and the main page lead to the `_x64` installers; 32-bit Windows gets `_x86`, Windows XP / Vista gets the classic installer (not on `downloads.aspx`, where the visitor picks the installer)
   - Changed products info: version 26.1.1.293, date 20.11.2026 and sizes of the new installers, separate version and size of the Windows XP / Vista installers
