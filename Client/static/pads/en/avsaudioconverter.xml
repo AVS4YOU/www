@@ -100,7 +100,7 @@
     <Program_Type>Freeware</Program_Type>
     <Program_Release_Status>New Release</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
-    <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+    <Program_OS_Support>Win7 x64,Windows 8,Windows 10,Windows 11</Program_OS_Support>
     <Program_Language>English,Dutch,French,German,Italian,Japanese,Polish,Portuguese,Russian,Spanish</Program_Language>
     <Program_Change_Info>Enhanced support of MP4/M4V/MOV/F4V/3GP video and M4A/M4B audio. A better mode for working with covers when creating MP3/M4B audiobooks. Bug fixes.</Program_Change_Info>
     <Program_System_Requirements>Intel/AMD compatible CPU at 1.86 GHz or higher, 1 GB RAM or higher, sound card, DirectX 9.0c or later</Program_System_Requirements>
