@@ -11,7 +11,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoEditor} from '../../static/products-info';
+import {VideoEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -177,7 +177,7 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
                     {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> {props.t("Trustpilot")}
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97", {version: shortVersion(VideoEditor.version)})}</Text>
           <ScreenshotsCarousel
             imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
             imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}

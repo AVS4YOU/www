@@ -13,7 +13,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {MediaPlayer} from '../../static/products-info';
+import {MediaPlayer, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -175,7 +175,7 @@ class avsFreeMediaPlayer extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Media Player 26.0</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Media Player {shortVersion(MediaPlayer.version)}</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}
                         imageNamesPopup={[this.props.t("media player slide1 jpg"), this.props.t("media player slide2 jpg"), this.props.t("media player slide3 jpg"), this.props.t("media player slide4 jpg"), this.props.t("media player slide5 jpg")]}

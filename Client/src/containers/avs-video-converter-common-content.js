@@ -12,7 +12,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoConverter} from '../../static/products-info';
+import {VideoConverter, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
 import Button from '../components/button';
@@ -178,7 +178,7 @@ export const AvsVideoConverterCommonContent = (props) => (
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>
   </div>
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 26.0</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter {shortVersion(VideoConverter.version)}</Text>
 
 
   <ScreenshotsCarousel 

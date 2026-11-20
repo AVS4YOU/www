@@ -14,7 +14,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {AudioConverter} from '../../static/products-info';
+import {AudioConverter, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -179,7 +179,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 26.0</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter {shortVersion(AudioConverter.version)}</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}

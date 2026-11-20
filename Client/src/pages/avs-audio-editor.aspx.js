@@ -14,7 +14,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {AudioEditor} from '../../static/products-info';
+import {AudioEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -238,7 +238,7 @@ class avsAudioEditor extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 26.0</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor {shortVersion(AudioEditor.version)}</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
                         imageNamesPopup={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}

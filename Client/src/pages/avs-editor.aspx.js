@@ -13,7 +13,7 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
-import {VideoEditor} from '../../static/products-info';
+import {VideoEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import styled from 'styled-components';
 import ImageGQL from '../components/image-gql';
@@ -260,7 +260,7 @@ render(){
               </div>
             </div>
 
-            <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Editor 97")}</Text>
+            <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{this.props.t("AVS Video Editor 97", {version: shortVersion(VideoEditor.version)})}</Text>
             <ScreenshotsCarousel
               imageNames={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video editor slider3 jpg"), this.props.t("video editor slider4 jpg"), this.props.t("video editor slider5 jpg"), this.props.t("video editor slider6 jpg")]}
               imageNamesPopup={[this.props.t("video editor slider1 jpg"), this.props.t("video editor slider2 jpg"), this.props.t("video editor slider3 jpg"), this.props.t("video editor slider4 jpg"), this.props.t("video editor slider5 jpg"), this.props.t("video editor slider6 jpg")]}

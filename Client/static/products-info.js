@@ -123,4 +123,7 @@ let InstallPack = {
     sizeXP: "312.10"
 };
 
-export {InstallPack, VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter, AVSImageConverter};
+// "26.1.1.293" -> "26.1": major.minor version for headings such as "AVS Video Editor 26.1".
+const shortVersion = (version) => version.split(".").slice(0, 2).join(".");
+
+export {shortVersion, InstallPack, VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter, AVSImageConverter};

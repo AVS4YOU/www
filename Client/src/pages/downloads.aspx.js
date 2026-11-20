@@ -83,13 +83,13 @@ class Download extends React.PureComponent {
         </div>
         <div className="dwn-card__details">
           <h3 className="dwn-card__name">{t(product.name)}</h3>
-          <p className="dwn-card__sizes">64-bit {info.size64} {t("dwn_mb")} · 32-bit {info.size32} {t("dwn_mb")}</p>
+          <p className="dwn-card__sizes">{t("dwn_64bit")} {info.size64} {t("dwn_mb")} · {t("dwn_32bit")} {info.size32} {t("dwn_mb")}</p>
           <p className="dwn-card__meta">{t("dwn_current_version")} {info.version}</p>
           <p className="dwn-card__meta">{t("dwn_release_date")} {info.releaseYYYY}-{info.releaseMM}-{info.releaseDD}</p>
         </div>
         <div className="dwn-card__actions">
-          <a className="dwn-btn dwn-btn--blue" id={`download-now-${product.id}-x64_downloads`} href={links.x64}>64-bit</a>
-          <a className="dwn-btn dwn-btn--border" id={`download-now-${product.id}-x86_downloads`} href={links.x86}>32-bit</a>
+          <a className="dwn-btn dwn-btn--blue" id={`download-now-${product.id}-x64_downloads`} href={links.x64}>{t("dwn_64bit")}</a>
+          <a className="dwn-btn dwn-btn--border" id={`download-now-${product.id}-x86_downloads`} href={links.x86}>{t("dwn_32bit")}</a>
         </div>
       </div>
     );
@@ -131,8 +131,8 @@ class Download extends React.PureComponent {
             {this.renderBadge(product.badge, "dwn-badge dwn-badge--small")}
           </div>
         </div>
-        {this.renderInstallerCell("x64", links.x64, product.info.size64, `download-${product.id}-x64_downloads`, "Windows 7–11, 64-bit")}
-        {this.renderInstallerCell("x86", links.x86, product.info.size32, `download-${product.id}-x86_downloads`, "Windows 7–10, 32-bit")}
+        {this.renderInstallerCell("x64", links.x64, product.info.size64, `download-${product.id}-x64_downloads`, t("dwn_os_64"))}
+        {this.renderInstallerCell("x86", links.x86, product.info.size32, `download-${product.id}-x86_downloads`, t("dwn_os_32"))}
         {this.renderInstallerCell("xp", links.xp, product.info.sizeXP, `download-${product.id}-xp_downloads`, "Windows XP / Vista", product.info.versionXP)}
       </div>
     );
@@ -170,10 +170,10 @@ class Download extends React.PureComponent {
               :
               <div className="dwn-hero__buttons">
                 <a className="dwn-btn dwn-btn--blue dwn-btn--hero" id="download-now-x64_downloads" href={packLinks.x64}>
-                  <span className="dwn-btn__light">{t("dwn_windows")}</span> 64-bit
+                  <span className="dwn-btn__light">{t("dwn_windows")}</span> {t("dwn_64bit")}
                 </a>
                 <a className="dwn-btn dwn-btn--white dwn-btn--hero" id="download-now-x86_downloads" href={packLinks.x86}>
-                  <span className="dwn-btn__light">{t("dwn_windows")}</span> 32-bit
+                  <span className="dwn-btn__light">{t("dwn_windows")}</span> {t("dwn_32bit")}
                 </a>
               </div>
             }
@@ -208,11 +208,11 @@ class Download extends React.PureComponent {
               <div className="dwn-table__cell dwn-table__cell--program">{t("dwn_program")}</div>
               <div className="dwn-table__cell dwn-table__head-col dwn-table__head-col--active">
                 <span className="dwn-table__head-title">Windows 7–11</span>
-                <span className="dwn-table__head-note">64-bit</span>
+                <span className="dwn-table__head-note">{t("dwn_64bit")}</span>
               </div>
               <div className="dwn-table__cell dwn-table__head-col">
                 <span className="dwn-table__head-title">Windows 7–10</span>
-                <span className="dwn-table__head-note">32-bit</span>
+                <span className="dwn-table__head-note">{t("dwn_32bit")}</span>
               </div>
               <div className="dwn-table__cell dwn-table__head-col">
                 <span className="dwn-table__head-title">Windows XP / Vista</span>
@@ -225,8 +225,8 @@ class Download extends React.PureComponent {
                 <span className="dwn-table__package-name">{t("dwn_all_package")}</span>
                 <span className="dwn-table__package-note">{t("dwn_all_package_note")}</span>
               </div>
-              {this.renderInstallerCell("x64", packLinks.x64, InstallPack.size64, "download-pack-x64_downloads", "Windows 7–11, 64-bit")}
-              {this.renderInstallerCell("x86", packLinks.x86, InstallPack.size32, "download-pack-x86_downloads", "Windows 7–10, 32-bit")}
+              {this.renderInstallerCell("x64", packLinks.x64, InstallPack.size64, "download-pack-x64_downloads", t("dwn_os_64"))}
+              {this.renderInstallerCell("x86", packLinks.x86, InstallPack.size32, "download-pack-x86_downloads", t("dwn_os_32"))}
               {this.renderInstallerCell("xp", packLinks.xp, InstallPack.sizeXP, "download-pack-xp_downloads", "Windows XP / Vista", InstallPack.versionXP)}
             </div>
 

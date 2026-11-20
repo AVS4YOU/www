@@ -1,7 +1,6 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import withI18next from "../components/withI18next";
-import Link from '../components/link';
 import {Link as ScrollLink} from "react-scroll";
 import FreeFlag from '../components/free-flag';
 import Text from '../components/text';
@@ -17,7 +16,8 @@ import ImageGQL from '../components/image-gql';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
-import {AVSImageConverter} from '../../static/products-info';
+import {AVSImageConverter, shortVersion} from '../../static/products-info';
+import {getDownloadLinks} from '../components/download-links';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarAndyStephens from '../images/common/review-carousel/quote_2.png';
@@ -211,7 +211,7 @@ class avsFreeImageConverter extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter 26.0</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Image Converter {shortVersion(AVSImageConverter.version)}</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
                         imageNamesPopup={[this.props.t("image converter slide 1"), this.props.t("image converter slide 2"), this.props.t("image converter slide 3"), this.props.t("image converter slide 4")]}
@@ -243,7 +243,7 @@ class avsFreeImageConverter extends React.PureComponent {
 
                             <div className="downloadInfoRow">
                               <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
-                              <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-image-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
+                              <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><a id="xp-vista-downloads_avs-free-image-converter" href={getDownloadLinks("AVSImageConverter").xp}>Windows XP / Vista</a> — {this.props.t("dwn_col_xp_note")}</Text>
                             </div>
                         </div>
                         <DownloadScrollButton 
