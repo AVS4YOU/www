@@ -5,6 +5,7 @@
 * Screenshot headings on product pages show the current version (26.1), taken from products info instead of hardcoded 26.0
 * Updated pads files: supported OS Win7 x64, Windows 8, Windows 10, Windows 11 (Windows 2000, XP, Vista, Server 2003 removed)
 * DE: the same "Plugin-Marktplatz entdecken" text on all AI plugins blocks
+* `avs-free-video-converter.aspx`: AI plugin headings are h2 in all languages (FR and IT had h3)
 * `downloads.aspx`: 64-bit / 32-bit labels are translated in all languages
 * `avs-free-image-converter.aspx`: the Windows XP / Vista link leads to the classic AVS Image Converter installer (the program is not listed on `downloads.aspx`)
 
