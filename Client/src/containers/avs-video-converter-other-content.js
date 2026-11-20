@@ -115,7 +115,7 @@ export const AvsVideoConverterOtherContent = (props) => (
                     { title: props.t("ai_vc_effects_title"), text: props.t("ai_vc_effects_text") },
                     { title: props.t("ai_save_online_title"), text: props.t("ai_vc_save_online_text") },
                 ]}
-                featureAs={props.t("h2")}
+                featureAs="h2"
                 note={props.t("ai_save_online_note")}
                 imageName={props.t("video converter convert video with ai png")}
                 imageAlt={props.t("ai_plugins_title")}
