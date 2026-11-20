@@ -82,8 +82,8 @@
   <Program_Info>
     <File_Info>
       <Automatically_Detect_File_Size>N</Automatically_Detect_File_Size>
-      <File_Size_Bytes>134910376</File_Size_Bytes>
-      <File_Size_K>131748</File_Size_K>
+      <File_Size_Bytes>134911192</File_Size_Bytes>
+      <File_Size_K>131749</File_Size_K>
       <File_Size_MB>128.66</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -92,9 +92,9 @@
     </File_Info>
     <Program_Target_Platform>Windows</Program_Target_Platform>
     <Program_Name>Free AVS Video Converter</Program_Name>
-    <Program_Version>26.1.1</Program_Version>
+    <Program_Version>26.1.1.293</Program_Version>
     <Program_Release_Month>11</Program_Release_Month>
-    <Program_Release_Day>19</Program_Release_Day>
+    <Program_Release_Day>20</Program_Release_Day>
     <Program_Release_Year>2026</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
