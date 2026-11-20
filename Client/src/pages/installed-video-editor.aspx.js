@@ -173,7 +173,7 @@ render(){
               <FixStyles />
               <div className="common-info-block">
                 <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ae_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-ae_installed-video-editor" href="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 {this.props.t("AVS Audio Editor name")}
                 </Text>

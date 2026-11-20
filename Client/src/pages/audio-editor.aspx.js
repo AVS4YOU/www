@@ -316,7 +316,7 @@ class avsAudioEditor extends React.PureComponent {
                   </div>
                   <div id="sheaderContentWrapper" className="headerContentWrapper" >
                     <hr className="hrAudio" />
-                    <Text color="#ffffff" align="left" className="headerText" lineHeight="26px" fontSize={14} fontWeight={400} as="p">{this.props.t("For Windows 10, 8.1, 8, 7 / XP, 2003 / Vista")}</Text>
+                    <Text color="#ffffff" align="left" className="headerText" lineHeight="26px" fontSize={14} fontWeight={400} as="p">{this.props.t("For Windows 11, 10, 8.1, 8, 7")}</Text>
                     <Text color="#ffffff" align="left" className="headerText" lineHeight="24px" fontSize={24} fontWeight={500} as="h4">{this.props.t("Easily manage your audio collection - just in minutes ")}</Text>
                     <div className="HeaderListItemTable">
                       <div className="HeaderListItem35">
@@ -404,7 +404,7 @@ class avsAudioEditor extends React.PureComponent {
                     <Button id="buy2_audio-editor" padding={"18px 72px"} href={this.props.t("defaultHrefUnlim")} fontSize={16} className="buttonBuy">BUY</Button>
                     <Button id="download-now2_audio-editor" padding={"18px 25px"} href={"https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe"} className="buttonDownload" backgroundColor={"#fff"} color={"#232C33"} border="1px solid #232C33" background="#ffffff" style={{ marginLeft: "60px" }} fontSize={16}>Download now</Button>
                   </div>
-                  <Text color="#232C33" align="left" className="headerText" id="IdheaderText" lineHeight="26px" fontSize={14} fontWeight={400} style={{ marginTop: "20px" }} >{this.props.t("For Windows 10, 8.1, 8, 7 / XP, 2003 / Vista")}</Text>
+                  <Text color="#232C33" align="left" className="headerText" id="IdheaderText" lineHeight="26px" fontSize={14} fontWeight={400} style={{ marginTop: "20px" }} >{this.props.t("For Windows 11, 10, 8.1, 8, 7")}</Text>
 
                 </div>
               </div>

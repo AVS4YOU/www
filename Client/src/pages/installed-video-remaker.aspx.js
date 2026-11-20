@@ -173,7 +173,7 @@ render(){
 
               <div className="common-info-block">
               <div className="gift">{this.props.t("Gift")}</div>
-                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vc_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-avs-vc_installed-video-remaker" href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe">{this.props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                 <Text as="h4" className="common-info-block__headline">
                 AVS Video Converter
                 </Text>

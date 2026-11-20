@@ -54,7 +54,7 @@ render(){
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
                         <a className="button download" id="download-now_mov-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">{this.props.t("Download now")}</a>
-                        <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
+                        <span>{this.props.t("Windows 11/10/8/7")}</span>
                     </div>
                     <div className="vel_top_buy">
                         <a className="button buynow" id="buy-now_mov-video-editor" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy now")}</a>

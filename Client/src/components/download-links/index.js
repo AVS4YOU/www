@@ -33,11 +33,19 @@ export const detectInstallerType = (nav = typeof navigator !== "undefined" ? nav
     // Windows NT 5.x is XP / Server 2003, 6.0 is Vista
     if (/Windows NT (5\.\d|6\.0)\b/.test(ua)) return Promise.resolve("xp");
 
-    // Chromium freezes the user agent string to "Win64; x64", the real bitness comes from client hints
+    // Chromium freezes the user agent string to "Win64; x64", the real bitness comes from client hints.
+    // Chromium 90–92 have client hints without "bitness"; their user agent string is not frozen yet.
     const uaData = nav.userAgentData;
     if (uaData && typeof uaData.getHighEntropyValues === "function") {
-        return uaData.getHighEntropyValues(["bitness"])
-            .then((values) => (values && values.bitness === "32" ? "x86" : "x64"))
+        // Promise.resolve().then() turns a synchronous throw into a rejection
+        return Promise.resolve()
+            .then(() => uaData.getHighEntropyValues(["bitness"]))
+            .then((values) => {
+                const bitness = values && values.bitness;
+                if (bitness === "32") return "x86";
+                if (bitness === "64") return "x64";
+                return bitnessFromUserAgent(ua);
+            })
             .catch(() => bitnessFromUserAgent(ua));
     }
     return Promise.resolve(bitnessFromUserAgent(ua));
