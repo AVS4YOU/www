@@ -198,6 +198,10 @@
         &--audio {
             background-image: url(../images/download/audio-icon.svg);
         }
+
+        &--image {
+            background-image: url(../images/download/image-icon.svg);
+        }
     }
 
     .dwn-section__title {
@@ -214,6 +218,23 @@
         gap: 48px 80px;
         width: 100%;
         max-width: @dwn-max;
+    }
+
+    // Audio and image sections share one row: each takes half of it
+    .dwn-sections-row {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+
+        .dwn-section {
+            flex: 1 1 0;
+            min-width: 0;
+            max-width: (@dwn-max / 2);
+        }
+
+        .dwn-section__grid {
+            column-gap: 40px;
+        }
     }
 
     .dwn-card {
@@ -591,6 +612,16 @@
         .dwn-table__head,
         .dwn-table__row {
             grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .download .dwn-sections-row {
+        display: block;
+
+        .dwn-section {
+            max-width: none;
         }
     }
 }
