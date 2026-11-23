@@ -7,7 +7,7 @@ import "../styles/download.less";
 import ImageGQL from "../components/image-gql";
 import HeaderDownloadButtons from "../components/header-download-buttons";
 import ScrollUpButton from '../components/scroll-up-button';
-import {InstallPack, VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter} from '../../static/products-info';
+import {InstallPack, VideoEditor, VideoReMaker, VideoConverter, MediaPlayer, AudioEditor, AudioConverter, AVSImageConverter} from '../../static/products-info';
 import {getDownloadLinks} from "../components/download-links";
 
 const VIDEO_PRODUCTS = [
@@ -20,6 +20,10 @@ const VIDEO_PRODUCTS = [
 const AUDIO_PRODUCTS = [
   {id: "ae", name: "AVS Audio Editor", file: "AVSAudioEditor", image: "box-audio-editor", info: AudioEditor},
   {id: "ac", name: "AVS Audio Converter", file: "AVSAudioConverter", image: "box-audio-converter", info: AudioConverter, badge: "dwn_badge_free"},
+];
+
+const IMAGE_PRODUCTS = [
+  {id: "ic", name: "AVS Image Converter", file: "AVSImageConverter", image: "box-image-converter", info: AVSImageConverter, badge: "dwn_badge_free"},
 ];
 
 class FaqItem extends React.PureComponent {
@@ -183,7 +187,10 @@ class Download extends React.PureComponent {
         <ScrollUpButton className="ScrollTopWrapper" ButtonClassName="ScrollTopMain" />
 
         {this.renderSection(t("dwn_video_software"), "dwn-section__icon--video", VIDEO_PRODUCTS)}
-        {this.renderSection(t("dwn_audio_software"), "dwn-section__icon--audio", AUDIO_PRODUCTS)}
+        <div className="dwn-sections-row">
+          {this.renderSection(t("dwn_audio_software"), "dwn-section__icon--audio", AUDIO_PRODUCTS)}
+          {this.renderSection(t("dwn_image_software"), "dwn-section__icon--image", IMAGE_PRODUCTS)}
+        </div>
 
         <div className="dwn-hint-wrapper">
           <div className="dwn-hint">
@@ -235,6 +242,9 @@ class Download extends React.PureComponent {
 
             <div className="dwn-table__group">{t("dwn_audio_software")}</div>
             {AUDIO_PRODUCTS.map(product => this.renderTableRow(product))}
+
+            <div className="dwn-table__group">{t("dwn_image_software")}</div>
+            {IMAGE_PRODUCTS.map(product => this.renderTableRow(product))}
           </div>
         </section>
 
