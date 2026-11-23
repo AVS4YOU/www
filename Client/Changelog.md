@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.120 (20.11.2026)
+## 1.0.120 (23.11.2026)
 ### Fixes
 * Screenshot headings on product pages show the current version (26.1), taken from products info instead of hardcoded 26.0
 * Updated pads files: supported OS is now only Win7 x64, Windows 8, Windows 10, Windows 11 (the x64 installer); file size in KB is rounded as in earlier releases
