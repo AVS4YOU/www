@@ -12,7 +12,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoConverter} from '../../static/products-info';
+import {VideoConverter, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
 import Button from '../components/button';
@@ -33,8 +33,8 @@ export const AvsVideoConverterCommonContent = (props) => (
         <Text color="#ffffff" align="center" className="headerDescription" as={props.t("h22")} fontSize={24}>{props.t("Convert to from video formats MP4, DVD, AVI, WMV,MOV, MPEG4, VOB, FLV, MKV, MTS, 2K QHD, 4K UHD and DCI 4K etc fast and easily")}</Text>
         <HeaderDownloadButtons 
           t={props.t}
-          mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-          secondaryText="Windows 11/10/8/7/Vista/XP"
+          mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
+          secondaryText="Windows 11/10/8/7"
           backgroundColor="orange"
           mainPadding="12px 37px"
           margin="auto"
@@ -178,7 +178,7 @@ export const AvsVideoConverterCommonContent = (props) => (
             {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
     </Button>
   </div>
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 26.0</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter {shortVersion(VideoConverter.version)}</Text>
 
 
   <ScreenshotsCarousel 
@@ -203,13 +203,18 @@ export const AvsVideoConverterCommonContent = (props) => (
 
       <div className="downloadInfoRow">        
         <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{props.t("Platforms")}</Text>
-        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
+        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {props.t("(no Mac OS/ Linux support)")}</Text>
+      </div>
+
+      <div className="downloadInfoRow">
+        <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-video-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {props.t("dwn_col_xp_note")}</Text>
       </div>
     </div>
     <DownloadScrollButton 
       id="download-now2_avs-free-video-converter" 
       className="buttonWrapper" 
-      href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe" 
+      href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe" 
       to="headerContentWrapper" 
       textDownload={props.t("download now")}
       textGetCoupon={props.t("get 5 coupon code")}

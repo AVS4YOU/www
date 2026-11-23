@@ -7,13 +7,14 @@ import FreeFlag from '../components/free-flag';
 import PageContentWrapper from "../components/page-content-wrapper";
 import PanelCollapse from "../components/panel-collapse";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoConverter} from '../../static/products-info';
+import {VideoConverter, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import "../styles/avs-video-converter.less";
 import Button from '../components/button';
@@ -61,8 +62,8 @@ export const AvsVideoConverterOtherContent = (props) => (
                           fontWeight={400}>{props.t("Convert videos for iPhone, iPad, Android, Samsung, YouTube, Facebook, etc")}</Text>
                     <HeaderDownloadButtons
                         t={props.t}
-                        mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
-                        secondaryText="Windows 11/10/8/7/Vista/XP"
+                        mainHref="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
+                        secondaryText="Windows 11/10/8/7"
                         backgroundColor="orange"
                         mainPadding="12px 37px"
                         margin="auto"
@@ -96,29 +97,31 @@ export const AvsVideoConverterOtherContent = (props) => (
         </div>
 
         <PageContentWrapper className="videoConverter">
-            <ContentRowItem
+            <AiPluginsBlock
                 id="overview"
-                imgLeft={false}
-                asType={props.t("h2")}
                 newText={props.t("New")}
-                imageName={props.t("video converter convert video with ai png")}
-                headerText={props.t("Convert video with AI")}
-                showFirstBlockBullets={false}
-                secondHeaderText={props.t("Add new AI–generated effects")}
-                showSecondBlockBullets={false}
-                secondBlockContent={
-                    <Text className="ListItem">
-                        <Trans
-                            i18nKey="Add AI-powered image and video effects while preparing your video"
-                            components={[
-                                <a key="0" target="_blank" href="https://avs4you.github.io" />,
-                            ]}
-                        />
-                    </Text>
+                introInline
+                intro={
+                    <Trans
+                        i18nKey="ai_vc_intro"
+                        components={[
+                            <a key="0" className="aiLink" target="_blank" rel="noreferrer noopener" href="https://avs4you.github.io/" />,
+                        ]}
+                    />
                 }
-            >
-                <Text className="ListItem">{props.t("Go from a text idea to a perfectly formatted video")}</Text>
-            </ContentRowItem>
+                features={[
+                    { title: props.t("ai_text_to_video_title"), text: props.t("ai_vc_text_to_video_text") },
+                    { title: props.t("ai_subtitles_title"), text: props.t("ai_vc_subtitles_text") },
+                    { title: props.t("ai_vc_effects_title"), text: props.t("ai_vc_effects_text") },
+                    { title: props.t("ai_save_online_title"), text: props.t("ai_vc_save_online_text") },
+                ]}
+                featureAs="h2"
+                note={props.t("ai_save_online_note")}
+                imageName={props.t("video converter convert video with ai png")}
+                imageAlt={props.t("ai_plugins_title")}
+                marketplaceText={props.t("ai_marketplace")}
+                marketplaceId="plugins-marketplace_avs-free-video-converter"
+            />
             <ContentRowItem
                 imgLeft={true}
                 asType={props.t("h2")}
@@ -207,7 +210,7 @@ export const AvsVideoConverterOtherContent = (props) => (
 
         <DownloadScrollButton className="buttonWrapper"
                               id="download-now2_avs-free-video-converter"
-                              href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                              href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
                               to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
 
         <div className="block-awards" style={{maxWidth: "100%"}}>
@@ -296,7 +299,7 @@ export const AvsVideoConverterOtherContent = (props) => (
             </div>
         </div>
 
-        <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter 26.0</Text>
+        <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Converter {shortVersion(VideoConverter.version)}</Text>
 
 
         <ScreenshotsCarousel
@@ -327,13 +330,18 @@ export const AvsVideoConverterOtherContent = (props) => (
                     <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                           align="right">{props.t("Platforms")}</Text>
                     <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows
-                        11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
+                        11, 10, 8.1, 8, 7 {props.t("(no Mac OS/ Linux support)")}</Text>
+                </div>
+
+                <div className="downloadInfoRow">
+                  <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                  <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-video-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {props.t("dwn_col_xp_note")}</Text>
                 </div>
             </div>
             <DownloadScrollButton
                 id="download-now2_avs-free-video-converter"
                 className="buttonWrapper"
-                href="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                href="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
                 to="headerContentWrapper" 
                 textDownload={props.t("download now")}
                 textGetCoupon={props.t("get 5 coupon code")}

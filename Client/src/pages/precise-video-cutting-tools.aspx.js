@@ -57,8 +57,8 @@ render(){
                 <div className="vel_description">{this.props.t("Trim, cut, split, crop, merge, rotate videos to create impressive movies")}</div>
                 <div className="vel_top_buttons">
                     <div className="vel_top_download">
-                        <a className="button download" id="download-now_precise-video-cutting-tools" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
-                        <span>{this.props.t("Windows 10/8/XP/Vista")}</span>
+                        <a className="button download" id="download-now_precise-video-cutting-tools" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" onclick="evtmng(this)">{this.props.t("Download now")}</a>
+                        <span>{this.props.t("Windows 11/10/8/7")}</span>
                     </div>
                     <div className="vel_top_buy">
                         <a className="button buynow" id="buy-now_precise-video-cutting-tools" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy now")}</a>
@@ -131,7 +131,7 @@ render(){
             </div>
             <div className="vel_bottom_buttons">
                 <div className="vel_bottom_download">
-                    <a className="button download" id="download-ve_precise-video-cutting-tools" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{this.props.t("Download AVS Video Editor")}</a>
+                    <a className="button download" id="download-ve_precise-video-cutting-tools" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">{this.props.t("Download AVS Video Editor")}</a>
                 </div>
                 <div className="vel_bottom_buy">
                     <a className="button buynow" id="buy_precise-video-cutting-tools" href={this.props.t("defaultHrefUnlim")}>{this.props.t("Buy")}</a>

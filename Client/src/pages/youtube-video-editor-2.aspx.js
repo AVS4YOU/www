@@ -59,7 +59,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
             <ScrollLink to="to_testimonials" spy={true} smooth={true}>
             <li className="topmenuoption to_testimonials">Testimonials</li>
             </ScrollLink>
-            <li className="topmenuoption with_link"><a id="download1_youtube-video-editor-2" className="lfb_download_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
+            <li className="topmenuoption with_link"><a id="download1_youtube-video-editor-2" className="lfb_download_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></li>
             <li className="aclose">×</li>
         </ul>
     </div>
@@ -74,7 +74,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
     <div className="lfb_ht_subheader">
       Easily create professional-looking clips or vlogs
     </div>
-    <div className="lfb_txt_div"><a id="download2_youtube-video-editor-2" className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+    <div className="lfb_txt_div"><a id="download2_youtube-video-editor-2" className="lfb_download_btn lfb_tm_btn" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></div>
   </div>
   <div className="lfb_head_img"><ImageGQL imageName="main_picture-youtube.png" alt="Professional-looking clips or vlogs" /></div>
 </div>
@@ -132,7 +132,7 @@ class avsYoutubeVideoEditor extends React.PureComponent {
         <div className="lfb_s_text">
             <div className="lfb_st_h">Launch your project to the orbit</div>
             <div className="lfb_st_sh">Save your project choosing one of specially designed templates depending on the desired quality of the output video.</div>
-            <div className="lfb_st_btn"><a id="download3_youtube-video-editor-2" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+            <div className="lfb_st_btn"><a id="download3_youtube-video-editor-2" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></div>
         </div>
     </div>
 </div>

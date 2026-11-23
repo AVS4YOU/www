@@ -211,7 +211,7 @@ export const SpecsSection = ({t}) => {
                         ))
                     }
                 </SpecsSectionList>
-                <SpecsSectionLink id="specs-section-try_avs-slideshow-maker" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{t("Try AVS Slideshow Maker")}</SpecsSectionLink>
+                <SpecsSectionLink id="specs-section-try_avs-slideshow-maker" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">{t("Try AVS Slideshow Maker")}</SpecsSectionLink>
             </SpecsSectionContainer>
         </SpecsSectionStyled>
     )

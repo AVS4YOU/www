@@ -11,7 +11,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoEditor} from '../../static/products-info';
+import {VideoEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -31,8 +31,8 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Trim, cut, split, merge, rotate, mix videos 300+ innovative effects, transitions, overlays")}</Text>
                 <HeaderDownloadButtons 
                   t={props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                  secondaryText="Windows 11/10/8/7/Vista/XP"
+                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe"
+                  secondaryText="Windows 11/10/8/7"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -177,7 +177,7 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
                     {props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> {props.t("Trustpilot")}
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97")}</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97", {version: shortVersion(VideoEditor.version)})}</Text>
           <ScreenshotsCarousel
             imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
             imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
@@ -197,13 +197,18 @@ import AvatarMarc from '../images/avs-video-editor/marc_n.png';
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {props.t("(no Mac OS/ Linux support)")}</Text>
+              </div>
+
+              <div className="downloadInfoRow">
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-video-editor" to="/downloads.aspx">Windows XP / Vista</Link> — {props.t("dwn_col_xp_note")}</Text>
               </div>
             </div>
             <DownloadScrollButton 
               id="download-now2_avs-video-editor" 
               className="buttonWrapper" 
-              href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
+              href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" 
               to="headerContentWrapper" 
               textDownload={props.t("download now")}
               textGetCoupon={props.t("get 5 coupon code")}

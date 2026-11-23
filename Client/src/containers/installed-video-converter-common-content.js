@@ -139,7 +139,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
 
                   <div className="common-info-block">
                     <div className="gift">{props.t("Gift")}</div>
-                    <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ac_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                    <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ac_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                       <Text as="h4" className="common-info-block__headline">
                       AVS Audio Converter
                       </Text>
@@ -150,7 +150,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
 
                     <div className="common-info-block">
                     <div className="gift">{props.t("Gift")}</div>
-                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ve_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ve_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                       <Text as="h4" className="common-info-block__headline">
                       AVS Video Editor
                       </Text>
@@ -161,7 +161,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
 
                     <div className="common-info-block">
                       <div className="gift">{props.t("Gift")}</div>
-                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ae_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-ae_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                       <Text as="h4" className="common-info-block__headline">
                       AVS Audio Editor
                       </Text>
@@ -172,7 +172,7 @@ export const InstalledVideoConverterCommonContent = (props) => (
 
                     <div className="common-info-block">
                     <div className="gift">{props.t("Gift")}</div>
-                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-vr_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
+                      <div className="download-product fix-style1"><InstalledAudioConverterDownloadNow id="download-vr_installed-video-converter" href="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe">{props.t("Download now")}</InstalledAudioConverterDownloadNow></div>
                       <Text as="h4" className="common-info-block__headline">
                       AVS Video ReMaker
                       </Text>

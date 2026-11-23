@@ -415,7 +415,7 @@ class mainPage extends React.PureComponent {
               <HeaderDownloadButtons
                   id="download-now_main-header"
                 t={this.props.t}
-                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack.exe"
+                mainHref="https://downloads.avs4you.com/distributives/AVSInstallPack_x64.exe"
                 scrollTo="mainBodyHeader"
                 className="headerDownloadButtons"
                   secondButtonId="learn-more_main"
@@ -441,7 +441,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video converter jpg")}
                           headerText={this.props.t("AVS Video Converter")}
                           free={true}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoConverter_x64.exe"
                           smallButtonLink="/avs-free-video-converter.aspx"
                           blueButtonLinkId="download-now_main-avs-vc"
                           smallButtonLinkId="learn-more_main-avs-vc"
@@ -457,7 +457,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video editor jpg")}
                           headerText={this.props.t("AVS Video Editor")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe"
                           smallButtonLink="/avs-video-editor.aspx"
                           blueButtonLinkId="download-now_main-avs-ve"
                           smallButtonLinkId="learn-more_main-avs-ve"
@@ -476,7 +476,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider video remaker jpg")}
                           headerText={this.props.t("AVS Video ReMaker")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe"
                           smallButtonLink="/avs-video-remaker.aspx"
                           blueButtonLinkId="download-now_main-avs-vr"
                           smallButtonLinkId="learn-more_main-avs-vr"
@@ -494,7 +494,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("media player formats2x jpg")}
                           headerText={this.props.t("AVS Media Player")}
                           free={true}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSMediaPlayer_x64.exe"
                           smallButtonLink="/avs-free-media-player.aspx"
                           blueButtonLinkId="download-now_main-avs-mp"
                           smallButtonLinkId="learn-more_main-avs-mp"
@@ -514,7 +514,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider audio editor jpg")}
                           headerText={this.props.t("AVS Audio Editor")}
                           free={false}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe"
                           smallButtonLink="/avs-audio-editor.aspx"
                           blueButtonLinkId="download-now_main-avs-ae"
                           smallButtonLinkId="learn-more_main-avs-ae"
@@ -532,7 +532,7 @@ class mainPage extends React.PureComponent {
                           imageName={this.props.t("slider audio converter jpg")}
                           headerText={this.props.t("AVS Audio Converter")}
                           free={true}
-                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
+                          blueButtonLink="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe"
                           smallButtonLink="/avs-free-audio-converter.aspx"
                           blueButtonLinkId="download-now_main-avs-ac"
                           smallButtonLinkId="learn-more_main-avs-ac"

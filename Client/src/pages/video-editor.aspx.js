@@ -433,8 +433,8 @@ class avsVideoEditor extends React.PureComponent {
                       <div>
                         <StyledButton>
                           <Button style={{padding:"15px 40px"}}
-                            href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-                            secondaryText="Windows 11/10/8/7/Vista/XP"
+                            href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe"
+                            secondaryText="Windows 11/10/8/7"
                             backgroundColor="orange"
                             mainPadding="12px 37px"
                             margin="0"

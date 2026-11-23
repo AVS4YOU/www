@@ -583,7 +583,7 @@ render(){
                     padding="16.5px 35px"
                     textTransform="uppercase"
                     id="download-now1_avs-video-screen-recorder"
-                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
                 </div>
@@ -742,7 +742,7 @@ render(){
                     style={{backgroundColor:"#FC4B15"}}
                     textTransform="uppercase"
                     id="download-now2_avs-video-screen-recorder"
-                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">
+                    href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">
                       {this.props.t("Download now")}</Button>
                     </div>
             </div>

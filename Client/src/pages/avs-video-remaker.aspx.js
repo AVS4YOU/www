@@ -12,7 +12,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {VideoReMaker} from '../../static/products-info';
+import {VideoReMaker, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -68,8 +68,8 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{this.props.t("Mighty production software for capturing and editing videos, and creating DVD and Blu-ray content")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe"
-                  secondaryText="Windows 11/10/8/7/Vista/XP"
+                  mainHref="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe"
+                  secondaryText="Windows 11/10/8/7"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -174,7 +174,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker 26.0</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Video Remaker {shortVersion(VideoReMaker.version)}</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
             imageNamesPopup={[this.props.t("video remaker edit video files min jpg"), this.props.t("video remaker record video min jpg"), this.props.t("video remaker disc menu min jpg"), this.props.t("video remaker slider1 min jpg")]}
@@ -195,13 +195,18 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {this.props.t("(no Mac OS/ Linux support)")}</Text>
+              </div>
+
+              <div className="downloadInfoRow">
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-video-remaker" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
               </div>
             </div>
             <DownloadScrollButton 
               id="downloiad-now2_avs-video-remaker" 
               className="buttonWrapper" 
-              href="https://downloads.avs4you.com/distributives/AVSVideoReMaker.exe" 
+              href="https://downloads.avs4you.com/distributives/AVSVideoReMaker_x64.exe" 
               to="headerContentWrapper" 
               textDownload={this.props.t("download now")}
               textGetCoupon={this.props.t("get 5 coupon code")}

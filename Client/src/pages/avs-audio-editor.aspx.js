@@ -6,6 +6,7 @@ import Text from '../components/text';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ReviewScreenNew from '../components/review-screen-new';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
@@ -13,7 +14,7 @@ import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {AudioEditor} from '../../static/products-info';
+import {AudioEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
@@ -32,6 +33,10 @@ const isEngLang = (currentLang) => {
 
     return isEngLang;
 }
+
+// languages that have the AI plugins block copy
+const aiLang = ['en', 'de', 'es', 'fr', 'it', 'jp'];
+const isAiLang = (currentLang) => aiLang.includes(currentLang);
 
 
 class avsAudioEditor extends React.PureComponent {
@@ -93,8 +98,8 @@ class avsAudioEditor extends React.PureComponent {
                                 <HeaderDownloadButtons
                                     id="download-now1_avs-audio-editor"
                                     t={this.props.t}
-                                    mainHref="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
-                                    secondaryText="Windows 11/10/8/7/Vista/XP"
+                                    mainHref="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe"
+                                    secondaryText="Windows 11/10/8/7"
                                     backgroundColor="orange"
                                     mainPadding="12px 37px"
                                     margin="auto"
@@ -168,16 +173,32 @@ class avsAudioEditor extends React.PureComponent {
                                 className="ListItem">{this.props.t("Use an equalizer to adjust volume in a desired way")}</Text>
                         </ContentRowItem>
 
-                        <ContentRowItem
-                            imgLeft={false}
-                            imageName={this.props.t("audio editor slider6 jpg")}
-                            headerText={this.props.t("Extend your experience with additional features")}
-                        >
-                            <Text
-                                className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
-                            <Text
-                                className="ListItem">{this.props.t("Create ringtones for iPhones and other smartphones")}</Text>
-                        </ContentRowItem>
+                        {isAiLang(this.props.locale)
+                            ? <AiPluginsBlock
+                                newText={this.props.t("New")}
+                                title={this.props.t("ai_plugins_title")}
+                                intro={this.props.t("ai_ae_intro")}
+                                features={[
+                                    { title: this.props.t("ai_ae_audio_title"), text: this.props.t("ai_ae_audio_text") },
+                                    { title: this.props.t("ai_ae_songs_title"), text: this.props.t("ai_ae_songs_text") },
+                                    { title: this.props.t("ai_ae_stems_title"), text: this.props.t("ai_ae_stems_text") },
+                                    { title: this.props.t("ai_ae_tts_title"), text: this.props.t("ai_ae_tts_text") },
+                                ]}
+                                imageName={this.props.t("ai_ae_image")}
+                                marketplaceText={this.props.t("ai_marketplace")}
+                                marketplaceId="plugins-marketplace_avs-audio-editor"
+                            />
+                            : <ContentRowItem
+                                imgLeft={false}
+                                imageName={this.props.t("audio editor slider6 jpg")}
+                                headerText={this.props.t("Extend your experience with additional features")}
+                            >
+                                <Text
+                                    className="ListItem">{this.props.t("Turn written text into a natural sounding voice with Text-to-speech function")}</Text>
+                                <Text
+                                    className="ListItem">{this.props.t("Create ringtones for iPhones and other smartphones")}</Text>
+                            </ContentRowItem>
+                        }
 
                     </PageContentWrapper>
                     <div id="reviews" className="backgroundWrapper">
@@ -217,7 +238,7 @@ class avsAudioEditor extends React.PureComponent {
                                                                 style={{filter: "brightness(5)"}}/> Trustpilot
                         </Button>
                     </div>
-                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor 26.0</Text>
+                    <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Editor {shortVersion(AudioEditor.version)}</Text>
                     <ScreenshotsCarousel
                         imageNames={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
                         imageNamesPopup={[this.props.t("audio editor slider1 jpg"), this.props.t("audio editor slider2 jpg"), this.props.t("audio editor slider3 jpg"), this.props.t("audio editor slider4 jpg"), this.props.t("audio editor slider5 jpg"), this.props.t("audio editor slider6 jpg")]}
@@ -244,14 +265,18 @@ class avsAudioEditor extends React.PureComponent {
                                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700}
                                       align="right">{this.props.t("Platforms")}</Text>
                                 <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500}
-                                      align="left">Windows 11, 10, 8.1, 8, 7, Vista,
-                                    XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                                      align="left">Windows 11, 10, 8.1, 8, 7 {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                            </div>
+
+                            <div className="downloadInfoRow">
+                              <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                              <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-audio-editor" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
                             </div>
                         </div>
                         <DownloadScrollButton 
                             id="download-now2_avs-audio-editor" 
                             className="buttonWrapper"
-                            href="https://downloads.avs4you.com/distributives/AVSAudioEditor.exe"
+                            href="https://downloads.avs4you.com/distributives/AVSAudioEditor_x64.exe"
                             to="headerContentWrapper" 
                             textDownload={this.props.t("download now")}
                             textGetCoupon={this.props.t("get 5 coupon code")}

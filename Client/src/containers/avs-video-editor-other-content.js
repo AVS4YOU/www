@@ -11,13 +11,13 @@ import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
-import {VideoEditor} from '../../static/products-info';
+import {VideoEditor, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 import styled from 'styled-components';
 import videoHeaderMP from '../images/avs-video-editor/avs_video_editor_page.mp4'
-import { Trans } from "react-i18next";
+import AiPluginsBlock from '../components/ai-plugins-block';
 
 import AvatarChenWang from '../images/common/review-carousel/chen_wang.png';
 import AvatarLinda from '../images/avs-video-editor/linda_k.png';
@@ -143,8 +143,8 @@ export const AvsVideoEditorOtherContent = (props) => (
         <Text color="#ffffff" align="center" className="headerDescription" as="h5" fontSize={24}>{props.t("Powerful video editing software for Windows")}</Text>
         <HeaderDownloadButtons 
           t={props.t}
-          mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe"
-          secondaryText="Windows 11/10/8/7/Vista/XP"
+          mainHref="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe"
+          secondaryText="Windows 11/10/8/7"
           backgroundColor="orange"
           mainPadding="12px 37px"
           margin="auto"
@@ -174,30 +174,26 @@ export const AvsVideoEditorOtherContent = (props) => (
   </div>
 
   <PageContentWrapper>
-    <ContentRowItem
+    <AiPluginsBlock
         id="overview"
-        imgLeft={false}
-        imageName={props.t("generate video with ai png")}
-        headerText={props.t("Generate video with AI")}
+        layout="wide"
         newText={props.t("New")}
-        aiPluginText={props.t("AI Plugin")}
-        showFirstBlockBullets={true}
-        secondHeaderText={props.t("Apply AI-driven effects")}
-        showSecondBlockBullets={false}
-        secondBlockContent={
-          <Text className="ListItem">
-            <Trans
-              i18nKey="Expand your creative toolkit with new AI-powered image"
-              components={[
-                <a key="0" target="_blank" href="https://avs4you.github.io" />,
-              ]}
-            />
-          </Text>
-        }
-    >
-      <Text className="ListItem">{props.t("Generate short video clips")}</Text>
-      <Text className="ListItem">{props.t("Create AI generated scenes")}</Text>
-    </ContentRowItem>
+        title={props.t("ai_plugins_title")}
+        intro={props.t("ai_ve_intro")}
+        features={[
+          { title: props.t("ai_text_to_video_title"), text: props.t("ai_ve_text_to_video_text") },
+          { title: props.t("ai_ve_images_title"), text: props.t("ai_ve_images_text") },
+          { title: props.t("ai_ve_music_title"), text: props.t("ai_ve_music_text") },
+          { title: props.t("ai_ve_voiceover_title"), text: props.t("ai_ve_voiceover_text") },
+          { title: props.t("ai_subtitles_title"), text: props.t("ai_ve_subtitles_text") },
+          { title: props.t("ai_save_online_title"), text: props.t("ai_ve_save_online_text") },
+        ]}
+        note={props.t("ai_save_online_note")}
+        imageName="ai_plugins_video_editor.png"
+        marketplaceText={props.t("ai_ve_marketplace")}
+        marketplaceId="plugins-marketplace_avs-video-editor"
+        marketplaceAsLink
+    />
 
     <ContentRowItem 
         imgLeft={true}
@@ -261,7 +257,7 @@ export const AvsVideoEditorOtherContent = (props) => (
       <Text className="ListItem">{props.t("Publish your creative work in social networks")}</Text>
     </ContentRowItem>
   </PageContentWrapper>
-  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
+  <DownloadScrollButton id="download-now2_avs-video-editor" className="buttonWrapper" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" to="headerContentWrapper" textDownload={props.t("download now")} textGetCoupon={props.t("get 5 coupon code")}/>
   <div className="block-awards">
     <Text className="awards-title awardsProductPage" fontSize={28} fontWeight={600} color="#000000">{props.t("Reviewed and highly rated by")}</Text>
     <div className="list-awards listAwards">
@@ -333,7 +329,7 @@ export const AvsVideoEditorOtherContent = (props) => (
     </div>
   </div>
 
-  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97")}</Text>
+  <Text id="screenshotsCarousel" className="carouselHeader" as="h2">{props.t("AVS Video Editor 97", {version: shortVersion(VideoEditor.version)})}</Text>
   <ScreenshotsCarousel
     imageNames={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
     imageNamesPopup={[props.t("video editor slider1 jpg"), props.t("video editor slider2 jpg"), props.t("video editor slider3 jpg"), props.t("video editor slider4 jpg"), props.t("video editor slider5 jpg"), props.t("video editor slider6 jpg")]}
@@ -353,13 +349,18 @@ export const AvsVideoEditorOtherContent = (props) => (
 
       <div className="downloadInfoRow">        
         <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{props.t("Platforms")}</Text>
-        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {props.t("(no Mac OS/ Linux support)")}</Text>
+        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {props.t("(no Mac OS/ Linux support)")}</Text>
+      </div>
+
+      <div className="downloadInfoRow">
+        <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+        <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-video-editor" to="/downloads.aspx">Windows XP / Vista</Link> — {props.t("dwn_col_xp_note")}</Text>
       </div>
     </div>
     <DownloadScrollButton 
       id="download-now3_avs-video-editor" 
       className="buttonWrapper" 
-      href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe" 
+      href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe" 
       to="headerContentWrapper" 
       textDownload={props.t("download now")} 
       textGetCoupon={props.t("get 5 coupon code")}

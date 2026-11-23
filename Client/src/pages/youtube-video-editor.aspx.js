@@ -100,7 +100,7 @@ render(){
             <ScrollLink to="to_testimonials" spy={true} smooth={true}>
             <li className="topmenuoption to_testimonials">Testimonials</li>
             </ScrollLink>
-            <li className="topmenuoption with_link"><a className="lfb_download_btn" id="download1_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></li>
+            <li className="topmenuoption with_link"><a className="lfb_download_btn" id="download1_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></li>
             <li className="aclose">×</li>
         </ul>
     </div>
@@ -115,7 +115,7 @@ render(){
     <div className="lfb_ht_subheader">
       Easily create professional-looking clips or vlogs
     </div>
-    <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download2_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+    <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download2_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></div>
   </div>
   <div className="lfb_head_img"><ImageGQL imageName="main_picture-youtube.png" alt="Professional-looking clips or vlogs" /></div>
 </div>
@@ -167,7 +167,7 @@ render(){
             <div className="lfb_reas_t">Create video with different frame sizes: HD, Full HD, 2K Quad HD, 4K Ultra HD and DCI 4K</div>
         </div>
         </div>
-        <div className="lfb_txt_div lfb_reas_btn"><a className="lfb_download_btn lfb_tm_btn" id="download3_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+        <div className="lfb_txt_div lfb_reas_btn"><a className="lfb_download_btn lfb_tm_btn" id="download3_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></div>
     </div>
 </div>
 
@@ -220,7 +220,7 @@ render(){
     <div className="lfb_psln">
         <div className="lfb_ps_h">Perfect solution for video bloggers</div>
         <div className="lfb_ps_sh">Create your first video right now!</div>
-        <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download4_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor.exe">Download</a></div>
+        <div className="lfb_txt_div"><a className="lfb_download_btn lfb_tm_btn" id="download4_youtube-video-editor" href="https://downloads.avs4you.com/distributives/AVSVideoEditor_x64.exe">Download</a></div>
     </div>
 </div>
 

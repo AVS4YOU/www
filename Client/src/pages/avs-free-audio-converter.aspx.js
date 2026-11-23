@@ -7,19 +7,24 @@ import FreeFlag from '../components/free-flag';
 import Layout from "../components/layout";
 import PageContentWrapper from "../components/page-content-wrapper";
 import ContentRowItem from '../components/content-row-item';
+import AiPluginsBlock from '../components/ai-plugins-block';
 import ReviewScreen from '../components/review-screen';
 import ScreenshotsCarousel from '../components/screenshot-carousel';
 import ProductPagesWrapper from '../components/product-pages-wrapper';
 import HeaderDownloadButtons from '../components/header-download-buttons';
 import DownloadScrollButton from '../components/download-scroll-button';
 import ImageGQL from '../components/image-gql';
-import {AudioConverter} from '../../static/products-info';
+import {AudioConverter, shortVersion} from '../../static/products-info';
 import ScrollUpButton from '../components/scroll-up-button';
 import Button from '../components/button';
 import Star from '../images/main-page/icons/star.svg';
 
 import AvatarJohn from '../images/avs-audio-converter/john.png';
 import AvatarJacky from '../images/avs-audio-converter/jacky.png';
+
+// languages that have the AI plugins block copy
+const aiLang = ['en', 'de', 'es', 'fr', 'it', 'jp'];
+const isAiLang = (currentLang) => aiLang.includes(currentLang);
 
 
 class avsAudioConverter extends React.PureComponent {
@@ -74,8 +79,8 @@ render(){
                 <Text color="#ffffff" align="center" className="headerDescription" as="h2" fontSize={24}>{this.props.t("Convert audio between popular formats Apply effects, customize output parameters, use batch mode")}</Text>
                 <HeaderDownloadButtons 
                   t={this.props.t}
-                  mainHref="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe"
-                  secondaryText="Windows 11/10/8/7/Vista/XP"
+                  mainHref="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe"
+                  secondaryText="Windows 11/10/8/7"
                   backgroundColor="orange"
                   mainPadding="12px 37px"
                   margin="auto"
@@ -116,16 +121,26 @@ render(){
               <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
             </ContentRowItem>
 
-            <ContentRowItem 
-                imgLeft={false}
-                imageName={this.props.t("audio converter slider3 jpg")}
-                headerText={this.props.t("Create audio files for any purpose")}
-            >
-              <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
-              <Text className="ListItem">{this.props.t("Create ringtones Edit an audio file and save it to M4R format for iPhone")}</Text>
-              <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}</Text>
-              <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
-            </ContentRowItem>
+            {isAiLang(this.props.locale)
+              ? <AiPluginsBlock
+                  newText={this.props.t("New")}
+                  title={this.props.t("ai_ac_title")}
+                  intro={this.props.t("ai_ac_text")}
+                  imageName="ai_plugins_audio_converter.jpg"
+                  marketplaceText={this.props.t("ai_marketplace")}
+                  marketplaceId="plugins-marketplace_avs-free-audio-converter"
+                />
+              : <ContentRowItem
+                  imgLeft={false}
+                  imageName={this.props.t("audio converter slider3 jpg")}
+                  headerText={this.props.t("Create audio files for any purpose")}
+                >
+                  <Text className="ListItem">{this.props.t("Create Audiobooks Convert your audio tracks to M4B format, divide them into chapters and add bookmarks")} *</Text>
+                  <Text className="ListItem">{this.props.t("Create ringtones Edit an audio file and save it to M4R format for iPhone")}</Text>
+                  <Text className="ListItem">{this.props.t("Export audio from video files DVD, MPEG, MP4, AVI, MOV, WMV, FLV, etc")}</Text>
+                  <Text className="ListItem footnote" fontWeight={500}>{this.props.t("This feature is available in a full version")}</Text>
+                </ContentRowItem>
+            }
 
             <ContentRowItem 
               imgLeft={true}
@@ -164,7 +179,7 @@ render(){
                     {this.props.t("Review us on")} <img src={Star} alt="star" style={{filter: "brightness(5)"}}/> Trustpilot
             </Button>
           </div>
-          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter 26.0</Text>
+          <Text id="screenshotsCarousel" className="carouselHeader" as="h2">AVS Audio Converter {shortVersion(AudioConverter.version)}</Text>
           <ScreenshotsCarousel 
             imageNames={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg") ]}
             imageNamesPopup={[this.props.t("audio converter slider1 jpg"), this.props.t("audio converter slider2 jpg"), this.props.t("audio converter slider3 jpg"), this.props.t("audio converter bath jpg")]}
@@ -185,13 +200,18 @@ render(){
 
               <div className="downloadInfoRow">        
                 <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right">{this.props.t("Platforms")}</Text>
-                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7, Vista, XP {this.props.t("(no Mac OS/ Linux support)")}</Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left">Windows 11, 10, 8.1, 8, 7 {this.props.t("(no Mac OS/ Linux support)")}</Text>
+              </div>
+
+              <div className="downloadInfoRow">
+                <Text className="downloadInfoParam" color="#000000" fontSize={16} fontWeight={700} align="right"></Text>
+                <Text className="downloadInfoText" color="#000000" fontSize={16} fontWeight={500} align="left"><Link id="xp-vista-downloads_avs-free-audio-converter" to="/downloads.aspx">Windows XP / Vista</Link> — {this.props.t("dwn_col_xp_note")}</Text>
               </div>
             </div>
             <DownloadScrollButton 
               id="download-now2_avs-free-audio-converter" 
               className="buttonWrapper"
-              href="https://downloads.avs4you.com/distributives/AVSAudioConverter.exe" 
+              href="https://downloads.avs4you.com/distributives/AVSAudioConverter_x64.exe" 
               to="headerContentWrapper" 
               textDownload={this.props.t("download now")}
               textGetCoupon={this.props.t("get 5 coupon code")}
