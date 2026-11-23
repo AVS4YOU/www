@@ -4,8 +4,8 @@
 // Sizes are in MB (bytes / 1048576).
 
 let VideoEditor = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
     size: "229.42",
@@ -20,12 +20,12 @@ let VideoEditor = {
 };
 
 let VideoReMaker = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "124.91",
-    size64: "124.91",
+    size: "124.90",
+    size64: "124.90",
     size32: "93.54",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
@@ -36,13 +36,13 @@ let VideoReMaker = {
 };
 
 let VideoConverter = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "128.66",
-    size64: "128.66",
-    size32: "130.19",
+    size: "128.65",
+    size64: "128.65",
+    size32: "130.18",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
     releaseXPMM: "11",
@@ -52,13 +52,13 @@ let VideoConverter = {
 };
 
 let MediaPlayer = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "170.75",
-    size64: "170.75",
-    size32: "146.81",
+    size: "170.74",
+    size64: "170.74",
+    size32: "146.78",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
     releaseXPMM: "11",
@@ -68,12 +68,12 @@ let MediaPlayer = {
 };
 
 let AudioEditor = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "99.98",
-    size64: "99.98",
+    size: "100.00",
+    size64: "100.00",
     size32: "94.04",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
@@ -84,13 +84,13 @@ let AudioEditor = {
 };
 
 let AudioConverter = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "98.38",
-    size64: "98.38",
-    size32: "97.45",
+    size: "98.37",
+    size64: "98.37",
+    size32: "97.44",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
     releaseXPMM: "11",
@@ -100,13 +100,13 @@ let AudioConverter = {
 };
 
 let AVSImageConverter = {
-    version: "26.1.1.293",
-    releaseDD: "20",
+    version: "26.1.1.296",
+    releaseDD: "23",
     releaseMM: "11",
     releaseYYYY: "2026",
-    size: "64.03",
-    size64: "64.03",
-    size32: "61.49",
+    size: "64.01",
+    size64: "64.01",
+    size32: "61.51",
     versionXP: "26.0.3.6",
     releaseXPDD: "03",
     releaseXPMM: "11",
@@ -116,8 +116,8 @@ let AVSImageConverter = {
 };
 
 let InstallPack = {
-    size: "329.19",
-    size64: "329.19",
+    size: "329.18",
+    size64: "329.18",
     size32: "320.98",
     versionXP: "26.0.3.6",
     sizeXP: "312.10"
