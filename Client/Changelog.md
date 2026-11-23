@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.121 (23.11.2026)
+### New
+* Changed products info: version 26.1.1.297, date 23.11.2026 and sizes of the `_x64` / `_x86` installers and the installation package
+* Updated pads files (version, date, file size)
+
 ## 1.0.120 (20.11.2026)
 ### Fixes
 * Screenshot headings on product pages show the current version (26.1), taken from products info instead of hardcoded 26.0
