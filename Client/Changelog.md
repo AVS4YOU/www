@@ -1,7 +1,15 @@
 # Changelog
 
+## 1.0.122 (24.11.2026)
+### New
+* Site header stays on screen while the page scrolls (all pages)
+
+### Fixes
+* `avs-video-editor.aspx`: "Explore Plugins Marketplace" is a button instead of a text link
+
 ## 1.0.121 (23.11.2026)
 ### New
+* `downloads.aspx`: add AVS Image Converter ("Image software" section next to Audio software and a row in the table of installers), the Windows XP / Vista link from `avs-free-image-converter.aspx` now leads to a listed program
 * Changed products info: version 26.1.1.297, date 23.11.2026 and sizes of the `_x64` / `_x86` installers and the installation package
 * Updated pads files (version, date, file size)
 
