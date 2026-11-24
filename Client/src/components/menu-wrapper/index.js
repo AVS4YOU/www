@@ -10,8 +10,10 @@ const StyledMenuWrapper = styled.div`
     width: 100%;
     height:60px;
     background-color: ${({isTransparentHeader, customBackgroundColor}) => isTransparentHeader ? 'transparent' : customBackgroundColor || '#32393e'};
-    position:relative;
-    z-index: 10;
+    // stays on screen while the page scrolls
+    position: sticky;
+    top: 0;
+    z-index: 500;
 
     &.offAnimate{
         transition: none;

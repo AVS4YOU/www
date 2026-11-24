@@ -192,7 +192,6 @@ export const AvsVideoEditorOtherContent = (props) => (
         imageName="ai_plugins_video_editor.png"
         marketplaceText={props.t("ai_ve_marketplace")}
         marketplaceId="plugins-marketplace_avs-video-editor"
-        marketplaceAsLink
     />
 
     <ContentRowItem 
