@@ -5,6 +5,8 @@ body{
 
 #___gatsby{
     overflow-x: hidden;
+    /* clip cuts off horizontal overflow like hidden but keeps the sticky header working */
+    overflow-x: clip;
     position: relative;
 }
 
